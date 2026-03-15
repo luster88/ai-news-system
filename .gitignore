@@ -42,3 +42,9 @@ data/cache/
 
 # temp
 tmp/
+
+# opencode
+AGENTS.md
+
+# _site
+_site/
