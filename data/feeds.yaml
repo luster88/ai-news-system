@@ -41,11 +41,6 @@ cn:
     url: "https://www.minimax.io/news"
     max_items: 6
 
-  - name: Pandaily AI
-    type: site
-    url: "https://pandaily.com/category/ai"
-    max_items: 6
-
   - name: 36Kr AI
     type: site
     url: "https://36kr.com/information/AI"
