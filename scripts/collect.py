@@ -93,14 +93,73 @@ GOOD_AI_KEYWORDS = [
 
 SITE_ONLY_MIN_TITLE_LEN = 18
 
+# 先頭に付いてくるカテゴリ語を削る
+CATEGORY_PREFIXES = [
+    "公共",
+    "ビジネス",
+    "ラーニング",
+    "エンジニアリング",
+    "テクノロジー",
+    "特集",
+    "ニュース",
+    "事例",
+]
+
 
 def load_feeds():
     with open(FEEDS_FILE, "r", encoding="utf-8") as f:
         return yaml.safe_load(f)
 
 
+def clean_title(title: str) -> str:
+    t = (title or "").strip()
+
+    if not t:
+        return ""
+
+    # 連続空白を正規化
+    t = re.sub(r"\s+", " ", t).strip()
+
+    # Ledge系などの
+    # 「公共 2026 / 3 / 9 [MON] タイトル」
+    # 「ビジネス 2026 / 3 / 13 [FRI] タイトル」
+    # のような先頭を削る
+    category_pattern = "|".join(re.escape(x) for x in CATEGORY_PREFIXES)
+    t = re.sub(
+        rf"^(?:{category_pattern})\s+20\d{{2}}\s*/\s*\d{{1,2}}\s*/\s*\d{{1,2}}\s*\[[A-Z]{{3}}\]\s*",
+        "",
+        t,
+        flags=re.IGNORECASE,
+    ).strip()
+
+    # カテゴリ語だけが先頭に単独で付く場合も削る
+    t = re.sub(
+        rf"^(?:{category_pattern})\s+",
+        "",
+        t,
+        flags=re.IGNORECASE,
+    ).strip()
+
+    # 区切り記号だけ残るケースを軽く整形
+    t = re.sub(r"^[\-–—:：/\|\]\[()\s]+", "", t).strip()
+
+    return t
+
+
+def canonicalize_url(url: str) -> str:
+    u = (url or "").strip()
+    if not u:
+        return ""
+
+    parsed = urlparse(u)
+    path = parsed.path.rstrip("/")
+
+    # query / fragment を捨てて URL の揺れを減らす
+    return f"{parsed.scheme}://{parsed.netloc}{path}"
+
+
 def is_bad_title(title: str) -> bool:
-    t = (title or "").strip().lower()
+    t = clean_title(title).lower()
     if not t:
         return True
 
@@ -140,10 +199,9 @@ def extract_date_from_url(url: str):
     patterns = [
         # /2025/08/21/
         r"/(20\d{2})/(0[1-9]|1[0-2])/(0[1-9]|[12]\d|3[01])/",
-        # /articles/260314/ のようなケースは今回は対象外
-        # /articles/20260314/ のような YYYYMMDD
+        # /articles/20260314/
         r"/(20\d{2})(0[1-9]|1[0-2])([0-3]\d)/",
-        # _2026_03_14_ など
+        # 2026-03-14 / 2026_03_14
         r"(20\d{2})[_\-](0[1-9]|1[0-2])[_\-]([0-3]\d)",
     ]
 
@@ -173,7 +231,6 @@ def is_recent_enough(published: str, url: str = "") -> bool:
         dt = extract_date_from_url(url)
 
     if dt is None:
-        # 日付不明はここでは通す
         return True
 
     cutoff = datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)
@@ -186,15 +243,16 @@ def looks_like_real_article(
     source_type: str,
     published: str = "",
 ) -> bool:
-    if is_bad_title(title) or is_bad_url(url):
+    cleaned_title = clean_title(title)
+
+    if is_bad_title(cleaned_title) or is_bad_url(url):
         return False
 
-    title_stripped = (title or "").strip()
-    if source_type == "site" and len(title_stripped) < SITE_ONLY_MIN_TITLE_LEN:
+    if source_type == "site" and len(cleaned_title) < SITE_ONLY_MIN_TITLE_LEN:
         return False
 
     if source_type == "site":
-        text = f"{title} {url}".lower()
+        text = f"{cleaned_title} {url}".lower()
         if not any(keyword in text for keyword in GOOD_AI_KEYWORDS):
             return False
 
@@ -215,9 +273,12 @@ def fetch_rss(url: str, max_items: int = 20):
             or entry.get("created", "")
         )
 
+        title = clean_title(entry.get("title", "").strip())
+        link = canonicalize_url(entry.get("link", "").strip())
+
         item = {
-            "title": entry.get("title", "").strip(),
-            "link": entry.get("link", "").strip(),
+            "title": title,
+            "link": link,
             "published": published,
             "summary": entry.get("summary", "").strip(),
         }
@@ -252,10 +313,11 @@ def fetch_site_simple(url: str, max_items: int = 20):
 
     soup = BeautifulSoup(r.text, "lxml")
     items = []
-    seen = set()
+    seen_links = set()
 
     for a in soup.select("a"):
-        title = a.get_text(" ", strip=True)
+        raw_title = a.get_text(" ", strip=True)
+        title = clean_title(raw_title)
         href = a.get("href")
 
         if not title or not href:
@@ -263,6 +325,8 @@ def fetch_site_simple(url: str, max_items: int = 20):
 
         if href.startswith("/"):
             href = urljoin(url, href)
+
+        href = canonicalize_url(href)
 
         if not href.startswith("http"):
             continue
@@ -278,10 +342,10 @@ def fetch_site_simple(url: str, max_items: int = 20):
         if not looks_like_real_article(title, href, "site"):
             continue
 
-        key = (title.lower(), href)
-        if key in seen:
+        # URL単位で重複除去
+        if href in seen_links:
             continue
-        seen.add(key)
+        seen_links.add(href)
 
         items.append({
             "title": title,
@@ -298,19 +362,19 @@ def fetch_site_simple(url: str, max_items: int = 20):
 
 def normalize_items(region: str, source_name: str, items: list):
     out = []
-    seen = set()
+    seen_links = set()
 
     for item in items:
-        link = item.get("link", "").strip()
-        title = item.get("title", "").strip()
+        link = canonicalize_url(item.get("link", "").strip())
+        title = clean_title(item.get("title", "").strip())
 
         if not link or not title:
             continue
 
-        key = (title.lower(), link)
-        if key in seen:
+        # URL単位で優先して重複除去
+        if link in seen_links:
             continue
-        seen.add(key)
+        seen_links.add(link)
 
         out.append({
             "region": region,
@@ -326,16 +390,20 @@ def normalize_items(region: str, source_name: str, items: list):
 
 def dedupe_articles(items: list):
     out = []
-    seen = set()
+    seen_links = set()
 
     for item in items:
-        key = (
-            item.get("title", "").strip().lower(),
-            item.get("link", "").strip(),
-        )
-        if key in seen:
+        link = canonicalize_url(item.get("link", "").strip())
+        if not link:
             continue
-        seen.add(key)
+
+        # URL単位で最終重複除去
+        if link in seen_links:
+            continue
+        seen_links.add(link)
+
+        item["title"] = clean_title(item.get("title", ""))
+        item["link"] = link
         out.append(item)
 
     return out
