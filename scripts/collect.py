@@ -79,6 +79,16 @@ GOOD_AI_KEYWORDS = [
     "gemini",
     "deepseek",
     "qwen",
+    "ernie",
+    "minimax",
+    "kimi",
+    "moonshot",
+    "zhipu",
+    "glm",
+    "baidu",
+    "alibaba",
+    "tencent",
+    "bytedance",
     "model",
     "models",
     "bot",
@@ -105,6 +115,51 @@ CATEGORY_PREFIXES = [
     "事例",
 ]
 
+# CN系を中心に、媒体ごとの取りやすいセレクタを定義
+SOURCE_SELECTORS = {
+    "Qwen Research": [
+        "a[href*='qwen.ai/blog?id=']",
+        "a[href*='/blog?id=']",
+        "article a",
+        "main a",
+    ],
+    "ERNIE Blog": [
+        "article",
+        "main article",
+        "main > div",
+    ],
+    "MiniMax News": [
+        "article a",
+        "main a",
+        ".news a",
+        ".blog a",
+    ],
+    "36Kr AI": [
+        "a[href*='/p/']",
+        "a[href*='/information/']",
+    ],
+    "TechNode News Feed": [
+        "article a",
+        "h2 a",
+        "h3 a",
+        ".entry-title a",
+        ".post-title a",
+        "main a",
+    ],
+    "36Kr English": [
+        "article a",
+        "h2 a",
+        "h3 a",
+        "main a",
+    ],
+    "KrASIA": [
+        "article a",
+        "h2 a",
+        "h3 a",
+        ".entry-title a",
+        "main a",
+    ],
+}
 
 def load_feeds():
     with open(FEEDS_FILE, "r", encoding="utf-8") as f:
@@ -297,7 +352,7 @@ def fetch_rss(url: str, max_items: int = 20):
     return items
 
 
-def fetch_site_simple(url: str, max_items: int = 20):
+def _request_html(url: str):
     r = requests.get(
         url,
         timeout=30,
@@ -310,8 +365,201 @@ def fetch_site_simple(url: str, max_items: int = 20):
         },
     )
     r.raise_for_status()
+    return r.text
 
-    soup = BeautifulSoup(r.text, "lxml")
+
+def extract_links_by_selectors(
+    soup: BeautifulSoup,
+    base_url: str,
+    selectors: list[str],
+    max_items: int,
+):
+    items = []
+    seen_links = set()
+
+    for selector in selectors:
+        for node in soup.select(selector):
+            a_tag = node if getattr(node, "name", "") == "a" else node.find("a")
+            if a_tag is None:
+                continue
+
+            raw_title = a_tag.get_text(" ", strip=True)
+            title = clean_title(raw_title)
+            href = a_tag.get("href")
+
+            if not title or not href:
+                continue
+
+            if href.startswith("/"):
+                href = urljoin(base_url, href)
+
+            href = canonicalize_url(href)
+
+            if not href.startswith("http"):
+                continue
+
+            try:
+                src_netloc = urlparse(base_url).netloc
+                dst_netloc = urlparse(href).netloc
+                if src_netloc and dst_netloc and src_netloc not in dst_netloc:
+                    continue
+            except Exception:
+                pass
+
+            if not looks_like_real_article(title, href, "site"):
+                continue
+
+            if href in seen_links:
+                continue
+            seen_links.add(href)
+
+            items.append({
+                "title": title,
+                "link": href,
+                "published": "",
+                "summary": "",
+            })
+
+            if len(items) >= max_items:
+                return items
+
+    return items
+
+def extract_ernie_blog_items(soup: BeautifulSoup, base_url: str, max_items: int):
+    items = []
+    seen_links = set()
+
+    for a in soup.select("a"):
+        href = a.get("href")
+        if not href:
+            continue
+
+        if href.startswith("/"):
+            href = urljoin(base_url, href)
+        href = canonicalize_url(href)
+
+        if not href.startswith("http"):
+            continue
+
+        # ERNIE blog 配下の記事っぽいURLだけを優先
+        if "/blog/" not in href and "/publication/" not in href:
+            continue
+
+        # タイトルは a テキストが空のことがあるので、近くの見出しを探す
+        title = clean_title(a.get_text(" ", strip=True))
+
+        if not title:
+            parent = a.parent
+            if parent:
+                heading = parent.find_next(["h1", "h2", "h3"])
+                if heading:
+                    title = clean_title(heading.get_text(" ", strip=True))
+
+        if not title:
+            continue
+
+        if not looks_like_real_article(title, href, "site"):
+            continue
+
+        if href in seen_links:
+            continue
+        seen_links.add(href)
+
+        items.append({
+            "title": title,
+            "link": href,
+            "published": "",
+            "summary": "",
+        })
+
+        if len(items) >= max_items:
+            break
+
+    return items
+
+def extract_36kr_ai_items(soup: BeautifulSoup, base_url: str, max_items: int):
+    items = []
+    seen_links = set()
+
+    # 36Kr AIページは本文エリアに記事リンクが並ぶ
+    selectors = [
+        "a[href*='/p/']",
+        "a[href*='/information/']",
+    ]
+
+    for selector in selectors:
+        for a in soup.select(selector):
+            href = a.get("href")
+            if not href:
+                continue
+
+            if href.startswith("/"):
+                href = urljoin(base_url, href)
+
+            href = canonicalize_url(href)
+
+            if not href.startswith("http"):
+                continue
+
+            # 36kr.com ドメインだけ
+            if "36kr.com" not in href:
+                continue
+
+            title = clean_title(a.get_text(" ", strip=True))
+            if not title:
+                continue
+
+            # 明らかなナビやカテゴリを除外
+            if len(title) < 10:
+                continue
+            if title in {"AI", "推荐", "最新", "财经", "科技", "查看更多"}:
+                continue
+
+            if not looks_like_real_article(title, href, "site"):
+                continue
+
+            if href in seen_links:
+                continue
+            seen_links.add(href)
+
+            items.append({
+                "title": title,
+                "link": href,
+                "published": "",
+                "summary": "",
+            })
+
+            if len(items) >= max_items:
+                return items
+
+    return items
+
+def fetch_site_source_specific(source_name: str, url: str, max_items: int = 20):
+    html = _request_html(url)
+    soup = BeautifulSoup(html, "lxml")
+
+    if source_name == "ERNIE Blog":
+        return extract_ernie_blog_items(soup, url, max_items)
+
+    if source_name == "36Kr AI":
+        return extract_36kr_ai_items(soup, url, max_items)
+
+    selectors = SOURCE_SELECTORS.get(source_name, [])
+    if not selectors:
+        return []
+
+    return extract_links_by_selectors(
+        soup=soup,
+        base_url=url,
+        selectors=selectors,
+        max_items=max_items,
+    )
+
+
+def fetch_site_simple(url: str, max_items: int = 20):
+    html = _request_html(url)
+    soup = BeautifulSoup(html, "lxml")
+
     items = []
     seen_links = set()
 
@@ -358,6 +606,22 @@ def fetch_site_simple(url: str, max_items: int = 20):
             break
 
     return items
+
+
+def fetch_site(source_name: str, url: str, max_items: int = 20):
+    if source_name in SOURCE_SELECTORS:
+        try:
+            items = fetch_site_source_specific(
+                source_name=source_name,
+                url=url,
+                max_items=max_items,
+            )
+            if items:
+                return items
+        except Exception as e:
+            print(f"[warn] source-specific fallback to generic for {source_name}: {e}")
+
+    return fetch_site_simple(url=url, max_items=max_items)
 
 
 def normalize_items(region: str, source_name: str, items: list):
@@ -422,7 +686,11 @@ def collect_articles():
                 if source_type == "rss":
                     items = fetch_rss(src["url"], max_items=item_limit)
                 else:
-                    items = fetch_site_simple(src["url"], max_items=item_limit)
+                    items = fetch_site(
+                        source_name=src["name"],
+                        url=src["url"],
+                        max_items=item_limit,
+                    )
 
                 normalized = normalize_items(region, src["name"], items)
                 all_items.extend(normalized)
