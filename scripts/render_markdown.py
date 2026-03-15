@@ -64,7 +64,7 @@ def render_daily_markdown(result: dict):
             lines.append(f"### {i}. {a['title']}")
             lines.append(f"- Region: {a.get('region', '').upper()}")
             lines.append(f"- Source: {a['source']}")
-            lines.append(f"- Link: {a['link']}")
+            lines.append(f"- Link: [{a['link']}]({a['link']})")
             lines.append(f"- Importance: {a.get('importance_score', 1)}")
             lines.append(f"- Summary: {a.get('summary_ja', '').strip()}")
 
@@ -99,7 +99,7 @@ def render_daily_markdown(result: dict):
         for i, a in enumerate(region_items, start=1):
             lines.append(f"### {i}. {a['title']}")
             lines.append(f"- Source: {a['source']}")
-            lines.append(f"- Link: {a['link']}")
+            lines.append(f"- Link: [{a['link']}]({a['link']})")
             lines.append(f"- Importance: {a.get('importance_score', 1)}")
             lines.append(f"- Summary: {a.get('summary_ja', '').strip()}")
 
