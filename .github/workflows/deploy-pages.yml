@@ -1,14 +1,7 @@
 name: Deploy GitHub Pages
 
-# on:
-#   push:
-#     branches: ["main"]
-#     paths:
-#       - "news/**"
-#       - "scripts/build_site.py"
-#       - "requirements.txt"
-#       - ".github/workflows/deploy-pages.yml"
-#   workflow_dispatch:
+on:
+  workflow_dispatch:
 
 permissions:
   contents: read
