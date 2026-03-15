@@ -48,7 +48,41 @@
     "https://36kr.com/p/3723869877500551": "2026-03-15",
     "https://36kr.com/p/3723784474081925": "2026-03-15",
     "https://36kr.com/p/3723727243000195": "2026-03-15",
-    "https://36kr.com/p/3722618723906306": "2026-03-15"
+    "https://36kr.com/p/3722618723906306": "2026-03-15",
+    "https://deepmind.google/blog/10-years-of-alphago": "2026-03-15",
+    "https://deepmind.google/blog/gemini-3-1-flash-lite-built-for-intelligence-at-scale": "2026-03-15",
+    "https://www.watch.impress.co.jp/docs/series/itsmo/2089179.html": "2026-03-15",
+    "https://www.watch.impress.co.jp/docs/news/2093357.html": "2026-03-15",
+    "https://www.watch.impress.co.jp/docs/series/itsmo/2091602.html": "2026-03-15",
+    "https://www.watch.impress.co.jp/docs/news/2093418.html": "2026-03-15",
+    "https://www.watch.impress.co.jp/docs/news/2093396.html": "2026-03-15",
+    "https://www.watch.impress.co.jp/docs/news/2093400.html": "2026-03-15",
+    "https://kr-asia.com/li-auto-ends-2025-on-a-steady-note-but-turnaround-remains-in-progress": "2026-03-15",
+    "https://kr-asia.com/alibaba-leads-rmb-500-million-investment-in-bci-startup-stairmed": "2026-03-15",
+    "https://kr-asia.com/wechat-explores-building-in-house-ai-model-as-tencent-ramps-up-ai-push": "2026-03-15",
+    "https://kr-asia.com/ai-glasses-concept-phones-and-other-technologies-that-stood-out-at-mwc-2026": "2026-03-15",
+    "https://kr-asia.com/alibaba-aims-to-take-qwen-from-app-to-wearable-interface": "2026-03-15",
+    "https://kr-asia.com/tencent-harnesses-ma-ai-to-fast-track-video-game-development": "2026-03-15",
+    "https://huggingface.co/blog/nvidia/nemo-retriever-agentic-retrieval": "2026-03-15",
+    "https://huggingface.co/blog/storage-buckets": "2026-03-15",
+    "https://huggingface.co/blog/async-rl-training-landscape": "2026-03-15",
+    "https://huggingface.co/blog/ibm-granite/granite-4-speech": "2026-03-15",
+    "https://huggingface.co/blog/ulysses-sp": "2026-03-15",
+    "https://huggingface.co/blog/lerobot-release-v050": "2026-03-15",
+    "https://research.google/blog/protecting-cities-with-ai-driven-flash-flood-forecasting": "2026-03-15",
+    "https://research.google/blog/introducing-groundsource-turning-news-reports-into-data-with-gemini": "2026-03-15",
+    "https://research.google/blog/exploring-the-feasibility-of-conversational-diagnostic-ai-in-a-real-world-clinical-study": "2026-03-15",
+    "https://research.google/blog/waxal-a-large-scale-open-resource-for-african-language-speech-technology": "2026-03-15",
+    "https://research.google/blog/where-wild-things-roam-identifying-wildlife-with-speciesnet": "2026-03-15"
   },
-  "source_penalties": {}
+  "source_penalties": {
+    "OpenAI News": "2026-03-18",
+    "Anthropic News": "2026-03-18",
+    "Product Hunt": "2026-03-18",
+    "ITmedia AI+": "2026-03-18",
+    "Ledge.ai": "2026-03-18",
+    "ERNIE Blog": "2026-03-18",
+    "MiniMax News": "2026-03-18",
+    "36Kr AI": "2026-03-18"
+  }
 }
