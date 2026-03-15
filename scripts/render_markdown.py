@@ -67,9 +67,20 @@ def render_daily_markdown(result: dict):
             lines.append(f"- Link: {a['link']}")
             lines.append(f"- Importance: {a.get('importance_score', 1)}")
             lines.append(f"- Summary: {a.get('summary_ja', '').strip()}")
+
             why = a.get("why_it_matters", "").strip()
             if why:
                 lines.append(f"- Why it matters: {why}")
+
+            related = a.get("related_articles", [])
+            if related:
+                lines.append("- Related:")
+                for r in related[:3]:
+                    lines.append(
+                        f"  - {r.get('source', '').strip()}: "
+                        f"[{r.get('title', '').strip()}]({r.get('link', '').strip()})"
+                    )
+
             lines.append("")
     else:
         lines.append("- 注目記事を生成できませんでした。")
@@ -95,6 +106,15 @@ def render_daily_markdown(result: dict):
             why = a.get("why_it_matters", "").strip()
             if why:
                 lines.append(f"- Why it matters: {why}")
+
+            related = a.get("related_articles", [])
+            if related:
+                lines.append("- Related:")
+                for r in related[:3]:
+                    lines.append(
+                        f"  - {r.get('source', '').strip()}: "
+                        f"[{r.get('title', '').strip()}]({r.get('link', '').strip()})"
+                    )
 
             lines.append("")
 

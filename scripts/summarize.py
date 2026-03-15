@@ -50,8 +50,32 @@ def _safe_parse_summary_json(text: str) -> dict:
             "importance_score": 1,
         }
 
+def _is_low_value_article(article: dict) -> bool:
+    title = (article.get("title", "") or "").lower()
+    source = (article.get("source", "") or "").lower()
+
+    weak_titles = [
+        "morgen",
+        "motion software",
+    ]
+
+    if title in weak_titles:
+        return True
+
+    # Product Hunt はAIキーワードが薄いものを弱めに落とす
+    if "product hunt" in source:
+        strong_keywords = [
+            "ai", "agent", "llm", "gpt", "claude", "openclaw",
+            "memory", "security", "automation", "voice",
+        ]
+        if not any(k in title for k in strong_keywords):
+            return True
+
+    return False
 
 def _select_articles_for_summary(articles: list) -> list:
+    articles = [a for a in articles if not _is_low_value_article(a)]
+
     selected = []
     source_counts = Counter()
 
