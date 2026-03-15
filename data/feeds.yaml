@@ -20,11 +20,6 @@ jp:
     url: "https://rss.itmedia.co.jp/rss/2.0/aiplus.xml"
     max_items: 8
 
-  - name: AINOW
-    type: site
-    url: "https://ainow.ai/"
-    max_items: 5
-
   - name: Ledge.ai
     type: site
     url: "https://ledge.ai/"
