@@ -7,3 +7,4 @@ lxml
 anthropic
 firecrawl-py
 python-dotenv
+markdown
