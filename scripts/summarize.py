@@ -1,0 +1,224 @@
+import json
+import os
+from collections import Counter
+
+from anthropic import Anthropic
+from dotenv import load_dotenv
+
+load_dotenv()
+
+MODEL = "claude-sonnet-4-5"
+MAX_ARTICLES_TO_SUMMARIZE = 15
+MAX_PER_SOURCE = 3
+
+
+def _extract_text_from_message(msg) -> str:
+    return "".join(
+        block.text for block in msg.content
+        if getattr(block, "type", "") == "text"
+    ).strip()
+
+
+def _clean_json_text(text: str) -> str:
+    text = text.strip()
+
+    if text.startswith("```json"):
+        text = text[len("```json"):].strip()
+    elif text.startswith("```"):
+        text = text[len("```"):].strip()
+
+    if text.endswith("```"):
+        text = text[:-3].strip()
+
+    return text
+
+
+def _safe_parse_summary_json(text: str) -> dict:
+    cleaned = _clean_json_text(text)
+
+    try:
+        parsed = json.loads(cleaned)
+        return {
+            "summary": str(parsed.get("summary", "")).strip(),
+            "why_it_matters": str(parsed.get("why_it_matters", "")).strip(),
+            "importance_score": int(parsed.get("importance_score", 1)),
+        }
+    except Exception:
+        return {
+            "summary": cleaned,
+            "why_it_matters": "",
+            "importance_score": 1,
+        }
+
+
+def _select_articles_for_summary(articles: list) -> list:
+    selected = []
+    source_counts = Counter()
+
+    # 地域バランスを少し取りつつ、各ソース最大件数を制限
+    region_order = ["us", "cn", "jp"]
+    grouped = {r: [] for r in region_order}
+
+    for article in articles:
+        grouped.setdefault(article.get("region", "other"), []).append(article)
+
+    # まず各地域から順番に拾う
+    made_progress = True
+    while made_progress and len(selected) < MAX_ARTICLES_TO_SUMMARIZE:
+        made_progress = False
+
+        for region in region_order:
+            for article in grouped.get(region, []):
+                source = article.get("source", "unknown")
+                if article in selected:
+                    continue
+                if source_counts[source] >= MAX_PER_SOURCE:
+                    continue
+
+                selected.append(article)
+                source_counts[source] += 1
+                made_progress = True
+                break
+
+            if len(selected) >= MAX_ARTICLES_TO_SUMMARIZE:
+                break
+
+    # まだ足りなければ残りから追加
+    if len(selected) < MAX_ARTICLES_TO_SUMMARIZE:
+        for article in articles:
+            source = article.get("source", "unknown")
+            if article in selected:
+                continue
+            if source_counts[source] >= MAX_PER_SOURCE:
+                continue
+
+            selected.append(article)
+            source_counts[source] += 1
+
+            if len(selected) >= MAX_ARTICLES_TO_SUMMARIZE:
+                break
+
+    return selected
+
+def _summarize_one_article(client: Anthropic, article: dict) -> dict:
+    known_summary = article.get("summary", "").strip()
+
+    prompt = f"""
+次の記事情報を日本語で要約してください。
+
+タイトル: {article['title']}
+URL: {article['link']}
+既知の要約: {known_summary if known_summary else "なし"}
+
+注意:
+- 記事本文が十分でない場合は、推測を避ける
+- 情報不足なら「タイトルベースの暫定要約」であることが分かる表現にする
+- 断定しすぎない
+
+必ずJSONのみ返してください。
+{{
+    "summary": "3〜5行の要約",
+    "why_it_matters": "重要性を1〜2行",
+    "importance_score": 1
+}}
+
+importance_score は 1〜10 の整数で返してください。
+"""
+
+    msg = client.messages.create(
+        model=MODEL,
+        max_tokens=400,
+        temperature=0.2,
+        messages=[{"role": "user", "content": prompt}],
+    )
+
+    parsed = _safe_parse_summary_json(_extract_text_from_message(msg))
+
+    article["summary_ja"] = parsed["summary"]
+    article["why_it_matters"] = parsed["why_it_matters"]
+    article["importance_score"] = max(1, min(10, parsed["importance_score"]))
+
+    if not known_summary:
+        article["summary_ja"] = f"[暫定] {article['summary_ja']}"
+
+    return article
+
+def _generate_overall_summary(client: Anthropic, articles: list) -> list[str]:
+    if not articles:
+        return ["今日は有効な記事を取得できませんでした。"]
+
+    top_articles = sorted(
+        articles,
+        key=lambda x: x.get("importance_score", 1),
+        reverse=True
+    )[:10]
+
+    compact_lines = []
+    for i, a in enumerate(top_articles, start=1):
+        compact_lines.append(
+            f"{i}. [{a.get('region', '').upper()}] {a['title']} "
+            f"(importance={a.get('importance_score', 1)}, source={a.get('source', '')}) "
+            f"要約: {a.get('summary_ja', '')}"
+        )
+
+    joined = "\n".join(compact_lines)
+
+    prompt = f"""
+以下のAIニュース要約一覧をもとに、
+Markdownの冒頭に置く「今日の総括」を日本語で3〜5行の箇条書きで作成してください。
+
+条件:
+- 箇条書きのみ
+- 各行は簡潔に
+- 全体の流れ、注目領域、地域バランスにも触れる
+- 先頭に「- 」を付ける
+
+記事一覧:
+{joined}
+"""
+
+    msg = client.messages.create(
+        model=MODEL,
+        max_tokens=300,
+        temperature=0.2,
+        messages=[{"role": "user", "content": prompt}],
+    )
+
+    text = _extract_text_from_message(msg)
+    lines = [line.strip() for line in text.splitlines() if line.strip()]
+
+    bullet_lines = []
+    for line in lines:
+        if not line.startswith("- "):
+            bullet_lines.append(f"- {line.lstrip('- ').strip()}")
+        else:
+            bullet_lines.append(line)
+
+    return bullet_lines[:5] if bullet_lines else ["- 主要トピックの総括生成に失敗しました。"]
+
+
+def summarize_articles(articles: list):
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        raise RuntimeError("ANTHROPIC_API_KEY is not set")
+
+    client = Anthropic(api_key=api_key)
+
+    selected_articles = _select_articles_for_summary(articles)
+    summarized = []
+
+    print(f"[info] selected {len(selected_articles)} articles for summarization")
+
+    for idx, article in enumerate(selected_articles, start=1):
+        print(f"[info] summarizing {idx}/{len(selected_articles)}: {article['title']}")
+        summarized.append(_summarize_one_article(client, article))
+
+    # importance順に並べ替え
+    summarized.sort(key=lambda x: x.get("importance_score", 1), reverse=True)
+
+    overall_summary = _generate_overall_summary(client, summarized)
+
+    return {
+        "articles": summarized,
+        "overall_summary": overall_summary,
+    }

@@ -1,0 +1,9 @@
+requests
+PyYAML
+feedparser
+python-dateutil
+beautifulsoup4
+lxml
+anthropic
+firecrawl-py
+python-dotenv

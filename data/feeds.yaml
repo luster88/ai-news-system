@@ -1,0 +1,37 @@
+us:
+  - name: OpenAI News
+    type: rss
+    url: "https://openai.com/news/rss.xml"
+    max_items: 8
+
+  - name: Anthropic News
+    type: site
+    url: "https://www.anthropic.com/news"
+    max_items: 6
+
+  - name: Product Hunt
+    type: rss
+    url: "https://www.producthunt.com/feed"
+    max_items: 6
+
+jp:
+  - name: ITmedia AI+
+    type: rss
+    url: "https://rss.itmedia.co.jp/rss/2.0/aiplus.xml"
+    max_items: 8
+
+  - name: AINOW
+    type: site
+    url: "https://ainow.ai/"
+    max_items: 5
+
+  - name: Ledge.ai
+    type: site
+    url: "https://ledge.ai/"
+    max_items: 5
+
+cn:
+  - name: TechNode
+    type: site
+    url: "https://technode.com/category/news-feed/"
+    max_items: 5
