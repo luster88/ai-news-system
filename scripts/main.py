@@ -1,4 +1,5 @@
 from scripts.collect import collect_articles
+from scripts.fetch_body import fetch_article_bodies
 from scripts.seen_urls import (
     load_seen_data,
     filter_seen_articles,
@@ -31,7 +32,10 @@ def main():
     if skipped_by_penalty:
         print(f"[info] {skipped_by_penalty} articles skipped (source penalty)")
 
-    # 5. 要約・クラスタリング・出力
+    # 5. 記事本文を取得（キャッシュ優先、research リージョンはスキップ）
+    filtered_articles = fetch_article_bodies(filtered_articles)
+
+    # 6. 要約・クラスタリング・出力
     result = summarize_articles(filtered_articles)
     clustered_articles = cluster_articles(result["articles"])
     result["articles"] = clustered_articles
@@ -39,7 +43,7 @@ def main():
     output_path = render_daily_markdown(result)
     index_path = build_index()
 
-    # 6. 今日の新規URLを seen_urls.json に記録
+    # 7. 今日の新規URLを seen_urls.json に記録
     update_seen_urls(filtered_articles, updated_seen_data)
 
     print(f"[info] generated: {output_path}")

@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 from datetime import datetime
 import html
@@ -10,6 +11,7 @@ NEWS_DIR = BASE_DIR / "news"
 SITE_DIR = BASE_DIR / "_site"
 
 SITE_TITLE = "AI News Daily"
+PAGE_SIZE = 30  # インデックス1ページあたりの件数
 
 
 CSS = """
@@ -23,6 +25,8 @@ CSS = """
   --accent:#7aa2ff;
   --accent-2:#9fd3ff;
   --chip:#24315f;
+  --chip-tag:#1e3a50;
+  --chip-tag-text:#9fd3ff;
   --good:#87e7b0;
   --shadow:0 10px 30px rgba(0,0,0,.25);
 }
@@ -52,7 +56,8 @@ code,pre{
 }
 .header-inner{
   display:flex; align-items:center; justify-content:space-between;
-  gap:16px; padding:14px 0;
+  gap:12px; padding:12px 0;
+  flex-wrap:wrap;
 }
 .brand{
   font-weight:800; letter-spacing:.2px; font-size:20px;
@@ -61,6 +66,22 @@ code,pre{
 .sub{
   color:var(--muted); font-size:14px;
 }
+.search-box{
+  display:flex; align-items:center; gap:8px;
+  flex:1; max-width:340px;
+}
+.search-box input{
+  width:100%;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:999px;
+  color:var(--text);
+  padding:7px 14px;
+  font-size:14px;
+  outline:none;
+}
+.search-box input::placeholder{color:var(--muted)}
+.search-box input:focus{border-color:var(--accent)}
 .hero{
   padding:28px 0 8px;
 }
@@ -122,6 +143,20 @@ code,pre{
   padding:4px 10px;
   font-size:12px;
 }
+.chip-tag{
+  display:inline-flex; align-items:center;
+  border:1px solid rgba(159,211,255,.2);
+  background:var(--chip-tag);
+  color:var(--chip-tag-text);
+  border-radius:999px;
+  padding:4px 10px;
+  font-size:12px;
+  text-decoration:none;
+}
+.chip-tag:hover{
+  background:#2a4f6e;
+  text-decoration:none;
+}
 .preview{
   color:var(--muted);
   margin:0;
@@ -135,6 +170,28 @@ code,pre{
   background:rgba(255,255,255,.02);
   border-radius:12px;
   padding:12px 14px;
+}
+.tag-cloud{
+  display:flex; flex-wrap:wrap; gap:8px;
+  margin-top:8px;
+}
+.pagination{
+  display:flex; justify-content:center; gap:10px;
+  padding:20px 0;
+}
+.pagination a, .pagination span{
+  display:inline-flex; align-items:center; justify-content:center;
+  min-width:40px; height:40px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:10px;
+  padding:0 14px;
+  font-size:14px;
+}
+.pagination span.current{
+  background:var(--accent);
+  color:#0b1020;
+  border-color:var(--accent);
+  font-weight:700;
 }
 .footer{
   border-top:1px solid rgba(255,255,255,.06);
@@ -198,6 +255,78 @@ code,pre{
   margin-bottom:16px;
   display:inline-block;
 }
+/* 検索結果 */
+#search-results .item{ display:none }
+#search-results .item.match{ display:block }
+#no-results{ display:none; color:var(--muted); padding:20px 0; }
+"""
+
+SEARCH_JS = """
+(function(){
+  const input = document.getElementById('search-input');
+  if(!input) return;
+
+  let index = null;
+
+  async function loadIndex(){
+    try{
+      const r = await fetch(ROOT_PATH + '/search-index.json');
+      index = await r.json();
+    } catch(e){ index = []; }
+  }
+
+  function renderResults(q){
+    const container = document.getElementById('search-page-results');
+    const noResult  = document.getElementById('no-results');
+    if(!container) return;
+
+    container.innerHTML = '';
+    if(!q || q.length < 2){ noResult.style.display='none'; return; }
+
+    const words = q.toLowerCase().split(/\\s+/).filter(Boolean);
+    const hits = (index||[]).filter(item=>{
+      const text = (item.title + ' ' + item.summary).toLowerCase();
+      return words.every(w => text.includes(w));
+    });
+
+    if(hits.length === 0){
+      noResult.style.display = 'block';
+      return;
+    }
+    noResult.style.display = 'none';
+
+    hits.slice(0,50).forEach(item=>{
+      const div = document.createElement('article');
+      div.className = 'item';
+      div.innerHTML =
+        '<h3><a href="' + ROOT_PATH + '/' + item.url + '">' + escHtml(item.title) + '</a></h3>' +
+        '<div class="meta"><span class="chip">' + escHtml(item.date) + '</span></div>' +
+        '<p class="preview">' + escHtml((item.summary||'').slice(0,120)) + '</p>';
+      container.appendChild(div);
+    });
+  }
+
+  function escHtml(s){
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  loadIndex().then(()=>{
+    const q = new URLSearchParams(location.search).get('q') || '';
+    if(q){ input.value = q; renderResults(q); }
+  });
+
+  input.addEventListener('input', ()=>{ renderResults(input.value.trim()); });
+
+  // ヘッダーのサーチボックスからページ遷移
+  const headerInput = document.getElementById('header-search');
+  if(headerInput){
+    headerInput.addEventListener('keydown', e=>{
+      if(e.key==='Enter' && headerInput.value.trim()){
+        location.href = ROOT_PATH + '/search/index.html?q=' + encodeURIComponent(headerInput.value.trim());
+      }
+    });
+  }
+})();
 """
 
 MD_EXTENSIONS = [
@@ -228,6 +357,16 @@ def strip_front_matter(text: str) -> tuple[dict, str]:
         meta[k.strip()] = v.strip()
 
     return meta, body
+
+
+def _parse_tags_from_meta(meta: dict) -> list[str]:
+    """フロントマターの tags フィールドをパースして文字列リストで返す。"""
+    raw = meta.get("tags", "")
+    if not raw:
+        return []
+    # "[LLM, Agent, 画像生成]" 形式
+    raw = raw.strip().strip("[]")
+    return [t.strip() for t in raw.split(",") if t.strip()]
 
 
 def extract_summary_bullets(md_body: str, max_lines: int = 2) -> list[str]:
@@ -278,45 +417,90 @@ def page_shell(title: str, body_html: str, root_rel: str = ".") -> str:
   <header class="header">
     <div class="wrap header-inner">
       <div class="brand"><a href="{root_rel}/index.html">{SITE_TITLE}</a></div>
-      <div class="sub">GitHub Pages static site</div>
+      <div class="search-box">
+        <input id="header-search" type="search" placeholder="記事を検索…" autocomplete="off">
+      </div>
+      <div class="sub"><a href="{root_rel}/search/index.html" style="color:var(--muted)">検索</a>
+        &nbsp;|&nbsp;
+        <a href="{root_rel}/tags/index.html" style="color:var(--muted)">タグ一覧</a>
+      </div>
     </div>
   </header>
   {body_html}
   <footer class="footer">
     <div class="wrap">Built automatically from daily Markdown files.</div>
   </footer>
+  <script>const ROOT_PATH="{root_rel}";</script>
+  <script>{SEARCH_JS}</script>
 </body>
 </html>
 """
 
 
-def build_index(files: list[Path]) -> None:
-    items_html = []
+# ---------------------------------------------------------------------------
+# インデックスページ（ページネーション対応）
+# ---------------------------------------------------------------------------
 
-    for file in files[:30]:
-        rel_parts = file.relative_to(NEWS_DIR).parts
-        year, month, filename = rel_parts
-        day = filename.replace(".md", "")
-        target = f"news/{year}/{month}/{day}/index.html"
+def _item_html(file: Path, root_rel: str) -> str:
+    rel_parts = file.relative_to(NEWS_DIR).parts
+    year, month, filename = rel_parts
+    day = filename.replace(".md", "")
+    target = f"{root_rel}/news/{year}/{month}/{day}/index.html"
 
-        raw = file.read_text(encoding="utf-8")
-        meta, body = strip_front_matter(raw)
-        title = article_title_from_body(body, day)
-        bullets = extract_summary_bullets(body, max_lines=2)
-        preview = " / ".join(html.escape(x) for x in bullets) if bullets else "日報を開く"
+    raw = file.read_text(encoding="utf-8")
+    meta, body = strip_front_matter(raw)
+    title = article_title_from_body(body, day)
+    bullets = extract_summary_bullets(body, max_lines=2)
+    preview = " / ".join(html.escape(x) for x in bullets) if bullets else "日報を開く"
+    total_items = meta.get("total_items", "")
 
-        total_items = meta.get("total_items", "")
-        items_html.append(f"""
-        <article class="item">
-          <h3><a href="{target}">{html.escape(title)}</a></h3>
-          <div class="meta">
-            <span class="chip">{html.escape(day)}</span>
-            <span class="chip">{html.escape(total_items)} items</span>
-          </div>
-          <p class="preview">{preview}</p>
-        </article>
-        """)
+    tags = _parse_tags_from_meta(meta)
+    tags_html = "".join(
+        f'<a href="{root_rel}/tags/{html.escape(t)}/index.html" class="chip-tag">{html.escape(t)}</a>'
+        for t in tags
+    )
+    tags_row = f'<div class="meta" style="margin-top:8px">{tags_html}</div>' if tags_html else ""
 
+    return f"""
+    <article class="item">
+      <h3><a href="{target}">{html.escape(title)}</a></h3>
+      <div class="meta">
+        <span class="chip">{html.escape(day)}</span>
+        <span class="chip">{html.escape(str(total_items))} items</span>
+      </div>
+      {tags_row}
+      <p class="preview">{preview}</p>
+    </article>
+    """
+
+
+def _pagination_html(current_page: int, total_pages: int, root_rel: str) -> str:
+    if total_pages <= 1:
+        return ""
+
+    parts = []
+    if current_page > 1:
+        prev_href = f"{root_rel}/index.html" if current_page == 2 else f"{root_rel}/page/{current_page - 1}/index.html"
+        parts.append(f'<a href="{prev_href}">← 前</a>')
+
+    for p in range(1, total_pages + 1):
+        if p == current_page:
+            parts.append(f'<span class="current">{p}</span>')
+        else:
+            href = f"{root_rel}/index.html" if p == 1 else f"{root_rel}/page/{p}/index.html"
+            parts.append(f'<a href="{href}">{p}</a>')
+
+    if current_page < total_pages:
+        next_href = f"{root_rel}/page/{current_page + 1}/index.html"
+        parts.append(f'<a href="{next_href}">次 →</a>')
+
+    return f'<nav class="pagination">{"".join(parts)}</nav>'
+
+
+def build_index_pages(files: list[Path]) -> None:
+    total_pages = max(1, (len(files) + PAGE_SIZE - 1) // PAGE_SIZE)
+
+    # サイドバーリンク（常に最新14件）
     latest_links = []
     for file in files[:14]:
         rel_parts = file.relative_to(NEWS_DIR).parts
@@ -324,37 +508,58 @@ def build_index(files: list[Path]) -> None:
         day = filename.replace(".md", "")
         target = f"news/{year}/{month}/{day}/index.html"
         latest_links.append(f'<a href="{target}">{html.escape(day)}</a>')
+    side_html = "".join(latest_links) if latest_links else '<div class="preview">まだ日報がありません。</div>'
 
-    body_html = f"""
-    <main class="wrap">
-      <section class="hero">
-        <div class="hero-card">
-          <h1>{SITE_TITLE}</h1>
-          <p>毎日の AI ツール / 企業動向 / 業界ニュースを Markdown から自動で静的サイト化しています。</p>
-        </div>
-      </section>
+    for page_num in range(1, total_pages + 1):
+        start = (page_num - 1) * PAGE_SIZE
+        page_files = files[start: start + PAGE_SIZE]
 
-      <section class="grid">
-        <div class="card">
-          <h2>最新日報</h2>
-          <div class="list">
-            {''.join(items_html) if items_html else '<p class="preview">まだ日報がありません。</p>'}
-          </div>
-        </div>
+        items_html = [_item_html(f, ".") for f in page_files]
 
-        <aside class="card">
-          <h2>最近の日付</h2>
-          <div class="side-list">
-            {''.join(latest_links) if latest_links else '<div class="preview">まだ日報がありません。</div>'}
-          </div>
-        </aside>
-      </section>
-    </main>
-    """
+        pagination = _pagination_html(page_num, total_pages, ".")
 
-    html_text = page_shell(SITE_TITLE, body_html, root_rel=".")
-    (SITE_DIR / "index.html").write_text(html_text, encoding="utf-8")
+        body_html = f"""
+        <main class="wrap">
+          <section class="hero">
+            <div class="hero-card">
+              <h1>{SITE_TITLE}</h1>
+              <p>毎日の AI ツール / 企業動向 / 業界ニュースを Markdown から自動で静的サイト化しています。</p>
+            </div>
+          </section>
 
+          <section class="grid">
+            <div class="card">
+              <h2>{"最新日報" if page_num == 1 else f"{page_num}ページ目"}</h2>
+              <div class="list">
+                {''.join(items_html) if items_html else '<p class="preview">まだ日報がありません。</p>'}
+              </div>
+              {pagination}
+            </div>
+
+            <aside class="card">
+              <h2>最近の日付</h2>
+              <div class="side-list">
+                {side_html}
+              </div>
+            </aside>
+          </section>
+        </main>
+        """
+
+        page_title = SITE_TITLE if page_num == 1 else f"{SITE_TITLE} - {page_num}ページ目"
+        html_text = page_shell(page_title, body_html, root_rel=".")
+
+        if page_num == 1:
+            (SITE_DIR / "index.html").write_text(html_text, encoding="utf-8")
+        else:
+            page_dir = SITE_DIR / "page" / str(page_num)
+            page_dir.mkdir(parents=True, exist_ok=True)
+            (page_dir / "index.html").write_text(html_text, encoding="utf-8")
+
+
+# ---------------------------------------------------------------------------
+# 記事詳細ページ
+# ---------------------------------------------------------------------------
 
 def build_article_pages(files: list[Path]) -> None:
     for file in files:
@@ -371,6 +576,13 @@ def build_article_pages(files: list[Path]) -> None:
         out_dir = SITE_DIR / "news" / year / month / day
         out_dir.mkdir(parents=True, exist_ok=True)
 
+        tags = _parse_tags_from_meta(meta)
+        tags_html = "".join(
+            f'<a href="../../../../tags/{html.escape(t)}/index.html" class="chip-tag">{html.escape(t)}</a>'
+            for t in tags
+        )
+        tags_row = f'<div class="meta" style="margin-top:10px">{tags_html}</div>' if tags_html else ""
+
         body_html = f"""
         <main class="wrap article">
           <a class="back" href="../../../../index.html">← index に戻る</a>
@@ -380,6 +592,7 @@ def build_article_pages(files: list[Path]) -> None:
               <div class="article-meta">
                 date: {html.escape(meta.get('date', day))} / total_items: {html.escape(meta.get('total_items', ''))}
               </div>
+              {tags_row}
             </div>
             <div class="article-body">
               {article_html}
@@ -392,16 +605,168 @@ def build_article_pages(files: list[Path]) -> None:
         (out_dir / "index.html").write_text(html_text, encoding="utf-8")
 
 
+# ---------------------------------------------------------------------------
+# タグページ
+# ---------------------------------------------------------------------------
+
+def build_tag_pages(files: list[Path]) -> None:
+    """タグ別記事一覧ページを _site/tags/{タグ名}/index.html に生成する。"""
+    tag_to_files: dict[str, list[Path]] = {}
+
+    for file in files:
+        raw = file.read_text(encoding="utf-8")
+        meta, _ = strip_front_matter(raw)
+        for tag in _parse_tags_from_meta(meta):
+            tag_to_files.setdefault(tag, []).append(file)
+
+    # 全タグ一覧ページ
+    tags_dir = SITE_DIR / "tags"
+    tags_dir.mkdir(parents=True, exist_ok=True)
+
+    tag_links = "".join(
+        f'<a href="{html.escape(tag)}/index.html" class="chip-tag">'
+        f'{html.escape(tag)} ({len(flist)})</a>'
+        for tag, flist in sorted(tag_to_files.items())
+    )
+    overview_body = f"""
+    <main class="wrap">
+      <section class="hero">
+        <div class="hero-card">
+          <h1>タグ一覧</h1>
+          <p>記事に付与されたカテゴリタグの一覧です。</p>
+        </div>
+      </section>
+      <section style="padding:24px 0">
+        <div class="card">
+          <h2>すべてのタグ</h2>
+          <div class="tag-cloud">
+            {tag_links if tag_links else '<p class="preview">タグがありません。</p>'}
+          </div>
+        </div>
+      </section>
+    </main>
+    """
+    (tags_dir / "index.html").write_text(
+        page_shell("タグ一覧 - " + SITE_TITLE, overview_body, root_rel=".."),
+        encoding="utf-8",
+    )
+
+    # 各タグの記事一覧ページ
+    for tag, tag_files in tag_to_files.items():
+        items_html = [_item_html(f, "../..") for f in tag_files]
+
+        body_html = f"""
+        <main class="wrap">
+          <section class="hero">
+            <div class="hero-card">
+              <h1>タグ: {html.escape(tag)}</h1>
+              <p>{len(tag_files)} 件の記事があります。</p>
+            </div>
+          </section>
+          <section style="padding:24px 0 40px">
+            <div class="card">
+              <h2>{html.escape(tag)}</h2>
+              <div class="list">
+                {''.join(items_html)}
+              </div>
+            </div>
+          </section>
+        </main>
+        """
+
+        tag_dir = tags_dir / tag
+        tag_dir.mkdir(parents=True, exist_ok=True)
+        (tag_dir / "index.html").write_text(
+            page_shell(f"{tag} - {SITE_TITLE}", body_html, root_rel="../.."),
+            encoding="utf-8",
+        )
+
+
+# ---------------------------------------------------------------------------
+# 検索インデックス & 検索ページ
+# ---------------------------------------------------------------------------
+
+def build_search_index(files: list[Path]) -> None:
+    """_site/search-index.json を生成する。"""
+    entries = []
+
+    for file in files:
+        rel_parts = file.relative_to(NEWS_DIR).parts
+        year, month, filename = rel_parts
+        day = filename.replace(".md", "")
+
+        raw = file.read_text(encoding="utf-8")
+        meta, body = strip_front_matter(raw)
+        title = article_title_from_body(body, day)
+        bullets = extract_summary_bullets(body, max_lines=3)
+        summary = " ".join(bullets)
+
+        entries.append({
+            "date": day,
+            "title": title,
+            "summary": summary,
+            "url": f"news/{year}/{month}/{day}/index.html",
+            "tags": _parse_tags_from_meta(meta),
+        })
+
+    (SITE_DIR / "search-index.json").write_text(
+        json.dumps(entries, ensure_ascii=False, indent=None),
+        encoding="utf-8",
+    )
+
+
+def build_search_page() -> None:
+    """_site/search/index.html を生成する。"""
+    search_dir = SITE_DIR / "search"
+    search_dir.mkdir(parents=True, exist_ok=True)
+
+    body_html = """
+    <main class="wrap">
+      <section class="hero">
+        <div class="hero-card">
+          <h1>記事検索</h1>
+          <p>タイトル・要約のキーワードで絞り込みます。</p>
+        </div>
+      </section>
+      <section style="padding:24px 0 40px">
+        <div class="card">
+          <input id="search-input" type="search"
+            placeholder="キーワードを入力…"
+            style="width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
+                   border-radius:12px;color:var(--text);padding:10px 16px;font-size:16px;
+                   outline:none;margin-bottom:20px;">
+          <div id="no-results" style="color:var(--muted)">該当する記事が見つかりませんでした。</div>
+          <div id="search-page-results" class="list"></div>
+        </div>
+      </section>
+    </main>
+    """
+
+    (search_dir / "index.html").write_text(
+        page_shell("記事検索 - " + SITE_TITLE, body_html, root_rel=".."),
+        encoding="utf-8",
+    )
+
+
+# ---------------------------------------------------------------------------
+# エントリポイント
+# ---------------------------------------------------------------------------
+
 def main():
     SITE_DIR.mkdir(parents=True, exist_ok=True)
     (SITE_DIR / "style.css").write_text(CSS, encoding="utf-8")
     (SITE_DIR / ".nojekyll").write_text("", encoding="utf-8")
 
     files = read_news_files()
-    build_index(files)
+
+    build_index_pages(files)
     build_article_pages(files)
+    build_tag_pages(files)
+    build_search_index(files)
+    build_search_page()
 
     print(f"[info] built site: {SITE_DIR}")
+    print(f"[info]   {len(files)} articles, {max(1, (len(files) + PAGE_SIZE - 1) // PAGE_SIZE)} index page(s)")
 
 
 if __name__ == "__main__":

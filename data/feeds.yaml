@@ -9,6 +9,26 @@ us:
     url: "https://www.anthropic.com/news"
     max_items: 6
 
+  - name: Google DeepMind Blog
+    type: rss
+    url: "https://deepmind.google/blog/rss.xml"
+    max_items: 6
+
+  - name: Microsoft AI Blog
+    type: rss
+    url: "https://blogs.microsoft.com/ai/feed/"
+    max_items: 6
+
+  - name: Meta AI Blog
+    type: rss
+    url: "https://ai.meta.com/blog/rss/"
+    max_items: 6
+
+  - name: The Verge AI
+    type: rss
+    url: "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml"
+    max_items: 6
+
   - name: Product Hunt
     type: rss
     url: "https://www.producthunt.com/feed"
@@ -19,6 +39,16 @@ jp:
     type: rss
     url: "https://rss.itmedia.co.jp/rss/2.0/aiplus.xml"
     max_items: 8
+
+  - name: Impress Watch
+    type: rss
+    url: "https://www.watch.impress.co.jp/data/rss/1.0/ipw/feed.rdf"
+    max_items: 6
+
+  - name: ZDNet Japan
+    type: rss
+    url: "https://japan.zdnet.com/rss/index.rdf"
+    max_items: 6
 
   - name: Ledge.ai
     type: site
@@ -41,17 +71,33 @@ cn:
     url: "https://36kr.com/information/AI"
     max_items: 6
 
-  # - name: TechNode News Feed
-  #   type: site
-  #   url: "https://technode.com/category/news-feed/"
-  #   max_items: 6
+  - name: TechNode News Feed
+    type: site
+    url: "https://technode.com/category/news-feed/"
+    max_items: 6
 
-  # - name: 36Kr English
-  #   type: site
-  #   url: "https://eu.36kr.com/en/"
-  #   max_items: 6
+  - name: KrASIA
+    type: site
+    url: "https://kr-asia.com/"
+    max_items: 6
 
-  # - name: KrASIA
-  #   type: site
-  #   url: "https://kr-asia.com/"
-  #   max_items: 6
+research:
+  - name: arXiv cs.AI
+    type: rss
+    url: "https://rss.arxiv.org/rss/cs.AI"
+    max_items: 5
+
+  - name: arXiv cs.LG
+    type: rss
+    url: "https://rss.arxiv.org/rss/cs.LG"
+    max_items: 5
+
+  - name: Hugging Face Blog
+    type: rss
+    url: "https://huggingface.co/blog/feed.xml"
+    max_items: 6
+
+  - name: Google Research Blog
+    type: rss
+    url: "https://research.google/blog/rss/"
+    max_items: 5

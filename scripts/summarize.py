@@ -8,8 +8,14 @@ from dotenv import load_dotenv
 load_dotenv()
 
 MODEL = "claude-sonnet-4-5"
-MAX_ARTICLES_TO_SUMMARIZE = 15
+MAX_ARTICLES_TO_SUMMARIZE = 25
 MAX_PER_SOURCE = 3
+
+# タグ候補（プロンプトで提示して選択を安定させる）
+TAG_CANDIDATES = [
+    "LLM", "Agent", "画像生成", "音声AI", "コーディング支援",
+    "規制・政策", "研究・論文", "産業応用", "ハードウェア", "セキュリティ",
+]
 
 
 def _extract_text_from_message(msg) -> str:
@@ -38,17 +44,26 @@ def _safe_parse_summary_json(text: str) -> dict:
 
     try:
         parsed = json.loads(cleaned)
+        # tags は候補リスト内の文字列のみ受け付ける
+        raw_tags = parsed.get("tags", [])
+        if isinstance(raw_tags, list):
+            tags = [t for t in raw_tags if isinstance(t, str) and t in TAG_CANDIDATES][:3]
+        else:
+            tags = []
         return {
             "summary": str(parsed.get("summary", "")).strip(),
             "why_it_matters": str(parsed.get("why_it_matters", "")).strip(),
             "importance_score": int(parsed.get("importance_score", 1)),
+            "tags": tags,
         }
     except Exception:
         return {
             "summary": cleaned,
             "why_it_matters": "",
             "importance_score": 1,
+            "tags": [],
         }
+
 
 def _is_low_value_article(article: dict) -> bool:
     title = (article.get("title", "") or "").lower()
@@ -73,6 +88,7 @@ def _is_low_value_article(article: dict) -> bool:
 
     return False
 
+
 def _select_articles_for_summary(articles: list) -> list:
     articles = [a for a in articles if not _is_low_value_article(a)]
 
@@ -80,7 +96,7 @@ def _select_articles_for_summary(articles: list) -> list:
     source_counts = Counter()
 
     # 地域バランスを少し取りつつ、各ソース最大件数を制限
-    region_order = ["us", "cn", "jp"]
+    region_order = ["us", "cn", "jp", "research"]
     grouped = {r: [] for r in region_order}
 
     for article in articles:
@@ -124,8 +140,22 @@ def _select_articles_for_summary(articles: list) -> list:
 
     return selected
 
+
 def _summarize_one_article(client: Anthropic, article: dict) -> dict:
     known_summary = article.get("summary", "").strip()
+    body = article.get("body", "").strip()
+
+    # research リージョンはアブストラクトが summary に入っているので body 扱いにする
+    if article.get("region") == "research" and known_summary and not body:
+        body = known_summary
+        known_summary = ""
+
+    # 本文があれば [暫定] マークは不要
+    has_body = bool(body)
+
+    body_section = f"記事本文（抜粋）:\n{body[:2000]}" if body else "記事本文: 取得できませんでした"
+
+    tag_list = "、".join(TAG_CANDIDATES)
 
     prompt = f"""
 次の記事情報を日本語で要約してください。
@@ -133,17 +163,22 @@ def _summarize_one_article(client: Anthropic, article: dict) -> dict:
 タイトル: {article['title']}
 URL: {article['link']}
 既知の要約: {known_summary if known_summary else "なし"}
+{body_section}
 
 注意:
 - 記事本文が十分でない場合は、推測を避ける
 - 情報不足なら「タイトルベースの暫定要約」であることが分かる表現にする
 - 断定しすぎない
 
+タグは以下の候補から最大3つ選んでください:
+{tag_list}
+
 必ずJSONのみ返してください。
 {{
     "summary": "3〜5行の要約",
     "why_it_matters": "重要性を1〜2行",
-    "importance_score": 1
+    "importance_score": 1,
+    "tags": ["タグ1", "タグ2"]
 }}
 
 importance_score は 1〜10 の整数で返してください。
@@ -151,7 +186,7 @@ importance_score は 1〜10 の整数で返してください。
 
     msg = client.messages.create(
         model=MODEL,
-        max_tokens=400,
+        max_tokens=600,
         temperature=0.2,
         messages=[{"role": "user", "content": prompt}],
     )
@@ -161,11 +196,14 @@ importance_score は 1〜10 の整数で返してください。
     article["summary_ja"] = parsed["summary"]
     article["why_it_matters"] = parsed["why_it_matters"]
     article["importance_score"] = max(1, min(10, parsed["importance_score"]))
+    article["tags"] = parsed["tags"]
 
-    if not known_summary:
+    # 本文も既知の要約もない場合のみ [暫定] を付ける
+    if not has_body and not article.get("summary", "").strip():
         article["summary_ja"] = f"[暫定] {article['summary_ja']}"
 
     return article
+
 
 def _generate_overall_summary(client: Anthropic, articles: list) -> list[str]:
     if not articles:
@@ -179,9 +217,10 @@ def _generate_overall_summary(client: Anthropic, articles: list) -> list[str]:
 
     compact_lines = []
     for i, a in enumerate(top_articles, start=1):
+        tags_str = ", ".join(a.get("tags", []))
         compact_lines.append(
             f"{i}. [{a.get('region', '').upper()}] {a['title']} "
-            f"(importance={a.get('importance_score', 1)}, source={a.get('source', '')}) "
+            f"(importance={a.get('importance_score', 1)}, source={a.get('source', '')}, tags={tags_str}) "
             f"要約: {a.get('summary_ja', '')}"
         )
 
