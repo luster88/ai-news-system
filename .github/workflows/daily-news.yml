@@ -3,8 +3,8 @@ name: Daily AI News
 on:
   workflow_dispatch:
   schedule:
-    # JST 23:05 = UTC 14:05
-    - cron: "5 14 * * *"
+    # JST 01:05 = UTC 16:05
+    - cron: "5 16 * * *"
 
 permissions:
   contents: write
