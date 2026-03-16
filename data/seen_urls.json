@@ -73,7 +73,29 @@
     "https://research.google/blog/introducing-groundsource-turning-news-reports-into-data-with-gemini": "2026-03-15",
     "https://research.google/blog/exploring-the-feasibility-of-conversational-diagnostic-ai-in-a-real-world-clinical-study": "2026-03-15",
     "https://research.google/blog/waxal-a-large-scale-open-resource-for-african-language-speech-technology": "2026-03-15",
-    "https://research.google/blog/where-wild-things-roam-identifying-wildlife-with-speciesnet": "2026-03-15"
+    "https://research.google/blog/where-wild-things-roam-identifying-wildlife-with-speciesnet": "2026-03-15",
+    "https://www.watch.impress.co.jp/docs/news/2093846.html": "2026-03-16",
+    "https://www.watch.impress.co.jp/docs/news/2093833.html": "2026-03-16",
+    "https://www.watch.impress.co.jp/docs/news/2093814.html": "2026-03-16",
+    "https://www.watch.impress.co.jp/docs/news/2093813.html": "2026-03-16",
+    "https://www.watch.impress.co.jp/docs/news/2093775.html": "2026-03-16",
+    "https://www.watch.impress.co.jp/docs/news/2093729.html": "2026-03-16",
+    "https://kr-asia.com/didis-core-business-remains-strong-as-global-expansion-pressures-earnings": "2026-03-16",
+    "https://kr-asia.com/sunmi-lays-the-rails-for-brands-chasing-global-chain-expansion": "2026-03-16",
+    "https://kr-asia.com/huawei-veterans-raise-funding-for-startup-powering-ai-data-centers": "2026-03-16",
+    "https://kr-asia.com/diagens-nears-ipo-with-medical-imaging-ai-foundation-model": "2026-03-16",
+    "https://kr-asia.com/movas-airbot-turns-air-conditioning-into-a-moving-climate-companion": "2026-03-16",
+    "https://kr-asia.com/chinas-guangfan-positions-ai-wearables-as-the-next-computing-platform": "2026-03-16",
+    "https://arxiv.org/abs/2603.12287": "2026-03-16",
+    "https://arxiv.org/abs/2603.12372": "2026-03-16",
+    "https://arxiv.org/abs/2603.12483": "2026-03-16",
+    "https://arxiv.org/abs/2603.12710": "2026-03-16",
+    "https://arxiv.org/abs/2603.12733": "2026-03-16",
+    "https://arxiv.org/abs/2603.12276": "2026-03-16",
+    "https://arxiv.org/abs/2603.12288": "2026-03-16",
+    "https://arxiv.org/abs/2603.12293": "2026-03-16",
+    "https://arxiv.org/abs/2603.12296": "2026-03-16",
+    "https://arxiv.org/abs/2603.12298": "2026-03-16"
   },
   "source_penalties": {
     "OpenAI News": "2026-03-18",
@@ -83,6 +105,9 @@
     "Ledge.ai": "2026-03-18",
     "ERNIE Blog": "2026-03-18",
     "MiniMax News": "2026-03-18",
-    "36Kr AI": "2026-03-18"
+    "36Kr AI": "2026-03-18",
+    "Google DeepMind Blog": "2026-03-19",
+    "Hugging Face Blog": "2026-03-19",
+    "Google Research Blog": "2026-03-19"
   }
 }
