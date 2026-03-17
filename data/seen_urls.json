@@ -95,7 +95,23 @@
     "https://arxiv.org/abs/2603.12288": "2026-03-16",
     "https://arxiv.org/abs/2603.12293": "2026-03-16",
     "https://arxiv.org/abs/2603.12296": "2026-03-16",
-    "https://arxiv.org/abs/2603.12298": "2026-03-16"
+    "https://arxiv.org/abs/2603.12298": "2026-03-16",
+    "https://www.watch.impress.co.jp/docs/news/2094172.html": "2026-03-17",
+    "https://www.watch.impress.co.jp/docs/news/2094175.html": "2026-03-17",
+    "https://www.watch.impress.co.jp/docs/news/2094165.html": "2026-03-17",
+    "https://www.watch.impress.co.jp/docs/news/2094144.html": "2026-03-17",
+    "https://www.watch.impress.co.jp/docs/news/2094136.html": "2026-03-17",
+    "https://www.watch.impress.co.jp/docs/news/2094096.html": "2026-03-17",
+    "https://arxiv.org/abs/2603.13236": "2026-03-17",
+    "https://arxiv.org/abs/2603.13237": "2026-03-17",
+    "https://arxiv.org/abs/2603.13239": "2026-03-17",
+    "https://arxiv.org/abs/2603.13243": "2026-03-17",
+    "https://arxiv.org/abs/2603.13245": "2026-03-17",
+    "https://arxiv.org/abs/2603.13231": "2026-03-17",
+    "https://arxiv.org/abs/2603.13234": "2026-03-17",
+    "https://arxiv.org/abs/2603.13235": "2026-03-17",
+    "https://arxiv.org/abs/2603.13254": "2026-03-17",
+    "https://arxiv.org/abs/2603.13258": "2026-03-17"
   },
   "source_penalties": {
     "OpenAI News": "2026-03-18",
@@ -108,6 +124,7 @@
     "36Kr AI": "2026-03-18",
     "Google DeepMind Blog": "2026-03-19",
     "Hugging Face Blog": "2026-03-19",
-    "Google Research Blog": "2026-03-19"
+    "Google Research Blog": "2026-03-19",
+    "KrASIA": "2026-03-20"
   }
 }
