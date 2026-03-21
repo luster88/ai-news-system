@@ -205,21 +205,28 @@
     "https://arxiv.org/abs/2603.18029": "2026-03-20",
     "https://arxiv.org/abs/2603.18031": "2026-03-20",
     "https://arxiv.org/abs/2603.18032": "2026-03-20",
-    "https://arxiv.org/abs/2603.18035": "2026-03-20"
+    "https://arxiv.org/abs/2603.18035": "2026-03-20",
+    "https://www.producthunt.com/products/murmur-7": "2026-03-21",
+    "https://www.producthunt.com/products/contral": "2026-03-21",
+    "https://www.producthunt.com/products/replit-agent-4": "2026-03-21",
+    "https://www.producthunt.com/products/everest-ai": "2026-03-21",
+    "https://www.producthunt.com/products/caplo": "2026-03-21",
+    "https://www.producthunt.com/products/vite-alpha": "2026-03-21"
   },
   "source_penalties": {
-    "OpenAI News": "2026-03-21",
-    "Anthropic News": "2026-03-21",
+    "OpenAI News": "2026-03-24",
+    "Anthropic News": "2026-03-24",
     "Product Hunt": "2026-03-18",
     "ITmedia AI+": "2026-03-23",
     "Ledge.ai": "2026-03-22",
-    "ERNIE Blog": "2026-03-21",
-    "MiniMax News": "2026-03-21",
-    "36Kr AI": "2026-03-18",
+    "ERNIE Blog": "2026-03-24",
+    "MiniMax News": "2026-03-24",
+    "36Kr AI": "2026-03-24",
     "Google DeepMind Blog": "2026-03-23",
     "Hugging Face Blog": "2026-03-22",
     "Google Research Blog": "2026-03-22",
     "KrASIA": "2026-03-23",
-    "arXiv cs.AI": "2026-03-22"
+    "arXiv cs.AI": "2026-03-22",
+    "Impress Watch": "2026-03-24"
   }
 }
