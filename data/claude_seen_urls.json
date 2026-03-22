@@ -32,7 +32,16 @@
     "https://qiita.com/taketsuyo/items/031106c3c6be0e10d2e9": "2026-03-22",
     "https://the-decoder.com/openai-plans-to-nearly-double-its-workforce-by-2026-as-it-ramps-up-enterprise-push": "2026-03-22",
     "https://techcrunch.com/2026/03/22/an-exclusive-tour-of-amazons-trainium-lab-the-chip-thats-won-over-anthropic-openai-even-apple": "2026-03-22",
-    "https://techcrunch.com/2026/03/20/new-court-filing-reveals-pentagon-told-anthropic-the-two-sides-were-nearly-aligned-a-week-after-trump-declared-the-relationship-kaput": "2026-03-22"
+    "https://techcrunch.com/2026/03/20/new-court-filing-reveals-pentagon-told-anthropic-the-two-sides-were-nearly-aligned-a-week-after-trump-declared-the-relationship-kaput": "2026-03-22",
+    "https://qiita.com/AI-SKILL-LAB/items/9970a7456fc60ba51aa4": "2026-03-22",
+    "https://qiita.com/nrEngineer/items/6457e44b4a6c153274de": "2026-03-22",
+    "https://qiita.com/shockpan-web/items/852e962e14bdd2b98e70": "2026-03-22",
+    "https://qiita.com/AI-SKILL-LAB/items/e5786061d460c2787d87": "2026-03-22"
   },
-  "source_penalties": {}
+  "source_penalties": {
+    "Anthropic News": "2026-03-25",
+    "Reddit r/ClaudeAI": "2026-03-25",
+    "Zenn claude": "2026-03-25",
+    "TechCrunch Claude": "2026-03-25"
+  }
 }
