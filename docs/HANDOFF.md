@@ -121,6 +121,9 @@ claude_feeds.yaml (official/community/tools グループ)
 | 情報ソース整理 (壊れた5ソース削除・3ソース新規追加・Verge URL修正) | `data/feeds.yaml`, `scripts/collect.py` |
 | `requirements.txt` バージョン範囲固定（直接依存9パッケージ） | `requirements.txt` |
 | Claude エコシステム情報セクション Phase 1（カテゴリ別ページ・サイト統合・ナビ・検索） | `scripts/build_site.py`, `claude/` ディレクトリ, `README.md` |
+| Claude 記事内リンク404解消（`.md` 相対リンクの HTML パス変換） | `scripts/build_site.py`（`_rewrite_claude_md_links` 追加） |
+| テーブル CSS 共通化（`.model-report` スコープ → `.article-body` 共通） | `scripts/build_site.py` |
+| 未作成カテゴリディレクトリ追加（prompts / troubleshooting / ecosystem） | `claude/` 配下に `.gitkeep` |
 
 ### 収集精度メトリクス (done)
 
@@ -439,6 +442,9 @@ python -m scripts.metrics
 | ソース別収集件数の記録 (Phase 2) | `scripts/collect.py`, `scripts/main.py`, `scripts/test_pipeline.py` |
 | メトリクス表示コマンド拡充 (Phase 3) | `scripts/metrics.py` |
 | ソース健全性の異常検知 + index.html バナー (Phase 4) | `scripts/metrics.py`, `scripts/build_site.py` |
+| Claude 記事内リンク404解消（`_rewrite_claude_md_links`） | `scripts/build_site.py` |
+| テーブル CSS 共通化（`.article-body table` に基本スタイル適用） | `scripts/build_site.py` |
+| 未作成カテゴリディレクトリ追加（prompts / troubleshooting / ecosystem） | `claude/` 配下 |
 
 ### planned
 
@@ -483,9 +489,11 @@ python -m scripts.metrics
 
 1. **ソース別の本文抽出セレクタ** — `fetch_body.py` にソース名をキーとした優先セレクタ dict を追加。Qiita (`article.it-MdContent`), Zenn (`.znc-article-body`) 等を最適化し、techblog の要約品質を向上。
 
-2. **クラスタリング判定に summary_ja を追加** — `cluster_topics.py` の `tokenize_title` の入力を拡張し、重複記事の検知精度を向上。閾値の調整が必要。
+2. **model_report 週次自動実行** — `daily-news.yml` に週1回の model_report 実行を組み込み。手動実行の手間を削減。API コスト +$0.10/週。
 
-3. **model_report 週次自動実行** — `daily-news.yml` に週1回の model_report 実行を組み込み。手動実行の手間を削減。API コスト +$0.10/週。
+3. **`claude_seen_urls.json` の有効期限管理確認** — 日報側の `URL_EXPIRY_DAYS` が Claude パイプラインでも適用されているか確認。肥大化リスク。
+
+4. **クラスタリング判定に summary_ja を追加** — `cluster_topics.py` の `tokenize_title` の入力を拡張し、重複記事の検知精度を向上。閾値の調整が必要。
 
 ---
 
