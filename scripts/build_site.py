@@ -429,7 +429,9 @@ def page_shell(title: str, body_html: str, root_rel: str = ".") -> str:
       <div class="search-box">
         <input id="header-search" type="search" placeholder="記事を検索…" autocomplete="off">
       </div>
-      <div class="sub"><a href="{root_rel}/search/index.html" style="color:var(--muted)">検索</a>
+      <div class="sub"><a href="{root_rel}/models/index.html" style="color:var(--muted)">モデル一覧</a>
+        &nbsp;|&nbsp;
+        <a href="{root_rel}/search/index.html" style="color:var(--muted)">検索</a>
         &nbsp;|&nbsp;
         <a href="{root_rel}/tags/index.html" style="color:var(--muted)">タグ一覧</a>
       </div>
@@ -776,6 +778,54 @@ def build_search_page() -> None:
 
 
 # ---------------------------------------------------------------------------
+# モデルまとめページ
+# ---------------------------------------------------------------------------
+
+MODELS_DIR = BASE_DIR / "models"
+
+
+def build_model_page() -> None:
+    """models/latest.md を読み込んで _site/models/index.html を生成する。"""
+    latest_md = MODELS_DIR / "latest.md"
+    if not latest_md.exists():
+        print("[info] models/latest.md not found, skipping model page")
+        return
+
+    raw = latest_md.read_text(encoding="utf-8")
+    meta, body = strip_front_matter(raw)
+    report_date = meta.get("date", "")
+    title = article_title_from_body(body, "最新AIモデルまとめ")
+
+    article_html = markdown.markdown(body, extensions=MD_EXTENSIONS)
+
+    out_dir = SITE_DIR / "models"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    date_note = f"（{html.escape(report_date)} 時点の情報）" if report_date else ""
+
+    body_html = f"""
+    <main class="wrap article">
+      <a class="back" href="../index.html">← index に戻る</a>
+      <article class="article-card">
+        <div class="article-header">
+          <h1 class="article-title">{html.escape(title)}</h1>
+          <div class="article-meta">
+            最終更新: {html.escape(report_date)} {date_note}
+          </div>
+        </div>
+        <div class="article-body">
+          {article_html}
+        </div>
+      </article>
+    </main>
+    """
+
+    html_text = page_shell(title, body_html, root_rel="..")
+    (out_dir / "index.html").write_text(html_text, encoding="utf-8")
+    print(f"[info] built model page: {out_dir / 'index.html'}")
+
+
+# ---------------------------------------------------------------------------
 # エントリポイント
 # ---------------------------------------------------------------------------
 
@@ -793,6 +843,7 @@ def main():
     build_tag_pages(all_files)
     build_search_index(all_files)
     build_search_page()
+    build_model_page()
 
     print(f"[info] built site: {SITE_DIR}")
     print(f"[info]   {len(files)} articles, {len(prev_files)} prev articles, {max(1, (len(files) + PAGE_SIZE - 1) // PAGE_SIZE)} index page(s)")
