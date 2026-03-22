@@ -395,62 +395,98 @@ def _request_html(url: str):
     return r.text
 
 
+def _resolve_href(href: str, base_url: str) -> str:
+    """相対URLを絶対URLに変換し、正規化する。無効なら空文字列を返す。"""
+    if not href:
+        return ""
+    if href.startswith("/"):
+        href = urljoin(base_url, href)
+    href = canonicalize_url(href)
+    if not href.startswith("http"):
+        return ""
+    return href
+
+
+def _is_same_domain(base_url: str, href: str) -> bool:
+    """href が base_url と同一ドメインかを判定する。"""
+    try:
+        src = urlparse(base_url).netloc
+        dst = urlparse(href).netloc
+        if src and dst and src not in dst:
+            return False
+    except Exception:
+        pass
+    return True
+
+
+def _extract_links(
+    a_tags,
+    base_url: str,
+    max_items: int,
+    check_domain: bool = True,
+) -> list[dict]:
+    """
+    <a> タグのイテラブルから、共通のフィルタ・重複排除・item dict 構築を行う。
+
+    各 a_tag は (title: str, href: str) を持つと仮定する前に、
+    呼び出し側で title/href を抽出して渡す。
+
+    引数:
+        a_tags: (title, href) タプルのイテラブル
+        base_url: 同一ドメインチェック用の基準URL
+        max_items: 最大取得件数
+        check_domain: True の場合、同一ドメインのリンクのみ通す
+    """
+    items = []
+    seen_links = set()
+
+    for title, href in a_tags:
+        href = _resolve_href(href, base_url)
+        if not href:
+            continue
+
+        title = clean_title(title)
+        if not title:
+            continue
+
+        if check_domain and not _is_same_domain(base_url, href):
+            continue
+
+        if not looks_like_real_article(title, href, "site"):
+            continue
+
+        if href in seen_links:
+            continue
+        seen_links.add(href)
+
+        items.append({
+            "title": title,
+            "link": href,
+            "published": "",
+            "summary": "",
+        })
+
+        if len(items) >= max_items:
+            break
+
+    return items
+
+
 def extract_links_by_selectors(
     soup: BeautifulSoup,
     base_url: str,
     selectors: list[str],
     max_items: int,
 ):
-    items = []
-    seen_links = set()
-
-    for selector in selectors:
-        for node in soup.select(selector):
-            a_tag = node if getattr(node, "name", "") == "a" else node.find("a")
-            if a_tag is None:
-                continue
-
-            raw_title = a_tag.get_text(" ", strip=True)
-            title = clean_title(raw_title)
-            href = a_tag.get("href")
-
-            if not title or not href:
-                continue
-
-            if href.startswith("/"):
-                href = urljoin(base_url, href)
-
-            href = canonicalize_url(href)
-
-            if not href.startswith("http"):
-                continue
-
-            try:
-                src_netloc = urlparse(base_url).netloc
-                dst_netloc = urlparse(href).netloc
-                if src_netloc and dst_netloc and src_netloc not in dst_netloc:
+    def _iter_a_tags():
+        for selector in selectors:
+            for node in soup.select(selector):
+                a_tag = node if getattr(node, "name", "") == "a" else node.find("a")
+                if a_tag is None:
                     continue
-            except Exception:
-                pass
+                yield a_tag.get_text(" ", strip=True), a_tag.get("href")
 
-            if not looks_like_real_article(title, href, "site"):
-                continue
-
-            if href in seen_links:
-                continue
-            seen_links.add(href)
-
-            items.append({
-                "title": title,
-                "link": href,
-                "published": "",
-                "summary": "",
-            })
-
-            if len(items) >= max_items:
-                return items
-
-    return items
+    return _extract_links(_iter_a_tags(), base_url, max_items, check_domain=True)
 
 def extract_ernie_blog_items(soup: BeautifulSoup, base_url: str, max_items: int):
     items = []
@@ -587,52 +623,11 @@ def fetch_site_simple(url: str, max_items: int = 20):
     html = _request_html(url)
     soup = BeautifulSoup(html, "lxml")
 
-    items = []
-    seen_links = set()
+    def _iter_a_tags():
+        for a in soup.select("a"):
+            yield a.get_text(" ", strip=True), a.get("href")
 
-    for a in soup.select("a"):
-        raw_title = a.get_text(" ", strip=True)
-        title = clean_title(raw_title)
-        href = a.get("href")
-
-        if not title or not href:
-            continue
-
-        if href.startswith("/"):
-            href = urljoin(url, href)
-
-        href = canonicalize_url(href)
-
-        if not href.startswith("http"):
-            continue
-
-        try:
-            src_netloc = urlparse(url).netloc
-            dst_netloc = urlparse(href).netloc
-            if src_netloc and dst_netloc and src_netloc not in dst_netloc:
-                continue
-        except Exception:
-            pass
-
-        if not looks_like_real_article(title, href, "site"):
-            continue
-
-        # URL単位で重複除去
-        if href in seen_links:
-            continue
-        seen_links.add(href)
-
-        items.append({
-            "title": title,
-            "link": href,
-            "published": "",
-            "summary": "",
-        })
-
-        if len(items) >= max_items:
-            break
-
-    return items
+    return _extract_links(_iter_a_tags(), url, max_items, check_domain=True)
 
 
 def fetch_site(source_name: str, url: str, max_items: int = 20):
