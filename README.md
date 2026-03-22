@@ -15,6 +15,7 @@
 - **日報生成** — 「今日の総括」「注目3件」「リージョン別記事」を含む Markdown 日報を自動出力
 - **静的サイト** — ダークテーマの HTML サイトを生成（ページネーション・タグ・検索・モデル一覧）
 - **モデルまとめ** — 最新 AI モデルの性能ランキング・コスト比較・カテゴリ別一覧を手動生成
+- **Claude エコシステム情報** — Claude / Claude Code / Console / 関連ツールの最新情報をカテゴリ別に整理・公開
 - **収集メトリクス** — ソース別件数・本文取得率・要約成功率を日次蓄積。異常検知 + index.html バナー表示
 
 ---
@@ -49,6 +50,13 @@ data/
 
 news/YYYY/MM/          日報Markdown
 models/                AIモデルまとめ
+claude/                Claudeエコシステム情報（カテゴリ別Markdown）
+  releases/            リリース情報
+  guides/              セットアップ・ワークフローガイド
+  tools/               ツール比較
+  prompts/             プロンプトテンプレート
+  troubleshooting/     トラブルシューティング
+  ecosystem/           エコシステム全般
 _site/                 生成された静的サイト
 
 .github/workflows/
@@ -125,6 +133,14 @@ python -m scripts.model_report
 
 AI モデルの性能ランキング・コスト比較を収集し、`models/latest.md` に出力します。
 
+### Claude エコシステム情報
+
+```bash
+python -m scripts.claude_main
+```
+
+Claude / Claude Code / Console 関連の最新情報を自動収集し、`claude/` 配下にカテゴリ別 Markdown として書き出します。GitHub Actions (`claude-info.yml`) で毎日 JST 07:00 に自動実行されます。
+
 ### テスト用パイプライン（モデル比較）
 
 ```bash
@@ -173,3 +189,5 @@ python -m scripts.test_pipeline --model claude-opus-4-6  # opus で比較
 ## 関連ドキュメント
 
 - **[docs/HANDOFF.md](docs/HANDOFF.md)** — 引き継ぎドキュメント。実装状況・データフロー・残タスク・既知の制約を詳細に記載
+- **[claude/README.md](claude/README.md)** — Claude エコシステム情報セクション。カテゴリ一覧・方針・frontmatter 仕様
+- **[docs/claude-code-kb-plan.md](docs/claude-code-kb-plan.md)** — Claude 情報サイトの設計・計画書

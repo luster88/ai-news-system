@@ -27,8 +27,22 @@ feeds.yaml (22ソース, 5リージョン)
 
 別パイプラインとして:
 - **最新AIモデルまとめ** — 手動実行でモデル情報をまとめたレポートを生成
+- **Claude エコシステム情報** — Claude/Claude Code/Console 関連の最新情報を日次自動収集・カテゴリ別整理・サイト公開
 - **テスト用パイプライン** — ペナルティなし全件収集 + モデル比較用 test- ファイル出力
 - **メトリクス閲覧** — `python -m scripts.metrics` で収集精度・健全性を確認
+
+**Claude エコシステム情報パイプライン:**
+
+```
+claude_feeds.yaml (official/community/tools グループ)
+  → collect_claude_articles()      RSS/サイトスクレイピング + キーワードフィルタ
+  → filter_seen_articles()         claude_seen_urls.json と照合
+  → apply_source_penalties()       ペナルティ中ソース除外
+  → fetch_article_bodies()         記事本文取得（既存モジュール再利用）
+  → summarize_claude_articles()    Claude API で要約 + カテゴリ自動分類 + タグ付与
+  → render_claude_articles()       claude/{category}/{slug}.md に追記 or 新規生成
+  → build_claude_pages()           _site/claude/ に HTML 生成
+```
 
 ---
 
@@ -106,6 +120,7 @@ feeds.yaml (22ソース, 5リージョン)
 | ペナルティ状況の可視化 (専用コマンド・test_collect 強化・日報セクション) | `scripts/seen_urls.py`, `scripts/test_collect.py`, `scripts/render_markdown.py`, `scripts/main.py` |
 | 情報ソース整理 (壊れた5ソース削除・3ソース新規追加・Verge URL修正) | `data/feeds.yaml`, `scripts/collect.py` |
 | `requirements.txt` バージョン範囲固定（直接依存9パッケージ） | `requirements.txt` |
+| Claude エコシステム情報セクション Phase 1（カテゴリ別ページ・サイト統合・ナビ・検索） | `scripts/build_site.py`, `claude/` ディレクトリ, `README.md` |
 
 ### 収集精度メトリクス (done)
 
@@ -157,6 +172,21 @@ feeds.yaml (22ソース, 5リージョン)
 | `scripts/render_model_report.py` | モデルまとめ Markdown 生成 |
 | `scripts/config.py` | 設定ファイル読み込み（デフォルトフォールバック付き） |
 | `scripts/metrics.py` | メトリクス保存・表示・健全性チェック |
+
+### Claude エコシステム情報
+
+| ファイル | 内容 |
+|---|---|
+| `scripts/claude_main.py` | Claude 情報パイプライン統括（`python -m scripts.claude_main`） |
+| `scripts/claude_collect.py` | Claude 関連ソースからの記事収集（RSS/サイトスクレイピング + キーワードフィルタ） |
+| `scripts/claude_summarize.py` | Claude API で要約 + カテゴリ自動分類 + タグ付与 |
+| `scripts/claude_render.py` | カテゴリ別 Markdown への追記 / 新規生成 |
+| `data/claude_feeds.yaml` | Claude 関連の情報ソース定義（official / community / tools グループ） |
+| `data/claude_seen_urls.json` | Claude パイプライン専用の既出URL履歴（日報とは分離） |
+| `claude/README.md` | セクション全体の目次・方針・frontmatter 仕様 |
+| `claude/{category}/*.md` | カテゴリ別の Markdown 記事（releases / guides / tools / prompts / troubleshooting / ecosystem） |
+| `claude/_template.md` | 新規記事作成テンプレート |
+| `.github/workflows/claude-info.yml` | 毎日 JST 07:00 自動実行 + 手動実行 |
 
 ### 設定・データ
 
@@ -306,6 +336,13 @@ python -m scripts.metrics --latest     # 最新回の詳細のみ
 python -m scripts.metrics --days 7     # 直近7件のサマリ
 ```
 
+### Claude エコシステム情報パイプライン
+
+```bash
+# Claude 情報の収集・要約・Markdown 書き出し (API キー必要)
+python -m scripts.claude_main
+```
+
 ### 回帰確認の最低限コマンド
 
 ```bash
@@ -329,6 +366,16 @@ python -m scripts.metrics
 ---
 
 ## 7. Known Caveats / Risks
+
+### Claude パイプライン固有のリスク
+
+| 箇所 | リスク | 対処 |
+|---|---|---|
+| `claude_collect.py` の `CLAUDE_SOURCE_SELECTORS` | Anthropic サイトの HTML 構造変更で収集 0件 | `filter_keywords` で RSS ソースを優先 |
+| `claude_summarize.py` のカテゴリ分類 | 不適切なカテゴリに分類される可能性 | 手動で Markdown ファイルを移動・修正 |
+| `claude_render.py` の追記ロジック | frontmatter パースの崩れ | `_parse_frontmatter()` で YAML safe_load を使用 |
+| `claude_seen_urls.json` の分離 | 日報と Claude で同じ記事が重複する可能性 | 設計上許容（異なるパイプラインの独立性を優先） |
+| Reddit RSS の品質 | スパムや無関係記事が混入 | `filter_keywords` + `importance_score` フィルタで対処 |
 
 ### 壊れやすい箇所
 
@@ -403,6 +450,21 @@ python -m scripts.metrics
 | config.yaml Phase B (Tier 2/3 定数移行) | **低** | Phase A で基盤完成。キーワードリスト等は変更頻度低い |
 | `collect.py` の LSP 型エラー修正 | **低** | ランタイムでは問題なし |
 
+### planned (Claude エコシステム情報)
+
+| タスク | 優先度 | 理由 |
+|---|---|---|
+| MkDocs 移行（検索・リンク強化） | **低** | Phase 3: 全文検索・カテゴリナビ・相互リンク。記事数が増えてから検討 |
+
+### done (Claude エコシステム情報 Phase 2)
+
+| タスク | 対象ファイル |
+|---|---|
+| Claude 情報の自動収集パイプライン | `scripts/claude_main.py`, `scripts/claude_collect.py`, `scripts/claude_summarize.py`, `scripts/claude_render.py` |
+| `data/claude_feeds.yaml` ソース定義 | `data/claude_feeds.yaml` |
+| `data/claude_seen_urls.json` 重複排除 | `data/claude_seen_urls.json`, `scripts/seen_urls.py`（file_path 引数追加） |
+| `.github/workflows/claude-info.yml` 自動実行 | `.github/workflows/claude-info.yml` |
+
 ### deferred
 
 | タスク | 理由 |
@@ -439,3 +501,5 @@ python -m scripts.metrics
 - planned / deferred タスクの状態が変わったとき
 - 既知の制約や壊れやすい箇所が変わったとき
 - 要約品質に影響する変更（プロンプト、max_tokens、モデル等）を行ったとき
+- `claude/` のカテゴリ構造やビルド方式を変更したとき
+- Claude 情報の自動収集パイプラインを追加・変更したとき

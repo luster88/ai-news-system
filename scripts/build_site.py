@@ -19,6 +19,7 @@ from scripts.config import get as cfg
 BASE_DIR = Path(__file__).resolve().parent.parent
 NEWS_DIR = BASE_DIR / "news"
 SITE_DIR = BASE_DIR / "_site"
+CLAUDE_DIR = BASE_DIR / "claude"
 
 SITE_TITLE = cfg("site_title", "AI News Daily")
 PAGE_SIZE = cfg("page_size", 30)  # インデックス1ページあたりの件数
@@ -499,6 +500,8 @@ def page_shell(title: str, body_html: str, root_rel: str = ".") -> str:
       </div>
       <div class="sub"><a href="{root_rel}/models/index.html" style="color:var(--muted)">モデル一覧</a>
         &nbsp;|&nbsp;
+        <a href="{root_rel}/claude/index.html" style="color:var(--muted)">Claude Info</a>
+        &nbsp;|&nbsp;
         <a href="{root_rel}/search/index.html" style="color:var(--muted)">検索</a>
         &nbsp;|&nbsp;
         <a href="{root_rel}/tags/index.html" style="color:var(--muted)">タグ一覧</a>
@@ -861,6 +864,9 @@ def build_search_index(files: list[Path]) -> None:
             "tags": _parse_tags_from_meta(meta),
         })
 
+    # Claude 記事も検索インデックスに含める
+    entries.extend(_collect_claude_search_entries())
+
     (SITE_DIR / "search-index.json").write_text(
         json.dumps(entries, ensure_ascii=False, indent=None),
         encoding="utf-8",
@@ -1033,6 +1039,237 @@ def build_model_page() -> None:
 
 
 # ---------------------------------------------------------------------------
+# Claude エコシステム情報ページ
+# ---------------------------------------------------------------------------
+
+# カテゴリ定義 (ディレクトリ名 → 表示名)
+_CLAUDE_CATEGORIES = [
+    ("releases",        "リリース情報"),
+    ("guides",          "ガイド"),
+    ("tools",           "ツール比較"),
+    ("prompts",         "プロンプト"),
+    ("troubleshooting", "トラブルシューティング"),
+    ("ecosystem",       "エコシステム"),
+]
+
+
+def _read_claude_articles() -> list[tuple[str, str, Path]]:
+    """claude/ 配下の Markdown ファイルを (category, slug, path) のリストで返す。
+    _template.md と README.md は除外する。"""
+    if not CLAUDE_DIR.exists():
+        return []
+
+    articles = []
+    for cat_dir, _ in _CLAUDE_CATEGORIES:
+        cat_path = CLAUDE_DIR / cat_dir
+        if not cat_path.is_dir():
+            continue
+        for md_file in sorted(cat_path.glob("*.md"), reverse=True):
+            if md_file.name.startswith("_"):
+                continue
+            slug = md_file.stem
+            articles.append((cat_dir, slug, md_file))
+
+    return articles
+
+
+def _claude_article_item(category: str, slug: str, meta: dict, title: str, root_rel: str) -> str:
+    """Claude 記事の一覧アイテム HTML を返す。"""
+    target = f"{root_rel}/claude/{category}/{slug}/index.html"
+    date_str = meta.get("date", "")
+    tags = _parse_tags_from_meta(meta)
+    tags_html = "".join(
+        f'<span class="chip-tag">{html.escape(t)}</span>'
+        for t in tags[:5]
+    )
+
+    return f"""
+    <article class="item">
+      <h3><a href="{target}">{html.escape(title)}</a></h3>
+      <div class="meta">
+        <span class="chip">{html.escape(date_str)}</span>
+        <span class="chip">{html.escape(category)}</span>
+      </div>
+      {f'<div class="meta">{tags_html}</div>' if tags_html else ''}
+    </article>
+    """
+
+
+def build_claude_pages() -> None:
+    """claude/ 配下の Markdown を _site/claude/ に HTML 化する。"""
+    articles = _read_claude_articles()
+    if not articles:
+        print("[info] no claude articles found, skipping claude pages")
+        return
+
+    out_base = SITE_DIR / "claude"
+    out_base.mkdir(parents=True, exist_ok=True)
+
+    # --- カテゴリ別サイドナビ HTML ---
+    cat_counts: dict[str, int] = {}
+    for cat, _, _ in articles:
+        cat_counts[cat] = cat_counts.get(cat, 0) + 1
+
+    side_links = []
+    for cat_dir, cat_label in _CLAUDE_CATEGORIES:
+        cnt = cat_counts.get(cat_dir, 0)
+        if cnt > 0:
+            side_links.append(
+                f'<a href="category/{cat_dir}/index.html">{html.escape(cat_label)} ({cnt})</a>'
+            )
+    side_nav_html = "".join(side_links) if side_links else '<div class="preview">カテゴリなし</div>'
+
+    # --- インデックスページ (_site/claude/index.html) ---
+    all_items_html = []
+    for cat, slug, md_file in articles:
+        raw = md_file.read_text(encoding="utf-8")
+        meta, body = strip_front_matter(raw)
+        title = article_title_from_body(body, slug)
+        all_items_html.append(_claude_article_item(cat, slug, meta, title, ".."))
+
+    body_html = f"""
+    <main class="wrap">
+      <section class="hero">
+        <div class="hero-card">
+          <h1>Claude エコシステム情報</h1>
+          <p>Claude / Claude Code / Claude Console および関連ツールの最新情報をカテゴリ別に整理しています。</p>
+        </div>
+      </section>
+      <section class="grid">
+        <div class="card">
+          <h2>すべての記事</h2>
+          <div class="list">
+            {''.join(all_items_html) if all_items_html else '<p class="preview">記事がありません。</p>'}
+          </div>
+        </div>
+        <aside class="card">
+          <h2>カテゴリ</h2>
+          <div class="side-list">
+            {side_nav_html}
+          </div>
+        </aside>
+      </section>
+    </main>
+    """
+    (out_base / "index.html").write_text(
+        page_shell("Claude エコシステム情報 - " + SITE_TITLE, body_html, root_rel=".."),
+        encoding="utf-8",
+    )
+
+    # --- カテゴリ別一覧ページ (_site/claude/category/{cat}/index.html) ---
+    for cat_dir, cat_label in _CLAUDE_CATEGORIES:
+        cat_articles = [(c, s, p) for c, s, p in articles if c == cat_dir]
+        if not cat_articles:
+            continue
+
+        items_html = []
+        for cat, slug, md_file in cat_articles:
+            raw = md_file.read_text(encoding="utf-8")
+            meta, body = strip_front_matter(raw)
+            title = article_title_from_body(body, slug)
+            items_html.append(_claude_article_item(cat, slug, meta, title, "../../.."))
+
+        cat_body = f"""
+        <main class="wrap">
+          <section class="hero">
+            <div class="hero-card">
+              <h1>{html.escape(cat_label)}</h1>
+              <p>{len(cat_articles)} 件の記事があります。</p>
+            </div>
+          </section>
+          <section style="padding:24px 0 40px">
+            <div class="card">
+              <a class="back" href="../../index.html" style="display:inline-block;margin-bottom:16px">← Claude Info に戻る</a>
+              <h2>{html.escape(cat_label)}</h2>
+              <div class="list">
+                {''.join(items_html)}
+              </div>
+            </div>
+          </section>
+        </main>
+        """
+
+        cat_out = out_base / "category" / cat_dir
+        cat_out.mkdir(parents=True, exist_ok=True)
+        (cat_out / "index.html").write_text(
+            page_shell(f"{cat_label} - Claude Info - {SITE_TITLE}", cat_body, root_rel="../../.."),
+            encoding="utf-8",
+        )
+
+    # --- 個別記事ページ (_site/claude/{category}/{slug}/index.html) ---
+    article_count = 0
+    for cat, slug, md_file in articles:
+        raw = md_file.read_text(encoding="utf-8")
+        meta, body = strip_front_matter(raw)
+        title = article_title_from_body(body, slug)
+
+        article_html = markdown.markdown(body, extensions=MD_EXTENSIONS)
+        updated = meta.get("updated", meta.get("date", ""))
+        cat_label = dict(_CLAUDE_CATEGORIES).get(cat, cat)
+
+        tags = _parse_tags_from_meta(meta)
+        tags_html = "".join(
+            f'<span class="chip-tag">{html.escape(t)}</span>'
+            for t in tags
+        )
+        tags_row = f'<div class="meta" style="margin-top:10px">{tags_html}</div>' if tags_html else ""
+
+        detail_body = f"""
+        <main class="wrap article">
+          <a class="back" href="../../index.html">← Claude Info に戻る</a>
+          <article class="article-card">
+            <div class="article-header">
+              <h1 class="article-title">{html.escape(title)}</h1>
+              <div class="article-meta">
+                カテゴリ: {html.escape(cat_label)} / 最終更新: {html.escape(updated)}
+              </div>
+              {tags_row}
+            </div>
+            <div class="article-body">
+              {article_html}
+            </div>
+          </article>
+        </main>
+        """
+
+        art_out = out_base / cat / slug
+        art_out.mkdir(parents=True, exist_ok=True)
+        (art_out / "index.html").write_text(
+            page_shell(f"{title} - Claude Info - {SITE_TITLE}", detail_body, root_rel="../../.."),
+            encoding="utf-8",
+        )
+        article_count += 1
+
+    print(f"[info] built claude pages: {article_count} article(s), {len([c for c in cat_counts if cat_counts[c] > 0])} category page(s)")
+
+
+def _collect_claude_search_entries() -> list[dict]:
+    """Claude 記事の検索インデックスエントリを返す。"""
+    articles = _read_claude_articles()
+    entries = []
+
+    for cat, slug, md_file in articles:
+        raw = md_file.read_text(encoding="utf-8")
+        meta, body = strip_front_matter(raw)
+        title = article_title_from_body(body, slug)
+
+        # 本文から最初の数行を summary として抽出
+        lines = [l.strip() for l in body.splitlines()
+                 if l.strip() and not l.strip().startswith("#") and not l.strip().startswith("---")]
+        summary = " ".join(lines[:3])[:200]
+
+        entries.append({
+            "date": meta.get("date", ""),
+            "title": title,
+            "summary": summary,
+            "url": f"claude/{cat}/{slug}/index.html",
+            "tags": _parse_tags_from_meta(meta),
+        })
+
+    return entries
+
+
+# ---------------------------------------------------------------------------
 # エントリポイント
 # ---------------------------------------------------------------------------
 
@@ -1052,6 +1289,7 @@ def main():
     build_search_index(all_files)
     build_search_page()
     build_model_page()
+    build_claude_pages()
 
     print(f"[info] built site: {SITE_DIR}")
     print(f"[info]   {len(files)} articles, {len(prev_files)} prev articles, {max(1, (len(files) + PAGE_SIZE - 1) // PAGE_SIZE)} index page(s)")

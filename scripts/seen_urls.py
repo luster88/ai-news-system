@@ -35,13 +35,15 @@ def _expiry_cutoff() -> str:
     return cutoff.strftime("%Y-%m-%d")
 
 
-def load_seen_data() -> dict:
-    """seen_urls.json を読み込む。ファイルが存在しない場合は空の構造を返す。"""
-    if not SEEN_URLS_FILE.exists():
+def load_seen_data(file_path: Path | None = None) -> dict:
+    """seen_urls.json を読み込む。ファイルが存在しない場合は空の構造を返す。
+    file_path を指定すると、デフォルトの SEEN_URLS_FILE の代わりにそのパスを使う。"""
+    path = file_path or SEEN_URLS_FILE
+    if not path.exists():
         return {"urls": {}, "source_penalties": {}}
 
     try:
-        with open(SEEN_URLS_FILE, "r", encoding="utf-8") as f:
+        with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)
         # 必須キーが欠けている場合は補完
         data.setdefault("urls", {})
@@ -161,11 +163,14 @@ def compute_source_penalties(
 def update_seen_urls(
     new_articles: list[dict],
     seen_data: dict,
+    file_path: Path | None = None,
 ) -> None:
     """
     今日収集した新規記事のURLを seen_urls.json に記録して保存する。
     URL_EXPIRY_DAYS を超えた古いエントリはこのタイミングで削除する。
+    file_path を指定すると、デフォルトの SEEN_URLS_FILE の代わりにそのパスを使う。
     """
+    path = file_path or SEEN_URLS_FILE
     today = _today()
     cutoff = _expiry_cutoff()
 
@@ -190,18 +195,18 @@ def update_seen_urls(
 
     try:
         tmp_fd, tmp_path = tempfile.mkstemp(
-            dir=SEEN_URLS_FILE.parent, suffix=".tmp"
+            dir=path.parent, suffix=".tmp"
         )
         try:
             with os.fdopen(tmp_fd, "w", encoding="utf-8") as f:
                 json.dump(seen_data, f, ensure_ascii=False, indent=2)
-            os.replace(tmp_path, SEEN_URLS_FILE)
+            os.replace(tmp_path, path)
         except Exception:
             os.unlink(tmp_path)
             raise
-        print(f"[info] seen_urls.json を更新しました（新規URL +{added}件、合計 {len(urls)}件）")
+        print(f"[info] {path.name} を更新しました（新規URL +{added}件、合計 {len(urls)}件）")
     except Exception as e:
-        print(f"[warn] seen_urls.json の書き込みに失敗しました: {e}")
+        print(f"[warn] {path.name} の書き込みに失敗しました: {e}")
 
 
 def show_status() -> None:

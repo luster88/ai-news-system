@@ -1,0 +1,54 @@
+# Claude エコシステム情報の収集ソース
+# グループ: official / community / tools
+
+official:
+  - name: Anthropic News
+    type: site
+    url: "https://www.anthropic.com/news"
+    max_items: 8
+    filter_keywords: [claude, anthropic, model, api, safety, sonnet, opus, haiku]
+
+  - name: Anthropic Engineering
+    type: rss
+    url: "https://www.anthropic.com/engineering/rss.xml"
+    max_items: 6
+
+  - name: Anthropic Research
+    type: rss
+    url: "https://www.anthropic.com/research/rss.xml"
+    max_items: 6
+
+community:
+  - name: Reddit r/ClaudeAI
+    type: rss
+    url: "https://www.reddit.com/r/ClaudeAI/.rss"
+    max_items: 10
+    filter_keywords: [claude, code, api, update, release, tip, trick, bug, mcp, cursor, prompt]
+
+  - name: Qiita claude
+    type: rss
+    url: "https://qiita.com/tags/claude/feed"
+    max_items: 6
+
+  - name: Zenn claude
+    type: rss
+    url: "https://zenn.dev/topics/claude/feed"
+    max_items: 6
+
+  - name: Qiita claudecode
+    type: rss
+    url: "https://qiita.com/tags/claudecode/feed"
+    max_items: 6
+
+tools:
+  - name: The Decoder Claude
+    type: rss
+    url: "https://the-decoder.com/feed/"
+    max_items: 6
+    filter_keywords: [claude, anthropic]
+
+  - name: TechCrunch Claude
+    type: rss
+    url: "https://techcrunch.com/category/artificial-intelligence/feed/"
+    max_items: 6
+    filter_keywords: [claude, anthropic]
