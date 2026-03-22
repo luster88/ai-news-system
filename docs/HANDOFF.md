@@ -129,6 +129,8 @@ claude_feeds.yaml (official/community/tools グループ)
 | 未作成カテゴリディレクトリ追加（prompts / troubleshooting / ecosystem） | `claude/` 配下に `.gitkeep` |
 | Claude インデックスにカテゴリ概要セクション追加（6カテゴリの説明・件数表示） | `scripts/build_site.py`（`_CLAUDE_CATEGORIES` 3要素化） |
 | Claude 記事一覧に概要テキスト表示（`_claude_summary_from_body` 追加） | `scripts/build_site.py` |
+| Claude カテゴリ概要を折りたたみ式に変更（`<details>/<summary>`、デフォルト閉じ） | `scripts/build_site.py` |
+| Claude 記事一覧を日付ごとにグループ化表示（日付見出し + 件数、降順ソート） | `scripts/build_site.py` |
 
 ### 収集精度メトリクス (done)
 
@@ -455,6 +457,8 @@ python -m scripts.metrics
 | `claude_seen_urls.json` 有効期限管理の確認 | 確認のみ: `update_seen_urls()` の `URL_EXPIRY_DAYS` が正しく適用されている |
 | Claude インデックスにカテゴリ概要セクション追加 | `scripts/build_site.py` |
 | Claude 記事一覧に概要テキスト表示 | `scripts/build_site.py` |
+| Claude カテゴリ概要を折りたたみ式に変更 | `scripts/build_site.py` |
+| Claude 記事一覧を日付グループ化表示 | `scripts/build_site.py` |
 
 ### planned
 
