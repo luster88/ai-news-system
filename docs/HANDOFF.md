@@ -51,12 +51,15 @@ claude_feeds.yaml (official/community/tools グループ)
 **フェーズ: 安定運用（拡張可能段階）**
 
 - **日報パイプライン**: 運用中。GitHub Actions で毎日 JST 01:05 に自動実行。
-- **モデルまとめ**: 運用可能。GitHub Actions から手動実行（`workflow_dispatch`）。
+- **モデルまとめ**: 週次自動実行（毎週月曜、`daily-news.yml` に組み込み）+ 手動実行（`model-report.yml`）。
+- **Claude エコシステム情報**: 運用中。GitHub Actions で毎日 JST 07:00 に自動実行（`claude-info.yml`）。
 - **静的サイト**: 運用中。GitHub Pages にデプロイ済み。
 - **ソース**: 22ソース / 5リージョン。実効稼働率 91%（arXiv 2本は週末 0件）。
 - **安全性修正**: HIGH 5件 + MEDIUM 5件 完了。
 - **中期タスク**: 5件すべて完了。
 - **要約品質改善**: 4件（RSS フォールバック、スコア基準、system prompt、キーワード拡充）完了。
+- **Claude エコシステム改善**: 404リンク解消・テーブルCSS共通化・カテゴリ概要表示・記事概要表示 完了。
+- **本文抽出改善**: ソース別セレクタ（Qiita/Zenn/TechCrunch）追加 完了。
 
 既知の制約:
 - JS レンダリングが必要なサイト（一部 CN ソース）では本文取得に失敗する（`body=""` でフォールバック）
@@ -124,6 +127,8 @@ claude_feeds.yaml (official/community/tools グループ)
 | Claude 記事内リンク404解消（`.md` 相対リンクの HTML パス変換） | `scripts/build_site.py`（`_rewrite_claude_md_links` 追加） |
 | テーブル CSS 共通化（`.model-report` スコープ → `.article-body` 共通） | `scripts/build_site.py` |
 | 未作成カテゴリディレクトリ追加（prompts / troubleshooting / ecosystem） | `claude/` 配下に `.gitkeep` |
+| Claude インデックスにカテゴリ概要セクション追加（6カテゴリの説明・件数表示） | `scripts/build_site.py`（`_CLAUDE_CATEGORIES` 3要素化） |
+| Claude 記事一覧に概要テキスト表示（`_claude_summary_from_body` 追加） | `scripts/build_site.py` |
 
 ### 収集精度メトリクス (done)
 
@@ -448,6 +453,8 @@ python -m scripts.metrics
 | ソース別の本文抽出セレクタ（Qiita/Zenn/TechCrunch） | `scripts/fetch_body.py`（`SOURCE_SELECTORS` 追加） |
 | model_report 週次自動実行（毎週月曜、JST曜日判定） | `.github/workflows/daily-news.yml` |
 | `claude_seen_urls.json` 有効期限管理の確認 | 確認のみ: `update_seen_urls()` の `URL_EXPIRY_DAYS` が正しく適用されている |
+| Claude インデックスにカテゴリ概要セクション追加 | `scripts/build_site.py` |
+| Claude 記事一覧に概要テキスト表示 | `scripts/build_site.py` |
 
 ### planned
 
