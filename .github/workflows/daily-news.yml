@@ -55,12 +55,34 @@ jobs:
         run: |
           python -m scripts.main
 
+      - name: Check day of week (JST)
+        id: check-day
+        run: |
+          DOW=$(TZ=Asia/Tokyo date +%u)
+          echo "day_of_week=$DOW" >> "$GITHUB_OUTPUT"
+          if [ "$DOW" = "1" ]; then
+            echo "is_monday=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "is_monday=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Generate model report (weekly, Monday only)
+        if: steps.check-day.outputs.is_monday == 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python -m scripts.model_report
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add news/ index.md data/seen_urls.json data/metrics.json
+          # model_report が実行された場合は models/ も含める
+          if [ "${{ steps.check-day.outputs.is_monday }}" = "true" ]; then
+            git add models/
+          fi
 
           if git diff --cached --quiet; then
             echo "No changes to commit"
