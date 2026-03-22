@@ -202,3 +202,38 @@ def update_seen_urls(
         print(f"[info] seen_urls.json を更新しました（新規URL +{added}件、合計 {len(urls)}件）")
     except Exception as e:
         print(f"[warn] seen_urls.json の書き込みに失敗しました: {e}")
+
+
+def show_status() -> None:
+    """ペナルティ状況と seen_urls の統計を表示する。"""
+    data = load_seen_data()
+    today = _today()
+    urls = data.get("urls", {})
+    penalties = data.get("source_penalties", {})
+
+    active = {s: d for s, d in penalties.items() if d > today}
+    expired = {s: d for s, d in penalties.items() if d <= today}
+
+    print(f"=== seen_urls.json ステータス (today={today}) ===")
+    print(f"URL件数: {len(urls)}")
+    print(f"設定: PENALTY_THRESHOLD={PENALTY_THRESHOLD}, PENALTY_DAYS={PENALTY_DAYS}, URL_EXPIRY_DAYS={URL_EXPIRY_DAYS}")
+    print()
+
+    print(f"=== アクティブペナルティ ({len(active)}件) ===")
+    if active:
+        for source, release in sorted(active.items()):
+            print(f"  {source}: {release} まで")
+    else:
+        print("  なし")
+    print()
+
+    print(f"=== 期限切れペナルティ ({len(expired)}件) ===")
+    if expired:
+        for source, release in sorted(expired.items()):
+            print(f"  {source}: {release} で解除済み")
+    else:
+        print("  なし")
+
+
+if __name__ == "__main__":
+    show_status()

@@ -7,6 +7,7 @@ from scripts.seen_urls import (
     load_seen_data,
     filter_seen_articles,
     apply_source_penalties,
+    show_status,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -105,9 +106,8 @@ def main():
     seen_data = None
     if use_penalties:
         seen_data = load_seen_data()
-        seen_urls = seen_data.get("urls", {})
-        penalties = seen_data.get("source_penalties", {})
-        print(f"[penalties] loaded seen_urls.json: {len(seen_urls)} URLs, {len(penalties)} source penalties")
+        show_status()
+        print()
 
     # 引数なし: 全region
     if not args:

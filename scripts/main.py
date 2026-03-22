@@ -51,7 +51,7 @@ def main():
     clustered_articles = cluster_articles(result["articles"])
     result["articles"] = clustered_articles
 
-    output_path = render_daily_markdown(result)
+    output_path = render_daily_markdown(result, seen_data=updated_seen_data)
     index_path = build_index()
 
     # 7. 今日の新規URLを seen_urls.json に記録

@@ -71,7 +71,7 @@ def _render_article_lines(a: dict, show_region: bool = False) -> list[str]:
     return lines
 
 
-def render_daily_markdown(result: dict, filename_override: str | None = None):
+def render_daily_markdown(result: dict, filename_override: str | None = None, seen_data: dict | None = None):
     articles = result.get("articles", [])
     overall_summary = result.get("overall_summary", [])
 
@@ -132,6 +132,19 @@ def render_daily_markdown(result: dict, filename_override: str | None = None):
         for i, a in enumerate(region_items, start=1):
             lines.append(f"### {i}. {a['title']}")
             lines.extend(_render_article_lines(a))
+            lines.append("")
+
+    # ペナルティ状況
+    if seen_data:
+        penalties = seen_data.get("source_penalties", {})
+        active = {s: d for s, d in penalties.items() if d > today}
+        if active:
+            lines.append("## ペナルティ状況")
+            lines.append("")
+            lines.append("| ソース | 解除日 |")
+            lines.append("|---|---|")
+            for source, release in sorted(active.items()):
+                lines.append(f"| {source} | {release} |")
             lines.append("")
 
     out_file.write_text("\n".join(lines), encoding="utf-8")
