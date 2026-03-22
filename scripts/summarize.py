@@ -58,7 +58,7 @@ def _safe_parse_summary_json(text: str) -> dict:
         }
     except Exception:
         return {
-            "summary": cleaned,
+            "summary": f"[解析失敗] {cleaned[:200]}",
             "why_it_matters": "",
             "importance_score": 1,
             "tags": [],

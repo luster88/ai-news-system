@@ -104,7 +104,6 @@ def apply_source_penalties(
 
 def compute_source_penalties(
     seen_articles: list[dict],
-    raw_articles: list[dict],
     seen_data: dict,
 ) -> dict:
     """
@@ -117,7 +116,6 @@ def compute_source_penalties(
 
     引数:
         seen_articles: 今日の収集で「既出」と判定された記事リスト
-        raw_articles:  今日の全収集記事（フィルタ前）
         seen_data:     現在の seen_urls データ（変更して返す）
 
     戻り値:

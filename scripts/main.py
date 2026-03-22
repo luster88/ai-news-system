@@ -30,7 +30,7 @@ def main():
     print(f"[info] {len(seen_articles)} articles skipped (seen), {len(new_articles)} new")
 
     # 3. ペナルティ計算（今日の既出状況から次回以降のペナルティを更新）
-    updated_seen_data = compute_source_penalties(seen_articles, raw_articles, seen_data)
+    updated_seen_data = compute_source_penalties(seen_articles, seen_data)
 
     # 4. ペナルティ中ソースを除外
     filtered_articles = apply_source_penalties(new_articles, updated_seen_data)

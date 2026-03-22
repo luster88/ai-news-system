@@ -330,6 +330,8 @@ def looks_like_real_article(
 
 def fetch_rss(url: str, max_items: int = 20):
     parsed = feedparser.parse(url)
+    if parsed.bozo:
+        print(f"[warn] RSS parse issue ({url}): {parsed.bozo_exception}")
     items = []
 
     for entry in parsed.entries[: max_items * 5]:

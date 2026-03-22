@@ -12,6 +12,7 @@ fetch_body.py — 記事本文の取得とキャッシュ
 
 import hashlib
 import re
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -119,18 +120,29 @@ def fetch_article_body(url: str) -> str:
     if cached is not None:
         return cached
 
+    _RETRY_STATUS = (429, 503)
+    _MAX_RETRIES = 2
+
     try:
-        resp = requests.get(
-            url,
-            timeout=FETCH_TIMEOUT,
-            headers={
-                "User-Agent": (
-                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                    "AppleWebKit/537.36 (KHTML, like Gecko) "
-                    "Chrome/122.0.0.0 Safari/537.36"
-                )
-            },
-        )
+        resp = None
+        for attempt in range(_MAX_RETRIES + 1):
+            resp = requests.get(
+                url,
+                timeout=FETCH_TIMEOUT,
+                headers={
+                    "User-Agent": (
+                        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                        "AppleWebKit/537.36 (KHTML, like Gecko) "
+                        "Chrome/122.0.0.0 Safari/537.36"
+                    )
+                },
+            )
+            if resp.status_code in _RETRY_STATUS and attempt < _MAX_RETRIES:
+                print(f"[warn] fetch_body {resp.status_code} for {url}, retrying ({attempt + 1}/{_MAX_RETRIES})")
+                time.sleep(1)
+                continue
+            break
+
         resp.raise_for_status()
         body = _extract_body_text(resp.text)
         _save_cache(url, body)
