@@ -6,10 +6,9 @@ INDEX_FILE = BASE_DIR / "index.md"
 
 
 def build_index():
-    files = sorted(
-        NEWS_DIR.glob("*/*/*.md"),
-        reverse=True,
-    )
+    all_files = sorted(NEWS_DIR.glob("*/*/*.md"), reverse=True)
+    files = [f for f in all_files if not f.name.startswith("prev-")]
+    prev_files = [f for f in all_files if f.name.startswith("prev-")]
 
     lines = []
     lines.append("# AI News Daily Index")
@@ -27,6 +26,16 @@ def build_index():
             rel = file.relative_to(BASE_DIR).as_posix()
             date_label = file.stem
             lines.append(f"- [{date_label}]({rel})")
+
+    if prev_files:
+        lines.append("")
+        lines.append("## 保存記事")
+        lines.append("")
+
+        for file in prev_files[:30]:
+            rel = file.relative_to(BASE_DIR).as_posix()
+            date_label = file.stem.replace("prev-", "")
+            lines.append(f"- [{date_label} (保存)]({rel})")
 
     INDEX_FILE.write_text("\n".join(lines), encoding="utf-8")
     return str(INDEX_FILE)

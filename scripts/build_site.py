@@ -401,7 +401,16 @@ def article_title_from_body(md_body: str, fallback: str) -> str:
 
 
 def read_news_files() -> list[Path]:
-    return sorted(NEWS_DIR.glob("*/*/*.md"), reverse=True)
+    """通常の日報ファイル（prev- を除く）を返す。"""
+    return sorted(
+        (f for f in NEWS_DIR.glob("*/*/*.md") if not f.name.startswith("prev-")),
+        reverse=True,
+    )
+
+
+def read_prev_files() -> list[Path]:
+    """prev- プレフィックス付きの保存用ファイルを返す。"""
+    return sorted(NEWS_DIR.glob("*/*/*prev-*.md"), reverse=True)
 
 
 def page_shell(title: str, body_html: str, root_rel: str = ".") -> str:
@@ -497,7 +506,7 @@ def _pagination_html(current_page: int, total_pages: int, root_rel: str) -> str:
     return f'<nav class="pagination">{"".join(parts)}</nav>'
 
 
-def build_index_pages(files: list[Path]) -> None:
+def build_index_pages(files: list[Path], prev_files: list[Path] | None = None) -> None:
     total_pages = max(1, (len(files) + PAGE_SIZE - 1) // PAGE_SIZE)
 
     # サイドバーリンク（常に最新14件）
@@ -509,6 +518,23 @@ def build_index_pages(files: list[Path]) -> None:
         target = f"news/{year}/{month}/{day}/index.html"
         latest_links.append(f'<a href="{target}">{html.escape(day)}</a>')
     side_html = "".join(latest_links) if latest_links else '<div class="preview">まだ日報がありません。</div>'
+
+    # 保存記事リンク
+    prev_links_html = ""
+    if prev_files:
+        prev_links = []
+        for file in prev_files[:10]:
+            rel_parts = file.relative_to(NEWS_DIR).parts
+            year, month, filename = rel_parts
+            day = filename.replace(".md", "")
+            target = f"news/{year}/{month}/{day}/index.html"
+            label = day.replace("prev-", "")
+            prev_links.append(f'<a href="{target}">{html.escape(label)} (保存)</a>')
+        prev_links_html = f"""
+              <h2 style="margin-top:20px">保存記事</h2>
+              <div class="side-list">
+                {"".join(prev_links)}
+              </div>"""
 
     for page_num in range(1, total_pages + 1):
         start = (page_num - 1) * PAGE_SIZE
@@ -541,6 +567,7 @@ def build_index_pages(files: list[Path]) -> None:
               <div class="side-list">
                 {side_html}
               </div>
+              {prev_links_html}
             </aside>
           </section>
         </main>
@@ -758,15 +785,17 @@ def main():
     (SITE_DIR / ".nojekyll").write_text("", encoding="utf-8")
 
     files = read_news_files()
+    prev_files = read_prev_files()
+    all_files = files + prev_files
 
-    build_index_pages(files)
-    build_article_pages(files)
-    build_tag_pages(files)
-    build_search_index(files)
+    build_index_pages(files, prev_files=prev_files)
+    build_article_pages(all_files)
+    build_tag_pages(all_files)
+    build_search_index(all_files)
     build_search_page()
 
     print(f"[info] built site: {SITE_DIR}")
-    print(f"[info]   {len(files)} articles, {max(1, (len(files) + PAGE_SIZE - 1) // PAGE_SIZE)} index page(s)")
+    print(f"[info]   {len(files)} articles, {len(prev_files)} prev articles, {max(1, (len(files) + PAGE_SIZE - 1) // PAGE_SIZE)} index page(s)")
 
 
 if __name__ == "__main__":

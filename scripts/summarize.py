@@ -96,7 +96,7 @@ def _select_articles_for_summary(articles: list) -> list:
     source_counts = Counter()
 
     # 地域バランスを少し取りつつ、各ソース最大件数を制限
-    region_order = ["us", "cn", "jp", "research"]
+    region_order = ["us", "cn", "jp", "techblog", "research"]
     grouped = {r: [] for r in region_order}
 
     for article in articles:

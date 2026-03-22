@@ -114,10 +114,14 @@ def render_daily_markdown(result: dict):
         lines.append("- 注目記事を生成できませんでした。")
         lines.append("")
 
-    for region in ["us", "cn", "jp", "research"]:
+    for region in ["us", "cn", "jp", "techblog", "research"]:
         region_items = grouped.get(region, [])
 
-        region_label = "RESEARCH (論文・技術ブログ)" if region == "research" else region.upper()
+        region_labels = {
+            "research": "RESEARCH（論文・技術ブログ）",
+            "techblog": "TECHBLOG（技術ブログ）",
+        }
+        region_label = region_labels.get(region, region.upper())
         lines.append(f"## {region_label}")
 
         if not region_items:

@@ -7,7 +7,7 @@ from scripts.collect import fetch_rss, fetch_site, normalize_items
 ROOT = Path(__file__).resolve().parents[1]
 FEEDS_FILE = ROOT / "data" / "feeds.yaml"
 
-VALID_REGIONS = {"us", "cn", "jp"}
+VALID_REGIONS = {"us", "cn", "jp", "techblog", "research"}
 
 
 def load_feeds():

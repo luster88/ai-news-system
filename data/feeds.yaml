@@ -81,6 +81,22 @@ cn:
     url: "https://kr-asia.com/"
     max_items: 6
 
+techblog:
+  - name: Qiita AI
+    type: rss
+    url: "https://qiita.com/tags/ai/feed"
+    max_items: 5
+
+  - name: Zenn AI
+    type: rss
+    url: "https://zenn.dev/topics/ai/feed"
+    max_items: 8
+
+  - name: nyosegawa blog
+    type: site
+    url: "https://nyosegawa.com/blog/"
+    max_items: 5
+
 research:
   - name: arXiv cs.AI
     type: rss

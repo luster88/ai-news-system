@@ -116,7 +116,18 @@ CATEGORY_PREFIXES = [
 ]
 
 # CN系を中心に、媒体ごとの取りやすいセレクタを定義
+# techblog リージョンでは RSS でも AI キーワードフィルタを適用する
+AI_FILTER_REGIONS = {"techblog"}
+
 SOURCE_SELECTORS = {
+    "nyosegawa blog": [
+        "article a",
+        "h2 a",
+        "h3 a",
+        ".entry-title a",
+        ".post-title a",
+        "main a",
+    ],
     "Qwen Research": [
         "a[href*='qwen.ai/blog?id=']",
         "a[href*='/blog?id=']",
@@ -693,6 +704,17 @@ def collect_articles():
                     )
 
                 normalized = normalize_items(region, src["name"], items)
+
+                # techblog リージョンの RSS は AI キーワードフィルタを追加適用
+                if region in AI_FILTER_REGIONS and source_type == "rss":
+                    normalized = [
+                        a for a in normalized
+                        if any(
+                            kw in f"{a.get('title', '')} {a.get('summary', '')}".lower()
+                            for kw in GOOD_AI_KEYWORDS
+                        )
+                    ]
+
                 all_items.extend(normalized)
                 print(f"[info] collected {len(normalized)} from {src['name']}")
 
