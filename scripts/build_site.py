@@ -864,31 +864,21 @@ def _classify_model_tables(html_text: str) -> str:
     return body.decode_contents() if body else str(soup)
 
 
-def build_model_page() -> None:
-    """models/latest.md を読み込んで _site/models/index.html を生成する。"""
-    latest_md = MODELS_DIR / "latest.md"
-    if not latest_md.exists():
-        print("[info] models/latest.md not found, skipping model page")
-        return
-
-    raw = latest_md.read_text(encoding="utf-8")
+def _render_model_md_to_html(md_path: Path, back_href: str, back_label: str, root_rel: str, history_links_html: str = "") -> str:
+    """モデルまとめ Markdown を HTML ページ文字列に変換する共通ヘルパー。"""
+    raw = md_path.read_text(encoding="utf-8")
     meta, body = strip_front_matter(raw)
     report_date = meta.get("date", "")
     title = article_title_from_body(body, "最新AIモデルまとめ")
 
     raw_html = markdown.markdown(body, extensions=MD_EXTENSIONS)
-
-    # テーブルにヘッダー内容に応じた CSS クラスを付与する
     article_html = _classify_model_tables(raw_html)
-
-    out_dir = SITE_DIR / "models"
-    out_dir.mkdir(parents=True, exist_ok=True)
 
     date_note = f"（{html.escape(report_date)} 時点の情報）" if report_date else ""
 
     body_html = f"""
     <main class="wrap article model-report">
-      <a class="back" href="../index.html">← index に戻る</a>
+      <a class="back" href="{back_href}">{back_label}</a>
       <article class="article-card">
         <div class="article-header">
           <h1 class="article-title">{html.escape(title)}</h1>
@@ -900,12 +890,73 @@ def build_model_page() -> None:
           {article_html}
         </div>
       </article>
+      {history_links_html}
     </main>
     """
 
-    html_text = page_shell(title, body_html, root_rel="..")
+    return page_shell(title, body_html, root_rel=root_rel)
+
+
+def build_model_page() -> None:
+    """models/latest.md と models/history/*.md を HTML 化する。"""
+    latest_md = MODELS_DIR / "latest.md"
+    if not latest_md.exists():
+        print("[info] models/latest.md not found, skipping model page")
+        return
+
+    out_dir = SITE_DIR / "models"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    # history ファイルを収集（新しい順）
+    history_dir = MODELS_DIR / "history"
+    history_files = sorted(history_dir.glob("*.md"), reverse=True) if history_dir.exists() else []
+
+    # 過去レポート一覧 HTML
+    history_links = ""
+    if history_files:
+        links = []
+        for hf in history_files:
+            date_str = hf.stem
+            links.append(
+                f'<a href="history/{html.escape(date_str)}/index.html" '
+                f'class="chip-tag">{html.escape(date_str)}</a>'
+            )
+        history_links = f"""
+      <div class="card" style="margin-top:24px">
+        <h2>過去のレポート</h2>
+        <div class="tag-cloud">
+          {"".join(links)}
+        </div>
+      </div>"""
+
+    # latest ページ生成
+    html_text = _render_model_md_to_html(
+        latest_md,
+        back_href="../index.html",
+        back_label="← index に戻る",
+        root_rel="..",
+        history_links_html=history_links,
+    )
     (out_dir / "index.html").write_text(html_text, encoding="utf-8")
     print(f"[info] built model page: {out_dir / 'index.html'}")
+
+    # history 各ページ生成
+    hist_out_dir = out_dir / "history"
+    for hf in history_files:
+        date_str = hf.stem
+        page_dir = hist_out_dir / date_str
+        page_dir.mkdir(parents=True, exist_ok=True)
+
+        html_text = _render_model_md_to_html(
+            hf,
+            back_href="../../index.html",
+            back_label="← 最新のモデルまとめに戻る",
+            root_rel="../../..",
+        )
+        (page_dir / "index.html").write_text(html_text, encoding="utf-8")
+
+    if history_files:
+        print(f"[info] built {len(history_files)} model history page(s)")
 
 
 # ---------------------------------------------------------------------------
