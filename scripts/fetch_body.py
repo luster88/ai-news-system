@@ -19,11 +19,13 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
+from scripts.config import get as cfg
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 CACHE_DIR = BASE_DIR / "data" / "cache"
 
-FETCH_TIMEOUT = 10        # HTTP タイムアウト（秒）
-MAX_BODY_CHARS = 2000     # Claude に渡す本文の最大文字数
+FETCH_TIMEOUT = cfg("fetch_timeout", 10)        # HTTP タイムアウト（秒）
+MAX_BODY_CHARS = cfg("max_body_chars", 2000)     # Claude に渡す本文の最大文字数
 
 # 本文として優先するセレクタ（順に試行）
 BODY_SELECTORS = [

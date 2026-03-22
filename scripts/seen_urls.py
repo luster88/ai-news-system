@@ -16,12 +16,14 @@ from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+from scripts.config import get as cfg
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 SEEN_URLS_FILE = BASE_DIR / "data" / "seen_urls.json"
 
-PENALTY_THRESHOLD = 2    # このURL件数以上既出 → ペナルティ発動
-PENALTY_DAYS = 3         # ペナルティ継続日数
-URL_EXPIRY_DAYS = 90     # seen_urls の保持期間（古いエントリを自動削除）
+PENALTY_THRESHOLD = cfg("penalty_threshold", 2)    # このURL件数以上既出 → ペナルティ発動
+PENALTY_DAYS = cfg("penalty_days", 3)               # ペナルティ継続日数
+URL_EXPIRY_DAYS = cfg("url_expiry_days", 90)         # seen_urls の保持期間（古いエントリを自動削除）
 
 
 def _today() -> str:

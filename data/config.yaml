@@ -1,0 +1,14 @@
+# AI News System 設定ファイル
+# このファイルがなくても各モジュールのデフォルト値で動作します
+
+model: "claude-sonnet-4-5"
+max_articles_to_summarize: 25
+max_per_source: 3
+max_age_days: 14
+penalty_threshold: 2
+penalty_days: 3
+url_expiry_days: 90
+page_size: 30
+fetch_timeout: 10
+max_body_chars: 2000
+site_title: "AI News Daily"

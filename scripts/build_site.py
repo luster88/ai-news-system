@@ -12,12 +12,14 @@ def _sanitize_dirname(name: str) -> str:
     return re.sub(r'[/\\\.\x00]', '_', name).strip('_') or 'unknown'
 
 
+from scripts.config import get as cfg
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 NEWS_DIR = BASE_DIR / "news"
 SITE_DIR = BASE_DIR / "_site"
 
-SITE_TITLE = "AI News Daily"
-PAGE_SIZE = 30  # インデックス1ページあたりの件数
+SITE_TITLE = cfg("site_title", "AI News Daily")
+PAGE_SIZE = cfg("page_size", 30)  # インデックス1ページあたりの件数
 
 
 CSS = """

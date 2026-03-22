@@ -10,10 +10,12 @@ import yaml
 from bs4 import BeautifulSoup
 from dateutil import parser as dateparser
 
+from scripts.config import get as cfg
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 FEEDS_FILE = BASE_DIR / "data" / "feeds.yaml"
 
-MAX_AGE_DAYS = 14
+MAX_AGE_DAYS = cfg("max_age_days", 14)
 
 BAD_TITLE_EXACT = {
     "sign in to an existing account",

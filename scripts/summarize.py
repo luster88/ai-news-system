@@ -5,11 +5,13 @@ from collections import Counter
 from anthropic import Anthropic
 from dotenv import load_dotenv
 
+from scripts.config import get as cfg
+
 load_dotenv()
 
-MODEL = "claude-sonnet-4-5"
-MAX_ARTICLES_TO_SUMMARIZE = 25
-MAX_PER_SOURCE = 3
+MODEL = cfg("model", "claude-sonnet-4-5")
+MAX_ARTICLES_TO_SUMMARIZE = cfg("max_articles_to_summarize", 25)
+MAX_PER_SOURCE = cfg("max_per_source", 3)
 
 # タグ候補（プロンプトで提示して選択を安定させる）
 TAG_CANDIDATES = [

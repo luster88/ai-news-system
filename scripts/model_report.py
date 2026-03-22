@@ -21,10 +21,11 @@ from scripts.collect_models import (
     scrape_leaderboard,
 )
 from scripts.render_model_report import render_model_report
+from scripts.config import get as cfg
 
 load_dotenv()
 
-MODEL = "claude-sonnet-4-5"
+MODEL = cfg("model", "claude-sonnet-4-5")
 
 
 def _extract_text_from_message(msg) -> str:
