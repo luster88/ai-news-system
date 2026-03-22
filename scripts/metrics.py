@@ -152,6 +152,95 @@ def _show_latest_detail(data: dict) -> None:
     print(f"ペナルティ中: {output.get('active_penalties', '?')}ソース")
 
 
+# ---------------------------------------------------------------------------
+# 異常検知
+# ---------------------------------------------------------------------------
+
+# 閾値（conservative に設定）
+ZERO_STREAK_THRESHOLD = 3       # N日連続0件で警告
+BODY_RATE_THRESHOLD = 0.50      # 本文取得成功率がこの値未満で警告
+COUNT_DROP_RATIO = 0.30         # 直近平均の30%以下に落ちたら警告
+
+
+def check_health(data: dict | None = None) -> list[dict]:
+    """
+    蓄積されたメトリクスからソース健全性を判定し、警告リストを返す。
+
+    戻り値: [{"level": "warn", "type": "...", "source": "...", "message": "..."}, ...]
+    """
+    if data is None:
+        data = _load_metrics()
+    if not data:
+        return []
+
+    warnings = []
+    keys = sorted(data.keys(), reverse=True)
+
+    # --- 0件連続ソースの検知 ---
+    if len(keys) >= ZERO_STREAK_THRESHOLD:
+        recent_keys = keys[:ZERO_STREAK_THRESHOLD]
+        # 最新回に by_source があるソース名を基準にする
+        latest_sources = data[keys[0]].get("collection", {}).get("by_source", {})
+
+        for source in latest_sources:
+            streak = 0
+            for k in recent_keys:
+                by_source = data[k].get("collection", {}).get("by_source", {})
+                if by_source.get(source, 0) == 0:
+                    streak += 1
+                else:
+                    break
+            if streak >= ZERO_STREAK_THRESHOLD:
+                warnings.append({
+                    "level": "warn",
+                    "type": "zero_streak",
+                    "source": source,
+                    "message": f"{source}: {streak}日連続0件",
+                })
+
+    # --- 本文取得成功率の低下 ---
+    if keys:
+        latest = data[keys[0]]
+        body = latest.get("body_fetch", {})
+        rate = body.get("success_rate", 1.0)
+        if isinstance(rate, (int, float)) and rate < BODY_RATE_THRESHOLD:
+            warnings.append({
+                "level": "warn",
+                "type": "body_rate_low",
+                "source": "",
+                "message": f"本文取得成功率が {rate:.0%} に低下（閾値 {BODY_RATE_THRESHOLD:.0%}）",
+            })
+
+    # --- 収集件数の急激な低下 ---
+    if len(keys) >= 4:
+        latest_raw = data[keys[0]].get("collection", {}).get("total_raw", 0)
+        recent_raws = [
+            data[k].get("collection", {}).get("total_raw", 0)
+            for k in keys[1:4]
+        ]
+        avg = sum(recent_raws) / len(recent_raws) if recent_raws else 0
+        if avg > 0 and latest_raw < avg * COUNT_DROP_RATIO:
+            warnings.append({
+                "level": "warn",
+                "type": "count_drop",
+                "source": "",
+                "message": f"総収集件数が急落（{latest_raw}件、直近平均 {avg:.0f}件）",
+            })
+
+    return warnings
+
+
+def _show_health(warnings: list[dict]) -> None:
+    """警告を CLI に表示する。"""
+    if not warnings:
+        print("=== 健全性チェック: 問題なし ===")
+        return
+
+    print(f"=== 健全性チェック: {len(warnings)}件の警告 ===")
+    for w in warnings:
+        print(f"  [{w['level']}] {w['message']}")
+
+
 def show_metrics(days: int = 14, latest_only: bool = False) -> None:
     """メトリクスを表示する。"""
     data = _load_metrics()
@@ -165,6 +254,10 @@ def show_metrics(days: int = 14, latest_only: bool = False) -> None:
         _show_summary(data, days=days)
         print()
         _show_latest_detail(data)
+
+    print()
+    warnings = check_health(data)
+    _show_health(warnings)
 
 
 if __name__ == "__main__":

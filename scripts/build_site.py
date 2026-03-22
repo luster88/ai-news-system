@@ -7,6 +7,8 @@ import re
 import markdown
 from bs4 import BeautifulSoup
 
+from scripts.metrics import check_health
+
 def _sanitize_dirname(name: str) -> str:
     """ディレクトリ名に使えない文字を除去する（パストラバーサル防止）。"""
     return re.sub(r'[/\\\.\x00]', '_', name).strip('_') or 'unknown'
@@ -574,6 +576,40 @@ def _pagination_html(current_page: int, total_pages: int, root_rel: str) -> str:
     return f'<nav class="pagination">{"".join(parts)}</nav>'
 
 
+def _build_health_banner() -> str:
+    """メトリクスの健全性チェック結果から HTML バナーを生成する。警告なしなら空文字。"""
+    try:
+        warnings = check_health()
+    except Exception:
+        return ""
+
+    if not warnings:
+        return ""
+
+    zero_sources = [w for w in warnings if w["type"] == "zero_streak"]
+    body_warns = [w for w in warnings if w["type"] == "body_rate_low"]
+    drop_warns = [w for w in warnings if w["type"] == "count_drop"]
+
+    details = []
+    if zero_sources:
+        names = ", ".join(w["source"] for w in zero_sources)
+        details.append(f"0件が続くソース {len(zero_sources)}件: {names}")
+    if body_warns:
+        details.append(body_warns[0]["message"])
+    if drop_warns:
+        details.append(drop_warns[0]["message"])
+
+    detail_html = "<br>".join(html.escape(d) for d in details)
+
+    return f"""
+          <div style="background:rgba(255,180,50,.12);border:1px solid rgba(255,180,50,.3);
+                      border-radius:12px;padding:14px 18px;margin-top:16px;color:var(--text);font-size:14px">
+            <strong style="color:#ffb432">収集健全性: 注意（{len(warnings)}件）</strong><br>
+            <span style="color:var(--muted)">{detail_html}</span><br>
+            <span style="color:var(--muted);font-size:12px">詳細: python -m scripts.metrics</span>
+          </div>"""
+
+
 def build_index_pages(files: list[Path], prev_files: list[Path] | None = None, test_files: list[Path] | None = None) -> None:
     total_pages = max(1, (len(files) + PAGE_SIZE - 1) // PAGE_SIZE)
 
@@ -629,12 +665,15 @@ def build_index_pages(files: list[Path], prev_files: list[Path] | None = None, t
 
         pagination = _pagination_html(page_num, total_pages, ".")
 
+        health_banner = _build_health_banner() if page_num == 1 else ""
+
         body_html = f"""
         <main class="wrap">
           <section class="hero">
             <div class="hero-card">
               <h1>{SITE_TITLE}</h1>
               <p>毎日の AI ツール / 企業動向 / 業界ニュースを Markdown から自動で静的サイト化しています。</p>
+              {health_banner}
             </div>
           </section>
 
