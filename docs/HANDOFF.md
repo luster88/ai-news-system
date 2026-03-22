@@ -165,7 +165,7 @@ feeds.yaml (22ソース, 5リージョン)
 | `data/config.yaml` | Tier 1 設定値 11項目 (なくてもデフォルト値で動作) |
 | `data/feeds.yaml` | 情報ソース定義 (5リージョン, 22ソース) |
 | `data/seen_urls.json` | 既出URL履歴 + ソースペナルティ (git管理) |
-| `data/metrics.json` | 日次実行メトリクス（パイプライン実行時に自動蓄積） |
+| `data/metrics.json` | 日次実行メトリクス（パイプライン実行時に自動蓄積、daily-news.yml でコミット） |
 | `data/cache/` | 記事本文キャッシュ (gitignore済み, 日次リセット) |
 | `.env` | `ANTHROPIC_API_KEY` (gitignore済み) |
 
@@ -173,7 +173,7 @@ feeds.yaml (22ソース, 5リージョン)
 
 | ファイル | トリガー | 内容 |
 |---|---|---|
-| `.github/workflows/daily-news.yml` | 毎日 JST 01:05 + 手動 | 日報生成 → コミット → Pages デプロイ |
+| `.github/workflows/daily-news.yml` | 毎日 JST 01:05 + 手動 | 日報生成 → コミット（news/, index.md, seen_urls.json, metrics.json）→ Pages デプロイ |
 | `.github/workflows/model-report.yml` | 手動のみ | モデルまとめ生成 → コミット → Pages デプロイ |
 | `.github/workflows/deploy-pages.yml` | 手動のみ | Pages 再デプロイのみ |
 
