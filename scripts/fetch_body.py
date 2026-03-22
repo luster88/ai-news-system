@@ -40,6 +40,26 @@ BODY_SELECTORS = [
     ".content",
 ]
 
+# ソース別の優先セレクタ（ドメイン → セレクタリスト）
+# 汎用セレクタでは本文領域を正確に特定できないサイト向け
+SOURCE_SELECTORS: dict[str, list[str]] = {
+    "qiita.com": [
+        '[class*="it-MdContent"]',
+        ".p-items_main",
+        "article",
+    ],
+    "zenn.dev": [
+        ".znc-article-body",
+        '[class*="article-body"]',
+        "article",
+    ],
+    "techcrunch.com": [
+        ".article-content",
+        '[class*="post-content"]',
+        "article",
+    ],
+}
+
 # 除去対象の要素タグ
 NOISE_TAGS = [
     "script", "style", "nav", "header", "footer",
@@ -76,7 +96,15 @@ def _save_cache(url: str, body: str) -> None:
         pass
 
 
-def _extract_body_text(html: str) -> str:
+def _selectors_for_url(url: str) -> list[str]:
+    """URL のドメインに対応するソース固有セレクタ + 汎用セレクタを返す。"""
+    for domain, selectors in SOURCE_SELECTORS.items():
+        if domain in url:
+            return selectors + BODY_SELECTORS
+    return BODY_SELECTORS
+
+
+def _extract_body_text(html: str, source_url: str = "") -> str:
     """HTML から本文テキストを抽出して返す。"""
     soup = BeautifulSoup(html, "lxml")
 
@@ -84,9 +112,10 @@ def _extract_body_text(html: str) -> str:
     for tag in soup(NOISE_TAGS):
         tag.decompose()
 
-    # 優先セレクタで本文エリアを探す
+    # ソース固有セレクタ → 汎用セレクタの順で本文エリアを探す
+    selectors = _selectors_for_url(source_url)
     body_node = None
-    for selector in BODY_SELECTORS:
+    for selector in selectors:
         node = soup.select_one(selector)
         if node:
             body_node = node
@@ -146,7 +175,7 @@ def fetch_article_body(url: str) -> str:
             break
 
         resp.raise_for_status()
-        body = _extract_body_text(resp.text)
+        body = _extract_body_text(resp.text, source_url=url)
         _save_cache(url, body)
         return body
 
