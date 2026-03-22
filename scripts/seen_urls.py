@@ -10,6 +10,8 @@ data/seen_urls.json に収集済みURLとソースペナルティを永続化し
 """
 
 import json
+import os
+import tempfile
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -187,8 +189,16 @@ def update_seen_urls(
     seen_data["urls"] = urls
 
     try:
-        with open(SEEN_URLS_FILE, "w", encoding="utf-8") as f:
-            json.dump(seen_data, f, ensure_ascii=False, indent=2)
+        tmp_fd, tmp_path = tempfile.mkstemp(
+            dir=SEEN_URLS_FILE.parent, suffix=".tmp"
+        )
+        try:
+            with os.fdopen(tmp_fd, "w", encoding="utf-8") as f:
+                json.dump(seen_data, f, ensure_ascii=False, indent=2)
+            os.replace(tmp_path, SEEN_URLS_FILE)
+        except Exception:
+            os.unlink(tmp_path)
+            raise
         print(f"[info] seen_urls.json を更新しました（新規URL +{added}件、合計 {len(urls)}件）")
     except Exception as e:
         print(f"[warn] seen_urls.json の書き込みに失敗しました: {e}")

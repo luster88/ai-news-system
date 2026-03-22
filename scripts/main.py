@@ -1,3 +1,5 @@
+import os
+
 from scripts.collect import collect_articles
 from scripts.fetch_body import fetch_article_bodies
 from scripts.seen_urls import (
@@ -14,6 +16,10 @@ from scripts.build_index import build_index
 
 
 def main():
+    # 0. API キー早期チェック（後段の summarize で使うため）
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        raise RuntimeError("ANTHROPIC_API_KEY is not set — aborting before collection")
+
     # 1. 収集
     raw_articles = collect_articles()
     print(f"[info] collected {len(raw_articles)} raw articles")

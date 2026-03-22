@@ -183,7 +183,7 @@ def main():
     if not api_key:
         raise RuntimeError("ANTHROPIC_API_KEY is not set")
 
-    client = Anthropic(api_key=api_key)
+    client = Anthropic(api_key=api_key, timeout=180.0)
 
     # 1. 既存日報からモデル関連記事を収集
     print("[info] === Phase 1: collecting model articles from reports ===")

@@ -1,5 +1,5 @@
 from collections import defaultdict
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -75,7 +75,7 @@ def render_daily_markdown(result: dict):
     articles = result.get("articles", [])
     overall_summary = result.get("overall_summary", [])
 
-    today = datetime.now().strftime("%Y-%m-%d")
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     year, month, _ = today.split("-")
 
     out_dir = BASE_DIR / "news" / year / month

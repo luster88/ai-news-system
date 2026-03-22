@@ -274,7 +274,7 @@ def summarize_articles(articles: list):
     if not api_key:
         raise RuntimeError("ANTHROPIC_API_KEY is not set")
 
-    client = Anthropic(api_key=api_key)
+    client = Anthropic(api_key=api_key, timeout=120.0)
 
     selected_articles = _select_articles_for_summary(articles)
     summarized = []

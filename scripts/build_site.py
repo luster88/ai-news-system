@@ -7,6 +7,11 @@ import re
 import markdown
 from bs4 import BeautifulSoup
 
+def _sanitize_dirname(name: str) -> str:
+    """ディレクトリ名に使えない文字を除去する（パストラバーサル防止）。"""
+    return re.sub(r'[/\\\.\x00]', '_', name).strip('_') or 'unknown'
+
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 NEWS_DIR = BASE_DIR / "news"
 SITE_DIR = BASE_DIR / "_site"
@@ -517,7 +522,7 @@ def _item_html(file: Path, root_rel: str) -> str:
 
     tags = _parse_tags_from_meta(meta)
     tags_html = "".join(
-        f'<a href="{root_rel}/tags/{html.escape(t)}/index.html" class="chip-tag">{html.escape(t)}</a>'
+        f'<a href="{root_rel}/tags/{html.escape(_sanitize_dirname(t))}/index.html" class="chip-tag">{html.escape(t)}</a>'
         for t in tags
     )
     tags_row = f'<div class="meta" style="margin-top:8px">{tags_html}</div>' if tags_html else ""
@@ -657,7 +662,7 @@ def build_article_pages(files: list[Path]) -> None:
 
         tags = _parse_tags_from_meta(meta)
         tags_html = "".join(
-            f'<a href="../../../../tags/{html.escape(t)}/index.html" class="chip-tag">{html.escape(t)}</a>'
+            f'<a href="../../../../tags/{html.escape(_sanitize_dirname(t))}/index.html" class="chip-tag">{html.escape(t)}</a>'
             for t in tags
         )
         tags_row = f'<div class="meta" style="margin-top:10px">{tags_html}</div>' if tags_html else ""
@@ -703,7 +708,7 @@ def build_tag_pages(files: list[Path]) -> None:
     tags_dir.mkdir(parents=True, exist_ok=True)
 
     tag_links = "".join(
-        f'<a href="{html.escape(tag)}/index.html" class="chip-tag">'
+        f'<a href="{html.escape(_sanitize_dirname(tag))}/index.html" class="chip-tag">'
         f'{html.escape(tag)} ({len(flist)})</a>'
         for tag, flist in sorted(tag_to_files.items())
     )
@@ -753,7 +758,7 @@ def build_tag_pages(files: list[Path]) -> None:
         </main>
         """
 
-        tag_dir = tags_dir / tag
+        tag_dir = tags_dir / _sanitize_dirname(tag)
         tag_dir.mkdir(parents=True, exist_ok=True)
         (tag_dir / "index.html").write_text(
             page_shell(f"{tag} - {SITE_TITLE}", body_html, root_rel="../.."),
