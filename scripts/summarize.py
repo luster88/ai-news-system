@@ -147,8 +147,8 @@ def _summarize_one_article(client: Anthropic, article: dict) -> dict:
     known_summary = article.get("summary", "").strip()
     body = article.get("body", "").strip()
 
-    # research リージョンはアブストラクトが summary に入っているので body 扱いにする
-    if article.get("region") == "research" and known_summary and not body:
+    # 本文が取得できなかった場合、RSS summary をフォールバック本文として使用
+    if known_summary and not body:
         body = known_summary
         known_summary = ""
 
