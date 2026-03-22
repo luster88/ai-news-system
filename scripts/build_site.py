@@ -262,9 +262,10 @@ code,pre{
 .article-body pre code{
   background:transparent; padding:0;
 }
-/* モデルページ テーブル共通 */
-.model-report .article-body table{
+/* テーブル共通 */
+.article-body table{
   width:100%;
+  max-width:100%;
   border-collapse:collapse;
   margin:16px 0 24px;
   font-size:14px;
@@ -273,8 +274,8 @@ code,pre{
   overflow-x:auto;
   -webkit-overflow-scrolling:touch;
 }
-.model-report .article-body th,
-.model-report .article-body td{
+.article-body th,
+.article-body td{
   padding:10px 14px;
   border:1px solid var(--line);
   text-align:left;
@@ -282,13 +283,13 @@ code,pre{
   overflow-wrap:break-word;
   word-break:break-word;
 }
-.model-report .article-body th{
+.article-body th{
   background:rgba(255,255,255,.06);
   color:var(--accent-2);
   font-weight:600;
   white-space:nowrap;
 }
-.model-report .article-body tr:hover td{
+.article-body tr:hover td{
   background:rgba(255,255,255,.03);
 }
 /* --- ランキング表 (tbl-ranking) ---
@@ -1095,6 +1096,28 @@ def _claude_article_item(category: str, slug: str, meta: dict, title: str, root_
     """
 
 
+def _rewrite_claude_md_links(html_text: str) -> str:
+    """Claude 記事 HTML 内の .md 相対リンクを生成後の HTML パスに変換する。
+
+    Markdown ソースでは ``../category/slug.md`` と記述するが、
+    生成先は ``_site/claude/{cat}/{slug}/index.html`` で1段深いため、
+    ``../../category/slug/index.html`` に書き換える必要がある。
+    """
+    # ../category/slug.md → ../../category/slug/index.html
+    html_text = re.sub(
+        r'href="\.\./([^/]+)/([^"]+)\.md"',
+        r'href="../../\1/\2/index.html"',
+        html_text,
+    )
+    # ../README.md → ../../index.html
+    html_text = re.sub(
+        r'href="\.\./README\.md"',
+        r'href="../../index.html"',
+        html_text,
+    )
+    return html_text
+
+
 def build_claude_pages() -> None:
     """claude/ 配下の Markdown を _site/claude/ に HTML 化する。"""
     articles = _read_claude_articles()
@@ -1204,6 +1227,7 @@ def build_claude_pages() -> None:
         title = article_title_from_body(body, slug)
 
         article_html = markdown.markdown(body, extensions=MD_EXTENSIONS)
+        article_html = _rewrite_claude_md_links(article_html)
         updated = meta.get("updated", meta.get("date", ""))
         cat_label = dict(_CLAUDE_CATEGORIES).get(cat, cat)
 
