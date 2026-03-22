@@ -1077,7 +1077,27 @@ def _read_claude_articles() -> list[tuple[str, str, Path]]:
     return articles
 
 
-def _claude_article_item(category: str, slug: str, meta: dict, title: str, root_rel: str) -> str:
+def _claude_summary_from_body(body: str) -> str:
+    """Markdown 本文から概要テキストを抽出する（見出し・区切り・テーブル・リスト行を除く）。"""
+    lines = []
+    for l in body.splitlines():
+        s = l.strip()
+        if not s:
+            continue
+        if s.startswith(("#", "---", "|", "- ", "* ", "```")):
+            continue
+        lines.append(s)
+        if len(lines) >= 2:
+            break
+    text = " ".join(lines)[:120]
+    # Markdown 記法を除去
+    text = re.sub(r"\*\*([^*]+)\*\*", r"\1", text)
+    text = re.sub(r"`([^`]+)`", r"\1", text)
+    return text
+
+
+def _claude_article_item(category: str, slug: str, meta: dict, title: str, root_rel: str,
+                          summary: str = "") -> str:
     """Claude 記事の一覧アイテム HTML を返す。"""
     target = f"{root_rel}/claude/{category}/{slug}/index.html"
     date_str = meta.get("date", "")
@@ -1086,6 +1106,7 @@ def _claude_article_item(category: str, slug: str, meta: dict, title: str, root_
         f'<span class="chip-tag">{html.escape(t)}</span>'
         for t in tags[:5]
     )
+    summary_html = f'<p class="preview" style="margin:4px 0 0;font-size:14px">{html.escape(summary)}</p>' if summary else ''
 
     return f"""
     <article class="item">
@@ -1094,6 +1115,7 @@ def _claude_article_item(category: str, slug: str, meta: dict, title: str, root_
         <span class="chip">{html.escape(date_str)}</span>
         <span class="chip">{html.escape(category)}</span>
       </div>
+      {summary_html}
       {f'<div class="meta">{tags_html}</div>' if tags_html else ''}
     </article>
     """
@@ -1172,7 +1194,8 @@ def build_claude_pages() -> None:
         raw = md_file.read_text(encoding="utf-8")
         meta, body = strip_front_matter(raw)
         title = article_title_from_body(body, slug)
-        all_items_html.append(_claude_article_item(cat, slug, meta, title, ".."))
+        summary = _claude_summary_from_body(body)
+        all_items_html.append(_claude_article_item(cat, slug, meta, title, "..", summary=summary))
 
     body_html = f"""
     <main class="wrap">
@@ -1222,7 +1245,8 @@ def build_claude_pages() -> None:
             raw = md_file.read_text(encoding="utf-8")
             meta, body = strip_front_matter(raw)
             title = article_title_from_body(body, slug)
-            items_html.append(_claude_article_item(cat, slug, meta, title, "../../.."))
+            summary = _claude_summary_from_body(body)
+            items_html.append(_claude_article_item(cat, slug, meta, title, "../../..", summary=summary))
 
         cat_body = f"""
         <main class="wrap">
