@@ -1,12 +1,12 @@
 {
   "2026-03-22": {
-    "timestamp": "2026-03-22T17:06:02.536335+00:00",
-    "elapsed_seconds": 14.1,
+    "timestamp": "2026-03-22T16:37:45.194856+00:00",
+    "elapsed_seconds": 208.8,
     "collection": {
-      "total_raw": 112,
-      "total_new": 42,
-      "total_seen": 70,
-      "total_penalized": 42,
+      "total_raw": 113,
+      "total_new": 78,
+      "total_seen": 35,
+      "total_penalized": 39,
       "by_source": {
         "OpenAI News": 8,
         "Anthropic News": 6,
@@ -23,7 +23,7 @@
         "MiniMax News": 4,
         "36Kr AI": 6,
         "KrASIA": 6,
-        "Qiita AI": 3,
+        "Qiita AI": 4,
         "Zenn AI": 8,
         "nyosegawa blog": 3,
         "arXiv cs.AI": 0,
@@ -37,27 +37,27 @@
       ]
     },
     "body_fetch": {
-      "total": 0,
-      "success": 0,
+      "total": 39,
+      "success": 39,
       "empty": 0,
       "skipped": 0,
-      "success_rate": 0
+      "success_rate": 1.0
     },
     "summarization": {
-      "selected": 0,
+      "selected": 21,
       "tentative_count": 0,
       "parse_failure_count": 0,
       "importance_distribution": {
         "1-2": 0,
         "3-4": 0,
-        "5-6": 0,
-        "7-8": 0,
+        "5-6": 11,
+        "7-8": 10,
         "9-10": 0
       }
     },
     "output": {
-      "total_items": 0,
-      "active_penalties": 20
+      "total_items": 21,
+      "active_penalties": 13
     }
   }
 }
