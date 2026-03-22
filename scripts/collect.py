@@ -489,113 +489,67 @@ def extract_links_by_selectors(
     return _extract_links(_iter_a_tags(), base_url, max_items, check_domain=True)
 
 def extract_ernie_blog_items(soup: BeautifulSoup, base_url: str, max_items: int):
-    items = []
-    seen_links = set()
+    def _iter_a_tags():
+        for a in soup.select("a"):
+            href = a.get("href")
+            if not href:
+                continue
 
-    for a in soup.select("a"):
-        href = a.get("href")
-        if not href:
-            continue
+            # URL を先に解決してパスフィルタを適用
+            resolved = _resolve_href(href, base_url)
+            if not resolved:
+                continue
+            if "/blog/" not in resolved and "/publication/" not in resolved:
+                continue
 
-        if href.startswith("/"):
-            href = urljoin(base_url, href)
-        href = canonicalize_url(href)
+            # タイトルは a テキストが空のことがあるので、近くの見出しを探す
+            title = a.get_text(" ", strip=True)
+            if not clean_title(title):
+                parent = a.parent
+                if parent:
+                    heading = parent.find_next(["h1", "h2", "h3"])
+                    if heading:
+                        title = heading.get_text(" ", strip=True)
 
-        if not href.startswith("http"):
-            continue
+            yield title, href
 
-        # ERNIE blog 配下の記事っぽいURLだけを優先
-        if "/blog/" not in href and "/publication/" not in href:
-            continue
+    return _extract_links(_iter_a_tags(), base_url, max_items, check_domain=False)
 
-        # タイトルは a テキストが空のことがあるので、近くの見出しを探す
-        title = clean_title(a.get_text(" ", strip=True))
+_36KR_TITLE_BLACKLIST = {"AI", "推荐", "最新", "财经", "科技", "查看更多"}
 
-        if not title:
-            parent = a.parent
-            if parent:
-                heading = parent.find_next(["h1", "h2", "h3"])
-                if heading:
-                    title = clean_title(heading.get_text(" ", strip=True))
-
-        if not title:
-            continue
-
-        if not looks_like_real_article(title, href, "site"):
-            continue
-
-        if href in seen_links:
-            continue
-        seen_links.add(href)
-
-        items.append({
-            "title": title,
-            "link": href,
-            "published": "",
-            "summary": "",
-        })
-
-        if len(items) >= max_items:
-            break
-
-    return items
 
 def extract_36kr_ai_items(soup: BeautifulSoup, base_url: str, max_items: int):
-    items = []
-    seen_links = set()
-
     # 36Kr AIページは本文エリアに記事リンクが並ぶ
     selectors = [
         "a[href*='/p/']",
         "a[href*='/information/']",
     ]
 
-    for selector in selectors:
-        for a in soup.select(selector):
-            href = a.get("href")
-            if not href:
-                continue
+    def _iter_a_tags():
+        for selector in selectors:
+            for a in soup.select(selector):
+                href = a.get("href")
+                if not href:
+                    continue
 
-            if href.startswith("/"):
-                href = urljoin(base_url, href)
+                # ドメイン制限: 36kr.com のみ
+                resolved = _resolve_href(href, base_url)
+                if not resolved or "36kr.com" not in resolved:
+                    continue
 
-            href = canonicalize_url(href)
+                title = clean_title(a.get_text(" ", strip=True))
+                if not title:
+                    continue
 
-            if not href.startswith("http"):
-                continue
+                # 明らかなナビやカテゴリを除外
+                if len(title) < 10:
+                    continue
+                if title in _36KR_TITLE_BLACKLIST:
+                    continue
 
-            # 36kr.com ドメインだけ
-            if "36kr.com" not in href:
-                continue
+                yield title, href
 
-            title = clean_title(a.get_text(" ", strip=True))
-            if not title:
-                continue
-
-            # 明らかなナビやカテゴリを除外
-            if len(title) < 10:
-                continue
-            if title in {"AI", "推荐", "最新", "财经", "科技", "查看更多"}:
-                continue
-
-            if not looks_like_real_article(title, href, "site"):
-                continue
-
-            if href in seen_links:
-                continue
-            seen_links.add(href)
-
-            items.append({
-                "title": title,
-                "link": href,
-                "published": "",
-                "summary": "",
-            })
-
-            if len(items) >= max_items:
-                return items
-
-    return items
+    return _extract_links(_iter_a_tags(), base_url, max_items, check_domain=False)
 
 def fetch_site_source_specific(source_name: str, url: str, max_items: int = 20):
     html = _request_html(url)
