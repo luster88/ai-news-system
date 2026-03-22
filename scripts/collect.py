@@ -162,14 +162,6 @@ SOURCE_SELECTORS = {
         "a[href*='/p/']",
         "a[href*='/information/']",
     ],
-    "TechNode News Feed": [
-        "article a",
-        "h2 a",
-        "h3 a",
-        ".entry-title a",
-        ".post-title a",
-        "main a",
-    ],
     "36Kr English": [
         "article a",
         "h2 a",

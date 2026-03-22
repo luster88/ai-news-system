@@ -14,19 +14,24 @@ us:
     url: "https://deepmind.google/blog/rss.xml"
     max_items: 6
 
-  - name: Microsoft AI Blog
-    type: rss
-    url: "https://blogs.microsoft.com/ai/feed/"
-    max_items: 6
-
-  - name: Meta AI Blog
-    type: rss
-    url: "https://ai.meta.com/blog/rss/"
-    max_items: 6
-
   - name: The Verge AI
     type: rss
-    url: "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml"
+    url: "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"
+    max_items: 6
+
+  - name: TechCrunch AI
+    type: rss
+    url: "https://techcrunch.com/category/artificial-intelligence/feed/"
+    max_items: 8
+
+  - name: Google AI Blog
+    type: rss
+    url: "https://blog.google/technology/ai/rss/"
+    max_items: 6
+
+  - name: The Decoder
+    type: rss
+    url: "https://the-decoder.com/feed/"
     max_items: 6
 
   - name: Product Hunt
@@ -43,11 +48,6 @@ jp:
   - name: Impress Watch
     type: rss
     url: "https://www.watch.impress.co.jp/data/rss/1.0/ipw/feed.rdf"
-    max_items: 6
-
-  - name: ZDNet Japan
-    type: rss
-    url: "https://japan.zdnet.com/rss/index.rdf"
     max_items: 6
 
   - name: Ledge.ai
@@ -69,11 +69,6 @@ cn:
   - name: 36Kr AI
     type: site
     url: "https://36kr.com/information/AI"
-    max_items: 6
-
-  - name: TechNode News Feed
-    type: site
-    url: "https://technode.com/category/news-feed/"
     max_items: 6
 
   - name: KrASIA
