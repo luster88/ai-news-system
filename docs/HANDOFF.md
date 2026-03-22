@@ -1,6 +1,6 @@
 # HANDOFF.md — AI News System 引き継ぎドキュメント
 
-最終更新: 2026-03-22（第2版）
+最終更新: 2026-03-22（第3版）
 
 ---
 
@@ -21,12 +21,14 @@ feeds.yaml (22ソース, 5リージョン)
   → cluster_articles()        Jaccard類似度でクラスタリング
   → render_daily_markdown()   news/YYYY/MM/YYYY-MM-DD.md 出力（ペナルティ状況付き）
   → build_index()             index.md 更新
-  → build_site()              _site/ に静的HTML生成
+  → build_site()              _site/ に静的HTML生成（健全性バナー付き）
+  → save_metrics()            data/metrics.json にメトリクス蓄積
 ```
 
 別パイプラインとして:
 - **最新AIモデルまとめ** — 手動実行でモデル情報をまとめたレポートを生成
 - **テスト用パイプライン** — ペナルティなし全件収集 + モデル比較用 test- ファイル出力
+- **メトリクス閲覧** — `python -m scripts.metrics` で収集精度・健全性を確認
 
 ---
 
@@ -103,6 +105,26 @@ feeds.yaml (22ソース, 5リージョン)
 | テスト用パイプライン (`--model` 比較, test- ファイル出力, index 連携) | `scripts/test_pipeline.py`, `scripts/render_markdown.py`, `scripts/summarize.py`, `scripts/build_site.py`, `scripts/build_index.py` |
 | ペナルティ状況の可視化 (専用コマンド・test_collect 強化・日報セクション) | `scripts/seen_urls.py`, `scripts/test_collect.py`, `scripts/render_markdown.py`, `scripts/main.py` |
 | 情報ソース整理 (壊れた5ソース削除・3ソース新規追加・Verge URL修正) | `data/feeds.yaml`, `scripts/collect.py` |
+| `requirements.txt` バージョン範囲固定（直接依存9パッケージ） | `requirements.txt` |
+
+### 収集精度メトリクス (done)
+
+| Phase | 内容 | 対象ファイル |
+|---|---|---|
+| Phase 1 | メトリクス蓄積基盤（`data/metrics.json` に日次保存、アトミック書き込み） | `scripts/metrics.py`（新規）, `scripts/main.py` |
+| Phase 2 | ソース別収集件数の記録（`collect_articles()` の戻り値を `(articles, source_stats)` に拡張） | `scripts/collect.py`, `scripts/main.py`, `scripts/test_pipeline.py` |
+| Phase 3 | メトリクス表示コマンドの拡充（日次サマリ + 最新詳細 + ソース別件数 + CLI オプション） | `scripts/metrics.py` |
+| Phase 4 | ソース健全性の異常検知（0件連続・本文取得率低下・件数急落を検知、CLI 警告 + index.html バナー） | `scripts/metrics.py`, `scripts/build_site.py` |
+
+**記録項目**: 総収集数 / 新規・既出・ペナルティ除外数 / ソース別件数 / 0件ソース / 本文取得成功率 / [暫定]・[解析失敗]件数 / importance分布 / 実行時間
+
+**異常検知ルール**:
+
+| ルール | 閾値 | タイプ |
+|---|---|---|
+| 0件連続ソース | 3日連続 | `zero_streak` |
+| 本文取得率低下 | 50% 未満 | `body_rate_low` |
+| 収集件数急落 | 直近3日平均の30%以下 | `count_drop` |
 
 ---
 
@@ -119,6 +141,7 @@ feeds.yaml (22ソース, 5リージョン)
 | `scripts/build_index.py` | `python -m scripts.build_index` | index.md のみ再生成 |
 | `scripts/test_collect.py` | `python -m scripts.test_collect [args]` | ソース収集テスト |
 | `scripts/seen_urls.py` | `python -m scripts.seen_urls` | ペナルティ状況確認 |
+| `scripts/metrics.py` | `python -m scripts.metrics [--latest] [--days N]` | メトリクス閲覧・健全性チェック |
 
 ### パイプラインモジュール
 
@@ -133,6 +156,7 @@ feeds.yaml (22ソース, 5リージョン)
 | `scripts/collect_models.py` | モデル情報収集 (日報解析 + スクレイピング) |
 | `scripts/render_model_report.py` | モデルまとめ Markdown 生成 |
 | `scripts/config.py` | 設定ファイル読み込み（デフォルトフォールバック付き） |
+| `scripts/metrics.py` | メトリクス保存・表示・健全性チェック |
 
 ### 設定・データ
 
@@ -141,6 +165,7 @@ feeds.yaml (22ソース, 5リージョン)
 | `data/config.yaml` | Tier 1 設定値 11項目 (なくてもデフォルト値で動作) |
 | `data/feeds.yaml` | 情報ソース定義 (5リージョン, 22ソース) |
 | `data/seen_urls.json` | 既出URL履歴 + ソースペナルティ (git管理) |
+| `data/metrics.json` | 日次実行メトリクス（パイプライン実行時に自動蓄積） |
 | `data/cache/` | 記事本文キャッシュ (gitignore済み, 日次リセット) |
 | `.env` | `ANTHROPIC_API_KEY` (gitignore済み) |
 
@@ -195,6 +220,10 @@ build_index()  ── index.md 更新
     │
     ▼
 update_seen_urls()  ── 新規URLを seen_urls.json に記録 (アトミック書き込み)
+    │
+    ▼
+save_metrics()  ── data/metrics.json にソース別件数・本文成功率・要約統計を蓄積
+                   build_site() で健全性バナーに反映
 ```
 
 ### モデルまとめパイプライン
@@ -270,6 +299,11 @@ python -m scripts.test_collect --penalties  # seen_urls フィルタ結果表示
 
 # ペナルティ状況確認 (API キー不要)
 python -m scripts.seen_urls
+
+# メトリクス閲覧・健全性チェック (API キー不要)
+python -m scripts.metrics              # サマリ + 最新詳細 + 健全性チェック
+python -m scripts.metrics --latest     # 最新回の詳細のみ
+python -m scripts.metrics --days 7     # 直近7件のサマリ
 ```
 
 ### 回帰確認の最低限コマンド
@@ -287,6 +321,9 @@ python -c "from scripts.config import get as cfg; print(cfg('model', 'OK'))"
 
 # 4. ペナルティ表示が動くか
 python -m scripts.seen_urls
+
+# 5. メトリクス表示が動くか
+python -m scripts.metrics
 ```
 
 ---
@@ -304,7 +341,7 @@ python -m scripts.seen_urls
 | `seen_urls.json` の肥大化 | 90日分のURLが蓄積 (現在 212件) | `URL_EXPIRY_DAYS` で自動クリーンアップ |
 | OpenAI 公式サイト 403 | 本文取得不可（8記事全て） | RSS summary フォールバックで軽減。根本解決にはヘッドレスブラウザが必要 |
 | arXiv RSS 週末 0件 | 正常動作だが月曜に集中 | 運用上の問題なし |
-| `requirements.txt` 未固定 | CI で異なるバージョンがインストールされるリスク | **要対応**（pip freeze で固定） |
+| `data/metrics.json` 未蓄積時 | 初回実行前はメトリクスが空。健全性チェックは3日分以上のデータが必要 | `python -m scripts.main` を実行してデータ蓄積 |
 
 ### 変更時に注意すべきポイント
 
@@ -350,13 +387,16 @@ python -m scripts.seen_urls
 | テスト用パイプライン（モデル比較・test-ファイル出力） | `scripts/test_pipeline.py` 他5ファイル |
 | ペナルティ状況の可視化 | `scripts/seen_urls.py`, `scripts/test_collect.py`, `scripts/render_markdown.py`, `scripts/main.py` |
 | 情報ソース整理（5削除・3追加・1修正） | `data/feeds.yaml`, `scripts/collect.py` |
+| `requirements.txt` バージョン範囲固定（直接依存9パッケージ） | `requirements.txt` |
+| メトリクス蓄積基盤 (Phase 1) | `scripts/metrics.py`, `scripts/main.py` |
+| ソース別収集件数の記録 (Phase 2) | `scripts/collect.py`, `scripts/main.py`, `scripts/test_pipeline.py` |
+| メトリクス表示コマンド拡充 (Phase 3) | `scripts/metrics.py` |
+| ソース健全性の異常検知 + index.html バナー (Phase 4) | `scripts/metrics.py`, `scripts/build_site.py` |
 
 ### planned
 
 | タスク | 優先度 | 理由 |
 |---|---|---|
-| `requirements.txt` のバージョン固定 | **高** | 1コマンドで完了。CI 再現性リスクを解消 |
-| ソース健全性の自動監視（0件 N日連続で警告） | **高** | 壊れたソースの早期発見。ログ追加のみ |
 | ソース別の本文抽出セレクタ（Qiita/Zenn最適化） | **中** | techblog の要約品質向上 |
 | クラスタリング判定に summary_ja を追加 | **中** | 重複記事の検知精度向上。閾値調整が必要 |
 | model_report 週次自動実行（daily-news.yml に組み込み） | **中** | 手動実行の手間を削減。API コスト +$0.10/週 |
@@ -379,11 +419,11 @@ python -m scripts.seen_urls
 
 次のエージェントが最初にやるべき作業（優先順）:
 
-1. **`requirements.txt` のバージョン固定** — `.venv` がある状態で `pip freeze > requirements.txt` を実行。CI の再現性を確保する。変更量は小さいが効果が大きい。
+1. **ソース別の本文抽出セレクタ** — `fetch_body.py` にソース名をキーとした優先セレクタ dict を追加。Qiita (`article.it-MdContent`), Zenn (`.znc-article-body`) 等を最適化し、techblog の要約品質を向上。
 
-2. **ソース健全性の自動監視** — `main.py` のパイプライン終了時に、収集件数が0のソースを警告ログで出力する。N日連続で0件の場合は `[warn]` で通知。`test_collect` の定期実行と併用。
+2. **クラスタリング判定に summary_ja を追加** — `cluster_topics.py` の `tokenize_title` の入力を拡張し、重複記事の検知精度を向上。閾値の調整が必要。
 
-3. **ソース別の本文抽出セレクタ** — `fetch_body.py` にソース名をキーとした優先セレクタ dict を追加。Qiita (`article.it-MdContent`), Zenn (`.znc-article-body`) 等を最適化し、techblog の要約品質を向上。
+3. **model_report 週次自動実行** — `daily-news.yml` に週1回の model_report 実行を組み込み。手動実行の手間を削減。API コスト +$0.10/週。
 
 ---
 
