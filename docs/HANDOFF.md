@@ -445,16 +445,20 @@ python -m scripts.metrics
 | Claude 記事内リンク404解消（`_rewrite_claude_md_links`） | `scripts/build_site.py` |
 | テーブル CSS 共通化（`.article-body table` に基本スタイル適用） | `scripts/build_site.py` |
 | 未作成カテゴリディレクトリ追加（prompts / troubleshooting / ecosystem） | `claude/` 配下 |
+| ソース別の本文抽出セレクタ（Qiita/Zenn/TechCrunch） | `scripts/fetch_body.py`（`SOURCE_SELECTORS` 追加） |
+| model_report 週次自動実行（毎週月曜、JST曜日判定） | `.github/workflows/daily-news.yml` |
+| `claude_seen_urls.json` 有効期限管理の確認 | 確認のみ: `update_seen_urls()` の `URL_EXPIRY_DAYS` が正しく適用されている |
 
 ### planned
 
 | タスク | 優先度 | 理由 |
 |---|---|---|
-| ソース別の本文抽出セレクタ（Qiita/Zenn最適化） | **中** | techblog の要約品質向上 |
 | クラスタリング判定に summary_ja を追加 | **中** | 重複記事の検知精度向上。閾値調整が必要 |
-| model_report 週次自動実行（daily-news.yml に組み込み） | **中** | 手動実行の手間を削減。API コスト +$0.10/週 |
+| Claude パイプラインのメトリクス蓄積 | **中** | 日報側には `metrics.py` があるが Claude 側にはない |
+| Claude パイプラインの健全性チェック | **中** | `claude_feeds.yaml` のソースが壊れても検知できない |
 | config.yaml Phase B (Tier 2/3 定数移行) | **低** | Phase A で基盤完成。キーワードリスト等は変更頻度低い |
 | `collect.py` の LSP 型エラー修正 | **低** | ランタイムでは問題なし |
+| `source_penalties` の古いエントリ自動削除 | **低** | URLは `URL_EXPIRY_DAYS` で自動削除されるが penalties は蓄積され続ける。現時点では肥大化リスクは低い |
 
 ### planned (Claude エコシステム情報)
 
@@ -487,13 +491,11 @@ python -m scripts.metrics
 
 次のエージェントが最初にやるべき作業（優先順）:
 
-1. **ソース別の本文抽出セレクタ** — `fetch_body.py` にソース名をキーとした優先セレクタ dict を追加。Qiita (`article.it-MdContent`), Zenn (`.znc-article-body`) 等を最適化し、techblog の要約品質を向上。
+1. **クラスタリング判定に summary_ja を追加** — `cluster_topics.py` の `tokenize_title` の入力を拡張し、重複記事の検知精度を向上。閾値の調整が必要。
 
-2. **model_report 週次自動実行** — `daily-news.yml` に週1回の model_report 実行を組み込み。手動実行の手間を削減。API コスト +$0.10/週。
+2. **Claude パイプラインのメトリクス蓄積** — `claude_main.py` に `save_metrics()` 相当の仕組みを追加。ソース別件数・要約成功率・カテゴリ分布を記録。
 
-3. **`claude_seen_urls.json` の有効期限管理確認** — 日報側の `URL_EXPIRY_DAYS` が Claude パイプラインでも適用されているか確認。肥大化リスク。
-
-4. **クラスタリング判定に summary_ja を追加** — `cluster_topics.py` の `tokenize_title` の入力を拡張し、重複記事の検知精度を向上。閾値の調整が必要。
+3. **Claude パイプラインの健全性チェック** — `claude_feeds.yaml` のソースが0件連続した場合の警告ログ。
 
 ---
 
