@@ -1043,15 +1043,18 @@ def build_model_page() -> None:
 # Claude エコシステム情報ページ
 # ---------------------------------------------------------------------------
 
-# カテゴリ定義 (ディレクトリ名 → 表示名)
+# カテゴリ定義 (ディレクトリ名, 表示名, 概要説明)
 _CLAUDE_CATEGORIES = [
-    ("releases",        "リリース情報"),
-    ("guides",          "ガイド"),
-    ("tools",           "ツール比較"),
-    ("prompts",         "プロンプト"),
-    ("troubleshooting", "トラブルシューティング"),
-    ("ecosystem",       "エコシステム"),
+    ("releases",        "リリース情報",           "モデル・Claude Code・Console・API のアップデート情報"),
+    ("guides",          "ガイド",                 "セットアップ手順・ワークフロー・ベストプラクティス"),
+    ("tools",           "ツール比較",             "関連ツール比較・MCP サーバー・IDE 連携情報"),
+    ("prompts",         "プロンプト",             "プロンプトテンプレート・エンジニアリング技法"),
+    ("troubleshooting", "トラブルシューティング",   "よくあるエラーと対処法・環境別の問題"),
+    ("ecosystem",       "エコシステム",            "料金・プラン・コミュニティ動向・競合比較"),
 ]
+
+# カテゴリ名の逆引き辞書
+_CLAUDE_CAT_LABELS = {d: l for d, l, _ in _CLAUDE_CATEGORIES}
 
 
 def _read_claude_articles() -> list[tuple[str, str, Path]]:
@@ -1061,7 +1064,7 @@ def _read_claude_articles() -> list[tuple[str, str, Path]]:
         return []
 
     articles = []
-    for cat_dir, _ in _CLAUDE_CATEGORIES:
+    for cat_dir, _, _ in _CLAUDE_CATEGORIES:
         cat_path = CLAUDE_DIR / cat_dir
         if not cat_path.is_dir():
             continue
@@ -1128,19 +1131,40 @@ def build_claude_pages() -> None:
     out_base = SITE_DIR / "claude"
     out_base.mkdir(parents=True, exist_ok=True)
 
-    # --- カテゴリ別サイドナビ HTML ---
+    # --- カテゴリ別集計 ---
     cat_counts: dict[str, int] = {}
     for cat, _, _ in articles:
         cat_counts[cat] = cat_counts.get(cat, 0) + 1
 
-    side_links = []
-    for cat_dir, cat_label in _CLAUDE_CATEGORIES:
+    # --- カテゴリ概要カード HTML ---
+    cat_cards_html = []
+    for cat_dir, cat_label, cat_desc in _CLAUDE_CATEGORIES:
         cnt = cat_counts.get(cat_dir, 0)
         if cnt > 0:
-            side_links.append(
-                f'<a href="category/{cat_dir}/index.html">{html.escape(cat_label)} ({cnt})</a>'
-            )
-    side_nav_html = "".join(side_links) if side_links else '<div class="preview">カテゴリなし</div>'
+            count_badge = f'{cnt} 件'
+            link = f'<a href="category/{cat_dir}/index.html" style="color:var(--accent-2);font-size:13px">記事を見る →</a>'
+        else:
+            count_badge = '準備中'
+            link = ''
+        cat_cards_html.append(f"""
+          <div class="item" style="display:flex;flex-direction:column;gap:6px">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
+              <h3 style="margin:0;font-size:17px">{html.escape(cat_label)}</h3>
+              <span class="chip" style="font-size:11px">{count_badge}</span>
+            </div>
+            <p class="preview" style="margin:0;font-size:14px">{html.escape(cat_desc)}</p>
+            {link}
+          </div>""")
+
+    # --- サイドナビ HTML（全カテゴリ表示） ---
+    side_links = []
+    for cat_dir, cat_label, _ in _CLAUDE_CATEGORIES:
+        cnt = cat_counts.get(cat_dir, 0)
+        label = f'{html.escape(cat_label)} ({cnt})' if cnt > 0 else f'{html.escape(cat_label)}'
+        side_links.append(
+            f'<a href="category/{cat_dir}/index.html">{label}</a>'
+        )
+    side_nav_html = "".join(side_links)
 
     # --- インデックスページ (_site/claude/index.html) ---
     all_items_html = []
@@ -1156,6 +1180,14 @@ def build_claude_pages() -> None:
         <div class="hero-card">
           <h1>Claude エコシステム情報</h1>
           <p>Claude / Claude Code / Claude Console および関連ツールの最新情報をカテゴリ別に整理しています。</p>
+        </div>
+      </section>
+      <section style="padding:20px 0 0">
+        <div class="card">
+          <h2>カテゴリ一覧</h2>
+          <div class="list" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr))">
+            {''.join(cat_cards_html)}
+          </div>
         </div>
       </section>
       <section class="grid">
@@ -1180,7 +1212,7 @@ def build_claude_pages() -> None:
     )
 
     # --- カテゴリ別一覧ページ (_site/claude/category/{cat}/index.html) ---
-    for cat_dir, cat_label in _CLAUDE_CATEGORIES:
+    for cat_dir, cat_label, _ in _CLAUDE_CATEGORIES:
         cat_articles = [(c, s, p) for c, s, p in articles if c == cat_dir]
         if not cat_articles:
             continue
@@ -1229,7 +1261,7 @@ def build_claude_pages() -> None:
         article_html = markdown.markdown(body, extensions=MD_EXTENSIONS)
         article_html = _rewrite_claude_md_links(article_html)
         updated = meta.get("updated", meta.get("date", ""))
-        cat_label = dict(_CLAUDE_CATEGORIES).get(cat, cat)
+        cat_label = _CLAUDE_CAT_LABELS.get(cat, cat)
 
         tags = _parse_tags_from_meta(meta)
         tags_html = "".join(
