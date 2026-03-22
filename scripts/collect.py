@@ -1,3 +1,4 @@
+import time
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 from datetime import datetime, timezone, timedelta
@@ -366,17 +367,28 @@ def fetch_rss(url: str, max_items: int = 20):
 
 
 def _request_html(url: str):
-    r = requests.get(
-        url,
-        timeout=30,
-        headers={
-            "User-Agent": (
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/122.0.0.0 Safari/537.36"
-            )
-        },
-    )
+    _RETRY_STATUS = (429, 503)
+    _MAX_RETRIES = 2
+
+    r = None
+    for attempt in range(_MAX_RETRIES + 1):
+        r = requests.get(
+            url,
+            timeout=30,
+            headers={
+                "User-Agent": (
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                    "AppleWebKit/537.36 (KHTML, like Gecko) "
+                    "Chrome/122.0.0.0 Safari/537.36"
+                )
+            },
+        )
+        if r.status_code in _RETRY_STATUS and attempt < _MAX_RETRIES:
+            print(f"[warn] _request_html {r.status_code} for {url}, retrying ({attempt + 1}/{_MAX_RETRIES})")
+            time.sleep(1)
+            continue
+        break
+
     r.raise_for_status()
     return r.text
 
