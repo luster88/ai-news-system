@@ -3,10 +3,16 @@ metrics.py — パイプライン実行メトリクスの保存・表示
 
 data/metrics.json に日付キーで実行メトリクスを蓄積する。
 python -m scripts.metrics で直近の実行状況を表示する。
+
+使い方:
+  python -m scripts.metrics              # 直近14件のサマリ + 最新回の詳細
+  python -m scripts.metrics --latest     # 最新回の詳細のみ
+  python -m scripts.metrics --days 7     # 直近7件のサマリ
 """
 
 import json
 import os
+import sys
 import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
@@ -47,16 +53,11 @@ def save_metrics(date_key: str, entry: dict) -> None:
         print(f"[warn] metrics.json の書き込みに失敗しました: {e}")
 
 
-def show_metrics(days: int = 14) -> None:
-    """直近 N 日分のメトリクスをテーブル表示する。"""
-    data = _load_metrics()
-    if not data:
-        print("メトリクスがありません。python -m scripts.main を実行してください。")
-        return
-
+def _show_summary(data: dict, days: int = 14) -> None:
+    """直近 N 日分のメトリクスをサマリテーブルで表示する。"""
     keys = sorted(data.keys(), reverse=True)[:days]
 
-    print(f"=== 収集精度メトリクス (直近{len(keys)}件) ===")
+    print(f"=== 日次サマリ (直近{len(keys)}件) ===")
     print(f"{'日付':<12} | {'収集':>4} | {'新規':>4} | {'本文成功率':>8} | {'[暫定]':>6} | {'[解析失敗]':>8} | {'実行時間':>8}")
     print("-" * 75)
 
@@ -78,16 +79,103 @@ def show_metrics(days: int = 14) -> None:
 
         print(f"{key:<12} | {total_raw:>4} | {total_new:>4} | {rate_str:>8} | {tentative:>6} | {parse_fail:>8} | {elapsed_str:>8}")
 
-    # 0件ソース警告
-    if keys:
-        latest = data[keys[0]]
-        zero_sources = latest.get("collection", {}).get("sources_zero", [])
-        if zero_sources:
-            print()
-            print(f"=== 0件ソース警告（最新実行） ===")
-            for src in zero_sources:
-                print(f"  - {src}")
+
+def _show_latest_detail(data: dict) -> None:
+    """最新回のメトリクスを詳細表示する。"""
+    keys = sorted(data.keys(), reverse=True)
+    if not keys:
+        return
+
+    key = keys[0]
+    e = data[key]
+    coll = e.get("collection", {})
+    body = e.get("body_fetch", {})
+    summ = e.get("summarization", {})
+    output = e.get("output", {})
+
+    print(f"=== 最新実行の詳細 ({key}) ===")
+    print(f"実行日時:     {e.get('timestamp', '?')}")
+    print(f"実行時間:     {e.get('elapsed_seconds', '?')}s")
+    print()
+
+    # 収集
+    print(f"--- 収集 ---")
+    print(f"総収集:       {coll.get('total_raw', '?')}件")
+    print(f"新規:         {coll.get('total_new', '?')}件")
+    print(f"既出(seen):   {coll.get('total_seen', '?')}件")
+    print(f"ペナルティ除外: {coll.get('total_penalized', '?')}件")
+    print()
+
+    # ソース別件数
+    by_source = coll.get("by_source", {})
+    if by_source:
+        print(f"--- ソース別件数 ({len(by_source)}ソース) ---")
+        for name, count in sorted(by_source.items(), key=lambda x: x[1], reverse=True):
+            marker = " *** 0件" if count == 0 else ""
+            print(f"  {count:>3} | {name}{marker}")
+        print()
+
+    # 0件ソース
+    sources_zero = coll.get("sources_zero", [])
+    if sources_zero:
+        print(f"--- 0件ソース警告 ({len(sources_zero)}件) ---")
+        for src in sources_zero:
+            print(f"  - {src}")
+        print()
+
+    # 本文取得
+    print(f"--- 本文取得 ---")
+    print(f"対象:         {body.get('total', '?')}件")
+    print(f"成功:         {body.get('success', '?')}件")
+    print(f"失敗(empty):  {body.get('empty', '?')}件")
+    print(f"スキップ:     {body.get('skipped', '?')}件 (research)")
+    success_rate = body.get("success_rate", 0)
+    rate_str = f"{success_rate:.0%}" if isinstance(success_rate, float) else "?"
+    print(f"成功率:       {rate_str}")
+    print()
+
+    # 要約
+    print(f"--- 要約 ---")
+    print(f"要約対象:     {summ.get('selected', '?')}件")
+    print(f"[暫定]:       {summ.get('tentative_count', '?')}件")
+    print(f"[解析失敗]:   {summ.get('parse_failure_count', '?')}件")
+
+    dist = summ.get("importance_distribution", {})
+    if dist:
+        dist_str = "  ".join(f"{k}:{v}" for k, v in dist.items())
+        print(f"importance分布: {dist_str}")
+    print()
+
+    # 出力
+    print(f"--- 出力 ---")
+    print(f"日報記事数:   {output.get('total_items', '?')}件")
+    print(f"ペナルティ中: {output.get('active_penalties', '?')}ソース")
+
+
+def show_metrics(days: int = 14, latest_only: bool = False) -> None:
+    """メトリクスを表示する。"""
+    data = _load_metrics()
+    if not data:
+        print("メトリクスがありません。python -m scripts.main を実行してください。")
+        return
+
+    if latest_only:
+        _show_latest_detail(data)
+    else:
+        _show_summary(data, days=days)
+        print()
+        _show_latest_detail(data)
 
 
 if __name__ == "__main__":
-    show_metrics()
+    args = sys.argv[1:]
+    latest_only = "--latest" in args
+    days = 14
+    for i, a in enumerate(args):
+        if a == "--days" and i + 1 < len(args):
+            try:
+                days = int(args[i + 1])
+            except ValueError:
+                pass
+
+    show_metrics(days=days, latest_only=latest_only)
