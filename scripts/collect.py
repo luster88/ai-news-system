@@ -96,12 +96,22 @@ GOOD_AI_KEYWORDS = [
     "models",
     "bot",
     "chatbot",
+    "rag",
+    "fine-tuning",
+    "transformer",
+    "diffusion",
+    "llama",
+    "mistral",
+    "copilot",
     "生成ai",
     "生成ＡＩ",
     "人工知能",
     "大規模言語モデル",
     "エージェント",
     "半導体",
+    "機械学習",
+    "深層学習",
+    "ファインチューニング",
 ]
 
 SITE_ONLY_MIN_TITLE_LEN = 18
