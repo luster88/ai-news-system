@@ -290,6 +290,9 @@ def summarize_articles(articles: list):
 
     overall_summary = _generate_overall_summary(client, summarized)
 
+    api_calls = len(selected_articles) + 1  # 記事ごと + overall_summary
+    print(f"[info] summarize complete: {api_calls} API calls ({len(selected_articles)} articles + 1 overall)")
+
     return {
         "articles": summarized,
         "overall_summary": overall_summary,

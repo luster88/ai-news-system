@@ -1,4 +1,6 @@
 import os
+import time
+from datetime import datetime, timezone
 
 from scripts.collect import collect_articles
 from scripts.fetch_body import fetch_article_bodies
@@ -16,6 +18,9 @@ from scripts.build_index import build_index
 
 
 def main():
+    start_time = time.time()
+    print(f"[info] pipeline started at {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}")
+
     # 0. API キー早期チェック（後段の summarize で使うため）
     if not os.environ.get("ANTHROPIC_API_KEY"):
         raise RuntimeError("ANTHROPIC_API_KEY is not set — aborting before collection")
@@ -54,6 +59,9 @@ def main():
 
     print(f"[info] generated: {output_path}")
     print(f"[info] updated index: {index_path}")
+
+    elapsed = time.time() - start_time
+    print(f"[info] pipeline finished at {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')} ({elapsed:.1f}s)")
 
 
 if __name__ == "__main__":

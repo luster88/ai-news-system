@@ -9,6 +9,8 @@ model_report.py — 最新AIモデルまとめパイプライン
 
 import json
 import os
+import time
+from datetime import datetime, timezone
 
 from anthropic import Anthropic
 from dotenv import load_dotenv
@@ -185,6 +187,9 @@ def main():
 
     client = Anthropic(api_key=api_key, timeout=180.0)
 
+    start_time = time.time()
+    print(f"[info] model report started at {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}")
+
     # 1. 既存日報からモデル関連記事を収集
     print("[info] === Phase 1: collecting model articles from reports ===")
     model_articles = collect_model_articles_from_reports(days=14)
@@ -227,7 +232,9 @@ def main():
     print("[info] === Phase 5: rendering model report ===")
     output_path = render_model_report(report)
 
+    elapsed = time.time() - start_time
     print(f"[info] done: {output_path}")
+    print(f"[info] model report finished at {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')} ({elapsed:.1f}s)")
 
 
 if __name__ == "__main__":

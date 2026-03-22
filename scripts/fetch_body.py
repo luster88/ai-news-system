@@ -160,6 +160,9 @@ def fetch_article_bodies(articles: list[dict]) -> list[dict]:
     """
     total = len(articles)
     skipped = 0
+    cached = 0
+    fetched = 0
+    empty = 0
 
     for i, article in enumerate(articles, start=1):
         region = article.get("region", "")
@@ -173,7 +176,13 @@ def fetch_article_bodies(articles: list[dict]) -> list[dict]:
         article["body"] = body
 
         status = "cached" if _load_cache(url) == body and body else "fetched" if body else "empty"
+        if status == "cached":
+            cached += 1
+        elif status == "fetched":
+            fetched += 1
+        else:
+            empty += 1
         print(f"[info] body {i}/{total} ({status}): {article.get('title', '')[:40]}")
 
-    print(f"[info] fetch_bodies complete: {total - skipped} fetched, {skipped} skipped (research)")
+    print(f"[info] fetch_bodies complete: {cached} cached, {fetched} fetched, {empty} empty, {skipped} skipped")
     return articles
