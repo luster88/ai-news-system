@@ -320,6 +320,24 @@ code,pre{
 #search-results .item{ display:none }
 #search-results .item.match{ display:block }
 #no-results{ display:none; color:var(--muted); padding:20px 0; }
+/* details/summary (カテゴリ折りたたみ) */
+details.card-toggle summary{
+  cursor:pointer; list-style:none; display:flex; align-items:center; gap:8px;
+}
+details.card-toggle summary::-webkit-details-marker{ display:none; }
+details.card-toggle summary::before{
+  content:"▶"; font-size:12px; color:var(--muted); transition:transform .2s;
+}
+details.card-toggle[open] summary::before{ transform:rotate(90deg); }
+details.card-toggle summary h2{ margin:0; display:inline; }
+details.card-toggle .list{ margin-top:14px; }
+/* 日付グループ見出し */
+.date-group-heading{
+  font-size:16px; font-weight:600; color:var(--accent-2);
+  margin:18px 0 8px; padding-bottom:6px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.date-group-heading:first-child{ margin-top:0; }
 """
 
 SEARCH_JS = """
@@ -1189,13 +1207,30 @@ def build_claude_pages() -> None:
     side_nav_html = "".join(side_links)
 
     # --- インデックスページ (_site/claude/index.html) ---
-    all_items_html = []
+    # 記事データを収集し日付でグループ化
+    article_entries: list[tuple[str, str]] = []  # (date, item_html)
     for cat, slug, md_file in articles:
         raw = md_file.read_text(encoding="utf-8")
         meta, body = strip_front_matter(raw)
         title = article_title_from_body(body, slug)
         summary = _claude_summary_from_body(body)
-        all_items_html.append(_claude_article_item(cat, slug, meta, title, "..", summary=summary))
+        date_str = str(meta.get("date", "")).strip("'")
+        item_html = _claude_article_item(cat, slug, meta, title, "..", summary=summary)
+        article_entries.append((date_str, item_html))
+
+    # 日付降順でソート → グループ化
+    article_entries.sort(key=lambda x: x[0], reverse=True)
+    grouped_html_parts: list[str] = []
+    current_date = ""
+    for date_str, item_html in article_entries:
+        if date_str != current_date:
+            current_date = date_str
+            count = sum(1 for d, _ in article_entries if d == date_str)
+            grouped_html_parts.append(
+                f'<div class="date-group-heading">{html.escape(date_str)}（{count}件）</div>'
+            )
+        grouped_html_parts.append(item_html)
+    articles_section = "".join(grouped_html_parts) if grouped_html_parts else '<p class="preview">記事がありません。</p>'
 
     body_html = f"""
     <main class="wrap">
@@ -1207,17 +1242,19 @@ def build_claude_pages() -> None:
       </section>
       <section style="padding:20px 0 0">
         <div class="card">
-          <h2>カテゴリ一覧</h2>
-          <div class="list" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr))">
-            {''.join(cat_cards_html)}
-          </div>
+          <details class="card-toggle">
+            <summary><h2>カテゴリ一覧</h2></summary>
+            <div class="list" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr))">
+              {''.join(cat_cards_html)}
+            </div>
+          </details>
         </div>
       </section>
       <section class="grid">
         <div class="card">
           <h2>すべての記事</h2>
           <div class="list">
-            {''.join(all_items_html) if all_items_html else '<p class="preview">記事がありません。</p>'}
+            {articles_section}
           </div>
         </div>
         <aside class="card">
