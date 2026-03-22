@@ -71,7 +71,7 @@ def _render_article_lines(a: dict, show_region: bool = False) -> list[str]:
     return lines
 
 
-def render_daily_markdown(result: dict):
+def render_daily_markdown(result: dict, filename_override: str | None = None):
     articles = result.get("articles", [])
     overall_summary = result.get("overall_summary", [])
 
@@ -80,7 +80,7 @@ def render_daily_markdown(result: dict):
 
     out_dir = BASE_DIR / "news" / year / month
     out_dir.mkdir(parents=True, exist_ok=True)
-    out_file = out_dir / f"{today}.md"
+    out_file = out_dir / f"{filename_override}.md" if filename_override else out_dir / f"{today}.md"
 
     grouped = _group_by_region(articles)
     top_stories = _top_stories(articles, limit=3)

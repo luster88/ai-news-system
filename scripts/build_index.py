@@ -19,7 +19,8 @@ def _read_model_report_date() -> str:
 
 def build_index():
     all_files = sorted(NEWS_DIR.glob("*/*/*.md"), reverse=True)
-    files = [f for f in all_files if not f.name.startswith("prev-")]
+    files = [f for f in all_files if not f.name.startswith("prev-") and not f.name.startswith("test-")]
+    test_files = [f for f in all_files if f.name.startswith("test-")]
     prev_files = [f for f in all_files if f.name.startswith("prev-")]
 
     model_date = _read_model_report_date()
@@ -44,6 +45,17 @@ def build_index():
             rel = file.relative_to(BASE_DIR).as_posix()
             date_label = file.stem
             lines.append(f"- [{date_label}]({rel})")
+
+    if test_files:
+        lines.append("")
+        lines.append("## テスト記事")
+        lines.append("")
+
+        for file in test_files[:30]:
+            rel = file.relative_to(BASE_DIR).as_posix()
+            # test-sonnet-2026-03-22-0830 → sonnet 2026-03-22 08:30
+            label = file.stem.replace("test-", "")
+            lines.append(f"- [{label}]({rel})")
 
     if prev_files:
         lines.append("")

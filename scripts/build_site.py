@@ -458,9 +458,10 @@ def article_title_from_body(md_body: str, fallback: str) -> str:
 
 
 def read_news_files() -> list[Path]:
-    """通常の日報ファイル（prev- を除く）を返す。"""
+    """通常の日報ファイル（prev- / test- を除く）を返す。"""
     return sorted(
-        (f for f in NEWS_DIR.glob("*/*/*.md") if not f.name.startswith("prev-")),
+        (f for f in NEWS_DIR.glob("*/*/*.md")
+         if not f.name.startswith("prev-") and not f.name.startswith("test-")),
         reverse=True,
     )
 
@@ -468,6 +469,14 @@ def read_news_files() -> list[Path]:
 def read_prev_files() -> list[Path]:
     """prev- プレフィックス付きの保存用ファイルを返す。"""
     return sorted(NEWS_DIR.glob("*/*/*prev-*.md"), reverse=True)
+
+
+def read_test_files() -> list[Path]:
+    """test- プレフィックス付きのテスト出力ファイルを返す。"""
+    return sorted(
+        (f for f in NEWS_DIR.glob("*/*/*.md") if f.name.startswith("test-")),
+        reverse=True,
+    )
 
 
 def page_shell(title: str, body_html: str, root_rel: str = ".") -> str:
@@ -565,7 +574,7 @@ def _pagination_html(current_page: int, total_pages: int, root_rel: str) -> str:
     return f'<nav class="pagination">{"".join(parts)}</nav>'
 
 
-def build_index_pages(files: list[Path], prev_files: list[Path] | None = None) -> None:
+def build_index_pages(files: list[Path], prev_files: list[Path] | None = None, test_files: list[Path] | None = None) -> None:
     total_pages = max(1, (len(files) + PAGE_SIZE - 1) // PAGE_SIZE)
 
     # サイドバーリンク（常に最新14件）
@@ -577,6 +586,23 @@ def build_index_pages(files: list[Path], prev_files: list[Path] | None = None) -
         target = f"news/{year}/{month}/{day}/index.html"
         latest_links.append(f'<a href="{target}">{html.escape(day)}</a>')
     side_html = "".join(latest_links) if latest_links else '<div class="preview">まだ日報がありません。</div>'
+
+    # テスト記事リンク
+    test_links_html = ""
+    if test_files:
+        test_links = []
+        for file in test_files[:10]:
+            rel_parts = file.relative_to(NEWS_DIR).parts
+            year, month, filename = rel_parts
+            day = filename.replace(".md", "")
+            target = f"news/{year}/{month}/{day}/index.html"
+            label = day.replace("test-", "")
+            test_links.append(f'<a href="{target}">{html.escape(label)}</a>')
+        test_links_html = f"""
+              <h2 style="margin-top:20px">テスト記事</h2>
+              <div class="side-list">
+                {"".join(test_links)}
+              </div>"""
 
     # 保存記事リンク
     prev_links_html = ""
@@ -626,6 +652,7 @@ def build_index_pages(files: list[Path], prev_files: list[Path] | None = None) -
               <div class="side-list">
                 {side_html}
               </div>
+              {test_links_html}
               {prev_links_html}
             </aside>
           </section>
@@ -977,9 +1004,10 @@ def main():
 
     files = read_news_files()
     prev_files = read_prev_files()
-    all_files = files + prev_files
+    test_files = read_test_files()
+    all_files = files + prev_files + test_files
 
-    build_index_pages(files, prev_files=prev_files)
+    build_index_pages(files, prev_files=prev_files, test_files=test_files)
     build_article_pages(all_files)
     build_tag_pages(all_files)
     build_search_index(all_files)
