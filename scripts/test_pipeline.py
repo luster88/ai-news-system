@@ -54,7 +54,7 @@ def main():
     print(f"[info] output: {filename}.md")
 
     # 1. 収集（ペナルティなし）
-    raw_articles = collect_articles()
+    raw_articles, source_stats = collect_articles()
     print(f"[info] collected {len(raw_articles)} raw articles (no penalty filter)")
 
     # 2. 本文取得

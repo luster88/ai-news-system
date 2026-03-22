@@ -1,6 +1,5 @@
 import os
 import time
-from collections import Counter
 from datetime import datetime, timezone
 
 from scripts.collect import collect_articles
@@ -28,7 +27,7 @@ def main():
         raise RuntimeError("ANTHROPIC_API_KEY is not set — aborting before collection")
 
     # 1. 収集
-    raw_articles = collect_articles()
+    raw_articles, source_stats = collect_articles()
     print(f"[info] collected {len(raw_articles)} raw articles")
 
     # 2. 既出URLフィルタ
@@ -69,16 +68,8 @@ def main():
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     articles = result.get("articles", [])
 
-    # ソース別の収集件数（raw_articles から集計）
-    source_counts = Counter(a.get("source", "") for a in raw_articles)
-    from scripts.collect import load_feeds
-    feeds = load_feeds()
-    sources_zero = [
-        src["name"]
-        for region_sources in feeds.values()
-        for src in region_sources
-        if source_counts.get(src["name"], 0) == 0
-    ]
+    # ソース別の収集件数
+    sources_zero = [name for name, count in source_stats.items() if count == 0]
 
     # 本文取得の統計（記事の body フィールドから集計）
     body_total = len([a for a in filtered_articles if a.get("region", "") not in {"research"}])
@@ -113,6 +104,7 @@ def main():
             "total_new": len(new_articles),
             "total_seen": len(seen_articles),
             "total_penalized": skipped_by_penalty,
+            "by_source": source_stats,
             "sources_zero": sources_zero,
         },
         "body_fetch": {

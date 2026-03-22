@@ -654,6 +654,7 @@ def dedupe_articles(items: list):
 def collect_articles():
     cfg = load_feeds()
     all_items = []
+    source_stats = {}
 
     for region, sources in cfg.items():
         for src in sources:
@@ -683,9 +684,11 @@ def collect_articles():
                     ]
 
                 all_items.extend(normalized)
+                source_stats[src["name"]] = len(normalized)
                 print(f"[info] collected {len(normalized)} from {src['name']}")
 
             except Exception as e:
+                source_stats[src["name"]] = 0
                 print(f"[warn] {src['name']}: {e}")
 
-    return dedupe_articles(all_items)
+    return dedupe_articles(all_items), source_stats
