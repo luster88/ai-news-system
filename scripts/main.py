@@ -1,9 +1,11 @@
 import os
 import time
+from collections import Counter
 from datetime import datetime, timezone
 
 from scripts.collect import collect_articles
 from scripts.fetch_body import fetch_article_bodies
+from scripts.metrics import save_metrics
 from scripts.seen_urls import (
     load_seen_data,
     filter_seen_articles,
@@ -62,6 +64,78 @@ def main():
 
     elapsed = time.time() - start_time
     print(f"[info] pipeline finished at {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')} ({elapsed:.1f}s)")
+
+    # 8. メトリクス集計・保存
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    articles = result.get("articles", [])
+
+    # ソース別の収集件数（raw_articles から集計）
+    source_counts = Counter(a.get("source", "") for a in raw_articles)
+    from scripts.collect import load_feeds
+    feeds = load_feeds()
+    sources_zero = [
+        src["name"]
+        for region_sources in feeds.values()
+        for src in region_sources
+        if source_counts.get(src["name"], 0) == 0
+    ]
+
+    # 本文取得の統計（記事の body フィールドから集計）
+    body_total = len([a for a in filtered_articles if a.get("region", "") not in {"research"}])
+    body_success = len([a for a in filtered_articles if a.get("body", "").strip() and a.get("region", "") not in {"research"}])
+    body_skipped = len([a for a in filtered_articles if a.get("region", "") in {"research"}])
+
+    # 要約の統計
+    tentative_count = sum(1 for a in articles if "[暫定]" in a.get("summary_ja", ""))
+    parse_failure_count = sum(1 for a in articles if "[解析失敗]" in a.get("summary_ja", ""))
+
+    # importance 分布
+    scores = [a.get("importance_score", 0) for a in articles]
+    importance_dist = {
+        "1-2": sum(1 for s in scores if 1 <= s <= 2),
+        "3-4": sum(1 for s in scores if 3 <= s <= 4),
+        "5-6": sum(1 for s in scores if 5 <= s <= 6),
+        "7-8": sum(1 for s in scores if 7 <= s <= 8),
+        "9-10": sum(1 for s in scores if 9 <= s <= 10),
+    }
+
+    # ペナルティ件数
+    active_penalties = sum(
+        1 for d in updated_seen_data.get("source_penalties", {}).values()
+        if d > today
+    )
+
+    metrics_entry = {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "elapsed_seconds": round(elapsed, 1),
+        "collection": {
+            "total_raw": len(raw_articles),
+            "total_new": len(new_articles),
+            "total_seen": len(seen_articles),
+            "total_penalized": skipped_by_penalty,
+            "sources_zero": sources_zero,
+        },
+        "body_fetch": {
+            "total": body_total,
+            "success": body_success,
+            "empty": body_total - body_success,
+            "skipped": body_skipped,
+            "success_rate": round(body_success / body_total, 2) if body_total > 0 else 0,
+        },
+        "summarization": {
+            "selected": len(articles),
+            "tentative_count": tentative_count,
+            "parse_failure_count": parse_failure_count,
+            "importance_distribution": importance_dist,
+        },
+        "output": {
+            "total_items": len(articles),
+            "active_penalties": active_penalties,
+        },
+    }
+
+    save_metrics(today, metrics_entry)
+    print(f"[info] metrics saved to data/metrics.json")
 
 
 if __name__ == "__main__":
