@@ -5,6 +5,7 @@ import html
 import re
 
 import markdown
+from bs4 import BeautifulSoup
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 NEWS_DIR = BASE_DIR / "news"
@@ -251,6 +252,55 @@ code,pre{
 .article-body pre code{
   background:transparent; padding:0;
 }
+/* モデルページ テーブル共通 */
+.model-report .article-body table{
+  width:100%;
+  border-collapse:collapse;
+  margin:16px 0 24px;
+  font-size:14px;
+  line-height:1.6;
+  display:block;
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+}
+.model-report .article-body th,
+.model-report .article-body td{
+  padding:10px 14px;
+  border:1px solid var(--line);
+  text-align:left;
+  vertical-align:top;
+  overflow-wrap:break-word;
+  word-break:break-word;
+}
+.model-report .article-body th{
+  background:rgba(255,255,255,.06);
+  color:var(--accent-2);
+  font-weight:600;
+  white-space:nowrap;
+}
+.model-report .article-body tr:hover td{
+  background:rgba(255,255,255,.03);
+}
+/* --- ランキング表 (tbl-ranking) ---
+   col1:順位  col2:モデル名  col3:提供元  col4:スコア  col5:備考 */
+.tbl-ranking td:nth-child(1){ width:48px; text-align:center; white-space:nowrap; }
+.tbl-ranking td:nth-child(2){ min-width:160px; }
+.tbl-ranking td:nth-child(3){ white-space:nowrap; }
+.tbl-ranking td:nth-child(4){ text-align:right; white-space:nowrap; }
+.tbl-ranking td:nth-child(5){ min-width:180px; }
+/* --- コスト表 (tbl-pricing) ---
+   col1:モデル名  col2:提供元  col3:入力  col4:出力  col5:コスパ */
+.tbl-pricing td:nth-child(1){ min-width:140px; }
+.tbl-pricing td:nth-child(2){ white-space:nowrap; }
+.tbl-pricing td:nth-child(3){ text-align:right; white-space:nowrap; }
+.tbl-pricing td:nth-child(4){ text-align:right; white-space:nowrap; }
+.tbl-pricing td:nth-child(5){ text-align:center; white-space:nowrap; }
+/* --- カテゴリ表 (tbl-category) ---
+   col1:モデル名  col2:提供元  col3:リリース日  col4:特徴 */
+.tbl-category td:nth-child(1){ min-width:140px; }
+.tbl-category td:nth-child(2){ white-space:nowrap; }
+.tbl-category td:nth-child(3){ text-align:center; white-space:nowrap; }
+.tbl-category td:nth-child(4){ min-width:200px; }
 .back{
   margin-bottom:16px;
   display:inline-block;
@@ -783,6 +833,36 @@ def build_search_page() -> None:
 
 MODELS_DIR = BASE_DIR / "models"
 
+# テーブル分類: ヘッダーに含まれるキーワード → CSS クラス
+_TABLE_CLASS_RULES = [
+    (["順位"], "tbl-ranking"),
+    (["入力", "出力", "コスパ"], "tbl-pricing"),
+    (["リリース日"], "tbl-category"),
+]
+
+
+def _classify_model_tables(html_text: str) -> str:
+    """テーブルの <thead> 内容を見て CSS クラスを付与する。"""
+    soup = BeautifulSoup(html_text, "lxml")
+
+    for table in soup.find_all("table"):
+        header_text = ""
+        thead = table.find("thead")
+        if thead:
+            header_text = thead.get_text(" ", strip=True)
+
+        cls = "tbl-category"  # デフォルト
+        for keywords, class_name in _TABLE_CLASS_RULES:
+            if all(kw in header_text for kw in keywords):
+                cls = class_name
+                break
+
+        table["class"] = table.get("class", []) + [cls]
+
+    # BeautifulSoup が追加する html/body タグを除去して中身だけ返す
+    body = soup.find("body")
+    return body.decode_contents() if body else str(soup)
+
 
 def build_model_page() -> None:
     """models/latest.md を読み込んで _site/models/index.html を生成する。"""
@@ -796,7 +876,10 @@ def build_model_page() -> None:
     report_date = meta.get("date", "")
     title = article_title_from_body(body, "最新AIモデルまとめ")
 
-    article_html = markdown.markdown(body, extensions=MD_EXTENSIONS)
+    raw_html = markdown.markdown(body, extensions=MD_EXTENSIONS)
+
+    # テーブルにヘッダー内容に応じた CSS クラスを付与する
+    article_html = _classify_model_tables(raw_html)
 
     out_dir = SITE_DIR / "models"
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -804,7 +887,7 @@ def build_model_page() -> None:
     date_note = f"（{html.escape(report_date)} 時点の情報）" if report_date else ""
 
     body_html = f"""
-    <main class="wrap article">
+    <main class="wrap article model-report">
       <a class="back" href="../index.html">← index に戻る</a>
       <article class="article-card">
         <div class="article-header">
