@@ -593,6 +593,7 @@ def read_test_files() -> list[Path]:
 
 
 def page_shell(title: str, body_html: str, root_rel: str = ".") -> str:
+    root_rel = root_rel.rstrip("/")
     return f"""<!doctype html>
 <html lang="ja">
 <head>
@@ -644,6 +645,7 @@ def page_shell(title: str, body_html: str, root_rel: str = ".") -> str:
 # ---------------------------------------------------------------------------
 
 def _item_html(file: Path, root_rel: str) -> str:
+    root_rel = root_rel.rstrip("/")
     rel_parts = file.relative_to(NEWS_DIR).parts
     year, month, filename = rel_parts
     day = filename.replace(".md", "")
@@ -675,6 +677,7 @@ def _item_html(file: Path, root_rel: str) -> str:
 
 
 def _pagination_html(current_page: int, total_pages: int, root_rel: str) -> str:
+    root_rel = root_rel.rstrip("/")
     if total_pages <= 1:
         return ""
 
@@ -731,6 +734,7 @@ def _build_date_tree(files: list[Path], root_rel: str, current_ym: str = "") -> 
     """年/月/日の折りたたみツリーHTMLを生成する。
     current_ym は 'YYYY/MM' 形式で、該当する年・月をデフォルトopenにする。
     """
+    root_rel = root_rel.rstrip("/")
     from collections import OrderedDict
     # ファイルを year -> month -> [day, ...] に分類
     tree: dict[str, dict[str, list[tuple[str, str]]]] = OrderedDict()
@@ -777,6 +781,7 @@ def _build_date_tree(files: list[Path], root_rel: str, current_ym: str = "") -> 
 
 def _build_month_tabs(files: list[Path], active_month: str, root_rel: str) -> str:
     """月タブHTMLを生成する。active_month は 'YYYY-MM' or 'all'。"""
+    root_rel = root_rel.rstrip("/")
     months: list[str] = []
     seen = set()
     for file in files:
@@ -1355,6 +1360,7 @@ def _claude_summary_from_body(body: str) -> str:
 def _claude_article_item(category: str, slug: str, meta: dict, title: str, root_rel: str,
                           summary: str = "") -> str:
     """Claude 記事の一覧アイテム HTML を返す。"""
+    root_rel = root_rel.rstrip("/")
     target = f"{root_rel}/claude/{category}/{slug}/index.html"
     date_str = meta.get("date", "")
     tags = _parse_tags_from_meta(meta)
