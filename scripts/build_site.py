@@ -26,318 +26,406 @@ PAGE_SIZE = cfg("page_size", 30)  # インデックス1ページあたりの件�
 
 
 CSS = """
+/* ===== Linear-style Design System ===== */
 :root{
-  --bg:#0b1020;
-  --panel:#121933;
-  --panel-2:#182142;
-  --text:#e8ecff;
-  --muted:#aab4df;
-  --line:#2a3566;
-  --accent:#7aa2ff;
-  --accent-2:#9fd3ff;
-  --chip:#24315f;
-  --chip-tag:#1e3a50;
-  --chip-tag-text:#9fd3ff;
-  --good:#87e7b0;
-  --shadow:0 10px 30px rgba(0,0,0,.25);
+  --bg:#0f0f12;
+  --surface:#15151b;
+  --surface-hover:#1c1c24;
+  --surface-active:#22222c;
+  --text-primary:rgba(255,255,255,.92);
+  --text-secondary:rgba(255,255,255,.55);
+  --text-tertiary:rgba(255,255,255,.35);
+  --border:rgba(255,255,255,.06);
+  --accent:#7b8fff;
+  --accent-dim:rgba(123,143,255,.15);
 }
 
-*{box-sizing:border-box}
-html,body{margin:0;padding:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
 body{
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  background:linear-gradient(180deg,#0b1020,#0f1530 40%,#0b1020);
-  color:var(--text);
-  line-height:1.7;
-}
-a{color:var(--accent-2);text-decoration:none}
-a:hover{text-decoration:underline}
-code,pre{
-  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-}
-.wrap{
-  width:min(1100px,calc(100% - 32px));
-  margin:0 auto;
-}
-.header{
-  position:sticky; top:0; z-index:20;
-  backdrop-filter: blur(12px);
-  background:rgba(11,16,32,.75);
-  border-bottom:1px solid rgba(255,255,255,.06);
-}
-.header-inner{
-  display:flex; align-items:center; justify-content:space-between;
-  gap:12px; padding:12px 0;
-  flex-wrap:wrap;
-}
-.brand{
-  font-weight:800; letter-spacing:.2px; font-size:20px;
-}
-.brand a{color:var(--text); text-decoration:none}
-.sub{
-  color:var(--muted); font-size:14px;
-}
-.search-box{
-  display:flex; align-items:center; gap:8px;
-  flex:1; max-width:340px;
-}
-.search-box input{
-  width:100%;
-  background:rgba(255,255,255,.06);
-  border:1px solid rgba(255,255,255,.12);
-  border-radius:999px;
-  color:var(--text);
-  padding:7px 14px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text-primary);
+  line-height:1.5;
   font-size:14px;
-  outline:none;
 }
-.search-box input::placeholder{color:var(--muted)}
-.search-box input:focus{border-color:var(--accent)}
-.hero{
-  padding:28px 0 8px;
+a{color:var(--text-primary);text-decoration:none}
+a:hover{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+
+/* --- App Shell --- */
+.app{display:flex;flex-direction:column;height:100vh}
+.topbar{
+  display:flex;align-items:center;gap:16px;
+  padding:0 20px;height:44px;min-height:44px;
+  background:var(--surface);
+  border-bottom:1px solid var(--border);
+  position:sticky;top:0;z-index:50;
 }
-.hero-card{
-  background:linear-gradient(180deg,var(--panel),var(--panel-2));
-  border:1px solid rgba(255,255,255,.06);
-  border-radius:20px;
-  padding:24px;
-  box-shadow:var(--shadow);
+.topbar-brand{font-weight:600;font-size:14px;white-space:nowrap}
+.topbar-brand a{color:var(--text-primary)}
+.topbar-nav{display:flex;align-items:center;gap:2px;margin-left:8px}
+.topbar-nav a{
+  padding:4px 10px;border-radius:4px;
+  font-size:13px;color:var(--text-secondary);
+  transition:background .12s,color .12s;
 }
-.hero h1{
-  margin:0 0 8px; font-size:34px; line-height:1.15;
+.topbar-nav a:hover{background:var(--surface-hover);color:var(--text-primary)}
+.topbar-nav a.active{background:var(--accent-dim);color:var(--accent)}
+.topbar-search{
+  margin-left:auto;
+  position:relative;
 }
-.hero p{
-  margin:0; color:var(--muted);
+.topbar-search input{
+  width:200px;
+  background:rgba(255,255,255,.04);
+  border:1px solid var(--border);
+  border-radius:6px;
+  color:var(--text-primary);
+  padding:5px 10px 5px 28px;
+  font-size:13px;outline:none;
+  transition:border-color .15s,width .2s;
 }
-.grid{
-  display:grid;
-  grid-template-columns: minmax(0, 1.7fr) minmax(280px, .9fr);
-  gap:24px;
-  padding:24px 0 40px;
+.topbar-search input:focus{border-color:var(--accent);width:280px}
+.topbar-search input::placeholder{color:var(--text-tertiary)}
+.topbar-search::before{
+  content:"⌘K";position:absolute;right:8px;top:50%;transform:translateY(-50%);
+  font-size:11px;color:var(--text-tertiary);pointer-events:none;
 }
-@media (max-width: 900px){
-  .grid{grid-template-columns:1fr}
+/* Mobile menu toggle */
+.mobile-menu-btn{
+  display:none;width:32px;height:32px;
+  align-items:center;justify-content:center;
+  background:none;border:none;color:var(--text-secondary);
+  font-size:18px;cursor:pointer;border-radius:4px;
+  transition:background .12s;
 }
-.card{
-  background:linear-gradient(180deg,var(--panel),var(--panel-2));
-  border:1px solid rgba(255,255,255,.06);
-  border-radius:18px;
-  padding:20px;
-  box-shadow:var(--shadow);
+.mobile-menu-btn:hover{background:var(--surface-hover)}
+
+/* --- 3-Column Layout --- */
+.layout{display:flex;flex:1;overflow:hidden}
+.sidebar-left{
+  width:200px;min-width:200px;
+  background:var(--surface);
+  border-right:1px solid var(--border);
+  overflow-y:auto;
+  padding:12px 0;
 }
-.card h2{
-  margin:0 0 14px;
-  font-size:22px;
-}
-.list{
-  display:grid; gap:14px;
-}
-.item{
-  border:1px solid rgba(255,255,255,.06);
-  border-radius:14px;
+.content-area{flex:1;overflow-y:auto;padding:0}
+.content-area>.content-header,
+.content-area>.list-view,
+.content-area>.pagination,
+.content-area>.cat-grid{max-width:860px;margin-left:auto;margin-right:auto}
+.content-area>div[style]{max-width:860px;margin-left:auto;margin-right:auto}
+.sidebar-right{
+  width:220px;min-width:220px;
+  background:var(--surface);
+  border-left:1px solid var(--border);
+  overflow-y:auto;
   padding:16px;
-  background:rgba(255,255,255,.02);
 }
-.item h3{
-  margin:0 0 8px; font-size:18px; line-height:1.35;
+
+/* --- Responsive --- */
+@media(max-width:1200px){.sidebar-right{display:none}}
+@media(max-width:800px){
+  .sidebar-left{
+    display:none;position:fixed;left:0;top:44px;bottom:0;z-index:40;
+    width:260px;
+  }
+  .sidebar-left.open{display:block}
+  .mobile-menu-btn{display:flex}
+  .topbar-nav a{padding:4px 8px;font-size:12px}
+  .topbar-search{display:none}
+  .topbar{padding:0 12px;gap:8px}
+  .content-header{padding:12px 16px 0 !important}
+  .list-row{padding:12px 16px 14px !important}
+  .date-group-heading{padding:10px 16px 4px !important}
+  .month-tabs{margin-top:8px}
+  .month-tab{padding:5px 10px;font-size:11px}
+  .article-detail{padding:20px 16px !important}
+  .footer{padding:10px 16px}
 }
-.meta{
-  display:flex; flex-wrap:wrap; gap:8px;
-  margin-bottom:10px;
+
+/* --- Sidebar Navigation --- */
+.side-section{padding:0 10px;margin-bottom:16px}
+.side-heading{
+  font-size:10px;font-weight:600;text-transform:uppercase;
+  letter-spacing:.6px;color:var(--text-tertiary);
+  padding:8px 8px 6px;
 }
-.chip{
-  display:inline-flex; align-items:center;
-  border:1px solid rgba(255,255,255,.06);
-  background:var(--chip);
-  color:var(--muted);
-  border-radius:999px;
-  padding:4px 10px;
-  font-size:12px;
+.side-link{
+  display:flex;align-items:center;gap:6px;
+  padding:4px 8px;border-radius:4px;
+  font-size:12px;color:rgba(255,255,255,.4);
+  transition:background .12s,color .12s;
+  cursor:pointer;
 }
-.chip-tag{
-  display:inline-flex; align-items:center;
-  border:1px solid rgba(159,211,255,.2);
-  background:var(--chip-tag);
-  color:var(--chip-tag-text);
-  border-radius:999px;
-  padding:4px 10px;
-  font-size:12px;
-  text-decoration:none;
+.side-link:hover{background:var(--surface-hover);color:rgba(255,255,255,.7)}
+.side-link.active{background:var(--accent-dim);color:var(--accent)}
+.side-count{
+  margin-left:auto;font-size:10px;color:rgba(255,255,255,.2);
 }
-.chip-tag:hover{
-  background:#2a4f6e;
-  text-decoration:none;
+/* --- Sidebar Tree (year/month collapsible) --- */
+.side-tree{padding:0 10px;margin-bottom:16px}
+.side-tree details{margin:0}
+.side-tree summary{
+  list-style:none;cursor:pointer;
+  display:flex;align-items:center;gap:4px;
+  padding:3px 8px;border-radius:4px;
+  transition:background .12s;
+  user-select:none;
 }
-.preview{
-  color:var(--muted);
-  margin:0;
+.side-tree summary::-webkit-details-marker{display:none}
+.side-tree summary:hover{background:var(--surface-hover)}
+.side-tree summary::before{
+  content:"▸";font-size:9px;color:rgba(255,255,255,.25);
+  width:10px;text-align:center;flex-shrink:0;
+  transition:transform .15s;
 }
-.side-list{
-  display:grid; gap:10px;
+.side-tree details[open]>summary::before{transform:rotate(90deg)}
+.side-tree .tree-year>summary{
+  font-size:11px;font-weight:600;color:rgba(255,255,255,.35);
+  padding:6px 8px 4px;
+  letter-spacing:.3px;
 }
-.side-list a{
-  display:block;
-  border:1px solid rgba(255,255,255,.06);
-  background:rgba(255,255,255,.02);
-  border-radius:12px;
-  padding:12px 14px;
+.side-tree .tree-month>summary{
+  font-size:11px;font-weight:500;color:rgba(255,255,255,.4);
+  padding:3px 8px 3px 18px;
 }
-.tag-cloud{
-  display:flex; flex-wrap:wrap; gap:8px;
-  margin-top:8px;
+.side-tree .tree-month .side-link{
+  padding-left:28px;font-size:11px;
 }
-.pagination{
-  display:flex; justify-content:center; gap:10px;
-  padding:20px 0;
+.side-tree .tree-month .side-count{font-size:9px}
+
+/* --- Content Header --- */
+.content-header{
+  padding:16px 28px 0;
+  border-bottom:1px solid var(--border);
 }
-.pagination a, .pagination span{
-  display:inline-flex; align-items:center; justify-content:center;
-  min-width:40px; height:40px;
-  border:1px solid rgba(255,255,255,.12);
-  border-radius:10px;
-  padding:0 14px;
-  font-size:14px;
-}
-.pagination span.current{
-  background:var(--accent);
-  color:#0b1020;
-  border-color:var(--accent);
-  font-weight:700;
-}
-.footer{
-  border-top:1px solid rgba(255,255,255,.06);
-  color:var(--muted);
-  padding:20px 0 36px;
-  font-size:14px;
-}
-.article{
-  padding:24px 0 42px;
-}
-.article-card{
-  background:linear-gradient(180deg,var(--panel),var(--panel-2));
-  border:1px solid rgba(255,255,255,.06);
-  border-radius:20px;
-  padding:28px;
-  box-shadow:var(--shadow);
-}
-.article-header{
-  margin-bottom:20px;
-  border-bottom:1px solid rgba(255,255,255,.08);
-  padding-bottom:18px;
-}
-.article-title{
-  margin:0 0 8px;
-  font-size:30px;
-  line-height:1.2;
-}
-.article-meta{
-  color:var(--muted);
-  font-size:14px;
-}
-.article-body h1,.article-body h2,.article-body h3{
-  margin-top:1.6em;
-  line-height:1.25;
-}
-.article-body h1{font-size:30px}
-.article-body h2{font-size:24px}
-.article-body h3{font-size:20px}
-.article-body p, .article-body li{color:var(--text)}
-.article-body ul{padding-left:1.2em}
-.article-body hr{
-  border:none; border-top:1px solid rgba(255,255,255,.08);
-  margin:24px 0;
-}
-.article-body pre{
-  overflow:auto;
-  border-radius:14px;
-  padding:14px;
-  background:#0a0f21;
-  border:1px solid rgba(255,255,255,.06);
-}
-.article-body code{
-  background:rgba(255,255,255,.06);
-  padding:.18em .38em;
-  border-radius:8px;
-}
-.article-body pre code{
-  background:transparent; padding:0;
-}
-/* テーブル共通 */
-.article-body table{
-  width:100%;
-  max-width:100%;
-  border-collapse:collapse;
-  margin:16px 0 24px;
-  font-size:14px;
-  line-height:1.6;
-  display:block;
-  overflow-x:auto;
+.content-title{font-size:15px;font-weight:600}
+.content-subtitle{font-size:12px;color:var(--text-tertiary);margin-top:2px}
+/* Month tabs */
+.month-tabs{
+  display:flex;gap:0;margin-top:10px;overflow-x:auto;
   -webkit-overflow-scrolling:touch;
 }
-.article-body th,
-.article-body td{
-  padding:10px 14px;
-  border:1px solid var(--line);
-  text-align:left;
-  vertical-align:top;
-  overflow-wrap:break-word;
-  word-break:break-word;
+.month-tab{
+  padding:6px 14px;font-size:12px;
+  color:rgba(255,255,255,.4);white-space:nowrap;
+  border-bottom:2px solid transparent;
+  transition:color .12s,border-color .12s;
+  cursor:pointer;text-decoration:none;
+}
+.month-tab:hover{color:rgba(255,255,255,.7)}
+.month-tab.active{
+  color:var(--accent);
+  border-bottom-color:var(--accent);
+}
+
+/* --- List Items --- */
+.list-view{padding:0}
+.list-row{
+  display:block;
+  padding:14px 28px 16px;
+  border-bottom:1px solid rgba(255,255,255,.04);
+  transition:background .15s;
+  cursor:pointer;
+  text-decoration:none;
+  color:inherit;
+}
+.list-row:hover{background:rgba(255,255,255,.025)}
+.list-row:active{background:rgba(255,255,255,.04)}
+.list-row:first-child{border-top:none}
+/* 最新の記事を少しだけ強調 */
+.list-row:first-child .list-row-title{color:#fff}
+.list-row:first-child .list-row-title::before{
+  content:"";display:inline-block;width:6px;height:6px;
+  background:var(--accent);border-radius:50%;
+  margin-right:8px;vertical-align:middle;
+  position:relative;top:-1px;
+}
+.list-row-body{min-width:0}
+.list-row-title{
+  font-size:15px;font-weight:600;
+  color:rgba(255,255,255,.88);
+  line-height:1.45;
+  margin-bottom:4px;
+}
+.list-row-summary{
+  font-size:13px;color:rgba(255,255,255,.42);
+  line-height:1.55;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.list-row-meta{
+  display:flex;align-items:center;gap:8px;
+  margin-top:8px;
+}
+.meta-date{
+  font-size:11px;color:rgba(255,255,255,.25);white-space:nowrap;
+}
+.meta-count{
+  font-size:11px;color:rgba(255,255,255,.2);white-space:nowrap;
+}
+.meta-count::after{content:" items"}
+
+/* --- Tags (極めて控えめ) --- */
+.tag{
+  display:inline-block;
+  background:transparent;
+  color:rgba(255,255,255,.28);
+  padding:0 0;
+  font-size:11px;line-height:1.5;
+  text-decoration:none;
+  transition:color .12s;
+}
+.tag:hover{color:rgba(255,255,255,.55)}
+.tag+.tag::before{content:"·";margin:0 5px;color:rgba(255,255,255,.15)}
+.tag-row{display:inline-flex;flex-wrap:wrap;align-items:center;margin-left:4px}
+
+/* --- Date Group --- */
+.date-group-heading{
+  font-size:11px;font-weight:600;text-transform:uppercase;
+  letter-spacing:.3px;color:rgba(255,255,255,.25);
+  padding:12px 28px 6px;
+  background:var(--bg);
+  position:sticky;top:0;z-index:5;
+}
+
+/* --- Pagination --- */
+.pagination{
+  display:flex;align-items:center;justify-content:center;gap:4px;
+  padding:16px 24px;border-top:1px solid var(--border);
+}
+.pagination a,.pagination span{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-width:32px;height:28px;
+  border-radius:4px;padding:0 8px;font-size:13px;
+  color:var(--text-secondary);
+  transition:background .12s;
+}
+.pagination a:hover{background:var(--surface-hover);color:var(--text-primary)}
+.pagination .current{background:var(--accent-dim);color:var(--accent);font-weight:600}
+
+/* --- Sidebar Right Sections --- */
+.sidebar-section{margin-bottom:20px}
+.sidebar-section-title{
+  font-size:10px;font-weight:600;text-transform:uppercase;
+  letter-spacing:.6px;color:rgba(255,255,255,.22);
+  margin-bottom:8px;
+}
+.sidebar-tag-cloud{display:flex;flex-wrap:wrap;gap:5px}
+.sidebar-link{
+  display:block;padding:3px 0;
+  font-size:12px;color:rgba(255,255,255,.35);
+  transition:color .12s;
+}
+.sidebar-link:hover{color:rgba(255,255,255,.6)}
+
+/* --- Footer --- */
+.footer{
+  padding:12px 24px;
+  font-size:12px;color:var(--text-tertiary);
+  border-top:1px solid var(--border);
+  background:var(--surface);
+}
+
+/* --- Article Detail --- */
+.article-detail{
+  max-width:800px;margin:0 auto;
+  padding:32px 40px;
+}
+.back-link{
+  display:inline-flex;align-items:center;gap:4px;
+  font-size:13px;color:var(--text-secondary);margin-bottom:20px;
+}
+.back-link:hover{color:var(--accent)}
+.article-detail-header{margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.article-detail-title{font-size:24px;font-weight:600;line-height:1.35}
+.article-detail-meta{font-size:13px;color:var(--text-tertiary);margin-top:8px}
+.article-body h1,.article-body h2,.article-body h3{margin-top:1.8em;margin-bottom:.4em;line-height:1.35}
+.article-body h1{font-size:22px;font-weight:600}
+.article-body h2{font-size:18px;font-weight:600}
+.article-body h3{font-size:16px;font-weight:600}
+.article-body p,.article-body li{color:var(--text-primary);line-height:1.8;margin-bottom:.3em}
+.article-body p+p{margin-top:.6em}
+.article-body ul,.article-body ol{padding-left:1.4em;margin:.4em 0}
+.article-body hr{border:none;border-top:1px solid var(--border);margin:24px 0}
+@media(max-width:860px){.article-detail{padding:24px 20px}}
+.article-body pre{
+  overflow:auto;border-radius:6px;padding:14px;
+  background:rgba(255,255,255,.03);border:1px solid var(--border);
+  font-size:13px;
+}
+.article-body code{background:rgba(255,255,255,.06);padding:.15em .35em;border-radius:3px;font-size:13px}
+.article-body pre code{background:transparent;padding:0}
+.article-body a{color:var(--accent)}
+.article-body a:hover{text-decoration:underline}
+
+/* --- Tables --- */
+.article-body table{
+  width:100%;max-width:100%;border-collapse:collapse;
+  margin:16px 0 24px;font-size:13px;line-height:1.6;
+  display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;
+}
+.article-body th,.article-body td{
+  padding:8px 12px;border-bottom:1px solid var(--border);
+  text-align:left;vertical-align:top;
 }
 .article-body th{
-  background:rgba(255,255,255,.06);
-  color:var(--accent-2);
-  font-weight:600;
-  white-space:nowrap;
+  color:var(--text-secondary);font-weight:600;font-size:11px;
+  text-transform:uppercase;letter-spacing:.3px;
 }
-.article-body tr:hover td{
-  background:rgba(255,255,255,.03);
+.article-body tr:hover td{background:rgba(255,255,255,.02)}
+.tbl-ranking td:nth-child(1){width:40px;text-align:center;white-space:nowrap}
+.tbl-ranking td:nth-child(2){min-width:140px}
+.tbl-ranking td:nth-child(3){white-space:nowrap}
+.tbl-ranking td:nth-child(4){text-align:right;white-space:nowrap}
+.tbl-ranking td:nth-child(5){min-width:160px}
+.tbl-pricing td:nth-child(1){min-width:120px}
+.tbl-pricing td:nth-child(2){white-space:nowrap}
+.tbl-pricing td:nth-child(3){text-align:right;white-space:nowrap}
+.tbl-pricing td:nth-child(4){text-align:right;white-space:nowrap}
+.tbl-pricing td:nth-child(5){text-align:center;white-space:nowrap}
+.tbl-category td:nth-child(1){min-width:120px}
+.tbl-category td:nth-child(2){white-space:nowrap}
+.tbl-category td:nth-child(3){text-align:center;white-space:nowrap}
+.tbl-category td:nth-child(4){min-width:180px}
+
+/* --- Search --- */
+#search-results .list-row{display:none}
+#search-results .list-row.match{display:flex}
+#no-results{display:none;color:var(--text-secondary);padding:20px 24px}
+.search-input-full{
+  width:100%;background:rgba(255,255,255,.04);
+  border:1px solid var(--border);border-radius:6px;
+  color:var(--text-primary);padding:10px 14px;font-size:14px;outline:none;
+  margin-bottom:0;
 }
-/* --- ランキング表 (tbl-ranking) ---
-   col1:順位  col2:モデル名  col3:提供元  col4:スコア  col5:備考 */
-.tbl-ranking td:nth-child(1){ width:48px; text-align:center; white-space:nowrap; }
-.tbl-ranking td:nth-child(2){ min-width:160px; }
-.tbl-ranking td:nth-child(3){ white-space:nowrap; }
-.tbl-ranking td:nth-child(4){ text-align:right; white-space:nowrap; }
-.tbl-ranking td:nth-child(5){ min-width:180px; }
-/* --- コスト表 (tbl-pricing) ---
-   col1:モデル名  col2:提供元  col3:入力  col4:出力  col5:コスパ */
-.tbl-pricing td:nth-child(1){ min-width:140px; }
-.tbl-pricing td:nth-child(2){ white-space:nowrap; }
-.tbl-pricing td:nth-child(3){ text-align:right; white-space:nowrap; }
-.tbl-pricing td:nth-child(4){ text-align:right; white-space:nowrap; }
-.tbl-pricing td:nth-child(5){ text-align:center; white-space:nowrap; }
-/* --- カテゴリ表 (tbl-category) ---
-   col1:モデル名  col2:提供元  col3:リリース日  col4:特徴 */
-.tbl-category td:nth-child(1){ min-width:140px; }
-.tbl-category td:nth-child(2){ white-space:nowrap; }
-.tbl-category td:nth-child(3){ text-align:center; white-space:nowrap; }
-.tbl-category td:nth-child(4){ min-width:200px; }
-.back{
-  margin-bottom:16px;
-  display:inline-block;
+.search-input-full:focus{border-color:var(--accent)}
+
+/* --- Health Banner --- */
+.health-banner{
+  background:rgba(255,180,50,.08);border-bottom:1px solid rgba(255,180,50,.15);
+  padding:8px 24px;font-size:13px;color:var(--text-secondary);
 }
-/* 検索結果 */
-#search-results .item{ display:none }
-#search-results .item.match{ display:block }
-#no-results{ display:none; color:var(--muted); padding:20px 0; }
-/* details/summary (カテゴリ折りたたみ) */
-details.card-toggle summary{
-  cursor:pointer; list-style:none; display:flex; align-items:center; gap:8px;
+.health-banner strong{color:rgba(255,180,50,.9)}
+
+/* --- Category Cards (for Claude pages) --- */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1px;background:var(--border)}
+.cat-card{
+  padding:12px 16px;background:var(--bg);
+  transition:background .12s;
 }
-details.card-toggle summary::-webkit-details-marker{ display:none; }
-details.card-toggle summary::before{
-  content:"▶"; font-size:12px; color:var(--muted); transition:transform .2s;
-}
-details.card-toggle[open] summary::before{ transform:rotate(90deg); }
-details.card-toggle summary h2{ margin:0; display:inline; }
-details.card-toggle .list{ margin-top:14px; }
-/* 日付グループ見出し */
-.date-group-heading{
-  font-size:16px; font-weight:600; color:var(--accent-2);
-  margin:18px 0 8px; padding-bottom:6px;
-  border-bottom:1px solid rgba(255,255,255,.08);
-}
-.date-group-heading:first-child{ margin-top:0; }
+.cat-card:hover{background:var(--surface-hover)}
+.cat-card-name{font-size:14px;font-weight:500;color:var(--text-primary)}
+.cat-card-desc{font-size:12px;color:var(--text-secondary);margin-top:2px}
+.cat-card-link{font-size:12px;color:var(--accent);margin-top:4px;display:inline-block}
+
+/* --- Empty State --- */
+.empty-state{padding:40px 24px;text-align:center;color:var(--text-tertiary);font-size:14px}
+
+/* --- Utility --- */
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
 """
 
 SEARCH_JS = """
@@ -375,13 +463,16 @@ SEARCH_JS = """
     noResult.style.display = 'none';
 
     hits.slice(0,50).forEach(item=>{
-      const div = document.createElement('article');
-      div.className = 'item';
-      div.innerHTML =
-        '<h3><a href="' + ROOT_PATH + '/' + item.url + '">' + escHtml(item.title) + '</a></h3>' +
-        '<div class="meta"><span class="chip">' + escHtml(item.date) + '</span></div>' +
-        '<p class="preview">' + escHtml((item.summary||'').slice(0,120)) + '</p>';
-      container.appendChild(div);
+      const a = document.createElement('a');
+      a.className = 'list-row';
+      a.href = ROOT_PATH + '/' + item.url;
+      a.innerHTML =
+        '<div class="list-row-body">' +
+        '<div class="list-row-title">' + escHtml(item.title) + '</div>' +
+        '<div class="list-row-summary">' + escHtml((item.summary||'').slice(0,120)) + '</div>' +
+        '</div>' +
+        '<div class="list-row-meta"><span class="meta-date">' + escHtml(item.date) + '</span></div>';
+      container.appendChild(a);
     });
   }
 
@@ -510,29 +601,39 @@ def page_shell(title: str, body_html: str, root_rel: str = ".") -> str:
   <title>{html.escape(title)}</title>
   <link rel="stylesheet" href="{root_rel}/style.css">
 </head>
-<body>
-  <header class="header">
-    <div class="wrap header-inner">
-      <div class="brand"><a href="{root_rel}/index.html">{SITE_TITLE}</a></div>
-      <div class="search-box">
-        <input id="header-search" type="search" placeholder="記事を検索…" autocomplete="off">
-      </div>
-      <div class="sub"><a href="{root_rel}/models/index.html" style="color:var(--muted)">モデル一覧</a>
-        &nbsp;|&nbsp;
-        <a href="{root_rel}/claude/index.html" style="color:var(--muted)">Claude Info</a>
-        &nbsp;|&nbsp;
-        <a href="{root_rel}/search/index.html" style="color:var(--muted)">検索</a>
-        &nbsp;|&nbsp;
-        <a href="{root_rel}/tags/index.html" style="color:var(--muted)">タグ一覧</a>
-      </div>
+<body class="app">
+  <header class="topbar">
+    <button class="mobile-menu-btn" id="menu-toggle" aria-label="Menu">☰</button>
+    <div class="topbar-brand"><a href="{root_rel}/index.html">{SITE_TITLE}</a></div>
+    <nav class="topbar-nav">
+      <a href="{root_rel}/index.html">AI News</a>
+      <a href="{root_rel}/claude/index.html">Claude</a>
+      <a href="{root_rel}/models/index.html">Models</a>
+      <a href="{root_rel}/tags/index.html">Tags</a>
+      <a href="{root_rel}/search/index.html">Search</a>
+    </nav>
+    <div class="topbar-search">
+      <input id="header-search" type="search" placeholder="Search…" autocomplete="off">
     </div>
   </header>
   {body_html}
-  <footer class="footer">
-    <div class="wrap">Built automatically from daily Markdown files.</div>
-  </footer>
   <script>const ROOT_PATH="{root_rel}";</script>
   <script>{SEARCH_JS}</script>
+  <script>
+(function(){{
+  var btn=document.getElementById('menu-toggle');
+  if(!btn)return;
+  btn.addEventListener('click',function(){{
+    var sb=document.querySelector('.sidebar-left');
+    if(sb)sb.classList.toggle('open');
+  }});
+  document.addEventListener('click',function(e){{
+    var sb=document.querySelector('.sidebar-left');
+    if(!sb||!sb.classList.contains('open'))return;
+    if(!sb.contains(e.target)&&e.target!==btn)sb.classList.remove('open');
+  }});
+}})();
+</script>
 </body>
 </html>
 """
@@ -552,27 +653,25 @@ def _item_html(file: Path, root_rel: str) -> str:
     meta, body = strip_front_matter(raw)
     title = article_title_from_body(body, day)
     bullets = extract_summary_bullets(body, max_lines=2)
-    preview = " / ".join(html.escape(x) for x in bullets) if bullets else "日報を開く"
+    preview = " / ".join(html.escape(x) for x in bullets) if bullets else ""
     total_items = meta.get("total_items", "")
 
     tags = _parse_tags_from_meta(meta)
     tags_html = "".join(
-        f'<a href="{root_rel}/tags/{html.escape(_sanitize_dirname(t))}/index.html" class="chip-tag">{html.escape(t)}</a>'
-        for t in tags
+        f'<span class="tag">{html.escape(t)}</span>'
+        for t in tags[:4]
     )
-    tags_row = f'<div class="meta" style="margin-top:8px">{tags_html}</div>' if tags_html else ""
+    tags_row = f'<span class="tag-row">{tags_html}</span>' if tags_html else ""
 
-    return f"""
-    <article class="item">
-      <h3><a href="{target}">{html.escape(title)}</a></h3>
-      <div class="meta">
-        <span class="chip">{html.escape(day)}</span>
-        <span class="chip">{html.escape(str(total_items))} items</span>
+    return f"""<a class="list-row" href="{target}">
+      <div class="list-row-title">{html.escape(title)}</div>
+      <div class="list-row-summary">{preview}</div>
+      <div class="list-row-meta">
+        <span class="meta-date">{html.escape(day)}</span>
+        <span class="meta-count">{html.escape(str(total_items))}</span>
+        {tags_row}
       </div>
-      {tags_row}
-      <p class="preview">{preview}</p>
-    </article>
-    """
+    </a>"""
 
 
 def _pagination_html(current_page: int, total_pages: int, root_rel: str) -> str:
@@ -621,63 +720,152 @@ def _build_health_banner() -> str:
     if drop_warns:
         details.append(drop_warns[0]["message"])
 
-    detail_html = "<br>".join(html.escape(d) for d in details)
+    detail_html = " / ".join(html.escape(d) for d in details)
 
-    return f"""
-          <div style="background:rgba(255,180,50,.12);border:1px solid rgba(255,180,50,.3);
-                      border-radius:12px;padding:14px 18px;margin-top:16px;color:var(--text);font-size:14px">
-            <strong style="color:#ffb432">収集健全性: 注意（{len(warnings)}件）</strong><br>
-            <span style="color:var(--muted)">{detail_html}</span><br>
-            <span style="color:var(--muted);font-size:12px">詳細: python -m scripts.metrics</span>
-          </div>"""
+    return f"""<div class="health-banner">
+      <strong>収集健全性: 注意（{len(warnings)}件）</strong> — {detail_html}
+    </div>"""
+
+
+def _build_date_tree(files: list[Path], root_rel: str, current_ym: str = "") -> str:
+    """年/月/日の折りたたみツリーHTMLを生成する。
+    current_ym は 'YYYY/MM' 形式で、該当する年・月をデフォルトopenにする。
+    """
+    from collections import OrderedDict
+    # ファイルを year -> month -> [day, ...] に分類
+    tree: dict[str, dict[str, list[tuple[str, str]]]] = OrderedDict()
+    for file in files:
+        rel_parts = file.relative_to(NEWS_DIR).parts
+        year, month, filename = rel_parts
+        day = filename.replace(".md", "")
+        target = f"{root_rel}/news/{year}/{month}/{day}/index.html"
+        tree.setdefault(year, OrderedDict()).setdefault(month, []).append((day, target))
+
+    if not tree:
+        return '<div class="side-section"><div class="side-heading">Daily Reports</div></div>'
+
+    # 現在の年月を特定（current_ym がなければ最新ファイルから）
+    if not current_ym and files:
+        parts = files[0].relative_to(NEWS_DIR).parts
+        current_ym = f"{parts[0]}/{parts[1]}"
+    cur_year, cur_month = (current_ym.split("/", 1) + [""])[:2]
+
+    parts_html = []
+    for year, months in tree.items():
+        year_open = " open" if year == cur_year else ""
+        month_parts = []
+        year_count = sum(len(days) for days in months.values())
+        for month, days in months.items():
+            month_open = " open" if year == cur_year and month == cur_month else ""
+            day_links = "".join(
+                f'<a class="side-link" href="{href}">{html.escape(day)}</a>'
+                for day, href in days
+            )
+            month_parts.append(
+                f'<details class="tree-month"{month_open}>'
+                f'<summary>{html.escape(month)} <span class="side-count">{len(days)}</span></summary>'
+                f'{day_links}</details>'
+            )
+        parts_html.append(
+            f'<details class="tree-year"{year_open}>'
+            f'<summary>{html.escape(year)} <span class="side-count">{year_count}</span></summary>'
+            f'{"".join(month_parts)}</details>'
+        )
+
+    return f'<div class="side-tree"><div class="side-heading">Daily Reports</div>{"".join(parts_html)}</div>'
+
+
+def _build_month_tabs(files: list[Path], active_month: str, root_rel: str) -> str:
+    """月タブHTMLを生成する。active_month は 'YYYY-MM' or 'all'。"""
+    months: list[str] = []
+    seen = set()
+    for file in files:
+        rel_parts = file.relative_to(NEWS_DIR).parts
+        ym = f"{rel_parts[0]}-{rel_parts[1]}"
+        if ym not in seen:
+            seen.add(ym)
+            months.append(ym)
+
+    if not months:
+        return ""
+
+    tabs = []
+    all_active = ' class="month-tab active"' if active_month == "all" else ' class="month-tab"'
+    tabs.append(f'<a href="{root_rel}/index.html"{all_active}>All</a>')
+    for ym in months:
+        active = ' class="month-tab active"' if ym == active_month else ' class="month-tab"'
+        tabs.append(f'<a href="{root_rel}/month/{ym}/index.html"{active}>{ym}</a>')
+
+    return f'<div class="month-tabs">{"".join(tabs)}</div>'
+
+
+def _collect_months(files: list[Path]) -> list[str]:
+    """ファイル群からユニークな 'YYYY-MM' リスト (降順) を返す。"""
+    seen = []
+    s = set()
+    for f in files:
+        p = f.relative_to(NEWS_DIR).parts
+        ym = f"{p[0]}-{p[1]}"
+        if ym not in s:
+            s.add(ym)
+            seen.append(ym)
+    return seen
 
 
 def build_index_pages(files: list[Path], prev_files: list[Path] | None = None, test_files: list[Path] | None = None) -> None:
     total_pages = max(1, (len(files) + PAGE_SIZE - 1) // PAGE_SIZE)
 
-    # サイドバーリンク（常に最新14件）
-    latest_links = []
-    for file in files[:14]:
-        rel_parts = file.relative_to(NEWS_DIR).parts
-        year, month, filename = rel_parts
-        day = filename.replace(".md", "")
-        target = f"news/{year}/{month}/{day}/index.html"
-        latest_links.append(f'<a href="{target}">{html.escape(day)}</a>')
-    side_html = "".join(latest_links) if latest_links else '<div class="preview">まだ日報がありません。</div>'
+    # 左サイドバー: 年/月ツリー
+    date_tree_html = _build_date_tree(files, ".")
 
     # テスト記事リンク
-    test_links_html = ""
+    test_nav_links = ""
     if test_files:
-        test_links = []
+        links = []
         for file in test_files[:10]:
             rel_parts = file.relative_to(NEWS_DIR).parts
             year, month, filename = rel_parts
             day = filename.replace(".md", "")
             target = f"news/{year}/{month}/{day}/index.html"
             label = day.replace("test-", "")
-            test_links.append(f'<a href="{target}">{html.escape(label)}</a>')
-        test_links_html = f"""
-              <h2 style="margin-top:20px">テスト記事</h2>
-              <div class="side-list">
-                {"".join(test_links)}
-              </div>"""
+            links.append(f'<a class="side-link" href="{target}">{html.escape(label)}</a>')
+        test_nav_links = f"""
+        <div class="side-section">
+          <div class="side-heading">Test</div>
+          {"".join(links)}
+        </div>"""
 
     # 保存記事リンク
-    prev_links_html = ""
+    prev_nav_links = ""
     if prev_files:
-        prev_links = []
+        links = []
         for file in prev_files[:10]:
             rel_parts = file.relative_to(NEWS_DIR).parts
             year, month, filename = rel_parts
             day = filename.replace(".md", "")
             target = f"news/{year}/{month}/{day}/index.html"
             label = day.replace("prev-", "")
-            prev_links.append(f'<a href="{target}">{html.escape(label)} (保存)</a>')
-        prev_links_html = f"""
-              <h2 style="margin-top:20px">保存記事</h2>
-              <div class="side-list">
-                {"".join(prev_links)}
-              </div>"""
+            links.append(f'<a class="side-link" href="{target}">{html.escape(label)}</a>')
+        prev_nav_links = f"""
+        <div class="side-section">
+          <div class="side-heading">Saved</div>
+          {"".join(links)}
+        </div>"""
+
+    # 右サイドバー: 全タグ集計
+    all_tags: dict[str, int] = {}
+    for file in files:
+        raw = file.read_text(encoding="utf-8")
+        meta, _ = strip_front_matter(raw)
+        for t in _parse_tags_from_meta(meta):
+            all_tags[t] = all_tags.get(t, 0) + 1
+    tag_cloud_html = "".join(
+        f'<a href="tags/{html.escape(_sanitize_dirname(t))}/index.html" class="tag">{html.escape(t)} {c}</a>'
+        for t, c in sorted(all_tags.items(), key=lambda x: -x[1])
+    )
+
+    # 月タブ
+    month_tabs = _build_month_tabs(files, "all", ".")
 
     for page_num in range(1, total_pages + 1):
         start = (page_num - 1) * PAGE_SIZE
@@ -690,37 +878,42 @@ def build_index_pages(files: list[Path], prev_files: list[Path] | None = None, t
         health_banner = _build_health_banner() if page_num == 1 else ""
 
         body_html = f"""
-        <main class="wrap">
-          <section class="hero">
-            <div class="hero-card">
-              <h1>{SITE_TITLE}</h1>
-              <p>毎日の AI ツール / 企業動向 / 業界ニュースを Markdown から自動で静的サイト化しています。</p>
-              {health_banner}
-            </div>
-          </section>
+  {health_banner}
+  <div class="layout">
+    <aside class="sidebar-left">
+      {date_tree_html}
+      {test_nav_links}
+      {prev_nav_links}
+    </aside>
+    <main class="content-area">
+      <div class="content-header">
+        <div class="content-title">{"All AI News" if page_num == 1 else f"Page {page_num}"}</div>
+        <div class="content-subtitle">{len(files)} daily reports</div>
+        {month_tabs}
+      </div>
+      <div class="list-view">
+        {''.join(items_html) if items_html else '<div class="empty-state">No reports yet.</div>'}
+      </div>
+      {pagination}
+    </main>
+    <aside class="sidebar-right">
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Tags</div>
+        <div class="sidebar-tag-cloud">
+          {tag_cloud_html if tag_cloud_html else '<span style="color:var(--text-tertiary);font-size:12px">No tags</span>'}
+        </div>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Links</div>
+        <a class="sidebar-link" href="claude/index.html">Claude Info</a>
+        <a class="sidebar-link" href="models/index.html">Model Report</a>
+        <a class="sidebar-link" href="search/index.html">Search</a>
+      </div>
+    </aside>
+  </div>
+  <footer class="footer">Built automatically from daily Markdown files.</footer>"""
 
-          <section class="grid">
-            <div class="card">
-              <h2>{"最新日報" if page_num == 1 else f"{page_num}ページ目"}</h2>
-              <div class="list">
-                {''.join(items_html) if items_html else '<p class="preview">まだ日報がありません。</p>'}
-              </div>
-              {pagination}
-            </div>
-
-            <aside class="card">
-              <h2>最近の日付</h2>
-              <div class="side-list">
-                {side_html}
-              </div>
-              {test_links_html}
-              {prev_links_html}
-            </aside>
-          </section>
-        </main>
-        """
-
-        page_title = SITE_TITLE if page_num == 1 else f"{SITE_TITLE} - {page_num}ページ目"
+        page_title = SITE_TITLE if page_num == 1 else f"{SITE_TITLE} - Page {page_num}"
         html_text = page_shell(page_title, body_html, root_rel=".")
 
         if page_num == 1:
@@ -729,6 +922,53 @@ def build_index_pages(files: list[Path], prev_files: list[Path] | None = None, t
             page_dir = SITE_DIR / "page" / str(page_num)
             page_dir.mkdir(parents=True, exist_ok=True)
             (page_dir / "index.html").write_text(html_text, encoding="utf-8")
+
+    # --- 月別ページ生成 ---
+    months = _collect_months(files)
+    for ym in months:
+        y, m = ym.split("-")
+        month_files = [f for f in files if f.relative_to(NEWS_DIR).parts[0] == y and f.relative_to(NEWS_DIR).parts[1] == m]
+        if not month_files:
+            continue
+
+        items_html = [_item_html(f, "../..") for f in month_files]
+        month_tabs_html = _build_month_tabs(files, ym, "../..")
+        tree_html = _build_date_tree(files, "../..", current_ym=f"{y}/{m}")
+
+        month_body = f"""
+  <div class="layout">
+    <aside class="sidebar-left">
+      {tree_html}
+    </aside>
+    <main class="content-area">
+      <div class="content-header">
+        <div class="content-title">{html.escape(ym)}</div>
+        <div class="content-subtitle">{len(month_files)} reports</div>
+        {month_tabs_html}
+      </div>
+      <div class="list-view">
+        {''.join(items_html)}
+      </div>
+    </main>
+    <aside class="sidebar-right">
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Tags</div>
+        <div class="sidebar-tag-cloud">
+          {tag_cloud_html if tag_cloud_html else '<span style="color:var(--text-tertiary);font-size:12px">No tags</span>'}
+        </div>
+      </div>
+    </aside>
+  </div>"""
+
+        month_dir = SITE_DIR / "month" / ym
+        month_dir.mkdir(parents=True, exist_ok=True)
+        (month_dir / "index.html").write_text(
+            page_shell(f"{ym} - {SITE_TITLE}", month_body, root_rel="../.."),
+            encoding="utf-8",
+        )
+
+    if months:
+        print(f"[info] built {len(months)} month page(s): {', '.join(months)}")
 
 
 # ---------------------------------------------------------------------------
@@ -752,28 +992,29 @@ def build_article_pages(files: list[Path]) -> None:
 
         tags = _parse_tags_from_meta(meta)
         tags_html = "".join(
-            f'<a href="../../../../tags/{html.escape(_sanitize_dirname(t))}/index.html" class="chip-tag">{html.escape(t)}</a>'
+            f'<a href="../../../../tags/{html.escape(_sanitize_dirname(t))}/index.html" class="tag">{html.escape(t)}</a>'
             for t in tags
         )
-        tags_row = f'<div class="meta" style="margin-top:10px">{tags_html}</div>' if tags_html else ""
+        tags_row = f'<div class="tag-row" style="margin-top:8px">{tags_html}</div>' if tags_html else ""
 
         body_html = f"""
-        <main class="wrap article">
-          <a class="back" href="../../../../index.html">← index に戻る</a>
-          <article class="article-card">
-            <div class="article-header">
-              <h1 class="article-title">{html.escape(title)}</h1>
-              <div class="article-meta">
-                date: {html.escape(meta.get('date', day))} / total_items: {html.escape(meta.get('total_items', ''))}
-              </div>
-              {tags_row}
-            </div>
-            <div class="article-body">
-              {article_html}
-            </div>
-          </article>
-        </main>
-        """
+  <div class="layout">
+    <main class="content-area">
+      <div class="article-detail">
+        <a class="back-link" href="../../../../index.html">← Back to list</a>
+        <div class="article-detail-header">
+          <h1 class="article-detail-title">{html.escape(title)}</h1>
+          <div class="article-detail-meta">
+            {html.escape(meta.get('date', day))} / {html.escape(meta.get('total_items', ''))} items
+          </div>
+          {tags_row}
+        </div>
+        <div class="article-body">
+          {article_html}
+        </div>
+      </div>
+    </main>
+  </div>"""
 
         html_text = page_shell(title, body_html, root_rel="../../../../")
         (out_dir / "index.html").write_text(html_text, encoding="utf-8")
@@ -797,31 +1038,40 @@ def build_tag_pages(files: list[Path]) -> None:
     tags_dir = SITE_DIR / "tags"
     tags_dir.mkdir(parents=True, exist_ok=True)
 
-    tag_links = "".join(
-        f'<a href="{html.escape(_sanitize_dirname(tag))}/index.html" class="chip-tag">'
+    # 左サイドバーにタグナビ
+    side_tag_links = "".join(
+        f'<a class="side-link" href="{html.escape(_sanitize_dirname(tag))}/index.html">'
+        f'{html.escape(tag)}<span class="side-count">{len(flist)}</span></a>'
+        for tag, flist in sorted(tag_to_files.items(), key=lambda x: -len(x[1]))
+    )
+
+    tag_cloud = "".join(
+        f'<a href="{html.escape(_sanitize_dirname(tag))}/index.html" class="tag">'
         f'{html.escape(tag)} ({len(flist)})</a>'
-        for tag, flist in sorted(tag_to_files.items())
+        for tag, flist in sorted(tag_to_files.items(), key=lambda x: -len(x[1]))
     )
     overview_body = f"""
-    <main class="wrap">
-      <section class="hero">
-        <div class="hero-card">
-          <h1>タグ一覧</h1>
-          <p>記事に付与されたカテゴリタグの一覧です。</p>
+  <div class="layout">
+    <aside class="sidebar-left">
+      <div class="side-section">
+        <div class="side-heading">All Tags</div>
+        {side_tag_links}
+      </div>
+    </aside>
+    <main class="content-area">
+      <div class="content-header">
+        <div class="content-title">Tags</div>
+        <div class="content-subtitle">{len(tag_to_files)} tags</div>
+      </div>
+      <div style="padding:16px 24px">
+        <div class="sidebar-tag-cloud" style="gap:6px">
+          {tag_cloud if tag_cloud else '<div class="empty-state">No tags.</div>'}
         </div>
-      </section>
-      <section style="padding:24px 0">
-        <div class="card">
-          <h2>すべてのタグ</h2>
-          <div class="tag-cloud">
-            {tag_links if tag_links else '<p class="preview">タグがありません。</p>'}
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
-    """
+  </div>"""
     (tags_dir / "index.html").write_text(
-        page_shell("タグ一覧 - " + SITE_TITLE, overview_body, root_rel=".."),
+        page_shell("Tags - " + SITE_TITLE, overview_body, root_rel=".."),
         encoding="utf-8",
     )
 
@@ -830,23 +1080,23 @@ def build_tag_pages(files: list[Path]) -> None:
         items_html = [_item_html(f, "../..") for f in tag_files]
 
         body_html = f"""
-        <main class="wrap">
-          <section class="hero">
-            <div class="hero-card">
-              <h1>タグ: {html.escape(tag)}</h1>
-              <p>{len(tag_files)} 件の記事があります。</p>
-            </div>
-          </section>
-          <section style="padding:24px 0 40px">
-            <div class="card">
-              <h2>{html.escape(tag)}</h2>
-              <div class="list">
-                {''.join(items_html)}
-              </div>
-            </div>
-          </section>
-        </main>
-        """
+  <div class="layout">
+    <aside class="sidebar-left">
+      <div class="side-section">
+        <div class="side-heading">All Tags</div>
+        {side_tag_links}
+      </div>
+    </aside>
+    <main class="content-area">
+      <div class="content-header">
+        <div class="content-title">{html.escape(tag)}</div>
+        <div class="content-subtitle">{len(tag_files)} articles</div>
+      </div>
+      <div class="list-view">
+        {''.join(items_html)}
+      </div>
+    </main>
+  </div>"""
 
         tag_dir = tags_dir / _sanitize_dirname(tag)
         tag_dir.mkdir(parents=True, exist_ok=True)
@@ -898,29 +1148,20 @@ def build_search_page() -> None:
     search_dir.mkdir(parents=True, exist_ok=True)
 
     body_html = """
-    <main class="wrap">
-      <section class="hero">
-        <div class="hero-card">
-          <h1>記事検索</h1>
-          <p>タイトル・要約のキーワードで絞り込みます。</p>
-        </div>
-      </section>
-      <section style="padding:24px 0 40px">
-        <div class="card">
-          <input id="search-input" type="search"
-            placeholder="キーワードを入力…"
-            style="width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
-                   border-radius:12px;color:var(--text);padding:10px 16px;font-size:16px;
-                   outline:none;margin-bottom:20px;">
-          <div id="no-results" style="color:var(--muted)">該当する記事が見つかりませんでした。</div>
-          <div id="search-page-results" class="list"></div>
-        </div>
-      </section>
+  <div class="layout">
+    <main class="content-area">
+      <div class="content-header" style="display:flex;align-items:center;gap:12px">
+        <div class="content-title" style="flex-shrink:0">Search</div>
+        <input id="search-input" class="search-input-full" type="search"
+          placeholder="Type to search…" autocomplete="off" style="flex:1">
+      </div>
+      <div id="no-results">No matching articles found.</div>
+      <div id="search-page-results" class="list-view"></div>
     </main>
-    """
+  </div>"""
 
     (search_dir / "index.html").write_text(
-        page_shell("記事検索 - " + SITE_TITLE, body_html, root_rel=".."),
+        page_shell("Search - " + SITE_TITLE, body_html, root_rel=".."),
         encoding="utf-8",
     )
 
@@ -972,25 +1213,22 @@ def _render_model_md_to_html(md_path: Path, back_href: str, back_label: str, roo
     raw_html = markdown.markdown(body, extensions=MD_EXTENSIONS)
     article_html = _classify_model_tables(raw_html)
 
-    date_note = f"（{html.escape(report_date)} 時点の情報）" if report_date else ""
-
     body_html = f"""
-    <main class="wrap article model-report">
-      <a class="back" href="{back_href}">{back_label}</a>
-      <article class="article-card">
-        <div class="article-header">
-          <h1 class="article-title">{html.escape(title)}</h1>
-          <div class="article-meta">
-            最終更新: {html.escape(report_date)} {date_note}
-          </div>
+  <div class="layout">
+    <main class="content-area">
+      <div class="article-detail">
+        <a class="back-link" href="{back_href}">{back_label}</a>
+        <div class="article-detail-header">
+          <h1 class="article-detail-title">{html.escape(title)}</h1>
+          <div class="article-detail-meta">Last updated: {html.escape(report_date)}</div>
         </div>
         <div class="article-body">
           {article_html}
         </div>
-      </article>
-      {history_links_html}
+        {history_links_html}
+      </div>
     </main>
-    """
+  </div>"""
 
     return page_shell(title, body_html, root_rel=root_rel)
 
@@ -1017,15 +1255,15 @@ def build_model_page() -> None:
             date_str = hf.stem
             links.append(
                 f'<a href="history/{html.escape(date_str)}/index.html" '
-                f'class="chip-tag">{html.escape(date_str)}</a>'
+                f'class="tag">{html.escape(date_str)}</a>'
             )
         history_links = f"""
-      <div class="card" style="margin-top:24px">
-        <h2>過去のレポート</h2>
-        <div class="tag-cloud">
-          {"".join(links)}
-        </div>
-      </div>"""
+        <div style="margin-top:24px;padding-top:16px;border-top:1px solid var(--border)">
+          <div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-tertiary);margin-bottom:8px">History</div>
+          <div class="sidebar-tag-cloud" style="gap:6px">
+            {"".join(links)}
+          </div>
+        </div>"""
 
     # latest ページ生成
     html_text = _render_model_md_to_html(
@@ -1121,22 +1359,20 @@ def _claude_article_item(category: str, slug: str, meta: dict, title: str, root_
     date_str = meta.get("date", "")
     tags = _parse_tags_from_meta(meta)
     tags_html = "".join(
-        f'<span class="chip-tag">{html.escape(t)}</span>'
+        f'<span class="tag">{html.escape(t)}</span>'
         for t in tags[:5]
     )
-    summary_html = f'<p class="preview" style="margin:4px 0 0;font-size:14px">{html.escape(summary)}</p>' if summary else ''
+    tags_row = f'<div class="tag-row">{tags_html}</div>' if tags_html else ''
 
-    return f"""
-    <article class="item">
-      <h3><a href="{target}">{html.escape(title)}</a></h3>
-      <div class="meta">
-        <span class="chip">{html.escape(date_str)}</span>
-        <span class="chip">{html.escape(category)}</span>
+    return f"""<a class="list-row" href="{target}">
+      <div class="list-row-title">{html.escape(title)}</div>
+      <div class="list-row-summary">{html.escape(summary)}</div>
+      <div class="list-row-meta">
+        <span class="meta-date">{html.escape(date_str)}</span>
+        <span class="tag">{html.escape(category)}</span>
+        {tags_row}
       </div>
-      {summary_html}
-      {f'<div class="meta">{tags_html}</div>' if tags_html else ''}
-    </article>
-    """
+    </a>"""
 
 
 def _rewrite_claude_md_links(html_text: str) -> str:
@@ -1180,30 +1416,29 @@ def build_claude_pages() -> None:
     cat_cards_html = []
     for cat_dir, cat_label, cat_desc in _CLAUDE_CATEGORIES:
         cnt = cat_counts.get(cat_dir, 0)
-        if cnt > 0:
-            count_badge = f'{cnt} 件'
-            link = f'<a href="category/{cat_dir}/index.html" style="color:var(--accent-2);font-size:13px">記事を見る →</a>'
-        else:
-            count_badge = '準備中'
-            link = ''
+        count_text = f'{cnt} articles' if cnt > 0 else 'Coming soon'
+        link = f'<a class="cat-card-link" href="category/{cat_dir}/index.html">View →</a>' if cnt > 0 else ''
         cat_cards_html.append(f"""
-          <div class="item" style="display:flex;flex-direction:column;gap:6px">
-            <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
-              <h3 style="margin:0;font-size:17px">{html.escape(cat_label)}</h3>
-              <span class="chip" style="font-size:11px">{count_badge}</span>
-            </div>
-            <p class="preview" style="margin:0;font-size:14px">{html.escape(cat_desc)}</p>
+          <div class="cat-card">
+            <div class="cat-card-name">{html.escape(cat_label)} <span style="color:var(--text-tertiary);font-size:12px">({count_text})</span></div>
+            <div class="cat-card-desc">{html.escape(cat_desc)}</div>
             {link}
           </div>""")
 
-    # --- サイドナビ HTML（全カテゴリ表示） ---
+    # --- サイドナビ HTML（記事があるカテゴリのみリンク） ---
     side_links = []
     for cat_dir, cat_label, _ in _CLAUDE_CATEGORIES:
         cnt = cat_counts.get(cat_dir, 0)
-        label = f'{html.escape(cat_label)} ({cnt})' if cnt > 0 else f'{html.escape(cat_label)}'
-        side_links.append(
-            f'<a href="category/{cat_dir}/index.html">{label}</a>'
-        )
+        if cnt > 0:
+            side_links.append(
+                f'<a class="side-link" href="category/{cat_dir}/index.html">'
+                f'{html.escape(cat_label)}<span class="side-count">{cnt}</span></a>'
+            )
+        else:
+            side_links.append(
+                f'<span class="side-link" style="color:rgba(255,255,255,.2);cursor:default">'
+                f'{html.escape(cat_label)}<span class="side-count">0</span></span>'
+            )
     side_nav_html = "".join(side_links)
 
     # --- インデックスページ (_site/claude/index.html) ---
@@ -1233,39 +1468,34 @@ def build_claude_pages() -> None:
     articles_section = "".join(grouped_html_parts) if grouped_html_parts else '<p class="preview">記事がありません。</p>'
 
     body_html = f"""
-    <main class="wrap">
-      <section class="hero">
-        <div class="hero-card">
-          <h1>Claude エコシステム情報</h1>
-          <p>Claude / Claude Code / Claude Console および関連ツールの最新情報をカテゴリ別に整理しています。</p>
-        </div>
-      </section>
-      <section style="padding:20px 0 0">
-        <div class="card">
-          <details class="card-toggle">
-            <summary><h2>カテゴリ一覧</h2></summary>
-            <div class="list" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr))">
-              {''.join(cat_cards_html)}
-            </div>
-          </details>
-        </div>
-      </section>
-      <section class="grid">
-        <div class="card">
-          <h2>すべての記事</h2>
-          <div class="list">
-            {articles_section}
-          </div>
-        </div>
-        <aside class="card">
-          <h2>カテゴリ</h2>
-          <div class="side-list">
-            {side_nav_html}
-          </div>
-        </aside>
-      </section>
+  <div class="layout">
+    <aside class="sidebar-left">
+      <div class="side-section">
+        <div class="side-heading">Categories</div>
+        {side_nav_html}
+      </div>
+    </aside>
+    <main class="content-area">
+      <div class="content-header">
+        <div class="content-title">Claude Ecosystem</div>
+        <div class="content-subtitle">{len(articles)} articles</div>
+      </div>
+      <div class="cat-grid">
+        {''.join(cat_cards_html)}
+      </div>
+      <div class="list-view">
+        {articles_section}
+      </div>
     </main>
-    """
+    <aside class="sidebar-right">
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Navigation</div>
+        <a class="sidebar-link" href="../index.html">Daily Reports</a>
+        <a class="sidebar-link" href="../models/index.html">Model Report</a>
+        <a class="sidebar-link" href="../search/index.html">Search</a>
+      </div>
+    </aside>
+  </div>"""
     (out_base / "index.html").write_text(
         page_shell("Claude エコシステム情報 - " + SITE_TITLE, body_html, root_rel=".."),
         encoding="utf-8",
@@ -1286,24 +1516,24 @@ def build_claude_pages() -> None:
             items_html.append(_claude_article_item(cat, slug, meta, title, "../../..", summary=summary))
 
         cat_body = f"""
-        <main class="wrap">
-          <section class="hero">
-            <div class="hero-card">
-              <h1>{html.escape(cat_label)}</h1>
-              <p>{len(cat_articles)} 件の記事があります。</p>
-            </div>
-          </section>
-          <section style="padding:24px 0 40px">
-            <div class="card">
-              <a class="back" href="../../index.html" style="display:inline-block;margin-bottom:16px">← Claude Info に戻る</a>
-              <h2>{html.escape(cat_label)}</h2>
-              <div class="list">
-                {''.join(items_html)}
-              </div>
-            </div>
-          </section>
-        </main>
-        """
+  <div class="layout">
+    <aside class="sidebar-left">
+      <div class="side-section">
+        <div class="side-heading">Categories</div>
+        {side_nav_html.replace('category/', '../')}
+      </div>
+    </aside>
+    <main class="content-area">
+      <div class="content-header">
+        <a class="back-link" href="../../index.html" style="margin-bottom:4px">← Claude Info</a>
+        <div class="content-title">{html.escape(cat_label)}</div>
+        <div class="content-subtitle">{len(cat_articles)} articles</div>
+      </div>
+      <div class="list-view">
+        {''.join(items_html)}
+      </div>
+    </main>
+  </div>"""
 
         cat_out = out_base / "category" / cat_dir
         cat_out.mkdir(parents=True, exist_ok=True)
@@ -1326,28 +1556,27 @@ def build_claude_pages() -> None:
 
         tags = _parse_tags_from_meta(meta)
         tags_html = "".join(
-            f'<span class="chip-tag">{html.escape(t)}</span>'
+            f'<span class="tag">{html.escape(t)}</span>'
             for t in tags
         )
-        tags_row = f'<div class="meta" style="margin-top:10px">{tags_html}</div>' if tags_html else ""
+        tags_row = f'<div class="tag-row" style="margin-top:8px">{tags_html}</div>' if tags_html else ""
 
         detail_body = f"""
-        <main class="wrap article">
-          <a class="back" href="../../index.html">← Claude Info に戻る</a>
-          <article class="article-card">
-            <div class="article-header">
-              <h1 class="article-title">{html.escape(title)}</h1>
-              <div class="article-meta">
-                カテゴリ: {html.escape(cat_label)} / 最終更新: {html.escape(updated)}
-              </div>
-              {tags_row}
-            </div>
-            <div class="article-body">
-              {article_html}
-            </div>
-          </article>
-        </main>
-        """
+  <div class="layout">
+    <main class="content-area">
+      <div class="article-detail">
+        <a class="back-link" href="../../index.html">← Claude Info</a>
+        <div class="article-detail-header">
+          <h1 class="article-detail-title">{html.escape(title)}</h1>
+          <div class="article-detail-meta">{html.escape(cat_label)} / Updated: {html.escape(updated)}</div>
+          {tags_row}
+        </div>
+        <div class="article-body">
+          {article_html}
+        </div>
+      </div>
+    </main>
+  </div>"""
 
         art_out = out_base / cat / slug
         art_out.mkdir(parents=True, exist_ok=True)

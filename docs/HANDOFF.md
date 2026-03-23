@@ -1,6 +1,6 @@
 # HANDOFF.md — AI News System 引き継ぎドキュメント
 
-最終更新: 2026-03-22（第3版）
+最終更新: 2026-03-24（第4版）
 
 ---
 
@@ -53,7 +53,8 @@ claude_feeds.yaml (official/community/tools グループ)
 - **日報パイプライン**: 運用中。GitHub Actions で毎日 JST 01:05 に自動実行。
 - **モデルまとめ**: 週次自動実行（毎週月曜、`daily-news.yml` に組み込み）+ 手動実行（`model-report.yml`）。
 - **Claude エコシステム情報**: 運用中。GitHub Actions で毎日 JST 07:00 に自動実行（`claude-info.yml`）。
-- **静的サイト**: 運用中。GitHub Pages にデプロイ済み。
+- **静的サイト**: 運用中。GitHub Pages にデプロイ済み。Linear.app 風UIに全面リデザイン完了。
+- **UIリデザイン**: カード型ブログUI → Linear風3カラムダッシュボードに全面変更。月別アーカイブ・年月折りたたみサイドバー・レスポンシブ対応 完了。
 - **ソース**: 22ソース / 5リージョン。実効稼働率 91%（arXiv 2本は週末 0件）。
 - **安全性修正**: HIGH 5件 + MEDIUM 5件 完了。
 - **中期タスク**: 5件すべて完了。
@@ -132,6 +133,25 @@ claude_feeds.yaml (official/community/tools グループ)
 | Claude カテゴリ概要を折りたたみ式に変更（`<details>/<summary>`、デフォルト閉じ） | `scripts/build_site.py` |
 | Claude 記事一覧を日付ごとにグループ化表示（日付見出し + 件数、降順ソート） | `scripts/build_site.py` |
 
+### 静的サイト UI 全面リデザイン (done)
+
+| 改善内容 | 対象ファイル |
+|---|---|
+| カード型ブログUI → Linear.app 風3カラムリスト型UIに全面変更 | `scripts/build_site.py` (CSS + HTML テンプレート) |
+| 左サイドバー: 年/月折りたたみツリーナビ (`<details>/<summary>`) | `scripts/build_site.py` (`_build_date_tree`) |
+| 月別アーカイブページ生成 (`_site/month/YYYY-MM/index.html`) | `scripts/build_site.py` (`_build_month_tabs`, `_collect_months`) |
+| content-header に月タブUI (All / 2026-03 / ...) | `scripts/build_site.py` |
+| 記事詳細ページの本文中央寄せ (max-width:800px, margin:0 auto) | `scripts/build_site.py` (CSS `.article-detail`) |
+| 1行リスト型アイテム (タイトル→要約→メタ+タグ の縦配置) | `scripts/build_site.py` (`_item_html`) |
+| タグを控えめ表示 (背景なし, 低コントラスト, `·` 区切り) | `scripts/build_site.py` (CSS `.tag`) |
+| ダークテーマ統一 (#0f0f12 背景, shadow/gradient 禁止) | `scripts/build_site.py` (CSS 全体) |
+| レスポンシブ対応: モバイル1カラム + ハンバーガーメニュー | `scripts/build_site.py` (CSS `@media`, JS `#menu-toggle`) |
+| 命名統一: Issues → AI News / All Issues → All AI News | `scripts/build_site.py` (page_shell, build_index_pages) |
+| 0件カテゴリのリンク無効化 (ERR_FILE_NOT_FOUND 修正) | `scripts/build_site.py` (build_claude_pages) |
+| メインカラム max-width:860px + margin:auto で重心調整 | `scripts/build_site.py` (CSS `.content-area > *`) |
+| topbar ナビ (AI News / Claude / Models / Tags / Search) | `scripts/build_site.py` (page_shell) |
+| 最新記事の視覚強調 (accent ドット + 白文字) | `scripts/build_site.py` (CSS `.list-row:first-child`) |
+
 ### 収集精度メトリクス (done)
 
 | Phase | 内容 | 対象ファイル |
@@ -162,7 +182,7 @@ claude_feeds.yaml (official/community/tools グループ)
 | `scripts/main.py` | `python -m scripts.main` | 日報パイプライン全体 |
 | `scripts/model_report.py` | `python -m scripts.model_report` | モデルまとめ生成 |
 | `scripts/test_pipeline.py` | `python -m scripts.test_pipeline [--model ...]` | テスト用パイプライン（ペナルティなし・モデル比較） |
-| `scripts/build_site.py` | `python -m scripts.build_site` | 静的サイトのみ再ビルド |
+| `scripts/build_site.py` | `python -m scripts.build_site` | 静的サイト再ビルド（Linear風UI・月別ページ・レスポンシブ） |
 | `scripts/build_index.py` | `python -m scripts.build_index` | index.md のみ再生成 |
 | `scripts/test_collect.py` | `python -m scripts.test_collect [args]` | ソース収集テスト |
 | `scripts/seen_urls.py` | `python -m scripts.seen_urls` | ペナルティ状況確認 |
@@ -407,6 +427,10 @@ python -m scripts.metrics
 - **リージョン追加**: `feeds.yaml` + `summarize.py` の `region_order` + `render_markdown.py` のループ順序 の3箇所を同時に変更する必要がある
 - **`config.yaml` のキー名**: 各モジュールの `cfg("key", default)` 呼び出しとキー名を一致させる必要がある
 - **ソース削除/追加**: `feeds.yaml` のみでOK。`collect.py` の `SOURCE_SELECTORS` に固有パーサーがある場合はそちらも確認
+- **`build_site.py` の CSS 変更**: CSS は `build_site.py` の `CSS` 定数に埋め込み。変更時は `python -m scripts.build_site` で `_site/style.css` を再生成する必要がある
+- **月別ページの URL 構造**: `_site/month/YYYY-MM/index.html` 形式。`root_rel` は `../..` で相対パス参照
+- **サイドバーツリーの `<details>` 開閉状態**: `_build_date_tree()` が現在年・現在月をデフォルト `open` に設定。月が増えても自動で正しく動作する
+- **レスポンシブ CSS**: `@media(max-width:800px)` でモバイル対応。`!important` を使用している箇所があるため、スタイル上書き時は注意
 
 ### 変更時に最初に確認すべきファイル
 
@@ -459,6 +483,14 @@ python -m scripts.metrics
 | Claude 記事一覧に概要テキスト表示 | `scripts/build_site.py` |
 | Claude カテゴリ概要を折りたたみ式に変更 | `scripts/build_site.py` |
 | Claude 記事一覧を日付グループ化表示 | `scripts/build_site.py` |
+| 静的サイト UI 全面リデザイン（Linear.app 風3カラム） | `scripts/build_site.py` |
+| 月別アーカイブページ生成 | `scripts/build_site.py` |
+| 左サイドバー年/月折りたたみツリー | `scripts/build_site.py` |
+| 記事詳細ページ本文中央寄せ | `scripts/build_site.py` |
+| レスポンシブ対応（モバイル1カラム + ハンバーガーメニュー） | `scripts/build_site.py` |
+| 命名統一 (Issues → AI News) | `scripts/build_site.py` |
+| 0件カテゴリのリンク無効化 | `scripts/build_site.py` |
+| メインカラム重心の中央寄せ調整 | `scripts/build_site.py` |
 
 ### planned
 
@@ -467,6 +499,9 @@ python -m scripts.metrics
 | クラスタリング判定に summary_ja を追加 | **中** | 重複記事の検知精度向上。閾値調整が必要 |
 | Claude パイプラインのメトリクス蓄積 | **中** | 日報側には `metrics.py` があるが Claude 側にはない |
 | Claude パイプラインの健全性チェック | **中** | `claude_feeds.yaml` のソースが壊れても検知できない |
+| モバイル検索UIの改善 | **低** | 現在モバイルではtopbar検索を非表示。Search ページリンクで代替中 |
+| サイドバーのスライドインアニメーション | **低** | 現在は即時表示/非表示。`transform: translateX` でスムーズ化可能 |
+| 月別ページのページネーション対応 | **低** | 月あたり30件超の場合に必要。現時点では不要 |
 | config.yaml Phase B (Tier 2/3 定数移行) | **低** | Phase A で基盤完成。キーワードリスト等は変更頻度低い |
 | `collect.py` の LSP 型エラー修正 | **低** | ランタイムでは問題なし |
 | `source_penalties` の古いエントリ自動削除 | **低** | URLは `URL_EXPIRY_DAYS` で自動削除されるが penalties は蓄積され続ける。現時点では肥大化リスクは低い |
@@ -493,7 +528,7 @@ python -m scripts.metrics
 | `fetch_body.py` の JS レンダリングサイト対応 | Playwright 等の導入が必要。依存が大きい |
 | pytest 導入 | ライブ診断 + test_pipeline で十分な段階 |
 | ログを logging モジュールに移行 | print ベースで統一されており動作に問題なし |
-| CSS の外部ファイル化 | `build_site.py` に埋め込み。動作に支障なし |
+| CSS の外部ファイル化 | `build_site.py` に埋め込み（CSS定数 約350行）。ビルド時に `_site/style.css` として出力。規模が大きくなれば分離を検討 |
 | 日報の RSS フィード生成 | 需要が発生してから実装 |
 
 ---
@@ -507,6 +542,21 @@ python -m scripts.metrics
 2. **Claude パイプラインのメトリクス蓄積** — `claude_main.py` に `save_metrics()` 相当の仕組みを追加。ソース別件数・要約成功率・カテゴリ分布を記録。
 
 3. **Claude パイプラインの健全性チェック** — `claude_feeds.yaml` のソースが0件連続した場合の警告ログ。
+
+### UI リデザインに関する補足
+
+`build_site.py` は CSS・HTML テンプレート・ページ生成ロジックを一体で管理している。UI を変更する場合の主要な関数:
+
+| 関数 | 役割 |
+|---|---|
+| `CSS` 定数 | サイト全体のスタイル（約350行、Linear風デザインシステム） |
+| `page_shell()` | 全ページ共通のHTML外枠（topbar・ナビ・モバイルメニューJS） |
+| `_build_date_tree()` | 左サイドバーの年/月/日折りたたみツリー生成 |
+| `_build_month_tabs()` | 月タブUI生成（All / YYYY-MM / ...） |
+| `_item_html()` | 日報リスト行の HTML（タイトル→要約→メタ+タグ） |
+| `_claude_article_item()` | Claude 記事リスト行の HTML |
+| `build_index_pages()` | トップページ + 月別ページの生成 |
+| `build_article_pages()` | 記事詳細ページの生成（本文中央寄せ） |
 
 ---
 
@@ -524,3 +574,5 @@ python -m scripts.metrics
 - 要約品質に影響する変更（プロンプト、max_tokens、モデル等）を行ったとき
 - `claude/` のカテゴリ構造やビルド方式を変更したとき
 - Claude 情報の自動収集パイプラインを追加・変更したとき
+- 静的サイトの UI・レイアウト・ページ構成を変更したとき
+- 月別ページやサイドバーの構造を変更したとき
