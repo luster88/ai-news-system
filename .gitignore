@@ -46,5 +46,14 @@ tmp/
 # opencode
 AGENTS.md
 
+# Claude Code
+CLAUDE.md
+
+# UI reference images
+linear_ui_refs_optimized/
+
+# fetch scripts
+fetch_linear_ui.sh
+
 # _site
 _site/
