@@ -7,14 +7,30 @@ tags:
 - prompt
 - setup
 date: '2026-03-22'
-updated: '2026-03-22'
+updated: '2026-03-25'
 sources:
 - url: https://qiita.com/Akkami/items/5580361e3426198ff54a
   title: Claude Codeでデバッグするなら「ベテランの感覚」をCLAUDE.mdとSkillsに埋め込め
   date: '2026-03-22'
+- url: https://zenn.dev/leegrey/articles/4f3cf300dd8aac
+  title: 【完全版】Claude Code コマンド・ショートカット全集：次世代AIエージェントを使いこなす
+  date: '2026-03-25'
 ---
 
+
 # Claude Code Debugging
+
+---
+
+## 2026-03-25
+
+### 【完全版】Claude Code コマンド・ショートカット全集：次世代AIエージェントを使いこなす
+
+Claude Code（CLIエージェントツール）の全コマンド・ショートカットを網羅したリファレンス記事。基本操作から初期設定、コスト管理まで、実務で使うための完全ガイド。/init、/ls、/add、/drop などのコマンドを活用したワークフロー構築により、ターミナル上でAIと協働しながら設計からデプロイまで完結できる開発体験を実現する。
+
+- **ソース**: [Zenn claude](https://zenn.dev/leegrey/articles/4f3cf300dd8aac)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

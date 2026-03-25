@@ -6,8 +6,9 @@ tags:
 - claude-code
 - cowork
 - performance
+- 新機能
 date: '2026-03-22'
-updated: '2026-03-22'
+updated: '2026-03-25'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -17,9 +18,25 @@ sources:
   title: Has anyone actually made money with "vibe coding"? (genuine question from
     a Chinese dev)
   date: '2026-03-22'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1s30ilh/wtaf
+  title: WTAF?
+  date: '2026-03-25'
 ---
 
+
 # Community Discussion
+
+---
+
+## 2026-03-25
+
+### WTAF?
+
+50代後半の医師兼プログラマーが、Claude Code を使ったソニー製 CD ジュークボックスのコード解析プロジェクトについて熱く語る。Claude は手作業での16進数解析という退屈な作業を大幅に効率化し、アセンブリからC言語、スクリプト言語への進化に匹敵する生産性向上をもたらしたと強調。また、コーディング未経験者がClaude で自分の欲しいものを作れるようになった喜びを投稿したところ、コミュニティから不当な批判を受けた件について、「コンピューティングの民主化」として祝福すべきだと擁護している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1s30ilh/wtaf)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 
