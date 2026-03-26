@@ -5,6 +5,7 @@ import html
 import re
 
 import markdown
+import yaml
 from bs4 import BeautifulSoup
 
 from scripts.metrics import check_health
@@ -424,6 +425,24 @@ code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 /* --- Empty State --- */
 .empty-state{padding:40px 24px;text-align:center;color:var(--text-tertiary);font-size:14px}
 
+/* --- Favorites --- */
+.fav-tag{
+  display:inline-block;
+  background:rgba(123,143,255,.1);
+  color:var(--accent);
+  padding:1px 8px;border-radius:10px;
+  font-size:11px;line-height:1.6;
+  text-decoration:none;
+  transition:background .12s;
+}
+.fav-tag:hover{background:rgba(123,143,255,.2)}
+.fav-tag+.fav-tag{margin-left:4px}
+.fav-memo{font-size:12px;color:var(--text-tertiary);margin-top:2px;font-style:italic}
+.fav-source{
+  display:inline-block;font-size:11px;
+  color:rgba(255,255,255,.3);margin-left:8px;
+}
+
 /* --- Utility --- */
 .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
 """
@@ -611,6 +630,7 @@ def page_shell(title: str, body_html: str, root_rel: str = ".") -> str:
       <a href="{root_rel}/claude/index.html">Claude</a>
       <a href="{root_rel}/models/index.html">Models</a>
       <a href="{root_rel}/tags/index.html">Tags</a>
+      <a href="{root_rel}/favorites/index.html">Favorites</a>
       <a href="{root_rel}/search/index.html">Search</a>
     </nav>
     <div class="topbar-search">
@@ -912,6 +932,7 @@ def build_index_pages(files: list[Path], prev_files: list[Path] | None = None, t
         <div class="sidebar-section-title">Links</div>
         <a class="sidebar-link" href="claude/index.html">Claude Info</a>
         <a class="sidebar-link" href="models/index.html">Model Report</a>
+        <a class="sidebar-link" href="favorites/index.html">Favorites</a>
         <a class="sidebar-link" href="search/index.html">Search</a>
       </div>
     </aside>
@@ -1622,6 +1643,144 @@ def _collect_claude_search_entries() -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
+# お気に入りページ
+# ---------------------------------------------------------------------------
+
+FAV_FILE = BASE_DIR / "data" / "favorites.yaml"
+
+
+def _load_favorites() -> list[dict]:
+    if not FAV_FILE.exists():
+        return []
+    with open(FAV_FILE, "r", encoding="utf-8") as f:
+        data = yaml.safe_load(f) or {}
+    return data.get("favorites", []) or []
+
+
+def _fav_item_html(fav: dict, root_rel: str) -> str:
+    """お気に入り記事の一覧アイテムHTMLを返す。"""
+    root_rel = root_rel.rstrip("/")
+    title = fav.get("title", fav.get("url", ""))
+    url = fav.get("url", "")
+    source_date = fav.get("source_date", "")
+    added = fav.get("added", "")
+    memo = fav.get("memo", "")
+    user_tags = fav.get("user_tags", [])
+
+    tags_html = "".join(
+        f'<a class="fav-tag" href="{root_rel}/favorites/tags/{html.escape(_sanitize_dirname(t))}/index.html">{html.escape(t)}</a>'
+        for t in user_tags
+    )
+    memo_html = f'<div class="fav-memo">{html.escape(memo)}</div>' if memo else ""
+
+    return f"""<a class="list-row" href="{html.escape(url)}" target="_blank" rel="noopener">
+      <div class="list-row-title">{html.escape(title)}</div>
+      {memo_html}
+      <div class="list-row-meta">
+        <span class="meta-date">{html.escape(source_date)}</span>
+        <span class="fav-source">added {html.escape(added)}</span>
+        <span class="tag-row">{tags_html}</span>
+      </div>
+    </a>"""
+
+
+def build_favorites_pages() -> None:
+    """お気に入りページを _site/favorites/ に生成する。"""
+    favorites = _load_favorites()
+    fav_dir = SITE_DIR / "favorites"
+    fav_dir.mkdir(parents=True, exist_ok=True)
+
+    # タグ集計
+    tag_to_favs: dict[str, list[dict]] = {}
+    for fav in favorites:
+        for t in fav.get("user_tags", []):
+            tag_to_favs.setdefault(t, []).append(fav)
+
+    # サイドバー: タグナビ
+    side_tag_links = ""
+    if tag_to_favs:
+        side_tag_links = "".join(
+            f'<a class="side-link" href="tags/{html.escape(_sanitize_dirname(tag))}/index.html">'
+            f'{html.escape(tag)}<span class="side-count">{len(flist)}</span></a>'
+            for tag, flist in sorted(tag_to_favs.items(), key=lambda x: -len(x[1]))
+        )
+
+    # --- 全件一覧ページ ---
+    items_html = [_fav_item_html(f, "..") for f in favorites]
+
+    tag_cloud = ""
+    if tag_to_favs:
+        tag_cloud = "".join(
+            f'<a href="tags/{html.escape(_sanitize_dirname(tag))}/index.html" class="fav-tag">'
+            f'{html.escape(tag)} ({len(flist)})</a>'
+            for tag, flist in sorted(tag_to_favs.items(), key=lambda x: -len(x[1]))
+        )
+
+    body_html = f"""
+  <div class="layout">
+    <aside class="sidebar-left">
+      <div class="side-section">
+        <div class="side-heading">Favorite Tags</div>
+        {side_tag_links if side_tag_links else '<span class="side-link" style="color:rgba(255,255,255,.2)">No tags yet</span>'}
+      </div>
+    </aside>
+    <main class="content-area">
+      <div class="content-header">
+        <div class="content-title">Favorites</div>
+        <div class="content-subtitle">{len(favorites)} articles</div>
+      </div>
+      <div style="padding:12px 24px">
+        <div class="sidebar-tag-cloud" style="gap:6px">
+          {tag_cloud if tag_cloud else ""}
+        </div>
+      </div>
+      <div class="list-view">
+        {''.join(items_html) if items_html else '<div class="empty-state">No favorites yet. Use <code>python -m scripts.favorites add URL --tags tag1,tag2</code> to add.</div>'}
+      </div>
+    </main>
+  </div>"""
+
+    (fav_dir / "index.html").write_text(
+        page_shell("Favorites - " + SITE_TITLE, body_html, root_rel=".."),
+        encoding="utf-8",
+    )
+
+    # --- タグ別ページ ---
+    tags_dir = fav_dir / "tags"
+    for tag, tag_favs in tag_to_favs.items():
+        items_html = [_fav_item_html(f, "../../..") for f in tag_favs]
+
+        tag_body = f"""
+  <div class="layout">
+    <aside class="sidebar-left">
+      <div class="side-section">
+        <div class="side-heading">Favorite Tags</div>
+        {side_tag_links.replace('tags/', '../')}
+      </div>
+    </aside>
+    <main class="content-area">
+      <div class="content-header">
+        <a class="back-link" href="../../index.html">← Favorites</a>
+        <div class="content-title">{html.escape(tag)}</div>
+        <div class="content-subtitle">{len(tag_favs)} articles</div>
+      </div>
+      <div class="list-view">
+        {''.join(items_html)}
+      </div>
+    </main>
+  </div>"""
+
+        tag_dir = tags_dir / _sanitize_dirname(tag)
+        tag_dir.mkdir(parents=True, exist_ok=True)
+        (tag_dir / "index.html").write_text(
+            page_shell(f"{tag} - Favorites - {SITE_TITLE}", tag_body, root_rel="../../.."),
+            encoding="utf-8",
+        )
+
+    print(f"[info] built favorites: {len(favorites)} article(s), {len(tag_to_favs)} tag(s)")
+
+
+# ---------------------------------------------------------------------------
 # エントリポイント
 # ---------------------------------------------------------------------------
 
@@ -1642,6 +1801,7 @@ def main():
     build_search_page()
     build_model_page()
     build_claude_pages()
+    build_favorites_pages()
 
     print(f"[info] built site: {SITE_DIR}")
     print(f"[info]   {len(files)} articles, {len(prev_files)} prev articles, {max(1, (len(files) + PAGE_SIZE - 1) // PAGE_SIZE)} index page(s)")

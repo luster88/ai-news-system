@@ -1,0 +1,8 @@
+favorites:
+- url: https://nyosegawa.com/posts/claude-code-statusline-rate-limits
+  title: Claude Codeの使用率がステータスラインに表示できるようになったので表示用のスクリプトを作った話
+  user_tags:
+  - claudecode
+  added: '2026-03-27'
+  source_date: '2026-03-22'
+  memo: Claude Codeの使用率をステータスラインに表示
