@@ -1,6 +1,6 @@
 # HANDOFF.md — AI News System 引き継ぎドキュメント
 
-最終更新: 2026-03-24（第4版）
+最終更新: 2026-03-27（第5版）
 
 ---
 
@@ -30,6 +30,7 @@ feeds.yaml (22ソース, 5リージョン)
 - **Claude エコシステム情報** — Claude/Claude Code/Console 関連の最新情報を日次自動収集・カテゴリ別整理・サイト公開
 - **テスト用パイプライン** — ペナルティなし全件収集 + モデル比較用 test- ファイル出力
 - **メトリクス閲覧** — `python -m scripts.metrics` で収集精度・健全性を確認
+- **お気に入り管理** — `python -m scripts.favorites` でお気に入り記事のタグ付き管理、`build_site` でページ生成
 
 **Claude エコシステム情報パイプライン:**
 
@@ -61,6 +62,8 @@ claude_feeds.yaml (official/community/tools グループ)
 - **要約品質改善**: 4件（RSS フォールバック、スコア基準、system prompt、キーワード拡充）完了。
 - **Claude エコシステム改善**: 404リンク解消・テーブルCSS共通化・カテゴリ概要表示・記事概要表示 完了。
 - **本文抽出改善**: ソース別セレクタ（Qiita/Zenn/TechCrunch）追加 完了。
+- **お気に入り機能**: CLI管理 (`scripts/favorites.py`) + サイト生成 (`/favorites/`) 完了。ユーザー定義タグでの分類・フィルタリングに対応。
+- **UI改善**: ダークテーマのWCAG AA準拠コントラスト改善・記事詳細の前後日付ナビゲーション・セクションフィルター 完了。
 
 既知の制約:
 - JS レンダリングが必要なサイト（一部 CN ソース）では本文取得に失敗する（`body=""` でフォールバック）
@@ -132,6 +135,11 @@ claude_feeds.yaml (official/community/tools グループ)
 | Claude 記事一覧に概要テキスト表示（`_claude_summary_from_body` 追加） | `scripts/build_site.py` |
 | Claude カテゴリ概要を折りたたみ式に変更（`<details>/<summary>`、デフォルト閉じ） | `scripts/build_site.py` |
 | Claude 記事一覧を日付ごとにグループ化表示（日付見出し + 件数、降順ソート） | `scripts/build_site.py` |
+| お気に入り記事のタグ管理（CLI: add/remove/list/tags） | `scripts/favorites.py`（新規）, `data/favorites.yaml`（新規） |
+| お気に入りページ生成（全件リスト + タグ別ページ + ナビリンク） | `scripts/build_site.py`（`build_favorites_pages` 追加） |
+| ダークテーマのWCAG AA準拠コントラスト改善 | `scripts/build_site.py`（CSS変数全面更新） |
+| 記事詳細ページに前日・翌日ナビゲーション追加 | `scripts/build_site.py`（`_day_nav_html` 追加） |
+| 記事詳細ページにセクションフィルター（注目3件/US/CN/JP等の切り替え） | `scripts/build_site.py`（`_wrap_article_sections`, `_section_filter_bar` 追加） |
 
 ### 静的サイト UI 全面リデザイン (done)
 
@@ -151,6 +159,10 @@ claude_feeds.yaml (official/community/tools グループ)
 | メインカラム max-width:860px + margin:auto で重心調整 | `scripts/build_site.py` (CSS `.content-area > *`) |
 | topbar ナビ (AI News / Claude / Models / Tags / Search) | `scripts/build_site.py` (page_shell) |
 | 最新記事の視覚強調 (accent ドット + 白文字) | `scripts/build_site.py` (CSS `.list-row:first-child`) |
+| ダークテーマ WCAG AA 準拠コントラスト改善 (背景/テキスト/タグ色の全面更新) | `scripts/build_site.py` (CSS 変数 `:root`) |
+| 記事詳細: 前日・翌日ナビゲーション (`_day_nav_html`) | `scripts/build_site.py` |
+| 記事詳細: セクションフィルター (すべて/注目3件/US/CN/JP/TECHBLOG/RESEARCH 切り替え) | `scripts/build_site.py` (CSS + JS + `_wrap_article_sections`) |
+| お気に入りページ生成 (`/favorites/`, タグ別ページ, ナビリンク) | `scripts/build_site.py` (`build_favorites_pages`) |
 
 ### 収集精度メトリクス (done)
 
@@ -187,6 +199,7 @@ claude_feeds.yaml (official/community/tools グループ)
 | `scripts/test_collect.py` | `python -m scripts.test_collect [args]` | ソース収集テスト |
 | `scripts/seen_urls.py` | `python -m scripts.seen_urls` | ペナルティ状況確認 |
 | `scripts/metrics.py` | `python -m scripts.metrics [--latest] [--days N]` | メトリクス閲覧・健全性チェック |
+| `scripts/favorites.py` | `python -m scripts.favorites add/remove/list/tags` | お気に入り記事管理（タグ付き） |
 
 ### パイプラインモジュール
 
@@ -226,6 +239,7 @@ claude_feeds.yaml (official/community/tools グループ)
 | `data/feeds.yaml` | 情報ソース定義 (5リージョン, 22ソース) |
 | `data/seen_urls.json` | 既出URL履歴 + ソースペナルティ (git管理) |
 | `data/metrics.json` | 日次実行メトリクス（パイプライン実行時に自動蓄積、daily-news.yml でコミット） |
+| `data/favorites.yaml` | お気に入り記事リスト (URL・ユーザー定義タグ・メモ・追加日) |
 | `data/cache/` | 記事本文キャッシュ (gitignore済み, 日次リセット) |
 | `.env` | `ANTHROPIC_API_KEY` (gitignore済み) |
 
@@ -366,6 +380,26 @@ python -m scripts.metrics --latest     # 最新回の詳細のみ
 python -m scripts.metrics --days 7     # 直近7件のサマリ
 ```
 
+### お気に入り記事管理
+
+```bash
+# 記事をお気に入りに追加（タイトル・日付は日報から自動取得）
+python -m scripts.favorites add "URL" --tags "タグ1,タグ2" --memo "メモ"
+
+# お気に入り一覧（タグでフィルタ可能）
+python -m scripts.favorites list
+python -m scripts.favorites list --tag 注目
+
+# タグ一覧
+python -m scripts.favorites tags
+
+# 削除
+python -m scripts.favorites remove "URL"
+
+# サイト再ビルドでお気に入りページに反映
+python -m scripts.build_site
+```
+
 ### Claude エコシステム情報パイプライン
 
 ```bash
@@ -431,6 +465,9 @@ python -m scripts.metrics
 - **月別ページの URL 構造**: `_site/month/YYYY-MM/index.html` 形式。`root_rel` は `../..` で相対パス参照
 - **サイドバーツリーの `<details>` 開閉状態**: `_build_date_tree()` が現在年・現在月をデフォルト `open` に設定。月が増えても自動で正しく動作する
 - **レスポンシブ CSS**: `@media(max-width:800px)` でモバイル対応。`!important` を使用している箇所があるため、スタイル上書き時は注意
+- **セクションフィルター**: `_SECTION_MAP` が `render_markdown.py` のセクション見出し文言に依存。見出しを変更した場合はマッピングも更新が必要
+- **前後日付ナビ**: `build_article_pages()` のファイルリスト順序（降順）に依存。prev-/test- ファイルも含まれるためリストの順序変更時は注意
+- **お気に入り**: `data/favorites.yaml` を手動編集しても動作するが、CLIツール経由を推奨（日報からのタイトル自動取得等の恩恵）
 
 ### 変更時に最初に確認すべきファイル
 
@@ -491,6 +528,10 @@ python -m scripts.metrics
 | 命名統一 (Issues → AI News) | `scripts/build_site.py` |
 | 0件カテゴリのリンク無効化 | `scripts/build_site.py` |
 | メインカラム重心の中央寄せ調整 | `scripts/build_site.py` |
+| お気に入り記事のタグ管理 CLI + サイト生成 | `scripts/favorites.py`, `data/favorites.yaml`, `scripts/build_site.py` |
+| ダークテーマ WCAG AA 準拠コントラスト改善 | `scripts/build_site.py` |
+| 記事詳細の前日・翌日ナビゲーション | `scripts/build_site.py` |
+| 記事詳細のセクションフィルター（h2 ID正規化 + JSフィルタリング） | `scripts/build_site.py` |
 
 ### planned
 
