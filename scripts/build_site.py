@@ -460,6 +460,30 @@ code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 .day-nav a:hover{background:var(--surface-hover);color:var(--accent-hover)}
 .day-nav .nav-placeholder{width:120px}
 
+/* --- Section Filter --- */
+.section-filter-bar{
+  display:flex;flex-wrap:wrap;gap:6px;
+  padding:12px 0;margin-bottom:8px;
+  border-bottom:1px solid var(--border);
+}
+.section-filter-btn{
+  padding:4px 12px;border-radius:4px;
+  font-size:12px;font-weight:500;font-family:inherit;
+  color:var(--text-secondary);
+  background:var(--surface);
+  border:1px solid var(--border);
+  cursor:pointer;
+  transition:background .12s,color .12s,border-color .12s;
+}
+.section-filter-btn:hover{
+  background:var(--surface-hover);color:var(--text-primary);
+}
+.section-filter-btn.active{
+  background:var(--accent-dim);color:var(--accent);
+  border-color:var(--accent);
+}
+.article-section.section-hidden{display:none}
+
 /* --- Utility --- */
 .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
 """
@@ -532,6 +556,37 @@ SEARCH_JS = """
       }
     });
   }
+})();
+"""
+
+SECTION_FILTER_JS = """
+(function(){
+  var bar = document.querySelector('.section-filter-bar');
+  if(!bar) return;
+
+  var btns = bar.querySelectorAll('.section-filter-btn');
+  var sections = document.querySelectorAll('.article-section');
+
+  btns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var target = this.getAttribute('data-section');
+
+      btns.forEach(function(b){ b.classList.remove('active'); });
+      this.classList.add('active');
+
+      sections.forEach(function(sec){
+        if(target === 'all'){
+          sec.classList.remove('section-hidden');
+        } else {
+          if(sec.getAttribute('data-section') === target){
+            sec.classList.remove('section-hidden');
+          } else {
+            sec.classList.add('section-hidden');
+          }
+        }
+      });
+    });
+  });
 })();
 """
 
@@ -657,6 +712,7 @@ def page_shell(title: str, body_html: str, root_rel: str = ".") -> str:
   {body_html}
   <script>const ROOT_PATH="{root_rel}";</script>
   <script>{SEARCH_JS}</script>
+  <script>{SECTION_FILTER_JS}</script>
   <script>
 (function(){{
   var btn=document.getElementById('menu-toggle');
@@ -1045,6 +1101,99 @@ def _day_nav_html(files: list[Path], idx: int) -> str:
         </div>"""
 
 
+# セクション見出し → 正規化ID / 表示ラベル のマッピング
+_SECTION_MAP = {
+    "今日の総括":               ("section-summary",   "今日の総括"),
+    "注目3件":                  ("section-top3",      "注目3件"),
+    "US":                       ("section-us",        "US"),
+    "CN":                       ("section-cn",        "CN"),
+    "JP":                       ("section-jp",        "JP"),
+    "TECHBLOG（技術ブログ）":     ("section-techblog",  "TECHBLOG"),
+    "RESEARCH（論文・技術ブログ）": ("section-research",  "RESEARCH"),
+    "ペナルティ状況":             ("section-penalties", "ペナルティ"),
+}
+
+# フィルターボタンに表示するセクション（表示順）
+_FILTER_SECTIONS = [
+    "section-summary", "section-top3",
+    "section-us", "section-cn", "section-jp",
+    "section-techblog", "section-research",
+]
+
+
+def _wrap_article_sections(article_html: str) -> tuple[str, list[tuple[str, str]]]:
+    """記事HTMLの <h2> を起点にセクションを <div class="article-section"> でラップする。
+
+    Returns:
+        (wrapped_html, sections): sections は [(id, label), ...] の検出済みセクションリスト
+    """
+    soup = BeautifulSoup(article_html, "html.parser")
+    h2_tags = soup.find_all("h2")
+
+    if not h2_tags:
+        return article_html, []
+
+    sections_found: list[tuple[str, str]] = []
+
+    for h2 in h2_tags:
+        heading_text = h2.get_text(strip=True)
+
+        # セクションIDとラベルを決定
+        section_id = None
+        label = None
+        for pattern, (sid, slabel) in _SECTION_MAP.items():
+            if heading_text == pattern or heading_text.startswith(pattern):
+                section_id = sid
+                label = slabel
+                break
+
+        if not section_id:
+            # マッピングにないセクションはスキップ（ラップしない）
+            continue
+
+        # h2 の id 属性を正規化
+        h2["id"] = section_id
+        sections_found.append((section_id, label))
+
+        # h2 から次の h2 の手前まで兄弟要素を収集
+        siblings = []
+        for sib in list(h2.next_siblings):
+            if sib.name == "h2":
+                break
+            siblings.append(sib)
+
+        # ラップ用の div を作成
+        wrapper = soup.new_tag("div", attrs={
+            "class": "article-section",
+            "data-section": section_id,
+        })
+        h2.wrap(wrapper)
+        for sib in siblings:
+            wrapper.append(sib)
+
+    return str(soup), sections_found
+
+
+def _section_filter_bar(sections: list[tuple[str, str]]) -> str:
+    """検出されたセクションからフィルターボタンバーHTMLを生成する。"""
+    # フィルター対象のセクションのみ抽出（表示順を維持）
+    filter_sections = [
+        (sid, label) for sid, label in sections
+        if sid in _FILTER_SECTIONS
+    ]
+
+    if len(filter_sections) < 2:
+        return ""
+
+    buttons = ['<button class="section-filter-btn active" data-section="all">すべて</button>']
+    for sid, label in filter_sections:
+        buttons.append(
+            f'<button class="section-filter-btn" data-section="{html.escape(sid)}">'
+            f'{html.escape(label)}</button>'
+        )
+    return f'<div class="section-filter-bar">{"".join(buttons)}</div>'
+
+
 def build_article_pages(files: list[Path]) -> None:
     for idx, file in enumerate(files):
         rel_parts = file.relative_to(NEWS_DIR).parts
@@ -1056,6 +1205,8 @@ def build_article_pages(files: list[Path]) -> None:
         title = article_title_from_body(body, day)
 
         article_html = markdown.markdown(body, extensions=MD_EXTENSIONS)
+        article_html, sections = _wrap_article_sections(article_html)
+        filter_bar = _section_filter_bar(sections)
 
         out_dir = SITE_DIR / "news" / year / month / day
         out_dir.mkdir(parents=True, exist_ok=True)
@@ -1081,6 +1232,7 @@ def build_article_pages(files: list[Path]) -> None:
           </div>
           {tags_row}
         </div>
+        {filter_bar}
         <div class="article-body">
           {article_html}
         </div>
