@@ -445,35 +445,6 @@ code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
   color:var(--text-tertiary);margin-left:8px;
 }
 
-/* --- Region Filter --- */
-.region-tabs{
-  display:flex;gap:0;margin-top:6px;overflow-x:auto;
-  -webkit-overflow-scrolling:touch;
-}
-.region-tab{
-  padding:5px 12px;font-size:12px;
-  color:var(--text-tertiary);white-space:nowrap;
-  border-bottom:2px solid transparent;
-  transition:color .12s,border-color .12s;
-  cursor:pointer;text-decoration:none;
-  background:none;border-top:none;border-left:none;border-right:none;
-  font-family:inherit;
-}
-.region-tab:hover{color:var(--text-primary)}
-.region-tab.active{
-  color:var(--accent);
-  border-bottom-color:var(--accent);
-}
-.region-badges{display:inline-flex;gap:3px;margin-left:4px}
-.region-badge{
-  display:inline-block;
-  background:#2a2a3e;color:#8888a8;
-  padding:0 5px;border-radius:3px;
-  font-size:10px;line-height:1.6;
-  font-weight:500;
-}
-.list-row.region-hidden{display:none}
-
 /* --- Article Day Navigation --- */
 .day-nav{
   display:flex;justify-content:space-between;align-items:center;
@@ -564,35 +535,6 @@ SEARCH_JS = """
 })();
 """
 
-REGION_FILTER_JS = """
-(function(){
-  var tabs = document.querySelectorAll('.region-tab');
-  if(!tabs.length) return;
-
-  tabs.forEach(function(tab){
-    tab.addEventListener('click', function(){
-      var region = this.getAttribute('data-region');
-      tabs.forEach(function(t){ t.classList.remove('active'); });
-      this.classList.add('active');
-
-      var rows = document.querySelectorAll('.list-row[data-regions]');
-      rows.forEach(function(row){
-        if(region === 'all'){
-          row.classList.remove('region-hidden');
-        } else {
-          var regions = (row.getAttribute('data-regions') || '').split(' ');
-          if(regions.indexOf(region) >= 0){
-            row.classList.remove('region-hidden');
-          } else {
-            row.classList.add('region-hidden');
-          }
-        }
-      });
-    });
-  });
-})();
-"""
-
 MD_EXTENSIONS = [
     "fenced_code",
     "tables",
@@ -621,21 +563,6 @@ def strip_front_matter(text: str) -> tuple[dict, str]:
         meta[k.strip()] = v.strip()
 
     return meta, body
-
-
-_REGION_LABELS = {"US": "US", "CN": "CN", "JP": "JP", "TECHBLOG": "Tech", "RESEARCH": "Research"}
-
-
-def _parse_regions_from_body(body: str) -> list[str]:
-    """マークダウン本文の ## セクションヘッダーから地域を抽出する。"""
-    regions = []
-    for line in body.splitlines():
-        s = line.strip()
-        if s.startswith("## ") and not s.startswith("## 今日の総括") and not s.startswith("## 注目"):
-            region = s[3:].strip().upper()
-            if region in _REGION_LABELS:
-                regions.append(region)
-    return regions
 
 
 def _parse_tags_from_meta(meta: dict) -> list[str]:
@@ -730,7 +657,6 @@ def page_shell(title: str, body_html: str, root_rel: str = ".") -> str:
   {body_html}
   <script>const ROOT_PATH="{root_rel}";</script>
   <script>{SEARCH_JS}</script>
-  <script>{REGION_FILTER_JS}</script>
   <script>
 (function(){{
   var btn=document.getElementById('menu-toggle');
@@ -769,9 +695,6 @@ def _item_html(file: Path, root_rel: str) -> str:
     preview = " / ".join(html.escape(x) for x in bullets) if bullets else ""
     total_items = meta.get("total_items", "")
 
-    regions = _parse_regions_from_body(body)
-    regions_attr = " ".join(r.lower() for r in regions)
-
     tags = _parse_tags_from_meta(meta)
     tags_html = "".join(
         f'<span class="tag">{html.escape(t)}</span>'
@@ -779,19 +702,12 @@ def _item_html(file: Path, root_rel: str) -> str:
     )
     tags_row = f'<span class="tag-row">{tags_html}</span>' if tags_html else ""
 
-    # 地域バッジ
-    region_badges = "".join(
-        f'<span class="region-badge">{html.escape(_REGION_LABELS.get(r, r))}</span>'
-        for r in regions
-    )
-
-    return f"""<a class="list-row" href="{target}" data-regions="{html.escape(regions_attr)}">
+    return f"""<a class="list-row" href="{target}">
       <div class="list-row-title">{html.escape(title)}</div>
       <div class="list-row-summary">{preview}</div>
       <div class="list-row-meta">
         <span class="meta-date">{html.escape(day)}</span>
         <span class="meta-count">{html.escape(str(total_items))}</span>
-        <span class="region-badges">{region_badges}</span>
         {tags_row}
       </div>
     </a>"""
@@ -993,16 +909,6 @@ def build_index_pages(files: list[Path], prev_files: list[Path] | None = None, t
     # 月タブ
     month_tabs = _build_month_tabs(files, "all", ".")
 
-    # 地域フィルタータブ
-    region_filter = """<div class="region-tabs">
-        <button class="region-tab active" data-region="all">All</button>
-        <button class="region-tab" data-region="us">US</button>
-        <button class="region-tab" data-region="cn">CN</button>
-        <button class="region-tab" data-region="jp">JP</button>
-        <button class="region-tab" data-region="techblog">Tech</button>
-        <button class="region-tab" data-region="research">Research</button>
-      </div>"""
-
     for page_num in range(1, total_pages + 1):
         start = (page_num - 1) * PAGE_SIZE
         page_files = files[start: start + PAGE_SIZE]
@@ -1026,7 +932,6 @@ def build_index_pages(files: list[Path], prev_files: list[Path] | None = None, t
         <div class="content-title">{"All AI News" if page_num == 1 else f"Page {page_num}"}</div>
         <div class="content-subtitle">{len(files)} daily reports</div>
         {month_tabs}
-        {region_filter}
       </div>
       <div class="list-view">
         {''.join(items_html) if items_html else '<div class="empty-state">No reports yet.</div>'}
@@ -1083,7 +988,6 @@ def build_index_pages(files: list[Path], prev_files: list[Path] | None = None, t
         <div class="content-title">{html.escape(ym)}</div>
         <div class="content-subtitle">{len(month_files)} reports</div>
         {month_tabs_html}
-        {region_filter}
       </div>
       <div class="list-view">
         {''.join(items_html)}
