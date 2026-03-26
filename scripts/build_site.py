@@ -445,6 +445,21 @@ code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
   color:var(--text-tertiary);margin-left:8px;
 }
 
+/* --- Article Day Navigation --- */
+.day-nav{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:16px 0;margin-top:24px;
+  border-top:1px solid var(--border);
+}
+.day-nav a{
+  display:inline-flex;align-items:center;gap:4px;
+  font-size:13px;color:var(--text-secondary);
+  padding:6px 12px;border-radius:4px;
+  transition:background .12s,color .12s;
+}
+.day-nav a:hover{background:var(--surface-hover);color:var(--accent-hover)}
+.day-nav .nav-placeholder{width:120px}
+
 /* --- Utility --- */
 .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
 """
@@ -1003,8 +1018,35 @@ def build_index_pages(files: list[Path], prev_files: list[Path] | None = None, t
 # 記事詳細ページ
 # ---------------------------------------------------------------------------
 
+def _day_nav_html(files: list[Path], idx: int) -> str:
+    """前日・翌日ナビゲーションHTMLを返す。files は降順（新しい順）。"""
+    # files は降順なので idx-1 が翌日、idx+1 が前日
+    prev_link = ""
+    next_link = ""
+
+    if idx + 1 < len(files):
+        p = files[idx + 1].relative_to(NEWS_DIR).parts
+        py, pm, pf = p
+        pd = pf.replace(".md", "")
+        prev_link = f'<a href="../../../../news/{py}/{pm}/{pd}/index.html">← {pd}</a>'
+
+    if idx - 1 >= 0:
+        n = files[idx - 1].relative_to(NEWS_DIR).parts
+        ny, nm, nf = n
+        nd = nf.replace(".md", "")
+        next_link = f'<a href="../../../../news/{ny}/{nm}/{nd}/index.html">{nd} →</a>'
+
+    if not prev_link and not next_link:
+        return ""
+
+    return f"""<div class="day-nav">
+          {prev_link if prev_link else '<span class="nav-placeholder"></span>'}
+          {next_link if next_link else '<span class="nav-placeholder"></span>'}
+        </div>"""
+
+
 def build_article_pages(files: list[Path]) -> None:
-    for file in files:
+    for idx, file in enumerate(files):
         rel_parts = file.relative_to(NEWS_DIR).parts
         year, month, filename = rel_parts
         day = filename.replace(".md", "")
@@ -1025,6 +1067,8 @@ def build_article_pages(files: list[Path]) -> None:
         )
         tags_row = f'<div class="tag-row" style="margin-top:8px">{tags_html}</div>' if tags_html else ""
 
+        day_nav = _day_nav_html(files, idx)
+
         body_html = f"""
   <div class="layout">
     <main class="content-area">
@@ -1040,6 +1084,7 @@ def build_article_pages(files: list[Path]) -> None:
         <div class="article-body">
           {article_html}
         </div>
+        {day_nav}
       </div>
     </main>
   </div>"""
