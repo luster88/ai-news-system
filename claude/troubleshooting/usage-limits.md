@@ -4,11 +4,13 @@ category: troubleshooting
 subcategory: usage-limits
 tags:
 - bugfix
+- claude-api
 - claude-code
 - claude-console
 - pricing
+- sonnet
 date: '2026-03-25'
-updated: '2026-03-26'
+updated: '2026-03-27'
 sources:
 - url: https://qiita.com/himajisan/items/1e8f67782335b4517139
   title: AIを扱き使ったらすぐに使用制限ですと言う
@@ -19,10 +21,53 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s4dyb2/claude_ai_is_devouring_5hr_usage_like_bermuda
   title: Claude AI is devouring 5hr Usage like Bermuda Triangle.
   date: '2026-03-26'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1s5f5fq/2_prompts_100_session_usage_for_pro_account_40
+  title: 2 prompts = 100% session usage for Pro account, 40 prompts = 7% session usage
+    for Max 20X account. The math isn't mathing..
+  date: '2026-03-27'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1s55mvg/this_isnt_right
+  title: This isn’t right
+  date: '2026-03-27'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1s58nxl/usage_bug
+  title: Usage Bug?
+  date: '2026-03-27'
 ---
 
 
+
 # Usage Limits
+
+---
+
+## 2026-03-27
+
+### 2 prompts = 100% session usage for Pro account, 40 prompts = 7% session usage for Max 20X account. The math isn't mathing..
+
+Claude ProアカウントとMax 20Xアカウントの使用量制限に関するユーザーの困惑を報告。Proでは2-3プロンプトで制限に達したが、Max 20Xでは40プロンプト以上使用しても7%しか消費していない。20倍の差があるはずだが、実際の使用量の計算が不明瞭で、Anthropicの使用量制限に関する透明性の欠如を指摘している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1s5f5fq/2_prompts_100_session_usage_for_pro_account_40)
+- **重要度**: 6/10
+- **タグ**: pricing, claude-code, sonnet
+
+---
+
+### This isn’t right
+
+Claude Pro ユーザーが使用量制限の異常を報告。「Hello」と挨拶しただけで4%、天気を尋ねたら7%の使用量が消費される問題が発生。システム障害時に使用量カウントが異常になる可能性を指摘し、Anthropic の透明性とカスタマーサポート対応（チャットボットのみ）に不満を表明。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1s55mvg/this_isnt_right)
+- **重要度**: 6/10
+- **タグ**: claude-console, bugfix, pricing
+
+---
+
+### Usage Bug?
+
+ユーザーが$100プランに加入しているにもかかわらず、1時間以内に使用量制限を使い切ってしまったという報告。通常の使用パターンと比較して異常に早く制限に達したため、Claudeの使用量計算に関するバグの可能性について問い合わせている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1s58nxl/usage_bug)
+- **重要度**: 4/10
+- **タグ**: claude-api, pricing, bugfix
 
 ---
 
