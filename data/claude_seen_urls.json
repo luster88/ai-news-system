@@ -121,12 +121,33 @@
     "https://the-decoder.com/googles-new-gemini-update-makes-it-easy-to-import-memories-from-chatgpt-and-claude": "2026-03-27",
     "https://the-decoder.com/federal-judge-blocks-trumps-ban-on-anthropic-ai-models-calls-security-risk-label-orwellian": "2026-03-27",
     "https://the-decoder.com/anthropic-leak-reveals-new-model-claude-mythos-with-dramatically-higher-scores-on-tests-than-any-previous-model": "2026-03-27",
-    "https://techcrunch.com/2026/03/26/anthropic-wins-injunction-against-trump-administration-over-defense-department-saga": "2026-03-27"
+    "https://techcrunch.com/2026/03/26/anthropic-wins-injunction-against-trump-administration-over-defense-department-saga": "2026-03-27",
+    "https://www.reddit.com/r/ClaudeAI/comments/1s5wp0g/ive_been_gaslighting_my_ai_models_and_its": "2026-03-28",
+    "https://www.reddit.com/r/ClaudeAI/comments/1s5ok5r/claude_watching_me_write_code_manually_after_i": "2026-03-28",
+    "https://www.reddit.com/r/ClaudeAI/comments/1s6ccqt/people_are_really_trying_anything_to_get_access": "2026-03-28",
+    "https://www.reddit.com/r/ClaudeAI/comments/1s5tzv2/why_is_claude_so_disobedient": "2026-03-28",
+    "https://www.reddit.com/r/ClaudeAI/comments/1s5nxwe/an_open_letter_to_anthropic_want_to_free_up": "2026-03-28",
+    "https://www.reddit.com/r/ClaudeAI/comments/1s65ymk/my_10_pro_tips_for_claude_code_users": "2026-03-28",
+    "https://www.reddit.com/r/ClaudeAI/comments/1s5wm7o/the_future_of_coding": "2026-03-28",
+    "https://www.reddit.com/r/ClaudeAI/comments/1s63v75/i_spent_months_building_a_specialized_agent": "2026-03-28",
+    "https://www.reddit.com/r/ClaudeAI/comments/1s5r0hj/on_the_200_max_plan_and_never_been_rate_limited": "2026-03-28",
+    "https://qiita.com/AI-SKILL-LAB/items/48992f453c48b87fd6a7": "2026-03-28",
+    "https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e": "2026-03-28",
+    "https://qiita.com/nonchan77220/items/f01e09d558cfb722e773": "2026-03-28",
+    "https://zenn.dev/nao_u/articles/92ac9436844a16": "2026-03-28",
+    "https://zenn.dev/kenji_harada/articles/ai-coding-revolution-2026": "2026-03-28",
+    "https://zenn.dev/tetsuro_works/articles/ai-agent-frontier-log-02": "2026-03-28",
+    "https://zenn.dev/nylon66/articles/d37f97dd9734d1": "2026-03-28",
+    "https://zenn.dev/okamyuji/articles/engram-claude-code-local-memory": "2026-03-28",
+    "https://zenn.dev/1ppe1/articles/f3773f95e55e7c": "2026-03-28",
+    "https://qiita.com/nishiken1118/items/bac44a98ce05b09b78f6": "2026-03-28",
+    "https://techcrunch.com/2026/03/28/anthropics-claude-popularity-with-paying-consumers-is-skyrocketing": "2026-03-28"
   },
   "source_penalties": {
-    "Anthropic News": "2026-03-28",
+    "Anthropic News": "2026-03-31",
     "Reddit r/ClaudeAI": "2026-03-25",
     "Zenn claude": "2026-03-25",
-    "TechCrunch Claude": "2026-03-25"
+    "TechCrunch Claude": "2026-03-25",
+    "The Decoder Claude": "2026-03-31"
   }
 }
