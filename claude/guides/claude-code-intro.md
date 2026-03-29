@@ -5,15 +5,33 @@ subcategory: claude-code-intro
 tags:
 - claude-code
 - pricing
+- prompt
+- setup
 date: '2026-03-27'
-updated: '2026-03-27'
+updated: '2026-03-29'
 sources:
 - url: https://zenn.dev/beeeegle/articles/a50b1cdbe4973c
   title: 【初心者向】Claude CodeってAIじゃないみたいよ
   date: '2026-03-27'
+- url: https://qiita.com/hty1123445_a/items/514d864ec0484f323ea9
+  title: Claude Code の設定はどう作る？：最小構成から始める改善ループ設計
+  date: '2026-03-29'
 ---
 
+
 # Claude Code Intro
+
+---
+
+## 2026-03-29
+
+### Claude Code の設定はどう作る？：最小構成から始める改善ループ設計
+
+Claude Code の設定は最初から作り込まず、実際の利用で発生した「摩擦」を観測しながら段階的に拡張する手法を解説。「観測 → 改善 → 反映」のループを回すことで、設定を自分の作業スタイルに適応させる。hooks を使った改善候補の抽出方法や、CLAUDE.md/skills の最小構成から始める設計思想を提示。
+
+- **ソース**: [Qiita claude](https://qiita.com/hty1123445_a/items/514d864ec0484f323ea9)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

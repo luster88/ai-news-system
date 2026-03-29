@@ -141,13 +141,33 @@
     "https://zenn.dev/okamyuji/articles/engram-claude-code-local-memory": "2026-03-28",
     "https://zenn.dev/1ppe1/articles/f3773f95e55e7c": "2026-03-28",
     "https://qiita.com/nishiken1118/items/bac44a98ce05b09b78f6": "2026-03-28",
-    "https://techcrunch.com/2026/03/28/anthropics-claude-popularity-with-paying-consumers-is-skyrocketing": "2026-03-28"
+    "https://techcrunch.com/2026/03/28/anthropics-claude-popularity-with-paying-consumers-is-skyrocketing": "2026-03-28",
+    "https://www.reddit.com/r/ClaudeAI/comments/1s739lc/nicolas_carlini_672k_citations_on_google_scholar": "2026-03-29",
+    "https://www.reddit.com/r/ClaudeAI/comments/1s76jgs/jeanclaude": "2026-03-29",
+    "https://www.reddit.com/r/ClaudeAI/comments/1s6mm8o/what_are_dead_giveaways_for_ai_slop_websites": "2026-03-29",
+    "https://www.reddit.com/r/ClaudeAI/comments/1s6xxt8/the_biggest_difference_in_ai_outcomes_is_between": "2026-03-29",
+    "https://www.reddit.com/r/ClaudeAI/comments/1s6vpxh/built_with_claude_realtime_conflict_monitor_ㅡ": "2026-03-29",
+    "https://www.reddit.com/r/ClaudeAI/comments/1s6of32/i_am_fully_addicted_to_building_dumb_little_ai": "2026-03-29",
+    "https://www.reddit.com/r/ClaudeAI/comments/1s6jouf/anthropic_shares_how_to_make_claude_code_better": "2026-03-29",
+    "https://www.reddit.com/r/ClaudeAI/comments/1s6v41a/the_agentic_frame_work_i_built_with_claude_got": "2026-03-29",
+    "https://www.reddit.com/r/ClaudeAI/comments/1s6r359/what_is_the_most_impressive_thing_youve_done_or": "2026-03-29",
+    "https://qiita.com/kan2530/items/fbac7254b3375a9fe690": "2026-03-29",
+    "https://qiita.com/umeko_gotcha/items/6b5c25c30991af660ea8": "2026-03-29",
+    "https://qiita.com/hty1123445_a/items/514d864ec0484f323ea9": "2026-03-29",
+    "https://zenn.dev/sn0w_easy/articles/7c610896f4d08e": "2026-03-29",
+    "https://zenn.dev/tsukulink/articles/2026-03-claude-code-plan": "2026-03-29",
+    "https://zenn.dev/acropapa330/articles/unity_recorder_ai_studio": "2026-03-29",
+    "https://zenn.dev/nozomi720/articles/705d6d02a82226": "2026-03-29",
+    "https://zenn.dev/noprogllama/articles/d6a34cce09b66d": "2026-03-29",
+    "https://zenn.dev/shunsuke_stack/articles/claude-code-vue-intro": "2026-03-29",
+    "https://qiita.com/mellowlaunch/items/49256d66e91b5327e6bf": "2026-03-29",
+    "https://qiita.com/yurukusa/items/574e0572db4deee35e71": "2026-03-29"
   },
   "source_penalties": {
     "Anthropic News": "2026-03-31",
     "Reddit r/ClaudeAI": "2026-03-25",
     "Zenn claude": "2026-03-25",
-    "TechCrunch Claude": "2026-03-25",
+    "TechCrunch Claude": "2026-04-01",
     "The Decoder Claude": "2026-03-31"
   }
 }

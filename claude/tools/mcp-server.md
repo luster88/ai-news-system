@@ -4,17 +4,34 @@ category: tools
 subcategory: mcp-server
 tags:
 - claude-code
+- cowork
 - mcp
 - 新機能
 date: '2026-03-25'
-updated: '2026-03-25'
+updated: '2026-03-29'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
   date: '2026-03-25'
+- url: https://zenn.dev/nozomi720/articles/705d6d02a82226
+  title: ホスティングサービスにUIを作らなかった理由——CLIとMCPを選んだ設計思想
+  date: '2026-03-29'
 ---
 
+
 # Mcp Server
+
+---
+
+## 2026-03-29
+
+### ホスティングサービスにUIを作らなかった理由——CLIとMCPを選んだ設計思想
+
+MinToは「AIとの対話でWebサイトを作る」ホスティングサービスで、UIを作らずCLIとMCPのみで完結する設計を採用。ブラウザ操作はスクリーンショットによるトークン消費が数千トークンと大きく、日常利用には非現実的と判断。StreamableHTTPとOAuth 2.1対応のMCPサーバーを実装し、テキストベースで安全かつ低コストな操作を実現している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/nozomi720/articles/705d6d02a82226)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, cowork
 
 ---
 
