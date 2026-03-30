@@ -8,7 +8,7 @@ tags:
 - mcp
 - 新機能
 date: '2026-03-25'
-updated: '2026-03-29'
+updated: '2026-03-30'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -16,10 +16,26 @@ sources:
 - url: https://zenn.dev/nozomi720/articles/705d6d02a82226
   title: ホスティングサービスにUIを作らなかった理由——CLIとMCPを選んだ設計思想
   date: '2026-03-29'
+- url: https://zenn.dev/jphfa/articles/markupsidedown-mcp-crawl-events
+  title: MCPはオワコンではない。MarkUpsideDownでサイトをクロール（Cloudflare /crawl endpoint）した話。
+  date: '2026-03-30'
 ---
 
 
+
 # Mcp Server
+
+---
+
+## 2026-03-30
+
+### MCPはオワコンではない。MarkUpsideDownでサイトをクロール（Cloudflare /crawl endpoint）した話。
+
+MarkUpsideDownという自作Markdownエディタに内蔵したMCPサーバーを使い、Cloudflare Browser Rendering APIによるWebクロールをClaude Codeから簡単に実行する事例。従来のcurlベースの8ステップ手作業を、MCPツール経由で「please」の1語で自動化。41のツールを公開するRust製MCPサーバーで、extract_jsonツールがJSレンダリング・構造化データ抽出・結果取得を一発で実行する。
+
+- **ソース**: [Zenn claude](https://zenn.dev/jphfa/articles/markupsidedown-mcp-crawl-events)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code
 
 ---
 

@@ -5,16 +5,33 @@ subcategory: cowork-computer-use
 tags:
 - claude-code
 - cowork
+- mac
 - 新機能
 date: '2026-03-24'
-updated: '2026-03-24'
+updated: '2026-03-30'
 sources:
 - url: https://qiita.com/taketsuyo/items/51130ee2457fe6d6fddf
   title: Claudeがついに「PCで仕事する人」になった。Antigravityとの違いまで整理してみる
   date: '2026-03-24'
+- url: https://qiita.com/taketsuyo/items/4ba9a93af20e9b5522e0
+  title: Claude CodeがついにGUIを触り始めた。これ、ただの便利機能じゃなくて「開発ループの閉じ方」が変わる話
+  date: '2026-03-30'
 ---
 
+
 # Cowork Computer Use
+
+---
+
+## 2026-03-30
+
+### Claude CodeがついにGUIを触り始めた。これ、ただの便利機能じゃなくて「開発ループの閉じ方」が変わる話
+
+Claude CodeがmacOS上でGUI操作を実行できるcomputer use機能をリリース。コード生成からビルド、UI確認、修正までを一つの会話で完結できるようになり、開発ループの在り方が大きく変化。Pro/Maxプラン限定、macOS専用で、セキュリティ制御も慎重に設計されている。CursorやCopilotが「書く」側を強化したのに対し、Codeは「作って確かめる」側まで踏み込んだ点が重要。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/taketsuyo/items/4ba9a93af20e9b5522e0)
+- **重要度**: 8/10
+- **タグ**: claude-code, 新機能, mac
 
 ---
 

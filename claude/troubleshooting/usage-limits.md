@@ -10,7 +10,7 @@ tags:
 - pricing
 - sonnet
 date: '2026-03-25'
-updated: '2026-03-27'
+updated: '2026-03-30'
 sources:
 - url: https://qiita.com/himajisan/items/1e8f67782335b4517139
   title: AIを扱き使ったらすぐに使用制限ですと言う
@@ -31,11 +31,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s58nxl/usage_bug
   title: Usage Bug?
   date: '2026-03-27'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1s7zgj0/investigating_usage_limits_hitting_faster_than
+  title: Investigating usage limits hitting faster than expected
+  date: '2026-03-30'
 ---
 
 
 
+
 # Usage Limits
+
+---
+
+## 2026-03-30
+
+### Investigating usage limits hitting faster than expected
+
+Claude Code で使用制限（usage limits）が予想より早く到達する問題が発生しており、公式チームが最優先で調査中。午後2時20分の更新では、多くのユーザーに影響が出ていることを認識し、解決に取り組んでいる状況を報告。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1s7zgj0/investigating_usage_limits_hitting_faster_than)
+- **重要度**: 8/10
+- **タグ**: claude-code, bugfix
 
 ---
 

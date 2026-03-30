@@ -7,8 +7,9 @@ tags:
 - pricing
 - prompt
 - setup
+- 新機能
 date: '2026-03-27'
-updated: '2026-03-29'
+updated: '2026-03-30'
 sources:
 - url: https://zenn.dev/beeeegle/articles/a50b1cdbe4973c
   title: 【初心者向】Claude CodeってAIじゃないみたいよ
@@ -16,10 +17,26 @@ sources:
 - url: https://qiita.com/hty1123445_a/items/514d864ec0484f323ea9
   title: Claude Code の設定はどう作る？：最小構成から始める改善ループ設計
   date: '2026-03-29'
+- url: https://qiita.com/kevinsmith/items/7d4b5f48a2fd020615e8
+  title: Claude Codeのよく使うコマンド
+  date: '2026-03-30'
 ---
 
 
+
 # Claude Code Intro
+
+---
+
+## 2026-03-30
+
+### Claude Codeのよく使うコマンド
+
+Claude Codeの基本的な起動パラメータ（--resume、--dangerously-skip-permissions等）と、対話中の/コマンド（/clear、/model、/btw、/fork等）を網羅的に解説。特に2026年3月追加の/btwコマンドはToken節約に有効で、メインタスクを中断せずサイド質問ができる。Shift+Tabによる隠れモード（Planモード、思考モード）も紹介。
+
+- **ソース**: [Qiita claude](https://qiita.com/kevinsmith/items/7d4b5f48a2fd020615e8)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, 新機能
 
 ---
 
