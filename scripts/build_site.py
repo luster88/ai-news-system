@@ -441,6 +441,21 @@ code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 .fav-tag:hover{background:#353550}
 .fav-tag+.fav-tag{margin-left:4px}
 .fav-memo{font-size:12px;color:var(--text-tertiary);margin-top:2px;font-style:italic}
+
+/* --- Dashboard --- */
+.dash-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-bottom:24px}
+.dash-card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:14px 16px}
+.dash-card-label{font-size:11px;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+.dash-card-value{font-size:22px;font-weight:600;color:var(--text-heading)}
+.dash-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.dash-chart-box{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:16px}
+.dash-chart-wide{grid-column:span 2}
+.dash-chart-title{font-size:13px;font-weight:600;color:var(--text-secondary);margin:0 0 12px}
+@media(max-width:800px){
+  .dash-grid{grid-template-columns:1fr}
+  .dash-chart-wide{grid-column:span 1}
+  .dash-cards{grid-template-columns:repeat(2,1fr)}
+}
 .fav-source{
   display:inline-block;font-size:11px;
   color:var(--text-tertiary);margin-left:8px;
@@ -704,6 +719,7 @@ def page_shell(title: str, body_html: str, root_rel: str = ".") -> str:
       <a href="{root_rel}/models/index.html">Models</a>
       <a href="{root_rel}/tags/index.html">Tags</a>
       <a href="{root_rel}/favorites/index.html">Favorites</a>
+      <a href="{root_rel}/dashboard/index.html">Dashboard</a>
       <a href="{root_rel}/search/index.html">Search</a>
     </nav>
     <div class="topbar-search">
@@ -1981,6 +1997,294 @@ def build_favorites_pages() -> None:
 
 
 # ---------------------------------------------------------------------------
+# ダッシュボード / 統計ページ
+# ---------------------------------------------------------------------------
+
+def _load_metrics_data() -> dict:
+    metrics_file = BASE_DIR / "data" / "metrics.json"
+    if not metrics_file.exists():
+        return {}
+    try:
+        return json.loads(metrics_file.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def _collect_tag_stats(files: list[Path]) -> dict[str, int]:
+    """日報ファイルから各タグの記事出現回数を集計する。"""
+    from collections import Counter
+    tag_counts: Counter = Counter()
+
+    for f in files:
+        try:
+            text = f.read_text(encoding="utf-8")
+        except Exception:
+            continue
+
+        for line in text.splitlines():
+            if line.startswith("- Tags: "):
+                tags = [t.strip() for t in line[len("- Tags: "):].split(",") if t.strip()]
+                tag_counts.update(tags)
+    return dict(tag_counts.most_common())
+
+
+def build_dashboard_page() -> None:
+    """メトリクスと日報データからダッシュボードページを生成する。"""
+    metrics = _load_metrics_data()
+    if not metrics:
+        print("[warn] metrics.json がないためダッシュボードをスキップします")
+        return
+
+    dash_dir = SITE_DIR / "dashboard"
+    dash_dir.mkdir(parents=True, exist_ok=True)
+
+    # --- データ準備 ---
+    sorted_dates = sorted(metrics.keys())
+
+    # 収集数推移
+    dates_json = json.dumps(sorted_dates)
+    total_raw = json.dumps([metrics[d].get("collection", {}).get("total_raw", 0) for d in sorted_dates])
+    total_new = json.dumps([metrics[d].get("collection", {}).get("total_new", 0) for d in sorted_dates])
+
+    # 本文取得成功率推移
+    body_rates = json.dumps([
+        round(metrics[d].get("body_fetch", {}).get("success_rate", 0) * 100, 1)
+        for d in sorted_dates
+    ])
+
+    # ソース稼働率（0件でない日の割合）
+    all_sources: set[str] = set()
+    for d in sorted_dates:
+        all_sources.update(metrics[d].get("collection", {}).get("by_source", {}).keys())
+
+    source_uptime: list[dict] = []
+    for src in sorted(all_sources):
+        active_days = sum(
+            1 for d in sorted_dates
+            if metrics[d].get("collection", {}).get("by_source", {}).get(src, 0) > 0
+        )
+        rate = round(active_days / len(sorted_dates) * 100, 1) if sorted_dates else 0
+        source_uptime.append({"name": src, "rate": rate})
+    source_uptime.sort(key=lambda x: x["rate"])
+    source_names_json = json.dumps([s["name"] for s in source_uptime], ensure_ascii=False)
+    source_rates_json = json.dumps([s["rate"] for s in source_uptime])
+
+    # importance 分布（最新回）
+    latest_key = sorted_dates[-1] if sorted_dates else ""
+    latest_dist = metrics.get(latest_key, {}).get("summarization", {}).get("importance_distribution", {})
+    dist_labels = json.dumps(list(latest_dist.keys()))
+    dist_values = json.dumps(list(latest_dist.values()))
+
+    # タグ統計（全日報から集計）
+    news_files = sorted(NEWS_DIR.rglob("*.md"))
+    news_files = [f for f in news_files if not f.name.startswith(("prev-", "test-"))]
+    tag_stats = _collect_tag_stats(news_files)
+    tag_names_json = json.dumps(list(tag_stats.keys()), ensure_ascii=False)
+    tag_values_json = json.dumps(list(tag_stats.values()))
+
+    # 実行時間の推移
+    elapsed_data = json.dumps([
+        round(metrics[d].get("elapsed_seconds", 0), 1)
+        for d in sorted_dates
+    ])
+
+    # サマリーカード用の数値
+    latest = metrics.get(latest_key, {})
+    summary_cards = {
+        "date": latest_key,
+        "total_raw": latest.get("collection", {}).get("total_raw", 0),
+        "total_new": latest.get("collection", {}).get("total_new", 0),
+        "body_rate": latest.get("body_fetch", {}).get("success_rate", 0),
+        "articles": latest.get("output", {}).get("total_items", 0),
+        "penalties": latest.get("output", {}).get("active_penalties", 0),
+        "elapsed": latest.get("elapsed_seconds", 0),
+        "sources": len(all_sources),
+        "days": len(sorted_dates),
+    }
+
+    body_rate_pct = f"{summary_cards['body_rate']:.0%}" if isinstance(summary_cards['body_rate'], float) else "?"
+    elapsed_str = f"{summary_cards['elapsed']:.0f}s" if isinstance(summary_cards['elapsed'], (int, float)) else "?"
+
+    body_html = f"""
+  <div class="layout">
+    <main class="content-area">
+      <div class="content-header">
+        <div class="content-title">Dashboard</div>
+        <div class="content-subtitle">Pipeline metrics — {summary_cards['days']} days, {summary_cards['sources']} sources</div>
+      </div>
+      <div style="padding:16px 24px">
+
+        <!-- サマリーカード -->
+        <div class="dash-cards">
+          <div class="dash-card">
+            <div class="dash-card-label">Latest Run</div>
+            <div class="dash-card-value">{html.escape(summary_cards['date'])}</div>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-label">Collected</div>
+            <div class="dash-card-value">{summary_cards['total_raw']}</div>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-label">New Articles</div>
+            <div class="dash-card-value">{summary_cards['total_new']}</div>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-label">Body Fetch Rate</div>
+            <div class="dash-card-value">{body_rate_pct}</div>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-label">Output Articles</div>
+            <div class="dash-card-value">{summary_cards['articles']}</div>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-label">Execution Time</div>
+            <div class="dash-card-value">{elapsed_str}</div>
+          </div>
+        </div>
+
+        <!-- グラフ -->
+        <div class="dash-grid">
+          <div class="dash-chart-box">
+            <h3 class="dash-chart-title">Collection Trend</h3>
+            <canvas id="chart-collection"></canvas>
+          </div>
+          <div class="dash-chart-box">
+            <h3 class="dash-chart-title">Body Fetch Rate (%)</h3>
+            <canvas id="chart-bodyrate"></canvas>
+          </div>
+          <div class="dash-chart-box">
+            <h3 class="dash-chart-title">Execution Time (sec)</h3>
+            <canvas id="chart-elapsed"></canvas>
+          </div>
+          <div class="dash-chart-box">
+            <h3 class="dash-chart-title">Importance Distribution (Latest)</h3>
+            <canvas id="chart-importance"></canvas>
+          </div>
+          <div class="dash-chart-box dash-chart-wide">
+            <h3 class="dash-chart-title">Source Uptime Rate (%)</h3>
+            <canvas id="chart-sources"></canvas>
+          </div>
+          <div class="dash-chart-box">
+            <h3 class="dash-chart-title">Popular Tags (All Time)</h3>
+            <canvas id="chart-tags"></canvas>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+  <script>
+  (function() {{
+    const COLORS = {{
+      accent: '#7b8fff',
+      accentDim: 'rgba(123,143,255,0.25)',
+      green: '#4ade80',
+      greenDim: 'rgba(74,222,128,0.25)',
+      orange: '#fb923c',
+      orangeDim: 'rgba(251,146,60,0.25)',
+      purple: '#c084fc',
+      purpleDim: 'rgba(192,132,252,0.25)',
+      text: '#c5c8d4',
+      grid: 'rgba(255,255,255,0.06)',
+    }};
+
+    Chart.defaults.color = COLORS.text;
+    Chart.defaults.borderColor = COLORS.grid;
+    Chart.defaults.font.family = '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif';
+    Chart.defaults.font.size = 12;
+    Chart.defaults.plugins.legend.labels.boxWidth = 12;
+
+    const dates = {dates_json};
+
+    // 1. Collection Trend
+    new Chart(document.getElementById('chart-collection'), {{
+      type: 'line',
+      data: {{
+        labels: dates,
+        datasets: [
+          {{ label: 'Total Collected', data: {total_raw}, borderColor: COLORS.accent, backgroundColor: COLORS.accentDim, fill: true, tension: 0.3 }},
+          {{ label: 'New Articles', data: {total_new}, borderColor: COLORS.green, backgroundColor: COLORS.greenDim, fill: true, tension: 0.3 }},
+        ]
+      }},
+      options: {{ responsive: true, plugins: {{ legend: {{ position: 'top' }} }} }}
+    }});
+
+    // 2. Body Fetch Rate
+    new Chart(document.getElementById('chart-bodyrate'), {{
+      type: 'line',
+      data: {{
+        labels: dates,
+        datasets: [{{ label: 'Success Rate (%)', data: {body_rates}, borderColor: COLORS.green, backgroundColor: COLORS.greenDim, fill: true, tension: 0.3 }}]
+      }},
+      options: {{ responsive: true, scales: {{ y: {{ min: 0, max: 100 }} }}, plugins: {{ legend: {{ display: false }} }} }}
+    }});
+
+    // 3. Execution Time
+    new Chart(document.getElementById('chart-elapsed'), {{
+      type: 'bar',
+      data: {{
+        labels: dates,
+        datasets: [{{ label: 'Seconds', data: {elapsed_data}, backgroundColor: COLORS.purpleDim, borderColor: COLORS.purple, borderWidth: 1 }}]
+      }},
+      options: {{ responsive: true, plugins: {{ legend: {{ display: false }} }} }}
+    }});
+
+    // 4. Importance Distribution
+    new Chart(document.getElementById('chart-importance'), {{
+      type: 'doughnut',
+      data: {{
+        labels: {dist_labels},
+        datasets: [{{ data: {dist_values}, backgroundColor: ['#64748b','#7b8fff','#4ade80','#fb923c','#f472b6'], borderWidth: 0 }}]
+      }},
+      options: {{ responsive: true, plugins: {{ legend: {{ position: 'right' }} }} }}
+    }});
+
+    // 5. Source Uptime Rate
+    new Chart(document.getElementById('chart-sources'), {{
+      type: 'bar',
+      data: {{
+        labels: {source_names_json},
+        datasets: [{{
+          label: 'Uptime %',
+          data: {source_rates_json},
+          backgroundColor: {source_rates_json}.map(v => v >= 80 ? COLORS.green : v >= 50 ? COLORS.orange : '#ef4444'),
+          borderWidth: 0
+        }}]
+      }},
+      options: {{
+        indexAxis: 'y',
+        responsive: true,
+        scales: {{ x: {{ min: 0, max: 100 }} }},
+        plugins: {{ legend: {{ display: false }} }}
+      }}
+    }});
+
+    // 6. Popular Tags
+    new Chart(document.getElementById('chart-tags'), {{
+      type: 'bar',
+      data: {{
+        labels: {tag_names_json},
+        datasets: [{{ label: 'Count', data: {tag_values_json}, backgroundColor: COLORS.accentDim, borderColor: COLORS.accent, borderWidth: 1 }}]
+      }},
+      options: {{
+        indexAxis: 'y',
+        responsive: true,
+        plugins: {{ legend: {{ display: false }} }}
+      }}
+    }});
+  }})();
+  </script>"""
+
+    (dash_dir / "index.html").write_text(
+        page_shell("Dashboard - " + SITE_TITLE, body_html, root_rel=".."),
+        encoding="utf-8",
+    )
+    print(f"[info] built dashboard: {len(sorted_dates)} days of metrics, {len(all_sources)} sources")
+
+
+# ---------------------------------------------------------------------------
 # サイトマップ生成
 # ---------------------------------------------------------------------------
 
@@ -2082,6 +2386,7 @@ def main():
     build_model_page()
     build_claude_pages()
     build_favorites_pages()
+    build_dashboard_page()
     build_sitemap()
 
     print(f"[info] built site: {SITE_DIR}")
