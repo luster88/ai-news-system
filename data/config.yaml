@@ -12,3 +12,10 @@ page_size: 30
 fetch_timeout: 10
 max_body_chars: 2000
 site_title: "AI News Daily"
+
+# クラスタリング設定
+cluster_threshold: 0.35
+cluster_weight_title: 0.40
+cluster_weight_summary: 0.35
+cluster_weight_tags: 0.25
+cluster_lookback_days: 7

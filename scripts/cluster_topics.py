@@ -1,6 +1,14 @@
 import re
 from collections import defaultdict
 
+from scripts.config import get as cfg
+
+# クラスタリング設定
+CLUSTER_THRESHOLD = cfg("cluster_threshold", 0.35)
+WEIGHT_TITLE = cfg("cluster_weight_title", 0.40)
+WEIGHT_SUMMARY = cfg("cluster_weight_summary", 0.35)
+WEIGHT_TAGS = cfg("cluster_weight_tags", 0.25)
+
 
 def normalize_text(text: str) -> str:
     text = (text or "").lower().strip()
@@ -10,17 +18,17 @@ def normalize_text(text: str) -> str:
     return text
 
 
-def tokenize_title(title: str) -> set[str]:
-    text = normalize_text(title)
-    tokens = set(text.split())
+STOPWORDS = {
+    "the", "a", "an", "and", "or", "to", "of", "for", "in", "on", "with",
+    "from", "by", "at", "is", "are", "be", "this", "that",
+    "ai", "news", "announcement", "announcements",
+}
 
-    stopwords = {
-        "the", "a", "an", "and", "or", "to", "of", "for", "in", "on", "with",
-        "from", "by", "at", "is", "are", "be", "this", "that",
-        "ai", "news", "announcement", "announcements",
-    }
 
-    return {t for t in tokens if len(t) >= 2 and t not in stopwords}
+def tokenize(text: str) -> set[str]:
+    normalized = normalize_text(text)
+    tokens = set(normalized.split())
+    return {t for t in tokens if len(t) >= 2 and t not in STOPWORDS}
 
 
 def jaccard_similarity(a: set[str], b: set[str]) -> float:
@@ -31,14 +39,52 @@ def jaccard_similarity(a: set[str], b: set[str]) -> float:
     return inter / union if union else 0.0
 
 
-def cluster_articles(articles: list[dict], threshold: float = 0.45) -> list[dict]:
-    """
-    類似タイトルの記事をざっくり束ねて、importanceが高いものを代表として残す。
-    """
-    clusters = []
-    used = set()
+def tag_similarity(tags_a: list[str], tags_b: list[str]) -> float:
+    """タグの一致率を計算する。"""
+    set_a = set(tags_a or [])
+    set_b = set(tags_b or [])
+    if not set_a or not set_b:
+        return 0.0
+    inter = len(set_a & set_b)
+    union = len(set_a | set_b)
+    return inter / union if union else 0.0
 
-    tokenized = [tokenize_title(a.get("title", "")) for a in articles]
+
+def composite_similarity(article_a: dict, article_b: dict,
+                         tokens_a: dict, tokens_b: dict) -> float:
+    """タイトル + 要約 + タグの加重スコアで複合類似度を計算する。"""
+    title_sim = jaccard_similarity(tokens_a["title"], tokens_b["title"])
+    summary_sim = jaccard_similarity(tokens_a["summary"], tokens_b["summary"])
+    tags_sim = tag_similarity(
+        article_a.get("tags", []),
+        article_b.get("tags", []),
+    )
+
+    return (
+        WEIGHT_TITLE * title_sim
+        + WEIGHT_SUMMARY * summary_sim
+        + WEIGHT_TAGS * tags_sim
+    )
+
+
+def _tokenize_article(article: dict) -> dict:
+    """記事からタイトルと要約のトークンセットを生成する。"""
+    return {
+        "title": tokenize(article.get("title", "")),
+        "summary": tokenize(article.get("summary_ja", "") or article.get("summary", "")),
+    }
+
+
+def cluster_articles(articles: list[dict], threshold: float | None = None) -> list[dict]:
+    """
+    複合類似度（タイトル + 要約 + タグ）で記事をクラスタリングし、
+    importanceが高いものを代表として残す。
+    """
+    threshold = threshold if threshold is not None else CLUSTER_THRESHOLD
+    clusters: list[list[dict]] = []
+    used: set[int] = set()
+
+    tokenized = [_tokenize_article(a) for a in articles]
 
     for i, article in enumerate(articles):
         if i in used:
@@ -51,7 +97,10 @@ def cluster_articles(articles: list[dict], threshold: float = 0.45) -> list[dict
             if j in used:
                 continue
 
-            sim = jaccard_similarity(tokenized[i], tokenized[j])
+            sim = composite_similarity(
+                articles[i], articles[j],
+                tokenized[i], tokenized[j],
+            )
             if sim >= threshold:
                 cluster.append(articles[j])
                 used.add(j)
