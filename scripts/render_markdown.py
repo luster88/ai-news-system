@@ -53,6 +53,10 @@ def _render_article_lines(a: dict, show_region: bool = False) -> list[str]:
     if tags:
         lines.append(f"- Tags: {', '.join(tags)}")
 
+    topic_id = a.get("topic_id", "")
+    if topic_id:
+        lines.append(f"- Topic: {topic_id}")
+
     lines.append(f"- Summary: {a.get('summary_ja', '').strip()}")
 
     why = a.get("why_it_matters", "").strip()

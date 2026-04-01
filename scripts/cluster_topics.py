@@ -90,10 +90,22 @@ def tag_similarity(tags_a: list[str], tags_b: list[str]) -> float:
     return inter / union if union else 0.0
 
 
+def topic_id_match(article_a: dict, article_b: dict) -> bool:
+    """両方の記事に topic_id がある場合、一致するかを返す。"""
+    tid_a = (article_a.get("topic_id") or "").strip()
+    tid_b = (article_b.get("topic_id") or "").strip()
+    return bool(tid_a) and bool(tid_b) and tid_a == tid_b
+
+
 def composite_similarity(article_a: dict, article_b: dict,
                          tokens_a: dict, tokens_b: dict) -> float:
     """タイトル + 要約 + タグの加重スコアで複合類似度を計算する。
+    topic_id が一致する場合は無条件で 1.0 を返す。
     要約やタグが片方でも空の場合、その分の重みをタイトルに再配分する。"""
+    # topic_id が一致すれば最優先でクラスタリング
+    if topic_id_match(article_a, article_b):
+        return 1.0
+
     title_sim = jaccard_similarity(tokens_a["title"], tokens_b["title"])
     summary_sim = jaccard_similarity(tokens_a["summary"], tokens_b["summary"])
     tags_sim = tag_similarity(
@@ -235,6 +247,8 @@ def _parse_articles_from_markdown(md_text: str, date_str: str) -> list[dict]:
             current["summary_ja"] = line[len("- Summary: "):].strip()
         elif line.startswith("- Tags: "):
             current["tags"] = [t.strip() for t in line[len("- Tags: "):].split(",")]
+        elif line.startswith("- Topic: "):
+            current["topic_id"] = line[len("- Topic: "):].strip()
         elif line.startswith("- Link: "):
             # [url](url) 形式から URL を抽出
             link_m = re.search(r"\((https?://[^)]+)\)", line)
