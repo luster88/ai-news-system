@@ -673,8 +673,18 @@ def collect_articles():
 
                 normalized = normalize_items(region, src["name"], items)
 
+                # ソース定義に filter_keywords がある場合はそれでフィルタ
+                source_filter_kw = src.get("filter_keywords")
+                if source_filter_kw:
+                    normalized = [
+                        a for a in normalized
+                        if any(
+                            kw.lower() in f"{a.get('title', '')} {a.get('summary', '')}".lower()
+                            for kw in source_filter_kw
+                        )
+                    ]
                 # techblog リージョンの RSS は AI キーワードフィルタを追加適用
-                if region in AI_FILTER_REGIONS and source_type == "rss":
+                elif region in AI_FILTER_REGIONS and source_type == "rss":
                     normalized = [
                         a for a in normalized
                         if any(
