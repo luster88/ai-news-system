@@ -2,7 +2,7 @@ import sys
 from pathlib import Path
 import yaml
 
-from scripts.collect import fetch_rss, fetch_site, normalize_items
+from scripts.collect import fetch_rss, fetch_site, normalize_items, GOOD_AI_KEYWORDS, AI_FILTER_REGIONS
 from scripts.seen_urls import (
     load_seen_data,
     filter_seen_articles,
@@ -52,7 +52,28 @@ def run_test(region: str, source: dict, seen_data: dict | None = None):
         print("[error]", e)
         return
 
-    print(f"[result] collected: {len(normalized)}")
+    # filter_keywords によるフィルタ（本番パイプラインと同じロジック）
+    pre_filter = len(normalized)
+    source_filter_kw = source.get("filter_keywords")
+    if source_filter_kw:
+        normalized = [
+            a for a in normalized
+            if any(
+                kw.lower() in f"{a.get('title', '')} {a.get('summary', '')}".lower()
+                for kw in source_filter_kw
+            )
+        ]
+    elif region in AI_FILTER_REGIONS and typ == "rss":
+        normalized = [
+            a for a in normalized
+            if any(
+                kw in f"{a.get('title', '')} {a.get('summary', '')}".lower()
+                for kw in GOOD_AI_KEYWORDS
+            )
+        ]
+
+    filter_note = f" (filtered: {pre_filter} → {len(normalized)})" if len(normalized) != pre_filter else ""
+    print(f"[result] collected: {len(normalized)}{filter_note}")
 
     # --penalties: seen_urls フィルタ結果を表示（読み取り専用）
     if seen_data is not None:
