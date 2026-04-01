@@ -108,6 +108,17 @@ cn:
     url: "https://kr-asia.com/"
     max_items: 6
 
+  - name: 量子位 (QbitAI)
+    type: rss
+    url: "https://www.qbitai.com/feed"
+    max_items: 6
+
+  - name: IT之家
+    type: rss
+    url: "https://www.ithome.com/rss/"
+    max_items: 6
+    filter_keywords: [ai, llm, gpt, claude, 人工智能, 大模型, openai, 生成式, deepseek, 智能, 芯片]
+
 techblog:
   - name: Qiita AI
     type: rss
