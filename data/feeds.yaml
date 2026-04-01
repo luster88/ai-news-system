@@ -39,6 +39,21 @@ us:
     url: "https://www.producthunt.com/feed"
     max_items: 6
 
+  - name: Simon Willison Blog
+    type: rss
+    url: "https://simonwillison.net/atom/everything/"
+    max_items: 6
+
+  - name: MIT Technology Review AI
+    type: rss
+    url: "https://www.technologyreview.com/topic/artificial-intelligence/feed"
+    max_items: 6
+
+  - name: Import AI
+    type: rss
+    url: "https://importai.substack.com/feed"
+    max_items: 4
+
 jp:
   - name: ITmedia AI+
     type: rss
@@ -59,6 +74,18 @@ jp:
     type: rss
     url: "https://ai-heartland.com/feed.xml"
     max_items: 6
+
+  - name: GIGAZINE
+    type: rss
+    url: "https://gigazine.net/news/rss_atom/"
+    max_items: 6
+    filter_keywords: [ai, llm, gpt, claude, 生成ai, 機械学習, 人工知能, openai, google, chatgpt]
+
+  - name: Publickey
+    type: rss
+    url: "https://www.publickey1.jp/atom.xml"
+    max_items: 5
+    filter_keywords: [ai, llm, gpt, claude, 生成ai, 機械学習, copilot, openai, anthropic]
 
 cn:
   - name: ERNIE Blog
@@ -122,3 +149,8 @@ research:
     type: rss
     url: "https://research.google/blog/rss/"
     max_items: 5
+
+  - name: Reddit r/MachineLearning
+    type: rss
+    url: "https://www.reddit.com/r/MachineLearning/.rss"
+    max_items: 6
