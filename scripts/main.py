@@ -13,7 +13,7 @@ from scripts.seen_urls import (
     update_seen_urls,
 )
 from scripts.summarize import summarize_articles
-from scripts.cluster_topics import cluster_articles
+from scripts.cluster_topics import cluster_articles, detect_cross_day_duplicates, load_past_articles
 from scripts.render_markdown import render_daily_markdown
 from scripts.build_index import build_index
 
@@ -47,9 +47,19 @@ def main():
     # 5. 記事本文を取得（キャッシュ優先、research リージョンはスキップ）
     filtered_articles = fetch_article_bodies(filtered_articles)
 
-    # 6. 要約・クラスタリング・出力
+    # 6. 要約・クラスタリング・日またぎ重複検出・出力
     result = summarize_articles(filtered_articles)
     clustered_articles = cluster_articles(result["articles"])
+
+    # 過去記事との重複検出（フラグ付与のみ、排除はしない）
+    past_articles = load_past_articles()
+    if past_articles:
+        print(f"[info] cross-day duplicate check: {len(past_articles)} past articles loaded")
+        clustered_articles = detect_cross_day_duplicates(clustered_articles, past_articles)
+        cross_day_count = sum(1 for a in clustered_articles if a.get("cross_day_related"))
+        if cross_day_count:
+            print(f"[info] {cross_day_count} articles have cross-day related coverage")
+
     result["articles"] = clustered_articles
 
     output_path = render_daily_markdown(result, seen_data=updated_seen_data)

@@ -68,6 +68,16 @@ def _render_article_lines(a: dict, show_region: bool = False) -> list[str]:
                 f"[{r.get('title', '').strip()}]({r.get('link', '').strip()})"
             )
 
+    cross_day = a.get("cross_day_related", [])
+    if cross_day:
+        lines.append("- Past Coverage:")
+        for r in cross_day[:3]:
+            date_label = f" ({r['date']})" if r.get("date") else ""
+            lines.append(
+                f"  - {r.get('source', '').strip()}{date_label}: "
+                f"[{r.get('title', '').strip()}]({r.get('link', '').strip()})"
+            )
+
     return lines
 
 
