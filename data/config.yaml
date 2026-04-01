@@ -1,23 +1,32 @@
 # AI News System 設定ファイル
 # このファイルがなくても各モジュールのデフォルト値で動作します
 
-model: "claude-sonnet-4-5"
-max_articles_to_summarize: 25
-max_per_source: 3
-max_age_days: 14
-penalty_threshold: 2
-penalty_days: 3
-url_expiry_days: 90
-page_size: 30
-fetch_timeout: 10
-max_body_chars: 2000
-site_title: "AI News Daily"
-site_base_url: "https://luster88.github.io/ai-news-system"
+# --- 要約 (summarize.py) ---
+model: "claude-sonnet-4-5"              # 要約に使用する Claude モデル
+max_articles_to_summarize: 25           # 1回の実行で要約する最大記事数
+max_per_source: 3                       # 1ソースあたりの最大採用数（偏り防止）
 
-# クラスタリング設定
-cluster_threshold: 0.35
-cluster_weight_title: 0.40
-cluster_weight_summary: 0.35
-cluster_weight_tags: 0.25
-cluster_lookback_days: 7
-cluster_cross_day_threshold: 0.30
+# --- 収集 (collect.py) ---
+max_age_days: 14                        # この日数より古い記事は収集対象外
+
+# --- ペナルティ (seen_urls.py) ---
+penalty_threshold: 2                    # 既出URL件数がこの値以上でペナルティ発動
+penalty_days: 3                         # ペナルティ継続日数
+url_expiry_days: 90                     # seen_urls.json の URL 保持期間（日）
+
+# --- 本文取得 (fetch_body.py) ---
+fetch_timeout: 10                       # HTTP リクエストのタイムアウト（秒）
+max_body_chars: 2000                    # 要約に渡す本文の最大文字数
+
+# --- サイト生成 (build_site.py) ---
+page_size: 30                           # インデックス1ページあたりの記事数
+site_title: "AI News Daily"             # サイトタイトル（ヘッダー・タイトルタグ）
+site_base_url: "https://luster88.github.io/ai-news-system"  # サイトマップ用ベースURL
+
+# --- クラスタリング (cluster_topics.py) ---
+cluster_threshold: 0.35                 # 同日クラスタリングの複合類似度閾値
+cluster_weight_title: 0.40              # タイトル類似度の重み
+cluster_weight_summary: 0.35            # 要約類似度の重み
+cluster_weight_tags: 0.25               # タグ一致率の重み
+cluster_lookback_days: 7                # 日またぎ重複検出で参照する過去日数
+cluster_cross_day_threshold: 0.30       # 日またぎ重複検出の類似度閾値
