@@ -7,6 +7,7 @@ from anthropic import Anthropic
 from dotenv import load_dotenv
 
 from scripts.config import get as cfg
+from scripts.utils import extract_text_from_message, clean_json_text
 
 load_dotenv()
 
@@ -21,29 +22,8 @@ TAG_CANDIDATES = [
 ]
 
 
-def _extract_text_from_message(msg) -> str:
-    return "".join(
-        block.text for block in msg.content
-        if getattr(block, "type", "") == "text"
-    ).strip()
-
-
-def _clean_json_text(text: str) -> str:
-    text = text.strip()
-
-    if text.startswith("```json"):
-        text = text[len("```json"):].strip()
-    elif text.startswith("```"):
-        text = text[len("```"):].strip()
-
-    if text.endswith("```"):
-        text = text[:-3].strip()
-
-    return text
-
-
 def _safe_parse_summary_json(text: str) -> dict:
-    cleaned = _clean_json_text(text)
+    cleaned = clean_json_text(text)
 
     try:
         parsed = json.loads(cleaned)
@@ -210,7 +190,7 @@ importance_score は 1〜10 の整数で、以下の基準に従って返して�
         messages=[{"role": "user", "content": prompt}],
     )
 
-    parsed = _safe_parse_summary_json(_extract_text_from_message(msg))
+    parsed = _safe_parse_summary_json(extract_text_from_message(msg))
 
     article["summary_ja"] = parsed["summary"]
     article["why_it_matters"] = parsed["why_it_matters"]
@@ -268,7 +248,7 @@ Markdownの冒頭に置く「今日の総括」を日本語で3〜5行の箇条�
         messages=[{"role": "user", "content": prompt}],
     )
 
-    text = _extract_text_from_message(msg)
+    text = extract_text_from_message(msg)
     lines = [line.strip() for line in text.splitlines() if line.strip()]
 
     bullet_lines = []

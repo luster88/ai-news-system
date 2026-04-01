@@ -13,6 +13,7 @@ from anthropic import Anthropic
 from dotenv import load_dotenv
 
 from scripts.config import get as cfg
+from scripts.utils import extract_text_from_message, clean_json_text
 
 load_dotenv()
 
@@ -73,27 +74,9 @@ tags は以下から最大3つ選択:
 """ + ", ".join(CLAUDE_TAG_CANDIDATES)
 
 
-def _extract_text_from_message(msg) -> str:
-    return "".join(
-        block.text for block in msg.content
-        if getattr(block, "type", "") == "text"
-    ).strip()
-
-
-def _clean_json_text(text: str) -> str:
-    text = text.strip()
-    if text.startswith("```json"):
-        text = text[len("```json"):].strip()
-    elif text.startswith("```"):
-        text = text[len("```"):].strip()
-    if text.endswith("```"):
-        text = text[:-3].strip()
-    return text
-
-
 def _safe_parse_claude_json(text: str) -> dict:
     """Claude API のレスポンスを安全にパースする。"""
-    cleaned = _clean_json_text(text)
+    cleaned = clean_json_text(text)
 
     try:
         parsed = json.loads(cleaned)
@@ -194,7 +177,7 @@ URL: {link}
                 messages=[{"role": "user", "content": user_prompt}],
             )
 
-            raw_text = _extract_text_from_message(msg)
+            raw_text = extract_text_from_message(msg)
             parsed = _safe_parse_claude_json(raw_text)
             api_calls += 1
 

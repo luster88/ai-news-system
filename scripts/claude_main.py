@@ -76,10 +76,6 @@ def main():
         return
 
     # 5. 記事本文を取得（fetch_body.py を再利用）
-    # group フィールドを region として扱えるよう一時的に設定
-    for article in filtered_articles:
-        article.setdefault("region", article.get("group", ""))
-
     filtered_articles = fetch_article_bodies(filtered_articles)
 
     # 6. 要約・カテゴリ分類

@@ -22,35 +22,15 @@ from scripts.collect_models import (
 )
 from scripts.render_model_report import render_model_report
 from scripts.config import get as cfg
+from scripts.utils import extract_text_from_message, clean_json_text
 
 load_dotenv()
 
 MODEL = cfg("model", "claude-sonnet-4-5")
 
 
-def _extract_text_from_message(msg) -> str:
-    return "".join(
-        block.text for block in msg.content
-        if getattr(block, "type", "") == "text"
-    ).strip()
-
-
-def _clean_json_text(text: str) -> str:
-    text = text.strip()
-
-    if text.startswith("```json"):
-        text = text[len("```json"):].strip()
-    elif text.startswith("```"):
-        text = text[len("```"):].strip()
-
-    if text.endswith("```"):
-        text = text[:-3].strip()
-
-    return text
-
-
 def _safe_parse_json(text: str) -> dict | list:
-    cleaned = _clean_json_text(text)
+    cleaned = clean_json_text(text)
     try:
         return json.loads(cleaned)
     except Exception:
@@ -171,7 +151,7 @@ def structure_model_info(
         messages=[{"role": "user", "content": prompt}],
     )
 
-    text = _extract_text_from_message(msg)
+    text = extract_text_from_message(msg)
     parsed = _safe_parse_json(text)
 
     if not isinstance(parsed, dict):

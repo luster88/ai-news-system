@@ -1,5 +1,12 @@
 # Claude エコシステム情報の収集ソース
 # グループ: official / community / tools
+#
+# 注意: 一部のソース（Anthropic News, Qiita, Zenn, AI Heartland, The Decoder,
+# TechCrunch）は feeds.yaml にも存在する。これは意図的な設計で、
+# - feeds.yaml → AI全般の日報パイプライン（news/ に出力）
+# - claude_feeds.yaml → Claude特化パイプライン（claude/ に出力、Claude関連キーワードでフィルタ）
+# 出力先・フィルタが異なるため、同じURLが両方に収集されても問題ない。
+# URL重複排除は各パイプラインの seen_urls.json / claude_seen_urls.json で独立管理。
 
 official:
   - name: Anthropic News

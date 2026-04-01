@@ -333,8 +333,22 @@ def looks_like_real_article(
     return True
 
 
+RSS_TIMEOUT = cfg("fetch_timeout", 15)
+
+
 def fetch_rss(url: str, max_items: int = 20):
-    parsed = feedparser.parse(url)
+    # requests で先にフィードを取得してタイムアウトを制御する
+    try:
+        resp = requests.get(url, timeout=RSS_TIMEOUT, headers={
+            "User-Agent": "Mozilla/5.0 (compatible; AiNewsBot/1.0)"
+        })
+        resp.raise_for_status()
+        raw_content = resp.content
+    except requests.RequestException as e:
+        print(f"[warn] RSS fetch failed ({url}): {e}")
+        return []
+
+    parsed = feedparser.parse(raw_content)
     if parsed.bozo:
         print(f"[warn] RSS parse issue ({url}): {parsed.bozo_exception}")
     items = []

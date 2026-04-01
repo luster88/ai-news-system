@@ -10,6 +10,7 @@ Claude 関連の記事を RSS / サイトスクレイピングで収集する。
 from pathlib import Path
 
 import feedparser
+import requests
 import yaml
 from bs4 import BeautifulSoup
 
@@ -63,9 +64,22 @@ def _matches_keywords(text: str, keywords: list[str]) -> bool:
     return any(kw.lower() in text_lower for kw in keywords)
 
 
+RSS_TIMEOUT = cfg("fetch_timeout", 15)
+
+
 def _fetch_rss_claude(url: str, max_items: int, filter_keywords: list[str] | None = None) -> list[dict]:
     """RSS からエントリを取得し、Claude 関連フィルタを適用する。"""
-    parsed = feedparser.parse(url)
+    try:
+        resp = requests.get(url, timeout=RSS_TIMEOUT, headers={
+            "User-Agent": "Mozilla/5.0 (compatible; AiNewsBot/1.0)"
+        })
+        resp.raise_for_status()
+        raw_content = resp.content
+    except requests.RequestException as e:
+        print(f"[warn] RSS fetch failed ({url}): {e}")
+        return []
+
+    parsed = feedparser.parse(raw_content)
     if parsed.bozo:
         print(f"[warn] RSS parse issue ({url}): {parsed.bozo_exception}")
 
@@ -180,9 +194,9 @@ def collect_claude_articles() -> tuple[list[dict], dict[str, int]]:
                         filter_keywords=filter_kw,
                     )
 
-                # group と source メタデータを付与
+                # region と source メタデータを付与
                 for item in items:
-                    item["group"] = group
+                    item["region"] = group
                     item["source"] = name
 
                 source_stats[name] = len(items)
