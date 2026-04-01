@@ -1,6 +1,6 @@
 # HANDOFF.md — AI News System 引き継ぎドキュメント
 
-最終更新: 2026-03-27（第5版）
+最終更新: 2026-04-02（第6版）
 
 ---
 
@@ -56,7 +56,7 @@ claude_feeds.yaml (official/community/tools グループ)
 - **Claude エコシステム情報**: 運用中。GitHub Actions で毎日 JST 07:00 に自動実行（`claude-info.yml`）。
 - **静的サイト**: 運用中。GitHub Pages にデプロイ済み。Linear.app 風UIに全面リデザイン完了。
 - **UIリデザイン**: カード型ブログUI → Linear風3カラムダッシュボードに全面変更。月別アーカイブ・年月折りたたみサイドバー・レスポンシブ対応 完了。
-- **ソース**: 22ソース / 5リージョン。実効稼働率 91%（arXiv 2本は週末 0件）。
+- **ソース**: 23ソース / 5リージョン（AI Heartland 追加）。実効稼働率 91%（arXiv 2本は週末 0件）。
 - **安全性修正**: HIGH 5件 + MEDIUM 5件 完了。
 - **中期タスク**: 5件すべて完了。
 - **要約品質改善**: 4件（RSS フォールバック、スコア基準、system prompt、キーワード拡充）完了。
@@ -64,6 +64,8 @@ claude_feeds.yaml (official/community/tools グループ)
 - **本文抽出改善**: ソース別セレクタ（Qiita/Zenn/TechCrunch）追加 完了。
 - **お気に入り機能**: CLI管理 (`scripts/favorites.py`) + サイト生成 (`/favorites/`) 完了。ユーザー定義タグでの分類・フィルタリングに対応。
 - **UI改善**: ダークテーマのWCAG AA準拠コントラスト改善・記事詳細の前後日付ナビゲーション・セクションフィルター 完了。
+- **クラスタリング改善**: 複合スコアリング（タイトル+要約+タグ加重）・日またぎ重複検出・topic_idによる多言語対応・日本語2-gramトークナイザー 完了。
+- **ソース**: AI Heartland を追加（feeds.yaml + claude_feeds.yaml）。
 
 既知の制約:
 - JS レンダリングが必要なサイト（一部 CN ソース）では本文取得に失敗する（`body=""` でフォールバック）
@@ -140,6 +142,11 @@ claude_feeds.yaml (official/community/tools グループ)
 | ダークテーマのWCAG AA準拠コントラスト改善 | `scripts/build_site.py`（CSS変数全面更新） |
 | 記事詳細ページに前日・翌日ナビゲーション追加 | `scripts/build_site.py`（`_day_nav_html` 追加） |
 | 記事詳細ページにセクションフィルター（注目3件/US/CN/JP等の切り替え） | `scripts/build_site.py`（`_wrap_article_sections`, `_section_filter_bar` 追加） |
+| クラスタリング改善: 複合スコアリング（タイトル+要約+タグ加重） | `scripts/cluster_topics.py`, `data/config.yaml` |
+| クラスタリング改善: 日またぎ重複検出（過去7日分照合、Past Coverage表示） | `scripts/cluster_topics.py`, `scripts/main.py`, `scripts/render_markdown.py` |
+| クラスタリング改善: topic_idによる多言語クラスタリング（英/日/中の同一トピック統合） | `scripts/summarize.py`, `scripts/cluster_topics.py`, `scripts/render_markdown.py` |
+| クラスタリング改善: 日本語2-gramトークナイザー（形態素解析不要） | `scripts/cluster_topics.py` |
+| 情報ソース追加: AI Heartland（feeds.yaml + claude_feeds.yaml） | `data/feeds.yaml`, `data/claude_feeds.yaml` |
 
 ### 静的サイト UI 全面リデザイン (done)
 
@@ -205,11 +212,11 @@ claude_feeds.yaml (official/community/tools グループ)
 
 | ファイル | 役割 |
 |---|---|
-| `scripts/collect.py` | RSS/サイトスクレイピング (22ソース, 5リージョン) |
+| `scripts/collect.py` | RSS/サイトスクレイピング (23ソース, 5リージョン) |
 | `scripts/seen_urls.py` | 既出URL管理・ソースペナルティ・状況表示 |
 | `scripts/fetch_body.py` | 記事本文取得・キャッシュ |
 | `scripts/summarize.py` | Claude API 要約・スコア・タグ付与（system prompt + 5段階基準） |
-| `scripts/cluster_topics.py` | Jaccard 類似度クラスタリング |
+| `scripts/cluster_topics.py` | 複合類似度クラスタリング + 日またぎ重複検出 |
 | `scripts/render_markdown.py` | 日報 Markdown 生成（ペナルティ状況セクション付き） |
 | `scripts/collect_models.py` | モデル情報収集 (日報解析 + スクレイピング) |
 | `scripts/render_model_report.py` | モデルまとめ Markdown 生成 |
@@ -235,7 +242,7 @@ claude_feeds.yaml (official/community/tools グループ)
 
 | ファイル | 内容 |
 |---|---|
-| `data/config.yaml` | Tier 1 設定値 11項目 (なくてもデフォルト値で動作) |
+| `data/config.yaml` | Tier 1 設定値 + クラスタリング設定 (なくてもデフォルト値で動作) |
 | `data/feeds.yaml` | 情報ソース定義 (5リージョン, 22ソース) |
 | `data/seen_urls.json` | 既出URL履歴 + ソースペナルティ (git管理) |
 | `data/metrics.json` | 日次実行メトリクス（パイプライン実行時に自動蓄積、daily-news.yml でコミット） |
@@ -282,13 +289,20 @@ fetch_article_bodies()  ── HTTP GET + BeautifulSoup 本文抽出
 summarize_articles()  ── Claude API (claude-sonnet-4-5)
     │                    system prompt + 5段階 importance 基準
     │                    最大25記事 × 1 API call + 1 overall
-    │                    → summary_ja / importance_score / tags / why_it_matters
+    │                    → summary_ja / importance_score / tags / topic_id / why_it_matters
     ▼
-cluster_articles()  ── Jaccard 類似度 ≥ 0.45 でグルーピング
+cluster_articles()  ── 複合類似度でグルーピング (閾値 0.35)
+    │                  1. topic_id 一致 → 無条件でクラスタ統合（多言語対応）
+    │                  2. タイトル(0.4) + 要約(0.35) + タグ(0.25) 加重スコア
+    │                  3. 日本語は 2-gram トークン、要約/タグ空時は重み再配分
     │                  → related_articles を付与
     ▼
+detect_cross_day_duplicates()  ── 過去7日分の記事と照合
+    │                             閾値 0.30、排除せずフラグ付与のみ
+    │                             → cross_day_related を付与
+    ▼
 render_daily_markdown()  ── news/YYYY/MM/YYYY-MM-DD.md 出力
-    │                       末尾にペナルティ状況テーブル
+    │                       Topic / Past Coverage / ペナルティ状況
     ▼
 build_index()  ── index.md 更新
     │
@@ -468,6 +482,9 @@ python -m scripts.metrics
 - **セクションフィルター**: `_SECTION_MAP` が `render_markdown.py` のセクション見出し文言に依存。見出しを変更した場合はマッピングも更新が必要
 - **前後日付ナビ**: `build_article_pages()` のファイルリスト順序（降順）に依存。prev-/test- ファイルも含まれるためリストの順序変更時は注意
 - **お気に入り**: `data/favorites.yaml` を手動編集しても動作するが、CLIツール経由を推奨（日報からのタイトル自動取得等の恩恵）
+- **クラスタリング設定**: `config.yaml` の `cluster_*` 系キーで閾値・重みを調整可能。`cluster_threshold` を下げすぎると偽陽性（別トピックの誤統合）が増えるので注意
+- **topic_id**: `summarize.py` のプロンプトで生成。過去記事に topic_id がない場合は複合スコアのみで判定。新規記事は自動付与される
+- **日またぎ検出**: `cluster_lookback_days`（デフォルト7日）分の日報 Markdown をパースして過去記事を取得。日報のフォーマット（`### N. Title`, `- Summary:`, `- Tags:`, `- Topic:`）に依存
 
 ### 変更時に最初に確認すべきファイル
 
@@ -532,12 +549,14 @@ python -m scripts.metrics
 | ダークテーマ WCAG AA 準拠コントラスト改善 | `scripts/build_site.py` |
 | 記事詳細の前日・翌日ナビゲーション | `scripts/build_site.py` |
 | 記事詳細のセクションフィルター（h2 ID正規化 + JSフィルタリング） | `scripts/build_site.py` |
+| クラスタリング改善: 複合スコアリング + 日またぎ重複検出 + topic_id多言語対応 + 日本語2-gram | `scripts/cluster_topics.py`, `scripts/summarize.py`, `scripts/main.py`, `scripts/render_markdown.py`, `data/config.yaml` |
+| 情報ソース追加: AI Heartland | `data/feeds.yaml`, `data/claude_feeds.yaml` |
 
 ### planned
 
 | タスク | 優先度 | 理由 |
 |---|---|---|
-| クラスタリング判定に summary_ja を追加 | **中** | 重複記事の検知精度向上。閾値調整が必要 |
+| ~~クラスタリング判定に summary_ja を追加~~ | ~~中~~ | done: 複合スコアリング + topic_id + 日またぎ検出で対応済み |
 | Claude パイプラインのメトリクス蓄積 | **中** | 日報側には `metrics.py` があるが Claude 側にはない |
 | Claude パイプラインの健全性チェック | **中** | `claude_feeds.yaml` のソースが壊れても検知できない |
 | モバイル検索UIの改善 | **低** | 現在モバイルではtopbar検索を非表示。Search ページリンクで代替中 |
