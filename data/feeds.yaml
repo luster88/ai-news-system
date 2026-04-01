@@ -97,6 +97,11 @@ techblog:
     url: "https://nyosegawa.com/blog/"
     max_items: 5
 
+  - name: Reddit r/LocalLLaMA
+    type: rss
+    url: "https://www.reddit.com/r/LocalLLaMA/.rss"
+    max_items: 6
+
 research:
   - name: arXiv cs.AI
     type: rss
