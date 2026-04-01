@@ -8,7 +8,7 @@ tags:
 - prompt
 - setup
 date: '2026-03-26'
-updated: '2026-03-30'
+updated: '2026-04-01'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -16,10 +16,39 @@ sources:
 - url: https://zenn.dev/busaiku0084/articles/20260330-dc3vcb5l
   title: 複数案件を掛け持ちするエンジニアのための gh / Claude Code アカウント切り替え術
   date: '2026-03-30'
+- url: https://zenn.dev/yrd/articles/bfde3e5b809b79
+  title: 非プログラマーのClaude Code実装コントロールのやり方、改善点を教えてください
+  date: '2026-04-01'
+- url: https://qiita.com/maskedridersystem/items/5e4898bee94fda192f54
+  title: 「コーディングの神様」をどう語り継ぐか。AI全盛時代における、ベテランエンジニアの葛藤とログの重要性
+  date: '2026-04-01'
 ---
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-04-01
+
+### 非プログラマーのClaude Code実装コントロールのやり方、改善点を教えてください
+
+非プログラマーのデザイナーが、Claude Code を使った個人アプリ開発の実践的なワークフローを紹介。Claude.ai でプランニング、Claude Code で実装という役割分担、CLAUDE.md による仕様書駆動開発、調査フェーズと実装フェーズの分離、プロトタイプ先行など、試行錯誤から得た具体的なコントロール手法を共有している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/yrd/articles/bfde3e5b809b79)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, prompt
+
+---
+
+### 「コーディングの神様」をどう語り継ぐか。AI全盛時代における、ベテランエンジニアの葛藤とログの重要性
+
+ベテランエンジニアがChatGPTからClaude Codeに移行した際の経験と、AI時代におけるエンジニアの役割変化についての考察。ネイティブアプリの不安定性とログ保存の困難さから、Chrome版に回帰した経緯を説明。AI全盛時代でも「コーディングの神様が降りてくる瞬間」のような手触り感の重要性を次世代にどう伝えるかという葛藤を綴っている。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/maskedridersystem/items/5e4898bee94fda192f54)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, setup
 
 ---
 

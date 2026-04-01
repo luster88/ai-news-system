@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-27'
-updated: '2026-03-30'
+updated: '2026-04-01'
 sources:
 - url: https://zenn.dev/beeeegle/articles/a50b1cdbe4973c
   title: 【初心者向】Claude CodeってAIじゃないみたいよ
@@ -20,11 +20,27 @@ sources:
 - url: https://qiita.com/kevinsmith/items/7d4b5f48a2fd020615e8
   title: Claude Codeのよく使うコマンド
   date: '2026-03-30'
+- url: https://qiita.com/yurukusa/items/d1ae79a0a6d6939a6666
+  title: Anthropic公式「Claude Codeベストプラクティス」を700時間使った非エンジニアが読んで気づいた7つのこと
+  date: '2026-04-01'
 ---
 
 
 
+
 # Claude Code Intro
+
+---
+
+## 2026-04-01
+
+### Anthropic公式「Claude Codeベストプラクティス」を700時間使った非エンジニアが読んで気づいた7つのこと
+
+非エンジニアが700時間以上Claude Codeを使用した実体験をもとに、Anthropic公式ベストプラクティスを解説。コンテキストウィンドウの制約、テストの重要性、CLAUDE.mdの簡潔性、フックとCLAUDE.mdの使い分け、計画モードの活用など7つのポイントを実例とともに紹介している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/yurukusa/items/d1ae79a0a6d6939a6666)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 
