@@ -55,6 +55,11 @@ jp:
     url: "https://ledge.ai/"
     max_items: 5
 
+  - name: AI Heartland
+    type: rss
+    url: "https://ai-heartland.com/feed.xml"
+    max_items: 6
+
 cn:
   - name: ERNIE Blog
     type: site

@@ -40,6 +40,12 @@ community:
     url: "https://qiita.com/tags/claudecode/feed"
     max_items: 6
 
+  - name: AI Heartland
+    type: rss
+    url: "https://ai-heartland.com/feed.xml"
+    max_items: 6
+    filter_keywords: [claude, anthropic, mcp, claude-code]
+
 tools:
   - name: The Decoder Claude
     type: rss
