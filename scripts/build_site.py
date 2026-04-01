@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 import html
 import re
 
@@ -24,6 +24,7 @@ CLAUDE_DIR = BASE_DIR / "claude"
 
 SITE_TITLE = cfg("site_title", "AI News Daily")
 PAGE_SIZE = cfg("page_size", 30)  # インデックス1ページあたりの件数
+SITE_BASE_URL = cfg("site_base_url", "").rstrip("/")
 
 
 CSS = """
@@ -1980,6 +1981,86 @@ def build_favorites_pages() -> None:
 
 
 # ---------------------------------------------------------------------------
+# サイトマップ生成
+# ---------------------------------------------------------------------------
+
+def build_sitemap() -> None:
+    """_site/ 内の全 HTML ファイルを走査して sitemap.xml を生成する。"""
+    if not SITE_BASE_URL:
+        print("[warn] site_base_url が未設定のため sitemap.xml をスキップします")
+        return
+
+    urls: list[dict] = []
+
+    for html_file in sorted(SITE_DIR.rglob("*.html")):
+        rel = html_file.relative_to(SITE_DIR)
+        parts = rel.parts
+
+        # URL パスを組み立て（index.html はディレクトリURLに）
+        if rel.name == "index.html":
+            if len(parts) == 1:
+                url_path = "/"
+            else:
+                url_path = "/" + "/".join(parts[:-1]) + "/"
+        else:
+            url_path = "/" + str(rel).replace("\\", "/")
+
+        loc = SITE_BASE_URL + url_path
+
+        # lastmod: ファイルの更新日時
+        mtime = datetime.fromtimestamp(html_file.stat().st_mtime, tz=timezone.utc)
+        lastmod = mtime.strftime("%Y-%m-%d")
+
+        # ページ種別に応じた changefreq と priority
+        if url_path == "/":
+            changefreq, priority = "daily", "1.0"
+        elif parts[0] == "news":
+            changefreq, priority = "never", "0.8"
+        elif parts[0] == "month":
+            changefreq, priority = "monthly", "0.6"
+        elif parts[0] == "claude":
+            changefreq, priority = "weekly", "0.7"
+        elif parts[0] == "models":
+            changefreq, priority = "weekly", "0.7"
+        elif parts[0] == "tags":
+            changefreq, priority = "weekly", "0.5"
+        elif parts[0] == "favorites":
+            changefreq, priority = "weekly", "0.5"
+        elif parts[0] == "search":
+            changefreq, priority = "monthly", "0.3"
+        elif parts[0] == "page":
+            changefreq, priority = "daily", "0.6"
+        else:
+            changefreq, priority = "weekly", "0.5"
+
+        urls.append({
+            "loc": loc,
+            "lastmod": lastmod,
+            "changefreq": changefreq,
+            "priority": priority,
+        })
+
+    # XML 生成
+    xml_lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ]
+    for u in urls:
+        xml_lines.append("  <url>")
+        xml_lines.append(f"    <loc>{u['loc']}</loc>")
+        xml_lines.append(f"    <lastmod>{u['lastmod']}</lastmod>")
+        xml_lines.append(f"    <changefreq>{u['changefreq']}</changefreq>")
+        xml_lines.append(f"    <priority>{u['priority']}</priority>")
+        xml_lines.append("  </url>")
+    xml_lines.append("</urlset>")
+    xml_lines.append("")
+
+    sitemap_path = SITE_DIR / "sitemap.xml"
+    sitemap_path.write_text("\n".join(xml_lines), encoding="utf-8")
+    print(f"[info] built sitemap: {len(urls)} URLs → {sitemap_path}")
+
+
+# ---------------------------------------------------------------------------
 # エントリポイント
 # ---------------------------------------------------------------------------
 
@@ -2001,6 +2082,7 @@ def main():
     build_model_page()
     build_claude_pages()
     build_favorites_pages()
+    build_sitemap()
 
     print(f"[info] built site: {SITE_DIR}")
     print(f"[info]   {len(files)} articles, {len(prev_files)} prev articles, {max(1, (len(files) + PAGE_SIZE - 1) // PAGE_SIZE)} index page(s)")

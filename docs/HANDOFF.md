@@ -57,6 +57,7 @@ claude_feeds.yaml (official/community/tools グループ)
 - **静的サイト**: 運用中。GitHub Pages にデプロイ済み。Linear.app 風UIに全面リデザイン完了。
 - **UIリデザイン**: カード型ブログUI → Linear風3カラムダッシュボードに全面変更。月別アーカイブ・年月折りたたみサイドバー・レスポンシブ対応 完了。
 - **ソース**: 23ソース / 5リージョン（AI Heartland 追加）。実効稼働率 91%（arXiv 2本は週末 0件）。
+- **サイトマップ**: `_site/sitemap.xml` を自動生成。`config.yaml` の `site_base_url` でベースURL設定。
 - **安全性修正**: HIGH 5件 + MEDIUM 5件 完了。
 - **中期タスク**: 5件すべて完了。
 - **要約品質改善**: 4件（RSS フォールバック、スコア基準、system prompt、キーワード拡充）完了。
@@ -147,6 +148,7 @@ claude_feeds.yaml (official/community/tools グループ)
 | クラスタリング改善: topic_idによる多言語クラスタリング（英/日/中の同一トピック統合） | `scripts/summarize.py`, `scripts/cluster_topics.py`, `scripts/render_markdown.py` |
 | クラスタリング改善: 日本語2-gramトークナイザー（形態素解析不要） | `scripts/cluster_topics.py` |
 | 情報ソース追加: AI Heartland（feeds.yaml + claude_feeds.yaml） | `data/feeds.yaml`, `data/claude_feeds.yaml` |
+| XMLサイトマップ自動生成（sitemap.xml、全HTMLページ対応、ページ種別ごとのpriority/changefreq） | `scripts/build_site.py`（`build_sitemap` 追加）, `data/config.yaml`（`site_base_url` 追加） |
 
 ### 静的サイト UI 全面リデザイン (done)
 
@@ -551,6 +553,7 @@ python -m scripts.metrics
 | 記事詳細のセクションフィルター（h2 ID正規化 + JSフィルタリング） | `scripts/build_site.py` |
 | クラスタリング改善: 複合スコアリング + 日またぎ重複検出 + topic_id多言語対応 + 日本語2-gram | `scripts/cluster_topics.py`, `scripts/summarize.py`, `scripts/main.py`, `scripts/render_markdown.py`, `data/config.yaml` |
 | 情報ソース追加: AI Heartland | `data/feeds.yaml`, `data/claude_feeds.yaml` |
+| XMLサイトマップ自動生成 | `scripts/build_site.py`, `data/config.yaml` |
 
 ### planned
 
