@@ -1,6 +1,6 @@
 # HANDOFF.md — AI News System 引き継ぎドキュメント
 
-最終更新: 2026-04-02（第6版）
+最終更新: 2026-04-02（第7版）
 
 ---
 
@@ -56,7 +56,7 @@ claude_feeds.yaml (official/community/tools グループ)
 - **Claude エコシステム情報**: 運用中。GitHub Actions で毎日 JST 07:00 に自動実行（`claude-info.yml`）。
 - **静的サイト**: 運用中。GitHub Pages にデプロイ済み。Linear.app 風UIに全面リデザイン完了。
 - **UIリデザイン**: カード型ブログUI → Linear風3カラムダッシュボードに全面変更。月別アーカイブ・年月折りたたみサイドバー・レスポンシブ対応 完了。
-- **ソース**: 23ソース / 5リージョン（AI Heartland 追加）。実効稼働率 91%（arXiv 2本は週末 0件）。
+- **ソース**: 29ソース / 5リージョン。AI Heartland・Simon Willison・MIT Tech Review・Import AI・Reddit r/LocalLLaMA・r/MachineLearning・GIGAZINE・Publickey を追加。
 - **サイトマップ**: `_site/sitemap.xml` を自動生成。`config.yaml` の `site_base_url` でベースURL設定。
 - **ダッシュボード**: `/dashboard/` にパイプラインメトリクスを可視化（収集数推移・ソース稼働率・人気タグ・本文取得率・importance分布・実行時間）。Chart.js CDN使用。
 - **安全性修正**: HIGH 5件 + MEDIUM 5件 完了。
@@ -67,6 +67,7 @@ claude_feeds.yaml (official/community/tools グループ)
 - **お気に入り機能**: CLI管理 (`scripts/favorites.py`) + サイト生成 (`/favorites/`) 完了。ユーザー定義タグでの分類・フィルタリングに対応。
 - **UI改善**: ダークテーマのWCAG AA準拠コントラスト改善・記事詳細の前後日付ナビゲーション・セクションフィルター 完了。
 - **クラスタリング改善**: 複合スコアリング（タイトル+要約+タグ加重）・日またぎ重複検出・topic_idによる多言語対応・日本語2-gramトークナイザー 完了。
+- **filter_keywords対応**: `collect.py`・`test_collect.py` の両方でソース定義の `filter_keywords` によるフィルタリングが動作。GIGAZINE・Publickey等の総合サイトからAI記事のみ収集。
 - **ソース**: AI Heartland を追加（feeds.yaml + claude_feeds.yaml）。
 
 既知の制約:
@@ -151,6 +152,9 @@ claude_feeds.yaml (official/community/tools グループ)
 | 情報ソース追加: AI Heartland（feeds.yaml + claude_feeds.yaml） | `data/feeds.yaml`, `data/claude_feeds.yaml` |
 | XMLサイトマップ自動生成（sitemap.xml、全HTMLページ対応、ページ種別ごとのpriority/changefreq） | `scripts/build_site.py`（`build_sitemap` 追加）, `data/config.yaml`（`site_base_url` 追加） |
 | ダッシュボード/統計ページ（Chart.jsで6種のグラフ + サマリーカード） | `scripts/build_site.py`（`build_dashboard_page` 追加、CSS追加、ナビリンク追加） |
+| 情報ソース大量追加: Simon Willison / MIT Tech Review / Import AI / r/LocalLLaMA / r/MachineLearning / GIGAZINE / Publickey | `data/feeds.yaml` |
+| collect.py で feeds.yaml の filter_keywords を反映（総合サイトからAI記事のみ収集） | `scripts/collect.py` |
+| test_collect でも filter_keywords を反映（フィルタ結果を `filtered: N → M` で表示） | `scripts/test_collect.py` |
 
 ### 静的サイト UI 全面リデザイン (done)
 
@@ -216,7 +220,7 @@ claude_feeds.yaml (official/community/tools グループ)
 
 | ファイル | 役割 |
 |---|---|
-| `scripts/collect.py` | RSS/サイトスクレイピング (23ソース, 5リージョン) |
+| `scripts/collect.py` | RSS/サイトスクレイピング (29ソース, 5リージョン, filter_keywords対応) |
 | `scripts/seen_urls.py` | 既出URL管理・ソースペナルティ・状況表示 |
 | `scripts/fetch_body.py` | 記事本文取得・キャッシュ |
 | `scripts/summarize.py` | Claude API 要約・スコア・タグ付与（system prompt + 5段階基準） |
@@ -489,6 +493,7 @@ python -m scripts.metrics
 - **クラスタリング設定**: `config.yaml` の `cluster_*` 系キーで閾値・重みを調整可能。`cluster_threshold` を下げすぎると偽陽性（別トピックの誤統合）が増えるので注意
 - **topic_id**: `summarize.py` のプロンプトで生成。過去記事に topic_id がない場合は複合スコアのみで判定。新規記事は自動付与される
 - **日またぎ検出**: `cluster_lookback_days`（デフォルト7日）分の日報 Markdown をパースして過去記事を取得。日報のフォーマット（`### N. Title`, `- Summary:`, `- Tags:`, `- Topic:`）に依存
+- **filter_keywords**: `feeds.yaml` のソース定義に `filter_keywords` を追加すると、`collect.py` と `test_collect.py` の両方でタイトル+summaryに対してキーワードフィルタが適用される。`claude_feeds.yaml` 側は `claude_collect.py` が独自に処理
 
 ### 変更時に最初に確認すべきファイル
 
@@ -557,6 +562,8 @@ python -m scripts.metrics
 | 情報ソース追加: AI Heartland | `data/feeds.yaml`, `data/claude_feeds.yaml` |
 | XMLサイトマップ自動生成 | `scripts/build_site.py`, `data/config.yaml` |
 | ダッシュボード/統計ページ（6種グラフ + サマリーカード） | `scripts/build_site.py` |
+| 情報ソース大量追加（8ソース: Simon Willison, MIT Tech Review, Import AI, r/LocalLLaMA, r/MachineLearning, GIGAZINE, Publickey, AI Heartland） | `data/feeds.yaml`, `data/claude_feeds.yaml` |
+| collect.py / test_collect.py で filter_keywords 対応 | `scripts/collect.py`, `scripts/test_collect.py` |
 
 ### planned
 
