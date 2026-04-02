@@ -8,7 +8,7 @@ tags:
 - mcp
 - 新機能
 date: '2026-03-25'
-updated: '2026-03-30'
+updated: '2026-04-02'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -19,11 +19,27 @@ sources:
 - url: https://zenn.dev/jphfa/articles/markupsidedown-mcp-crawl-events
   title: MCPはオワコンではない。MarkUpsideDownでサイトをクロール（Cloudflare /crawl endpoint）した話。
   date: '2026-03-30'
+- url: https://ai-heartland.com/mcp/tradingview-mcp
+  title: TradingView MCP：Claude CodeからTradingViewを完全操作する78ツールのMCPサーバー
+  date: '2026-04-02'
 ---
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-04-02
+
+### TradingView MCP：Claude CodeからTradingViewを完全操作する78ツールのMCPサーバー
+
+TradingView MCPは、Claude CodeからTradingView Desktopを直接操作できる78ツール搭載のMCPサーバー。Chrome DevTools Protocolを使いローカル完結でチャート分析、Pine Script開発、アラート管理などを自然言語で実行可能。公開5日で403スターを獲得し、金融×AI×MCPの実用的な実装として注目されている。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/mcp/tradingview-mcp)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code, 新機能
 
 ---
 

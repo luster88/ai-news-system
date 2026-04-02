@@ -6,8 +6,9 @@ tags:
 - bugfix
 - claude-code
 - release
+- setup
 date: '2026-03-31'
-updated: '2026-04-01'
+updated: '2026-04-02'
 sources:
 - url: https://the-decoder.com/anthropic-accidentally-publishes-claude-code-source-code-for-anyone-to-find
   title: Anthropic accidentally publishes Claude Code source code for anyone to find
@@ -18,10 +19,26 @@ sources:
 - url: https://techcrunch.com/2026/03/31/anthropic-is-having-a-month
   title: Anthropic is having a month
   date: '2026-04-01'
+- url: https://qiita.com/m_tookuni/items/547035b233e7e1fdabe2
+  title: 「安全構造は最初から─Anthropicコード流出事件が示す設計原則」
+  date: '2026-04-02'
 ---
 
 
+
 # Security Incident
+
+---
+
+## 2026-04-02
+
+### 「安全構造は最初から─Anthropicコード流出事件が示す設計原則」
+
+2026年3月31日にAnthropicのClaude Codeのソースコード51万2千行が流出した事件を分析。原因は.npmignoreの記入漏れという単純ミス。プロンプトによる制御やチェックリストではなく、find/grep等の物理的ゲートを最初から設計に組み込む「確認が不要な構造」の重要性を説く。AI安全企業でも同じミスを3度繰り返した事実から、ビルドプロセスにおける物理的な安全構造の必要性を提唱。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/m_tookuni/items/547035b233e7e1fdabe2)
+- **重要度**: 8/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 

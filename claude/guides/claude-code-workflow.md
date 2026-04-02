@@ -7,8 +7,9 @@ tags:
 - cowork
 - prompt
 - setup
+- 新機能
 date: '2026-03-26'
-updated: '2026-04-01'
+updated: '2026-04-02'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -22,11 +23,40 @@ sources:
 - url: https://qiita.com/maskedridersystem/items/5e4898bee94fda192f54
   title: 「コーディングの神様」をどう語り継ぐか。AI全盛時代における、ベテランエンジニアの葛藤とログの重要性
   date: '2026-04-01'
+- url: https://zenn.dev/sktt_panda/articles/panda-tools-claude-code-dev
+  title: Claude Codeでぱんだツールズを作った話。PR 86本・41ツールとトークン代との戦い
+  date: '2026-04-02'
+- url: https://zenn.dev/penpeen/articles/e5f47b1ed82ad6
+  title: Claude Code が速すぎるので「現在地」を可視化したら実装体験が変わった
+  date: '2026-04-02'
 ---
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-04-02
+
+### Claude Codeでぱんだツールズを作った話。PR 86本・41ツールとトークン代との戦い
+
+個人開発者が Claude Code を使い、1〜2週間で41個のWebツール（ぱんだツールズ）を開発。PR 86本・コミット211件という圧倒的な速度を実現した一方、トークン消費で開発が4日間停止する問題にも直面。CLAUDE.mdやカスタムスキル、worktree分離などの工夫で効率化を図り、特にOGPやSEO設定などの「正確さが必要だが面白くない作業」で大きな効果を発揮した。
+
+- **ソース**: [Zenn claude](https://zenn.dev/sktt_panda/articles/panda-tools-claude-code-dev)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, prompt
+
+---
+
+### Claude Code が速すぎるので「現在地」を可視化したら実装体験が変わった
+
+Claude Code の高速な実装生成に対し、開発者の理解が追いつかない問題を解決するアプローチを紹介。シーケンス図にレイヤーごとの実装状態を色分けして可視化し、AI との認識を合わせながら進捗管理する手法。これにより認知負荷が下がり、効率的な実装が可能になった。計画書から進捗ファイルを生成する Claude Code Skill も作成。
+
+- **ソース**: [Zenn claude](https://zenn.dev/penpeen/articles/e5f47b1ed82ad6)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 
