@@ -5,17 +5,34 @@ subcategory: competitive-landscape
 tags:
 - claude-code
 - cowork
+- performance
 - pricing
 date: '2026-03-23'
-updated: '2026-03-23'
+updated: '2026-04-03'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
     Anthropic
   date: '2026-03-23'
+- url: https://qiita.com/taketsuyo/items/b1a70ee45b0bf0851155
+  title: Gemma 4は「制限がきつい時代」の現実解になるかもしれない
+  date: '2026-04-03'
 ---
 
+
 # Competitive Landscape
+
+---
+
+## 2026-04-03
+
+### Gemma 4は「制限がきつい時代」の現実解になるかもしれない
+
+Google DeepMindのオープンモデルGemma 4が、Claude CodeやAntigravityの利用制限・待ち時間問題への現実的な解決策として注目されている。Apache 2.0ライセンスで4サイズ展開、最大256Kコンテキスト対応。クラウドとローカルの二層構成により、重い処理はクラウド、反復作業はローカルで分業する新しい開発スタイルが可能に。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/taketsuyo/items/b1a70ee45b0bf0851155)
+- **重要度**: 6/10
+- **タグ**: claude-code, performance, pricing
 
 ---
 

@@ -8,7 +8,7 @@ tags:
 - mac
 - 新機能
 date: '2026-03-24'
-updated: '2026-03-30'
+updated: '2026-04-03'
 sources:
 - url: https://qiita.com/taketsuyo/items/51130ee2457fe6d6fddf
   title: Claudeがついに「PCで仕事する人」になった。Antigravityとの違いまで整理してみる
@@ -16,10 +16,26 @@ sources:
 - url: https://qiita.com/taketsuyo/items/4ba9a93af20e9b5522e0
   title: Claude CodeがついにGUIを触り始めた。これ、ただの便利機能じゃなくて「開発ループの閉じ方」が変わる話
   date: '2026-03-30'
+- url: https://qiita.com/DevMasatoman/items/bb76c2d856caad3b831d
+  title: 【速報】Claude Code Computer Useが登場 — 5.9万いいねの衝撃機能でCLIからデスクトップを直接操作
+  date: '2026-04-03'
 ---
 
 
+
 # Cowork Computer Use
+
+---
+
+## 2026-04-03
+
+### 【速報】Claude Code Computer Useが登場 — 5.9万いいねの衝撃機能でCLIからデスクトップを直接操作
+
+2026年3月24日、AnthropicがClaude CodeとClaude Coworkに「Computer Use」機能を正式追加。CLIからmacOS/WindowsのデスクトップGUIを直接操作可能になり、ブラウザ確認、E2Eテスト、Excel操作、マニュアル生成などを自動化。Xで5.9万いいね・1,560万ビューを記録した注目機能で、アプリアクセス許可制やブラウザ操作制限などのセーフガードも実装されている。
+
+- **ソース**: [Qiita claude](https://qiita.com/DevMasatoman/items/bb76c2d856caad3b831d)
+- **重要度**: 10/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

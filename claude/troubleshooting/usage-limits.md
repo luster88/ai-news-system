@@ -7,10 +7,12 @@ tags:
 - claude-api
 - claude-code
 - claude-console
+- opus
+- performance
 - pricing
 - sonnet
 date: '2026-03-25'
-updated: '2026-03-30'
+updated: '2026-04-03'
 sources:
 - url: https://qiita.com/himajisan/items/1e8f67782335b4517139
   title: AIを扱き使ったらすぐに使用制限ですと言う
@@ -34,12 +36,42 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s7zgj0/investigating_usage_limits_hitting_faster_than
   title: Investigating usage limits hitting faster than expected
   date: '2026-03-30'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1sat07y/followup_on_usage_limits
+  title: Follow-up on usage limits
+  date: '2026-04-03'
+- url: https://the-decoder.com/anthropic-says-claude-codes-usage-drain-comes-down-to-peak-hour-caps-and-ballooning-contexts
+  title: Anthropic says Claude Code's usage drain comes down to peak-hour caps and
+    ballooning contexts
+  date: '2026-04-03'
 ---
 
 
 
 
+
 # Usage Limits
+
+---
+
+## 2026-04-03
+
+### Follow-up on usage limits
+
+Claude公式がProプランの使用制限に関するフォローアップを発表。ピーク時の制限強化と100万トークンセッションの増加が主な原因。Sonnet 4.6をデフォルト利用、extended thinking のオフ、アイドル1時間以上のセッションは新規開始、コンテキストウィンドウ制限（200k）などの節約Tipsを提供。効率化の改善も展開中。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1sat07y/followup_on_usage_limits)
+- **重要度**: 8/10
+- **タグ**: claude-console, pricing, performance
+
+---
+
+### Anthropic says Claude Code's usage drain comes down to peak-hour caps and ballooning contexts
+
+AnthropicがClaude Codeの使用量超過問題について説明。ピーク時の制限強化と100万トークンのコンテキスト拡大が主な原因。Lydia Hallieはバグを修正し、効率改善を実装。Opus使用時は制限消費が約2倍速く、Sonnet 4.6の使用、Extended Thinkingのオフ、セッション更新、コンテキストウィンドウ制限を推奨。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-says-claude-codes-usage-drain-comes-down-to-peak-hour-caps-and-ballooning-contexts)
+- **重要度**: 7/10
+- **タグ**: claude-code, opus, sonnet
 
 ---
 

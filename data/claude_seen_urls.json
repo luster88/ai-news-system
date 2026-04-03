@@ -233,13 +233,40 @@
     "https://ai-heartland.com/news/cursor-firecrawl-mcp-aiagent": "2026-04-02",
     "https://ai-heartland.com/ai/gemini/oh-my-gemini": "2026-04-02",
     "https://ai-heartland.com/explain/claude-code-3-preserved-tail-relinking": "2026-04-02",
-    "https://ai-heartland.com/mcp/google-analytics-mcp": "2026-04-02"
+    "https://ai-heartland.com/mcp/google-analytics-mcp": "2026-04-02",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sat07y/followup_on_usage_limits": "2026-04-03",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sble09/taught_claude_to_talk_like_a_caveman_to_use_75": "2026-04-03",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sbcukr/_": "2026-04-03",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sb4w67/things_that_claude_say_part_2": "2026-04-03",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sblhtu/claude_has_emotion_and_this_can_drive_claudes": "2026-04-03",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sbiu1j/how_are_people_having_claude_work_like_an_agent": "2026-04-03",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sbnuuf/i_keep_going_down_random_rabbit_holes_and_wanted": "2026-04-03",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sba62u/reminder_that_screenshot_can_very_easily_be_edited": "2026-04-03",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sbhgjx/i_built_a_personal_prompt_library_where_you_can": "2026-04-03",
+    "https://qiita.com/kenji_harada/items/76e1ccd0a1cd14ea1a7f": "2026-04-03",
+    "https://qiita.com/kotauchisunsun/items/ab78bb338500b4c71103": "2026-04-03",
+    "https://qiita.com/DevMasatoman/items/bb76c2d856caad3b831d": "2026-04-03",
+    "https://zenn.dev/hiroakikody/articles/2e133d9fb817d4": "2026-04-03",
+    "https://zenn.dev/heki1224/articles/b849cc85a330aa": "2026-04-03",
+    "https://zenn.dev/saqoosha/articles/ccdex-claude-desktop-context-indicator": "2026-04-03",
+    "https://zenn.dev/joemike/articles/claude-code-computer-use-20260403": "2026-04-03",
+    "https://zenn.dev/thaddeusjiang/articles/8cca91e0196eb3": "2026-04-03",
+    "https://zenn.dev/yurelu/articles/636cf99d6e8864": "2026-04-03",
+    "https://qiita.com/taketsuyo/items/b1a70ee45b0bf0851155": "2026-04-03",
+    "https://qiita.com/rikiza1989/items/2bf1d00110972ddaf6d5": "2026-04-03",
+    "https://qiita.com/SeckeyJP/items/245988ce4fca5b2ba74a": "2026-04-03",
+    "https://qiita.com/sho-ikeda-ai/items/2f3788ecf4f0755cf6e9": "2026-04-03",
+    "https://the-decoder.com/anthropic-says-claude-codes-usage-drain-comes-down-to-peak-hour-caps-and-ballooning-contexts": "2026-04-03",
+    "https://the-decoder.com/claude-code-and-cowork-now-let-anthropics-ai-take-control-of-your-mac-or-windows-desktop": "2026-04-03",
+    "https://techcrunch.com/2026/04/03/anthropic-buys-biotech-startup-coefficient-bio-in-400m-deal-reports": "2026-04-03",
+    "https://techcrunch.com/2026/04/03/anthropic-ramps-up-its-political-activities-with-a-new-pac": "2026-04-03"
   },
   "source_penalties": {
-    "Anthropic News": "2026-04-03",
+    "Anthropic News": "2026-04-04",
     "Reddit r/ClaudeAI": "2026-04-03",
     "Zenn claude": "2026-03-25",
     "TechCrunch Claude": "2026-04-01",
-    "The Decoder Claude": "2026-03-31"
+    "The Decoder Claude": "2026-03-31",
+    "AI Heartland": "2026-04-04"
   }
 }
