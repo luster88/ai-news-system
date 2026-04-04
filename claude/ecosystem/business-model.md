@@ -3,11 +3,13 @@ title: Business Model
 category: ecosystem
 subcategory: business-model
 tags:
+- claude-api
 - claude-console
+- performance
 - pricing
 - 新機能
 date: '2026-03-22'
-updated: '2026-03-22'
+updated: '2026-04-04'
 sources:
 - url: https://www.anthropic.com/news/claude-is-a-space-to-think
   title: 'Announcements Feb 4, 2026 Claude is a space to think We’ve made a choice:
@@ -15,9 +17,26 @@ sources:
     with a genuinely helpful AI assistant, and how we plan to expand access without
     compromising user trust.'
   date: '2026-03-22'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1scdilx/some_human_written_nuance_and_perspective_on_the
+  title: Some human written nuance and perspective on the rates situation, from someone
+    in the industry.
+  date: '2026-04-04'
 ---
 
+
 # Business Model
+
+---
+
+## 2026-04-04
+
+### Some human written nuance and perspective on the rates situation, from someone in the industry.
+
+Anthropic社内の3つのグループ（研究チーム、サブスクユーザー、エンタープライズAPI）がGPUリソースを奪い合っている構造を、業界関係者が解説。研究チームは収益ゼロだが将来のモデル開発に不可欠、サブスクユーザーは定額で利用量が支払額の最大25倍に達するケースもあり、エンタープライズAPIは即座に収益を生む。Anthropicは研究重視の文化を持つが、製品会社としての運営に苦戦しており、この構造的な課題がレート制限問題の背景にある。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1scdilx/some_human_written_nuance_and_perspective_on_the)
+- **重要度**: 7/10
+- **タグ**: pricing, claude-api, performance
 
 ---
 
