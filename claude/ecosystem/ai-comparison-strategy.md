@@ -7,14 +7,30 @@ tags:
 - cowork
 - prompt
 date: '2026-03-31'
-updated: '2026-03-31'
+updated: '2026-04-05'
 sources:
 - url: https://qiita.com/mellowlaunch/items/ad5a2385307e8c414c3e
   title: AI共生戦略とSpec駆動～思考特性という新しい評価軸
   date: '2026-03-31'
+- url: https://qiita.com/mellowlaunch/items/86f2fe0ec45501cba259
+  title: AI思考特性の定義（Claude Code, ChatGPT, Gemini）~ AI共生戦略とSpec駆動
+  date: '2026-04-05'
 ---
 
+
 # Ai Comparison Strategy
+
+---
+
+## 2026-04-05
+
+### AI思考特性の定義（Claude Code, ChatGPT, Gemini）~ AI共生戦略とSpec駆動
+
+Claude Code、ChatGPT、Geminiの3つのAIの思考特性を「対話型設計」「文脈俯瞰力」「外部統合力」の3軸で整理し、AI共生戦略を提案する記事。各AIは推論能力が平準化した今、思考の設計（どのように考えるか）が重要であり、役割を明確に分けて活用すべきと主張。Claude Codeは実装・検証・運用まで踏み込める実行主体型AIとして位置づけられている。
+
+- **ソース**: [Qiita claude](https://qiita.com/mellowlaunch/items/86f2fe0ec45501cba259)
+- **重要度**: 5/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

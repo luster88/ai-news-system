@@ -5,11 +5,12 @@ subcategory: claude-code-workflow
 tags:
 - claude-code
 - cowork
+- mcp
 - prompt
 - setup
 - 新機能
 date: '2026-03-26'
-updated: '2026-04-02'
+updated: '2026-04-05'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -29,12 +30,38 @@ sources:
 - url: https://zenn.dev/penpeen/articles/e5f47b1ed82ad6
   title: Claude Code が速すぎるので「現在地」を可視化したら実装体験が変わった
   date: '2026-04-02'
+- url: https://qiita.com/daisuke-nagata/items/60f716b5480a6f654e28
+  title: 「Claude Code完全運用ガイド——設計から本番デプロイまでの実装フロー」
+  date: '2026-04-05'
 ---
 
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-04-05
+
+### 「Claude Code完全運用ガイド——設計から本番デプロイまでの実装フロー」
+
+Claude Codeの生産性を最大化するための実践ガイド。CLAUDE.mdによるセッション設計、Plan modeを活用した計画的実装、MCPによる外部ツール連携の3つの要素を解説。プロジェクトごとの設定方法や実装フローを具体例とともに紹介し、開発効率の大幅な改善を実現する運用手法を提示している。
+
+- **ソース**: [Qiita claude](https://qiita.com/daisuke-nagata/items/60f716b5480a6f654e28)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, setup
+
+---
+
+### 「Claude Code完全運用ガイド——設計から本番デプロイまでの実装フロー」
+
+Claude Codeの実務運用ガイド。CLAUDE.mdによる前提条件の共有、Plan modeによる計画合意、MCPによる外部ツール連携の3つを軸に、セットアップから本番デプロイまでの実装フローを解説。プロジェクト構造の明示、判断基準の文書化、タスクの分割戦略により、開発効率の大幅改善を実現する方法を実例とともに紹介している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/daisuke-nagata/items/60f716b5480a6f654e28)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, mcp
 
 ---
 

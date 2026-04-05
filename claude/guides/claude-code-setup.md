@@ -8,7 +8,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-04'
-updated: '2026-04-04'
+updated: '2026-04-05'
 sources:
 - url: https://qiita.com/taiki_i/items/2d75a882e0f3187f6bb8
   title: あなたの CLAUDE.md、ちゃんと機能してますか？作り方から公式プラグインで採点するまでの道のり
@@ -19,9 +19,25 @@ sources:
 - url: https://qiita.com/taiki_i/items/2d75a882e0f3187f6bb8
   title: あなたの CLAUDE.md、ちゃんと機能してますか？作り方から公式プラグインで採点するまでの道のり
   date: '2026-04-04'
+- url: https://zenn.dev/miyan/articles/ai-driven-dev-claude-md-context
+  title: AI駆動開発の実践（1）CLAUDE.mdとコンテキスト戦略 — AIに「現場」を伝える技術
+  date: '2026-04-05'
 ---
 
+
 # Claude Code Setup
+
+---
+
+## 2026-04-05
+
+### AI駆動開発の実践（1）CLAUDE.mdとコンテキスト戦略 — AIに「現場」を伝える技術
+
+CLAUDE.mdの効果的な設計手法を解説。肥大化を避け、階層構造（グローバル/プロジェクト/ディレクトリ）を活用し、現場の暗黙知を必要最小限に言語化する方法を提示。200Kトークンのコンテキストウィンドウの2-3%に収め、@import機能やYAMLフロントマターでスコープを限定する実践的戦略を紹介。
+
+- **ソース**: [Zenn claude](https://zenn.dev/miyan/articles/ai-driven-dev-claude-md-context)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

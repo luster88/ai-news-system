@@ -7,14 +7,30 @@ tags:
 - cowork
 - prompt
 date: '2026-03-22'
-updated: '2026-03-22'
+updated: '2026-04-05'
 sources:
 - url: https://qiita.com/shockpan-web/items/852e962e14bdd2b98e70
   title: バイブコーディングでトークンを溶かさないための2つの工夫
   date: '2026-03-22'
+- url: https://zenn.dev/yamato_snow/articles/8eff833984b842
+  title: Claude Codeのトークン消費を半減させる5フェーズ運用術
+  date: '2026-04-05'
 ---
 
+
 # Token Optimization
+
+---
+
+## 2026-04-05
+
+### Claude Codeのトークン消費を半減させる5フェーズ運用術
+
+Claude Codeのトークン消費を削減する実践的な5フェーズ運用術を解説。コンテキストを小さく保つことが重要で、/clearコマンドの活用、CLAUDE.mdの最適化、プランモードやサブエージェント機能の効果的な使用により、月間コストを大幅に削減できる。Sonnetファースト戦略や/btwコマンドによる履歴汚染防止など、具体的なテクニックを紹介。
+
+- **ソース**: [Zenn claude](https://zenn.dev/yamato_snow/articles/8eff833984b842)
+- **重要度**: 7/10
+- **タグ**: claude-code
 
 ---
 

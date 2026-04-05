@@ -4,12 +4,13 @@ category: guides
 subcategory: claude-code-intro
 tags:
 - claude-code
+- performance
 - pricing
 - prompt
 - setup
 - 新機能
 date: '2026-03-27'
-updated: '2026-04-01'
+updated: '2026-04-05'
 sources:
 - url: https://zenn.dev/beeeegle/articles/a50b1cdbe4973c
   title: 【初心者向】Claude CodeってAIじゃないみたいよ
@@ -23,12 +24,38 @@ sources:
 - url: https://qiita.com/yurukusa/items/d1ae79a0a6d6939a6666
   title: Anthropic公式「Claude Codeベストプラクティス」を700時間使った非エンジニアが読んで気づいた7つのこと
   date: '2026-04-01'
+- url: https://qiita.com/moha0918_/items/c24338fd8eb19a8bcb2f
+  title: 知らないと損する Claude Code のモデル設定 — 5つの実践的な設定テクニック
+  date: '2026-04-05'
 ---
 
 
 
 
+
 # Claude Code Intro
+
+---
+
+## 2026-04-05
+
+### 知らないと損する Claude Code のモデル設定 — 5つの実践的な設定テクニック
+
+Claude Code のモデル設定に関する実践的な5つのテクニックを解説。opusplan による自動モデル切り替え、effortLevel での思考深度調整、1M トークンコンテキストの有効化、チーム向けモデル固定設定、カスタムモデルオプションによる社内ゲートウェイ連携など、効率とコストを最適化する設定方法を紹介。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/c24338fd8eb19a8bcb2f)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, performance
+
+---
+
+### 知らないと損する Claude Code のモデル設定 — 5つの実践的な設定テクニック
+
+Claude Code のモデル設定に関する5つの実践的なテクニックを紹介。opusplan による自動モデル切り替え、effortLevel での思考深度調整、1M トークンコンテキストの有効化、チームでのモデル完全固定方法、社内 LLM ゲートウェイのピッカー追加など、作業効率とコスト最適化のための設定方法を解説している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/c24338fd8eb19a8bcb2f)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 
