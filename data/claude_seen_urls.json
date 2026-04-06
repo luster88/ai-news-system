@@ -309,14 +309,36 @@
     "https://ai-heartland.com/explain/claude-code-v2188-ai-12": "2026-04-05",
     "https://ai-heartland.com/explain/claude-microsoft-365-connector": "2026-04-05",
     "https://ai-heartland.com/news/news-claude-sonnet-5-release": "2026-04-05",
-    "https://ai-heartland.com/explain/claude-code-cowork-guide": "2026-04-05"
+    "https://ai-heartland.com/explain/claude-code-cowork-guide": "2026-04-05",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sdv7br/im_the_bottleneck": "2026-04-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1se1kpr/claude_code_v2192_introduces_ultraplan_draft": "2026-04-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1se9fct/im_having_to_bypass_policy_filter_when_doing": "2026-04-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sdw589/i_built_6_ios_apps_in_3_months_using_claude_code": "2026-04-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sdq4eu/as_an_autistic_person_claude_is_the_friend_i": "2026-04-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sdot1s/claude_code_can_now_submit_your_app_to_app_store": "2026-04-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1se2qq9/claude_status_update_elevated_errors_on_claudeai": "2026-04-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1se2wrk/claude_status_update_elevated_errors_on_claudeai": "2026-04-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sdrhsn/i_built_a_game_about_consumer_rights_got_invited": "2026-04-06",
+    "https://qiita.com/mguozhen/items/0c247bbd0f61caa69937": "2026-04-06",
+    "https://qiita.com/kiyotaman/items/d2a277b00acad4e1a3c5": "2026-04-06",
+    "https://qiita.com/ojiroid/items/736a9dd505ef1d1195da": "2026-04-06",
+    "https://qiita.com/emi_ndk/items/c3b99612ec044e5d612e": "2026-04-06",
+    "https://zenn.dev/tyler0702/articles/64420c4334d249": "2026-04-06",
+    "https://zenn.dev/tell_y/articles/e21d348284c5a5": "2026-04-06",
+    "https://zenn.dev/neogendaijin/articles/95911d4d4b525b": "2026-04-06",
+    "https://zenn.dev/dai_mywk/articles/4b354106cf6503": "2026-04-06",
+    "https://zenn.dev/tomato_leo/articles/fcc604753a99f9": "2026-04-06",
+    "https://zenn.dev/dai_mywk/articles/d491d5840f0f41": "2026-04-06",
+    "https://qiita.com/kenimo49/items/af514033f85366ead6c5": "2026-04-06",
+    "https://qiita.com/taketsuyo/items/c87491ea7d5c4fabf43d": "2026-04-06",
+    "https://techcrunch.com/2026/04/03/anthropic-is-having-a-moment-in-the-private-markets-spacex-could-spoil-the-party": "2026-04-06"
   },
   "source_penalties": {
-    "Anthropic News": "2026-04-06",
+    "Anthropic News": "2026-04-07",
     "Reddit r/ClaudeAI": "2026-04-03",
     "Zenn claude": "2026-03-25",
     "TechCrunch Claude": "2026-04-06",
     "The Decoder Claude": "2026-03-31",
-    "AI Heartland": "2026-04-04"
+    "AI Heartland": "2026-04-07"
   }
 }

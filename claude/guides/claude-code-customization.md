@@ -7,14 +7,30 @@ tags:
 - prompt
 - setup
 date: '2026-03-29'
-updated: '2026-03-29'
+updated: '2026-04-06'
 sources:
 - url: https://zenn.dev/noprogllama/articles/d6a34cce09b66d
   title: AIに人格と記憶を与えたら、常につながる手段が欲しくなって自前のWeb UIを作ることになった
   date: '2026-03-29'
+- url: https://qiita.com/kiyotaman/items/d2a277b00acad4e1a3c5
+  title: Claude Code の statusLine を自作する ― モデル / コンテキスト / レート制限を 2〜3 行で全部見せる
+  date: '2026-04-06'
 ---
 
+
 # Claude Code Customization
+
+---
+
+## 2026-04-06
+
+### Claude Code の statusLine を自作する ― モデル / コンテキスト / レート制限を 2〜3 行で全部見せる
+
+Claude Code の statusLine 機能を活用し、bash + jq でモデル名・コンテキスト使用量・レート制限などを常時表示するカスタムスクリプトの実装方法を解説。settings.json に任意のコマンドを登録することで、stdin 経由で渡される JSON データを整形し、ターミナル風のステータス表示を実現できる。デバッグ用の環境変数設定や、jq 呼び出しの最適化、Git 情報取得時の --no-optional-locks 指定など、実装上のハマりどころと対処法を詳説している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kiyotaman/items/d2a277b00acad4e1a3c5)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 
