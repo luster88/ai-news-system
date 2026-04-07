@@ -3,12 +3,13 @@ title: Mcp Server
 category: tools
 subcategory: mcp-server
 tags:
+- claude-api
 - claude-code
 - cowork
 - mcp
 - 新機能
 date: '2026-03-25'
-updated: '2026-04-02'
+updated: '2026-04-07'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -22,12 +23,28 @@ sources:
 - url: https://ai-heartland.com/mcp/tradingview-mcp
   title: TradingView MCP：Claude CodeからTradingViewを完全操作する78ツールのMCPサーバー
   date: '2026-04-02'
+- url: https://ai-heartland.com/mcp/xmcp
+  title: xmcp：X（旧Twitter）APIとClaudeを連携させるMCP実装ツール
+  date: '2026-04-07'
 ---
 
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-04-07
+
+### xmcp：X（旧Twitter）APIとClaudeを連携させるMCP実装ツール
+
+xmcpは、X（旧Twitter）APIとClaudeなどのLLMを連携させるMCP実装ツール。AnthropicのModel Context Protocol仕様に準拠し、AIエージェントがツイート投稿・分析・トレンド監視などのX API機能をプログラム的に操作できる。Python 3.9以上で動作し、センチメント分析やコンテンツ自動投稿などのユースケースに対応。MCPの実装例として学習教材としても有用。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/mcp/xmcp)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-api, 新機能
 
 ---
 

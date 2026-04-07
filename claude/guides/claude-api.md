@@ -5,16 +5,34 @@ subcategory: claude-api
 tags:
 - claude-api
 - cowork
+- performance
 - prompt
+- 新機能
 date: '2026-03-25'
-updated: '2026-03-25'
+updated: '2026-04-07'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
   date: '2026-03-25'
+- url: https://zenn.dev/ai_eris_log/articles/claude-extended-thinking-20260407
+  title: Claude APIのExtended Thinkingを使いこなす——どんなタスクで効果があるか検証した
+  date: '2026-04-07'
 ---
 
+
 # Claude Api
+
+---
+
+## 2026-04-07
+
+### Claude APIのExtended Thinkingを使いこなす——どんなタスクで効果があるか検証した
+
+Claude APIのExtended Thinking機能を複数のタスクで検証した実践記事。数学証明では効果が薄かったが、多制約の最適化問題やコード修正の副作用チェックでは明確な精度向上を確認。budget_tokensのチューニングでコスト最適化が可能で、思考プロセスの可視化により判断根拠の追跡もできる。事実確認タスクでは不要。
+
+- **ソース**: [Zenn claude](https://zenn.dev/ai_eris_log/articles/claude-extended-thinking-20260407)
+- **重要度**: 7/10
+- **タグ**: claude-api, 新機能, performance
 
 ---
 
