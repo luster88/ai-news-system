@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-27'
-updated: '2026-03-30'
+updated: '2026-04-08'
 sources:
 - url: https://zenn.dev/beef_and_rice/articles/482b09980fce23
   title: Claude Code の便利機能 Ctrl+G と Ctrl+S を zsh でも使う
@@ -22,11 +22,27 @@ sources:
   title: 15 New Claude Code Hidden Features from Boris Cherny (creator of CC) on 30
     Mar 2026
   date: '2026-03-30'
+- url: https://qiita.com/masa_ClaudeCodeLab/items/5af94d8adad510f5a75c
+  title: Claude Codeの生産性を3倍にする10のTips【2026年版】
+  date: '2026-04-08'
 ---
 
 
 
+
 # Claude Code Tips
+
+---
+
+## 2026-04-08
+
+### Claude Codeの生産性を3倍にする10のTips【2026年版】
+
+Claude Codeの生産性を向上させる10のTipsを紹介。CLAUDE.mdの活用、/compactコマンドによるトークン圧縮、コマンドの事前許可、テスト駆動開発、エラーメッセージの直接共有など、実践的な使い方を解説。日常的な開発ワークフローでClaude Codeを効率的に活用する方法を具体例とともに提示している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/masa_ClaudeCodeLab/items/5af94d8adad510f5a75c)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

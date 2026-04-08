@@ -361,14 +361,40 @@
     "https://the-decoder.com/openai-anthropic-and-google-team-up-against-unauthorized-chinese-model-copying": "2026-04-07",
     "https://the-decoder.com/anthropic-signs-multi-gigawatt-tpu-deal-with-google-and-broadcom": "2026-04-07",
     "https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security": "2026-04-07",
-    "https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus": "2026-04-07"
+    "https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus": "2026-04-07",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sfz7a5/introducing_claude_managed_agents_now_in_public": "2026-04-08",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sfw9b5/something_happened_to_opus_46s_reasoning_effort": "2026-04-08",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sfsz67/i_gave_claude_my_dead_games_30yearold_files_and": "2026-04-08",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed": "2026-04-08",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sg5088/anthropics_recent_run_of_bad_luck_is_exactly_what": "2026-04-08",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sfyjlt/a_recent_study_has_found_that_llms_are_worse_at": "2026-04-08",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sfdwdl/every_anthropic_press_release": "2026-04-08",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sfpopp/i_vibecoded_my_cat": "2026-04-08",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sfsqq5/how_to_save_80_on_your_claude_bill_with_better": "2026-04-08",
+    "https://qiita.com/kenimo49/items/537ed430779c29388000": "2026-04-08",
+    "https://qiita.com/moha0918_/items/9682b1ec8b71e884ec13": "2026-04-08",
+    "https://qiita.com/moha0918_/items/112149866223f8b5f6a0": "2026-04-08",
+    "https://qiita.com/Tadataka_Takahashi/items/02c97a42a109863acca9": "2026-04-08",
+    "https://zenn.dev/ena_dri/articles/61854f0a2e9f07": "2026-04-08",
+    "https://zenn.dev/evolink/articles/aa50d384793ee7": "2026-04-08",
+    "https://zenn.dev/shelty/articles/20260408-budget-book-asset-management": "2026-04-08",
+    "https://zenn.dev/tuzuminami/articles/e66332d9f9beb2": "2026-04-08",
+    "https://zenn.dev/totsu_ai_lab/articles/claude-code-glossary": "2026-04-08",
+    "https://zenn.dev/mtk0/articles/claude-code-effort-level-high-benchmark": "2026-04-08",
+    "https://qiita.com/saitoko/items/954130302c71bb094522": "2026-04-08",
+    "https://qiita.com/masa_ClaudeCodeLab/items/5af94d8adad510f5a75c": "2026-04-08",
+    "https://the-decoder.com/metas-muse-spark-is-its-first-frontier-model-and-its-first-without-open-weights": "2026-04-08",
+    "https://the-decoder.com/one-in-four-quotes-in-ai-chatbot-responses-comes-from-journalism-muckrack-study-finds": "2026-04-08",
+    "https://the-decoder.com/anthropic-hires-microsofts-azure-ai-chief-to-fix-its-infrastructure-problems": "2026-04-08",
+    "https://the-decoder.com/from-gpt-2-to-claude-mythos-the-return-of-ai-models-deemed-too-dangerous-to-release": "2026-04-08",
+    "https://techcrunch.com/2026/04/08/aws-boss-explains-why-investing-billions-in-both-anthropic-and-openai-is-an-ok-conflict": "2026-04-08"
   },
   "source_penalties": {
-    "Anthropic News": "2026-04-08",
+    "Anthropic News": "2026-04-09",
     "Reddit r/ClaudeAI": "2026-04-03",
     "Zenn claude": "2026-03-25",
     "TechCrunch Claude": "2026-04-06",
     "The Decoder Claude": "2026-03-31",
-    "AI Heartland": "2026-04-07"
+    "AI Heartland": "2026-04-09"
   }
 }

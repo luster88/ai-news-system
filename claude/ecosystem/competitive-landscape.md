@@ -7,8 +7,9 @@ tags:
 - cowork
 - performance
 - pricing
+- release
 date: '2026-03-23'
-updated: '2026-04-03'
+updated: '2026-04-08'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -17,10 +18,27 @@ sources:
 - url: https://qiita.com/taketsuyo/items/b1a70ee45b0bf0851155
   title: Gemma 4は「制限がきつい時代」の現実解になるかもしれない
   date: '2026-04-03'
+- url: https://the-decoder.com/metas-muse-spark-is-its-first-frontier-model-and-its-first-without-open-weights
+  title: Meta's Muse Spark is its first frontier model and its first without open
+    weights
+  date: '2026-04-08'
 ---
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-04-08
+
+### Meta's Muse Spark is its first frontier model and its first without open weights
+
+MetaがMuse Sparkを発表。初のフロンティアモデルであり、オープンウェイトを提供しない初のモデル。マルチモーダル推論、ツール使用、視覚的思考連鎖が可能で、Artificial Analysis Intelligence Indexで52点を獲得しトップ5入り。Llamaファミリーとは異なり公開されず、meta.aiとMeta AIアプリでのみ利用可能。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/metas-muse-spark-is-its-first-frontier-model-and-its-first-without-open-weights)
+- **重要度**: 6/10
+- **タグ**: release, performance, cowork
 
 ---
 
