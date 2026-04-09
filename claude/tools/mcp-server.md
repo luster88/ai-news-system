@@ -9,7 +9,7 @@ tags:
 - mcp
 - 新機能
 date: '2026-03-25'
-updated: '2026-04-07'
+updated: '2026-04-09'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -26,13 +26,29 @@ sources:
 - url: https://ai-heartland.com/mcp/xmcp
   title: xmcp：X（旧Twitter）APIとClaudeを連携させるMCP実装ツール
   date: '2026-04-07'
+- url: https://zenn.dev/claush/articles/6bcd60524fccfe
+  title: SQLiteからCockroachDBに移行して、AIの記憶が「本物」になった話 —— iphoneアプリ Claush
+  date: '2026-04-09'
 ---
 
 
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-04-09
+
+### SQLiteからCockroachDBに移行して、AIの記憶が「本物」になった話 —— iphoneアプリ Claush
+
+Claush（Claude CodeをiPhoneから操作するiOSアプリ）の記憶システムを、SQLiteからCockroachDBに移行した事例。VPS再構築時に記憶が消失する課題を、マネージドDB採用で解決。ベクター検索によるセマンティック記憶検索も実現し、AIの長期記憶が「積み重なる」ものに変化した。
+
+- **ソース**: [Zenn claude](https://zenn.dev/claush/articles/6bcd60524fccfe)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, cowork
 
 ---
 

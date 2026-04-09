@@ -6,11 +6,12 @@ tags:
 - claude-code
 - cowork
 - mcp
+- performance
 - prompt
 - setup
 - 新機能
 date: '2026-03-26'
-updated: '2026-04-05'
+updated: '2026-04-09'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -33,13 +34,29 @@ sources:
 - url: https://qiita.com/daisuke-nagata/items/60f716b5480a6f654e28
   title: 「Claude Code完全運用ガイド——設計から本番デプロイまでの実装フロー」
   date: '2026-04-05'
+- url: https://qiita.com/YujiNaramoto/items/64e8ca323195aa0b896e
+  title: なぜClaude Codeを受託開発に投入したのか — 2人チームの生産性戦略
+  date: '2026-04-09'
 ---
 
 
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-04-09
+
+### なぜClaude Codeを受託開発に投入したのか — 2人チームの生産性戦略
+
+2人チームが採用管理システムの受託開発（通常2-3週間）を1週間で完了させるため、Claude Codeをペアプロ相手として投入。worktreeによる真の並列実装で5日間に48PR・80コミット超を達成し、テストカバレッジとパフォーマンス最適化（バンドルサイズ190MB削減、応答時間383ms→100ms以下）を両立。ビジネスロジックやセキュリティは人間がレビュー・修正する体制で品質を担保した。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/YujiNaramoto/items/64e8ca323195aa0b896e)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, performance
 
 ---
 

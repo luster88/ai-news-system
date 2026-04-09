@@ -6,9 +6,11 @@ tags:
 - claude-code
 - cowork
 - mcp
+- performance
+- prompt
 - 新機能
 date: '2026-04-05'
-updated: '2026-04-06'
+updated: '2026-04-09'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-v2188-ai-12
   title: AIコーディングツールは内部でどう動くのか：Claude Codeのアーキテクチャを初心者向けに解説
@@ -16,10 +18,26 @@ sources:
 - url: https://qiita.com/mguozhen/items/0c247bbd0f61caa69937
   title: SaaSは死んだ：Claude CodeのAutoDream（睡眠リモデリング）アーキテクチャ
   date: '2026-04-06'
+- url: https://ai-heartland.com/explain/claude-code-architecture-blueprint
+  title: Claude Codeの内部アーキテクチャ完全解剖：331モジュールから読み解く本番エージェント設計の全貌
+  date: '2026-04-09'
 ---
 
 
+
 # Claude Code Architecture
+
+---
+
+## 2026-04-09
+
+### Claude Codeの内部アーキテクチャ完全解剖：331モジュールから読み解く本番エージェント設計の全貌
+
+Claude Codeの内部アーキテクチャを331モジュール規模で解析した記事。非同期ジェネレータによるエージェントループ、ツール並行実行とストリーミング実行（2～5倍高速化）、プロンプトキャッシュ最適化（セッションあたり$0.02～$0.20のコスト差）、4段階のコンテキスト圧縮戦略など、本番環境で稼働し続けるエージェント設計の具体的実装パターンを詳説。Princeton NLPの研究でもインターフェース設計の改善だけでSWE-benchスコアが64%向上することが実証されており、モデル重み以外の設計レイヤーへの投資の重要性を強調している。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/claude-code-architecture-blueprint)
+- **重要度**: 8/10
+- **タグ**: claude-code, performance, prompt
 
 ---
 

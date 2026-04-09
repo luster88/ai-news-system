@@ -6,8 +6,9 @@ tags:
 - claude-code
 - prompt
 - setup
+- vscode
 date: '2026-03-29'
-updated: '2026-04-06'
+updated: '2026-04-09'
 sources:
 - url: https://zenn.dev/noprogllama/articles/d6a34cce09b66d
   title: AIに人格と記憶を与えたら、常につながる手段が欲しくなって自前のWeb UIを作ることになった
@@ -15,10 +16,26 @@ sources:
 - url: https://qiita.com/kiyotaman/items/d2a277b00acad4e1a3c5
   title: Claude Code の statusLine を自作する ― モデル / コンテキスト / レート制限を 2〜3 行で全部見せる
   date: '2026-04-06'
+- url: https://qiita.com/s_hiroki/items/307e39f9ed763cb28d6f
+  title: Claude Codeが付けるCo-Authored-ByとGenerated with Claude Codeを非表示にする
+  date: '2026-04-09'
 ---
 
 
+
 # Claude Code Customization
+
+---
+
+## 2026-04-09
+
+### Claude Codeが付けるCo-Authored-ByとGenerated with Claude Codeを非表示にする
+
+Claude Code が自動で付与する Co-Authored-By タグや Generated with Claude Code の表記を非表示にする方法を解説。settings.json に claude.commit.showCoAuthor と claude.pullRequest.showGenerated を false に設定することで、Commit メッセージや PR コメントに Claude の署名が表示されなくなる。公式ドキュメントでは非推奨の記法も紹介されているが、推奨設定により両方を一括で非表示可能。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/s_hiroki/items/307e39f9ed763cb28d6f)
+- **重要度**: 5/10
+- **タグ**: claude-code, vscode, setup
 
 ---
 
