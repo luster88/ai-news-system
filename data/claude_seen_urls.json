@@ -419,14 +419,37 @@
     "https://the-decoder.com/openai-reportedly-following-anthropics-lead-in-restricting-access-to-powerful-cybersecurity-ai": "2026-04-09",
     "https://the-decoder.com/us-appeals-court-refuses-to-block-pentagons-blacklisting-of-anthropic": "2026-04-09",
     "https://the-decoder.com/anthropic-launches-managed-infrastructure-for-autonomous-ai-agents": "2026-04-09",
-    "https://techcrunch.com/2026/04/09/is-anthropic-limiting-the-release-of-mythos-to-protect-the-internet-or-anthropic": "2026-04-09"
+    "https://techcrunch.com/2026/04/09/is-anthropic-limiting-the-release-of-mythos-to-protect-the-internet-or-anthropic": "2026-04-09",
+    "https://www.reddit.com/r/ClaudeAI/comments/1shs4ej/openai_researcher_says_his_anthropic_roommate": "2026-04-10",
+    "https://www.reddit.com/r/ClaudeAI/comments/1shssj4/bro_the_chart_i_am_crying": "2026-04-10",
+    "https://www.reddit.com/r/ClaudeAI/comments/1shngqm/i_automated_most_of_my_job": "2026-04-10",
+    "https://www.reddit.com/r/ClaudeAI/comments/1shjmpu/is_anyone_lowkey_embarrassed_for_humanity_that": "2026-04-10",
+    "https://www.reddit.com/r/ClaudeAI/comments/1shvzsn/mythos_is_just_damage_control_after_the_leak": "2026-04-10",
+    "https://www.reddit.com/r/ClaudeAI/comments/1she8ux/anthropic_just_shipped_74_product_releases_in_52": "2026-04-10",
+    "https://www.reddit.com/r/ClaudeAI/comments/1shexwv/claude_used_to_push_back_now_it_just_agrees_with": "2026-04-10",
+    "https://www.reddit.com/r/ClaudeAI/comments/1shz99l/here_are_50_slash_commands_in_claude_code_that": "2026-04-10",
+    "https://qiita.com/o0-sheeefk-0o/items/6a4d718f092187bf6652": "2026-04-10",
+    "https://qiita.com/t_mando_/items/933ed7fa7b2d52b641f9": "2026-04-10",
+    "https://qiita.com/hmy8727/items/144711c4edf5a7ee19f1": "2026-04-10",
+    "https://qiita.com/moha0918_/items/027ae5fc4b24bafae695": "2026-04-10",
+    "https://zenn.dev/burori/articles/42afb887d22037": "2026-04-10",
+    "https://zenn.dev/binkraft/articles/4606e4199af3ec": "2026-04-10",
+    "https://zenn.dev/hittskapi/articles/e215e34c04143e": "2026-04-10",
+    "https://zenn.dev/metalels86/articles/2418a39f6057bb": "2026-04-10",
+    "https://zenn.dev/dk_/articles/1f3fbc506827ac": "2026-04-10",
+    "https://zenn.dev/sktt_panda/articles/rakuscan-claude-discord-integration": "2026-04-10",
+    "https://qiita.com/taketsuyo/items/c9024c668861d56975a9": "2026-04-10",
+    "https://qiita.com/kanta13jp1/items/38f0383e0ea01b787900": "2026-04-10",
+    "https://qiita.com/yurukusa/items/f0f1ffd024a1b9394df4": "2026-04-10",
+    "https://qiita.com/rrr_rrrr_/items/423bc64c6a44cf116193": "2026-04-10",
+    "https://techcrunch.com/2026/04/10/anthropic-temporarily-banned-openclaws-creator-from-accessing-claude": "2026-04-10"
   },
   "source_penalties": {
-    "Anthropic News": "2026-04-10",
+    "Anthropic News": "2026-04-11",
     "Reddit r/ClaudeAI": "2026-04-03",
     "Zenn claude": "2026-03-25",
     "TechCrunch Claude": "2026-04-06",
-    "The Decoder Claude": "2026-03-31",
-    "AI Heartland": "2026-04-09"
+    "The Decoder Claude": "2026-04-11",
+    "AI Heartland": "2026-04-11"
   }
 }

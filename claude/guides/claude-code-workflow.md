@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-26'
-updated: '2026-04-09'
+updated: '2026-04-10'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -37,6 +37,9 @@ sources:
 - url: https://qiita.com/YujiNaramoto/items/64e8ca323195aa0b896e
   title: なぜClaude Codeを受託開発に投入したのか — 2人チームの生産性戦略
   date: '2026-04-09'
+- url: https://zenn.dev/binkraft/articles/4606e4199af3ec
+  title: Claude Codeで仮想組織を構築する方法
+  date: '2026-04-10'
 ---
 
 
@@ -44,7 +47,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-04-10
+
+### Claude Codeで仮想組織を構築する方法
+
+個人開発者がClaude Codeで仮想組織を構築し、複数のフォルダに CLAUDE.md を配置して部署の役割を定義する手法を試している。各「部署」が異なる視点で提案を行うことで、1人では見落としがちなセキュリティ問題や多様な選択肢を発見できた。まだ1週間程度の運用段階だが、視点の多様化と判断材料の増加に効果を感じている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/binkraft/articles/4606e4199af3ec)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

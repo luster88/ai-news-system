@@ -5,10 +5,12 @@ subcategory: managed-agents
 tags:
 - claude-api
 - claude-console
+- cowork
+- performance
 - release
 - 新機能
 date: '2026-04-08'
-updated: '2026-04-09'
+updated: '2026-04-10'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfz7a5/introducing_claude_managed_agents_now_in_public
   title: Introducing Claude Managed Agents, now in public beta.
@@ -19,10 +21,39 @@ sources:
 - url: https://ai-heartland.com/news/claude-managed-agents
   title: Claude Managed Agents発表：エージェントの構築からデプロイまでをAnthropicがホスティング、パブリックベータ開始
   date: '2026-04-09'
+- url: https://qiita.com/o0-sheeefk-0o/items/6a4d718f092187bf6652
+  title: Claude がマネージドになった！他社サービスと何が違うのか調べてみた
+  date: '2026-04-10'
+- url: https://qiita.com/t_mando_/items/933ed7fa7b2d52b641f9
+  title: Claude Managed Agentsって何？GeminiAPIと何が違うの？Claudeに聞きながら理解した
+  date: '2026-04-10'
 ---
 
 
+
 # Managed Agents
+
+---
+
+## 2026-04-10
+
+### Claude がマネージドになった！他社サービスと何が違うのか調べてみた
+
+Anthropic が Claude Managed Agents を発表。モデルベンダーが実行インフラまで提供する新しいアプローチで、AWS/Azure/Google のクラウドサービスとは異なり、Claude API キーのみで始められるフルマネージド実行環境。Session・Harness・Sandbox の3層アーキテクチャにより、障害復旧とスケーリングを自動化し、Time-to-First-Token を大幅削減。クラウドロックインを避けたいエージェント開発に適している。
+
+- **ソース**: [Qiita claude](https://qiita.com/o0-sheeefk-0o/items/6a4d718f092187bf6652)
+- **重要度**: 8/10
+- **タグ**: 新機能, claude-api, performance
+
+---
+
+### Claude Managed Agentsって何？GeminiAPIと何が違うの？Claudeに聞きながら理解した
+
+AnthropicがClaude Managed Agentsをパブリックベータとしてリリース。これは単なるAPIではなく、エージェント実行インフラを含む新サービスで、Web検索・状態管理・リトライなどをAnthropicが提供する。GeminiAPIがモデル呼び出しのみなのに対し、Managed Agentsは複数ステップのタスクをクラウドで自動実行できる点が特徴。料金はAPIトークン料金に加え$0.08/セッション時間が追加される。
+
+- **ソース**: [Qiita claude](https://qiita.com/t_mando_/items/933ed7fa7b2d52b641f9)
+- **重要度**: 8/10
+- **タグ**: claude-api, 新機能, cowork
 
 ---
 

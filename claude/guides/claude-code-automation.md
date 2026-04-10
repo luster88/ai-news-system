@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-04-05'
+updated: '2026-04-10'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -20,10 +20,26 @@ sources:
 - url: https://qiita.com/Kosei0412/items/d259982604a0186a7d8b
   title: GPTに切られたカウンセラーがClaudeCodeで自動化ラインを作った話
   date: '2026-04-05'
+- url: https://qiita.com/kanta13jp1/items/38f0383e0ea01b787900
+  title: 【実践】Claude Code Schedule でサポート対応を自動化する具体的な手順
+  date: '2026-04-10'
 ---
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-04-10
+
+### 【実践】Claude Code Schedule でサポート対応を自動化する具体的な手順
+
+Claude Code の Schedule 機能を活用して、Flutter Web + Supabase アプリのサポート対応を自動化する実践的な手順を解説。Supabase Edge Function の作成、schedule_task_runs テーブルでの実行記録、Flutter 管理ダッシュボードでの確認方法など、具体的な実装例を含む。実際に稼働中のサービスと GitHub リポジトリも公開されている。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kanta13jp1/items/38f0383e0ea01b787900)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 
