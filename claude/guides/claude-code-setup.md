@@ -6,9 +6,10 @@ tags:
 - claude-code
 - prompt
 - setup
+- windows
 - 新機能
 date: '2026-04-04'
-updated: '2026-04-05'
+updated: '2026-04-11'
 sources:
 - url: https://qiita.com/taiki_i/items/2d75a882e0f3187f6bb8
   title: あなたの CLAUDE.md、ちゃんと機能してますか？作り方から公式プラグインで採点するまでの道のり
@@ -22,10 +23,26 @@ sources:
 - url: https://zenn.dev/miyan/articles/ai-driven-dev-claude-md-context
   title: AI駆動開発の実践（1）CLAUDE.mdとコンテキスト戦略 — AIに「現場」を伝える技術
   date: '2026-04-05'
+- url: https://qiita.com/Geek-3340/items/974b02ac3b606a0569ed
+  title: '【Claude Code 学習記録 #１】Claude Codeを使ってみた！'
+  date: '2026-04-11'
 ---
 
 
+
 # Claude Code Setup
+
+---
+
+## 2026-04-11
+
+### 【Claude Code 学習記録 #１】Claude Codeを使ってみた！
+
+Claude Codeの概要、始め方、セットアップ手順を解説した初心者向けガイド。ターミナル上で動作するAIコーディングエージェントとして、コマンド実行やファイル操作を自然言語で指示できる点が特徴。有料プラン（Pro $20/月〜）が必要で、WSL上のCursorターミナルでのインストール手順を詳しく紹介している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Geek-3340/items/974b02ac3b606a0569ed)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, windows
 
 ---
 

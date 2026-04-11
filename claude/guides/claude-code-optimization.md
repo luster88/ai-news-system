@@ -5,16 +5,34 @@ subcategory: claude-code-optimization
 tags:
 - claude-code
 - mcp
+- opus
 - performance
+- sonnet
 date: '2026-03-31'
-updated: '2026-03-31'
+updated: '2026-04-11'
 sources:
 - url: https://qiita.com/nishiken1118/items/6b16557fcabf784c861e
   title: 過去の session をほしい時に参照する方針で claude-mem のトークン消費を激減させた話
   date: '2026-03-31'
+- url: https://qiita.com/masakazuimai/items/4952437e1e5d8c7a8803
+  title: Claude CodeのAgent toolでサブエージェントのモデルを切り替えてトークンコストを下げる
+  date: '2026-04-11'
 ---
 
+
 # Claude Code Optimization
+
+---
+
+## 2026-04-11
+
+### Claude CodeのAgent toolでサブエージェントのモデルを切り替えてトークンコストを下げる
+
+Claude CodeのAgent toolでサブエージェントのモデルを切り替える方法を解説。メインセッションはOpusのまま、定型的なコード生成だけSonnetに委譲することでトークンコストを削減できる。ただしサブエージェントはコンテキストを共有しないため、プロンプトは自己完結が必須。委譲に向くのは「明確・大量・定型」の3条件が揃ったタスクのみで、迷ったらOpusに倒すのが安全。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/masakazuimai/items/4952437e1e5d8c7a8803)
+- **重要度**: 7/10
+- **タグ**: claude-code, opus, sonnet
 
 ---
 
