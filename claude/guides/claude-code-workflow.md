@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-26'
-updated: '2026-04-10'
+updated: '2026-04-12'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -40,6 +40,9 @@ sources:
 - url: https://zenn.dev/binkraft/articles/4606e4199af3ec
   title: Claude Codeで仮想組織を構築する方法
   date: '2026-04-10'
+- url: https://qiita.com/moha0918_/items/a3788f6f812ff50a0c7b
+  title: 手を動かして覚えるClaude Codeベストプラクティス——CLAUDE.mdからサブエージェント委譲まで
+  date: '2026-04-12'
 ---
 
 
@@ -48,7 +51,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-04-12
+
+### 手を動かして覚えるClaude Codeベストプラクティス——CLAUDE.mdからサブエージェント委譲まで
+
+Claude Codeのベストプラクティスを実践的に解説。コンテキスト上限という制約から、CLAUDE.mdの活用、Explore→Plan→Code→Commitワークフロー、サブエージェント委譲までを体系的に整理。パーミッション設定、Plan Mode活用、Hooksによる自動検証、エージェント定義による専門特化など、具体的な設定と使い分けを紹介。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/a3788f6f812ff50a0c7b)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, 新機能
+
+---
+
+### 手を動かして覚えるClaude Codeベストプラクティス——CLAUDE.mdからサブエージェント委譲まで
+
+Claude Codeのベストプラクティスを実践的に解説する記事。コンテキストウィンドウの制約を理解した上で、パーミッション設定、CLAUDE.md活用、Explore→Plan→Code→Commitワークフロー、Hooksによる検証自動化、サブエージェント委譲まで、段階的に効率化手法を紹介。公式推奨の失敗パターンも合わせて解説し、具体的な設定例とともに実践的な使い方を体系化している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/a3788f6f812ff50a0c7b)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 
