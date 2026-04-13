@@ -499,14 +499,39 @@
     "https://ai-heartland.com/tool/continuedev-continue-cursor-alternative": "2026-04-12",
     "https://ai-heartland.com/news/mythos": "2026-04-12",
     "https://the-decoder.com/anthropic-seeks-advice-from-christian-leaders-on-claudes-moral-and-spiritual-behavior": "2026-04-12",
-    "https://the-decoder.com/arcee-ai-spent-half-its-venture-capital-to-build-an-open-reasoning-model-that-rivals-claude-opus-in-agent-tasks": "2026-04-12"
+    "https://the-decoder.com/arcee-ai-spent-half-its-venture-capital-to-build-an-open-reasoning-model-that-rivals-claude-opus-in-agent-tasks": "2026-04-12",
+    "https://www.reddit.com/r/ClaudeAI/comments/1skm9tw/you_can_now_switch_models_midchat": "2026-04-13",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sken9y/claude_status_update_claudeai_down_on": "2026-04-13",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sjz1hg/claude_isnt_dumber_its_just_not_trying_heres_how": "2026-04-13",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sjqn2e/the_golden_age_is_over": "2026-04-13",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sk4wfx/the_creator_of_claude_code_notes_on_the_current": "2026-04-13",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sk3m12/followup_anthropic_quietly_switched_the_default": "2026-04-13",
+    "https://www.reddit.com/r/ClaudeAI/comments/1skkc7m/when_you_turn_off_telemetry_anthropic_also": "2026-04-13",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sk8w7q/new_to_claude_but_found_this_extremely_true": "2026-04-13",
+    "https://www.reddit.com/r/ClaudeAI/comments/1skdrpx/claude_is_amazing_but_the_weekly_limits_make_no": "2026-04-13",
+    "https://qiita.com/saitoko/items/e1c07bfd3e7416cdbe4f": "2026-04-13",
+    "https://qiita.com/yurukusa/items/c0acc6da4cb1c90fa431": "2026-04-13",
+    "https://qiita.com/kai_kou/items/2d902b97012815564b4f": "2026-04-13",
+    "https://zenn.dev/unravel/articles/e2b3066c51a70e": "2026-04-13",
+    "https://zenn.dev/mukkimuki/articles/5283ad6efa2737": "2026-04-13",
+    "https://zenn.dev/horizon_it00/articles/118d6780ca072a": "2026-04-13",
+    "https://zenn.dev/acntechjp/articles/ca8a99ee0530f0": "2026-04-13",
+    "https://zenn.dev/superstudio/articles/8a5822110fbeb7": "2026-04-13",
+    "https://zenn.dev/syunichisato51/articles/ai-news-20260413-0eee4b25": "2026-04-13",
+    "https://qiita.com/kotaro_ai_lab/items/2302e26f835082f04575": "2026-04-13",
+    "https://qiita.com/saitoko/items/b0d4fef0453326a4dda5": "2026-04-13",
+    "https://the-decoder.com/openais-leaked-memo-says-new-spud-model-will-make-all-its-products-significantly-better": "2026-04-13",
+    "https://the-decoder.com/the-ai-industry-is-running-out-of-compute-with-outages-rationing-and-rising-gpu-prices": "2026-04-13",
+    "https://the-decoder.com/claude-now-works-across-all-three-major-office-apps": "2026-04-13",
+    "https://techcrunch.com/2026/04/12/trump-officials-may-be-encouraging-banks-to-test-anthropics-mythos-model": "2026-04-13",
+    "https://techcrunch.com/2026/04/12/at-the-humanx-conference-everyone-was-talking-about-claude": "2026-04-13"
   },
   "source_penalties": {
-    "Anthropic News": "2026-04-13",
+    "Anthropic News": "2026-04-14",
     "Reddit r/ClaudeAI": "2026-04-03",
     "Zenn claude": "2026-03-25",
     "TechCrunch Claude": "2026-04-13",
     "The Decoder Claude": "2026-04-11",
-    "AI Heartland": "2026-04-11"
+    "AI Heartland": "2026-04-14"
   }
 }

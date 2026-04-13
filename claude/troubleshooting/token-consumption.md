@@ -7,7 +7,7 @@ tags:
 - claude-code
 - performance
 date: '2026-04-01'
-updated: '2026-04-01'
+updated: '2026-04-13'
 sources:
 - url: https://qiita.com/yurukusa/items/49f1fa305522368d7e7a
   title: Claude Codeのトークン消費が突然10倍になる原因と、hookで防ぐ実践的な方法
@@ -15,9 +15,25 @@ sources:
 - url: https://qiita.com/yurukusa/items/49f1fa305522368d7e7a
   title: Claude Codeのトークン消費が突然10倍になる原因と、hookで防ぐ実践的な方法
   date: '2026-04-01'
+- url: https://qiita.com/yurukusa/items/c0acc6da4cb1c90fa431
+  title: Claude Code v2.1.100でトークン消費が40%増えた——cache_creation膨張の原因と削減方法
+  date: '2026-04-13'
 ---
 
+
 # Token Consumption
+
+---
+
+## 2026-04-13
+
+### Claude Code v2.1.100でトークン消費が40%増えた——cache_creation膨張の原因と削減方法
+
+Claude Code v2.1.100以降でcache_creation_input_tokensが約40%増加（49,726→69,922トークン）する問題が報告されている。GitHub Issueでは92リアクションを獲得。最も効果的な回避策はv2.1.98への固定だが、セキュリティ上の懸念がある。キャッシュTTLの短縮（1時間→5分）やシステムプロンプトキャッシュの94%増加など、複数のトークン消費問題が同時に報告されており、診断ツールや体系的な最適化手法の導入が推奨されている。
+
+- **ソース**: [Qiita claude](https://qiita.com/yurukusa/items/c0acc6da4cb1c90fa431)
+- **重要度**: 8/10
+- **タグ**: claude-code, bugfix, performance
 
 ---
 

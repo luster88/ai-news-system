@@ -7,7 +7,7 @@ tags:
 - claude-console
 - performance
 date: '2026-03-25'
-updated: '2026-03-25'
+updated: '2026-04-13'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s3b9fi/claude_status_update_elevated_errors_on_claudeai
   title: 'Claude Status Update : Elevated Errors on claude.ai on 2026-03-25T13:45:25.000Z'
@@ -15,9 +15,25 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s3bd5y/claude_status_update_elevated_errors_on_claudeai
   title: 'Claude Status Update : Elevated Errors on claude.ai on 2026-03-25T13:52:44.000Z'
   date: '2026-03-25'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1sken9y/claude_status_update_claudeai_down_on
+  title: 'Claude Status Update : Claude.ai down on 2026-04-13T15:40:43.000Z'
+  date: '2026-04-13'
 ---
 
+
 # Service Outage
+
+---
+
+## 2026-04-13
+
+### Claude Status Update : Claude.ai down on 2026-04-13T15:40:43.000Z
+
+2026年4月13日15時40分頃、Claude.aiにダウンタイムが発生したことを通知する自動投稿。公式ステータスページで進捗を確認でき、コミュニティのパフォーマンス報告スレッドへのリンクも提供されている。システム障害の自動通知機能により、ユーザーへの迅速な情報共有が行われた。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1sken9y/claude_status_update_claudeai_down_on)
+- **重要度**: 6/10
+- **タグ**: claude-console, bugfix, performance
 
 ---
 

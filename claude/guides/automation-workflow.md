@@ -6,8 +6,10 @@ tags:
 - claude-code
 - cowork
 - prompt
+- setup
+- 新機能
 date: '2026-04-08'
-updated: '2026-04-10'
+updated: '2026-04-13'
 sources:
 - url: https://zenn.dev/shelty/articles/20260408-budget-book-asset-management
   title: MoneyForwardの家計簿データで資産予測を自動化してみた＠Claude
@@ -15,10 +17,26 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1shngqm/i_automated_most_of_my_job
   title: I automated most of my job
   date: '2026-04-10'
+- url: https://qiita.com/saitoko/items/e1c07bfd3e7416cdbe4f
+  title: Claude Codeのスケジュール枠は3つだけ——ディスパッチャー方式で何タスクでも回す設計
+  date: '2026-04-13'
 ---
 
 
+
 # Automation Workflow
+
+---
+
+## 2026-04-13
+
+### Claude Codeのスケジュール枠は3つだけ——ディスパッチャー方式で何タスクでも回す設計
+
+Claude Codeのスケジュール実行機能には枠数制限（Max 5xプランで3枠）があるため、ディスパッチャー方式で複数タスクを1枠で管理する設計パターンを紹介。タスクリストとタスク定義ファイルを分離し、hourly/daily/adhocの3種類のスケジュールで運用する実践的な自動化手法を解説している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/saitoko/items/e1c07bfd3e7416cdbe4f)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

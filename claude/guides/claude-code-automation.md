@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-04-10'
+updated: '2026-04-13'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -23,11 +23,27 @@ sources:
 - url: https://qiita.com/kanta13jp1/items/38f0383e0ea01b787900
   title: 【実践】Claude Code Schedule でサポート対応を自動化する具体的な手順
   date: '2026-04-10'
+- url: https://qiita.com/saitoko/items/e1c07bfd3e7416cdbe4f
+  title: Claude Codeのスケジュール枠は3つだけ——ディスパッチャー方式で何タスクでも回す設計
+  date: '2026-04-13'
 ---
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-04-13
+
+### Claude Codeのスケジュール枠は3つだけ——ディスパッチャー方式で何タスクでも回す設計
+
+Claude Codeのスケジュール実行機能は登録枠が3つまでという制約があるため、ディスパッチャー方式で複数タスクを1枠で管理する設計パターンを紹介。タスクリストとタスク定義ファイルを分離し、hourly/daily/adhocの3種類のスケジュールでタスクを自動実行する仕組みを実装している。
+
+- **ソース**: [Qiita claude](https://qiita.com/saitoko/items/e1c07bfd3e7416cdbe4f)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

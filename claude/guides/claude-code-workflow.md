@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-26'
-updated: '2026-04-12'
+updated: '2026-04-13'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -43,6 +43,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/a3788f6f812ff50a0c7b
   title: 手を動かして覚えるClaude Codeベストプラクティス——CLAUDE.mdからサブエージェント委譲まで
   date: '2026-04-12'
+- url: https://qiita.com/saitoko/items/b0d4fef0453326a4dda5
+  title: AIエージェント組織、3日で散らかった話 — チャットだけで立て直したマネジメント実録
+  date: '2026-04-13'
 ---
 
 
@@ -52,7 +55,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-04-13
+
+### AIエージェント組織、3日で散らかった話 — チャットだけで立て直したマネジメント実録
+
+Claude Codeでマルチエージェント組織（CEO、devops、researcher、reviewer、secretary、writer）を構築した実録。3日で散らかったファイル構造や役割の曖昧さを、チャットでの対話だけで立て直した。logs/を37件→7件に81%削減し、権限の見直しやルールの集約を実施。AIの誤回答を押し返すことで改善が進んだ実践例。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/saitoko/items/b0d4fef0453326a4dda5)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

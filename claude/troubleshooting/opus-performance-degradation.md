@@ -3,18 +3,36 @@ title: Opus Performance Degradation
 category: troubleshooting
 subcategory: opus-performance-degradation
 tags:
+- claude-api
 - claude-code
 - opus
 - performance
+- pricing
 date: '2026-04-09'
-updated: '2026-04-09'
+updated: '2026-04-13'
 sources:
 - url: https://zenn.dev/dpbz/articles/58f9259ca116cc
   title: Claude Opus 4.6の劣化を一時的に緩和する方法
   date: '2026-04-09'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1sjqn2e/the_golden_age_is_over
+  title: The golden age is over
+  date: '2026-04-13'
 ---
 
+
 # Opus Performance Degradation
+
+---
+
+## 2026-04-13
+
+### The golden age is over
+
+Redditユーザーが、Claude を含む主要LLMサービス（ChatGPT、Gemini、Perplexity）の品質低下を報告。3週間前まで優れていた Claude の応答が怠惰になり、ミスが増え、エンゲージメントが低下したと指摘。コンシューマー向けLLMの「黄金時代」は終わり、高品質を求めるならエンタープライズ価格が必要になると主張している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1sjqn2e/the_golden_age_is_over)
+- **重要度**: 6/10
+- **タグ**: performance, claude-api, pricing
 
 ---
 
