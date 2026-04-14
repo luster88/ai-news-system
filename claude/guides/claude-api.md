@@ -7,9 +7,10 @@ tags:
 - cowork
 - performance
 - prompt
+- setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-04-07'
+updated: '2026-04-14'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -17,10 +18,26 @@ sources:
 - url: https://zenn.dev/ai_eris_log/articles/claude-extended-thinking-20260407
   title: Claude APIのExtended Thinkingを使いこなす——どんなタスクで効果があるか検証した
   date: '2026-04-07'
+- url: https://qiita.com/kai_kou/items/9aa2ca4787306e4dc162
+  title: Claude Managed Agents入門 — セルフホスト不要でAIエージェントを動かすAPIガイド
+  date: '2026-04-14'
 ---
 
 
+
 # Claude Api
+
+---
+
+## 2026-04-14
+
+### Claude Managed Agents入門 — セルフホスト不要でAIエージェントを動かすAPIガイド
+
+Anthropicが2026年4月8日にパブリックベータ公開したClaude Managed Agentsの入門ガイド。従来は自前実装が必要だったエージェントループ・ツール実行・サンドボックスをフルマネージドで提供し、開発者はエージェントの定義に集中できる。Agent/Environment/Session/Eventsの4つのリソース構成、bash/web_searchなどの組み込みツール、料金体系（$0.08/セッション時間）について解説。Python SDKを使ったクイックスタートとカスタムツールの実装方法も紹介している。
+
+- **ソース**: [Qiita claude](https://qiita.com/kai_kou/items/9aa2ca4787306e4dc162)
+- **重要度**: 8/10
+- **タグ**: claude-api, 新機能, setup
 
 ---
 

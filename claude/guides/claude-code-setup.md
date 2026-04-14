@@ -9,7 +9,7 @@ tags:
 - windows
 - 新機能
 date: '2026-04-04'
-updated: '2026-04-11'
+updated: '2026-04-14'
 sources:
 - url: https://qiita.com/taiki_i/items/2d75a882e0f3187f6bb8
   title: あなたの CLAUDE.md、ちゃんと機能してますか？作り方から公式プラグインで採点するまでの道のり
@@ -26,11 +26,27 @@ sources:
 - url: https://qiita.com/Geek-3340/items/974b02ac3b606a0569ed
   title: '【Claude Code 学習記録 #１】Claude Codeを使ってみた！'
   date: '2026-04-11'
+- url: https://qiita.com/moha0918_/items/72d4d32fce1b585ddbad
+  title: CLAUDE.mdを「とりあえず」で済ませてる人に知ってほしい、指示精度が上がる7つの書き方
+  date: '2026-04-14'
 ---
 
 
 
+
 # Claude Code Setup
+
+---
+
+## 2026-04-14
+
+### CLAUDE.mdを「とりあえず」で済ませてる人に知ってほしい、指示精度が上がる7つの書き方
+
+Claude CodeのCLAUDE.mdファイルの効果的な書き方を7つ紹介。/initコマンドによる自動生成、@importによる外部ファイル取り込み、.claude/rules/ディレクトリでのパス指定ルール、CLAUDE.local.mdによる個人設定の分離など、コンテキスト管理とトークン効率化のベストプラクティスを解説。長すぎるCLAUDE.mdは指示遵守率を下げるため、ファイル分割が重要。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/72d4d32fce1b585ddbad)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

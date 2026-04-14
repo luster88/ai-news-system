@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-04-13'
+updated: '2026-04-14'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -26,12 +26,28 @@ sources:
 - url: https://qiita.com/saitoko/items/e1c07bfd3e7416cdbe4f
   title: Claude Codeのスケジュール枠は3つだけ——ディスパッチャー方式で何タスクでも回す設計
   date: '2026-04-13'
+- url: https://zenn.dev/gao0111/articles/5fe1dcedc8c112
+  title: Claudeと2日でAIニュース自動収集サービスを作って公開した話
+  date: '2026-04-14'
 ---
 
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-04-14
+
+### Claudeと2日でAIニュース自動収集サービスを作って公開した話
+
+個人開発者がClaude Maxプランを活用し、2日間でAIニュース自動収集サービス「AIフロントライン」を構築・公開。Anthropic、OpenAI、Google等15の公式ソースからRSS/GitHub Releasesを3時間ごとに収集し、Claudeが日本語要約・解説・重要度スコアを自動生成。レビュワー機能で低品質記事をフィルタリングし、VPS+systemdタイマーで月700円運用。実装のほぼ全てをClaudeに指示して完成させ、インフラ設定やDNSトラブルシューティングもClaude Code CLIで解決した実践例。
+
+- **ソース**: [Zenn claude](https://zenn.dev/gao0111/articles/5fe1dcedc8c112)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 
