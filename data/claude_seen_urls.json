@@ -555,14 +555,38 @@
     "https://ai-heartland.com/explain/design-md-intro": "2026-04-14",
     "https://the-decoder.com/claude-mythos-can-autonomously-compromise-weakly-defended-enterprise-networks-end-to-end": "2026-04-14",
     "https://the-decoder.com/claude-code-routines-let-ai-fix-bugs-and-review-code-on-autopilot": "2026-04-14",
-    "https://the-decoder.com/claude-mythos-is-a-wake-up-call-for-europes-ai-safety-apparatus": "2026-04-14"
+    "https://the-decoder.com/claude-mythos-is-a-wake-up-call-for-europes-ai-safety-apparatus": "2026-04-14",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sm0vtq/improvements_to_built_with_claude_project": "2026-04-15",
+    "https://www.reddit.com/r/ClaudeAI/comments/1smciwx/me_when_claude_already_wrote_like_3k_lines_of": "2026-04-15",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sm3jlg/claude_had_enough_of_this_user": "2026-04-15",
+    "https://www.reddit.com/r/ClaudeAI/comments/1smgz06/are_we_gonna_look_back_on_mythos_like_this_in_a": "2026-04-15",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sm2yom/all_claude_subs": "2026-04-15",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sm4kto/built_an_antivibecoding_tool_for_claude_code": "2026-04-15",
+    "https://www.reddit.com/r/ClaudeAI/comments/1smay7l/claude_cowork_found_me_a_flat_to_rent_in_london": "2026-04-15",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sm23sp/i_built_a_claude_code_plugin_that_extracts_any": "2026-04-15",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sm8f5y/claude_status_update_elevated_errors_on_claudeai": "2026-04-15",
+    "https://www.reddit.com/r/ClaudeAI/comments/1smb5uf/claude_status_update_elevated_errors_on_claudeai": "2026-04-15",
+    "https://qiita.com/moha0918_/items/0ac1abef9834b3e3dbec": "2026-04-15",
+    "https://qiita.com/taketsuyo/items/d551b29c8e892f8861b2": "2026-04-15",
+    "https://qiita.com/kai_kou/items/70b69c6411a4840b40b9": "2026-04-15",
+    "https://qiita.com/YushiYamamoto/items/62075ffdf312fa9c38a6": "2026-04-15",
+    "https://zenn.dev/chiakidayo/articles/agent-teams-subagent-comparison": "2026-04-15",
+    "https://zenn.dev/xujfcn/articles/claude-api-cheap-guide-2026": "2026-04-15",
+    "https://zenn.dev/galirage/articles/claude-mythos-preview": "2026-04-15",
+    "https://zenn.dev/totsu_ai_lab/articles/claude-desktop-ui-update-2026": "2026-04-15",
+    "https://zenn.dev/asix/articles/16e81ff59f7d3a": "2026-04-15",
+    "https://zenn.dev/shintaroamaike/articles/37663c1f7e881a": "2026-04-15",
+    "https://qiita.com/taketsuyo/items/ce96b2bbac00654ae566": "2026-04-15",
+    "https://qiita.com/toguri/items/571b5ebb7c9243b807f4": "2026-04-15",
+    "https://techcrunch.com/2026/04/14/anthropics-rise-is-giving-some-openai-investors-second-thoughts": "2026-04-15",
+    "https://techcrunch.com/2026/04/14/anthropic-co-founder-confirms-the-company-briefed-the-trump-administration-on-mythos": "2026-04-15"
   },
   "source_penalties": {
-    "Anthropic News": "2026-04-15",
+    "Anthropic News": "2026-04-16",
     "Reddit r/ClaudeAI": "2026-04-03",
     "Zenn claude": "2026-03-25",
     "TechCrunch Claude": "2026-04-15",
     "The Decoder Claude": "2026-04-11",
-    "AI Heartland": "2026-04-14"
+    "AI Heartland": "2026-04-16"
   }
 }
