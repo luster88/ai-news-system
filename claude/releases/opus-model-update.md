@@ -7,7 +7,7 @@ tags:
 - release
 - 新機能
 date: '2026-03-22'
-updated: '2026-04-14'
+updated: '2026-04-16'
 sources:
 - url: https://www.anthropic.com/news/claude-opus-4-6
   title: Announcements Feb 5, 2026 Introducing Claude Opus 4.6 We’re upgrading our
@@ -18,10 +18,26 @@ sources:
   title: 'The Information: Anthropic Preps Opus 4.7 Model, could be released as soon
     as this week'
   date: '2026-04-14'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1sn57af/introducing_claude_opus_47_our_most_capable_opus
+  title: Introducing Claude Opus 4.7, our most capable Opus model yet.
+  date: '2026-04-16'
 ---
 
 
+
 # Opus Model Update
+
+---
+
+## 2026-04-16
+
+### Introducing Claude Opus 4.7, our most capable Opus model yet.
+
+Anthropic が Claude Opus 4.7 をリリース。長時間タスクの精度向上、指示追従の改善、自己検証機能を搭載し、より少ない監視で高難度作業を任せられるようになった。画像認識能力も大幅に向上し、3倍以上の解像度で画像を処理可能となり、インターフェース、スライド、ドキュメント生成の品質が向上。claude.ai、Claude Platform、主要クラウドプラットフォームで本日より利用可能。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1sn57af/introducing_claude_opus_47_our_most_capable_opus)
+- **重要度**: 10/10
+- **タグ**: opus, release, 新機能
 
 ---
 

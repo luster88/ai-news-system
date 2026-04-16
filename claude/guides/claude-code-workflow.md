@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-26'
-updated: '2026-04-15'
+updated: '2026-04-16'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -52,6 +52,9 @@ sources:
 - url: https://qiita.com/taketsuyo/items/ce96b2bbac00654ae566
   title: Claude Codeの新UI、見た目の話じゃない。AI開発が「1人1チャット」から「並列運用」に変わり始めた
   date: '2026-04-15'
+- url: https://zenn.dev/dely_jp/articles/9eb7a1b4d5bb5d
+  title: Claude CodeにPRの見守りを任せたら、次の作業に集中できるようになった
+  date: '2026-04-16'
 ---
 
 
@@ -64,7 +67,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-04-16
+
+### Claude CodeにPRの見守りを任せたら、次の作業に集中できるようになった
+
+Claude Codeのスキル機能を使って、PRマージまでの待ち時間を自動化する仕組みを構築。20分おきにCIステータスとレビューコメントをチェックし、CI失敗時はローカルで再現・修正を試み、レビュー指摘には対応案の下書きを作成。無限ループ防止のため、コミットマーカーや連続失敗時の自動終了機能を実装し、開発者が次の作業に集中できる環境を実現した実践例。
+
+- **ソース**: [Zenn claude](https://zenn.dev/dely_jp/articles/9eb7a1b4d5bb5d)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

@@ -9,7 +9,7 @@ tags:
 - mcp
 - 新機能
 date: '2026-03-25'
-updated: '2026-04-09'
+updated: '2026-04-16'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -29,6 +29,9 @@ sources:
 - url: https://zenn.dev/claush/articles/6bcd60524fccfe
   title: SQLiteからCockroachDBに移行して、AIの記憶が「本物」になった話 —— iphoneアプリ Claush
   date: '2026-04-09'
+- url: https://ai-heartland.com/explain/cognee-ai-memory-guide
+  title: cognee完全ガイド：ナレッジグラフ型AIメモリの仕組みとClaude APIローカル連携・MCP設定手順
+  date: '2026-04-16'
 ---
 
 
@@ -36,7 +39,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-04-16
+
+### cognee完全ガイド：ナレッジグラフ型AIメモリの仕組みとClaude APIローカル連携・MCP設定手順
+
+cogneeは「6行でAIエージェントに長期記憶を与える」GitHubスター15,000超のOSSナレッジエンジン。ベクトルRAGと異なり、ナレッジグラフ＋ベクトル検索＋セマンティックルールでエンティティ間の関係性を保持し、複合クエリに強い。ECLパイプライン（Extract-Cognify-Load）で生データを知識構造へ変換し、グラフDB・ベクトルDBの二重インデックスで格納。Claude APIとのローカル連携やMCP設定により、エージェントの永続的メモリ管理を実現する。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/cognee-ai-memory-guide)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-api, cowork
 
 ---
 

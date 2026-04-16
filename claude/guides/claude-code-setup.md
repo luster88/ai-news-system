@@ -4,12 +4,13 @@ category: guides
 subcategory: claude-code-setup
 tags:
 - claude-code
+- pricing
 - prompt
 - setup
 - windows
 - 新機能
 date: '2026-04-04'
-updated: '2026-04-14'
+updated: '2026-04-16'
 sources:
 - url: https://qiita.com/taiki_i/items/2d75a882e0f3187f6bb8
   title: あなたの CLAUDE.md、ちゃんと機能してますか？作り方から公式プラグインで採点するまでの道のり
@@ -29,12 +30,28 @@ sources:
 - url: https://qiita.com/moha0918_/items/72d4d32fce1b585ddbad
   title: CLAUDE.mdを「とりあえず」で済ませてる人に知ってほしい、指示精度が上がる7つの書き方
   date: '2026-04-14'
+- url: https://ai-heartland.com/explain/what-is-claude-code-2026
+  title: Claude Codeとは？Anthropic公式AIツールの使い方・インストール・料金を完全解説【2026年版】
+  date: '2026-04-16'
 ---
 
 
 
 
+
 # Claude Code Setup
+
+---
+
+## 2026-04-16
+
+### Claude Codeとは？Anthropic公式AIツールの使い方・インストール・料金を完全解説【2026年版】
+
+Claude Codeは、Anthropic公式のターミナルベースAIコーディングツールで、自然言語でコード生成・編集・Git操作・テスト実行を一気通貫で実行できる。従来の補完ツールと異なり「AIとペアプログラミング」するアプローチを採用し、パーミッションシステムで安全性を確保。インストールはnpmで1コマンド、Claude Pro（$20/月）から利用可能で、CLAUDE.md・Hooks・Skillsなどの主要機能を備える。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/what-is-claude-code-2026)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, pricing
 
 ---
 

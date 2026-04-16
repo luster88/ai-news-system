@@ -5,10 +5,12 @@ subcategory: community-discussion
 tags:
 - claude-code
 - cowork
+- opus
 - performance
+- sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-03-25'
+updated: '2026-04-16'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -21,10 +23,26 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s30ilh/wtaf
   title: WTAF?
   date: '2026-03-25'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1sn91or/our_strongest_model_yet
+  title: '"Our Strongest Model Yet"'
+  date: '2026-04-16'
 ---
 
 
+
 # Community Discussion
+
+---
+
+## 2026-04-16
+
+### "Our Strongest Model Yet"
+
+Redditの r/ClaudeAI コミュニティに投稿された「Our Strongest Model Yet（我々の最強モデル）」というタイトルの画像投稿。具体的な内容詳細は本文に含まれていないが、タイトルから新しい強力なClaudeモデルに関する情報を示唆している可能性がある。コミュニティでの議論を促す投稿と思われる。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1sn91or/our_strongest_model_yet)
+- **重要度**: 4/10
+- **タグ**: 新機能, sonnet, opus
 
 ---
 

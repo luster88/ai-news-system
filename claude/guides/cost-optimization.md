@@ -5,11 +5,12 @@ subcategory: cost-optimization
 tags:
 - claude-api
 - claude-code
+- opus
 - performance
 - pricing
 - prompt
 date: '2026-04-03'
-updated: '2026-04-15'
+updated: '2026-04-16'
 sources:
 - url: https://zenn.dev/heki1224/articles/b849cc85a330aa
   title: Claude Codeで”トークン破産”しないためのコスト最適化とコンテキスト防衛術
@@ -17,10 +18,36 @@ sources:
 - url: https://zenn.dev/xujfcn/articles/claude-api-cheap-guide-2026
   title: 【2026年】Claude APIを最安で使う方法：サブスク不要で40%以上節約
   date: '2026-04-15'
+- url: https://qiita.com/moha0918_/items/b004c2f6070ee1c34d85
+  title: Claude Codeのコスト最適化、/costだけで終わる話じゃない。Opus 4.7時代の完全チートシート
+  date: '2026-04-16'
 ---
 
 
+
 # Cost Optimization
+
+---
+
+## 2026-04-16
+
+### Claude Codeのコスト最適化、/costだけで終わる話じゃない。Opus 4.7時代の完全チートシート
+
+Opus 4.7のデフォルトeffort levelがxhighに変更され、トークン消費量が増加。/cost、/stats、statusline機能でのコスト監視、effort level調整（high/medium）、Skill/Subagent frontmatterでの個別最適化、opusplanによるハイブリッド実行、PreToolUse hookでのログフィルタリングなど、実践的なコスト削減テクニックを網羅的に解説。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/b004c2f6070ee1c34d85)
+- **重要度**: 8/10
+- **タグ**: opus, claude-code, performance
+
+---
+
+### Claude Codeのコスト最適化、/costだけで終わる話じゃない。Opus 4.7時代の完全チートシート
+
+Opus 4.7からデフォルトのeffort levelがxhighに変更され、無意識にトークン消費が増加する問題への対処法を解説。/costと/effortコマンドの活用、Skill/Subagent単位でのeffort制御、opusplanモードによるコスト削減、PreToolUseフックでのログフィルタリングなど、実践的なコスト最適化手法を網羅的に紹介している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/b004c2f6070ee1c34d85)
+- **重要度**: 7/10
+- **タグ**: claude-code, opus
 
 ---
 
