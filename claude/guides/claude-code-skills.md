@@ -8,7 +8,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-03-24'
+updated: '2026-04-17'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -16,10 +16,26 @@ sources:
 - url: https://qiita.com/dai_chi/items/0702e3a9f7a487ceaa3e
   title: Claude Codeのスキルが増えすぎた？管理ツールを作る前に知っておきたいフロントマター設定
   date: '2026-03-24'
+- url: https://zenn.dev/bentenweb_fumi/articles/twde0igmoklh
+  title: Claude Codeのスキルファイル分割パターン──「1スキル=1責務」でAIの精度が劇的に変わる
+  date: '2026-04-17'
 ---
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-04-17
+
+### Claude Codeのスキルファイル分割パターン──「1スキル=1責務」でAIの精度が劇的に変わる
+
+Claude CodeのCLAUDE.mdファイルが200行を超えたら分割のサイン。ルーティングテーブルのみ本体に残し、具体的な手順は用途別スキルファイルに分離する「1スキル=1責務」の原則により、LLMの指示遵守率が大幅に向上する。コンテキストウィンドウのSNR（Signal-to-Noise Ratio）を上げることで、複雑な手順の再現性や条件分岐の精度が改善される。
+
+- **ソース**: [Zenn claude](https://zenn.dev/bentenweb_fumi/articles/twde0igmoklh)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt
 
 ---
 

@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-08'
-updated: '2026-04-13'
+updated: '2026-04-17'
 sources:
 - url: https://zenn.dev/shelty/articles/20260408-budget-book-asset-management
   title: MoneyForwardの家計簿データで資産予測を自動化してみた＠Claude
@@ -20,11 +20,27 @@ sources:
 - url: https://qiita.com/saitoko/items/e1c07bfd3e7416cdbe4f
   title: Claude Codeのスケジュール枠は3つだけ——ディスパッチャー方式で何タスクでも回す設計
   date: '2026-04-13'
+- url: https://qiita.com/4q_sano/items/6d2bcfceb4fc2e728204
+  title: 【もうSlackを読むのをやめた】Claude Codeを“AIパートナー化”して朝の情報整理を自動化した話
+  date: '2026-04-17'
 ---
 
 
 
+
 # Automation Workflow
+
+---
+
+## 2026-04-17
+
+### 【もうSlackを読むのをやめた】Claude Codeを“AIパートナー化”して朝の情報整理を自動化した話
+
+Claude Codeを使ってSlackの未読メッセージを自動で要約・整理し、必要な情報だけをDMで受け取るワークフローを構築した事例。朝の情報収集作業を自動化し、AIに「自分に関係ある情報の選別」をさせることで業務効率を改善。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/4q_sano/items/6d2bcfceb4fc2e728204)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 
