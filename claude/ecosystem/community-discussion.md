@@ -10,7 +10,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-04-16'
+updated: '2026-04-18'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -26,11 +26,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sn91or/our_strongest_model_yet
   title: '"Our Strongest Model Yet"'
   date: '2026-04-16'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1soxumn/the_opus_47_experience
+  title: The Opus 4.7 experience
+  date: '2026-04-18'
 ---
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-04-18
+
+### The Opus 4.7 experience
+
+Reddit の r/ClaudeAI コミュニティに投稿された Claude Opus 4.7 に関するユーザー体験の投稿。画像付きの投稿で、Opus の新バージョンに関するコミュニティの反応や議論を含んでいると思われる。具体的な内容は画像のみで、テキスト詳細は不明。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1soxumn/the_opus_47_experience)
+- **重要度**: 4/10
+- **タグ**: opus, 新機能
 
 ---
 

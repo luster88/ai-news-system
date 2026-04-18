@@ -7,10 +7,11 @@ tags:
 - claude-code
 - copilot
 - cowork
+- opus
 - performance
 - pricing
 date: '2026-04-04'
-updated: '2026-04-17'
+updated: '2026-04-18'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -18,10 +19,27 @@ sources:
 - url: https://ai-heartland.com/news/openai-codex-mac-computer-use-update
   title: OpenAI Codex大型アップデート：Mac操作・画像生成・メモリ搭載でClaude Code対抗へ
   date: '2026-04-17'
+- url: https://the-decoder.com/the-myth-of-claude-mythos-crumbles-as-small-open-models-hunt-the-same-cybersecurity-bugs-anthropic-showcased
+  title: The myth of Claude Mythos crumbles as small open models hunt the same cybersecurity
+    bugs Anthropic showcased
+  date: '2026-04-18'
 ---
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-04-18
+
+### The myth of Claude Mythos crumbles as small open models hunt the same cybersecurity bugs Anthropic showcased
+
+Anthropic が高度なサイバーセキュリティ能力を持つとして限定公開している Claude Mythos について、小規模なオープンモデルでも同等の脆弱性発見が可能であることが2つの独立研究で判明。AISLE と Vidoc Security による検証で、FreeBSD NFS バグなど Anthropic が公開したサンプルの大半を、GPT-OSS-20b（36億パラメータ）などの小型モデルが検出できた。Mythos の独占性の根拠が揺らぐ一方、全体的な性能自体は否定されていない。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/the-myth-of-claude-mythos-crumbles-as-small-open-models-hunt-the-same-cybersecurity-bugs-anthropic-showcased)
+- **重要度**: 7/10
+- **タグ**: claude-api, performance, opus
 
 ---
 

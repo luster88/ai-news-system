@@ -5,13 +5,14 @@ subcategory: claude-code-workflow
 tags:
 - claude-code
 - cowork
+- mac
 - mcp
 - performance
 - prompt
 - setup
 - 新機能
 date: '2026-03-26'
-updated: '2026-04-16'
+updated: '2026-04-18'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -55,6 +56,9 @@ sources:
 - url: https://zenn.dev/dely_jp/articles/9eb7a1b4d5bb5d
   title: Claude CodeにPRの見守りを任せたら、次の作業に集中できるようになった
   date: '2026-04-16'
+- url: https://qiita.com/takatein/items/c7cbec541a00c568e345
+  title: 【切り抜き動画作成？！】mlx-whisper × Remotion × Claude Codeで会議録画から 60 秒ハイライト動画を自動生成してみた
+  date: '2026-04-18'
 ---
 
 
@@ -68,7 +72,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-04-18
+
+### 【切り抜き動画作成？！】mlx-whisper × Remotion × Claude Codeで会議録画から 60 秒ハイライト動画を自動生成してみた
+
+mlx-whisper、Remotion、Claude Codeを組み合わせて、会議録画から60秒のハイライト動画を自動生成するパイプラインを構築した事例。Apple Silicon最適化されたWhisperで文字起こしし、Claude Codeでトピック抽出、Remotionで動画合成を行う。M3 Mac 24GBで初回10〜15分、2回目以降2〜5分で処理が完了し、会議終了後すぐに共有可能なハイライト動画を作成できる。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/takatein/items/c7cbec541a00c568e345)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, mac
 
 ---
 

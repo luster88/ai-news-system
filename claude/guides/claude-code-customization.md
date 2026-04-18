@@ -7,8 +7,9 @@ tags:
 - prompt
 - setup
 - vscode
+- 新機能
 date: '2026-03-29'
-updated: '2026-04-09'
+updated: '2026-04-18'
 sources:
 - url: https://zenn.dev/noprogllama/articles/d6a34cce09b66d
   title: AIに人格と記憶を与えたら、常につながる手段が欲しくなって自前のWeb UIを作ることになった
@@ -19,11 +20,27 @@ sources:
 - url: https://qiita.com/s_hiroki/items/307e39f9ed763cb28d6f
   title: Claude Codeが付けるCo-Authored-ByとGenerated with Claude Codeを非表示にする
   date: '2026-04-09'
+- url: https://zenn.dev/ren21/articles/e5eb47c2789b0a
+  title: Claude Code のステータスラインをカスタマイズしてみた
+  date: '2026-04-18'
 ---
 
 
 
+
 # Claude Code Customization
+
+---
+
+## 2026-04-18
+
+### Claude Code のステータスラインをカスタマイズしてみた
+
+Claude Code のステータスラインカスタマイズ方法を解説。Claude と対話するだけで、コンテキスト使用率・レート制限・セッション名などをビジュアル表示できる。jq の代わりに Node.js を使った実装例や、ブロックバーを使った直感的な表示方法を紹介。/statusline スキルで簡単に設定変更可能。
+
+- **ソース**: [Zenn claude](https://zenn.dev/ren21/articles/e5eb47c2789b0a)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 
