@@ -8,7 +8,7 @@ tags:
 - performance
 - setup
 date: '2026-04-04'
-updated: '2026-04-15'
+updated: '2026-04-19'
 sources:
 - url: https://qiita.com/lovanaut/items/15fb6f0703f114000b78
   title: ChatGPTやClaudeからFORMLOVAを触り始める最短ガイド
@@ -16,10 +16,26 @@ sources:
 - url: https://qiita.com/toguri/items/571b5ebb7c9243b807f4
   title: Claude Code で Chrome DevTools MCP と Playwright MCP を同時に使ってフロントエンドを品質チェックする
   date: '2026-04-15'
+- url: https://zenn.dev/tsukulink/articles/ffb7a8ab9899e1
+  title: BugSnagに通知されたエラーの調査をAIに任せる ─ Claude Code × SmartBear MCPの活用例
+  date: '2026-04-19'
 ---
 
 
+
 # Mcp Integration
+
+---
+
+## 2026-04-19
+
+### BugSnagに通知されたエラーの調査をAIに任せる ─ Claude Code × SmartBear MCPの活用例
+
+BugSnagで検出されたエラーをClaude CodeとSmartBear MCPを使って自動分析する実践例。エラー対応の効率化を目的に、スキル機能を活用してコマンド一つで一貫性のある分析レポートを生成する方法を紹介。経験値に依存しないエラー調査の質の向上を実現。
+
+- **ソース**: [Zenn claude](https://zenn.dev/tsukulink/articles/ffb7a8ab9899e1)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, setup
 
 ---
 

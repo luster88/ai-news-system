@@ -8,7 +8,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-04-17'
+updated: '2026-04-19'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -19,11 +19,27 @@ sources:
 - url: https://zenn.dev/bentenweb_fumi/articles/twde0igmoklh
   title: Claude Codeのスキルファイル分割パターン──「1スキル=1責務」でAIの精度が劇的に変わる
   date: '2026-04-17'
+- url: https://qiita.com/kamome_susume/items/41300417840aa107472e
+  title: 【2026年4月更新】Claude Codeの役に立つフロントデザインのskills10選
+  date: '2026-04-19'
 ---
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-04-19
+
+### 【2026年4月更新】Claude Codeの役に立つフロントデザインのskills10選
+
+Claude CodeでAI生成UIの「平均的すぎる」デザイン問題を解決するSkills（スキル）10選を紹介。Anthropic公式のfrontend-designやbaseline-ui、アクセシビリティ対応のfixing-accessibility、VercelのWeb設計ガイドライン検証ツールなど、フロントエンド開発に特化した再利用可能な指示セットを活用することで、Claude Codeの出力品質を大幅に向上させる方法を解説。
+
+- **ソース**: [Qiita claude](https://qiita.com/kamome_susume/items/41300417840aa107472e)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, prompt
 
 ---
 

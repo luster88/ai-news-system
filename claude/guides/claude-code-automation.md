@@ -6,10 +6,11 @@ tags:
 - claude-code
 - cowork
 - mcp
+- prompt
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-04-14'
+updated: '2026-04-19'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -29,13 +30,29 @@ sources:
 - url: https://zenn.dev/gao0111/articles/5fe1dcedc8c112
   title: Claudeと2日でAIニュース自動収集サービスを作って公開した話
   date: '2026-04-14'
+- url: https://qiita.com/okikusan-public/items/02d3c7b8a78836ca1b09
+  title: Claude Code Skills × 投資分析 Vol.4 — ゼロから再設計。マルチAIエージェントが自律的に動く投資アシスタントに生まれ変わった
+  date: '2026-04-19'
 ---
 
 
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-04-19
+
+### Claude Code Skills × 投資分析 Vol.4 — ゼロから再設計。マルチAIエージェントが自律的に動く投資アシスタントに生まれ変わった
+
+Claude Code を使った投資分析システムの進化を記録したシリーズ第4弾。従来のスクリプトベースの自動化から、6つのAIエージェントが役割分担して自律的に動くマルチエージェントオーケストレーションへとゼロから再設計。Agentic AI PatternとAgentic Engineeringを適用し、ルーティング・連鎖実行・自律修正ループを実装。ユーザーの意図に応じてエージェントが自動選択され、直列・並列で連鎖実行することで、複合的な投資判断を人間の介入なしに実現。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/okikusan-public/items/02d3c7b8a78836ca1b09)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 
