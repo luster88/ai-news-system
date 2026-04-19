@@ -28,34 +28,39 @@ SITE_BASE_URL = cfg("site_base_url", "").rstrip("/")
 
 
 CSS = """
-/* ===== Linear-style Design System ===== */
+/* ===== Linear-style Design System (Refined) ===== */
 :root{
-  --bg:#1e1e2e;
-  --surface:#161625;
-  --surface-hover:#252538;
-  --surface-active:#2e2e42;
-  --text-primary:#d4d4d4;
+  --bg:#1a1a27;
+  --surface:#14141f;
+  --surface-hover:#22222f;
+  --surface-active:#2b2b38;
+  --text-primary:#e4e4ea;
   --text-secondary:#9a9ab0;
-  --text-tertiary:#6c6c80;
+  --text-tertiary:#72728a;
   --text-heading:#ffffff;
   --border:rgba(255,255,255,.08);
   --accent:#7b8fff;
-  --accent-hover:#7eb8f7;
+  --accent-hover:#9aa9ff;
   --accent-dim:rgba(123,143,255,.18);
+  --font-sans:"Inter",-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
 body{
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-family:var(--font-sans);
   background:var(--bg);
   color:var(--text-primary);
   line-height:1.5;
   font-size:14px;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  text-rendering:optimizeLegibility;
 }
 a{color:var(--text-primary);text-decoration:none}
 a:hover{color:var(--accent-hover)}
-code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+code,pre{font-family:var(--font-mono)}
 
 /* --- App Shell --- */
 .app{display:flex;flex-direction:column;height:100vh}
@@ -344,14 +349,14 @@ code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 }
 .back-link:hover{color:var(--accent)}
 .article-detail-header{margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--border)}
-.article-detail-title{font-size:24px;font-weight:600;line-height:1.35;color:var(--text-heading)}
-.article-detail-meta{font-size:13px;color:var(--text-tertiary);margin-top:8px}
-.article-body h1,.article-body h2,.article-body h3{margin-top:1.8em;margin-bottom:.4em;line-height:1.35;color:var(--text-heading)}
-.article-body h1{font-size:22px;font-weight:600}
-.article-body h2{font-size:18px;font-weight:600}
-.article-body h3{font-size:16px;font-weight:600}
-.article-body p,.article-body li{color:var(--text-primary);line-height:1.8;margin-bottom:.3em}
-.article-body p+p{margin-top:.6em}
+.article-detail-title{font-size:32px;font-weight:700;line-height:1.22;letter-spacing:-.02em;color:var(--text-heading)}
+.article-detail-meta{font-size:13px;color:var(--text-tertiary);margin-top:10px}
+.article-body h1,.article-body h2,.article-body h3{margin-top:1.8em;margin-bottom:.4em;color:var(--text-heading)}
+.article-body h1{font-size:24px;font-weight:700;line-height:1.25;letter-spacing:-.015em}
+.article-body h2{font-size:22px;font-weight:600;line-height:1.3;letter-spacing:-.01em;padding-bottom:.3em;border-bottom:1px solid var(--border)}
+.article-body h3{font-size:20px;font-weight:600;line-height:1.35;letter-spacing:-.01em}
+.article-body p,.article-body li{color:var(--text-primary);font-size:15px;line-height:1.9;margin-bottom:.3em}
+.article-body p+p{margin-top:.8em}
 .article-body ul,.article-body ol{padding-left:1.4em;margin:.4em 0}
 .article-body hr{border:none;border-top:1px solid var(--border);margin:24px 0}
 @media(max-width:860px){.article-detail{padding:24px 20px}}
@@ -707,6 +712,9 @@ def page_shell(title: str, body_html: str, root_rel: str = ".") -> str:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{html.escape(title)}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="{root_rel}/style.css">
 </head>
 <body class="app">
