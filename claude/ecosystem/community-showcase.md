@@ -4,11 +4,12 @@ category: ecosystem
 subcategory: community-showcase
 tags:
 - claude-code
+- claude-console
 - cowork
 - prompt
 - 新機能
 date: '2026-03-29'
-updated: '2026-03-29'
+updated: '2026-04-20'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6of32/i_am_fully_addicted_to_building_dumb_little_ai
   title: I am fully addicted to building dumb little AI web apps. I love it.
@@ -16,9 +17,25 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6r359/what_is_the_most_impressive_thing_youve_done_or
   title: What is the most impressive thing you’ve done or built with Claude so far?
   date: '2026-03-29'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1squwsy/claude_design_is_amazing_were_cooked
+  title: Claude Design is Amazing! We're cooked!
+  date: '2026-04-20'
 ---
 
+
 # Community Showcase
+
+---
+
+## 2026-04-20
+
+### Claude Design is Amazing! We're cooked!
+
+Reddit ユーザーが Claude Design（デザイン機能）を使ってオペレーティングシステムのUIデザインを依頼したところ、一発で高品質な結果が得られたという報告。AI生成特有の「AIっぽさ」を避けた本格的なデザインが作成できたことに驚きを表している。Claude のデザイン生成能力の高さを示すコミュニティの反応。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1squwsy/claude_design_is_amazing_were_cooked)
+- **重要度**: 4/10
+- **タグ**: 新機能, claude-console, cowork
 
 ---
 

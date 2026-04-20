@@ -6,15 +6,33 @@ tags:
 - claude-code
 - cowork
 - cursor
+- mcp
+- prompt
 date: '2026-04-02'
-updated: '2026-04-02'
+updated: '2026-04-20'
 sources:
 - url: https://ai-heartland.com/ai/gemini/oh-my-gemini
   title: oh-my-gemini：Gemini CLIのマルチエージェント並列実行ツール
   date: '2026-04-02'
+- url: https://zenn.dev/interpark/articles/59108508d7dec0
+  title: AIは役割だけでどこまで本気の議論ができるのか：ツール開発で得た学びと、会議そのものへの気づき
+  date: '2026-04-20'
 ---
 
+
 # Multi Agent Orchestration
+
+---
+
+## 2026-04-20
+
+### AIは役割だけでどこまで本気の議論ができるのか：ツール開発で得た学びと、会議そのものへの気づき
+
+複数AIが多角的に議論するWebUIツールの開発記録。Next.js + MCP構成で、CLAUDE.mdの指示書によるファシリテーター機能を実装。サブエージェント方式（claude -p --agents）を採用し、ベクトル検索導入によるコスト変動（35%悪化→49.5%削減）の実測データを公開。会議の質向上を目指した個人用ツールとして、AIファシリテーターが会議プロセスに与える影響を考察。
+
+- **ソース**: [Zenn claude](https://zenn.dev/interpark/articles/59108508d7dec0)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, prompt
 
 ---
 

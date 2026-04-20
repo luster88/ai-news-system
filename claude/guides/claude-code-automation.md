@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-04-19'
+updated: '2026-04-20'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -33,6 +33,9 @@ sources:
 - url: https://qiita.com/okikusan-public/items/02d3c7b8a78836ca1b09
   title: Claude Code Skills × 投資分析 Vol.4 — ゼロから再設計。マルチAIエージェントが自律的に動く投資アシスタントに生まれ変わった
   date: '2026-04-19'
+- url: https://qiita.com/apoloffice/items/0901269b7ea7e9ef4b66
+  title: Claude Codeに開発を丸投げする方法―PCの前から離れられる環境構築の完全ガイド
+  date: '2026-04-20'
 ---
 
 
@@ -40,7 +43,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-04-20
+
+### Claude Codeに開発を丸投げする方法―PCの前から離れられる環境構築の完全ガイド
+
+Claude Codeを自律的に長時間稼働させる環境構築ガイド。settings.jsonのallowlistによる権限管理、Makefileによるコマンド一元管理、MCP活用によるE2Eテスト自動化など、エージェントが1〜2時間人間の介入なしで実装からPR作成まで完遂できる環境の実現方法を解説。プロンプトでの制約ではなく環境側での安全担保が鍵。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/apoloffice/items/0901269b7ea7e9ef4b66)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, mcp
 
 ---
 
