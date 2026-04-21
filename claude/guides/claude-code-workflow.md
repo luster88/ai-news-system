@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-26'
-updated: '2026-04-18'
+updated: '2026-04-21'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -59,6 +59,9 @@ sources:
 - url: https://qiita.com/takatein/items/c7cbec541a00c568e345
   title: 【切り抜き動画作成？！】mlx-whisper × Remotion × Claude Codeで会議録画から 60 秒ハイライト動画を自動生成してみた
   date: '2026-04-18'
+- url: https://qiita.com/ak-sasaki0919/items/a7278d91733e716b99c3
+  title: 習うより慣れろ ClaudeCodeでプロダクト仕様をまとめてみた
+  date: '2026-04-21'
 ---
 
 
@@ -73,7 +76,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-04-21
+
+### 習うより慣れろ ClaudeCodeでプロダクト仕様をまとめてみた
+
+プロダクトオーナーが Claude Code Desktop を使って、3つの亜種に分かれたプロダクトの仕様差分をまとめた実践記事。Skill 機能を活用して対話式に仕様を整理し、2日間で比較表と画面遷移差分を完成。途中 Desktop 版の保存不具合に遭遇しターミナル版に切り替えたが、隙間時間にチャットで修正指示を出せる効率性を高く評価している。
+
+- **ソース**: [Qiita claude](https://qiita.com/ak-sasaki0919/items/a7278d91733e716b99c3)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

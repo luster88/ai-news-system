@@ -8,7 +8,7 @@ tags:
 - release
 - 新機能
 date: '2026-04-17'
-updated: '2026-04-18'
+updated: '2026-04-21'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1so3k1y/introducing_claude_design_by_anthropic_labs
   title: Introducing Claude Design by Anthropic Labs
@@ -22,10 +22,26 @@ sources:
 - url: https://zenn.dev/taketsuyo/articles/b8e51ff688383c
   title: Claude Designは「デザインAI」じゃない。実は、実装の手前を丸ごと短縮する道具だった
   date: '2026-04-18'
+- url: https://qiita.com/kai_kou/items/70ab993b8e7af075d995
+  title: Claude Design入門 — プロンプトでプロトタイプ・スライドを即生成するAIデザインツール
+  date: '2026-04-21'
 ---
 
 
+
 # Claude Design
+
+---
+
+## 2026-04-21
+
+### Claude Design入門 — プロンプトでプロトタイプ・スライドを即生成するAIデザインツール
+
+2026年4月17日、AnthropicがClaude Designを研究プレビューとして公開。テキストプロンプトのみでプロトタイプ・スライド・ワンページャーを作成でき、Figma株価を7%下落させるほど業界に衝撃を与えた。Claude Codeへのシームレスなハンドオフが可能で、デザインから実装への情報ロスを解消。Pro/Max/Team/Enterpriseプランで追加料金なしで利用可能。
+
+- **ソース**: [Qiita claude](https://qiita.com/kai_kou/items/70ab993b8e7af075d995)
+- **重要度**: 9/10
+- **タグ**: 新機能, claude-code, release
 
 ---
 

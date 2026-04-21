@@ -9,7 +9,7 @@ tags:
 - pricing
 - release
 date: '2026-03-23'
-updated: '2026-04-08'
+updated: '2026-04-21'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -22,11 +22,27 @@ sources:
   title: Meta's Muse Spark is its first frontier model and its first without open
     weights
   date: '2026-04-08'
+- url: https://techcrunch.com/2026/04/21/sam-altman-throws-shade-at-anthropics-cyber-model-mythos-fear-based-marketing
+  title: 'Sam Altman throws shade at Anthropic’s cyber model, Mythos: ‘fear-based
+    marketing’'
+  date: '2026-04-21'
 ---
 
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-04-21
+
+### Sam Altman throws shade at Anthropic’s cyber model, Mythos: ‘fear-based marketing’
+
+OpenAIのサム・アルトマンCEOが、Anthropicの新しいサイバーセキュリティモデル「Mythos」について、「恐怖ベースのマーケティング」だと批判。Anthropicは悪用の懸念からMythosを一部企業のみに限定公開しているが、アルトマンはこれをAIを少数のエリートに独占させる手法だと指摘した。一方で、AI業界全体が誇張された表現で製品を宣伝してきた事実も記事は指摘している。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/04/21/sam-altman-throws-shade-at-anthropics-cyber-model-mythos-fear-based-marketing)
+- **重要度**: 6/10
 
 ---
 

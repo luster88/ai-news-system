@@ -4,11 +4,12 @@ category: guides
 subcategory: claude-code-skills
 tags:
 - claude-code
+- cowork
 - prompt
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-04-19'
+updated: '2026-04-21'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -22,12 +23,28 @@ sources:
 - url: https://qiita.com/kamome_susume/items/41300417840aa107472e
   title: 【2026年4月更新】Claude Codeの役に立つフロントデザインのskills10選
   date: '2026-04-19'
+- url: https://qiita.com/kamome_susume/items/0817c06eb25935216299
+  title: 【保存版】Claude Code時代にエンジニアが身につけるべき能力10選
+  date: '2026-04-21'
 ---
 
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-04-21
+
+### 【保存版】Claude Code時代にエンジニアが身につけるべき能力10選
+
+Claude Code時代にエンジニアが身につけるべき10の能力を解説した記事。AIが実装を担う時代において、問題定義力、設計意図の理解、批判的評価、コンテキスト管理、タスク分解、ドメイン知識などのメタスキルが重要になると主張。「手を動かす力」から「頭を使う力」への重心シフトを強調している。
+
+- **ソース**: [Qiita claude](https://qiita.com/kamome_susume/items/0817c06eb25935216299)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 
