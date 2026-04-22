@@ -5,16 +5,33 @@ subcategory: claude-code-advanced
 tags:
 - claude-code
 - cowork
+- prompt
 - 新機能
 date: '2026-04-08'
-updated: '2026-04-08'
+updated: '2026-04-22'
 sources:
 - url: https://qiita.com/moha0918_/items/9682b1ec8b71e884ec13
   title: 複数のAIが同時に働く仕組み - Agent Teamsで実現するチーム開発の全体像
   date: '2026-04-08'
+- url: https://qiita.com/sugo_mzk/items/30da0a75b55cd7abe7c3
+  title: Claude Code 実践編 — Output Style
+  date: '2026-04-22'
 ---
 
+
 # Claude Code Advanced
+
+---
+
+## 2026-04-22
+
+### Claude Code 実践編 — Output Style
+
+Claude Code の Output Style 機能の実装詳細を解説。npm パッケージの cli.js を解析し、公式ドキュメントに記載のない4つ目のフィールド「force-for-plugin」の存在や、システムプロンプトへの挿入位置が動的領域に配置されるためプロンプトキャッシュの恩恵を受けられないことを明らかにした。CLAUDE.md とは異なり、Output Style は system ロールに直接差し込まれる特殊な機構である。
+
+- **ソース**: [Qiita claude](https://qiita.com/sugo_mzk/items/30da0a75b55cd7abe7c3)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt
 
 ---
 

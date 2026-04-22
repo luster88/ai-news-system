@@ -4,17 +4,35 @@ category: tools
 subcategory: claude-design
 tags:
 - claude-code
+- claude-console
+- prompt
 - setup
 - 新機能
 date: '2026-04-20'
-updated: '2026-04-20'
+updated: '2026-04-22'
 sources:
 - url: https://qiita.com/daisuke-nagata/items/4cd123ed5ffbc275bd5a
   title: 【2026年版】Claude Designで図解を5分で量産する完全ガイド — デザイン不要でQiita記事を格上げ
   date: '2026-04-20'
+- url: https://zenn.dev/s7even_ryo/articles/de87bac96a9b22
+  title: Claude DesignがAIプレゼン資料作成の完成系？使ってみた感想
+  date: '2026-04-22'
 ---
 
+
 # Claude Design
+
+---
+
+## 2026-04-22
+
+### Claude DesignがAIプレゼン資料作成の完成系？使ってみた感想
+
+Anthropic社が2026年4月にリリースしたClaude Designは、Artifacts機能を進化させたAIワークスペース。テキスト指示だけでプレゼン資料やWebプロトタイプを生成でき、ざっくりした指示でも構成からデザインまで「いい感じ」の叩き台を作成。一度出力後も編集や修正が容易で、プロンプトで長文指示が不要な点が評価されている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/s7even_ryo/articles/de87bac96a9b22)
+- **重要度**: 8/10
+- **タグ**: 新機能, claude-console, prompt
 
 ---
 

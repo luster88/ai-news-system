@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-26'
-updated: '2026-04-21'
+updated: '2026-04-22'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -62,6 +62,9 @@ sources:
 - url: https://qiita.com/ak-sasaki0919/items/a7278d91733e716b99c3
   title: 習うより慣れろ ClaudeCodeでプロダクト仕様をまとめてみた
   date: '2026-04-21'
+- url: https://qiita.com/mellowlaunch/items/bdd4b5758a03b40d05a2
+  title: AI共生戦略とSpec駆動 ～ Claude Codeの機能の実行力
+  date: '2026-04-22'
 ---
 
 
@@ -77,7 +80,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-04-22
+
+### AI共生戦略とSpec駆動 ～ Claude Codeの機能の実行力
+
+Claude Codeの実行力とSpec駆動開発の関係を解説した記事。Claude Codeはコードベース全体の構造理解に優れ、ターミナル上でタスクを完遂する実行主体として機能する点を強調。MCPによる外部ツール統合、CLI環境での高速な試行錯誤、構造理解に基づく実行力が特徴。AIを「使い分ける対象」として捉える視点を提示している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/mellowlaunch/items/bdd4b5758a03b40d05a2)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, cowork
 
 ---
 

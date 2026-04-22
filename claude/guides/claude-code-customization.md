@@ -4,12 +4,13 @@ category: guides
 subcategory: claude-code-customization
 tags:
 - claude-code
+- mac
 - prompt
 - setup
 - vscode
 - 新機能
 date: '2026-03-29'
-updated: '2026-04-18'
+updated: '2026-04-22'
 sources:
 - url: https://zenn.dev/noprogllama/articles/d6a34cce09b66d
   title: AIに人格と記憶を与えたら、常につながる手段が欲しくなって自前のWeb UIを作ることになった
@@ -23,12 +24,28 @@ sources:
 - url: https://zenn.dev/ren21/articles/e5eb47c2789b0a
   title: Claude Code のステータスラインをカスタマイズしてみた
   date: '2026-04-18'
+- url: https://qiita.com/hiranuma/items/793b49360d5d814a686f
+  title: Claude Codeのセッション使用率をターミナルに常時表示するstatusLineスクリプトの作り方
+  date: '2026-04-22'
 ---
 
 
 
 
+
 # Claude Code Customization
+
+---
+
+## 2026-04-22
+
+### Claude Codeのセッション使用率をターミナルに常時表示するstatusLineスクリプトの作り方
+
+Claude Codeのstatusline機能を使い、セッション使用率（5時間枠）と週間使用率（7日枠）をターミナル下部にカラー付きプログレスバーで常時表示するスクリプトの実装方法を解説。/statuslineコマンドによる自動生成のほか、macOS標準のPython3を使った手動セットアップ方法も紹介。ANSIカラー対応ターミナルで動作し、APIトークンを消費しない。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/hiranuma/items/793b49360d5d814a686f)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, mac
 
 ---
 
