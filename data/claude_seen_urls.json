@@ -784,14 +784,39 @@
     "https://the-decoder.com/anthropic-manager-hints-that-pro-and-max-plans-are-outgrown-by-todays-claude-workloads": "2026-04-22",
     "https://the-decoder.com/unauthorized-users-breach-anthropics-restricted-mythos-ai-model": "2026-04-22",
     "https://techcrunch.com/2026/04/21/unauthorized-group-has-gained-access-to-anthropics-exclusive-cyber-tool-mythos-report-claims": "2026-04-22",
-    "https://techcrunch.com/2026/04/21/spacex-is-working-with-cursor-and-has-an-option-to-buy-the-startup-for-60-billion": "2026-04-22"
+    "https://techcrunch.com/2026/04/21/spacex-is-working-with-cursor-and-has-an-option-to-buy-the-startup-for-60-billion": "2026-04-22",
+    "https://www.reddit.com/r/ClaudeAI/comments/1stq98j/postmortem_on_recent_claude_code_quality_issues": "2026-04-23",
+    "https://www.reddit.com/r/ClaudeAI/comments/1stozsr/claude_reset_limits_for_everyone": "2026-04-23",
+    "https://www.reddit.com/r/ClaudeAI/comments/1stfoo7/why_does_this_claudemd_file_have_so_many_stars": "2026-04-23",
+    "https://www.reddit.com/r/ClaudeAI/comments/1stqjlp/boris_cherny_creator_of_claude_code_posted": "2026-04-23",
+    "https://www.reddit.com/r/ClaudeAI/comments/1stnn01/my_claude_trying_to_find_out_who_its_competitors": "2026-04-23",
+    "https://www.reddit.com/r/ClaudeAI/comments/1strcoa/claude_code_has_big_problems_and_the_postmortem": "2026-04-23",
+    "https://www.reddit.com/r/ClaudeAI/comments/1stsa24/reminder_opus_46_is_still_the_best_at_long": "2026-04-23",
+    "https://www.reddit.com/r/ClaudeAI/comments/1st1kj9/based_on_a_true_story_im_the_developer": "2026-04-23",
+    "https://www.reddit.com/r/ClaudeAI/comments/1stutgf/holy_shit_i_just_automated_something_i_thought": "2026-04-23",
+    "https://www.reddit.com/r/ClaudeAI/comments/1stjjhd/anthropic_has_surged_to_a_trilliondollar": "2026-04-23",
+    "https://qiita.com/iroirotool/items/33fa34f98dca224446bf": "2026-04-23",
+    "https://qiita.com/tuvy22686/items/efd5e3ba573abb9914d6": "2026-04-23",
+    "https://qiita.com/agdexai/items/6ba0889696a3f7e4911f": "2026-04-23",
+    "https://qiita.com/akiyu0901/items/7d528c2af33c42e3815c": "2026-04-23",
+    "https://zenn.dev/helloworld/articles/dce7eb8033aac7": "2026-04-23",
+    "https://zenn.dev/ai_arai_ally/articles/20260422-1601-claude-code-prompt-caching-api": "2026-04-23",
+    "https://zenn.dev/motomotomo/articles/960898fd4066d2": "2026-04-23",
+    "https://zenn.dev/ai_strategy/articles/014ae83627a611": "2026-04-23",
+    "https://zenn.dev/tyakku/articles/2026-04-21-22-07": "2026-04-23",
+    "https://zenn.dev/awache/articles/312d9520b9fa78": "2026-04-23",
+    "https://qiita.com/CoboMemo/items/c006d34853edbcece44e": "2026-04-23",
+    "https://qiita.com/yurukusa/items/1a11ad1320dd3b98d783": "2026-04-23",
+    "https://qiita.com/kamihork/items/9a938ed04ff35e9e3f9e": "2026-04-23",
+    "https://the-decoder.com/openais-new-trusted-access-program-gives-microsoft-its-most-capable-models-for-cyber-defense": "2026-04-23",
+    "https://the-decoder.com/claude-survey-new-capabilities-beat-speed-as-top-ai-benefit-but-creatives-feel-left-behind": "2026-04-23"
   },
   "source_penalties": {
-    "Anthropic News": "2026-04-23",
+    "Anthropic News": "2026-04-24",
     "Reddit r/ClaudeAI": "2026-04-03",
     "Zenn claude": "2026-03-25",
     "TechCrunch Claude": "2026-04-21",
     "The Decoder Claude": "2026-04-11",
-    "AI Heartland": "2026-04-19"
+    "AI Heartland": "2026-04-24"
   }
 }

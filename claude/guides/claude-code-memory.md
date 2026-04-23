@@ -7,9 +7,10 @@ tags:
 - cowork
 - performance
 - prompt
+- setup
 - 新機能
 date: '2026-03-26'
-updated: '2026-04-02'
+updated: '2026-04-23'
 sources:
 - url: https://zenn.dev/nup/articles/20260326-9a43417f4ffb
   title: Claude Codeに長期記憶を持たせたら、開発壁打ちが激変した話
@@ -17,10 +18,26 @@ sources:
 - url: https://ai-heartland.com/explain/claude-code-3-preserved-tail-relinking
   title: Claude Codeの記憶管理を完全解説 — 3層圧縮とpreserved-tail relinkingの仕組み
   date: '2026-04-02'
+- url: https://zenn.dev/helloworld/articles/dce7eb8033aac7
+  title: Claude Codeに何回言えば覚えるの——CLAUDE.md・auto memory・compact完全ガイド
+  date: '2026-04-23'
 ---
 
 
+
 # Claude Code Memory
+
+---
+
+## 2026-04-23
+
+### Claude Codeに何回言えば覚えるの——CLAUDE.md・auto memory・compact完全ガイド
+
+Claude Codeのメモリ機能の完全ガイド。セッションを跨いでも情報を失わないための3つの保存場所（CLAUDE.md、auto memory、WIP.md）と、compaction（自動圧縮）の仕組みを詳しく解説。CLAUDE.mdはルートに置けば永続化され、auto memoryは自動で好みや教訓を学習し、WIP.mdで作業状態を保存することで、毎回イチから説明し直す問題を解決できる。
+
+- **ソース**: [Zenn claude](https://zenn.dev/helloworld/articles/dce7eb8033aac7)
+- **重要度**: 8/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

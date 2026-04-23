@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-26'
-updated: '2026-04-22'
+updated: '2026-04-23'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -65,6 +65,15 @@ sources:
 - url: https://qiita.com/mellowlaunch/items/bdd4b5758a03b40d05a2
   title: AI共生戦略とSpec駆動 ～ Claude Codeの機能の実行力
   date: '2026-04-22'
+- url: https://qiita.com/akiyu0901/items/7d528c2af33c42e3815c
+  title: 非エンジニアの私が「AIに毎回同じ注意してる」問題を解決したら、作業がぐんと進んだ話
+  date: '2026-04-23'
+- url: https://zenn.dev/motomotomo/articles/960898fd4066d2
+  title: '# 【Drey 開発日誌 #1】アニメーション難しい'
+  date: '2026-04-23'
+- url: https://zenn.dev/ai_strategy/articles/014ae83627a611
+  title: Claude CodeでSEO記事全自動生成エージェントを作った【Google Docs連携】
+  date: '2026-04-23'
 ---
 
 
@@ -81,7 +90,40 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-04-23
+
+### 非エンジニアの私が「AIに毎回同じ注意してる」問題を解決したら、作業がぐんと進んだ話
+
+非エンジニアがClaude Codeで個人開発する際、プロジェクトフォルダに「CLAUDE.md」ファイルを配置してルールを記載することで、AIへの繰り返し指示が不要になり開発速度が4割向上した実体験を紹介。毎回同じ注意をする問題が解消され、手戻りが減少し、作業時間が3日から2日に短縮された。
+
+- **ソース**: [Qiita claude](https://qiita.com/akiyu0901/items/7d528c2af33c42e3815c)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, 新機能
+
+---
+
+### # 【Drey 開発日誌 #1】アニメーション難しい
+
+個人開発iOSアプリ「Drey」の開発日誌。Claude Codeを使ってフラッシュカード機能を実装し、アニメーション調整に苦戦。最終的にテキスト色変化とクロスフェードの組み合わせに落ち着いた。ABC順ソート機能の追加とリファクタリングも実施。Claude Codeとの対話的な開発プロセスで、納得のいくUXを追求できた点を評価している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/motomotomo/articles/960898fd4066d2)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, setup
+
+---
+
+### Claude CodeでSEO記事全自動生成エージェントを作った【Google Docs連携】
+
+Claude CodeとNode.js、Google APIを組み合わせて、キーワード選定から記事生成、Googleドキュメント保存まで全自動で行うSEO記事生成エージェントを構築した事例。CLAUDE.mdとSKILL.mdでスキル定義を管理し、ステップ間の依存関係と承認フローを制御。OAuth 2.0によるGoogle API認証、Windows環境でのzip生成対応、Markdown形式のGoogleドキュメント挿入などの実装ノウハウを共有。非エンジニアでも使えるよう「Kijiru」として公開。
+
+- **ソース**: [Zenn claude](https://zenn.dev/ai_strategy/articles/014ae83627a611)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

@@ -3,6 +3,7 @@ title: Community Discussion
 category: ecosystem
 subcategory: community-discussion
 tags:
+- bugfix
 - claude-code
 - cowork
 - opus
@@ -10,7 +11,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-04-18'
+updated: '2026-04-23'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -29,12 +30,28 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1soxumn/the_opus_47_experience
   title: The Opus 4.7 experience
   date: '2026-04-18'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1stqjlp/boris_cherny_creator_of_claude_code_posted
+  title: Boris Cherny creator of claude code posted post-mortem report of claude
+  date: '2026-04-23'
 ---
 
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-04-23
+
+### Boris Cherny creator of claude code posted post-mortem report of claude
+
+Claude Code の開発者である Boris Cherny が Claude に関するポストモーテム（事後分析）レポートを公開しました。Reddit の ClaudeAI コミュニティで共有され、開発者視点からの技術的な知見や問題点の分析が含まれている可能性があります。詳細な内容は画像ギャラリー形式で提供されています。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1stqjlp/boris_cherny_creator_of_claude_code_posted)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, bugfix
 
 ---
 
