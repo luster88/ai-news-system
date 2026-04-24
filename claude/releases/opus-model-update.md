@@ -7,7 +7,7 @@ tags:
 - release
 - 新機能
 date: '2026-03-22'
-updated: '2026-04-16'
+updated: '2026-04-24'
 sources:
 - url: https://www.anthropic.com/news/claude-opus-4-6
   title: Announcements Feb 5, 2026 Introducing Claude Opus 4.6 We’re upgrading our
@@ -21,11 +21,29 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sn57af/introducing_claude_opus_47_our_most_capable_opus
   title: Introducing Claude Opus 4.7, our most capable Opus model yet.
   date: '2026-04-16'
+- url: https://www.anthropic.com/news/claude-opus-4-7
+  title: Introducing Claude Opus 4.7 Product Apr 16, 2026 Our latest Opus model brings
+    stronger performance across coding, agents, vision, and multi-step tasks, with
+    greater thoroughness and consistency on the work that matters most.
+  date: '2026-04-24'
 ---
 
 
 
+
 # Opus Model Update
+
+---
+
+## 2026-04-24
+
+### Introducing Claude Opus 4.7 Product Apr 16, 2026 Our latest Opus model brings stronger performance across coding, agents, vision, and multi-step tasks, with greater thoroughness and consistency on the work that matters most.
+
+Anthropic が Claude Opus 4.7 を正式リリース。高度なソフトウェアエンジニアリング、特に難易度の高いタスクで Opus 4.6 から大幅に改善。視覚機能が強化され、より高解像度の画像を処理可能に。サイバーセキュリティ用途に対する新しい安全対策を実装し、Cyber Verification Program を開始。API、Amazon Bedrock、Google Cloud Vertex AI、Microsoft Foundry で利用可能で、価格は据え置き。
+
+- **ソース**: [Anthropic News](https://www.anthropic.com/news/claude-opus-4-7)
+- **重要度**: 10/10
+- **タグ**: opus, release, 新機能
 
 ---
 

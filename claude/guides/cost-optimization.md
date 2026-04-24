@@ -10,7 +10,7 @@ tags:
 - pricing
 - prompt
 date: '2026-04-03'
-updated: '2026-04-16'
+updated: '2026-04-24'
 sources:
 - url: https://zenn.dev/heki1224/articles/b849cc85a330aa
   title: Claude Codeで”トークン破産”しないためのコスト最適化とコンテキスト防衛術
@@ -21,11 +21,27 @@ sources:
 - url: https://qiita.com/moha0918_/items/b004c2f6070ee1c34d85
   title: Claude Codeのコスト最適化、/costだけで終わる話じゃない。Opus 4.7時代の完全チートシート
   date: '2026-04-16'
+- url: https://zenn.dev/ruralwritter/articles/b5e90a4883308e
+  title: なぜClaude Codeは「トークンを食いまくる」のか、そしてそれを止める6つの習慣
+  date: '2026-04-24'
 ---
 
 
 
+
 # Cost Optimization
+
+---
+
+## 2026-04-24
+
+### なぜClaude Codeは「トークンを食いまくる」のか、そしてそれを止める6つの習慣
+
+Claude Codeは会話履歴を毎回全て再送信する仕組みのため、セッションが長くなるほどトークン消費が指数関数的に増加する。この記事では、タスクごとにターミナルを分ける、能動的な/compactコマンド使用、必要な部分のみ渡す、CLAUDE.md圧縮、.claudeignore活用、/costでの定期確認という6つの習慣を紹介し、追加ツールなしで1日数ドル、年間1000ドル以上のコスト削減を実現する方法を解説している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/ruralwritter/articles/b5e90a4883308e)
+- **重要度**: 7/10
+- **タグ**: claude-code, performance, pricing
 
 ---
 

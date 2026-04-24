@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-04-20'
+updated: '2026-04-24'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -36,6 +36,9 @@ sources:
 - url: https://qiita.com/apoloffice/items/0901269b7ea7e9ef4b66
   title: Claude Codeに開発を丸投げする方法―PCの前から離れられる環境構築の完全ガイド
   date: '2026-04-20'
+- url: https://qiita.com/Northern_learner/items/8474a40482c72dd09c68
+  title: AI駆動開発のための CLAUDE.md 設計パターン — 実運用で磨いた5つの型
+  date: '2026-04-24'
 ---
 
 
@@ -44,7 +47,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-04-24
+
+### AI駆動開発のための CLAUDE.md 設計パターン — 実運用で磨いた5つの型
+
+Claude Code で使う CLAUDE.md の実運用設計パターンを5つ紹介。一般論への収斂を防ぐための「ユーザー仮説優先ルール」、自己批判による品質向上、セッションログの git 管理による意思決定の再現性確保、時刻情報の自動取得による判断ミス防止、主観を残す記録フォーマットなど、AIの思考プロセスそのものを制御する設計手法を解説。
+
+- **ソース**: [Qiita claude](https://qiita.com/Northern_learner/items/8474a40482c72dd09c68)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

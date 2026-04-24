@@ -8,7 +8,7 @@ tags:
 - release
 - 新機能
 date: '2026-04-17'
-updated: '2026-04-21'
+updated: '2026-04-24'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1so3k1y/introducing_claude_design_by_anthropic_labs
   title: Introducing Claude Design by Anthropic Labs
@@ -25,11 +25,30 @@ sources:
 - url: https://qiita.com/kai_kou/items/70ab993b8e7af075d995
   title: Claude Design入門 — プロンプトでプロトタイプ・スライドを即生成するAIデザインツール
   date: '2026-04-21'
+- url: https://www.anthropic.com/news/claude-design-anthropic-labs
+  title: Product Apr 17, 2026 Introducing Claude Design by Anthropic Labs Today, we’re
+    launching Claude Design, a new Anthropic Labs product that lets you collaborate
+    with Claude to create polished visual work like designs, prototypes, slides, one-pagers,
+    and more.
+  date: '2026-04-24'
 ---
 
 
 
+
 # Claude Design
+
+---
+
+## 2026-04-24
+
+### Product Apr 17, 2026 Introducing Claude Design by Anthropic Labs Today, we’re launching Claude Design, a new Anthropic Labs product that lets you collaborate with Claude to create polished visual work like designs, prototypes, slides, one-pagers, and more.
+
+Anthropic が Claude Design を発表。Claude Opus 4.7 を搭載し、デザイン、プロトタイプ、スライド、資料などのビジュアル制作を Claude と協働できる新製品。Pro/Max/Team/Enterprise 向けに段階的に展開中。デザイナーは幅広い探索が可能になり、非デザイナーもビジュアル作品を制作できる。会話、インラインコメント、スライダーで調整し、デザインシステムの自動適用にも対応。
+
+- **ソース**: [Anthropic News](https://www.anthropic.com/news/claude-design-anthropic-labs)
+- **重要度**: 10/10
+- **タグ**: 新機能, opus, release
 
 ---
 

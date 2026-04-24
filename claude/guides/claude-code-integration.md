@@ -5,16 +5,33 @@ subcategory: claude-code-integration
 tags:
 - claude-code
 - cowork
+- mcp
 - prompt
 date: '2026-04-02'
-updated: '2026-04-02'
+updated: '2026-04-24'
 sources:
 - url: https://zenn.dev/caphtech/articles/feed-curator-ai-rss-with-claude-code
   title: Claude CodeでAI RSSリーダーを作ったら、その日にInoreaderを解約した
   date: '2026-04-02'
+- url: https://qiita.com/Tadashi_Kudo/items/c35c0aaed00878d88b05
+  title: ObsidianとClaude Codeで作る「第二の脳」——Vault自動管理の全体設計
+  date: '2026-04-24'
 ---
 
+
 # Claude Code Integration
+
+---
+
+## 2026-04-24
+
+### ObsidianとClaude Codeで作る「第二の脳」——Vault自動管理の全体設計
+
+ObsidianとClaude Codeを組み合わせ、AIエージェントが自動的にVaultを管理する「第二の脳」システムの設計を紹介。CLAUDE.mdによる行動ルール明文化、MEMORY.mdでの状態永続化、scheduled-tasksによる定期メンテ自動化、ベクトル検索MCPによる概念検索、Gitによる変更履歴管理の5つの要素で構成される。AIに整理・検索・連携を任せることで、ノート作成に集中できる環境を実現する。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Tadashi_Kudo/items/c35c0aaed00878d88b05)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, cowork
 
 ---
 
