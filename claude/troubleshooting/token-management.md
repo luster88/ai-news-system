@@ -4,15 +4,34 @@ category: troubleshooting
 subcategory: token-management
 tags:
 - claude-code
+- claude-console
+- prompt
+- 新機能
 date: '2026-04-19'
-updated: '2026-04-19'
+updated: '2026-04-25'
 sources:
 - url: https://qiita.com/megmogmog1965/items/575f7c5cbf16c0928401
   title: Claude Code のセッション、コンテキストサイズとトークン消費量の関係性
   date: '2026-04-19'
+- url: https://qiita.com/monakai/items/8a7721f4f6bef54707da
+  title: 素人が一人でゲーム開発を始めて、何度も失敗した話 ②コンテキスト量なんて概念はありませんでした
+  date: '2026-04-25'
 ---
 
+
 # Token Management
+
+---
+
+## 2026-04-25
+
+### 素人が一人でゲーム開発を始めて、何度も失敗した話 ②コンテキスト量なんて概念はありませんでした
+
+Claude のプロジェクト機能でゲーム開発を試みた初心者が、手順欄に大量の情報を詰め込んだ結果、週間制限を急速に消費してしまった失敗談。チャット間参照や手順欄のセクション分けでは解決せず、AI はトークン節約よりも精度向上を優先する傾向があることを学んだ。最終的に手順欄を最小限に削減し、トークン管理の重要性を体感した。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/monakai/items/8a7721f4f6bef54707da)
+- **重要度**: 6/10
+- **タグ**: claude-console, prompt, 新機能
 
 ---
 

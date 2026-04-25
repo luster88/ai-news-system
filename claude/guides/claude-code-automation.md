@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-04-24'
+updated: '2026-04-25'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -39,6 +39,9 @@ sources:
 - url: https://qiita.com/Northern_learner/items/8474a40482c72dd09c68
   title: AI駆動開発のための CLAUDE.md 設計パターン — 実運用で磨いた5つの型
   date: '2026-04-24'
+- url: https://qiita.com/kotaro_ai_lab/items/119901d60f34e07da801
+  title: SwiftData × Claude Code で永続化層を設計する — @Model設計からマイグレーションまで実務で詰まらないための完全ガイド
+  date: '2026-04-25'
 ---
 
 
@@ -48,7 +51,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-04-25
+
+### SwiftData × Claude Code で永続化層を設計する — @Model設計からマイグレーションまで実務で詰まらないための完全ガイド
+
+SwiftDataを使った永続化層の実務的な設計ガイド。Claude Codeを活用し、@Modelのデフォルト値設定、リレーションシップのdeleteRule指定、VersionedSchemaによるマイグレーション対応など、実務で詰まりやすいポイントを網羅的に解説。CLAUDE.mdによる設計規約の事前共有と、具体的なプロンプト例も提示している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kotaro_ai_lab/items/119901d60f34e07da801)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

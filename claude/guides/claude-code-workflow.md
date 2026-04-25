@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-26'
-updated: '2026-04-23'
+updated: '2026-04-25'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -74,6 +74,9 @@ sources:
 - url: https://zenn.dev/ai_strategy/articles/014ae83627a611
   title: Claude CodeでSEO記事全自動生成エージェントを作った【Google Docs連携】
   date: '2026-04-23'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1sv852q/claude_code_cheat_sheet_after_6_months_of_daily
+  title: Claude Code cheat sheet after 6 months of daily use
+  date: '2026-04-25'
 ---
 
 
@@ -91,7 +94,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-04-25
+
+### Claude Code cheat sheet after 6 months of daily use
+
+Claude Code を6ヶ月間使用したユーザーによる実践的なチートシート。スキル作成による反復作業の自動化、@記法によるファイル直接参照、!による直接コマンド実行、CLAUDE.mdの簡潔化（200行以下推奨）、AGENTS.mdの活用による設定のポータビリティ向上など、日常的な使用で培われたベストプラクティスを共有している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1sv852q/claude_code_cheat_sheet_after_6_months_of_daily)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 
