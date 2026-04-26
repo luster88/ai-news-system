@@ -2348,5 +2348,77 @@
       "total_items": 25,
       "active_penalties": 13
     }
+  },
+  "2026-04-26": {
+    "timestamp": "2026-04-26T16:52:06.603231+00:00",
+    "elapsed_seconds": 263.4,
+    "collection": {
+      "total_raw": 162,
+      "total_new": 72,
+      "total_seen": 90,
+      "total_penalized": 22,
+      "by_source": {
+        "OpenAI News": 8,
+        "Anthropic News": 6,
+        "Google DeepMind Blog": 4,
+        "The Verge AI": 6,
+        "TechCrunch AI": 8,
+        "Google AI Blog": 6,
+        "The Decoder": 6,
+        "Product Hunt": 6,
+        "Simon Willison Blog": 6,
+        "MIT Technology Review AI": 6,
+        "Import AI": 0,
+        "ITmedia AI+": 8,
+        "Impress Watch": 6,
+        "Ledge.ai": 5,
+        "AI Heartland": 6,
+        "GIGAZINE": 3,
+        "Publickey": 2,
+        "ERNIE Blog": 6,
+        "MiniMax News": 6,
+        "36Kr AI": 6,
+        "KrASIA": 6,
+        "量子位 (QbitAI)": 6,
+        "IT之家": 4,
+        "Qiita AI": 3,
+        "Zenn AI": 7,
+        "nyosegawa blog": 3,
+        "Reddit r/LocalLLaMA": 6,
+        "arXiv cs.AI": 0,
+        "arXiv cs.LG": 0,
+        "Hugging Face Blog": 6,
+        "Google Research Blog": 5,
+        "Reddit r/MachineLearning": 6
+      },
+      "sources_zero": [
+        "Import AI",
+        "arXiv cs.AI",
+        "arXiv cs.LG"
+      ]
+    },
+    "body_fetch": {
+      "total": 45,
+      "success": 33,
+      "empty": 12,
+      "skipped": 5,
+      "success_rate": 0.73
+    },
+    "summarization": {
+      "selected": 25,
+      "tentative_count": 0,
+      "parse_failure_count": 0,
+      "importance_distribution": {
+        "1-2": 0,
+        "3-4": 4,
+        "5-6": 12,
+        "7-8": 9,
+        "9-10": 0
+      }
+    },
+    "output": {
+      "total_items": 25,
+      "active_penalties": 17
+    }
   }
 }
