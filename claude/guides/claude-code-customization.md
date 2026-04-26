@@ -10,7 +10,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-29'
-updated: '2026-04-22'
+updated: '2026-04-26'
 sources:
 - url: https://zenn.dev/noprogllama/articles/d6a34cce09b66d
   title: AIに人格と記憶を与えたら、常につながる手段が欲しくなって自前のWeb UIを作ることになった
@@ -27,13 +27,29 @@ sources:
 - url: https://qiita.com/hiranuma/items/793b49360d5d814a686f
   title: Claude Codeのセッション使用率をターミナルに常時表示するstatusLineスクリプトの作り方
   date: '2026-04-22'
+- url: https://zenn.dev/hrmtz/articles/8fb837b9cfac57
+  title: Claude Code に自分の癖を治させる — Hook + 会話ログ mining で N=1 alignment
+  date: '2026-04-26'
 ---
 
 
 
 
 
+
 # Claude Code Customization
+
+---
+
+## 2026-04-26
+
+### Claude Code に自分の癖を治させる — Hook + 会話ログ mining で N=1 alignment
+
+Claude Codeの繰り返しルール違反を解決する手法。会話ログから「ユーザー修正直前のClaude発話パターン」を抽出し、hookでcontext注入することで次回同じパターン時に自己修正させる。memory fileの限界をstructural railでbypassするdeployment-time alignment手法で、bash+jq+settings.json編集のみで実装可能。
+
+- **ソース**: [Zenn claude](https://zenn.dev/hrmtz/articles/8fb837b9cfac57)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, 新機能
 
 ---
 
