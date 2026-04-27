@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-26'
-updated: '2026-04-25'
+updated: '2026-04-27'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -77,6 +77,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sv852q/claude_code_cheat_sheet_after_6_months_of_daily
   title: Claude Code cheat sheet after 6 months of daily use
   date: '2026-04-25'
+- url: https://qiita.com/YujiNaramoto/items/ec9431ad253cac6d4b10
+  title: なぜClaude Code Agentのsubagentを4分業させたか — 採用AI受託案件で並列運用した検証
+  date: '2026-04-27'
 ---
 
 
@@ -95,7 +98,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-04-27
+
+### なぜClaude Code Agentのsubagentを4分業させたか — 採用AI受託案件で並列運用した検証
+
+Claude Code AgentのTask toolを用いて、architect・implementer・reviewer・test-writerの4種類の専門subagentに分業させた受託案件での検証記事。役割分業によるトークン消費・実行速度・統合コストを実測し、「並列化=高速化」ではなく「統合可能な単位への分解」が重要であることを実証。tools制限による逸脱防止、ファイル境界分析と統合フロー設計の必要性を解説。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/YujiNaramoto/items/ec9431ad253cac6d4b10)
+- **重要度**: 7/10
+- **タグ**: claude-code, performance
 
 ---
 

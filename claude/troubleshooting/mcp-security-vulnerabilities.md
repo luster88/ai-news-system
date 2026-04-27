@@ -4,16 +4,34 @@ category: troubleshooting
 subcategory: mcp-security-vulnerabilities
 tags:
 - bugfix
+- claude-code
 - mcp
+- prompt
 date: '2026-04-06'
-updated: '2026-04-06'
+updated: '2026-04-27'
 sources:
 - url: https://qiita.com/emi_ndk/items/c3b99612ec044e5d612e
   title: 【緊急警告】MCPサーバーが60日で30件のCVE！Azure脆弱性は「認証ゼロ」でCVSS 9.1
   date: '2026-04-06'
+- url: https://qiita.com/kix/items/3bb2bdc5830cc1bd0a58
+  title: WebSearch MCPのセキュリティリスクと対策 — allowlist/denylistによるドメイン制御
+  date: '2026-04-27'
 ---
 
+
 # Mcp Security Vulnerabilities
+
+---
+
+## 2026-04-27
+
+### WebSearch MCPのセキュリティリスクと対策 — allowlist/denylistによるドメイン制御
+
+WebSearch MCPは外部Webコンテンツを取得してLLMに渡すため、間接プロンプトインジェクションのリスクがある。Claude CodeのWebSearchツールはallowed_domains/blocked_domainsでドメイン制御が可能（同時指定不可）。Perplexity MCPはsearch_domain_filterで最大20ドメインを制御でき、mcp-filterプロキシを使えばツールレベルの制御も追加できる。allowlistによる「デフォルト全拒否、必要なものだけ許可」が最も安全な運用方法だが、コンテンツレベルの攻撃は完全には防げないため注意が必要。
+
+- **ソース**: [Qiita claude](https://qiita.com/kix/items/3bb2bdc5830cc1bd0a58)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code, prompt
 
 ---
 
