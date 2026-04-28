@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-04-25'
+updated: '2026-04-28'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -42,6 +42,9 @@ sources:
 - url: https://qiita.com/kotaro_ai_lab/items/119901d60f34e07da801
   title: SwiftData × Claude Code で永続化層を設計する — @Model設計からマイグレーションまで実務で詰まらないための完全ガイド
   date: '2026-04-25'
+- url: https://qiita.com/JUMP_IN/items/ad519ebd526a633af70d
+  title: AI アシスタントの設定ファイルに最初に書いておく 5 行 — CLAUDE.md 最小テンプレ
+  date: '2026-04-28'
 ---
 
 
@@ -52,7 +55,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-04-28
+
+### AI アシスタントの設定ファイルに最初に書いておく 5 行 — CLAUDE.md 最小テンプレ
+
+Claude Code など AI アシスタントの設定ファイル (CLAUDE.md) に記載すべき最小限の 5 つのルールをテンプレート化した記事。「実装前に必ず計画」「曖昧な指示は確認」「設計提案時は反論もセット」「計測方法を示す」「仕様と実走の区別」の 5 項目を定義することで、毎セッション同じ前提を説明し直す手間を省き、AI の暴走や誤解を防ぐ。ChatGPT や Gemini にも移植可能。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/JUMP_IN/items/ad519ebd526a633af70d)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

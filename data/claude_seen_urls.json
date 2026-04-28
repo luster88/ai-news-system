@@ -919,14 +919,40 @@
     "https://qiita.com/yurukusa/items/ddc0c39f935cc7b1bc64": "2026-04-27",
     "https://qiita.com/YujiNaramoto/items/ec9431ad253cac6d4b10": "2026-04-27",
     "https://ai-heartland.com/explain/windsurf-ide-cascade-codeium-review": "2026-04-27",
-    "https://ai-heartland.com/security/pasteguard-llm-privacy-proxy": "2026-04-27"
+    "https://ai-heartland.com/security/pasteguard-llm-privacy-proxy": "2026-04-27",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sy7rry/talkie_a_13b_llm_trained_only_on_pre1931_text": "2026-04-28",
+    "https://www.reddit.com/r/ClaudeAI/comments/1syfl97/your_claude_code_project_dashboard_is_now_on_the": "2026-04-28",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sy1hyb/claude_has_made_me_excited_to_work": "2026-04-28",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sy49oi/claude_now_connects_to_blender": "2026-04-28",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sy8k22/claude_status_update_claudeai_unavailable_on": "2026-04-28",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sy8wmx/claude_status_update_claudeai_unavailable_and": "2026-04-28",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sy31hr/built_a_business_this_weekend_im_scared": "2026-04-28",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sxzlh6/pullmd_gave_claude_code_an_mcp_server_so_it_stops": "2026-04-28",
+    "https://www.reddit.com/r/ClaudeAI/comments/1sybpya/compared_11_popular_claude_code_workflow_systems": "2026-04-28",
+    "https://qiita.com/moha0918_/items/fbf4e1c6ed0629c2c248": "2026-04-28",
+    "https://qiita.com/ysky24/items/0256a6dcc59ecdd4074d": "2026-04-28",
+    "https://qiita.com/lumichy/items/a920ad8960a517182e88": "2026-04-28",
+    "https://qiita.com/tai0921/items/ebf025bfdce6935f6325": "2026-04-28",
+    "https://zenn.dev/enaga7561/articles/3bd55b1def1e48": "2026-04-28",
+    "https://zenn.dev/lumichy/articles/free-llm-providers-agent-2026": "2026-04-28",
+    "https://zenn.dev/oreguchi/articles/bf6ef30d916552": "2026-04-28",
+    "https://zenn.dev/megaphone_tokyo/articles/346a091cc9b8a6": "2026-04-28",
+    "https://zenn.dev/76hata/articles/ai-agent-db-deletion-incidents-safety": "2026-04-28",
+    "https://zenn.dev/bentenweb_fumi/articles/ucvoaiy8wi09": "2026-04-28",
+    "https://qiita.com/JUMP_IN/items/ad519ebd526a633af70d": "2026-04-28",
+    "https://qiita.com/masa_ClaudeCodeLab/items/8fc7933ea6f6f77d79fc": "2026-04-28",
+    "https://qiita.com/daisuke-nagata/items/437f92a3210fbfa99e62": "2026-04-28",
+    "https://the-decoder.com/researchers-find-ai-text-is-making-the-internet-more-uniform-and-weirdly-cheerful": "2026-04-28",
+    "https://the-decoder.com/google-signs-ai-deal-with-the-pentagon-ignoring-protest-from-over-600-employees": "2026-04-28",
+    "https://the-decoder.com/openai-misses-revenue-targets-as-anthropic-and-google-close-in": "2026-04-28",
+    "https://techcrunch.com/2026/04/28/google-expands-pentagons-access-to-its-ai-after-anthropics-refusal": "2026-04-28"
   },
   "source_penalties": {
-    "Anthropic News": "2026-04-28",
+    "Anthropic News": "2026-04-29",
     "Reddit r/ClaudeAI": "2026-04-03",
     "Zenn claude": "2026-03-25",
     "TechCrunch Claude": "2026-04-28",
     "The Decoder Claude": "2026-04-11",
-    "AI Heartland": "2026-04-24"
+    "AI Heartland": "2026-04-29"
   }
 }

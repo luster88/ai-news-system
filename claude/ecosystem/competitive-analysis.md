@@ -10,8 +10,9 @@ tags:
 - opus
 - performance
 - pricing
+- 新機能
 date: '2026-04-04'
-updated: '2026-04-20'
+updated: '2026-04-28'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -29,12 +30,28 @@ sources:
 - url: https://the-decoder.com/google-builds-elite-team-to-close-the-coding-gap-with-anthropic
   title: Google builds elite team to close the coding gap with Anthropic
   date: '2026-04-20'
+- url: https://qiita.com/tai0921/items/ebf025bfdce6935f6325
+  title: AIが「攻撃側」に回る前に — GPT-5.4-CyberとMythosが切り開くサイバーセキュリティAIの次の局面
+  date: '2026-04-28'
 ---
 
 
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-04-28
+
+### AIが「攻撃側」に回る前に — GPT-5.4-CyberとMythosが切り開くサイバーセキュリティAIの次の局面
+
+OpenAIのGPT-5.4-CyberとAnthropicのMythosという2つのサイバーセキュリティ特化AIモデルが2026年4月に相次いで発表された。両社は「能力制限ではなくアクセス制御」という共通アプローチを採用し、認証済みのセキュリティ研究者や企業に限定公開する方針。SOCアナリストのトリアージ自動化やCI/CDパイプラインでの脆弱性スキャンなど実務防御への活用が期待される一方、悪意ある利用者への漏洩リスクや誤検知の問題も指摘されている。
+
+- **ソース**: [Qiita claude](https://qiita.com/tai0921/items/ebf025bfdce6935f6325)
+- **重要度**: 7/10
+- **タグ**: 新機能, opus, performance
 
 ---
 

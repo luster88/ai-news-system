@@ -9,7 +9,7 @@ tags:
 - pricing
 - release
 date: '2026-03-23'
-updated: '2026-04-21'
+updated: '2026-04-28'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -26,12 +26,28 @@ sources:
   title: 'Sam Altman throws shade at Anthropic’s cyber model, Mythos: ‘fear-based
     marketing’'
   date: '2026-04-21'
+- url: https://the-decoder.com/openai-misses-revenue-targets-as-anthropic-and-google-close-in
+  title: OpenAI misses revenue targets as Anthropic and Google close in
+  date: '2026-04-28'
 ---
 
 
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-04-28
+
+### OpenAI misses revenue targets as Anthropic and Google close in
+
+OpenAIが2026年第1四半期の内部収益目標とユーザー成長目標を未達成。AnthropicとGoogleの急成長が主因で、特にAnthropicはコーディングと企業市場でシェアを奪っている。同時に約6000億ドルのデータセンター支出をめぐりCEOとCFO間で内部対立が発生。2026年の250億ドルのキャッシュバーン予測に対し収益目標は300億ドル。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/openai-misses-revenue-targets-as-anthropic-and-google-close-in)
+- **重要度**: 8/10
+- **タグ**: pricing, cowork
 
 ---
 
