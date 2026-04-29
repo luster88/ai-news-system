@@ -6,15 +6,32 @@ tags:
 - claude-code
 - cowork
 - mcp
+- setup
 date: '2026-03-24'
-updated: '2026-03-24'
+updated: '2026-04-29'
 sources:
 - url: https://qiita.com/taketsuyo/items/f47b120668149e9ee396
   title: Claudeが“スマホから仕事を投げる相棒”になった日。デスクワークが消えるというより、確認作業だけが人間に残る感じがする
   date: '2026-03-24'
+- url: https://qiita.com/stephen_appy/items/8bcaf76f414581614737
+  title: Claude Coworkと一緒にQiita API v2のBashスクリプトを作ってみた
+  date: '2026-04-29'
 ---
 
+
 # Claude Cowork Workflow
+
+---
+
+## 2026-04-29
+
+### Claude Coworkと一緒にQiita API v2のBashスクリプトを作ってみた
+
+Claude Coworkを使ってQiita API v2を呼び出すBashスクリプトライブラリを作成した実践記事。自然言語で指示を出すだけでAPIを実行でき、設計の相談から実装、検証まで一連のプロセスをClaudeと協力して進めた。外部通信設定の変更が必要で、削除系APIは安全性のため除外している。
+
+- **ソース**: [Qiita claude](https://qiita.com/stephen_appy/items/8bcaf76f414581614737)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, cowork
 
 ---
 

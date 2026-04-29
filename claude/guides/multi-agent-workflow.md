@@ -4,17 +4,35 @@ category: guides
 subcategory: multi-agent-workflow
 tags:
 - claude-code
+- cowork
+- cursor
 - prompt
 - 新機能
 date: '2026-03-29'
-updated: '2026-03-29'
+updated: '2026-04-29'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6jouf/anthropic_shares_how_to_make_claude_code_better
   title: Anthropic shares how to make Claude code better with a harness
   date: '2026-03-29'
+- url: https://qiita.com/Tadashi_Kudo/items/ce29e76f94d3a0b64dac
+  title: Claude / Codex / Cursor を「中立層」で束ねる：AI-AGENT.md 設計と adapter pattern
+  date: '2026-04-29'
 ---
 
+
 # Multi Agent Workflow
+
+---
+
+## 2026-04-29
+
+### Claude / Codex / Cursor を「中立層」で束ねる：AI-AGENT.md 設計と adapter pattern
+
+複数のAIコーディングエージェント（Claude Code、Codex CLI、Cursor）を併用する際に、共通ルールの重複管理問題をAdapter Patternで解決する設計手法を解説。中立層のAI-AGENT.mdを正本とし、各ランタイム固有の差分だけを個別ファイルに記述することで、DRY原則を保ちながらルールの一元管理を実現。Hexagonal Architectureの発想をAIエージェント運用に適用した実践的アプローチ。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Tadashi_Kudo/items/ce29e76f94d3a0b64dac)
+- **重要度**: 7/10
+- **タグ**: claude-code, cursor, cowork
 
 ---
 

@@ -7,10 +7,11 @@ tags:
 - pricing
 - prompt
 - setup
+- vscode
 - windows
 - 新機能
 date: '2026-04-04'
-updated: '2026-04-16'
+updated: '2026-04-29'
 sources:
 - url: https://qiita.com/taiki_i/items/2d75a882e0f3187f6bb8
   title: あなたの CLAUDE.md、ちゃんと機能してますか？作り方から公式プラグインで採点するまでの道のり
@@ -33,13 +34,29 @@ sources:
 - url: https://ai-heartland.com/explain/what-is-claude-code-2026
   title: Claude Codeとは？Anthropic公式AIツールの使い方・インストール・料金を完全解説【2026年版】
   date: '2026-04-16'
+- url: https://zenn.dev/linkedge/articles/27c38cdd9bedc6
+  title: 【Claude Code】CLAUDE.md・skills・agents を整備して開発体験が劇的に変わった話
+  date: '2026-04-29'
 ---
 
 
 
 
 
+
 # Claude Code Setup
+
+---
+
+## 2026-04-29
+
+### 【Claude Code】CLAUDE.md・skills・agents を整備して開発体験が劇的に変わった話
+
+Claude Code の開発体験を向上させるため、CLAUDE.md・skills・agents などのファイル・ディレクトリを整備した実践記事。プロジェクト環境や技術スタックを事前に定義することで、的外れな提案や毎回の説明が不要になり、開発効率が劇的に改善。新入社員のオンボーディングと同様、Claude Code にも「育成」が必要だという知見を共有している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/linkedge/articles/27c38cdd9bedc6)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, vscode
 
 ---
 

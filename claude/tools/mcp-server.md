@@ -7,9 +7,10 @@ tags:
 - claude-code
 - cowork
 - mcp
+- setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-04-16'
+updated: '2026-04-29'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -32,6 +33,9 @@ sources:
 - url: https://ai-heartland.com/explain/cognee-ai-memory-guide
   title: cognee完全ガイド：ナレッジグラフ型AIメモリの仕組みとClaude APIローカル連携・MCP設定手順
   date: '2026-04-16'
+- url: https://ai-heartland.com/tool/browserbase-skills-claude-code-browser-automation
+  title: Browserbase Skills徹底解説｜Claude Codeにブラウザ自動化10機能を授けるスキル集
+  date: '2026-04-29'
 ---
 
 
@@ -40,7 +44,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-04-29
+
+### Browserbase Skills徹底解説｜Claude Codeにブラウザ自動化10機能を授けるスキル集
+
+Browserbase SkillsはClaude Codeにブラウザ自動化機能を追加するスキル集。npx一発でインストール可能で、10種類のスキル（browser/browser-trace/ui-test等）を提供。ローカルChromeとBrowserbaseクラウドの両方で動作し、CDPトレース・スクリーンショット・DOMスナップショットによる観測機能を備える。skills.shレジストリに公式登録され、GitHub Stars 595を獲得している。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/browserbase-skills-claude-code-browser-automation)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

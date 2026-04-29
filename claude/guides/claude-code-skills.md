@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-04-21'
+updated: '2026-04-29'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -26,13 +26,29 @@ sources:
 - url: https://qiita.com/kamome_susume/items/0817c06eb25935216299
   title: 【保存版】Claude Code時代にエンジニアが身につけるべき能力10選
   date: '2026-04-21'
+- url: https://qiita.com/asahide/items/53cfdab083905fedeed5
+  title: oracle/skills を Claude Skill に登録すると AWR 解析で何が変わるか — Haiku/Sonnet × Skill有無の4パターン比較
+  date: '2026-04-29'
 ---
 
 
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-04-29
+
+### oracle/skills を Claude Skill に登録すると AWR 解析で何が変わるか — Haiku/Sonnet × Skill有無の4パターン比較
+
+Oracle公式のskillsリポジトリをClaude Skillに登録し、AWRレポート解析における効果を検証。Skill未使用ではHaiku・SonnetともにExecute to Parse %を見落としたが、Haiku + Skillは定量化と優先度評価で優れた結果を示した。モデルのアップグレードよりもSkill追加の効果が大きいことが判明。
+
+- **ソース**: [Qiita claude](https://qiita.com/asahide/items/53cfdab083905fedeed5)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 
