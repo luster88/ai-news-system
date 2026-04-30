@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-04-28'
+updated: '2026-04-30'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -45,6 +45,9 @@ sources:
 - url: https://qiita.com/JUMP_IN/items/ad519ebd526a633af70d
   title: AI アシスタントの設定ファイルに最初に書いておく 5 行 — CLAUDE.md 最小テンプレ
   date: '2026-04-28'
+- url: https://qiita.com/Tadashi_Kudo/items/74737ca70a10cb4e57fa
+  title: AIにとっての「記録階層」設計：feedback / ADR / working-memory / project_*.md の使い分け
+  date: '2026-04-30'
 ---
 
 
@@ -56,7 +59,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-04-30
+
+### AIにとっての「記録階層」設計：feedback / ADR / working-memory / project_*.md の使い分け
+
+AI コーディングエージェントの長期運用において、記録を4層（feedback、ADR、working-memory、project_*.md）に分離する設計手法を解説。CLAUDE.md に全てを詰め込むと破綻するため、更新サイクル別に分類し、feedback で禁止事項、ADR で設計判断の根拠、working-memory で一時メモ、project ファイルで PJ 状態を管理する。この構造化により、AI の挙動が同僚レベルに向上し、再調査時間が 15 分から 2 分に短縮された実例を紹介。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Tadashi_Kudo/items/74737ca70a10cb4e57fa)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

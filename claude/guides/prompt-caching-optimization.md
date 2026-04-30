@@ -7,14 +7,30 @@ tags:
 - performance
 - prompt
 date: '2026-04-23'
-updated: '2026-04-23'
+updated: '2026-04-30'
 sources:
 - url: https://zenn.dev/ai_arai_ally/articles/20260422-1601-claude-code-prompt-caching-api
   title: Claude Code の Prompt Caching で API コスト 1/8 削減
   date: '2026-04-23'
+- url: https://zenn.dev/snowflakejp/articles/4def632fe30a9b
+  title: コーディングエージェントにおけるプロンプトキャッシュの仕組み — なぜ最初のターンはトークン使用量が多く見えるのか
+  date: '2026-04-30'
 ---
 
+
 # Prompt Caching Optimization
+
+---
+
+## 2026-04-30
+
+### コーディングエージェントにおけるプロンプトキャッシュの仕組み — なぜ最初のターンはトークン使用量が多く見えるのか
+
+コーディングエージェント（Claude Code、Cursor等）で短いプロンプトでも最初のターンで大量のトークンが消費される理由を解説。システムプロンプト、ツール定義、会話履歴などが毎回送信されるため、5単語の入力でも10,000トークン以上になる。Anthropic と OpenAI のプロンプトキャッシュの仕組みを説明し、2回目以降のターンでキャッシュヒットによりトークン消費が削減される原理を詳述。
+
+- **ソース**: [Zenn claude](https://zenn.dev/snowflakejp/articles/4def632fe30a9b)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, performance
 
 ---
 

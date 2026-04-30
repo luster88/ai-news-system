@@ -11,7 +11,7 @@ tags:
 - pricing
 - prompt
 date: '2026-04-03'
-updated: '2026-04-28'
+updated: '2026-04-30'
 sources:
 - url: https://zenn.dev/heki1224/articles/b849cc85a330aa
   title: Claude Codeで”トークン破産”しないためのコスト最適化とコンテキスト防衛術
@@ -28,13 +28,29 @@ sources:
 - url: https://qiita.com/lumichy/items/a920ad8960a517182e88
   title: 1日4000万トークン無料!? AIエージェントの「トークン破産」を防ぐ最強LLMプロバイダー比較
   date: '2026-04-28'
+- url: https://qiita.com/tkysi-mi/items/c1d58233a8a7ab8a0959
+  title: 「AI に書かせる」から「AI に仕事を振る」へ — Claude Code Status line で Cost per Task を可視化する
+  date: '2026-04-30'
 ---
 
 
 
 
 
+
 # Cost Optimization
+
+---
+
+## 2026-04-30
+
+### 「AI に書かせる」から「AI に仕事を振る」へ — Claude Code Status line で Cost per Task を可視化する
+
+AIの能力が飽和した時代に、Cost per Task（タスク当たりコスト）が差別化要因となっている。モデル選択で5倍、Skillやsubagent活用で10倍のコスト差が生まれる。Claude Code の Status line を使った可視化が、コスト最適化の第一歩として推奨される。記事ではSkill化、Custom subagent、Hook、settings.json による具体的な改善手法も紹介している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/tkysi-mi/items/c1d58233a8a7ab8a0959)
+- **重要度**: 7/10
+- **タグ**: claude-code, performance, prompt
 
 ---
 

@@ -7,10 +7,11 @@ tags:
 - claude-code
 - cowork
 - mcp
+- performance
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-04-29'
+updated: '2026-04-30'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -36,6 +37,10 @@ sources:
 - url: https://ai-heartland.com/tool/browserbase-skills-claude-code-browser-automation
   title: Browserbase Skills徹底解説｜Claude Codeにブラウザ自動化10機能を授けるスキル集
   date: '2026-04-29'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1szvo7t/open_source_we_built_a_local_code_search_mcp_for
+  title: Open Source] We built a local code search MCP for Claude Code that uses ~98%
+    fewer tokens than grep+read
+  date: '2026-04-30'
 ---
 
 
@@ -45,7 +50,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-04-30
+
+### Open Source] We built a local code search MCP for Claude Code that uses ~98% fewer tokens than grep+read
+
+Reddit ユーザーが Claude Code 向けのローカルコードサーチ MCP サーバー「Semble」をオープンソースで公開。grep+read と比較して約98%のトークン削減を実現し、CPU のみで動作。静的埋め込み、BM25、コード最適化された再ランキングスタックを組み合わせ、約250ms でインデックス作成、約1.5ms でクエリ応答が可能。API キーや GPU 不要で、ローカルリポジトリとリモートリポジトリの両方に対応。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1szvo7t/open_source_we_built_a_local_code_search_mcp_for)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code, performance
 
 ---
 
