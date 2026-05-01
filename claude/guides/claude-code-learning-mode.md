@@ -7,14 +7,30 @@ tags:
 - prompt
 - setup
 date: '2026-04-17'
-updated: '2026-04-17'
+updated: '2026-05-01'
 sources:
 - url: https://zenn.dev/amu_lab/articles/claude-code-learning-mode
   title: Claude Code Learning Mode 完全ガイド — /output-style と TODO(human) の実務運用
   date: '2026-04-17'
+- url: https://qiita.com/yomi_tiger/items/016adf3ba40c89a9d756
+  title: ClaudeCodeにGo言語を教えてもらった
+  date: '2026-05-01'
 ---
 
+
 # Claude Code Learning Mode
+
+---
+
+## 2026-05-01
+
+### ClaudeCodeにGo言語を教えてもらった
+
+Swift/Next.js開発者がClaudeCodeを使ってGo言語を学習した体験記。環境構築からロードマップ作成、段階的な学習まで、ClaudeCodeがメンターとして機能し、初心者でもスムーズに学習を進められた事例。Docker/Airのホットリロード設定、goroutine/channel、HTTPサーバー構築など体系的に習得。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/yomi_tiger/items/016adf3ba40c89a9d756)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

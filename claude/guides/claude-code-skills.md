@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-04-29'
+updated: '2026-05-01'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -29,6 +29,9 @@ sources:
 - url: https://qiita.com/asahide/items/53cfdab083905fedeed5
   title: oracle/skills を Claude Skill に登録すると AWR 解析で何が変わるか — Haiku/Sonnet × Skill有無の4パターン比較
   date: '2026-04-29'
+- url: https://qiita.com/Tadashi_Kudo/items/e0484a0f800b5dca4665
+  title: Claude Skills（SKILL.md）設計「6法則」と自分の環境を照合したら、2点で先を行っていた話
+  date: '2026-05-01'
 ---
 
 
@@ -36,7 +39,30 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-05-01
+
+### Claude Skills（SKILL.md）設計「6法則」と自分の環境を照合したら、2点で先を行っていた話
+
+Claude Skillsの設計に関する6法則を分析した記事。筆者は自環境でスキル検証制度化（トリガー率90%目標の10パターンメンタルテスト）とローテーション機構（skills-usage.jsonによる実行回数記録、50件上限でアーカイブ退避）を実装済み。外部分析が「設計の質」を論じる一方、自環境は「検証の制度化」と「ライフサイクル管理」まで進んでおり、scaffoldテンプレートにOut of Scope節を組み込むなど、長期運用を見据えたシステム設計を実現している。
+
+- **ソース**: [Qiita claude](https://qiita.com/Tadashi_Kudo/items/e0484a0f800b5dca4665)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
+
+---
+
+### Claude Skills（SKILL.md）設計「6法則」と自分の環境を照合したら、2点で先を行っていた話
+
+Claude Code の Skills 設計に関する外部分析「6法則」を自環境と照合した結果、検証制度化とライフサイクル管理の2点で先行実装していたことを報告。SKILL_DESIGN_CHECKLIST.md による10パターンのメンタルテスト、skills-usage.json による実行回数管理と50件上限でのローテーション運用（アーカイブ187件）など、「設計の法則」を超えた「整理の仕組み」の必要性を示す。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Tadashi_Kudo/items/e0484a0f800b5dca4665)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

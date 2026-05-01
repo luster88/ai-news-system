@@ -8,7 +8,7 @@ tags:
 - mcp
 - performance
 date: '2026-04-09'
-updated: '2026-04-24'
+updated: '2026-05-01'
 sources:
 - url: https://ai-heartland.com/ai/claude/rtk
   title: RTK（Rust Token Killer）完全ガイド：Claude Codeのトークン消費を80%削減するCLIプロキシ
@@ -16,10 +16,26 @@ sources:
 - url: https://ai-heartland.com/explain/claude-code-token-optimization-tools-comparison
   title: Claude Codeトークン最適化ツール比較2026：97%削減MCPから619バイトCLAUDE.mdまで5選
   date: '2026-04-24'
+- url: https://zenn.dev/yamitake/articles/rtk-token-killer-introduction
+  title: RTK (Rust Token Killer) - AIコーディングアシスタントのトークン消費を最大80%削減するCLIツール
+  date: '2026-05-01'
 ---
 
 
+
 # Token Optimization
+
+---
+
+## 2026-05-01
+
+### RTK (Rust Token Killer) - AIコーディングアシスタントのトークン消費を最大80%削減するCLIツール
+
+RTK (Rust Token Killer) は、Claude Code、GitHub Copilot、Cursor などの AI コーディングアシスタントのトークン消費を 60-90% 削減する CLI プロキシツールです。シェルコマンドの出力を最適化し、不要なノイズ除去、冗長性削減、重複行の折りたたみを行います。git、テスト、ビルドツールなど主要なコマンドをサポートし、10ms 未満の低オーバーヘッドで動作します。
+
+- **ソース**: [Zenn claude](https://zenn.dev/yamitake/articles/rtk-token-killer-introduction)
+- **重要度**: 7/10
+- **タグ**: claude-code, cursor, performance
 
 ---
 
