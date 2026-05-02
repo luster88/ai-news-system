@@ -11,7 +11,7 @@ tags:
 - pricing
 - prompt
 date: '2026-04-03'
-updated: '2026-04-30'
+updated: '2026-05-02'
 sources:
 - url: https://zenn.dev/heki1224/articles/b849cc85a330aa
   title: Claude Codeで”トークン破産”しないためのコスト最適化とコンテキスト防衛術
@@ -31,6 +31,10 @@ sources:
 - url: https://qiita.com/tkysi-mi/items/c1d58233a8a7ab8a0959
   title: 「AI に書かせる」から「AI に仕事を振る」へ — Claude Code Status line で Cost per Task を可視化する
   date: '2026-04-30'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1t1o43w/i_gave_claude_code_a_002call_coworker_and_stopped
+  title: I gave Claude Code a $0.02/call coworker and stopped hitting Pro limits —
+    here's the full setup
+  date: '2026-05-02'
 ---
 
 
@@ -38,7 +42,20 @@ sources:
 
 
 
+
 # Cost Optimization
+
+---
+
+## 2026-05-02
+
+### I gave Claude Code a $0.02/call coworker and stopped hitting Pro limits — here's the full setup
+
+Claude Code の Pro プラン利用制限を回避するため、安価な AI モデル（Kimi K2.5）と連携する仕組みを構築した事例。CLI スクリプト経由で大量ファイル読み込みやボイラープレート生成を安価なモデルに委譲し、Claude は Bash ツールで呼び出す。3週間の運用で週次制限に到達せず、Kimi の総コストは$0.38、ドキュメント更新のトークン消費を5000→200に削減した。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1t1o43w/i_gave_claude_code_a_002call_coworker_and_stopped)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, pricing
 
 ---
 

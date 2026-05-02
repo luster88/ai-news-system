@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-04-30'
+updated: '2026-05-02'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -48,6 +48,10 @@ sources:
 - url: https://qiita.com/Tadashi_Kudo/items/74737ca70a10cb4e57fa
   title: AIにとっての「記録階層」設計：feedback / ADR / working-memory / project_*.md の使い分け
   date: '2026-04-30'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1t1wrfs/i_used_claude_as_my_pair_programmer_to_build_a
+  title: I used Claude as my pair programmer to build a safe for kids generative coloring
+    book app for my daughter!
+  date: '2026-05-02'
 ---
 
 
@@ -60,7 +64,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-05-02
+
+### I used Claude as my pair programmer to build a safe for kids generative coloring book app for my daughter!
+
+開発者が娘のために、Claudeをペアプログラマーとして活用し、子供向けの安全な生成AIぬり絵アプリをSwiftUIで構築。既存アプリの広告過多や複雑さを解決するため、シンプルで安全な設計を重視。ローカルデータ保存、保護者ロック機能を実装し、AIの責任ある活用を目指した実例。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1t1wrfs/i_used_claude_as_my_pair_programmer_to_build_a)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

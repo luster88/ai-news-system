@@ -10,9 +10,10 @@ tags:
 - performance
 - prompt
 - setup
+- vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-04-27'
+updated: '2026-05-02'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -80,6 +81,12 @@ sources:
 - url: https://qiita.com/YujiNaramoto/items/ec9431ad253cac6d4b10
   title: なぜClaude Code Agentのsubagentを4分業させたか — 採用AI受託案件で並列運用した検証
   date: '2026-04-27'
+- url: https://qiita.com/kamome_susume/items/acfa4648fc2b7d63d3c2
+  title: Claude Codeの活用例10選【開発効率が上がる使い方】
+  date: '2026-05-02'
+- url: https://qiita.com/tuvy22686/items/663b84aa1324005e2a3d
+  title: 【VSCode×Claude】自分の弱点をカバーしてくれる、ロックマンエグゼ風「パーソナルAIナビ」の作り方
+  date: '2026-05-02'
 ---
 
 
@@ -99,7 +106,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-05-02
+
+### Claude Codeの活用例10選【開発効率が上がる使い方】
+
+Claude Codeを開発現場で活用するための10の実践的な方法を紹介。バグ修正の自動化、CLAUDE.mdによるプロジェクトルール管理、Plan Modeでの実行前確認、GitHub Actionsとの統合、複数インスタンスでの並行開発など、単なるコード補完を超えた「AIエージェント」としての使い方を解説している。
+
+- **ソース**: [Qiita claude](https://qiita.com/kamome_susume/items/acfa4648fc2b7d63d3c2)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
+
+---
+
+### 【VSCode×Claude】自分の弱点をカバーしてくれる、ロックマンエグゼ風「パーソナルAIナビ」の作り方
+
+VSCode と Claude Code 拡張機能を使い、指摘の本質を理解できないという自分の弱点をカバーする「パーソナルAI ナビ」を構築した事例。オーケストレーター型のマルチエージェント設計と、Claude + Gemini のダブルレビュー体制により、AI 駆動開発での設計書量産とレビュー効率化を実現。対話ベースでエージェント定義を自己成長させる仕組みと、AI 時代のレビューフロー設計の落とし穴についても解説。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/tuvy22686/items/663b84aa1324005e2a3d)
+- **重要度**: 6/10
+- **タグ**: claude-code, vscode, prompt
 
 ---
 

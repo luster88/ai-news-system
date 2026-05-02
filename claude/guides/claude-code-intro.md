@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-27'
-updated: '2026-04-05'
+updated: '2026-05-02'
 sources:
 - url: https://zenn.dev/beeeegle/articles/a50b1cdbe4973c
   title: 【初心者向】Claude CodeってAIじゃないみたいよ
@@ -27,13 +27,29 @@ sources:
 - url: https://qiita.com/moha0918_/items/c24338fd8eb19a8bcb2f
   title: 知らないと損する Claude Code のモデル設定 — 5つの実践的な設定テクニック
   date: '2026-04-05'
+- url: https://qiita.com/kamome_susume/items/9cba600d9849c0bb4dd3
+  title: 今からでも間に合う？Claude Codeの機能・用途・活用例をまとめて解説
+  date: '2026-05-02'
 ---
 
 
 
 
 
+
 # Claude Code Intro
+
+---
+
+## 2026-05-02
+
+### 今からでも間に合う？Claude Codeの機能・用途・活用例をまとめて解説
+
+Claude Codeは2025年2月リリースの自律型AIコーディングツールで、コード生成だけでなくファイル編集・デバッグ・テスト作成を自動実行できる。エージェント型アーキテクチャにより目標を伝えるだけで完了まで自律的に作業し、.clinerules設定ファイルやサブエージェント機能で開発効率を大幅に向上させる。Proプラン契約者は追加費用なしで利用可能。
+
+- **ソース**: [Qiita claude](https://qiita.com/kamome_susume/items/9cba600d9849c0bb4dd3)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 
