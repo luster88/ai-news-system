@@ -11,7 +11,7 @@ tags:
 - windows
 - 新機能
 date: '2026-04-04'
-updated: '2026-04-29'
+updated: '2026-05-03'
 sources:
 - url: https://qiita.com/taiki_i/items/2d75a882e0f3187f6bb8
   title: あなたの CLAUDE.md、ちゃんと機能してますか？作り方から公式プラグインで採点するまでの道のり
@@ -37,6 +37,12 @@ sources:
 - url: https://zenn.dev/linkedge/articles/27c38cdd9bedc6
   title: 【Claude Code】CLAUDE.md・skills・agents を整備して開発体験が劇的に変わった話
   date: '2026-04-29'
+- url: https://qiita.com/manchan/items/63745b9198f1989c2a15
+  title: Claude Codeを120%使いこなす設定3選【ECC・Memory.md・Obsidian連携】
+  date: '2026-05-03'
+- url: https://zenn.dev/yt8220/articles/f0465e79d0abd9
+  title: Claude Codeの設定を育てた話 — permission・hooks・CLAUDE.md・subagentで「任せられる環境」を作る
+  date: '2026-05-03'
 ---
 
 
@@ -44,7 +50,30 @@ sources:
 
 
 
+
 # Claude Code Setup
+
+---
+
+## 2026-05-03
+
+### Claude Codeを120%使いこなす設定3選【ECC・Memory.md・Obsidian連携】
+
+Claude Codeを実務で活用するための3つの設定を解説。ECC（Everything Claude Code）で専門家エージェントを追加し、CLAUDE.md/Memory.mdでセッション間の文脈を保持し、Obsidian連携で調査内容を永続化する方法を、実際のコード例とともに紹介。フリーランスエンジニアがX投稿自動化・YouTube投稿パイプライン構築で実践した具体的なTipsを共有。
+
+- **ソース**: [Qiita claude](https://qiita.com/manchan/items/63745b9198f1989c2a15)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
+
+---
+
+### Claude Codeの設定を育てた話 — permission・hooks・CLAUDE.md・subagentで「任せられる環境」を作る
+
+Claude Codeの実運用で直面した課題（確認ダイアログ過多、テスト漏れ、コスト増）に対し、permission設計・hooks・CLAUDE.md・subagentの4つの仕組みを段階的に導入して解決した知見を紹介。安全性とスムーズな作業フローを両立させる設定育成の実践例。
+
+- **ソース**: [Zenn claude](https://zenn.dev/yt8220/articles/f0465e79d0abd9)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

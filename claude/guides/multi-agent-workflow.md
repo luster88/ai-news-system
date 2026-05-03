@@ -9,7 +9,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-03-29'
-updated: '2026-04-29'
+updated: '2026-05-03'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6jouf/anthropic_shares_how_to_make_claude_code_better
   title: Anthropic shares how to make Claude code better with a harness
@@ -17,10 +17,26 @@ sources:
 - url: https://qiita.com/Tadashi_Kudo/items/ce29e76f94d3a0b64dac
   title: Claude / Codex / Cursor を「中立層」で束ねる：AI-AGENT.md 設計と adapter pattern
   date: '2026-04-29'
+- url: https://zenn.dev/taroh_7/articles/2026-04-18-ai-career-strategy-multiagent
+  title: Claude Codeでキャリア戦略レポートの作り方を自動化した話
+  date: '2026-05-03'
 ---
 
 
+
 # Multi Agent Workflow
+
+---
+
+## 2026-05-03
+
+### Claude Codeでキャリア戦略レポートの作り方を自動化した話
+
+Claude Codeで複数のエージェントを並列動作させ、個人向けキャリア戦略レポートを自動生成した事例。調査エージェントと批判専用の検証エージェントを分離し、楽観バイアスを補正する設計が特徴。市場分析、スキルギャップ、キャリアシナリオ（楽観・現実・保守）、学習ロードマップ、リスク分析を含む長文レポートを出力し、意思決定に使える実用的な成果物を作成した。
+
+- **ソース**: [Zenn claude](https://zenn.dev/taroh_7/articles/2026-04-18-ai-career-strategy-multiagent)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

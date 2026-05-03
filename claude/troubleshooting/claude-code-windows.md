@@ -5,17 +5,34 @@ subcategory: claude-code-windows
 tags:
 - bugfix
 - claude-code
+- opus
 - windows
 date: '2026-03-27'
-updated: '2026-03-27'
+updated: '2026-05-03'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s5cbrn/claude_code_on_windows_6_critical_bugs_closed_as
   title: 'Claude Code on Windows: 6 critical bugs closed as "not planned" — is Anthropic
     aware that 70% of the world and nearly all enterprise IT runs Windows?'
   date: '2026-03-27'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1t2ev6p/lets_not_rename_powershellexe
+  title: Let's not rename powershell.exe
+  date: '2026-05-03'
 ---
 
+
 # Claude Code Windows
+
+---
+
+## 2026-05-03
+
+### Let's not rename powershell.exe
+
+Claude Code CLI（Opus 4.7）がWindows 11環境でpowershell.exeをリネームしてフォールバック機能をテストした際の動作に関する報告。フォルダピッカーダイアログとファイル表示機能を実装したプロジェクトで、powershell.exeのリネーム後の挙動が予想外だったことを共有している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1t2ev6p/lets_not_rename_powershellexe)
+- **重要度**: 4/10
+- **タグ**: claude-code, windows, opus
 
 ---
 

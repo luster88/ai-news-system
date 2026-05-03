@@ -7,10 +7,11 @@ tags:
 - claude-console
 - cowork
 - performance
+- pricing
 - release
 - 新機能
 date: '2026-04-08'
-updated: '2026-04-10'
+updated: '2026-05-03'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfz7a5/introducing_claude_managed_agents_now_in_public
   title: Introducing Claude Managed Agents, now in public beta.
@@ -27,11 +28,37 @@ sources:
 - url: https://qiita.com/t_mando_/items/933ed7fa7b2d52b641f9
   title: Claude Managed Agentsって何？GeminiAPIと何が違うの？Claudeに聞きながら理解した
   date: '2026-04-10'
+- url: https://qiita.com/tai0921/items/b542aafa29d363e50510
+  title: Claude Managed Agentsとは？従来の自前実装との違い
+  date: '2026-05-03'
 ---
 
 
 
+
 # Managed Agents
+
+---
+
+## 2026-05-03
+
+### Claude Managed Agentsとは？従来の自前実装との違い
+
+Anthropic が発表した Claude Managed Agents は、エージェント開発におけるツール接続・メモリ管理・エラーハンドリングなどの複雑な実装を API レベルで引き受けるサービス。開発者はタスク定義に集中できる一方、従量課金への移行・ベンダーロックイン・既存基盤からの移行コストに注意が必要。2026年4月からサードパーティハーネス経由の利用がサブスクリプション対象外となり、API課金体系に統一される。
+
+- **ソース**: [Qiita claude](https://qiita.com/tai0921/items/b542aafa29d363e50510)
+- **重要度**: 8/10
+- **タグ**: claude-api, 新機能, pricing
+
+---
+
+### Claude Managed Agentsとは？従来の自前実装との違い
+
+AnthropicがClaude Managed Agentsを発表。従来の自前実装で必要だったツール接続、メモリ管理、エラーハンドリング、マルチステップ制御をAPIレベルで引き受け、開発者はタスク定義に集中できる。2026年4月からサードパーティハーネス経由のClaude利用はサブスクリプション対象外となり従量課金に移行。既存の自社エージェント基盤を持つチームは移行コストとベンダーロックインのリスクを慎重に評価する必要がある。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/tai0921/items/b542aafa29d363e50510)
+- **重要度**: 8/10
+- **タグ**: 新機能, claude-api, pricing
 
 ---
 

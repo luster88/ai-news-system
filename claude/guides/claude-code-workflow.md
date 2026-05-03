@@ -13,7 +13,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-05-02'
+updated: '2026-05-03'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -87,6 +87,9 @@ sources:
 - url: https://qiita.com/tuvy22686/items/663b84aa1324005e2a3d
   title: 【VSCode×Claude】自分の弱点をカバーしてくれる、ロックマンエグゼ風「パーソナルAIナビ」の作り方
   date: '2026-05-02'
+- url: https://zenn.dev/saytooy_arch/articles/15-genka-full-process-audit
+  title: AI SaaSの全工程を体系的に監査して69件の漏れを見つけた話 — 食品表示法準拠からコンテキスト最適化まで
+  date: '2026-05-03'
 ---
 
 
@@ -107,7 +110,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-05-03
+
+### AI SaaSの全工程を体系的に監査して69件の漏れを見つけた話 — 食品表示法準拠からコンテキスト最適化まで
+
+飲食店向けAI原価計算SaaS「Genka」の開発で、Claude Codeのマルチエージェント体制を活用し、クローズドβテスト前に全工程（RD/ED/SD/MF/UT/IT/ST/UAT/計画）の体系的監査を実施。69件の漏れを発見し、うち12件がP0（即時対応）の重大問題。最も深刻だったのは食品表示法で義務付けられているアレルゲン情報がPDF出力に含まれていない致命的バグ。各工程での確認観点と発見事項を詳細に共有。
+
+- **ソース**: [Zenn claude](https://zenn.dev/saytooy_arch/articles/15-genka-full-process-audit)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 
