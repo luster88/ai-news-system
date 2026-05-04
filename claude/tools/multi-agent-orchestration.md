@@ -8,8 +8,9 @@ tags:
 - cursor
 - mcp
 - prompt
+- 新機能
 date: '2026-04-02'
-updated: '2026-04-20'
+updated: '2026-05-04'
 sources:
 - url: https://ai-heartland.com/ai/gemini/oh-my-gemini
   title: oh-my-gemini：Gemini CLIのマルチエージェント並列実行ツール
@@ -17,10 +18,26 @@ sources:
 - url: https://zenn.dev/interpark/articles/59108508d7dec0
   title: AIは役割だけでどこまで本気の議論ができるのか：ツール開発で得た学びと、会議そのものへの気づき
   date: '2026-04-20'
+- url: https://ai-heartland.com/agent/ruflo-multi-agent-swarm-claude-code
+  title: ruflo｜Claude Code/Codexにネイティブ統合する100エージェント・スウォーム基盤
+  date: '2026-05-04'
 ---
 
 
+
 # Multi Agent Orchestration
+
+---
+
+## 2026-05-04
+
+### ruflo｜Claude Code/Codexにネイティブ統合する100エージェント・スウォーム基盤
+
+rufloは、Claude Code/Codexにネイティブ統合する100エージェント・スウォーム基盤のOSSです。Anthropic公式のClaude Code SDKを土台に、複数の専門エージェントを協調させるオーケストレーション機能を提供し、SWE-benchスコア84.8%、APIコスト75%削減を実現しています。プラグイン形式で1コマンド導入でき、ユーザー側のCLIコマンドを変えずにスウォーム機能を透過的に注入できる点が特徴です。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/agent/ruflo-multi-agent-swarm-claude-code)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, 新機能
 
 ---
 

@@ -8,7 +8,7 @@ tags:
 - mcp
 - 新機能
 date: '2026-04-01'
-updated: '2026-04-26'
+updated: '2026-05-04'
 sources:
 - url: https://qiita.com/Andhy/items/371621273924d74e9917
   title: 自作のClaude Codeのプラグインの有効性を検証してみたところなかなか良い結果に
@@ -16,10 +16,27 @@ sources:
 - url: https://ai-heartland.com/agent/understand-anything-knowledge-graph-plugin
   title: Understand Anything入門：コードベースをナレッジグラフ化するClaude Codeプラグイン
   date: '2026-04-26'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1t3osat/built_a_plugin_so_my_parallel_claude_code
+  title: built a plugin so my parallel Claude Code sessions can message each other
+    instead of me alt-tabbing
+  date: '2026-05-04'
 ---
 
 
+
 # Claude Code Plugin
+
+---
+
+## 2026-05-04
+
+### built a plugin so my parallel Claude Code sessions can message each other instead of me alt-tabbing
+
+複数のClaude Codeセッション間で直接メッセージをやり取りできるプラグイン「Relay」が開発されました。フロントエンドとバックエンドなど異なるリポジトリで作業する際、ウィンドウ切り替えやコピー&ペーストなしで、Claude同士が直接通信できます。MCPサーバーのchannels機能を利用し、Unix socketを介してローカルマシン上で動作します。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1t3osat/built_a_plugin_so_my_parallel_claude_code)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, 新機能
 
 ---
 

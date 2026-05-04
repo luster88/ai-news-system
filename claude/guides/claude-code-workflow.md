@@ -13,7 +13,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-05-03'
+updated: '2026-05-04'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -90,6 +90,9 @@ sources:
 - url: https://zenn.dev/saytooy_arch/articles/15-genka-full-process-audit
   title: AI SaaSの全工程を体系的に監査して69件の漏れを見つけた話 — 食品表示法準拠からコンテキスト最適化まで
   date: '2026-05-03'
+- url: https://qiita.com/Tadashi_Kudo/items/7f9d4263456a0161867b
+  title: Claude Code の「Spec先行ルール」：外部公開とデータ構造変更で必ず仕様書を書く理由
+  date: '2026-05-04'
 ---
 
 
@@ -111,7 +114,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-05-04
+
+### Claude Code の「Spec先行ルール」：外部公開とデータ構造変更で必ず仕様書を書く理由
+
+Claude Codeを業務運用する際に「外部公開・データ構造変更・RAG関連・複数プロジェクト波及」の4カテゴリに限定してSpec（仕様書）を先行作成するルールを導入した実践事例。AIに成功条件を明示することで実装精度が向上し、スキーマ変更やRAG設定変更による本番事故を防げることを、具体的な事故事例とテンプレート、CLAUDE.mdへの明記方法とともに解説。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Tadashi_Kudo/items/7f9d4263456a0161867b)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

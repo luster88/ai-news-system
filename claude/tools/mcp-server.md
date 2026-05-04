@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-04-30'
+updated: '2026-05-04'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -41,6 +41,9 @@ sources:
   title: Open Source] We built a local code search MCP for Claude Code that uses ~98%
     fewer tokens than grep+read
   date: '2026-04-30'
+- url: https://ai-heartland.com/mcp/n8n-mcp
+  title: n8n MCP｜Claude Codeから自然言語でn8nワークフローを構築するMCPサーバー
+  date: '2026-05-04'
 ---
 
 
@@ -51,7 +54,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-05-04
+
+### n8n MCP｜Claude Codeから自然言語でn8nワークフローを構築するMCPサーバー
+
+n8n MCPは、ローコード自動化ツールn8nの1650ノードと2352テンプレートをModel Context Protocol経由でAIに提供するMCPサーバー。Claude CodeやCursorから自然言語でワークフローを構築でき、ノード仕様の詳細取得、テンプレート検索、検証、n8nインスタンスへの直接書き込みが可能。AIが辞書を引きながら設計することで幻覚を防ぎ、GitHub Dailyで19,728スターを獲得している。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/mcp/n8n-mcp)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code
 
 ---
 
