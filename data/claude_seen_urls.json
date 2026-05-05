@@ -1103,14 +1103,40 @@
     "https://ai-heartland.com/mcp/n8n-mcp": "2026-05-04",
     "https://ai-heartland.com/tool/1jehuang-jcode": "2026-05-04",
     "https://the-decoder.com/anthropic-and-openai-now-agree-on-one-thing-selling-ai-requires-a-lot-more-than-just-the-ai": "2026-05-04",
-    "https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services": "2026-05-04"
+    "https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services": "2026-05-04",
+    "https://www.reddit.com/r/ClaudeAI/comments/1t4gfc7/turned_a_desk_lamp_into_a_claude_code_status": "2026-05-05",
+    "https://www.reddit.com/r/ClaudeAI/comments/1t4ncbj/10_things_about_claude_that_took_me_way_too_long": "2026-05-05",
+    "https://www.reddit.com/r/ClaudeAI/comments/1t4pmzq/opus_47_has_a_new_favorite_word": "2026-05-05",
+    "https://www.reddit.com/r/ClaudeAI/comments/1t42p01/when_claude_tells_you_to_stop_spiraling_and_go_to": "2026-05-05",
+    "https://www.reddit.com/r/ClaudeAI/comments/1t4gchn/i_asked_claude_to_investigate_its_own_token_burn": "2026-05-05",
+    "https://www.reddit.com/r/ClaudeAI/comments/1t4tuak/spyware": "2026-05-05",
+    "https://www.reddit.com/r/ClaudeAI/comments/1t48531/i_know_its_not_for_everyone_but_if_you_liked": "2026-05-05",
+    "https://www.reddit.com/r/ClaudeAI/comments/1t3xs80/anthropic_ai_will_fully_replace_software": "2026-05-05",
+    "https://www.reddit.com/r/ClaudeAI/comments/1t4j9rx/stream_ended_without_a_final_message_in_claude": "2026-05-05",
+    "https://qiita.com/mix_dvd/items/2572be0dbee18fb1ea89": "2026-05-05",
+    "https://qiita.com/moritalous/items/cd53aec76db1dec20862": "2026-05-05",
+    "https://qiita.com/Yuffter/items/7e81ee604013de17bb63": "2026-05-05",
+    "https://zenn.dev/nemutaizo/articles/afe031ef2310ea": "2026-05-05",
+    "https://zenn.dev/genda_jp/articles/8038f227ba9bdf": "2026-05-05",
+    "https://zenn.dev/bentenweb_fumi/articles/fxyojdsgcwap": "2026-05-05",
+    "https://zenn.dev/serendipitynz/articles/3c1d592e31da0e": "2026-05-05",
+    "https://zenn.dev/nemutaizo/articles/61a6134b6e1a05": "2026-05-05",
+    "https://zenn.dev/seekseep/articles/anthropic-ai-fluency-index-for-engineers": "2026-05-05",
+    "https://qiita.com/Tadashi_Kudo/items/6698fa06e3c38265b757": "2026-05-05",
+    "https://qiita.com/YushiYamamoto/items/7227a4be0a3a90cd3029": "2026-05-05",
+    "https://qiita.com/niikun0209/items/f7811ba40ba3ad2f660d": "2026-05-05",
+    "https://qiita.com/niikun0209/items/a3e14e40d9803c0ad726": "2026-05-05",
+    "https://the-decoder.com/us-government-now-has-pre-release-access-to-ai-models-from-five-major-labs-for-national-security-testing": "2026-05-05",
+    "https://the-decoder.com/anthropic-ships-ten-ai-agents-for-finance-as-both-it-and-openai-chase-ipo-ready-revenue": "2026-05-05",
+    "https://the-decoder.com/anthropic-co-founder-maps-out-how-recursive-ai-improvement-could-outpace-the-humans-meant-to-supervise-it": "2026-05-05",
+    "https://the-decoder.com/white-house-briefed-anthropic-google-and-openai-on-plans-for-a-government-ai-review-process": "2026-05-05"
   },
   "source_penalties": {
-    "Anthropic News": "2026-05-05",
+    "Anthropic News": "2026-05-06",
     "Reddit r/ClaudeAI": "2026-04-03",
     "Zenn claude": "2026-03-25",
     "TechCrunch Claude": "2026-05-04",
     "The Decoder Claude": "2026-04-11",
-    "AI Heartland": "2026-04-29"
+    "AI Heartland": "2026-05-06"
   }
 }

@@ -4,11 +4,12 @@ category: guides
 subcategory: claude-code-best-practices
 tags:
 - claude-code
+- claude-console
 - prompt
 - setup
 - 新機能
 date: '2026-04-11'
-updated: '2026-04-14'
+updated: '2026-05-05'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-best-practice-guide-2026
   title: Claude Codeベストプラクティス完全ガイド2026年版｜使い方・Tips・効率化テクニック集
@@ -16,10 +17,26 @@ sources:
 - url: https://qiita.com/moha0918_/items/72d4d32fce1b585ddbad
   title: CLAUDE.mdを「とりあえず」で済ませてる人に知ってほしい、指示精度が上がる7つの書き方
   date: '2026-04-14'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1t4ncbj/10_things_about_claude_that_took_me_way_too_long
+  title: 10 things about Claude that took me way too long to figure out
+  date: '2026-05-05'
 ---
 
 
+
 # Claude Code Best Practices
+
+---
+
+## 2026-05-05
+
+### 10 things about Claude that took me way too long to figure out
+
+Claude を効果的に使うための実践的な10のTipsを紹介。「わからないことは『知らない』と言わせる」「長いシステムプロンプトの方が効果的」「ファイルアップロード機能を活用する」「具体的な品質基準を指定する」などの知見を共有。デバッグ時はエラーをコードの前に貼る、汎用的な出力は汎用的なプロンプトが原因、などの実用的なアドバイスを含む。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1t4ncbj/10_things_about_claude_that_took_me_way_too_long)
+- **重要度**: 6/10
+- **タグ**: prompt, claude-console, 新機能
 
 ---
 
