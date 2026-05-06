@@ -13,7 +13,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-05-04'
+updated: '2026-05-06'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -93,6 +93,9 @@ sources:
 - url: https://qiita.com/Tadashi_Kudo/items/7f9d4263456a0161867b
   title: Claude Code の「Spec先行ルール」：外部公開とデータ構造変更で必ず仕様書を書く理由
   date: '2026-05-04'
+- url: https://qiita.com/Ngen/items/7b1d2c3ee313c37c7608
+  title: Claude Codeのスラッシュコマンド7個でPR準備を15分短縮した話
+  date: '2026-05-06'
 ---
 
 
@@ -115,7 +118,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-05-06
+
+### Claude Codeのスラッシュコマンド7個でPR準備を15分短縮した話
+
+Claude Codeのカスタムスラッシュコマンドを7個作成し、PR準備作業を15分短縮した実践事例。/pr-summary、/pr-checklistなど、.claude/commands/にMarkdownを配置するだけで能動的に呼び出せるコマンドを整備。Skillとの使い分けは「能動的に呼ぶ作業はスラッシュコマンド、LLMに気付いてほしい作業はSkill」という明確な方針を示し、7個の落とし穴と対処法も共有。
+
+- **ソース**: [Qiita claude](https://qiita.com/Ngen/items/7b1d2c3ee313c37c7608)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

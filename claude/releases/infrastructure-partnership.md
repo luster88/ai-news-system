@@ -3,18 +3,38 @@ title: Infrastructure Partnership
 category: releases
 subcategory: infrastructure-partnership
 tags:
+- claude-api
+- opus
 - performance
 - release
+- 新機能
 date: '2026-04-24'
-updated: '2026-04-24'
+updated: '2026-05-06'
 sources:
 - url: https://www.anthropic.com/news/anthropic-amazon-compute
   title: Apr 20, 2026 Announcements Anthropic and Amazon expand collaboration for
     up to 5 gigawatts of new compute
   date: '2026-04-24'
+- url: https://the-decoder.com/anthropic-taps-spacexs-colossus-1-data-center-for-220000-gpus-to-power-claude
+  title: Anthropic taps SpaceX's Colossus-1 data center for 220,000 GPUs to power
+    Claude
+  date: '2026-05-06'
 ---
 
+
 # Infrastructure Partnership
+
+---
+
+## 2026-05-06
+
+### Anthropic taps SpaceX's Colossus-1 data center for 220,000 GPUs to power Claude
+
+Anthropic が SpaceX の Colossus-1 データセンターと提携し、22万基以上の NVIDIA GPU（300メガワット超）を確保。これにより Claude Code の利用制限が倍増、Pro/Max アカウントのピーク時スロットリング撤廃、Opus API の制限大幅緩和が1ヶ月以内に実施される。Amazon（5GW）、Google、Microsoft など既存の計算資源契約に加え、軌道上 AI コンピュート容量の検討も開始。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-taps-spacexs-colossus-1-data-center-for-220000-gpus-to-power-claude)
+- **重要度**: 9/10
+- **タグ**: 新機能, claude-api, opus
 
 ---
 

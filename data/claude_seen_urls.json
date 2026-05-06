@@ -1129,14 +1129,40 @@
     "https://the-decoder.com/us-government-now-has-pre-release-access-to-ai-models-from-five-major-labs-for-national-security-testing": "2026-05-05",
     "https://the-decoder.com/anthropic-ships-ten-ai-agents-for-finance-as-both-it-and-openai-chase-ipo-ready-revenue": "2026-05-05",
     "https://the-decoder.com/anthropic-co-founder-maps-out-how-recursive-ai-improvement-could-outpace-the-humans-meant-to-supervise-it": "2026-05-05",
-    "https://the-decoder.com/white-house-briefed-anthropic-google-and-openai-on-plans-for-a-government-ai-review-process": "2026-05-05"
+    "https://the-decoder.com/white-house-briefed-anthropic-google-and-openai-on-plans-for-a-government-ai-review-process": "2026-05-05",
+    "https://www.reddit.com/r/ClaudeAI/comments/1t5j84j/new_in_claude_managed_agents_dreaming_outcomes": "2026-05-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1t5htq1/spacex_conpute_deal_double_limits": "2026-05-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1t5kz8t/what_it_means_that_elon_just_rented_out_all_his": "2026-05-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1t5i7vh/higher_usage_limits_for_claude_and_a_compute_deal": "2026-05-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1t56zqw/prompt_injection_experience_my_first_time_ever": "2026-05-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1t5hxcs/did_claude_just_double_usage_limits_for_everyone": "2026-05-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1t5hjs5/claude_just_saved_me_from_sending_money_to_a": "2026-05-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1t5dfjn/kindergartengrade_nouns": "2026-05-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1t5mcqa/claude_has_a_conscience": "2026-05-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1t5hv6q/peak_hours_limit_reduction_gone_thanks_to": "2026-05-06",
+    "https://qiita.com/moha0918_/items/ca528c5eaee11b779dbf": "2026-05-06",
+    "https://qiita.com/Ngen/items/7b1d2c3ee313c37c7608": "2026-05-06",
+    "https://qiita.com/kai_kou/items/5d35749a652bd314d2af": "2026-05-06",
+    "https://qiita.com/kai_kou/items/a7ee596517f0520f3cc3": "2026-05-06",
+    "https://zenn.dev/dktech/articles/f72d63e90f398e": "2026-05-06",
+    "https://zenn.dev/tbnet/articles/claude-code-headless-text-output": "2026-05-06",
+    "https://zenn.dev/kanseilink/articles/linksee-memory-mcp-publish-glama-traps-20260506": "2026-05-06",
+    "https://zenn.dev/kai_kou/articles/207-claude-advisor-tool-guide": "2026-05-06",
+    "https://zenn.dev/einperience/articles/9d09a83e75694a": "2026-05-06",
+    "https://zenn.dev/aimar/articles/a556a339e55e6d": "2026-05-06",
+    "https://qiita.com/Tadashi_Kudo/items/cabe9e7e4d720e32a302": "2026-05-06",
+    "https://qiita.com/yurukusa/items/571471fd2962f29d46c7": "2026-05-06",
+    "https://the-decoder.com/anthropic-taps-spacexs-colossus-1-data-center-for-220000-gpus-to-power-claude": "2026-05-06",
+    "https://the-decoder.com/google-and-meta-race-to-build-personal-ai-agents-as-anthropic-and-openai-pull-further-ahead": "2026-05-06",
+    "https://the-decoder.com/anthropic-commits-200-billion-to-google-cloud-over-five-years": "2026-05-06",
+    "https://techcrunch.com/2026/05/06/deepseek-could-hit-45b-valuation-from-its-first-investment-round": "2026-05-06"
   },
   "source_penalties": {
-    "Anthropic News": "2026-05-06",
+    "Anthropic News": "2026-05-07",
     "Reddit r/ClaudeAI": "2026-04-03",
     "Zenn claude": "2026-03-25",
     "TechCrunch Claude": "2026-05-04",
     "The Decoder Claude": "2026-04-11",
-    "AI Heartland": "2026-05-06"
+    "AI Heartland": "2026-05-07"
   }
 }

@@ -11,7 +11,7 @@ tags:
 - release
 - 新機能
 date: '2026-04-08'
-updated: '2026-05-03'
+updated: '2026-05-06'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfz7a5/introducing_claude_managed_agents_now_in_public
   title: Introducing Claude Managed Agents, now in public beta.
@@ -31,12 +31,29 @@ sources:
 - url: https://qiita.com/tai0921/items/b542aafa29d363e50510
   title: Claude Managed Agentsとは？従来の自前実装との違い
   date: '2026-05-03'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1t5j84j/new_in_claude_managed_agents_dreaming_outcomes
+  title: 'New in Claude Managed Agents: dreaming, outcomes, multiagent orchestration,
+    and webhooks.'
+  date: '2026-05-06'
 ---
 
 
 
 
+
 # Managed Agents
+
+---
+
+## 2026-05-06
+
+### New in Claude Managed Agents: dreaming, outcomes, multiagent orchestration, and webhooks.
+
+Claude Managed Agents に4つの新機能が追加されました。「Dreaming」は過去のセッションからパターンを抽出しエージェントを改善する機能で、Harvey社ではタスク完了率が約6倍向上しました。「Outcomes」は品質基準を設定し自動評価・反復改善を行う機能、「Multiagent orchestration」は複数の専門エージェントを並行稼働させる機能、「Webhooks」は完了通知機能です。Dreaming はリサーチプレビュー、その他3機能はパブリックベータで提供開始されています。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1t5j84j/new_in_claude_managed_agents_dreaming_outcomes)
+- **重要度**: 9/10
+- **タグ**: 新機能, claude-api, release
 
 ---
 

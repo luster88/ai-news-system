@@ -7,14 +7,30 @@ tags:
 - mcp
 - setup
 date: '2026-04-07'
-updated: '2026-04-07'
+updated: '2026-05-06'
 sources:
 - url: https://ai-heartland.com/explain/mcp-server-build-guide
   title: MCPサーバーの作り方2026年完全ガイド：TypeScript・Python両対応チュートリアル
   date: '2026-04-07'
+- url: https://zenn.dev/dktech/articles/f72d63e90f398e
+  title: 意外とシンプル！FastMCPでMCPサーバを解説
+  date: '2026-05-06'
 ---
 
+
 # Mcp Server Development
+
+---
+
+## 2026-05-06
+
+### 意外とシンプル！FastMCPでMCPサーバを解説
+
+FastMCPフレームワークを使ったMCPサーバーの実装方法を解説。YouTube動画の字幕取得を例に、わずか25行のコードでMCPサーバーを構築できることを実証。.mcp.jsonでの設定方法や、Claude Codeとの通信フロー（初期化、ツールリスト取得、実行）まで、実装から裏側の仕組みまで丁寧に説明している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/dktech/articles/f72d63e90f398e)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, setup
 
 ---
 
