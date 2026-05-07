@@ -11,7 +11,7 @@ tags:
 - release
 - 新機能
 date: '2026-04-08'
-updated: '2026-05-06'
+updated: '2026-05-07'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfz7a5/introducing_claude_managed_agents_now_in_public
   title: Introducing Claude Managed Agents, now in public beta.
@@ -35,13 +35,55 @@ sources:
   title: 'New in Claude Managed Agents: dreaming, outcomes, multiagent orchestration,
     and webhooks.'
   date: '2026-05-06'
+- url: https://zenn.dev/evolink/articles/6385a3cd937518
+  title: '# AIエージェントが「夢を見る」時代が来た — Anthropic Dreaming の技術的意味'
+  date: '2026-05-07'
+- url: https://qiita.com/xiji2646/items/17395d355f0fbfe28860
+  title: Claude Managed Agents の Dreaming 機能：セッション間で自己改善するエージェントの仕組み
+  date: '2026-05-07'
+- url: https://ai-heartland.com/news/claude-managed-agents-dreaming-outcomes
+  title: Claude Managed Agents深掘り｜Dreaming・Outcomes・Multi-Agent Orchestrationを完全解説
+  date: '2026-05-07'
 ---
 
 
 
 
 
+
 # Managed Agents
+
+---
+
+## 2026-05-07
+
+### # AIエージェントが「夢を見る」時代が来た — Anthropic Dreaming の技術的意味
+
+Anthropic が5月6日に発表した Managed Agents の新機能「Dreaming」は、エージェントがセッション間でバックグラウンドで過去の会話を分析し、自律的にメモリを更新する仕組み。従来の受動的なメモリから能動的な学習へのシフトを示す。Outcomes（自動評価）やマルチエージェントオーケストレーション（パブリックベータ）と組み合わせることで、エージェントは稼働履歴を競争優位に変える「蓄積するシステム」へと進化。Automatic/Human Review の2モードを提供し、料金は $0.08/アクティブセッション時間 + トークンコスト。
+
+- **ソース**: [Zenn claude](https://zenn.dev/evolink/articles/6385a3cd937518)
+- **重要度**: 8/10
+- **タグ**: 新機能, claude-api, release
+
+---
+
+### Claude Managed Agents の Dreaming 機能：セッション間で自己改善するエージェントの仕組み
+
+Anthropic が2025年5月6日にリリースした Claude Managed Agents の Dreaming 機能は、エージェントがセッション間で自律的に過去の会話を振り返り、パターンを抽出してメモリに書き込む仕組み。Outcomes と組み合わせることで人間の介入なしにフィードバックループが閉じ、オーケストレーション機能により最大20のサブエージェントへの並列委譲が可能。Harvey で完了率が約6倍、Wisedocs でレビュー速度が50%改善など実績がある一方、現在はベータ版で Claude モデルのみ対応という制約がある。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/xiji2646/items/17395d355f0fbfe28860)
+- **重要度**: 9/10
+- **タグ**: 新機能, claude-api, release
+
+---
+
+### Claude Managed Agents深掘り｜Dreaming・Outcomes・Multi-Agent Orchestrationを完全解説
+
+Anthropic の Code with Claude 2026 カンファレンスで、Claude Managed Agents に 3 つの大型機能（Dreaming・Outcomes・Multi-Agent Orchestration）と Memory の正式β昇格が発表された。特に注目は Dreaming 機能で、エージェントが夜間に過去の作業を振り返り Memory を整理して自己改善する仕組み。楽天が本番投入し 97% のエラー削減・27% のコスト削減・34% のレイテンシ削減を達成。Dreaming は過去のセッション履歴から重複・矛盾・古いエントリを整理し、新しい Memory ストアを生成する非同期ジョブとして実装されている。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/news/claude-managed-agents-dreaming-outcomes)
+- **重要度**: 9/10
+- **タグ**: 新機能, claude-api, release
 
 ---
 

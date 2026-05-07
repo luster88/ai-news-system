@@ -7,8 +7,9 @@ tags:
 - cowork
 - mcp
 - prompt
+- setup
 date: '2026-04-02'
-updated: '2026-04-24'
+updated: '2026-05-07'
 sources:
 - url: https://zenn.dev/caphtech/articles/feed-curator-ai-rss-with-claude-code
   title: Claude CodeでAI RSSリーダーを作ったら、その日にInoreaderを解約した
@@ -16,10 +17,36 @@ sources:
 - url: https://qiita.com/Tadashi_Kudo/items/c35c0aaed00878d88b05
   title: ObsidianとClaude Codeで作る「第二の脳」——Vault自動管理の全体設計
   date: '2026-04-24'
+- url: https://qiita.com/ikkun9595/items/56ae15af2e6dfc106ea1
+  title: HTMLで動画を作る HyperFrames をClaude Codeから動かしてみた検証メモ
+  date: '2026-05-07'
 ---
 
 
+
 # Claude Code Integration
+
+---
+
+## 2026-05-07
+
+### HTMLで動画を作る HyperFrames をClaude Codeから動かしてみた検証メモ
+
+HeyGenがオープンソース公開したHyperFramesを、Claude Codeと組み合わせて動かすまでの検証記録。HyperFramesはHTML/CSS/JavaScriptで書いたコンポジションをヘッドレスChromeでキャプチャし、FFmpegでMP4に変換する動画レンダリングフレームワーク。skills CLIが`.agents/skills/`にスキルを配置する一方、Claude Codeが`.claude/skills/`を参照するパスのズレが原因でスキルが認識されない問題が発生し、シンボリックリンクで解決。GSAPタイムラインを`paused: true`で作成し`window.__timelines`に登録する規約など、実装上の注意点も解説。
+
+- **ソース**: [Qiita claude](https://qiita.com/ikkun9595/items/56ae15af2e6dfc106ea1)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup
+
+---
+
+### HTMLで動画を作る HyperFrames をClaude Codeから動かしてみた検証メモ
+
+HeyGenがオープンソース公開したHyperFramesをClaude Codeで動作検証した記事。HyperFramesはHTML/CSS/JSで書いたコンポジションをヘッドレスChromeでキャプチャしFFmpegで動画化する決定論的レンダリングフレームワーク。スキルがClaude Codeに認識されない問題は、.agents/skills/と.claude/skills/のパス不一致が原因で、シンボリックリンクで解決。GSAPタイムラインのpaused:true指定など、動画レンダリングの規約とワークフローを詳細に解説している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/ikkun9595/items/56ae15af2e6dfc106ea1)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, cowork
 
 ---
 
