@@ -8,7 +8,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-04-12'
-updated: '2026-04-16'
+updated: '2026-05-08'
 sources:
 - url: https://ai-heartland.com/explain/last30days-skill-guide
   title: last30days-skill完全ガイド｜Reddit・X・YouTube横断AIリサーチスキルの使い方2026年版
@@ -16,10 +16,26 @@ sources:
 - url: https://qiita.com/kanta13jp1/items/d157ccf8a081f14dcd79
   title: Claude Codeに永続メモリを追加する「claude-mem」を実際に導入してみた — 自作hook版との比較
   date: '2026-04-16'
+- url: https://ai-heartland.com/tool/prismatic-skills-claude-code-plugin
+  title: Prismatic Skills for Claude Code徹底解剖｜iPaaS製スキル束ねプラグインのSKILL.md設計
+  date: '2026-05-08'
 ---
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-05-08
+
+### Prismatic Skills for Claude Code徹底解剖｜iPaaS製スキル束ねプラグインのSKILL.md設計
+
+iPaaSベンダーPrismaticが2026年4月に公開したClaude Code用プラグイン「prismatic-skills」の徹底解説記事。5系統のスキル（Component Builder、CNI Builder、Embed Advisor、Orby、Migration Analyzer）を提供し、user-invocable: falseやdisallowed-toolsなど独自のSKILL.md設計手法を採用。自社SaaSのClaude Codeプラグインを作る際の設計テンプレートとして優秀と評価されている。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/prismatic-skills-claude-code-plugin)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, 新機能
 
 ---
 

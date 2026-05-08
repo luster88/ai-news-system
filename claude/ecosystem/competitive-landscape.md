@@ -5,11 +5,13 @@ subcategory: competitive-landscape
 tags:
 - claude-code
 - cowork
+- opus
 - performance
 - pricing
 - release
+- sonnet
 date: '2026-03-23'
-updated: '2026-04-28'
+updated: '2026-05-08'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -29,13 +31,29 @@ sources:
 - url: https://the-decoder.com/openai-misses-revenue-targets-as-anthropic-and-google-close-in
   title: OpenAI misses revenue targets as Anthropic and Google close in
   date: '2026-04-28'
+- url: https://the-decoder.com/openai-opens-gpt-5-5-cyber-to-vetted-security-researchers
+  title: OpenAI opens GPT-5.5-Cyber to vetted security researchers
+  date: '2026-05-08'
 ---
 
 
 
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-05-08
+
+### OpenAI opens GPT-5.5-Cyber to vetted security researchers
+
+OpenAIがGPT-5.5-Cyberを発表。これはセキュリティ研究者向けに安全フィルターを緩和したモデルで、ペネトレーションテストやマルウェア解析が可能。アクセスは段階的で、最も制限の少ないバージョンは重要インフラ防衛担当者に限定され、CiscoやCrowdStrikeと提携。Anthropicの競合モデルと同等の性能を持つが、ホワイトハウスがこうしたリリースの規制を検討中。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/openai-opens-gpt-5-5-cyber-to-vetted-security-researchers)
+- **重要度**: 4/10
+- **タグ**: opus, sonnet, cowork
 
 ---
 

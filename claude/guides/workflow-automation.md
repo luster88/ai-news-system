@@ -3,18 +3,36 @@ title: Workflow Automation
 category: guides
 subcategory: workflow-automation
 tags:
+- claude-api
 - claude-code
 - cowork
+- haiku
 - prompt
 date: '2026-04-26'
-updated: '2026-04-26'
+updated: '2026-05-08'
 sources:
 - url: https://zenn.dev/saytooy_arch/articles/14-zenn-auto-publish-pipeline
   title: Zenn自動公開パイプラインをclaude -pで構築した話
   date: '2026-04-26'
+- url: https://zenn.dev/aiflowlab/articles/n8n-claude-haiku-inquiry-workflow
+  title: Claude Haiku 4.5 + n8n で問い合わせ対応ワークフローを作ったら、100% 精度・1 件 0.5 円で運用できた
+  date: '2026-05-08'
 ---
 
+
 # Workflow Automation
+
+---
+
+## 2026-05-08
+
+### Claude Haiku 4.5 + n8n で問い合わせ対応ワークフローを作ったら、100% 精度・1 件 0.5 円で運用できた
+
+Claude Haiku 4.5とn8nを組み合わせた問い合わせ対応自動化ワークフローの実装事例。4軸分類（カテゴリ・緊急度・感情・推奨回答期限）で100%の精度を達成し、1件あたり約0.5円で運用可能。緊急度別に3つのドラフト生成ルートを分離し、Slack通知まで自動化している。分類とドラフト生成を分離する設計により、各タスクの精度を維持しながらコスト効率を実現。
+
+- **ソース**: [Zenn claude](https://zenn.dev/aiflowlab/articles/n8n-claude-haiku-inquiry-workflow)
+- **重要度**: 7/10
+- **タグ**: haiku, claude-api
 
 ---
 

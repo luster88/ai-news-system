@@ -4,12 +4,13 @@ category: tools
 subcategory: tool-comparison
 tags:
 - claude-code
+- copilot
 - cowork
 - cursor
 - mcp
 - performance
 date: '2026-04-07'
-updated: '2026-04-13'
+updated: '2026-05-08'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-vs-cursor-comparison-2026
   title: Claude Code vs Cursor徹底比較2026年版：CLI派とIDE派、どちらを選ぶべきか
@@ -17,10 +18,26 @@ sources:
 - url: https://zenn.dev/horizon_it00/articles/118d6780ca072a
   title: 個人最強は Claude Code。組織最強は Gemini CLI。境界線を実務で引き直した記録
   date: '2026-04-13'
+- url: https://qiita.com/kamome_susume/items/7d3b175becbda3ffce7e
+  title: Claude Codeと他AI開発ツールの違いまとめ｜Cursor・GitHub Copilot・Windsurfと何が違うの？
+  date: '2026-05-08'
 ---
 
 
+
 # Tool Comparison
+
+---
+
+## 2026-05-08
+
+### Claude Codeと他AI開発ツールの違いまとめ｜Cursor・GitHub Copilot・Windsurfと何が違うの？
+
+Claude Code、Cursor、GitHub Copilot、Windsurfの4つの主要AI開発ツールを徹底比較した記事。Claude Codeはエージェント型で推論品質が高く（SWE-bench Verified 80.9%）、MCP統合や巨大なコンテキスト窓（最大1Mトークン）が特徴。Cursorは開発体験の質が高く、GitHub Copilotはエンタープライズ向けの信頼性が強み。Windsurfは低コストでCursor的な体験を提供する。各ツールの設計思想の違いを理解し、自分のボトルネックに合わせて選ぶことが重要。
+
+- **ソース**: [Qiita claude](https://qiita.com/kamome_susume/items/7d3b175becbda3ffce7e)
+- **重要度**: 6/10
+- **タグ**: claude-code, cursor, copilot
 
 ---
 

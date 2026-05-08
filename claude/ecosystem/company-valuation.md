@@ -7,14 +7,30 @@ tags:
 - cowork
 - pricing
 date: '2026-04-19'
-updated: '2026-04-19'
+updated: '2026-05-08'
 sources:
 - url: https://the-decoder.com/anthropics-revenue-surge-reportedly-fuels-talk-of-trillion-dollar-valuation
   title: Anthropic's revenue surge reportedly fuels talk of trillion-dollar valuation
   date: '2026-04-19'
+- url: https://the-decoder.com/anthropic-approaches-1-trillion-valuation-as-revenue-grows-fivefold
+  title: Anthropic approaches $1 trillion valuation as revenue grows fivefold
+  date: '2026-05-08'
 ---
 
+
 # Company Valuation
+
+---
+
+## 2026-05-08
+
+### Anthropic approaches $1 trillion valuation as revenue grows fivefold
+
+Anthropicが900億ドル（約90兆円）の評価額で500億ドルの資金調達を計画中。Claude CodeとCoworkの成功により、年間収益が2024年末比で5倍の450億ドルに達する見込み。OpenAIを超える最も価値のあるAIスタートアップになる可能性があり、2024年後半にIPOも検討している。一方で、キャパシティ不足が顧客運用に影響を与えている。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-approaches-1-trillion-valuation-as-revenue-grows-fivefold)
+- **重要度**: 9/10
+- **タグ**: pricing, claude-code, cowork
 
 ---
 
