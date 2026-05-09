@@ -13,7 +13,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-05-06'
+updated: '2026-05-09'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -96,6 +96,9 @@ sources:
 - url: https://qiita.com/Ngen/items/7b1d2c3ee313c37c7608
   title: Claude Codeのスラッシュコマンド7個でPR準備を15分短縮した話
   date: '2026-05-06'
+- url: https://qiita.com/Tadashi_Kudo/items/2fc110e5aeb34985acf9
+  title: AIエージェントの「未完了タスク」をどこに書くか：working-memory.md 運用設計
+  date: '2026-05-09'
 ---
 
 
@@ -119,7 +122,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-05-09
+
+### AIエージェントの「未完了タスク」をどこに書くか：working-memory.md 運用設計
+
+Claude Code等のAIエージェント運用において、セッションをまたぐ未完了タスクの管理方法を解説。working-memory.mdという一時バッファファイルを用い、種別・背景・次アクション・昇格先候補の4要素を持つ構造化Markdown形式で管理する実践的な設計を提案。完了タスクは削除せず[完了 YYYY-MM-DD]タグで残し、月次で圧縮する運用ルールも紹介。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Tadashi_Kudo/items/2fc110e5aeb34985acf9)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

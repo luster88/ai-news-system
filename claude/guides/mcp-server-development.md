@@ -7,7 +7,7 @@ tags:
 - mcp
 - setup
 date: '2026-04-07'
-updated: '2026-05-06'
+updated: '2026-05-09'
 sources:
 - url: https://ai-heartland.com/explain/mcp-server-build-guide
   title: MCPサーバーの作り方2026年完全ガイド：TypeScript・Python両対応チュートリアル
@@ -15,10 +15,26 @@ sources:
 - url: https://zenn.dev/dktech/articles/f72d63e90f398e
   title: 意外とシンプル！FastMCPでMCPサーバを解説
   date: '2026-05-06'
+- url: https://zenn.dev/aoi___ei/articles/claude-mcp-pdf-4-2-moya5def
+  title: Claude MCPサーバー自作キット｜日本語PDF＋雛形4種【無料サンプル2個公開】
+  date: '2026-05-09'
 ---
 
 
+
 # Mcp Server Development
+
+---
+
+## 2026-05-09
+
+### Claude MCPサーバー自作キット｜日本語PDF＋雛形4種【無料サンプル2個公開】
+
+Claude MCP（Model Context Protocol）サーバーを自作するためのキット紹介記事。Node.js + TypeScriptでMCPサーバーを構築する最小構成の雛形コード（hello-tool）や環境セットアップ手順を無料サンプルとして公開。Claudeにカスタムツールを呼ばせる方法を解説し、完全版PDFキットではNotion連携やDB参照などの実装例も収録。日本語の実装ドキュメントが少ない中、初心者でも動かせる環境構築を重視した内容となっている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/aoi___ei/articles/claude-mcp-pdf-4-2-moya5def)
+- **重要度**: 6/10
+- **タグ**: mcp, setup, claude-code
 
 ---
 

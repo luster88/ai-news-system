@@ -4,13 +4,14 @@ category: guides
 subcategory: claude-code-tips
 tags:
 - claude-code
+- cowork
 - linux
 - mcp
 - prompt
 - setup
 - 新機能
 date: '2026-03-27'
-updated: '2026-04-08'
+updated: '2026-05-09'
 sources:
 - url: https://zenn.dev/beef_and_rice/articles/482b09980fce23
   title: Claude Code の便利機能 Ctrl+G と Ctrl+S を zsh でも使う
@@ -25,12 +26,28 @@ sources:
 - url: https://qiita.com/masa_ClaudeCodeLab/items/5af94d8adad510f5a75c
   title: Claude Codeの生産性を3倍にする10のTips【2026年版】
   date: '2026-04-08'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1t8aecu/the_unreasonable_effectiveness_of_html_when_using
+  title: The unreasonable effectiveness of HTML when using Claude Code
+  date: '2026-05-09'
 ---
 
 
 
 
+
 # Claude Code Tips
+
+---
+
+## 2026-05-09
+
+### The unreasonable effectiveness of HTML when using Claude Code
+
+Claude Code を使用する際に HTML が驚くほど効果的であるという Simon Willison 氏の記事が Reddit の ClaudeAI コミュニティで共有されました。HTML を活用することで Claude とのコーディング作業がより効率的になる可能性が議論されています。具体的な技法やユースケースについてコミュニティで意見交換が行われています。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1t8aecu/the_unreasonable_effectiveness_of_html_when_using)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

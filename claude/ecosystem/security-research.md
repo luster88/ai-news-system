@@ -3,20 +3,37 @@ title: Security Research
 category: ecosystem
 subcategory: security-research
 tags:
+- opus
 - performance
 - sonnet
 - 新機能
 date: '2026-03-29'
-updated: '2026-03-29'
+updated: '2026-05-09'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s739lc/nicolas_carlini_672k_citations_on_google_scholar
   title: Nicolas Carlini (67.2k citations on Google Scholar) says Claude is a better
     security researcher than him, made $3.7 million from exploiting smart contracts,
     and found vulnerabilities in Linux and Ghost
   date: '2026-03-29'
+- url: https://qiita.com/lumichy/items/ca08963aa1a7b5e4554c
+  title: Claude Mythos徹底解剖：50ドルで27年モノのゼロデイ脆弱性を発見、既存の防壁はなぜ崩壊したか
+  date: '2026-05-09'
 ---
 
+
 # Security Research
+
+---
+
+## 2026-05-09
+
+### Claude Mythos徹底解剖：50ドルで27年モノのゼロデイ脆弱性を発見、既存の防壁はなぜ崩壊したか
+
+Anthropicの新モデル「Mythos」が、わずか50ドルで27年間潜んでいたOpenBSDのゼロデイ脆弱性を発見。従来のファジングツールや人間のコードレビューでは検出できなかった論理的パラドックスを、10兆パラメータ規模の超大規模コンテキスト理解力と自律エージェント能力により特定。AIによる脆弱性発見の速度と精度が、既存のサイバーセキュリティの防御モデルを根本から覆す可能性を示唆している。
+
+- **ソース**: [Qiita claude](https://qiita.com/lumichy/items/ca08963aa1a7b5e4554c)
+- **重要度**: 9/10
+- **タグ**: 新機能, performance, opus
 
 ---
 

@@ -8,7 +8,7 @@ tags:
 - mcp
 - 新機能
 date: '2026-04-01'
-updated: '2026-05-04'
+updated: '2026-05-09'
 sources:
 - url: https://qiita.com/Andhy/items/371621273924d74e9917
   title: 自作のClaude Codeのプラグインの有効性を検証してみたところなかなか良い結果に
@@ -20,11 +20,27 @@ sources:
   title: built a plugin so my parallel Claude Code sessions can message each other
     instead of me alt-tabbing
   date: '2026-05-04'
+- url: https://ai-heartland.com/agent/tzachbon-smart-ralph-spec-driven-claude-code
+  title: Smart Ralph｜Claude Code/Codexにspec-driven開発を持ち込む14コマンド・6エージェント基盤
+  date: '2026-05-09'
 ---
 
 
 
+
 # Claude Code Plugin
+
+---
+
+## 2026-05-09
+
+### Smart Ralph｜Claude Code/Codexにspec-driven開発を持ち込む14コマンド・6エージェント基盤
+
+Smart Ralphは、Claude CodeとCodex CLIに対応したspec-driven開発プラグイン。曖昧な要件を研究→要件→設計→タスク→実装の5フェーズに分解し、6つの専門エージェントが処理する。タスクごとにコンテキストをリフレッシュすることでトークン消費を抑え、長時間の自律実行を実現。v3.0.0で外部依存を排除し、self-containedな実行ループへ移行した。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/agent/tzachbon-smart-ralph-spec-driven-claude-code)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, cowork
 
 ---
 

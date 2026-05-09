@@ -5,11 +5,12 @@ subcategory: claude-code-skills
 tags:
 - claude-code
 - cowork
+- mcp
 - prompt
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-05-01'
+updated: '2026-05-09'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -32,6 +33,12 @@ sources:
 - url: https://qiita.com/Tadashi_Kudo/items/e0484a0f800b5dca4665
   title: Claude Skills（SKILL.md）設計「6法則」と自分の環境を照合したら、2点で先を行っていた話
   date: '2026-05-01'
+- url: https://qiita.com/hinaworks/items/93ae032d392bdad25655
+  title: Claude Code Skills で /briefing コマンドを5分で実装する
+  date: '2026-05-09'
+- url: https://qiita.com/atsushi11o7/items/5cbef4b10f3ec55c75a1
+  title: Claude Code の skill 機能を本格的に試す - 開発フローを丸ごと任せて PR まで完結させた話
+  date: '2026-05-09'
 ---
 
 
@@ -40,7 +47,30 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-05-09
+
+### Claude Code Skills で /briefing コマンドを5分で実装する
+
+Claude Code の Skills 機能を使って、SNS運用の朝の確認作業を自動化する方法を解説。.claude/skills/ フォルダに Markdown ファイルを置くことで、スラッシュコマンドとして使えるようになる。CLAUDE.md を作成することで、Skills が特定のアカウントとして動作する設定も可能。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/hinaworks/items/93ae032d392bdad25655)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
+
+---
+
+### Claude Code の skill 機能を本格的に試す - 開発フローを丸ごと任せて PR まで完結させた話
+
+Claude Code の skill 機能を実戦投入し、Dev Container + MCP + GitHub CLI で開発環境を構築。GitHub CLI の gh skill サブコマンド（2026年4月追加）で Anthropic 公式 skill を導入し、frontend-design skill を使ったコンポーネント再設計から PR 作成までのフローを自動化した実践記事。.mcp.json による MCP サーバ設定（Context7、GitHub MCP）と、永続化された Claude 認証情報の管理方法も詳説。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/atsushi11o7/items/5cbef4b10f3ec55c75a1)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, setup
 
 ---
 
