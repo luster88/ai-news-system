@@ -5,16 +5,33 @@ subcategory: autonomous-agent-architecture
 tags:
 - claude-code
 - cowork
+- prompt
 - setup
 date: '2026-04-29'
-updated: '2026-04-29'
+updated: '2026-05-10'
 sources:
 - url: https://qiita.com/YujiNaramoto/items/b9b8e1be362c0471d390
   title: なぜGit管理の営業システムをDB+自律エージェントに移行したか
   date: '2026-04-29'
+- url: https://ai-heartland.com/explain/thariq-agent-file-system
+  title: ThariqがXで断言「全エージェントはファイルシステムを使え」｜状態管理5メリットを解説
+  date: '2026-05-10'
 ---
 
+
 # Autonomous Agent Architecture
+
+---
+
+## 2026-05-10
+
+### ThariqがXで断言「全エージェントはファイルシステムを使え」｜状態管理5メリットを解説
+
+AnthropicのClaude Codeチーム所属のThariqが「全エージェントはファイルシステムを使うべき」と強く主張。ファイルシステムは状態管理の優雅な方法であり、会話履歴のみの設計と比べてコンテキスト圧縮、永続性、自己検証能力で優れる。Claude CodeのTodoWriteツールなど実装例も示され、エージェント設計の主流となっている。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/thariq-agent-file-system)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

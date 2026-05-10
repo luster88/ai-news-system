@@ -6,9 +6,10 @@ tags:
 - claude-code
 - mcp
 - prompt
+- vscode
 - 新機能
 date: '2026-04-12'
-updated: '2026-05-08'
+updated: '2026-05-10'
 sources:
 - url: https://ai-heartland.com/explain/last30days-skill-guide
   title: last30days-skill完全ガイド｜Reddit・X・YouTube横断AIリサーチスキルの使い方2026年版
@@ -19,11 +20,27 @@ sources:
 - url: https://ai-heartland.com/tool/prismatic-skills-claude-code-plugin
   title: Prismatic Skills for Claude Code徹底解剖｜iPaaS製スキル束ねプラグインのSKILL.md設計
   date: '2026-05-08'
+- url: https://ai-heartland.com/tool/thariq-making-playgrounds-claude-code
+  title: Claude Code開発者公式プラグイン「playground」｜ThariqのHTML対話術5実例
+  date: '2026-05-10'
 ---
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-05-10
+
+### Claude Code開発者公式プラグイン「playground」｜ThariqのHTML対話術5実例
+
+Anthropic公式のClaude Code開発者Thariqが、新プラグイン「playground」をリリース。1コマンドでインストールでき、Claude Codeに視覚的な対話UIを持つスタンドアロンHTMLを生成させることで、テキストベースの対話からビジュアル判断へと転換。Anthropic公式マーケットプレイスから配布され、84万インプレッションを記録するほど注目を集めている。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/thariq-making-playgrounds-claude-code)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, vscode
 
 ---
 

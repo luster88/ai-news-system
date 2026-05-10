@@ -7,7 +7,7 @@ tags:
 - prompt
 - setup
 date: '2026-04-17'
-updated: '2026-05-08'
+updated: '2026-05-10'
 sources:
 - url: https://zenn.dev/amu_lab/articles/claude-code-learning-mode
   title: Claude Code Learning Mode 完全ガイド — /output-style と TODO(human) の実務運用
@@ -18,11 +18,27 @@ sources:
 - url: https://qiita.com/pizzy-pz/items/b2753a2ffe9944d8be4f
   title: 初学者が学習効率を上げるためにClaude codeのSkillsを設定してみた
   date: '2026-05-08'
+- url: https://qiita.com/shigezou46/items/c3b0dc2ad55a3b7bcf1c
+  title: Claude Codeを利用したTerraform入門ハンズオン
+  date: '2026-05-10'
 ---
 
 
 
+
 # Claude Code Learning Mode
+
+---
+
+## 2026-05-10
+
+### Claude Codeを利用したTerraform入門ハンズオン
+
+Claude CodeとTerraformを組み合わせた学習用ハンズオンの実践記事。explain、glossary、scaffoldなどのskillsとlearning-guideサブエージェントを活用し、AWSリソースをステップバイステップで学習できる環境を構築。settings.jsonで意図しないコマンド実行を制限しながら、効率的な技術キャッチアップを実現した事例。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/shigezou46/items/c3b0dc2ad55a3b7bcf1c)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-05-04'
+updated: '2026-05-10'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -44,6 +44,12 @@ sources:
 - url: https://ai-heartland.com/mcp/n8n-mcp
   title: n8n MCP｜Claude Codeから自然言語でn8nワークフローを構築するMCPサーバー
   date: '2026-05-04'
+- url: https://qiita.com/wonderrrrrr/items/8b03479a9575af93aa7c
+  title: 法令APIをMCPサーバ化してClaude Codeから利用する
+  date: '2026-05-10'
+- url: https://zenn.dev/rimon/articles/38a9a5bf2e114b
+  title: AIが喋るMCPを作って公開してみた【Codex・Claude Code】
+  date: '2026-05-10'
 ---
 
 
@@ -55,7 +61,30 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-05-10
+
+### 法令APIをMCPサーバ化してClaude Codeから利用する
+
+デジタル庁のe-Gov法令検索APIをMCPサーバ化し、Claude Codeから利用する実装ガイド。FastMCPライブラリを使用してPythonでMCPサーバを構築し、プライベートサブネットのEC2上で実行。SSM接続経由でローカルPCのClaude Codeから法令データの検索・取得が可能になる。法令履歴一覧、法令本文取得などのAPIをツールとして実装し、実際にClaude Codeで動作確認を行った事例。
+
+- **ソース**: [Qiita claude](https://qiita.com/wonderrrrrr/items/8b03479a9575af93aa7c)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, setup
+
+---
+
+### AIが喋るMCPを作って公開してみた【Codex・Claude Code】
+
+Claude や ChatGPT などの LLM クライアントに音声機能を追加する MCP サーバー「speak-mcp」の紹介記事。複数のエージェントを並列実行する際、タスク完了や確認待ちを音声で通知することで、ターミナル巡回の手間を大幅に削減できる。Gemini TTS、ElevenLabs、irodori-TTS などのバックエンドに対応し、CLAUDE.md で音声通知のタイミングと内容を定義して使用する。
+
+- **ソース**: [Zenn claude](https://zenn.dev/rimon/articles/38a9a5bf2e114b)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, 新機能
 
 ---
 

@@ -4,11 +4,12 @@ category: guides
 subcategory: claude-code-cli
 tags:
 - claude-code
+- performance
 - prompt
 - setup
 - 新機能
 date: '2026-05-06'
-updated: '2026-05-07'
+updated: '2026-05-10'
 sources:
 - url: https://zenn.dev/tbnet/articles/claude-code-headless-text-output
   title: Claude Code の claude -p で純粋テキストだけ返してもらう
@@ -16,10 +17,26 @@ sources:
 - url: https://ai-heartland.com/tool/claude-code-commands-complete-guide
   title: Claude Code 全コマンド完全リファレンス2026年5月版｜スラッシュ・CLI・設定を網羅
   date: '2026-05-07'
+- url: https://ai-heartland.com/explain/thariq-non-coding-agents-bash
+  title: Thariq「非コーディングエージェントこそbashを使え」｜メール・データ・API全部1ツールで
+  date: '2026-05-10'
 ---
 
 
+
 # Claude Code Cli
+
+---
+
+## 2026-05-10
+
+### Thariq「非コーディングエージェントこそbashを使え」｜メール・データ・API全部1ツールで
+
+Claude Code チームの Thariq 氏が、非コーディング系エージェント（メール処理、データ集計など）でも bash ツールを積極活用すべきと提言。専用ツールを増やすとコンテキスト消費が増えエージェント精度が落ちるため、bash を「ユニバーサルアダプター」として CLI ツール群を統一的に扱う設計が推奨される。30 社との対話から得た実践知として 29 万インプレッションを記録。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/thariq-non-coding-agents-bash)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, performance
 
 ---
 

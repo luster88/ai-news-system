@@ -11,7 +11,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-03-31'
-updated: '2026-04-24'
+updated: '2026-05-10'
 sources:
 - url: https://qiita.com/nishiken1118/items/6b16557fcabf784c861e
   title: 過去の session をほしい時に参照する方針で claude-mem のトークン消費を激減させた話
@@ -22,11 +22,27 @@ sources:
 - url: https://zenn.dev/northernlearner/articles/49c220b84f91ac
   title: AI駆動開発のための CLAUDE.md 設計パターン — 実運用で磨いた5つの型
   date: '2026-04-24'
+- url: https://qiita.com/kkaattoo/items/e92e137f96545e9211cb
+  title: Claude Code 使用量を節約する5つの工夫【公式ドキュメントまとめ】
+  date: '2026-05-10'
 ---
 
 
 
+
 # Claude Code Optimization
+
+---
+
+## 2026-05-10
+
+### Claude Code 使用量を節約する5つの工夫【公式ドキュメントまとめ】
+
+Claude Code の使用量を節約するための実践的な工夫を公式ドキュメントをもとにまとめた記事。会話履歴のリセット（/clear、/compact）、モデルの使い分け（Sonnet/Opus）、ファイル参照の最適化、CLAUDE.md の整理、事前計画による無駄な生成の削減など、5つの具体的な節約テクニックを解説している。
+
+- **ソース**: [Qiita claude](https://qiita.com/kkaattoo/items/e92e137f96545e9211cb)
+- **重要度**: 6/10
+- **タグ**: claude-code, sonnet, opus
 
 ---
 
