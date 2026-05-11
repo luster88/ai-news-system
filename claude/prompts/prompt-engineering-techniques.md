@@ -8,7 +8,7 @@ tags:
 - cowork
 - prompt
 date: '2026-03-27'
-updated: '2026-03-28'
+updated: '2026-05-11'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s4zqeq/one_sentence_that_instantly_improves_any_claude
   title: One sentence that instantly improves any Claude conversation — borrowed from
@@ -18,10 +18,26 @@ sources:
   title: I've been "gaslighting" my AI models and it's producing insanely better results
     with simple prompt injection
   date: '2026-03-28'
+- url: https://qiita.com/coreloopworks/items/334277793cd88bc15db1
+  title: 「ChatGPTにうまく答えてもらえない」を解決する5つのプロンプト技術【実例・コピペOK】
+  date: '2026-05-11'
 ---
 
 
+
 # Prompt Engineering Techniques
+
+---
+
+## 2026-05-11
+
+### 「ChatGPTにうまく答えてもらえない」を解決する5つのプロンプト技術【実例・コピペOK】
+
+ChatGPT/Claude向けのプロンプト改善技術を5つ紹介。役割宣言・出力形式指定・制約条件の明示・段階的深掘り・反論要求などの基本テクニックを実例付きで解説。有料プロンプトパック（36本・1,980円）の販売記事でもある。
+
+- **ソース**: [Qiita claude](https://qiita.com/coreloopworks/items/334277793cd88bc15db1)
+- **重要度**: 4/10
+- **タグ**: prompt, claude-api, cowork
 
 ---
 

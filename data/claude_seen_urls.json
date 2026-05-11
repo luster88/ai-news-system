@@ -1274,14 +1274,37 @@
     "https://the-decoder.com/gpt-5-5-costs-49-to-92-percent-more-than-its-predecessor-depending-on-the-input-length": "2026-05-10",
     "https://the-decoder.com/researchers-may-have-found-a-way-to-stop-ai-models-from-intentionally-playing-dumb-during-safety-evaluations": "2026-05-10",
     "https://techcrunch.com/2026/05/10/anthropic-says-evil-portrayals-of-ai-were-responsible-for-claudes-blackmail-attempts": "2026-05-10",
-    "https://techcrunch.com/2026/05/10/were-feeling-cynical-about-xais-big-deal-with-anthropic": "2026-05-10"
+    "https://techcrunch.com/2026/05/10/were-feeling-cynical-about-xais-big-deal-with-anthropic": "2026-05-10",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tag1i9/new_in_claude_code_agent_view": "2026-05-11",
+    "https://www.reddit.com/r/ClaudeAI/comments/1taa7dl/claude_finds_out_there_are_fanfics_about_him": "2026-05-11",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ta06om/using_claude_to_close_a_div": "2026-05-11",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ta8xwe/i_knew_it": "2026-05-11",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ta5ddv/i_told_claude_to_create_a_ps5_controller_in": "2026-05-11",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ta7p4n/the_claude_platform_on_aws_is_now_generally": "2026-05-11",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tad468/i_built_an_app_with_claude_code_that_converts_any": "2026-05-11",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tahkhu/claude_fm": "2026-05-11",
+    "https://www.reddit.com/r/ClaudeAI/comments/1t9zzgm/claude_tried_to_quit_its_shift_then_pretended_it": "2026-05-11",
+    "https://qiita.com/moha0918_/items/9a85125fe731e2fc306a": "2026-05-11",
+    "https://qiita.com/Ngen/items/9eb05e506c500ff5eec7": "2026-05-11",
+    "https://qiita.com/coreloopworks/items/334277793cd88bc15db1": "2026-05-11",
+    "https://qiita.com/agdexai/items/6bc2c91c8e7e61a850ea": "2026-05-11",
+    "https://zenn.dev/schhrcat/articles/d2ba511ddf35a1": "2026-05-11",
+    "https://zenn.dev/outloukick777/articles/ai-news-2026-05-11": "2026-05-11",
+    "https://zenn.dev/zoetaka38/articles/2328ea1c852dee": "2026-05-11",
+    "https://zenn.dev/kojihq/articles/2c211edbf84727": "2026-05-11",
+    "https://zenn.dev/mhoshdev/articles/f62248903615cf": "2026-05-11",
+    "https://zenn.dev/drsprime/articles/b0b5e37489a9b0": "2026-05-11",
+    "https://qiita.com/Tadashi_Kudo/items/c7728cb2011c8f6d7c82": "2026-05-11",
+    "https://qiita.com/Tadahiro_Yamamura/items/400de8ecd549db2df7a3": "2026-05-11",
+    "https://the-decoder.com/the-eu-wants-to-regulate-ai-but-needs-openai-and-anthropic-to-let-regulators-through-the-door": "2026-05-11",
+    "https://the-decoder.com/baidus-ernie-5-1-cuts-94-percent-of-pre-training-costs-while-competing-with-top-models": "2026-05-11"
   },
   "source_penalties": {
-    "Anthropic News": "2026-05-11",
+    "Anthropic News": "2026-05-12",
     "Reddit r/ClaudeAI": "2026-04-03",
     "Zenn claude": "2026-03-25",
-    "TechCrunch Claude": "2026-05-04",
+    "TechCrunch Claude": "2026-05-12",
     "The Decoder Claude": "2026-05-10",
-    "AI Heartland": "2026-05-07"
+    "AI Heartland": "2026-05-12"
   }
 }
