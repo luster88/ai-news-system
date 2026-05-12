@@ -6,15 +6,32 @@ tags:
 - claude-code
 - cowork
 - cursor
+- performance
 date: '2026-04-25'
-updated: '2026-04-25'
+updated: '2026-05-12'
 sources:
 - url: https://zenn.dev/m_525/articles/3556bee089853f
   title: AI を活用した2つの開発フロー エージェント駆動開発 × ドキュメントファースト開発
   date: '2026-04-25'
+- url: https://qiita.com/mellowlaunch/items/6470d11a34a2ef027d59
+  title: CodexとClaude Codeが変える開発速度
+  date: '2026-05-12'
 ---
 
+
 # Ai Development Workflow
+
+---
+
+## 2026-05-12
+
+### CodexとClaude Codeが変える開発速度
+
+CodexとClaude Codeが開発速度を変革する仕組みを解説。実装・失敗・修正の試行錯誤サイクルが圧倒的に短縮され、非同期・並列開発によりチーム全体のリードタイムが削減される。AIが生成したコード成果物を見抜く審美眼が、これからのエンジニアに求められる開発力となる。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/mellowlaunch/items/6470d11a34a2ef027d59)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, performance
 
 ---
 

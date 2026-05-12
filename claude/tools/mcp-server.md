@@ -6,12 +6,13 @@ tags:
 - claude-api
 - claude-code
 - cowork
+- cursor
 - mcp
 - performance
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-05-10'
+updated: '2026-05-12'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -50,6 +51,9 @@ sources:
 - url: https://zenn.dev/rimon/articles/38a9a5bf2e114b
   title: AIが喋るMCPを作って公開してみた【Codex・Claude Code】
   date: '2026-05-10'
+- url: https://ai-heartland.com/agent/agentmemory-ai-agent-memory
+  title: agentmemory徹底解説｜Claude Code・CursorのAIエージェントに永続メモリを与えるMCPサーバー
+  date: '2026-05-12'
 ---
 
 
@@ -62,7 +66,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-05-12
+
+### agentmemory徹底解説｜Claude Code・CursorのAIエージェントに永続メモリを与えるMCPサーバー
+
+agentmemoryは、Claude CodeやCursorなどのAIコーディングエージェントに永続的なメモリを提供するMCPサーバー。毎セッションで前提条件を説明し直す「再説明コスト」を削減し、LongMemEval-Sベンチマークで95.2%のR@5スコアを記録。SQLiteとiii-engineのみで動作し、年間約10ドルで運用可能。4層メモリ構造（Working/Episodic/Semantic/Procedural）と忘却曲線による長期運用設計が特徴。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/agent/agentmemory-ai-agent-memory)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code, cursor
 
 ---
 

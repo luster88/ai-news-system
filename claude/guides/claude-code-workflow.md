@@ -13,7 +13,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-05-09'
+updated: '2026-05-12'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -99,6 +99,9 @@ sources:
 - url: https://qiita.com/Tadashi_Kudo/items/2fc110e5aeb34985acf9
   title: AIエージェントの「未完了タスク」をどこに書くか：working-memory.md 運用設計
   date: '2026-05-09'
+- url: https://zenn.dev/oasisz369/articles/e9cc9b4936bed7
+  title: Claude Code との会話を SQLite に永続化したら、毎朝の「前回までの経緯」説明から解放された
+  date: '2026-05-12'
 ---
 
 
@@ -123,7 +126,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-05-12
+
+### Claude Code との会話を SQLite に永続化したら、毎朝の「前回までの経緯」説明から解放された
+
+Claude Code での会話履歴を SQLite と Git で永続化する実装の解説。イベント単位（意思決定・成果物・学び）で構造化し、FTS5 全文検索とバージョン管理を組み合わせることで、「前回までの経緯」を毎回説明するコストを削減。72 イベント・204 コミットの運用実績をもとに設計思想と実装を紹介。
+
+- **ソース**: [Zenn claude](https://zenn.dev/oasisz369/articles/e9cc9b4936bed7)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, cowork
 
 ---
 
