@@ -13,7 +13,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-05-12'
+updated: '2026-05-13'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -102,6 +102,9 @@ sources:
 - url: https://zenn.dev/oasisz369/articles/e9cc9b4936bed7
   title: Claude Code との会話を SQLite に永続化したら、毎朝の「前回までの経緯」説明から解放された
   date: '2026-05-12'
+- url: https://qiita.com/Ngen/items/623e4f455caec67d8c7a
+  title: Claude Codeで広告コピーの訴求ミスを30分で見つける3ステップ
+  date: '2026-05-13'
 ---
 
 
@@ -127,7 +130,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-05-13
+
+### Claude Codeで広告コピーの訴求ミスを30分で見つける3ステップ
+
+広告コピーのレビューに Claude Code を活用し、訴求軸のミスを30分で発見する実践手法を紹介。自分で書いたコピーを Claude に批判的にレビューさせることで、ペインの実在性や訴求表現の問題を効率的に発見できる。具体的には、①ペインの実在性を疑わせる、②既存行動との置き換えで表現する、③忖度なしの批判役を明示する、の3ステップで運用。Claude には創造より批判をさせる方が効率的という知見を共有。
+
+- **ソース**: [Qiita claude](https://qiita.com/Ngen/items/623e4f455caec67d8c7a)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-06'
-updated: '2026-05-10'
+updated: '2026-05-13'
 sources:
 - url: https://zenn.dev/tbnet/articles/claude-code-headless-text-output
   title: Claude Code の claude -p で純粋テキストだけ返してもらう
@@ -20,11 +20,27 @@ sources:
 - url: https://ai-heartland.com/explain/thariq-non-coding-agents-bash
   title: Thariq「非コーディングエージェントこそbashを使え」｜メール・データ・API全部1ツールで
   date: '2026-05-10'
+- url: https://qiita.com/Tadashi_Kudo/items/33d0a9b73b6ce0dee1ad
+  title: Claude Code でコンテキストを枯渇させない3つの戦略——working-memory / PreCompact フック / 出力間引き
+  date: '2026-05-13'
 ---
 
 
 
+
 # Claude Code Cli
+
+---
+
+## 2026-05-13
+
+### Claude Code でコンテキストを枯渇させない3つの戦略——working-memory / PreCompact フック / 出力間引き
+
+Claude Code使用時にコンテキストを枯渇させない実践的な3つの戦略を解説。working-memory.mdによる構造化された情報管理、PreCompact/PostCompactフックによる自動状態保存・復元、Agentツール活用による出力間引きで、長時間のコーディングセッションでも重要情報を失わずに作業を継続できる方法を提案している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Tadashi_Kudo/items/33d0a9b73b6ce0dee1ad)
+- **重要度**: 7/10
+- **タグ**: claude-code
 
 ---
 

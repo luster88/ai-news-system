@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-05-12'
+updated: '2026-05-13'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -54,6 +54,9 @@ sources:
 - url: https://ai-heartland.com/agent/agentmemory-ai-agent-memory
   title: agentmemory徹底解説｜Claude Code・CursorのAIエージェントに永続メモリを与えるMCPサーバー
   date: '2026-05-12'
+- url: https://zenn.dev/tonrakun/articles/a1cb6fc5898ab1
+  title: トークン消費激減したぞ!!!【Sophon-MCP】
+  date: '2026-05-13'
 ---
 
 
@@ -67,7 +70,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-05-13
+
+### トークン消費激減したぞ!!!【Sophon-MCP】
+
+Sophon MCPは、Claude Codeのトークン消費を大幅に削減する専用MCPサーバーです。ファイルの構造だけを先に取得し必要な部分のみを読み込む段階的取得、テキスト圧縮、メモリ保存、タスク管理、セマンティック検索などの機能を提供します。実測でpackage-lock.json読み取り時に約49%のトークン削減を達成し、長時間セッションの継続を可能にします。200トークン以下の小ファイルでは逆効果になる場合があるものの、大規模プロジェクトでのコンテキスト管理に有効です。
+
+- **ソース**: [Zenn claude](https://zenn.dev/tonrakun/articles/a1cb6fc5898ab1)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code, performance
 
 ---
 

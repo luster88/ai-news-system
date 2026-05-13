@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-05-02'
+updated: '2026-05-13'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -52,6 +52,9 @@ sources:
   title: I used Claude as my pair programmer to build a safe for kids generative coloring
     book app for my daughter!
   date: '2026-05-02'
+- url: https://zenn.dev/linkedge/articles/claude-code-scheduled-execution
+  title: Claude Codeの定期実行をまとめてみた
+  date: '2026-05-13'
 ---
 
 
@@ -65,7 +68,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-05-13
+
+### Claude Codeの定期実行をまとめてみた
+
+Claude Codeの定期実行機能（loop、scheduled tasks、Routines）の違いと使い分けを解説。loopは現在のセッションでの繰り返し実行、scheduled tasksはPCで動く定期実行、RoutinesはクラウドでPC不要の定期実行。Routinesはスリープの影響を受けないため最も推奨される。
+
+- **ソース**: [Zenn claude](https://zenn.dev/linkedge/articles/claude-code-scheduled-execution)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 
