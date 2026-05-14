@@ -8,7 +8,7 @@ tags:
 - cowork
 - prompt
 date: '2026-03-27'
-updated: '2026-05-12'
+updated: '2026-05-14'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s4zqeq/one_sentence_that_instantly_improves_any_claude
   title: One sentence that instantly improves any Claude conversation — borrowed from
@@ -27,12 +27,28 @@ sources:
 - url: https://zenn.dev/aitools_jp/articles/1d04fab4aa289f
   title: Claude APIで個人開発を加速するプロンプト設計のコツ5選
   date: '2026-05-12'
+- url: https://qiita.com/qOpenDev/items/a88643770430b5e25cc8
+  title: GPTとClaudeで「きのこたけのこ論争」をさせたら性格が出た
+  date: '2026-05-14'
 ---
 
 
 
 
+
 # Prompt Engineering Techniques
+
+---
+
+## 2026-05-14
+
+### GPTとClaudeで「きのこたけのこ論争」をさせたら性格が出た
+
+GPT-4とClaude Haikuに「きのこたけのこ論争」をさせる実験記事。PythonでOpenAIとAnthropicのAPIを呼び出し、システムプロンプトでそれぞれを「きのこ派」「たけのこ派」に設定し、相互に会話させた結果、AIの性格の違いが表れた。実装ではチャット履歴管理やシステムメッセージの扱いに違いがあり、プロンプト設計で建設的な議論を促す工夫が必要だった。
+
+- **ソース**: [Qiita claude](https://qiita.com/qOpenDev/items/a88643770430b5e25cc8)
+- **重要度**: 4/10
+- **タグ**: prompt, claude-api, cowork
 
 ---
 

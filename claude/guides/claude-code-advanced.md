@@ -8,7 +8,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-04-08'
-updated: '2026-04-22'
+updated: '2026-05-14'
 sources:
 - url: https://qiita.com/moha0918_/items/9682b1ec8b71e884ec13
   title: 複数のAIが同時に働く仕組み - Agent Teamsで実現するチーム開発の全体像
@@ -16,10 +16,26 @@ sources:
 - url: https://qiita.com/sugo_mzk/items/30da0a75b55cd7abe7c3
   title: Claude Code 実践編 — Output Style
   date: '2026-04-22'
+- url: https://qiita.com/creolab_dev/items/5f058d93b1f88c43f339
+  title: Claude Code 5 月アップデート総括 — skills 検索 / async hooks / HTTP hooks を個人開発パイプラインへ組み込む
+  date: '2026-05-14'
 ---
 
 
+
 # Claude Code Advanced
+
+---
+
+## 2026-05-14
+
+### Claude Code 5 月アップデート総括 — skills 検索 / async hooks / HTTP hooks を個人開発パイプラインへ組み込む
+
+Claude Code の 5 月アップデートで skills 検索ボックス、PostToolUse hooks の async 対応、HTTP hooks が追加された。これらは単独ではなく組み合わせることで、開発パイプラインの自動化や CI/CD ワークフローに効果を発揮する。async hooks により副作用処理が非同期化され、HTTP hooks で外部サーバとの連携が可能になり、skills 検索で大量の skill 管理が実用的になった。企業開発での活用には、エラーハンドリング、認証情報管理、hook の責務分離などの設計観点が重要。
+
+- **ソース**: [Qiita claude](https://qiita.com/creolab_dev/items/5f058d93b1f88c43f339)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

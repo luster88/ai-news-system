@@ -11,7 +11,7 @@ tags:
 - windows
 - 新機能
 date: '2026-04-04'
-updated: '2026-05-03'
+updated: '2026-05-14'
 sources:
 - url: https://qiita.com/taiki_i/items/2d75a882e0f3187f6bb8
   title: あなたの CLAUDE.md、ちゃんと機能してますか？作り方から公式プラグインで採点するまでの道のり
@@ -43,6 +43,9 @@ sources:
 - url: https://zenn.dev/yt8220/articles/f0465e79d0abd9
   title: Claude Codeの設定を育てた話 — permission・hooks・CLAUDE.md・subagentで「任せられる環境」を作る
   date: '2026-05-03'
+- url: https://qiita.com/pizzy-pz/items/2c2cff464b49fb266a7a
+  title: 初心者なりのCLAUDE.mdの内容
+  date: '2026-05-14'
 ---
 
 
@@ -51,7 +54,20 @@ sources:
 
 
 
+
 # Claude Code Setup
+
+---
+
+## 2026-05-14
+
+### 初心者なりのCLAUDE.mdの内容
+
+個人開発者がClaude利用時に設定しているCLAUDE.mdの内容を紹介。理解度チェックの質問を必須化、TDD原則、ルールファイルの参照設定、RTK（Rust Token Killer）による冗長ログのフィルタリングなど、100行程度のカスタムルールを公開している。
+
+- **ソース**: [Qiita claude](https://qiita.com/pizzy-pz/items/2c2cff464b49fb266a7a)
+- **重要度**: 5/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

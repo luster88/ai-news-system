@@ -5,11 +5,12 @@ subcategory: claude-code-best-practices
 tags:
 - claude-code
 - claude-console
+- cowork
 - prompt
 - setup
 - 新機能
 date: '2026-04-11'
-updated: '2026-05-05'
+updated: '2026-05-14'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-best-practice-guide-2026
   title: Claude Codeベストプラクティス完全ガイド2026年版｜使い方・Tips・効率化テクニック集
@@ -20,11 +21,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1t4ncbj/10_things_about_claude_that_took_me_way_too_long
   title: 10 things about Claude that took me way too long to figure out
   date: '2026-05-05'
+- url: https://qiita.com/Tadashi_Kudo/items/702c4e4d699404acf81a
+  title: Claude Codeで本番コードに触れる前に、まずロールバック手順を書け——Rollback path先記述の設計
+  date: '2026-05-14'
 ---
 
 
 
+
 # Claude Code Best Practices
+
+---
+
+## 2026-05-14
+
+### Claude Codeで本番コードに触れる前に、まずロールバック手順を書け——Rollback path先記述の設計
+
+Claude Codeで本番コードを変更する際、実装内容より先にロールバック手順を記述する「Rollback path先記述ルール」を提案。spec.mdの冒頭にロールバック手順を配置し、エージェントに実装の境界線を明示することで、予期しない副作用や本番障害を防ぐ。データ構造変更や決済フローなど「5分以内に戻せない変更」に適用する設計思想と具体的なテンプレートを紹介。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Tadashi_Kudo/items/702c4e4d699404acf81a)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

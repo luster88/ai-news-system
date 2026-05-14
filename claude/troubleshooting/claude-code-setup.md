@@ -8,7 +8,7 @@ tags:
 - mac
 - setup
 date: '2026-03-23'
-updated: '2026-04-26'
+updated: '2026-05-14'
 sources:
 - url: https://qiita.com/juliuse/items/981cee0228c394ffc28f
   title: Claude Codeさいしょのつまずき【claudeコマンドが使えない】
@@ -16,10 +16,26 @@ sources:
 - url: https://zenn.dev/nabecoach/articles/6a4d2a9709424a
   title: Claude Code setup トラブルシューティング API連携になっていたので、サブスクリプションに切り替えた
   date: '2026-04-26'
+- url: https://qiita.com/toshi-arch/items/5a791548dc4ccadc9ab0
+  title: agentcore deployと打ってれば大丈夫、は罠だった話【Bedrock AgentCore】
+  date: '2026-05-14'
 ---
 
 
+
 # Claude Code Setup
+
+---
+
+## 2026-05-14
+
+### agentcore deployと打ってれば大丈夫、は罠だった話【Bedrock AgentCore】
+
+AWS Bedrock AgentCoreのデプロイ時、Claude Codeが古いlegacy版CLI（pip版starter-toolkit）を提案することがある。新旧両方のCLIで`agentcore deploy`コマンドが使えるため、コマンド名だけでは最新版か判別できず、気づかずlegacy版を使い続けてしまう罠がある。AIアシスタントは学習データの関係で古い情報を参照しがちなため、新サービスのセットアップ時は提案内容が最新か確認すべき。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/toshi-arch/items/5a791548dc4ccadc9ab0)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, bugfix
 
 ---
 
