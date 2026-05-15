@@ -7,15 +7,32 @@ tags:
 - performance
 - pricing
 date: '2026-04-30'
-updated: '2026-04-30'
+updated: '2026-05-15'
 sources:
 - url: https://the-decoder.com/anthropic-reviewing-investor-offers-that-would-value-the-company-at-over-900-billion
   title: Anthropic reviewing investor offers that would value the company at over
     $900 billion
   date: '2026-04-30'
+- url: https://the-decoder.com/anthropics-900-billion-valuation-would-make-it-more-valuable-than-openai-for-the-first-time
+  title: Anthropic's $900 billion valuation would make it more valuable than OpenAI
+    for the first time
+  date: '2026-05-15'
 ---
 
+
 # Funding Valuation
+
+---
+
+## 2026-05-15
+
+### Anthropic's $900 billion valuation would make it more valuable than OpenAI for the first time
+
+Anthropicが9000億ドルの企業価値評価で300億ドルの資金調達を交渉中。これが実現すればOpenAI（8520億ドル）を初めて上回ることになる。1月の3500億ドルから約3倍に急騰し、年間売上も450億ドルに達する見込み。Dragoneer、Greenoaks、Sequoia Capital、Altimeter Capitalが各20億ドル以上を出資予定で、今月中の成立が期待される。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropics-900-billion-valuation-would-make-it-more-valuable-than-openai-for-the-first-time)
+- **重要度**: 9/10
+- **タグ**: pricing, performance, cowork
 
 ---
 

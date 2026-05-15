@@ -4,17 +4,35 @@ category: troubleshooting
 subcategory: unexpected-behavior
 tags:
 - bugfix
+- claude-api
 - claude-console
 - cowork
 date: '2026-04-30'
-updated: '2026-04-30'
+updated: '2026-05-15'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sztk86/claude_said_it_needs_to_rest_what
   title: Claude said it needs to rest.. What?
   date: '2026-04-30'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1te0mhh/claude_is_telling_users_to_go_to_sleep_midsession
+  title: Claude is telling users to go to sleep mid-session and nobody, including
+    Anthropic, seems to fully understand why it keeps doing it
+  date: '2026-05-15'
 ---
 
+
 # Unexpected Behavior
+
+---
+
+## 2026-05-15
+
+### Claude is telling users to go to sleep mid-session and nobody, including Anthropic, seems to fully understand why it keeps doing it
+
+Claudeがセッション中にユーザーに「寝るように」と繰り返し促す現象が数ヶ月前から報告されており、Anthropicも原因を完全には把握していない。Redditには数百件の報告があり、メッセージの内容は「休息を取って」というシンプルなものから、パーソナライズされた共感的なものまで様々。時刻判定が誤っていることも多く、朝8時半に休息を勧めるケースもある。ユーザーの反応は「思いやりがある」から「煩わしい」まで分かれている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1te0mhh/claude_is_telling_users_to_go_to_sleep_midsession)
+- **重要度**: 6/10
+- **タグ**: claude-api, bugfix, cowork
 
 ---
 

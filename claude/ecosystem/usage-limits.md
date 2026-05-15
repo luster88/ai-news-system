@@ -4,11 +4,13 @@ category: ecosystem
 subcategory: usage-limits
 tags:
 - claude-code
+- claude-console
+- cowork
 - performance
 - pricing
 - 新機能
 date: '2026-03-26'
-updated: '2026-03-27'
+updated: '2026-05-15'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s4idaq/update_on_session_limits
   title: Update on Session Limits
@@ -16,10 +18,26 @@ sources:
 - url: https://qiita.com/taketsuyo/items/78c5332aeaccfc2e6c49
   title: Claudeの制限強化は、性能の問題じゃなく「人気が本物になった」サインだと思う
   date: '2026-03-27'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1te40i2/they_just_reset_our_usage_mine_was_supposed_to_be
+  title: '!!!THEY JUST RESET OUR USAGE!!! Mine was supposed to be tonight'
+  date: '2026-05-15'
 ---
 
 
+
 # Usage Limits
+
+---
+
+## 2026-05-15
+
+### !!!THEY JUST RESET OUR USAGE!!! Mine was supposed to be tonight
+
+Claude の使用量制限が予定より早くリセットされたというユーザー報告。通常は個別のリセットタイミングがあるが、今回は予想外のタイミングでリセットが発生した模様。コミュニティでの驚きと喜びの反応を示す投稿。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1te40i2/they_just_reset_our_usage_mine_was_supposed_to_be)
+- **重要度**: 4/10
+- **タグ**: claude-console, pricing, cowork
 
 ---
 

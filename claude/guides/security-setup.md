@@ -3,11 +3,13 @@ title: Security Setup
 category: guides
 subcategory: security-setup
 tags:
+- claude-api
 - claude-code
+- linux
 - prompt
 - setup
 date: '2026-05-04'
-updated: '2026-05-04'
+updated: '2026-05-15'
 sources:
 - url: https://qiita.com/honey-0326-honey/items/c16d628aee898e3f9f72
   title: 【初心者向け】社内PCでClaude Codeを使う前に。絶対に知っておきたいセキュリティの罠と対策
@@ -15,9 +17,25 @@ sources:
 - url: https://zenn.dev/shun0326/articles/1a144d73f0f2f0
   title: 【初心者向け】社内PCでClaude Codeを使う前に。絶対に知っておきたいセキュリティの罠と対策
   date: '2026-05-04'
+- url: https://zenn.dev/avot/articles/a802d403c02340
+  title: direnvを使って、AssumeRoleで安全なロールに上書きしよう
+  date: '2026-05-15'
 ---
 
+
 # Security Setup
+
+---
+
+## 2026-05-15
+
+### direnvを使って、AssumeRoleで安全なロールに上書きしよう
+
+direnvを使ってClaude利用時にAWS IAMロールをAssumeRoleで自動的に読み取り専用ロールに切り替える方法を解説。.envrcファイルで環境変数を上書きし、デフォルトで安全な権限に制限することでClaudeによる誤操作を防ぐセットアップガイド。
+
+- **ソース**: [Zenn claude](https://zenn.dev/avot/articles/a802d403c02340)
+- **重要度**: 5/10
+- **タグ**: setup, claude-api, linux
 
 ---
 
