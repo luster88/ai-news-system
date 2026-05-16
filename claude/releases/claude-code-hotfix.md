@@ -8,7 +8,7 @@ tags:
 - opus
 - release
 date: '2026-04-16'
-updated: '2026-04-16'
+updated: '2026-05-16'
 sources:
 - url: https://qiita.com/moha0918_/items/6a21a6b76828fc7529af
   title: 今日のClaude Code v2.1.112 リリース｜毎日Changelog解説
@@ -16,9 +16,35 @@ sources:
 - url: https://qiita.com/moha0918_/items/6a21a6b76828fc7529af
   title: 今日のClaude Code v2.1.112 リリース｜毎日Changelog解説
   date: '2026-04-16'
+- url: https://qiita.com/moha0918_/items/4a177eb40bcf7fb66fba
+  title: Claude Code v2.1.142〜v2.1.143 リリース｜毎日Changelog解説
+  date: '2026-05-16'
 ---
 
+
 # Claude Code Hotfix
+
+---
+
+## 2026-05-16
+
+### Claude Code v2.1.142〜v2.1.143 リリース｜毎日Changelog解説
+
+Claude Code v2.1.142～v2.1.143がリリース。Fast modeのデフォルトモデルがOpus 4.6から4.7に昇格し、既存の挙動に影響する可能性あり。plugin disable/enableが依存関係を強制チェックするようになり、誤った無効化を防止。worktree.bgIsolation: "none"設定で背景セッションが本体ディレクトリを直接編集可能に。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/4a177eb40bcf7fb66fba)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, opus
+
+---
+
+### Claude Code v2.1.142〜v2.1.143 リリース｜毎日Changelog解説
+
+Claude Code v2.1.142〜v2.1.143のリリース情報。Fast modeのデフォルトモデルがOpus 4.6から4.7に昇格し、環境変数で旧モデルにピン留め可能。プラグインの有効化・無効化時に依存関係を自動チェックする機能が追加され、依存元がある場合は無効化を拒否。worktree.bgIsolation: "none"設定で背景セッションが本体ディレクトリを直接編集可能に。MCP_TOOL_TIMEOUTがリモートMCPサーバにも反映されるようになった。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/4a177eb40bcf7fb66fba)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, opus
 
 ---
 

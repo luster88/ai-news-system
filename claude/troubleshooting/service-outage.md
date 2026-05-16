@@ -4,10 +4,11 @@ category: troubleshooting
 subcategory: service-outage
 tags:
 - bugfix
+- claude-api
 - claude-console
 - performance
 date: '2026-03-25'
-updated: '2026-04-13'
+updated: '2026-05-16'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s3b9fi/claude_status_update_elevated_errors_on_claudeai
   title: 'Claude Status Update : Elevated Errors on claude.ai on 2026-03-25T13:45:25.000Z'
@@ -18,10 +19,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sken9y/claude_status_update_claudeai_down_on
   title: 'Claude Status Update : Claude.ai down on 2026-04-13T15:40:43.000Z'
   date: '2026-04-13'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1tf16cj/claude_status_update_elevated_error_rates_on
+  title: 'Claude Status Update : Elevated error rates on requests to multiple models
+    on 2026-05-16T18:08:45.000Z'
+  date: '2026-05-16'
 ---
 
 
+
 # Service Outage
+
+---
+
+## 2026-05-16
+
+### Claude Status Update : Elevated error rates on requests to multiple models on 2026-05-16T18:08:45.000Z
+
+2026年5月16日18時08分頃、複数のClaudeモデルでリクエストのエラー率が上昇するインシデントが発生。公式ステータスページで進捗が確認可能で、コミュニティではパフォーマンスメガスレッドで他のユーザーの報告も共有されている。Reddit上の自動投稿bot経由での通知。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1tf16cj/claude_status_update_elevated_error_rates_on)
+- **重要度**: 6/10
+- **タグ**: bugfix, claude-api, performance
 
 ---
 

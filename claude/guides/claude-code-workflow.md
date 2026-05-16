@@ -13,7 +13,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-05-13'
+updated: '2026-05-16'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -105,6 +105,9 @@ sources:
 - url: https://qiita.com/Ngen/items/623e4f455caec67d8c7a
   title: Claude Codeで広告コピーの訴求ミスを30分で見つける3ステップ
   date: '2026-05-13'
+- url: https://qiita.com/daisuke-nagata/items/8bb1e25981f9383cab97
+  title: Anthropicコードの90%はClaude Codeが書いている——社員80%が毎日使う「antfooding」を全部解剖した
+  date: '2026-05-16'
 ---
 
 
@@ -131,7 +134,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-05-16
+
+### Anthropicコードの90%はClaude Codeが書いている——社員80%が毎日使う「antfooding」を全部解剖した
+
+Anthropic社内ではエンジニアの80%以上が毎日Claude Codeを使用し、コードの90%をClaude Codeが生成している。本記事は、Claude Code開発チーム自身の「auto-acceptモードで1機能20+プロトタイプを2日で作る」手法や、セキュリティチームの「スキャン時間3倍速化」、データインフラチームの「K8sダウンを20分で復旧」など、8チーム横断の実運用テクニックを詳細に解説。新人オンボーディングをClaude Code自身が巻き取る発想や、モデルアップグレード時にシステムプロンプトを削減する引き算思考など、実務で即活用できるノウハウが満載。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/daisuke-nagata/items/8bb1e25981f9383cab97)
+- **重要度**: 8/10
+- **タグ**: claude-code, cowork, setup
 
 ---
 

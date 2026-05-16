@@ -7,8 +7,9 @@ tags:
 - claude-console
 - cowork
 - mcp
+- 新機能
 date: '2026-04-21'
-updated: '2026-05-10'
+updated: '2026-05-16'
 sources:
 - url: https://zenn.dev/megaphone_tokyo/articles/9c0cffdf9e176b
   title: Claude Code / Desktop の記憶 OSS「KIOKU」に PDF / URL 取り込みを実装した
@@ -16,10 +17,26 @@ sources:
 - url: https://ai-heartland.com/mcp/sv-excel-agent
   title: sv-excel-agent解説｜LLMがExcelを直接編集するMCPサーバ＋AIエージェント
   date: '2026-05-10'
+- url: https://ai-heartland.com/agent/archify-claude-skill-architecture-diagram
+  title: Archify徹底解説：Claude Skillで5種類の技術図を一発生成する自己完結HTML
+  date: '2026-05-16'
 ---
 
 
+
 # Mcp Servers
+
+---
+
+## 2026-05-16
+
+### Archify徹底解説：Claude Skillで5種類の技術図を一発生成する自己完結HTML
+
+ArchifyはClaude Skillとして配布される技術図生成ツールで、自然言語から5種類の図（アーキテクチャ、ワークフロー、シーケンス、データフロー、ライフサイクル）を単一HTMLで生成する。Cocoon-AIのarchitecture-diagram-generatorのfork rewriteバージョンで、深色/浅色テーマ切替、4倍解像度PNG出力、SVG自動配色対応などの拡張機能を持つ。Claude Skillの仕組みを活用し、ユーザーは図の構文を学ぶ必要なく自然言語で説明するだけでプロ品質の図を生成できる。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/agent/archify-claude-skill-architecture-diagram)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, 新機能
 
 ---
 

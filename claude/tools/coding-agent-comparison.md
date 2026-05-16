@@ -4,17 +4,35 @@ category: tools
 subcategory: coding-agent-comparison
 tags:
 - claude-code
+- copilot
+- cowork
 - cursor
 - pricing
 date: '2026-03-29'
-updated: '2026-03-29'
+updated: '2026-05-16'
 sources:
 - url: https://zenn.dev/sn0w_easy/articles/7c610896f4d08e
   title: 格安コーディングエージェントCodexのススメ
   date: '2026-03-29'
+- url: https://ai-heartland.com/tool/codebuff-ai-coding-agent
+  title: Codebuff徹底解説｜Claude Codeを61% vs 53%で上回る4エージェント型OSS
+  date: '2026-05-16'
 ---
 
+
 # Coding Agent Comparison
+
+---
+
+## 2026-05-16
+
+### Codebuff徹底解説｜Claude Codeを61% vs 53%で上回る4エージェント型OSS
+
+Codebuffは4つの専門エージェント（File Picker、Planner、Editor、Reviewer）で役割分担するOSSのAIコーディングエージェント。独自評価でClaude Codeを61% vs 53%で上回ると主張。OpenRouter経由で任意のLLMを選択でき、エージェントごとに異なるモデルを割り当て可能。Apache-2.0ライセンスでスター5.3k、サブスク版CLI・SDK・広告版Freebuffの3形態で提供。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/codebuff-ai-coding-agent)
+- **重要度**: 6/10
+- **タグ**: claude-code, copilot, cowork
 
 ---
 

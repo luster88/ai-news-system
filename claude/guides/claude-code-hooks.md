@@ -5,10 +5,11 @@ subcategory: claude-code-hooks
 tags:
 - claude-code
 - mac
+- prompt
 - setup
 - 新機能
 date: '2026-03-23'
-updated: '2026-04-20'
+updated: '2026-05-16'
 sources:
 - url: https://qiita.com/pro-tein/items/49e5dbec705c3497dd51
   title: 【Claude Code】Hooks機能でデスクトップ通知を設定してみた
@@ -16,10 +17,27 @@ sources:
 - url: https://qiita.com/Tadashi_Kudo/items/20cc213470c6a7576e44
   title: Claude Code のライフサイクルフック入門 — セッションの「前後」を自動化する
   date: '2026-04-20'
+- url: https://qiita.com/Tadashi_Kudo/items/b4dae51eee76198cc509
+  title: Claude Code ハーネスを「月次スキャン＋spec.md」で自己改善させる——type:"prompt" Hook の誤検知を GPT-5.4
+    が発見した話
+  date: '2026-05-16'
 ---
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-05-16
+
+### Claude Code ハーネスを「月次スキャン＋spec.md」で自己改善させる——type:"prompt" Hook の誤検知を GPT-5.4 が発見した話
+
+Claude Code の hooks 機能で type:"prompt" フックが誤検知する問題を、月次スキャンと spec.md による自己改善フローで解決した事例。deploy という単語を含む無関係なプロンプトにも反応する問題を GPT-5.4 のコードレビューで発見し、matcher を具体的なコマンド名に分割することで改善。フックと並行して変更意図を spec.md で管理し、30日ごとに設定ファイルと仕様書の乖離を検出する継続的改善の仕組みを紹介。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Tadashi_Kudo/items/b4dae51eee76198cc509)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 
