@@ -11,7 +11,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-03-31'
-updated: '2026-05-10'
+updated: '2026-05-17'
 sources:
 - url: https://qiita.com/nishiken1118/items/6b16557fcabf784c861e
   title: 過去の session をほしい時に参照する方針で claude-mem のトークン消費を激減させた話
@@ -25,12 +25,28 @@ sources:
 - url: https://qiita.com/kkaattoo/items/e92e137f96545e9211cb
   title: Claude Code 使用量を節約する5つの工夫【公式ドキュメントまとめ】
   date: '2026-05-10'
+- url: https://qiita.com/Tadashi_Kudo/items/524ca5cc51e6e4f74305
+  title: 海外5M viewバズ投稿「Claudeレート制限回避Tips」——全部すでに実装してた話：CLAUDE.md駆動開発のすすめ
+  date: '2026-05-17'
 ---
 
 
 
 
+
 # Claude Code Optimization
+
+---
+
+## 2026-05-17
+
+### 海外5M viewバズ投稿「Claudeレート制限回避Tips」——全部すでに実装してた話：CLAUDE.md駆動開発のすすめ
+
+海外でバズった「Claudeレート制限回避Tips」は、CLAUDE.md駆動開発を実践していれば自動的に守られるルールだという実践報告。CLAUDE.mdはClaude Codeがプロジェクト文脈を把握するための設定ファイルで、モデルの使い分け、タスク分割、キャッシュ活用などを明示的にルール化できる。[I]（絶対ルール）と[G]（推奨指針）を区別し、フィードバックループで育てることで、コスト最適化とレート制限対策が自動化される。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Tadashi_Kudo/items/524ca5cc51e6e4f74305)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, performance
 
 ---
 

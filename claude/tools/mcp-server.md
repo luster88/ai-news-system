@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-05-13'
+updated: '2026-05-17'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -57,6 +57,9 @@ sources:
 - url: https://zenn.dev/tonrakun/articles/a1cb6fc5898ab1
   title: トークン消費激減したぞ!!!【Sophon-MCP】
   date: '2026-05-13'
+- url: https://zenn.dev/choshosu/articles/70798aebd6edaa
+  title: Cloud Storage MCP サーバー 使ってみた
+  date: '2026-05-17'
 ---
 
 
@@ -71,7 +74,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-05-17
+
+### Cloud Storage MCP サーバー 使ってみた
+
+Google Cloud Storage MCP サーバーを使い、Claude Code や Cursor から対話形式で GCS バケットへの読み書きを行う方法を解説。HTTP リモート版は OAuth DCR 非対応で失敗するため、ローカル stdio 版（@google-cloud/storage-mcp）を ADC 認証で利用。AI が生成した draw.io 図や画像を、gcloud コマンドなしで対話だけでバケットにアップロード・上書きできる実用例を紹介している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/choshosu/articles/70798aebd6edaa)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, setup
 
 ---
 

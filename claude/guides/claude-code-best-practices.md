@@ -6,11 +6,12 @@ tags:
 - claude-code
 - claude-console
 - cowork
+- performance
 - prompt
 - setup
 - 新機能
 date: '2026-04-11'
-updated: '2026-05-14'
+updated: '2026-05-17'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-best-practice-guide-2026
   title: Claude Codeベストプラクティス完全ガイド2026年版｜使い方・Tips・効率化テクニック集
@@ -24,12 +25,28 @@ sources:
 - url: https://qiita.com/Tadashi_Kudo/items/702c4e4d699404acf81a
   title: Claude Codeで本番コードに触れる前に、まずロールバック手順を書け——Rollback path先記述の設計
   date: '2026-05-14'
+- url: https://qiita.com/Tadashi_Kudo/items/524ca5cc51e6e4f74305
+  title: 海外5M viewバズ投稿「Claudeレート制限回避Tips」——全部すでに実装してた話：CLAUDE.md駆動開発のすすめ
+  date: '2026-05-17'
 ---
 
 
 
 
+
 # Claude Code Best Practices
+
+---
+
+## 2026-05-17
+
+### 海外5M viewバズ投稿「Claudeレート制限回避Tips」——全部すでに実装してた話：CLAUDE.md駆動開発のすすめ
+
+海外でバズった「Claudeレート制限回避Tips」について、CLAUDE.md駆動開発を実践していれば自動的に達成できることを解説。CLAUDE.mdはClaude Codeがプロジェクト文脈を把握するための設定ファイルで、モデル選択の最適化、タスク分割、キャッシュ活用などのベストプラクティスをルール化できる。[I]（絶対ルール）と[G]（推奨指針）を区別し、フィードバックループで段階的に育てることが重要。
+
+- **ソース**: [Qiita claude](https://qiita.com/Tadashi_Kudo/items/524ca5cc51e6e4f74305)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, performance
 
 ---
 

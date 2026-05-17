@@ -13,7 +13,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-05-16'
+updated: '2026-05-17'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -108,6 +108,9 @@ sources:
 - url: https://qiita.com/daisuke-nagata/items/8bb1e25981f9383cab97
   title: Anthropicコードの90%はClaude Codeが書いている——社員80%が毎日使う「antfooding」を全部解剖した
   date: '2026-05-16'
+- url: https://qiita.com/s977043/items/a25ec91ea411f39bf340
+  title: Claude CodeでAIが勝手に実装範囲を広げる（スコープクリープ）ときの対策
+  date: '2026-05-17'
 ---
 
 
@@ -135,7 +138,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-05-17
+
+### Claude CodeでAIが勝手に実装範囲を広げる（スコープクリープ）ときの対策
+
+Claude Codeで実装範囲が勝手に広がる問題（スコープクリープ）への対策を解説。効果的なのは細かい命令ではなく、実装前に境界（やらないこと）と承認ポイントを設定すること。Goal/Scope/Non-goals/Test/Risksの5項目を含む計画フォーマットを先に出させ、人間が確認してから実装に進むワークフローが有効。PlanGateという仕組み化の事例も紹介。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/s977043/items/a25ec91ea411f39bf340)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

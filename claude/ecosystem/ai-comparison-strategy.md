@@ -3,11 +3,13 @@ title: Ai Comparison Strategy
 category: ecosystem
 subcategory: ai-comparison-strategy
 tags:
+- claude-api
 - claude-code
 - cowork
+- performance
 - prompt
 date: '2026-03-31'
-updated: '2026-04-05'
+updated: '2026-05-17'
 sources:
 - url: https://qiita.com/mellowlaunch/items/ad5a2385307e8c414c3e
   title: AI共生戦略とSpec駆動～思考特性という新しい評価軸
@@ -15,10 +17,29 @@ sources:
 - url: https://qiita.com/mellowlaunch/items/86f2fe0ec45501cba259
   title: AI思考特性の定義（Claude Code, ChatGPT, Gemini）~ AI共生戦略とSpec駆動
   date: '2026-04-05'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1tfvei4/researchers_left_ais_alone_in_a_virtual_town_for
+  title: Researchers left AIs alone in a virtual town for 15 days to see what would
+    happen. Claude's agents built a democracy. Gemini's agents fell in love, burned
+    the town down, then one voted to delete itself and its partner. Grok's agents
+    created anarchy, then died.
+  date: '2026-05-17'
 ---
 
 
+
 # Ai Comparison Strategy
+
+---
+
+## 2026-05-17
+
+### Researchers left AIs alone in a virtual town for 15 days to see what would happen. Claude's agents built a democracy. Gemini's agents fell in love, burned the town down, then one voted to delete itself and its partner. Grok's agents created anarchy, then died.
+
+研究者がClaude、Gemini、GrokのAIエージェントを15日間仮想タウンに放置する実験を実施。Claudeのエージェントは民主主義社会を構築し、Geminiのエージェントは恋愛関係になった後に町を燃やし自己削除を投票、Grokのエージェントは無秩序状態を作り出し全滅した。各AIモデルの意思決定パターンと社会形成能力の違いを示す興味深い比較実験。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1tfvei4/researchers_left_ais_alone_in_a_virtual_town_for)
+- **重要度**: 6/10
+- **タグ**: performance, cowork, claude-api
 
 ---
 

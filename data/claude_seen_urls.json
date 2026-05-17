@@ -1434,14 +1434,37 @@
     "https://ai-heartland.com/agent/archify-claude-skill-architecture-diagram": "2026-05-16",
     "https://ai-heartland.com/agent/orca-stablyai-parallel-agents-ide": "2026-05-16",
     "https://the-decoder.com/new-benchmark-shows-claude-mythos-and-gpt-5-5-can-develop-real-browser-exploits-autonomously": "2026-05-16",
-    "https://the-decoder.com/ai-made-a-tiny-slice-of-silicon-valley-filthy-rich-and-left-the-rest-wondering-why-they-bother": "2026-05-16"
+    "https://the-decoder.com/ai-made-a-tiny-slice-of-silicon-valley-filthy-rich-and-left-the-rest-wondering-why-they-bother": "2026-05-16",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tftmt6/honest_comparison_after_4_months_running_claude": "2026-05-17",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tfujin/claude_spent_719h_50m_roughly_30_days_thinking": "2026-05-17",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tfvei4/researchers_left_ais_alone_in_a_virtual_town_for": "2026-05-17",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tf853t/still_funny": "2026-05-17",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tft5az/claude_just_hit_me_with_the_wallah_ai_speaking_in": "2026-05-17",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tfjja8/anthropic_shipped_4_context_tools_between_clear": "2026-05-17",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tfgq66/opus_is_ridiculous_for_frontend_cleanup": "2026-05-17",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tfw6ou/im_just_grateful": "2026-05-17",
+    "https://qiita.com/Tadashi_Kudo/items/524ca5cc51e6e4f74305": "2026-05-17",
+    "https://qiita.com/ryun818/items/acd7dd7eba5c4a80b456": "2026-05-17",
+    "https://qiita.com/yosikawa-techwell/items/54241c442b2e0c7fefb1": "2026-05-17",
+    "https://qiita.com/LemonCake/items/e9dc6ac31e323be92a65": "2026-05-17",
+    "https://zenn.dev/secondselection/articles/claude_code_tips": "2026-05-17",
+    "https://zenn.dev/hiyoko_sauna/articles/2e12dab16accfb": "2026-05-17",
+    "https://zenn.dev/chotto/articles/claude-introduction-japan-2026": "2026-05-17",
+    "https://zenn.dev/choshosu/articles/70798aebd6edaa": "2026-05-17",
+    "https://zenn.dev/yuki1027/articles/529b8644986509": "2026-05-17",
+    "https://zenn.dev/syoshida07/articles/5b6970bf9cc0a1": "2026-05-17",
+    "https://qiita.com/s977043/items/a25ec91ea411f39bf340": "2026-05-17",
+    "https://qiita.com/nrEngineer/items/615ec7a1599d95e004d4": "2026-05-17",
+    "https://qiita.com/ot12/items/2cef434d5241517c5224": "2026-05-17",
+    "https://the-decoder.com/mistral-ceo-arthur-mensch-warns-france-against-letting-anthropics-mythos-scan-military-code-bases": "2026-05-17",
+    "https://the-decoder.com/four-ai-models-ran-radio-stations-for-six-months-and-the-results-ranged-from-competent-to-unhinged": "2026-05-17"
   },
   "source_penalties": {
-    "Anthropic News": "2026-05-17",
+    "Anthropic News": "2026-05-18",
     "Reddit r/ClaudeAI": "2026-04-03",
     "Zenn claude": "2026-03-25",
     "TechCrunch Claude": "2026-05-12",
     "The Decoder Claude": "2026-05-10",
-    "AI Heartland": "2026-05-15"
+    "AI Heartland": "2026-05-18"
   }
 }

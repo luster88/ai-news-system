@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-05-09'
+updated: '2026-05-17'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -39,6 +39,9 @@ sources:
 - url: https://qiita.com/atsushi11o7/items/5cbef4b10f3ec55c75a1
   title: Claude Code の skill 機能を本格的に試す - 開発フローを丸ごと任せて PR まで完結させた話
   date: '2026-05-09'
+- url: https://qiita.com/nrEngineer/items/615ec7a1599d95e004d4
+  title: Claude Code Skillの作り方 ― 開発手法をAIに覚えさせる技術（ダイジェスト版）
+  date: '2026-05-17'
 ---
 
 
@@ -48,7 +51,20 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-05-17
+
+### Claude Code Skillの作り方 ― 開発手法をAIに覚えさせる技術（ダイジェスト版）
+
+Claude Code Skill の作成方法を解説する記事。開発手法（BDD/TDD等）をMarkdown形式のSkillファイルとして定義することで、AIに手順を実行させる仕組みを紹介。ワークフローの言語化、Phase分割、ゲート設定など7ステップの方法論の概要を説明し、完全版はnoteで公開している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/nrEngineer/items/615ec7a1599d95e004d4)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

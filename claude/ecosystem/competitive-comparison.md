@@ -4,11 +4,13 @@ category: ecosystem
 subcategory: competitive-comparison
 tags:
 - claude-code
+- cowork
 - opus
 - performance
 - pricing
+- sonnet
 date: '2026-04-25'
-updated: '2026-05-10'
+updated: '2026-05-17'
 sources:
 - url: https://zenn.dev/aipedia/articles/5bdcc55c203d8f
   title: 【2026年4月版】ChatGPT・Claude・Gemini 徹底比較
@@ -17,10 +19,27 @@ sources:
   title: Hugging Face co-founder says Qwen 3.6 27B running on airplane mode is close
     to latest Opus in Claude Code
   date: '2026-05-10'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1tftmt6/honest_comparison_after_4_months_running_claude
+  title: Honest comparison after 4 months running Claude Pro + ChatGPT Plus side by
+    side
+  date: '2026-05-17'
 ---
 
 
+
 # Competitive Comparison
+
+---
+
+## 2026-05-17
+
+### Honest comparison after 4 months running Claude Pro + ChatGPT Plus side by side
+
+4ヶ月間Claude ProとChatGPT Plusを併用したユーザーによる実用的な比較レポート。長文執筆とコード推論ではClaudeが優位、画像生成・音声モード・Web検索ではGPTが優位という結果に。両者は異なる用途に特化しており、Claudeは「思考パートナー」、OpenAIは「汎用アシスタント」として位置づけられる。Opus 4.7へのリグレッション懸念も指摘されている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1tftmt6/honest_comparison_after_4_months_running_claude)
+- **重要度**: 6/10
+- **タグ**: opus, sonnet, cowork
 
 ---
 

@@ -11,7 +11,7 @@ tags:
 - windows
 - 新機能
 date: '2026-04-04'
-updated: '2026-05-14'
+updated: '2026-05-17'
 sources:
 - url: https://qiita.com/taiki_i/items/2d75a882e0f3187f6bb8
   title: あなたの CLAUDE.md、ちゃんと機能してますか？作り方から公式プラグインで採点するまでの道のり
@@ -46,6 +46,9 @@ sources:
 - url: https://qiita.com/pizzy-pz/items/2c2cff464b49fb266a7a
   title: 初心者なりのCLAUDE.mdの内容
   date: '2026-05-14'
+- url: https://zenn.dev/secondselection/articles/claude_code_tips
+  title: 「Claude Code」を使ってみた：環境構築から基本の操作まで初心者向けに解説
+  date: '2026-05-17'
 ---
 
 
@@ -55,7 +58,20 @@ sources:
 
 
 
+
 # Claude Code Setup
+
+---
+
+## 2026-05-17
+
+### 「Claude Code」を使ってみた：環境構築から基本の操作まで初心者向けに解説
+
+Claude Code の環境構築から基本操作までを初心者向けに解説した記事。Node.js v18以上が必要で、CLI経由でセットアップ。ソースコード解析、ドキュメント生成、リファクタリングなどの実例を紹介。サブエージェント機能により大規模タスクを並列処理できる点が特徴。APIコスト管理とGitでの変更確認が注意点として挙げられている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/secondselection/articles/claude_code_tips)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup
 
 ---
 
