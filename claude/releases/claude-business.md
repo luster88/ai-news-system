@@ -8,7 +8,7 @@ tags:
 - release
 - 新機能
 date: '2026-05-13'
-updated: '2026-05-15'
+updated: '2026-05-18'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1tc4jwp/anthropic_releases_claude_for_small_business
   title: Anthropic Releases Claude for Small Business
@@ -16,10 +16,26 @@ sources:
 - url: https://qiita.com/kai_kou/items/3cf73a7b0c1d84afc3de
   title: Claude for Small Business入門 — QuickBooks・HubSpot・M365に繋がる15ワークフロー全解説
   date: '2026-05-15'
+- url: https://zenn.dev/kairosai/articles/fed69a04ddd3c3
+  title: 【AI朝メモ 2026/5/18】Claude for Small Business / ChatGPT Personal Finance
+  date: '2026-05-18'
 ---
 
 
+
 # Claude Business
+
+---
+
+## 2026-05-18
+
+### 【AI朝メモ 2026/5/18】Claude for Small Business / ChatGPT Personal Finance
+
+Anthropicの中小企業向けパッケージ「Claude for Small Business」が発表され、QuickBooksやHubSpotなどのSaaSに直接組み込まれる形で展開。15スキルが標準搭載され追加料金なしで利用可能。OpenAIはChatGPTに個人金融データ接続機能とCodexモバイル統合を追加。Google I/O 2026の開催を控え、AI業界全体が「個人ツール」から「業務OS」への転換期を迎えている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/kairosai/articles/fed69a04ddd3c3)
+- **重要度**: 8/10
+- **タグ**: 新機能, claude-api, release
 
 ---
 

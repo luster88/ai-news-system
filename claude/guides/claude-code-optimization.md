@@ -3,6 +3,7 @@ title: Claude Code Optimization
 category: guides
 subcategory: claude-code-optimization
 tags:
+- claude-api
 - claude-code
 - cowork
 - mcp
@@ -11,7 +12,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-03-31'
-updated: '2026-05-17'
+updated: '2026-05-18'
 sources:
 - url: https://qiita.com/nishiken1118/items/6b16557fcabf784c861e
   title: 過去の session をほしい時に参照する方針で claude-mem のトークン消費を激減させた話
@@ -28,13 +29,29 @@ sources:
 - url: https://qiita.com/Tadashi_Kudo/items/524ca5cc51e6e4f74305
   title: 海外5M viewバズ投稿「Claudeレート制限回避Tips」——全部すでに実装してた話：CLAUDE.md駆動開発のすすめ
   date: '2026-05-17'
+- url: https://zenn.dev/kojihq/articles/3ef8b697063323
+  title: Claude Code の token を節約する 5 つのコツ (実データで検証)
+  date: '2026-05-18'
 ---
 
 
 
 
 
+
 # Claude Code Optimization
+
+---
+
+## 2026-05-18
+
+### Claude Code の token を節約する 5 つのコツ (実データで検証)
+
+Claude Code の API 利用における token 節約の実践的な 5 つのコツを、18 日間 266 セッションの実データから検証。cache_read が全体の 96.3% を占め、セッション継続による cache 効率化が重要。opus が 98.5% を占める実態から API ユーザーはモデル選択でコスト削減余地あり。tool 呼び出しパターン分析と subagent の適切な利用、定期的なセッションリセットが効果的。ログ分析用の OSS ツール koji-lens も公開。
+
+- **ソース**: [Zenn claude](https://zenn.dev/kojihq/articles/3ef8b697063323)
+- **重要度**: 7/10
+- **タグ**: claude-code, claude-api, performance
 
 ---
 

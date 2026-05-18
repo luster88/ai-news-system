@@ -11,7 +11,7 @@ tags:
 - release
 - 新機能
 date: '2026-04-08'
-updated: '2026-05-07'
+updated: '2026-05-18'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfz7a5/introducing_claude_managed_agents_now_in_public
   title: Introducing Claude Managed Agents, now in public beta.
@@ -44,6 +44,9 @@ sources:
 - url: https://ai-heartland.com/news/claude-managed-agents-dreaming-outcomes
   title: Claude Managed Agents深掘り｜Dreaming・Outcomes・Multi-Agent Orchestrationを完全解説
   date: '2026-05-07'
+- url: https://zenn.dev/kai_kou/articles/215-claude-managed-agents-guide
+  title: Claude Managed Agents入門 — インフラ不要でAIエージェントを本番運用する
+  date: '2026-05-18'
 ---
 
 
@@ -51,7 +54,20 @@ sources:
 
 
 
+
 # Managed Agents
+
+---
+
+## 2026-05-18
+
+### Claude Managed Agents入門 — インフラ不要でAIエージェントを本番運用する
+
+Anthropicが2026年4月8日にClaude Managed Agentsをパブリックベータとして公開。エージェントループ、サンドボックス、ツール実行レイヤーを自前実装する必要がなくなり、Anthropicのマネージドインフラ上でAIエージェントを動かせる。Agent/Environment/Session/Eventsの4つのコアコンセプトで構成され、bash、ファイル操作、Web検索など8種の組み込みツールを提供。料金は$0.08/セッション時間＋通常APIトークン料金。
+
+- **ソース**: [Zenn claude](https://zenn.dev/kai_kou/articles/215-claude-managed-agents-guide)
+- **重要度**: 9/10
+- **タグ**: 新機能, claude-api, release
 
 ---
 
