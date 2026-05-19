@@ -9,7 +9,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-04-12'
-updated: '2026-05-10'
+updated: '2026-05-19'
 sources:
 - url: https://ai-heartland.com/explain/last30days-skill-guide
   title: last30days-skill完全ガイド｜Reddit・X・YouTube横断AIリサーチスキルの使い方2026年版
@@ -23,12 +23,28 @@ sources:
 - url: https://ai-heartland.com/tool/thariq-making-playgrounds-claude-code
   title: Claude Code開発者公式プラグイン「playground」｜ThariqのHTML対話術5実例
   date: '2026-05-10'
+- url: https://qiita.com/yukurash/items/a4caa9c63bf9e1f283ff
+  title: MBTI 16タイプの人格に議論させる Claude Code プラグイン『16-minds』を作った
+  date: '2026-05-19'
 ---
 
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-05-19
+
+### MBTI 16タイプの人格に議論させる Claude Code プラグイン『16-minds』を作った
+
+MBTI 16タイプの人格を並列に召喚してコードレビューやアイデア出しで議論させる Claude Code プラグイン『16-minds』の開発記事。Claude 単体の無難な回答に物足りなさを感じ、subagent 機能を使って16人格を並列実行し、偏った意見の塊から新しい視点を発見する仕組みを構築。light/middle/heavy の3モードで議論の深さを調整でき、4セクション固定フォーマットで議論を構造化する設計が特徴。
+
+- **ソース**: [Qiita claude](https://qiita.com/yukurash/items/a4caa9c63bf9e1f283ff)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, 新機能
 
 ---
 

@@ -6,10 +6,11 @@ tags:
 - claude-code
 - cowork
 - mcp
+- prompt
 - setup
 - 新機能
 date: '2026-03-24'
-updated: '2026-05-08'
+updated: '2026-05-19'
 sources:
 - url: https://qiita.com/taketsuyo/items/f47b120668149e9ee396
   title: Claudeが“スマホから仕事を投げる相棒”になった日。デスクワークが消えるというより、確認作業だけが人間に残る感じがする
@@ -20,11 +21,27 @@ sources:
 - url: https://qiita.com/j4nzeri/items/d2f7ab10ae051b6283ba
   title: Claude Coworkでできること
   date: '2026-05-08'
+- url: https://qiita.com/Ngen/items/5532b409d302bc606195
+  title: Claudeで実務試験40本を半日で量産:業界×職種マトリクスを自動設計する
+  date: '2026-05-19'
 ---
 
 
 
+
 # Claude Cowork Workflow
+
+---
+
+## 2026-05-19
+
+### Claudeで実務試験40本を半日で量産:業界×職種マトリクスを自動設計する
+
+実務試験フォーマット40本（10種類×4ドキュメント）を半日でClaude Coworkを使って量産した実践記録。業界×職種のマトリクスを設計し、評価軸や字数制限などの枠組みは人間が決め、中身の生成はClaudeに任せる役割分担で効率化。詰まったポイントとして、業界アンカーの抽象度調整、固有名詞の制約明記、評価軸の具体化、バッチサイズの調整などを共有。
+
+- **ソース**: [Qiita claude](https://qiita.com/Ngen/items/5532b409d302bc606195)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

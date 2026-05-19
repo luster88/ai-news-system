@@ -13,7 +13,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-05-17'
+updated: '2026-05-19'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -111,6 +111,9 @@ sources:
 - url: https://qiita.com/s977043/items/a25ec91ea411f39bf340
   title: Claude CodeでAIが勝手に実装範囲を広げる（スコープクリープ）ときの対策
   date: '2026-05-17'
+- url: https://zenn.dev/clevique/articles/48ccf997c0a30a
+  title: AIに実装を任せたら、自分の仕事は『何を作るか』と『やらないこと』だけになった (前編)
+  date: '2026-05-19'
 ---
 
 
@@ -139,7 +142,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-05-19
+
+### AIに実装を任せたら、自分の仕事は『何を作るか』と『やらないこと』だけになった (前編)
+
+個人開発でClaude Codeに実装を任せた結果、コーディング時間が激減し、代わりに「何を作るか(Spec)」と「やらないこと(Backlog)」の判断業務が中心になった経験を共有。NotionをSpec管理の中心に据え、AIが自走するための実装計画(Plan)を生成させ、人間は設計判断とスコープ管理のみに集中する運用方法を半年の試行錯誤から確立。Notion Developer Platformの登場により、AIとNotionの統合が実用的になったことも転機となった。
+
+- **ソース**: [Zenn claude](https://zenn.dev/clevique/articles/48ccf997c0a30a)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

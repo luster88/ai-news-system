@@ -6,12 +6,13 @@ tags:
 - claude-api
 - claude-console
 - cowork
+- mcp
 - performance
 - pricing
 - release
 - 新機能
 date: '2026-04-08'
-updated: '2026-05-18'
+updated: '2026-05-19'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfz7a5/introducing_claude_managed_agents_now_in_public
   title: Introducing Claude Managed Agents, now in public beta.
@@ -47,6 +48,9 @@ sources:
 - url: https://zenn.dev/kai_kou/articles/215-claude-managed-agents-guide
   title: Claude Managed Agents入門 — インフラ不要でAIエージェントを本番運用する
   date: '2026-05-18'
+- url: https://the-decoder.com/anthropic-adds-self-hosted-sandboxes-and-mcp-tunnels-to-claude-managed-agents
+  title: Anthropic adds self-hosted sandboxes and MCP tunnels to Claude Managed Agents
+  date: '2026-05-19'
 ---
 
 
@@ -55,7 +59,20 @@ sources:
 
 
 
+
 # Managed Agents
+
+---
+
+## 2026-05-19
+
+### Anthropic adds self-hosted sandboxes and MCP tunnels to Claude Managed Agents
+
+Anthropic が Claude Managed Agents に self-hosted sandboxes と MCP tunnels を追加。企業は AI エージェントのツール実行を自社インフラで行えるようになり、MCP tunnels により内部データベースや API への暗号化接続が可能に。ただしエージェントのオーケストレーション自体は Anthropic のサーバー上に残る。両機能とも初期テスト段階。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-adds-self-hosted-sandboxes-and-mcp-tunnels-to-claude-managed-agents)
+- **重要度**: 8/10
+- **タグ**: 新機能, mcp, claude-api
 
 ---
 

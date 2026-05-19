@@ -3,18 +3,37 @@ title: Community Trends
 category: ecosystem
 subcategory: community-trends
 tags:
+- claude-api
 - copilot
 - cowork
 - cursor
+- performance
 date: '2026-04-13'
-updated: '2026-04-13'
+updated: '2026-05-19'
 sources:
 - url: https://techcrunch.com/2026/04/12/at-the-humanx-conference-everyone-was-talking-about-claude
   title: At the HumanX conference, everyone was talking about Claude
   date: '2026-04-13'
+- url: https://the-decoder.com/prominent-ai-researcher-andrej-karpathy-picks-anthropic-over-former-home-openai-to-get-back-into-frontier-llm-research
+  title: Prominent AI researcher Andrej Karpathy picks Anthropic over former home
+    OpenAI to get back into frontier LLM research
+  date: '2026-05-19'
 ---
 
+
 # Community Trends
+
+---
+
+## 2026-05-19
+
+### Prominent AI researcher Andrej Karpathy picks Anthropic over former home OpenAI to get back into frontier LLM research
+
+著名なAI研究者Andrej Karpathyが、元所属のOpenAIではなくAnthropicに加わることを発表。Anthropicのプレトレーニングチームに参加し、Claudeを活用して事前学習研究を加速させる独自チームを立ち上げる予定。彼は最近、エージェント型AIのコーディング能力の進歩に驚いたと述べており、LLMのフロンティア研究に戻ることに意欲を示している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/prominent-ai-researcher-andrej-karpathy-picks-anthropic-over-former-home-openai-to-get-back-into-frontier-llm-research)
+- **重要度**: 8/10
+- **タグ**: claude-api, performance, cowork
 
 ---
 

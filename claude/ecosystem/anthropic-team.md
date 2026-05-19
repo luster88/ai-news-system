@@ -3,18 +3,36 @@ title: Anthropic Team
 category: ecosystem
 subcategory: anthropic-team
 tags:
+- claude-api
 - claude-console
 - cowork
+- performance
 - prompt
 date: '2026-05-14'
-updated: '2026-05-14'
+updated: '2026-05-19'
 sources:
 - url: https://zenn.dev/noah33/articles/amanda-askell-claude-soul
   title: Claudeに魂を吹き込む人 —Amanda Askellという哲学者の眼差し
   date: '2026-05-14'
+- url: https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team
+  title: OpenAI co-founder Andrej Karpathy joins Anthropic’s pre-training team
+  date: '2026-05-19'
 ---
 
+
 # Anthropic Team
+
+---
+
+## 2026-05-19
+
+### OpenAI co-founder Andrej Karpathy joins Anthropic’s pre-training team
+
+OpenAI共同創業者でTeslaの元AI責任者だったAndrej Karpathyが、Anthropicのpre-trainingチーム（Nick Joseph率いる）に参加することが発表されました。Karpathyは、Claudeを活用してpre-training研究を加速させることに焦点を当てた新チームを立ち上げる予定です。AnthropicはAI支援研究によってOpenAIやGoogleと競争していく意向を明確にしており、Karpathyの採用はその戦略の表れと見られています。彼は教育スタートアップEureka Labsを創業していましたが、今後の動向は不明です。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team)
+- **重要度**: 9/10
+- **タグ**: claude-api, performance, cowork
 
 ---
 

@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-07'
-updated: '2026-04-08'
+updated: '2026-05-19'
 sources:
 - url: https://qiita.com/moha0918_/items/b3011c218210ab2695b7
   title: プラグイン作成の3つの方法、結局どれを選ぶべき？
@@ -18,10 +18,26 @@ sources:
   title: I gave Claude my dead game's 30-year-old files and asked it to bring the
     game back to life
   date: '2026-04-08'
+- url: https://zenn.dev/edhiblemeer/articles/ai-persona-memory-separation
+  title: AIに人格をロードする ── 記憶と人格を分離する設計思想
+  date: '2026-05-19'
 ---
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-05-19
+
+### AIに人格をロードする ── 記憶と人格を分離する設計思想
+
+Claude Codeを複数セッション立ち上げて事業運営する中で、AIが「忘れる」問題に直面。業界主流のRAG/DB検索型メモリーではなく、判断基準を常にコンテキスト内にロードする「人格」アプローチを提唱。ベテランのように検索せず即座に判断できる仕組みを目指す設計思想の実践記録。
+
+- **ソース**: [Zenn claude](https://zenn.dev/edhiblemeer/articles/ai-persona-memory-separation)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

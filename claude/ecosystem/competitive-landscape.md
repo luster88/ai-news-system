@@ -11,7 +11,7 @@ tags:
 - release
 - sonnet
 date: '2026-03-23'
-updated: '2026-05-08'
+updated: '2026-05-19'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -34,6 +34,9 @@ sources:
 - url: https://the-decoder.com/openai-opens-gpt-5-5-cyber-to-vetted-security-researchers
   title: OpenAI opens GPT-5.5-Cyber to vetted security researchers
   date: '2026-05-08'
+- url: https://techcrunch.com/2026/05/19/google-updates-its-gemini-app-to-take-on-chatgpt-and-claude-at-io-2026
+  title: Google updates its Gemini app to take on ChatGPT and Claude at IO 2026
+  date: '2026-05-19'
 ---
 
 
@@ -41,7 +44,19 @@ sources:
 
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-05-19
+
+### Google updates its Gemini app to take on ChatGPT and Claude at IO 2026
+
+Google が I/O 2026 で Gemini アプリの大幅アップデートを発表。Daily Brief 機能、Neural Expressive デザイン、Gemini Omni 動画モデル、Gemini Spark パーソナル AI エージェントを追加し、ChatGPT や Claude との競争力を強化。月間9億ユーザーを抱える Gemini を単なるチャットボットから総合 AI ハブへと進化させる戦略。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/05/19/google-updates-its-gemini-app-to-take-on-chatgpt-and-claude-at-io-2026)
+- **重要度**: 6/10
 
 ---
 

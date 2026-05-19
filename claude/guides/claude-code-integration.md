@@ -8,8 +8,9 @@ tags:
 - mcp
 - prompt
 - setup
+- 新機能
 date: '2026-04-02'
-updated: '2026-05-07'
+updated: '2026-05-19'
 sources:
 - url: https://zenn.dev/caphtech/articles/feed-curator-ai-rss-with-claude-code
   title: Claude CodeでAI RSSリーダーを作ったら、その日にInoreaderを解約した
@@ -20,11 +21,27 @@ sources:
 - url: https://qiita.com/ikkun9595/items/56ae15af2e6dfc106ea1
   title: HTMLで動画を作る HyperFrames をClaude Codeから動かしてみた検証メモ
   date: '2026-05-07'
+- url: https://qiita.com/daizou703/items/3e47d8b7ecc0bcf60eb1
+  title: Claude Code × Microsoft Fabric (3) － Power BI レポートを AI に作らせる：.pbip を使ったビジュアルページの自動生成
+  date: '2026-05-19'
 ---
 
 
 
+
 # Claude Code Integration
+
+---
+
+## 2026-05-19
+
+### Claude Code × Microsoft Fabric (3) － Power BI レポートを AI に作らせる：.pbip を使ったビジュアルページの自動生成
+
+Power BI レポートを .pbip 形式で保存すると、レポート定義が JSON に分解され、Claude Code が直接 visual.json を生成できる。Semantic Model が整備されていれば、Entity/Property の指定だけでデータバインディングが完了し、30+ページ・90+ビジュアルを AI 駆動で生成可能。/pbip-visual という Claude Code Skill にパッケージング済みで、Power BI Desktop を開かずにレポートプロジェクトを初期セットアップできる。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/daizou703/items/3e47d8b7ecc0bcf60eb1)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 
