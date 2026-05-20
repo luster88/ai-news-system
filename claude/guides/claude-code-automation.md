@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-05-13'
+updated: '2026-05-20'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -55,6 +55,9 @@ sources:
 - url: https://zenn.dev/linkedge/articles/claude-code-scheduled-execution
   title: Claude Codeの定期実行をまとめてみた
   date: '2026-05-13'
+- url: https://qiita.com/claudesidejob/items/6c7c7001893a513c6923
+  title: Claude Codeで株の自動売買を作ったら勝率82%・2日で+10%だった
+  date: '2026-05-20'
 ---
 
 
@@ -69,7 +72,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-05-20
+
+### Claude Codeで株の自動売買を作ったら勝率82%・2日で+10%だった
+
+プログラミング経験ゼロから Claude Code を使って東証全銘柄対応の株自動売買システムを構築した事例。「こういうシステムを作りたい」という指示だけで動くコードが生成され、2日間で勝率82%、+10%のリターンを達成。プロンプトの全文、スクリーニングロジック、実装コードは note 記事で全公開されている。
+
+- **ソース**: [Qiita claude](https://qiita.com/claudesidejob/items/6c7c7001893a513c6923)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

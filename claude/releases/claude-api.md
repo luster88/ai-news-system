@@ -4,11 +4,12 @@ category: releases
 subcategory: claude-api
 tags:
 - claude-api
+- mcp
 - performance
 - release
 - 新機能
 date: '2026-04-08'
-updated: '2026-04-09'
+updated: '2026-05-20'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -17,10 +18,26 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sgy11x/were_bringing_the_advisor_strategy_to_the_claude
   title: We're bringing the advisor strategy to the Claude Platform.
   date: '2026-04-09'
+- url: https://qiita.com/kai_kou/items/16b4aa9fe3f235d66205
+  title: Claude Managed Agents入門 — セルフホストサンドボックスとMCPトンネル活用ガイド
+  date: '2026-05-20'
 ---
 
 
+
 # Claude Api
+
+---
+
+## 2026-05-20
+
+### Claude Managed Agents入門 — セルフホストサンドボックスとMCPトンネル活用ガイド
+
+AnthropicがClaude Managed Agentsに「Self-hosted sandboxes」（Beta）と「MCP tunnels」（Research Preview）を追加。企業がセンシティブなデータを外部に出さずにAIエージェントを活用できる仕組みで、オーケストレーションはクラウド、ツール実行は社内インフラで完結。ゼロトラスト設計のアウトバウンド接続でファイアウォール変更も不要。
+
+- **ソース**: [Qiita claude](https://qiita.com/kai_kou/items/16b4aa9fe3f235d66205)
+- **重要度**: 8/10
+- **タグ**: 新機能, claude-api, mcp
 
 ---
 

@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-07'
-updated: '2026-05-19'
+updated: '2026-05-20'
 sources:
 - url: https://qiita.com/moha0918_/items/b3011c218210ab2695b7
   title: プラグイン作成の3つの方法、結局どれを選ぶべき？
@@ -21,11 +21,27 @@ sources:
 - url: https://zenn.dev/edhiblemeer/articles/ai-persona-memory-separation
   title: AIに人格をロードする ── 記憶と人格を分離する設計思想
   date: '2026-05-19'
+- url: https://qiita.com/shokan/items/fae1e00d089aea9cd041
+  title: Claude Code とは何かをわかりやすく解説する
+  date: '2026-05-20'
 ---
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-05-20
+
+### Claude Code とは何かをわかりやすく解説する
+
+Claude Code はコマンドラインから起動する対話型AIツールで、最大の特徴はローカルファイルに直接アクセスできること。従来の ChatGPT などブラウザベースの対話型 AI と異なり、コピペの手間なくファイルを読み書きできる。数十〜数百ファイルからなるプロジェクトの改修など、大規模な作業を現実的に実行可能にする。コマンドベースの操作により、開発者向けのワークフローに自然に統合できる点が強み。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/shokan/items/fae1e00d089aea9cd041)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, cowork
 
 ---
 
