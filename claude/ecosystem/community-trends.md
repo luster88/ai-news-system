@@ -7,9 +7,11 @@ tags:
 - copilot
 - cowork
 - cursor
+- mcp
 - performance
+- 新機能
 date: '2026-04-13'
-updated: '2026-05-19'
+updated: '2026-05-21'
 sources:
 - url: https://techcrunch.com/2026/04/12/at-the-humanx-conference-everyone-was-talking-about-claude
   title: At the HumanX conference, everyone was talking about Claude
@@ -18,10 +20,27 @@ sources:
   title: Prominent AI researcher Andrej Karpathy picks Anthropic over former home
     OpenAI to get back into frontier LLM research
   date: '2026-05-19'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1tjsi7o/my_linkedin_network_is_about_to_be_aggressively
+  title: My LinkedIn network is about to be aggressively flooded with Claude Code
+    certifications
+  date: '2026-05-21'
 ---
 
 
+
 # Community Trends
+
+---
+
+## 2026-05-21
+
+### My LinkedIn network is about to be aggressively flooded with Claude Code certifications
+
+Anthropic が 13 の無料公式コース（証明書付き）を提供開始したことに対するコミュニティの反応。開発者向けモジュールを速習して履歴書に「Agentic AI と MCP アーキテクチャの認定エキスパート」と記載する人が増えることへの皮肉めいた指摘。LinkedIn で証明書を誇示する人々が急増するだろうという予測がコミュニティで話題になっている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1tjsi7o/my_linkedin_network_is_about_to_be_aggressively)
+- **重要度**: 6/10
+- **タグ**: mcp, cowork, 新機能
 
 ---
 

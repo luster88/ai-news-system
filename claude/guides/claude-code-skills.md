@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-05-17'
+updated: '2026-05-21'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -42,6 +42,9 @@ sources:
 - url: https://qiita.com/nrEngineer/items/615ec7a1599d95e004d4
   title: Claude Code Skillの作り方 ― 開発手法をAIに覚えさせる技術（ダイジェスト版）
   date: '2026-05-17'
+- url: https://qiita.com/tips4you/items/47d04503c45056712a67
+  title: コミットメッセージで悩む時間をゼロにする — Claude Code 用 /commit スキルの設計と全文公開
+  date: '2026-05-21'
 ---
 
 
@@ -52,7 +55,20 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-05-21
+
+### コミットメッセージで悩む時間をゼロにする — Claude Code 用 /commit スキルの設計と全文公開
+
+Claude Code のカスタムスキル機能を活用した /commit コマンドの設計と実装を公開。git add したファイルのみを対象に、Conventional Commits 準拠の日本語コミットメッセージを自動生成し、変更の種類（feat/fix/docs等）に応じて複数のアトミックコミットに自動分割することで、コミットメッセージ作成の負担を大幅に軽減する。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/tips4you/items/47d04503c45056712a67)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

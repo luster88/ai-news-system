@@ -9,7 +9,7 @@ tags:
 - pricing
 - 新機能
 date: '2026-04-18'
-updated: '2026-05-06'
+updated: '2026-05-21'
 sources:
 - url: https://the-decoder.com/anthropic-ceo-amodei-declares-there-is-no-end-to-the-rainbow-for-ai-scaling
   title: Anthropic CEO Amodei declares "there is no end to the rainbow" for AI scaling
@@ -21,11 +21,28 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1t5kz8t/what_it_means_that_elon_just_rented_out_all_his
   title: What it means that Elon just rented out all his GPUs to Anthropic
   date: '2026-05-06'
+- url: https://the-decoder.com/spacex-ipo-filing-shows-billions-in-ai-losses-a-2-trillion-valuation-target-and-turbine-spending-that-signals-more-data-center-conflicts-ahead
+  title: SpaceX IPO filing shows billions in AI losses, a $2 trillion valuation target,
+    and turbine spending that signals more data center conflicts ahead
+  date: '2026-05-21'
 ---
 
 
 
+
 # Industry News
+
+---
+
+## 2026-05-21
+
+### SpaceX IPO filing shows billions in AI losses, a $2 trillion valuation target, and turbine spending that signals more data center conflicts ahead
+
+SpaceXがIPOを申請し、最大2兆ドルの評価額を目指すことが明らかになりました。xAI部門は2025年に63.6億ドルの損失を計上し、AnthropicはSpaceXに年間約150億ドルのコンピュート費用を支払っています。SpaceXはAIコーディングスタートアップCursorを600億ドルで買収する計画も発表しました。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/spacex-ipo-filing-shows-billions-in-ai-losses-a-2-trillion-valuation-target-and-turbine-spending-that-signals-more-data-center-conflicts-ahead)
+- **重要度**: 6/10
+- **タグ**: pricing, performance, cowork
 
 ---
 

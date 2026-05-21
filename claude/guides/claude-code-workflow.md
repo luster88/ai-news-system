@@ -13,7 +13,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-05-19'
+updated: '2026-05-21'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -114,6 +114,9 @@ sources:
 - url: https://zenn.dev/clevique/articles/48ccf997c0a30a
   title: AIに実装を任せたら、自分の仕事は『何を作るか』と『やらないこと』だけになった (前編)
   date: '2026-05-19'
+- url: https://qiita.com/Tadashi_Kudo/items/a3e614ff09d28047abf1
+  title: Claude Codeの出力がHTMLになった理由——Markdown→AI→HTML→人間という設計
+  date: '2026-05-21'
 ---
 
 
@@ -143,7 +146,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-05-21
+
+### Claude Codeの出力がHTMLになった理由——Markdown→AI→HTML→人間という設計
+
+Claude Codeにおける入力と出力のフォーマット設計について解説。人間がMarkdownで指示を書き、AIがそれを読んでHTMLで出力する非対称な設計の合理性を説明。Markdownは人間が書きやすくAIが構造を理解しやすい「対話言語」として機能し、HTMLは複雑なレイアウトや視覚的な比較を実現する「出力言語」として機能する。architecture.htmlやoptions-comparison.htmlなど実例を挙げ、Git管理時の注意点や使い分けの基準も提示している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Tadashi_Kudo/items/a3e614ff09d28047abf1)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

@@ -9,7 +9,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-04-12'
-updated: '2026-05-19'
+updated: '2026-05-21'
 sources:
 - url: https://ai-heartland.com/explain/last30days-skill-guide
   title: last30days-skill完全ガイド｜Reddit・X・YouTube横断AIリサーチスキルの使い方2026年版
@@ -26,13 +26,29 @@ sources:
 - url: https://qiita.com/yukurash/items/a4caa9c63bf9e1f283ff
   title: MBTI 16タイプの人格に議論させる Claude Code プラグイン『16-minds』を作った
   date: '2026-05-19'
+- url: https://qiita.com/yukurash/items/4c4bfc492d91770618b8
+  title: 記事から ”AIっぽさ” をなくす Skills を作成した - Claude Code プラグイン『16-minds』
+  date: '2026-05-21'
 ---
 
 
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-05-21
+
+### 記事から ”AIっぽさ” をなくす Skills を作成した - Claude Code プラグイン『16-minds』
+
+Claude Code用プラグイン「16-minds」のv0.3.0リリース記事。AI生成文章特有の「無難さ」を排除するため、MBTI 16タイプの人格を実装。voice-write, voice-decide, voice-voteの3機能で、人格を持った文章生成・意思決定・投票が可能に。具体例として同じテーマを異なる人格で書かせた結果を比較し、AIっぽさを消す3原則（親切を削る・両論併記禁止・抽象を避ける）を解説。
+
+- **ソース**: [Qiita claude](https://qiita.com/yukurash/items/4c4bfc492d91770618b8)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, 新機能
 
 ---
 
