@@ -3,12 +3,13 @@ title: Security Research
 category: ecosystem
 subcategory: security-research
 tags:
+- cowork
 - opus
 - performance
 - sonnet
 - 新機能
 date: '2026-03-29'
-updated: '2026-05-09'
+updated: '2026-05-22'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s739lc/nicolas_carlini_672k_citations_on_google_scholar
   title: Nicolas Carlini (67.2k citations on Google Scholar) says Claude is a better
@@ -18,10 +19,26 @@ sources:
 - url: https://qiita.com/lumichy/items/ca08963aa1a7b5e4554c
   title: Claude Mythos徹底解剖：50ドルで27年モノのゼロデイ脆弱性を発見、既存の防壁はなぜ崩壊したか
   date: '2026-05-09'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1tkvqy1/anthropic_claims_10000_critical_vulns_found_in
+  title: Anthropic claims 10,000+ critical vulns found in one month
+  date: '2026-05-22'
 ---
 
 
+
 # Security Research
+
+---
+
+## 2026-05-22
+
+### Anthropic claims 10,000+ critical vulns found in one month
+
+AnthropicがProject Glasswingイニシアチブを通じて、1ヶ月で10,000件以上の重大な脆弱性を発見したと発表。この取り組みは先月開始されたもので、自動スキャンによる誤検知と真の脆弱性の割合について疑問が呈されている。セキュリティ研究におけるClaudeの活用事例として注目されている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1tkvqy1/anthropic_claims_10000_critical_vulns_found_in)
+- **重要度**: 7/10
+- **タグ**: 新機能, performance, cowork
 
 ---
 

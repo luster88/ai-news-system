@@ -5,13 +5,15 @@ subcategory: community-discussion
 tags:
 - bugfix
 - claude-code
+- claude-console
 - cowork
 - opus
 - performance
+- prompt
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-05-09'
+updated: '2026-05-22'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -36,6 +38,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1t83k85/not_a_good_day_for_team_claude_mythos_is_just
   title: Not a good day for team "Claude Mythos is Just Marketing Hype"
   date: '2026-05-09'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1tkp1pg/whats_the_most_unexpectedly_useful_thing_youve
+  title: What's the most unexpectedly useful thing you've used Claude for?
+  date: '2026-05-22'
 ---
 
 
@@ -43,7 +48,20 @@ sources:
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-05-22
+
+### What's the most unexpectedly useful thing you've used Claude for?
+
+Reddit の ClaudeAI コミュニティで、Claude の意外な活用法について議論するスレッド。投稿者は UX 戦略パートナーとして活用しており、デザイン生成ではなく製品決定の思考整理、コピーライティング、価格モデルの検証に使用。特に新機能開発時の「悪魔の代弁者」として優れていると報告し、他ユーザーの意外な使用例を募集している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1tkp1pg/whats_the_most_unexpectedly_useful_thing_youve)
+- **重要度**: 4/10
+- **タグ**: cowork, prompt, claude-console
 
 ---
 

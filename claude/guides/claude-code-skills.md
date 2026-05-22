@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-05-21'
+updated: '2026-05-22'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -45,6 +45,9 @@ sources:
 - url: https://qiita.com/tips4you/items/47d04503c45056712a67
   title: コミットメッセージで悩む時間をゼロにする — Claude Code 用 /commit スキルの設計と全文公開
   date: '2026-05-21'
+- url: https://zenn.dev/sngjpw/articles/1385f21aff9308
+  title: Claudeのスキル機能とは？自分専用AIを育てる方法【実体験あり】🛠️
+  date: '2026-05-22'
 ---
 
 
@@ -56,7 +59,20 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-05-22
+
+### Claudeのスキル機能とは？自分専用AIを育てる方法【実体験あり】🛠️
+
+Claude Code（CLIツール）のスキル機能について解説。スキルとは自分専用の指示書を.claude/skills/配下のSKILL.mdファイルに保存し、キーワード一つで同じクオリティのアウトプットを得られる機能。毎回プロンプトを書き直す手間が省け、自分専用のAIアシスタントを育てる感覚で使える。
+
+- **ソース**: [Zenn claude](https://zenn.dev/sngjpw/articles/1385f21aff9308)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

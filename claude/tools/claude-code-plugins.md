@@ -4,12 +4,13 @@ category: tools
 subcategory: claude-code-plugins
 tags:
 - claude-code
+- cowork
 - mcp
 - prompt
 - vscode
 - 新機能
 date: '2026-04-12'
-updated: '2026-05-21'
+updated: '2026-05-22'
 sources:
 - url: https://ai-heartland.com/explain/last30days-skill-guide
   title: last30days-skill完全ガイド｜Reddit・X・YouTube横断AIリサーチスキルの使い方2026年版
@@ -29,6 +30,9 @@ sources:
 - url: https://qiita.com/yukurash/items/4c4bfc492d91770618b8
   title: 記事から ”AIっぽさ” をなくす Skills を作成した - Claude Code プラグイン『16-minds』
   date: '2026-05-21'
+- url: https://zenn.dev/shuji_bonji/articles/9fd9850011f3ae
+  title: ファクトチェックとメディアリテラシーチェックを2つのClaude Skill化してみた話
+  date: '2026-05-22'
 ---
 
 
@@ -36,7 +40,20 @@ sources:
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-05-22
+
+### ファクトチェックとメディアリテラシーチェックを2つのClaude Skill化してみた話
+
+Claude Code/Coworkで動作するAgent Skillとして、ファクトチェック（20項目×4カテゴリ）とメディアリテラシーチェック（30項目×6カテゴリ）の2つのスキルを公開した事例。PWA版のfact-checklistを基に、LLM向けに移植し、SKILL.mdのfrontmatterでtriggeringを最適化。両スキルは目的が異なるため意図的に分離し、相互補完的に使えるよう設計されている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/shuji_bonji/articles/9fd9850011f3ae)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

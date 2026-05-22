@@ -13,7 +13,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-05-21'
+updated: '2026-05-22'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -117,6 +117,9 @@ sources:
 - url: https://qiita.com/Tadashi_Kudo/items/a3e614ff09d28047abf1
   title: Claude Codeの出力がHTMLになった理由——Markdown→AI→HTML→人間という設計
   date: '2026-05-21'
+- url: https://zenn.dev/shintaroamaike/articles/fd55b47f25a643
+  title: AI が 90% のコードを書く時代の開発現場 — Anthropic・Palantir・Meta の公開情報から読み解く
+  date: '2026-05-22'
 ---
 
 
@@ -147,7 +150,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-05-22
+
+### AI が 90% のコードを書く時代の開発現場 — Anthropic・Palantir・Meta の公開情報から読み解く
+
+Anthropicの社内研究レポート（132名サーベイ+53名インタビュー+20万セッション解析）を基に、AI時代のコード開発実態を解説。Claude Code導入でPR数67%増、コードの90%をAIが生成する時代の開発手法を、Anthropic・Palantir・Metaの事例から詳述。Plan モードでの設計合意、CLAUDE.mdによる知識蓄積、多層品質保証などベストプラクティスを紹介。
+
+- **ソース**: [Zenn claude](https://zenn.dev/shintaroamaike/articles/fd55b47f25a643)
+- **重要度**: 8/10
+- **タグ**: claude-code, cowork, performance
 
 ---
 
