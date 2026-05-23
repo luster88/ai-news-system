@@ -5,10 +5,11 @@ subcategory: claude-code-hotfix
 tags:
 - bugfix
 - claude-code
+- mcp
 - opus
 - release
 date: '2026-04-16'
-updated: '2026-05-16'
+updated: '2026-05-23'
 sources:
 - url: https://qiita.com/moha0918_/items/6a21a6b76828fc7529af
   title: 今日のClaude Code v2.1.112 リリース｜毎日Changelog解説
@@ -19,10 +20,36 @@ sources:
 - url: https://qiita.com/moha0918_/items/4a177eb40bcf7fb66fba
   title: Claude Code v2.1.142〜v2.1.143 リリース｜毎日Changelog解説
   date: '2026-05-16'
+- url: https://qiita.com/moha0918_/items/df5c2ebc2336b901c3c4
+  title: Claude Code v2.1.149〜v2.1.150 リリース｜毎日Changelog解説
+  date: '2026-05-23'
 ---
 
 
+
 # Claude Code Hotfix
+
+---
+
+## 2026-05-23
+
+### Claude Code v2.1.149〜v2.1.150 リリース｜毎日Changelog解説
+
+Claude Code v2.1.149〜v2.1.150のリリースノート解説。主な変更は/usageコマンドがMCPサーバー別の内訳表示に対応し、どの連携が重いか特定可能に。PowerShell環境での作業ディレクトリ追跡漏れによる権限バイパス脆弱性3件を修正。macOSでfindコマンドが巨大ディレクトリでクラッシュする問題を解決。その他UIの細かい改善として、Markdownのタスクリスト表示やキーボードによる/diff操作に対応。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/df5c2ebc2336b901c3c4)
+- **重要度**: 6/10
+- **タグ**: claude-code, release, bugfix
+
+---
+
+### Claude Code v2.1.149〜v2.1.150 リリース｜毎日Changelog解説
+
+Claude Code v2.1.149〜v2.1.150のリリース情報。主要な更新はv2.1.149に集中しており、/usageコマンドがMCPサーバーやsubagentごとの内訳表示に対応し、トークン消費の原因特定が可能に。PowerShellのcd系コマンドやgit worktreeに関する権限バイパス脆弱性3件を修正。macOSでfindコマンドが巨大ディレクトリでホストをクラッシュさせる不具合も解消。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/df5c2ebc2336b901c3c4)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, mcp
 
 ---
 

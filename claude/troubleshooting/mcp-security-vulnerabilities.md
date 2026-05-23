@@ -5,10 +5,11 @@ subcategory: mcp-security-vulnerabilities
 tags:
 - bugfix
 - claude-code
+- cursor
 - mcp
 - prompt
 date: '2026-04-06'
-updated: '2026-04-27'
+updated: '2026-05-23'
 sources:
 - url: https://qiita.com/emi_ndk/items/c3b99612ec044e5d612e
   title: 【緊急警告】MCPサーバーが60日で30件のCVE！Azure脆弱性は「認証ゼロ」でCVSS 9.1
@@ -16,10 +17,26 @@ sources:
 - url: https://qiita.com/kix/items/3bb2bdc5830cc1bd0a58
   title: WebSearch MCPのセキュリティリスクと対策 — allowlist/denylistによるドメイン制御
   date: '2026-04-27'
+- url: https://zenn.dev/ju571n/articles/ai-agent-config-attack-surface
+  title: AIコーディングエージェントの本当の攻撃面は設定ファイルだった
+  date: '2026-05-23'
 ---
 
 
+
 # Mcp Security Vulnerabilities
+
+---
+
+## 2026-05-23
+
+### AIコーディングエージェントの本当の攻撃面は設定ファイルだった
+
+AIコーディングエージェントの最大のセキュリティリスクはモデルの暴走ではなく設定ファイルの脆弱性。TrustFall や AWS Kiro の事例では、悪意ある設定ファイルやプロンプトインジェクションによる設定書き換えでRCEが成立。対策として設定ファイル監視ツール Sigil（AI-SPM エージェント）を開発し、危険な設定変更を検知・記録する。
+
+- **ソース**: [Zenn claude](https://zenn.dev/ju571n/articles/ai-agent-config-attack-surface)
+- **重要度**: 8/10
+- **タグ**: claude-code, cursor, mcp
 
 ---
 

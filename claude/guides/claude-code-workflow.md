@@ -13,7 +13,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-05-22'
+updated: '2026-05-23'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -120,6 +120,9 @@ sources:
 - url: https://zenn.dev/shintaroamaike/articles/fd55b47f25a643
   title: AI が 90% のコードを書く時代の開発現場 — Anthropic・Palantir・Meta の公開情報から読み解く
   date: '2026-05-22'
+- url: https://qiita.com/hiropon122/items/a8274aef2a4c882197d6
+  title: Claude Codeのスキルが毎日勝手に改善されていく仕組みを作った
+  date: '2026-05-23'
 ---
 
 
@@ -151,7 +154,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-05-23
+
+### Claude Codeのスキルが毎日勝手に改善されていく仕組みを作った
+
+Claude CodeのRoutines機能を活用し、dev-workflowスキルの自己改善を自動化する仕組みを構築。開発完了時の会話履歴から課題を自動抽出してGitHub Issuesに登録し、Routinesが毎日修正PRを作成。3週間で40件以上のコミットが生成され、人間のレビューを経てマージされる運用を実現。サブエージェントとの会話から気づかなかった問題も検出でき、品質ゲートを設けた3段階のレビューループで改善精度を担保している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/hiropon122/items/a8274aef2a4c882197d6)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

@@ -4,12 +4,13 @@ category: ecosystem
 subcategory: competitor-models
 tags:
 - claude-api
+- claude-code
 - cowork
 - performance
 - pricing
 - release
 date: '2026-05-03'
-updated: '2026-05-11'
+updated: '2026-05-23'
 sources:
 - url: https://the-decoder.com/xiaomis-open-weight-mimo-v2-5-pro-takes-aim-at-claude-opus-with-hours-long-autonomous-coding
   title: Xiaomi's open-weight MiMo-V2.5-Pro takes aim at Claude Opus with hours-long
@@ -19,10 +20,27 @@ sources:
   title: Baidu's Ernie 5.1 cuts 94 percent of pre-training costs while competing with
     top models
   date: '2026-05-11'
+- url: https://the-decoder.com/alibabas-latest-ai-model-ran-autonomously-for-35-hours-to-optimize-code-for-its-own-custom-chip
+  title: Alibaba's latest AI model ran autonomously for 35 hours to optimize code
+    for its own custom chip
+  date: '2026-05-23'
 ---
 
 
+
 # Competitor Models
+
+---
+
+## 2026-05-23
+
+### Alibaba's latest AI model ran autonomously for 35 hours to optimize code for its own custom chip
+
+Alibaba の Qwen チームが、自律タスク専用の AI モデル Qwen3.7-Max を API 限定でリリース。実証テストでは、35時間にわたり完全自律でカーネル最適化を実行し、Alibaba 独自チップ向けコードを最適化した。Claude Code などのエージェントフレームワークとも互換性があり、長時間の自律動作とコーディングエージェント用途を想定している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/alibabas-latest-ai-model-ran-autonomously-for-35-hours-to-optimize-code-for-its-own-custom-chip)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, performance
 
 ---
 

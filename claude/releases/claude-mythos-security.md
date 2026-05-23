@@ -4,9 +4,10 @@ category: releases
 subcategory: claude-mythos-security
 tags:
 - performance
+- release
 - 新機能
 date: '2026-04-21'
-updated: '2026-05-09'
+updated: '2026-05-23'
 sources:
 - url: https://qiita.com/eri_tech/items/bd59d063d55544b1442e
   title: なぜClaude Mythosはサイバーセキュリティに強いのか？
@@ -14,10 +15,27 @@ sources:
 - url: https://zenn.dev/lumichy/articles/claude-mythos-zeroday-2026
   title: Claude Mythos徹底解剖：50ドルで27年モノのゼロデイ脆弱性を発見、既存の防壁はなぜ崩壊したか
   date: '2026-05-09'
+- url: https://the-decoder.com/anthropic-warns-claude-mythos-preview-finds-bugs-faster-than-developers-can-patch-them
+  title: Anthropic warns Claude Mythos Preview finds bugs faster than developers can
+    patch them
+  date: '2026-05-23'
 ---
 
 
+
 # Claude Mythos Security
+
+---
+
+## 2026-05-23
+
+### Anthropic warns Claude Mythos Preview finds bugs faster than developers can patch them
+
+Anthropic の Claude Mythos Preview が、わずか1ヶ月で約50のパートナー企業と共に10,000件以上の重大なセキュリティ脆弱性を発見。発見速度が検証・修正能力を上回り、危険な移行期に入っていると警告。Cloudflare は2,000件、Mozilla は Firefox で271件の脆弱性を発見し、従来比10倍以上の検出率を記録。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-warns-claude-mythos-preview-finds-bugs-faster-than-developers-can-patch-them)
+- **重要度**: 10/10
+- **タグ**: 新機能, release
 
 ---
 

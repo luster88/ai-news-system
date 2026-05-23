@@ -4,11 +4,12 @@ category: ecosystem
 subcategory: pricing-comparison
 tags:
 - claude-api
+- copilot
 - cowork
 - pricing
 - sonnet
 date: '2026-04-16'
-updated: '2026-05-02'
+updated: '2026-05-23'
 sources:
 - url: https://ai-heartland.com/explain/claude-api-pricing-calculator-2026
   title: Claude API 料金を徹底比較｜Anthropic全モデル月額コスト計算シミュレーター【2026年版】
@@ -16,10 +17,26 @@ sources:
 - url: https://zenn.dev/t_tokunaga/articles/2026-01-01-ai-model-stack-cost-breakdown-2025-12
   title: 個人開発のAI API利用構成と2025年12月の課金額を公開する（サブスク＋API連携）
   date: '2026-05-02'
+- url: https://qiita.com/ochtum/items/8fd5952e920da136dd94
+  title: 【第一回】2026年5月時点のAIコーディングエージェントまとめ
+  date: '2026-05-23'
 ---
 
 
+
 # Pricing Comparison
+
+---
+
+## 2026-05-23
+
+### 【第一回】2026年5月時点のAIコーディングエージェントまとめ
+
+2026年5月時点でのAIコーディングエージェント導入検討者向けに、OpenAI API、Claude API、GitHub Copilotの料金体系を比較した記事。単純な料金比較ではなく、作業内容や使い分けによって実質コストが変わることを解説し、トークン単位での課金の仕組みやAI creditsの概念を説明している。セキュリティ懸念層にも導入検討の動きが広がっている状況を背景として取り上げている。
+
+- **ソース**: [Qiita claude](https://qiita.com/ochtum/items/8fd5952e920da136dd94)
+- **重要度**: 6/10
+- **タグ**: pricing, claude-api, copilot
 
 ---
 

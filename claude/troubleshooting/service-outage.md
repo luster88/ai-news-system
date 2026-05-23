@@ -8,7 +8,7 @@ tags:
 - claude-console
 - performance
 date: '2026-03-25'
-updated: '2026-05-16'
+updated: '2026-05-23'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s3b9fi/claude_status_update_elevated_errors_on_claudeai
   title: 'Claude Status Update : Elevated Errors on claude.ai on 2026-03-25T13:45:25.000Z'
@@ -23,11 +23,27 @@ sources:
   title: 'Claude Status Update : Elevated error rates on requests to multiple models
     on 2026-05-16T18:08:45.000Z'
   date: '2026-05-16'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1tlntio/claude_is_not_having_a_good_morning
+  title: Claude is not having a good morning
+  date: '2026-05-23'
 ---
 
 
 
+
 # Service Outage
+
+---
+
+## 2026-05-23
+
+### Claude is not having a good morning
+
+Redditユーザーが Claude の動作不良を報告。朝の時間帯に何らかの問題が発生している模様。スクリーンショット付きで投稿されており、コミュニティで議論されている。具体的なエラー内容や影響範囲は記事からは不明。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1tlntio/claude_is_not_having_a_good_morning)
+- **重要度**: 4/10
+- **タグ**: bugfix, claude-api, performance
 
 ---
 

@@ -1590,14 +1590,36 @@
     "https://ai-heartland.com/agent/elicit-aepl-agentic-dsl": "2026-05-22",
     "https://ai-heartland.com/agent/omni-agentic-analytics-harness": "2026-05-22",
     "https://ai-heartland.com/explain/claude-design-from-prompt-to-production": "2026-05-22",
-    "https://ai-heartland.com/explain/claude-capability-curve-developers": "2026-05-22"
+    "https://ai-heartland.com/explain/claude-capability-curve-developers": "2026-05-22",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tlntio/claude_is_not_having_a_good_morning": "2026-05-23",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tlneww/anyone_else_go_way_too_deep_building_a_personal": "2026-05-23",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tlir65/my_experience_using_claude_code_with_local_llm": "2026-05-23",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tl295f/every_time": "2026-05-23",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tldsrl/when_is_chat_cowork_and_code_merging": "2026-05-23",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tlla7m/claude_saved_my_money_today": "2026-05-23",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tlk7eu/built_my_own_workout_tracker_personal_use_only": "2026-05-23",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tlrtlw/i_built_a_running_app_to_replace_runna": "2026-05-23",
+    "https://qiita.com/moha0918_/items/df5c2ebc2336b901c3c4": "2026-05-23",
+    "https://qiita.com/ochtum/items/a82a8c43b4d9d1db415b": "2026-05-23",
+    "https://qiita.com/ochtum/items/8fd5952e920da136dd94": "2026-05-23",
+    "https://qiita.com/picnic/items/b3397d83aca4c459f80e": "2026-05-23",
+    "https://zenn.dev/rkpg/articles/claude-code-content-factory": "2026-05-23",
+    "https://zenn.dev/sngjpw/articles/98e4a66b8d0849": "2026-05-23",
+    "https://zenn.dev/noah33/articles/picking-the-right-model": "2026-05-23",
+    "https://zenn.dev/ju571n/articles/ai-agent-config-attack-surface": "2026-05-23",
+    "https://zenn.dev/ordinary_person/articles/1b6e4639765e3f": "2026-05-23",
+    "https://zenn.dev/tonnura/articles/1f5e272d9226db": "2026-05-23",
+    "https://qiita.com/hiropon122/items/a8274aef2a4c882197d6": "2026-05-23",
+    "https://qiita.com/Tadashi_Kudo/items/402879f0c01c2c746d13": "2026-05-23",
+    "https://the-decoder.com/alibabas-latest-ai-model-ran-autonomously-for-35-hours-to-optimize-code-for-its-own-custom-chip": "2026-05-23",
+    "https://the-decoder.com/anthropic-warns-claude-mythos-preview-finds-bugs-faster-than-developers-can-patch-them": "2026-05-23"
   },
   "source_penalties": {
-    "Anthropic News": "2026-05-23",
+    "Anthropic News": "2026-05-24",
     "Reddit r/ClaudeAI": "2026-04-03",
     "Zenn claude": "2026-03-25",
     "TechCrunch Claude": "2026-05-12",
     "The Decoder Claude": "2026-05-10",
-    "AI Heartland": "2026-05-22"
+    "AI Heartland": "2026-05-24"
   }
 }

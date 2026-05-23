@@ -7,9 +7,10 @@ tags:
 - claude-code
 - cowork
 - haiku
+- mcp
 - prompt
 date: '2026-04-26'
-updated: '2026-05-08'
+updated: '2026-05-23'
 sources:
 - url: https://zenn.dev/saytooy_arch/articles/14-zenn-auto-publish-pipeline
   title: Zenn自動公開パイプラインをclaude -pで構築した話
@@ -17,10 +18,26 @@ sources:
 - url: https://zenn.dev/aiflowlab/articles/n8n-claude-haiku-inquiry-workflow
   title: Claude Haiku 4.5 + n8n で問い合わせ対応ワークフローを作ったら、100% 精度・1 件 0.5 円で運用できた
   date: '2026-05-08'
+- url: https://zenn.dev/rkpg/articles/claude-code-content-factory
+  title: Claude Codeを「コンテンツ工場」にした話。スラッシュコマンド60個 + Agent Teamsで個人メディアを半自動化する
+  date: '2026-05-23'
 ---
 
 
+
 # Workflow Automation
+
+---
+
+## 2026-05-23
+
+### Claude Codeを「コンテンツ工場」にした話。スラッシュコマンド60個 + Agent Teamsで個人メディアを半自動化する
+
+個人メディア運営者がClaude Codeを「コンテンツ工場」として設計した実践事例。60個のカスタムスラッシュコマンドと複数のエージェントロールを組み合わせ、ブログ記事生成を7段階のパイプラインで半自動化。エージェント間のデータ受け渡しをファイルベースにすることで、長尺タスクでもコンテキスト切れに強い設計を実現。並列実行（Agent Teams）と逐次実行（Task tool）の使い分け、承認フロー、AI臭検査など、実運用で得た知見を詳述。
+
+- **ソース**: [Zenn claude](https://zenn.dev/rkpg/articles/claude-code-content-factory)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, cowork
 
 ---
 
