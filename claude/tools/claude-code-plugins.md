@@ -10,7 +10,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-04-12'
-updated: '2026-05-22'
+updated: '2026-05-24'
 sources:
 - url: https://ai-heartland.com/explain/last30days-skill-guide
   title: last30days-skill完全ガイド｜Reddit・X・YouTube横断AIリサーチスキルの使い方2026年版
@@ -33,6 +33,9 @@ sources:
 - url: https://zenn.dev/shuji_bonji/articles/9fd9850011f3ae
   title: ファクトチェックとメディアリテラシーチェックを2つのClaude Skill化してみた話
   date: '2026-05-22'
+- url: https://ai-heartland.com/tool/dair-academy-plugins
+  title: DAIR Academy Plugins完全解説 — Claude Codeをパワーアップする5つのOSSプラグイン
+  date: '2026-05-24'
 ---
 
 
@@ -41,7 +44,20 @@ sources:
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-05-24
+
+### DAIR Academy Plugins完全解説 — Claude Codeをパワーアップする5つのOSSプラグイン
+
+DAIR.AI Academyが2026年2月にClaude Code向けオープンソースプラグインマーケットプレイス「dair-academy-plugins」を公開。Gemini 3 Proによる画像生成、複数LLMによる議会制審議、学術論文サーベイなど5つの教育・研究特化プラグインを提供。コマンド1行でインストール可能で、公開4ヶ月でスター数198を達成。DAIR.AIはPrompt Engineering Guide（46k+スター）などで知られるAI研究民主化コミュニティ。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/dair-academy-plugins)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, 新機能
 
 ---
 

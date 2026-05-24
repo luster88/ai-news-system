@@ -6,9 +6,10 @@ tags:
 - claude-api
 - claude-code
 - cowork
+- setup
 - 新機能
 date: '2026-04-24'
-updated: '2026-05-14'
+updated: '2026-05-24'
 sources:
 - url: https://zenn.dev/ouchan_ip/articles/aimo-ai-usage-monitor
   title: Claude / Codex / ZAI / Ollama の使用量を一画面でまとめて見る「aimo」を作った
@@ -16,10 +17,26 @@ sources:
 - url: https://techcrunch.com/2026/05/14/clawdmeter-turns-your-claude-code-usage-stats-into-a-tiny-desktop-dashboard
   title: Clawdmeter turns your Claude Code usage stats into a tiny desktop dashboard
   date: '2026-05-14'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1tmo1sz/fav_desk_gadget_claude_code_usage_display
+  title: 'Fav Desk Gadget: Claude Code Usage Display, codeMeter'
+  date: '2026-05-24'
 ---
 
 
+
 # Usage Monitoring
+
+---
+
+## 2026-05-24
+
+### Fav Desk Gadget: Claude Code Usage Display, codeMeter
+
+Claude Code の使用状況を物理的なデスク用ディスプレイで表示する「codeMeter」というガジェットの紹介。5時間の使用量、週間使用量、リセットまでのカウントダウン、制限に近づくとカラー警告を表示する。WiFi接続で動作し、ブラウザタブやアプリ不要で使用状況を常時確認できる。ソースコードは無料で共有可能、完成品は Encinitas3D.com で販売中。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1tmo1sz/fav_desk_gadget_claude_code_usage_display)
+- **重要度**: 4/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

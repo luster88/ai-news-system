@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-05-17'
+updated: '2026-05-24'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -60,6 +60,9 @@ sources:
 - url: https://zenn.dev/choshosu/articles/70798aebd6edaa
   title: Cloud Storage MCP サーバー 使ってみた
   date: '2026-05-17'
+- url: https://zenn.dev/oymk/articles/45e38ede000716
+  title: リモート MCP サーバーを code mode に変えられる Cloudflare MCP server portals
+  date: '2026-05-24'
 ---
 
 
@@ -75,7 +78,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-05-24
+
+### リモート MCP サーバーを code mode に変えられる Cloudflare MCP server portals
+
+Cloudflare の MCP server portals を使うと、リモート MCP サーバーを code mode として利用できる機能の実装レポート。MCP クライアントとサーバー間に Cloudflare がプロキシとして介入し、OAuth 認証や Access ポリシーによる管理性向上を実現。code mode では LLM が生成したコードを実行することで、複雑な依頼や繰り返し処理において標準 MCP よりトークン消費を削減できることを実証。
+
+- **ソース**: [Zenn claude](https://zenn.dev/oymk/articles/45e38ede000716)
+- **重要度**: 7/10
+- **タグ**: mcp, 新機能, performance
 
 ---
 

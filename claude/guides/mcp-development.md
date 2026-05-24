@@ -6,8 +6,9 @@ tags:
 - claude-code
 - mcp
 - setup
+- 新機能
 date: '2026-03-23'
-updated: '2026-05-09'
+updated: '2026-05-24'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/49680a622965f14336d6
   title: Claude Code Channelsで自作MCP Connectorを実装する — Slack連携を作ってみよう
@@ -15,10 +16,26 @@ sources:
 - url: https://zenn.dev/aoi___ei/articles/claude-mcp-ts-2-moya6yny
   title: Claude MCPサーバー自作ハンズオン｜TS版・公開まで【無料サンプル2個公開】
   date: '2026-05-09'
+- url: https://qiita.com/LemonCake/items/ec3bb86abbbeedec6347
+  title: 【完全保存版】MCP サーバー開発 2026 年最新ガイド — 設計・実装・公開・収益化まで一気通貫
+  date: '2026-05-24'
 ---
 
 
+
 # Mcp Development
+
+---
+
+## 2026-05-24
+
+### 【完全保存版】MCP サーバー開発 2026 年最新ガイド — 設計・実装・公開・収益化まで一気通貫
+
+MCPサーバー開発の完全ガイド。設計から実装、npm公開、Claude Desktop/Cursor/Windsurf/Clineでの設定、MCP Registry/Glama/Smitheryへの登録、そして@lemon-cake/x402-serverを使った有料化までを網羅。stdio/SSE/HTTPの3つのtransport、tools/resources/promptsの機能、デバッグ方法、収益化の具体的手順を解説。個人開発者がAIエージェント時代に収益を得る方法として、1日で公開から有料化まで完走できる速度感を強調している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/LemonCake/items/ec3bb86abbbeedec6347)
+- **重要度**: 8/10
+- **タグ**: mcp, claude-code, 新機能
 
 ---
 

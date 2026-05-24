@@ -6,16 +6,34 @@ tags:
 - claude-api
 - cowork
 - pricing
+- 新機能
 date: '2026-05-01'
-updated: '2026-05-01'
+updated: '2026-05-24'
 sources:
 - url: https://the-decoder.com/eight-tech-giants-sign-pentagon-deals-to-build-an-ai-first-fighting-force-across-classified-networks
   title: Eight tech giants sign Pentagon deals to build an "AI-first fighting force"
     across classified networks
   date: '2026-05-01'
+- url: https://the-decoder.com/anthropic-may-keep-supplying-claude-to-the-nsa-despite-being-flagged-as-a-supply-chain-risk-by-the-pentagon
+  title: Anthropic may keep supplying Claude to the NSA despite being flagged as a
+    supply chain risk by the Pentagon
+  date: '2026-05-24'
 ---
 
+
 # Government Contracts
+
+---
+
+## 2026-05-24
+
+### Anthropic may keep supplying Claude to the NSA despite being flagged as a supply chain risk by the Pentagon
+
+米国防総省がAnthropicをサプライチェーンリスクに指定したにもかかわらず、ホワイトハウスがNSAへのClaude提供を承認。新しい「Mythos」モデルは旧型チップで動作可能で、NSAの機密ネットワークに短期的な解決策を提供。契約には米国民データの処理禁止条項が含まれ、将来の政府契約のテンプレートになる予定。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-may-keep-supplying-claude-to-the-nsa-despite-being-flagged-as-a-supply-chain-risk-by-the-pentagon)
+- **重要度**: 8/10
+- **タグ**: claude-api, pricing, 新機能
 
 ---
 

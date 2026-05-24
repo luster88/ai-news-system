@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-05-20'
+updated: '2026-05-24'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -58,6 +58,9 @@ sources:
 - url: https://qiita.com/claudesidejob/items/6c7c7001893a513c6923
   title: Claude Codeで株の自動売買を作ったら勝率82%・2日で+10%だった
   date: '2026-05-20'
+- url: https://zenn.dev/goki602/articles/2026-05-24-claude-code-routines-channels
+  title: Claude Code の Routines と Channels — スケジュール実行の仕組みを公開情報から整理
+  date: '2026-05-24'
 ---
 
 
@@ -73,7 +76,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-05-24
+
+### Claude Code の Routines と Channels — スケジュール実行の仕組みを公開情報から整理
+
+Claude Codeの自動化機能として2026年4月にRoutines（クラウドスケジュール実行）、3月にChannels（メッセージアプリ連携）がリサーチプレビュー公開された。RoutinesはCLI /loop、Desktop Scheduled Tasks、Cloud Routinesの3層構造を持ち、PCを閉じていてもAnthropicインフラ上でエージェントが動作し続ける。GitHubイベントトリガーにも対応し、Issue自動トリアージやPR整理などの定型保守作業を自動化できる。Channelsは外部メッセージアプリからセッションにイベントを注入する機能で、スケジュール駆動とイベント駆動の両輪が揃った形となる。
+
+- **ソース**: [Zenn claude](https://zenn.dev/goki602/articles/2026-05-24-claude-code-routines-channels)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, mcp
 
 ---
 

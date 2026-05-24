@@ -7,7 +7,7 @@ tags:
 - mcp
 - setup
 date: '2026-04-07'
-updated: '2026-05-09'
+updated: '2026-05-24'
 sources:
 - url: https://ai-heartland.com/explain/mcp-server-build-guide
   title: MCPサーバーの作り方2026年完全ガイド：TypeScript・Python両対応チュートリアル
@@ -18,11 +18,27 @@ sources:
 - url: https://zenn.dev/aoi___ei/articles/claude-mcp-pdf-4-2-moya5def
   title: Claude MCPサーバー自作キット｜日本語PDF＋雛形4種【無料サンプル2個公開】
   date: '2026-05-09'
+- url: https://zenn.dev/miharu_tools/articles/f21c642db3fb3d
+  title: 自作MCPサーバーを書いて公開するまで ― Claude × GPT 相互レビューを題材に
+  date: '2026-05-24'
 ---
 
 
 
+
 # Mcp Server Development
+
+---
+
+## 2026-05-24
+
+### 自作MCPサーバーを書いて公開するまで ― Claude × GPT 相互レビューを題材に
+
+Model Context Protocol（MCP）を使った自作サーバーの作成・公開方法を解説。Python用のMCP SDKを用いて、ClaudeとGPT-4oによる相互レビューサーバー「mutual-review-mcp」を題材に、最小実装からツール設計、環境変数管理、uvx経由での配布まで実践的に説明。標準入出力でJSON-RPCをやり取りするstdio版の実装パターンと、複数LLM連携の設計判断を具体的なコード例とともに紹介している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/miharu_tools/articles/f21c642db3fb3d)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code, setup
 
 ---
 

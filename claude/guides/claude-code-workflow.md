@@ -13,7 +13,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-05-23'
+updated: '2026-05-24'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -123,6 +123,9 @@ sources:
 - url: https://qiita.com/hiropon122/items/a8274aef2a4c882197d6
   title: Claude Codeのスキルが毎日勝手に改善されていく仕組みを作った
   date: '2026-05-23'
+- url: https://qiita.com/nkjmnkdev/items/2ff276cb7c1010b45f13
+  title: ClaudeCodeでの並列化に関する人の介在箇所
+  date: '2026-05-24'
 ---
 
 
@@ -155,7 +158,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-05-24
+
+### ClaudeCodeでの並列化に関する人の介在箇所
+
+ClaudeCode での並列開発における人間の介在箇所について考察。スクラッチ開発初期はアーキテクチャ検証のため並列化を避け、3〜5機能実装後に並列化を推奨。version2 以降は安定したレールに乗る形で並列化の恩恵を受けられるとする実践的な知見を共有している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/nkjmnkdev/items/2ff276cb7c1010b45f13)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

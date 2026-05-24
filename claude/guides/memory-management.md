@@ -6,15 +6,32 @@ tags:
 - claude-code
 - prompt
 - setup
+- 新機能
 date: '2026-04-27'
-updated: '2026-04-27'
+updated: '2026-05-24'
 sources:
 - url: https://qiita.com/Tadashi_Kudo/items/e717659f10192f32e7b1
   title: 67kスター「claude-mem」は本当に必要か？Claude Code自前メモリ管理の3層構造で代替する
   date: '2026-04-27'
+- url: https://qiita.com/Tadashi_Kudo/items/50e8770b61fdc6c66383
+  title: Anthropic "Dreaming"をscheduled-taskで再現する——週次cross-agent記憶整理の実装
+  date: '2026-05-24'
 ---
 
+
 # Memory Management
+
+---
+
+## 2026-05-24
+
+### Anthropic "Dreaming"をscheduled-taskで再現する——週次cross-agent記憶整理の実装
+
+Anthropic の Dreaming（セッション外記憶整理）を Claude Code の scheduled-task で再現する実装を解説。週次で複数セッションを跨ぐパターンを抽出し、working-memory.md への concurrent write を OCC（楽観的同時実行制御）で防ぎながら、長期記憶の品質を維持する仕組みを紹介。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Tadashi_Kudo/items/50e8770b61fdc6c66383)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

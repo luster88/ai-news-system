@@ -7,8 +7,9 @@ tags:
 - claude-code
 - cowork
 - prompt
+- 新機能
 date: '2026-03-27'
-updated: '2026-05-14'
+updated: '2026-05-24'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s4zqeq/one_sentence_that_instantly_improves_any_claude
   title: One sentence that instantly improves any Claude conversation — borrowed from
@@ -30,13 +31,29 @@ sources:
 - url: https://qiita.com/qOpenDev/items/a88643770430b5e25cc8
   title: GPTとClaudeで「きのこたけのこ論争」をさせたら性格が出た
   date: '2026-05-14'
+- url: https://ai-heartland.com/explain/anthropic-prompting-playbook-eval-agent
+  title: Anthropicエンジニアが教えるプロンプト設計の実践手法 — eval駆動デバッグからエージェントループまで
+  date: '2026-05-24'
 ---
 
 
 
 
 
+
 # Prompt Engineering Techniques
+
+---
+
+## 2026-05-24
+
+### Anthropicエンジニアが教えるプロンプト設計の実践手法 — eval駆動デバッグからエージェントループまで
+
+Anthropic のエンジニアが「Code w/ Claude」イベントで公開したプロンプト設計の実践手法を解説。既存プロンプトのデバッグと新規エージェント構築の2つのシナリオを通じて、eval駆動のプロンプト改善サイクル、テストケース設計（コントロール・エッジ・境界ケース）、XMLタグによる構造化、ストップシーケンスの活用など、測定可能な基準でプロンプトを体系的に改善する手法を詳述している。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/anthropic-prompting-playbook-eval-agent)
+- **重要度**: 7/10
+- **タグ**: prompt, claude-code, 新機能
 
 ---
 
