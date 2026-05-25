@@ -13,7 +13,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-05-24'
+updated: '2026-05-25'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -126,6 +126,12 @@ sources:
 - url: https://qiita.com/nkjmnkdev/items/2ff276cb7c1010b45f13
   title: ClaudeCodeでの並列化に関する人の介在箇所
   date: '2026-05-24'
+- url: https://ai-heartland.com/explain/stop-babysitting-agents-london-2026
+  title: エージェントの監視をやめる — Sid BidasariaのVerification・並列化・ループ3パターン
+  date: '2026-05-25'
+- url: https://ai-heartland.com/explain/how-we-claude-code-london-2026
+  title: How we Claude Code — Arnaud DokoがAnthropicの3ステップ開発フローを実演
+  date: '2026-05-25'
 ---
 
 
@@ -159,7 +165,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-05-25
+
+### エージェントの監視をやめる — Sid BidasariaのVerification・並列化・ループ3パターン
+
+Anthropic の Sid Bidasaria が Code with Claude London 2026 で、エージェントの自律性を高める3つのパターン（Verification・Parallelize・Background Loops）を提示。開発者がエージェントを監視し続ける現状を打破し、エージェント自身に検証・並列実行・長時間実行させることで、真の生産性向上を実現する実践的手法を解説した。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/stop-babysitting-agents-london-2026)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
+
+---
+
+### How we Claude Code — Arnaud DokoがAnthropicの3ステップ開発フローを実演
+
+AnthropicのArnaud DokoがCode with Claude London 2026で、長時間エージェント開発のための3フェーズワークフローを実演。フェーズ1はClaudeによるインタビュー式ブレインストーミングで仕様の曖昧さを排除、フェーズ2はHTMLベースの仕様書作成、フェーズ3は検証内蔵アーキテクチャの実装。「モデルが賢くなるほど仕様の曖昧さが致命的」という洞察のもと、Anthropic社内の実践的開発プロセスを公開した。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/how-we-claude-code-london-2026)
+- **重要度**: 8/10
+- **タグ**: claude-code, 新機能, prompt
 
 ---
 

@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-05-24'
+updated: '2026-05-25'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -63,6 +63,9 @@ sources:
 - url: https://zenn.dev/oymk/articles/45e38ede000716
   title: リモート MCP サーバーを code mode に変えられる Cloudflare MCP server portals
   date: '2026-05-24'
+- url: https://zenn.dev/masuda_masuo/articles/2026-05-24-code-sandbox-mcp
+  title: PATをAIに触れさせずにDockerコンテナへ渡すMCPサーバーを自作した
+  date: '2026-05-25'
 ---
 
 
@@ -79,7 +82,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-05-25
+
+### PATをAIに触れさせずにDockerコンテナへ渡すMCPサーバーを自作した
+
+プライベートリポジトリでAIエージェントにpytestを実行させるため、PATをAIのコンテキストに露出させずにDockerコンテナへ渡すMCPサーバーをPythonで自作した。既存のcode-sandbox-mcpにはpass-through-env機能がなく、自動アップデート機能にサプライチェーンリスクがあったため、fastmcpとdocker SDKを使って新規実装。claude_desktop_config.jsonのenvで受け取った環境変数を安全にコンテナへ転送し、Dockerイメージを明示指定することでクリーンな環境でのテスト実行を実現した。
+
+- **ソース**: [Zenn claude](https://zenn.dev/masuda_masuo/articles/2026-05-24-code-sandbox-mcp)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, setup
 
 ---
 

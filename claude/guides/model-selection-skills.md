@@ -5,9 +5,11 @@ subcategory: model-selection-skills
 tags:
 - haiku
 - opus
+- performance
+- prompt
 - sonnet
 date: '2026-04-22'
-updated: '2026-05-23'
+updated: '2026-05-25'
 sources:
 - url: https://zenn.dev/ai_arai_ally/articles/20260422-0401-claude-haiku-4-5-skill-opus-4-7
   title: Claude Haiku 4.5 + skill で Opus 4.7 を超えた ― SkillsBench 追試とモデル選定の設計図
@@ -15,10 +17,26 @@ sources:
 - url: https://zenn.dev/noah33/articles/picking-the-right-model
   title: 「正しいモデル」とは何か — Code with Claude London 2026 で考え方が一段アップデートされた話
   date: '2026-05-23'
+- url: https://ai-heartland.com/explain/picking-right-model-london-2026
+  title: モデル選択の実践科学 — LucasがCode with Claude Londonで語るEval・コスト・フロンティア移動
+  date: '2026-05-25'
 ---
 
 
+
 # Model Selection Skills
+
+---
+
+## 2026-05-25
+
+### モデル選択の実践科学 — LucasがCode with Claude Londonで語るEval・コスト・フロンティア移動
+
+Anthropropicの Applied AI チームの Lucas が Code with Claude London 2026 で語った、LLM モデル選択の科学的アプローチ。公開ベンチマークを「事前確率」として活用しつつ、プライベート Eval でユースケース特化の意思決定を行う反復可能プロセスを解説。プロンプトキャッシングによるコスト最適化や、eval 失敗パターンの分類も紹介されている。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/picking-right-model-london-2026)
+- **重要度**: 7/10
+- **タグ**: opus, prompt, performance
 
 ---
 
