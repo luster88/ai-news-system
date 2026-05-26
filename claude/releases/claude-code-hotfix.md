@@ -9,7 +9,7 @@ tags:
 - opus
 - release
 date: '2026-04-16'
-updated: '2026-05-23'
+updated: '2026-05-26'
 sources:
 - url: https://qiita.com/moha0918_/items/6a21a6b76828fc7529af
   title: 今日のClaude Code v2.1.112 リリース｜毎日Changelog解説
@@ -23,11 +23,37 @@ sources:
 - url: https://qiita.com/moha0918_/items/df5c2ebc2336b901c3c4
   title: Claude Code v2.1.149〜v2.1.150 リリース｜毎日Changelog解説
   date: '2026-05-23'
+- url: https://ai-heartland.com/explain/claude-code-v2-1-150-update
+  title: Claude Code v2.1.146〜150｜/usageカテゴリ別・/code-review改称・PowerShell権限昇格Fix
+  date: '2026-05-26'
 ---
 
 
 
+
 # Claude Code Hotfix
+
+---
+
+## 2026-05-26
+
+### Claude Code v2.1.146〜150｜/usageカテゴリ別・/code-review改称・PowerShell権限昇格Fix
+
+Claude Code v2.1.146〜150の5本の連続リリースを解説。v2.1.149で/usageコマンドがskills/subagents/plugins/MCPサーバ別にトークン消費を可視化できるよう大幅刷新。同バージョンでPowerShellのcd../cd\を使った権限昇格バイパスの脆弱性を修正（Windowsユーザー要更新）。v2.1.147では/simplifyが/code-reviewに改称され、effortレベル指定とPRコメント投稿に対応。v2.1.148は緊急hotfix。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/claude-code-v2-1-150-update)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
+
+---
+
+### Claude Code v2.1.146〜150｜/usageカテゴリ別・/code-review改称・PowerShell権限昇格Fix
+
+Claude Code v2.1.146〜150の5連続リリースを解説。v2.1.149で/usageがカテゴリ別（skills/subagents/plugins/MCPサーバ）に分解表示され、コスト可視化が大幅改善。同バージョンでPowerShellのcd../cd\による権限昇格バイパスを修正（Windowsユーザー要更新）。v2.1.147で/simplifyが/code-reviewに改称しeffortレベル指定とPR投稿対応。並列エージェント運用におけるコスト管理とセキュリティ強化が焦点。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/claude-code-v2-1-150-update)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

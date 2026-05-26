@@ -7,13 +7,14 @@ tags:
 - cowork
 - mac
 - mcp
+- opus
 - performance
 - prompt
 - setup
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-05-25'
+updated: '2026-05-26'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -132,6 +133,12 @@ sources:
 - url: https://ai-heartland.com/explain/how-we-claude-code-london-2026
   title: How we Claude Code — Arnaud DokoがAnthropicの3ステップ開発フローを実演
   date: '2026-05-25'
+- url: https://qiita.com/architectJapan/items/5aff0a2ff21f9906c9f7
+  title: 建築士がClaude Codeを自走させたら、2日で公共工事入札DB＋RAG＋記事生成SaaSが動き始めた話
+  date: '2026-05-26'
+- url: https://qiita.com/YujiNaramoto/items/eae30c01261ec42bad82
+  title: なぜClaude Code AgentでTask・Agent Team・メインスレッドを使い分けるのか
+  date: '2026-05-26'
 ---
 
 
@@ -166,7 +173,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-05-26
+
+### 建築士がClaude Codeを自走させたら、2日で公共工事入札DB＋RAG＋記事生成SaaSが動き始めた話
+
+建築士がClaude Code Opusとローカル環境（DGX Spark 2台＋Ollama）を活用し、わずか2日間で公共工事入札データベース（44,000件）とRAG機能を持つ記事生成SaaSを構築。月額固定費はほぼゼロ（約1,650円/年のドメイン費のみ）で、毎日15記事の自動生成と自己改善ループを実現した実践事例。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/architectJapan/items/5aff0a2ff21f9906c9f7)
+- **重要度**: 7/10
+- **タグ**: claude-code, opus, cowork
+
+---
+
+### なぜClaude Code AgentでTask・Agent Team・メインスレッドを使い分けるのか
+
+Claude Code Agentの3つの実行モード（Task・Agent Team・メインスレッド）の使い分け方法を解説。Taskはメインのコンテキストを汚さず探索結果のみを返す用途、Agent Teamは実行中にメンバー間で動的に方向転換が必要な協調作業、メインスレッドは小規模作業に適する。判断軸は速度ではなく「コンテキスト保護」と「動的協調」の必要性。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/YujiNaramoto/items/eae30c01261ec42bad82)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 
