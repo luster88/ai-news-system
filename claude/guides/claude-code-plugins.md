@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-07'
-updated: '2026-05-20'
+updated: '2026-05-27'
 sources:
 - url: https://qiita.com/moha0918_/items/b3011c218210ab2695b7
   title: プラグイン作成の3つの方法、結局どれを選ぶべき？
@@ -24,12 +24,28 @@ sources:
 - url: https://qiita.com/shokan/items/fae1e00d089aea9cd041
   title: Claude Code とは何かをわかりやすく解説する
   date: '2026-05-20'
+- url: https://zenn.dev/gudezou/articles/d3b954f51bca04
+  title: Claude Code の slash command と custom skill は何が違うのか
+  date: '2026-05-27'
 ---
 
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-05-27
+
+### Claude Code の slash command と custom skill は何が違うのか
+
+Claude Code における slash command と custom skill の違いを解説。commands 形式は skills に統合され、既存ファイルはそのまま動作する。skill 形式は補助ファイル用ディレクトリ、自動読み込み制御（disable-model-invocation、user-invocable）、paths による起動条件の絞り込みといった追加機能を持つ。description フィールドが自動読み込みの手がかりとなり、1536字制限に注意が必要。
+
+- **ソース**: [Zenn claude](https://zenn.dev/gudezou/articles/d3b954f51bca04)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

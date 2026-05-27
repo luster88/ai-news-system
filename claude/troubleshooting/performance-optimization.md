@@ -3,18 +3,35 @@ title: Performance Optimization
 category: troubleshooting
 subcategory: performance-optimization
 tags:
+- claude-api
 - claude-code
 - performance
 - setup
 date: '2026-05-15'
-updated: '2026-05-15'
+updated: '2026-05-27'
 sources:
 - url: https://qiita.com/Tadashi_Kudo/items/60adfc41690c45d59f15
   title: ハーネスを育てすぎたClaude Codeが素のClaude Codeに負ける「naked codex現象」——自己診断と対処法
   date: '2026-05-15'
+- url: https://qiita.com/architectJapan/items/ec7669cb308277a9d4bb
+  title: 自宅サーバー1台にAnthropicのbotが1日4万アクセスしてきた、でも全然遅くならなかった話
+  date: '2026-05-27'
 ---
 
+
 # Performance Optimization
+
+---
+
+## 2026-05-27
+
+### 自宅サーバー1台にAnthropicのbotが1日4万アクセスしてきた、でも全然遅くならなかった話
+
+Anthropic の Claude-SearchBot が個人の自宅サーバーに1日4万アクセスしても、DGX Spark 1台とCloudflare Freeの構成で平然と捌けた事例を紹介。Cloudflare の Edge キャッシュと Rate Limit、Next.js の静的レンダリングにより、オリジンサーバーへの負荷が大幅に軽減された。クラウドのオートスケーリング構成と同等の耐性を月額ほぼ0円で実現し、個人開発の上限が上がったことを実感した体験談。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/architectJapan/items/ec7669cb308277a9d4bb)
+- **重要度**: 5/10
+- **タグ**: claude-api, performance, setup
 
 ---
 

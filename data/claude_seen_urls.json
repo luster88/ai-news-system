@@ -1688,14 +1688,35 @@
     "https://ai-heartland.com/explain/claude-code-v2-1-150-update": "2026-05-26",
     "https://ai-heartland.com/news/news-glasswing-initial-results": "2026-05-26",
     "https://ai-heartland.com/explain/claude-managed-agents-workshop-london": "2026-05-26",
-    "https://the-decoder.com/claude-mythos-reportedly-solves-openais-landmark-erdos-problem-with-a-cute-simple-proof": "2026-05-26"
+    "https://the-decoder.com/claude-mythos-reportedly-solves-openais-landmark-erdos-problem-with-a-cute-simple-proof": "2026-05-26",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tp3en9/the_thing_you_built_with_claude_is_useless_to_me": "2026-05-27",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tph5u4/anthropic_just_confirmed_why_90_of_noncoding_ai": "2026-05-27",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tostyj/i_think_its_time_vibe_coders": "2026-05-27",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tpgked/i_called_this_a_few_months_ago_enterprises_are": "2026-05-27",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tpbjwo/claude_code_has_zero_idea_what_your_codebase": "2026-05-27",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tp4gn8/does_anyone_else_use_claude_as_a_thinking_partner": "2026-05-27",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tonzj9/im_a_software_engineer_with_a_decade_of": "2026-05-27",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tp0ujg/share_your_claude_user_preferences_i_go_first": "2026-05-27",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tpk5ys/claude_design_now_shares_usage_limits_with": "2026-05-27",
+    "https://qiita.com/goki602/items/9b58c7adc055503b8f97": "2026-05-27",
+    "https://qiita.com/daitak/items/dfc1d165f16846061349": "2026-05-27",
+    "https://qiita.com/ziffy/items/6406a85acf99c1c8329f": "2026-05-27",
+    "https://qiita.com/polar-workshop/items/916e8fd70787cf841072": "2026-05-27",
+    "https://zenn.dev/yuzzzn/articles/29b0538948b3d1": "2026-05-27",
+    "https://zenn.dev/tsuzudev05/articles/github-actions-pr-review-api-journey": "2026-05-27",
+    "https://zenn.dev/dai610/articles/7c03c57176a90f": "2026-05-27",
+    "https://zenn.dev/gudezou/articles/d3b954f51bca04": "2026-05-27",
+    "https://zenn.dev/noah33/articles/security-guidance-plugin-first-read": "2026-05-27",
+    "https://zenn.dev/kitamuramitsuru/articles/ff6e7e96213ee5": "2026-05-27",
+    "https://qiita.com/architectJapan/items/ec7669cb308277a9d4bb": "2026-05-27",
+    "https://the-decoder.com/robinhood-lets-ai-agents-trade-shares-and-make-credit-card-purchases-for-customers": "2026-05-27"
   },
   "source_penalties": {
-    "Anthropic News": "2026-05-27",
+    "Anthropic News": "2026-05-28",
     "Reddit r/ClaudeAI": "2026-04-03",
     "Zenn claude": "2026-03-25",
     "TechCrunch Claude": "2026-05-12",
     "The Decoder Claude": "2026-05-10",
-    "AI Heartland": "2026-05-24"
+    "AI Heartland": "2026-05-28"
   }
 }

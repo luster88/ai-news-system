@@ -8,8 +8,9 @@ tags:
 - mcp
 - opus
 - release
+- 新機能
 date: '2026-04-16'
-updated: '2026-05-26'
+updated: '2026-05-27'
 sources:
 - url: https://qiita.com/moha0918_/items/6a21a6b76828fc7529af
   title: 今日のClaude Code v2.1.112 リリース｜毎日Changelog解説
@@ -26,12 +27,38 @@ sources:
 - url: https://ai-heartland.com/explain/claude-code-v2-1-150-update
   title: Claude Code v2.1.146〜150｜/usageカテゴリ別・/code-review改称・PowerShell権限昇格Fix
   date: '2026-05-26'
+- url: https://qiita.com/goki602/items/9b58c7adc055503b8f97
+  title: Claude Code v2.1.152 の変更点を整理する — コードレビュー自動適用と Skills 新フロントマター
+  date: '2026-05-27'
 ---
 
 
 
 
+
 # Claude Code Hotfix
+
+---
+
+## 2026-05-27
+
+### Claude Code v2.1.152 の変更点を整理する — コードレビュー自動適用と Skills 新フロントマター
+
+Claude Code v2.1.152では、/code-reviewコマンドに--fixフラグが追加され、レビュー結果を自動でworking treeに適用可能になった。/simplifyは--fixのエイリアスに変更され、Skills frontmatterにはdisallowed-toolsが追加され、/reload-skillsコマンドで再起動なしのスキル再読込が可能になった。レビューと修正が1コマンドで完結する実用的なアップデート。
+
+- **ソース**: [Qiita claude](https://qiita.com/goki602/items/9b58c7adc055503b8f97)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+### Claude Code v2.1.152 の変更点を整理する — コードレビュー自動適用と Skills 新フロントマター
+
+Claude Code v2.1.152 では、/code-review --fix による自動修正機能が追加され、レビュー結果を working tree に直接適用可能になった。Skills frontmatter に disallowed-tools が追加され、スキル実行中に無効化するツールを指定できるようになった。また /reload-skills コマンドでセッション再起動なしでスキルを再読み込み可能になり、開発サイクルが効率化された。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/goki602/items/9b58c7adc055503b8f97)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 
