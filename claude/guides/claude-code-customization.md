@@ -10,7 +10,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-29'
-updated: '2026-04-26'
+updated: '2026-05-28'
 sources:
 - url: https://zenn.dev/noprogllama/articles/d6a34cce09b66d
   title: AIに人格と記憶を与えたら、常につながる手段が欲しくなって自前のWeb UIを作ることになった
@@ -30,6 +30,9 @@ sources:
 - url: https://zenn.dev/hrmtz/articles/8fb837b9cfac57
   title: Claude Code に自分の癖を治させる — Hook + 会話ログ mining で N=1 alignment
   date: '2026-04-26'
+- url: https://qiita.com/QUANON/items/3497296a1a353374815f
+  title: Claude Code の statusline は Ruby でも書ける
+  date: '2026-05-28'
 ---
 
 
@@ -37,7 +40,20 @@ sources:
 
 
 
+
 # Claude Code Customization
+
+---
+
+## 2026-05-28
+
+### Claude Code の statusline は Ruby でも書ける
+
+Claude Code の statusline（下部のカスタマイズ可能なバー）は、シェルスクリプトだけでなく Ruby や JavaScript など任意のスクリプト言語で実装できる。標準入力経由で JSON データを受け取り、加工した情報（モデル名、ディレクトリ、コンテキスト使用率、月次使用料など）を表示可能。実際の Ruby 実装例として、ccusage コマンドを使った月次使用料表示の設定が紹介されている。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/QUANON/items/3497296a1a353374815f)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

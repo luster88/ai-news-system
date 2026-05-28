@@ -7,7 +7,7 @@ tags:
 - release
 - 新機能
 date: '2026-03-22'
-updated: '2026-04-24'
+updated: '2026-05-28'
 sources:
 - url: https://www.anthropic.com/news/claude-opus-4-6
   title: Announcements Feb 5, 2026 Introducing Claude Opus 4.6 We’re upgrading our
@@ -26,12 +26,28 @@ sources:
     stronger performance across coding, agents, vision, and multi-step tasks, with
     greater thoroughness and consistency on the work that matters most.
   date: '2026-04-24'
+- url: https://qiita.com/taiyodayo/items/8ae066c29cd37c4bc32e
+  title: Opus4.8 爆誕! 早速全部入れ替えたら人生が2.5倍捗りそうなので30秒でまとめた件
+  date: '2026-05-28'
 ---
 
 
 
 
+
 # Opus Model Update
+
+---
+
+## 2026-05-28
+
+### Opus4.8 爆誕! 早速全部入れ替えたら人生が2.5倍捗りそうなので30秒でまとめた件
+
+2026年5月28日、Anthropic が Claude Opus 4.8 をリリース。価格据え置きでコーディング、エージェント、推論、実務性能が全方位で向上。自己検証能力が4倍に改善し、コードの欠陥見逃し率が約1/4に。新機能として努力レベル(effort)コントロール、Dynamic Workflows、Fast モードの価格3倍削減（速度2.5倍）が追加された。
+
+- **ソース**: [Qiita claude](https://qiita.com/taiyodayo/items/8ae066c29cd37c4bc32e)
+- **重要度**: 10/10
+- **タグ**: opus, release, 新機能
 
 ---
 

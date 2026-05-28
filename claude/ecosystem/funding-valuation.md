@@ -6,8 +6,10 @@ tags:
 - cowork
 - performance
 - pricing
+- release
+- 新機能
 date: '2026-04-30'
-updated: '2026-05-15'
+updated: '2026-05-28'
 sources:
 - url: https://the-decoder.com/anthropic-reviewing-investor-offers-that-would-value-the-company-at-over-900-billion
   title: Anthropic reviewing investor offers that would value the company at over
@@ -17,10 +19,27 @@ sources:
   title: Anthropic's $900 billion valuation would make it more valuable than OpenAI
     for the first time
   date: '2026-05-15'
+- url: https://www.anthropic.com/news/series-h
+  title: May 28, 2026 Announcements Anthropic raises $65B in Series H funding at $965B
+    post-money valuation
+  date: '2026-05-28'
 ---
 
 
+
 # Funding Valuation
+
+---
+
+## 2026-05-28
+
+### May 28, 2026 Announcements Anthropic raises $65B in Series H funding at $965B post-money valuation
+
+Anthropicが965億ドルのポストマネー評価額でシリーズHラウンドにて650億ドルを調達。ランレート収益は470億ドルを突破し、Claude Code、Coworkなどの製品拡大と安全性研究の強化に資金を投じる。Amazon含むハイパースケーラーからの150億ドルの既存コミットメントに加え、Micron、Samsung、SK hynixなどの戦略的インフラパートナーも参加。
+
+- **ソース**: [Anthropic News](https://www.anthropic.com/news/series-h)
+- **重要度**: 10/10
+- **タグ**: release, 新機能, pricing
 
 ---
 

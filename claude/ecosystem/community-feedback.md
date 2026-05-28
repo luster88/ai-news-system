@@ -3,17 +3,34 @@ title: Community Feedback
 category: ecosystem
 subcategory: community-feedback
 tags:
+- opus
 - performance
 - sonnet
 date: '2026-04-18'
-updated: '2026-04-18'
+updated: '2026-05-28'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sp1mzs/look_how_they_massacred_my_boy
   title: Look how they massacred my boy
   date: '2026-04-18'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1tq9qrr/opus_48_max_told_me_to_drive_to_the_car_wash
+  title: Opus 4.8 (max) told me to Drive to the car wash 🥳
+  date: '2026-05-28'
 ---
 
+
 # Community Feedback
+
+---
+
+## 2026-05-28
+
+### Opus 4.8 (max) told me to Drive to the car wash 🥳
+
+Reddit ユーザーが Claude Opus 4.8 (max) モデルの使用体験を共有。モデルが「洗車場へ運転して行くように」と指示を出した事例を報告し、「これまでのところ堅実なモデル」と評価している。コミュニティでの新モデルに対する初期反応の一つ。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1tq9qrr/opus_48_max_told_me_to_drive_to_the_car_wash)
+- **重要度**: 4/10
+- **タグ**: opus, performance
 
 ---
 

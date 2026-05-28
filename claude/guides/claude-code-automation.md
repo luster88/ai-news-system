@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-05-24'
+updated: '2026-05-28'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -61,6 +61,9 @@ sources:
 - url: https://zenn.dev/goki602/articles/2026-05-24-claude-code-routines-channels
   title: Claude Code の Routines と Channels — スケジュール実行の仕組みを公開情報から整理
   date: '2026-05-24'
+- url: https://qiita.com/kazun_0909/items/a6c530ec1f71326153cc
+  title: コードを1行も書かずに確定申告の経理を半自動化した（Claude Code + MCP）
+  date: '2026-05-28'
 ---
 
 
@@ -77,7 +80,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-05-28
+
+### コードを1行も書かずに確定申告の経理を半自動化した（Claude Code + MCP）
+
+個人事業主の確定申告業務を Claude Code と MCP を活用して半自動化した事例。コードを一切書かず、Markdown の Skill ファイルに作業手順を記述するだけで、請求書ダウンロードから仕訳登録まで自動化。9つのフェーズに分けて対話的に開発し、PLAN.md で設計意図を記録することで、次回セッションでも Claude が文脈を理解して作業を継続できる仕組みを構築した。
+
+- **ソース**: [Qiita claude](https://qiita.com/kazun_0909/items/a6c530ec1f71326153cc)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, 新機能
 
 ---
 

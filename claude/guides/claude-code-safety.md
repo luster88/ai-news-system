@@ -6,14 +6,30 @@ tags:
 - claude-code
 - setup
 date: '2026-05-09'
-updated: '2026-05-09'
+updated: '2026-05-28'
 sources:
 - url: https://qiita.com/Ngen/items/dd5090c6d05ec9c7994c
   title: Claude Codeのフック5個で「うっかり事故」を本気で潰した話
   date: '2026-05-09'
+- url: https://zenn.dev/shun_producer/articles/5ea67d91ed8f5a
+  title: 「はい」を押す前に止まれ。Claude Codeでやってはいけないこと7選【Ch6】
+  date: '2026-05-28'
 ---
 
+
 # Claude Code Safety
+
+---
+
+## 2026-05-28
+
+### 「はい」を押す前に止まれ。Claude Codeでやってはいけないこと7選【Ch6】
+
+Claude Codeの初心者が陥りやすい7つの失敗パターンを実例付きで解説。rm コマンドによる誤削除、.env ファイルの Git 漏洩、本番 DB への誤操作、git commit 忘れ、エラー無視、大規模作業の一括実行、動作確認の省略など、「はい」を押す前に確認すべきポイントを具体的に紹介している。各失敗に対する対処法も明記されており、Claude Code を安全に使うための実践的なガイドとなっている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/shun_producer/articles/5ea67d91ed8f5a)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup
 
 ---
 
