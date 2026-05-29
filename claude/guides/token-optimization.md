@@ -3,12 +3,14 @@ title: Token Optimization
 category: guides
 subcategory: token-optimization
 tags:
+- claude-api
 - claude-code
 - cowork
 - performance
+- pricing
 - prompt
 date: '2026-03-22'
-updated: '2026-04-12'
+updated: '2026-05-29'
 sources:
 - url: https://qiita.com/shockpan-web/items/852e962e14bdd2b98e70
   title: バイブコーディングでトークンを溶かさないための2つの工夫
@@ -19,11 +21,27 @@ sources:
 - url: https://qiita.com/sohei56/items/e3a1e38f4a0eb7918b2e
   title: Claude Max 20xプランでも足りないので、トークン節約のためにやったこと8選
   date: '2026-04-12'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1tqx8q5/spent_1156308524_input_tokens_in_may_sharing_what
+  title: Spent 1,156,308,524 input tokens in May 🫣 Sharing what I learned
+  date: '2026-05-29'
 ---
 
 
 
+
 # Token Optimization
+
+---
+
+## 2026-05-29
+
+### Spent 1,156,308,524 input tokens in May 🫣 Sharing what I learned
+
+Reddit ユーザーが5月に11.5億トークンを消費した経験から、トークンの仕組みと節約方法を共有。トークンは言語の LEGO ピースのようなもので、1トークン≈4文字（英語）、100トークン≈75単語が目安。JSONは括弧や記号で多くのトークンを消費するため注意が必要。Claude トークナイザーツールでプロンプトを事前チェックすることを推奨。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1tqx8q5/spent_1156308524_input_tokens_in_may_sharing_what)
+- **重要度**: 6/10
+- **タグ**: claude-api, performance, pricing
 
 ---
 

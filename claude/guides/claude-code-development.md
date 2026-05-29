@@ -6,9 +6,10 @@ tags:
 - claude-code
 - cowork
 - prompt
+- vscode
 - 新機能
 date: '2026-04-09'
-updated: '2026-04-13'
+updated: '2026-05-29'
 sources:
 - url: https://qiita.com/rrr_rrrr_/items/f026e07fc37e6eb99f13
   title: Claude CodeだけでSNS運用ツール4つ作ってBOOTHで売り始めた話
@@ -16,10 +17,26 @@ sources:
 - url: https://zenn.dev/mukkimuki/articles/5283ad6efa2737
   title: Next.js + Supabase + Claude CodeでAI活用SNS「ailog」を作った
   date: '2026-04-13'
+- url: https://qiita.com/T_Fuchi/items/69f8f52a0bc410f3aa65
+  title: VS Code拡張機能をClaude Codeでゼロから作って、マーケットプレイスに公開したら1時間で10件ダウンロードされた話
+  date: '2026-05-29'
 ---
 
 
+
 # Claude Code Development
+
+---
+
+## 2026-05-29
+
+### VS Code拡張機能をClaude Codeでゼロから作って、マーケットプレイスに公開したら1時間で10件ダウンロードされた話
+
+開発者がVS Codeでアーカイブファイルを解凍せずにプレビューできる拡張機能を、Claude Codeとの対話のみで開発した事例。17種類の圧縮形式に対応し、画像・Markdown表示、パスワード保護、ネスト構造にも対応。テストまで含めて約2,000行のコードをゼロから実装し、マーケットプレイス公開後1時間で10件以上ダウンロードされた。Claude Codeにより「知らないAPIを調べなくていい」開発体験が実現された。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/T_Fuchi/items/69f8f52a0bc410f3aa65)
+- **重要度**: 7/10
+- **タグ**: claude-code, vscode, 新機能
 
 ---
 

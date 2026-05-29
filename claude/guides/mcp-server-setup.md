@@ -5,16 +5,33 @@ subcategory: mcp-server-setup
 tags:
 - linux
 - mcp
+- prompt
 - setup
 date: '2026-04-30'
-updated: '2026-04-30'
+updated: '2026-05-29'
 sources:
 - url: https://zenn.dev/syyama/articles/a6d92f250f5793
   title: 【AlmaLinux】MCP Server を構築してみた
   date: '2026-04-30'
+- url: https://qiita.com/asahide/items/860979ed23305aa4003b
+  title: OCI DB Tools MCP の3タイプをカスタムロールで権限分離してみた
+  date: '2026-05-29'
 ---
 
+
 # Mcp Server Setup
+
+---
+
+## 2026-05-29
+
+### OCI DB Tools MCP の3タイプをカスタムロールで権限分離してみた
+
+OCI Database Tools MCPにおいて、カスタムアプリケーションロール（MCP_Analyst）を作成し、3種類のツールセット（組込みSQL/Custom SQL Tool/Reporting Tool）のうちReporting Toolのみを業務ユーザーに公開する権限分離を実機検証。ツールを絞ることでClaudeの選択挙動が改善し、試行錯誤が減少して正直な応答が得られた。ただし、ツール側とSQLレポート本体側の2層でロール許可が必要な点が落とし穴として指摘されている。
+
+- **ソース**: [Qiita claude](https://qiita.com/asahide/items/860979ed23305aa4003b)
+- **重要度**: 6/10
+- **タグ**: mcp, setup, prompt
 
 ---
 

@@ -1747,14 +1747,35 @@
     "https://the-decoder.com/mistral-rebrands-lechat-as-vibe-betting-its-chatbots-future-is-as-a-full-blown-work-agent": "2026-05-28",
     "https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo": "2026-05-28",
     "https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool": "2026-05-28",
-    "https://techcrunch.com/2026/05/28/how-long-is-anthropics-lease-with-spacex-opinions-vary": "2026-05-28"
+    "https://techcrunch.com/2026/05/28/how-long-is-anthropics-lease-with-spacex-opinions-vary": "2026-05-28",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tqz2se/lets_check_opus_48_how_good_is_it": "2026-05-29",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tqx8q5/spent_1156308524_input_tokens_in_may_sharing_what": "2026-05-29",
+    "https://www.reddit.com/r/ClaudeAI/comments/1trd1cj/i_hate_that_opus_48_is_honest": "2026-05-29",
+    "https://www.reddit.com/r/ClaudeAI/comments/1trargt/people_becoming_claude_wrappers": "2026-05-29",
+    "https://www.reddit.com/r/ClaudeAI/comments/1trfw5f/claude_does_what_nintendont": "2026-05-29",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tqt8pl/opus_48s_new_highest_effort_setting": "2026-05-29",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tr1xu7/psa_opus_48_redefines_the_effort_scale": "2026-05-29",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tqu934/what_its_like_talking_to_opus_48": "2026-05-29",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tr882w/grateful_to_be_accepted_into_claude_for_open": "2026-05-29",
+    "https://qiita.com/hiro_qiita_/items/152cc2ef68d5fb17b790": "2026-05-29",
+    "https://qiita.com/asahide/items/860979ed23305aa4003b": "2026-05-29",
+    "https://qiita.com/picnic/items/691d5a67015c876eee8f": "2026-05-29",
+    "https://zenn.dev/kobao/articles/64a72dc0167ca3": "2026-05-29",
+    "https://zenn.dev/jins/articles/93791476756f87": "2026-05-29",
+    "https://zenn.dev/tokium_dev/articles/human-discipline-for-ai-colleague": "2026-05-29",
+    "https://zenn.dev/fixu/articles/ai-session-resilience-recovery": "2026-05-29",
+    "https://zenn.dev/sasakimac/articles/1b0cf7942780d2": "2026-05-29",
+    "https://zenn.dev/gingakuwagata/articles/claude-code-agent-view": "2026-05-29",
+    "https://qiita.com/KNR109/items/aaa3ce165cb4efdabd18": "2026-05-29",
+    "https://qiita.com/T_Fuchi/items/69f8f52a0bc410f3aa65": "2026-05-29",
+    "https://the-decoder.com/one-company-reportedly-spent-500-million-on-claude-in-one-month-after-failing-to-cap-ai-usage": "2026-05-29"
   },
   "source_penalties": {
-    "Anthropic News": "2026-05-28",
+    "Anthropic News": "2026-05-30",
     "Reddit r/ClaudeAI": "2026-04-03",
     "Zenn claude": "2026-03-25",
-    "TechCrunch Claude": "2026-05-12",
+    "TechCrunch Claude": "2026-05-30",
     "The Decoder Claude": "2026-05-10",
-    "AI Heartland": "2026-05-28"
+    "AI Heartland": "2026-05-30"
   }
 }

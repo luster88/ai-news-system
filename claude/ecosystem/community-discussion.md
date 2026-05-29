@@ -4,6 +4,7 @@ category: ecosystem
 subcategory: community-discussion
 tags:
 - bugfix
+- claude-api
 - claude-code
 - claude-console
 - cowork
@@ -13,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-05-22'
+updated: '2026-05-29'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -41,6 +42,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1tkp1pg/whats_the_most_unexpectedly_useful_thing_youve
   title: What's the most unexpectedly useful thing you've used Claude for?
   date: '2026-05-22'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1trargt/people_becoming_claude_wrappers
+  title: People becoming Claude wrappers
+  date: '2026-05-29'
 ---
 
 
@@ -49,7 +53,20 @@ sources:
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-05-29
+
+### People becoming Claude wrappers
+
+Redditのr/ClaudeAIで、人々がClaude AIに依存しすぎて「Claudeのラッパー」と化している現象について議論されている。技術的な質問に対して、自分で考えずにClaude の回答をそのまま転送する人が増えており、人々が思考能力をAIに「外注」している割合を企業が追跡しているのではないかという懸念が提起されている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1trargt/people_becoming_claude_wrappers)
+- **重要度**: 4/10
+- **タグ**: cowork, claude-api, performance
 
 ---
 

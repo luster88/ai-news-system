@@ -3,11 +3,12 @@ title: Community Feedback
 category: ecosystem
 subcategory: community-feedback
 tags:
+- cowork
 - opus
 - performance
 - sonnet
 date: '2026-04-18'
-updated: '2026-05-28'
+updated: '2026-05-29'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sp1mzs/look_how_they_massacred_my_boy
   title: Look how they massacred my boy
@@ -15,10 +16,26 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1tq9qrr/opus_48_max_told_me_to_drive_to_the_car_wash
   title: Opus 4.8 (max) told me to Drive to the car wash 🥳
   date: '2026-05-28'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1trd1cj/i_hate_that_opus_48_is_honest
+  title: i hate that opus 4.8 is honest
+  date: '2026-05-29'
 ---
 
 
+
 # Community Feedback
+
+---
+
+## 2026-05-29
+
+### i hate that opus 4.8 is honest
+
+Opus 4.8の新しい動作について、ユーザーが「誠実すぎる」ことに戸惑いを表明。Anthropicのリリースノートで「欠陥を見逃す確率が4分の1に低下」と記載された通り、すべての回答に注意喚起や限界についての透明性が追加されている。以前の「少し無茶でも協力的」な雰囲気から「セラピーを受けて境界線を持つようになった友人」のような変化に、良いことだと理解しつつも疲れを感じるという内容。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1trd1cj/i_hate_that_opus_48_is_honest)
+- **重要度**: 6/10
+- **タグ**: opus, performance, cowork
 
 ---
 
