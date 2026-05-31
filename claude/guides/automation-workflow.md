@@ -4,12 +4,13 @@ category: guides
 subcategory: automation-workflow
 tags:
 - claude-code
+- claude-console
 - cowork
 - prompt
 - setup
 - 新機能
 date: '2026-04-08'
-updated: '2026-04-17'
+updated: '2026-05-31'
 sources:
 - url: https://zenn.dev/shelty/articles/20260408-budget-book-asset-management
   title: MoneyForwardの家計簿データで資産予測を自動化してみた＠Claude
@@ -23,12 +24,28 @@ sources:
 - url: https://qiita.com/4q_sano/items/6d2bcfceb4fc2e728204
   title: 【もうSlackを読むのをやめた】Claude Codeを“AIパートナー化”して朝の情報整理を自動化した話
   date: '2026-04-17'
+- url: https://zenn.dev/itsuya/articles/ai-content-pipeline-2026
+  title: Claude CLIとPythonで“無料”の自律コンテンツ生成パイプラインを作る
+  date: '2026-05-31'
 ---
 
 
 
 
+
 # Automation Workflow
+
+---
+
+## 2026-05-31
+
+### Claude CLIとPythonで“無料”の自律コンテンツ生成パイプラインを作る
+
+Claude の Max プラン（定額）と Claude CLI を活用し、従量課金ゼロでテキスト生成を行う自律コンテンツ生成パイプラインの構築方法を解説。API キーではなくログイン済み CLI をサブプロセスで呼び出し、stdin 経由でプロンプトを渡す実装の勘所や、生成コンテンツのドリフト防止策、JSON 抽出のテクニックを紹介。Qiita/Zenn/Dev.to など view 数が取得できるプラットフォームを活用し、反応を実測しながら改善するアプローチを提案している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/itsuya/articles/ai-content-pipeline-2026)
+- **重要度**: 6/10
+- **タグ**: claude-console, prompt, cowork
 
 ---
 

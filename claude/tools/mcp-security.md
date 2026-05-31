@@ -8,7 +8,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-28'
-updated: '2026-05-28'
+updated: '2026-05-31'
 sources:
 - url: https://zenn.dev/masuda_masuo/articles/2026-05-28-mcp-launcher
   title: MCPのクレデンシャルをconfigから追い出す：OSキーストアで一元管理するmcp-launcher
@@ -16,9 +16,25 @@ sources:
 - url: https://qiita.com/Ju571nK/items/5b6a3f05e7e7de20e3ee
   title: AIコーディングエージェントを見張るOSSを、Claudeから『危険な設定どれ?』と聞けるようにした（MCP対応）
   date: '2026-05-28'
+- url: https://zenn.dev/masuda_masuo/articles/2026-05-31-mcp-launcher-phase2
+  title: mcp-launcher Phase 2：PATを短命トークンに置き換える
+  date: '2026-05-31'
 ---
 
+
 # Mcp Security
+
+---
+
+## 2026-05-31
+
+### mcp-launcher Phase 2：PATを短命トークンに置き換える
+
+mcp-launcherのPhase 2として、GitHub Personal Access Token（PAT）を短命トークン（最大1時間有効なGitHub Appインストールアクセストークン）に置き換える実装について解説。プロンプトインジェクション攻撃でトークンが漏洩した場合でも、ダメージを1時間に限定できる設計を実現。Claude Desktopがプロセスを常駐させる仕様に対応し、バックグラウンドでのトークン自動更新機能を追加した経緯と課題も説明している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/masuda_masuo/articles/2026-05-31-mcp-launcher-phase2)
+- **重要度**: 7/10
+- **タグ**: mcp
 
 ---
 

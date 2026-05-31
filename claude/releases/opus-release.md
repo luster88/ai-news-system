@@ -8,7 +8,7 @@ tags:
 - release
 - 新機能
 date: '2026-05-28'
-updated: '2026-05-29'
+updated: '2026-05-31'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1tq99mu/introducing_claude_opus_48
   title: Introducing Claude Opus 4.8
@@ -16,10 +16,26 @@ sources:
 - url: https://qiita.com/picnic/items/691d5a67015c876eee8f
   title: 'Claude Opus 4.8 登場: 最新フラッグシップモデルの概要と移行ガイド'
   date: '2026-05-29'
+- url: https://qiita.com/htani0817/items/192700675cd44dfd1e13
+  title: 【2026年5月】Claude Opus 4.8がリリース！Dynamic Workflows・誠実性向上・API変更点まとめ
+  date: '2026-05-31'
 ---
 
 
+
 # Opus Release
+
+---
+
+## 2026-05-31
+
+### 【2026年5月】Claude Opus 4.8がリリース！Dynamic Workflows・誠実性向上・API変更点まとめ
+
+2026年5月28日にClaude Opus 4.8がリリースされました。Dynamic Workflows機能により数百の並列サブエージェントで大規模コードベース移行が可能になり、誠実性が過去最高水準に到達しました。Fast Modeは従来比3倍安・2.5倍速を実現し、価格は据え置きです。コード欠陥見逃し率が1/4に低下し、長文処理性能も大幅に向上しています。
+
+- **ソース**: [Qiita claude](https://qiita.com/htani0817/items/192700675cd44dfd1e13)
+- **重要度**: 10/10
+- **タグ**: opus, release, 新機能
 
 ---
 

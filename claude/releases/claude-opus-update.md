@@ -6,10 +6,11 @@ tags:
 - claude-api
 - claude-code
 - opus
+- performance
 - release
 - 新機能
 date: '2026-03-30'
-updated: '2026-05-28'
+updated: '2026-05-31'
 sources:
 - url: https://zenn.dev/tmtk/articles/aa8eb95ca28a63
   title: Claude Opus 4.6 は何が「実務向け」に進化したのか？ エージェント開発者が知るべき新機能まとめ
@@ -25,12 +26,28 @@ sources:
 - url: https://qiita.com/kaichan_dot/items/a5234436a61194e24df7
   title: 出たてほやほやのClaude Opus 4.8を整理してみた
   date: '2026-05-28'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1tt3a8h/differences_between_opus_47_and_opus_48_on
+  title: Differences Between Opus 4.7 and Opus 4.8 on MineBench
+  date: '2026-05-31'
 ---
 
 
 
 
+
 # Claude Opus Update
+
+---
+
+## 2026-05-31
+
+### Differences Between Opus 4.7 and Opus 4.8 on MineBench
+
+Opus 4.8とOpus 4.7のMineBenchベンチマークにおける性能比較。4.8は4.7と同じAPI価格ながら、CoT処理の効率化により実コストが大幅削減。出力品質はGPT-5.5に近いレベルに向上し、久々の本格的な改善版リリースとの評価。平均推論時間24.8分、15ビルドで$41.52のコスト。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1tt3a8h/differences_between_opus_47_and_opus_48_on)
+- **重要度**: 8/10
+- **タグ**: opus, performance, 新機能
 
 ---
 

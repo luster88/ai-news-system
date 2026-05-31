@@ -6,8 +6,9 @@ tags:
 - claude-code
 - prompt
 - setup
+- 新機能
 date: '2026-05-12'
-updated: '2026-05-19'
+updated: '2026-05-31'
 sources:
 - url: https://qiita.com/Tadashi_Kudo/items/80a6a0c8fe73bd9450c3
   title: 104kスターのKarpathy CLAUDE.mdを試したら、手元に既にあった話——グローバルCLAUDE.mdで全PJ適用済みの実態
@@ -15,10 +16,39 @@ sources:
 - url: https://qiita.com/Tadashi_Kudo/items/56efa02ba181e0094ec9
   title: Claude CodeチームがMarkdownにHTMLを持ち込んだ理由——そして自分はHTMLすら読まないという現実
   date: '2026-05-19'
+- url: https://qiita.com/goki602/items/8af4792b8e8794173e7c
+  title: Claude Code の CLAUDE.md と Skills を使い分ける ― 常時ルールとタスク別手順の設計
+  date: '2026-05-31'
 ---
 
 
+
+
 # Claude Code Configuration
+
+---
+
+## 2026-05-31
+
+### Claude Code の CLAUDE.md と Skills を使い分ける ― 常時ルールとタスク別手順の設計
+
+Claude Code の CLAUDE.md と Skills の使い分けを解説。CLAUDE.md は毎セッション読み込まれる常時ルール（500行以下推奨）、Skills は条件付きで発動するタスク別手順書として設計されている。v2.1.152 から /reload-skills コマンドや disallowed-tools フィールドが追加され、スキル管理が強化された。description の前半 250 文字にトリガー条件を凝縮することが自動発動の鍵となる。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/goki602/items/8af4792b8e8794173e7c)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
+
+---
+
+## 2026-05-31
+
+### Claude Code の CLAUDE.md と Skills を使い分ける ― 常時ルールとタスク別手順の設計
+
+Claude Code における CLAUDE.md と Skills の使い分けを解説。CLAUDE.md は毎セッション読み込まれる常時ルール（500行以下推奨）、Skills は条件付きで発動するタスク別手順という役割分担を明確化。/init コマンドでの初期化、description フィールドによる自動発動制御、v2.1.152 の /reload-skills や disallowed-tools などの新機能も紹介している。
+
+- **ソース**: [Qiita claude](https://qiita.com/goki602/items/8af4792b8e8794173e7c)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

@@ -1789,14 +1789,37 @@
     "https://qiita.com/YujiNaramoto/items/93f393418f2da91e2777": "2026-05-30",
     "https://qiita.com/yurukusa/items/bdce346006bd34f6a2ce": "2026-05-30",
     "https://the-decoder.com/attackers-abuse-shared-chatgpt-and-claude-chats-to-spread-malware": "2026-05-30",
-    "https://the-decoder.com/salesforce-claims-ai-agents-cut-a-231-day-migration-to-13-days-with-fewer-incidents": "2026-05-30"
+    "https://the-decoder.com/salesforce-claims-ai-agents-cut-a-231-day-migration-to-13-days-with-fewer-incidents": "2026-05-30",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tt3a8h/differences_between_opus_47_and_opus_48_on": "2026-05-31",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tsx85s/i_made_a_plugin_that_turns_your_projects_into": "2026-05-31",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tse5x4/alright_bro_chatgpt_wouldve_been_glazing_me": "2026-05-31",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tsqezk/asked_claude_code_for_a_deep_search_in_ultracode": "2026-05-31",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tszp9o/good_news_for_opus_46_lovers_it_is_back_available": "2026-05-31",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tsvxt8/claudificus_maximus_ivvi_caesar_refectorum": "2026-05-31",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tszbhd/whats_monkeys_in_a_barrel": "2026-05-31",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tsx3hg/most_noticeable_change_in_opus_48": "2026-05-31",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tt3s9f/opus_4x_on_high_or_xhigh_effort_seems_to_just": "2026-05-31",
+    "https://qiita.com/jjking/items/4c0825aad6fdd1a84a80": "2026-05-31",
+    "https://qiita.com/goki602/items/8af4792b8e8794173e7c": "2026-05-31",
+    "https://qiita.com/htani0817/items/192700675cd44dfd1e13": "2026-05-31",
+    "https://qiita.com/quotidia/items/ffa0b92fbd55293ffdc4": "2026-05-31",
+    "https://zenn.dev/itsuya/books/claude-js-90-10-47-a630f5ef": "2026-05-31",
+    "https://zenn.dev/itsuya/articles/ai-content-pipeline-2026": "2026-05-31",
+    "https://zenn.dev/itsdaichi/articles/f2afb9878e04e5": "2026-05-31",
+    "https://zenn.dev/masuda_masuo/articles/2026-05-31-mcp-launcher-phase2": "2026-05-31",
+    "https://zenn.dev/karumaru/articles/a236d7e871a13c": "2026-05-31",
+    "https://zenn.dev/keiichi_okamoto/articles/xx_260531_mac-win-mcp": "2026-05-31",
+    "https://qiita.com/nrEngineer/items/b1abd81ca2a9f74f30b6": "2026-05-31",
+    "https://qiita.com/4q_sano/items/1d98dd5fb49ce99bd288": "2026-05-31",
+    "https://the-decoder.com/anthropic-bans-ai-tools-during-job-interviews-to-see-how-candidates-actually-think": "2026-05-31",
+    "https://the-decoder.com/anthropic-study-finds-men-use-ai-coding-agents-more-than-twice-as-often-as-women-in-social-science-research": "2026-05-31"
   },
   "source_penalties": {
-    "Anthropic News": "2026-05-31",
+    "Anthropic News": "2026-06-01",
     "Reddit r/ClaudeAI": "2026-04-03",
     "Zenn claude": "2026-03-25",
     "TechCrunch Claude": "2026-05-30",
     "The Decoder Claude": "2026-05-10",
-    "AI Heartland": "2026-05-31"
+    "AI Heartland": "2026-06-01"
   }
 }

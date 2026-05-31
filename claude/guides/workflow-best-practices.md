@@ -6,15 +6,32 @@ tags:
 - claude-code
 - cursor
 - prompt
+- setup
 date: '2026-05-24'
-updated: '2026-05-24'
+updated: '2026-05-31'
 sources:
 - url: https://qiita.com/y_tsubasa/items/a0213eaad3402d00ed0a
   title: AI と毎日開発していて定着した、地味だけど効く工夫の棚卸し
   date: '2026-05-24'
+- url: https://qiita.com/nrEngineer/items/b1abd81ca2a9f74f30b6
+  title: AI時代の開発ワークフロー実践ロードマップ ― 78バグから10本の記事を書いて見えたこと
+  date: '2026-05-31'
 ---
 
+
 # Workflow Best Practices
+
+---
+
+## 2026-05-31
+
+### AI時代の開発ワークフロー実践ロードマップ ― 78バグから10本の記事を書いて見えたこと
+
+78件のバグ分析から生まれた実践的なAI開発ワークフロー「SFAD（Spec-First AI Development）」の完全ガイド。lint strictで45%のバグが防止可能だったことを発見し、Example MappingとDouble-Loop TDDを組み合わせた6つのClaude Codeコマンド（init, cycle, spec, test, impl, reverse）として体系化。初心者向けの3段階実践ロードマップ付き。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/nrEngineer/items/b1abd81ca2a9f74f30b6)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 
