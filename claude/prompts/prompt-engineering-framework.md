@@ -4,17 +4,34 @@ category: prompts
 subcategory: prompt-engineering-framework
 tags:
 - claude-code
+- opus
 - prompt
 - 新機能
 date: '2026-03-30'
-updated: '2026-03-30'
+updated: '2026-06-01'
 sources:
 - url: https://zenn.dev/analysis/articles/prompt-master-thought-analyzer
   title: 「プロンプトを最適化する」とは何か──prompt-masterを3層フレームワークで解剖する
   date: '2026-03-30'
+- url: https://zenn.dev/owl7628/articles/3c7fd4da4edcac
+  title: Opus 4.6 / 4.8 / GPT 5.5での推奨プロンプトの書き方の違いについて
+  date: '2026-06-01'
 ---
 
+
 # Prompt Engineering Framework
+
+---
+
+## 2026-06-01
+
+### Opus 4.6 / 4.8 / GPT 5.5での推奨プロンプトの書き方の違いについて
+
+Claude Opus 4.6以前と4.7/4.8、GPT 5.5では推奨プロンプトの書き方が大きく異なる。Opus 4.6は曖昧な指示でも文脈を推論して補完するが、4.7以降は文字通りの解釈を重視し、詳細な指示が必要。4.7では新トークナイザー採用により最大35%トークン消費が増加。GPT 5.5はoutcome-firstのアプローチを推奨している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/owl7628/articles/3c7fd4da4edcac)
+- **重要度**: 7/10
+- **タグ**: opus, prompt, 新機能
 
 ---
 

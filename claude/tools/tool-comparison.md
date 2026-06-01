@@ -10,7 +10,7 @@ tags:
 - mcp
 - performance
 date: '2026-04-07'
-updated: '2026-05-08'
+updated: '2026-06-01'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-vs-cursor-comparison-2026
   title: Claude Code vs Cursor徹底比較2026年版：CLI派とIDE派、どちらを選ぶべきか
@@ -21,11 +21,27 @@ sources:
 - url: https://qiita.com/kamome_susume/items/7d3b175becbda3ffce7e
   title: Claude Codeと他AI開発ツールの違いまとめ｜Cursor・GitHub Copilot・Windsurfと何が違うの？
   date: '2026-05-08'
+- url: https://zenn.dev/umiyama5/articles/8785dd3b787807
+  title: スマホAI駆動開発でCopilot・Claude・Codexを比較して感じたこと
+  date: '2026-06-01'
 ---
 
 
 
+
 # Tool Comparison
+
+---
+
+## 2026-06-01
+
+### スマホAI駆動開発でCopilot・Claude・Codexを比較して感じたこと
+
+スマホからの隙間時間開発という観点で、GitHub Copilot、Claude、Codexを比較した実践記事。Copilotはリポジトリ連携の導線は良いが進捗確認とモデル選択の不透明さが課題。Claude CLIはPC環境では優秀だがスマホアプリ経由では確認フローが多く放置型開発に不向き。いずれも「投げて安心して離れられる」体験には改善の余地あり。
+
+- **ソース**: [Zenn claude](https://zenn.dev/umiyama5/articles/8785dd3b787807)
+- **重要度**: 4/10
+- **タグ**: copilot, claude-code, performance
 
 ---
 

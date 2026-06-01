@@ -1812,14 +1812,31 @@
     "https://qiita.com/nrEngineer/items/b1abd81ca2a9f74f30b6": "2026-05-31",
     "https://qiita.com/4q_sano/items/1d98dd5fb49ce99bd288": "2026-05-31",
     "https://the-decoder.com/anthropic-bans-ai-tools-during-job-interviews-to-see-how-candidates-actually-think": "2026-05-31",
-    "https://the-decoder.com/anthropic-study-finds-men-use-ai-coding-agents-more-than-twice-as-often-as-women-in-social-science-research": "2026-05-31"
+    "https://the-decoder.com/anthropic-study-finds-men-use-ai-coding-agents-more-than-twice-as-often-as-women-in-social-science-research": "2026-05-31",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tty482/i_dont_feel_so_good_guys": "2026-06-01",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ttpv1v/productionready_ai_implementation_is_not_sexy_work": "2026-06-01",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ttx9ae/anthropic_finally_going_public_with_ipo": "2026-06-01",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tu15us/hey_anthropic_we_need_a_verbosity_setting": "2026-06-01",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ttn80u/why_have_126000000_tokens_been_used_in_7_hours": "2026-06-01",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tty8ra/claudes_personality_is_somehow_overly_placating": "2026-06-01",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tu25wy/opus_let_me_push_back_on_that_48": "2026-06-01",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ttznix/limits_reset_again": "2026-06-01",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tu0xfp/usage_reset_lets_gooo": "2026-06-01",
+    "https://zenn.dev/lumichy/articles/claude-code-stop-hook-sound-2026": "2026-06-01",
+    "https://zenn.dev/gudezou/articles/e67f7f9bf00602": "2026-06-01",
+    "https://zenn.dev/umiyama5/articles/8785dd3b787807": "2026-06-01",
+    "https://zenn.dev/owl7628/articles/3c7fd4da4edcac": "2026-06-01",
+    "https://zenn.dev/kotakotahiro/articles/167c505c1a5f4e": "2026-06-01",
+    "https://zenn.dev/99letters/articles/1474c9c9ffa104": "2026-06-01",
+    "https://the-decoder.com/claude-maker-anthropic-files-for-ipo-with-the-sec": "2026-06-01",
+    "https://techcrunch.com/2026/06/01/anthropic-files-to-go-public": "2026-06-01"
   },
   "source_penalties": {
-    "Anthropic News": "2026-06-01",
+    "Anthropic News": "2026-06-02",
     "Reddit r/ClaudeAI": "2026-04-03",
     "Zenn claude": "2026-03-25",
     "TechCrunch Claude": "2026-05-30",
     "The Decoder Claude": "2026-05-10",
-    "AI Heartland": "2026-06-01"
+    "AI Heartland": "2026-06-02"
   }
 }
