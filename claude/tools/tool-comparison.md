@@ -10,7 +10,7 @@ tags:
 - mcp
 - performance
 date: '2026-04-07'
-updated: '2026-06-01'
+updated: '2026-06-02'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-vs-cursor-comparison-2026
   title: Claude Code vs Cursor徹底比較2026年版：CLI派とIDE派、どちらを選ぶべきか
@@ -24,12 +24,28 @@ sources:
 - url: https://zenn.dev/umiyama5/articles/8785dd3b787807
   title: スマホAI駆動開発でCopilot・Claude・Codexを比較して感じたこと
   date: '2026-06-01'
+- url: https://qiita.com/YujiNaramoto/items/93287da190b98da47705
+  title: 【AIコーディングツール比較2026】AntigravityをClaude Code・Codexより選ぶ場面はどこか
+  date: '2026-06-02'
 ---
 
 
 
 
+
 # Tool Comparison
+
+---
+
+## 2026-06-02
+
+### 【AIコーディングツール比較2026】AntigravityをClaude Code・Codexより選ぶ場面はどこか
+
+Google Antigravityを含む主要AIコーディングツール（Claude Code、Codex、Cursor）の比較記事。Antigravityの最大の特徴は並列エージェント管理とブラウザ内蔵によるビジュアルフィードバックループで、新機能開発やWebアプリのUI開発に適している。一方、既存コードベースの深い理解が必要な場面ではClaude Code、大量ファイルの一括変更ではCodexが適しており、「どれが一番か」ではなく「どのシーンで使うか」で選ぶべきと解説。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/YujiNaramoto/items/93287da190b98da47705)
+- **重要度**: 5/10
+- **タグ**: claude-code, cursor, cowork
 
 ---
 

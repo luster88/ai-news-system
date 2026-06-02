@@ -6,11 +6,12 @@ tags:
 - claude-code
 - cowork
 - mcp
+- performance
 - prompt
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-05-22'
+updated: '2026-06-02'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -48,6 +49,9 @@ sources:
 - url: https://zenn.dev/sngjpw/articles/1385f21aff9308
   title: Claudeのスキル機能とは？自分専用AIを育てる方法【実体験あり】🛠️
   date: '2026-05-22'
+- url: https://zenn.dev/shino_i/articles/20c49c73152956
+  title: Claude Code の Skill スコープとコンテキスト設計を考える
+  date: '2026-06-02'
 ---
 
 
@@ -60,7 +64,20 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-06-02
+
+### Claude Code の Skill スコープとコンテキスト設計を考える
+
+Claude Code の Skills 機能における Progressive Disclosure（段階的開示）の仕組みと、スキルのスコープ設計について解説。スキルが起動するトリガーは説明文と依頼のマッチングであり、スコープの広さは見落としの少なさと消費の重さのトレードオードになる。有限なコンテキストを効率的に配分するための4層モデル（依頼の分割、context fork、結果の外部化など）を提案している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/shino_i/articles/20c49c73152956)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, performance
 
 ---
 

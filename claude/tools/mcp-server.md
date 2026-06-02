@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-05-25'
+updated: '2026-06-02'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -66,6 +66,9 @@ sources:
 - url: https://zenn.dev/masuda_masuo/articles/2026-05-24-code-sandbox-mcp
   title: PATをAIに触れさせずにDockerコンテナへ渡すMCPサーバーを自作した
   date: '2026-05-25'
+- url: https://zenn.dev/redwing/articles/d5d428542ae002
+  title: AIに頼んだら「それ、計算できません」と言われた話——MCPで解決するAIの苦手な処理
+  date: '2026-06-02'
 ---
 
 
@@ -83,7 +86,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-06-02
+
+### AIに頼んだら「それ、計算できません」と言われた話——MCPで解決するAIの苦手な処理
+
+AIは正確な計算やリアルタイム情報の取得が苦手だが、MCP（Model Context Protocol）を使うことで外部ツールを呼び出して補完できる。営業日計算や為替レート取得、OGP情報取得などが可能になる「Thousand API」というMCPサーバーが紹介されており、Claude DesktopやCursorで簡単に設定できる。
+
+- **ソース**: [Zenn claude](https://zenn.dev/redwing/articles/d5d428542ae002)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, cowork
 
 ---
 
