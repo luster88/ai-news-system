@@ -5,11 +5,12 @@ subcategory: claude-code-routines
 tags:
 - bugfix
 - claude-code
+- mcp
 - opus
 - release
 - 新機能
 date: '2026-04-19'
-updated: '2026-06-02'
+updated: '2026-06-03'
 sources:
 - url: https://qiita.com/tai0921/items/a6323df5024b1d3a9b27
   title: Claude CodeのRoutines機能で「寝ている間にPRが自動レビューされる」時代へ
@@ -23,11 +24,63 @@ sources:
 - url: https://qiita.com/picnic/items/59b8378b59d036048cf7
   title: 'Claude Code v2.1.160: workflowキーワードがultracodeに変更・セキュリティ強化'
   date: '2026-06-02'
+- url: https://qiita.com/moha0918_/items/c31d5e74c50848db7859
+  title: Claude Code v2.1.162 リリース｜毎日Changelog解説
+  date: '2026-06-03'
+- url: https://ai-heartland.com/explain/claude-code-dynamic-workflows
+  title: Claude Code Dynamic Workflows解説：1,000サブエージェント並列とOpus 4.8
+  date: '2026-06-03'
+- url: https://ai-heartland.com/explain/claude-code-v2-1-152-update
+  title: Claude Code v2.1.152｜Skillを動的制御：disallowed-tools・/reload-skills・MessageDisplayフック
+  date: '2026-06-03'
 ---
 
 
 
+
 # Claude Code Routines
+
+---
+
+## 2026-06-03
+
+### Claude Code v2.1.162 リリース｜毎日Changelog解説
+
+Claude Code v2.1.162 がリリースされました。主な変更点は、スラッシュコマンドのクリック挙動の変更（即実行から入力欄への挿入に変更）、WebFetch の権限ルールがプリアプルーブドドメインより優先されるようになった点、MCP のタイムアウト処理の修正です。その他、claude agents の表示崩れや Windows の権限ルール、LSP ツールなど複数のバグが修正されています。新機能は少なく、既存機能の磨き込みと安定性向上に焦点を当てたリリースです。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/c31d5e74c50848db7859)
+- **重要度**: 6/10
+- **タグ**: claude-code, release, bugfix
+
+---
+
+### Claude Code v2.1.162 リリース｜毎日Changelog解説
+
+Claude Code v2.1.162がリリース。主な変更点は、スラッシュコマンドのクリック挙動が即実行から挿入+Enter方式に変更、WebFetchの権限ルールがプリアプルーブドドメインより優先されるよう修正、MCPのタイムアウトが1000ms未満でも全ツールが停止しないバグ修正など。Windows環境での権限ルール処理やclaude agentsの表示崩れも修正された。新機能は控えめで、既存機能の磨き込みとバグ修正が中心のリリース。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/c31d5e74c50848db7859)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, mcp
+
+---
+
+### Claude Code Dynamic Workflows解説：1,000サブエージェント並列とOpus 4.8
+
+AnthropicがClaude CodeにDynamic Workflowsを追加。JavaScriptスクリプトで最大1,000サブエージェントを並列オーケストレーションし、コンテキスト飽和を回避。同時にClaude Opus 4.8リリースとFast Mode価格を3分の1に値下げ。計画をコードに移すことで、大規模コードベースのマイグレーションやリサーチで従来より信頼性の高い結果を実現。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/claude-code-dynamic-workflows)
+- **重要度**: 9/10
+- **タグ**: claude-code, 新機能, opus
+
+---
+
+### Claude Code v2.1.152｜Skillを動的制御：disallowed-tools・/reload-skills・MessageDisplayフック
+
+Claude Code v2.1.152では、スキル実行中に特定ツールを無効化する「disallowed-tools」フロントマターが追加され、セッション再起動なしでスキルを再読み込みする「/reload-skills」コマンドが実装されました。SessionStartフックにreloadSkills機能が追加され、MessageDisplayフックでアシスタント出力を表示前に変換可能になり、スキルとツールの動的制御が大幅に強化されました。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/claude-code-v2-1-152-update)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, release
 
 ---
 

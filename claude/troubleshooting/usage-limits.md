@@ -12,7 +12,7 @@ tags:
 - pricing
 - sonnet
 date: '2026-03-25'
-updated: '2026-04-03'
+updated: '2026-06-03'
 sources:
 - url: https://qiita.com/himajisan/items/1e8f67782335b4517139
   title: AIを扱き使ったらすぐに使用制限ですと言う
@@ -43,13 +43,29 @@ sources:
   title: Anthropic says Claude Code's usage drain comes down to peak-hour caps and
     ballooning contexts
   date: '2026-04-03'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1tw32al/anthropic_can_we_please_have_claude_finish_a_task
+  title: Anthropic can we please have Claude finish a task?
+  date: '2026-06-03'
 ---
 
 
 
 
 
+
 # Usage Limits
+
+---
+
+## 2026-06-03
+
+### Anthropic can we please have Claude finish a task?
+
+Claude が使用量制限によりタスクの途中で停止し、未完了の作業にも使用量を消費する問題について、Reddit ユーザーが不満を表明。タスク開始前の警告機能や、使用量リセット後の自動継続機能の実装を要望している。Word 文書の目次フォーマット作業中に Opus 4.7 で発生した具体例も共有されている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1tw32al/anthropic_can_we_please_have_claude_finish_a_task)
+- **重要度**: 6/10
+- **タグ**: claude-console, opus, pricing
 
 ---
 

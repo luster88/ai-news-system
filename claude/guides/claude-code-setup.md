@@ -11,7 +11,7 @@ tags:
 - windows
 - 新機能
 date: '2026-04-04'
-updated: '2026-05-17'
+updated: '2026-06-03'
 sources:
 - url: https://qiita.com/taiki_i/items/2d75a882e0f3187f6bb8
   title: あなたの CLAUDE.md、ちゃんと機能してますか？作り方から公式プラグインで採点するまでの道のり
@@ -49,6 +49,9 @@ sources:
 - url: https://zenn.dev/secondselection/articles/claude_code_tips
   title: 「Claude Code」を使ってみた：環境構築から基本の操作まで初心者向けに解説
   date: '2026-05-17'
+- url: https://qiita.com/Higemal/items/2d7afa6024d2f23b6482
+  title: ClaudeCodeにCLAUDE.md・SKILL.md・スクリプト作成をブン投げる「initプロンプト」
+  date: '2026-06-03'
 ---
 
 
@@ -59,7 +62,20 @@ sources:
 
 
 
+
 # Claude Code Setup
+
+---
+
+## 2026-06-03
+
+### ClaudeCodeにCLAUDE.md・SKILL.md・スクリプト作成をブン投げる「initプロンプト」
+
+ClaudeCode利用時のCLAUDE.mdやSKILL.mdの作成を自動化する「initプロンプト」の提案。空のディレクトリからClaudeコマンドを起動し、業務内容とタスク構成を共有することで、AI側が初期ファイル群とスクリプトを自動生成する手法を紹介。非プログラム開発用途でも活用できる初期設定の効率化手法として、具体的かつ簡素な指示のバランスが重要と説いている。
+
+- **ソース**: [Qiita claude](https://qiita.com/Higemal/items/2d7afa6024d2f23b6482)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

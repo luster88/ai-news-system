@@ -14,7 +14,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-05-26'
+updated: '2026-06-03'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -139,6 +139,9 @@ sources:
 - url: https://qiita.com/YujiNaramoto/items/eae30c01261ec42bad82
   title: なぜClaude Code AgentでTask・Agent Team・メインスレッドを使い分けるのか
   date: '2026-05-26'
+- url: https://qiita.com/sescore/items/5b73544a40f4ac623da2
+  title: Claude Codeで開発効率が激変した話｜SESエンジニアの独立準備にも使える実践Tips徹底解説
+  date: '2026-06-03'
 ---
 
 
@@ -174,7 +177,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-06-03
+
+### Claude Codeで開発効率が激変した話｜SESエンジニアの独立準備にも使える実践Tips徹底解説
+
+Claude Codeを半年間実務で使用した経験から、CLAUDE.mdによるプロジェクト設定、計画モード、Agentの並列実行、GlobやGrepツールの活用、Edit機能によるトークン節約、フックを使った自動フォーマット、メモリ機能など、実践的な使い方を解説。SESエンジニアやフリーランス準備にも活用できる具体的なTipsを紹介。
+
+- **ソース**: [Qiita claude](https://qiita.com/sescore/items/5b73544a40f4ac623da2)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

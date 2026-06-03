@@ -8,7 +8,7 @@ tags:
 - prompt
 - setup
 date: '2026-03-31'
-updated: '2026-04-17'
+updated: '2026-06-03'
 sources:
 - url: https://zenn.dev/dysksh/articles/27617be34cc336
   title: フレームワークを使わずにLLMエージェントを作る — Go + Claude API + AWSの設計と実装
@@ -16,10 +16,26 @@ sources:
 - url: https://qiita.com/bit-tanghao/items/e9512d1b26fc7f1caf63
   title: 【AIエージェント 第一弾】ReActエージェント入門 ── フレームワーク不使用でコードレビュアー・エージェントを作る
   date: '2026-04-17'
+- url: https://zenn.dev/pekopugu/articles/agent01-a2-llm-client
+  title: 【AIエージェント自作】ローカルLLM（Ollama）とClaude APIを切り替えるアーキテクチャ
+  date: '2026-06-03'
 ---
 
 
+
 # Agent Development
+
+---
+
+## 2026-06-03
+
+### 【AIエージェント自作】ローカルLLM（Ollama）とClaude APIを切り替えるアーキテクチャ
+
+OllamaとClaude APIを同じインターフェースで切り替え可能なAIエージェントの実装解説。LLMClientBaseクラスによる抽象化レイヤー、システムプロンプト設定、会話履歴管理のREPLループを実装。ローカルLLMで開発し、品質確認時にClaude APIに切り替える設計を採用。Windows環境での日本語エンコーディング問題への対処法も紹介。
+
+- **ソース**: [Zenn claude](https://zenn.dev/pekopugu/articles/agent01-a2-llm-client)
+- **重要度**: 6/10
+- **タグ**: claude-api, prompt, cowork
 
 ---
 
