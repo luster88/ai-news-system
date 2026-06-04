@@ -5,11 +5,12 @@ subcategory: workflow-optimization
 tags:
 - claude-code
 - cowork
+- cursor
 - opus
 - prompt
 - sonnet
 date: '2026-05-05'
-updated: '2026-05-25'
+updated: '2026-06-04'
 sources:
 - url: https://zenn.dev/bentenweb_fumi/articles/fxyojdsgcwap
   title: AIで「手を動かす時間」を減らす：技術者のための時間投資戦略
@@ -17,10 +18,26 @@ sources:
 - url: https://zenn.dev/jun_eng/articles/322442e33841e7
   title: Claude Opus 4.7とSonnet 4.6の"二刀流"設計でnote執筆のコストと時間を半減させた話
   date: '2026-05-25'
+- url: https://qiita.com/ryokwkm/items/c3100715000591af723f
+  title: AIに毎回「現状を教えて」と聞かれていませんか？ Warm Boot Protocol という解決策
+  date: '2026-06-04'
 ---
 
 
+
 # Workflow Optimization
+
+---
+
+## 2026-06-04
+
+### AIに毎回「現状を教えて」と聞かれていませんか？ Warm Boot Protocol という解決策
+
+Claude CodeやCursorなどのAIエージェントが毎回セッションをリセットする「コールドスタート問題」に対処するため、3層構造のドキュメント設計パターン「Warm Boot Protocol」を提案。AI設定ファイル（CLAUDE.md/.cursorrules）は参照先のみ記載し、ai-context.md（資料インデックス）とprogress.md（現在の文脈バッファ）を分離することで、AIが即座にプロジェクト状況を把握できる状態を実現する実践的な手法。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/ryokwkm/items/c3100715000591af723f)
+- **重要度**: 7/10
+- **タグ**: claude-code, cursor, prompt
 
 ---
 

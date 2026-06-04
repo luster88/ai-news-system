@@ -3,14 +3,17 @@ title: Automation Workflow
 category: guides
 subcategory: automation-workflow
 tags:
+- claude-api
 - claude-code
 - claude-console
 - cowork
+- haiku
 - prompt
 - setup
+- sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-05-31'
+updated: '2026-06-04'
 sources:
 - url: https://zenn.dev/shelty/articles/20260408-budget-book-asset-management
   title: MoneyForwardの家計簿データで資産予測を自動化してみた＠Claude
@@ -27,13 +30,29 @@ sources:
 - url: https://zenn.dev/itsuya/articles/ai-content-pipeline-2026
   title: Claude CLIとPythonで“無料”の自律コンテンツ生成パイプラインを作る
   date: '2026-05-31'
+- url: https://qiita.com/1280itsuya/items/d3f55afeba54cda1e361
+  title: 【ガチ検証】Python＋Claude APIでアフィリ記事を半自動量産する個人開発パイプラインを作ったら、1記事の手間が90分→7分になった話
+  date: '2026-06-04'
 ---
 
 
 
 
 
+
 # Automation Workflow
+
+---
+
+## 2026-06-04
+
+### 【ガチ検証】Python＋Claude APIでアフィリ記事を半自動量産する個人開発パイプラインを作ったら、1記事の手間が90分→7分になった話
+
+Python と Claude API を用いたアフィリエイト記事の半自動生成パイプラインの実装事例。90分かかっていた記事作成を7分に短縮した一方、全自動化による3日でのスパム判定の失敗から「生成は自動・公開は人間」という設計思想に至った実践レポート。テーマ固定検証、アフィリリンク自動差し込み、7日間重複ロック、コスト最適化（Sonnet生成・Haiku採点で4割削減）などの具体的な実装手法を紹介。
+
+- **ソース**: [Qiita claude](https://qiita.com/1280itsuya/items/d3f55afeba54cda1e361)
+- **重要度**: 6/10
+- **タグ**: claude-api, sonnet, haiku
 
 ---
 

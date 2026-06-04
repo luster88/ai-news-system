@@ -11,7 +11,7 @@ tags:
 - pricing
 - prompt
 date: '2026-04-03'
-updated: '2026-05-02'
+updated: '2026-06-04'
 sources:
 - url: https://zenn.dev/heki1224/articles/b849cc85a330aa
   title: Claude Codeで”トークン破産”しないためのコスト最適化とコンテキスト防衛術
@@ -35,6 +35,9 @@ sources:
   title: I gave Claude Code a $0.02/call coworker and stopped hitting Pro limits —
     here's the full setup
   date: '2026-05-02'
+- url: https://zenn.dev/t_tokunaga/articles/2026-05-01-ai-model-stack-cost-breakdown-2026-04
+  title: 個人開発のAI API利用構成と2026年4月の課金額を公開する（サブスク＋API連携）
+  date: '2026-06-04'
 ---
 
 
@@ -43,7 +46,20 @@ sources:
 
 
 
+
 # Cost Optimization
+
+---
+
+## 2026-06-04
+
+### 個人開発のAI API利用構成と2026年4月の課金額を公開する（サブスク＋API連携）
+
+個人開発者がClaude ProとChatGPT Plusの月額サブスクを中心に運用し、API利用を最小限に抑えることで、2026年4月のAPI課金を前月比約$422削減し$4.48に抑えた事例。大学プロジェクトでもサブスク中心の運用で十分対応可能であることを実証。ハイブリッド構成による効果的なコスト管理手法を紹介。
+
+- **ソース**: [Zenn claude](https://zenn.dev/t_tokunaga/articles/2026-05-01-ai-model-stack-cost-breakdown-2026-04)
+- **重要度**: 6/10
+- **タグ**: pricing, claude-api, cowork
 
 ---
 

@@ -8,9 +8,10 @@ tags:
 - mcp
 - opus
 - release
+- windows
 - 新機能
 date: '2026-04-19'
-updated: '2026-06-03'
+updated: '2026-06-04'
 sources:
 - url: https://qiita.com/tai0921/items/a6323df5024b1d3a9b27
   title: Claude CodeのRoutines機能で「寝ている間にPRが自動レビューされる」時代へ
@@ -33,12 +34,28 @@ sources:
 - url: https://ai-heartland.com/explain/claude-code-v2-1-152-update
   title: Claude Code v2.1.152｜Skillを動的制御：disallowed-tools・/reload-skills・MessageDisplayフック
   date: '2026-06-03'
+- url: https://qiita.com/picnic/items/49ff0025c97ab6ac1430
+  title: 'Claude Code v2.1.162: 権限制御バグ修正とagents大幅改善まとめ'
+  date: '2026-06-04'
 ---
 
 
 
 
+
 # Claude Code Routines
+
+---
+
+## 2026-06-04
+
+### Claude Code v2.1.162: 権限制御バグ修正とagents大幅改善まとめ
+
+Claude Code v2.1.162 がリリースされ、WebFetch の権限ルール適用漏れ、Windows 環境でのパス照合不具合など、セキュリティ・権限制御に関わる重要なバグが修正されました。特に組み込みの事前承認ドメインへの明示的な deny/allow ルールが今まで無視されていた問題や、Windows でのバックスラッシュ・大文字小文字の違いによるルール不一致が解消されています。また claude agents コマンドの大規模な不具合修正、MCP タイムアウト設定の誤動作修正、起動表示の UX 改善も含まれています。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/49ff0025c97ab6ac1430)
+- **重要度**: 7/10
+- **タグ**: claude-code, bugfix, windows
 
 ---
 

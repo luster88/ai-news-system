@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-23'
-updated: '2026-05-16'
+updated: '2026-06-04'
 sources:
 - url: https://qiita.com/pro-tein/items/49e5dbec705c3497dd51
   title: 【Claude Code】Hooks機能でデスクトップ通知を設定してみた
@@ -21,11 +21,27 @@ sources:
   title: Claude Code ハーネスを「月次スキャン＋spec.md」で自己改善させる——type:"prompt" Hook の誤検知を GPT-5.4
     が発見した話
   date: '2026-05-16'
+- url: https://qiita.com/satoshi_061/items/c3a20d437a55e59068c4
+  title: Claude Code hooks 活用まとめ — 安全性・ログ・作業時間を全自動化する
+  date: '2026-06-04'
 ---
 
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-06-04
+
+### Claude Code hooks 活用まとめ — 安全性・ログ・作業時間を全自動化する
+
+Claude Code の hooks 機能を活用した実用的な設定例を紹介。PreToolUse フックで rm -rf などの危険コマンドを自動ブロック、全ツール実行のログ記録、タスク完了時の作業時間自動計測を実装。hooks はトークンをほぼ消費せず、非同期実行なら完全にゼロコストで安全性とログ管理を自動化できる。
+
+- **ソース**: [Qiita claude](https://qiita.com/satoshi_061/items/c3a20d437a55e59068c4)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 
