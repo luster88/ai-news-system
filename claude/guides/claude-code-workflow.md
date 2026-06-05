@@ -14,7 +14,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-06-03'
+updated: '2026-06-05'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -142,6 +142,12 @@ sources:
 - url: https://qiita.com/sescore/items/5b73544a40f4ac623da2
   title: Claude Codeで開発効率が激変した話｜SESエンジニアの独立準備にも使える実践Tips徹底解説
   date: '2026-06-03'
+- url: https://zenn.dev/masayan1126/books/ai-driven-dev-claude-code-outcomes
+  title: Claude CodeでAI駆動開発、9工程の仕組みと成果ぜんぶ見せるで｜ブランチ5分→1分・PR10分→2分の実録
+  date: '2026-06-05'
+- url: https://zenn.dev/taichiendoh/articles/ccb221b551703a
+  title: Claude Code /effort ultracode と Codex /goal を医療AI開発で使い分ける
+  date: '2026-06-05'
 ---
 
 
@@ -178,7 +184,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-06-05
+
+### Claude CodeでAI駆動開発、9工程の仕組みと成果ぜんぶ見せるで｜ブランチ5分→1分・PR10分→2分の実録
+
+Claude Code を実務導入し、ブランチ作成5分→1分、PR作成10分→2分を実現した9工程の実践記録。Issue選定・設計・レビュー・セキュリティチェック・PRテキスト・テスト・QA・リリース・ドキュメントの各フェーズで、規約駆動とMCP連携による開発フロー最適化を詳細に解説。工数半減とクオリティ向上を両立した具体的な手法とノウハウを公開。
+
+- **ソース**: [Zenn claude](https://zenn.dev/masayan1126/books/ai-driven-dev-claude-code-outcomes)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, cowork
+
+---
+
+### Claude Code /effort ultracode と Codex /goal を医療AI開発で使い分ける
+
+Claude Code の /effort ultracode と /goal コマンドの医療AI開発における使い分けを解説。ultracode は Dynamic Workflows orchestration 機能を持つが、トークン消費が大きいため大規模タスクのみに使用し、終了後は /effort high に戻す運用が推奨される。医療AIでは個人情報保護やSaMDの観点から、人間のレビューを必須とし、AIに丸投げせず段階的な workflow と SPEC.md/GOAL.md を用いた設計が重要。
+
+- **ソース**: [Zenn claude](https://zenn.dev/taichiendoh/articles/ccb221b551703a)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

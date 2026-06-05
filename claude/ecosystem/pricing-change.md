@@ -6,15 +6,32 @@ tags:
 - claude-code
 - mcp
 - pricing
+- 新機能
 date: '2026-04-06'
-updated: '2026-04-06'
+updated: '2026-06-05'
 sources:
 - url: https://qiita.com/kenimo49/items/af514033f85366ead6c5
   title: Anthropicの課金変更でClaude Codeが従量制に。ローカルLLMという選択肢を検証した
   date: '2026-04-06'
+- url: https://zenn.dev/f_monsoon/articles/20260605-claude-taboo
+  title: 【絶対やるな】Claude 6/15改定の課金回避を思いついた。が、規約違反でBANリスクなので供養します
+  date: '2026-06-05'
 ---
 
+
 # Pricing Change
+
+---
+
+## 2026-06-05
+
+### 【絶対やるな】Claude 6/15改定の課金回避を思いついた。が、規約違反でBANリスクなので供養します
+
+2026年6月15日からClaude ProのAPI利用が別枠の月次クレジット制に移行し、自動化ユーザーは追加コストが発生する。Raspberry Piでclaude -pを使った自動化を月$30相当実行していたユーザーが、Proの$20枠を超えて追加課金が必要になることを実測。対話利用は従来通りサブスク枠内だが、プログラム利用は別財布となり、使い放題感覚の全自動化は見積もりが必須になる。対話モードでの課金回避は利用規約違反でBANリスクがあると警告。
+
+- **ソース**: [Zenn claude](https://zenn.dev/f_monsoon/articles/20260605-claude-taboo)
+- **重要度**: 8/10
+- **タグ**: pricing, claude-code, 新機能
 
 ---
 
