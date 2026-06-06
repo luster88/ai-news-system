@@ -11,7 +11,7 @@ tags:
 - windows
 - 新機能
 date: '2026-04-19'
-updated: '2026-06-04'
+updated: '2026-06-06'
 sources:
 - url: https://qiita.com/tai0921/items/a6323df5024b1d3a9b27
   title: Claude CodeのRoutines機能で「寝ている間にPRが自動レビューされる」時代へ
@@ -37,13 +37,39 @@ sources:
 - url: https://qiita.com/picnic/items/49ff0025c97ab6ac1430
   title: 'Claude Code v2.1.162: 権限制御バグ修正とagents大幅改善まとめ'
   date: '2026-06-04'
+- url: https://qiita.com/moha0918_/items/dab2d73fbb0ce6eea33d
+  title: Claude Code v2.1.166〜v2.1.167 リリース｜毎日Changelog解説
+  date: '2026-06-06'
 ---
 
 
 
 
 
+
 # Claude Code Routines
+
+---
+
+## 2026-06-06
+
+### Claude Code v2.1.166〜v2.1.167 リリース｜毎日Changelog解説
+
+Claude Code v2.1.166〜v2.1.167 のリリースノート解説。モデル過負荷時の対策として最大3つのフォールバックモデル指定が可能になり、対話セッション中でも自動切り替えが動作。deny ルールに glob パターン対応でホワイトリスト運用が容易に。クロスセッションメッセージの権限昇格問題を修正し、JetBrains IDE や各種ターミナルでの不具合も解消。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/dab2d73fbb0ce6eea33d)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
+
+---
+
+### Claude Code v2.1.166〜v2.1.167 リリース｜毎日Changelog解説
+
+Claude Code v2.1.166〜v2.1.167がリリースされ、モデル過負荷への対策が大幅強化された。fallbackModelを最大3つまで設定可能になり、対話セッション中でも自動切り替えが効くようになった。deny ルールでのglob対応によりホワイトリスト運用が容易になり、クロスセッション権限の脆弱性も修正された。その他、IDE連携やターミナル互換性、Windows/macOS固有のバグなど多数の修正が含まれる。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/dab2d73fbb0ce6eea33d)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

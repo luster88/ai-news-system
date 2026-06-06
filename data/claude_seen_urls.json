@@ -1924,14 +1924,37 @@
     "https://ai-heartland.com/security/prompt-injection-defense": "2026-06-05",
     "https://ai-heartland.com/tool/github-copilot-usage-guide-2026": "2026-06-05",
     "https://the-decoder.com/anthropics-mythos-model-is-reportedly-powering-nsa-offensive-cyber-ops-against-china-and-iran": "2026-06-05",
-    "https://the-decoder.com/anthropic-says-claude-now-writes-over-90-of-its-code-and-wants-the-world-to-have-an-ai-pause-button": "2026-06-05"
+    "https://the-decoder.com/anthropic-says-claude-now-writes-over-90-of-its-code-and-wants-the-world-to-have-an-ai-pause-button": "2026-06-05",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tyhfso/help_my_claude_wont_say_uwu": "2026-06-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tybrpv/anthropic_is_not_a_normal_company": "2026-06-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tyot8t/claude_game_dev_feels_like_cheating": "2026-06-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tyfzwl/me_waiting_for_my_reset": "2026-06-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1typ9ld/has_anyone_actually_replaced_claude_code_codex": "2026-06-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1tynip7/all_italian_legislation_free_on_github_in_markdown": "2026-06-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1typ0eo/anthropic_details_how_it_sandboxes_and_contains": "2026-06-06",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ty8f47/anthropic_just_published_a_major_update_on": "2026-06-06",
+    "https://qiita.com/moha0918_/items/dab2d73fbb0ce6eea33d": "2026-06-06",
+    "https://qiita.com/daitak/items/0381ac57406ad810d486": "2026-06-06",
+    "https://qiita.com/picnic/items/e4657d2c355f5db0d062": "2026-06-06",
+    "https://qiita.com/norihito_wada/items/e1f02121720e178b553b": "2026-06-06",
+    "https://zenn.dev/kawauchi_lab/articles/4b300879a41ab5": "2026-06-06",
+    "https://zenn.dev/dragon1208/articles/45708cc45a7a7c": "2026-06-06",
+    "https://zenn.dev/acntechjp/articles/claude-code-cost-history-bloat": "2026-06-06",
+    "https://zenn.dev/sun_asterisk/articles/claude-figma-mcp-app": "2026-06-06",
+    "https://zenn.dev/masayan1126/articles/claude-code-dynamic-workflows-complete-guide": "2026-06-06",
+    "https://zenn.dev/jinsights/articles/b85f8eb07ae3d2": "2026-06-06",
+    "https://qiita.com/yurukusa/items/ab42f8178efc73db51b6": "2026-06-06",
+    "https://qiita.com/ryoji9702/items/7e9bfc507e383f6172c9": "2026-06-06",
+    "https://the-decoder.com/sakana-ai-bets-ai-that-improves-itself-can-break-the-compute-arms-race-of-frontier-labs": "2026-06-06",
+    "https://the-decoder.com/elon-musks-xai-reportedly-trained-its-coding-models-on-claude-outputs-for-months-before-getting-cut-off": "2026-06-06",
+    "https://the-decoder.com/openai-and-the-trump-administration-are-negotiating-a-government-stake-in-the-ai-startup": "2026-06-06"
   },
   "source_penalties": {
-    "Anthropic News": "2026-06-06",
+    "Anthropic News": "2026-06-07",
     "Reddit r/ClaudeAI": "2026-04-03",
     "Zenn claude": "2026-03-25",
     "TechCrunch Claude": "2026-05-30",
     "The Decoder Claude": "2026-05-10",
-    "AI Heartland": "2026-06-03"
+    "AI Heartland": "2026-06-07"
   }
 }

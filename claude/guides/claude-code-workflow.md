@@ -14,7 +14,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-06-05'
+updated: '2026-06-06'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -148,6 +148,9 @@ sources:
 - url: https://zenn.dev/taichiendoh/articles/ccb221b551703a
   title: Claude Code /effort ultracode と Codex /goal を医療AI開発で使い分ける
   date: '2026-06-05'
+- url: https://qiita.com/daitak/items/0381ac57406ad810d486
+  title: Claude Codeで Aurora PostgreSQLのバージョン間の変更点を一覧化してみた
+  date: '2026-06-06'
 ---
 
 
@@ -185,7 +188,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-06-06
+
+### Claude Codeで Aurora PostgreSQLのバージョン間の変更点を一覧化してみた
+
+Aurora PostgreSQL のメジャーバージョンアップにおいて、Claude Code を活用して PostgreSQL 13.9 から 17 までの変更点を自動調査・整理した事例。rds.force_ssl のデフォルト有効化、public スキーマの CREATE 権限削除、pg_stat_statements のカラム名変更など、Breaking Changes を含む重要な変更点を網羅的にまとめることに成功。手作業では数時間かかる調査作業をプロンプト一つで完了できた。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/daitak/items/0381ac57406ad810d486)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 
