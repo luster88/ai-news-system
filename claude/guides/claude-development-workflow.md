@@ -6,15 +6,33 @@ tags:
 - claude-code
 - claude-console
 - cowork
+- opus
+- performance
 date: '2026-04-24'
-updated: '2026-04-24'
+updated: '2026-06-07'
 sources:
 - url: https://qiita.com/tkoji3744/items/259ab1a71fa4e4465246
   title: Claudeをつかって立体囲碁盤の新作ゲーム（CubeGo)をつくりながら思ったこと
   date: '2026-04-24'
+- url: https://zenn.dev/haruaki_nayuta/articles/3d62eb81e60f1c
+  title: Claudeの元を取りたくてFXさせてみたら""半日で""CAGR14%叩き出して横転
+  date: '2026-06-07'
 ---
 
+
 # Claude Development Workflow
+
+---
+
+## 2026-06-07
+
+### Claudeの元を取りたくてFXさせてみたら""半日で""CAGR14%叩き出して横転
+
+Claude Opus 4.8を使ってFX自動売買Botを半日（4時間弱）で開発し、CAGR14%・最大ドローダウン-13.9%という好成績を達成。LLM登場前は1年以上、ChatGPT 5.4では1-2週間かかっていた開発が大幅に短縮された。/goal機能により複雑なプロンプティングなしで実装でき、AIの着実な進歩を実感した事例。
+
+- **ソース**: [Zenn claude](https://zenn.dev/haruaki_nayuta/articles/3d62eb81e60f1c)
+- **重要度**: 6/10
+- **タグ**: opus, claude-code, performance
 
 ---
 

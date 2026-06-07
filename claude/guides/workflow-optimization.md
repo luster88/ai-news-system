@@ -8,9 +8,10 @@ tags:
 - cursor
 - opus
 - prompt
+- setup
 - sonnet
 date: '2026-05-05'
-updated: '2026-06-04'
+updated: '2026-06-07'
 sources:
 - url: https://zenn.dev/bentenweb_fumi/articles/fxyojdsgcwap
   title: AIで「手を動かす時間」を減らす：技術者のための時間投資戦略
@@ -21,11 +22,27 @@ sources:
 - url: https://qiita.com/ryokwkm/items/c3100715000591af723f
   title: AIに毎回「現状を教えて」と聞かれていませんか？ Warm Boot Protocol という解決策
   date: '2026-06-04'
+- url: https://qiita.com/goki602/items/4a44eceb28c5cbbcbab6
+  title: Claude Code × tmux でバックグラウンド実行とエージェント管理を整理する
+  date: '2026-06-07'
 ---
 
 
 
+
 # Workflow Optimization
+
+---
+
+## 2026-06-07
+
+### Claude Code × tmux でバックグラウンド実行とエージェント管理を整理する
+
+Claude Codeとtmuxのターミナルマルチプレクサを組み合わせることで、長時間AIエージェントタスクの管理を効率化する方法を解説。tmuxのセッション継続性や並列可視化機能により、エージェントを走らせたまま離席したり、複数エージェントを同時監視できる。Claude Codeの--teammate-modeオプションを使うことで、役割分担した複数エージェントをtmuxペインで管理可能。個人開発者向けに、Agent Viewとtmuxの補完的な使い方と導入判断の材料を提供。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/goki602/items/4a44eceb28c5cbbcbab6)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup
 
 ---
 

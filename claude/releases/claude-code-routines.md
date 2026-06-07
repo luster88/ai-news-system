@@ -11,7 +11,7 @@ tags:
 - windows
 - 新機能
 date: '2026-04-19'
-updated: '2026-06-06'
+updated: '2026-06-07'
 sources:
 - url: https://qiita.com/tai0921/items/a6323df5024b1d3a9b27
   title: Claude CodeのRoutines機能で「寝ている間にPRが自動レビューされる」時代へ
@@ -40,6 +40,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/dab2d73fbb0ce6eea33d
   title: Claude Code v2.1.166〜v2.1.167 リリース｜毎日Changelog解説
   date: '2026-06-06'
+- url: https://qiita.com/moha0918_/items/82494952b384c4e2c208
+  title: Claude Code v2.1.168 リリース｜毎日Changelog解説
+  date: '2026-06-07'
 ---
 
 
@@ -47,7 +50,20 @@ sources:
 
 
 
+
 # Claude Code Routines
+
+---
+
+## 2026-06-07
+
+### Claude Code v2.1.168 リリース｜毎日Changelog解説
+
+Claude Code v2.1.168 がリリースされました。これは新機能を含まないメンテナンスリリースで、バグ修正と信頼性改善のみが含まれています。公式 Changelog には詳細な修正内容の記載はなく、v2.1.167 からの日常利用者は安心してアップデート可能です。挙動が変わる変更はなく、既存の不具合が解消されている可能性があるため、手元で確認することが推奨されています。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/82494952b384c4e2c208)
+- **重要度**: 4/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

@@ -14,7 +14,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-06-06'
+updated: '2026-06-07'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -151,6 +151,12 @@ sources:
 - url: https://qiita.com/daitak/items/0381ac57406ad810d486
   title: Claude Codeで Aurora PostgreSQLのバージョン間の変更点を一覧化してみた
   date: '2026-06-06'
+- url: https://qiita.com/goki602/items/4a44eceb28c5cbbcbab6
+  title: Claude Code × tmux でバックグラウンド実行とエージェント管理を整理する
+  date: '2026-06-07'
+- url: https://qiita.com/tanimoto-hikari/items/827575858ed2a2bec576
+  title: Dependabot PR の一次調査を Claude Code に任せたら、優先度判断が楽になった
+  date: '2026-06-07'
 ---
 
 
@@ -189,7 +195,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-06-07
+
+### Claude Code × tmux でバックグラウンド実行とエージェント管理を整理する
+
+Claude Code と tmux を組み合わせることで、長時間のエージェントタスクをバックグラウンドで安定実行できる環境を構築する方法を解説。tmux のセッション継続性・ペイン分割・リモートアタッチ機能が、複数エージェントの並列管理や「夜に投げて朝確認」のワークフローに適している。--teammate-mode tmux オプションで役割分担したエージェントを可視化する実践例も紹介。
+
+- **ソース**: [Qiita claude](https://qiita.com/goki602/items/4a44eceb28c5cbbcbab6)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, cowork
+
+---
+
+### Dependabot PR の一次調査を Claude Code に任せたら、優先度判断が楽になった
+
+Dependabot PRの一次調査をClaude Code Skillsで自動化する手法を紹介。package-lock.jsonの依存関係の追跡、脆弱性の重要度判定、ルートパッケージの確認などの定型作業を仕組み化し、5〜10分かかっていた調査を片手間で完了できるようにした実践例。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/tanimoto-hikari/items/827575858ed2a2bec576)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, cowork
 
 ---
 
