@@ -7,8 +7,9 @@ tags:
 - claude-code
 - release
 - setup
+- vscode
 date: '2026-03-31'
-updated: '2026-04-02'
+updated: '2026-06-08'
 sources:
 - url: https://the-decoder.com/anthropic-accidentally-publishes-claude-code-source-code-for-anyone-to-find
   title: Anthropic accidentally publishes Claude Code source code for anyone to find
@@ -22,11 +23,28 @@ sources:
 - url: https://qiita.com/m_tookuni/items/547035b233e7e1fdabe2
   title: 「安全構造は最初から─Anthropicコード流出事件が示す設計原則」
   date: '2026-04-02'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1u05t5e/an_active_attack_is_planting_backdoors_inside
+  title: An active attack is planting backdoors inside Claude Code right now. If you
+    use npm, your credentials may already be compromised.
+  date: '2026-06-08'
 ---
 
 
 
+
 # Security Incident
+
+---
+
+## 2026-06-08
+
+### An active attack is planting backdoors inside Claude Code right now. If you use npm, your credentials may already be compromised.
+
+npm の @redhat-cloud-services パッケージ群がマルウェアに感染し、Claude Code と VS Code の設定ファイルにバックドアを仕立てる攻撃が発生。感染すると認証情報が窃取され、パッケージをアンインストールしても設定ファイルに残存し続ける。攻撃者は盗んだ Red Hat 従業員の GitHub 認証情報を使い、公式ビルドパイプラインを悪用して正規の証明書付きで悪意あるパッケージを配布。第一波で 32 パッケージ（週 11.7 万ダウンロード）、第二波で 57 パッケージ（月 64.7 万ダウンロード）が影響を受け、マルウェアは自己増殖機能を持つ。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1u05t5e/an_active_attack_is_planting_backdoors_inside)
+- **重要度**: 10/10
+- **タグ**: claude-code, vscode, bugfix
 
 ---
 

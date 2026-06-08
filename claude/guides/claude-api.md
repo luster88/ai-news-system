@@ -5,12 +5,13 @@ subcategory: claude-api
 tags:
 - claude-api
 - cowork
+- haiku
 - performance
 - prompt
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-04-14'
+updated: '2026-06-08'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -21,11 +22,27 @@ sources:
 - url: https://qiita.com/kai_kou/items/9aa2ca4787306e4dc162
   title: Claude Managed Agents入門 — セルフホスト不要でAIエージェントを動かすAPIガイド
   date: '2026-04-14'
+- url: https://zenn.dev/nora_saito/articles/46e2d3fdefdf54
+  title: Next.js × Claude APIで「読書メモ→X投稿」ツールを作って公開した（zodのバグに最後ハマった）
+  date: '2026-06-08'
 ---
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-06-08
+
+### Next.js × Claude APIで「読書メモ→X投稿」ツールを作って公開した（zodのバグに最後ハマった）
+
+Next.js 15とClaude API（Haiku 4.5）を使った読書メモからX投稿を生成するツールの開発・公開事例。zodのv3/v4バージョン不整合により本番環境でクラッシュする問題に遭遇し、構造化出力の実装やモデル選択によるコスト最適化、APIクレジット管理の注意点を解説。公開後の実運用で学んだベストプラクティスを共有。
+
+- **ソース**: [Zenn claude](https://zenn.dev/nora_saito/articles/46e2d3fdefdf54)
+- **重要度**: 6/10
+- **タグ**: claude-api, haiku, setup
 
 ---
 

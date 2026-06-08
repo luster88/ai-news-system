@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-27'
-updated: '2026-05-09'
+updated: '2026-06-08'
 sources:
 - url: https://zenn.dev/beef_and_rice/articles/482b09980fce23
   title: Claude Code の便利機能 Ctrl+G と Ctrl+S を zsh でも使う
@@ -29,13 +29,29 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1t8aecu/the_unreasonable_effectiveness_of_html_when_using
   title: The unreasonable effectiveness of HTML when using Claude Code
   date: '2026-05-09'
+- url: https://qiita.com/sescore/items/8a25772fdb0f2e12681c
+  title: Claude Code実践Tips集2026年最新版：毎日使う開発者が教える本当に使えるテクニック
+  date: '2026-06-08'
 ---
 
 
 
 
 
+
 # Claude Code Tips
+
+---
+
+## 2026-06-08
+
+### Claude Code実践Tips集2026年最新版：毎日使う開発者が教える本当に使えるテクニック
+
+Claude Codeを8ヶ月使い込んだ開発者による実践的なTips集。CLAUDE.mdの活用、/compactコマンドによる会話圧縮、@構文でのファイル指定、データ分析やSQL最適化での具体的な使い方など、毎日の開発で実際に効果があった手法を紹介。SES1年目エンジニア向けのアドバイスやカスタムコマンド、フック機能の実装例も含む。
+
+- **ソース**: [Qiita claude](https://qiita.com/sescore/items/8a25772fdb0f2e12681c)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

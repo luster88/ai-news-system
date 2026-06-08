@@ -14,7 +14,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-06-07'
+updated: '2026-06-08'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -157,6 +157,9 @@ sources:
 - url: https://qiita.com/tanimoto-hikari/items/827575858ed2a2bec576
   title: Dependabot PR の一次調査を Claude Code に任せたら、優先度判断が楽になった
   date: '2026-06-07'
+- url: https://zenn.dev/rudy_candy/articles/claude-code-session-end
+  title: Claude Code、セッション終了時にやること6つ — 自分で書かずにClaudeへ任せる
+  date: '2026-06-08'
 ---
 
 
@@ -196,7 +199,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-06-08
+
+### Claude Code、セッション終了時にやること6つ — 自分で書かずにClaudeへ任せる
+
+Claude Codeのセッション終了時にやるべき6つの作業（変更確認、git commit、CLAUDE.md更新、判断理由の記録、TODO作成、文脈整理）を解説。重要なのは「自分で書かずClaudeに任せる」こと。Claudeが書いた内容はClaude自身が次回読みやすく、人間は確認するだけでよい。判断理由やTODOは会話から自動抽出でき、次回の立ち上がりが速くなる。
+
+- **ソース**: [Zenn claude](https://zenn.dev/rudy_candy/articles/claude-code-session-end)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

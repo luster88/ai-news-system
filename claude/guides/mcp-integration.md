@@ -4,11 +4,12 @@ category: guides
 subcategory: mcp-integration
 tags:
 - claude-code
+- cowork
 - mcp
 - performance
 - setup
 date: '2026-04-04'
-updated: '2026-04-19'
+updated: '2026-06-08'
 sources:
 - url: https://qiita.com/lovanaut/items/15fb6f0703f114000b78
   title: ChatGPTやClaudeからFORMLOVAを触り始める最短ガイド
@@ -19,11 +20,27 @@ sources:
 - url: https://zenn.dev/tsukulink/articles/ffb7a8ab9899e1
   title: BugSnagに通知されたエラーの調査をAIに任せる ─ Claude Code × SmartBear MCPの活用例
   date: '2026-04-19'
+- url: https://qiita.com/k_ryu/items/ff8d5c13047f8ea342c8
+  title: Claude CodeのSkillsとMCPでBacklogへのタスク起票を効率化した
+  date: '2026-06-08'
 ---
 
 
 
+
 # Mcp Integration
+
+---
+
+## 2026-06-08
+
+### Claude CodeのSkillsとMCPでBacklogへのタスク起票を効率化した
+
+Backlogでのタスク起票を効率化するため、Claude CodeのSkillsとMCPを活用した事例。Skillsに調査観点・起票条件・テンプレートを定義し、MCP経由でBacklog APIと連携。未確定事項がある場合は質問を返し、内容を詰めてから起票する仕組みを構築。複数タスクの同時処理が可能になり、起票の粒度も統一できた。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/k_ryu/items/ff8d5c13047f8ea342c8)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, cowork
 
 ---
 

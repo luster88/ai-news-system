@@ -12,7 +12,7 @@ tags:
 - pricing
 - sonnet
 date: '2026-03-25'
-updated: '2026-06-03'
+updated: '2026-06-08'
 sources:
 - url: https://qiita.com/himajisan/items/1e8f67782335b4517139
   title: AIを扱き使ったらすぐに使用制限ですと言う
@@ -46,6 +46,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1tw32al/anthropic_can_we_please_have_claude_finish_a_task
   title: Anthropic can we please have Claude finish a task?
   date: '2026-06-03'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1tzwrxs/claudes_new_usage_limits_are_insane
+  title: Claude's new usage limits are insane.
+  date: '2026-06-08'
 ---
 
 
@@ -53,7 +56,20 @@ sources:
 
 
 
+
 # Usage Limits
+
+---
+
+## 2026-06-08
+
+### Claude's new usage limits are insane.
+
+Claude の新しい使用制限に関するユーザーの不満。5x プラン ($100) で Opus 4.8 + 1M コンテキスト + UltraCode を使用したところ、1つのプロンプトで5時間制限の21%を12分で消費。10-15の並列エージェントが同時に1Mコンテキストを読み込むため、トークン消費が異常に多い。効率性は期待外れで、20分待機したが機能も正常動作せず。不必要なエージェント起動は制限消費を促すための戦略ではないかとの指摘。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1tzwrxs/claudes_new_usage_limits_are_insane)
+- **重要度**: 7/10
+- **タグ**: opus, pricing, claude-code
 
 ---
 
