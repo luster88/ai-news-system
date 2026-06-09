@@ -6,11 +6,12 @@ tags:
 - claude-code
 - cowork
 - mcp
+- performance
 - prompt
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-05-28'
+updated: '2026-06-09'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -64,6 +65,12 @@ sources:
 - url: https://qiita.com/kazun_0909/items/a6c530ec1f71326153cc
   title: コードを1行も書かずに確定申告の経理を半自動化した（Claude Code + MCP）
   date: '2026-05-28'
+- url: https://zenn.dev/tsukulink/articles/4057a83ea2217b
+  title: 手動修正やunsafeなルールにも対応する、Claude Code Routinesを活用したRuboCop TODO解消の仕組み
+  date: '2026-06-09'
+- url: https://qiita.com/mgre_tanabe/items/d43b26d994d3f430f926
+  title: Claude Code ActionsによるCrashlyticsクラッシュ調査の自動化：コストとリードタイムの実績
+  date: '2026-06-09'
 ---
 
 
@@ -81,7 +88,30 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-06-09
+
+### 手動修正やunsafeなルールにも対応する、Claude Code Routinesを活用したRuboCop TODO解消の仕組み
+
+ツクリンク株式会社が、RuboCop TODOの解消を効率化するためにClaudeを活用した自動化ルーティンを構築した事例を紹介。従来のRuboCop Challengerでは対応困難だったunsafeルールや手動修正が必要なケース、テストのデバッグ、PR説明文の自動生成までをClaudeに任せることで、エンジニアの認知負荷を大幅に削減。コード修正からRSpecの検証、週次レポート生成までを自律的に行う半自動化の仕組みを実現している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/tsukulink/articles/4057a83ea2217b)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, cowork
+
+---
+
+### Claude Code ActionsによるCrashlyticsクラッシュ調査の自動化：コストとリードタイムの実績
+
+Claude Code ActionsでCrashlyticsのクラッシュ調査を自動化した実運用の定量的な結果報告。1回の調査コストは3-4ドル、リードタイムは約4分で、従来1-2営業日かかっていた初動調査が無人化された。プロンプトキャッシュが多ターン調査でも入力コストを抑える重要な要因となっている。100以上のテナントアプリで運用中の実績データ。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/mgre_tanabe/items/d43b26d994d3f430f926)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, performance
 
 ---
 

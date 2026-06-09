@@ -9,7 +9,7 @@ tags:
 - release
 - 新機能
 date: '2026-04-08'
-updated: '2026-05-20'
+updated: '2026-06-09'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -21,11 +21,41 @@ sources:
 - url: https://qiita.com/kai_kou/items/16b4aa9fe3f235d66205
   title: Claude Managed Agents入門 — セルフホストサンドボックスとMCPトンネル活用ガイド
   date: '2026-05-20'
+- url: https://zenn.dev/akasara/articles/ce6287e39a9a52
+  title: Anthropic、Opus超えの新ティア「Claude Fable 5」を一般公開 — Mythos級モデルがついに誰でも使える
+  date: '2026-06-09'
+- url: https://the-decoder.com/anthropic-releases-claude-fable-5-and-mythos-5-with-major-gains-in-coding-and-science
+  title: Anthropic releases Claude Fable 5 and Mythos 5 with major gains in coding
+    and science
+  date: '2026-06-09'
 ---
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-06-09
+
+### Anthropic、Opus超えの新ティア「Claude Fable 5」を一般公開 — Mythos級モデルがついに誰でも使える
+
+Anthropicが第5世代の新ティア「Claude Fable 5」を一般公開。Opusを超える「Mythosクラス」の初の一般提供モデルで、コーディング・推論・エージェント作業でSOTAを達成。6月22日まで追加料金なしで利用可能だが、23日以降はクレジット制に移行予定。安全分類器により全セッションの5%未満でセーフガードが作動する設計。
+
+- **ソース**: [Zenn claude](https://zenn.dev/akasara/articles/ce6287e39a9a52)
+- **重要度**: 10/10
+- **タグ**: release, 新機能, performance
+
+---
+
+### Anthropic releases Claude Fable 5 and Mythos 5 with major gains in coding and science
+
+Anthropic が第5世代の Claude Fable 5 と Claude Mythos 5 をリリース。Fable 5 は一般利用向けで、コーディング、画像処理、複雑なデータ分析のベンチマークでトップスコアを記録。Mythos 5 は創薬やゲノム研究に特化し、選定パートナーのみに提供。価格は100万入力トークンあたり10ドルで、Claude Opus 4.8 の約2倍のコストとなる。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-releases-claude-fable-5-and-mythos-5-with-major-gains-in-coding-and-science)
+- **重要度**: 10/10
+- **タグ**: release, 新機能, performance
 
 ---
 

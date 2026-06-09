@@ -14,7 +14,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-06-08'
+updated: '2026-06-09'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -160,6 +160,9 @@ sources:
 - url: https://zenn.dev/rudy_candy/articles/claude-code-session-end
   title: Claude Code、セッション終了時にやること6つ — 自分で書かずにClaudeへ任せる
   date: '2026-06-08'
+- url: https://qiita.com/sescore/items/c23dd0264cb1b26158f1
+  title: OpenClawで「AI経営OS」を構築してみた：9体のエージェントの設定方法と経営効果【2026年】
+  date: '2026-06-09'
 ---
 
 
@@ -200,7 +203,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-06-09
+
+### OpenClawで「AI経営OS」を構築してみた：9体のエージェントの設定方法と経営効果【2026年】
+
+Claude Codeをベースに、CEO・CFO・CMO等9体のAIエージェントによる「AI経営OS」OpenClawを構築した実践記事。各エージェントの役割定義、スキル設定、ナレッジ管理の実装方法を詳述。フリーランス独立準備における財務管理・契約書作成の自動化や、意思決定速度の向上などの実務効果も報告。
+
+- **ソース**: [Qiita claude](https://qiita.com/sescore/items/c23dd0264cb1b26158f1)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, cowork
 
 ---
 

@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-07'
-updated: '2026-05-27'
+updated: '2026-06-09'
 sources:
 - url: https://qiita.com/moha0918_/items/b3011c218210ab2695b7
   title: プラグイン作成の3つの方法、結局どれを選ぶべき？
@@ -27,13 +27,29 @@ sources:
 - url: https://zenn.dev/gudezou/articles/d3b954f51bca04
   title: Claude Code の slash command と custom skill は何が違うのか
   date: '2026-05-27'
+- url: https://qiita.com/YujiNaramoto/items/27516f3c3126875a8557
+  title: なぜ SKILL.md を「仕様書から書く」より「Claude に書かせる」ほうが正しいのか
+  date: '2026-06-09'
 ---
 
 
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-06-09
+
+### なぜ SKILL.md を「仕様書から書く」より「Claude に書かせる」ほうが正しいのか
+
+Claude Code の SKILL.md は仕様書を読んでから書くより、実際の作業を Claude に書かせてから調整する方が効率的。name と description の最小構成で十分動作し、起動精度は description の調整で改善できる。具体的な問題に対処する方が何を直すべきか明確になる。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/YujiNaramoto/items/27516f3c3126875a8557)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

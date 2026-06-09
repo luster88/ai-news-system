@@ -4,10 +4,11 @@ category: releases
 subcategory: new-model-announcement
 tags:
 - claude-api
+- pricing
 - release
 - 新機能
 date: '2026-03-27'
-updated: '2026-04-07'
+updated: '2026-06-09'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s4ucsu/exclusive_anthropic_acknowledges_testing_new_ai
   title: 'Exclusive: Anthropic acknowledges testing new AI model representing ‘step
@@ -17,10 +18,26 @@ sources:
   title: Anthropic's new Mythos Preview model is a "step change" in model capability,
     but it won't be available to general public
   date: '2026-04-07'
+- url: https://ai-heartland.com/explain/claude-fable-5-guide
+  title: Claude Fable 5とMythos 5入門｜公式ベンチマーク・価格・使い分けを解説
+  date: '2026-06-09'
 ---
 
 
+
 # New Model Announcement
+
+---
+
+## 2026-06-09
+
+### Claude Fable 5とMythos 5入門｜公式ベンチマーク・価格・使い分けを解説
+
+AnthropicがClaude Fable 5とMythos 5を2026年6月9日に公開。Opus・Sonnet・Haikuの上位に位置する「Mythos級」モデルで、Fable 5は安全分類器を組み込んだ一般公開版、Mythos 5は最大性能の限定版。SWE-Bench Pro 80.3%など多くのベンチマークで競合を上回り、価格は入力$10/出力$50とOpus 4.8の2倍。長時間の自律作業と高度な推論に最適化されている。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/claude-fable-5-guide)
+- **重要度**: 10/10
+- **タグ**: release, 新機能, pricing
 
 ---
 
