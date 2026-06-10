@@ -7,11 +7,12 @@ tags:
 - claude-code
 - mcp
 - opus
+- performance
 - release
 - windows
 - 新機能
 date: '2026-04-19'
-updated: '2026-06-07'
+updated: '2026-06-10'
 sources:
 - url: https://qiita.com/tai0921/items/a6323df5024b1d3a9b27
   title: Claude CodeのRoutines機能で「寝ている間にPRが自動レビューされる」時代へ
@@ -43,6 +44,12 @@ sources:
 - url: https://qiita.com/moha0918_/items/82494952b384c4e2c208
   title: Claude Code v2.1.168 リリース｜毎日Changelog解説
   date: '2026-06-07'
+- url: https://qiita.com/moha0918_/items/90ccc7a4c0595a51c1cf
+  title: Claude Code v2.1.172 リリース｜毎日Changelog解説
+  date: '2026-06-10'
+- url: https://zenn.dev/ty2/articles/tweet-bcherny-2060390853835726946
+  title: Claude Codeのダイナミックワークフローで大規模移行が劇的に加速
+  date: '2026-06-10'
 ---
 
 
@@ -51,7 +58,40 @@ sources:
 
 
 
+
 # Claude Code Routines
+
+---
+
+## 2026-06-10
+
+### Claude Code v2.1.172 リリース｜毎日Changelog解説
+
+Claude Code v2.1.172 がリリースされ、サブエージェントが最大5階層まで再帰的にサブエージェントを起動できる機能が追加された。また、1Mコンテキストでクレジット不足時にセッションが固まる重大な不具合や、WebFetchのワイルドカードドメイン許可が機能していなかったセキュリティ関連のバグが修正された。その他、多数のバグフィックスとパフォーマンス改善が含まれる。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/90ccc7a4c0595a51c1cf)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
+
+---
+
+### Claude Codeのダイナミックワークフローで大規模移行が劇的に加速
+
+Claude Codeに「ダイナミックワークフロー」機能が追加され、大規模タスクを並列処理可能に。Salesforceの導入事例では231日分の作業が13日で完了し、スピードと品質の両立を実現。プロンプトに「workflow」を含めるだけで起動でき、技術的負債の解消が劇的に加速する。
+
+- **ソース**: [Zenn claude](https://zenn.dev/ty2/articles/tweet-bcherny-2060390853835726946)
+- **重要度**: 8/10
+- **タグ**: claude-code, 新機能, performance
+
+---
+
+### Claude Code v2.1.172 リリース｜毎日Changelog解説
+
+Claude Code v2.1.172 では、サブエージェントが最大5階層まで再帰的にサブエージェントを起動できる機能が追加されました。また、WebFetchのワイルドカードドメイン許可が正常に機能するようになり、1Mコンテキスト使用時にセッションが固まる不具合が修正されました。その他、Bedrockのリージョン読み込み改善、プラグイン検索バー追加、長い会話時の負荷軽減などの改善が含まれています。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/90ccc7a4c0595a51c1cf)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

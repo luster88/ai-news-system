@@ -3,13 +3,14 @@ title: Security Research
 category: ecosystem
 subcategory: security-research
 tags:
+- claude-api
 - cowork
 - opus
 - performance
 - sonnet
 - 新機能
 date: '2026-03-29'
-updated: '2026-05-22'
+updated: '2026-06-10'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s739lc/nicolas_carlini_672k_citations_on_google_scholar
   title: Nicolas Carlini (67.2k citations on Google Scholar) says Claude is a better
@@ -22,11 +23,28 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1tkvqy1/anthropic_claims_10000_critical_vulns_found_in
   title: Anthropic claims 10,000+ critical vulns found in one month
   date: '2026-05-22'
+- url: https://the-decoder.com/anthropic-study-shows-ai-needs-hours-not-weeks-to-build-exploits-from-security-patches
+  title: Anthropic study shows AI needs hours, not weeks, to build exploits from security
+    patches
+  date: '2026-06-10'
 ---
 
 
 
+
 # Security Research
+
+---
+
+## 2026-06-10
+
+### Anthropic study shows AI needs hours, not weeks, to build exploits from security patches
+
+Anthropicのセキュリティ研究チームが、大規模言語モデル（LLM）がセキュリティパッチから脆弱性を逆解析し、エクスプロイトを構築する速度を測定。従来は数週間かかっていたプロセスが、ClaudeのMythos Previewモデルを使えば数時間で完了することが判明。FirefoxとWindowsの既知の脆弱性を対象にした実験で、18件中14件のエクスプロイトに成功。セキュリティパッチ公開から攻撃までの猶予期間が大幅に短縮され、従来のパッチ戦略の見直しが必要になる可能性を示唆。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-study-shows-ai-needs-hours-not-weeks-to-build-exploits-from-security-patches)
+- **重要度**: 8/10
+- **タグ**: claude-api, performance, 新機能
 
 ---
 

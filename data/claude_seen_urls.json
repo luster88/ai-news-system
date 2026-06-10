@@ -2032,14 +2032,38 @@
     "https://the-decoder.com/openai-says-going-public-is-a-complicated-set-of-tradeoffs-and-is-unsure-about-the-timing": "2026-06-09",
     "https://techcrunch.com/2026/06/09/anthropics-fable-5-can-make-weirdly-fun-video-games-with-the-click-of-a-button": "2026-06-09",
     "https://techcrunch.com/2026/06/09/anthropics-claude-fable-5-is-a-version-of-mythos-the-public-can-access-today": "2026-06-09",
-    "https://techcrunch.com/2026/06/09/its-not-faang-anymore-its-mangos": "2026-06-09"
+    "https://techcrunch.com/2026/06/09/its-not-faang-anymore-its-mangos": "2026-06-09",
+    "https://www.reddit.com/r/ClaudeAI/comments/1u29efu/new_for_apple_developers_foundation_models": "2026-06-10",
+    "https://www.reddit.com/r/ClaudeAI/comments/1u2ak40/microsoft_is_restricting_employees_from_using": "2026-06-10",
+    "https://www.reddit.com/r/ClaudeAI/comments/1u24yhn/just_pointing_out_the_obvious": "2026-06-10",
+    "https://www.reddit.com/r/ClaudeAI/comments/1u1zv25/the_claude_code_active_attack_didnt_stop_294842": "2026-06-10",
+    "https://www.reddit.com/r/ClaudeAI/comments/1u1us8y/using_fable_to_get_me_a_wife_in_6_months_ama": "2026-06-10",
+    "https://www.reddit.com/r/ClaudeAI/comments/1u2bogf/i_make_claude_talk_like_rocky_from_project_hail": "2026-06-10",
+    "https://www.reddit.com/r/ClaudeAI/comments/1u1zc62/i_mean_is_it_a_joke": "2026-06-10",
+    "https://www.reddit.com/r/ClaudeAI/comments/1u2cows/fable_for_frontend_ui_is_crazy": "2026-06-10",
+    "https://www.reddit.com/r/ClaudeAI/comments/1u28b50/i_just_open_sourced_my_is_this_slop_simple_test": "2026-06-10",
+    "https://www.reddit.com/r/ClaudeAI/comments/1u2fxzv/i_think_all_you_complainers_are_being_ridiculous": "2026-06-10",
+    "https://qiita.com/hisashiyamaguchi/items/47607c6657028700fe57": "2026-06-10",
+    "https://qiita.com/moha0918_/items/90ccc7a4c0595a51c1cf": "2026-06-10",
+    "https://qiita.com/yo_arai/items/30ae4581b8a9b3206b15": "2026-06-10",
+    "https://zenn.dev/tonrakun/articles/f1d57df4c3e2e8": "2026-06-10",
+    "https://zenn.dev/tonrakun/articles/2d0466c52a6ec4": "2026-06-10",
+    "https://zenn.dev/yamadatt/articles/20260610-fable5-lp": "2026-06-10",
+    "https://zenn.dev/ty2/articles/tweet-bcherny-2060390853835726946": "2026-06-10",
+    "https://zenn.dev/coding_shacho/articles/04087a02b3a436": "2026-06-10",
+    "https://zenn.dev/yuzunatsuki/articles/47ec894f021602": "2026-06-10",
+    "https://qiita.com/jimiaki7/items/606da73f4ea0045ee696": "2026-06-10",
+    "https://the-decoder.com/openais-ipo-slips-as-altman-tells-staff-to-expect-a-public-offering-within-the-next-year": "2026-06-10",
+    "https://the-decoder.com/anthropic-study-shows-ai-needs-hours-not-weeks-to-build-exploits-from-security-patches": "2026-06-10",
+    "https://the-decoder.com/claude-fable-5-the-first-mythos-model-is-powerful-expensive-and-heavily-filtered": "2026-06-10",
+    "https://the-decoder.com/germanys-national-security-council-greenights-an-ai-safety-institute-modeled-after-the-uks-aisi": "2026-06-10"
   },
   "source_penalties": {
-    "Anthropic News": "2026-06-10",
+    "Anthropic News": "2026-06-11",
     "Reddit r/ClaudeAI": "2026-04-03",
     "Zenn claude": "2026-03-25",
-    "TechCrunch Claude": "2026-05-30",
+    "TechCrunch Claude": "2026-06-11",
     "The Decoder Claude": "2026-05-10",
-    "AI Heartland": "2026-06-07"
+    "AI Heartland": "2026-06-11"
   }
 }

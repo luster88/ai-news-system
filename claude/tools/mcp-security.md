@@ -8,7 +8,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-28'
-updated: '2026-05-31'
+updated: '2026-06-10'
 sources:
 - url: https://zenn.dev/masuda_masuo/articles/2026-05-28-mcp-launcher
   title: MCPのクレデンシャルをconfigから追い出す：OSキーストアで一元管理するmcp-launcher
@@ -19,10 +19,26 @@ sources:
 - url: https://zenn.dev/masuda_masuo/articles/2026-05-31-mcp-launcher-phase2
   title: mcp-launcher Phase 2：PATを短命トークンに置き換える
   date: '2026-05-31'
+- url: https://qiita.com/jimiaki7/items/606da73f4ea0045ee696
+  title: Claude CodeにMCPサーバーを繋ぐ前に、1コマンドで安全診断する「Aster Guard MCP」を作った
+  date: '2026-06-10'
 ---
 
 
+
 # Mcp Security
+
+---
+
+## 2026-06-10
+
+### Claude CodeにMCPサーバーを繋ぐ前に、1コマンドで安全診断する「Aster Guard MCP」を作った
+
+Claude CodeのMCP設定を安全にスキャンする「Aster Guard MCP」がリリースされた。Tool Poisoning、秘密情報の直書き、危険なコマンドなど12種類の脅威を検出し、完全ローカル動作で外部API呼び出しなしの静的解析を行う。Claude Code自身にMCP設定の安全性を問い合わせられる6つの読み取り専用ツールも提供され、CI組み込みも可能。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/jimiaki7/items/606da73f4ea0045ee696)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code, setup
 
 ---
 

@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-06-02'
+updated: '2026-06-10'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -69,6 +69,9 @@ sources:
 - url: https://zenn.dev/redwing/articles/d5d428542ae002
   title: AIに頼んだら「それ、計算できません」と言われた話——MCPで解決するAIの苦手な処理
   date: '2026-06-02'
+- url: https://zenn.dev/tonrakun/articles/f1d57df4c3e2e8
+  title: I built a full 3D Rust game engine in one session with Claude Fable 5
+  date: '2026-06-10'
 ---
 
 
@@ -87,7 +90,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-06-10
+
+### I built a full 3D Rust game engine in one session with Claude Fable 5
+
+Claude Fable 5（2026年6月9日リリース）を使って1セッションでRust製3D ゲームエンジンを構築した事例。Fable 5はコーディング能力が高いが、トークン価格がOpus 4.8の2倍（$10/$50/百万トークン）のため、コンテキスト消費が速い。自作のT0K3N-MCPサーバーを使うことでトークン消費を最大87%削減し、実質的なコンテキストウィンドウを4.5〜8倍に拡大できた。
+
+- **ソース**: [Zenn claude](https://zenn.dev/tonrakun/articles/f1d57df4c3e2e8)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, performance
 
 ---
 

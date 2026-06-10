@@ -7,7 +7,7 @@ tags:
 - release
 - 新機能
 date: '2026-06-09'
-updated: '2026-06-09'
+updated: '2026-06-10'
 sources:
 - url: https://qiita.com/travelclass0606/items/c2365bb0099007f24d0a
   title: '# 【5分でわかる】Claude Fable 5とは何か？新ティア「Mythos」の要点まとめ'
@@ -15,9 +15,26 @@ sources:
 - url: https://qiita.com/travelclass0606/items/e9aeb77d63704b2f86ef
   title: Claude Fable 5徹底解説：Anthropicの新ティア「Mythosクラス」初の一般公開モデルとは何か
   date: '2026-06-09'
+- url: https://the-decoder.com/claude-fable-5-the-first-mythos-model-is-powerful-expensive-and-heavily-filtered
+  title: 'Claude Fable 5: The first Mythos model is powerful, expensive, and heavily
+    filtered'
+  date: '2026-06-10'
 ---
 
+
 # Claude Fable Mythos
+
+---
+
+## 2026-06-10
+
+### Claude Fable 5: The first Mythos model is powerful, expensive, and heavily filtered
+
+Anthropic が Claude Fable 5 を発表。Mythos クラスの初の公開モデルで、ほぼ全てのベンチマークでトップスコアを記録。コーディング性能が大幅に向上した一方、厳格な安全フィルター、高額な料金設定、データ保持ポリシーに批判が集まっている。Mythos は単に最大・最高性能モデルを指す命名で、特別なアーキテクチャではないと関係者が証言。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/claude-fable-5-the-first-mythos-model-is-powerful-expensive-and-heavily-filtered)
+- **重要度**: 9/10
+- **タグ**: 新機能, release, pricing
 
 ---
 
