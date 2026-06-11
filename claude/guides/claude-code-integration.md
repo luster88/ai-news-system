@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-02'
-updated: '2026-05-19'
+updated: '2026-06-11'
 sources:
 - url: https://zenn.dev/caphtech/articles/feed-curator-ai-rss-with-claude-code
   title: Claude CodeでAI RSSリーダーを作ったら、その日にInoreaderを解約した
@@ -24,12 +24,28 @@ sources:
 - url: https://qiita.com/daizou703/items/3e47d8b7ecc0bcf60eb1
   title: Claude Code × Microsoft Fabric (3) － Power BI レポートを AI に作らせる：.pbip を使ったビジュアルページの自動生成
   date: '2026-05-19'
+- url: https://qiita.com/sescore/items/3bebfa78a916ca44316f
+  title: OpenClaw×Claude Code連携で変わる開発体験——実践コマンドと具体ユースケース完全解説【2026年】
+  date: '2026-06-11'
 ---
 
 
 
 
+
 # Claude Code Integration
+
+---
+
+## 2026-06-11
+
+### OpenClaw×Claude Code連携で変わる開発体験——実践コマンドと具体ユースケース完全解説【2026年】
+
+OpenClawとClaude Codeを組み合わせた開発フローを解説。OpenClawが「思考・記憶・指示」を担当し、Claude Codeが「開発・実行」を担当する役割分担により、セッションをまたいだ文脈保持が可能になる。実践コマンド、単価相場調査、スキルアップ戦略立案などの具体的ユースケースを紹介し、SESエンジニアのキャリア形成にも言及している。
+
+- **ソース**: [Qiita claude](https://qiita.com/sescore/items/3bebfa78a916ca44316f)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, setup
 
 ---
 

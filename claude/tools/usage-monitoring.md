@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-24'
-updated: '2026-05-24'
+updated: '2026-06-11'
 sources:
 - url: https://zenn.dev/ouchan_ip/articles/aimo-ai-usage-monitor
   title: Claude / Codex / ZAI / Ollama の使用量を一画面でまとめて見る「aimo」を作った
@@ -20,11 +20,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1tmo1sz/fav_desk_gadget_claude_code_usage_display
   title: 'Fav Desk Gadget: Claude Code Usage Display, codeMeter'
   date: '2026-05-24'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1u324g0/turned_this_lamp_into_a_claude_usage_meter_and_cc
+  title: Turned this lamp into a Claude usage meter and CC status indicator
+  date: '2026-06-11'
 ---
 
 
 
+
 # Usage Monitoring
+
+---
+
+## 2026-06-11
+
+### Turned this lamp into a Claude usage meter and CC status indicator
+
+Reddit ユーザーが Claude の使用状況とステータスをリアルタイムで可視化する物理デバイスを制作。Bluetooth スマートランプを利用し、Claude Code の動作状態（作業中は青、入力待ちはピンク、アイドルは白）と 5 時間の使用制限の残量をプログレスバーで表示する。Python スクリプトで実装され、CLI・IDE プラグイン・デスクトップアプリに対応。GitHub でオープンソース公開されている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1u324g0/turned_this_lamp_into_a_claude_usage_meter_and_cc)
+- **重要度**: 5/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-06-02'
+updated: '2026-06-11'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -52,6 +52,9 @@ sources:
 - url: https://zenn.dev/shino_i/articles/20c49c73152956
   title: Claude Code の Skill スコープとコンテキスト設計を考える
   date: '2026-06-02'
+- url: https://zenn.dev/giana12th/articles/aea54291a56bdf
+  title: Claude Code の過去会話を読んでブログを書くスキルを Claude Code で作った話
+  date: '2026-06-11'
 ---
 
 
@@ -65,7 +68,20 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-06-11
+
+### Claude Code の過去会話を読んでブログを書くスキルを Claude Code で作った話
+
+Claude Code の過去セッション会話履歴を自動検索・整形してブログ執筆に活用する `/blog-dev` スキルの開発事例。~/.claude/history.jsonl と ~/.claude/projects/ 配下のセッションデータを収集し、サブエージェント `history-summarizer` で処理してコンテキストに注入する仕組み。dynamic context injection や allowed-tools による権限制御、Git Bash 実行環境など実装の技術的工夫が詳述されている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/giana12th/articles/aea54291a56bdf)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

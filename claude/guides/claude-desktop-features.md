@@ -5,16 +5,33 @@ subcategory: claude-desktop-features
 tags:
 - claude-code
 - cowork
+- mcp
 - setup
 date: '2026-06-05'
-updated: '2026-06-05'
+updated: '2026-06-11'
 sources:
 - url: https://qiita.com/yurubito/items/a40692f9058683a61e28
   title: 今更だけどClaudeの3機能の使い分けまとめてみた。
   date: '2026-06-05'
+- url: https://ai-heartland.com/explain/claude-desktop-guide
+  title: Claude Desktop 使い方入門｜MCP接続で広がるデスクトップAIの可能性とローカル連携
+  date: '2026-06-11'
 ---
 
+
 # Claude Desktop Features
+
+---
+
+## 2026-06-11
+
+### Claude Desktop 使い方入門｜MCP接続で広がるデスクトップAIの可能性とローカル連携
+
+Claude Desktopの使い方を解説する入門記事。Mac・Windowsへのインストール方法、アカウント連携、MCP接続の手順を網羅的に説明している。Web版との最大の違いとして、ローカルMCPサーバー接続によりPCのファイルやアプリを操作できる点を強調。config編集とDesktop Extensions（.mcpb）による2つの導入方法、安全設計としてツール実行前の承認フローを解説。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/claude-desktop-guide)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, setup
 
 ---
 

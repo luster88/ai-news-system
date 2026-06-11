@@ -7,9 +7,10 @@ tags:
 - haiku
 - opus
 - performance
+- pricing
 - sonnet
 date: '2026-03-24'
-updated: '2026-05-17'
+updated: '2026-06-11'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -21,11 +22,27 @@ sources:
   title: Four AI models ran radio stations for six months and the results ranged from
     competent to unhinged
   date: '2026-05-17'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1u35cgu/differences_between_claude_opus_48_and_claude
+  title: Differences Between Claude Opus 4.8 and Claude Fable 5 on MineBench
+  date: '2026-06-11'
 ---
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-06-11
+
+### Differences Between Claude Opus 4.8 and Claude Fable 5 on MineBench
+
+Reddit ユーザーが MineBench で Claude Opus 4.8 と Claude Fable 5 を比較。Fable 5 は推論時間が平均 18 分 04 秒で Opus 4.8 より約 27% 高速だが、コストは API 価格が 2 倍にもかかわらず約 30% 増に抑えられた。品質面では GPT 5.5 Pro との差が公式ベンチマークほどではないものの、細部への注意力が高く、アーケードマシンビルドで正確な PacMan 画面を生成した点が評価された。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1u35cgu/differences_between_claude_opus_48_and_claude)
+- **重要度**: 4/10
+- **タグ**: opus, performance, pricing
 
 ---
 

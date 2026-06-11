@@ -7,7 +7,7 @@ tags:
 - release
 - 新機能
 date: '2026-06-09'
-updated: '2026-06-10'
+updated: '2026-06-11'
 sources:
 - url: https://qiita.com/travelclass0606/items/c2365bb0099007f24d0a
   title: '# 【5分でわかる】Claude Fable 5とは何か？新ティア「Mythos」の要点まとめ'
@@ -19,10 +19,26 @@ sources:
   title: 'Claude Fable 5: The first Mythos model is powerful, expensive, and heavily
     filtered'
   date: '2026-06-10'
+- url: https://zenn.dev/aidecodelabjp/articles/claude-fable-5-release-2026
+  title: Claude Fable 5、6月9日リリース — 一般公開された Mythos-class モデルで実務はどう動くか
+  date: '2026-06-11'
 ---
 
 
+
 # Claude Fable Mythos
+
+---
+
+## 2026-06-11
+
+### Claude Fable 5、6月9日リリース — 一般公開された Mythos-class モデルで実務はどう動くか
+
+2026年6月9日、AnthropicがClaude Fable 5を一般公開。Mythos-classの最高位モデルが価格を半額以下にして広く提供開始。6月23日までの期間限定で、長期・複雑タスクで特に強みを発揮。同一モデルから安全装置の有無で2モード（Fable 5とMythos 5）を切り出す新しい運用パターンを採用し、高リスク領域ではOpus 4.8へフォールバックする仕組みを実装。
+
+- **ソース**: [Zenn claude](https://zenn.dev/aidecodelabjp/articles/claude-fable-5-release-2026)
+- **重要度**: 9/10
+- **タグ**: release, 新機能, pricing
 
 ---
 
