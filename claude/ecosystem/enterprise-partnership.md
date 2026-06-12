@@ -3,19 +3,38 @@ title: Enterprise Partnership
 category: ecosystem
 subcategory: enterprise-partnership
 tags:
+- claude-api
 - claude-code
+- cowork
 - opus
 - 新機能
 date: '2026-04-24'
-updated: '2026-04-24'
+updated: '2026-06-12'
 sources:
 - url: https://www.anthropic.com/news/anthropic-nec
   title: Apr 24, 2026 Announcements Anthropic and NEC collaborate to build Japan’s
     largest AI engineering workforce
   date: '2026-04-24'
+- url: https://www.anthropic.com/news/tcs-anthropic-partnership
+  title: Jun 12, 2026 Announcements TCS and Anthropic partner to bring Claude to regulated
+    industries
+  date: '2026-06-12'
 ---
 
+
 # Enterprise Partnership
+
+---
+
+## 2026-06-12
+
+### Jun 12, 2026 Announcements TCS and Anthropic partner to bring Claude to regulated industries
+
+Anthropic が世界最大級のテクノロジーサービス企業 TCS とパートナーシップを締結。TCS は自社の5万人の従業員に Claude を導入し、金融・ヘルスケア・公共セクターなど規制産業向けの Claude ベース製品を構築。既に英国の生命保険・年金事業 Diligenta での顧客体験向上や、銀行・金融サービスでの Claude Code 活用が進行中。
+
+- **ソース**: [Anthropic News](https://www.anthropic.com/news/tcs-anthropic-partnership)
+- **重要度**: 8/10
+- **タグ**: claude-api, claude-code, cowork
 
 ---
 

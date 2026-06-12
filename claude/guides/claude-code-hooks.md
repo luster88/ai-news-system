@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-23'
-updated: '2026-06-04'
+updated: '2026-06-12'
 sources:
 - url: https://qiita.com/pro-tein/items/49e5dbec705c3497dd51
   title: 【Claude Code】Hooks機能でデスクトップ通知を設定してみた
@@ -24,12 +24,28 @@ sources:
 - url: https://qiita.com/satoshi_061/items/c3a20d437a55e59068c4
   title: Claude Code hooks 活用まとめ — 安全性・ログ・作業時間を全自動化する
   date: '2026-06-04'
+- url: https://zenn.dev/michan74/articles/8906dc0e93eddc
+  title: Claude Code hooks 使ってみた【ネコ通知】₍ᐞ•༝•ᐞ₎
+  date: '2026-06-12'
 ---
 
 
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-06-12
+
+### Claude Code hooks 使ってみた【ネコ通知】₍ᐞ•༝•ᐞ₎
+
+Claude Code の hooks 機能を実際に試した記事。セッション開始やツール実行などのライフサイクルポイントで、通知音やテスト自動実行などのカスタムコマンドを実行できる。.claude/settings.json に記述するだけで、Notification hook や PreToolUse hook、PostToolUse hook を使い分けて、作業終了時やファイル変更時に異なる通知音を出したり、テストファイル編集時に自動テストを実行する設定例を紹介。
+
+- **ソース**: [Zenn claude](https://zenn.dev/michan74/articles/8906dc0e93eddc)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

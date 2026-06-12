@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-06-08'
+updated: '2026-06-12'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -25,12 +25,28 @@ sources:
 - url: https://zenn.dev/nora_saito/articles/46e2d3fdefdf54
   title: Next.js × Claude APIで「読書メモ→X投稿」ツールを作って公開した（zodのバグに最後ハマった）
   date: '2026-06-08'
+- url: https://zenn.dev/osakayakyu/articles/2901e4599ff819
+  title: Claudeに「ドキュメントを渡す」とRAGは何が違うのか
+  date: '2026-06-12'
 ---
 
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-06-12
+
+### Claudeに「ドキュメントを渡す」とRAGは何が違うのか
+
+Claude APIのdocumentブロックによるドキュメント受け渡しとRAGの違いを解説。documentブロックは「渡された文書を読んで引用する」機能であり、RAGは「大量文書から関連箇所を検索して取り出す」前段処理。実運用では両者を併用し、RAGで絞り込んだチャンクをdocumentブロックで渡して引用機能を活かすのが王道。引用機能はコスト削減と信頼性向上のメリットがあるが、構造化出力とは併用不可。
+
+- **ソース**: [Zenn claude](https://zenn.dev/osakayakyu/articles/2901e4599ff819)
+- **重要度**: 6/10
+- **タグ**: claude-api, prompt, cowork
 
 ---
 

@@ -2087,7 +2087,39 @@
     "https://the-decoder.com/claude-fable-5-anthropic-admits-wrong-tradeoff-after-invisibly-throttling-rival-ai-researchers": "2026-06-11",
     "https://techcrunch.com/2026/06/10/anthropics-dario-amodei-has-just-one-direct-report": "2026-06-11",
     "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable": "2026-06-11",
-    "https://techcrunch.com/2026/06/09/how-justin-ernest-invested-nearly-500m-into-hot-startups-without-a-traditional-vc-fund": "2026-06-11"
+    "https://techcrunch.com/2026/06/09/how-justin-ernest-invested-nearly-500m-into-hot-startups-without-a-traditional-vc-fund": "2026-06-11",
+    "https://www.anthropic.com/news/claude-fable-5-mythos-5": "2026-06-12",
+    "https://www.anthropic.com/news/claude-corps": "2026-06-12",
+    "https://www.anthropic.com/news/anthropic-public-record": "2026-06-12",
+    "https://www.anthropic.com/news/tcs-anthropic-partnership": "2026-06-12",
+    "https://www.anthropic.com/news/dxc-anthropic-alliance": "2026-06-12",
+    "https://www.anthropic.com/news/services-track-partner-hub": "2026-06-12",
+    "https://www.anthropic.com/news/confidential-draft-s1-sec": "2026-06-12",
+    "https://www.reddit.com/r/ClaudeAI/comments/1u47yk5/musk_loses_trillionaire_status_thanks_to_fable": "2026-06-12",
+    "https://www.reddit.com/r/ClaudeAI/comments/1u3u8t7/my_favorite_thing_right_now_is_to_use_claude": "2026-06-12",
+    "https://www.reddit.com/r/ClaudeAI/comments/1u450lw/claude_gives_zero_warning_before_it_starts": "2026-06-12",
+    "https://www.reddit.com/r/ClaudeAI/comments/1u4464s/and_you_just_know_anthropics_deck_has_this_listed": "2026-06-12",
+    "https://www.reddit.com/r/ClaudeAI/comments/1u3wflg/employee_of_the_month_june_1st_june_22nd_2026_rip": "2026-06-12",
+    "https://www.reddit.com/r/ClaudeAI/comments/1u3zl82/went_through_everything_on_anthropic_academy_so": "2026-06-12",
+    "https://www.reddit.com/r/ClaudeAI/comments/1u3m6a8/i_vibe_coded_the_first_mmorpg_with_fable_5": "2026-06-12",
+    "https://www.reddit.com/r/ClaudeAI/comments/1u3r2d9/engineer_used_claude_to_build_a_coworker_stress": "2026-06-12",
+    "https://www.reddit.com/r/ClaudeAI/comments/1u45ow1/i_built_my_own_os_from_scratch_with_fable": "2026-06-12",
+    "https://qiita.com/moha0918_/items/397036a48b61dd257ef9": "2026-06-12",
+    "https://qiita.com/quotidia/items/93d15444372d79d05246": "2026-06-12",
+    "https://qiita.com/hikaru0506/items/329051c5618c984f1ca4": "2026-06-12",
+    "https://zenn.dev/michan74/articles/8906dc0e93eddc": "2026-06-12",
+    "https://zenn.dev/osakayakyu/articles/2901e4599ff819": "2026-06-12",
+    "https://zenn.dev/zittiandbuoni/articles/ad177c0d676440": "2026-06-12",
+    "https://zenn.dev/znet/articles/2026-stronger-model-as-reviewer": "2026-06-12",
+    "https://zenn.dev/nnakapa/articles/lab-25-opus48-fast-mode-qcd": "2026-06-12",
+    "https://zenn.dev/g2/articles/a178f3b651140f": "2026-06-12",
+    "https://qiita.com/yurukusa/items/cecb7d55f87df3e50f30": "2026-06-12",
+    "https://qiita.com/ruih8gta/items/1297cbf0d5115fc36c3c": "2026-06-12",
+    "https://the-decoder.com/over-half-of-americans-fear-losing-both-their-jobs-and-their-independent-thinking-to-ai-survey-finds": "2026-06-12",
+    "https://the-decoder.com/anthropics-claude-fable-5-costs-twice-as-much-for-5-7-percent-more-performance": "2026-06-12",
+    "https://the-decoder.com/the-ai-industrys-platform-trap-is-starting-to-look-a-lot-like-microsofts": "2026-06-12",
+    "https://techcrunch.com/video/spacex-anthropic-and-openais-hot-ipo-summer": "2026-06-12",
+    "https://techcrunch.com/podcast/its-hot-ipo-summer-and-the-mangos-are-ripe": "2026-06-12"
   },
   "source_penalties": {
     "Anthropic News": "2026-06-12",
@@ -2095,6 +2127,6 @@
     "Zenn claude": "2026-03-25",
     "TechCrunch Claude": "2026-06-11",
     "The Decoder Claude": "2026-05-10",
-    "AI Heartland": "2026-06-11"
+    "AI Heartland": "2026-06-13"
   }
 }

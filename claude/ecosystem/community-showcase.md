@@ -9,7 +9,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-03-29'
-updated: '2026-04-20'
+updated: '2026-06-12'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6of32/i_am_fully_addicted_to_building_dumb_little_ai
   title: I am fully addicted to building dumb little AI web apps. I love it.
@@ -20,10 +20,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1squwsy/claude_design_is_amazing_were_cooked
   title: Claude Design is Amazing! We're cooked!
   date: '2026-04-20'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1u3u8t7/my_favorite_thing_right_now_is_to_use_claude
+  title: My favorite thing right now is to use Claude Fable to mash game genres. Here's
+    Tetris as a Racing game!
+  date: '2026-06-12'
 ---
 
 
+
 # Community Showcase
+
+---
+
+## 2026-06-12
+
+### My favorite thing right now is to use Claude Fable to mash game genres. Here's Tetris as a Racing game!
+
+Reddit ユーザーが Claude を使ってゲームジャンルをマッシュアップする創作活動を紹介。具体例として、テトリスをレーシングゲーム化した作品を共有している。Claude の創造的な活用事例として、ゲーム開発やジャンル融合のアイデア生成に使えることを示している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1u3u8t7/my_favorite_thing_right_now_is_to_use_claude)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

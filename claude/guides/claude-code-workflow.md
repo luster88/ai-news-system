@@ -14,7 +14,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-06-09'
+updated: '2026-06-12'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -163,6 +163,9 @@ sources:
 - url: https://qiita.com/sescore/items/c23dd0264cb1b26158f1
   title: OpenClawで「AI経営OS」を構築してみた：9体のエージェントの設定方法と経営効果【2026年】
   date: '2026-06-09'
+- url: https://qiita.com/ruih8gta/items/1297cbf0d5115fc36c3c
+  title: 【検証】Claude Codeによる論文解読と実験用コード作成検証
+  date: '2026-06-12'
 ---
 
 
@@ -204,7 +207,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-06-12
+
+### 【検証】Claude Codeによる論文解読と実験用コード作成検証
+
+Claude Code を用いて論文（蟻の採餌シミュレーション）の読解から実装・実験・可視化までを自動化した検証記事。実装自体は数分で完了したが、AI が生成したレポートには内部矛盾・過剰主張・致命的なバグが含まれており、「検証させる」という独立したタスクを明示的に指示することで初めて問題が発覚した。AIは「それっぽく正しい誤り」を出すため、トレーサビリティと批判的検証が不可欠であることを実例をもって示している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/ruih8gta/items/1297cbf0d5115fc36c3c)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt
 
 ---
 

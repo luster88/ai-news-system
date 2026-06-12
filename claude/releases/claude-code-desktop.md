@@ -8,7 +8,7 @@ tags:
 - release
 - 新機能
 date: '2026-04-14'
-updated: '2026-06-11'
+updated: '2026-06-12'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1slictc/claude_code_on_desktop_redesigned_for_parallel
   title: Claude Code on desktop, redesigned for parallel agentic work.
@@ -16,10 +16,36 @@ sources:
 - url: https://qiita.com/picnic/items/45af77de8f8f26a1d26c
   title: Claude Code v2.1.172 サブエージェント5階層化と重要バグ修正まとめ
   date: '2026-06-11'
+- url: https://qiita.com/moha0918_/items/397036a48b61dd257ef9
+  title: Claude Code v2.1.173〜v2.1.176 リリース｜毎日Changelog解説
+  date: '2026-06-12'
 ---
 
 
+
 # Claude Code Desktop
+
+---
+
+## 2026-06-12
+
+### Claude Code v2.1.173〜v2.1.176 リリース｜毎日Changelog解説
+
+Claude Code v2.1.173〜v2.1.176の4つのバージョンをまとめたChangelog解説記事。会話言語に合わせたセッションタイトル生成、availableModelsの厳格な統制機能（enforceAvailableModels）、/usageコマンドでのトークン消費内訳表示が主な新機能。Remote ControlやバックグラウンドまわりのバグFix、モデルピッカーの改善など細かい修正も多数含まれる。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/397036a48b61dd257ef9)
+- **重要度**: 6/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+### Claude Code v2.1.173〜v2.1.176 リリース｜毎日Changelog解説
+
+Claude Code v2.1.173〜v2.1.176の4つのバージョンをまとめたリリースノート。主な変更点は、会話言語に応じたセッションタイトル生成、availableModelsの厳格な統制機能（enforceAvailableModels）、/usageコマンドでのトークン利用内訳表示、Remote ControlやバックグラウンドまわりのバグFix。特に組織でモデル制限を運用している管理者向けの機能強化が目立つ。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/397036a48b61dd257ef9)
+- **重要度**: 6/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 

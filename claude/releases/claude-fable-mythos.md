@@ -7,7 +7,7 @@ tags:
 - release
 - 新機能
 date: '2026-06-09'
-updated: '2026-06-11'
+updated: '2026-06-12'
 sources:
 - url: https://qiita.com/travelclass0606/items/c2365bb0099007f24d0a
   title: '# 【5分でわかる】Claude Fable 5とは何か？新ティア「Mythos」の要点まとめ'
@@ -22,11 +22,27 @@ sources:
 - url: https://zenn.dev/aidecodelabjp/articles/claude-fable-5-release-2026
   title: Claude Fable 5、6月9日リリース — 一般公開された Mythos-class モデルで実務はどう動くか
   date: '2026-06-11'
+- url: https://qiita.com/quotidia/items/93d15444372d79d05246
+  title: Anthropicが初のMythos級モデル「Claude Fable 5」を一般公開——“過去最強”、ただしサイバー能力は封印
+  date: '2026-06-12'
 ---
 
 
 
+
 # Claude Fable Mythos
+
+---
+
+## 2026-06-12
+
+### Anthropicが初のMythos級モデル「Claude Fable 5」を一般公開——“過去最強”、ただしサイバー能力は封印
+
+Anthropicが2026年6月9日、初のMythos級モデル「Claude Fable 5」を一般公開した。同社が「最も強力」とする一方、サイバーセキュリティ作業は実行できないよう制限されている。公開数日前に同社自身が「AIは危険になりすぎている」と警告していた直後のリリースとなった。API料金はOpus 4.8の2倍で、防御目的の研究にも使えないほどガードレールが厳しいとセキュリティ研究者から批判が出ている。
+
+- **ソース**: [Qiita claude](https://qiita.com/quotidia/items/93d15444372d79d05246)
+- **重要度**: 9/10
+- **タグ**: release, 新機能, pricing
 
 ---
 
