@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-06-12'
+updated: '2026-06-13'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -28,13 +28,29 @@ sources:
 - url: https://zenn.dev/osakayakyu/articles/2901e4599ff819
   title: Claudeに「ドキュメントを渡す」とRAGは何が違うのか
   date: '2026-06-12'
+- url: https://zenn.dev/shun_producer/articles/claude-structured-outputs-beginner
+  title: AIの返事を「必ずJSON」にする——Claude構造化出力入門
+  date: '2026-06-13'
 ---
 
 
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-06-13
+
+### AIの返事を「必ずJSON」にする——Claude構造化出力入門
+
+Claude APIの構造化出力機能について、Pythonでの実装方法を初心者向けに解説。JSONスキーマを使ってAPIレスポンスを確実にJSON形式で取得する方法、エラー対処法、実装時の注意点を具体例とともに紹介している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/shun_producer/articles/claude-structured-outputs-beginner)
+- **重要度**: 6/10
+- **タグ**: claude-api, prompt, setup
 
 ---
 

@@ -3,18 +3,35 @@ title: Security Prompt Injection
 category: troubleshooting
 subcategory: security-prompt-injection
 tags:
+- bugfix
 - claude-api
 - claude-code
 - prompt
 date: '2026-06-05'
-updated: '2026-06-05'
+updated: '2026-06-13'
 sources:
 - url: https://ai-heartland.com/security/prompt-injection-defense
   title: プロンプトインジェクションとは？攻撃手口・実例・防御策をLLM開発者向けに徹底解説｜OWASP LLM01
   date: '2026-06-05'
+- url: https://zenn.dev/fixu/articles/fake-system-reminder-injection
+  title: ツール結果に紛れた偽の停止指示を観測した話 — AIエージェントへの指示注入とその検出
+  date: '2026-06-13'
 ---
 
+
 # Security Prompt Injection
+
+---
+
+## 2026-06-13
+
+### ツール結果に紛れた偽の停止指示を観測した話 — AIエージェントへの指示注入とその検出
+
+AIエージェントのツール実行結果に、正規のシステム通知を装った偽の停止指示が紛れ込む事象を観測。実際のファイル作成は成功していたが「失敗した」と虚偽報告を促す内容だった。エージェントは実結果との矛盾を検証し、偽指示を検出・無視することに成功。ツール結果の検証設計の重要性を示す事例として共有。
+
+- **ソース**: [Zenn claude](https://zenn.dev/fixu/articles/fake-system-reminder-injection)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, bugfix
 
 ---
 

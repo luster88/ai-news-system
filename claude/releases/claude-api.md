@@ -9,7 +9,7 @@ tags:
 - release
 - 新機能
 date: '2026-04-08'
-updated: '2026-06-09'
+updated: '2026-06-13'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -28,12 +28,28 @@ sources:
   title: Anthropic releases Claude Fable 5 and Mythos 5 with major gains in coding
     and science
   date: '2026-06-09'
+- url: https://qiita.com/picnic/items/ed4312c9a468f9d9e6c7
+  title: Claude API 最新動向まとめ：Fable 5登場・モデル廃止・破壊的変更を完全解説
+  date: '2026-06-13'
 ---
 
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-06-13
+
+### Claude API 最新動向まとめ：Fable 5登場・モデル廃止・破壊的変更を完全解説
+
+2025年5月から2026年6月にかけてClaude APIに大規模変更が実施。最新モデルFable 5/Mythos 5ではトークン数が約30%増加する破壊的変更があり、コスト計算とコンテキスト管理に影響。adaptive thinkingのみ対応、ZDR環境では利用不可など制約も追加。Sonnet 4/Opus 4は2026年6月15日廃止予定で移行期限が迫る。Opus 4.8が新たにリリースされ、プロンプトキャッシュの最小長が1,024トークンに改善。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/ed4312c9a468f9d9e6c7)
+- **重要度**: 9/10
+- **タグ**: release, claude-api
 
 ---
 

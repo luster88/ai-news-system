@@ -7,10 +7,11 @@ tags:
 - cowork
 - mcp
 - prompt
+- setup
 - vscode
 - 新機能
 date: '2026-04-12'
-updated: '2026-05-24'
+updated: '2026-06-13'
 sources:
 - url: https://ai-heartland.com/explain/last30days-skill-guide
   title: last30days-skill完全ガイド｜Reddit・X・YouTube横断AIリサーチスキルの使い方2026年版
@@ -36,6 +37,9 @@ sources:
 - url: https://ai-heartland.com/tool/dair-academy-plugins
   title: DAIR Academy Plugins完全解説 — Claude Codeをパワーアップする5つのOSSプラグイン
   date: '2026-05-24'
+- url: https://ai-heartland.com/explain/claude-code-deep-trilogy-guide
+  title: Claude Code プラグイン Deep Trilogy 入門｜あいまいなアイデアをspecに分解→TDDで実装まで一気通貫
+  date: '2026-06-13'
 ---
 
 
@@ -45,7 +49,20 @@ sources:
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-06-13
+
+### Claude Code プラグイン Deep Trilogy 入門｜あいまいなアイデアをspecに分解→TDDで実装まで一気通貫
+
+Pierce Lamb氏が開発したClaude Code向けプラグイン「Deep Trilogy」の解説記事。あいまいなアイデアを/deep-project（分解）→/deep-plan（計画）→/deep-implement（実装）の3段階パイプラインで処理し、TDD前提で実装まで一気通貫で進める。各工程で人間が判断を挟む「human-in-the-loop」設計が特徴で、ファイルベースの状態管理により中断・再開が可能。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/claude-code-deep-trilogy-guide)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

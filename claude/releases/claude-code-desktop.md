@@ -8,7 +8,7 @@ tags:
 - release
 - 新機能
 date: '2026-04-14'
-updated: '2026-06-12'
+updated: '2026-06-13'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1slictc/claude_code_on_desktop_redesigned_for_parallel
   title: Claude Code on desktop, redesigned for parallel agentic work.
@@ -19,11 +19,27 @@ sources:
 - url: https://qiita.com/moha0918_/items/397036a48b61dd257ef9
   title: Claude Code v2.1.173〜v2.1.176 リリース｜毎日Changelog解説
   date: '2026-06-12'
+- url: https://qiita.com/picnic/items/f8974940833ddc6bef5a
+  title: 'Claude Code v2.1.176: モデル制御の抜け穴修正とバグ修正まとめ'
+  date: '2026-06-13'
 ---
 
 
 
+
 # Claude Code Desktop
+
+---
+
+## 2026-06-13
+
+### Claude Code v2.1.176: モデル制御の抜け穴修正とバグ修正まとめ
+
+Claude Code v2.1.176では、availableModelsの強制を回避できる重大なセキュリティの抜け穴が修正されました。環境変数経由でのブロック済みモデルへのリダイレクトや/fastコマンドによる許可リスト外モデルへの切替えが遮断されます。その他、Bedrock認証情報キャッシュの改善、Remote Controlの複数不具合修正、バックグラウンドセッションのサンドボックス起動問題など、開発者にとって重要な修正が多数含まれています。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/f8974940833ddc6bef5a)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

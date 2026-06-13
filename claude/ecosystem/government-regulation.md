@@ -11,7 +11,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-30'
-updated: '2026-05-05'
+updated: '2026-06-13'
 sources:
 - url: https://the-decoder.com/white-house-worried-about-compute-limits-as-it-blocks-wider-access-to-anthropics-mythos
   title: White House worried about compute limits as it blocks wider access to Anthropic's
@@ -25,10 +25,26 @@ sources:
   title: White House briefed Anthropic, Google, and OpenAI on plans for a government
     AI review process
   date: '2026-05-05'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1u4dij4/megathread_for_us_government_suspension_of_fable
+  title: Megathread for US government suspension of Fable and Mythos
+  date: '2026-06-13'
 ---
 
 
+
 # Government Regulation
+
+---
+
+## 2026-06-13
+
+### Megathread for US government suspension of Fable and Mythos
+
+米国政府によるAnthropicのFableおよびMythosサービスへのアクセス停止に関するメガスレッド。Anthropic公式からアナウンスが出され、返金対応も開始されている。コミュニティでの議論を集約するためのスレッドとしてサブレディットに固定されている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1u4dij4/megathread_for_us_government_suspension_of_fable)
+- **重要度**: 8/10
+- **タグ**: claude-api, pricing, cowork
 
 ---
 
