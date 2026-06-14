@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-07'
-updated: '2026-06-09'
+updated: '2026-06-14'
 sources:
 - url: https://qiita.com/moha0918_/items/b3011c218210ab2695b7
   title: プラグイン作成の3つの方法、結局どれを選ぶべき？
@@ -30,6 +30,12 @@ sources:
 - url: https://qiita.com/YujiNaramoto/items/27516f3c3126875a8557
   title: なぜ SKILL.md を「仕様書から書く」より「Claude に書かせる」ほうが正しいのか
   date: '2026-06-09'
+- url: https://zenn.dev/hobomokha/articles/e4225ad7811e4b
+  title: AIに自分を覚えさせたら、毎日どう育てる？
+  date: '2026-06-14'
+- url: https://qiita.com/shu15511551/items/4b5c95976adb2d7d2efd
+  title: （後編）Sheets も、フォルダも使わない ── 20年もののファイル探しツールが、Googleドライブで「G-クイック」になるまでの話
+  date: '2026-06-14'
 ---
 
 
@@ -37,7 +43,30 @@ sources:
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-06-14
+
+### AIに自分を覚えさせたら、毎日どう育てる？
+
+Claude Code を使った「秘書リポジトリ」の運用方法を解説。日常会話の中で「覚えておいて」と指示するだけで、AIが情報を整理しファイルに記録。1週間使うとmaster_profileやdomains配下にファイルが増え、過去の自分のパターンを覚えたAIが文脈を踏まえた対話をしてくれる。ただし使い続けると情報が重複・散在し、古い記述と新しい記述が混在する「散らかり問題」が必ず発生する。
+
+- **ソース**: [Zenn claude](https://zenn.dev/hobomokha/articles/e4225ad7811e4b)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, cowork
+
+---
+
+### （後編）Sheets も、フォルダも使わない ── 20年もののファイル探しツールが、Googleドライブで「G-クイック」になるまでの話
+
+20年前にExcelで作ったファイル検索ツールをGoogleドライブに移植した「G-クイック」開発の経緯。当初はGeminiとスプレッドシートで開発したが速度に不満があり、GAS単独WebアプリとしてClaudeと共に再設計。機能を絞り込み、マイドライブのみ対象とすることで安定動作を実現した話。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/shu15511551/items/4b5c95976adb2d7d2efd)
+- **重要度**: 5/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

@@ -8,12 +8,13 @@ tags:
 - claude-console
 - cowork
 - haiku
+- mcp
 - prompt
 - setup
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-06-04'
+updated: '2026-06-14'
 sources:
 - url: https://zenn.dev/shelty/articles/20260408-budget-book-asset-management
   title: MoneyForwardの家計簿データで資産予測を自動化してみた＠Claude
@@ -33,6 +34,9 @@ sources:
 - url: https://qiita.com/1280itsuya/items/d3f55afeba54cda1e361
   title: 【ガチ検証】Python＋Claude APIでアフィリ記事を半自動量産する個人開発パイプラインを作ったら、1記事の手間が90分→7分になった話
   date: '2026-06-04'
+- url: https://qiita.com/drasenas/items/338537f2f7fea9014207
+  title: Claude Code Routines で GWS ライセンス棚卸しを月次自動化する
+  date: '2026-06-14'
 ---
 
 
@@ -40,7 +44,20 @@ sources:
 
 
 
+
 # Automation Workflow
+
+---
+
+## 2026-06-14
+
+### Claude Code Routines で GWS ライセンス棚卸しを月次自動化する
+
+Anthropic が2026年4月に公開した Claude Code Routines を使い、Google Workspace のライセンス棚卸しを月次で自動化する実装パターンを解説。Admin SDK Directory API で未使用ライセンスを検出し、Slack MCP 経由でレポートを自動生成する手順と、GAS との比較判断基準を整理している。100名規模の環境で月1〜2時間かかる作業を自動化でき、プロンプトとリポジトリを組み合わせてスケジュール実行する方法を示している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/drasenas/items/338537f2f7fea9014207)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, 新機能
 
 ---
 

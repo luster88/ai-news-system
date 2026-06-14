@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-06-09'
+updated: '2026-06-14'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -71,6 +71,9 @@ sources:
 - url: https://qiita.com/mgre_tanabe/items/d43b26d994d3f430f926
   title: Claude Code ActionsによるCrashlyticsクラッシュ調査の自動化：コストとリードタイムの実績
   date: '2026-06-09'
+- url: https://qiita.com/leven-E/items/e601c14e86b7621685ef
+  title: Claude Code の hooks 実践 — Stop/PreToolUse/PreCompactで自動化と安全弁を仕込む
+  date: '2026-06-14'
 ---
 
 
@@ -89,7 +92,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-06-14
+
+### Claude Code の hooks 実践 — Stop/PreToolUse/PreCompactで自動化と安全弁を仕込む
+
+Claude Code の hooks 機能（Stop/PreToolUse/PreCompact）を使った実践的な自動化と安全対策の解説。Stop hook で walkthrough 記録の自動投入、PreToolUse hook で危険コマンドの実行ブロック、PreCompact hook でコンテキスト圧縮前の残課題退避を実現する具体例とスクリプトを紹介。hooks の exit code による続行・ブロック制御や、冪等性の考慮など実運用での注意点も扱う。
+
+- **ソース**: [Qiita claude](https://qiita.com/leven-E/items/e601c14e86b7621685ef)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 
