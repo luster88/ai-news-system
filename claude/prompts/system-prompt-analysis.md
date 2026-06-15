@@ -4,17 +4,34 @@ category: prompts
 subcategory: system-prompt-analysis
 tags:
 - claude-api
+- claude-code
 - prompt
 - 新機能
 date: '2026-06-14'
-updated: '2026-06-14'
+updated: '2026-06-15'
 sources:
 - url: https://ai-heartland.com/explain/claude-fable-5-system-prompt-analysis
   title: Claude Fable 5 のシステムプロンプトから読む安全設計｜CL4R1T4S 公開資料を観察する
   date: '2026-06-14'
+- url: https://zenn.dev/amu_lab/articles/claude-fable-5-system-prompt-4-types
+  title: 【2026年最新】Claude Fable 5の「システムプロンプト」整理 — 公式・リーク・Claude Code・APIの違い
+  date: '2026-06-15'
 ---
 
+
 # System Prompt Analysis
+
+---
+
+## 2026-06-15
+
+### 【2026年最新】Claude Fable 5の「システムプロンプト」整理 — 公式・リーク・Claude Code・APIの違い
+
+Claude Fable 5が公開3日で停止された中、「システムプロンプト」と呼ばれるものが4種類存在し混乱が生じている。①公式release-notes版（Claude.ai用コア部分）、②非公式の完全版とされるもの、③Claude Code独自版、④API版（存在しない）の違いを整理。Anthropicは透明性方針でClaude.ai用のコアシステムプロンプトを公開しているが、製品ごとに異なるプロンプトが使われており、目的に応じた参照先の選択が重要。
+
+- **ソース**: [Zenn claude](https://zenn.dev/amu_lab/articles/claude-fable-5-system-prompt-4-types)
+- **重要度**: 7/10
+- **タグ**: claude-api, claude-code, prompt
 
 ---
 

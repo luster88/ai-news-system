@@ -11,7 +11,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-30'
-updated: '2026-06-13'
+updated: '2026-06-15'
 sources:
 - url: https://the-decoder.com/white-house-worried-about-compute-limits-as-it-blocks-wider-access-to-anthropics-mythos
   title: White House worried about compute limits as it blocks wider access to Anthropic's
@@ -28,11 +28,41 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1u4dij4/megathread_for_us_government_suspension_of_fable
   title: Megathread for US government suspension of Fable and Mythos
   date: '2026-06-13'
+- url: https://the-decoder.com/the-us-government-may-be-asking-anthropic-the-impossible-by-demanding-unhackable-llms
+  title: The US government may be asking Anthropic the impossible by demanding unhackable
+    LLMs
+  date: '2026-06-15'
+- url: https://the-decoder.com/amazon-and-five-other-companies-reportedly-triggered-the-government-crackdown-on-anthropics-fable-model
+  title: Amazon and five other companies reportedly triggered the government crackdown
+    on Anthropic's Fable model
+  date: '2026-06-15'
 ---
 
 
 
+
 # Government Regulation
+
+---
+
+## 2026-06-15
+
+### The US government may be asking Anthropic the impossible by demanding unhackable LLMs
+
+米国政府がAnthropicに対し、トランプ政権のサイバーセキュリティ指令を無視してFable 5をリリースしたと非難。政府はジェイルブレイクのリスクを知りながら黙っていたと主張するが、これはLLMが本質的にハッキング可能であるという現実を理解していない政府側の知識不足を露呈している。OpenAIもプロンプトインジェクションは完全には解決できない可能性があると警告しており、完全に安全なLLMを求めること自体が非現実的である。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/the-us-government-may-be-asking-anthropic-the-impossible-by-demanding-unhackable-llms)
+- **重要度**: 7/10
+
+---
+
+### Amazon and five other companies reportedly triggered the government crackdown on Anthropic's Fable model
+
+Amazon CEOのAndy Jassyを含む6社以上のテック企業幹部が、AnthropicのFableモデルのセキュリティリスクについてトランプ政権に警告。Amazonは自社が投資するAnthropicに対し、ジェイルブレイクによるモデルの脆弱性を示すレポートを政府に提出。政府は数時間以内に輸出規制命令を発令し、Fableをブロック。この事件は、米国政府がAI技術に対する国家統制を強化し、他国のアクセスを制限する姿勢を示すものとなった。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/amazon-and-five-other-companies-reportedly-triggered-the-government-crackdown-on-anthropics-fable-model)
+- **重要度**: 9/10
+- **タグ**: pricing, cowork
 
 ---
 

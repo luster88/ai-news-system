@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-06-14'
+updated: '2026-06-15'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -74,6 +74,9 @@ sources:
 - url: https://qiita.com/leven-E/items/e601c14e86b7621685ef
   title: Claude Code の hooks 実践 — Stop/PreToolUse/PreCompactで自動化と安全弁を仕込む
   date: '2026-06-14'
+- url: https://qiita.com/yureki_lab/items/ac9886f8484712e66f04
+  title: Claude Code の Hooks (PostToolUse) でファイル保存時に自動 lint・型チェックを走らせる最小手順【2026】
+  date: '2026-06-15'
 ---
 
 
@@ -93,7 +96,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-06-15
+
+### Claude Code の Hooks (PostToolUse) でファイル保存時に自動 lint・型チェックを走らせる最小手順【2026】
+
+Claude Code v2.x の Hooks 機能（PostToolUse）を使って、ファイル保存時に自動で lint・型チェックを実行する手順を解説。~/.claude/settings.json に hooks を設定し、exit 2 で終了することで Claude が自動的にエラーを修正してくれる仕組みを構築できる。matcher は完全一致のため Write と Edit を別ブロックで記述する必要があり、型チェックの高速化には --incremental や tsgo の活用が推奨される。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/yureki_lab/items/ac9886f8484712e66f04)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

@@ -12,7 +12,7 @@ tags:
 - release
 - 新機能
 date: '2026-04-08'
-updated: '2026-05-19'
+updated: '2026-06-15'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfz7a5/introducing_claude_managed_agents_now_in_public
   title: Introducing Claude Managed Agents, now in public beta.
@@ -51,6 +51,9 @@ sources:
 - url: https://the-decoder.com/anthropic-adds-self-hosted-sandboxes-and-mcp-tunnels-to-claude-managed-agents
   title: Anthropic adds self-hosted sandboxes and MCP tunnels to Claude Managed Agents
   date: '2026-05-19'
+- url: https://qiita.com/YushiYamamoto/items/398b6c20b6b9405607cd
+  title: Claude Managed Agents の自社サンドボックスとMCPトンネル：エンタープライズ境界内でエージェントを動かす設計判断
+  date: '2026-06-15'
 ---
 
 
@@ -60,7 +63,20 @@ sources:
 
 
 
+
 # Managed Agents
+
+---
+
+## 2026-06-15
+
+### Claude Managed Agents の自社サンドボックスとMCPトンネル：エンタープライズ境界内でエージェントを動かす設計判断
+
+AnthropicがClaude Managed Agentsに自社サンドボックス（ツール実行を自社インフラで実行）とMCPトンネル（社内ネットワークのMCPサーバへアクセス）機能を追加。エージェントループはAnthropicクラウドに残し、機密データ処理のみ自社環境で実行する設計が可能に。ZDR/HIPAA BAAは非対応で、コンプライアンス要件が厳格な場合はMessages APIでの自前実装が必要。
+
+- **ソース**: [Qiita claude](https://qiita.com/YushiYamamoto/items/398b6c20b6b9405607cd)
+- **重要度**: 8/10
+- **タグ**: 新機能, claude-api, mcp
 
 ---
 

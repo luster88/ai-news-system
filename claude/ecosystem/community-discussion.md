@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-05-29'
+updated: '2026-06-15'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -45,6 +45,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1trargt/people_becoming_claude_wrappers
   title: People becoming Claude wrappers
   date: '2026-05-29'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1u6rs7l/is_anyone_else_noticing_that_every_post_here_is
+  title: Is anyone else noticing that every post here is just... written by AI?
+  date: '2026-06-15'
 ---
 
 
@@ -54,7 +57,20 @@ sources:
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-06-15
+
+### Is anyone else noticing that every post here is just... written by AI?
+
+Reddit の r/ClaudeAI サブレディットで、AI生成と思われる投稿が増加していることへの皮肉を込めた指摘。投稿者は「人間らしさ」の喪失を懸念する形式で書いているが、投稿自体が典型的なAI生成スタイル（絵文字多用、箇条書き、抽象的な表現）を使用しており、メタ的なユーモアを含んでいる。コミュニティにおけるAI利用の実態と、人間とAIのコミュニケーションの境界についての議論を提起している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1u6rs7l/is_anyone_else_noticing_that_every_post_here_is)
+- **重要度**: 4/10
+- **タグ**: cowork, claude-code, prompt
 
 ---
 

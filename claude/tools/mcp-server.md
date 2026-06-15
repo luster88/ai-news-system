@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-06-10'
+updated: '2026-06-15'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -72,6 +72,9 @@ sources:
 - url: https://zenn.dev/tonrakun/articles/f1d57df4c3e2e8
   title: I built a full 3D Rust game engine in one session with Claude Fable 5
   date: '2026-06-10'
+- url: https://qiita.com/A_Akira0803/items/45ca795340fdb8a9c17f
+  title: Claudeに動画を理解させるMCPを作った
+  date: '2026-06-15'
 ---
 
 
@@ -91,7 +94,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-06-15
+
+### Claudeに動画を理解させるMCPを作った
+
+Claudeに動画を理解させるMCPサーバを自作した事例。動画URLやファイルを渡すと、faster-whisperで文字起こし、ffmpegで場面フレーム抽出を行い、映像と音声の両方からClaudeが内容を要約する。実装はClaude Codeに任せ、自宅NAS（TrueNAS、RTX3080Ti搭載）上でFastMCPとして運用。トークン節約のため動画処理はサーバ側で完結させ、結果（画像+テキスト）のみをClaudeに渡す設計。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/A_Akira0803/items/45ca795340fdb8a9c17f)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code, 新機能
 
 ---
 

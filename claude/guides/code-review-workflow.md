@@ -3,12 +3,13 @@ title: Code Review Workflow
 category: guides
 subcategory: code-review-workflow
 tags:
+- bugfix
 - claude-code
 - cowork
 - prompt
 - sonnet
 date: '2026-03-31'
-updated: '2026-04-20'
+updated: '2026-06-15'
 sources:
 - url: https://zenn.dev/whipea/articles/e63135d29f8e1f
   title: Claude Codeに課金してみたので、無料プランのAIで作った日記アプリのコードを本気レビューしてもらった
@@ -16,10 +17,26 @@ sources:
 - url: https://zenn.dev/penpeen/articles/844f0773d5e018
   title: AIレビューの精度を上げたいなら、批判的観点でセルフレビューさせよ
   date: '2026-04-20'
+- url: https://qiita.com/ussu_ussu_ussu/items/13caf48c5ad9d9c0d9e2
+  title: 個人開発の日記アプリ「Daily Diary」を Claude Fable 5 でレビューしてもらった記録 — 見つかったバグと所感
+  date: '2026-06-15'
 ---
 
 
+
 # Code Review Workflow
+
+---
+
+## 2026-06-15
+
+### 個人開発の日記アプリ「Daily Diary」を Claude Fable 5 でレビューしてもらった記録 — 見つかったバグと所感
+
+個人開発のFlutter製日記アプリ「Daily Diary」をClaude Fable 5（米商務省の輸出規制で3日で利用停止）でコードレビューした記録。async gapのBuildContext利用バグ、実質テストゼロ状態の発覚、非推奨API 27箇所の修正、依存ライブラリ更新、CI追加など実際のコミット差分を公開。
+
+- **ソース**: [Qiita claude](https://qiita.com/ussu_ussu_ussu/items/13caf48c5ad9d9c0d9e2)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix
 
 ---
 
