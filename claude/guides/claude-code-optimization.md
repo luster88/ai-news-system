@@ -10,9 +10,11 @@ tags:
 - opus
 - performance
 - prompt
+- setup
 - sonnet
+- 新機能
 date: '2026-03-31'
-updated: '2026-05-18'
+updated: '2026-06-16'
 sources:
 - url: https://qiita.com/nishiken1118/items/6b16557fcabf784c861e
   title: 過去の session をほしい時に参照する方針で claude-mem のトークン消費を激減させた話
@@ -32,6 +34,10 @@ sources:
 - url: https://zenn.dev/kojihq/articles/3ef8b697063323
   title: Claude Code の token を節約する 5 つのコツ (実データで検証)
   date: '2026-05-18'
+- url: https://qiita.com/yureki_lab/items/d3faece85a5361e890c7
+  title: Claude Code の許可プロンプトを9割減らす settings.json 最適化レシピ — allow / deny の優先順位と Bash
+    パターン記法のハマりどころ【2026】
+  date: '2026-06-16'
 ---
 
 
@@ -39,7 +45,20 @@ sources:
 
 
 
+
 # Claude Code Optimization
+
+---
+
+## 2026-06-16
+
+### Claude Code の許可プロンプトを9割減らす settings.json 最適化レシピ — allow / deny の優先順位と Bash パターン記法のハマりどころ【2026】
+
+Claude Code で頻発する許可プロンプトを settings.json の最適化で9割削減する方法を解説。Bash ツールのパターン記法（コロン+ワイルドカード必須）、allow/deny の優先順位、プロジェクト別設定の使い分けなど、実運用で陥りやすい落とし穴と対処法を詳述。npm/git/読み取り系ツールの allowlist 化により作業効率が大幅に改善される。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/yureki_lab/items/d3faece85a5361e890c7)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

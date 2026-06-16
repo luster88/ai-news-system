@@ -8,7 +8,7 @@ tags:
 - release
 - 新機能
 date: '2026-04-14'
-updated: '2026-06-13'
+updated: '2026-06-16'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1slictc/claude_code_on_desktop_redesigned_for_parallel
   title: Claude Code on desktop, redesigned for parallel agentic work.
@@ -22,12 +22,28 @@ sources:
 - url: https://qiita.com/picnic/items/f8974940833ddc6bef5a
   title: 'Claude Code v2.1.176: モデル制御の抜け穴修正とバグ修正まとめ'
   date: '2026-06-13'
+- url: https://qiita.com/picnic/items/152a5a72dce27fb1e0d0
+  title: 'Claude Code v2.1.178: Tool(param:value)権限構文とセキュリティ改善'
+  date: '2026-06-16'
 ---
 
 
 
 
+
 # Claude Code Desktop
+
+---
+
+## 2026-06-16
+
+### Claude Code v2.1.178: Tool(param:value)権限構文とセキュリティ改善
+
+Claude Code v2.1.178では、ツールの引数レベルで権限を制御できるTool(param:value)構文が追加され、セキュリティが大幅に強化されました。autoモードでサブエージェント起動前の評価が実装され、カスタムAPIゲートウェイ使用時の401認証エラーやOOMクラッシュなど実運用に影響する複数のバグが修正されました。モノレポ環境では、作業ディレクトリに応じた.claude/skillsの自動ロード機能も追加されています。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/152a5a72dce27fb1e0d0)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 

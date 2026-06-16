@@ -3,12 +3,14 @@ title: Pricing Change
 category: ecosystem
 subcategory: pricing-change
 tags:
+- claude-api
 - claude-code
 - mcp
 - pricing
+- release
 - 新機能
 date: '2026-04-06'
-updated: '2026-06-05'
+updated: '2026-06-16'
 sources:
 - url: https://qiita.com/kenimo49/items/af514033f85366ead6c5
   title: Anthropicの課金変更でClaude Codeが従量制に。ローカルLLMという選択肢を検証した
@@ -16,10 +18,26 @@ sources:
 - url: https://zenn.dev/f_monsoon/articles/20260605-claude-taboo
   title: 【絶対やるな】Claude 6/15改定の課金回避を思いついた。が、規約違反でBANリスクなので供養します
   date: '2026-06-05'
+- url: https://the-decoder.com/anthropic-backs-off-unpopular-billing-overhaul-as-price-war-with-openai-looms
+  title: Anthropic backs off unpopular billing overhaul as price war with OpenAI looms
+  date: '2026-06-16'
 ---
 
 
+
 # Pricing Change
+
+---
+
+## 2026-06-16
+
+### Anthropic backs off unpopular billing overhaul as price war with OpenAI looms
+
+Anthropic が Claude Agent SDK の課金体系変更を撤回。6月15日から予定されていた API 料金への移行を延期し、当面は現行のサブスクリプション枠内で利用可能に。OpenAI との価格競争、IPO 計画、オープンソースコミュニティからの反発が背景。OpenClaw など外部ツール開発者との対立も影響。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-backs-off-unpopular-billing-overhaul-as-price-war-with-openai-looms)
+- **重要度**: 8/10
+- **タグ**: pricing, claude-api, release
 
 ---
 

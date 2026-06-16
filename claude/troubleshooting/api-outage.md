@@ -3,18 +3,35 @@ title: Api Outage
 category: troubleshooting
 subcategory: api-outage
 tags:
+- bugfix
 - claude-api
 - opus
 - sonnet
 date: '2026-06-05'
-updated: '2026-06-05'
+updated: '2026-06-16'
 sources:
 - url: https://qiita.com/picnic/items/2e22aeba610255b45641
   title: Claude API 障害レポート：複数モデルでエラー率上昇・約3.5時間で完全復旧
   date: '2026-06-05'
+- url: https://qiita.com/picnic/items/9f78b0e3dec2aae45dfe
+  title: 'Claude APIで複数モデル同時障害: Sonnet/Opusで最大10%エラー率上昇の全容'
+  date: '2026-06-16'
 ---
 
+
 # Api Outage
+
+---
+
+## 2026-06-16
+
+### Claude APIで複数モデル同時障害: Sonnet/Opusで最大10%エラー率上昇の全容
+
+2026年6月16日にClaude APIで大規模障害が発生し、Sonnet/Opus全モデルで最大10%のエラー率上昇を記録。同日中に解決済みだが、本番運用では公式SDKのリトライ機能（max_retries）活用とステータスページ監視が推奨される。コード変更は不要だが、該当時間帯のエラーログ確認が望ましい。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/9f78b0e3dec2aae45dfe)
+- **重要度**: 8/10
+- **タグ**: claude-api, bugfix, sonnet
 
 ---
 

@@ -6,9 +6,10 @@ tags:
 - claude-code
 - cowork
 - mcp
+- setup
 - 新機能
 date: '2026-04-01'
-updated: '2026-05-09'
+updated: '2026-06-16'
 sources:
 - url: https://qiita.com/Andhy/items/371621273924d74e9917
   title: 自作のClaude Codeのプラグインの有効性を検証してみたところなかなか良い結果に
@@ -23,12 +24,28 @@ sources:
 - url: https://ai-heartland.com/agent/tzachbon-smart-ralph-spec-driven-claude-code
   title: Smart Ralph｜Claude Code/Codexにspec-driven開発を持ち込む14コマンド・6エージェント基盤
   date: '2026-05-09'
+- url: https://zenn.dev/qvtec/articles/b66911e2e9a829
+  title: Claude Code の結果を喋ってくれるプラグインを作った
+  date: '2026-06-16'
 ---
 
 
 
 
+
 # Claude Code Plugin
+
+---
+
+## 2026-06-16
+
+### Claude Code の結果を喋ってくれるプラグインを作った
+
+Claude Code の実行完了や権限確認を音声で通知するプラグインの紹介。goal/auto mode 使用時に画面を見ていなくても結果を把握できるよう、OS標準のTTS機能で読み上げを実装。簡単なコマンドでインストール可能で、macOSとWSL2に対応。
+
+- **ソース**: [Zenn claude](https://zenn.dev/qvtec/articles/b66911e2e9a829)
+- **重要度**: 5/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 
