@@ -3,19 +3,37 @@ title: Competitor Comparison
 category: ecosystem
 subcategory: competitor-comparison
 tags:
+- cowork
+- opus
 - performance
 - pricing
 - sonnet
 date: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-06-17'
 sources:
 - url: https://the-decoder.com/xai-drops-grok-4-3-with-steep-price-cuts-and-an-imagine-agent-mode-for-creative-projects
   title: xAI drops Grok 4.3 with steep price cuts and an Imagine agent mode for creative
     projects
   date: '2026-05-02'
+- url: https://the-decoder.com/zhipu-ais-glm-5-2-closes-in-on-closed-source-leaders-in-coding-marathons
+  title: Zhipu AI's GLM-5.2 closes in on closed-source leaders in coding marathons
+  date: '2026-06-17'
 ---
 
+
 # Competitor Comparison
+
+---
+
+## 2026-06-17
+
+### Zhipu AI's GLM-5.2 closes in on closed-source leaders in coding marathons
+
+中国のZhipu AIがMITライセンスでGLM-5.2をリリース。100万トークンのコンテキストウィンドウを持ち、長時間のコーディングタスクでAnthropicのOpusモデルに数パーセント差まで迫る性能を示した。FrontierSWEベンチマークで74.4%を記録し、Claude Opus 4.8に1ポイント差、GPT-5.5をわずかに上回った。オープンソースモデルとしては最強の性能を誇る。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/zhipu-ais-glm-5-2-closes-in-on-closed-source-leaders-in-coding-marathons)
+- **重要度**: 6/10
+- **タグ**: performance, opus, cowork
 
 ---
 

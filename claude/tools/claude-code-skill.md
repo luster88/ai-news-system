@@ -9,7 +9,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-28'
-updated: '2026-04-06'
+updated: '2026-06-17'
 sources:
 - url: https://qiita.com/nishiken1118/items/bac44a98ce05b09b78f6
   title: AI レビューの「仕分け疲れ」を解消する Claude Code skill を作った話
@@ -17,10 +17,26 @@ sources:
 - url: https://zenn.dev/tell_y/articles/e21d348284c5a5
   title: Claude Code で最小再現環境の構築を自動化する — minimal-repro スキルの紹介
   date: '2026-04-06'
+- url: https://zenn.dev/hibinoue/articles/2071643334a25f
+  title: みんなのClaudeスキルが見たい！発信の手間を削減する「Zenn記事の全自動生成」スキル
+  date: '2026-06-17'
 ---
 
 
+
 # Claude Code Skill
+
+---
+
+## 2026-06-17
+
+### みんなのClaudeスキルが見たい！発信の手間を削減する「Zenn記事の全自動生成」スキル
+
+Claude Code のカスタムスキルを Zenn や Qiita 向けの記事として全自動で生成するスキル「claude-skills-article」の紹介。SKILL.md を読み込むだけで、想定読者の推定、パス・APIキーのマスキング、プラットフォーム別の記法対応、7セクション構成の記事生成を行い、発信のハードルを大幅に下げることを目的としている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/hibinoue/articles/2071643334a25f)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

@@ -6,10 +6,12 @@ tags:
 - claude-api
 - claude-code
 - cowork
+- haiku
 - performance
 - prompt
+- setup
 date: '2026-04-07'
-updated: '2026-05-18'
+updated: '2026-06-17'
 sources:
 - url: https://zenn.dev/analysis/articles/thought-analyzer-agents-md
   title: コンテキストファイルは、エージェントを賢くしない ── AGENTS.mdの効果を初めて測った研究
@@ -17,10 +19,26 @@ sources:
 - url: https://qiita.com/ssk00226/items/0f039aa8a22e4f97f0b0
   title: 将棋エンジンの読み筋をLLMに解説させたら、ClaudeとChatGPTで差が出た話
   date: '2026-05-18'
+- url: https://zenn.dev/uya0526_design/articles/satellite2_haiku-coaching
+  title: Claude Haikuに「計算」をさせない ─ 音読コーチの二段構え設計とプロンプトの沼
+  date: '2026-06-17'
 ---
 
 
+
 # Prompt Engineering
+
+---
+
+## 2026-06-17
+
+### Claude Haikuに「計算」をさせない ─ 音読コーチの二段構え設計とプロンプトの沼
+
+音読速度計測アプリで、計算・判定ロジックをすべてコード側で確定させ、Claude Haikuには「整理済みの事実」を温かく具体的な言葉に翻訳させる「二段構え設計」を解説。役割分担により小さなモデルでも安定した出力を実現したが、プロンプトキャッシュは最小トークン数（4,096）に届かず実際には機能しなかったという検証結果も報告。LLMに計算させず言語化のみを担わせる実装のベストプラクティスとして有益。
+
+- **ソース**: [Zenn claude](https://zenn.dev/uya0526_design/articles/satellite2_haiku-coaching)
+- **重要度**: 6/10
+- **タグ**: prompt, haiku, setup
 
 ---
 

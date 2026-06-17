@@ -8,7 +8,7 @@ tags:
 - release
 - 新機能
 date: '2026-04-14'
-updated: '2026-06-16'
+updated: '2026-06-17'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1slictc/claude_code_on_desktop_redesigned_for_parallel
   title: Claude Code on desktop, redesigned for parallel agentic work.
@@ -25,13 +25,29 @@ sources:
 - url: https://qiita.com/picnic/items/152a5a72dce27fb1e0d0
   title: 'Claude Code v2.1.178: Tool(param:value)権限構文とセキュリティ改善'
   date: '2026-06-16'
+- url: https://ai-heartland.com/news/claude-code-june-2026-update
+  title: Claude Code 6月版アップデートまとめ｜v2.1.153〜v2.1.178の新機能を一覧で読む
+  date: '2026-06-17'
 ---
 
 
 
 
 
+
 # Claude Code Desktop
+
+---
+
+## 2026-06-17
+
+### Claude Code 6月版アップデートまとめ｜v2.1.153〜v2.1.178の新機能を一覧で読む
+
+Claude Code の2026年6月版アップデート（v2.1.153～v2.1.178）をまとめた記事。主な新機能として、プロンプトキャッシュを維持したままディレクトリを移動できる /cd コマンド、サブエージェントが子を起動できる入れ子構造、トラブルシューティング用の --safe-mode、障害時に自動で切り替わる fallbackModel、ツールのパラメータ値まで制御できる権限構文などが追加された。モデル面では Opus 4.8 と Claude Fable 5 が登場。全体として新機能よりも長時間運用と堅牢性向上に重点が置かれたアップデートとなっている。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/news/claude-code-june-2026-update)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 
