@@ -5,10 +5,11 @@ subcategory: claude-code-desktop
 tags:
 - bugfix
 - claude-code
+- cowork
 - release
 - 新機能
 date: '2026-04-14'
-updated: '2026-06-17'
+updated: '2026-06-18'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1slictc/claude_code_on_desktop_redesigned_for_parallel
   title: Claude Code on desktop, redesigned for parallel agentic work.
@@ -28,6 +29,13 @@ sources:
 - url: https://ai-heartland.com/news/claude-code-june-2026-update
   title: Claude Code 6月版アップデートまとめ｜v2.1.153〜v2.1.178の新機能を一覧で読む
   date: '2026-06-17'
+- url: https://qiita.com/picnic/items/5dbedcdd25053ee70eb5
+  title: Claude Code v2.1.181 の新機能・バグ修正まとめ ─ /config 構文と重大バグ修正
+  date: '2026-06-18'
+- url: https://the-decoder.com/anthropic-brings-artifacts-to-claude-code-letting-teams-share-live-pages-from-coding-sessions
+  title: Anthropic brings Artifacts to Claude Code, letting teams share live pages
+    from coding sessions
+  date: '2026-06-18'
 ---
 
 
@@ -35,7 +43,30 @@ sources:
 
 
 
+
 # Claude Code Desktop
+
+---
+
+## 2026-06-18
+
+### Claude Code v2.1.181 の新機能・バグ修正まとめ ─ /config 構文と重大バグ修正
+
+Claude Code v2.1.181 がリリースされ、プロンプトから直接設定変更できる /config 構文が追加されました。ネットワークドライブや OneDrive 環境でファイルが破損する重大バグ、起動時のハング・クラッシュ、プロンプトキャッシュ未読み込み問題など複数の重大バグが修正されました。カスタム ANTHROPIC_BASE_URL や AWS Bedrock 利用者、クラウド同期フォルダでの作業者にとって重要なアップデートです。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/5dbedcdd25053ee70eb5)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, bugfix
+
+---
+
+### Anthropic brings Artifacts to Claude Code, letting teams share live pages from coding sessions
+
+Anthropic が Claude Code に Artifacts 機能を追加しました。コーディングセッションの結果を対話的なWebページに変換し、チームで共有できます。ページはコード、接続されたツール、チャット履歴から自動生成され、変更があると同じURLで自動更新されます。PRウォークスルー、インシデントタイムライン、ライセンス監査などの用途に対応し、Claude Team/Enterprise顧客向けにベータ版として提供されています。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-brings-artifacts-to-claude-code-letting-teams-share-live-pages-from-coding-sessions)
+- **重要度**: 8/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

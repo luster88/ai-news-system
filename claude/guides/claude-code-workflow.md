@@ -14,7 +14,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-06-12'
+updated: '2026-06-18'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -166,6 +166,12 @@ sources:
 - url: https://qiita.com/ruih8gta/items/1297cbf0d5115fc36c3c
   title: 【検証】Claude Codeによる論文解読と実験用コード作成検証
   date: '2026-06-12'
+- url: https://qiita.com/rex0220/items/8ab1a9082ea9c09da0a4
+  title: Claude Code を編集長にして Qiita 記事生成パイプラインを作る
+  date: '2026-06-18'
+- url: https://qiita.com/minorin22/items/2d7b2c76639c6528d306
+  title: 5年前に作りかけて放置してた絵コンテ制作アプリ「Mizutama Conte」をClaudeと１週間で完成させました
+  date: '2026-06-18'
 ---
 
 
@@ -208,7 +214,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-06-18
+
+### Claude Code を編集長にして Qiita 記事生成パイプラインを作る
+
+Claude Code を編集長として進行・品質判断に使い、llm-task-router という CLI ツールを実行レイヤーとして組み合わせることで、Qiita 記事の生成パイプラインを構築する手順を解説。テーマ出しから本文生成、評価、修正、書き出しまでの流れを自動化し、タスクごとに最適なモデルへ振り分けることで継続運用しやすい仕組みを実現する。Node.js 環境で npm インストール可能で、VSCode と CLI に慣れた中級エンジニア向けの実践的ガイド。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/rex0220/items/8ab1a9082ea9c09da0a4)
+- **重要度**: 6/10
+- **タグ**: claude-code, vscode, 新機能
+
+---
+
+### 5年前に作りかけて放置してた絵コンテ制作アプリ「Mizutama Conte」をClaudeと１週間で完成させました
+
+5年間放置していた絵コンテ制作アプリ「Mizutama Conte」を、Claude Code（Opus 4.8 + /ultracode）と1週間で完成。254コミットでPDF/動画書き出し、多言語対応、Web版（PWA）など主要機能を実装。設計→TDD→サブエージェント実装→敵対的レビューという開発フローをClaude内で完結させ、上流判断に集中できた。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/minorin22/items/2d7b2c76639c6528d306)
+- **重要度**: 7/10
+- **タグ**: claude-code, opus, cowork
 
 ---
 

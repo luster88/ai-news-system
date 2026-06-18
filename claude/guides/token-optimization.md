@@ -6,11 +6,12 @@ tags:
 - claude-api
 - claude-code
 - cowork
+- mcp
 - performance
 - pricing
 - prompt
 date: '2026-03-22'
-updated: '2026-05-29'
+updated: '2026-06-18'
 sources:
 - url: https://qiita.com/shockpan-web/items/852e962e14bdd2b98e70
   title: バイブコーディングでトークンを溶かさないための2つの工夫
@@ -24,12 +25,28 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1tqx8q5/spent_1156308524_input_tokens_in_may_sharing_what
   title: Spent 1,156,308,524 input tokens in May 🫣 Sharing what I learned
   date: '2026-05-29'
+- url: https://qiita.com/Rapls/items/df5a5dcff403343ad9c4
+  title: Claude Code のコンテキストとトークン代を節約する実践ガイド。何が毎ターン乗っているかを測ってから減らす【2026年6月版】
+  date: '2026-06-18'
 ---
 
 
 
 
+
 # Token Optimization
+
+---
+
+## 2026-06-18
+
+### Claude Code のコンテキストとトークン代を節約する実践ガイド。何が毎ターン乗っているかを測ってから減らす【2026年6月版】
+
+Claude Code のコンテキストとトークン使用量を削減する実践的なガイド。/context コマンドで実際の使用状況を測定した結果、最大の原因は MCP ではなく会話履歴だったことが判明。/clear や /compact による履歴管理、CLAUDE.md と Skills の適切な振り分け、不要な MCP サーバーの削除など、測定結果に基づいた具体的な削減手法を解説。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Rapls/items/df5a5dcff403343ad9c4)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, mcp
 
 ---
 

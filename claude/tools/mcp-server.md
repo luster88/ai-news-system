@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-06-15'
+updated: '2026-06-18'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -75,6 +75,9 @@ sources:
 - url: https://qiita.com/A_Akira0803/items/45ca795340fdb8a9c17f
   title: Claudeに動画を理解させるMCPを作った
   date: '2026-06-15'
+- url: https://ai-heartland.com/tool/palmier-pro-guide
+  title: palmier-pro解説｜Claudeが編集できるMac用オープンソース動画エディタのMCP連携と導入
+  date: '2026-06-18'
 ---
 
 
@@ -95,7 +98,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-06-18
+
+### palmier-pro解説｜Claudeが編集できるMac用オープンソース動画エディタのMCP連携と導入
+
+palmier-proは、Claudeが直接操作できるMac用オープンソース動画エディタ。Swift製でGPLv3ライセンス。アプリ自体がMCPサーバーとして動作し、27個のツールでタイムラインを操作可能。Seedance・Kling・Nano Banana Proなどの生成AIモデルを統合し、生成と編集を同一画面で完結できる。YC S24のPalmier, Inc.が開発し、macOS 26のApple Siliconのみ対応。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/palmier-pro-guide)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code, cowork
 
 ---
 

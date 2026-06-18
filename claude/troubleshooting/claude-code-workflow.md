@@ -3,18 +3,36 @@ title: Claude Code Workflow
 category: troubleshooting
 subcategory: claude-code-workflow
 tags:
+- bugfix
 - claude-code
 - cowork
 - prompt
+- 新機能
 date: '2026-05-29'
-updated: '2026-05-29'
+updated: '2026-06-18'
 sources:
 - url: https://zenn.dev/tokium_dev/articles/human-discipline-for-ai-colleague
   title: Claude のテスト設計が信用できないので ── 振り返りと試運転SkillをAIに盛り込んだ
   date: '2026-05-29'
+- url: https://zenn.dev/n314/articles/6becd34ddbe6ad
+  title: Claude CodeのTeamCreateが廃止され、Plan Modeが変わったのでワークフローを見直す
+  date: '2026-06-18'
 ---
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-06-18
+
+### Claude CodeのTeamCreateが廃止され、Plan Modeが変わったのでワークフローを見直す
+
+Claude CodeのTeamCreate機能がv2.1.178で廃止され、Plan Modeの動作も大きく変更された。Plan Modeは独自のワークフローを最優先するため、スキルと併用すると競合する問題が発生。これに対応してサブエージェントのモデルをinheritに変更し、複数ブランチを比較するスキルやカスタムinsightsコマンドを開発してワークフローを見直した。AIによる優劣判断には限界があるものの、手動判断の補助として活用している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/n314/articles/6becd34ddbe6ad)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, 新機能
 
 ---
 
