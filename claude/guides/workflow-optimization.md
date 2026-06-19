@@ -11,7 +11,7 @@ tags:
 - setup
 - sonnet
 date: '2026-05-05'
-updated: '2026-06-07'
+updated: '2026-06-19'
 sources:
 - url: https://zenn.dev/bentenweb_fumi/articles/fxyojdsgcwap
   title: AIで「手を動かす時間」を減らす：技術者のための時間投資戦略
@@ -25,12 +25,28 @@ sources:
 - url: https://qiita.com/goki602/items/4a44eceb28c5cbbcbab6
   title: Claude Code × tmux でバックグラウンド実行とエージェント管理を整理する
   date: '2026-06-07'
+- url: https://zenn.dev/pekopugu/articles/agent01-b7-progress-driven
+  title: 【Claude Code活用】PROGRESS.md駆動開発でセッションをまたいで開発する
+  date: '2026-06-19'
 ---
 
 
 
 
+
 # Workflow Optimization
+
+---
+
+## 2026-06-19
+
+### 【Claude Code活用】PROGRESS.md駆動開発でセッションをまたいで開発する
+
+Claude Codeはセッション間で記憶を保持しないため、PROGRESS.md駆動開発という手法を考案。完了済みStep、次Stepの作業内容、気づき・躓いた点の3セクションで構成し、CLAUDE.mdに更新ルールを明記することで、セッションをまたいだ開発を効率化。開発ログが記事素材としても活用でき、コミット履歴以上に意思決定の背景を残せる利点がある。
+
+- **ソース**: [Zenn claude](https://zenn.dev/pekopugu/articles/agent01-b7-progress-driven)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

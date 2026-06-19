@@ -8,10 +8,11 @@ tags:
 - opus
 - performance
 - pricing
+- release
 - sonnet
 - 新機能
 date: '2026-04-30'
-updated: '2026-06-15'
+updated: '2026-06-19'
 sources:
 - url: https://the-decoder.com/white-house-worried-about-compute-limits-as-it-blocks-wider-access-to-anthropics-mythos
   title: White House worried about compute limits as it blocks wider access to Anthropic's
@@ -36,12 +37,42 @@ sources:
   title: Amazon and five other companies reportedly triggered the government crackdown
     on Anthropic's Fable model
   date: '2026-06-15'
+- url: https://techcrunch.com/video/is-the-us-governments-anthropic-ban-accidentally-helping-the-brand
+  title: Is the US government’s Anthropic ban accidentally helping the brand?
+  date: '2026-06-19'
+- url: https://techcrunch.com/podcast/the-us-banned-anthropics-fable-5-release-but-the-numbers-dont-seem-to-care
+  title: The US banned Anthropic’s Fable 5 release, but the numbers don’t seem to
+    care
+  date: '2026-06-19'
 ---
 
 
 
 
+
 # Government Regulation
+
+---
+
+## 2026-06-19
+
+### Is the US government’s Anthropic ban accidentally helping the brand?
+
+米国政府がAnthropic の最新モデル Fable 5 と Mythos 5 をガードレール回避の懸念から使用禁止としたが、サイバーセキュリティ研究者は危険な措置と批判。Anthropic は他のモデルにも同様の脆弱性が存在すると指摘。TechCrunch の Equity ポッドキャストでは、この禁止措置が開発者やIPO、そして逆説的にブランドイメージに与える影響について議論している。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/video/is-the-us-governments-anthropic-ban-accidentally-helping-the-brand)
+- **重要度**: 8/10
+- **タグ**: pricing, release, 新機能
+
+---
+
+### The US banned Anthropic’s Fable 5 release, but the numbers don’t seem to care
+
+米国政府がAnthropicの新モデルFable 5とMythos 5を国家安全保障上の懸念から使用禁止にした。Amazonの研究者がFable 5のガードレールをバイパスする方法を発見したことが理由とされる。サイバーセキュリティ研究者らはこの措置を危険だとする公開書簡に署名し、Anthropic自身も同様の脆弱性は他のモデルにも存在すると指摘している。TechCrunchのEquityポッドキャストでは、この禁止措置が開発者やIPO観測筋に与える影響について議論されている。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/podcast/the-us-banned-anthropics-fable-5-release-but-the-numbers-dont-seem-to-care)
+- **重要度**: 8/10
+- **タグ**: release, 新機能, cowork
 
 ---
 

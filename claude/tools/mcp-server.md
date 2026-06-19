@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-06-18'
+updated: '2026-06-19'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -78,6 +78,9 @@ sources:
 - url: https://ai-heartland.com/tool/palmier-pro-guide
   title: palmier-pro解説｜Claudeが編集できるMac用オープンソース動画エディタのMCP連携と導入
   date: '2026-06-18'
+- url: https://qiita.com/Hsky16/items/c6eec78a8a90b1324e72
+  title: Yahooリアルタイム検索をMCP化した話
+  date: '2026-06-19'
 ---
 
 
@@ -99,7 +102,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-06-19
+
+### Yahooリアルタイム検索をMCP化した話
+
+Yahoo!リアルタイム検索をMCP（Model Context Protocol）サーバーとして実装したツールの紹介記事。X（旧Twitter）のリアルタイム投稿を検索できる非公式APIを活用し、AIコーディングツールでのエラー調査やトレンド分析を効率化。Claude CodeやCodexから直接利用可能で、MITライセンスで公開されている。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Hsky16/items/c6eec78a8a90b1324e72)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, setup
 
 ---
 

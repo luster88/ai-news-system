@@ -9,7 +9,7 @@ tags:
 - release
 - 新機能
 date: '2026-04-14'
-updated: '2026-06-18'
+updated: '2026-06-19'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1slictc/claude_code_on_desktop_redesigned_for_parallel
   title: Claude Code on desktop, redesigned for parallel agentic work.
@@ -36,6 +36,12 @@ sources:
   title: Anthropic brings Artifacts to Claude Code, letting teams share live pages
     from coding sessions
   date: '2026-06-18'
+- url: https://qiita.com/moha0918_/items/74e97e0f8be8174d312e
+  title: Claude Code v2.1.181〜v2.1.183｜auto modeが破壊的コマンドを止める｜毎日Changelog解説
+  date: '2026-06-19'
+- url: https://ai-heartland.com/news/claude-code-artifacts
+  title: Claude CodeにArtifacts登場｜セッションを社内共有リンクの生ページに
+  date: '2026-06-19'
 ---
 
 
@@ -44,7 +50,40 @@ sources:
 
 
 
+
 # Claude Code Desktop
+
+---
+
+## 2026-06-19
+
+### Claude Code v2.1.181〜v2.1.183｜auto modeが破壊的コマンドを止める｜毎日Changelog解説
+
+Claude Code v2.1.181〜v2.1.183のリリースで、auto modeが破壊的コマンド（git reset --hard、terraform destroyなど）を自動的にブロックする機能が追加されました。プロンプトから/config key=value構文で設定を直接変更できるようになり、カスタムBASE_URLとFoundryでのprompt cachingの不具合も修正されました。これにより、auto modeでの安全性が大幅に向上し、より安心して自動化を任せられるようになりました。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/74e97e0f8be8174d312e)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
+
+---
+
+### Claude Code v2.1.181〜v2.1.183｜auto modeが破壊的コマンドを止める｜毎日Changelog解説
+
+Claude Code v2.1.181〜v2.1.183では、auto modeが破壊的コマンド（git reset --hard、terraform destroyなど）を自動ブロックする機能が追加されました。ユーザーが明示的に指示していない限り、ローカルの変更を破棄する操作やインフラ破棄コマンドは実行前に停止されます。また、/config key=value構文によるプロンプトからの設定変更、カスタムBASE_URLでのprompt caching修正、非推奨モデルの警告機能も追加されています。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/74e97e0f8be8174d312e)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+### Claude CodeにArtifacts登場｜セッションを社内共有リンクの生ページに
+
+2026年6月18日、AnthropicがClaude CodeにArtifacts機能を発表。ターミナルでの作業セッションを共有可能なインタラクティブWebページに変換し、チーム内でリンク1本で共有できる。セッションの進行に合わせてページが更新され、diff表示やチャート、複数案の比較などをビジュアル化。TeamおよびEnterpriseプランでベータ提供開始。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/news/claude-code-artifacts)
+- **重要度**: 8/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

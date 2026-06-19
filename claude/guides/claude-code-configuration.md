@@ -4,11 +4,12 @@ category: guides
 subcategory: claude-code-configuration
 tags:
 - claude-code
+- cowork
 - prompt
 - setup
 - 新機能
 date: '2026-05-12'
-updated: '2026-05-31'
+updated: '2026-06-19'
 sources:
 - url: https://qiita.com/Tadashi_Kudo/items/80a6a0c8fe73bd9450c3
   title: 104kスターのKarpathy CLAUDE.mdを試したら、手元に既にあった話——グローバルCLAUDE.mdで全PJ適用済みの実態
@@ -19,12 +20,28 @@ sources:
 - url: https://qiita.com/goki602/items/8af4792b8e8794173e7c
   title: Claude Code の CLAUDE.md と Skills を使い分ける ― 常時ルールとタスク別手順の設計
   date: '2026-05-31'
+- url: https://qiita.com/YujiNaramoto/items/1ec99042d59c9744cf98
+  title: なぜClaude Code Skillsの設定をプロジェクト外に出すのか
+  date: '2026-06-19'
 ---
 
 
 
 
+
 # Claude Code Configuration
+
+---
+
+## 2026-06-19
+
+### なぜClaude Code Skillsの設定をプロジェクト外に出すのか
+
+Claude Code Skillsで繰り返し作業をAIワークフローとして定義する際、プロジェクト固有の設定値をスキル本体から分離する設計手法を解説。skill-config.jsonによる3層コンフィグマージ（グローバル・プロジェクト・デフォルト）を用い、jqのdeep mergeで設定を統合することで、同じスキルを複数プロジェクトで再利用可能にする。これにより「自動化ツールを手動で移植する」矛盾を解消し、スキル作成の心理的ハードルを下げる効果がある。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/YujiNaramoto/items/1ec99042d59c9744cf98)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, cowork
 
 ---
 

@@ -9,7 +9,7 @@ tags:
 - pricing
 - 新機能
 date: '2026-04-18'
-updated: '2026-05-21'
+updated: '2026-06-19'
 sources:
 - url: https://the-decoder.com/anthropic-ceo-amodei-declares-there-is-no-end-to-the-rainbow-for-ai-scaling
   title: Anthropic CEO Amodei declares "there is no end to the rainbow" for AI scaling
@@ -25,12 +25,29 @@ sources:
   title: SpaceX IPO filing shows billions in AI losses, a $2 trillion valuation target,
     and turbine spending that signals more data center conflicts ahead
   date: '2026-05-21'
+- url: https://the-decoder.com/google-deepmind-loses-another-top-ai-researcher-as-nobel-laureate-john-jumper-leaves-for-anthropic
+  title: Google Deepmind loses another top AI researcher as Nobel laureate John Jumper
+    leaves for Anthropic
+  date: '2026-06-19'
 ---
 
 
 
 
+
 # Industry News
+
+---
+
+## 2026-06-19
+
+### Google Deepmind loses another top AI researcher as Nobel laureate John Jumper leaves for Anthropic
+
+Google DeepMindからノーベル化学賞受賞者でAlphaFold開発リーダーのJohn JumperがAnthropicに移籍。これはGemini共同リーダーNoam ShazeerのOpenAI移籍、AlphaGo/AlphaZero主任研究者David Silverの独立に続く、Google AIの主要研究者の相次ぐ流出。Gemini 3.5 Proは6月末リリース予定だが、AnthropicやOpenAIの最新モデルと競争力がないとの内部情報もある。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/google-deepmind-loses-another-top-ai-researcher-as-nobel-laureate-john-jumper-leaves-for-anthropic)
+- **重要度**: 7/10
+- **タグ**: cowork, performance
 
 ---
 
