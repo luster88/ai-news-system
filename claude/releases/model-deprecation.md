@@ -8,7 +8,7 @@ tags:
 - release
 - sonnet
 date: '2026-05-03'
-updated: '2026-06-02'
+updated: '2026-06-20'
 sources:
 - url: https://qiita.com/tai0921/items/fe20f48cf99d3bd336df
   title: Claude Sonnet 4 / Opus 4が6月15日に終わる — 今すぐ始める移行3ステップ
@@ -16,10 +16,26 @@ sources:
 - url: https://qiita.com/picnic/items/fce93bb7d299ba16c613
   title: Claude Opus 4 廃止まで2週間：Opus 4.8移行と最新API変更まとめ
   date: '2026-06-02'
+- url: https://qiita.com/YushiYamamoto/items/132e5ae5e4c0b77c4741
+  title: 2026年6月のLLM提供停止ラッシュ：GPT-5・o3スナップショット非推奨とClaude 4退役、本番コードで今すぐ直すこと
+  date: '2026-06-20'
 ---
 
 
+
 # Model Deprecation
+
+---
+
+## 2026-06-20
+
+### 2026年6月のLLM提供停止ラッシュ：GPT-5・o3スナップショット非推奨とClaude 4退役、本番コードで今すぐ直すこと
+
+2026年6月、OpenAIとAnthropicが相次いでモデル退役を発表。OpenAIはGPT-5・o3スナップショットを7月23日に停止、AnthropicはClaude Sonnet 4/Opus 4を6月15日に退役済み。本番環境で日付付きスナップショットIDをハードコードしているコードは即座に対処が必要。さらに米政府の輸出規制によりClaude Fable 5/Mythos 5が公開3日後に停止される事態も発生しており、予告なし停止へのフォールバック設計の重要性が増している。
+
+- **ソース**: [Qiita claude](https://qiita.com/YushiYamamoto/items/132e5ae5e4c0b77c4741)
+- **重要度**: 9/10
+- **タグ**: claude-api, opus, sonnet
 
 ---
 

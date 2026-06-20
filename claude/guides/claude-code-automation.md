@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-06-15'
+updated: '2026-06-20'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -77,6 +77,9 @@ sources:
 - url: https://qiita.com/yureki_lab/items/ac9886f8484712e66f04
   title: Claude Code の Hooks (PostToolUse) でファイル保存時に自動 lint・型チェックを走らせる最小手順【2026】
   date: '2026-06-15'
+- url: https://zenn.dev/moha0918/articles/daily-cc-hooks-20260406
+  title: Claude Code の hooks で開発フローを自動化する — 設定から実践まで
+  date: '2026-06-20'
 ---
 
 
@@ -97,7 +100,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-06-20
+
+### Claude Code の hooks で開発フローを自動化する — 設定から実践まで
+
+Claude Code の hooks 機能を使って開発フローを自動化する方法を解説。ツール実行前後やセッション開始時に任意のシェルコマンドを実行でき、通知・ログ記録・環境セットアップなどに活用できる。~/.claude/settings.json での設定方法、PreToolUse/PostToolUse/SessionStart/Stop の各イベント活用例、環境変数の使い方、エスケープ問題の回避策などを実践的に紹介している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/moha0918/articles/daily-cc-hooks-20260406)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

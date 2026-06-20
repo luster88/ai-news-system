@@ -14,7 +14,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-06-18'
+updated: '2026-06-20'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -172,6 +172,9 @@ sources:
 - url: https://qiita.com/minorin22/items/2d7b2c76639c6528d306
   title: 5年前に作りかけて放置してた絵コンテ制作アプリ「Mizutama Conte」をClaudeと１週間で完成させました
   date: '2026-06-18'
+- url: https://zenn.dev/pekopugu/articles/agent01-b8-zenn-article
+  title: 【Claude Code活用】Zenn記事をClaude Codeに書かせる
+  date: '2026-06-20'
 ---
 
 
@@ -215,7 +218,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-06-20
+
+### 【Claude Code活用】Zenn記事をClaude Codeに書かせる
+
+Claude Code を活用して Zenn 記事を生成するワークフローを紹介。Claude.ai で記事生成指示書を設計し、Claude Code がコードを直接読みながら記事を生成する分業体制を採用。PROGRESS.md の実装体験談を素材にすることで、技術的に正確で具体性のある記事を16本生成した事例。
+
+- **ソース**: [Zenn claude](https://zenn.dev/pekopugu/articles/agent01-b8-zenn-article)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

@@ -11,7 +11,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-04-12'
-updated: '2026-06-13'
+updated: '2026-06-20'
 sources:
 - url: https://ai-heartland.com/explain/last30days-skill-guide
   title: last30days-skill完全ガイド｜Reddit・X・YouTube横断AIリサーチスキルの使い方2026年版
@@ -40,6 +40,9 @@ sources:
 - url: https://ai-heartland.com/explain/claude-code-deep-trilogy-guide
   title: Claude Code プラグイン Deep Trilogy 入門｜あいまいなアイデアをspecに分解→TDDで実装まで一気通貫
   date: '2026-06-13'
+- url: https://qiita.com/claude_iruka/items/f5c721f2acf2241e6d11
+  title: Claude Codeのカスタムコマンドで転職活動の応募書類を自動生成するツールを作ってみた
+  date: '2026-06-20'
 ---
 
 
@@ -50,7 +53,20 @@ sources:
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-06-20
+
+### Claude Codeのカスタムコマンドで転職活動の応募書類を自動生成するツールを作ってみた
+
+Claude Codeのカスタムスラッシュコマンド機能を活用して、転職活動の応募書類（志望動機・自己PR・職務要約）を企業ごとに自動生成するツール「job-hunting-kit」の開発事例。キャリア情報をMarkdownファイル（my-career.md）として永続化し、/setupコマンドで初期設定、/applyコマンドで企業別の書類を一括生成する仕組み。ChatGPT/Claude Web版と異なり、文脈の永続化とローカルファイル管理が可能で、生成→修正のループを高速化できる点が特徴。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/claude_iruka/items/f5c721f2acf2241e6d11)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, 新機能
 
 ---
 

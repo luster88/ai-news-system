@@ -2314,14 +2314,34 @@
     "https://the-decoder.com/openai-researchers-show-small-doses-of-beneficial-trait-training-make-ai-models-broadly-safer-and-harder-to-manipulate": "2026-06-19",
     "https://techcrunch.com/2026/06/19/encryption-spyware-and-now-mythos-history-shows-why-cyber-export-control-doesnt-work": "2026-06-19",
     "https://techcrunch.com/video/is-the-us-governments-anthropic-ban-accidentally-helping-the-brand": "2026-06-19",
-    "https://techcrunch.com/podcast/the-us-banned-anthropics-fable-5-release-but-the-numbers-dont-seem-to-care": "2026-06-19"
+    "https://techcrunch.com/podcast/the-us-banned-anthropics-fable-5-release-but-the-numbers-dont-seem-to-care": "2026-06-19",
+    "https://www.reddit.com/r/ClaudeAI/comments/1uau8au/new_devs_be_like": "2026-06-20",
+    "https://www.reddit.com/r/ClaudeAI/comments/1uaqyni/ai_has_revealed_that_most_people_have_the_reading": "2026-06-20",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ub7lxv/whats_your_mostused_claude_prompt_that_you_cant": "2026-06-20",
+    "https://www.reddit.com/r/ClaudeAI/comments/1uat4bc/trump_on_anthropic_ceo_dario_and_ai_national": "2026-06-20",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ub4fxx/ccswitch": "2026-06-20",
+    "https://www.reddit.com/r/ClaudeAI/comments/1uan2ow/nobel_winner_john_jumper_to_leave_google_deepmind": "2026-06-20",
+    "https://www.reddit.com/r/ClaudeAI/comments/1uagwhk/claude_gave_me_the_number_to_a_phone_sex_line": "2026-06-20",
+    "https://www.reddit.com/r/ClaudeAI/comments/1uahx8i/update_weve_gone_ahead_and_reset_5hour_and_weekly": "2026-06-20",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ub11yd/supercharging_claude_code_with_the_right_cli_tools": "2026-06-20",
+    "https://qiita.com/moha0918_/items/9cafe58f1e98d3af2599": "2026-06-20",
+    "https://qiita.com/soldierboy/items/beb47801a1c81c5b4e35": "2026-06-20",
+    "https://qiita.com/claude_iruka/items/f5c721f2acf2241e6d11": "2026-06-20",
+    "https://qiita.com/YushiYamamoto/items/132e5ae5e4c0b77c4741": "2026-06-20",
+    "https://zenn.dev/pekopugu/articles/agent01-b8-zenn-article": "2026-06-20",
+    "https://zenn.dev/moha0918/articles/daily-cc-hooks-20260406": "2026-06-20",
+    "https://zenn.dev/mdtechknowledge/articles/dynamic-workflows-token-cache-analysis": "2026-06-20",
+    "https://zenn.dev/kamuidash/articles/8010bae646cabc": "2026-06-20",
+    "https://zenn.dev/okzaq/books/dify-chatflow-skill-book": "2026-06-20",
+    "https://qiita.com/Tomoya-Oku/items/99048d9e005f3c61d075": "2026-06-20",
+    "https://the-decoder.com/openai-tripled-revenue-to-5-7-billion-in-q1-but-burned-through-3-7-billion-to-get-there": "2026-06-20"
   },
   "source_penalties": {
-    "Anthropic News": "2026-06-20",
+    "Anthropic News": "2026-06-21",
     "Reddit r/ClaudeAI": "2026-06-20",
     "Zenn claude": "2026-03-25",
-    "TechCrunch Claude": "2026-06-19",
+    "TechCrunch Claude": "2026-06-21",
     "The Decoder Claude": "2026-06-15",
-    "AI Heartland": "2026-06-17"
+    "AI Heartland": "2026-06-21"
   }
 }

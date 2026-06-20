@@ -9,7 +9,7 @@ tags:
 - release
 - 新機能
 date: '2026-04-14'
-updated: '2026-06-19'
+updated: '2026-06-20'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1slictc/claude_code_on_desktop_redesigned_for_parallel
   title: Claude Code on desktop, redesigned for parallel agentic work.
@@ -42,6 +42,9 @@ sources:
 - url: https://ai-heartland.com/news/claude-code-artifacts
   title: Claude CodeにArtifacts登場｜セッションを社内共有リンクの生ページに
   date: '2026-06-19'
+- url: https://qiita.com/moha0918_/items/9cafe58f1e98d3af2599
+  title: Claude Code v2.1.185｜ストール表示が10秒→20秒に｜毎日Changelog解説
+  date: '2026-06-20'
 ---
 
 
@@ -51,7 +54,30 @@ sources:
 
 
 
+
 # Claude Code Desktop
+
+---
+
+## 2026-06-20
+
+### Claude Code v2.1.185｜ストール表示が10秒→20秒に｜毎日Changelog解説
+
+Claude Code v2.1.185では、API応答待ちのストール表示が改善されました。表示が出るまでの時間が10秒から20秒に延長され、文言も「No response from API」から「Waiting for API response」に変更されました。これにより、長いプロンプトや大きなコンテキスト処理中の誤発火が減少し、ユーザーが正常な待機とエラーを区別しやすくなりました。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/9cafe58f1e98d3af2599)
+- **重要度**: 4/10
+- **タグ**: claude-code, release, bugfix
+
+---
+
+### Claude Code v2.1.185｜ストール表示が10秒→20秒に｜毎日Changelog解説
+
+Claude Code v2.1.185では、API応答待機時のストール表示が改善された。表示が出るまでの時間が10秒から20秒に延長され、文言も「No response from API」から「Waiting for API response」に変更。大きなコンテキスト処理時の誤発火を減らし、ユーザー体験を向上させる改善。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/9cafe58f1e98d3af2599)
+- **重要度**: 4/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 
