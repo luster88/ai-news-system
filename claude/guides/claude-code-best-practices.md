@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-11'
-updated: '2026-05-17'
+updated: '2026-06-21'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-best-practice-guide-2026
   title: Claude Codeベストプラクティス完全ガイド2026年版｜使い方・Tips・効率化テクニック集
@@ -28,13 +28,29 @@ sources:
 - url: https://qiita.com/Tadashi_Kudo/items/524ca5cc51e6e4f74305
   title: 海外5M viewバズ投稿「Claudeレート制限回避Tips」——全部すでに実装してた話：CLAUDE.md駆動開発のすすめ
   date: '2026-05-17'
+- url: https://zenn.dev/tatsuqumo/articles/04266f36508023
+  title: CLAUDE.md のトリセツ — 200行で Claude Code の動きが変わる
+  date: '2026-06-21'
 ---
 
 
 
 
 
+
 # Claude Code Best Practices
+
+---
+
+## 2026-06-21
+
+### CLAUDE.md のトリセツ — 200行で Claude Code の動きが変わる
+
+CLAUDE.mdは200行以内推奨だが、全文ロードされる。問題は切られることではなく薄まること。userメッセージとして注入されるため強制力はなく、長いほど遵守率が低下する。効果を最大化するには、読み込み順の理解、skills/.claude/rulesへの分離、検証可能な指示の記述、構造化された記述が重要。PreToolUseフックで操作ブロック、~/.claude/rules/で個人設定を分離する手法も紹介。
+
+- **ソース**: [Zenn claude](https://zenn.dev/tatsuqumo/articles/04266f36508023)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

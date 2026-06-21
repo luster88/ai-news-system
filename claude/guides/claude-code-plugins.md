@@ -3,13 +3,14 @@ title: Claude Code Plugins
 category: guides
 subcategory: claude-code-plugins
 tags:
+- claude-api
 - claude-code
 - cowork
 - prompt
 - setup
 - 新機能
 date: '2026-04-07'
-updated: '2026-06-14'
+updated: '2026-06-21'
 sources:
 - url: https://qiita.com/moha0918_/items/b3011c218210ab2695b7
   title: プラグイン作成の3つの方法、結局どれを選ぶべき？
@@ -36,6 +37,9 @@ sources:
 - url: https://qiita.com/shu15511551/items/4b5c95976adb2d7d2efd
   title: （後編）Sheets も、フォルダも使わない ── 20年もののファイル探しツールが、Googleドライブで「G-クイック」になるまでの話
   date: '2026-06-14'
+- url: https://qiita.com/mnoguchi/items/65af2c1e7440226b3cac
+  title: Claude Codeで歴史的リーダー診断アプリを30分で作った【Next.js + Anthropic API】
+  date: '2026-06-21'
 ---
 
 
@@ -44,7 +48,20 @@ sources:
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-06-21
+
+### Claude Codeで歴史的リーダー診断アプリを30分で作った【Next.js + Anthropic API】
+
+Claude Code を使い Next.js + Anthropic API（Claude Haiku）で30分でマネージャータイプ診断アプリを構築した実践記事。10問の質問から歴史上の人物を診断する仕組みで、JSON形式指定・候補の幅明示・文字数指定などプロンプトエンジニアリングのコツを紹介。Claude Haiku を使用し1回約700トークンで動作する。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/mnoguchi/items/65af2c1e7440226b3cac)
+- **重要度**: 6/10
+- **タグ**: claude-code, claude-api, prompt
 
 ---
 

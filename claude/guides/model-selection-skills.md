@@ -9,7 +9,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-04-22'
-updated: '2026-05-25'
+updated: '2026-06-21'
 sources:
 - url: https://zenn.dev/ai_arai_ally/articles/20260422-0401-claude-haiku-4-5-skill-opus-4-7
   title: Claude Haiku 4.5 + skill で Opus 4.7 を超えた ― SkillsBench 追試とモデル選定の設計図
@@ -20,11 +20,27 @@ sources:
 - url: https://ai-heartland.com/explain/picking-right-model-london-2026
   title: モデル選択の実践科学 — LucasがCode with Claude Londonで語るEval・コスト・フロンティア移動
   date: '2026-05-25'
+- url: https://zenn.dev/shun_producer/articles/claude-model-selection-guide
+  title: Claudeモデル×エフォート選択ガイド——Opus 4.8 / Sonnet 4.6 / Haiku 4.5の2軸最適化
+  date: '2026-06-21'
 ---
 
 
 
+
 # Model Selection Skills
+
+---
+
+## 2026-06-21
+
+### Claudeモデル×エフォート選択ガイド——Opus 4.8 / Sonnet 4.6 / Haiku 4.5の2軸最適化
+
+Claudeのモデル選択（Opus/Sonnet/Haiku）とエフォートレベル（思考の深さ）を2軸で最適化する実務ガイド。SWE-benchでSonnet 4.6が79.6%、Opus 4.6が80.8%とわずか1.2ポイント差だが、API単価は約5倍の開き。Sonnetを高エフォートで動かす方が、Opusを低エフォートで動かすよりコスパが良い場合が多い。Haikuは定型タスクで本番利用可能で、Sonnetから切り替えるとコストを約1/3に削減できる。
+
+- **ソース**: [Zenn claude](https://zenn.dev/shun_producer/articles/claude-model-selection-guide)
+- **重要度**: 7/10
+- **タグ**: opus, sonnet, haiku
 
 ---
 

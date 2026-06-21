@@ -4,6 +4,7 @@ category: ecosystem
 subcategory: competitive-landscape
 tags:
 - claude-code
+- claude-console
 - cowork
 - opus
 - performance
@@ -11,7 +12,7 @@ tags:
 - release
 - sonnet
 date: '2026-03-23'
-updated: '2026-05-19'
+updated: '2026-06-21'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -37,6 +38,9 @@ sources:
 - url: https://techcrunch.com/2026/05/19/google-updates-its-gemini-app-to-take-on-chatgpt-and-claude-at-io-2026
   title: Google updates its Gemini app to take on ChatGPT and Claude at IO 2026
   date: '2026-05-19'
+- url: https://qiita.com/ochtum/items/c7e0814d4e9646a22cb0
+  title: AIエコシステム比較表：OpenAI、Anthropic、Google、GitHub、Microsoftを同一レイヤーで整理
+  date: '2026-06-21'
 ---
 
 
@@ -45,7 +49,20 @@ sources:
 
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-06-21
+
+### AIエコシステム比較表：OpenAI、Anthropic、Google、GitHub、Microsoftを同一レイヤーで整理
+
+OpenAI、Anthropic、Google、GitHub、Microsoftの主要AIサービスを「Foundation Models」「Consumer AI」「Coding AI」「Agent」「Platform」「Enterprise」の6レイヤーで横断比較し整理。ChatGPTとGitHub Copilotなど役割の異なるサービスを同一視せず、適切なレイヤー別に比較することで、各社の強みや導入時の検討ポイントを明確化する比較表を提供。
+
+- **ソース**: [Qiita claude](https://qiita.com/ochtum/items/c7e0814d4e9646a22cb0)
+- **重要度**: 6/10
+- **タグ**: claude-console, pricing, cowork
 
 ---
 
