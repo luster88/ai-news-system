@@ -8,7 +8,7 @@ tags:
 - opus
 - sonnet
 date: '2026-06-05'
-updated: '2026-06-16'
+updated: '2026-06-22'
 sources:
 - url: https://qiita.com/picnic/items/2e22aeba610255b45641
   title: Claude API 障害レポート：複数モデルでエラー率上昇・約3.5時間で完全復旧
@@ -16,10 +16,26 @@ sources:
 - url: https://qiita.com/picnic/items/9f78b0e3dec2aae45dfe
   title: 'Claude APIで複数モデル同時障害: Sonnet/Opusで最大10%エラー率上昇の全容'
   date: '2026-06-16'
+- url: https://qiita.com/picnic/items/64d12430e8946cc6d677
+  title: Claude API 主要モデル広範囲エラー障害の詳細と本番運用対策
+  date: '2026-06-22'
 ---
 
 
+
 # Api Outage
+
+---
+
+## 2026-06-22
+
+### Claude API 主要モデル広範囲エラー障害の詳細と本番運用対策
+
+2026年6月22日、Claude APIで主要モデル（Opus 4.8/4.7/4.6、Sonnet 4.6、Haiku 4.5）が広範囲にわたってエラー率上昇を経験する2件のインシデントが発生。第1インシデントは約1.5時間で解決したが、第2インシデント（Opus 4.8単体）は約6.5時間を要した。同一ベンダー依存のリスクと、フォールバック戦略・監視体制の重要性が浮き彫りになった。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/64d12430e8946cc6d677)
+- **重要度**: 8/10
+- **タグ**: claude-api, opus, sonnet
 
 ---
 

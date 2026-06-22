@@ -1,11 +1,5 @@
 {
   "urls": {
-    "https://qiita.com/AI-SKILL-LAB/items/6589c5124c391f923320": "2026-03-23",
-    "https://qiita.com/pro-tein/items/49e5dbec705c3497dd51": "2026-03-23",
-    "https://qiita.com/juliuse/items/981cee0228c394ffc28f": "2026-03-23",
-    "https://qiita.com/AI-SKILL-LAB/items/49680a622965f14336d6": "2026-03-23",
-    "https://qiita.com/urakimo/items/6e490d8e67b99eb96ae0": "2026-03-23",
-    "https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic": "2026-03-23",
     "https://qiita.com/taketsuyo/items/51130ee2457fe6d6fddf": "2026-03-24",
     "https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1": "2026-03-24",
     "https://qiita.com/dai_chi/items/0702e3a9f7a487ceaa3e": "2026-03-24",
@@ -2316,14 +2310,36 @@
     "https://zenn.dev/moha0918/articles/daily-cc-model-config-20260406": "2026-06-21",
     "https://zenn.dev/tom1414/articles/4a5b47d074fa2f": "2026-06-21",
     "https://qiita.com/mnoguchi/items/65af2c1e7440226b3cac": "2026-06-21",
-    "https://qiita.com/yurukusa/items/4be11d4ae3bca22fd278": "2026-06-21"
+    "https://qiita.com/yurukusa/items/4be11d4ae3bca22fd278": "2026-06-21",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ucvp8v/four_members_of_congress_respectfully_request_an": "2026-06-22",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ucfstl/claude_is_helping_me_build_a_news_globe_that": "2026-06-22",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ucw1nz/claude_is_my_financial_dashboard_now": "2026-06-22",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ucpw87/i_pulled_90000_reddit_posts_about_what_makes": "2026-06-22",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ucsdqv/the_shoe_has_dropped": "2026-06-22",
+    "https://www.reddit.com/r/ClaudeAI/comments/1uc7izy/i_added_a_clause_to_andrej_karpathys_4_claudemd": "2026-06-22",
+    "https://www.reddit.com/r/ClaudeAI/comments/1uclctr/sorry_i_did_the_exact_opposite_to_claudemd_never": "2026-06-22",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ucny0i/claude_cowork_nano_banana_is_insane_for_images": "2026-06-22",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ucs4a3/opus_48_is_now_labeled_as_best_for_everyday_tasks": "2026-06-22",
+    "https://qiita.com/moha0918_/items/c8e4090853e599e25b4a": "2026-06-22",
+    "https://qiita.com/picnic/items/4ce73f6d760a8850de39": "2026-06-22",
+    "https://qiita.com/picnic/items/64d12430e8946cc6d677": "2026-06-22",
+    "https://qiita.com/picnic/items/7f47405f515731b37f3f": "2026-06-22",
+    "https://zenn.dev/pacific_creator/articles/ebd995006fc30d": "2026-06-22",
+    "https://zenn.dev/startupjp1/articles/sowsmith-proposal-generator": "2026-06-22",
+    "https://zenn.dev/kotakotahiro/articles/d39300d8cc3e51": "2026-06-22",
+    "https://zenn.dev/cutlet_of_pork/articles/three-agent-orchestration": "2026-06-22",
+    "https://zenn.dev/kashi923/articles/22e9c055eea62f": "2026-06-22",
+    "https://zenn.dev/yuki_engineer08/articles/5dd7f1fcee9043": "2026-06-22",
+    "https://qiita.com/todiii/items/002152f787abd921fa0e": "2026-06-22",
+    "https://the-decoder.com/anthropic-and-micron-want-to-co-design-ai-memory-architecture": "2026-06-22",
+    "https://the-decoder.com/sakana-ais-fugu-orchestrates-multiple-llms-to-match-anthropics-fable-and-mythos-benchmarks": "2026-06-22"
   },
   "source_penalties": {
-    "Anthropic News": "2026-06-22",
+    "Anthropic News": "2026-06-23",
     "Reddit r/ClaudeAI": "2026-06-20",
     "Zenn claude": "2026-03-25",
-    "TechCrunch Claude": "2026-06-22",
+    "TechCrunch Claude": "2026-06-23",
     "The Decoder Claude": "2026-06-15",
-    "AI Heartland": "2026-06-22"
+    "AI Heartland": "2026-06-23"
   }
 }

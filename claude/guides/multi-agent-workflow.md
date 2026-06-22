@@ -9,7 +9,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-03-29'
-updated: '2026-05-03'
+updated: '2026-06-22'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6jouf/anthropic_shares_how_to_make_claude_code_better
   title: Anthropic shares how to make Claude code better with a harness
@@ -20,11 +20,27 @@ sources:
 - url: https://zenn.dev/taroh_7/articles/2026-04-18-ai-career-strategy-multiagent
   title: Claude Codeでキャリア戦略レポートの作り方を自動化した話
   date: '2026-05-03'
+- url: https://zenn.dev/cutlet_of_pork/articles/three-agent-orchestration
+  title: 3つのAIエージェントを連携させて全自動開発パイプラインを構築するアーキテクチャ【Claude / Codex / AGY】
+  date: '2026-06-22'
 ---
 
 
 
+
 # Multi Agent Workflow
+
+---
+
+## 2026-06-22
+
+### 3つのAIエージェントを連携させて全自動開発パイプラインを構築するアーキテクチャ【Claude / Codex / AGY】
+
+Claude Code、Codex CLI、Antigravity CLIの3つのAIエージェントを連携させた「Agent Triad」アーキテクチャの解説。NotebookLM + Headroomによるコンテキスト管理、YOLOモードでの完全自動承認、エビデンスベースのルール管理により、ハルシネーションやAI Slopを防ぎつつ全自動開発パイプラインを実現する手法を紹介。
+
+- **ソース**: [Zenn claude](https://zenn.dev/cutlet_of_pork/articles/three-agent-orchestration)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

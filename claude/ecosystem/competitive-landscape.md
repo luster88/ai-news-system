@@ -3,6 +3,7 @@ title: Competitive Landscape
 category: ecosystem
 subcategory: competitive-landscape
 tags:
+- claude-api
 - claude-code
 - claude-console
 - cowork
@@ -11,8 +12,9 @@ tags:
 - pricing
 - release
 - sonnet
+- 新機能
 date: '2026-03-23'
-updated: '2026-06-21'
+updated: '2026-06-22'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -41,6 +43,10 @@ sources:
 - url: https://qiita.com/ochtum/items/c7e0814d4e9646a22cb0
   title: AIエコシステム比較表：OpenAI、Anthropic、Google、GitHub、Microsoftを同一レイヤーで整理
   date: '2026-06-21'
+- url: https://the-decoder.com/sakana-ais-fugu-orchestrates-multiple-llms-to-match-anthropics-fable-and-mythos-benchmarks
+  title: Sakana AI's Fugu orchestrates multiple LLMs to match Anthropic's Fable and
+    Mythos benchmarks
+  date: '2026-06-22'
 ---
 
 
@@ -50,7 +56,20 @@ sources:
 
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-06-22
+
+### Sakana AI's Fugu orchestrates multiple LLMs to match Anthropic's Fable and Mythos benchmarks
+
+日本のAIスタートアップSakana AIが、複数のLLMを動的に連携させて1つのAPIで利用できるシステム「Fugu」を発表。AnthropicのFableやMythosといったトップモデルに匹敵するベンチマーク結果を達成し、特定のAIプロバイダーへの依存を減らすことを目指している。ベース版とUltra版の2種類を提供し、コーディング、研究、セキュリティ分析などに活用可能。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/sakana-ais-fugu-orchestrates-multiple-llms-to-match-anthropics-fable-and-mythos-benchmarks)
+- **重要度**: 7/10
+- **タグ**: performance, 新機能, claude-api
 
 ---
 

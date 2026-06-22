@@ -6,10 +6,11 @@ tags:
 - bugfix
 - claude-code
 - cowork
+- mcp
 - release
 - 新機能
 date: '2026-04-14'
-updated: '2026-06-20'
+updated: '2026-06-22'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1slictc/claude_code_on_desktop_redesigned_for_parallel
   title: Claude Code on desktop, redesigned for parallel agentic work.
@@ -45,6 +46,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/9cafe58f1e98d3af2599
   title: Claude Code v2.1.185｜ストール表示が10秒→20秒に｜毎日Changelog解説
   date: '2026-06-20'
+- url: https://qiita.com/moha0918_/items/c8e4090853e599e25b4a
+  title: Claude Code v2.1.186｜bashコマンド出力にClaudeが自動応答｜毎日Changelog解説
+  date: '2026-06-22'
 ---
 
 
@@ -55,7 +59,30 @@ sources:
 
 
 
+
 # Claude Code Desktop
+
+---
+
+## 2026-06-22
+
+### Claude Code v2.1.186｜bashコマンド出力にClaudeが自動応答｜毎日Changelog解説
+
+Claude Code v2.1.186では、bashコマンドの出力にClaudeが自動応答する挙動がデフォルトに変更されました。従来は出力を文脈に追加するだけでしたが、Claudeが結果を読んで次のアクションを提案します。MCP認証のCLIコマンド追加、サブエージェントの権限制限バグ修正も含まれます。従来の挙動に戻すにはrespondToBashCommands: falseの設定が必要です。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/c8e4090853e599e25b4a)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+### Claude Code v2.1.186｜bashコマンド出力にClaudeが自動応答｜毎日Changelog解説
+
+Claude Code v2.1.186で、インラインbashコマンドの実行結果にClaudeが自動応答する仕様に変更。従来の「出力を文脈に追加するだけ」の動作は respondToBashCommands: false で維持可能。MCP サーバーの CLI 認証（claude mcp login/logout）が追加され、SSH環境でもブラウザなしで認証可能に。named サブエージェントの権限制限が正しく適用されていなかったバグを修正。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/c8e4090853e599e25b4a)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, mcp
 
 ---
 
