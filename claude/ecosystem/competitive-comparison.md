@@ -3,14 +3,16 @@ title: Competitive Comparison
 category: ecosystem
 subcategory: competitive-comparison
 tags:
+- claude-api
 - claude-code
 - cowork
 - opus
 - performance
 - pricing
 - sonnet
+- 新機能
 date: '2026-04-25'
-updated: '2026-05-17'
+updated: '2026-06-23'
 sources:
 - url: https://zenn.dev/aipedia/articles/5bdcc55c203d8f
   title: 【2026年4月版】ChatGPT・Claude・Gemini 徹底比較
@@ -23,11 +25,28 @@ sources:
   title: Honest comparison after 4 months running Claude Pro + ChatGPT Plus side by
     side
   date: '2026-05-17'
+- url: https://the-decoder.com/openai-says-new-gpt-5-5-cyber-outperforms-anthropics-mythos-on-cybersecurity-benchmark
+  title: OpenAI says new GPT-5.5-Cyber outperforms Anthropic's Mythos on cybersecurity
+    benchmark
+  date: '2026-06-23'
 ---
 
 
 
+
 # Competitive Comparison
+
+---
+
+## 2026-06-23
+
+### OpenAI says new GPT-5.5-Cyber outperforms Anthropic's Mythos on cybersecurity benchmark
+
+OpenAIが新たなサイバーセキュリティモデルGPT-5.5-Cyberを正式リリースし、AnthropicのMythosをベンチマークで上回ったと発表。Codex Securityプラグインも更新され、脆弱性の発見からパッチ生成までの自動化を実現。25以上のセキュリティ企業や政府機関とのパートナープログラムも開始。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/openai-says-new-gpt-5-5-cyber-outperforms-anthropics-mythos-on-cybersecurity-benchmark)
+- **重要度**: 6/10
+- **タグ**: performance, 新機能, claude-api
 
 ---
 

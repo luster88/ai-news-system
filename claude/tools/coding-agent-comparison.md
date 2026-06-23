@@ -7,9 +7,10 @@ tags:
 - copilot
 - cowork
 - cursor
+- performance
 - pricing
 date: '2026-03-29'
-updated: '2026-05-16'
+updated: '2026-06-23'
 sources:
 - url: https://zenn.dev/sn0w_easy/articles/7c610896f4d08e
   title: 格安コーディングエージェントCodexのススメ
@@ -17,10 +18,26 @@ sources:
 - url: https://ai-heartland.com/tool/codebuff-ai-coding-agent
   title: Codebuff徹底解説｜Claude Codeを61% vs 53%で上回る4エージェント型OSS
   date: '2026-05-16'
+- url: https://zenn.dev/marvelousu/articles/sakana-fugu-vs-claude-codex
+  title: Sakana Fugu と Claude Code/Codex を同じプロンプトで回して比べた — いま乗り換えないと判断した理由
+  date: '2026-06-23'
 ---
 
 
+
 # Coding Agent Comparison
+
+---
+
+## 2026-06-23
+
+### Sakana Fugu と Claude Code/Codex を同じプロンプトで回して比べた — いま乗り換えないと判断した理由
+
+Claude Code/Codex と Sakana Fugu を同一プロンプトで実測比較した結果、品質は横並びだがコストと速度で差がついた。Fugu Ultra はコストが約20倍、内部処理で約8,180トークンを消費し、速度も数倍遅い。既存ユーザーには急な乗り換えは不要で、速度・コストを重視するなら Claude/OpenAI を直接使うほうが無難と結論づけている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/marvelousu/articles/sakana-fugu-vs-claude-codex)
+- **重要度**: 6/10
+- **タグ**: claude-code, performance, pricing
 
 ---
 

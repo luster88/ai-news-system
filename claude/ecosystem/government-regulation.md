@@ -12,7 +12,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-30'
-updated: '2026-06-19'
+updated: '2026-06-23'
 sources:
 - url: https://the-decoder.com/white-house-worried-about-compute-limits-as-it-blocks-wider-access-to-anthropics-mythos
   title: White House worried about compute limits as it blocks wider access to Anthropic's
@@ -44,13 +44,28 @@ sources:
   title: The US banned Anthropic’s Fable 5 release, but the numbers don’t seem to
     care
   date: '2026-06-19'
+- url: https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits
+  title: When the Trump administration cracks down on Anthropic, who benefits?
+  date: '2026-06-23'
 ---
 
 
 
 
 
+
 # Government Regulation
+
+---
+
+## 2026-06-23
+
+### When the Trump administration cracks down on Anthropic, who benefits?
+
+トランプ政権が国家安全保障上の懸念を理由に、Anthropicに対して最新の2つのAIモデル（Fable 5とMythos 5）のオフライン化を命令。輸出管理規制により外国人による利用を制限する措置で、サイバーセキュリティ専門家からは撤回を求める公開書簡も提出されている。Anthropicと政権との関係悪化が背景にあり、他のAI企業への影響や、結果的にAnthropicへの注目が高まる可能性について議論されている。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits)
+- **重要度**: 8/10
 
 ---
 

@@ -3,13 +3,14 @@ title: Prompt Engineering Framework
 category: prompts
 subcategory: prompt-engineering-framework
 tags:
+- claude-api
 - claude-code
 - haiku
 - opus
 - prompt
 - 新機能
 date: '2026-03-30'
-updated: '2026-06-02'
+updated: '2026-06-23'
 sources:
 - url: https://zenn.dev/analysis/articles/prompt-master-thought-analyzer
   title: 「プロンプトを最適化する」とは何か──prompt-masterを3層フレームワークで解剖する
@@ -20,11 +21,27 @@ sources:
 - url: https://zenn.dev/jun_eng/articles/0ae1fa121377a7
   title: 副業ライターの朝30分を15分に縮める「3段連鎖プロンプト」設計
   date: '2026-06-02'
+- url: https://zenn.dev/nttdata_tech/articles/3241a46dca47b2
+  title: なぜ LLM に大喜利が難しいのか
+  date: '2026-06-23'
 ---
 
 
 
+
 # Prompt Engineering Framework
+
+---
+
+## 2026-06-23
+
+### なぜ LLM に大喜利が難しいのか
+
+LLMに大喜利をさせる試みを通じて、Chain of Thought（CoT）の活用やワークフロー設計の難しさを探求した記事。統計的に「それっぽい」答えを出すLLMの特性が笑いには不向きであること、モデルバージョンへの敏感さ、プロンプト設計の試行錯誤が語られている。また、LLMのフィクション創作能力についても言及。
+
+- **ソース**: [Zenn claude](https://zenn.dev/nttdata_tech/articles/3241a46dca47b2)
+- **重要度**: 4/10
+- **タグ**: prompt, claude-api, opus
 
 ---
 

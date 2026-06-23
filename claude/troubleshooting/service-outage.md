@@ -8,7 +8,7 @@ tags:
 - claude-console
 - performance
 date: '2026-03-25'
-updated: '2026-06-19'
+updated: '2026-06-23'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s3b9fi/claude_status_update_elevated_errors_on_claudeai
   title: 'Claude Status Update : Elevated Errors on claude.ai on 2026-03-25T13:45:25.000Z'
@@ -29,13 +29,29 @@ sources:
 - url: https://qiita.com/mhamadajp/items/91b2ee850d0bf74ca107
   title: AnthropicのClaude停止問題から考える、AI時代の技術者が見るべき論点
   date: '2026-06-19'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1udiy08/some_claude_models_are_down_and_i_hope_you_arent
+  title: Some Claude models are down, and I hope you aren’t too
+  date: '2026-06-23'
 ---
 
 
 
 
 
+
 # Service Outage
+
+---
+
+## 2026-06-23
+
+### Some Claude models are down, and I hope you aren’t too
+
+Claude の一部モデルでダウンタイムが発生していることを報告する Reddit 投稿。ユーザーが Claude モデルの障害状況を共有し、サービスの一時的な利用不可を示唆している。コミュニティでの障害報告とユーザー影響の共有。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1udiy08/some_claude_models_are_down_and_i_hope_you_arent)
+- **重要度**: 6/10
+- **タグ**: claude-api, bugfix, performance
 
 ---
 

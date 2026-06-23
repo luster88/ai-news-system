@@ -3,12 +3,13 @@ title: Mcp Server Setup
 category: guides
 subcategory: mcp-server-setup
 tags:
+- claude-code
 - linux
 - mcp
 - prompt
 - setup
 date: '2026-04-30'
-updated: '2026-05-29'
+updated: '2026-06-23'
 sources:
 - url: https://zenn.dev/syyama/articles/a6d92f250f5793
   title: 【AlmaLinux】MCP Server を構築してみた
@@ -16,10 +17,26 @@ sources:
 - url: https://qiita.com/asahide/items/860979ed23305aa4003b
   title: OCI DB Tools MCP の3タイプをカスタムロールで権限分離してみた
   date: '2026-05-29'
+- url: https://zenn.dev/ray000/articles/momonga-search-mcp-setup
+  title: 【初心者向け】Momonga Search MCP を Claude / Codex で使えるようにしよう！
+  date: '2026-06-23'
 ---
 
 
+
 # Mcp Server Setup
+
+---
+
+## 2026-06-23
+
+### 【初心者向け】Momonga Search MCP を Claude / Codex で使えるようにしよう！
+
+Momonga Search MCP サーバーを Claude Desktop / Claude Code / Codex で使うための初心者向けセットアップガイド。uv のインストールからリポジトリ取得、API キー設定までを順に解説。企業資料・経済ニュースを効率的に検索・取得し、必要な箇所だけを切り出してエージェントに渡すことで、コンテキストの無駄遣いを防ぎ性能向上を図る設計が特徴。stdio / ローカル実行スタイルで動作する。
+
+- **ソース**: [Zenn claude](https://zenn.dev/ray000/articles/momonga-search-mcp-setup)
+- **重要度**: 6/10
+- **タグ**: mcp, setup, claude-code
 
 ---
 
