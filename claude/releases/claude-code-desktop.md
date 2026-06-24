@@ -10,7 +10,7 @@ tags:
 - release
 - 新機能
 date: '2026-04-14'
-updated: '2026-06-22'
+updated: '2026-06-24'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1slictc/claude_code_on_desktop_redesigned_for_parallel
   title: Claude Code on desktop, redesigned for parallel agentic work.
@@ -49,6 +49,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/c8e4090853e599e25b4a
   title: Claude Code v2.1.186｜bashコマンド出力にClaudeが自動応答｜毎日Changelog解説
   date: '2026-06-22'
+- url: https://qiita.com/picnic/items/7f8023942ae65745b02b
+  title: 'Claude Code v2.1.187: sandbox.credentials で認証情報漏洩リスクを防ぐ新機能と多数のバグ修正'
+  date: '2026-06-24'
 ---
 
 
@@ -60,7 +63,20 @@ sources:
 
 
 
+
 # Claude Code Desktop
+
+---
+
+## 2026-06-24
+
+### Claude Code v2.1.187: sandbox.credentials で認証情報漏洩リスクを防ぐ新機能と多数のバグ修正
+
+Claude Code v2.1.187がリリースされ、サンドボックス環境での認証情報漏洩を防ぐsandbox.credentials設定が追加されました。CI/CD環境やチーム開発で重要なセキュリティ強化機能です。また、構造化出力の無限ループバグ、リモートMCPツールのハング、韓国語/CJK文字化けなど、多数のバグが修正されています。管理者によるモデル制限の反映、VSCode拡張機能のフリーズ修正、/btw の矢印キーナビゲーション追加など、使い勝手の向上も図られています。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/7f8023942ae65745b02b)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

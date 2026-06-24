@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-06-19'
+updated: '2026-06-24'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -81,6 +81,12 @@ sources:
 - url: https://qiita.com/Hsky16/items/c6eec78a8a90b1324e72
   title: Yahooリアルタイム検索をMCP化した話
   date: '2026-06-19'
+- url: https://qiita.com/kai_kou/items/cdbfb6155c4a84a14d65
+  title: CVE MCP Server 実践 — Claude Code を27ツールのセキュリティアナリストにするハンズオン
+  date: '2026-06-24'
+- url: https://ai-heartland.com/tool/open-seo-guide
+  title: OpenSEO徹底解説｜Semrush/Ahrefs代替のOSS SEOプラットフォーム（MCP・AIスキル内蔵）
+  date: '2026-06-24'
 ---
 
 
@@ -103,7 +109,30 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-06-24
+
+### CVE MCP Server 実践 — Claude Code を27ツールのセキュリティアナリストにするハンズオン
+
+CVE MCP Server は、NVD・CISA KEV・EPSS・GitHub Advisory など複数の脆弱性データソースを MCP 経由で Claude Code に統合する OSS です。27 ツール・21 データソースを束ね、API キーなしで 8 ツールが利用可能。claude mcp add コマンド一発で Claude Code に組み込み、自然言語で脆弱性トリアージや依存パッケージスキャンが実行できます。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kai_kou/items/cdbfb6155c4a84a14d65)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code, setup
+
+---
+
+### OpenSEO徹底解説｜Semrush/Ahrefs代替のOSS SEOプラットフォーム（MCP・AIスキル内蔵）
+
+OpenSEOは、SemrushやAhrefsの高額サブスクリプション型SEOツールに代わるオープンソースの代替プラットフォームです。キーワード調査、順位追跡、被リンク分析、サイト監査などのSEO機能を、従量課金とセルフホストで提供します。MCP（Model Context Protocol）サーバーとAIスキルを内蔵し、ClaudeなどのAIエージェントから直接SEOデータへアクセスできるAIネイティブな設計が特徴です。TypeScript/Docker/Cloudflare Workersで構築され、データソースにはDataForSEOを使用しています。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/open-seo-guide)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-api, cowork
 
 ---
 

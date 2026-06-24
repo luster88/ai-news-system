@@ -12,7 +12,7 @@ tags:
 - pricing
 - 新機能
 date: '2026-04-04'
-updated: '2026-04-28'
+updated: '2026-06-24'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -33,13 +33,30 @@ sources:
 - url: https://qiita.com/tai0921/items/ebf025bfdce6935f6325
   title: AIが「攻撃側」に回る前に — GPT-5.4-CyberとMythosが切り開くサイバーセキュリティAIの次の局面
   date: '2026-04-28'
+- url: https://the-decoder.com/snowflake-ceo-finds-glm-5-2-competitive-with-opus-4-7-at-a-fraction-of-the-cost
+  title: Snowflake CEO finds GLM-5.2 competitive with Opus 4.7 at a fraction of the
+    cost
+  date: '2026-06-24'
 ---
 
 
 
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-06-24
+
+### Snowflake CEO finds GLM-5.2 competitive with Opus 4.7 at a fraction of the cost
+
+Snowflakeが実施したプログラミングベンチマークで、中国のAIモデルGLM-5.2がClaude Opus 4.7とほぼ同等のパフォーマンスを示しました。3回の試行での成功率は66%対67%とほぼ互角ですが、Opusは初回成功率53.7%とGLMの47.6%を上回り、効率面でも優位（平均80回対99回の反復、トークン消費量も半分程度）。一方でGLMは出力トークン100万あたり4.40ドルと圧倒的に安価で、Western AI企業の高評価額に価格圧力をかける可能性があります。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/snowflake-ceo-finds-glm-5-2-competitive-with-opus-4-7-at-a-fraction-of-the-cost)
+- **重要度**: 7/10
+- **タグ**: opus, performance, pricing
 
 ---
 

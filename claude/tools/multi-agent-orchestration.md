@@ -8,9 +8,10 @@ tags:
 - cursor
 - mcp
 - prompt
+- setup
 - 新機能
 date: '2026-04-02'
-updated: '2026-05-04'
+updated: '2026-06-24'
 sources:
 - url: https://ai-heartland.com/ai/gemini/oh-my-gemini
   title: oh-my-gemini：Gemini CLIのマルチエージェント並列実行ツール
@@ -21,11 +22,27 @@ sources:
 - url: https://ai-heartland.com/agent/ruflo-multi-agent-swarm-claude-code
   title: ruflo｜Claude Code/Codexにネイティブ統合する100エージェント・スウォーム基盤
   date: '2026-05-04'
+- url: https://ai-heartland.com/agent/paseo-guide
+  title: Paseo徹底解説｜複数AIコーディングエージェントを束ねるOSSオーケストレーター【AGPL】
+  date: '2026-06-24'
 ---
 
 
 
+
 # Multi Agent Orchestration
+
+---
+
+## 2026-06-24
+
+### Paseo徹底解説｜複数AIコーディングエージェントを束ねるOSSオーケストレーター【AGPL】
+
+Paseoは、Claude Code・Codex・Copilot・OpenCode・Piなど複数のAIコーディングエージェントを1つのインターフェースで統合管理できるOSSオーケストレーター（AGPL-3.0、9.1k★）です。セルフホストで並列実行が可能で、音声操作やiOS/Android/Web/CLIのマルチデバイス対応、プライバシー重視（テレメトリなし）が特徴。複数エージェントを併用する際のターミナルやUI管理の煩雑さを解消します。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/agent/paseo-guide)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, setup
 
 ---
 
