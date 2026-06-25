@@ -6,14 +6,30 @@ tags:
 - claude-code
 - setup
 date: '2026-05-19'
-updated: '2026-05-19'
+updated: '2026-06-25'
 sources:
 - url: https://zenn.dev/shun_producer/articles/2ddc0e6af73554
   title: Claude Codeが話しかけてくる英語、全部訳してみた【初心者向け】
   date: '2026-05-19'
+- url: https://qiita.com/chuandujiusi/items/dce76ec1557f6de69a55
+  title: 【初心者向け】普通のClaudeと何が違うの？噂の「Claude Code」がプログラミング初心者の「最強の相棒」になる理由
+  date: '2026-06-25'
 ---
 
+
 # Claude Code Basics
+
+---
+
+## 2026-06-25
+
+### 【初心者向け】普通のClaudeと何が違うの？噂の「Claude Code」がプログラミング初心者の「最強の相棒」になる理由
+
+プログラミング初心者向けに、Web版ClaudeとClaude Codeの違いを解説した記事。Claude Codeはターミナルで動作し、プロジェクト全体を把握してファイルを直接編集・実行できる点が特徴。「コードを教えてもらう」から「一緒に書く」への変化を強調しており、初心者がオリジナルアプリを作る際の強力なパートナーになると紹介している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/chuandujiusi/items/dce76ec1557f6de69a55)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup
 
 ---
 

@@ -6,12 +6,13 @@ tags:
 - claude-api
 - cowork
 - haiku
+- opus
 - performance
 - prompt
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-06-13'
+updated: '2026-06-25'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -31,6 +32,9 @@ sources:
 - url: https://zenn.dev/shun_producer/articles/claude-structured-outputs-beginner
   title: AIの返事を「必ずJSON」にする——Claude構造化出力入門
   date: '2026-06-13'
+- url: https://zenn.dev/marusuke/articles/20260625220809
+  title: Claude APIでブログ記事を自動生成する実践ガイド
+  date: '2026-06-25'
 ---
 
 
@@ -38,7 +42,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-06-25
+
+### Claude APIでブログ記事を自動生成する実践ガイド
+
+Claude APIを使用したブログ記事自動生成システムの実装ガイド。アウトライン生成→セクション展開の二段階方式を採用し、JSON形式でのパース、レート制限対策、ハルシネーション対応などの実践的なノウハウを解説。人間によるレビューを前提とした執筆支援ツールとしての運用方法と、CMS連携やRAG導入などの今後の展開についても言及している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/marusuke/articles/20260625220809)
+- **重要度**: 6/10
+- **タグ**: claude-api, prompt, opus
 
 ---
 

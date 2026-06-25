@@ -5,16 +5,33 @@ subcategory: claude-code-hooks
 tags:
 - bugfix
 - claude-code
+- cowork
 - setup
 date: '2026-06-03'
-updated: '2026-06-03'
+updated: '2026-06-25'
 sources:
 - url: https://zenn.dev/gudezou/articles/7e8235a27f0909
   title: Claude Code の終了フックから claude を呼び出すとなぜ暴走するのか
   date: '2026-06-03'
+- url: https://qiita.com/yurukusa/items/5a4f67b7e0f732a3f7c4
+  title: SubagentStop の hook が、サブエージェントを使っていないメインセッションでも発火する——マルチエージェントを hook で組む人の盲点
+  date: '2026-06-25'
 ---
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-06-25
+
+### SubagentStop の hook が、サブエージェントを使っていないメインセッションでも発火する——マルチエージェントを hook で組む人の盲点
+
+Claude Code 2.1.186でSubagentStopフックがサブエージェント未使用のメインセッション終了時にも誤発火する回帰バグが報告された。これはマルチエージェント制御でフックを使う開発者にとって、削除・通知などの取り返しのつかない処理が意図せず実行されるリスクがある。対策として、stdinの内容を記録して実際の発火状況を観察し、SubagentStopフック内で文脈確認を行うことが推奨される。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/yurukusa/items/5a4f67b7e0f732a3f7c4)
+- **重要度**: 7/10
+- **タグ**: claude-code, bugfix, cowork
 
 ---
 

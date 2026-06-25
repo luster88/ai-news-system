@@ -7,9 +7,10 @@ tags:
 - cowork
 - mcp
 - setup
+- vscode
 - 新機能
 date: '2026-04-01'
-updated: '2026-06-16'
+updated: '2026-06-25'
 sources:
 - url: https://qiita.com/Andhy/items/371621273924d74e9917
   title: 自作のClaude Codeのプラグインの有効性を検証してみたところなかなか良い結果に
@@ -27,13 +28,29 @@ sources:
 - url: https://zenn.dev/qvtec/articles/b66911e2e9a829
   title: Claude Code の結果を喋ってくれるプラグインを作った
   date: '2026-06-16'
+- url: https://qiita.com/bhryan1013/items/a0cf32aecd42fc64ae90
+  title: Claude Codeの「考え中…」の待ち時間を、開発ニュースのフィードに変えるプラグインを作った
+  date: '2026-06-25'
 ---
 
 
 
 
 
+
 # Claude Code Plugin
+
+---
+
+## 2026-06-25
+
+### Claude Codeの「考え中…」の待ち時間を、開発ニュースのフィードに変えるプラグインを作った
+
+Claude Codeの待ち時間中にHacker NewsやGitHub Trendingなどの開発ニュースをステータスラインに表示するプラグイン「claudenews」が公開された。エージェントの動作をhookで検知し、バックグラウンドでニュースを取得・キャッシュする。ハイパーリンク対応ターミナルではクリック可能で、OSの言語設定に応じて自動翻訳される。コンテキストの喪失を防ぎながら待ち時間を有効活用できる。
+
+- **ソース**: [Qiita claude](https://qiita.com/bhryan1013/items/a0cf32aecd42fc64ae90)
+- **重要度**: 5/10
+- **タグ**: claude-code, vscode, setup
 
 ---
 

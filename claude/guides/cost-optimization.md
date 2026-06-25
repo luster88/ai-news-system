@@ -11,7 +11,7 @@ tags:
 - pricing
 - prompt
 date: '2026-04-03'
-updated: '2026-06-04'
+updated: '2026-06-25'
 sources:
 - url: https://zenn.dev/heki1224/articles/b849cc85a330aa
   title: Claude Codeで”トークン破産”しないためのコスト最適化とコンテキスト防衛術
@@ -38,6 +38,9 @@ sources:
 - url: https://zenn.dev/t_tokunaga/articles/2026-05-01-ai-model-stack-cost-breakdown-2026-04
   title: 個人開発のAI API利用構成と2026年4月の課金額を公開する（サブスク＋API連携）
   date: '2026-06-04'
+- url: https://qiita.com/kenji_harada/items/55eaca31d23525b6d03f
+  title: Claude Code の請求書に震えた話と、コストを半分にした実践メモ
+  date: '2026-06-25'
 ---
 
 
@@ -47,7 +50,20 @@ sources:
 
 
 
+
 # Cost Optimization
+
+---
+
+## 2026-06-25
+
+### Claude Code の請求書に震えた話と、コストを半分にした実践メモ
+
+Claude Code の API 従量課金が想定外に高額になった経験から、実践的なコスト削減手法を紹介。モデルの使い分け（Sonnet→Haiku）、/clear による会話リセット、.claudeignore でのファイル除外、サブエージェント活用、CLAUDE.md での前提共有などにより、API 実費をほぼゼロに削減。Max プランの 5 時間枠は固定時刻リセットではなく最終リクエスト起点である点も解説。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kenji_harada/items/55eaca31d23525b6d03f)
+- **重要度**: 7/10
+- **タグ**: claude-code, pricing, performance
 
 ---
 

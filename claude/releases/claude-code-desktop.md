@@ -10,7 +10,7 @@ tags:
 - release
 - 新機能
 date: '2026-04-14'
-updated: '2026-06-24'
+updated: '2026-06-25'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1slictc/claude_code_on_desktop_redesigned_for_parallel
   title: Claude Code on desktop, redesigned for parallel agentic work.
@@ -52,6 +52,9 @@ sources:
 - url: https://qiita.com/picnic/items/7f8023942ae65745b02b
   title: 'Claude Code v2.1.187: sandbox.credentials で認証情報漏洩リスクを防ぐ新機能と多数のバグ修正'
   date: '2026-06-24'
+- url: https://qiita.com/picnic/items/7ebdf55900335ebcf71c
+  title: 'Claude Code v2.1.191: /clear前の会話を復元する/rewind対応とCPU37%削減'
+  date: '2026-06-25'
 ---
 
 
@@ -64,7 +67,20 @@ sources:
 
 
 
+
 # Claude Code Desktop
+
+---
+
+## 2026-06-25
+
+### Claude Code v2.1.191: /clear前の会話を復元する/rewind対応とCPU37%削減
+
+Claude Code v2.1.191では、誤って/clearした会話を/rewindで復元可能になり、ストリーミング時のCPU使用率を37%削減するパフォーマンス改善が実装された。停止したバックグラウンドエージェントが復活する不具合や、カンマ区切りフック設定が発火しない問題など、重要なバグが修正された。MCPのヘッドレスOAuth認証フローが手動URL貼り付け方式に変更され、CI/CD環境での自動化に影響がある。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/7ebdf55900335ebcf71c)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 
