@@ -8,8 +8,9 @@ tags:
 - cowork
 - opus
 - performance
+- 新機能
 date: '2026-04-24'
-updated: '2026-06-07'
+updated: '2026-06-26'
 sources:
 - url: https://qiita.com/tkoji3744/items/259ab1a71fa4e4465246
   title: Claudeをつかって立体囲碁盤の新作ゲーム（CubeGo)をつくりながら思ったこと
@@ -17,10 +18,26 @@ sources:
 - url: https://zenn.dev/haruaki_nayuta/articles/3d62eb81e60f1c
   title: Claudeの元を取りたくてFXさせてみたら""半日で""CAGR14%叩き出して横転
   date: '2026-06-07'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1ugj1bt/i_used_claude_to_fix_my_biggest_frustration_with
+  title: I used Claude to fix my biggest frustration with PDFs
+  date: '2026-06-26'
 ---
 
 
+
 # Claude Development Workflow
+
+---
+
+## 2026-06-26
+
+### I used Claude to fix my biggest frustration with PDFs
+
+ユーザーが住宅ローン申請で17個のPDFファイルを管理する際の煩雑さを解決するため、Claudeを活用して新しいPDFフォーマット「.pdfx」を開発。複数のPDFを単一ファイルに統合し、横スクロールでページ、縦スクロールでファイルを切り替える2Dキャンバス方式のビューアーを実装。Claudeは約2時間でプロジェクトの80%を完成させ、Electron製のオープンソースツールとしてGitHubで公開された。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1ugj1bt/i_used_claude_to_fix_my_biggest_frustration_with)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

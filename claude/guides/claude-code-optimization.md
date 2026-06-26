@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-31'
-updated: '2026-06-16'
+updated: '2026-06-26'
 sources:
 - url: https://qiita.com/nishiken1118/items/6b16557fcabf784c861e
   title: 過去の session をほしい時に参照する方針で claude-mem のトークン消費を激減させた話
@@ -38,6 +38,9 @@ sources:
   title: Claude Code の許可プロンプトを9割減らす settings.json 最適化レシピ — allow / deny の優先順位と Bash
     パターン記法のハマりどころ【2026】
   date: '2026-06-16'
+- url: https://qiita.com/bokuwalily/items/42e0f5d1bfa520cf7ba9
+  title: 使われないMCPプラグインが静かにコンテキストを食う ― 週次自動 disable で常時軽量化
+  date: '2026-06-26'
 ---
 
 
@@ -46,7 +49,20 @@ sources:
 
 
 
+
 # Claude Code Optimization
+
+---
+
+## 2026-06-26
+
+### 使われないMCPプラグインが静かにコンテキストを食う ― 週次自動 disable で常時軽量化
+
+Claude Code環境で、有効化したまま放置されたMCPプラグインがコンテキストを消費し続ける問題を解決する自動化パイプラインの紹介。過去30日間の使用ログから休眠プラグインを検出し、週次で自動的にdisableする仕組みを実装。誤検出を防ぐ保護リスト機能とキャッシュアーカイブ機能を含む。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/bokuwalily/items/42e0f5d1bfa520cf7ba9)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, performance
 
 ---
 

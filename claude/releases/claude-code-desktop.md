@@ -10,7 +10,7 @@ tags:
 - release
 - 新機能
 date: '2026-04-14'
-updated: '2026-06-25'
+updated: '2026-06-26'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1slictc/claude_code_on_desktop_redesigned_for_parallel
   title: Claude Code on desktop, redesigned for parallel agentic work.
@@ -55,6 +55,9 @@ sources:
 - url: https://qiita.com/picnic/items/7ebdf55900335ebcf71c
   title: 'Claude Code v2.1.191: /clear前の会話を復元する/rewind対応とCPU37%削減'
   date: '2026-06-25'
+- url: https://qiita.com/picnic/items/bba3d4db0a902a3ed96a
+  title: Claude Code v2.1.193のOTelアシスタント応答ログ追加と全変更まとめ
+  date: '2026-06-26'
 ---
 
 
@@ -68,7 +71,20 @@ sources:
 
 
 
+
 # Claude Code Desktop
+
+---
+
+## 2026-06-26
+
+### Claude Code v2.1.193のOTelアシスタント応答ログ追加と全変更まとめ
+
+Claude Code v2.1.193がリリースされ、OpenTelemetryへのアシスタント応答ログ機能が追加された。OTEL_LOG_USER_PROMPTS=1を設定している環境では、OTEL_LOG_ASSISTANT_RESPONSESを明示的に設定しないと応答内容が自動的にログ出力される破壊的変更が含まれる。その他、autoMode.classifyAllShell設定の追加、エージェント起動時の挙動改善、MCP認証の自動再接続機能などの改善が含まれる。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/bba3d4db0a902a3ed96a)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, mcp
 
 ---
 

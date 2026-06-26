@@ -10,9 +10,10 @@ tags:
 - opus
 - performance
 - pricing
+- sonnet
 - 新機能
 date: '2026-04-04'
-updated: '2026-06-24'
+updated: '2026-06-26'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -37,6 +38,10 @@ sources:
   title: Snowflake CEO finds GLM-5.2 competitive with Opus 4.7 at a fraction of the
     cost
   date: '2026-06-24'
+- url: https://the-decoder.com/openais-claude-mythos-competitor-gpt-5-6-sol-launches-under-government-controlled-access-it-calls-unsustainable
+  title: OpenAI's GPT-5.6 Sol launches to rival Claude Mythos under government access
+    rules it calls unsustainable
+  date: '2026-06-26'
 ---
 
 
@@ -44,7 +49,20 @@ sources:
 
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-06-26
+
+### OpenAI's GPT-5.6 Sol launches to rival Claude Mythos under government access rules it calls unsustainable
+
+OpenAIがGPT-5.6 Solを発表し、Anthropic の Claude Mythos 5 に対抗。agentic coding で優位性を示すが、米国政府がアクセスを制限しており、OpenAI は開発者やビジネスに悪影響を与えると批判。Sol、Terra、Luna の3層構成で、Claude と同様の命名体系を採用。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/openais-claude-mythos-competitor-gpt-5-6-sol-launches-under-government-controlled-access-it-calls-unsustainable)
+- **重要度**: 8/10
+- **タグ**: opus, sonnet, performance
 
 ---
 
