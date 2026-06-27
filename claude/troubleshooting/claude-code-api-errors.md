@@ -6,16 +6,33 @@ tags:
 - bugfix
 - claude-api
 - claude-code
+- setup
 date: '2026-05-04'
-updated: '2026-05-04'
+updated: '2026-06-27'
 sources:
 - url: https://qiita.com/yurukusa/items/fbe51b3ce6b025dd089c
   title: Claude Code が API 400 で詰まる時——cache_control 空テキストブロックの根本原因と復旧
   date: '2026-05-04'
+- url: https://qiita.com/yurukusa/items/3ea49f000b2c3046ecba
+  title: Claude Code の API Error 401/500 は自分のせいかAnthropic側か——切り分けと対処（#69706）
+  date: '2026-06-27'
 ---
 
 
+
 # Claude Code Api Errors
+
+---
+
+## 2026-06-27
+
+### Claude Code の API Error 401/500 は自分のせいかAnthropic側か——切り分けと対処（#69706）
+
+Claude Code で発生する API Error 401/500 の切り分け方法を解説。500系エラーはサーバ側の問題で設定変更は無効。401エラーには「資格情報が空・古い」クライアント側の問題と「アカウント・オンボーディング側」の問題の2種類があり、それぞれ対処法が異なる。環境変数 ANTHROPIC_API_KEY の設定ミスや ~/.claude/.credentials.json の refreshToken 欠損が原因となるケースが多い。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/yurukusa/items/3ea49f000b2c3046ecba)
+- **重要度**: 7/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 

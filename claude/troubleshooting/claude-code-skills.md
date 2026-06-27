@@ -6,15 +6,32 @@ tags:
 - bugfix
 - claude-code
 - cowork
+- prompt
 date: '2026-05-25'
-updated: '2026-05-25'
+updated: '2026-06-27'
 sources:
 - url: https://qiita.com/YujiNaramoto/items/f73bdcd7098812995fea
   title: なぜ Claude Code の自動化スクリプトはスケールすると壊れるのか — 設計ミスの構造を読む
   date: '2026-05-25'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1uhed8x/why_are_all_the_claude_code_skill_files_i_see
+  title: Why are all the Claude Code skill files I see online completely pointless?
+  date: '2026-06-27'
 ---
 
+
 # Claude Code Skills
+
+---
+
+## 2026-06-27
+
+### Why are all the Claude Code skill files I see online completely pointless?
+
+Claude Code のスキルファイルの多くが「20年の経験を持つフルスタック開発者」といった無意味な記述ばかりで、本来修正すべき問題（パフォーマンス、レスポンシブデザイン、セキュリティ、アクセシビリティなど Claude が見落としがちな実務的課題）に言及していないという批判的な議論。スキルファイルは Claude が既に知っていることではなく、一貫して間違える部分を修正するために使うべきだと主張している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1uhed8x/why_are_all_the_claude_code_skill_files_i_see)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

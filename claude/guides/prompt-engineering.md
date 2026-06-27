@@ -11,7 +11,7 @@ tags:
 - prompt
 - setup
 date: '2026-04-07'
-updated: '2026-06-17'
+updated: '2026-06-27'
 sources:
 - url: https://zenn.dev/analysis/articles/thought-analyzer-agents-md
   title: コンテキストファイルは、エージェントを賢くしない ── AGENTS.mdの効果を初めて測った研究
@@ -22,11 +22,27 @@ sources:
 - url: https://zenn.dev/uya0526_design/articles/satellite2_haiku-coaching
   title: Claude Haikuに「計算」をさせない ─ 音読コーチの二段構え設計とプロンプトの沼
   date: '2026-06-17'
+- url: https://zenn.dev/takupeso/articles/claude-ontology-knowledge-structuring
+  title: Claudeに「オントロジー」を持たせたら、コスト半分・3倍速になるかも
+  date: '2026-06-27'
 ---
 
 
 
+
 # Prompt Engineering
+
+---
+
+## 2026-06-27
+
+### Claudeに「オントロジー」を持たせたら、コスト半分・3倍速になるかも
+
+ClaudeCodeにナレッジを渡す際、従来の@指定やMarkdownの箇条書きはフラットな情報配置に過ぎず、概念間の関係性が欠如していることが、アウトプットのブレの原因となっていた。オントロジー（概念と関係を明示的に定義する手法）を導入することで、モデルに推測させず関係を確定させることができ、結果としてコスト半減・3倍速を実現できる可能性がある。従来のタグやフォルダと異なり、オントロジーはcalls、depends-onなど型付きの関係をグラフ構造で表現できる点が特徴。
+
+- **ソース**: [Zenn claude](https://zenn.dev/takupeso/articles/claude-ontology-knowledge-structuring)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, performance
 
 ---
 

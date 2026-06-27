@@ -7,14 +7,30 @@ tags:
 - mcp
 - setup
 date: '2026-06-10'
-updated: '2026-06-10'
+updated: '2026-06-27'
 sources:
 - url: https://qiita.com/hisashiyamaguchi/items/47607c6657028700fe57
   title: Claude DesktopとEPSS, NVD, KEV, Anomaliで脆弱性対策を検討してみた
   date: '2026-06-10'
+- url: https://zenn.dev/kta1kri/books/owasp-mcp-top10
+  title: OWASP MCP Top 10 実装・検知・隔離ガイド ― SOCアナリストが書くMCPセキュリティ
+  date: '2026-06-27'
 ---
 
+
 # Mcp Security
+
+---
+
+## 2026-06-27
+
+### OWASP MCP Top 10 実装・検知・隔離ガイド ― SOCアナリストが書くMCPセキュリティ
+
+現役SOCアナリストによるMCP（Model Context Protocol）のセキュリティガイド。OWASP Top 10形式でスコープ肥大による権限昇格、コマンドインジェクション、認証・認可の不備、シャドーMCPサーバーなど10項目の脅威を実装・検知・隔離の観点から解説。AIエージェントを防御する側の実践的なセキュリティ知見を提供。
+
+- **ソース**: [Zenn claude](https://zenn.dev/kta1kri/books/owasp-mcp-top10)
+- **重要度**: 8/10
+- **タグ**: mcp
 
 ---
 

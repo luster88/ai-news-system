@@ -9,7 +9,7 @@ tags:
 - release
 - 新機能
 date: '2026-04-08'
-updated: '2026-06-26'
+updated: '2026-06-27'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -34,6 +34,12 @@ sources:
 - url: https://qiita.com/picnic/items/68b39fefea726f97284f
   title: Claude API大規模更新まとめ：Fable 5登場・旧モデル廃止・30%トークン増加への対応
   date: '2026-06-26'
+- url: https://qiita.com/kinamocchi_tech/items/cba6ddde529b06629bac
+  title: 【速報】Anthropic SDK 同時更新！Python v0.112.0 / TypeScript v0.106.0 を3分で解説
+  date: '2026-06-27'
+- url: https://the-decoder.com/anthropic-gets-us-approval-to-bring-back-claude-mythos-5
+  title: Anthropic gets US approval to bring back Claude Mythos 5
+  date: '2026-06-27'
 ---
 
 
@@ -41,7 +47,30 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-06-27
+
+### 【速報】Anthropic SDK 同時更新！Python v0.112.0 / TypeScript v0.106.0 を3分で解説
+
+2026年6月24日にAnthropic SDKのPython v0.112.0とTypeScript v0.106.0が同時リリースされた。主な変更点は、system.messageストリーミングイベント対応、refusal（拒否）カテゴリの追加、User Profile IDのリクエストヘッダー送信対応の3つ。Python版ではMemoryツールのパーミッション修正、TypeScript版ではx-stainless-helperヘッダーの整理が行われた。
+
+- **ソース**: [Qiita claude](https://qiita.com/kinamocchi_tech/items/cba6ddde529b06629bac)
+- **重要度**: 7/10
+- **タグ**: claude-api, release, 新機能
+
+---
+
+### Anthropic gets US approval to bring back Claude Mythos 5
+
+米国政府がAnthropicに対してClaude Mythos 5の再展開を承認。これはサイバーセキュリティに特化したAnthropicの最も強力なAIモデルで、重要インフラを運営・保護する米国組織が再び利用可能に。OpenAIのGPT-5.6 Solと同様の承認を受けた形。6月12日以降、Mythos 5とFable 5のアクセス回復に向けて米国政府と協力してきた結果、今回の承認に至った。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-gets-us-approval-to-bring-back-claude-mythos-5)
+- **重要度**: 8/10
+- **タグ**: release, 新機能
 
 ---
 

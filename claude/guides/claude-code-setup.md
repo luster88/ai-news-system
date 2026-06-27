@@ -11,7 +11,7 @@ tags:
 - windows
 - 新機能
 date: '2026-04-04'
-updated: '2026-06-03'
+updated: '2026-06-27'
 sources:
 - url: https://qiita.com/taiki_i/items/2d75a882e0f3187f6bb8
   title: あなたの CLAUDE.md、ちゃんと機能してますか？作り方から公式プラグインで採点するまでの道のり
@@ -52,6 +52,9 @@ sources:
 - url: https://qiita.com/Higemal/items/2d7afa6024d2f23b6482
   title: ClaudeCodeにCLAUDE.md・SKILL.md・スクリプト作成をブン投げる「initプロンプト」
   date: '2026-06-03'
+- url: https://qiita.com/ujunja/items/05a2c163921ab3e1ea96
+  title: 【Claude Code入門 W1】セットアップ完全版 — 最短で動かす（ネイティブインストーラー対応）
+  date: '2026-06-27'
 ---
 
 
@@ -63,7 +66,20 @@ sources:
 
 
 
+
 # Claude Code Setup
+
+---
+
+## 2026-06-27
+
+### 【Claude Code入門 W1】セットアップ完全版 — 最短で動かす（ネイティブインストーラー対応）
+
+Claude Codeを初めて使う入門者向けに、macOS/Windows/Linux各環境でのインストールから初回起動までを10分で完了できる手順を解説。ネイティブインストーラーを使った最短セットアップ方法を提供し、有料プラン（Pro/Max/Team/Enterprise）またはConsoleアカウントが必要であることと、2026年4月から日本では消費税10%が追加される点に注意喚起している。
+
+- **ソース**: [Qiita claude](https://qiita.com/ujunja/items/05a2c163921ab3e1ea96)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

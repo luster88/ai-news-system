@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-06-20'
+updated: '2026-06-27'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -80,6 +80,9 @@ sources:
 - url: https://zenn.dev/moha0918/articles/daily-cc-hooks-20260406
   title: Claude Code の hooks で開発フローを自動化する — 設定から実践まで
   date: '2026-06-20'
+- url: https://qiita.com/kai_kou/items/a54258770d3a5e9d9ee0
+  title: Claude Code Week 24 実践 — fallbackModel・safe-mode・/cd で自動化を止めない運用術
+  date: '2026-06-27'
 ---
 
 
@@ -101,7 +104,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-06-27
+
+### Claude Code Week 24 実践 — fallbackModel・safe-mode・/cd で自動化を止めない運用術
+
+Claude Code v2.1.166〜172で追加された、無人運用時のパイプライン停止を防ぐ3機能を解説。fallbackModelでモデル過負荷時の自動フォールバック、/cdコマンドでプロンプトキャッシュを維持した作業ディレクトリ移動、--safe-modeでカスタマイズ起因の不具合を素早く切り分ける実践的な設定方法を紹介。settings.jsonの具体例も提供し、CI/スケジュール実行での耐障害性とデバッグ容易性を向上させる。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kai_kou/items/a54258770d3a5e9d9ee0)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

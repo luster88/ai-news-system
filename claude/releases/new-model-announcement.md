@@ -8,7 +8,7 @@ tags:
 - release
 - 新機能
 date: '2026-03-27'
-updated: '2026-06-09'
+updated: '2026-06-27'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s4ucsu/exclusive_anthropic_acknowledges_testing_new_ai
   title: 'Exclusive: Anthropic acknowledges testing new AI model representing ‘step
@@ -21,11 +21,27 @@ sources:
 - url: https://ai-heartland.com/explain/claude-fable-5-guide
   title: Claude Fable 5とMythos 5入門｜公式ベンチマーク・価格・使い分けを解説
   date: '2026-06-09'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1uh3dj3/scoop_powerful_anthropic_model_fable_5_on_track
+  title: 'Scoop: Powerful Anthropic model, Fable 5, on track to return soon'
+  date: '2026-06-27'
 ---
 
 
 
+
 # New Model Announcement
+
+---
+
+## 2026-06-27
+
+### Scoop: Powerful Anthropic model, Fable 5, on track to return soon
+
+Anthropic の強力な新モデル「Fable 5」が近日中に復活予定との情報。Axios の報道によると、一度公開されたものの何らかの理由で取り下げられていたモデルが、再びリリースされる見込み。詳細なスペックや機能改善点については現時点では不明だが、コミュニティでは期待が高まっている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1uh3dj3/scoop_powerful_anthropic_model_fable_5_on_track)
+- **重要度**: 8/10
+- **タグ**: 新機能, release
 
 ---
 
