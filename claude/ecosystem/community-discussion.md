@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-06-15'
+updated: '2026-06-28'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -48,6 +48,10 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1u6rs7l/is_anyone_else_noticing_that_every_post_here_is
   title: Is anyone else noticing that every post here is just... written by AI?
   date: '2026-06-15'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1uhz98q/amazing_how_we_all_wanted_to_convert_every_doc_to
+  title: Amazing how we all wanted to convert every doc to pdf 10 years ago and now
+    everyone wants to go from pdf to md
+  date: '2026-06-28'
 ---
 
 
@@ -58,7 +62,20 @@ sources:
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-06-28
+
+### Amazing how we all wanted to convert every doc to pdf 10 years ago and now everyone wants to go from pdf to md
+
+PDFは10年前は理想的なドキュメント形式だったが、現在はLLMでトークンを大量消費するため、誰もがPDFからMarkdownへの変換を求めている。技術仕様書などがPDF形式で提供されることがLLM活用の障壁となっており、時代の変化を示すコミュニティの議論。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1uhz98q/amazing_how_we_all_wanted_to_convert_every_doc_to)
+- **重要度**: 4/10
+- **タグ**: prompt, performance, cowork
 
 ---
 

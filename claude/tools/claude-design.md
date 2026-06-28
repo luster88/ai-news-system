@@ -5,11 +5,12 @@ subcategory: claude-design
 tags:
 - claude-code
 - claude-console
+- cowork
 - prompt
 - setup
 - 新機能
 date: '2026-04-20'
-updated: '2026-04-22'
+updated: '2026-06-28'
 sources:
 - url: https://qiita.com/daisuke-nagata/items/4cd123ed5ffbc275bd5a
   title: 【2026年版】Claude Designで図解を5分で量産する完全ガイド — デザイン不要でQiita記事を格上げ
@@ -17,10 +18,26 @@ sources:
 - url: https://zenn.dev/s7even_ryo/articles/de87bac96a9b22
   title: Claude DesignがAIプレゼン資料作成の完成系？使ってみた感想
   date: '2026-04-22'
+- url: https://zenn.dev/cvl/articles/c2d6f157cd0b60
+  title: デザイン・コーディング未経験から、Claude Designで動きのあるWebサイトを作る
+  date: '2026-06-28'
 ---
 
 
+
 # Claude Design
+
+---
+
+## 2026-06-28
+
+### デザイン・コーディング未経験から、Claude Designで動きのあるWebサイトを作る
+
+デザイン・コーディング未経験者が、Anthropic Labs が 2025年4月17日にリリースした Claude Design を使い、サッカーチームの公式サイトを40分で完成させた実践レポート。自然言語でのチャット指示により、スクロール連動アニメーションや日付自動振り分けなど動的機能を含む HTML ファイルが生成され、外注レベルの品質を実現。一方で、トークン消費量の多さや動画生成機能の制限など実用上の課題も指摘している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/cvl/articles/c2d6f157cd0b60)
+- **重要度**: 8/10
+- **タグ**: 新機能, cowork
 
 ---
 

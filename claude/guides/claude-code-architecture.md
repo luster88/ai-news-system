@@ -8,9 +8,10 @@ tags:
 - mcp
 - performance
 - prompt
+- setup
 - 新機能
 date: '2026-04-05'
-updated: '2026-04-09'
+updated: '2026-06-28'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-v2188-ai-12
   title: AIコーディングツールは内部でどう動くのか：Claude Codeのアーキテクチャを初心者向けに解説
@@ -21,11 +22,27 @@ sources:
 - url: https://ai-heartland.com/explain/claude-code-architecture-blueprint
   title: Claude Codeの内部アーキテクチャ完全解剖：331モジュールから読み解く本番エージェント設計の全貌
   date: '2026-04-09'
+- url: https://qiita.com/amanity-haray/items/5a1d9b07d25820024992
+  title: CLAUDE.md と .cursorrules に書く「アーキテクチャルール」完全ガイド——AIに設計を守らせる具体的な書き方
+  date: '2026-06-28'
 ---
 
 
 
+
 # Claude Code Architecture
+
+---
+
+## 2026-06-28
+
+### CLAUDE.md と .cursorrules に書く「アーキテクチャルール」完全ガイド——AIに設計を守らせる具体的な書き方
+
+AI コーディングツール（Cursor/Claude Code/GitHub Copilot）で発生する「設計がカオス」問題に対し、CLAUDE.md や .cursorrules に記述すべきアーキテクチャルールを解説。Next.js App Router による境界線消失が混在コードを生む理由を技術的に説明し、ディレクトリ責務・依存方向・禁止パターンを明示する具体的なルールテンプレートを提示。推奨事項より禁止事項の方が AI の遵守率が高い点も指摘。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/amanity-haray/items/5a1d9b07d25820024992)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

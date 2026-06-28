@@ -8,8 +8,9 @@ tags:
 - cowork
 - cursor
 - haiku
+- prompt
 date: '2026-04-25'
-updated: '2026-05-23'
+updated: '2026-06-28'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sv7fvc/im_a_nursing_student_who_built_a_660kpage
   title: I’m a nursing student who built a 660K-page pharmaceutical database using
@@ -18,10 +19,26 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1tlneww/anyone_else_go_way_too_deep_building_a_personal
   title: Anyone else go way too deep building a personal app just for themselves?
   date: '2026-05-23'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1ui05sr/day_32_of_building_gta_6_using_claude
+  title: Day 32 of building GTA 6 using claude
+  date: '2026-06-28'
 ---
 
 
+
 # Community Projects
+
+---
+
+## 2026-06-28
+
+### Day 32 of building GTA 6 using claude
+
+開発者がClaudeを使用してGTAオンラインのボクセルスタイルクローンを32日間かけて構築中。プレイヤーがプロンプトで車、建物、武器を生成でき、NPCは全てAIエージェント。動的な永続的世界の実現を目指し、コミュニティからのフィードバックを求めている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1ui05sr/day_32_of_building_gta_6_using_claude)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-06-25'
+updated: '2026-06-28'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -35,6 +35,9 @@ sources:
 - url: https://zenn.dev/marusuke/articles/20260625220809
   title: Claude APIでブログ記事を自動生成する実践ガイド
   date: '2026-06-25'
+- url: https://zenn.dev/yamamoshu/articles/llm-agent-no-langchain
+  title: LangChainなしでLLMエージェントを作る【Claude API + Python実装】
+  date: '2026-06-28'
 ---
 
 
@@ -43,7 +46,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-06-28
+
+### LangChainなしでLLMエージェントを作る【Claude API + Python実装】
+
+LangChainを使わずにClaude APIのFunction Callingを活用してLLMエージェントを自作する方法を解説。ReAct（Reasoning + Acting）パターンを用いた実装により、エージェントの内部動作を理解しながら開発できる。研究・学習目的での自前実装を推奨する記事。
+
+- **ソース**: [Zenn claude](https://zenn.dev/yamamoshu/articles/llm-agent-no-langchain)
+- **重要度**: 6/10
+- **タグ**: claude-api, prompt, 新機能
 
 ---
 
