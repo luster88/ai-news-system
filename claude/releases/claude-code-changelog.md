@@ -1,0 +1,56 @@
+---
+title: Claude Code Changelog
+category: releases
+subcategory: claude-code-changelog
+tags:
+- claude-code
+- release
+- 新機能
+date: '2026-06-29'
+updated: '2026-06-29'
+sources:
+- url: https://qiita.com/moha0918_/items/8bd90fc2c1391c4769a1
+  title: Claude Code v0.2.21〜v2.1.195｜CLIからマルチエージェント基盤への全履歴｜毎日Changelog解説
+  date: '2026-06-29'
+- url: https://qiita.com/moha0918_/items/8bd90fc2c1391c4769a1
+  title: Claude Code v0.2.21〜v2.1.195｜CLIからマルチエージェント基盤への全履歴｜毎日Changelog解説
+  date: '2026-06-29'
+---
+
+# Claude Code Changelog
+
+---
+
+## 2026-06-29
+
+### Claude Code v0.2.21〜v2.1.195｜CLIからマルチエージェント基盤への全履歴｜毎日Changelog解説
+
+Claude Codeの初期バージョンv0.2.21から最新v2.1.195までの全変更履歴を解説。単純なCLIツールからマルチエージェント基盤への進化を追跡し、Fable 5の一般公開、サブエージェントの5階層spawn、動的ワークフロー（数百エージェント編成）、プラグイン機構とSkills、Hooksなどの主要機能を網羅。PermissionルールやSandboxの修正履歴も詳述し、サブエージェントやバックグラウンド実行を業務活用する開発者向けに包括的な変遷をまとめている。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/8bd90fc2c1391c4769a1)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+### Claude Code v0.2.21〜v2.1.195｜CLIからマルチエージェント基盤への全履歴｜毎日Changelog解説
+
+Claude Codeの最初の公開v0.2.21から最新v2.1.195までの全履歴を振り返る記事。単純なCLI補助ツールから、サブエージェントの多階層spawn・バックグラウンド実行・数百エージェントの動的ワークフローを扱うマルチエージェント基盤へと進化した経緯を解説。Fable 5の一般公開(v2.1.170)が大きな節目となり、/rewindによるコード巻き戻し、/usageによるプラン消費確認、プラグイン機構、Hooks、permission修正など多岐にわたる機能追加が紹介されている。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/8bd90fc2c1391c4769a1)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+## 関連リンク
+
+- [Claude Info トップ](../README.md)
+
+---
+
+## 更新履歴
+
+| 日付 | 内容 |
+|------|------|
+| 2026-06-29 | 自動生成 |

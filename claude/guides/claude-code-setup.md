@@ -11,7 +11,7 @@ tags:
 - windows
 - 新機能
 date: '2026-04-04'
-updated: '2026-06-27'
+updated: '2026-06-29'
 sources:
 - url: https://qiita.com/taiki_i/items/2d75a882e0f3187f6bb8
   title: あなたの CLAUDE.md、ちゃんと機能してますか？作り方から公式プラグインで採点するまでの道のり
@@ -55,6 +55,9 @@ sources:
 - url: https://qiita.com/ujunja/items/05a2c163921ab3e1ea96
   title: 【Claude Code入門 W1】セットアップ完全版 — 最短で動かす（ネイティブインストーラー対応）
   date: '2026-06-27'
+- url: https://zenn.dev/kaihatsu_biyori/articles/claude-code-claudemd-md
+  title: Claude Codeをもっと使いこなす③｜CLAUDE.mdの書き方と運用
+  date: '2026-06-29'
 ---
 
 
@@ -67,7 +70,20 @@ sources:
 
 
 
+
 # Claude Code Setup
+
+---
+
+## 2026-06-29
+
+### Claude Codeをもっと使いこなす③｜CLAUDE.mdの書き方と運用
+
+Claude CodeにおけるCLAUDE.mdファイルの役割と運用方法を解説。グローバル設定（~/.claude/CLAUDE.md）とプロジェクト固有設定の使い分け、/initコマンドでの自動生成、「毎回説明すること」を書く原則、育てていく運用スタイルなど実践的なTipsをまとめている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/kaihatsu_biyori/articles/claude-code-claudemd-md)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

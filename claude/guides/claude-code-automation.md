@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-06-27'
+updated: '2026-06-29'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -83,6 +83,9 @@ sources:
 - url: https://qiita.com/kai_kou/items/a54258770d3a5e9d9ee0
   title: Claude Code Week 24 実践 — fallbackModel・safe-mode・/cd で自動化を止めない運用術
   date: '2026-06-27'
+- url: https://qiita.com/drasenas/items/6208d32634f99b02681b
+  title: GWS監査ログ日次監視のClaude Code Routines設計
+  date: '2026-06-29'
 ---
 
 
@@ -105,7 +108,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-06-29
+
+### GWS監査ログ日次監視のClaude Code Routines設計
+
+Claude Code Routinesを使用したGoogle Workspace監査ログの日次監視設計に関する実践ガイド。月次から日次への移行時の設計判断基準、Slack通知の閾値設計、役割分担の見直し方法を解説。情シス担当者向けに、日次監視が必要な組織の5つのシグナルと、通知設計の判断軸を提示している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/drasenas/items/6208d32634f99b02681b)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, cowork
 
 ---
 

@@ -14,7 +14,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-06-20'
+updated: '2026-06-29'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -175,6 +175,9 @@ sources:
 - url: https://zenn.dev/pekopugu/articles/agent01-b8-zenn-article
   title: 【Claude Code活用】Zenn記事をClaude Codeに書かせる
   date: '2026-06-20'
+- url: https://qiita.com/tanimoto-hikari/items/2d7c52a59bdbc40324e8
+  title: Claude Code との会話から「知見」を抽出して、Obsidian に資産化する運用を作った
+  date: '2026-06-29'
 ---
 
 
@@ -219,7 +222,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-06-29
+
+### Claude Code との会話から「知見」を抽出して、Obsidian に資産化する運用を作った
+
+Claude Code との会話から得られる「暗黙知」を Obsidian に「1知見1ファイル」形式で資産化する運用手法の紹介。会話終了後に Claude Code 自身に知見抽出を依頼し、統一フォーマット（タイトル/知見/出典）で保存することで、振り返り・共有・記事化が容易になる。AI の俯瞰力を活かし、人間のバイアスを補完する点が特徴。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/tanimoto-hikari/items/2d7c52a59bdbc40324e8)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

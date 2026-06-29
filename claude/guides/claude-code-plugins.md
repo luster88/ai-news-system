@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-07'
-updated: '2026-06-21'
+updated: '2026-06-29'
 sources:
 - url: https://qiita.com/moha0918_/items/b3011c218210ab2695b7
   title: プラグイン作成の3つの方法、結局どれを選ぶべき？
@@ -40,6 +40,9 @@ sources:
 - url: https://qiita.com/mnoguchi/items/65af2c1e7440226b3cac
   title: Claude Codeで歴史的リーダー診断アプリを30分で作った【Next.js + Anthropic API】
   date: '2026-06-21'
+- url: https://qiita.com/Rapls/items/ac05434441e57348d5ed
+  title: 正直に言います。初心者のClaude Codeは、9割「頼み方」で損してます【コピペで直せる10個】
+  date: '2026-06-29'
 ---
 
 
@@ -49,7 +52,20 @@ sources:
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-06-29
+
+### 正直に言います。初心者のClaude Codeは、9割「頼み方」で損してます【コピペで直せる10個】
+
+Claude Code初心者が陥りがちな失敗パターンと、効率的な使い方の10個の型を紹介。「直して」だけで投げない、1依頼1タスクに分割、短い前提を書く、diffを必ず確認、contextを測って減らすなど、コピペで使える実践的なプロンプト改善方法を解説。
+
+- **ソース**: [Qiita claude](https://qiita.com/Rapls/items/ac05434441e57348d5ed)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, 新機能
 
 ---
 

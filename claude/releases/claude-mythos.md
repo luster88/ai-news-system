@@ -5,16 +5,33 @@ subcategory: claude-mythos
 tags:
 - claude-api
 - opus
+- release
 - 新機能
 date: '2026-04-10'
-updated: '2026-04-10'
+updated: '2026-06-29'
 sources:
 - url: https://qiita.com/hmy8727/items/144711c4edf5a7ee19f1
   title: 「SaaS死す」再燃――Anthropic Mythosが照らし出すソフトウェア業界の断層線
   date: '2026-04-10'
+- url: https://qiita.com/kai_kou/items/392f9353d4bb73b56ee5
+  title: Claude Mythos 1入門 — AWS BedrockとClaude Codeで使うフロンティアセキュリティAI
+  date: '2026-06-29'
 ---
 
+
 # Claude Mythos
+
+---
+
+## 2026-06-29
+
+### Claude Mythos 1入門 — AWS BedrockとClaude Codeで使うフロンティアセキュリティAI
+
+AnthropicがClaude Mythos 1をgated research previewとして公開し、Claude CodeとClaude Securityへの統合準備が進行中。AWS Bedrock経由でのアクセスが可能で、サイバーセキュリティ・自律コーディング・長期エージェントに特化したフロンティアモデルとして位置付けられている。Project Glasswingでは1,000以上のOSSプロジェクトで23,000件以上の問題を検出し、そのうち6,200件がhigh/critical。
+
+- **ソース**: [Qiita claude](https://qiita.com/kai_kou/items/392f9353d4bb73b56ee5)
+- **重要度**: 8/10
+- **タグ**: 新機能, claude-api, release
 
 ---
 

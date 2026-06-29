@@ -4,12 +4,13 @@ category: ecosystem
 subcategory: pricing-comparison
 tags:
 - claude-api
+- claude-code
 - copilot
 - cowork
 - pricing
 - sonnet
 date: '2026-04-16'
-updated: '2026-05-23'
+updated: '2026-06-29'
 sources:
 - url: https://ai-heartland.com/explain/claude-api-pricing-calculator-2026
   title: Claude API 料金を徹底比較｜Anthropic全モデル月額コスト計算シミュレーター【2026年版】
@@ -20,11 +21,28 @@ sources:
 - url: https://qiita.com/ochtum/items/8fd5952e920da136dd94
   title: 【第一回】2026年5月時点のAIコーディングエージェントまとめ
   date: '2026-05-23'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1uj22cw/have_i_been_lighting_1kmonth_on_fire_buying
+  title: Have I been lighting ~$1k/month on fire buying Claude API credits instead
+    of just getting Max?
+  date: '2026-06-29'
 ---
 
 
 
+
 # Pricing Comparison
+
+---
+
+## 2026-06-29
+
+### Have I been lighting ~$1k/month on fire buying Claude API credits instead of just getting Max?
+
+月額1000ドル相当のClaude API クレジットを購入しているユーザーが、Claude Max（月額200ドル）への切り替えを検討している。コーディング用途での利用において、API直接購入とMaxサブスクリプションのコスト比較を議論。5時間ウィンドウや週次制限がヘビーユーザーに与える影響や、どちらが実際にコスト効率が良いかをコミュニティに問いかけている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1uj22cw/have_i_been_lighting_1kmonth_on_fire_buying)
+- **重要度**: 6/10
+- **タグ**: pricing, claude-api, claude-code
 
 ---
 
