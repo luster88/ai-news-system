@@ -10,7 +10,7 @@ tags:
 - pricing
 - sonnet
 date: '2026-03-24'
-updated: '2026-06-11'
+updated: '2026-06-30'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -25,12 +25,28 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1u35cgu/differences_between_claude_opus_48_and_claude
   title: Differences Between Claude Opus 4.8 and Claude Fable 5 on MineBench
   date: '2026-06-11'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1ujx3rw/sonnet_5_is_worse_than_opus_at_the_same_price_at
+  title: Sonnet 5 is worse than Opus at the same price at high and xhigh?
+  date: '2026-06-30'
 ---
 
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-06-30
+
+### Sonnet 5 is worse than Opus at the same price at high and xhigh?
+
+Reddit の ClaudeAI コミュニティで、Sonnet 5 が同価格帯の Opus と比較して high および xhigh 設定で性能が劣るのではないかという議論が投稿されました。ユーザーが画像付きで性能比較を共有しており、モデル選択や料金対効果に関する懸念を示しています。コミュニティでの意見交換が行われている状況です。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1ujx3rw/sonnet_5_is_worse_than_opus_at_the_same_price_at)
+- **重要度**: 5/10
+- **タグ**: sonnet, opus, performance
 
 ---
 

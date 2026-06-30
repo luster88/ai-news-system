@@ -6,9 +6,10 @@ tags:
 - claude-api
 - pricing
 - release
+- sonnet
 - 新機能
 date: '2026-03-27'
-updated: '2026-06-27'
+updated: '2026-06-30'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s4ucsu/exclusive_anthropic_acknowledges_testing_new_ai
   title: 'Exclusive: Anthropic acknowledges testing new AI model representing ‘step
@@ -24,12 +25,28 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1uh3dj3/scoop_powerful_anthropic_model_fable_5_on_track
   title: 'Scoop: Powerful Anthropic model, Fable 5, on track to return soon'
   date: '2026-06-27'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1ujwgqz/introducing_claude_sonnet_5
+  title: Introducing Claude Sonnet 5
+  date: '2026-06-30'
 ---
 
 
 
 
+
 # New Model Announcement
+
+---
+
+## 2026-06-30
+
+### Introducing Claude Sonnet 5
+
+Anthropic が Claude Sonnet 5 を正式発表しました。Reddit の ClaudeAI コミュニティで共有された公式アナウンスメントへのリンクです。新モデルのリリースに関する重要な情報が含まれている可能性が高く、性能向上や新機能の追加が期待されます。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1ujwgqz/introducing_claude_sonnet_5)
+- **重要度**: 10/10
+- **タグ**: sonnet, release, 新機能
 
 ---
 

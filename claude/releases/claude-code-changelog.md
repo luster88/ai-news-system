@@ -5,9 +5,10 @@ subcategory: claude-code-changelog
 tags:
 - claude-code
 - release
+- sonnet
 - 新機能
 date: '2026-06-29'
-updated: '2026-06-29'
+updated: '2026-06-30'
 sources:
 - url: https://qiita.com/moha0918_/items/8bd90fc2c1391c4769a1
   title: Claude Code v0.2.21〜v2.1.195｜CLIからマルチエージェント基盤への全履歴｜毎日Changelog解説
@@ -15,9 +16,25 @@ sources:
 - url: https://qiita.com/moha0918_/items/8bd90fc2c1391c4769a1
   title: Claude Code v0.2.21〜v2.1.195｜CLIからマルチエージェント基盤への全履歴｜毎日Changelog解説
   date: '2026-06-29'
+- url: https://qiita.com/moha0918_/items/6fac5264ef4c4497d188
+  title: Claude Code v2.1.196〜v2.1.197｜Sonnet 5 がデフォルトに｜毎日Changelog解説
+  date: '2026-06-30'
 ---
 
+
 # Claude Code Changelog
+
+---
+
+## 2026-06-30
+
+### Claude Code v2.1.196〜v2.1.197｜Sonnet 5 がデフォルトに｜毎日Changelog解説
+
+Claude Code v2.1.197でデフォルトモデルがClaude Sonnet 5に変更され、1Mトークンのコンテキスト窓と8/31までの$2/$10 per Mtokプロモ価格が利用可能に。v2.1.196では、コミット済み設定でのMCP自己承認の脆弱性修正、バックグラウンドジョブ復帰時の会話消失バグ修正、ストリーム監視のデフォルト有効化など、セキュリティと安定性の大幅な改善が実施された。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/6fac5264ef4c4497d188)
+- **重要度**: 8/10
+- **タグ**: claude-code, sonnet, release
 
 ---
 

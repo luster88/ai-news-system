@@ -12,7 +12,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-18'
-updated: '2026-06-26'
+updated: '2026-06-30'
 sources:
 - url: https://the-decoder.com/anthropic-ceo-amodei-declares-there-is-no-end-to-the-rainbow-for-ai-scaling
   title: Anthropic CEO Amodei declares "there is no end to the rainbow" for AI scaling
@@ -38,6 +38,9 @@ sources:
 - url: https://qiita.com/lhjjjk4/items/01a9ee8d7482801cb7e5
   title: AI Daily Digest — 2026年6月27日：GPT-5.6 Sol発表、政府承認必須、MirrorCodeベンチマーク
   date: '2026-06-26'
+- url: https://techcrunch.com/2026/06/30/amazon-launches-new-1-billion-fde-org-following-openai-and-anthropic
+  title: Amazon launches new $1 billion FDE org, following OpenAI and Anthropic
+  date: '2026-06-30'
 ---
 
 
@@ -45,7 +48,20 @@ sources:
 
 
 
+
 # Industry News
+
+---
+
+## 2026-06-30
+
+### Amazon launches new $1 billion FDE org, following OpenAI and Anthropic
+
+AWSが10億ドル規模のAI特化型FDE（Forward-Deployed Engineer）組織を新設。OpenAIやAnthropicに続く動きで、企業内に直接エンジニアを派遣してエージェントシステムの構築と導入を支援する。顧客企業はシステムだけでなくAIスキルも獲得できる体制を目指す。Palantirが先駆けたFDEモデルが、AI導入支援の主流手法として拡大している。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/06/30/amazon-launches-new-1-billion-fde-org-following-openai-and-anthropic)
+- **重要度**: 6/10
+- **タグ**: cowork, claude-api, pricing
 
 ---
 

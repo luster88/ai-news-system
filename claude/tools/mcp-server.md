@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-06-24'
+updated: '2026-06-30'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -87,6 +87,9 @@ sources:
 - url: https://ai-heartland.com/tool/open-seo-guide
   title: OpenSEO徹底解説｜Semrush/Ahrefs代替のOSS SEOプラットフォーム（MCP・AIスキル内蔵）
   date: '2026-06-24'
+- url: https://zenn.dev/junju523/articles/jp-pint-mcp-invoice
+  title: 国税庁APIでインボイス登録番号を「実在照合」するMCPサーバを作った
+  date: '2026-06-30'
 ---
 
 
@@ -110,7 +113,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-06-30
+
+### 国税庁APIでインボイス登録番号を「実在照合」するMCPサーバを作った
+
+国税庁APIと連携し、適格請求書の登録番号（インボイス番号）の実在性を照合できるMCPサーバ「jp-pint-mcp」が公開された。AIエージェントが形式チェックだけでなく、国税庁の公表データを参照して実在・有効性・事業者名を確認できる。MCPクライアント（Claude Desktop等）に追加するだけで利用可能で、ハルシネーションを防ぎ事実ベースの情報を返せる。
+
+- **ソース**: [Zenn claude](https://zenn.dev/junju523/articles/jp-pint-mcp-invoice)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, 新機能
 
 ---
 

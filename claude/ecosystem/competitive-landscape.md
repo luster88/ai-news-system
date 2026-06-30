@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-23'
-updated: '2026-06-22'
+updated: '2026-06-30'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -47,6 +47,9 @@ sources:
   title: Sakana AI's Fugu orchestrates multiple LLMs to match Anthropic's Fable and
     Mythos benchmarks
   date: '2026-06-22'
+- url: https://qiita.com/emi_ndk/items/a0ce0d92faf14589cdb2
+  title: 【深掘り】GLM-5.2が塗り替えたコーディング勢力図 — Fable 5が消えた今、最強の「使える」モデルは中国製だった
+  date: '2026-06-30'
 ---
 
 
@@ -57,7 +60,20 @@ sources:
 
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-06-30
+
+### 【深掘り】GLM-5.2が塗り替えたコーディング勢力図 — Fable 5が消えた今、最強の「使える」モデルは中国製だった
+
+2026年6月、米国の輸出規制でFable 5が日本人含む外国籍ユーザーから遮断された結果、中国Zhipu AIのGLM-5.2が実質的に「誰でも使える最強のコーディングモデル」となった。MITライセンスのオープンウェイト、1Mトークンコンテキスト、744BパラメータのMoEアーキテクチャで、Code Arenaでは2位（実質トップ）を獲得。月$18から利用可能でClaude Codeなど主要ツールに統合できるが、中国製プロバイダのデータ取り扱いには注意が必要。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/emi_ndk/items/a0ce0d92faf14589cdb2)
+- **重要度**: 6/10
+- **タグ**: claude-code
 
 ---
 
