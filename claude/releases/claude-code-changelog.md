@@ -8,7 +8,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-06-29'
-updated: '2026-06-30'
+updated: '2026-07-01'
 sources:
 - url: https://qiita.com/moha0918_/items/8bd90fc2c1391c4769a1
   title: Claude Code v0.2.21〜v2.1.195｜CLIからマルチエージェント基盤への全履歴｜毎日Changelog解説
@@ -19,10 +19,36 @@ sources:
 - url: https://qiita.com/moha0918_/items/6fac5264ef4c4497d188
   title: Claude Code v2.1.196〜v2.1.197｜Sonnet 5 がデフォルトに｜毎日Changelog解説
   date: '2026-06-30'
+- url: https://qiita.com/moha0918_/items/181b45d5e97df7012263
+  title: Claude Code v2.1.198｜背景エージェントがdraft PRまで自走｜毎日Changelog解説
+  date: '2026-07-01'
 ---
 
 
+
 # Claude Code Changelog
+
+---
+
+## 2026-07-01
+
+### Claude Code v2.1.198｜背景エージェントがdraft PRまで自走｜毎日Changelog解説
+
+Claude Code v2.1.198では、背景エージェントがworktree作業完了後に確認待ちで止まらず、commit・push・draft PR作成まで自動実行するようになった。agent_needs_input/agent_completedの通知フックが追加され、離席中の作業完了を検知可能に。ExploreエージェントがHaiku固定を廃止しメインセッションのモデルを継承、サブエージェントとコンパクションがextended thinking設定を引き継ぐようになり、出力品質が向上した。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/181b45d5e97df7012263)
+- **重要度**: 8/10
+- **タグ**: claude-code, 新機能, release
+
+---
+
+### Claude Code v2.1.198｜背景エージェントがdraft PRまで自走｜毎日Changelog解説
+
+Claude Code v2.1.198で背景エージェントがworktreeでの作業完了後、commit・push・draft PR作成まで自動実行するようになった。agent_needs_input/agent_completedの通知フック追加により、離席中のエージェント状態を把握可能に。Exploreエージェントがメインセッションのモデルを継承し、サブエージェントとコンパクションがextended thinking設定を引き継ぐよう改善された。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/181b45d5e97df7012263)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 

@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-07'
-updated: '2026-06-29'
+updated: '2026-07-01'
 sources:
 - url: https://qiita.com/moha0918_/items/b3011c218210ab2695b7
   title: プラグイン作成の3つの方法、結局どれを選ぶべき？
@@ -43,6 +43,9 @@ sources:
 - url: https://qiita.com/Rapls/items/ac05434441e57348d5ed
   title: 正直に言います。初心者のClaude Codeは、9割「頼み方」で損してます【コピペで直せる10個】
   date: '2026-06-29'
+- url: https://zenn.dev/tatsuqumo/articles/b4f6b05461065c
+  title: Claude Code の「ループ」総整理 — /goal・/loop・/schedule・Routines をいつ使うか
+  date: '2026-07-01'
 ---
 
 
@@ -53,7 +56,20 @@ sources:
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-07-01
+
+### Claude Code の「ループ」総整理 — /goal・/loop・/schedule・Routines をいつ使うか
+
+Claude Code の繰り返し実行機能（/goal、/loop、/schedule、Routines）を「トリガー」と「停止条件」の観点から体系的に整理した解説記事。ターンベース、目標ベース、時間ベースの3分類と、それぞれの向き不向きを比較。/loop はローカルで定期実行、/schedule はクラウドで永続実行、/goal は条件達成まで自律実行する仕組みを明確化。
+
+- **ソース**: [Zenn claude](https://zenn.dev/tatsuqumo/articles/b4f6b05461065c)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

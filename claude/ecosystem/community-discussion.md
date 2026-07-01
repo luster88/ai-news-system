@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-06-28'
+updated: '2026-07-01'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -52,6 +52,9 @@ sources:
   title: Amazing how we all wanted to convert every doc to pdf 10 years ago and now
     everyone wants to go from pdf to md
   date: '2026-06-28'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1ukhfk7/fable_and_mythos_revival_megathread
+  title: Fable and Mythos Revival Megathread
+  date: '2026-07-01'
 ---
 
 
@@ -63,7 +66,20 @@ sources:
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-07-01
+
+### Fable and Mythos Revival Megathread
+
+Claude AIのサブレディットで、FableとMythosの復活に関するメガスレッドが立てられました。Fable 5が7月7日まで有料プランで利用可能になることが発表され、コミュニティで大きな関心を集めています。関連する質問や観察結果を集約するための専用スレッドとして機能しています。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1ukhfk7/fable_and_mythos_revival_megathread)
+- **重要度**: 6/10
+- **タグ**: 新機能, claude-console, cowork
 
 ---
 

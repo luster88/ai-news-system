@@ -5,11 +5,13 @@ subcategory: multi-agent-framework
 tags:
 - claude-code
 - copilot
+- cowork
 - cursor
+- mcp
 - prompt
 - 新機能
 date: '2026-04-04'
-updated: '2026-05-09'
+updated: '2026-07-01'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-open-multi-agent
   title: Claude Codeのソースコード漏洩から生まれた軽量マルチエージェントOSS「open-multi-agent」
@@ -17,10 +19,26 @@ sources:
 - url: https://ai-heartland.com/tool/addyosmani-agent-skills-framework
   title: Addy Osmani agent-skills徹底解剖｜AIエージェントの言い訳を封じる20スキル7コマンド
   date: '2026-05-09'
+- url: https://ai-heartland.com/agent/agent-native-framework
+  title: Agent-Native徹底解説：AIエージェントを一級ユーザーにするBuilder.ioのアプリ基盤
+  date: '2026-07-01'
 ---
 
 
+
 # Multi Agent Framework
+
+---
+
+## 2026-07-01
+
+### Agent-Native徹底解説：AIエージェントを一級ユーザーにするBuilder.ioのアプリ基盤
+
+Builder.ioが公開したAgent-Nativeフレームワークは、AIエージェントを後付けチャットではなく一級のユーザーとして扱うオープンソースのアプリケーション基盤です。1つのActionを定義するだけでUI・API・MCP・CLIなど全インターフェースから同じ処理を呼べ、UIとAIの状態二重管理の問題を解決します。TypeScript製・MITライセンスで、エージェントと人間ユーザーを対等に扱う設計思想が特徴です。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/agent/agent-native-framework)
+- **重要度**: 6/10
+- **タグ**: mcp, cowork, 新機能
 
 ---
 

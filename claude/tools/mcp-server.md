@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-06-30'
+updated: '2026-07-01'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -90,6 +90,9 @@ sources:
 - url: https://zenn.dev/junju523/articles/jp-pint-mcp-invoice
   title: 国税庁APIでインボイス登録番号を「実在照合」するMCPサーバを作った
   date: '2026-06-30'
+- url: https://zenn.dev/kanseilink/articles/kanseilink-mcp-token-saving
+  title: Claude CodeでSaaS API連携するとトークンが溶けるので、先に接続ガイドをいれて解決してみた
+  date: '2026-07-01'
 ---
 
 
@@ -114,7 +117,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-07-01
+
+### Claude CodeでSaaS API連携するとトークンが溶けるので、先に接続ガイドをいれて解決してみた
+
+Claude CodeでSaaS API連携時にトークンが大量消費される問題を、MCP経由で事前に接続情報を確認することで解決。KanseiLINK MCPサーバーを使うことで、古いAPI知識による試行錯誤を減らし、トークン消費を60-70%削減。11,000以上のSaaS/APIサービスの接続情報をMCP経由で提供し、接続前提のズレを防ぐアプローチを提案。
+
+- **ソース**: [Zenn claude](https://zenn.dev/kanseilink/articles/kanseilink-mcp-token-saving)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, performance
 
 ---
 
