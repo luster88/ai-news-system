@@ -8,9 +8,10 @@ tags:
 - cowork
 - prompt
 - setup
+- vscode
 - 新機能
 date: '2026-04-07'
-updated: '2026-07-01'
+updated: '2026-07-02'
 sources:
 - url: https://qiita.com/moha0918_/items/b3011c218210ab2695b7
   title: プラグイン作成の3つの方法、結局どれを選ぶべき？
@@ -46,6 +47,9 @@ sources:
 - url: https://zenn.dev/tatsuqumo/articles/b4f6b05461065c
   title: Claude Code の「ループ」総整理 — /goal・/loop・/schedule・Routines をいつ使うか
   date: '2026-07-01'
+- url: https://qiita.com/ujunja/items/577019cd04fed7bfabec
+  title: Claude Codeで失敗しない指示の出し方 — 曖昧な依頼を「動くプロンプト」に変える5点チェック
+  date: '2026-07-02'
 ---
 
 
@@ -57,7 +61,20 @@ sources:
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-07-02
+
+### Claude Codeで失敗しない指示の出し方 — 曖昧な依頼を「動くプロンプト」に変える5点チェック
+
+Claude Codeで効果的な指示を出すための実践ガイド。曖昧な依頼を避け、文脈・既存パターン・検証基準の3要素を含む「5点チェック」で具体的なプロンプトを作成する方法を解説。plan modeやCLAUDE.mdの活用、@fileや@dirによるコンテキスト指定など、実務で使える技法を網羅的に紹介している。
+
+- **ソース**: [Qiita claude](https://qiita.com/ujunja/items/577019cd04fed7bfabec)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, vscode
 
 ---
 

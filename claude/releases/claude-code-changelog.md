@@ -8,7 +8,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-06-29'
-updated: '2026-07-01'
+updated: '2026-07-02'
 sources:
 - url: https://qiita.com/moha0918_/items/8bd90fc2c1391c4769a1
   title: Claude Code v0.2.21〜v2.1.195｜CLIからマルチエージェント基盤への全履歴｜毎日Changelog解説
@@ -22,11 +22,27 @@ sources:
 - url: https://qiita.com/moha0918_/items/181b45d5e97df7012263
   title: Claude Code v2.1.198｜背景エージェントがdraft PRまで自走｜毎日Changelog解説
   date: '2026-07-01'
+- url: https://qiita.com/picnic/items/333e17bf379a0e6a9952
+  title: Claude Code v2.1.198：Claude in Chrome GAと自動PR作成のインパクト解説
+  date: '2026-07-02'
 ---
 
 
 
+
 # Claude Code Changelog
+
+---
+
+## 2026-07-02
+
+### Claude Code v2.1.198：Claude in Chrome GAと自動PR作成のインパクト解説
+
+Claude Code v2.1.198がリリースされ、Chrome拡張機能の一般提供開始とバックグラウンドエージェントの自律化が進みました。最も重要な変更は、エージェントが完了時に確認なしで自動的にcommit・push・ドラフトPR作成まで行うようになった点です。これはCI/CDやブランチ保護ルールを運用するチームに大きな影響を与える破壊的変更であり、/agentsウィザードの廃止と合わせて運用手順の見直しが必要です。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/333e17bf379a0e6a9952)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 

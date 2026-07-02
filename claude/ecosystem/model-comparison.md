@@ -10,7 +10,7 @@ tags:
 - pricing
 - sonnet
 date: '2026-03-24'
-updated: '2026-06-30'
+updated: '2026-07-02'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -28,13 +28,29 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1ujx3rw/sonnet_5_is_worse_than_opus_at_the_same_price_at
   title: Sonnet 5 is worse than Opus at the same price at high and xhigh?
   date: '2026-06-30'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1uloomx/claude_sonnet_5_vs_46_on_arenaai
+  title: Claude Sonnet 5 vs 4.6 on arena.ai
+  date: '2026-07-02'
 ---
 
 
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-07-02
+
+### Claude Sonnet 5 vs 4.6 on arena.ai
+
+arena.ai での Claude Sonnet 5 と 4.6 のパフォーマンス比較結果が Reddit で共有されました。コミュニティメンバーが両バージョンのベンチマーク結果を画像で投稿し、モデル間の性能差について議論しています。具体的な数値データは画像内に含まれていますが、本文には詳細な分析は記載されていません。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1uloomx/claude_sonnet_5_vs_46_on_arenaai)
+- **重要度**: 4/10
+- **タグ**: sonnet, performance
 
 ---
 

@@ -11,7 +11,7 @@ tags:
 - pricing
 - prompt
 date: '2026-03-22'
-updated: '2026-06-18'
+updated: '2026-07-02'
 sources:
 - url: https://qiita.com/shockpan-web/items/852e962e14bdd2b98e70
   title: バイブコーディングでトークンを溶かさないための2つの工夫
@@ -28,13 +28,29 @@ sources:
 - url: https://qiita.com/Rapls/items/df5a5dcff403343ad9c4
   title: Claude Code のコンテキストとトークン代を節約する実践ガイド。何が毎ターン乗っているかを測ってから減らす【2026年6月版】
   date: '2026-06-18'
+- url: https://qiita.com/yitaya/items/f1130fc860b33ef37016
+  title: Claude Code の「作業言語」を英語に切り替えるとトークンは本当に減るのか？ A/B 実測してみた
+  date: '2026-07-02'
 ---
 
 
 
 
 
+
 # Token Optimization
+
+---
+
+## 2026-07-02
+
+### Claude Code の「作業言語」を英語に切り替えるとトークンは本当に減るのか？ A/B 実測してみた
+
+日本語は英語より1.5〜3倍のトークンを消費するため、Claude Codeの作業言語を英語に切り替えるスキル「work-in-english」を開発し実測検証。短タスク（1分程度）では翻訳オーバーヘッドで逆に60%増加したが、長タスク（数分・多ファイル調査）では総トークン約16%削減、キャッシュ読み取りは38%削減を達成。最軽量モデルHaikuで翻訳し、思考・中間メモを英語化することでコスト削減を実現する手法を提案。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/yitaya/items/f1130fc860b33ef37016)
+- **重要度**: 6/10
+- **タグ**: claude-code, performance, prompt
 
 ---
 

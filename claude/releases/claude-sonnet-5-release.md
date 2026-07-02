@@ -9,7 +9,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-06-30'
-updated: '2026-06-30'
+updated: '2026-07-02'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1ujwggp/introducing_claude_sonnet_5_our_most_agentic
   title: Introducing Claude Sonnet 5, our most agentic Sonnet yet.
@@ -21,11 +21,27 @@ sources:
   title: Anthropic's new Claude Sonnet 5 closes the gap to the pricier Opus model
     series
   date: '2026-06-30'
+- url: https://qiita.com/lhjjjk4/items/15143176cf7ea49a348f
+  title: 'AI Daily Digest: 2026年7月3日 — Claude Sonnet 5、Claude Science、AIインフラブーム'
+  date: '2026-07-02'
 ---
 
 
 
+
 # Claude Sonnet 5 Release
+
+---
+
+## 2026-07-02
+
+### AI Daily Digest: 2026年7月3日 — Claude Sonnet 5、Claude Science、AIインフラブーム
+
+Anthropicが2026年7月にClaude Sonnet 5を発表し、Opusクラスの自律機能を低価格で提供。同時に科学研究者向けAIワークベンチ「Claude Science」をベータ公開。競合のOpenAIはGPT-5.6シリーズをリリースしたが、安全性評価で全モデルが「ハイリスク」に分類され政府管理下での限定公開となった。
+
+- **ソース**: [Qiita claude](https://qiita.com/lhjjjk4/items/15143176cf7ea49a348f)
+- **重要度**: 9/10
+- **タグ**: sonnet, release, 新機能
 
 ---
 

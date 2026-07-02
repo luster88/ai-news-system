@@ -14,7 +14,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-06-29'
+updated: '2026-07-02'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -178,6 +178,9 @@ sources:
 - url: https://qiita.com/tanimoto-hikari/items/2d7c52a59bdbc40324e8
   title: Claude Code との会話から「知見」を抽出して、Obsidian に資産化する運用を作った
   date: '2026-06-29'
+- url: https://zenn.dev/sumumu26/articles/f0b04426c889e6
+  title: Fable 5にスマホから「癒される謎の鳥アプリ作って」と頼んだら30分で公開までいった(ゲームとしては微妙になった)
+  date: '2026-07-02'
 ---
 
 
@@ -223,7 +226,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-07-02
+
+### Fable 5にスマホから「癒される謎の鳥アプリ作って」と頼んだら30分で公開までいった(ゲームとしては微妙になった)
+
+Fable 5（Claude 5世代の新モデル）を使い、スマホから雑なプロンプト1個で「癒される謎の鳥アプリ」を30分で作成・公開した実例。単一HTML（1,300行）、依存ライブラリなし、GitHub Pages自動デプロイまで実現。Fable 5はヘッドレスブラウザで自己検証し、バグを2つ修正。ただし指示が曖昧だったため、実装は良いがゲームとしては微妙な結果に。AIは指示の解像度をそのまま反映する点が明確になった。
+
+- **ソース**: [Zenn claude](https://zenn.dev/sumumu26/articles/f0b04426c889e6)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, 新機能
 
 ---
 
