@@ -11,10 +11,11 @@ tags:
 - performance
 - prompt
 - setup
+- sonnet
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-07-02'
+updated: '2026-07-03'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -181,6 +182,9 @@ sources:
 - url: https://zenn.dev/sumumu26/articles/f0b04426c889e6
   title: Fable 5にスマホから「癒される謎の鳥アプリ作って」と頼んだら30分で公開までいった(ゲームとしては微妙になった)
   date: '2026-07-02'
+- url: https://zenn.dev/yamadatt/articles/20260703-fable5-available-again
+  title: Claude Fable 5がまた使えるようになったので、課金範囲内で環境整備を進めた
+  date: '2026-07-03'
 ---
 
 
@@ -227,7 +231,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-07-03
+
+### Claude Fable 5がまた使えるようになったので、課金範囲内で環境整備を進めた
+
+一時停止されていたClaude Fable 5が2026年7月7日まで課金範囲内で再び利用可能に。筆者はFable 5を全体統括役、Sonnet 5をサブエージェントとして使い分け、環境整備やSkills改善、サイトデザイン更新などを実施。Fable 5は曖昧な指示でも適切に作業を進め、想定外の改善まで提案する点が特徴的だった。
+
+- **ソース**: [Zenn claude](https://zenn.dev/yamadatt/articles/20260703-fable5-available-again)
+- **重要度**: 6/10
+- **タグ**: claude-code, sonnet, 新機能
 
 ---
 

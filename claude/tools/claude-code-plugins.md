@@ -11,7 +11,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-04-12'
-updated: '2026-06-20'
+updated: '2026-07-03'
 sources:
 - url: https://ai-heartland.com/explain/last30days-skill-guide
   title: last30days-skill完全ガイド｜Reddit・X・YouTube横断AIリサーチスキルの使い方2026年版
@@ -43,6 +43,9 @@ sources:
 - url: https://qiita.com/claude_iruka/items/f5c721f2acf2241e6d11
   title: Claude Codeのカスタムコマンドで転職活動の応募書類を自動生成するツールを作ってみた
   date: '2026-06-20'
+- url: https://qiita.com/kummn/items/a31c32f8ccbe63421bde
+  title: Claudeの残量やリセット時間のわかるマスコットWidget
+  date: '2026-07-03'
 ---
 
 
@@ -54,7 +57,30 @@ sources:
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-07-03
+
+### Claudeの残量やリセット時間のわかるマスコットWidget
+
+Claude Code のトークン使用量、リセット時間、Extra Charge を一目で確認できるデスクトップウィジェット「claude-watch」が公開されました。マスコットキャラクターを表示する機能も搭載し、作業のお供として使えるツールです。GitHub で公開されており、Claude Code ユーザーのトークン管理を支援します。
+
+- **ソース**: [Qiita claude](https://qiita.com/kummn/items/a31c32f8ccbe63421bde)
+- **重要度**: 5/10
+- **タグ**: claude-code, 新機能, cowork
+
+---
+
+### Claudeの残量やリセット時間のわかるマスコットWidget
+
+Claude Code のトークン使用量とリセット時間を視覚的に確認できるデスクトップウィジェット「claude-watch」が公開されました。使用量、リセット時間、Extra Charge を一元管理でき、マスコットキャラクターを表示する機能も搭載しています。Claude Code で開発された実用的なモニタリングツールです。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kummn/items/a31c32f8ccbe63421bde)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

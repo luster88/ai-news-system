@@ -13,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-04'
-updated: '2026-06-26'
+updated: '2026-07-03'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -42,6 +42,10 @@ sources:
   title: OpenAI's GPT-5.6 Sol launches to rival Claude Mythos under government access
     rules it calls unsustainable
   date: '2026-06-26'
+- url: https://the-decoder.com/gpt-and-claude-failed-bridgewaters-finance-tests-because-the-right-answers-were-never-public
+  title: GPT and Claude failed Bridgewater's finance tests because the right answers
+    were never public
+  date: '2026-07-03'
 ---
 
 
@@ -50,7 +54,20 @@ sources:
 
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-07-03
+
+### GPT and Claude failed Bridgewater's finance tests because the right answers were never public
+
+ヘッジファンドBridgewaterとThinking Machines Labが、金融文書分析において商用AIモデル（GPT、Claude）を上回るオープンソースモデルQwen3-235Bを開発。内部の専門知識でファインチューニングした結果、85%の精度を達成し、運用コストは14分の1に削減。GPTやClaudeは基本プロンプトで約50%の精度にとどまった。金融業界特有の判断基準は公開データに存在しないため、汎用モデルでは対応困難であることが示された。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/gpt-and-claude-failed-bridgewaters-finance-tests-because-the-right-answers-were-never-public)
+- **重要度**: 6/10
+- **タグ**: performance, pricing, cowork
 
 ---
 

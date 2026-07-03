@@ -8,8 +8,9 @@ tags:
 - linux
 - prompt
 - setup
+- 新機能
 date: '2026-05-04'
-updated: '2026-05-15'
+updated: '2026-07-03'
 sources:
 - url: https://qiita.com/honey-0326-honey/items/c16d628aee898e3f9f72
   title: 【初心者向け】社内PCでClaude Codeを使う前に。絶対に知っておきたいセキュリティの罠と対策
@@ -20,10 +21,26 @@ sources:
 - url: https://zenn.dev/avot/articles/a802d403c02340
   title: direnvを使って、AssumeRoleで安全なロールに上書きしよう
   date: '2026-05-15'
+- url: https://qiita.com/ujunja/items/2b5cceaf5a1a39f43033
+  title: Claude Codeのサンドボックスだけでは秘密情報を守れない — 権限ルール・巻き戻しまで含めた安全設定
+  date: '2026-07-03'
 ---
 
 
+
 # Security Setup
+
+---
+
+## 2026-07-03
+
+### Claude Codeのサンドボックスだけでは秘密情報を守れない — 権限ルール・巻き戻しまで含めた安全設定
+
+Claude Codeのサンドボックス機能だけでは秘密情報（AWSクレデンシャルやSSH鍵など）の読み取りを防げないことを解説。権限ルール（deny/ask/allow）、サンドボックス、巻き戻し機能を組み合わせた多層防御の設定方法を初心者向けに説明。特に「deny」ルールは「allow」より優先され、スコープをまたいで適用される点が重要。
+
+- **ソース**: [Qiita claude](https://qiita.com/ujunja/items/2b5cceaf5a1a39f43033)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

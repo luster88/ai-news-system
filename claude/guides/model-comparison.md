@@ -6,15 +6,32 @@ tags:
 - cowork
 - opus
 - performance
+- sonnet
 date: '2026-06-12'
-updated: '2026-06-12'
+updated: '2026-07-03'
 sources:
 - url: https://zenn.dev/znet/articles/2026-stronger-model-as-reviewer
   title: 高性能モデルの使いどころは『実装者』でなく『レビュアー』 — Fable 5 実機評価
   date: '2026-06-12'
+- url: https://zenn.dev/yukurash/articles/aba0e5d2acf7cd
+  title: 【Fable 5 vs Opus 4.8】PM として優れているのはどちらか検証した
+  date: '2026-07-03'
 ---
 
+
 # Model Comparison
+
+---
+
+## 2026-07-03
+
+### 【Fable 5 vs Opus 4.8】PM として優れているのはどちらか検証した
+
+Claude の Fable 5 と Opus 4.8 を PM（プロジェクトマネージャー）役に設定し、Sonnet エージェントを部下としたアプリ開発チームを構成して比較検証。完成時間は Fable 5 が早く、ゲームの見た目も優れていたが、トークン数はほぼ同等で大きな差は見られなかった。簡単なタスクでは両モデルの違いが現れにくく、Fable 5 の価値を最大化するには人間側の使い方も重要という結論に至った。
+
+- **ソース**: [Zenn claude](https://zenn.dev/yukurash/articles/aba0e5d2acf7cd)
+- **重要度**: 6/10
+- **タグ**: opus, sonnet, performance
 
 ---
 

@@ -9,8 +9,9 @@ tags:
 - haiku
 - mcp
 - prompt
+- setup
 date: '2026-04-26'
-updated: '2026-05-24'
+updated: '2026-07-03'
 sources:
 - url: https://zenn.dev/saytooy_arch/articles/14-zenn-auto-publish-pipeline
   title: Zenn自動公開パイプラインをclaude -pで構築した話
@@ -24,12 +25,28 @@ sources:
 - url: https://zenn.dev/sonicgarden/articles/402096a0f7b0c2
   title: 親方エージェントと毎日ふりかえりをするワークフロー
   date: '2026-05-24'
+- url: https://qiita.com/10yama_k/items/845b08ad280ce1c832a6
+  title: Googlecolabで無料で文字おこし
+  date: '2026-07-03'
 ---
 
 
 
 
+
 # Workflow Automation
+
+---
+
+## 2026-07-03
+
+### Googlecolabで無料で文字おこし
+
+Google Colabの無料枠とWhisperを使って音声ファイルを日本語で文字起こしする方法の備忘録。Claude Codeを秘書役として使い、夜の思いつきをボイスメモ→文字起こし→保存する個人的なワークフローが紹介されている。複数ファイルの一括処理にも対応。
+
+- **ソース**: [Qiita claude](https://qiita.com/10yama_k/items/845b08ad280ce1c832a6)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, setup
 
 ---
 

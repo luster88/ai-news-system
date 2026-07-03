@@ -6,6 +6,7 @@ tags:
 - claude-api
 - claude-code
 - claude-console
+- copilot
 - cowork
 - opus
 - performance
@@ -14,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-23'
-updated: '2026-06-30'
+updated: '2026-07-03'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -50,6 +51,10 @@ sources:
 - url: https://qiita.com/emi_ndk/items/a0ce0d92faf14589cdb2
   title: 【深掘り】GLM-5.2が塗り替えたコーディング勢力図 — Fable 5が消えた今、最強の「使える」モデルは中国製だった
   date: '2026-06-30'
+- url: https://the-decoder.com/microsoft-follows-anthropic-and-openai-into-the-ai-super-app-race-with-overhauled-copilot-and-autopilot-agents
+  title: Microsoft follows Anthropic and OpenAI into the AI super app race with overhauled
+    Copilot and AutoPilot agents
+  date: '2026-07-03'
 ---
 
 
@@ -61,7 +66,20 @@ sources:
 
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-07-03
+
+### Microsoft follows Anthropic and OpenAI into the AI super app race with overhauled Copilot and AutoPilot agents
+
+Microsoft が8月に Copilot を大幅刷新し、コンシューマー版とエンタープライズ版を統合。AI コーディングツールと「AutoPilot」と呼ばれる新しい AI エージェント機能（スケジュール管理やメール要約など）を追加し、有料提供予定。Anthropic の Claude Code や OpenAI の Codex と同様の「スーパーアプリ」競争に参入する動き。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/microsoft-follows-anthropic-and-openai-into-the-ai-super-app-race-with-overhauled-copilot-and-autopilot-agents)
+- **重要度**: 6/10
+- **タグ**: claude-code, copilot, 新機能
 
 ---
 

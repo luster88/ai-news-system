@@ -4,15 +4,17 @@ category: ecosystem
 subcategory: industry-news
 tags:
 - claude-api
+- claude-code
 - copilot
 - cowork
 - opus
 - performance
 - pricing
+- release
 - sonnet
 - 新機能
 date: '2026-04-18'
-updated: '2026-06-30'
+updated: '2026-07-03'
 sources:
 - url: https://the-decoder.com/anthropic-ceo-amodei-declares-there-is-no-end-to-the-rainbow-for-ai-scaling
   title: Anthropic CEO Amodei declares "there is no end to the rainbow" for AI scaling
@@ -41,6 +43,9 @@ sources:
 - url: https://techcrunch.com/2026/06/30/amazon-launches-new-1-billion-fde-org-following-openai-and-anthropic
   title: Amazon launches new $1 billion FDE org, following OpenAI and Anthropic
   date: '2026-06-30'
+- url: https://qiita.com/lhjjjk4/items/1b2b60d24cd2144ca881
+  title: AI Daily Digest · 2026年7月4日 — Claude Science、arXiv独立、AI投資額が過去最高の5,100億ドル
+  date: '2026-07-03'
 ---
 
 
@@ -49,7 +54,20 @@ sources:
 
 
 
+
 # Industry News
+
+---
+
+## 2026-07-03
+
+### AI Daily Digest · 2026年7月4日 — Claude Science、arXiv独立、AI投資額が過去最高の5,100億ドル
+
+AnthropicがClaude Scienceを発表し、科学研究向けAIワークベンチとして60以上のデータベースを統合。AlphaFoldノーベル賞受賞者John JumperがAnthropicに移籍。2026年上半期のAIスタートアップ投資額は過去最高の5,100億ドルに到達し、OpenAIとAnthropicは史上最大規模のIPOを計画中。Claude Codeはフルソフトウェアエンジニアリング環境へ進化し、並列サブエージェント編成とGUIテスト機能を実装。
+
+- **ソース**: [Qiita claude](https://qiita.com/lhjjjk4/items/1b2b60d24cd2144ca881)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 
