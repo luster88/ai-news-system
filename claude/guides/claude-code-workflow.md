@@ -15,7 +15,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-07-03'
+updated: '2026-07-04'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -185,6 +185,12 @@ sources:
 - url: https://zenn.dev/yamadatt/articles/20260703-fable5-available-again
   title: Claude Fable 5がまた使えるようになったので、課金範囲内で環境整備を進めた
   date: '2026-07-03'
+- url: https://zenn.dev/tottoko_hamu/books/building-agent-team-with-claude-code
+  title: Claude Codeで作る1人エージェントチーム
+  date: '2026-07-04'
+- url: https://qiita.com/nak3761/items/e70138288f4055fc1442
+  title: Claudeに「Qiita記事を書くプロジェクト」を作ってもらった話
+  date: '2026-07-04'
 ---
 
 
@@ -232,7 +238,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-07-04
+
+### Claude Codeで作る1人エージェントチーム
+
+Claude Code を活用した「1人エージェントチーム」の構築方法を解説する技術書。CLAUDE.md によるプロジェクト記憶の設計、サブエージェントの作成方法、Agent Skills の再利用設計、Plan mode の活用、実運用での失敗事例とコスト分析まで網羅。50代エンジニアによる実践的な知見が詰まった内容。
+
+- **ソース**: [Zenn claude](https://zenn.dev/tottoko_hamu/books/building-agent-team-with-claude-code)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, cowork
+
+---
+
+### Claudeに「Qiita記事を書くプロジェクト」を作ってもらった話
+
+Claude Sonnet 5を使ってQiita記事投稿プロジェクトを作成した事例。Qiita API v2を使った投稿・更新CLIツールを開発し、記事idの自動書き戻しや更新フローまで含めた設計が提案された。AGENTS.mdにルールを明記することで、セッションをまたいでもルールが引き継がれる運用を確立。mermaid図のQiita固有の問題（改行に<br/>が必要）なども解決した実践例。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/nak3761/items/e70138288f4055fc1442)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

@@ -11,7 +11,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-04-12'
-updated: '2026-07-03'
+updated: '2026-07-04'
 sources:
 - url: https://ai-heartland.com/explain/last30days-skill-guide
   title: last30days-skill完全ガイド｜Reddit・X・YouTube横断AIリサーチスキルの使い方2026年版
@@ -46,6 +46,9 @@ sources:
 - url: https://qiita.com/kummn/items/a31c32f8ccbe63421bde
   title: Claudeの残量やリセット時間のわかるマスコットWidget
   date: '2026-07-03'
+- url: https://ai-heartland.com/ai/claude/claude-rank
+  title: claude-rank徹底解説：AIに引用されないサイトを診断・自動修正するプラグイン
+  date: '2026-07-04'
 ---
 
 
@@ -58,7 +61,20 @@ sources:
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-07-04
+
+### claude-rank徹底解説：AIに引用されないサイトを診断・自動修正するプラグイン
+
+claude-rankは、サイトがAI検索エンジン（ChatGPT、Perplexityなど）に発見・引用されるかを診断し、自動修正するClaude Codeプラグインです。10スキャナ・170以上のチェックでAIクローラのブロック、llms.txt欠如、構造化データ不備などを検出し、robots.txt、sitemap.xml、llms.txt、JSON-LDを自動生成・修正します。従来のSEOに加え、GEO（生成エンジン最適化）とAEO（回答エンジン最適化）に対応し、AI時代の新しいSEO戦略を自動化する無料OSSツールです。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/ai/claude/claude-rank)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, prompt
 
 ---
 

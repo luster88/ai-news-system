@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-06-29'
+updated: '2026-07-04'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -86,6 +86,10 @@ sources:
 - url: https://qiita.com/drasenas/items/6208d32634f99b02681b
   title: GWS監査ログ日次監視のClaude Code Routines設計
   date: '2026-06-29'
+- url: https://qiita.com/DevMasatoman/items/d10cf51f04eac01253c9
+  title: Claude Code にブログを毎日書かせて自動公開するパイプライン全公開 — CLAUDE.md / adapt-spec / routine
+    の設計をそのまま見せる
+  date: '2026-07-04'
 ---
 
 
@@ -109,7 +113,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-07-04
+
+### Claude Code にブログを毎日書かせて自動公開するパイプライン全公開 — CLAUDE.md / adapt-spec / routine の設計をそのまま見せる
+
+Claude Code のクラウドルーチンを使って、Supabase のブリーフキューから Qiita・Zenn・はてなへ自動配信するパイプラインの実装事例。CLAUDE.md による仕様定義、adapt-spec ファイルによる媒体別適応、content-executor ルーチンによる自動実行の 3 レイヤー設計を解説。push 衝突、frontmatter 崩れ、複数ルーチン並走時の問題など実運用で遭遇した落とし穴と対処法を公開している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/DevMasatoman/items/d10cf51f04eac01253c9)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

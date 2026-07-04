@@ -9,7 +9,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-03-29'
-updated: '2026-06-12'
+updated: '2026-07-04'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6of32/i_am_fully_addicted_to_building_dumb_little_ai
   title: I am fully addicted to building dumb little AI web apps. I love it.
@@ -24,11 +24,27 @@ sources:
   title: My favorite thing right now is to use Claude Fable to mash game genres. Here's
     Tetris as a Racing game!
   date: '2026-06-12'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1un5xjf/day_37_of_building_gta_6_using_claude
+  title: Day 37 of building GTA 6 using claude
+  date: '2026-07-04'
 ---
 
 
 
+
 # Community Showcase
+
+---
+
+## 2026-07-04
+
+### Day 37 of building GTA 6 using claude
+
+開発者が Claude を使用して GTA Online クローンをボクセルスタイルで構築する37日目の進捗報告。プレイヤーがプロンプトで車、建物、武器を生成できる AI エージェント駆動のゲームで、今週は大規模マップ、警察システムの改善、新クエスト（麻薬取引）を追加。Fable の復活により開発も再開している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1un5xjf/day_37_of_building_gta_6_using_claude)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

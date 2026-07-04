@@ -9,7 +9,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-06-30'
-updated: '2026-07-02'
+updated: '2026-07-04'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1ujwggp/introducing_claude_sonnet_5_our_most_agentic
   title: Introducing Claude Sonnet 5, our most agentic Sonnet yet.
@@ -24,12 +24,28 @@ sources:
 - url: https://qiita.com/lhjjjk4/items/15143176cf7ea49a348f
   title: 'AI Daily Digest: 2026年7月3日 — Claude Sonnet 5、Claude Science、AIインフラブーム'
   date: '2026-07-02'
+- url: https://qiita.com/lhjjjk4/items/c21ef38c7f1aace599ff
+  title: AI Daily Digest · 2026年7月5日 — AI投資額が5,100億ドル、Claude Sonnet 5、Kling AIが28億ドル調達
+  date: '2026-07-04'
 ---
 
 
 
 
+
 # Claude Sonnet 5 Release
+
+---
+
+## 2026-07-04
+
+### AI Daily Digest · 2026年7月5日 — AI投資額が5,100億ドル、Claude Sonnet 5、Kling AIが28億ドル調達
+
+2026年上半期のグローバルAI投資が5,100億ドルに達し、Q2の70%超がAI企業に集中。AnthropicがClaude Sonnet 5をリリースし、Opusクラスのエージェント能力を低価格で提供。入力$2/百万トークン、出力$10/百万トークンの導入価格で、複雑なマルチステップタスク、自律的なコーディング・デバッグが可能。Kling AIが28億ドルを調達し評価額180億ドルに到達。
+
+- **ソース**: [Qiita claude](https://qiita.com/lhjjjk4/items/c21ef38c7f1aace599ff)
+- **重要度**: 9/10
+- **タグ**: sonnet, release, pricing
 
 ---
 

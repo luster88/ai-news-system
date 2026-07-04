@@ -10,7 +10,7 @@ tags:
 - pricing
 - sonnet
 date: '2026-03-24'
-updated: '2026-07-02'
+updated: '2026-07-04'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -31,6 +31,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1uloomx/claude_sonnet_5_vs_46_on_arenaai
   title: Claude Sonnet 5 vs 4.6 on arena.ai
   date: '2026-07-02'
+- url: https://qiita.com/homhom44/items/a97c82b2fa8025230c74
+  title: 2026/7 本当にSonnetはOpusに実力が肉薄したのか？
+  date: '2026-07-04'
 ---
 
 
@@ -38,7 +41,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-07-04
+
+### 2026/7 本当にSonnetはOpusに実力が肉薄したのか？
+
+Sonnet 5とOpus 4.8の実力比較を各種ベンチマーク（SWE-bench Pro、HLE、GDPval-AA v2）で検証した記事。コーディングタスクではOpusが6ポイント優位だが、ツール操作・知識作業系ではほぼ同等か逆転する場面もあり、「タスク種類により差がバラバラ」という結論。深いマルチファイル改修ではOpusが優位、ツール操作系ではSonnetで十分という使い分けが必要。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/a97c82b2fa8025230c74)
+- **重要度**: 6/10
+- **タグ**: sonnet, opus, performance
 
 ---
 

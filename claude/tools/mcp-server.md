@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-07-01'
+updated: '2026-07-04'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -93,6 +93,9 @@ sources:
 - url: https://zenn.dev/kanseilink/articles/kanseilink-mcp-token-saving
   title: Claude CodeでSaaS API連携するとトークンが溶けるので、先に接続ガイドをいれて解決してみた
   date: '2026-07-01'
+- url: https://ai-heartland.com/agent/open-skills
+  title: OpenSkills徹底解説：Claude Skillsをローカル・任意のLLMで動かすMCPサーバー
+  date: '2026-07-04'
 ---
 
 
@@ -118,7 +121,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-07-04
+
+### OpenSkills徹底解説：Claude Skillsをローカル・任意のLLMで動かすMCPサーバー
+
+OpenSkillsは、Anthropic公式のClaude Skillsをローカル環境で実行できるMCPサーバー。ファイルをクラウドにアップロードせず、MacのサンドボックスでWord・Excel・PDF処理などを実行可能。Claude以外のLLM（Gemini、Qwen、OpenAI等）からもMCP経由で利用でき、プライバシーを保ちながら任意のモデルでスキルを活用できる点が特徴。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/agent/open-skills)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code, setup
 
 ---
 
