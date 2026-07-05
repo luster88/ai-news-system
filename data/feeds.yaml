@@ -49,10 +49,10 @@ us:
     url: "https://www.technologyreview.com/topic/artificial-intelligence/feed"
     max_items: 6
 
-  - name: Import AI
+  - name: Ars Technica AI
     type: rss
-    url: "https://importai.substack.com/feed"
-    max_items: 4
+    url: "https://arstechnica.com/ai/feed/"
+    max_items: 6
 
 jp:
   - name: ITmedia AI+
@@ -86,6 +86,12 @@ jp:
     url: "https://www.publickey1.jp/atom.xml"
     max_items: 5
     filter_keywords: [ai, llm, gpt, claude, 生成ai, 機械学習, copilot, openai, anthropic]
+
+  - name: CNET Japan
+    type: rss
+    url: "https://feeds.japan.cnet.com/rss/cnet/all.rdf"
+    max_items: 6
+    filter_keywords: [ai, llm, gpt, claude, 生成ai, 機械学習, 人工知能, openai, chatgpt]
 
 cn:
   - name: ERNIE Blog
@@ -161,7 +167,12 @@ research:
     url: "https://research.google/blog/rss/"
     max_items: 5
 
-  - name: Reddit r/MachineLearning
+  - name: MIT News AI
     type: rss
-    url: "https://www.reddit.com/r/MachineLearning/.rss"
-    max_items: 6
+    url: "https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml"
+    max_items: 5
+
+  - name: Microsoft Research Blog
+    type: rss
+    url: "https://www.microsoft.com/en-us/research/feed/"
+    max_items: 5
