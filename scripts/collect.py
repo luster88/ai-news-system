@@ -246,6 +246,10 @@ def is_bad_url(url: str) -> bool:
     if not u:
         return True
 
+    # GitHub リリースURLの /tag/ は一覧ページではないため除外しない
+    if "/releases/tag/" in u:
+        return False
+
     return any(bad in u for bad in BAD_URL_CONTAINS)
 
 
@@ -695,7 +699,8 @@ def _collect_one_source(region: str, src: dict) -> list:
             )
         ]
     # techblog リージョンの RSS は AI キーワードフィルタを追加適用
-    elif region in AI_FILTER_REGIONS and source_type == "rss":
+    # （ai_filter: false のソースはAI専門フィードとみなしてスキップ）
+    elif region in AI_FILTER_REGIONS and source_type == "rss" and src.get("ai_filter", True):
         normalized = [
             a for a in normalized
             if any(

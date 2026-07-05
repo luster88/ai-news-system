@@ -716,6 +716,7 @@ def page_shell(title: str, body_html: str, root_rel: str = ".") -> str:
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="{root_rel}/style.css">
+  <link rel="alternate" type="application/atom+xml" title="{html.escape(SITE_TITLE)}" href="{root_rel}/feed.xml">
 </head>
 <body class="app">
   <header class="topbar">
@@ -723,6 +724,7 @@ def page_shell(title: str, body_html: str, root_rel: str = ".") -> str:
     <div class="topbar-brand"><a href="{root_rel}/index.html">{SITE_TITLE}</a></div>
     <nav class="topbar-nav">
       <a href="{root_rel}/index.html">AI News</a>
+      <a href="{root_rel}/weekly/index.html">Weekly</a>
       <a href="{root_rel}/claude/index.html">Claude</a>
       <a href="{root_rel}/models/index.html">Models</a>
       <a href="{root_rel}/tags/index.html">Tags</a>
@@ -2373,6 +2375,146 @@ def build_sitemap() -> None:
 
 
 # ---------------------------------------------------------------------------
+# 週報ページ
+# ---------------------------------------------------------------------------
+
+WEEKLY_MD_DIR = NEWS_DIR / "weekly"
+
+
+def _render_weekly_md_to_html(md_path: Path, back_href: str, root_rel: str, history_links_html: str = "") -> str:
+    """週報 Markdown を HTML ページ文字列に変換する。"""
+    raw = md_path.read_text(encoding="utf-8")
+    meta, body = strip_front_matter(raw)
+    title = article_title_from_body(body, md_path.stem)
+
+    article_html = markdown.markdown(body, extensions=MD_EXTENSIONS)
+
+    body_html = f"""
+  <div class="layout">
+    <main class="content-area">
+      <div class="article-detail">
+        <a class="back-link" href="{back_href}">← Back to list</a>
+        <div class="article-detail-header">
+          <h1 class="article-detail-title">{html.escape(title)}</h1>
+          <div class="article-detail-meta">
+            {html.escape(meta.get('week_start', ''))} 〜 {html.escape(meta.get('week_end', ''))}
+          </div>
+        </div>
+        <div class="article-body">
+          {article_html}
+        </div>
+        {history_links_html}
+      </div>
+    </main>
+  </div>"""
+
+    return page_shell(title, body_html, root_rel=root_rel)
+
+
+def build_weekly_pages() -> None:
+    """news/weekly/*.md を HTML 化する（最新を weekly/index.html、過去週を weekly/{週}/index.html に）。"""
+    weekly_files = sorted(WEEKLY_MD_DIR.glob("*.md"), reverse=True) if WEEKLY_MD_DIR.exists() else []
+    if not weekly_files:
+        print("[info] news/weekly/ が空のため weekly ページをスキップします")
+        return
+
+    out_dir = SITE_DIR / "weekly"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    # 過去週リンク一覧（最新ページの下部に表示）
+    history_links_html = ""
+    if len(weekly_files) > 1:
+        links = "".join(
+            f'<a href="{html.escape(f.stem)}/index.html" class="tag">{html.escape(f.stem)}</a>'
+            for f in weekly_files[1:]
+        )
+        history_links_html = f"""
+        <div class="article-detail-header" style="margin-top:24px">
+          <div class="article-detail-meta">過去の週報</div>
+          <div class="tag-row" style="margin-top:8px">{links}</div>
+        </div>"""
+
+    # 最新週報 → weekly/index.html
+    latest = weekly_files[0]
+    (out_dir / "index.html").write_text(
+        _render_weekly_md_to_html(latest, back_href="../index.html", root_rel="..",
+                                  history_links_html=history_links_html),
+        encoding="utf-8",
+    )
+
+    # 過去週報 → weekly/{週}/index.html
+    for f in weekly_files[1:]:
+        week_dir = out_dir / f.stem
+        week_dir.mkdir(parents=True, exist_ok=True)
+        (week_dir / "index.html").write_text(
+            _render_weekly_md_to_html(f, back_href="../index.html", root_rel="../.."),
+            encoding="utf-8",
+        )
+
+    print(f"[info] built weekly pages: {len(weekly_files)} report(s)")
+
+
+# ---------------------------------------------------------------------------
+# Atom フィード
+# ---------------------------------------------------------------------------
+
+FEED_MAX_ENTRIES = 20
+
+
+def build_feed() -> None:
+    """最新の日報から Atom フィード (_site/feed.xml) を生成する。"""
+    if not SITE_BASE_URL:
+        print("[warn] site_base_url が未設定のため feed.xml をスキップします")
+        return
+
+    files = read_news_files()[:FEED_MAX_ENTRIES]
+    if not files:
+        print("[info] 日報がないため feed.xml をスキップします")
+        return
+
+    entries = []
+    feed_updated = ""
+    for f in files:
+        year, month, name = f.relative_to(NEWS_DIR).parts
+        day = name.replace(".md", "")
+        raw = f.read_text(encoding="utf-8")
+        meta, body = strip_front_matter(raw)
+        title = article_title_from_body(body, day)
+        url = f"{SITE_BASE_URL}/news/{year}/{month}/{day}/"
+        # 日次実行スケジュール（UTC 16:05 = JST 01:05）に合わせた近似タイムスタンプ
+        updated = f"{meta.get('date', day)}T16:05:00Z"
+        if not feed_updated:
+            feed_updated = updated  # files は新しい順なので先頭が最新
+        summary = " / ".join(extract_summary_bullets(body, max_lines=5))
+
+        entries.append(
+            "  <entry>\n"
+            f"    <title>{html.escape(title)}</title>\n"
+            f'    <link href="{html.escape(url)}"/>\n'
+            f"    <id>{html.escape(url)}</id>\n"
+            f"    <updated>{updated}</updated>\n"
+            f"    <summary>{html.escape(summary)}</summary>\n"
+            "  </entry>"
+        )
+
+    xml = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<feed xmlns="http://www.w3.org/2005/Atom">\n'
+        f"  <title>{html.escape(SITE_TITLE)}</title>\n"
+        f'  <link href="{html.escape(SITE_BASE_URL)}/"/>\n'
+        f'  <link rel="self" href="{html.escape(SITE_BASE_URL)}/feed.xml"/>\n'
+        f"  <id>{html.escape(SITE_BASE_URL)}/</id>\n"
+        f"  <updated>{feed_updated}</updated>\n"
+        + "\n".join(entries) + "\n"
+        "</feed>\n"
+    )
+
+    feed_path = SITE_DIR / "feed.xml"
+    feed_path.write_text(xml, encoding="utf-8")
+    print(f"[info] built feed: {len(entries)} entries → {feed_path}")
+
+
+# ---------------------------------------------------------------------------
 # エントリポイント
 # ---------------------------------------------------------------------------
 
@@ -2395,7 +2537,9 @@ def main():
     build_claude_pages()
     build_favorites_pages()
     build_dashboard_page()
+    build_weekly_pages()
     build_sitemap()
+    build_feed()
 
     print(f"[info] built site: {SITE_DIR}")
     print(f"[info]   {len(files)} articles, {len(prev_files)} prev articles, {max(1, (len(files) + PAGE_SIZE - 1) // PAGE_SIZE)} index page(s)")

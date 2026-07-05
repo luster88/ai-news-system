@@ -146,6 +146,29 @@ techblog:
     url: "https://www.reddit.com/r/LocalLLaMA/.rss"
     max_items: 6
 
+  - name: Hacker News
+    type: rss
+    url: "https://hnrss.org/frontpage?points=80"
+    max_items: 6
+
+  - name: Ollama Releases
+    type: rss
+    url: "https://github.com/ollama/ollama/releases.atom"
+    max_items: 3
+    ai_filter: false
+
+  - name: vLLM Releases
+    type: rss
+    url: "https://github.com/vllm-project/vllm/releases.atom"
+    max_items: 3
+    ai_filter: false
+
+  - name: Transformers Releases
+    type: rss
+    url: "https://github.com/huggingface/transformers/releases.atom"
+    max_items: 3
+    ai_filter: false
+
 research:
   - name: arXiv cs.AI
     type: rss

@@ -2,18 +2,20 @@
 
 世界中の AI ニュースを毎日自動で収集・要約し、日本語の日報として静的サイトに公開するパイプラインです。
 
-34 のソース（US / JP / CN / techblog / research）から RSS とスクレイピングで記事を収集し、Claude API で日本語要約・重要度スコア・タグを付与して Markdown 日報を生成します。GitHub Actions で毎日自動実行し、GitHub Pages にデプロイします。
+38 のソース（US / JP / CN / techblog / research）から RSS とスクレイピングで記事を収集し、Claude API で日本語要約・重要度スコア・タグを付与して Markdown 日報を生成します。GitHub Actions で毎日自動実行し、GitHub Pages にデプロイします。
 
 ---
 
 ## 主な機能
 
-- **ニュース収集** — 34 ソース / 5 リージョンから RSS + サイトスクレイピングで自動収集
+- **ニュース収集** — 38 ソース / 5 リージョンから RSS + サイトスクレイピングで自動収集（Hacker News・GitHub Releases 含む）
 - **重複排除** — 既出 URL の自動スキップ + ソースペナルティ（同じ記事が繰り返されるソースを一時停止）
 - **本文取得** — 記事 URL から本文を抽出し、キャッシュ。取得失敗時は RSS summary をフォールバック
 - **AI 要約** — Claude API（claude-sonnet-4-5）で日本語要約・重要度スコア（1-10）・タグを付与
 - **日報生成** — 「今日の総括」「注目3件」「リージョン別記事」を含む Markdown 日報を自動出力
-- **静的サイト** — Linear.app 風ダークテーマの HTML サイトを生成（3カラムレイアウト・月別アーカイブ・タグ・検索・モデル一覧・レスポンシブ対応）
+- **キーワードウォッチ** — `config.yaml` の `watch_keywords` にマッチした記事を日報冒頭でハイライト
+- **週報生成** — 毎週月曜に1週間分の日報から「今週のハイライト・トレンド分析・来週の注目点」を自動生成
+- **静的サイト** — Linear.app 風ダークテーマの HTML サイトを生成（3カラムレイアウト・月別アーカイブ・タグ・検索・モデル一覧・週報・Atom フィード・レスポンシブ対応）
 - **モデルまとめ** — 最新 AI モデルの性能ランキング・コスト比較・カテゴリ別一覧を手動生成
 - **Claude エコシステム情報** — Claude / Claude Code / Console / 関連ツールの最新情報をカテゴリ別に整理・公開
 - **収集メトリクス** — ソース別件数・本文取得率・要約成功率を日次蓄積。異常検知 + index.html バナー表示
@@ -30,7 +32,8 @@ scripts/
   fetch_body.py        記事本文取得・キャッシュ
   summarize.py         Claude API 要約・スコア・タグ
   cluster_topics.py    記事クラスタリング
-  render_markdown.py   Markdown 日報生成
+  render_markdown.py   Markdown 日報生成（キーワードウォッチ含む）
+  weekly_report.py     週報生成（毎週月曜）
   build_index.py       index.md 生成
   build_site.py        静的HTMLサイト生成
   model_report.py      AIモデルまとめパイプライン
@@ -49,6 +52,7 @@ data/
   cache/               本文キャッシュ（日次リセット）
 
 news/YYYY/MM/          日報Markdown
+news/weekly/           週報Markdown（YYYY-Www.md）
 models/                AIモデルまとめ
 claude/                Claudeエコシステム情報（カテゴリ別Markdown）
   releases/            リリース情報
@@ -127,6 +131,14 @@ python -m scripts.metrics --latest     # 最新回の詳細のみ
 python -m scripts.seen_urls            # ペナルティ状況確認
 ```
 
+### 週報
+
+```bash
+python -m scripts.weekly_report
+```
+
+直近7日分の日報から週次トレンドまとめを生成し、`news/weekly/YYYY-Www.md` に出力します。GitHub Actions (`daily-news.yml`) で毎週月曜に自動実行されます。
+
 ### モデルまとめ
 
 ```bash
@@ -159,6 +171,8 @@ python -m scripts.test_pipeline --model claude-opus-4-6  # opus で比較
 | パス | 内容 |
 |---|---|
 | `news/YYYY/MM/YYYY-MM-DD.md` | 日報 Markdown |
+| `news/weekly/YYYY-Www.md` | 週報 Markdown（毎週月曜生成） |
+| `_site/feed.xml` | 日報の Atom フィード（最新20件） |
 | `news/YYYY/MM/test-*.md` | テスト出力（モデル比較用） |
 | `news/YYYY/MM/prev-*.md` | 保存記事 |
 | `models/latest.md` | 最新 AI モデルまとめ |

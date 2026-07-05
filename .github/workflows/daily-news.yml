@@ -74,6 +74,13 @@ jobs:
         run: |
           python -m scripts.model_report
 
+      - name: Generate weekly report (Monday only)
+        if: steps.check-day.outputs.is_monday == 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python -m scripts.weekly_report
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"

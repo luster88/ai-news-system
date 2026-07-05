@@ -63,7 +63,7 @@ def run_test(region: str, source: dict, seen_data: dict | None = None):
                 for kw in source_filter_kw
             )
         ]
-    elif region in AI_FILTER_REGIONS and typ == "rss":
+    elif region in AI_FILTER_REGIONS and typ == "rss" and source.get("ai_filter", True):
         normalized = [
             a for a in normalized
             if any(

@@ -2,7 +2,11 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
+from scripts.config import get as cfg
+
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+WATCH_KEYWORDS = cfg("watch_keywords", [])
 
 
 def _group_by_region(articles: list):
@@ -38,6 +42,23 @@ def _collect_all_tags(articles: list) -> list[str]:
                 seen.add(t)
                 tags.append(t)
     return sorted(tags)
+
+
+def _match_watch_keywords(articles: list) -> dict[str, list[dict]]:
+    """watch_keywords にマッチする記事をキーワード別に返す。"""
+    hits: dict[str, list[dict]] = {}
+    for kw in WATCH_KEYWORDS:
+        kw_lower = str(kw).lower()
+        matched = [
+            a for a in articles
+            if kw_lower in (
+                f"{a.get('title', '')} {a.get('summary_ja', '')} "
+                f"{' '.join(a.get('tags', []))}"
+            ).lower()
+        ]
+        if matched:
+            hits[str(kw)] = matched
+    return hits
 
 
 def _render_article_lines(a: dict, show_region: bool = False) -> list[str]:
@@ -117,6 +138,17 @@ def render_daily_markdown(result: dict, filename_override: str | None = None, se
     else:
         lines.append("- 総括は生成されませんでした。")
     lines.append("")
+
+    # ウォッチキーワード（config の watch_keywords にマッチした記事をハイライト）
+    watch_hits = _match_watch_keywords(articles)
+    if watch_hits:
+        lines.append("## ウォッチキーワード")
+        for kw, matched in watch_hits.items():
+            links = " / ".join(
+                f"[{a['title']}]({a['link']})" for a in matched[:5]
+            )
+            lines.append(f"- **{kw}** ({len(matched)}件): {links}")
+        lines.append("")
 
     lines.append("## 注目3件")
     if top_stories:
