@@ -183,6 +183,14 @@ def update_seen_urls(
     if expired:
         print(f"[info] 期限切れURL {len(expired)}件を削除しました")
 
+    # 解除済みペナルティを削除
+    penalties: dict[str, str] = seen_data.get("source_penalties", {})
+    released = [s for s, d in penalties.items() if d <= today]
+    for source in released:
+        del penalties[source]
+    if released:
+        print(f"[info] 解除済みペナルティ {len(released)}件を削除しました")
+
     # 今日の新規URLを追加
     added = 0
     for article in new_articles:

@@ -18,7 +18,8 @@ concurrency:
 jobs:
   build-news-and-deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # Batches API の完了待ち（最大20分）を見込んだ値
+    timeout-minutes: 45
 
     environment:
       name: github-pages

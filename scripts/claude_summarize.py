@@ -13,7 +13,7 @@ from anthropic import Anthropic
 from dotenv import load_dotenv
 
 from scripts.config import get as cfg
-from scripts.utils import extract_text_from_message, clean_json_text
+from scripts.utils import extract_text_from_message, clean_json_text, run_message_batch
 
 load_dotenv()
 
@@ -21,6 +21,8 @@ MODEL = cfg("claude_model", cfg("model", "claude-sonnet-4-5"))
 MAX_ARTICLES = cfg("claude_max_articles", 20)
 MAX_PER_SOURCE = cfg("claude_max_per_source", 4)
 MIN_IMPORTANCE = cfg("claude_min_importance", 4)
+USE_BATCH_API = cfg("use_batch_api", True)
+BATCH_POLL_TIMEOUT = cfg("batch_poll_timeout", 1200)
 
 # カテゴリ候補
 CLAUDE_CATEGORIES = [
@@ -127,6 +129,61 @@ def _select_articles(articles: list[dict]) -> list[dict]:
     return selected
 
 
+def _build_claude_prompt(article: dict) -> str:
+    """記事分析用のユーザープロンプトを構築する。"""
+    title = article.get("title", "")
+    body = article.get("body", "")
+    summary = article.get("summary", "")
+    source = article.get("source", "")
+    link = article.get("link", "")
+
+    # 本文がなければ summary をフォールバック
+    content = body or summary or title
+
+    return f"""以下の記事を分析してください。
+
+タイトル: {title}
+ソース: {source}
+URL: {link}
+
+本文:
+{content[:2000]}"""
+
+
+_FALLBACK_PARSED = {
+    "category": "ecosystem",
+    "subcategory": "",
+    "tags": [],
+    "importance_score": 1,
+}
+
+
+def _summarize_one_live(client: Anthropic, article: dict) -> dict:
+    """1記事を通常のAPI呼び出しで要約する。失敗時はフォールバック値を返す。"""
+    try:
+        msg = client.messages.create(
+            model=MODEL,
+            max_tokens=1000,
+            timeout=120,
+            system=SYSTEM_PROMPT,
+            messages=[{"role": "user", "content": _build_claude_prompt(article)}],
+        )
+        return _safe_parse_claude_json(extract_text_from_message(msg))
+    except Exception as e:
+        title = article.get("title", "")
+        print(f"[warn] claude_summarize: API error for '{title[:40]}': {e}")
+        return {**_FALLBACK_PARSED, "summary": f"[要約失敗] {title}"}
+
+
+def _apply_claude_summary(article: dict, parsed: dict) -> dict:
+    article["summary_ja"] = parsed["summary"]
+    article["category"] = parsed["category"]
+    article["subcategory"] = parsed["subcategory"]
+    article["tags"] = parsed["tags"]
+    article["importance_score"] = parsed["importance_score"]
+    return article
+
+
 def summarize_claude_articles(articles: list[dict]) -> list[dict]:
     """Claude 関連記事を要約・カテゴリ分類する。
 
@@ -146,61 +203,38 @@ def summarize_claude_articles(articles: list[dict]) -> list[dict]:
     target_articles = _select_articles(articles)
     print(f"[info] claude_summarize: {len(target_articles)}/{len(articles)} articles selected (model={MODEL})")
 
-    api_calls = 0
-    results = []
-
-    for article in target_articles:
-        title = article.get("title", "")
-        body = article.get("body", "")
-        summary = article.get("summary", "")
-        source = article.get("source", "")
-        link = article.get("link", "")
-
-        # 本文がなければ summary をフォールバック
-        content = body or summary or title
-
-        user_prompt = f"""以下の記事を分析してください。
-
-タイトル: {title}
-ソース: {source}
-URL: {link}
-
-本文:
-{content[:2000]}"""
-
-        try:
-            msg = client.messages.create(
-                model=MODEL,
-                max_tokens=1000,
-                timeout=120,
-                system=SYSTEM_PROMPT,
-                messages=[{"role": "user", "content": user_prompt}],
-            )
-
-            raw_text = extract_text_from_message(msg)
-            parsed = _safe_parse_claude_json(raw_text)
-            api_calls += 1
-
-        except Exception as e:
-            print(f"[warn] claude_summarize: API error for '{title[:40]}': {e}")
-            parsed = {
-                "summary": f"[要約失敗] {title}",
-                "category": "ecosystem",
-                "subcategory": "",
-                "tags": [],
-                "importance_score": 1,
+    # Batches API（50%コスト）で一括要約し、失敗時は従来の逐次実行にフォールバック
+    batch_results = None
+    if USE_BATCH_API and len(target_articles) >= 2:
+        batch_requests = [
+            {
+                "custom_id": f"claude-{i}",
+                "params": {
+                    "model": MODEL,
+                    "max_tokens": 1000,
+                    "system": SYSTEM_PROMPT,
+                    "messages": [{"role": "user", "content": _build_claude_prompt(a)}],
+                },
             }
+            for i, a in enumerate(target_articles)
+        ]
+        batch_results = run_message_batch(client, batch_requests, timeout=BATCH_POLL_TIMEOUT)
 
-        # 記事にマージ
-        article["summary_ja"] = parsed["summary"]
-        article["category"] = parsed["category"]
-        article["subcategory"] = parsed["subcategory"]
-        article["tags"] = parsed["tags"]
-        article["importance_score"] = parsed["importance_score"]
+    results = []
+    for i, article in enumerate(target_articles):
+        if batch_results is not None:
+            msg = batch_results.get(f"claude-{i}")
+            if msg is not None:
+                parsed = _safe_parse_claude_json(extract_text_from_message(msg))
+            else:
+                # バッチで失敗したエントリのみ個別に再実行
+                parsed = _summarize_one_live(client, article)
+        else:
+            parsed = _summarize_one_live(client, article)
 
-        results.append(article)
+        results.append(_apply_claude_summary(article, parsed))
 
-    print(f"[info] claude_summarize: {api_calls} API calls, {len(results)} articles processed")
+    print(f"[info] claude_summarize: {len(results)} articles processed")
 
     # importance_score でフィルタ
     filtered = [a for a in results if a["importance_score"] >= MIN_IMPORTANCE]

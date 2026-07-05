@@ -14,11 +14,15 @@ import json
 import os
 import sys
 import tempfile
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
+
+from scripts.config import get as cfg
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 METRICS_FILE = BASE_DIR / "data" / "metrics.json"
+
+METRICS_RETENTION_DAYS = cfg("metrics_retention_days", 180)  # 日次メトリクスの保持期間
 
 
 def _load_metrics() -> dict:
@@ -33,9 +37,19 @@ def _load_metrics() -> dict:
 
 
 def save_metrics(date_key: str, entry: dict) -> None:
-    """メトリクスを日付キーで保存する（アトミック書き込み）。"""
+    """メトリクスを日付キーで保存する（アトミック書き込み）。
+    METRICS_RETENTION_DAYS を超えた古いエントリはこのタイミングで削除する。"""
     data = _load_metrics()
     data[date_key] = entry
+
+    # 保持期間を超えた古いエントリを削除（キーは YYYY-MM-DD 形式）
+    cutoff = (
+        datetime.now(timezone.utc) - timedelta(days=METRICS_RETENTION_DAYS)
+    ).strftime("%Y-%m-%d")
+    pruned = {k: v for k, v in data.items() if k >= cutoff}
+    if len(pruned) < len(data):
+        print(f"[info] metrics: {len(data) - len(pruned)}件の古いエントリを削除しました")
+    data = pruned
 
     METRICS_FILE.parent.mkdir(parents=True, exist_ok=True)
     try:

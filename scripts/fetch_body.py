@@ -13,6 +13,7 @@ fetch_body.py — 記事本文の取得とキャッシュ
 import hashlib
 import re
 import time
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -26,6 +27,7 @@ CACHE_DIR = BASE_DIR / "data" / "cache"
 
 FETCH_TIMEOUT = cfg("fetch_timeout", 10)        # HTTP タイムアウト（秒）
 MAX_BODY_CHARS = cfg("max_body_chars", 2000)     # Claude に渡す本文の最大文字数
+BODY_FETCH_WORKERS = cfg("body_fetch_workers", 8)  # 本文取得の並列数
 
 # 本文として優先するセレクタ（順に試行）
 BODY_SELECTORS = [
@@ -96,6 +98,29 @@ def _save_cache(url: str, body: str) -> None:
         pass
 
 
+def _cleanup_stale_cache() -> None:
+    """当日以外の日付プレフィックスを持つキャッシュファイルを削除する。
+
+    キャッシュキーは {日付}_{URLハッシュ} のため、前日以前のファイルは
+    二度と参照されない。
+    """
+    if not CACHE_DIR.exists():
+        return
+
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    removed = 0
+    for path in CACHE_DIR.glob("*.txt"):
+        if not path.name.startswith(today):
+            try:
+                path.unlink()
+                removed += 1
+            except Exception:
+                pass
+
+    if removed:
+        print(f"[info] cleaned up {removed} stale cache file(s)")
+
+
 def _selectors_for_url(url: str) -> list[str]:
     """URL のドメインに対応するソース固有セレクタ + 汎用セレクタを返す。"""
     for domain, selectors in SOURCE_SELECTORS.items():
@@ -138,18 +163,18 @@ def _extract_body_text(html: str, source_url: str = "") -> str:
     return full_text[:MAX_BODY_CHARS]
 
 
-def fetch_article_body(url: str) -> str:
+def _fetch_one(url: str) -> tuple[str, str]:
     """
-    記事URLにHTTPリクエストし、本文テキストを最大 MAX_BODY_CHARS 文字で返す。
-    キャッシュがあればそちらを返す。失敗時は空文字列を返す。
+    記事URLの本文を取得し、(body, status) を返す。
+    status は "cached" / "fetched" / "empty" のいずれか。
     """
     if not url:
-        return ""
+        return "", "empty"
 
     # キャッシュ確認
     cached = _load_cache(url)
     if cached is not None:
-        return cached
+        return cached, "cached" if cached else "empty"
 
     _RETRY_STATUS = (429, 503)
     _MAX_RETRIES = 2
@@ -177,43 +202,55 @@ def fetch_article_body(url: str) -> str:
         resp.raise_for_status()
         body = _extract_body_text(resp.text, source_url=url)
         _save_cache(url, body)
-        return body
+        return body, "fetched" if body else "empty"
 
     except Exception as e:
         print(f"[warn] fetch_body failed for {url}: {e}")
-        return ""
+        return "", "empty"
+
+
+def fetch_article_body(url: str) -> str:
+    """
+    記事URLにHTTPリクエストし、本文テキストを最大 MAX_BODY_CHARS 文字で返す。
+    キャッシュがあればそちらを返す。失敗時は空文字列を返す。
+    """
+    body, _ = _fetch_one(url)
+    return body
 
 
 def fetch_article_bodies(articles: list[dict]) -> list[dict]:
     """
     記事リストの各記事に body フィールドを付与して返す。
     research リージョンはスキップ（アブストラクトが summary に入っているため）。
+    URLごとに独立しているためスレッドプールで並列取得する。
     """
+    _cleanup_stale_cache()
+
     total = len(articles)
     skipped = 0
     cached = 0
     fetched = 0
     empty = 0
 
-    for i, article in enumerate(articles, start=1):
-        region = article.get("region", "")
-        if region in SKIP_REGIONS:
+    targets = [a for a in articles if a.get("region", "") not in SKIP_REGIONS]
+    for article in articles:
+        if article.get("region", "") in SKIP_REGIONS:
             article["body"] = ""
             skipped += 1
-            continue
 
-        url = article.get("link", "")
-        body = fetch_article_body(url)
-        article["body"] = body
+    with ThreadPoolExecutor(max_workers=BODY_FETCH_WORKERS) as pool:
+        results = pool.map(lambda a: _fetch_one(a.get("link", "")), targets)
 
-        status = "cached" if _load_cache(url) == body and body else "fetched" if body else "empty"
-        if status == "cached":
-            cached += 1
-        elif status == "fetched":
-            fetched += 1
-        else:
-            empty += 1
-        print(f"[info] body {i}/{total} ({status}): {article.get('title', '')[:40]}")
+        for i, (article, (body, status)) in enumerate(zip(targets, results), start=1):
+            article["body"] = body
+
+            if status == "cached":
+                cached += 1
+            elif status == "fetched":
+                fetched += 1
+            else:
+                empty += 1
+            print(f"[info] body {i}/{total} ({status}): {article.get('title', '')[:40]}")
 
     print(f"[info] fetch_bodies complete: {cached} cached, {fetched} fetched, {empty} empty, {skipped} skipped")
     return articles

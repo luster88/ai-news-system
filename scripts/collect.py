@@ -1,4 +1,5 @@
 import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 from datetime import datetime, timezone, timedelta
@@ -665,54 +666,73 @@ def dedupe_articles(items: list):
     return out
 
 
+COLLECT_WORKERS = cfg("collect_workers", 8)
+
+
+def _collect_one_source(region: str, src: dict) -> list:
+    item_limit = int(src.get("max_items", 20))
+    source_type = src["type"]
+
+    if source_type == "rss":
+        items = fetch_rss(src["url"], max_items=item_limit)
+    else:
+        items = fetch_site(
+            source_name=src["name"],
+            url=src["url"],
+            max_items=item_limit,
+        )
+
+    normalized = normalize_items(region, src["name"], items)
+
+    # ソース定義に filter_keywords がある場合はそれでフィルタ
+    source_filter_kw = src.get("filter_keywords")
+    if source_filter_kw:
+        normalized = [
+            a for a in normalized
+            if any(
+                kw.lower() in f"{a.get('title', '')} {a.get('summary', '')}".lower()
+                for kw in source_filter_kw
+            )
+        ]
+    # techblog リージョンの RSS は AI キーワードフィルタを追加適用
+    elif region in AI_FILTER_REGIONS and source_type == "rss":
+        normalized = [
+            a for a in normalized
+            if any(
+                kw in f"{a.get('title', '')} {a.get('summary', '')}".lower()
+                for kw in GOOD_AI_KEYWORDS
+            )
+        ]
+
+    return normalized
+
+
 def collect_articles():
-    cfg = load_feeds()
+    feeds_cfg = load_feeds()
     all_items = []
     source_stats = {}
 
-    for region, sources in cfg.items():
-        for src in sources:
+    # ソース単位で並列取得（I/Oバウンドのためスレッドプール）
+    entries = [
+        (region, src)
+        for region, sources in feeds_cfg.items()
+        for src in sources
+    ]
+
+    with ThreadPoolExecutor(max_workers=COLLECT_WORKERS) as pool:
+        futures = [
+            (src["name"], pool.submit(_collect_one_source, region, src))
+            for region, src in entries
+        ]
+
+        for name, future in futures:
             try:
-                item_limit = int(src.get("max_items", 20))
-                source_type = src["type"]
-
-                if source_type == "rss":
-                    items = fetch_rss(src["url"], max_items=item_limit)
-                else:
-                    items = fetch_site(
-                        source_name=src["name"],
-                        url=src["url"],
-                        max_items=item_limit,
-                    )
-
-                normalized = normalize_items(region, src["name"], items)
-
-                # ソース定義に filter_keywords がある場合はそれでフィルタ
-                source_filter_kw = src.get("filter_keywords")
-                if source_filter_kw:
-                    normalized = [
-                        a for a in normalized
-                        if any(
-                            kw.lower() in f"{a.get('title', '')} {a.get('summary', '')}".lower()
-                            for kw in source_filter_kw
-                        )
-                    ]
-                # techblog リージョンの RSS は AI キーワードフィルタを追加適用
-                elif region in AI_FILTER_REGIONS and source_type == "rss":
-                    normalized = [
-                        a for a in normalized
-                        if any(
-                            kw in f"{a.get('title', '')} {a.get('summary', '')}".lower()
-                            for kw in GOOD_AI_KEYWORDS
-                        )
-                    ]
-
+                normalized = future.result()
                 all_items.extend(normalized)
-                source_stats[src["name"]] = len(normalized)
-                print(f"[info] collected {len(normalized)} from {src['name']}")
-
+                source_stats[name] = len(normalized)
+                print(f"[info] collected {len(normalized)} from {name}")
             except Exception as e:
-                source_stats[src["name"]] = 0
-                print(f"[warn] {src['name']}: {e}")
+                source_stats[name] = 0
+                print(f"[warn] {name}: {e}")
 
     return dedupe_articles(all_items), source_stats

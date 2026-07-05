@@ -7,6 +7,7 @@ Claude 関連の記事を RSS / サイトスクレイピングで収集する。
 既存の collect.py のユーティリティ関数を再利用する。
 """
 
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import feedparser
@@ -65,6 +66,7 @@ def _matches_keywords(text: str, keywords: list[str]) -> bool:
 
 
 RSS_TIMEOUT = cfg("fetch_timeout", 15)
+COLLECT_WORKERS = cfg("collect_workers", 8)
 
 
 def _fetch_rss_claude(url: str, max_items: int, filter_keywords: list[str] | None = None) -> list[dict]:
@@ -164,6 +166,22 @@ def _fetch_site_claude(source_name: str, url: str, max_items: int, filter_keywor
     return filtered[:max_items]
 
 
+def _collect_one_claude_source(src: dict) -> list[dict]:
+    item_limit = int(src.get("max_items", 10))
+    source_type = src["type"]
+    filter_kw = src.get("filter_keywords")
+
+    if source_type == "rss":
+        return _fetch_rss_claude(src["url"], max_items=item_limit, filter_keywords=filter_kw)
+
+    return _fetch_site_claude(
+        source_name=src["name"],
+        url=src["url"],
+        max_items=item_limit,
+        filter_keywords=filter_kw,
+    )
+
+
 def collect_claude_articles() -> tuple[list[dict], dict[str, int]]:
     """Claude 関連の記事を全ソースから収集する。
 
@@ -176,23 +194,23 @@ def collect_claude_articles() -> tuple[list[dict], dict[str, int]]:
     all_items: list[dict] = []
     source_stats: dict[str, int] = {}
 
-    for group, sources in feeds_cfg.items():
-        for src in sources:
+    entries = [
+        (group, src)
+        for group, sources in feeds_cfg.items()
+        for src in sources
+    ]
+
+    # ソース単位で並列取得（I/Oバウンドのためスレッドプール）
+    with ThreadPoolExecutor(max_workers=COLLECT_WORKERS) as pool:
+        futures = [
+            (group, src, pool.submit(_collect_one_claude_source, src))
+            for group, src in entries
+        ]
+
+        for group, src, future in futures:
             name = src["name"]
             try:
-                item_limit = int(src.get("max_items", 10))
-                source_type = src["type"]
-                filter_kw = src.get("filter_keywords")
-
-                if source_type == "rss":
-                    items = _fetch_rss_claude(src["url"], max_items=item_limit, filter_keywords=filter_kw)
-                else:
-                    items = _fetch_site_claude(
-                        source_name=name,
-                        url=src["url"],
-                        max_items=item_limit,
-                        filter_keywords=filter_kw,
-                    )
+                items = future.result()
 
                 # region と source メタデータを付与
                 for item in items:
