@@ -5,6 +5,7 @@ subcategory: industry-news
 tags:
 - claude-api
 - claude-code
+- claude-console
 - copilot
 - cowork
 - opus
@@ -14,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-18'
-updated: '2026-07-03'
+updated: '2026-07-05'
 sources:
 - url: https://the-decoder.com/anthropic-ceo-amodei-declares-there-is-no-end-to-the-rainbow-for-ai-scaling
   title: Anthropic CEO Amodei declares "there is no end to the rainbow" for AI scaling
@@ -46,6 +47,10 @@ sources:
 - url: https://qiita.com/lhjjjk4/items/1b2b60d24cd2144ca881
   title: AI Daily Digest · 2026年7月4日 — Claude Science、arXiv独立、AI投資額が過去最高の5,100億ドル
   date: '2026-07-03'
+- url: https://qiita.com/lhjjjk4/items/a4400649f618252cf875
+  title: AI Daily Digest · 2026年7月6日 — GPT-5.6 Sol全モデル高リスク警告、Claude Science発表、Meta
+    Llama終焉
+  date: '2026-07-05'
 ---
 
 
@@ -55,7 +60,20 @@ sources:
 
 
 
+
 # Industry News
+
+---
+
+## 2026-07-05
+
+### AI Daily Digest · 2026年7月6日 — GPT-5.6 Sol全モデル高リスク警告、Claude Science発表、Meta Llama終焉
+
+OpenAIがGPT-5.6シリーズ（Sol/Terra/Luna）を発表し、全モデルが史上初めてサイバーセキュリティとバイオセキュリティで「高リスク」評価を受けた。AnthropicはClaude Scienceを発表し、科学研究向けマルチエージェントシステムを全有料ユーザーに提供開始。MetaはオープンソースLlamaシリーズを終了し、プロプライエタリなMuse Sparkへ戦略転換を実施。
+
+- **ソース**: [Qiita claude](https://qiita.com/lhjjjk4/items/a4400649f618252cf875)
+- **重要度**: 7/10
+- **タグ**: release, claude-console, performance
 
 ---
 

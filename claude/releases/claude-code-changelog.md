@@ -8,7 +8,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-06-29'
-updated: '2026-07-02'
+updated: '2026-07-05'
 sources:
 - url: https://qiita.com/moha0918_/items/8bd90fc2c1391c4769a1
   title: Claude Code v0.2.21〜v2.1.195｜CLIからマルチエージェント基盤への全履歴｜毎日Changelog解説
@@ -25,12 +25,41 @@ sources:
 - url: https://qiita.com/picnic/items/333e17bf379a0e6a9952
   title: Claude Code v2.1.198：Claude in Chrome GAと自動PR作成のインパクト解説
   date: '2026-07-02'
+- url: https://qiita.com/moha0918_/items/6fc5910d8bdf6343498b
+  title: Claude Code v2.1.201｜Sonnet 5 が会話途中の system role をやめる｜毎日Changelog解説
+  date: '2026-07-05'
 ---
 
 
 
 
+
+
 # Claude Code Changelog
+
+---
+
+## 2026-07-05
+
+### Claude Code v2.1.201｜Sonnet 5 が会話途中の system role をやめる｜毎日Changelog解説
+
+Claude Code v2.1.201 で、Claude Sonnet 5 のセッションにおいて会話途中に system role で差し込んでいた harness reminder（TODO リスト、開いているファイル、ツール利用可否などのリマインダー）を通常のメッセージ列に変更。system role で渡すか user 側で渡すかでモデルの受け取り方が変わるため、Sonnet 5 向けにロール構成を調整した。対話利用では体感差はなく、セッションログを直接扱う開発者向けの変更。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/6fc5910d8bdf6343498b)
+- **重要度**: 6/10
+- **タグ**: claude-code, sonnet, release
+
+---
+
+## 2026-07-05
+
+### Claude Code v2.1.201｜Sonnet 5 が会話途中の system role をやめる｜毎日Changelog解説
+
+Claude Code v2.1.201 では、Claude Sonnet 5 のセッションにおいて、会話途中に system role で差し込んでいた harness reminder の挙動が変更された。リマインダー自体は残るが、system role ではなく通常のメッセージ列に載せる形に変更。対話利用では体感差はなく、セッションログを直接扱う開発者向けの調整となる。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/6fc5910d8bdf6343498b)
+- **重要度**: 6/10
+- **タグ**: claude-code, sonnet, release
 
 ---
 

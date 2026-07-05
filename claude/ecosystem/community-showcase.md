@@ -6,10 +6,11 @@ tags:
 - claude-code
 - claude-console
 - cowork
+- performance
 - prompt
 - 新機能
 date: '2026-03-29'
-updated: '2026-07-04'
+updated: '2026-07-05'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6of32/i_am_fully_addicted_to_building_dumb_little_ai
   title: I am fully addicted to building dumb little AI web apps. I love it.
@@ -27,12 +28,29 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1un5xjf/day_37_of_building_gta_6_using_claude
   title: Day 37 of building GTA 6 using claude
   date: '2026-07-04'
+- url: https://the-decoder.com/claude-code-and-fable-5-ported-the-2003-pc-game-command-conquer-to-native-ios-in-a-few-hours
+  title: Claude Code and Fable 5 ported the 2003 PC game Command & Conquer to native
+    iOS in "a few hours"
+  date: '2026-07-05'
 ---
 
 
 
 
+
 # Community Showcase
+
+---
+
+## 2026-07-05
+
+### Claude Code and Fable 5 ported the 2003 PC game Command & Conquer to native iOS in "a few hours"
+
+Google DeepMindの開発者が、Anthropic の Claude Code と Fable 5 を使用して、2003年の PC ゲーム「Command & Conquer: Generals Zero Hour」を数時間でネイティブ iOS に移植しました。最初のビルドに約40分、デバッグに数時間を要し、2日間で Claude Max のクォータを使い切りました。ソースコードは GitHub でオープンソースとして公開されています。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/claude-code-and-fable-5-ported-the-2003-pc-game-command-conquer-to-native-ios-in-a-few-hours)
+- **重要度**: 6/10
+- **タグ**: claude-code, performance, cowork
 
 ---
 

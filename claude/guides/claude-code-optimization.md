@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-31'
-updated: '2026-06-26'
+updated: '2026-07-05'
 sources:
 - url: https://qiita.com/nishiken1118/items/6b16557fcabf784c861e
   title: 過去の session をほしい時に参照する方針で claude-mem のトークン消費を激減させた話
@@ -41,6 +41,9 @@ sources:
 - url: https://qiita.com/bokuwalily/items/42e0f5d1bfa520cf7ba9
   title: 使われないMCPプラグインが静かにコンテキストを食う ― 週次自動 disable で常時軽量化
   date: '2026-06-26'
+- url: https://qiita.com/tanimoto-hikari/items/a32319f53e053c6a149b
+  title: Claude Code お掃除本舗。最大効率を発揮し続けるための3S
+  date: '2026-07-05'
 ---
 
 
@@ -50,7 +53,20 @@ sources:
 
 
 
+
 # Claude Code Optimization
+
+---
+
+## 2026-07-05
+
+### Claude Code お掃除本舗。最大効率を発揮し続けるための3S
+
+Claude Codeの作業効率を維持するための「3S（整理・整頓・清掃）」習慣を紹介。/contextコマンドでコンテキスト消費を可視化し、未使用のMCPサーバーやスキルを削除、類似スキルを統合、CLAUDE.mdをダイエットすることで、auto compactの遅延や精度向上を実現する方法を解説。増築した環境が逆に効率を下げる問題への実践的な対処法。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/tanimoto-hikari/items/a32319f53e053c6a149b)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, performance
 
 ---
 

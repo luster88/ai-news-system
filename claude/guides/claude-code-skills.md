@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-06-11'
+updated: '2026-07-05'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -55,6 +55,9 @@ sources:
 - url: https://zenn.dev/giana12th/articles/aea54291a56bdf
   title: Claude Code の過去会話を読んでブログを書くスキルを Claude Code で作った話
   date: '2026-06-11'
+- url: https://qiita.com/kirozero/items/28a20168ace6f0299763
+  title: grill-me がバズった Matt Pocock の Claude Code skills リポジトリを一通り眺めてみた
+  date: '2026-07-05'
 ---
 
 
@@ -69,7 +72,20 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-07-05
+
+### grill-me がバズった Matt Pocock の Claude Code skills リポジトリを一通り眺めてみた
+
+Matt Pocock が公開した Claude Code 用スキル集 mattpocock/skills について、全体構造と設計思想を解説。user-invoked と model-invoked の 2 層構造、grill-me（実装前の尋問スキル）や domain-modeling（共有言語管理）などの主要スキルを紹介。小さく・改造しやすく・組み合わせ可能な設計が特徴で、AI エージェントの典型的な失敗モード（意図の齟齬、冗長な説明）への対処法を示している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kirozero/items/28a20168ace6f0299763)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 
