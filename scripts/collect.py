@@ -48,6 +48,11 @@ BAD_TITLE_CONTAINS = [
     "advertise",
     "contact us",
     "about us",
+    # 他媒体のニュースまとめ・キュレーション記事（一次情報を含まないため除外）
+    "毎日aiニュース",
+    "ニュースまとめ",
+    "news digest",
+    "weekly roundup",
 ]
 
 BAD_URL_CONTAINS = [
@@ -116,6 +121,27 @@ GOOD_AI_KEYWORDS = [
 ]
 
 SITE_ONLY_MIN_TITLE_LEN = 18
+
+
+def keyword_matches(text: str, keywords) -> bool:
+    """キーワードがテキストに含まれるか判定する。
+
+    ASCII のみのキーワードは単語境界で照合する（"ai" が "chain" 等の
+    英単語に誤反応しないようにするため）。日本語等を含むキーワードは
+    単語境界の概念がないため部分一致のまま。
+    """
+    text_lower = (text or "").lower()
+    for kw in keywords:
+        kw_lower = str(kw).lower()
+        if kw_lower.isascii():
+            if re.search(
+                rf"(?<![a-z0-9]){re.escape(kw_lower)}(?![a-z0-9])",
+                text_lower,
+            ):
+                return True
+        elif kw_lower in text_lower:
+            return True
+    return False
 
 # 先頭に付いてくるカテゴリ語を削る
 CATEGORY_PREFIXES = [
@@ -328,8 +354,8 @@ def looks_like_real_article(
         return False
 
     if source_type == "site":
-        text = f"{cleaned_title} {url}".lower()
-        if not any(keyword in text for keyword in GOOD_AI_KEYWORDS):
+        text = f"{cleaned_title} {url}"
+        if not keyword_matches(text, GOOD_AI_KEYWORDS):
             return False
 
     if not is_recent_enough(published, url=url):
@@ -677,13 +703,20 @@ def _collect_one_source(region: str, src: dict) -> list:
     item_limit = int(src.get("max_items", 20))
     source_type = src["type"]
 
+    # キーワードフィルタを後段で適用するソースは、切り詰め前に多めに取得する
+    # （先に max_items 件へ絞ると、非AI記事が枠を埋めて 0 件になりやすい）
+    will_filter = bool(src.get("filter_keywords")) or (
+        region in AI_FILTER_REGIONS and source_type == "rss" and src.get("ai_filter", True)
+    )
+    fetch_limit = item_limit * 3 if will_filter else item_limit
+
     if source_type == "rss":
-        items = fetch_rss(src["url"], max_items=item_limit)
+        items = fetch_rss(src["url"], max_items=fetch_limit)
     else:
         items = fetch_site(
             source_name=src["name"],
             url=src["url"],
-            max_items=item_limit,
+            max_items=fetch_limit,
         )
 
     normalized = normalize_items(region, src["name"], items)
@@ -693,23 +726,17 @@ def _collect_one_source(region: str, src: dict) -> list:
     if source_filter_kw:
         normalized = [
             a for a in normalized
-            if any(
-                kw.lower() in f"{a.get('title', '')} {a.get('summary', '')}".lower()
-                for kw in source_filter_kw
-            )
+            if keyword_matches(f"{a.get('title', '')} {a.get('summary', '')}", source_filter_kw)
         ]
     # techblog リージョンの RSS は AI キーワードフィルタを追加適用
     # （ai_filter: false のソースはAI専門フィードとみなしてスキップ）
     elif region in AI_FILTER_REGIONS and source_type == "rss" and src.get("ai_filter", True):
         normalized = [
             a for a in normalized
-            if any(
-                kw in f"{a.get('title', '')} {a.get('summary', '')}".lower()
-                for kw in GOOD_AI_KEYWORDS
-            )
+            if keyword_matches(f"{a.get('title', '')} {a.get('summary', '')}", GOOD_AI_KEYWORDS)
         ]
 
-    return normalized
+    return normalized[:item_limit]
 
 
 def collect_articles():

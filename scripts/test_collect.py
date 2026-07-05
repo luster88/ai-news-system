@@ -2,7 +2,14 @@ import sys
 from pathlib import Path
 import yaml
 
-from scripts.collect import fetch_rss, fetch_site, normalize_items, GOOD_AI_KEYWORDS, AI_FILTER_REGIONS
+from scripts.collect import (
+    fetch_rss,
+    fetch_site,
+    normalize_items,
+    keyword_matches,
+    GOOD_AI_KEYWORDS,
+    AI_FILTER_REGIONS,
+)
 from scripts.seen_urls import (
     load_seen_data,
     filter_seen_articles,
@@ -31,6 +38,12 @@ def run_test(region: str, source: dict, seen_data: dict | None = None):
     typ = source["type"]
     max_items = int(source.get("max_items", 5))
 
+    # 本番パイプラインと同様、フィルタ対象ソースは切り詰め前に多めに取得
+    will_filter = bool(source.get("filter_keywords")) or (
+        region in AI_FILTER_REGIONS and typ == "rss" and source.get("ai_filter", True)
+    )
+    fetch_limit = max_items * 3 if will_filter else max_items
+
     print("=" * 80)
     print(f"[region] {region}")
     print(f"[test] source: {name}")
@@ -39,12 +52,12 @@ def run_test(region: str, source: dict, seen_data: dict | None = None):
 
     try:
         if typ == "rss":
-            items = fetch_rss(url, max_items=max_items)
+            items = fetch_rss(url, max_items=fetch_limit)
         else:
             items = fetch_site(
                 source_name=name,
                 url=url,
-                max_items=max_items,
+                max_items=fetch_limit,
             )
 
         normalized = normalize_items(region, name, items)
@@ -58,20 +71,15 @@ def run_test(region: str, source: dict, seen_data: dict | None = None):
     if source_filter_kw:
         normalized = [
             a for a in normalized
-            if any(
-                kw.lower() in f"{a.get('title', '')} {a.get('summary', '')}".lower()
-                for kw in source_filter_kw
-            )
+            if keyword_matches(f"{a.get('title', '')} {a.get('summary', '')}", source_filter_kw)
         ]
     elif region in AI_FILTER_REGIONS and typ == "rss" and source.get("ai_filter", True):
         normalized = [
             a for a in normalized
-            if any(
-                kw in f"{a.get('title', '')} {a.get('summary', '')}".lower()
-                for kw in GOOD_AI_KEYWORDS
-            )
+            if keyword_matches(f"{a.get('title', '')} {a.get('summary', '')}", GOOD_AI_KEYWORDS)
         ]
 
+    normalized = normalized[:max_items]
     filter_note = f" (filtered: {pre_filter} → {len(normalized)})" if len(normalized) != pre_filter else ""
     print(f"[result] collected: {len(normalized)}{filter_note}")
 

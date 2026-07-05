@@ -24,6 +24,7 @@ from scripts.collect import (
     is_bad_title,
     is_bad_url,
     is_recent_enough,
+    keyword_matches,
 )
 from scripts.config import get as cfg
 
@@ -60,9 +61,8 @@ def load_claude_feeds() -> dict:
 
 
 def _matches_keywords(text: str, keywords: list[str]) -> bool:
-    """テキストにキーワードのいずれかが含まれるか判定する。"""
-    text_lower = text.lower()
-    return any(kw.lower() in text_lower for kw in keywords)
+    """テキストにキーワードのいずれかが含まれるか判定する（英字は単語境界で照合）。"""
+    return keyword_matches(text, keywords)
 
 
 RSS_TIMEOUT = cfg("fetch_timeout", 15)
