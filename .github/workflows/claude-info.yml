@@ -10,6 +10,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  issues: write
 
 concurrency:
   group: claude-info-main
@@ -30,7 +31,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-          fetch-depth: 0
+          # push 前の rebase に必要な直近履歴だけ取得する
+          fetch-depth: 50
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -39,6 +41,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: "pip"
 
       - name: Install dependencies
         run: |
@@ -61,7 +64,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add claude/ data/claude_seen_urls.json
+          git add claude/ data/claude_seen_urls.json data/claude_metrics.json
 
           if git diff --cached --quiet; then
             echo "No changes to commit"
@@ -83,3 +86,20 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      # ワークフロー失敗時に Issue で通知する（既存の失敗 Issue があればコメント追記）
+      - name: Report workflow failure as issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create pipeline-failure --force --description "パイプライン実行の失敗" --color B60205 2>/dev/null || true
+          EXISTING=$(gh issue list --label pipeline-failure --state open --json number --jq '.[0].number // empty')
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "再失敗: ${{ github.workflow }} — $RUN_URL"
+          else
+            gh issue create --title "パイプライン失敗: ${{ github.workflow }}" \
+              --label pipeline-failure \
+              --body "ワークフローが失敗しました。ログ: $RUN_URL"
+          fi

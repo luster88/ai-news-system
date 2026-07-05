@@ -10,6 +10,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  issues: write
 
 concurrency:
   group: daily-ai-news-main
@@ -30,7 +31,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-          fetch-depth: 0
+          # push 前の rebase に必要な直近履歴だけ取得する
+          fetch-depth: 50
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -39,6 +41,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: "pip"
 
       - name: Install dependencies
         run: |
@@ -100,6 +103,31 @@ jobs:
             git push origin HEAD:main
           fi
 
+      # 健全性警告を Issue で管理する（警告あり: 作成/更新、警告なし: 自動クローズ）
+      - name: Check pipeline health and manage issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python -m scripts.metrics --check > /tmp/health.txt || true
+          gh label create ai-news-health --force --description "パイプライン健全性チェックの警告" --color D93F0B 2>/dev/null || true
+
+          EXISTING=$(gh issue list --label ai-news-health --state open --json number --jq '.[0].number // empty')
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
+          if [ -s /tmp/health.txt ]; then
+            BODY=$(printf '健全性チェックの警告が検出されました。\n\n```\n%s\n```\n\n最終確認: %s\n[workflow run](%s)\n\n警告が解消されると自動でクローズされます。' \
+              "$(cat /tmp/health.txt)" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$RUN_URL")
+            if [ -n "$EXISTING" ]; then
+              gh issue edit "$EXISTING" --body "$BODY"
+              echo "updated health issue #$EXISTING"
+            else
+              gh issue create --title "健全性チェック警告: 収集品質に問題があります" \
+                --label ai-news-health --body "$BODY"
+            fi
+          elif [ -n "$EXISTING" ]; then
+            gh issue close "$EXISTING" --comment "警告が解消されたため自動クローズします。"
+          fi
+
       - name: Build static site
         run: |
           python -m scripts.build_site
@@ -112,3 +140,20 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      # ワークフロー失敗時に Issue で通知する（既存の失敗 Issue があればコメント追記）
+      - name: Report workflow failure as issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create pipeline-failure --force --description "パイプライン実行の失敗" --color B60205 2>/dev/null || true
+          EXISTING=$(gh issue list --label pipeline-failure --state open --json number --jq '.[0].number // empty')
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "再失敗: ${{ github.workflow }} — $RUN_URL"
+          else
+            gh issue create --title "パイプライン失敗: ${{ github.workflow }}" \
+              --label pipeline-failure \
+              --body "ワークフローが失敗しました。ログ: $RUN_URL"
+          fi

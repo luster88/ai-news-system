@@ -1,6 +1,6 @@
 # HANDOFF.md — AI News System 引き継ぎドキュメント
 
-最終更新: 2026-04-02（第7版）
+最終更新: 2026-07-06（第8版）
 
 ---
 
@@ -11,19 +11,22 @@ AIニュースを自動収集・要約し、静的サイトとして公開する
 **全体フロー:**
 
 ```
-feeds.yaml (22ソース, 5リージョン)
-  → collect_articles()        RSS/サイトスクレイピング
+feeds.yaml (38ソース, 5リージョン)
+  → collect_articles()        RSS/サイトスクレイピング（ThreadPoolExecutor で並列）
   → filter_seen_articles()    既出URL除外
   → compute_source_penalties() ペナルティ計算
   → apply_source_penalties()  ペナルティ中ソース除外
-  → fetch_article_bodies()    記事本文取得・キャッシュ
-  → summarize_articles()      Claude API で日本語要約・スコア・タグ付与
+  → fetch_article_bodies()    記事本文取得・キャッシュ（並列 + 古いキャッシュ自動削除）
+  → summarize_articles()      Claude Batches API で日本語要約・スコア・タグ付与（失敗時は逐次にフォールバック）
   → cluster_articles()        Jaccard類似度でクラスタリング
-  → render_daily_markdown()   news/YYYY/MM/YYYY-MM-DD.md 出力（ペナルティ状況付き）
+  → render_daily_markdown()   news/YYYY/MM/YYYY-MM-DD.md 出力（ウォッチキーワード・ペナルティ状況付き）
   → build_index()             index.md 更新
-  → build_site()              _site/ に静的HTML生成（健全性バナー付き）
+  → build_site()              _site/ に静的HTML生成（健全性バナー・トピック追跡・週報・Atomフィード付き）
   → save_metrics()            data/metrics.json にメトリクス蓄積
 ```
+
+週次（毎週月曜、daily-news.yml 内）:
+- **週報** — `weekly_report.py` が直近7日の日報から週次まとめを生成 → `news/weekly/YYYY-Www.md`
 
 別パイプラインとして:
 - **最新AIモデルまとめ** — 手動実行でモデル情報をまとめたレポートを生成
@@ -56,7 +59,13 @@ claude_feeds.yaml (official/community/tools グループ)
 - **Claude エコシステム情報**: 運用中。GitHub Actions で毎日 JST 07:00 に自動実行（`claude-info.yml`）。
 - **静的サイト**: 運用中。GitHub Pages にデプロイ済み。Linear.app 風UIに全面リデザイン完了。
 - **UIリデザイン**: カード型ブログUI → Linear風3カラムダッシュボードに全面変更。月別アーカイブ・年月折りたたみサイドバー・レスポンシブ対応 完了。
-- **ソース**: 29ソース / 5リージョン。AI Heartland・Simon Willison・MIT Tech Review・Import AI・Reddit r/LocalLLaMA・r/MachineLearning・GIGAZINE・Publickey を追加。
+- **ソース**: 38ソース / 5リージョン。2026-07 に Import AI・Reddit r/MachineLearning を削除（GitHub Actions IP ブロックで本番0件が継続）、Ars Technica AI・CNET Japan・MIT News AI・Microsoft Research Blog・Hacker News・GitHub Releases（Ollama/vLLM/Transformers）を追加。
+- **パフォーマンス（2026-07）**: 収集・本文取得を ThreadPoolExecutor で並列化（収集 45秒→7秒）。要約は Batches API（コスト50%減、タイムアウト時は逐次フォールバック）。
+- **週報**: 毎週月曜に `weekly_report.py` が `news/weekly/YYYY-Www.md` を自動生成。サイトの Weekly ページで公開。
+- **キーワードウォッチ**: `config.yaml` の `watch_keywords` にマッチした記事を日報冒頭でハイライト。
+- **トピック追跡**: `topic_id` が複数記事にまたがるトピックを `/topics/` でタイムライン表示。記事内の Topic 表記からリンク。
+- **Atom フィード**: `_site/feed.xml` に最新20日報を出力。
+- **運用監視（2026-07）**: 両パイプラインのメトリクス蓄積（`metrics.json` / `claude_metrics.json`）+ `--check` で横断健全性チェック。ワークフロー失敗と健全性警告は GitHub Issue で自動通知（`pipeline-failure` / `ai-news-health` ラベル、警告解消で自動クローズ）。
 - **サイトマップ**: `_site/sitemap.xml` を自動生成。`config.yaml` の `site_base_url` でベースURL設定。
 - **ダッシュボード**: `/dashboard/` にパイプラインメトリクスを可視化（収集数推移・ソース稼働率・人気タグ・本文取得率・importance分布・実行時間）。Chart.js CDN使用。
 - **安全性修正**: HIGH 5件 + MEDIUM 5件 完了。
@@ -73,6 +82,8 @@ claude_feeds.yaml (official/community/tools グループ)
 既知の制約:
 - JS レンダリングが必要なサイト（一部 CN ソース）では本文取得に失敗する（`body=""` でフォールバック）
 - OpenAI の公式サイトは 403 でスクレイピング不可（RSS summary フォールバックで軽減）
+- **Substack・Reddit は GitHub Actions のデータセンターIPをブロックする**（ローカルでは成功しても本番で0件になる。Import AI / r/MachineLearning はこれで削除。新ソース追加時はローカル成功≠本番成功に注意し、数日後に metrics で確認する）
+- Hacker News は hnrss.org（サードパーティ）経由。停止時は健全性チェックが検知、代替は HN Algolia API 直叩き
 - `requirements.txt` のバージョン未固定（CI 再現性リスク）
 
 ---
@@ -213,14 +224,15 @@ claude_feeds.yaml (official/community/tools グループ)
 | `scripts/build_index.py` | `python -m scripts.build_index` | index.md のみ再生成 |
 | `scripts/test_collect.py` | `python -m scripts.test_collect [args]` | ソース収集テスト |
 | `scripts/seen_urls.py` | `python -m scripts.seen_urls` | ペナルティ状況確認 |
-| `scripts/metrics.py` | `python -m scripts.metrics [--latest] [--days N]` | メトリクス閲覧・健全性チェック |
+| `scripts/metrics.py` | `python -m scripts.metrics [--latest] [--days N] [--claude] [--check]` | メトリクス閲覧・健全性チェック（--claude: Claude側、--check: 両パイプライン警告のみ） |
 | `scripts/favorites.py` | `python -m scripts.favorites add/remove/list/tags` | お気に入り記事管理（タグ付き） |
+| `scripts/weekly_report.py` | `python -m scripts.weekly_report` | 週報生成（直近7日 → news/weekly/） |
 
 ### パイプラインモジュール
 
 | ファイル | 役割 |
 |---|---|
-| `scripts/collect.py` | RSS/サイトスクレイピング (29ソース, 5リージョン, filter_keywords対応) |
+| `scripts/collect.py` | RSS/サイトスクレイピング (38ソース, 5リージョン, filter_keywords/ai_filter対応, 並列取得) |
 | `scripts/seen_urls.py` | 既出URL管理・ソースペナルティ・状況表示 |
 | `scripts/fetch_body.py` | 記事本文取得・キャッシュ |
 | `scripts/summarize.py` | Claude API 要約・スコア・タグ付与（system prompt + 5段階基準） |
@@ -251,9 +263,10 @@ claude_feeds.yaml (official/community/tools グループ)
 | ファイル | 内容 |
 |---|---|
 | `data/config.yaml` | Tier 1 設定値 + クラスタリング設定 (なくてもデフォルト値で動作) |
-| `data/feeds.yaml` | 情報ソース定義 (5リージョン, 22ソース) |
-| `data/seen_urls.json` | 既出URL履歴 + ソースペナルティ (git管理) |
-| `data/metrics.json` | 日次実行メトリクス（パイプライン実行時に自動蓄積、daily-news.yml でコミット） |
+| `data/feeds.yaml` | 情報ソース定義 (5リージョン, 38ソース) |
+| `data/seen_urls.json` | 既出URL履歴 + ソースペナルティ (git管理、90日で自動削除) |
+| `data/metrics.json` | 日次実行メトリクス（自動蓄積、180日で自動削除、daily-news.yml でコミット） |
+| `data/claude_metrics.json` | Claude パイプラインの日次メトリクス（claude-info.yml でコミット） |
 | `data/favorites.yaml` | お気に入り記事リスト (URL・ユーザー定義タグ・メモ・追加日) |
 | `data/cache/` | 記事本文キャッシュ (gitignore済み, 日次リセット) |
 | `.env` | `ANTHROPIC_API_KEY` (gitignore済み) |
@@ -262,7 +275,7 @@ claude_feeds.yaml (official/community/tools グループ)
 
 | ファイル | トリガー | 内容 |
 |---|---|---|
-| `.github/workflows/daily-news.yml` | 毎日 JST 01:05 + 手動 | 日報生成 → コミット（news/, index.md, seen_urls.json, metrics.json）→ Pages デプロイ |
+| `.github/workflows/daily-news.yml` | 毎日 JST 01:05 + 手動 | 日報生成（月曜はモデルまとめ・週報も）→ コミット → 健全性 Issue 管理 → Pages デプロイ。失敗時は Issue 起票 |
 | `.github/workflows/model-report.yml` | 手動のみ | モデルまとめ生成 → コミット → Pages デプロイ |
 | `.github/workflows/deploy-pages.yml` | 手動のみ | Pages 再デプロイのみ |
 
@@ -565,19 +578,41 @@ python -m scripts.metrics
 | 情報ソース大量追加（8ソース: Simon Willison, MIT Tech Review, Import AI, r/LocalLLaMA, r/MachineLearning, GIGAZINE, Publickey, AI Heartland） | `data/feeds.yaml`, `data/claude_feeds.yaml` |
 | collect.py / test_collect.py で filter_keywords 対応 | `scripts/collect.py`, `scripts/test_collect.py` |
 
+### done (2026-07 パフォーマンス・運用・機能拡張)
+
+| タスク | 対象ファイル |
+|---|---|
+| 収集・本文取得の並列化（ThreadPoolExecutor、収集45秒→7秒） | `scripts/collect.py`, `scripts/claude_collect.py`, `scripts/fetch_body.py` |
+| 要約の Batches API 化（コスト50%減、失敗時は逐次フォールバック） | `scripts/utils.py`, `scripts/summarize.py`, `scripts/claude_summarize.py` |
+| metrics 180日保持・キャッシュ日次削除・解除済みペナルティ削除 | `scripts/metrics.py`, `scripts/fetch_body.py`, `scripts/seen_urls.py` |
+| ソース入替: Import AI / r/MachineLearning 削除（Actions IPブロック）、6ソース追加 | `data/feeds.yaml` |
+| Hacker News + GitHub Releases ソース追加（`ai_filter` フラグ、`/releases/tag/` URL誤除外修正） | `data/feeds.yaml`, `scripts/collect.py`, `scripts/test_collect.py` |
+| 週報生成 + Weekly ページ | `scripts/weekly_report.py`, `scripts/build_site.py`, `.github/workflows/daily-news.yml` |
+| キーワードウォッチ（watch_keywords） | `scripts/render_markdown.py`, `data/config.yaml` |
+| Atom フィード出力（_site/feed.xml + alternate リンク） | `scripts/build_site.py` |
+| トピック追跡ページ（/topics/、記事内 Topic リンク化） | `scripts/build_site.py` |
+| Claude パイプラインのメトリクス蓄積 + 健全性チェック | `scripts/metrics.py`, `scripts/claude_main.py`, `.github/workflows/claude-info.yml` |
+| ワークフロー失敗・健全性警告の GitHub Issue 自動通知 | `.github/workflows/daily-news.yml`, `.github/workflows/claude-info.yml` |
+| ワークフロー高速化（pip キャッシュ、fetch-depth 50、Batches 向け timeout 延長） | `.github/workflows/*.yml` |
+
 ### planned
 
 | タスク | 優先度 | 理由 |
 |---|---|---|
-| ~~クラスタリング判定に summary_ja を追加~~ | ~~中~~ | done: 複合スコアリング + topic_id + 日またぎ検出で対応済み |
-| Claude パイプラインのメトリクス蓄積 | **中** | 日報側には `metrics.py` があるが Claude 側にはない |
-| Claude パイプラインの健全性チェック | **中** | `claude_feeds.yaml` のソースが壊れても検知できない |
+| ~~Claude パイプラインのメトリクス蓄積~~ | ~~中~~ | done (2026-07) |
+| ~~Claude パイプラインの健全性チェック~~ | ~~中~~ | done (2026-07): `metrics --check` が両パイプラインを横断チェック |
+| ~~`source_penalties` の古いエントリ自動削除~~ | ~~低~~ | done (2026-07) |
+| 日報のプッシュ配信（Discord/Slack/メール） | **中** | 唯一残った大きな利便性ギャップ。Webhook シークレット追加が必要なため保留中 |
+| プロンプト静的部分の prompt caching 化 | **中** | 採点基準・タグ候補（約700トークン×25件/日）を system + cache_control へ。Batches と併用可 |
+| Haiku 4.5 の品質検証 | **中** | `test_pipeline --model claude-haiku-4-5-20251001` で比較。採用できればコスト約1/3 |
+| ニュース系/Claude系パイプラインの重複解消 | **中** | RSS取得・骨格・JSONパースが約150-200行重複。改善を2箇所に入れる状態が続く |
+| `build_site.py` の全Markdown再パース削減 | **中** | 各ビルダーが同じファイル群を読み直す。アーカイブ増で遅化 |
+| topic_id の表記ゆれ対策 | **低** | 2291 topic_id 中、複数記事は20件のみ。LLMの自由命名で続報が別IDになりがち。正規化 or 類似IDマージで追跡率向上 |
 | モバイル検索UIの改善 | **低** | 現在モバイルではtopbar検索を非表示。Search ページリンクで代替中 |
 | サイドバーのスライドインアニメーション | **低** | 現在は即時表示/非表示。`transform: translateX` でスムーズ化可能 |
 | 月別ページのページネーション対応 | **低** | 月あたり30件超の場合に必要。現時点では不要 |
 | config.yaml Phase B (Tier 2/3 定数移行) | **低** | Phase A で基盤完成。キーワードリスト等は変更頻度低い |
 | `collect.py` の LSP 型エラー修正 | **低** | ランタイムでは問題なし |
-| `source_penalties` の古いエントリ自動削除 | **低** | URLは `URL_EXPIRY_DAYS` で自動削除されるが penalties は蓄積され続ける。現時点では肥大化リスクは低い |
 
 ### planned (Claude エコシステム情報)
 
@@ -599,10 +634,12 @@ python -m scripts.metrics
 | タスク | 理由 |
 |---|---|
 | `fetch_body.py` の JS レンダリングサイト対応 | Playwright 等の導入が必要。依存が大きい |
-| pytest 導入 | ライブ診断 + test_pipeline で十分な段階 |
+| pytest 導入 | ライブ診断 + test_pipeline で十分な段階（API不要部分のユニットテスト化は planned 候補） |
 | ログを logging モジュールに移行 | print ベースで統一されており動作に問題なし |
 | CSS の外部ファイル化 | `build_site.py` に埋め込み（CSS定数 約350行）。ビルド時に `_site/style.css` として出力。規模が大きくなれば分離を検討 |
-| 日報の RSS フィード生成 | 需要が発生してから実装 |
+| ~~日報の RSS フィード生成~~ | done (2026-07): Atom フィード `_site/feed.xml` |
+| 埋め込みベースのセマンティック検索 | 現アーカイブ規模では費用対効果が低い |
+| 英語版出力（バイリンガル化） | 要約時の同時生成は低コストだがサイト側の対応工数が中程度 |
 
 ---
 
@@ -610,11 +647,11 @@ python -m scripts.metrics
 
 次のエージェントが最初にやるべき作業（優先順）:
 
-1. **クラスタリング判定に summary_ja を追加** — `cluster_topics.py` の `tokenize_title` の入力を拡張し、重複記事の検知精度を向上。閾値の調整が必要。
+1. **新ソース・新機能の本番動作確認** — 2026-07 に追加した6ソース（Ars Technica AI / CNET Japan / MIT News AI / Microsoft Research Blog / Hacker News / GitHub Releases×3）と Batches API・Issue 通知が GitHub Actions 上で正常動作しているか、数日分の `python -m scripts.metrics --check` と Actions ログで確認。
 
-2. **Claude パイプラインのメトリクス蓄積** — `claude_main.py` に `save_metrics()` 相当の仕組みを追加。ソース別件数・要約成功率・カテゴリ分布を記録。
+2. **プロンプトキャッシュ化 + Haiku 4.5 検証** — コスト最適化の残り2レバー。`test_pipeline` でモデル比較してから判断。
 
-3. **Claude パイプラインの健全性チェック** — `claude_feeds.yaml` のソースが0件連続した場合の警告ログ。
+3. **パイプライン重複解消** — ニュース系/Claude系の共通化。次に collect/summarize 系へ変更を入れる前にやると二重修正を防げる。
 
 ### UI リデザインに関する補足
 

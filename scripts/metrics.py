@@ -1,13 +1,15 @@
 """
 metrics.py — パイプライン実行メトリクスの保存・表示
 
-data/metrics.json に日付キーで実行メトリクスを蓄積する。
-python -m scripts.metrics で直近の実行状況を表示する。
+data/metrics.json（日報）と data/claude_metrics.json（Claude情報）に
+日付キーで実行メトリクスを蓄積する。
 
 使い方:
   python -m scripts.metrics              # 直近14件のサマリ + 最新回の詳細
   python -m scripts.metrics --latest     # 最新回の詳細のみ
   python -m scripts.metrics --days 7     # 直近7件のサマリ
+  python -m scripts.metrics --claude     # Claude パイプラインのメトリクスを表示
+  python -m scripts.metrics --check      # 両パイプラインの健全性警告のみ出力（CI用）
 """
 
 import json
@@ -21,25 +23,29 @@ from scripts.config import get as cfg
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 METRICS_FILE = BASE_DIR / "data" / "metrics.json"
+CLAUDE_METRICS_FILE = BASE_DIR / "data" / "claude_metrics.json"
 
 METRICS_RETENTION_DAYS = cfg("metrics_retention_days", 180)  # 日次メトリクスの保持期間
 
 
-def _load_metrics() -> dict:
-    if not METRICS_FILE.exists():
+def _load_metrics(file_path: Path | None = None) -> dict:
+    path = file_path or METRICS_FILE
+    if not path.exists():
         return {}
     try:
-        with open(METRICS_FILE, "r", encoding="utf-8") as f:
+        with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
     except Exception as e:
-        print(f"[warn] metrics.json の読み込みに失敗しました: {e}")
+        print(f"[warn] {path.name} の読み込みに失敗しました: {e}")
         return {}
 
 
-def save_metrics(date_key: str, entry: dict) -> None:
+def save_metrics(date_key: str, entry: dict, file_path: Path | None = None) -> None:
     """メトリクスを日付キーで保存する（アトミック書き込み）。
-    METRICS_RETENTION_DAYS を超えた古いエントリはこのタイミングで削除する。"""
-    data = _load_metrics()
+    METRICS_RETENTION_DAYS を超えた古いエントリはこのタイミングで削除する。
+    file_path を指定すると METRICS_FILE の代わりにそのパスを使う。"""
+    path = file_path or METRICS_FILE
+    data = _load_metrics(path)
     data[date_key] = entry
 
     # 保持期間を超えた古いエントリを削除（キーは YYYY-MM-DD 形式）
@@ -51,20 +57,20 @@ def save_metrics(date_key: str, entry: dict) -> None:
         print(f"[info] metrics: {len(data) - len(pruned)}件の古いエントリを削除しました")
     data = pruned
 
-    METRICS_FILE.parent.mkdir(parents=True, exist_ok=True)
+    path.parent.mkdir(parents=True, exist_ok=True)
     try:
         tmp_fd, tmp_path = tempfile.mkstemp(
-            dir=METRICS_FILE.parent, suffix=".tmp"
+            dir=path.parent, suffix=".tmp"
         )
         try:
             with os.fdopen(tmp_fd, "w", encoding="utf-8") as f:
                 json.dump(data, f, ensure_ascii=False, indent=2)
-            os.replace(tmp_path, METRICS_FILE)
+            os.replace(tmp_path, path)
         except Exception:
             os.unlink(tmp_path)
             raise
     except Exception as e:
-        print(f"[warn] metrics.json の書き込みに失敗しました: {e}")
+        print(f"[warn] {path.name} の書き込みに失敗しました: {e}")
 
 
 def _show_summary(data: dict, days: int = 14) -> None:
@@ -255,9 +261,9 @@ def _show_health(warnings: list[dict]) -> None:
         print(f"  [{w['level']}] {w['message']}")
 
 
-def show_metrics(days: int = 14, latest_only: bool = False) -> None:
+def show_metrics(days: int = 14, latest_only: bool = False, file_path: Path | None = None) -> None:
     """メトリクスを表示する。"""
-    data = _load_metrics()
+    data = _load_metrics(file_path)
     if not data:
         print("メトリクスがありません。python -m scripts.main を実行してください。")
         return
@@ -274,9 +280,29 @@ def show_metrics(days: int = 14, latest_only: bool = False) -> None:
     _show_health(warnings)
 
 
+def check_all_pipelines() -> list[str]:
+    """news / claude 両パイプラインの健全性警告を返す（CI用）。"""
+    lines = []
+    for label, path in (("news", METRICS_FILE), ("claude", CLAUDE_METRICS_FILE)):
+        data = _load_metrics(path)
+        if not data:
+            continue
+        for w in check_health(data):
+            lines.append(f"[{label}] {w['message']}")
+    return lines
+
+
 if __name__ == "__main__":
     args = sys.argv[1:]
+
+    # --check: 警告のみ出力（警告なしなら出力なし）。CI の Issue 起票に使う
+    if "--check" in args:
+        for line in check_all_pipelines():
+            print(line)
+        sys.exit(0)
+
     latest_only = "--latest" in args
+    file_path = CLAUDE_METRICS_FILE if "--claude" in args else None
     days = 14
     for i, a in enumerate(args):
         if a == "--days" and i + 1 < len(args):
@@ -285,4 +311,4 @@ if __name__ == "__main__":
             except ValueError:
                 pass
 
-    show_metrics(days=days, latest_only=latest_only)
+    show_metrics(days=days, latest_only=latest_only, file_path=file_path)

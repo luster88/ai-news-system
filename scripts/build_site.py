@@ -728,6 +728,7 @@ def page_shell(title: str, body_html: str, root_rel: str = ".") -> str:
       <a href="{root_rel}/claude/index.html">Claude</a>
       <a href="{root_rel}/models/index.html">Models</a>
       <a href="{root_rel}/tags/index.html">Tags</a>
+      <a href="{root_rel}/topics/index.html">Topics</a>
       <a href="{root_rel}/favorites/index.html">Favorites</a>
       <a href="{root_rel}/dashboard/index.html">Dashboard</a>
       <a href="{root_rel}/search/index.html">Search</a>
@@ -1221,7 +1222,9 @@ def _section_filter_bar(sections: list[tuple[str, str]]) -> str:
     return f'<div class="section-filter-bar">{"".join(buttons)}</div>'
 
 
-def build_article_pages(files: list[Path]) -> None:
+def build_article_pages(files: list[Path], linkable_topics: set[str] | None = None) -> None:
+    linkable_topics = linkable_topics or set()
+
     for idx, file in enumerate(files):
         rel_parts = file.relative_to(NEWS_DIR).parts
         year, month, filename = rel_parts
@@ -1233,6 +1236,17 @@ def build_article_pages(files: list[Path]) -> None:
 
         article_html = markdown.markdown(body, extensions=MD_EXTENSIONS)
         article_html, sections = _wrap_article_sections(article_html)
+
+        # トピック追跡ページがある topic_id はリンク化する
+        if linkable_topics:
+            article_html = re.sub(
+                r"Topic: ([a-z0-9\-]+)",
+                lambda m: (
+                    f'Topic: <a href="../../../../topics/{_sanitize_dirname(m.group(1))}/index.html">{m.group(1)}</a>'
+                    if m.group(1) in linkable_topics else m.group(0)
+                ),
+                article_html,
+            )
         filter_bar = _section_filter_bar(sections)
 
         out_dir = SITE_DIR / "news" / year / month / day
@@ -2455,6 +2469,140 @@ def build_weekly_pages() -> None:
 
 
 # ---------------------------------------------------------------------------
+# トピック追跡ページ
+# ---------------------------------------------------------------------------
+
+TOPIC_MIN_ENTRIES = 2  # この件数以上の記事を持つ topic_id のみページ化
+
+
+def _collect_topic_entries(files: list[Path]) -> dict[str, list[dict]]:
+    """全日報から topic_id 付き記事を抽出し、topic_id → 記事リスト（日付降順）で返す。"""
+    topics: dict[str, list[dict]] = {}
+
+    for f in files:
+        date = f.stem  # YYYY-MM-DD
+        raw = f.read_text(encoding="utf-8")
+        _, body = strip_front_matter(raw)
+
+        current: dict | None = None
+        seen_links: set[str] = set()
+
+        for line in body.splitlines():
+            m = re.match(r"^### \d+\. (.+)$", line)
+            if m:
+                current = {"date": date, "title": m.group(1).strip()}
+                continue
+            if current is None:
+                continue
+            if line.startswith("- Source: "):
+                current["source"] = line[len("- Source: "):].strip()
+            elif line.startswith("- Link: "):
+                lm = re.search(r"\((https?://[^)]+)\)", line)
+                current["link"] = lm.group(1) if lm else ""
+            elif line.startswith("- Summary: "):
+                current["summary"] = line[len("- Summary: "):].strip()
+            elif line.startswith("- Topic: "):
+                topic_id = line[len("- Topic: "):].strip()
+                link = current.get("link", "")
+                # 注目3件とリージョン別で同一記事が重複するため link で排除
+                if topic_id and link and link not in seen_links:
+                    seen_links.add(link)
+                    topics.setdefault(topic_id, []).append(dict(current))
+
+    for entries in topics.values():
+        entries.sort(key=lambda x: x["date"], reverse=True)
+
+    return topics
+
+
+def build_topic_pages(files: list[Path]) -> set[str]:
+    """topic_id 別のタイムラインページと一覧ページを生成し、ページ化した topic_id の集合を返す。"""
+    all_topics = _collect_topic_entries(files)
+    tracked = {
+        tid: entries for tid, entries in all_topics.items()
+        if len(entries) >= TOPIC_MIN_ENTRIES
+    }
+
+    out_dir = SITE_DIR / "topics"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    # 個別トピックページ（タイムライン形式）
+    for tid, entries in tracked.items():
+        rows = []
+        for e in entries:
+            y, mo, _ = e["date"].split("-")
+            rows.append(f"""
+        <div class="article-detail-header" style="margin-top:16px">
+          <div class="article-detail-meta">
+            {html.escape(e['date'])} / {html.escape(e.get('source', ''))} /
+            <a href="../../news/{y}/{mo}/{e['date']}/index.html">日報を見る</a>
+          </div>
+          <h2 style="margin:4px 0"><a href="{html.escape(e.get('link', '#'))}">{html.escape(e['title'])}</a></h2>
+          <p>{html.escape(e.get('summary', ''))}</p>
+        </div>""")
+
+        date_range = f"{entries[-1]['date']} 〜 {entries[0]['date']}"
+        body_html = f"""
+  <div class="layout">
+    <main class="content-area">
+      <div class="article-detail">
+        <a class="back-link" href="../index.html">← Back to topics</a>
+        <div class="article-detail-header">
+          <h1 class="article-detail-title">{html.escape(tid)}</h1>
+          <div class="article-detail-meta">{len(entries)}件の報道 / {html.escape(date_range)}</div>
+        </div>
+        {''.join(rows)}
+      </div>
+    </main>
+  </div>"""
+
+        tid_dir = out_dir / _sanitize_dirname(tid)
+        tid_dir.mkdir(parents=True, exist_ok=True)
+        (tid_dir / "index.html").write_text(
+            page_shell(f"Topic: {tid}", body_html, root_rel="../.."),
+            encoding="utf-8",
+        )
+
+    # 一覧ページ（最新報道日 → 件数の順）
+    sorted_topics = sorted(
+        tracked.items(),
+        key=lambda kv: (kv[1][0]["date"], len(kv[1])),
+        reverse=True,
+    )
+    items = []
+    for tid, entries in sorted_topics:
+        items.append(f"""
+        <div class="article-detail-header" style="margin-top:12px">
+          <h2 style="margin:0"><a href="{html.escape(_sanitize_dirname(tid))}/index.html">{html.escape(tid)}</a></h2>
+          <div class="article-detail-meta">
+            {len(entries)}件 / {html.escape(entries[-1]['date'])} 〜 {html.escape(entries[0]['date'])} /
+            最新: {html.escape(entries[0]['title'])}
+          </div>
+        </div>""")
+
+    index_body = f"""
+  <div class="layout">
+    <main class="content-area">
+      <div class="article-detail">
+        <div class="article-detail-header">
+          <h1 class="article-detail-title">Topics</h1>
+          <div class="article-detail-meta">複数の報道があるトピックの経過を時系列で追跡（{len(tracked)}トピック）</div>
+        </div>
+        {''.join(items)}
+      </div>
+    </main>
+  </div>"""
+
+    (out_dir / "index.html").write_text(
+        page_shell("Topics", index_body, root_rel=".."),
+        encoding="utf-8",
+    )
+
+    print(f"[info] built topic pages: {len(tracked)} tracked topic(s) (of {len(all_topics)} total)")
+    return set(tracked.keys())
+
+
+# ---------------------------------------------------------------------------
 # Atom フィード
 # ---------------------------------------------------------------------------
 
@@ -2529,7 +2677,8 @@ def main():
     all_files = files + prev_files + test_files
 
     build_index_pages(files, prev_files=prev_files, test_files=test_files)
-    build_article_pages(all_files)
+    tracked_topics = build_topic_pages(files)
+    build_article_pages(all_files, linkable_topics=tracked_topics)
     build_tag_pages(all_files)
     build_search_index(all_files)
     build_search_page()
