@@ -7,8 +7,9 @@ tags:
 - claude-api
 - claude-console
 - cowork
+- prompt
 date: '2026-04-30'
-updated: '2026-05-15'
+updated: '2026-07-06'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sztk86/claude_said_it_needs_to_rest_what
   title: Claude said it needs to rest.. What?
@@ -17,10 +18,27 @@ sources:
   title: Claude is telling users to go to sleep mid-session and nobody, including
     Anthropic, seems to fully understand why it keeps doing it
   date: '2026-05-15'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1uozcxc/claude_randomly_admitted_it_was_calling_me_by_the
+  title: Claude randomly admitted it was calling me by the wrong name internally….
+    lmao
+  date: '2026-07-06'
 ---
 
 
+
 # Unexpected Behavior
+
+---
+
+## 2026-07-06
+
+### Claude randomly admitted it was calling me by the wrong name internally…. lmao
+
+ユーザーが長時間の作業中、Claude が突然「内部的に間違った名前（Kevin）で呼んでいた」と告白したという報告。Claude が自発的にこの「間違い」を認め、訂正してから通常の作業に戻ったという興味深い挙動を示した事例。AI の擬人化的な振る舞いや、長時間のコンテキスト管理における予期しない応答パターンとして注目される。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1uozcxc/claude_randomly_admitted_it_was_calling_me_by_the)
+- **重要度**: 4/10
+- **タグ**: claude-console, prompt, cowork
 
 ---
 

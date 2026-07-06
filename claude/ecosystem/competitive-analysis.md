@@ -13,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-04'
-updated: '2026-07-03'
+updated: '2026-07-06'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -46,6 +46,10 @@ sources:
   title: GPT and Claude failed Bridgewater's finance tests because the right answers
     were never public
   date: '2026-07-03'
+- url: https://the-decoder.com/zhipu-ai-launches-zcode-to-challenge-claude-code-and-openai-codex-at-a-fraction-of-the-cost
+  title: Zhipu AI launches ZCode to challenge Claude Code and OpenAI Codex at a fraction
+    of the cost
+  date: '2026-07-06'
 ---
 
 
@@ -55,7 +59,20 @@ sources:
 
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-07-06
+
+### Zhipu AI launches ZCode to challenge Claude Code and OpenAI Codex at a fraction of the cost
+
+Zhipu AIが、Claude CodeやOpenAI Codexに対抗するコーディングエージェントZCodeを発表。GLM-5.2ベースで、自然言語でのコード記述・デバッグ・テスト・レビューが可能。西洋モデルの数分の一のコストで競合し、100万トークンのコンテキストウィンドウを提供。新規ユーザーには5日間の無料トライアル（1日500万トークン）が用意されている。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/zhipu-ai-launches-zcode-to-challenge-claude-code-and-openai-codex-at-a-fraction-of-the-cost)
+- **重要度**: 6/10
+- **タグ**: claude-code, pricing, copilot
 
 ---
 

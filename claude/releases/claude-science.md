@@ -5,10 +5,11 @@ subcategory: claude-science
 tags:
 - claude-api
 - cowork
+- mcp
 - release
 - 新機能
 date: '2026-06-30'
-updated: '2026-06-30'
+updated: '2026-07-06'
 sources:
 - url: https://the-decoder.com/anthropic-launches-claude-science-an-ai-workspace-built-specifically-for-researchers
   title: Anthropic launches Claude Science, an AI workspace built specifically for
@@ -18,9 +19,28 @@ sources:
   title: Anthropic’s Claude Science bets on workflow, not a new model, to win over
     scientists
   date: '2026-06-30'
+- url: https://www.anthropic.com/news/claude-science-ai-workbench
+  title: Announcements Jun 30, 2026 Claude Science, an AI workbench for scientists,
+    is now available Claude Science is a customizable app that integrates the tools
+    and packages researchers most often use, produces auditable artifacts, and provides
+    flexible access to computing resources.
+  date: '2026-07-06'
 ---
 
+
 # Claude Science
+
+---
+
+## 2026-07-06
+
+### Announcements Jun 30, 2026 Claude Science, an AI workbench for scientists, is now available Claude Science is a customizable app that integrates the tools and packages researchers most often use, produces auditable artifacts, and provides flexible access to computing resources.
+
+Anthropic が科学研究者向けの AI ワークベンチ「Claude Science」を発表。PubMed、Jupyter、R など60以上のツールを統合し、文献分析から論文作成まで一貫して作業可能。監査可能な成果物を生成し、ゲノミクス、プロテオミクス、化学情報学などの分野に対応。macOS/Linux ローカル環境や HPC、SSH 経由でのリモート実行に対応。
+
+- **ソース**: [Anthropic News](https://www.anthropic.com/news/claude-science-ai-workbench)
+- **重要度**: 9/10
+- **タグ**: 新機能, claude-api, mcp
 
 ---
 

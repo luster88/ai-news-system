@@ -10,8 +10,9 @@ tags:
 - mcp
 - prompt
 - setup
+- 新機能
 date: '2026-04-26'
-updated: '2026-07-03'
+updated: '2026-07-06'
 sources:
 - url: https://zenn.dev/saytooy_arch/articles/14-zenn-auto-publish-pipeline
   title: Zenn自動公開パイプラインをclaude -pで構築した話
@@ -28,13 +29,42 @@ sources:
 - url: https://qiita.com/10yama_k/items/845b08ad280ce1c832a6
   title: Googlecolabで無料で文字おこし
   date: '2026-07-03'
+- url: https://qiita.com/yuta0709dev/items/74a77195e37e50bda29c
+  title: Claude Codeでworktree作成時にmise trustを自動実行する
+  date: '2026-07-06'
+- url: https://zenn.dev/hitori_pm_lab/articles/222b03a2a97a32
+  title: AIに「自分の分身」を育てさせたら、指示がほぼ要らなくなった — 第二の脳の始め方
+  date: '2026-07-06'
 ---
 
 
 
 
 
+
 # Workflow Automation
+
+---
+
+## 2026-07-06
+
+### Claude Codeでworktree作成時にmise trustを自動実行する
+
+Claude Code で PR ごとに worktree を作成する際、mise を使用しているプロジェクトで mise.toml が trust されていないために作業が止まる問題の解決策。~/.claude/settings.json の hooks 設定で SessionStart イベントに mise trust コマンドを登録することで、worktree セッション開始時に自動実行できる。WorktreeCreate フックは git 操作全体を置き換えるため不適切で、SessionStart が適切。
+
+- **ソース**: [Qiita claude](https://qiita.com/yuta0709dev/items/74a77195e37e50bda29c)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
+
+---
+
+### AIに「自分の分身」を育てさせたら、指示がほぼ要らなくなった — 第二の脳の始め方
+
+個人でWeb開発会社を経営する著者が、AIに「自分の分身」を育てさせる手法を紹介。Markdownファイルで判断基準・仕事の進め方・文章スタイルを体系化し、Claude Codeに読ませることで指示を大幅に削減。identity（判断原則）、playbooks（場面ごとの手順）、projects（案件情報）の3層構成で管理し、AIへの指示として書くことがポイント。運用ルールとして「収穫」による更新、人間による承認制、鮮度管理を実施し、指示の短縮化とアウトプット品質向上を実現。
+
+- **ソース**: [Zenn claude](https://zenn.dev/hitori_pm_lab/articles/222b03a2a97a32)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

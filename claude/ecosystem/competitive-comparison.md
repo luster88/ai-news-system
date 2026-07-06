@@ -12,7 +12,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-25'
-updated: '2026-06-23'
+updated: '2026-07-06'
 sources:
 - url: https://zenn.dev/aipedia/articles/5bdcc55c203d8f
   title: 【2026年4月版】ChatGPT・Claude・Gemini 徹底比較
@@ -29,12 +29,28 @@ sources:
   title: OpenAI says new GPT-5.5-Cyber outperforms Anthropic's Mythos on cybersecurity
     benchmark
   date: '2026-06-23'
+- url: https://qiita.com/xujfcn/items/5572380abf7da0e82f6a
+  title: GLM-5.2 vs Claude Fable 5：差が出たのは推論力だけではなく出力予算だった
+  date: '2026-07-06'
 ---
 
 
 
 
+
 # Competitive Comparison
+
+---
+
+## 2026-07-06
+
+### GLM-5.2 vs Claude Fable 5：差が出たのは推論力だけではなく出力予算だった
+
+GLM-5.2とClaude Fable 5のAPI実行比較。GLM-5.2は出力予算を増やせば数学・物理推論で正答を返すが、低予算では不完全な出力になりやすい。一方Claude Fable 5は低予算でも安定し、長いHTML生成で確実に完走。Crazyrouterでは現在GLM-5.2に0.8の割引があり、推論トークン管理が可能な用途では費用対効果が高い。
+
+- **ソース**: [Qiita claude](https://qiita.com/xujfcn/items/5572380abf7da0e82f6a)
+- **重要度**: 5/10
+- **タグ**: performance, pricing, claude-api
 
 ---
 

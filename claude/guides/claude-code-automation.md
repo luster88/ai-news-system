@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-07-04'
+updated: '2026-07-06'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -90,6 +90,9 @@ sources:
   title: Claude Code にブログを毎日書かせて自動公開するパイプライン全公開 — CLAUDE.md / adapt-spec / routine
     の設計をそのまま見せる
   date: '2026-07-04'
+- url: https://zenn.dev/koma26/articles/6d8fb8d0755bcc
+  title: 23日間でWebツールを100本作った。売上ゼロ、週23人、いいね6個。
+  date: '2026-07-06'
 ---
 
 
@@ -114,7 +117,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-07-06
+
+### 23日間でWebツールを100本作った。売上ゼロ、週23人、いいね6個。
+
+Claude Code に4つのエージェント（/planner, /generator, /designer, /evaluator）をパイプライン化し、23日間で100本のWebツールを開発した事例。1ツールあたり15〜30分の作業時間で、仕様書生成から実装、UIデザイン、テストまで自動化。売上ゼロ・週23人訪問だが、完成形を毎回作る訓練として有効だったという振り返り。
+
+- **ソース**: [Zenn claude](https://zenn.dev/koma26/articles/6d8fb8d0755bcc)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

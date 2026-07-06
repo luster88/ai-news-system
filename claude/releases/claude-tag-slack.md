@@ -3,18 +3,36 @@ title: Claude Tag Slack
 category: releases
 subcategory: claude-tag-slack
 tags:
+- claude-code
 - cowork
 - release
 - 新機能
 date: '2026-06-23'
-updated: '2026-06-23'
+updated: '2026-07-06'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1udn7zy/introducing_a_new_way_for_teams_to_work_with
   title: 'Introducing a new way for teams to work with Claude: tag Claude in.'
   date: '2026-06-23'
+- url: https://www.anthropic.com/news/introducing-claude-tag
+  title: Product Jun 23, 2026 Introducing Claude Tag Claude Tag is a new way for teams
+    to work with Claude.
+  date: '2026-07-06'
 ---
 
+
 # Claude Tag Slack
+
+---
+
+## 2026-07-06
+
+### Product Jun 23, 2026 Introducing Claude Tag Claude Tag is a new way for teams to work with Claude.
+
+Anthropic が Claude Tag を発表。Slack 上でチームメンバーとして Claude を追加し、@Claude とタグ付けすることで、コードベースやツール、データにアクセスしながらタスクを委譲できる新機能。Anthropic 社内では製品チームのコードの 65% が Claude Tag により生成されており、エンジニアリング以外の業務にも活用が広がっている。Claude Enterprise および Team 向けにベータ版として提供開始。
+
+- **ソース**: [Anthropic News](https://www.anthropic.com/news/introducing-claude-tag)
+- **重要度**: 9/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

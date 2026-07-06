@@ -9,7 +9,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-06-30'
-updated: '2026-07-04'
+updated: '2026-07-06'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1ujwggp/introducing_claude_sonnet_5_our_most_agentic
   title: Introducing Claude Sonnet 5, our most agentic Sonnet yet.
@@ -27,13 +27,30 @@ sources:
 - url: https://qiita.com/lhjjjk4/items/c21ef38c7f1aace599ff
   title: AI Daily Digest · 2026年7月5日 — AI投資額が5,100億ドル、Claude Sonnet 5、Kling AIが28億ドル調達
   date: '2026-07-04'
+- url: https://www.anthropic.com/news/claude-sonnet-5
+  title: Product Jun 30, 2026 Introducing Claude Sonnet 5 Sonnet 5 delivers frontier
+    performance across coding, agents, and professional work at scale.
+  date: '2026-07-06'
 ---
 
 
 
 
 
+
 # Claude Sonnet 5 Release
+
+---
+
+## 2026-07-06
+
+### Product Jun 30, 2026 Introducing Claude Sonnet 5 Sonnet 5 delivers frontier performance across coding, agents, and professional work at scale.
+
+Claude Sonnet 5が発表されました。これはOpus 4.8に近い性能を持ちながら低価格で提供される、最もエージェント的なSonnetモデルです。コーディング、ツール使用、推論において前世代Sonnet 4.6から大幅に改善され、ブラウザやターミナルなどのツールを自律的に使用できます。全プランで利用可能で、API価格は2026年8月31日まで入力トークン$2/百万、出力トークン$10/百万の導入価格が適用されます。
+
+- **ソース**: [Anthropic News](https://www.anthropic.com/news/claude-sonnet-5)
+- **重要度**: 10/10
+- **タグ**: sonnet, release, 新機能
 
 ---
 

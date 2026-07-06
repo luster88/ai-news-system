@@ -11,7 +11,7 @@ tags:
 - setup
 - sonnet
 date: '2026-05-05'
-updated: '2026-06-19'
+updated: '2026-07-06'
 sources:
 - url: https://zenn.dev/bentenweb_fumi/articles/fxyojdsgcwap
   title: AIで「手を動かす時間」を減らす：技術者のための時間投資戦略
@@ -28,13 +28,29 @@ sources:
 - url: https://zenn.dev/pekopugu/articles/agent01-b7-progress-driven
   title: 【Claude Code活用】PROGRESS.md駆動開発でセッションをまたいで開発する
   date: '2026-06-19'
+- url: https://qiita.com/TaichiEndoh/items/ad15d1fcf838decc3c8a
+  title: 1人で8プロジェクトを並列開発する「業務OS」— Claude Code worktree × Skill × 公開前ゲート × Obsidianミラーvault
+  date: '2026-07-06'
 ---
 
 
 
 
 
+
 # Workflow Optimization
+
+---
+
+## 2026-07-06
+
+### 1人で8プロジェクトを並列開発する「業務OS」— Claude Code worktree × Skill × 公開前ゲート × Obsidianミラーvault
+
+医療系エンジニアが8つのプロジェクトを並列開発するために構築した「業務OS」の紹介。git worktreeで案件ごとにClaude Codeのセッションを分離し、守秘情報の混入を防ぐ公開前ゲートスクリプトを実装。モデルの使い分けを自動化し、Obsidianミラーvaultでモバイル参照も安全に実現している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/TaichiEndoh/items/ad15d1fcf838decc3c8a)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, cowork
 
 ---
 
