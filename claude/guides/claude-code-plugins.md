@@ -11,7 +11,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-04-07'
-updated: '2026-07-02'
+updated: '2026-07-07'
 sources:
 - url: https://qiita.com/moha0918_/items/b3011c218210ab2695b7
   title: プラグイン作成の3つの方法、結局どれを選ぶべき？
@@ -50,6 +50,9 @@ sources:
 - url: https://qiita.com/ujunja/items/577019cd04fed7bfabec
   title: Claude Codeで失敗しない指示の出し方 — 曖昧な依頼を「動くプロンプト」に変える5点チェック
   date: '2026-07-02'
+- url: https://zenn.dev/yuen/articles/1b9f058763acd4
+  title: Flutter × Claude Codeでタロット占いアプリを作る - 仕様書からケルト十字拡張まで
+  date: '2026-07-07'
 ---
 
 
@@ -62,7 +65,20 @@ sources:
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-07-07
+
+### Flutter × Claude Codeでタロット占いアプリを作る - 仕様書からケルト十字拡張まで
+
+Flutter と Claude Code を使ったタロット占いアプリの開発事例。MVP では仕様書を先に作成し Claude.ai で壁打ちしてから Claude Code に実装を依頼。ケルト十字スプレッド（10枚）の拡張時に AI 解釈生成のプロンプト設計で苦労し、位置ごとの役割と分量目安を明示することで出力品質を改善した。
+
+- **ソース**: [Zenn claude](https://zenn.dev/yuen/articles/1b9f058763acd4)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

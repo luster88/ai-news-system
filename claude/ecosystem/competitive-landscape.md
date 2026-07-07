@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-23'
-updated: '2026-07-03'
+updated: '2026-07-07'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -55,6 +55,10 @@ sources:
   title: Microsoft follows Anthropic and OpenAI into the AI super app race with overhauled
     Copilot and AutoPilot agents
   date: '2026-07-03'
+- url: https://the-decoder.com/copilot-goes-cheap-as-microsoft-phases-out-openai-and-anthropic-models-to-cut-costs
+  title: Copilot goes cheap as Microsoft phases out OpenAI and Anthropic models to
+    cut costs
+  date: '2026-07-07'
 ---
 
 
@@ -67,7 +71,20 @@ sources:
 
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-07-07
+
+### Copilot goes cheap as Microsoft phases out OpenAI and Anthropic models to cut costs
+
+MicrosoftがCopilot製品群（Excel、Outlook、GitHub Copilotなど）で、OpenAIやAnthropicのモデルから自社開発のMAIモデルへ段階的に切り替えを進めている。コスト削減が目的だが、ベンチマークでは自社モデルが競合に劣る結果が出ており、ユーザーは同じ料金でより性能の低いAIを使うことになる可能性がある。Microsoftは従量課金制への移行も示唆しており、OpenAIやAnthropicモデルは今後プレミアムオプションになる可能性がある。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/copilot-goes-cheap-as-microsoft-phases-out-openai-and-anthropic-models-to-cut-costs)
+- **重要度**: 7/10
+- **タグ**: copilot, pricing, cowork
 
 ---
 

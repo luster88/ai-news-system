@@ -11,7 +11,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-04-12'
-updated: '2026-07-04'
+updated: '2026-07-07'
 sources:
 - url: https://ai-heartland.com/explain/last30days-skill-guide
   title: last30days-skill完全ガイド｜Reddit・X・YouTube横断AIリサーチスキルの使い方2026年版
@@ -49,6 +49,9 @@ sources:
 - url: https://ai-heartland.com/ai/claude/claude-rank
   title: claude-rank徹底解説：AIに引用されないサイトを診断・自動修正するプラグイン
   date: '2026-07-04'
+- url: https://ai-heartland.com/explain/agent-rules-books-guide
+  title: agent-rules-books解説｜名著13冊をAGENTS.mdルールに蒸留したOSS
+  date: '2026-07-07'
 ---
 
 
@@ -62,7 +65,20 @@ sources:
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-07-07
+
+### agent-rules-books解説｜名著13冊をAGENTS.mdルールに蒸留したOSS
+
+agent-rules-booksは、『Clean Code』『Refactoring』『DDD』など名著13冊の原則をAGENTS.mdルールに蒸留したOSSプロジェクト。MITライセンスで2,000以上のスターを獲得し、Codex・Cursor・Claude Code・Copilotなどで利用可能。作者の検証では、本の名前を挙げるより具体的なルールを列挙する方が効果的（74点 vs 46点）だった。mini/nano/full の3版が用意され、ツール非依存の設計により様々なAIコーディングエージェントで使える。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/agent-rules-books-guide)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

@@ -15,7 +15,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-07-04'
+updated: '2026-07-07'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -191,6 +191,9 @@ sources:
 - url: https://qiita.com/nak3761/items/e70138288f4055fc1442
   title: Claudeに「Qiita記事を書くプロジェクト」を作ってもらった話
   date: '2026-07-04'
+- url: https://qiita.com/satoyoshidev/items/edbd5e03bf46bd097eaf
+  title: AIへの頼み方が正反対になった 失敗を自分で仕組みに変える自己拡張ナレッジベース
+  date: '2026-07-07'
 ---
 
 
@@ -239,7 +242,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-07-07
+
+### AIへの頼み方が正反対になった 失敗を自分で仕組みに変える自己拡張ナレッジベース
+
+Claude Code を1年以上使用する中で、AI への依頼方法が正反対に変化した事例。以前は詳細に指示していたが、現在は「commit」などの一言だけで済むようになった。その理由は、AI 自身が失敗を hook として自動記録し、次回以降同じミスを繰り返さない仕組み（rules.jsonl による自己拡張型ナレッジベース）を構築したため。セッションをまたいで知識が蓄積され、失敗するほど AI が賢くなる設計が実現している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/satoyoshidev/items/edbd5e03bf46bd097eaf)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

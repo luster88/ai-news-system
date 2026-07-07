@@ -3,12 +3,13 @@ title: Claude Cowork Expansion
 category: releases
 subcategory: claude-cowork-expansion
 tags:
+- claude-api
 - cowork
 - release
 - windows
 - 新機能
 date: '2026-04-09'
-updated: '2026-05-13'
+updated: '2026-07-07'
 sources:
 - url: https://the-decoder.com/claude-cowork-expands-to-all-paid-plans-on-macos-and-windows-with-new-org-controls
   title: Claude Cowork expands to all paid plans on macOS and Windows with new org
@@ -21,10 +22,26 @@ sources:
 - url: https://techcrunch.com/2026/05/13/anthropic-courts-a-new-kind-of-customer-small-business-owners
   title: 'Anthropic courts a new kind of customer: small business owners'
   date: '2026-05-13'
+- url: https://the-decoder.com/anthropics-claude-cowork-ai-agent-is-now-available-on-mobile-and-web
+  title: Anthropic's Claude Cowork AI agent is now available on mobile and web
+  date: '2026-07-07'
 ---
 
 
+
 # Claude Cowork Expansion
+
+---
+
+## 2026-07-07
+
+### Anthropic's Claude Cowork AI agent is now available on mobile and web
+
+Anthropic が Claude Cowork をモバイルとウェブに展開開始。従来はデスクトップアプリ限定だったが、Max サブスクライバーから段階的にベータ版を公開。デバイス間でタスクを継続でき、バックグラウンドで動作継続。利用の90%以上がソフトウェア開発以外で、ビジネス運用とコンテンツ作成が約半分を占める。ローカルファイルアクセスやComputer Useなどはデスクトップアプリが引き続き必要。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropics-claude-cowork-ai-agent-is-now-available-on-mobile-and-web)
+- **重要度**: 8/10
+- **タグ**: cowork, 新機能, claude-api
 
 ---
 

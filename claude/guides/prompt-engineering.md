@@ -7,11 +7,12 @@ tags:
 - claude-code
 - cowork
 - haiku
+- opus
 - performance
 - prompt
 - setup
 date: '2026-04-07'
-updated: '2026-06-27'
+updated: '2026-07-07'
 sources:
 - url: https://zenn.dev/analysis/articles/thought-analyzer-agents-md
   title: コンテキストファイルは、エージェントを賢くしない ── AGENTS.mdの効果を初めて測った研究
@@ -25,12 +26,28 @@ sources:
 - url: https://zenn.dev/takupeso/articles/claude-ontology-knowledge-structuring
   title: Claudeに「オントロジー」を持たせたら、コスト半分・3倍速になるかも
   date: '2026-06-27'
+- url: https://zenn.dev/hayua/articles/5b6da584357698
+  title: Fable 5 が消える前に、その「思考法」を Opus へ引き継げないか本気で試してみた
+  date: '2026-07-07'
 ---
 
 
 
 
+
 # Prompt Engineering
+
+---
+
+## 2026-07-07
+
+### Fable 5 が消える前に、その「思考法」を Opus へ引き継げないか本気で試してみた
+
+Claude Fable 5のサブスク提供終了を前に、Fableの思考プロセスをskillとして書き出しOpusに引き継げるか検証した記事。Fableに自身の思考法を6つ抽出させ、汎用チェックリストと比較実験を実施。結果、Fable特有の上乗せ効果は確認できず、Opusは既に同等の思考能力を持っていたことが判明。AI評価バイアスを排除し、計算機で白黒つく問題のみで検証した点が特徴的。
+
+- **ソース**: [Zenn claude](https://zenn.dev/hayua/articles/5b6da584357698)
+- **重要度**: 6/10
+- **タグ**: opus, prompt, performance
 
 ---
 

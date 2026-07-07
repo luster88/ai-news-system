@@ -3,12 +3,13 @@ title: Claude Code Changelog
 category: releases
 subcategory: claude-code-changelog
 tags:
+- bugfix
 - claude-code
 - release
 - sonnet
 - 新機能
 date: '2026-06-29'
-updated: '2026-07-05'
+updated: '2026-07-07'
 sources:
 - url: https://qiita.com/moha0918_/items/8bd90fc2c1391c4769a1
   title: Claude Code v0.2.21〜v2.1.195｜CLIからマルチエージェント基盤への全履歴｜毎日Changelog解説
@@ -28,6 +29,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/6fc5910d8bdf6343498b
   title: Claude Code v2.1.201｜Sonnet 5 が会話途中の system role をやめる｜毎日Changelog解説
   date: '2026-07-05'
+- url: https://qiita.com/moha0918_/items/bcd8b890eb0f4c224365
+  title: Claude Code v2.1.202〜v2.1.203｜バックグラウンドエージェント総ざらい修正｜毎日Changelog解説
+  date: '2026-07-07'
 ---
 
 
@@ -35,7 +39,30 @@ sources:
 
 
 
+
 # Claude Code Changelog
+
+---
+
+## 2026-07-07
+
+### Claude Code v2.1.202〜v2.1.203｜バックグラウンドエージェント総ざらい修正｜毎日Changelog解説
+
+Claude Code v2.1.202〜v2.1.203のリリース解説。バックグラウンドエージェントの安定性向上が中心で、ANTHROPIC_BASE_URL環境変数が無視されAPIキーが既定エンドポイントに送信される重大なバグを修正。macOSで起動・切替時に15〜20秒フリーズする問題（v2.1.196のリグレッション）も解消。サブエージェントの作業引き継ぎ、Dynamic workflow size設定の追加、スキル再読み込みの二重化修正など20件超の修正を実施。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/bcd8b890eb0f4c224365)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
+
+---
+
+### Claude Code v2.1.202〜v2.1.203｜バックグラウンドエージェント総ざらい修正｜毎日Changelog解説
+
+Claude Code v2.1.202〜v2.1.203のChangelog解説。バックグラウンドエージェント周りの安定化が中心で、ANTHROPIC_BASE_URLが無視されてAPIキーが既定エンドポイントに送信される重大なバグや、macOSで15〜20秒フリーズする問題（v2.1.196のリグレッション）が修正された。その他、サブエージェントの作業引き継ぎ、動的ワークフローサイズ設定の追加、スキル再読み込み時の二重化修正など20件超の改善を含む。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/bcd8b890eb0f4c224365)
+- **重要度**: 7/10
+- **タグ**: claude-code, bugfix, release
 
 ---
 

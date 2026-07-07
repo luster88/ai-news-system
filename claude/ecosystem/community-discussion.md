@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-07-01'
+updated: '2026-07-07'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -55,6 +55,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1ukhfk7/fable_and_mythos_revival_megathread
   title: Fable and Mythos Revival Megathread
   date: '2026-07-01'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1uq5wbb/a_race_to_technofeudalism_while_most_people_arent
+  title: A race to techno-feudalism while most people aren't paying attention?
+  date: '2026-07-07'
 ---
 
 
@@ -67,7 +70,20 @@ sources:
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-07-07
+
+### A race to techno-feudalism while most people aren't paying attention?
+
+開発者コミュニティがClaudeを使った開発競争に熱中する一方、一般の人々はAIの真の能力を認識していないという現状について議論。LLM所有者、トークン価値追加者、トークン消費者という新たな階級構造が形成されつつあり、産業革命時以上に急激な経済格差が生まれる可能性を指摘している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1uq5wbb/a_race_to_technofeudalism_while_most_people_arent)
+- **重要度**: 4/10
+- **タグ**: cowork, claude-code, performance
 
 ---
 

@@ -8,7 +8,7 @@ tags:
 - performance
 - sonnet
 date: '2026-06-12'
-updated: '2026-07-03'
+updated: '2026-07-07'
 sources:
 - url: https://zenn.dev/znet/articles/2026-stronger-model-as-reviewer
   title: 高性能モデルの使いどころは『実装者』でなく『レビュアー』 — Fable 5 実機評価
@@ -16,10 +16,26 @@ sources:
 - url: https://zenn.dev/yukurash/articles/aba0e5d2acf7cd
   title: 【Fable 5 vs Opus 4.8】PM として優れているのはどちらか検証した
   date: '2026-07-03'
+- url: https://zenn.dev/localai_lab/articles/e8d6586231664e
+  title: Claude Sonnet 5とOpus 4.8を実装タスクで比較した
+  date: '2026-07-07'
 ---
 
 
+
 # Model Comparison
+
+---
+
+## 2026-07-07
+
+### Claude Sonnet 5とOpus 4.8を実装タスクで比較した
+
+Claude Sonnet 5とOpus 4.8を防災備蓄管理アプリの実装タスクで比較。Sonnet 5は動くものを素早く作るのに適しており、Opus 4.8はUIのまとまりと仕上げが優れている。初回生成では大差なく、改善指示後はOpus 4.8が僅差で優勢。普段使いはSonnet 5、重要な仕上げはOpus 4.8という使い分けが推奨される。
+
+- **ソース**: [Zenn claude](https://zenn.dev/localai_lab/articles/e8d6586231664e)
+- **重要度**: 6/10
+- **タグ**: sonnet, opus, performance
 
 ---
 
