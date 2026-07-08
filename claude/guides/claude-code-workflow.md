@@ -15,7 +15,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-07-07'
+updated: '2026-07-08'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -194,6 +194,9 @@ sources:
 - url: https://qiita.com/satoyoshidev/items/edbd5e03bf46bd097eaf
   title: AIへの頼み方が正反対になった 失敗を自分で仕組みに変える自己拡張ナレッジベース
   date: '2026-07-07'
+- url: https://qiita.com/softbase/items/f1349e611c256a0be0a9
+  title: Claude Code の /branch と /fork で会話を分岐させる ── 試行錯誤を安全に行う実践ガイド
+  date: '2026-07-08'
 ---
 
 
@@ -243,7 +246,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-07-08
+
+### Claude Code の /branch と /fork で会話を分岐させる ── 試行錯誤を安全に行う実践ガイド
+
+Claude Code の /branch と /fork コマンドの違いと実践的な使い方を解説。/branch は会話を分岐させて自分で試行錯誤するためのセーブポイント機能、/fork は会話履歴を引き継いだサブエージェントをバックグラウンドで起動し並列作業を可能にする機能。v2.1.161 以降で /fork が独立したコマンドとして動作し、判断が必要なタスクには /branch、独立して実行可能なタスクには /fork を使い分けることで効率的な開発が可能になる。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/softbase/items/f1349e611c256a0be0a9)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

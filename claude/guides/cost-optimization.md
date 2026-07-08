@@ -10,8 +10,9 @@ tags:
 - performance
 - pricing
 - prompt
+- sonnet
 date: '2026-04-03'
-updated: '2026-06-25'
+updated: '2026-07-08'
 sources:
 - url: https://zenn.dev/heki1224/articles/b849cc85a330aa
   title: Claude Codeで”トークン破産”しないためのコスト最適化とコンテキスト防衛術
@@ -41,6 +42,10 @@ sources:
 - url: https://qiita.com/kenji_harada/items/55eaca31d23525b6d03f
   title: Claude Code の請求書に震えた話と、コストを半分にした実践メモ
   date: '2026-06-25'
+- url: https://the-decoder.com/anthropics-fix-for-fable-5s-high-cost-is-turning-it-into-a-manager-that-delegates-to-sonnet-5
+  title: Anthropic's fix for Fable 5's high cost is turning it into a manager that
+    delegates to Sonnet 5
+  date: '2026-07-08'
 ---
 
 
@@ -51,7 +56,20 @@ sources:
 
 
 
+
 # Cost Optimization
+
+---
+
+## 2026-07-08
+
+### Anthropic's fix for Fable 5's high cost is turning it into a manager that delegates to Sonnet 5
+
+Anthropicは、高コストなClaude Fable 5（※おそらくOpus 3.5の誤記）の利用コスト削減策として、Fable 5をプランナーとして使用しSonnet 5に実行を委譲する2つのパターンを提案。「Advisor」パターンではSonnet 5が主実行者となりFable 5を必要時のみ呼び出し、コストを63%に削減しながら92%の性能を維持。「Planner」パターンではFable 5がタスクを計画しSonnet 5ワーカーに委譲、コスト46%で性能96%を達成。中国製オープンソースモデルやGPT-5.6 Solの価格競争圧力が背景にある。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropics-fix-for-fable-5s-high-cost-is-turning-it-into-a-manager-that-delegates-to-sonnet-5)
+- **重要度**: 7/10
+- **タグ**: opus, sonnet, pricing
 
 ---
 

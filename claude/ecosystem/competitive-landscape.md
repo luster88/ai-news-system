@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-23'
-updated: '2026-07-07'
+updated: '2026-07-08'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -59,6 +59,9 @@ sources:
   title: Copilot goes cheap as Microsoft phases out OpenAI and Anthropic models to
     cut costs
   date: '2026-07-07'
+- url: https://techcrunch.com/video/why-this-ceo-thinks-video-games-make-better-training-data-than-the-internet
+  title: Why this CEO thinks video games make better training data than the internet
+  date: '2026-07-08'
 ---
 
 
@@ -72,7 +75,20 @@ sources:
 
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-07-08
+
+### Why this CEO thinks video games make better training data than the internet
+
+General Intuitionは、AGI実現のためにゲームデータを学習データとして活用するアプローチを提唱している。ChatGPTやClaudeなどのLLMはテキストに強いが、空間と時間における物体の動きを理解する能力に欠けており、この課題をゲームデータで補うことで物理AIの次の飛躍を目指す。同社はBezos氏が支援し、23億ドルの評価額で3.2億ドルの資金調達を実施した。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/video/why-this-ceo-thinks-video-games-make-better-training-data-than-the-internet)
+- **重要度**: 4/10
+- **タグ**: claude-api, performance, cowork
 
 ---
 

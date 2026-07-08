@@ -11,7 +11,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-04-12'
-updated: '2026-07-07'
+updated: '2026-07-08'
 sources:
 - url: https://ai-heartland.com/explain/last30days-skill-guide
   title: last30days-skill完全ガイド｜Reddit・X・YouTube横断AIリサーチスキルの使い方2026年版
@@ -52,6 +52,9 @@ sources:
 - url: https://ai-heartland.com/explain/agent-rules-books-guide
   title: agent-rules-books解説｜名著13冊をAGENTS.mdルールに蒸留したOSS
   date: '2026-07-07'
+- url: https://qiita.com/lumichy/items/457d44ef0e841560e246
+  title: 【Claude Code】「Vibe Coding」はもう卒業！プラグイン「Superpowers」でAI開発にエンジニアリングSOPを導入する
+  date: '2026-07-08'
 ---
 
 
@@ -66,7 +69,20 @@ sources:
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-07-08
+
+### 【Claude Code】「Vibe Coding」はもう卒業！プラグイン「Superpowers」でAI開発にエンジニアリングSOPを導入する
+
+Claude Codeに標準作業手順（SOP）を強制するオープンソースプラグイン「Superpowers」の解説記事。「Vibe Coding（ノリと勢いのコーディング）」を脱却し、要件定義→設計→TDD→実装→レビューという7フェーズのエンジニアリングパイプラインを強制することで、AIコード生成の品質と再現性を向上させる。14以上の再利用可能なSkillを提供し、コンテキスト肥大化やテスト欠如といったAI開発の課題を解決する。
+
+- **ソース**: [Qiita claude](https://qiita.com/lumichy/items/457d44ef0e841560e246)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

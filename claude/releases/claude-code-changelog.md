@@ -9,7 +9,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-06-29'
-updated: '2026-07-07'
+updated: '2026-07-08'
 sources:
 - url: https://qiita.com/moha0918_/items/8bd90fc2c1391c4769a1
   title: Claude Code v0.2.21〜v2.1.195｜CLIからマルチエージェント基盤への全履歴｜毎日Changelog解説
@@ -32,6 +32,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/bcd8b890eb0f4c224365
   title: Claude Code v2.1.202〜v2.1.203｜バックグラウンドエージェント総ざらい修正｜毎日Changelog解説
   date: '2026-07-07'
+- url: https://qiita.com/moha0918_/items/6b07151a020d40ff6657
+  title: Claude Code v2.1.204〜v2.1.205｜自動モードの安全弁が増える｜毎日Changelog解説
+  date: '2026-07-08'
 ---
 
 
@@ -40,7 +43,30 @@ sources:
 
 
 
+
 # Claude Code Changelog
+
+---
+
+## 2026-07-08
+
+### Claude Code v2.1.204〜v2.1.205｜自動モードの安全弁が増える｜毎日Changelog解説
+
+Claude Code v2.1.205で自動モードの安全機能が強化されました。セッション記録の改ざん禁止、未解決変数へのrm -rf実行前確認、通知への「人間の承認なし」明記が追加され、バックグラウンドエージェントの安全性が向上。自動更新のメモリ使用量も約400MB削減され、/doctorコマンドが総合セットアップ点検機能に拡張されました。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/6b07151a020d40ff6657)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+### Claude Code v2.1.204〜v2.1.205｜自動モードの安全弁が増える｜毎日Changelog解説
+
+Claude Code v2.1.205で自動モード利用時の安全対策が大幅強化。セッション記録の改ざん禁止、未解決変数のrm -rf実行前確認、通知への「人間承認なし」明記が追加された。JSON Schema無効時の黙った挙動変更も修正され、--dangerously-skip-permissionsでの無人実行の安全性が向上。/doctorコマンドが総合セットアップ点検に進化し、自動更新のメモリ使用量も約400MB削減された。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/6b07151a020d40ff6657)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 
