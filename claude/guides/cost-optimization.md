@@ -12,7 +12,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-04-03'
-updated: '2026-07-08'
+updated: '2026-07-09'
 sources:
 - url: https://zenn.dev/heki1224/articles/b849cc85a330aa
   title: Claude Codeで”トークン破産”しないためのコスト最適化とコンテキスト防衛術
@@ -46,6 +46,12 @@ sources:
   title: Anthropic's fix for Fable 5's high cost is turning it into a manager that
     delegates to Sonnet 5
   date: '2026-07-08'
+- url: https://qiita.com/Akizonga/items/71828a77980b42f6a5b5
+  title: 【ドケチ開発】Claude Codeのトークン消費を85%削る規律と「token-scrooge」
+  date: '2026-07-09'
+- url: https://ai-heartland.com/explain/fable-5-advisor-pattern
+  title: Claude Fable 5のアドバイザーパターン入門｜Sonnet 5実行役が要所だけ相談しトークン代を抑える
+  date: '2026-07-09'
 ---
 
 
@@ -57,7 +63,30 @@ sources:
 
 
 
+
 # Cost Optimization
+
+---
+
+## 2026-07-09
+
+### 【ドケチ開発】Claude Codeのトークン消費を85%削る規律と「token-scrooge」
+
+Claude Codeのトークン消費を85%削減した実践的なコスト最適化手法を解説。CLAUDE.mdを17.8KBから2.7KBに圧縮し、プラグインの重複排除、英語化、スキル機能の活用、安価なモデルへのルーティングなどの技法を体系化。これらの知見をOSSプラグイン「token-scrooge」として公開している。
+
+- **ソース**: [Qiita claude](https://qiita.com/Akizonga/items/71828a77980b42f6a5b5)
+- **重要度**: 7/10
+- **タグ**: claude-code, performance, prompt
+
+---
+
+### Claude Fable 5のアドバイザーパターン入門｜Sonnet 5実行役が要所だけ相談しトークン代を抑える
+
+Anthropic公式アカウント @ClaudeDevs が2026年7月7日に示した「アドバイザーパターン」の解説記事。実行役（Sonnet 5）が作業を回し、要所だけ相談役（Fable 5）に助言を求める役割分担により、品質を保ちつつトークンコストを抑える設計手法。公式の「Advisorツール」として製品化されており、物量が多く難所が時々混じる長時間タスクに有効。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/fable-5-advisor-pattern)
+- **重要度**: 7/10
+- **タグ**: sonnet, prompt, performance
 
 ---
 

@@ -6,9 +6,10 @@ tags:
 - cowork
 - opus
 - performance
+- prompt
 - sonnet
 date: '2026-06-12'
-updated: '2026-07-07'
+updated: '2026-07-09'
 sources:
 - url: https://zenn.dev/znet/articles/2026-stronger-model-as-reviewer
   title: 高性能モデルの使いどころは『実装者』でなく『レビュアー』 — Fable 5 実機評価
@@ -19,11 +20,27 @@ sources:
 - url: https://zenn.dev/localai_lab/articles/e8d6586231664e
   title: Claude Sonnet 5とOpus 4.8を実装タスクで比較した
   date: '2026-07-07'
+- url: https://zenn.dev/nishiryo/articles/5b056ee1e5554097bbf2992dbd309a45
+  title: Opus 4.6 / 4.7 / 4.8って何が違うの？
+  date: '2026-07-09'
 ---
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-07-09
+
+### Opus 4.6 / 4.7 / 4.8って何が違うの？
+
+Opus 4.6/4.7/4.8の実務での挙動比較記事。Shopifyアプリテンプレートリポジトリを題材に、7種類のプロンプトで各モデルの特性を検証。ベンチマークスコアではなく「repo固有ルールの遵守」「地雷を踏まない能力」を軸に評価し、モデルごとに役割分担があることを発見。日本語指示での挙動差や、実務での使い分けの重要性を指摘している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/nishiryo/articles/5b056ee1e5554097bbf2992dbd309a45)
+- **重要度**: 6/10
+- **タグ**: opus, prompt, cowork
 
 ---
 

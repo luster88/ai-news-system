@@ -5,11 +5,12 @@ subcategory: claude-code-changelog
 tags:
 - bugfix
 - claude-code
+- mcp
 - release
 - sonnet
 - 新機能
 date: '2026-06-29'
-updated: '2026-07-08'
+updated: '2026-07-09'
 sources:
 - url: https://qiita.com/moha0918_/items/8bd90fc2c1391c4769a1
   title: Claude Code v0.2.21〜v2.1.195｜CLIからマルチエージェント基盤への全履歴｜毎日Changelog解説
@@ -35,6 +36,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/6b07151a020d40ff6657
   title: Claude Code v2.1.204〜v2.1.205｜自動モードの安全弁が増える｜毎日Changelog解説
   date: '2026-07-08'
+- url: https://qiita.com/picnic/items/e6d330b7723ee647fdcd
+  title: Claude Code v2.1.205まとめ：MCP名予約の破壊的変更と安全性強化
+  date: '2026-07-09'
 ---
 
 
@@ -44,7 +48,20 @@ sources:
 
 
 
+
 # Claude Code Changelog
+
+---
+
+## 2026-07-09
+
+### Claude Code v2.1.205まとめ：MCP名予約の破壊的変更と安全性強化
+
+Claude Code v2.1.205がリリースされ、MCPサーバー名「Claude Browser」「Claude Preview」の予約化という破壊的変更が実施されました。autoモードでのトランスクリプト改ざん防止や危険なコマンド実行前の確認など安全性が大幅に強化され、Windowsでのworktree削除時のデータ損失バグなど重大なバグが修正されました。自動更新のメモリ使用量も約400MB削減され、/doctorコマンドが診断だけでなく修復機能も持つように進化しています。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/picnic/items/e6d330b7723ee647fdcd)
+- **重要度**: 8/10
+- **タグ**: claude-code, mcp, bugfix
 
 ---
 

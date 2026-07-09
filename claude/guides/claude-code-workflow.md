@@ -15,7 +15,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-07-08'
+updated: '2026-07-09'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -197,6 +197,9 @@ sources:
 - url: https://qiita.com/softbase/items/f1349e611c256a0be0a9
   title: Claude Code の /branch と /fork で会話を分岐させる ── 試行錯誤を安全に行う実践ガイド
   date: '2026-07-08'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1urzr1q/i_just_made_25k_usd_with_my_capybara_game_built
+  title: I just made $25K USD with my capybara game built entirely with Claude Code
+  date: '2026-07-09'
 ---
 
 
@@ -247,7 +250,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-07-09
+
+### I just made $25K USD with my capybara game built entirely with Claude Code
+
+Reddit ユーザーが Claude Code を使用して2週間でカピバラゲームを開発し、VibeJam 2026 で優勝して25,000ドルの賞金を獲得。ThreeJS、Suno、ElevenLabs などの AI ツールと組み合わせ、コード、テクスチャ、音楽、サウンドをすべて AI で生成。iOS エンジニアとして9年の経験を持つ開発者が初のゲーム開発に挑戦した成功事例。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1urzr1q/i_just_made_25k_usd_with_my_capybara_game_built)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

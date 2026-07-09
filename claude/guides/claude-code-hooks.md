@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-23'
-updated: '2026-06-12'
+updated: '2026-07-09'
 sources:
 - url: https://qiita.com/pro-tein/items/49e5dbec705c3497dd51
   title: 【Claude Code】Hooks機能でデスクトップ通知を設定してみた
@@ -27,13 +27,29 @@ sources:
 - url: https://zenn.dev/michan74/articles/8906dc0e93eddc
   title: Claude Code hooks 使ってみた【ネコ通知】₍ᐞ•༝•ᐞ₎
   date: '2026-06-12'
+- url: https://zenn.dev/ccstudio/books/claude-code-hooks-guide
+  title: Claude Code Hooks実践ガイド — 品質ゲート・通知・ガードレールで「放置できる」開発環境を作る
+  date: '2026-07-09'
 ---
 
 
 
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-07-09
+
+### Claude Code Hooks実践ガイド — 品質ゲート・通知・ガードレールで「放置できる」開発環境を作る
+
+Claude CodeのHooks機能を17の動作確認済みレシピで解説する実践ガイド。自動フォーマット、危険コマンドブロック、コミット前テスト強制、デスクトップ通知など、品質ゲート・通知・ガードレール・ログの4分類で構成。macOS/Claude Code v2.1.172で検証済み。既に業務でClaude Codeを使用し、手作業の確認・指摘を自動化したいエンジニア向け。
+
+- **ソース**: [Zenn claude](https://zenn.dev/ccstudio/books/claude-code-hooks-guide)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 
