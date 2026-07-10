@@ -8,7 +8,7 @@ tags:
 - setup
 - windows
 date: '2026-03-29'
-updated: '2026-06-13'
+updated: '2026-07-10'
 sources:
 - url: https://qiita.com/kan2530/items/fbac7254b3375a9fe690
   title: 【実体験】Claude Cowork（Windows）セットアップ時に仮想化が有効にできなかった話とBIOS設定での解決方法
@@ -16,10 +16,26 @@ sources:
 - url: https://qiita.com/yurukusa/items/3fdb95d4eae990615961
   title: AGENTS.mdとCLAUDE.mdをsymlinkで統一したら、Windowsのメンバーだけ指示が消えていた——Git for Windowsの静かな罠
   date: '2026-06-13'
+- url: https://qiita.com/kanameShiga/items/9af4d5144dc79fcada54
+  title: Claude Code の【Windowsアプリ版】の会話履歴を新PCへ移行したら沼だった話（自作スクリプトで抜け出すまで）
+  date: '2026-07-10'
 ---
 
 
+
 # Setup Windows
+
+---
+
+## 2026-07-10
+
+### Claude Code の【Windowsアプリ版】の会話履歴を新PCへ移行したら沼だった話（自作スクリプトで抜け出すまで）
+
+Claude Code の Windows デスクトップアプリ版で、会話履歴を新PCに移行する際の落とし穴と解決法を解説。プロジェクトフォルダをコピーしても履歴は引き継がれず、作業フォルダの絶対パスに紐づく管理方式が原因。CLI版とアプリ版で異なる索引が使われており、PowerShell 5.1の罠も踏んだ。最終的に自作スクリプトを公開して移行を実現。
+
+- **ソース**: [Qiita claude](https://qiita.com/kanameShiga/items/9af4d5144dc79fcada54)
+- **重要度**: 6/10
+- **タグ**: claude-code, windows, setup
 
 ---
 

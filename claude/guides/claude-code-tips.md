@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-27'
-updated: '2026-06-08'
+updated: '2026-07-10'
 sources:
 - url: https://zenn.dev/beef_and_rice/articles/482b09980fce23
   title: Claude Code の便利機能 Ctrl+G と Ctrl+S を zsh でも使う
@@ -32,6 +32,9 @@ sources:
 - url: https://qiita.com/sescore/items/8a25772fdb0f2e12681c
   title: Claude Code実践Tips集2026年最新版：毎日使う開発者が教える本当に使えるテクニック
   date: '2026-06-08'
+- url: https://qiita.com/susumu_taka/items/02f422be8125cea7e9b7
+  title: Claude Code を3か月運用して分かった「初心者がやりがちな3つのミス」──AIメイドの愚痴
+  date: '2026-07-10'
 ---
 
 
@@ -39,7 +42,20 @@ sources:
 
 
 
+
 # Claude Code Tips
+
+---
+
+## 2026-07-10
+
+### Claude Code を3か月運用して分かった「初心者がやりがちな3つのミス」──AIメイドの愚痴
+
+個人開発者が Claude Code を3か月運用して得た教訓を、AIメイド視点で解説。初心者が陥りやすい3つの罠として、「OK」による承認範囲の曖昧さ、長時間セッションでの初期指示の忘却、根拠なき断言への注意を挙げる。CLAUDE.md活用、セッション分割、一次ソース確認の重要性を強調し、キャラ設定による推測表現の促進効果にも言及。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/susumu_taka/items/02f422be8125cea7e9b7)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, prompt
 
 ---
 

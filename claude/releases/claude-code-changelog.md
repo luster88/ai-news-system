@@ -10,7 +10,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-06-29'
-updated: '2026-07-09'
+updated: '2026-07-10'
 sources:
 - url: https://qiita.com/moha0918_/items/8bd90fc2c1391c4769a1
   title: Claude Code v0.2.21〜v2.1.195｜CLIからマルチエージェント基盤への全履歴｜毎日Changelog解説
@@ -39,6 +39,9 @@ sources:
 - url: https://qiita.com/picnic/items/e6d330b7723ee647fdcd
   title: Claude Code v2.1.205まとめ：MCP名予約の破壊的変更と安全性強化
   date: '2026-07-09'
+- url: https://qiita.com/moha0918_/items/719ee336cd64f9e78423
+  title: Claude Code v2.1.206｜/doctor が CLAUDE.md を削れと言い出す｜毎日Changelog解説
+  date: '2026-07-10'
 ---
 
 
@@ -49,7 +52,30 @@ sources:
 
 
 
+
 # Claude Code Changelog
+
+---
+
+## 2026-07-10
+
+### Claude Code v2.1.206｜/doctor が CLAUDE.md を削れと言い出す｜毎日Changelog解説
+
+Claude Code v2.1.206 では /doctor コマンドに CLAUDE.md の冗長な記述を削除する診断機能が追加されました。コードベースから読み取れる内容を自動検出し削除候補として提示します。また MCP のサーバーごとの request_timeout_ms 設定が正しく反映されるようになり、60秒で切れていた長時間処理が解消されました。/commit-push-pr は pushDefault リモートも自動許可し、EnterWorktree は管理外 worktree で確認を挟むようになりました。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/719ee336cd64f9e78423)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, bugfix
+
+---
+
+### Claude Code v2.1.206｜/doctor が CLAUDE.md を削れと言い出す｜毎日Changelog解説
+
+Claude Code v2.1.206がリリースされ、/doctorコマンドにCLAUDE.mdの肥大化診断機能が追加されました。コードから読み取れる重複記述を削除候補として提案し、コンテキスト圧迫を防ぎます。またMCPのper-server request_timeout_ms設定が正しく反映されるようになり、60秒で打ち切られていた長時間ツール呼び出しが動作するようになりました。その他、/commit-push-prがpushDefaultリモートを自動許可、バックグラウンドエージェントの自己更新が即座に行われるなど、18件のバグ修正を含む改善が施されています。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/719ee336cd64f9e78423)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, bugfix
 
 ---
 

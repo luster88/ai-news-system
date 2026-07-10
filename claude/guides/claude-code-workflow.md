@@ -15,7 +15,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-07-09'
+updated: '2026-07-10'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -200,6 +200,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1urzr1q/i_just_made_25k_usd_with_my_capybara_game_built
   title: I just made $25K USD with my capybara game built entirely with Claude Code
   date: '2026-07-09'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1usno3r/i_made_a_pirate_mmo_with_fable_and_the_entire
+  title: I made a Pirate MMO with Fable, and the entire game is only 5MB.
+  date: '2026-07-10'
 ---
 
 
@@ -251,7 +254,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-07-10
+
+### I made a Pirate MMO with Fable, and the entire game is only 5MB.
+
+開発者が Fable と Claude Code を使って海賊テーマの MMORPG を構築した事例。ゲーム全体がわずか 5MB で、画像・3D モデル・音声アセットなしで全てコード生成により実現。最大 250 人のプレイヤーをサポートし、広大な世界、アイテム、モンスター、船舶システムなどを実装。特筆すべきは、プレイヤーが提出したチケットを Fable が直接処理し PR を作成する自動化ワークフローで、過去 1,000 コミットでほとんどプロンプトを書いていないという点。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1usno3r/i_made_a_pirate_mmo_with_fable_and_the_entire)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

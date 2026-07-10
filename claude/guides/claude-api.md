@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-06-28'
+updated: '2026-07-10'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -38,6 +38,9 @@ sources:
 - url: https://zenn.dev/yamamoshu/articles/llm-agent-no-langchain
   title: LangChainなしでLLMエージェントを作る【Claude API + Python実装】
   date: '2026-06-28'
+- url: https://zenn.dev/propagandist/articles/0017-spring-boot-claude-multi-turn
+  title: Spring Boot で Claude に会話履歴を渡して多ターンで話す
+  date: '2026-07-10'
 ---
 
 
@@ -47,7 +50,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-07-10
+
+### Spring Boot で Claude に会話履歴を渡して多ターンで話す
+
+Spring Boot で Claude API を呼び出し、会話履歴を管理しながら多ターンの対話を実装する方法を解説。ステートレスな API の特性を踏まえ、user/assistant の交互配置を不変条件として保証する Conversation 型を導入し、system プロンプトと messages の適切な分離、履歴の持ち回しとトークン管理の注意点を示す実践ガイド。
+
+- **ソース**: [Zenn claude](https://zenn.dev/propagandist/articles/0017-spring-boot-claude-multi-turn)
+- **重要度**: 6/10
+- **タグ**: claude-api, prompt, setup
 
 ---
 

@@ -13,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-04'
-updated: '2026-07-06'
+updated: '2026-07-10'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -50,6 +50,11 @@ sources:
   title: Zhipu AI launches ZCode to challenge Claude Code and OpenAI Codex at a fraction
     of the cost
   date: '2026-07-06'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1usavpc/deepswe_just_added_the_gpt56_models_to_their
+  title: DeepSWE just added the gpt-5.6 models to their benchmark. I hope you guys
+    don't get too used to Claude Code as your only coding agent. Chart is marked NSFW
+    due to the grotesque violence.
+  date: '2026-07-10'
 ---
 
 
@@ -60,7 +65,20 @@ sources:
 
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-07-10
+
+### DeepSWE just added the gpt-5.6 models to their benchmark. I hope you guys don't get too used to Claude Code as your only coding agent. Chart is marked NSFW due to the grotesque violence.
+
+DeepSWEベンチマークにGPT-5.6モデルが追加され、コーディングエージェントとしてのパフォーマンスが評価されました。投稿者は、Claude Codeが唯一の選択肢ではなくなる可能性を示唆し、競合モデルの性能向上を警告しています。ベンチマーク結果のチャートが共有されており、モデル間の性能差が視覚的に示されています。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1usavpc/deepswe_just_added_the_gpt56_models_to_their)
+- **重要度**: 6/10
+- **タグ**: claude-code, performance, copilot
 
 ---
 

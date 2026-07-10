@@ -8,9 +8,10 @@ tags:
 - cowork
 - mcp
 - release
+- setup
 - 新機能
 date: '2026-04-14'
-updated: '2026-06-26'
+updated: '2026-07-10'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1slictc/claude_code_on_desktop_redesigned_for_parallel
   title: Claude Code on desktop, redesigned for parallel agentic work.
@@ -58,6 +59,9 @@ sources:
 - url: https://qiita.com/picnic/items/bba3d4db0a902a3ed96a
   title: Claude Code v2.1.193のOTelアシスタント応答ログ追加と全変更まとめ
   date: '2026-06-26'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1usx952/claude_code_on_desktop_now_has_an_inapp_browser
+  title: Claude Code on desktop now has an in-app browser.
+  date: '2026-07-10'
 ---
 
 
@@ -72,7 +76,20 @@ sources:
 
 
 
+
 # Claude Code Desktop
+
+---
+
+## 2026-07-10
+
+### Claude Code on desktop now has an in-app browser.
+
+Claude Code デスクトップアプリに、アプリ内ブラウザ機能が追加されました。この機能により、Claude はドキュメント、デザイン、その他のサイトを表示し、ローカルビルドと同様に読み取り、クリック、インタラクションが可能になります。ブラウザはサンドボックス化されており、セッションの永続化を設定可能です。最新バージョンへのアップデートで利用できます。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1usx952/claude_code_on_desktop_now_has_an_inapp_browser)
+- **重要度**: 8/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

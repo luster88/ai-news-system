@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-06-14'
+updated: '2026-07-10'
 sources:
 - url: https://zenn.dev/shelty/articles/20260408-budget-book-asset-management
   title: MoneyForwardの家計簿データで資産予測を自動化してみた＠Claude
@@ -37,6 +37,9 @@ sources:
 - url: https://qiita.com/drasenas/items/338537f2f7fea9014207
   title: Claude Code Routines で GWS ライセンス棚卸しを月次自動化する
   date: '2026-06-14'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1uszlay/how_claude_does_my_40_hour_a_week_job_by_itself
+  title: How Claude does my 40 hour a week job by itself - for 15 Cents
+  date: '2026-07-10'
 ---
 
 
@@ -45,7 +48,20 @@ sources:
 
 
 
+
 # Automation Workflow
+
+---
+
+## 2026-07-10
+
+### How Claude does my 40 hour a week job by itself - for 15 Cents
+
+RedditユーザーがWebサイトから情報を抽出する契約業務を、Claudeに自動化スクリプトを書かせて完全自動化した事例。週40時間かかる作業をわずか15セントのトークンコストで処理でき、専門知識が必要な単純作業を効率化できることを実証。Claudeがスクリプトを生成し、ユーザーは開始指示と最終提出のみを行う。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1uszlay/how_claude_does_my_40_hour_a_week_job_by_itself)
+- **重要度**: 6/10
+- **タグ**: claude-api, cowork, prompt
 
 ---
 
