@@ -10,7 +10,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-06-29'
-updated: '2026-07-10'
+updated: '2026-07-11'
 sources:
 - url: https://qiita.com/moha0918_/items/8bd90fc2c1391c4769a1
   title: Claude Code v0.2.21〜v2.1.195｜CLIからマルチエージェント基盤への全履歴｜毎日Changelog解説
@@ -42,6 +42,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/719ee336cd64f9e78423
   title: Claude Code v2.1.206｜/doctor が CLAUDE.md を削れと言い出す｜毎日Changelog解説
   date: '2026-07-10'
+- url: https://qiita.com/picnic/items/d1ac24b797423941d494
+  title: Claude Code v2.1.207の破壊的変更まとめ：Auto mode既定化とプラグインのシェル対策
+  date: '2026-07-11'
 ---
 
 
@@ -53,7 +56,20 @@ sources:
 
 
 
+
 # Claude Code Changelog
+
+---
+
+## 2026-07-11
+
+### Claude Code v2.1.207の破壊的変更まとめ：Auto mode既定化とプラグインのシェル対策
+
+Claude Code v2.1.207では、Bedrock/Vertex/Foundry経由のデフォルトモデルがClaude Opus 4.8に変更され、Auto modeが既定で有効化されました。最も重要な破壊的変更として、プラグインのheadersHelperでシェル形式コマンド内での${user_config.*}展開がセキュリティ上の理由で禁止されました。また、.claude/settings.local.jsonとプロジェクトの.claude/settings.jsonの読み込み制限が強化され、既存の設定が無視される可能性があります。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/d1ac24b797423941d494)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

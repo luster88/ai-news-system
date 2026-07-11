@@ -10,7 +10,7 @@ tags:
 - pricing
 - sonnet
 date: '2026-03-24'
-updated: '2026-07-04'
+updated: '2026-07-11'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -34,6 +34,9 @@ sources:
 - url: https://qiita.com/homhom44/items/a97c82b2fa8025230c74
   title: 2026/7 本当にSonnetはOpusに実力が肉薄したのか？
   date: '2026-07-04'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1utjwjl/sonnet_5_was_supposed_to_be_cheaper_it_cost_me
+  title: Sonnet 5 was supposed to be cheaper. It cost me more than Fable 5
+  date: '2026-07-11'
 ---
 
 
@@ -42,7 +45,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-07-11
+
+### Sonnet 5 was supposed to be cheaper. It cost me more than Fable 5
+
+ユーザーがSonnet 5とFable 5を2つのコーディングタスク（RAGデバッガー追加とゲーム開発）で比較。Sonnet 5は価格が安いとされていたが、大規模タスクでは実際にFable 5より高コストになった。RAGデバッガーではSonnetが$12.05で安かったが、ゲーム開発タスクではFableが$27.97で完成させたのに対し、Sonnetは$32.59かかり、バグも多く、結果的にSonnetの方が高くついた。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1utjwjl/sonnet_5_was_supposed_to_be_cheaper_it_cost_me)
+- **重要度**: 6/10
+- **タグ**: sonnet, performance, pricing
 
 ---
 

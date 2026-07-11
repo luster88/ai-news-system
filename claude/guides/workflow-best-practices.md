@@ -4,11 +4,12 @@ category: guides
 subcategory: workflow-best-practices
 tags:
 - claude-code
+- cowork
 - cursor
 - prompt
 - setup
 date: '2026-05-24'
-updated: '2026-05-31'
+updated: '2026-07-11'
 sources:
 - url: https://qiita.com/y_tsubasa/items/a0213eaad3402d00ed0a
   title: AI と毎日開発していて定着した、地味だけど効く工夫の棚卸し
@@ -16,10 +17,26 @@ sources:
 - url: https://qiita.com/nrEngineer/items/b1abd81ca2a9f74f30b6
   title: AI時代の開発ワークフロー実践ロードマップ ― 78バグから10本の記事を書いて見えたこと
   date: '2026-05-31'
+- url: https://qiita.com/rikiza1989/items/9948daf97fb221da78c2
+  title: AIエージェントを"暴走"させない仕組み ― ドキュメントを憲法にしたら、コードより先にルールが育った話
+  date: '2026-07-11'
 ---
 
 
+
 # Workflow Best Practices
+
+---
+
+## 2026-07-11
+
+### AIエージェントを"暴走"させない仕組み ― ドキュメントを憲法にしたら、コードより先にルールが育った話
+
+Claude Code等のAIエージェントに長期開発を任せる際、「ドキュメントがコードより上位」という憲法(CLAUDE.md)で制御する個人プロジェクトapp_generatorの紹介。自然言語の指示ではなく、機械的な検証スクリプト(doc_lint.ps1/check_trace.ps1)とゲート機構でドキュメント更新を強制し、タスクライフサイクル管理(REQ/ADR/TASK-ID体系)と権限分離したエージェント設計で「暴走」を防ぐ。言語非依存の設計思想で、コードより先にルールを育てるアプローチを実践している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/rikiza1989/items/9948daf97fb221da78c2)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

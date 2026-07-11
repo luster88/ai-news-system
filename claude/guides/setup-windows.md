@@ -8,7 +8,7 @@ tags:
 - setup
 - windows
 date: '2026-06-20'
-updated: '2026-06-30'
+updated: '2026-07-11'
 sources:
 - url: https://qiita.com/soldierboy/items/beb47801a1c81c5b4e35
   title: Claudeにyosysとopenroad環境構築をお願いした
@@ -16,10 +16,26 @@ sources:
 - url: https://zenn.dev/imaginarygate/articles/46e2514135bc01
   title: Claude Cowork導入前に確認した、Windows側のClaude関連フォルダの棚卸しメモ
   date: '2026-06-30'
+- url: https://qiita.com/lumichy/items/4bfde6829df08ee60930
+  title: Claude Code完了時に音声通知！Stop Hookを使ったWindows環境での自動化設定ガイド
+  date: '2026-07-11'
 ---
 
 
+
 # Setup Windows
+
+---
+
+## 2026-07-11
+
+### Claude Code完了時に音声通知！Stop Hookを使ったWindows環境での自動化設定ガイド
+
+Claude Codeの回答完了時にWindows環境で音声通知を自動再生する方法を解説。Stop Hookを使い、~/.claude/settings.jsonに音声再生コマンドを設定することで、バックグラウンド処理の完了を見逃さずに通知できる。tts-edgeスキルで日本語音声も生成可能で、Claude Code自身に設定を任せるプロンプト例も紹介。
+
+- **ソース**: [Qiita claude](https://qiita.com/lumichy/items/4bfde6829df08ee60930)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, windows
 
 ---
 
