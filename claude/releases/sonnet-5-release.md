@@ -3,12 +3,13 @@ title: Sonnet 5 Release
 category: releases
 subcategory: sonnet-5-release
 tags:
+- claude-code
 - pricing
 - release
 - sonnet
 - 新機能
 date: '2026-04-05'
-updated: '2026-07-01'
+updated: '2026-07-12'
 sources:
 - url: https://ai-heartland.com/news/news-claude-sonnet-5-release
   title: Claude Sonnet 5（claude-sonnet-5-20260401）リリース：SWE-bench 92%超えで開発者が知るべき全仕様
@@ -16,10 +17,26 @@ sources:
 - url: https://ai-heartland.com/explain/claude-sonnet-5-guide
   title: Claude Sonnet 5 解説｜Opus級の品質をSonnet価格で使う新モデルの全貌
   date: '2026-07-01'
+- url: https://qiita.com/sakutto-panda/items/47a2b51bf6c4f513ec49
+  title: 【2026/6/30】Claude Sonnet 5リリース — 1Mコンテキスト標準化・temperature廃止・実質3割の値上げも
+  date: '2026-07-12'
 ---
 
 
+
 # Sonnet 5 Release
+
+---
+
+## 2026-07-12
+
+### 【2026/6/30】Claude Sonnet 5リリース — 1Mコンテキスト標準化・temperature廃止・実質3割の値上げも
+
+2026年6月30日、Anthropic が Claude Sonnet 5 をリリース。1Mトークンコンテキストが標準となり、Claude Code のデフォルトモデルに昇格。プロモ価格は $2/$10 per MTok（8月31日まで）だが、新トークナイザが約30%多くトークンを消費するため実質値上げ。API では temperature/top_p/top_k の指定が 400 エラーとなる破壊的変更を含む3つの仕様変更が導入された。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/sakutto-panda/items/47a2b51bf6c4f513ec49)
+- **重要度**: 9/10
+- **タグ**: sonnet, release, claude-code
 
 ---
 

@@ -3,6 +3,7 @@ title: Model Comparison
 category: ecosystem
 subcategory: model-comparison
 tags:
+- claude-code
 - cowork
 - haiku
 - opus
@@ -10,7 +11,7 @@ tags:
 - pricing
 - sonnet
 date: '2026-03-24'
-updated: '2026-07-11'
+updated: '2026-07-12'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -37,6 +38,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1utjwjl/sonnet_5_was_supposed_to_be_cheaper_it_cost_me
   title: Sonnet 5 was supposed to be cheaper. It cost me more than Fable 5
   date: '2026-07-11'
+- url: https://zenn.dev/lingmu/articles/2026-07-13-gpt-56-token-efficiency-showdown
+  title: AIモデル、今どれを選ぶべきか
+  date: '2026-07-12'
 ---
 
 
@@ -46,7 +50,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-07-12
+
+### AIモデル、今どれを選ぶべきか
+
+Claude Codeは処理前に33,000トークンのシステムプロンプトを送信し、OpenCodeの7,000トークンと比較してコストが高い。GPT-5.6の登場により、開発者はモデル選択を「理論」から「実コスト」の観点で判断する必要が出てきた。ローカルLLMの品質向上により、クラウドAPIコストをゼロにする選択肢も現実的になっている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/lingmu/articles/2026-07-13-gpt-56-token-efficiency-showdown)
+- **重要度**: 6/10
+- **タグ**: claude-code, performance, pricing
 
 ---
 

@@ -6,10 +6,12 @@ tags:
 - claude-api
 - mcp
 - performance
+- pricing
 - release
+- sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-06-27'
+updated: '2026-07-12'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -40,6 +42,12 @@ sources:
 - url: https://the-decoder.com/anthropic-gets-us-approval-to-bring-back-claude-mythos-5
   title: Anthropic gets US approval to bring back Claude Mythos 5
   date: '2026-06-27'
+- url: https://qiita.com/sakutto-panda/items/47a2b51bf6c4f513ec49
+  title: 【2026/6/30】Claude Sonnet 5リリース — 1Mコンテキスト標準化・temperature廃止・実質3割の値上げも
+  date: '2026-07-12'
+- url: https://zenn.dev/sktt_panda/articles/claude-sonnet-5-release-2026-07
+  title: 【2026/6/30】Claude Sonnet 5リリース — 1Mコンテキスト標準化・temperature廃止・実質3割の値上げも
+  date: '2026-07-12'
 ---
 
 
@@ -48,7 +56,30 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-07-12
+
+### 【2026/6/30】Claude Sonnet 5リリース — 1Mコンテキスト標準化・temperature廃止・実質3割の値上げも
+
+2026年6月30日、Anthropic が Claude Sonnet 5 をリリース。1Mトークンのコンテキストウィンドウが標準化され、temperature等のサンプリングパラメータ指定が廃止された。プロモ価格は$2/$10 per MTokだが、新トークナイザが約30%多くトークンを消費するため実質値上げとなる。Claude Codeのデフォルトモデルにも即日採用され、API利用者は3つの破壊的変更に注意が必要。
+
+- **ソース**: [Qiita claude](https://qiita.com/sakutto-panda/items/47a2b51bf6c4f513ec49)
+- **重要度**: 9/10
+- **タグ**: sonnet, release, 新機能
+
+---
+
+### 【2026/6/30】Claude Sonnet 5リリース — 1Mコンテキスト標準化・temperature廃止・実質3割の値上げも
+
+2026年6月30日にClaude Sonnet 5がリリース。1Mコンテキストが標準化され、8月31日までプロモ価格（$2/$10/MTok）だが、新トークナイザにより実質3割のトークン消費増で値上げ。API ではtemperature/top_p/top_k、manual extended thinking（budget_tokens）指定が400エラーとなり、adaptive thinkingがデフォルト有効化される破壊的変更あり。Claude Code v2.1.197からデフォルトモデルに昇格。
+
+- **ソース**: [Zenn claude](https://zenn.dev/sktt_panda/articles/claude-sonnet-5-release-2026-07)
+- **重要度**: 9/10
+- **タグ**: release, sonnet, pricing
 
 ---
 

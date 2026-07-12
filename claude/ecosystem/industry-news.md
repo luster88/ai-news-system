@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-18'
-updated: '2026-07-05'
+updated: '2026-07-12'
 sources:
 - url: https://the-decoder.com/anthropic-ceo-amodei-declares-there-is-no-end-to-the-rainbow-for-ai-scaling
   title: Anthropic CEO Amodei declares "there is no end to the rainbow" for AI scaling
@@ -51,6 +51,10 @@ sources:
   title: AI Daily Digest · 2026年7月6日 — GPT-5.6 Sol全モデル高リスク警告、Claude Science発表、Meta
     Llama終焉
   date: '2026-07-05'
+- url: https://the-decoder.com/openai-ceo-altman-is-now-pretty-sure-ai-is-net-job-creating-which-is-quite-the-pivot-from-predicting-mass-layoffs
+  title: OpenAI CEO Altman is now "pretty sure" AI is net job-creating, which is quite
+    the pivot from predicting mass layoffs
+  date: '2026-07-12'
 ---
 
 
@@ -61,7 +65,19 @@ sources:
 
 
 
+
 # Industry News
+
+---
+
+## 2026-07-12
+
+### OpenAI CEO Altman is now "pretty sure" AI is net job-creating, which is quite the pivot from predicting mass layoffs
+
+OpenAI CEO Sam AltmanがAIは雇用を純増させていると発言し、以前の大量解雇予測から大きく転換。Anthropic CEOも同様に見解を修正。ただし、実際の研究ではAIの生産性や労働市場への大きな影響は確認されておらず、プログラマーやライターの雇用危機はChatGPT登場前から始まっていた。AI関連の解雇は発生しているが、その理由はAIハードウェア投資への予算振り替えや株主向けの言い訳であることが多い。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/openai-ceo-altman-is-now-pretty-sure-ai-is-net-job-creating-which-is-quite-the-pivot-from-predicting-mass-layoffs)
+- **重要度**: 6/10
 
 ---
 

@@ -9,7 +9,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-05-29'
-updated: '2026-06-06'
+updated: '2026-07-12'
 sources:
 - url: https://qiita.com/hiro_qiita_/items/152cc2ef68d5fb17b790
   title: Kiro のだいぼうけん！開発記 〜ファミコンの制約を守りながらKiroとClaudeにシューティングゲームを作らせる〜
@@ -17,10 +17,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1tyot8t/claude_game_dev_feels_like_cheating
   title: Claude + game dev feels like cheating
   date: '2026-06-06'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1uue0vm/claude_helped_me_turn_a_childhood_ps2_memory_into
+  title: 'Claude helped me turn a childhood PS2 memory into a free browser game: single
+    HTML file, zero asset files'
+  date: '2026-07-12'
 ---
 
 
+
 # Game Development
+
+---
+
+## 2026-07-12
+
+### Claude helped me turn a childhood PS2 memory into a free browser game: single HTML file, zero asset files
+
+ユーザーが Claude の支援を受けて、PS2 の思い出のゲーム「Downhill Domination」をブラウザゲームとして再現。単一の HTML ファイルのみで構成され、全ての 3D モデル、テクスチャ、サウンドがコード実行時に生成される。Claude はコーディングだけでなく、ヘッドレスブラウザでのテストやトレーラー撮影まで支援し、完全にオープンソースで公開された実例。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1uue0vm/claude_helped_me_turn_a_childhood_ps2_memory_into)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

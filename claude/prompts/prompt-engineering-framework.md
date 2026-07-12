@@ -7,10 +7,11 @@ tags:
 - claude-code
 - haiku
 - opus
+- performance
 - prompt
 - 新機能
 date: '2026-03-30'
-updated: '2026-06-23'
+updated: '2026-07-12'
 sources:
 - url: https://zenn.dev/analysis/articles/prompt-master-thought-analyzer
   title: 「プロンプトを最適化する」とは何か──prompt-masterを3層フレームワークで解剖する
@@ -24,12 +25,28 @@ sources:
 - url: https://zenn.dev/nttdata_tech/articles/3241a46dca47b2
   title: なぜ LLM に大喜利が難しいのか
   date: '2026-06-23'
+- url: https://qiita.com/mguozhen/items/8c11a7005d3983512688
+  title: Claude を原始人みたいに喋らせて、トークンを65%削った話（caveman skill）
+  date: '2026-07-12'
 ---
 
 
 
 
+
 # Prompt Engineering Framework
+
+---
+
+## 2026-07-12
+
+### Claude を原始人みたいに喋らせて、トークンを65%削った話（caveman skill）
+
+Claude に「原始人」のように簡潔に回答させるスキル「caveman」の紹介。冗長な社交辞令やヘッジ表現を削除し、出力トークンを平均65%削減（範囲22-87%）。思考トークンには影響せず、コードやエラー文字列は保護。2026年3月の論文では簡潔な回答が正確性を26ポイント向上させたケースも報告。法律・医療などニュアンスが重要な場面では非推奨だが、デバッグやレビューでは有効。
+
+- **ソース**: [Qiita claude](https://qiita.com/mguozhen/items/8c11a7005d3983512688)
+- **重要度**: 6/10
+- **タグ**: prompt, claude-code, performance
 
 ---
 

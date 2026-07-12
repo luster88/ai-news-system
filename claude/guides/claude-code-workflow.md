@@ -15,7 +15,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-07-10'
+updated: '2026-07-12'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -203,6 +203,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1usno3r/i_made_a_pirate_mmo_with_fable_and_the_entire
   title: I made a Pirate MMO with Fable, and the entire game is only 5MB.
   date: '2026-07-10'
+- url: https://qiita.com/kyosuke_hayashi/items/842bcae9be4cefd9bce8
+  title: Claude Codeで「自己進化するデザインナレッジベース」を .claude ディレクトリに構築する
+  date: '2026-07-12'
 ---
 
 
@@ -255,7 +258,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-07-12
+
+### Claude Codeで「自己進化するデザインナレッジベース」を .claude ディレクトリに構築する
+
+Claude Codeを「Design Systems Architect」として運用するプロンプトを紹介。チャットに投げるだけで~/.claude/skills/にグローバルスキルが自動生成され、.claude/knowledge/にプロジェクト固有ナレッジを蓄積する構造を構築。Apple HIGを設計原則、Mobbinを実例集として使い分け、コピーではなく設計思想・UX原則の言語化を重視。デザインレビューにおける文脈継続と知識の自己進化を実現する。
+
+- **ソース**: [Qiita claude](https://qiita.com/kyosuke_hayashi/items/842bcae9be4cefd9bce8)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

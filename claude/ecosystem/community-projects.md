@@ -10,7 +10,7 @@ tags:
 - haiku
 - prompt
 date: '2026-04-25'
-updated: '2026-06-28'
+updated: '2026-07-12'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sv7fvc/im_a_nursing_student_who_built_a_660kpage
   title: I’m a nursing student who built a 660K-page pharmaceutical database using
@@ -22,11 +22,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1ui05sr/day_32_of_building_gta_6_using_claude
   title: Day 32 of building GTA 6 using claude
   date: '2026-06-28'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1uub12j/day_43_of_building_gta_6_using_claude
+  title: Day 43 of building GTA 6 using claude
+  date: '2026-07-12'
 ---
 
 
 
+
 # Community Projects
+
+---
+
+## 2026-07-12
+
+### Day 43 of building GTA 6 using claude
+
+開発者がClaudeを使用してGTA風のボクセルスタイルオンラインゲーム「The Flair Game」を43日間かけて開発中。プレイヤーがプロンプトで車・建物・武器を生成でき、NPCがAIエージェントとして動作する動的な世界を構築している。本日のアップデートではキャラクターアニメーション、銀行システム、ショップ改善、NPC改良、パフォーマンス向上を実装し、コミュニティからのフィードバックを求めている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1uub12j/day_43_of_building_gta_6_using_claude)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 
