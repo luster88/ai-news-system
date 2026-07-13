@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-07-07'
+updated: '2026-07-13'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -58,6 +58,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1uq5wbb/a_race_to_technofeudalism_while_most_people_arent
   title: A race to techno-feudalism while most people aren't paying attention?
   date: '2026-07-07'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1uv70kq/honest_question_what_are_you_building_that_you
+  title: 'Honest question: What are you building that you need fable 5 so badly?'
+  date: '2026-07-13'
 ---
 
 
@@ -71,7 +74,20 @@ sources:
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-07-13
+
+### Honest question: What are you building that you need fable 5 so badly?
+
+Reddit r/ClaudeAI で、経験豊富なエンジニアが「なぜそこまで Fable 5（Claude の新モデル）を必要とするのか」という疑問を投げかけている。投稿者は Claude Pro で Opus 4.8 を使用し、大規模データパイプライン（1日1500億イベント）を扱う業務でも Opus 4.6 や Sonnet 5 で十分対応できていると述べ、新モデルへの強い需要の背景にあるユースケースについてコミュニティに質問している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1uv70kq/honest_question_what_are_you_building_that_you)
+- **重要度**: 4/10
+- **タグ**: opus, sonnet
 
 ---
 

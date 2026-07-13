@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-31'
-updated: '2026-07-05'
+updated: '2026-07-13'
 sources:
 - url: https://qiita.com/nishiken1118/items/6b16557fcabf784c861e
   title: 過去の session をほしい時に参照する方針で claude-mem のトークン消費を激減させた話
@@ -44,6 +44,9 @@ sources:
 - url: https://qiita.com/tanimoto-hikari/items/a32319f53e053c6a149b
   title: Claude Code お掃除本舗。最大効率を発揮し続けるための3S
   date: '2026-07-05'
+- url: https://qiita.com/ishizakahiroshi/items/8ffdb968963c4e992662
+  title: 200 行ルールを疑って、自分の CLAUDE.md を『発火頻度』で仕分け直した話
+  date: '2026-07-13'
 ---
 
 
@@ -54,7 +57,20 @@ sources:
 
 
 
+
 # Claude Code Optimization
+
+---
+
+## 2026-07-13
+
+### 200 行ルールを疑って、自分の CLAUDE.md を『発火頻度』で仕分け直した話
+
+CLAUDE.mdの最適化において、「200行ルール」という経験則を疑い、行数ではなく「発火頻度」を基準に内容を整理した実践記事。251行から114行に削減したが、トークン消費やキャッシュの観点から行数制限自体は根拠がないことを指摘。常時発火する内容はCLAUDE.mdに残し、特定タスク時のみ必要な内容は別ファイルに分離する方針で再構成した。
+
+- **ソース**: [Qiita claude](https://qiita.com/ishizakahiroshi/items/8ffdb968963c4e992662)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

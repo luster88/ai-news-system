@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-07-04'
+updated: '2026-07-13'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -96,6 +96,10 @@ sources:
 - url: https://ai-heartland.com/agent/open-skills
   title: OpenSkills徹底解説：Claude Skillsをローカル・任意のLLMで動かすMCPサーバー
   date: '2026-07-04'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1uvoj4d/i_built_navi_so_it_yells_hey_listen_when_claude
+  title: I built Navi so It yells "Hey! Listen!" when Claude Code needs me, hope you
+    like it :D
+  date: '2026-07-13'
 ---
 
 
@@ -122,7 +126,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-07-13
+
+### I built Navi so It yells "Hey! Listen!" when Claude Code needs me, hope you like it :D
+
+コミュニティメンバーが「Navi」という MCP サーバーを開発し、Claude Code が承認を必要とする際に「Hey! Listen!」という音声で通知する機能を実装しました。赤色は承認待ち、黄色は警告、緑色は完了を示し、任意の CLI に追加可能です。GitHub で公開されている小規模な MVP プロジェクトです。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1uvoj4d/i_built_navi_so_it_yells_hey_listen_when_claude)
+- **重要度**: 4/10
+- **タグ**: mcp, claude-code, cowork
 
 ---
 

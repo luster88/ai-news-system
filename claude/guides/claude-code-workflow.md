@@ -15,7 +15,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-07-12'
+updated: '2026-07-13'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -206,6 +206,12 @@ sources:
 - url: https://qiita.com/kyosuke_hayashi/items/842bcae9be4cefd9bce8
   title: Claude Codeで「自己進化するデザインナレッジベース」を .claude ディレクトリに構築する
   date: '2026-07-12'
+- url: https://zenn.dev/interpark/articles/69be0c7b020d45
+  title: Claude Code をフル活用してサスケWorksのお知らせ文を自動で作りたい
+  date: '2026-07-13'
+- url: https://qiita.com/kztmk_media_pep/items/ebf774a62c22e9111c1d
+  title: マルチSNSビューアーをAIに作ってもらった話
+  date: '2026-07-13'
 ---
 
 
@@ -259,7 +265,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-07-13
+
+### Claude Code をフル活用してサスケWorksのお知らせ文を自動で作りたい
+
+サスケWorksのお知らせ文生成を自動化するため、49件の過去データをYAMLフロントマター形式で整理し、Claude Codeの非対話型CLI実行モード（claude -p）を活用した分析フローを構築。AIに考えさせる部分を最小限に絞り、機械的処理はスクリプト化することで、安定した出力を目指す取り組みを紹介。定形タスクでのAI活用における「素の実力」の評価と改善プロセスが詳述されている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/interpark/articles/69be0c7b020d45)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
+
+---
+
+### マルチSNSビューアーをAIに作ってもらった話
+
+開発者がClaude Codeを中心としたAIを活用し、マルチSNSビューアー「mokumokuren」を構築した事例。コードをほぼ自力で書かずに完成させた過程で、AIに反論させる「grill」手法で企画を固め、AIクライアントが課金ゲートを回避する問題に遭遇。MCPサーバー内蔵、セッション分離などの実装をAIに任せ、マニュアル・LP・署名付きリリースCIまで自動化。Pro版の利用上限が逆に開発者の休憩タイマーとなり、AIとの協働で製品を完成させた実践的なケーススタディ。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kztmk_media_pep/items/ebf774a62c22e9111c1d)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, cowork
 
 ---
 

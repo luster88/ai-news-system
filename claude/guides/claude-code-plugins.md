@@ -6,12 +6,13 @@ tags:
 - claude-api
 - claude-code
 - cowork
+- mcp
 - prompt
 - setup
 - vscode
 - 新機能
 date: '2026-04-07'
-updated: '2026-07-07'
+updated: '2026-07-13'
 sources:
 - url: https://qiita.com/moha0918_/items/b3011c218210ab2695b7
   title: プラグイン作成の3つの方法、結局どれを選ぶべき？
@@ -53,6 +54,9 @@ sources:
 - url: https://zenn.dev/yuen/articles/1b9f058763acd4
   title: Flutter × Claude Codeでタロット占いアプリを作る - 仕様書からケルト十字拡張まで
   date: '2026-07-07'
+- url: https://qiita.com/syun136_616/items/c552569ad46e35717d9c
+  title: Claude Code 使い方まとめ【2026年版】設定から実践Tips まで
+  date: '2026-07-13'
 ---
 
 
@@ -66,7 +70,20 @@ sources:
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-07-13
+
+### Claude Code 使い方まとめ【2026年版】設定から実践Tips まで
+
+Claude CodeはAnthropic製のCLIベースAIコーディングエージェントで、ファイル操作・シェル実行・Web検索を自律的に実行できる。CLAUDE.mdによる指示の永続化、Hookシステムによる自動化、MCPサーバー連携が主な差別化ポイント。2025年2月ベータ公開、同年5月に正式リリースされ、2026年現在はClaude Sonnet 4.6およびOpus 4.8を利用可能。料金はMaxサブスクリプションまたはAPI従量課金で、バックグラウンド実行による並列作業がCursorやGitHub Copilotとの大きな違い。
+
+- **ソース**: [Qiita claude](https://qiita.com/syun136_616/items/c552569ad46e35717d9c)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, mcp
 
 ---
 
