@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-02'
-updated: '2026-06-24'
+updated: '2026-07-14'
 sources:
 - url: https://ai-heartland.com/ai/gemini/oh-my-gemini
   title: oh-my-gemini：Gemini CLIのマルチエージェント並列実行ツール
@@ -25,12 +25,38 @@ sources:
 - url: https://ai-heartland.com/agent/paseo-guide
   title: Paseo徹底解説｜複数AIコーディングエージェントを束ねるOSSオーケストレーター【AGPL】
   date: '2026-06-24'
+- url: https://qiita.com/Koukyosyumei/items/9ff3ddef9c11a44bcb30
+  title: Claude Code・Codexのマルチエージェント構成をコードで定義する技術 ― プログラマブル・オーケストレーション入門
+  date: '2026-07-14'
 ---
 
 
 
 
+
 # Multi Agent Orchestration
+
+---
+
+## 2026-07-14
+
+### Claude Code・Codexのマルチエージェント構成をコードで定義する技術 ― プログラマブル・オーケストレーション入門
+
+Claude CodeやCodexなどの複数のコーディングエージェントを組み合わせたマルチエージェントワークフローを、通常のPython/Rustコードとして記述・実行できるフレームワーク「h5i-orchestra」と「h5i-python」の解説記事。エージェント間の並行実行、相互レビュー、条件分岐、テスト検証、成果物選択などの複雑なオーケストレーションを、特別なDSLではなく自然なPythonコードで表現可能。各エージェントは独立したサンドボックスとGit worktree内で作業し、再現可能なワークフローとして管理できる。
+
+- **ソース**: [Qiita claude](https://qiita.com/Koukyosyumei/items/9ff3ddef9c11a44bcb30)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, 新機能
+
+---
+
+### Claude Code・Codexのマルチエージェント構成をコードで定義する技術 ― プログラマブル・オーケストレーション入門
+
+Claude CodeやCodexなど複数のコーディングエージェントを組み合わせたマルチエージェントワークフローを、通常のPython/Rustコードで記述・実行できるフレームワーク「h5i-orchestra」と「h5i-python」の紹介記事。並列実行、相互レビュー、条件分岐を含む複雑な開発プロセスを再現可能な形でプログラム化でき、各エージェントは独立したサンドボックスとGit worktree内で作業するため環境を汚染しない。Conductorクラスを中心に、エージェントの雇用、作業依頼、レビュー、成果物の検証・選択・適用までを一貫して管理できる。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Koukyosyumei/items/9ff3ddef9c11a44bcb30)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

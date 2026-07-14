@@ -15,7 +15,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-07-13'
+updated: '2026-07-14'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -212,6 +212,9 @@ sources:
 - url: https://qiita.com/kztmk_media_pep/items/ebf774a62c22e9111c1d
   title: マルチSNSビューアーをAIに作ってもらった話
   date: '2026-07-13'
+- url: https://zenn.dev/chiwamaru/articles/claude-claudecode-two-day-launch
+  title: ドメイン取得から48時間で7,800件のデータベースサイトを公開した、Claude×Claude Codeの分業術
+  date: '2026-07-14'
 ---
 
 
@@ -266,7 +269,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-07-14
+
+### ドメイン取得から48時間で7,800件のデータベースサイトを公開した、Claude×Claude Codeの分業術
+
+個人開発者が給付金データベースサイト（7,800件）をドメイン取得から48時間で公開した事例。Claude Code（実装担当）とClaude（レビュー担当）の二体制で分業し、人間は判断と指示のみ担当。フェーズ分割・チェックポイント駆動・AIレポートをAIにレビューさせる手法で手戻りを削減。YMYL領域のため事実検証は人間が最終確認する設計を採用。
+
+- **ソース**: [Zenn claude](https://zenn.dev/chiwamaru/articles/claude-claudecode-two-day-launch)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

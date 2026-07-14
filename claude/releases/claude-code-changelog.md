@@ -6,11 +6,12 @@ tags:
 - bugfix
 - claude-code
 - mcp
+- performance
 - release
 - sonnet
 - 新機能
 date: '2026-06-29'
-updated: '2026-07-11'
+updated: '2026-07-14'
 sources:
 - url: https://qiita.com/moha0918_/items/8bd90fc2c1391c4769a1
   title: Claude Code v0.2.21〜v2.1.195｜CLIからマルチエージェント基盤への全履歴｜毎日Changelog解説
@@ -45,6 +46,9 @@ sources:
 - url: https://qiita.com/picnic/items/d1ac24b797423941d494
   title: Claude Code v2.1.207の破壊的変更まとめ：Auto mode既定化とプラグインのシェル対策
   date: '2026-07-11'
+- url: https://qiita.com/moha0918_/items/7701fef6ec098243ba32
+  title: Claude Code v2.1.208〜v2.1.209｜長時間セッションのメモリリーク一掃｜毎日Changelog解説
+  date: '2026-07-14'
 ---
 
 
@@ -57,7 +61,30 @@ sources:
 
 
 
+
 # Claude Code Changelog
+
+---
+
+## 2026-07-14
+
+### Claude Code v2.1.208〜v2.1.209｜長時間セッションのメモリリーク一掃｜毎日Changelog解説
+
+Claude Code v2.1.208では長時間セッションのメモリリークを修正し、ツール実行が最大7倍、transcriptサイズが最大79倍改善された。MCP stdeerの64MB制限、LSPドキュメントのLRU管理、file editキャッシュの16MB上限化など、複数のメモリ最適化が実施された。v2.1.209は背景セッションのダイアログ回帰を修正するhotfixリリース。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/7701fef6ec098243ba32)
+- **重要度**: 7/10
+- **タグ**: claude-code, bugfix, performance
+
+---
+
+### Claude Code v2.1.208〜v2.1.209｜長時間セッションのメモリリーク一掃｜毎日Changelog解説
+
+Claude Code v2.1.208では長時間セッションで発生していた複数のメモリリークを修正し、ツール実行を最大7倍高速化、transcriptサイズを最大79倍削減しました。MCP stdioの stderr制限（64MB）、LSPドキュメントのLRU管理、file editキャッシュの制限など、メモリとパフォーマンスの最適化が中心です。v2.1.209は背景セッションでのダイアログ表示の回帰バグを修正するhotfixです。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/7701fef6ec098243ba32)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, performance
 
 ---
 
