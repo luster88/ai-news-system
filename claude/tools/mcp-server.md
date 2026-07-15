@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-07-13'
+updated: '2026-07-15'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -100,6 +100,9 @@ sources:
   title: I built Navi so It yells "Hey! Listen!" when Claude Code needs me, hope you
     like it :D
   date: '2026-07-13'
+- url: https://ai-heartland.com/mcp/serena-mcp-guide
+  title: Serena MCPの使い方｜セマンティック解析でClaude Codeのトークンを削る
+  date: '2026-07-15'
 ---
 
 
@@ -127,7 +130,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-07-15
+
+### Serena MCPの使い方｜セマンティック解析でClaude Codeのトークンを削る
+
+Serena MCPは、Claude Codeが大規模リポジトリを扱う際のトークン消費を削減するOSSツール。LSP（Language Server Protocol）を利用してコードをシンボル単位で解析し、ファイル全体を読み込む代わりに必要な定義や参照のみをAIに渡す。find_symbolやreplace_symbol_bodyなど、IDE相当の精度でコード操作が可能で、40言語以上に対応。uvでインストールし、Claude Codeにide-assistantコンテキストとして登録して利用する。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/mcp/serena-mcp-guide)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code, performance
 
 ---
 

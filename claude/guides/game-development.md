@@ -7,9 +7,10 @@ tags:
 - cowork
 - opus
 - prompt
+- vscode
 - 新機能
 date: '2026-05-29'
-updated: '2026-07-12'
+updated: '2026-07-15'
 sources:
 - url: https://qiita.com/hiro_qiita_/items/152cc2ef68d5fb17b790
   title: Kiro のだいぼうけん！開発記 〜ファミコンの制約を守りながらKiroとClaudeにシューティングゲームを作らせる〜
@@ -21,11 +22,27 @@ sources:
   title: 'Claude helped me turn a childhood PS2 memory into a free browser game: single
     HTML file, zero asset files'
   date: '2026-07-12'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1uxarq9/im_building_a_fighter_jet_game_with_claude
+  title: I’m building a fighter jet game with Claude
+  date: '2026-07-15'
 ---
 
 
 
+
 # Game Development
+
+---
+
+## 2026-07-15
+
+### I’m building a fighter jet game with Claude
+
+ユーザーがClaude Codeを使って「AFTERBURN」という低ポリゴンの戦闘機ゲームを開発中。Claudeはフライトコントロール、武器システム、ドッグファイトAI、格納庫、リプレイシステムの実装を支援。現在、複数の航空機、ミサイル、爆弾、ドッグファイト、大規模マップ、シネマティックリプレイ機能を搭載している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1uxarq9/im_building_a_fighter_jet_game_with_claude)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, vscode
 
 ---
 
