@@ -15,7 +15,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-07-14'
+updated: '2026-07-16'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -215,6 +215,9 @@ sources:
 - url: https://zenn.dev/chiwamaru/articles/claude-claudecode-two-day-launch
   title: ドメイン取得から48時間で7,800件のデータベースサイトを公開した、Claude×Claude Codeの分業術
   date: '2026-07-14'
+- url: https://zenn.dev/gorinvestor/articles/2e61c069df951a
+  title: 情報工学科卒、でも何年もコードを書いていない生産技術者がClaude Codeで動画自動化パイプラインを組んでみた
+  date: '2026-07-16'
 ---
 
 
@@ -270,7 +273,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-07-16
+
+### 情報工学科卒、でも何年もコードを書いていない生産技術者がClaude Codeで動画自動化パイプラインを組んでみた
+
+情報工学科出身で数年間コードを書いていなかった生産技術者が、Claude Codeを使って動画自動化パイプラインを構築した事例。Whisperでの音声書き起こし、Claude APIでのテキスト整形、ffmpegでの字幕合成を一つのコマンドで実行できるシステムを実現。昔の文法知識より「何を実現したいか」を言語化する力が重要で、否定形での明示的な指示がAI活用の鍵になることを発見した。
+
+- **ソース**: [Zenn claude](https://zenn.dev/gorinvestor/articles/2e61c069df951a)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

@@ -5,10 +5,11 @@ subcategory: claude-code-release
 tags:
 - bugfix
 - claude-code
+- pricing
 - release
 - 新機能
 date: '2026-06-05'
-updated: '2026-07-15'
+updated: '2026-07-16'
 sources:
 - url: https://qiita.com/picnic/items/0e8844c6590cb7dd838a
   title: Claude Code v2.1.163 新機能とバグ修正：バージョン強制機能が追加
@@ -19,10 +20,26 @@ sources:
 - url: https://qiita.com/picnic/items/2623cb5a5f81928b4477
   title: Claude Code v2.1.210で強化された間接プロンプトインジェクション対策とworktree分離の修正
   date: '2026-07-15'
+- url: https://qiita.com/moha0918_/items/c8b144e3ba36744b964b
+  title: Claude Code v2.1.211｜Bedrock/Vertexのキャッシュ課金バグが直る｜毎日Changelog解説
+  date: '2026-07-16'
 ---
 
 
+
 # Claude Code Release
+
+---
+
+## 2026-07-16
+
+### Claude Code v2.1.211｜Bedrock/Vertexのキャッシュ課金バグが直る｜毎日Changelog解説
+
+Claude Code v2.1.211のリリース。Bedrock/Vertex/Mantle/Foundryでプロンプトキャッシュが効かず、システムコンテキスト末尾が毎リクエスト新規トークンとして課金されていた重大なバグが修正された。長いシステムプロンプトを使用していた場合、無駄な入力トークン課金が積み上がっていた。新機能として--forward-subagent-textフラグが追加され、サブエージェントの本文とthinkingをstream-jsonに出力可能に。PreToolUse hookのask判定がauto modeに上書きされない修正も実施。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/c8b144e3ba36744b964b)
+- **重要度**: 8/10
+- **タグ**: claude-code, bugfix, pricing
 
 ---
 

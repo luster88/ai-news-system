@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-31'
-updated: '2026-07-13'
+updated: '2026-07-16'
 sources:
 - url: https://qiita.com/nishiken1118/items/6b16557fcabf784c861e
   title: 過去の session をほしい時に参照する方針で claude-mem のトークン消費を激減させた話
@@ -47,6 +47,9 @@ sources:
 - url: https://qiita.com/ishizakahiroshi/items/8ffdb968963c4e992662
   title: 200 行ルールを疑って、自分の CLAUDE.md を『発火頻度』で仕分け直した話
   date: '2026-07-13'
+- url: https://qiita.com/eiji-noguchi/items/ad30cd311f083cd269d0
+  title: CLAUDE.mdによるClaude Codeの探索コスト削減を実測
+  date: '2026-07-16'
 ---
 
 
@@ -58,7 +61,20 @@ sources:
 
 
 
+
 # Claude Code Optimization
+
+---
+
+## 2026-07-16
+
+### CLAUDE.mdによるClaude Codeの探索コスト削減を実測
+
+Claude Code で CLAUDE.md を使った場合のトークン消費削減効果を実測検証。FastAPI プロジェクトで「ログイン機能を説明して」という質問に対し、CLAUDE.md なしは14ステップ・Explore サブエージェント起動、ありは6ステップ・直接ファイル読み取りで完了。結果、入力トークンは約54%、出力トークンは約45%削減され、合計では約54%のコスト削減を確認。CLAUDE.md はプロジェクト概要とディレクトリ構成を記載することで、探索経路を最適化しサブエージェント起動を回避できることが実証された。
+
+- **ソース**: [Qiita claude](https://qiita.com/eiji-noguchi/items/ad30cd311f083cd269d0)
+- **重要度**: 7/10
+- **タグ**: claude-code, performance, prompt
 
 ---
 

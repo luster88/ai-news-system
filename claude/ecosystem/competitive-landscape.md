@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-23'
-updated: '2026-07-08'
+updated: '2026-07-16'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -62,6 +62,10 @@ sources:
 - url: https://techcrunch.com/video/why-this-ceo-thinks-video-games-make-better-training-data-than-the-internet
   title: Why this CEO thinks video games make better training data than the internet
   date: '2026-07-08'
+- url: https://techcrunch.com/2026/07/16/moonshots-upcoming-kimi-3-is-expected-to-close-the-gap-with-anthropics-opus-4-8
+  title: Moonshot’s upcoming Kimi 3 is expected to close the gap with Anthropic’s
+    Opus 4.8
+  date: '2026-07-16'
 ---
 
 
@@ -76,7 +80,20 @@ sources:
 
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-07-16
+
+### Moonshot’s upcoming Kimi 3 is expected to close the gap with Anthropic’s Opus 4.8
+
+中国のMoonshot AIが開発中のKimi K3モデルは、AnthropicのOpus 4.8に匹敵するか上回る性能を持つと報じられています。パラメータ数は2〜3兆で、中国最大のオープンウェイトモデルとなり、数日以内にリリース予定です。同社は315億ドルの評価額で資金調達中で、OpenAIやAnthropicなどの高額なクローズドソースモデルに対する代替案として注目されています。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/07/16/moonshots-upcoming-kimi-3-is-expected-to-close-the-gap-with-anthropics-opus-4-8)
+- **重要度**: 7/10
+- **タグ**: opus
 
 ---
 

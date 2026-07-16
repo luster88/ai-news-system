@@ -11,7 +11,7 @@ tags:
 - pricing
 - sonnet
 date: '2026-03-24'
-updated: '2026-07-12'
+updated: '2026-07-16'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -41,6 +41,10 @@ sources:
 - url: https://zenn.dev/lingmu/articles/2026-07-13-gpt-56-token-efficiency-showdown
   title: AIモデル、今どれを選ぶべきか
   date: '2026-07-12'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1uyb1i9/i_gave_gpt56_sol_claude_opus_48_and_grok_45_the
+  title: I gave GPT-5.6 Sol, Claude Opus 4.8, and Grok 4.5 the same 100 frontend briefs—here
+    are all 300 results
+  date: '2026-07-16'
 ---
 
 
@@ -51,7 +55,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-07-16
+
+### I gave GPT-5.6 Sol, Claude Opus 4.8, and Grok 4.5 the same 100 frontend briefs—here are all 300 results
+
+GPT-5.6 Sol、Claude Opus 4.8、Grok 4.5の3つのAIモデルに同じ100個のフロントエンドデザイン課題を与え、合計300個のウェブサイトを生成する大規模比較実験を実施。各モデルの視覚的な特徴やデザインパターンの傾向を分析できる「Sitegeist」というベンチマークが公開された。建築、テクノロジー、スキンケア、ストリートウェア、コーヒーなど多様なカテゴリーをカバーし、タイポグラフィ、レイアウト、色使いなどの視覚的指紋を比較可能。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1uyb1i9/i_gave_gpt56_sol_claude_opus_48_and_grok_45_the)
+- **重要度**: 6/10
+- **タグ**: opus, performance, cowork
 
 ---
 

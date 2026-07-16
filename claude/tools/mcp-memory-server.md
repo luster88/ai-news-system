@@ -7,8 +7,9 @@ tags:
 - claude-code
 - cowork
 - mcp
+- 新機能
 date: '2026-03-30'
-updated: '2026-03-30'
+updated: '2026-07-16'
 sources:
 - url: https://zenn.dev/cloto/books/claude-memory-mcp-server
   title: Claudeは明日もあなたを忘れる — MCP Memory Server cpersona 設計と実践
@@ -16,9 +17,25 @@ sources:
 - url: https://zenn.dev/cloto/articles/claude-memory-changed-dev-experience
   title: Claude CodeとClaude Desktopの記憶を共有して変わったこと
   date: '2026-03-30'
+- url: https://zenn.dev/cloto/books/claude-memory-mcp-server-archive
+  title: 【旧版・無料公開】Claudeは明日もあなたを忘れる — MCP Memory Server cpersona 設計と実践
+  date: '2026-07-16'
 ---
 
+
 # Mcp Memory Server
+
+---
+
+## 2026-07-16
+
+### 【旧版・無料公開】Claudeは明日もあなたを忘れる — MCP Memory Server cpersona 設計と実践
+
+MCP Memory Server「cpersona」の設計と実践を解説した記事。Claudeに永続的な記憶を持たせるため、3層ハイブリッド構造、Confidence Score（記憶の確からしさの数値化）、Anti-Contamination（エージェント間の記憶分離）などの技術設計を詳述。AI エージェントに人格と記憶を持たせるための実装ガイド。
+
+- **ソース**: [Zenn claude](https://zenn.dev/cloto/books/claude-memory-mcp-server-archive)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-api, 新機能
 
 ---
 
