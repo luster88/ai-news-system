@@ -9,7 +9,7 @@ tags:
 - release
 - 新機能
 date: '2026-06-05'
-updated: '2026-07-16'
+updated: '2026-07-17'
 sources:
 - url: https://qiita.com/picnic/items/0e8844c6590cb7dd838a
   title: Claude Code v2.1.163 新機能とバグ修正：バージョン強制機能が追加
@@ -23,11 +23,50 @@ sources:
 - url: https://qiita.com/moha0918_/items/c8b144e3ba36744b964b
   title: Claude Code v2.1.211｜Bedrock/Vertexのキャッシュ課金バグが直る｜毎日Changelog解説
   date: '2026-07-16'
+- url: https://qiita.com/moha0918_/items/9be8047b5f9980465623
+  title: Claude Code v2.1.212｜暴走ループにセッション上限｜毎日Changelog解説
+  date: '2026-07-17'
+- url: https://zenn.dev/galirage/articles/code-with-claude-2026-london-summary
+  title: Claudeの開発者イベント「Code with Claude 2026」総まとめ〜ロンドン編〜
+  date: '2026-07-17'
 ---
 
 
 
+
 # Claude Code Release
+
+---
+
+## 2026-07-17
+
+### Claude Code v2.1.212｜暴走ループにセッション上限｜毎日Changelog解説
+
+Claude Code v2.1.212で、WebSearchとサブエージェント生成にセッション上限（デフォルト200回）が追加され、暴走ループを防止する安全弁が実装されました。Plan modeが許可なしにファイルを書き換えていた重大なバグが修正され、/forkコマンドがバックグラウンドセッション化に変更されました。MCPツールは2分超で自動的にバックグラウンド実行され、worktreeのsymlink経由でリポジトリ外に書き込む脆弱性も修正されています。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/9be8047b5f9980465623)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, bugfix
+
+---
+
+### Claudeの開発者イベント「Code with Claude 2026」総まとめ〜ロンドン編〜
+
+2026年5月19日にロンドンで開催されたAnthropicの開発者カンファレンス「Code with Claude 2026」の総まとめ記事。全24セッションから、Claude APIの利用量が前年比17倍に拡大したこと、Self-hosted sandboxes、MCP tunnels、Routines、CI Autofix、Claude Code Desktopなど6つの新機能が発表された。Spotify、Shopify、Mercado Libreなどの企業事例も紹介され、Auto ModeやAuto Memoryなどの機能アップデートが詳説されている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/galirage/articles/code-with-claude-2026-london-summary)
+- **重要度**: 9/10
+- **タグ**: claude-code, 新機能, release
+
+---
+
+### Claude Code v2.1.212｜暴走ループにセッション上限｜毎日Changelog解説
+
+Claude Code v2.1.212 では、WebSearch とサブエージェント生成にセッション単位で 200 回の上限が導入され、無限ループによる暴走を防止。Plan mode が承認なしでファイル変更コマンドを実行していたバグと、worktree の symlink を悪用してリポジトリ外にファイルを書き込める脆弱性が修正された。また、/fork コマンドの挙動が変更され、新しいバックグラウンドセッションに会話を複製する方式に刷新された。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/9be8047b5f9980465623)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

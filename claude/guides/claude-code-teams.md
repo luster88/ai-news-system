@@ -7,7 +7,7 @@ tags:
 - cowork
 - 新機能
 date: '2026-04-08'
-updated: '2026-07-15'
+updated: '2026-07-17'
 sources:
 - url: https://qiita.com/moha0918_/items/9682b1ec8b71e884ec13
   title: 複数のAIが同時に働く仕組み - Agent Teamsで実現するチーム開発の全体像
@@ -16,10 +16,26 @@ sources:
   title: 'I built a web game with over 25K plays so far using Claude: You try to time
     the market against a couch that buys once and does nothing.'
   date: '2026-07-15'
+- url: https://zenn.dev/takababa/articles/20260717-biolt0
+  title: 第十三話：戻ってきたFable5が、最後の難問を解いた。
+  date: '2026-07-17'
 ---
 
 
+
 # Claude Code Teams
+
+---
+
+## 2026-07-17
+
+### 第十三話：戻ってきたFable5が、最後の難問を解いた。
+
+Web付箋ツール「fuSen」の開発で、モニターサイズやブラウザ幅による表示ズレという難問に直面。一時的に利用できなくなっていたClaude新モデル「Fable」が復活し、この問題を一発で解決。どんな環境でも付箋が正確に表示されるようになり、有料提供に向けた品質基準をクリアした開発ストーリー。
+
+- **ソース**: [Zenn claude](https://zenn.dev/takababa/articles/20260717-biolt0)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

@@ -9,9 +9,10 @@ tags:
 - opus
 - performance
 - pricing
+- sonnet
 - 新機能
 date: '2026-05-16'
-updated: '2026-07-14'
+updated: '2026-07-17'
 sources:
 - url: https://qiita.com/mellisaoez/items/5e1b10bbff78413287ed
   title: ChatGPT・Claude・Gemini・Grokを1つの画面で同時に動かしてみた（MultipleChatを作った話）
@@ -22,11 +23,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1uwe2id/testing_fable_5_opus_48_gpt56_and_more_through
   title: Testing Fable 5, Opus 4.8, GPT-5.6, and more through playable 3D games
   date: '2026-07-14'
+- url: https://qiita.com/xujfcn/items/ba9d61e5c8b66a70f1c1
+  title: Kimi K3 と Claude Fable 5 を実測比較：差が出たのは推論力より出力予算と検証性
+  date: '2026-07-17'
 ---
 
 
 
+
 # Multi Model Comparison
+
+---
+
+## 2026-07-17
+
+### Kimi K3 と Claude Fable 5 を実測比較：差が出たのは推論力より出力予算と検証性
+
+Kimi K3とClaude Fable 5の実測比較記事。応答速度はFable 5が37.1秒、Kimi K3が108.0秒と大きく差が出た。確率問題の途中計算ではKimi K3の方が一貫性があり、約12,500 reasoning tokensを使用。max_tokens=4000では両モデルともlengthで終了したが、7000に増やすと両方が8個のassertを通過。finish_reasonと実行テストの重要性を強調している。
+
+- **ソース**: [Qiita claude](https://qiita.com/xujfcn/items/ba9d61e5c8b66a70f1c1)
+- **重要度**: 6/10
+- **タグ**: performance, sonnet, 新機能
 
 ---
 
