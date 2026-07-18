@@ -9,7 +9,7 @@ tags:
 - release
 - 新機能
 date: '2026-06-05'
-updated: '2026-07-17'
+updated: '2026-07-18'
 sources:
 - url: https://qiita.com/picnic/items/0e8844c6590cb7dd838a
   title: Claude Code v2.1.163 新機能とバグ修正：バージョン強制機能が追加
@@ -29,12 +29,38 @@ sources:
 - url: https://zenn.dev/galirage/articles/code-with-claude-2026-london-summary
   title: Claudeの開発者イベント「Code with Claude 2026」総まとめ〜ロンドン編〜
   date: '2026-07-17'
+- url: https://qiita.com/moha0918_/items/6c6646ec2759b63216c5
+  title: Claude Code v2.1.214｜permission チェックの穴が一斉に塞がる｜毎日Changelog解説
+  date: '2026-07-18'
 ---
 
 
 
 
+
 # Claude Code Release
+
+---
+
+## 2026-07-18
+
+### Claude Code v2.1.214｜permission チェックの穴が一斉に塞がる｜毎日Changelog解説
+
+Claude Code v2.1.214 では、permission チェックの重大なバグが修正されました。Edit(src/**) のような allow ルールがツリー内のどこにある src/ への書き込みも自動承認していた問題が解消され、<cwd>/src のみに限定されました。Bash の permission チェックも厳格化され、10,000 文字超のコマンドや FD リダイレクトなどが自動承認されなくなりました。また、悪質な利用や脱獄試行に対して Claude 側からセッションを終了できる EndConversation ツールが追加されました。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/6c6646ec2759b63216c5)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
+
+---
+
+### Claude Code v2.1.214｜permission チェックの穴が一斉に塞がる｜毎日Changelog解説
+
+Claude Code v2.1.214 では、permission チェックの複数の脆弱性が修正されました。Edit(src/**) のような allow ルールが意図せず深い階層の src/ ディレクトリまで自動承認していたバグが修正され、<cwd>/src のみに限定されました。Bash コマンドの permission チェックも厳格化され、10,000 文字超のコマンドや FD リダイレクト、zsh の特殊構文が自動承認されなくなりました。また、docker のデーモンリダイレクトフラグや悪質な利用に対する EndConversation ツールが追加され、セキュリティが大幅に強化されています。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/6c6646ec2759b63216c5)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

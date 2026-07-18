@@ -7,11 +7,12 @@ tags:
 - cowork
 - cursor
 - opus
+- performance
 - prompt
 - setup
 - sonnet
 date: '2026-05-05'
-updated: '2026-07-06'
+updated: '2026-07-18'
 sources:
 - url: https://zenn.dev/bentenweb_fumi/articles/fxyojdsgcwap
   title: AIで「手を動かす時間」を減らす：技術者のための時間投資戦略
@@ -31,6 +32,9 @@ sources:
 - url: https://qiita.com/TaichiEndoh/items/ad15d1fcf838decc3c8a
   title: 1人で8プロジェクトを並列開発する「業務OS」— Claude Code worktree × Skill × 公開前ゲート × Obsidianミラーvault
   date: '2026-07-06'
+- url: https://qiita.com/sinzy0925/items/7bfe17702cb31ccc9fed
+  title: AI社員に仕事を任せたら10点中6点。スキル化で8点、アプリ化で10点 あなたは、どれにする？
+  date: '2026-07-18'
 ---
 
 
@@ -38,7 +42,20 @@ sources:
 
 
 
+
 # Workflow Optimization
+
+---
+
+## 2026-07-18
+
+### AI社員に仕事を任せたら10点中6点。スキル化で8点、アプリ化で10点 あなたは、どれにする？
+
+YouTube動画要約タスクを「まるなげ」「スキル化」「アプリ化」の3方式×2モデル（Composer/Claude Opus）で18回測定比較した実験記事。Composerのアプリ化が品質・時間・コストで最良（10点/約18秒/$0.0062）。Claude+スキルも品質10点だが時間約5倍・コスト約12倍。まるなげは品質6-7点で検証コストが別途必要。スキル化・アプリ化用のプロンプト例も提供し、明日から試せる実践ガイドとして公開。
+
+- **ソース**: [Qiita claude](https://qiita.com/sinzy0925/items/7bfe17702cb31ccc9fed)
+- **重要度**: 7/10
+- **タグ**: cursor, prompt, performance
 
 ---
 

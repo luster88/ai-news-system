@@ -15,7 +15,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-07-16'
+updated: '2026-07-18'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -218,6 +218,9 @@ sources:
 - url: https://zenn.dev/gorinvestor/articles/2e61c069df951a
   title: 情報工学科卒、でも何年もコードを書いていない生産技術者がClaude Codeで動画自動化パイプラインを組んでみた
   date: '2026-07-16'
+- url: https://qiita.com/togakyo/items/db5c6332c740ccd64c19
+  title: 'Claude Code と組んで複数のKaggleコンペを回すための運用テンプレートを作った tags:'
+  date: '2026-07-18'
 ---
 
 
@@ -274,7 +277,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-07-18
+
+### Claude Code と組んで複数のKaggleコンペを回すための運用テンプレートを作った tags:
+
+Claude Code と Kaggle コンペを効率的に進めるための運用テンプレートが公開されました。CLAUDE.md を AI への常時有効な指示書として活用し、フォルダ構成・提出手順・認証情報管理・知識の蓄積方法を標準化しています。異なるジャンルの2つのコンペで横展開テストを実施し、提出方式の一般化や .gitignore の修正など、実運用で見つかった設計上の問題点を改善しました。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/togakyo/items/db5c6332c740ccd64c19)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 
