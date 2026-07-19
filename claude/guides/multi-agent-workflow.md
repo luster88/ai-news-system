@@ -3,13 +3,14 @@ title: Multi Agent Workflow
 category: guides
 subcategory: multi-agent-workflow
 tags:
+- claude-api
 - claude-code
 - cowork
 - cursor
 - prompt
 - 新機能
 date: '2026-03-29'
-updated: '2026-06-22'
+updated: '2026-07-19'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6jouf/anthropic_shares_how_to_make_claude_code_better
   title: Anthropic shares how to make Claude code better with a harness
@@ -23,12 +24,28 @@ sources:
 - url: https://zenn.dev/cutlet_of_pork/articles/three-agent-orchestration
   title: 3つのAIエージェントを連携させて全自動開発パイプラインを構築するアーキテクチャ【Claude / Codex / AGY】
   date: '2026-06-22'
+- url: https://zenn.dev/drbobt1122/articles/blog26072001
+  title: ソフトウェア開発のAIエージェントを作る(1)
+  date: '2026-07-19'
 ---
 
 
 
 
+
 # Multi Agent Workflow
+
+---
+
+## 2026-07-19
+
+### ソフトウェア開発のAIエージェントを作る(1)
+
+Claudeを用いて複数のAIエージェントが役割分担してソフトウェア開発を行うシステムの実装例。PM、アーキテクト、開発者、QAの4つのエージェントをPythonで制御し、要件定義からコーディング、テストまでの全工程を自動化。各エージェントは共通基底クラスを継承し、システムプロンプトで役割を定義。QAで検出されたバグは最大3回まで開発者に差し戻される仕組みを実装した。
+
+- **ソース**: [Zenn claude](https://zenn.dev/drbobt1122/articles/blog26072001)
+- **重要度**: 6/10
+- **タグ**: claude-api, prompt, cowork
 
 ---
 

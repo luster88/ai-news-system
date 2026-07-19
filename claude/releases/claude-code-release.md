@@ -9,7 +9,7 @@ tags:
 - release
 - 新機能
 date: '2026-06-05'
-updated: '2026-07-18'
+updated: '2026-07-19'
 sources:
 - url: https://qiita.com/picnic/items/0e8844c6590cb7dd838a
   title: Claude Code v2.1.163 新機能とバグ修正：バージョン強制機能が追加
@@ -32,13 +32,39 @@ sources:
 - url: https://qiita.com/moha0918_/items/6c6646ec2759b63216c5
   title: Claude Code v2.1.214｜permission チェックの穴が一斉に塞がる｜毎日Changelog解説
   date: '2026-07-18'
+- url: https://qiita.com/moha0918_/items/cec53cc700e513ac13d7
+  title: Claude Code v2.1.215｜/verify・/code-review の自動実行が止まる｜毎日Changelog解説
+  date: '2026-07-19'
 ---
 
 
 
 
 
+
 # Claude Code Release
+
+---
+
+## 2026-07-19
+
+### Claude Code v2.1.215｜/verify・/code-review の自動実行が止まる｜毎日Changelog解説
+
+Claude Code v2.1.215 で /verify と /code-review の自動実行が廃止されました。これまで Claude が自動的に検証やレビューを起動していましたが、今後は明示的にコマンドを実行する必要があります。トークン消費が予測しやすくなる一方、自動検証に依存していたワークフローは手順の見直しが必要です。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/cec53cc700e513ac13d7)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+### Claude Code v2.1.215｜/verify・/code-review の自動実行が止まる｜毎日Changelog解説
+
+Claude Code v2.1.215 で /verify と /code-review コマンドが自動実行されなくなり、明示的な呼び出しが必要になりました。これまで Claude が自動で検証やレビューを開始していましたが、今後はユーザーが意図的にコマンドを実行する必要があります。トークン消費が予測しやすくなる一方、自動検証を前提としたワークフローは見直しが必要です。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/cec53cc700e513ac13d7)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 

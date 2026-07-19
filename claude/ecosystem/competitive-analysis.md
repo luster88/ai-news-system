@@ -13,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-04'
-updated: '2026-07-10'
+updated: '2026-07-19'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -55,6 +55,10 @@ sources:
     don't get too used to Claude Code as your only coding agent. Chart is marked NSFW
     due to the grotesque violence.
   date: '2026-07-10'
+- url: https://the-decoder.com/moonshots-kimi-k3-outperforms-fable-5-in-frontend-code-but-lags-far-behind-in-complex-math
+  title: Moonshot's Kimi K3 outperforms Fable 5 in frontend code but lags far behind
+    in complex math
+  date: '2026-07-19'
 ---
 
 
@@ -66,7 +70,20 @@ sources:
 
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-07-19
+
+### Moonshot's Kimi K3 outperforms Fable 5 in frontend code but lags far behind in complex math
+
+Moonshot社のKimi K3モデルが、Code ArenaのFrontendベンチマークで Claude Fable 5 を含む全モデルを上回り首位を獲得。一方、FrontierMath Tier 4の高度な数学タスクでは約39%の精度に留まり、OpenAIやAnthropicのモデル（最大90%）に大きく劣る結果となった。中国モデルとして初のコードベンチマーク首位だが、専門的な数学分野では依然として差がある。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/moonshots-kimi-k3-outperforms-fable-5-in-frontend-code-but-lags-far-behind-in-complex-math)
+- **重要度**: 6/10
+- **タグ**: performance, sonnet, copilot
 
 ---
 

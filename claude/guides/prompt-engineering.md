@@ -12,7 +12,7 @@ tags:
 - prompt
 - setup
 date: '2026-04-07'
-updated: '2026-07-07'
+updated: '2026-07-19'
 sources:
 - url: https://zenn.dev/analysis/articles/thought-analyzer-agents-md
   title: コンテキストファイルは、エージェントを賢くしない ── AGENTS.mdの効果を初めて測った研究
@@ -29,13 +29,29 @@ sources:
 - url: https://zenn.dev/hayua/articles/5b6da584357698
   title: Fable 5 が消える前に、その「思考法」を Opus へ引き継げないか本気で試してみた
   date: '2026-07-07'
+- url: https://zenn.dev/otoha_io/articles/1ed6059b794bfb
+  title: 音声1本を「話し方を保ったまま」5つのSNS原稿にする — Claude二段生成の設計
+  date: '2026-07-19'
 ---
 
 
 
 
 
+
 # Prompt Engineering
+
+---
+
+## 2026-07-19
+
+### 音声1本を「話し方を保ったまま」5つのSNS原稿にする — Claude二段生成の設計
+
+個人開発ツールOTOHAで、1本の音声を話者の口調を保持したまま5つのSNS形式（X、Instagram、縦動画台本、note、メルマガ）に変換する設計を紹介。Claudeを使った二段階生成（前処理で口調プロファイルを抽出→各フォーマットに制約として適用）により、媒体間での人格のブレを防ぎ、並列処理で高速化を実現。幻覚を防ぐ共通ルールや語尾の自然さとの両立など、実装上の工夫と課題を詳しく解説。
+
+- **ソース**: [Zenn claude](https://zenn.dev/otoha_io/articles/1ed6059b794bfb)
+- **重要度**: 6/10
+- **タグ**: prompt, haiku, cowork
 
 ---
 

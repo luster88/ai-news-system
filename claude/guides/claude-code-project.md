@@ -4,17 +4,35 @@ category: guides
 subcategory: claude-code-project
 tags:
 - claude-code
+- cowork
 - setup
 - windows
+- 新機能
 date: '2026-05-11'
-updated: '2026-05-11'
+updated: '2026-07-19'
 sources:
 - url: https://zenn.dev/schhrcat/articles/d2ba511ddf35a1
   title: ClaudeCodeでviライクエディタ「FoxEditor」を作ってみた#1
   date: '2026-05-11'
+- url: https://zenn.dev/dash_lab/articles/a37b0ce16f1507
+  title: 家計シミュレーターを自分で作って公開した話
+  date: '2026-07-19'
 ---
 
+
 # Claude Code Project
+
+---
+
+## 2026-07-19
+
+### 家計シミュレーターを自分で作って公開した話
+
+Claude Codeを使って、依存ライブラリなしの単一HTMLファイルで動作する家計シミュレーターを開発。転職検討時に必要年収を把握する目的で作成され、入力データの保存・モンテカルロシミュレーション・グラフ描画まで自前実装。13カテゴリの詳細な項目設定が可能で、JSONでの設定保存機能も搭載。オフライン動作可能でデータは外部送信されず、GitHubで公開中。
+
+- **ソース**: [Zenn claude](https://zenn.dev/dash_lab/articles/a37b0ce16f1507)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-07-05'
+updated: '2026-07-19'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -58,6 +58,9 @@ sources:
 - url: https://qiita.com/kirozero/items/28a20168ace6f0299763
   title: grill-me がバズった Matt Pocock の Claude Code skills リポジトリを一通り眺めてみた
   date: '2026-07-05'
+- url: https://zenn.dev/shun_producer/articles/popular-claude-code-skills
+  title: いま使われているClaude Codeスキルとは？ 非エンジニア向け厳選8選
+  date: '2026-07-19'
 ---
 
 
@@ -73,7 +76,20 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-07-19
+
+### いま使われているClaude Codeスキルとは？ 非エンジニア向け厳選8選
+
+Claude Code のスキル機能について、非エンジニア向けに実用的な8つを厳選して紹介。スキルはClaude に専門知識と実行能力を追加する拡張機能で、書類作成・市場調査・営業メール・SEO診断・広告文生成・コードレビュー・ビジネス分析・カスタムスキル作成など、日常業務を自動化できる。スマホアプリのように必要な機能を追加することで、Claudeを特定業務に特化させられる仕組み。
+
+- **ソース**: [Zenn claude](https://zenn.dev/shun_producer/articles/popular-claude-code-skills)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, prompt
 
 ---
 

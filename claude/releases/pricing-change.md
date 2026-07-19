@@ -3,12 +3,13 @@ title: Pricing Change
 category: releases
 subcategory: pricing-change
 tags:
+- claude-api
 - claude-code
 - mcp
 - pricing
 - 新機能
 date: '2026-04-22'
-updated: '2026-06-02'
+updated: '2026-07-19'
 sources:
 - url: https://ai-heartland.com/explain/claude-pro-max-plan-comparison-2026
   title: Claude ProでClaude Codeが使えなくなった——新プラン比較と移行の判断フロー
@@ -16,10 +17,27 @@ sources:
 - url: https://qiita.com/ballondol/items/471bc13cabe18cc86fd0
   title: 【6/15〜】Claude Code の課金変更、結局「何が対象で何が対象外」なのか公式情報だけで整理した
   date: '2026-06-02'
+- url: https://the-decoder.com/anthropic-slashes-claude-fable-5-limits-in-max-and-team-premium-and-pushes-pro-users-toward-api-pricing
+  title: Anthropic slashes Claude Fable 5 limits in Max and Team Premium and pushes
+    Pro users toward API pricing
+  date: '2026-07-19'
 ---
 
 
+
 # Pricing Change
+
+---
+
+## 2026-07-19
+
+### Anthropic slashes Claude Fable 5 limits in Max and Team Premium and pushes Pro users toward API pricing
+
+Anthropicは7月20日からClaude Fable 5のMax・Team Premiumプランでの利用制限を大幅削減。ボーナス利用期間も同日終了し、通常制限が33%減少、Fable 5は更にその50%の制限となる。Pro・Team Standardユーザーは実質的にアクセス不可となり、100ドルの一時クレジット後はAPI価格での支払いが必要に。OpenAIのGPT-5.6 Solが3分の1の価格で同等性能を提供し、中国からの価格競争圧力もあり、当初の完全廃止計画から方針転換した模様。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-slashes-claude-fable-5-limits-in-max-and-team-premium-and-pushes-pro-users-toward-api-pricing)
+- **重要度**: 9/10
+- **タグ**: pricing, 新機能, claude-api
 
 ---
 
