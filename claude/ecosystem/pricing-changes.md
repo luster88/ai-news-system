@@ -3,11 +3,13 @@ title: Pricing Changes
 category: ecosystem
 subcategory: pricing-changes
 tags:
+- claude-api
 - claude-code
 - pricing
+- sonnet
 - 新機能
 date: '2026-04-21'
-updated: '2026-06-28'
+updated: '2026-07-20'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1srzhd7/psa_claude_pro_no_longer_lists_claude_code_as_an
   title: 'PSA: Claude Pro no longer lists Claude Code as an included feature'
@@ -18,11 +20,27 @@ sources:
 - url: https://qiita.com/sakutto-panda/items/620152bb67fd47b3c1c3
   title: 【6/15当日撤回】Claude Agent SDK・claude -p のサブスク別枠化は何だったのか
   date: '2026-06-28'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1v1qak5/claude_sonnet_5_price_will_be_increased_starting
+  title: Claude Sonnet 5 price will be increased starting September 1
+  date: '2026-07-20'
 ---
 
 
 
+
 # Pricing Changes
+
+---
+
+## 2026-07-20
+
+### Claude Sonnet 5 price will be increased starting September 1
+
+2026年9月1日より Claude Sonnet 5 の API 料金が全面的に50%値上げされることが発表されました。入力トークンは $2/MTok から $3/MTok、出力トークンは $10/MTok から $15/MTok に変更されます。これは当初2ヶ月間の割引期間終了によるもので、Sonnet 4.6 と比較してトークナイザーの違いも考慮すると実質30%の価格上昇となります。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1v1qak5/claude_sonnet_5_price_will_be_increased_starting)
+- **重要度**: 8/10
+- **タグ**: pricing, sonnet, claude-api
 
 ---
 

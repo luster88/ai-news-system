@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-07-06'
+updated: '2026-07-20'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -93,6 +93,9 @@ sources:
 - url: https://zenn.dev/koma26/articles/6d8fb8d0755bcc
   title: 23日間でWebツールを100本作った。売上ゼロ、週23人、いいね6個。
   date: '2026-07-06'
+- url: https://ai-heartland.com/explain/claude-code-infrastructure-showcase
+  title: Claude Codeのスキル自動起動とは｜インフラ構成ショーケースを実機検証で解説
+  date: '2026-07-20'
 ---
 
 
@@ -118,7 +121,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-07-20
+
+### Claude Codeのスキル自動起動とは｜インフラ構成ショーケースを実機検証で解説
+
+Claude Codeのスキルが自動で発火しない問題を解決する「Infrastructure Showcase」リポジトリの解説記事。UserPromptSubmitフックがプロンプトを解析し、skill-rules.jsonに基づいてスキルを自動提案・強制起動する仕組みを提供。スキル4種・フック9種・エージェント8種を含む参照ライブラリとして、TypeScriptマイクロサービス運用の実績をベースに公開されている。正規表現ベースで無料・オフライン動作が可能だが、個人プロジェクト由来のため移植は仕組み部分に価値がある。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/claude-code-infrastructure-showcase)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

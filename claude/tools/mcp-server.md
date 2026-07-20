@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-07-15'
+updated: '2026-07-20'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -103,6 +103,9 @@ sources:
 - url: https://ai-heartland.com/mcp/serena-mcp-guide
   title: Serena MCPの使い方｜セマンティック解析でClaude Codeのトークンを削る
   date: '2026-07-15'
+- url: https://ai-heartland.com/tool/openship-self-hosted-deployment-platform
+  title: Openshipとは：セルフホストできるOSSデプロイ基盤（PaaS）をコードと実機で検証【2026】
+  date: '2026-07-20'
 ---
 
 
@@ -131,7 +134,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-07-20
+
+### Openshipとは：セルフホストできるOSSデプロイ基盤（PaaS）をコードと実機で検証【2026】
+
+Openshipは自前サーバーやVPSにアプリをデプロイできるセルフホスト型のOSSデプロイ基盤（PaaS）。GitHubリポジトリを指定するだけでスタックを自動検出し、ドメイン・SSL・データベース・バックアップまで一元管理する。WebダッシュボードやCLIに加え、MCP（AIエージェント向けプロトコル）を備えており、Claude等のAIエージェントから操作可能な点が特徴。Apache-2.0ライセンスで公開されているが、バージョンはv0.1系と若いプロジェクトである。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/openship-self-hosted-deployment-platform)
+- **重要度**: 6/10
+- **タグ**: mcp, setup, claude-api
 
 ---
 
