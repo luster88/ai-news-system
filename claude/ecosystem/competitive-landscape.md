@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-23'
-updated: '2026-07-16'
+updated: '2026-07-21'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -66,6 +66,10 @@ sources:
   title: Moonshot’s upcoming Kimi 3 is expected to close the gap with Anthropic’s
     Opus 4.8
   date: '2026-07-16'
+- url: https://the-decoder.com/google-ships-three-new-gemini-flash-models-but-its-frontier-3-5-pro-remains-lost-in-training
+  title: Google ships three new Gemini Flash models but its frontier 3.5 Pro remains
+    lost in training
+  date: '2026-07-21'
 ---
 
 
@@ -81,7 +85,20 @@ sources:
 
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-07-21
+
+### Google ships three new Gemini Flash models but its frontier 3.5 Pro remains lost in training
+
+Googleが3つの新しいGemini Flashモデル（3.6 Flash、3.5 Flash-Lite、3.5 Flash Cyber）をリリースしたが、フラッグシップモデルのGemini 3.5 Proは依然として遅延している。3.6 Flashはトークン使用量を17%削減し価格も大幅に引き下げられた。一方でGemini 4のプレトレーニングは既に開始されており、GoogleはOpenAI、Anthropic、Metaとの競争で遅れを取っている状況。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/google-ships-three-new-gemini-flash-models-but-its-frontier-3-5-pro-remains-lost-in-training)
+- **重要度**: 6/10
+- **タグ**: release, performance, pricing
 
 ---
 

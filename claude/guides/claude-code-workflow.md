@@ -15,7 +15,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-26'
-updated: '2026-07-18'
+updated: '2026-07-21'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -221,6 +221,12 @@ sources:
 - url: https://qiita.com/togakyo/items/db5c6332c740ccd64c19
   title: 'Claude Code と組んで複数のKaggleコンペを回すための運用テンプレートを作った tags:'
   date: '2026-07-18'
+- url: https://qiita.com/ramu2025/items/68ac0f34628ddce331e3
+  title: Fableで学生時代につくったUnityゲームを復旧した
+  date: '2026-07-21'
+- url: https://ai-heartland.com/explain/claude-code-agent-graph-engineering
+  title: エージェントをグラフとして設計する｜Claude Code動的ワークフローで多段処理を並列化する考え方
+  date: '2026-07-21'
 ---
 
 
@@ -278,7 +284,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-07-21
+
+### Fableで学生時代につくったUnityゲームを復旧した
+
+学生時代に制作したUnityゲームの素材をPCリセットで失ったが、Claude CodeのFableを使用して配布済みビルドから復元に成功。UnityPyでAPKから画像・音声を抽出し、GUIDや参照情報を自動照合・復元することで、手作業では困難だった大量の作業を一発で完了させた事例。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/ramu2025/items/68ac0f34628ddce331e3)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, cowork
+
+---
+
+### エージェントをグラフとして設計する｜Claude Code動的ワークフローで多段処理を並列化する考え方
+
+Claude Codeの動的ワークフローとサブエージェント機能を使い、多段AIエージェントを直線的な処理から有向グラフとして設計し直す手法を解説。parallel()とpipeline()の使い分けでレイテンシを削減し、diamond・router・verifier・cycleなどのトポロジパターンを示す。「and then」が本当の依存関係かを問い直し、並列化の余地を見出すことで、待ち時間・コンテキスト肥大・脆弱性の3つの課題を同時に解決する設計アプローチを提示。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/claude-code-agent-graph-engineering)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, prompt
 
 ---
 

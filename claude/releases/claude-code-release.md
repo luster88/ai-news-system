@@ -9,7 +9,7 @@ tags:
 - release
 - 新機能
 date: '2026-06-05'
-updated: '2026-07-19'
+updated: '2026-07-21'
 sources:
 - url: https://qiita.com/picnic/items/0e8844c6590cb7dd838a
   title: Claude Code v2.1.163 新機能とバグ修正：バージョン強制機能が追加
@@ -35,6 +35,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/cec53cc700e513ac13d7
   title: Claude Code v2.1.215｜/verify・/code-review の自動実行が止まる｜毎日Changelog解説
   date: '2026-07-19'
+- url: https://qiita.com/moha0918_/items/2ad6f36fd302017b9267
+  title: Claude Code v2.1.216〜v2.1.217｜サブエージェントの無制限増殖に上限｜毎日Changelog解説
+  date: '2026-07-21'
 ---
 
 
@@ -42,7 +45,20 @@ sources:
 
 
 
+
 # Claude Code Release
+
+---
+
+## 2026-07-21
+
+### Claude Code v2.1.216〜v2.1.217｜サブエージェントの無制限増殖に上限｜毎日Changelog解説
+
+Claude Code v2.1.216〜v2.1.217 でサブエージェントの制御が強化されました。デフォルトで同時実行が20並列に制限され、ネストした生成も無効化。予算上限到達時にバックグラウンドエージェントも停止するようになり、長セッションでの応答遅延バグも修正されました。多段エージェント構成を使用している場合は環境変数の設定が必要です。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/2ad6f36fd302017b9267)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

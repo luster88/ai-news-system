@@ -12,7 +12,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-25'
-updated: '2026-07-06'
+updated: '2026-07-21'
 sources:
 - url: https://zenn.dev/aipedia/articles/5bdcc55c203d8f
   title: 【2026年4月版】ChatGPT・Claude・Gemini 徹底比較
@@ -32,13 +32,29 @@ sources:
 - url: https://qiita.com/xujfcn/items/5572380abf7da0e82f6a
   title: GLM-5.2 vs Claude Fable 5：差が出たのは推論力だけではなく出力予算だった
   date: '2026-07-06'
+- url: https://zenn.dev/pinddy/articles/f868a0f6f4453f
+  title: 研究者・天才肌・万能 — Claude / Gemini / ChatGPT 使い分け(2026年夏)
+  date: '2026-07-21'
 ---
 
 
 
 
 
+
 # Competitive Comparison
+
+---
+
+## 2026-07-21
+
+### 研究者・天才肌・万能 — Claude / Gemini / ChatGPT 使い分け(2026年夏)
+
+Claude、Gemini、ChatGPTの3つのAIを業務で並用してきた筆者による2026年夏時点の使い分け指南。Claudeは論理思考とコーディングに強く特に複雑な長期タスクで優秀だが料金が高い。Geminiはコミュニケーションと最新情報調査に優れ低価格だがコーディングは弱い。ChatGPTは汎用的で70-80点の安定性がありデザイン・画像生成に強い。ベンチマーク数値より実務での体感を重視し、今後は固定タスクでの定量評価も実施予定。
+
+- **ソース**: [Zenn claude](https://zenn.dev/pinddy/articles/f868a0f6f4453f)
+- **重要度**: 4/10
+- **タグ**: cowork, claude-code, pricing
 
 ---
 

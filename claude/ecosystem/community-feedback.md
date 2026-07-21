@@ -8,7 +8,7 @@ tags:
 - performance
 - sonnet
 date: '2026-04-18'
-updated: '2026-05-29'
+updated: '2026-07-21'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sp1mzs/look_how_they_massacred_my_boy
   title: Look how they massacred my boy
@@ -19,11 +19,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1trd1cj/i_hate_that_opus_48_is_honest
   title: i hate that opus 4.8 is honest
   date: '2026-05-29'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1v2u429/claude_doesnt_lie_anymore
+  title: claude doesn’t lie anymore
+  date: '2026-07-21'
 ---
 
 
 
+
 # Community Feedback
+
+---
+
+## 2026-07-21
+
+### claude doesn’t lie anymore
+
+Reddit の ClaudeAI コミュニティで、Claude が以前よりも嘘をつかなくなったという報告がシェアされています。ユーザーが投稿した画像には、Claude の回答精度や正直さに関する何らかの変化が示されている可能性があります。コミュニティでの議論を通じて、Claude の出力品質や信頼性の向上についての意見交換が行われています。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1v2u429/claude_doesnt_lie_anymore)
+- **重要度**: 4/10
+- **タグ**: performance, sonnet, cowork
 
 ---
 
