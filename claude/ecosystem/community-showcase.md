@@ -3,6 +3,7 @@ title: Community Showcase
 category: ecosystem
 subcategory: community-showcase
 tags:
+- claude-api
 - claude-code
 - claude-console
 - cowork
@@ -10,7 +11,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-03-29'
-updated: '2026-07-05'
+updated: '2026-07-22'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6of32/i_am_fully_addicted_to_building_dumb_little_ai
   title: I am fully addicted to building dumb little AI web apps. I love it.
@@ -32,13 +33,30 @@ sources:
   title: Claude Code and Fable 5 ported the 2003 PC game Command & Conquer to native
     iOS in "a few hours"
   date: '2026-07-05'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1v3qhzl/built_with_claude_an_open_knowledge_graph_of
+  title: 'Built with Claude: an open knowledge graph of everything a child learns
+    (1,590 concepts, 3,221 prerequisite edges)'
+  date: '2026-07-22'
 ---
 
 
 
 
 
+
 # Community Showcase
+
+---
+
+## 2026-07-22
+
+### Built with Claude: an open knowledge graph of everything a child learns (1,590 concepts, 3,221 prerequisite edges)
+
+Claude エージェントのパイプラインを使用して、米英7つの国家カリキュラムから小学校で学ぶ全内容を接続されたナレッジグラフに変換したプロジェクト。1,590の教育可能な概念と3,221の前提条件リンクで構成され、各エッジには理由が付与されている。AI生成エッジの信頼性検証が課題で、高中心性ノードを手動レビューし、ODbLライセンスでオープンソース化された。教育分野でのClaude活用事例として興味深い。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1v3qhzl/built_with_claude_an_open_knowledge_graph_of)
+- **重要度**: 6/10
+- **タグ**: claude-api, cowork, 新機能
 
 ---
 

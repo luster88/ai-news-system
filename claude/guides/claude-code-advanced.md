@@ -6,9 +6,10 @@ tags:
 - claude-code
 - cowork
 - prompt
+- setup
 - 新機能
 date: '2026-04-08'
-updated: '2026-05-14'
+updated: '2026-07-22'
 sources:
 - url: https://qiita.com/moha0918_/items/9682b1ec8b71e884ec13
   title: 複数のAIが同時に働く仕組み - Agent Teamsで実現するチーム開発の全体像
@@ -19,11 +20,27 @@ sources:
 - url: https://qiita.com/creolab_dev/items/5f058d93b1f88c43f339
   title: Claude Code 5 月アップデート総括 — skills 検索 / async hooks / HTTP hooks を個人開発パイプラインへ組み込む
   date: '2026-05-14'
+- url: https://qiita.com/QuQuLa89/items/441744e6f53d7c073df2
+  title: Claude Codeの能力を極限まで引き出す：カスタムSubagents設計と拡張プラグイン活用ガイド
+  date: '2026-07-22'
 ---
 
 
 
+
 # Claude Code Advanced
+
+---
+
+## 2026-07-22
+
+### Claude Codeの能力を極限まで引き出す：カスタムSubagents設計と拡張プラグイン活用ガイド
+
+Claude Codeのパフォーマンスを最大化するため、カスタムSubagents（専門タスクに特化したAIエージェント）による権限分離と外部プラグイン活用を解説。code-reviewerなど4つの代表的Subagentsの構成例、Obsidian連携やデザイン制約スキル、自動フォーマッタフックによる品質担保の実践手法を紹介。コンテキストウィンドウの効率化と安全な開発フローの構築方法を提示。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/QuQuLa89/items/441744e6f53d7c073df2)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

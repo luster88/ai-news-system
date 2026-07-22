@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-11'
-updated: '2026-06-21'
+updated: '2026-07-22'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-best-practice-guide-2026
   title: Claude Codeベストプラクティス完全ガイド2026年版｜使い方・Tips・効率化テクニック集
@@ -31,6 +31,9 @@ sources:
 - url: https://zenn.dev/tatsuqumo/articles/04266f36508023
   title: CLAUDE.md のトリセツ — 200行で Claude Code の動きが変わる
   date: '2026-06-21'
+- url: https://zenn.dev/devtori/articles/claude-md-firing-conditions
+  title: 「CLAUDE.mdに書いたのに守られない」のはなぜか——ルールは内容ではなく"発火条件"で死ぬ
+  date: '2026-07-22'
 ---
 
 
@@ -38,7 +41,20 @@ sources:
 
 
 
+
 # Claude Code Best Practices
+
+---
+
+## 2026-07-22
+
+### 「CLAUDE.mdに書いたのに守られない」のはなぜか——ルールは内容ではなく"発火条件"で死ぬ
+
+CLAUDE.mdのルールが守られない根本原因は「内容」ではなく「発火条件」にある。LLMは指示が150-200個で遵守率が低下し、Claude Codeは自動的にCLAUDE.mdを「無視してよい候補」として扱う。自己観察型ルール（「気づいたら」）は発火せず、入力から判別できるシグナルや特定操作の直前をトリガーにした条件付きルールが有効。ルール数の上限設定と外部記憶システムによる管理が推奨される。
+
+- **ソース**: [Zenn claude](https://zenn.dev/devtori/articles/claude-md-firing-conditions)
+- **重要度**: 8/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

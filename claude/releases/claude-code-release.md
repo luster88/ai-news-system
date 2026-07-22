@@ -9,7 +9,7 @@ tags:
 - release
 - 新機能
 date: '2026-06-05'
-updated: '2026-07-21'
+updated: '2026-07-22'
 sources:
 - url: https://qiita.com/picnic/items/0e8844c6590cb7dd838a
   title: Claude Code v2.1.163 新機能とバグ修正：バージョン強制機能が追加
@@ -38,6 +38,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/2ad6f36fd302017b9267
   title: Claude Code v2.1.216〜v2.1.217｜サブエージェントの無制限増殖に上限｜毎日Changelog解説
   date: '2026-07-21'
+- url: https://qiita.com/moha0918_/items/6375e58106fbc7c4c42d
+  title: Claude Code v2.1.218｜/code-review がバックグラウンド化｜毎日Changelog解説
+  date: '2026-07-22'
 ---
 
 
@@ -46,7 +49,30 @@ sources:
 
 
 
+
 # Claude Code Release
+
+---
+
+## 2026-07-22
+
+### Claude Code v2.1.218｜/code-review がバックグラウンド化｜毎日Changelog解説
+
+Claude Code v2.1.218で/code-reviewがバックグラウンドサブエージェント化され、レビュー作業が会話コンテキストを消費しなくなりました。context:forkスキルもデフォルトでバックグラウンド実行となり、長時間セッションでのコンテキスト節約が可能に。さらにautoモードの許可ダイアログ削減、左矢印キー誤操作の確認追加、Windows パス文字化け修正などが実施されています。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/6375e58106fbc7c4c42d)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+### Claude Code v2.1.218｜/code-review がバックグラウンド化｜毎日Changelog解説
+
+Claude Code v2.1.218で/code-reviewがバックグラウンドサブエージェント化され、レビュー作業が会話コンテキストを消費しなくなった。context:forkスキルもデフォルトでバックグラウンド実行となり、長時間セッションでのコンテキスト節約が可能に。autoモードの許可ダイアログ削減、左矢印キーでの会話消失防止、MCP接続エラー表示改善、Windowsパス文字化け修正など、実用性向上の改善が多数含まれる。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/6375e58106fbc7c4c42d)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, bugfix
 
 ---
 
