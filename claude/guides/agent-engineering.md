@@ -4,17 +4,34 @@ category: guides
 subcategory: agent-engineering
 tags:
 - claude-code
+- cowork
 - prompt
 - 新機能
 date: '2026-04-20'
-updated: '2026-04-20'
+updated: '2026-07-23'
 sources:
 - url: https://ai-heartland.com/explain/harness-engineering-implementation-patterns-2026
   title: ハーネスエンジニアリング実装パターン完全解説｜AIの自律ループ×安全実行の設計手法
   date: '2026-04-20'
+- url: https://qiita.com/miyaguchi_kioku/items/9ae9d000049641beacbe
+  title: AIエージェント設計完全ガイド①-Graph Engineering入門
+  date: '2026-07-23'
 ---
 
+
 # Agent Engineering
+
+---
+
+## 2026-07-23
+
+### AIエージェント設計完全ガイド①-Graph Engineering入門
+
+AIエージェント開発の全体像を体系的に解説するシリーズ記事。Prompt EngineeringからAgent Engineeringへの移行を扱い、LangGraph、Claude Code、OpenAI Agents SDK、Google ADKなどの主要フレームワークの比較と実践方法を6回に分けて解説する。
+
+- **ソース**: [Qiita claude](https://qiita.com/miyaguchi_kioku/items/9ae9d000049641beacbe)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

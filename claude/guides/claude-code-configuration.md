@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-12'
-updated: '2026-06-19'
+updated: '2026-07-23'
 sources:
 - url: https://qiita.com/Tadashi_Kudo/items/80a6a0c8fe73bd9450c3
   title: 104kスターのKarpathy CLAUDE.mdを試したら、手元に既にあった話——グローバルCLAUDE.mdで全PJ適用済みの実態
@@ -23,13 +23,29 @@ sources:
 - url: https://qiita.com/YujiNaramoto/items/1ec99042d59c9744cf98
   title: なぜClaude Code Skillsの設定をプロジェクト外に出すのか
   date: '2026-06-19'
+- url: https://qiita.com/syun136_616/items/549b3e6d077edd40d106
+  title: CLAUDE.md の書き方とプロジェクト規模別の設計パターン7選
+  date: '2026-07-23'
 ---
 
 
 
 
 
+
 # Claude Code Configuration
+
+---
+
+## 2026-07-23
+
+### CLAUDE.md の書き方とプロジェクト規模別の設計パターン7選
+
+Claude Codeが自動読み込みするCLAUDE.mdの書き方を、プロジェクト規模別に7パターンで解説。個人スクリプトからエンタープライズまで、必要最小限のルール記述から段階的に拡張する設計手法を紹介。グローバル設定とローカル設定の使い分け、@インポート記法による分割管理、チーム運用のベストプラクティスなど実践的なテンプレートを提供。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/syun136_616/items/549b3e6d077edd40d106)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

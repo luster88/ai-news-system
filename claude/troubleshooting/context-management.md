@@ -7,10 +7,11 @@ tags:
 - claude-console
 - cowork
 - mcp
+- performance
 - prompt
 - vscode
 date: '2026-04-02'
-updated: '2026-04-25'
+updated: '2026-07-23'
 sources:
 - url: https://qiita.com/MirabelleQuest/items/f3b27e9740d4b22135fc
   title: '# Claude Code でセッション開始直後から Context 使用率が高かったので確認した'
@@ -18,10 +19,26 @@ sources:
 - url: https://qiita.com/monakai/items/8a7721f4f6bef54707da
   title: 素人が一人でゲーム開発を始めて、何度も失敗した話 ②コンテキスト量なんて概念はありませんでした
   date: '2026-04-25'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1v4f6cw/when_to_compact
+  title: When to Compact?
+  date: '2026-07-23'
 ---
 
 
+
 # Context Management
+
+---
+
+## 2026-07-23
+
+### When to Compact?
+
+Claude初心者が、コンテキストをいつコンパクト化すべきかについて質問。50k、100k、200k、500kなど様々な情報があり混乱している。文書処理作業で3-400kまでコンテキストが増え、いつClaudeがミスをするか不安を感じている。大量の文書やExcelファイルを扱う業務でClaude（max 20トークン）を活用しているが、コンパクト化のタイミングに関するベストプラクティスを求めている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1v4f6cw/when_to_compact)
+- **重要度**: 4/10
+- **タグ**: claude-console, performance, cowork
 
 ---
 

@@ -6,15 +6,33 @@ tags:
 - claude-code
 - cowork
 - mcp
+- opus
+- vscode
 date: '2026-07-16'
-updated: '2026-07-16'
+updated: '2026-07-23'
 sources:
 - url: https://qiita.com/OnuuuumaX/items/6be3227534df186680f2
   title: 【Godot 4.x】3D脱出ゲームを作ってみる⑤〜ダイヤル錠ギミックの状態をローカルストレージに保存する〜
   date: '2026-07-16'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1v4ol30/using_claudegodotblender_to_make_a_battle_racer
+  title: Using Claude/Godot/Blender to make a Battle Racer game - OVERSTEER
+  date: '2026-07-23'
 ---
 
+
 # Game Development Workflow
+
+---
+
+## 2026-07-23
+
+### Using Claude/Godot/Blender to make a Battle Racer game - OVERSTEER
+
+Claude（Opus/Fable）とGodot 4.6、Blenderを使って、非開発者がバトルレーシングゲーム「OVERSTEER」を開発中。VSCode上でClaudeを活用し、ドリフト・空中トリック機能、トラックビルダー、車両カスタマイズなどを実装。ほぼコーディング経験なしで、ゲーム開発のワークフローを学びながら制作している事例。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1v4ol30/using_claudegodotblender_to_make_a_battle_racer)
+- **重要度**: 6/10
+- **タグ**: claude-code, vscode, opus
 
 ---
 

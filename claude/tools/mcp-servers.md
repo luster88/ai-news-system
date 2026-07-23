@@ -3,13 +3,14 @@ title: Mcp Servers
 category: tools
 subcategory: mcp-servers
 tags:
+- claude-api
 - claude-code
 - claude-console
 - cowork
 - mcp
 - 新機能
 date: '2026-04-21'
-updated: '2026-05-16'
+updated: '2026-07-23'
 sources:
 - url: https://zenn.dev/megaphone_tokyo/articles/9c0cffdf9e176b
   title: Claude Code / Desktop の記憶 OSS「KIOKU」に PDF / URL 取り込みを実装した
@@ -20,11 +21,27 @@ sources:
 - url: https://ai-heartland.com/agent/archify-claude-skill-architecture-diagram
   title: Archify徹底解説：Claude Skillで5種類の技術図を一発生成する自己完結HTML
   date: '2026-05-16'
+- url: https://ai-heartland.com/tool/go-whatsapp-web-multidevice-rest-api
+  title: GOWAとは：WhatsApp APIをセルフホスト｜REST・Webhook・MCPでAI連携する非公式OSS
+  date: '2026-07-23'
 ---
 
 
 
+
 # Mcp Servers
+
+---
+
+## 2026-07-23
+
+### GOWAとは：WhatsApp APIをセルフホスト｜REST・Webhook・MCPでAI連携する非公式OSS
+
+GOWAは、WhatsAppをREST APIとして操作できるGo製のセルフホスト型OSSツール。公式Business APIの審査・従量課金を回避し、自分のアカウントをQRコードでリンクしてメッセージ送受信、Webhook転送、マルチアカウント運用が可能。MCPサーバー機能により約40種のツールを公開し、CursorなどのAIエージェントと連携して自動応答システムを構築できる。GitHubスター約4,300、MITライセンス、最新版v9.0.0。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/go-whatsapp-web-multidevice-rest-api)
+- **重要度**: 5/10
+- **タグ**: mcp, cowork, claude-api
 
 ---
 

@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-20'
-updated: '2026-06-28'
+updated: '2026-07-23'
 sources:
 - url: https://qiita.com/daisuke-nagata/items/4cd123ed5ffbc275bd5a
   title: 【2026年版】Claude Designで図解を5分で量産する完全ガイド — デザイン不要でQiita記事を格上げ
@@ -21,11 +21,27 @@ sources:
 - url: https://zenn.dev/cvl/articles/c2d6f157cd0b60
   title: デザイン・コーディング未経験から、Claude Designで動きのあるWebサイトを作る
   date: '2026-06-28'
+- url: https://qiita.com/shominai2024/items/c0323c9473d9b1c8ed11
+  title: 'Claude Design 使用感 - ゼロから始めるAIシステム開発 #28'
+  date: '2026-07-23'
 ---
 
 
 
+
 # Claude Design
+
+---
+
+## 2026-07-23
+
+### Claude Design 使用感 - ゼロから始めるAIシステム開発 #28
+
+Claude Designは2026年4月に公開されたAIデザインツール（ベータ版）で、自然言語での会話を通じてWebページ、アプリ画面、プレゼン資料などを作成できる。画像生成AIではなく構造を持ったビジュアルを組み立てるツールで、Claude Pro以降の課金ユーザーが利用可能。既存ファイル（DOCX、PPTX、画像など）を参照させてデザインシステムに沿った制作も可能で、成果物はコード・資料・Webページとして出力できる。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/shominai2024/items/c0323c9473d9b1c8ed11)
+- **重要度**: 7/10
+- **タグ**: 新機能, cowork
 
 ---
 

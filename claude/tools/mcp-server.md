@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-07-20'
+updated: '2026-07-23'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -106,6 +106,9 @@ sources:
 - url: https://ai-heartland.com/tool/openship-self-hosted-deployment-platform
   title: Openshipとは：セルフホストできるOSSデプロイ基盤（PaaS）をコードと実機で検証【2026】
   date: '2026-07-20'
+- url: https://zenn.dev/kscscafe/articles/01806e80749455
+  title: 自分一人で複数のAIを使うためのAgent Memory Serverを作った
+  date: '2026-07-23'
 ---
 
 
@@ -135,7 +138,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-07-23
+
+### 自分一人で複数のAIを使うためのAgent Memory Serverを作った
+
+Claude Projects で複数の役割を持つ AI エージェントを運用する際、セッションをまたいだ記憶の継続と担当ごとの記憶管理が課題となった。この解決策として Agent Memory Server（AMS）を開発・OSS 公開。FastAPI + SQLite ベースで、semantic/procedural/episodic memory を管理し、owner 属性による越境防止機能を実装。個人がマルチエージェントチームを運用するためのメモリ基盤として設計されている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/kscscafe/articles/01806e80749455)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, cowork
 
 ---
 
