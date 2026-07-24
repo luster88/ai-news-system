@@ -13,9 +13,10 @@ tags:
 - setup
 - sonnet
 - vscode
+- windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-07-21'
+updated: '2026-07-24'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -227,6 +228,9 @@ sources:
 - url: https://ai-heartland.com/explain/claude-code-agent-graph-engineering
   title: エージェントをグラフとして設計する｜Claude Code動的ワークフローで多段処理を並列化する考え方
   date: '2026-07-21'
+- url: https://qiita.com/vivinko/items/7300b32de1d127acc421
+  title: Claude Code・Codexに動作確認まで自走させる｜ビルド・操作・録画・証跡を残す開発フロー
+  date: '2026-07-24'
 ---
 
 
@@ -285,7 +289,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-07-24
+
+### Claude Code・Codexに動作確認まで自走させる｜ビルド・操作・録画・証跡を残す開発フロー
+
+Claude CodeやCodexに、Windows上のGUIアプリケーションのビルド・起動・操作・録画・ログ取得まで自走させる開発フローを解説。PowerShell、Python、UI Automation等を組み合わせ、AIが動作確認の証跡を残せる実行環境を構築。実装前にSPECを正本として定義し、Gate 0による段階的チェック、baseline比較、preflight確認など、AIの判断バイアスを防ぐ運用ルールを整理している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/vivinko/items/7300b32de1d127acc421)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, windows
 
 ---
 

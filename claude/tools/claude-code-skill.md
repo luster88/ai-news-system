@@ -9,7 +9,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-28'
-updated: '2026-06-17'
+updated: '2026-07-24'
 sources:
 - url: https://qiita.com/nishiken1118/items/bac44a98ce05b09b78f6
   title: AI レビューの「仕分け疲れ」を解消する Claude Code skill を作った話
@@ -20,11 +20,28 @@ sources:
 - url: https://zenn.dev/hibinoue/articles/2071643334a25f
   title: みんなのClaudeスキルが見たい！発信の手間を削減する「Zenn記事の全自動生成」スキル
   date: '2026-06-17'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1v55he0/i_made_a_claude_code_skill_that_turns_a_photo_of
+  title: I made a Claude Code skill that turns a photo of your handwriting into an
+    installable font
+  date: '2026-07-24'
 ---
 
 
 
+
 # Claude Code Skill
+
+---
+
+## 2026-07-24
+
+### I made a Claude Code skill that turns a photo of your handwriting into an installable font
+
+Claude Code の skill として手書き文字の写真からインストール可能なフォント（TTF）を生成するツールが公開されました。ノートに書いたアルファベットの写真をドラッグし「make my font」と指示するだけで、potrace と font assembly を使った CLI を Claude が制御し、文字認識・大小文字判別・ノイズ除去・プレビュー確認を行います。完全にローカル動作で MIT ライセンス、npx skills add コマンドで簡単にインストール可能です。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1v55he0/i_made_a_claude_code_skill_that_turns_a_photo_of)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

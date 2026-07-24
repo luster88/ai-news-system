@@ -7,7 +7,7 @@ tags:
 - release
 - 新機能
 date: '2026-03-22'
-updated: '2026-05-28'
+updated: '2026-07-24'
 sources:
 - url: https://www.anthropic.com/news/claude-opus-4-6
   title: Announcements Feb 5, 2026 Introducing Claude Opus 4.6 We’re upgrading our
@@ -29,13 +29,29 @@ sources:
 - url: https://qiita.com/taiyodayo/items/8ae066c29cd37c4bc32e
   title: Opus4.8 爆誕! 早速全部入れ替えたら人生が2.5倍捗りそうなので30秒でまとめた件
   date: '2026-05-28'
+- url: https://techcrunch.com/2026/07/24/anthropic-launches-opus-5
+  title: Anthropic launches Opus 5
+  date: '2026-07-24'
 ---
 
 
 
 
 
+
 # Opus Model Update
+
+---
+
+## 2026-07-24
+
+### Anthropic launches Opus 5
+
+Anthropic が新モデル Opus 5 をリリース。Opus 4.8 からわずか2ヶ月でのアップデート。Fable 5 より安価で制限が少なく、一部ベンチマークでは Fable 5 を上回る性能を発揮。30日間データ保持ポリシーの対象外で、プライバシー重視のユーザーに有利。セキュリティ保護は Fable より85%少なく、新機能 Automatic Fallbacks により安全分類器が作動した際に自動的に低性能モデルへルーティング可能。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/07/24/anthropic-launches-opus-5)
+- **重要度**: 9/10
+- **タグ**: opus, release, 新機能
 
 ---
 

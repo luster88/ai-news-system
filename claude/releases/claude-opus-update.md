@@ -10,7 +10,7 @@ tags:
 - release
 - 新機能
 date: '2026-03-30'
-updated: '2026-05-31'
+updated: '2026-07-24'
 sources:
 - url: https://zenn.dev/tmtk/articles/aa8eb95ca28a63
   title: Claude Opus 4.6 は何が「実務向け」に進化したのか？ エージェント開発者が知るべき新機能まとめ
@@ -29,13 +29,29 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1tt3a8h/differences_between_opus_47_and_opus_48_on
   title: Differences Between Opus 4.7 and Opus 4.8 on MineBench
   date: '2026-05-31'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1v5h4id/introducing_claude_opus_5
+  title: Introducing Claude Opus 5
+  date: '2026-07-24'
 ---
 
 
 
 
 
+
 # Claude Opus Update
+
+---
+
+## 2026-07-24
+
+### Introducing Claude Opus 5
+
+Anthropic が Claude Opus 5 を発表しました。Reddit の ClaudeAI コミュニティで共有された公式発表へのリンクです。新モデルのリリースに関する重要な情報が含まれていると考えられます。詳細は公式サイトで確認できます。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1v5h4id/introducing_claude_opus_5)
+- **重要度**: 10/10
+- **タグ**: opus, release, 新機能
 
 ---
 

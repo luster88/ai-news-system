@@ -10,7 +10,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-04-12'
-updated: '2026-07-08'
+updated: '2026-07-24'
 sources:
 - url: https://qiita.com/saitoko/items/648124fec66afe2cd8df
   title: Claude Codeで8体AIエージェント組織を作った6日間 — 人間とAIはどんな対話をしたか
@@ -20,10 +20,26 @@ sources:
     96% of the performance at 46% of the cost. You can run this pattern in Claude
     Code today'
   date: '2026-07-08'
+- url: https://zenn.dev/canly/articles/7dd489193c41e4
+  title: Claude Codeのスキルでお問い合わせ調査を半自動化し、チームで育てている話
+  date: '2026-07-24'
 ---
 
 
+
 # Multi Agent Orchestration
+
+---
+
+## 2026-07-24
+
+### Claude Codeのスキルでお問い合わせ調査を半自動化し、チームで育てている話
+
+カンリー店舗集客のチームが、Claude Codeのスキル機能を使ってお問い合わせ調査を半自動化した事例。DB・ログ・コードの3つを調査対象とし、メインエージェントと3つのサブエージェントによるマルチエージェント設計（Orchestrator-Workerパターン）を採用。各サブエージェントが要点のみを返すことでコンテキスト消費を抑え、メインエージェントが結果を統合して回答文案と調査レポートを作成する仕組みを構築した。
+
+- **ソース**: [Zenn claude](https://zenn.dev/canly/articles/7dd489193c41e4)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 
