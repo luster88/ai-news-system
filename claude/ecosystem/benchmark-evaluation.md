@@ -3,12 +3,14 @@ title: Benchmark Evaluation
 category: ecosystem
 subcategory: benchmark-evaluation
 tags:
+- claude-code
 - cowork
+- cursor
 - opus
 - performance
 - 新機能
 date: '2026-04-26'
-updated: '2026-06-26'
+updated: '2026-07-25'
 sources:
 - url: https://the-decoder.com/500-investment-bankers-review-ai-outputs-and-find-none-ready-for-client-delivery
   title: 500 investment bankers review AI outputs and find none ready for client delivery
@@ -17,10 +19,26 @@ sources:
   title: An AI model programmed nonstop for 19 days on a single MirrorCode task that
     cost $2,600 to run
   date: '2026-06-26'
+- url: https://zenn.dev/okssusucha/articles/20260707-swe-together-interactive-coding-agent-ben
+  title: AIに何回ダメ出ししたかを測る、対話型ベンチSWE-Together
+  date: '2026-07-25'
 ---
 
 
+
 # Benchmark Evaluation
+
+---
+
+## 2026-07-25
+
+### AIに何回ダメ出ししたかを測る、対話型ベンチSWE-Together
+
+SWE-Togetherは、AIコーディングエージェントを「何回修正指示が必要だったか」で評価する新しい対話型ベンチマークです。従来のSWE-benchが最終結果のみを評価するのに対し、実際のCursorやClaude Code使用時の「途中で何度も指示を出す」体験に近い評価を実現しています。11,260件のセッション記録から109タスクを厳選し、User Correction指標で介入コストを数値化。Opus 4.8が最も手がかからず（1.38回）、pass@1との相関は-0.92と強い逆相関を示しました。
+
+- **ソース**: [Zenn claude](https://zenn.dev/okssusucha/articles/20260707-swe-together-interactive-coding-agent-ben)
+- **重要度**: 7/10
+- **タグ**: claude-code, performance, cursor
 
 ---
 

@@ -7,8 +7,9 @@ tags:
 - opus
 - performance
 - sonnet
+- 新機能
 date: '2026-04-18'
-updated: '2026-07-21'
+updated: '2026-07-25'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sp1mzs/look_how_they_massacred_my_boy
   title: Look how they massacred my boy
@@ -22,12 +23,28 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v2u429/claude_doesnt_lie_anymore
   title: claude doesn’t lie anymore
   date: '2026-07-21'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1v6973n/opus_5_token_usage_is_amazing
+  title: Opus 5 Token Usage is Amazing
+  date: '2026-07-25'
 ---
 
 
 
 
+
 # Community Feedback
+
+---
+
+## 2026-07-25
+
+### Opus 5 Token Usage is Amazing
+
+Opus 5のトークン使用効率が大幅に改善されているという報告。同じタスクでFableと比較して、トークン消費が大幅に少なく、結果の品質も満足できるレベル。Opus 5への批判的な投稿が多い中、ポジティブな使用体験を共有している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1v6973n/opus_5_token_usage_is_amazing)
+- **重要度**: 6/10
+- **タグ**: opus, performance, 新機能
 
 ---
 
