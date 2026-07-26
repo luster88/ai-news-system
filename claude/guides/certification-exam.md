@@ -4,10 +4,11 @@ category: guides
 subcategory: certification-exam
 tags:
 - claude-api
+- claude-code
 - mcp
 - prompt
 date: '2026-05-07'
-updated: '2026-05-07'
+updated: '2026-07-26'
 sources:
 - url: https://qiita.com/arahata0907/items/6e0f7bf1629cc52bfa53
   title: 【日本語解説付き試験問題集】Claude Certified Architect Foundations (CCA-F)
@@ -15,9 +16,25 @@ sources:
 - url: https://qiita.com/arahata0907/items/6e0f7bf1629cc52bfa53
   title: 【日本語解説付き試験問題集】Claude Certified Architect Foundations (CCA-F)
   date: '2026-05-07'
+- url: https://zenn.dev/ray_keymaso/articles/ccaf-official-docs-guide
+  title: CCA-F/CCAR-F対策：Exam Guideの次に読む公式ドキュメント
+  date: '2026-07-26'
 ---
 
+
 # Certification Exam
+
+---
+
+## 2026-07-26
+
+### CCA-F/CCAR-F対策：Exam Guideの次に読む公式ドキュメント
+
+Claude Certified Architect – Foundations（CCA-F/CCAR-F）試験対策のための公式ドキュメント学習ガイド。Exam Guideの5つのDomainに対応する公式資料の読み方と順番を整理し、特にDomain 1（Agentic Architecture & Orchestration）を中心に、エージェント制御、ツール実行ループ、ワークフローとエージェントの使い分けなど、試験で問われる判断基準を具体的なシナリオ例とともに解説している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/ray_keymaso/articles/ccaf-official-docs-guide)
+- **重要度**: 6/10
+- **タグ**: claude-api, claude-code, mcp
 
 ---
 

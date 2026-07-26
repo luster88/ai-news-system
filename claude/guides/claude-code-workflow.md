@@ -16,7 +16,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-07-24'
+updated: '2026-07-26'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -231,6 +231,9 @@ sources:
 - url: https://qiita.com/vivinko/items/7300b32de1d127acc421
   title: Claude Code・Codexに動作確認まで自走させる｜ビルド・操作・録画・証跡を残す開発フロー
   date: '2026-07-24'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1v7h5e3/i_built_a_procedural_desert_explorer_with_claude
+  title: I built a procedural desert explorer with Claude Code (Opus 5) and Three.js
+  date: '2026-07-26'
 ---
 
 
@@ -290,7 +293,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-07-26
+
+### I built a procedural desert explorer with Claude Code (Opus 5) and Three.js
+
+開発者が Claude Code（Opus 5）と Three.js を使用して、プロシージャル生成された砂漠探索デモを完全に構築。GPU クリップマップによる地形生成、物理ベースのスカイレンダリング、GPU クロスシミュレーション、砂の変形システムなどを実装。Claude には独自の計測ツール（ヘッドレス Chrome ハーネス）を与え、GPU コストを測定しながら開発を進めた。TSL シェーダー、コンピュートカーネル、物理統合、Node ツーリングすべてを Claude が生成。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1v7h5e3/i_built_a_procedural_desert_explorer_with_claude)
+- **重要度**: 7/10
+- **タグ**: claude-code, opus, cowork
 
 ---
 

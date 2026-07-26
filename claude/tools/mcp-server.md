@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-07-23'
+updated: '2026-07-26'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -109,6 +109,12 @@ sources:
 - url: https://zenn.dev/kscscafe/articles/01806e80749455
   title: 自分一人で複数のAIを使うためのAgent Memory Serverを作った
   date: '2026-07-23'
+- url: https://qiita.com/workyou0125/items/330232b79b94d14bdf4c
+  title: Riveのエディタを起動せずに.rivを作って編集できるMCPサーバーを作った
+  date: '2026-07-26'
+- url: https://qiita.com/c_u/items/d9e2a0aa78b02672bb42
+  title: 'vios-mcp-server : IBM Power Virtual I/O Server (VIOS) 用のカスタム MCPサーバーを作成'
+  date: '2026-07-26'
 ---
 
 
@@ -139,7 +145,30 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-07-26
+
+### Riveのエディタを起動せずに.rivを作って編集できるMCPサーバーを作った
+
+Riveのインタラクティブアニメーション編集を、エディタ起動なしでAIが直接.rivファイルを生成・編集できるMCPサーバー「rive-mcp」が公開された。バイナリフォーマットを独自解析し、生成・取り込み・編集・出力など15種類以上のツールを提供。Claude Codeプラグインとして導入でき、日本語指示だけで.rivファイルを作成可能。WebスタジオUIも備え、AIと人間の協調作業を実現している。
+
+- **ソース**: [Qiita claude](https://qiita.com/workyou0125/items/330232b79b94d14bdf4c)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code, 新機能
+
+---
+
+### vios-mcp-server : IBM Power Virtual I/O Server (VIOS) 用のカスタム MCPサーバーを作成
+
+IBM Power Virtual I/O Server (VIOS) 向けのカスタムMCPサーバーの実装事例。オンプレミスのVIOSにSSH接続し、ヘルスチェックやアダプターマッピング確認などの運用作業をLLMから自然言語で実行可能にする。既存のpowervs-mcp-serverがクラウド版のみ対応であったため、オンプレVIOS内部の仮想化構成を調査できるツールとして開発された。安全性重視の設計で任意コマンド実行は排除し、検証済みの固定コマンドのみを使用する方式を採用。
+
+- **ソース**: [Qiita claude](https://qiita.com/c_u/items/d9e2a0aa78b02672bb42)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-api, cowork
 
 ---
 

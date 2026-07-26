@@ -2,9 +2,12 @@
 title: Policy Regulation
 category: ecosystem
 subcategory: policy-regulation
-tags: []
+tags:
+- claude-api
+- cowork
+- pricing
 date: '2026-06-11'
-updated: '2026-06-17'
+updated: '2026-07-26'
 sources:
 - url: https://the-decoder.com/dario-amodeis-new-essay-reads-like-a-cold-war-playbook-for-the-ai-age
   title: Dario Amodei's new essay reads like a Cold War playbook for the AI age
@@ -13,10 +16,27 @@ sources:
   title: Anthropic CEO Dario Amodei joins top AI CEOs meeting with world leaders at
     G7 summit
   date: '2026-06-17'
+- url: https://the-decoder.com/us-reportedly-favors-selective-bans-over-blanket-restrictions-on-chinese-open-weight-models-citing-security-concerns
+  title: US reportedly favors selective bans over blanket restrictions on Chinese
+    open weight models citing security concerns
+  date: '2026-07-26'
 ---
 
 
+
 # Policy Regulation
+
+---
+
+## 2026-07-26
+
+### US reportedly favors selective bans over blanket restrictions on Chinese open weight models citing security concerns
+
+米国政府は中国製オープンウェイトAIモデルに対し、包括的な禁止ではなく特定モデルを対象とした選択的な規制を検討している。OpenAIとGoogle DeepMindは当初オープンウェイトモデル規制に反対する公開書簡に署名したが、The New York Timesによると両社は水面下で中国製オープンモデルの規制を求めるロビー活動を行っている。現在の中国製モデルはサイバーセキュリティベンチマークで欧米の主要モデルに大きく劣るものの、安価な中国製モデルからの価格圧力に直面している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/us-reportedly-favors-selective-bans-over-blanket-restrictions-on-chinese-open-weight-models-citing-security-concerns)
+- **重要度**: 6/10
+- **タグ**: pricing, cowork, claude-api
 
 ---
 

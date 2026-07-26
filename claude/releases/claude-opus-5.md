@@ -7,14 +7,30 @@ tags:
 - release
 - 新機能
 date: '2026-07-24'
-updated: '2026-07-24'
+updated: '2026-07-26'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v5h6o9/introducing_claude_opus_5
   title: Introducing Claude Opus 5
   date: '2026-07-24'
+- url: https://qiita.com/sakutto-panda/items/461753e9940277a23a29
+  title: Claude Opus 5リリース — Fable 5に迫る性能を半額で、thinkingデフォルトON化で破壊的変更も
+  date: '2026-07-26'
 ---
 
+
 # Claude Opus 5
+
+---
+
+## 2026-07-26
+
+### Claude Opus 5リリース — Fable 5に迫る性能を半額で、thinkingデフォルトON化で破壊的変更も
+
+Anthropic が Claude Opus 5 をリリース。価格は Opus 4.8 と同じ $5/$25 per MTok で据え置きながら、Fable 5 に肉薄する性能を実現。thinking がデフォルト ON 化され、effort が high 以下の場合のみ disabled 設定が可能という破壊的変更が導入された。新機能として、ミッドセッションツール変更（beta）、Automatic Fallbacks の default モード、プロンプトキャッシュの最小長引き下げ（1024→512トークン）が追加された。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/sakutto-panda/items/461753e9940277a23a29)
+- **重要度**: 9/10
+- **タグ**: opus, release, 新機能
 
 ---
 
