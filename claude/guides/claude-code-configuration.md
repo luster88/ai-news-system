@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-12'
-updated: '2026-07-23'
+updated: '2026-07-27'
 sources:
 - url: https://qiita.com/Tadashi_Kudo/items/80a6a0c8fe73bd9450c3
   title: 104kスターのKarpathy CLAUDE.mdを試したら、手元に既にあった話——グローバルCLAUDE.mdで全PJ適用済みの実態
@@ -26,6 +26,9 @@ sources:
 - url: https://qiita.com/syun136_616/items/549b3e6d077edd40d106
   title: CLAUDE.md の書き方とプロジェクト規模別の設計パターン7選
   date: '2026-07-23'
+- url: https://qiita.com/f_uto/items/438336db3684cf662321
+  title: Claude Code「/config」設定の教科書 ― 全42項目を1つずつ解説＋おすすめ設定（v2.1.220対応）
+  date: '2026-07-27'
 ---
 
 
@@ -33,7 +36,20 @@ sources:
 
 
 
+
 # Claude Code Configuration
+
+---
+
+## 2026-07-27
+
+### Claude Code「/config」設定の教科書 ― 全42項目を1つずつ解説＋おすすめ設定（v2.1.220対応）
+
+Claude Code v2.1.220の設定画面（/config）に並ぶ全42項目を順番に解説する詳細ガイド。設定のスコープ階層、Auto-compactの圧縮タイミング、セキュリティフラグ時の自動モデル切替、Extended Thinking有効化など、各項目の動作原理と業務リポジトリでの注意点を網羅的に説明し、用途別おすすめ設定とsettings.jsonスニペットを提供。
+
+- **ソース**: [Qiita claude](https://qiita.com/f_uto/items/438336db3684cf662321)
+- **重要度**: 8/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

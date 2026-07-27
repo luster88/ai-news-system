@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-07-26'
+updated: '2026-07-27'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -115,6 +115,9 @@ sources:
 - url: https://qiita.com/c_u/items/d9e2a0aa78b02672bb42
   title: 'vios-mcp-server : IBM Power Virtual I/O Server (VIOS) 用のカスタム MCPサーバーを作成'
   date: '2026-07-26'
+- url: https://ai-heartland.com/mcp/github-mcp-server
+  title: GitHub MCPとは｜公式MCPサーバーの使い方・86ツール・リモート/ローカル版と権限設計を解説
+  date: '2026-07-27'
 ---
 
 
@@ -146,7 +149,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-07-27
+
+### GitHub MCPとは｜公式MCPサーバーの使い方・86ツール・リモート/ローカル版と権限設計を解説
+
+GitHub公式が提供するMCPサーバー「github-mcp-server」の解説。AIエージェントがGitHub操作（リポジトリ読取、Issue管理、PR作成など）を行うための標準化された接続方式を提供する。Go製でMITライセンス、21ツールセット・86件のツール定義を持つ。GitHubホストのリモート版と自己ホストのローカル版があり、認証方式と権限設計が重要なポイント。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/mcp/github-mcp-server)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code, setup
 
 ---
 

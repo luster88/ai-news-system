@@ -1,0 +1,43 @@
+---
+title: Claude Code Rules
+category: guides
+subcategory: claude-code-rules
+tags:
+- claude-code
+- cowork
+- prompt
+date: '2026-07-27'
+updated: '2026-07-27'
+sources:
+- url: https://qiita.com/Rapls/items/87b74814e41f4e7bd852
+  title: CLAUDE.mdを二層に分ける。「毎回復唱させるルール」と「廃止した方針」を別々に持つ型
+  date: '2026-07-27'
+---
+
+# Claude Code Rules
+
+---
+
+## 2026-07-27
+
+### CLAUDE.mdを二層に分ける。「毎回復唱させるルール」と「廃止した方針」を別々に持つ型
+
+Claude Code で CLAUDE.md を「毎回復唱させる振る舞いルール（現在形）」と「廃止した方針の履歴（過去形）」の二層構造で運用する手法を紹介。原則の中に「毎回出力せよ」を含めることで自己維持させ、廃止リストを原則から参照させることで過去の決定が戻ってくるのを防ぐ。1年の運用で、復唱のコンテキスト消費は誤差レベルで、むしろファイル読み込みとツール実行が主な消費源だと判明。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Rapls/items/87b74814e41f4e7bd852)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
+
+---
+
+## 関連リンク
+
+- [Claude Info トップ](../README.md)
+
+---
+
+## 更新履歴
+
+| 日付 | 内容 |
+|------|------|
+| 2026-07-27 | 自動生成 |

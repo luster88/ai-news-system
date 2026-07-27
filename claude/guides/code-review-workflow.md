@@ -9,7 +9,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-03-31'
-updated: '2026-06-15'
+updated: '2026-07-27'
 sources:
 - url: https://zenn.dev/whipea/articles/e63135d29f8e1f
   title: Claude Codeに課金してみたので、無料プランのAIで作った日記アプリのコードを本気レビューしてもらった
@@ -20,11 +20,27 @@ sources:
 - url: https://qiita.com/ussu_ussu_ussu/items/13caf48c5ad9d9c0d9e2
   title: 個人開発の日記アプリ「Daily Diary」を Claude Fable 5 でレビューしてもらった記録 — 見つかったバグと所感
   date: '2026-06-15'
+- url: https://zenn.dev/omnia_mirari/articles/12d4dffe13fef0
+  title: ClaudeとCodexに同じdiffを8ラウンド見せ続けたら、指摘件数より先に『指摘の引っ越し』が起きた
+  date: '2026-07-27'
 ---
 
 
 
+
 # Code Review Workflow
+
+---
+
+## 2026-07-27
+
+### ClaudeとCodexに同じdiffを8ラウンド見せ続けたら、指摘件数より先に『指摘の引っ越し』が起きた
+
+Claude と OpenAI Codex に同一の diff を 8 ラウンド繰り返しレビューさせた実験。両者の指摘は重ならず（初回の重複は8件中2件）、検出件数は収束せず、修正が新たなバグを4回生成し全て次ラウンドで検出された。単系統レビューの「LGTM」は見ている場所が異なるため保証範囲が狭いことが判明。
+
+- **ソース**: [Zenn claude](https://zenn.dev/omnia_mirari/articles/12d4dffe13fef0)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

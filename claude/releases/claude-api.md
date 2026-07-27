@@ -5,13 +5,14 @@ subcategory: claude-api
 tags:
 - claude-api
 - mcp
+- opus
 - performance
 - pricing
 - release
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-07-12'
+updated: '2026-07-27'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -48,6 +49,9 @@ sources:
 - url: https://zenn.dev/sktt_panda/articles/claude-sonnet-5-release-2026-07
   title: 【2026/6/30】Claude Sonnet 5リリース — 1Mコンテキスト標準化・temperature廃止・実質3割の値上げも
   date: '2026-07-12'
+- url: https://zenn.dev/ainewsdaily/articles/20260725_general_t1
+  title: 'Claude Opus 5の要点整理: 料金据え置きで上位半額、effortは5段階、移行時は400エラーに注意'
+  date: '2026-07-27'
 ---
 
 
@@ -57,7 +61,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-07-27
+
+### Claude Opus 5の要点整理: 料金据え置きで上位半額、effortは5段階、移行時は400エラーに注意
+
+2026年7月24日、Anthropic が Claude Opus 5 を公開。料金は前世代 Opus 4.8 と同額で、最上位 Fable 5 の半額。新たに effort パラメータ（5段階）が導入され、思考量を調整可能に。移行時は thinking の既定有効化、max_tokens の意味変化、400エラーなど3つの非互換に注意が必要。知識カットオフは2026年5月で上位モデルより新しい。
+
+- **ソース**: [Zenn claude](https://zenn.dev/ainewsdaily/articles/20260725_general_t1)
+- **重要度**: 9/10
+- **タグ**: opus, release, pricing
 
 ---
 

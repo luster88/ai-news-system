@@ -10,7 +10,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-04-15'
-updated: '2026-04-20'
+updated: '2026-07-27'
 sources:
 - url: https://zenn.dev/chiakidayo/articles/agent-teams-subagent-comparison
   title: 【Claude Code】Agent teamsとSubagent並列実行比較メモ
@@ -18,10 +18,26 @@ sources:
 - url: https://qiita.com/bit-tanghao/items/bec927ebf9621d131d9e
   title: AIエージェントシリーズ 第5弾｜プランニングAgent——大きなPRを自動分解して実行する
   date: '2026-04-20'
+- url: https://ai-heartland.com/explain/agent-provenance-commit-dag-knowledge-graph
+  title: AIエージェントの出力に来歴を残す設計｜コミットDAGと知識グラフで根拠を追える状態にする
+  date: '2026-07-27'
 ---
 
 
+
 # Claude Code Agent Architecture
+
+---
+
+## 2026-07-27
+
+### AIエージェントの出力に来歴を残す設計｜コミットDAGと知識グラフで根拠を追える状態にする
+
+AIエージェントを並列化すると出力の根拠や来歴が追えなくなる問題を、コミットDAGと知識グラフを用いた4層の記憶設計で解決する手法を解説。会話ログ、成果物、コミットDAG、知識グラフの各層が答える質問の違いを明確にし、並列ワーカーの発見が要約でしか外に出られない情報の目詰まりを解消する。Anthropicの5つのワークフローパターンに対する永続層の役割も整理している。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/agent-provenance-commit-dag-knowledge-graph)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

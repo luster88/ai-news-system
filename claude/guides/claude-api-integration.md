@@ -6,9 +6,11 @@ tags:
 - claude-api
 - haiku
 - prompt
+- setup
 - sonnet
+- windows
 date: '2026-03-25'
-updated: '2026-06-08'
+updated: '2026-07-27'
 sources:
 - url: https://zenn.dev/tradejournal/articles/f886154a9f1ec8
   title: Next.js 16 + Anthropic Claude APIでトレード日記AI分析ツールを作った話
@@ -16,10 +18,26 @@ sources:
 - url: https://zenn.dev/dmiiiiii1116/articles/7cdb8b4b57c976
   title: LINEがAI秘書になった話。Claude × Notion × Googleを繋いで、毎朝8時に予定を送ってくれる仕組みを作った
   date: '2026-06-08'
+- url: https://zenn.dev/h2k0430/articles/d77b8b2708751e
+  title: Pixel Tablet + Google Home AssistantでClaude APIをバックエンドにした話
+  date: '2026-07-27'
 ---
 
 
+
 # Claude Api Integration
+
+---
+
+## 2026-07-27
+
+### Pixel Tablet + Google Home AssistantでClaude APIをバックエンドにした話
+
+Google Pixel TabletのHome AssistantでClaude APIをバックエンドに統合する手順を解説。WSL2上でDockerを使用してHome Assistantを構築し、Wyoming ProtocolとVOICEVOX TTSでずんだもんの音声を実装。タスクスケジューラでWSLを常駐化し、AnthropicのClaude Conversationを音声アシスタントに設定する方法を紹介。
+
+- **ソース**: [Zenn claude](https://zenn.dev/h2k0430/articles/d77b8b2708751e)
+- **重要度**: 6/10
+- **タグ**: claude-api, setup, windows
 
 ---
 

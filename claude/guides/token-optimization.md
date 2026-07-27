@@ -11,7 +11,7 @@ tags:
 - pricing
 - prompt
 date: '2026-03-22'
-updated: '2026-07-02'
+updated: '2026-07-27'
 sources:
 - url: https://qiita.com/shockpan-web/items/852e962e14bdd2b98e70
   title: バイブコーディングでトークンを溶かさないための2つの工夫
@@ -31,6 +31,9 @@ sources:
 - url: https://qiita.com/yitaya/items/f1130fc860b33ef37016
   title: Claude Code の「作業言語」を英語に切り替えるとトークンは本当に減るのか？ A/B 実測してみた
   date: '2026-07-02'
+- url: https://qiita.com/Nana_777/items/1766dd6bbd308222f71b
+  title: 【ClaudeCode】コスト発生要因から考えるトークン消費最適化術【トークン】
+  date: '2026-07-27'
 ---
 
 
@@ -38,7 +41,20 @@ sources:
 
 
 
+
 # Token Optimization
+
+---
+
+## 2026-07-27
+
+### 【ClaudeCode】コスト発生要因から考えるトークン消費最適化術【トークン】
+
+Claude Codeのトークン消費を削減するための体系的なアプローチを解説。Anthropic公式ドキュメントとAWS実例を根拠に、コスト発生要因を5つのカテゴリに分類し、それぞれに対する具体的な最適化手法を提示している。CLAUDE.mdの200行以内への絞り込み、MCPツールの遅延ロード活用、/clearによる会話リセットなど、実践的なTipsを優先順位付けして紹介。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Nana_777/items/1766dd6bbd308222f71b)
+- **重要度**: 7/10
+- **タグ**: claude-code, performance, prompt
 
 ---
 
