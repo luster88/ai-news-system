@@ -3,13 +3,14 @@ title: Mcp Integration
 category: guides
 subcategory: mcp-integration
 tags:
+- claude-api
 - claude-code
 - cowork
 - mcp
 - performance
 - setup
 date: '2026-04-04'
-updated: '2026-06-08'
+updated: '2026-07-28'
 sources:
 - url: https://qiita.com/lovanaut/items/15fb6f0703f114000b78
   title: ChatGPTやClaudeからFORMLOVAを触り始める最短ガイド
@@ -23,12 +24,28 @@ sources:
 - url: https://qiita.com/k_ryu/items/ff8d5c13047f8ea342c8
   title: Claude CodeのSkillsとMCPでBacklogへのタスク起票を効率化した
   date: '2026-06-08'
+- url: https://zenn.dev/mochitec_tech/articles/c9c6c1209bd8af
+  title: Claude デスクトップアプリから Snowflake のマネージド MCP で SQL を叩く
+  date: '2026-07-28'
 ---
 
 
 
 
+
 # Mcp Integration
+
+---
+
+## 2026-07-28
+
+### Claude デスクトップアプリから Snowflake のマネージド MCP で SQL を叩く
+
+Snowflake が提供するマネージド MCP サーバー（2025-11-04 GA）に Claude デスクトップアプリを接続し、チャットから直接 SQL を実行する手順を解説。Snowflake 側で OAuth クライアントと MCP サーバーを設定し、Claude 側で公式コネクタを使って接続する。DEFAULT_ROLE と DEFAULT_WAREHOUSE の設定が重要で、ACCOUNTADMIN などの特権ロールは使用不可。
+
+- **ソース**: [Zenn claude](https://zenn.dev/mochitec_tech/articles/c9c6c1209bd8af)
+- **重要度**: 6/10
+- **タグ**: mcp, setup, claude-api
 
 ---
 

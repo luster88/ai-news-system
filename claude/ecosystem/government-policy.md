@@ -4,12 +4,13 @@ category: ecosystem
 subcategory: government-policy
 tags:
 - claude-api
+- claude-code
 - cowork
 - cursor
 - pricing
 - 新機能
 date: '2026-04-29'
-updated: '2026-06-06'
+updated: '2026-07-28'
 sources:
 - url: https://the-decoder.com/white-house-moves-to-restore-anthropic-access-after-pentagon-standoff
   title: White House moves to restore Anthropic access after Pentagon standoff
@@ -18,10 +19,27 @@ sources:
   title: OpenAI and the Trump administration are negotiating a government stake in
     the AI startup
   date: '2026-06-06'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1v932su/the_company_i_work_for_received_a_us_government
+  title: The company I work for received a US Government directive requiring us to
+    discontinue the use of Anthropic products, services, and models.
+  date: '2026-07-28'
 ---
 
 
+
 # Government Policy
+
+---
+
+## 2026-07-28
+
+### The company I work for received a US Government directive requiring us to discontinue the use of Anthropic products, services, and models.
+
+米国政府の指示により、ある企業がAnthropic製品（Claude全モデル、API、Console、IDEツール含む）の使用を2026年8月31日までに完全停止することを義務付けられた。新規アカウント作成は即時禁止、既存契約への影響を避けるため全従業員・契約者・サードパーティが対象。代替としてGPTモデルへの移行を推奨。技術的アクセス制限も実施予定。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1v932su/the_company_i_work_for_received_a_us_government)
+- **重要度**: 10/10
+- **タグ**: claude-api, claude-code, pricing
 
 ---
 

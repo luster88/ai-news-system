@@ -11,8 +11,9 @@ tags:
 - performance
 - prompt
 - setup
+- 新機能
 date: '2026-04-07'
-updated: '2026-07-19'
+updated: '2026-07-28'
 sources:
 - url: https://zenn.dev/analysis/articles/thought-analyzer-agents-md
   title: コンテキストファイルは、エージェントを賢くしない ── AGENTS.mdの効果を初めて測った研究
@@ -32,6 +33,9 @@ sources:
 - url: https://zenn.dev/otoha_io/articles/1ed6059b794bfb
   title: 音声1本を「話し方を保ったまま」5つのSNS原稿にする — Claude二段生成の設計
   date: '2026-07-19'
+- url: https://qiita.com/asiball/items/6ae676bfd37a75a77956
+  title: Opus5出たしUART/I2C/SPIの波形アニメGIFを描かせてみた
+  date: '2026-07-28'
 ---
 
 
@@ -39,7 +43,20 @@ sources:
 
 
 
+
 # Prompt Engineering
+
+---
+
+## 2026-07-28
+
+### Opus5出たしUART/I2C/SPIの波形アニメGIFを描かせてみた
+
+Claude の 4 モデル（Opus 5 含む）に対し、組み込みプロトコル（UART/I2C/SPI）の波形アニメーション GIF を同じプロンプトで生成させる実験記事。UART では全モデルが下位ビットから送る仕様を正しく描画。I2C で 1 モデルだけがビット値は正しいがプロトコル違反の波形を出力。SPI 含め全体的にモデル間の差は小さく、基礎知識は共通して持っていることが確認された。
+
+- **ソース**: [Qiita claude](https://qiita.com/asiball/items/6ae676bfd37a75a77956)
+- **重要度**: 6/10
+- **タグ**: opus, prompt, 新機能
 
 ---
 

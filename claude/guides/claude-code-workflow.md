@@ -4,6 +4,7 @@ category: guides
 subcategory: claude-code-workflow
 tags:
 - claude-code
+- claude-console
 - cowork
 - mac
 - mcp
@@ -16,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-07-26'
+updated: '2026-07-28'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -234,6 +235,12 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v7h5e3/i_built_a_procedural_desert_explorer_with_claude
   title: I built a procedural desert explorer with Claude Code (Opus 5) and Three.js
   date: '2026-07-26'
+- url: https://zenn.dev/jjoo/articles/4aab582a38fcf5
+  title: Codex/Claude Code で設計・実装・レビューでいい感じにモデルを選択してもらいたい
+  date: '2026-07-28'
+- url: https://qiita.com/toshikun_dev/items/cb2735d29fe17b49b1e2
+  title: そのまま使える！初めての個人向けAI駆動開発(ClaudeCodeとCloade.ai)
+  date: '2026-07-28'
 ---
 
 
@@ -294,7 +301,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-07-28
+
+### Codex/Claude Code で設計・実装・レビューでいい感じにモデルを選択してもらいたい
+
+Codex/Claude Codeで開発時に適切なモデルを自動選択する方法を解説。設計・実装・レビューなど作業内容に応じてAgent層でモデルを指定し、Skill（いつ使うか）、Agent（どのモデルか）、Playbook（どう進めるか）の三層構造で管理する手法を提案。定型作業には軽量モデル、複雑なタスクには高性能モデルを使い分けることでコスト最適化を実現。
+
+- **ソース**: [Zenn claude](https://zenn.dev/jjoo/articles/4aab582a38fcf5)
+- **重要度**: 6/10
+- **タグ**: claude-code, opus, sonnet
+
+---
+
+### そのまま使える！初めての個人向けAI駆動開発(ClaudeCodeとCloade.ai)
+
+Claude.ai と Claude Code を使い分けた個人向け AI 駆動開発手順を解説。要件定義・基本設計は Claude.ai の Project 機能で検討し、詳細設計以降は Claude Code でリポジトリを直接操作する方法を提案。トークン消費を抑えつつ、各ツールの強みを活かした開発フローを具体的に紹介。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/toshikun_dev/items/cb2735d29fe17b49b1e2)
+- **重要度**: 6/10
+- **タグ**: claude-code, claude-console, cowork
 
 ---
 

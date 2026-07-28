@@ -7,7 +7,7 @@ tags:
 - release
 - 新機能
 date: '2026-04-21'
-updated: '2026-05-23'
+updated: '2026-07-28'
 sources:
 - url: https://qiita.com/eri_tech/items/bd59d063d55544b1442e
   title: なぜClaude Mythosはサイバーセキュリティに強いのか？
@@ -19,11 +19,28 @@ sources:
   title: Anthropic warns Claude Mythos Preview finds bugs faster than developers can
     patch them
   date: '2026-05-23'
+- url: https://the-decoder.com/anthropic-says-its-mythos-model-found-vulnerabilities-in-cryptographic-algorithms-that-secure-the-internet
+  title: Anthropic says its Mythos model found vulnerabilities in cryptographic algorithms
+    that secure the internet
+  date: '2026-07-28'
 ---
 
 
 
+
 # Claude Mythos Security
+
+---
+
+## 2026-07-28
+
+### Anthropic says its Mythos model found vulnerabilities in cryptographic algorithms that secure the internet
+
+Anthropic の AI モデル Claude Mythos Preview が、インターネットのセキュリティを支える暗号アルゴリズムの脆弱性を発見しました。ポスト量子署名方式 HAWK への改良された攻撃手法と、AES の簡易版への新たな攻撃手法を開発し、それぞれ約10万ドルの API コストで実現しました。HAWK の脆弱性は60時間で発見され、人間の専門家が2年以上かけてレビューしていたものでした。ただし、現在実際に使用されているシステムへの immediate な影響はないとされています。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-says-its-mythos-model-found-vulnerabilities-in-cryptographic-algorithms-that-secure-the-internet)
+- **重要度**: 9/10
+- **タグ**: 新機能
 
 ---
 
