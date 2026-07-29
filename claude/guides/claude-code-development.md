@@ -9,7 +9,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-04-09'
-updated: '2026-05-29'
+updated: '2026-07-29'
 sources:
 - url: https://qiita.com/rrr_rrrr_/items/f026e07fc37e6eb99f13
   title: Claude CodeだけでSNS運用ツール4つ作ってBOOTHで売り始めた話
@@ -20,11 +20,27 @@ sources:
 - url: https://qiita.com/T_Fuchi/items/69f8f52a0bc410f3aa65
   title: VS Code拡張機能をClaude Codeでゼロから作って、マーケットプレイスに公開したら1時間で10件ダウンロードされた話
   date: '2026-05-29'
+- url: https://zenn.dev/codebay88/articles/14cb8b71439ce6
+  title: Claude Codeで作ったAIエージェント、Claude自身に評価させてみた
+  date: '2026-07-29'
 ---
 
 
 
+
 # Claude Code Development
+
+---
+
+## 2026-07-29
+
+### Claude Codeで作ったAIエージェント、Claude自身に評価させてみた
+
+Claude Codeで開発したAI導入WBS自動生成ツールを、Claude自身にコードレビューさせた実験的な取り組み。プロトコル型とコード型の2種類のエージェントを組み合わせ、曖昧な目的を構造化してWBSを生成する。Claude自身が「公開・販売に値する」と評価しつつ、自律実行部分がプレースホルダーであることなど限界も正直に指摘。AI開発における品質担保手法として「AIに作らせたコードをAIに検品させる」アプローチを提案。
+
+- **ソース**: [Zenn claude](https://zenn.dev/codebay88/articles/14cb8b71439ce6)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

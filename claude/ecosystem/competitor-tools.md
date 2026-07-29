@@ -4,11 +4,12 @@ category: ecosystem
 subcategory: competitor-tools
 tags:
 - claude-code
+- copilot
 - cowork
 - mcp
 - 新機能
 date: '2026-04-04'
-updated: '2026-06-11'
+updated: '2026-07-29'
 sources:
 - url: https://ai-heartland.com/agent/aws-devops-agent
   title: AWS DevOps Agent正式リリース——CI/CDパイプライン生成からインシデント自動解決まで
@@ -16,10 +17,27 @@ sources:
 - url: https://ai-heartland.com/explain/gemini-cli-guide
   title: Gemini CLI 使い方入門｜インストール・認証からGoogle AIをコマンドラインで操る2026年版
   date: '2026-06-11'
+- url: https://the-decoder.com/openai-open-sources-codex-security-cli-to-help-developers-find-and-fix-vulnerabilities-from-the-command-line
+  title: OpenAI open-sources Codex Security CLI to help developers find and fix vulnerabilities
+    from the command line
+  date: '2026-07-29'
 ---
 
 
+
 # Competitor Tools
+
+---
+
+## 2026-07-29
+
+### OpenAI open-sources Codex Security CLI to help developers find and fix vulnerabilities from the command line
+
+OpenAIがCodex Security CLIをオープンソース化。コマンドラインからコード脆弱性を自動検出・修正できるツールで、CI/CDパイプラインへの統合も可能。Anthropic の Claude Security と競合する製品として、AIを活用したセキュリティ防御の重要性が高まっている。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/openai-open-sources-codex-security-cli-to-help-developers-find-and-fix-vulnerabilities-from-the-command-line)
+- **重要度**: 4/10
+- **タグ**: copilot, cowork, 新機能
 
 ---
 

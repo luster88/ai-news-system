@@ -7,9 +7,10 @@ tags:
 - mcp
 - performance
 - setup
+- vscode
 - 新機能
 date: '2026-03-28'
-updated: '2026-04-10'
+updated: '2026-07-29'
 sources:
 - url: https://zenn.dev/okamyuji/articles/engram-claude-code-local-memory
   title: Engram - Claude Codeの会話を自動記録し、過去の記憶を検索・注入するローカル長期記憶システム
@@ -17,10 +18,26 @@ sources:
 - url: https://qiita.com/taketsuyo/items/c9024c668861d56975a9
   title: Claude Codeの本当の敵は性能不足じゃない。毎回「思い出し直し」が発生することだ
   date: '2026-04-10'
+- url: https://zenn.dev/yukurash/articles/5ac67eada8c3bb
+  title: Claude Code のステータスラインをドラクエ風にした
+  date: '2026-07-29'
 ---
 
 
+
 # Claude Code Memory
+
+---
+
+## 2026-07-29
+
+### Claude Code のステータスラインをドラクエ風にした
+
+Claude Code のステータスラインをドラクエ風 UI にカスタマイズする拡張機能の紹介。残りトークン数をHP/MP バーとして表示し、エージェント/スキルを仲間キャラとして表示、ツール実行を戦闘メッセージで演出する。npm で簡単インストール可能で、実用面では上限接近の視認性が向上し、遊び心も満載の実装となっている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/yukurash/articles/5ac67eada8c3bb)
+- **重要度**: 4/10
+- **タグ**: claude-code, vscode, 新機能
 
 ---
 

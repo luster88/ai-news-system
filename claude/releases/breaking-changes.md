@@ -6,15 +6,32 @@ tags:
 - claude-api
 - opus
 - release
+- sonnet
 date: '2026-06-22'
-updated: '2026-06-22'
+updated: '2026-07-29'
 sources:
 - url: https://qiita.com/picnic/items/7f47405f515731b37f3f
   title: Claude Fable 5 & Opus 4.8 の破壊的変更と移行ガイド
   date: '2026-06-22'
+- url: https://qiita.com/picnic/items/5393b05cc80e1e2d09eb
+  title: Claude Opus 5・Sonnet 5リリースと知るべき破壊的変更まとめ
+  date: '2026-07-29'
 ---
 
+
 # Breaking Changes
+
+---
+
+## 2026-07-29
+
+### Claude Opus 5・Sonnet 5リリースと知るべき破壊的変更まとめ
+
+2026年7月にClaude Opus 5とSonnet 5がリリースされ、複数の破壊的変更が発生。Opus 5ではeffort:xhigh/maxとthinking無効化の併用が400エラーになり、Opus 4.7のfast modeが削除。Sonnet 4/Opus 4など旧世代モデルが提供終了し、レガシーWorkbenchも8月17日に廃止予定。本番環境での影響が大きいため、モデルIDやパラメータのハードコード確認、トークン数増加の試算、Workbenchデータのエクスポートなど早急な対応が必要。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/5393b05cc80e1e2d09eb)
+- **重要度**: 10/10
+- **タグ**: opus, sonnet, claude-api
 
 ---
 

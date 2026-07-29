@@ -12,7 +12,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-07-27'
+updated: '2026-07-29'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -52,6 +52,9 @@ sources:
 - url: https://zenn.dev/ainewsdaily/articles/20260725_general_t1
   title: 'Claude Opus 5の要点整理: 料金据え置きで上位半額、effortは5段階、移行時は400エラーに注意'
   date: '2026-07-27'
+- url: https://qiita.com/htani0817/items/e04d11bc834c993f7ff6
+  title: 【2026年7月】Claude Opus 5がリリース！Fable 5級の性能を半額で・API変更点まとめ
+  date: '2026-07-29'
 ---
 
 
@@ -62,7 +65,30 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-07-29
+
+### 【2026年7月】Claude Opus 5がリリース！Fable 5級の性能を半額で・API変更点まとめ
+
+2026年7月にClaude Opus 5がリリースされ、Fable 5に迫る性能を半額で実現。アダプティブ思考がデフォルト有効化され、effortパラメータでインテリジェンスとコスト効率を調整可能に。CursorBench 3.2でFable 5のスコアに0.5%差まで肉薄し、コスト効率が大幅に向上。コーディング・ナレッジワーク系ベンチマークで最高水準を記録し、API移行時はmax_tokens設定に注意が必要。
+
+- **ソース**: [Qiita claude](https://qiita.com/htani0817/items/e04d11bc834c993f7ff6)
+- **重要度**: 10/10
+- **タグ**: opus, release, 新機能
+
+---
+
+### 【2026年7月】Claude Opus 5がリリース！Fable 5級の性能を半額で・API変更点まとめ
+
+2026年7月、AnthropicがClaude Opus 5をリリース。Fable 5に迫る性能を半額（入力$5/出力$25 per 1M tokens）で実現し、effortダイヤルによるインテリジェンス制御、アダプティブ思考のデフォルト有効化、Mid-conversation tool changes対応などが特徴。CursorBench 3.2でFable 5に0.5%差まで肉薄しつつコストは半分、SWE-bench Proで79.9%を記録。max_tokens設定の見直しが必要な破壊的変更を含む。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/htani0817/items/e04d11bc834c993f7ff6)
+- **重要度**: 10/10
+- **タグ**: opus, release, pricing
 
 ---
 

@@ -4,11 +4,12 @@ category: tools
 subcategory: claude-code-visualization
 tags:
 - claude-code
+- cowork
 - mcp
 - vscode
 - 新機能
 date: '2026-06-27'
-updated: '2026-07-03'
+updated: '2026-07-29'
 sources:
 - url: https://zenn.dev/breakbot/articles/53e7f1c6564f26
   title: Claude Codeのセッションを見下ろし型オフィスとして可視化するツールを作った
@@ -20,11 +21,28 @@ sources:
   title: I got tired of watching Claude Code work in a plain terminal so I built it
     a room.
   date: '2026-07-03'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1va26us/i_got_tired_of_watching_claude_code_work_in_a
+  title: I got tired of watching Claude Code work in a plain terminal so I built it
+    3D cozy game simulation for my agents
+  date: '2026-07-29'
 ---
 
 
 
+
 # Claude Code Visualization
+
+---
+
+## 2026-07-29
+
+### I got tired of watching Claude Code work in a plain terminal so I built it 3D cozy game simulation for my agents
+
+開発者が Claude Code を使ったコーディング作業をゲーム化した「Termi Protocol」というデスクトップアプリを開発。Electron で構築され、AI エージェントを Kanban で管理し、3D ルームで作業を可視化する。セッション復元、ファイル変更追跡、プロジェクトメモリ保存などの機能を持ち、エージェント間で知識共有も可能。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1va26us/i_got_tired_of_watching_claude_code_work_in_a)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

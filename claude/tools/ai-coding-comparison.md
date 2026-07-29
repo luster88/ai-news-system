@@ -7,7 +7,7 @@ tags:
 - cowork
 - cursor
 date: '2026-04-13'
-updated: '2026-06-08'
+updated: '2026-07-29'
 sources:
 - url: https://qiita.com/kotaro_ai_lab/items/2302e26f835082f04575
   title: 【2026年4月版】AIコーディングエージェント最新動向まとめ — Claude Code・Codex CLI・Cursor 3・Jules 完全比較
@@ -15,10 +15,26 @@ sources:
 - url: https://zenn.dev/devex12/articles/ai-coding-tools-comparison-devex12
   title: 【2026年版】無料で使えるAIコーディングツール比較 - Claude Code, Gemini CLI, Kiro
   date: '2026-06-08'
+- url: https://zenn.dev/nadarakainc/articles/60a0376eca628d
+  title: Claude・Cursor・ChatGPT、結局3つとも課金してる話〜AIコーディングツールの使い分け〜
+  date: '2026-07-29'
 ---
 
 
+
 # Ai Coding Comparison
+
+---
+
+## 2026-07-29
+
+### Claude・Cursor・ChatGPT、結局3つとも課金してる話〜AIコーディングツールの使い分け〜
+
+Claude、Cursor、ChatGPT(Codex)の3つのAIコーディングツールに課金している実務者が、使い分けの判断基準を共有。Claudeは長文脈での設計相談、Cursorは実装フェーズ、ChatGPTは並行タスク処理に適していると解説。1つに絞るより役割分担させることで、結果的に時間とコストを節約できると結論。
+
+- **ソース**: [Zenn claude](https://zenn.dev/nadarakainc/articles/60a0376eca628d)
+- **重要度**: 6/10
+- **タグ**: cursor, claude-code, cowork
 
 ---
 

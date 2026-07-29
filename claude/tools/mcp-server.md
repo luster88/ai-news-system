@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-07-27'
+updated: '2026-07-29'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -118,6 +118,9 @@ sources:
 - url: https://ai-heartland.com/mcp/github-mcp-server
   title: GitHub MCPとは｜公式MCPサーバーの使い方・86ツール・リモート/ローカル版と権限設計を解説
   date: '2026-07-27'
+- url: https://ai-heartland.com/mcp/atlassian-mcp-server
+  title: Atlassian MCPとは｜公式Rovo MCP Serverの使い方・認証方式で変わる対応製品を解説
+  date: '2026-07-29'
 ---
 
 
@@ -150,7 +153,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-07-29
+
+### Atlassian MCPとは｜公式Rovo MCP Serverの使い方・認証方式で変わる対応製品を解説
+
+Atlassian公式のクラウドホスト型MCPサーバー「Rovo MCP Server」の解説記事。Jira、Confluence、Jira Service Management、Bitbucket Cloud、Compassの5製品をClaude/Cursorから操作可能。最大の特徴は認証方式によって対応製品が変わる点で、APIトークンとOAuth 2.1で扱える製品が異なる。55個のツールを提供し、権限は組織管理者が制御。現在Beta無料だが一般提供後は課金予定。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/mcp/atlassian-mcp-server)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, setup
 
 ---
 

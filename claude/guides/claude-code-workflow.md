@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-07-28'
+updated: '2026-07-29'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -241,6 +241,9 @@ sources:
 - url: https://qiita.com/toshikun_dev/items/cb2735d29fe17b49b1e2
   title: そのまま使える！初めての個人向けAI駆動開発(ClaudeCodeとCloade.ai)
   date: '2026-07-28'
+- url: https://zenn.dev/nenune/articles/d7246b1354a186
+  title: 'Claude Codeで宗教をつくろう #1'
+  date: '2026-07-29'
 ---
 
 
@@ -302,7 +305,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-07-29
+
+### Claude Codeで宗教をつくろう #1
+
+個人が10年分のメモ2,469件(13.7万字)を元に、Claude Codeを使って自分の宗教・世界観を体系化するプロジェクトの初日レポート。AIに本文を書かせず、役割を4つに限定し、questions/に問いを蓄積する設計により、「AIの補間」と「自分の確信」の混同を防ぐ。raw/は改変不可として履歴を保ち、doctrine/側を更新する設計で長期的な思索の言語化を実現。NotionとiCloudメモから抽出したメモをID管理し、MAP.mdで重心3つ・テーマ12個・空白7箇所を抽出した。
+
+- **ソース**: [Zenn claude](https://zenn.dev/nenune/articles/d7246b1354a186)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt
 
 ---
 
