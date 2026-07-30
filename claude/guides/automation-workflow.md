@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-07-10'
+updated: '2026-07-30'
 sources:
 - url: https://zenn.dev/shelty/articles/20260408-budget-book-asset-management
   title: MoneyForwardの家計簿データで資産予測を自動化してみた＠Claude
@@ -40,6 +40,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1uszlay/how_claude_does_my_40_hour_a_week_job_by_itself
   title: How Claude does my 40 hour a week job by itself - for 15 Cents
   date: '2026-07-10'
+- url: https://zenn.dev/shoooroom/articles/ai-automation-first-step
+  title: AIに仕事を丸投げしてみた｜Claude Codeで副業を自動化した実験記録
+  date: '2026-07-30'
 ---
 
 
@@ -49,7 +52,20 @@ sources:
 
 
 
+
 # Automation Workflow
+
+---
+
+## 2026-07-30
+
+### AIに仕事を丸投げしてみた｜Claude Codeで副業を自動化した実験記録
+
+Claude Codeを使った副業の自動化実験記録。コンテンツ制作（記事構成→執筆→校正→公開）を自動化し、ユーザーは承認作業のみを行う仕組みを構築。停止条件の設定とワークフロー設計が重要で、完全放置ではなく「判断と承認だけ行う」状態を実現。実践ガイドを有料noteで公開している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/shoooroom/articles/ai-automation-first-step)
+- **重要度**: 5/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

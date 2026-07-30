@@ -5,11 +5,12 @@ subcategory: security-incident
 tags:
 - bugfix
 - claude-code
+- claude-console
 - release
 - setup
 - vscode
 date: '2026-03-31'
-updated: '2026-06-08'
+updated: '2026-07-30'
 sources:
 - url: https://the-decoder.com/anthropic-accidentally-publishes-claude-code-source-code-for-anyone-to-find
   title: Anthropic accidentally publishes Claude Code source code for anyone to find
@@ -27,12 +28,28 @@ sources:
   title: An active attack is planting backdoors inside Claude Code right now. If you
     use npm, your credentials may already be compromised.
   date: '2026-06-08'
+- url: https://qiita.com/sakutto-panda/items/31044e351755de23b0f3
+  title: 【2026/7/26】Claude共有チャットがGoogle検索に流出した件 — 原因と対策まとめ
+  date: '2026-07-30'
 ---
 
 
 
 
+
 # Security Incident
+
+---
+
+## 2026-07-30
+
+### 【2026/7/26】Claude共有チャットがGoogle検索に流出した件 — 原因と対策まとめ
+
+2026年7月、Claudeの共有チャットやArtifactsがGoogle検索に流出する事案が発生。実名入り履歴書やAPIキーなど機密情報が検索可能な状態に。原因はrobots.txtでクロールを禁止していたため、ページに設定したnoindexヘッダーをGooglebotが読めなかったこと。Anthropicは対応を実施し、Google検索結果からは削除されたが、アーカイブ化された情報は残存している。
+
+- **ソース**: [Qiita claude](https://qiita.com/sakutto-panda/items/31044e351755de23b0f3)
+- **重要度**: 8/10
+- **タグ**: claude-console, bugfix
 
 ---
 

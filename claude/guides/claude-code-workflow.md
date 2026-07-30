@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-07-29'
+updated: '2026-07-30'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -244,6 +244,9 @@ sources:
 - url: https://zenn.dev/nenune/articles/d7246b1354a186
   title: 'Claude Codeで宗教をつくろう #1'
   date: '2026-07-29'
+- url: https://qiita.com/shu15511551/items/b3f5140d14be9b5a84af
+  title: 「会話するだけでマクロが直る」は「会話するだけですごいマクロが作れる」だった話
+  date: '2026-07-30'
 ---
 
 
@@ -306,7 +309,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-07-30
+
+### 「会話するだけでマクロが直る」は「会話するだけですごいマクロが作れる」だった話
+
+Claude Codeを使い、Excel を開いたまま AI と会話しながらVBAマクロと会話ログ管理システムを改善した実践記録。セル選択状態を AI が認識し、会話ログの二重保存問題を0.8秒の差から特定・解決。ファイル名の不具合修正、重複除去、設定追加まで、ブックを閉じずに全作業を完了した事例。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/shu15511551/items/b3f5140d14be9b5a84af)
+- **重要度**: 6/10
+- **タグ**: claude-code, vscode, cowork
 
 ---
 

@@ -4,17 +4,34 @@ category: guides
 subcategory: claude-agent-sdk
 tags:
 - claude-api
+- claude-code
 - linux
 - setup
 date: '2026-06-06'
-updated: '2026-06-06'
+updated: '2026-07-30'
 sources:
 - url: https://qiita.com/norihito_wada/items/e1f02121720e178b553b
   title: Claude Agent SDKの使い方 競馬データを読む
   date: '2026-06-06'
+- url: https://qiita.com/norihito_wada/items/6c230c75fd2efcb2c80c
+  title: Claude Agent SDK の使い方 ギリシャ指標判定株式注文サンプル
+  date: '2026-07-30'
 ---
 
+
 # Claude Agent Sdk
+
+---
+
+## 2026-07-30
+
+### Claude Agent SDK の使い方 ギリシャ指標判定株式注文サンプル
+
+Claude Agent SDK の理解を深めるため、CLAUDE.md、rules、skills、agents を活用してギリシャ指標判定から株式注文までの一連の処理を実装した実践ガイド。金融系事例として Alpaca API との連携サンプルを提示し、SDK の使い方とファイル構成のベストプラクティスを解説している。
+
+- **ソース**: [Qiita claude](https://qiita.com/norihito_wada/items/6c230c75fd2efcb2c80c)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup
 
 ---
 

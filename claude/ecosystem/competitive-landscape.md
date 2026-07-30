@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-23'
-updated: '2026-07-21'
+updated: '2026-07-30'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -70,6 +70,12 @@ sources:
   title: Google ships three new Gemini Flash models but its frontier 3.5 Pro remains
     lost in training
   date: '2026-07-21'
+- url: https://the-decoder.com/microsoft-ai-bets-on-cheap-specialist-models-instead-of-chasing-the-frontier
+  title: Microsoft AI bets on cheap specialist models instead of chasing the frontier
+  date: '2026-07-30'
+- url: https://techcrunch.com/2026/07/29/microsoft-is-openly-competing-with-openai-anthropic-more-than-ever
+  title: Microsoft is openly competing with OpenAI, Anthropic more than ever
+  date: '2026-07-30'
 ---
 
 
@@ -86,7 +92,30 @@ sources:
 
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-07-30
+
+### Microsoft AI bets on cheap specialist models instead of chasing the frontier
+
+Microsoft AI は、フロンティアモデルを追求する代わりに、安価な専門特化モデルに注力する戦略を発表。サイバーセキュリティ特化の MAI-Cyber-1-Flash は Claude Mythos を上回る性能を半額で実現し、画像モデル MAI-Image-2.5-Flash は GPU コストを 84% 削減。複数モデルを orchestrate するシステム MDASH により、簡単なタスクは専門モデル、難しいタスクは OpenAI の推論モデルに振り分ける。Anthropic も Claude Fable 5 で同様のアプローチを採用しており、競争の軸が単一モデルからオーケストレーションシステムへ移行している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/microsoft-ai-bets-on-cheap-specialist-models-instead-of-chasing-the-frontier)
+- **重要度**: 7/10
+- **タグ**: performance, pricing, copilot
+
+---
+
+### Microsoft is openly competing with OpenAI, Anthropic more than ever
+
+MicrosoftのCEO Satya Nadellaが、OpenAIとAnthropicへの投資を持ちながらも、両社と競合する戦略を明確化。企業顧客に対し、フロンティアAIラボへの依存を避け、複数モデルの利用とMicrosoft独自のモデル・エージェント・セキュリティソリューションを推奨。データ漏洩やベンダーロックインを懸念する企業IT部門に向け、より低コストで顧客管理を保持できる代替案として自社サービスを位置づけている。Microsoftは第4四半期に900億ドルの収益を記録し、AI市場での主導権確保を狙う。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/07/29/microsoft-is-openly-competing-with-openai-anthropic-more-than-ever)
+- **重要度**: 7/10
+- **タグ**: pricing, cowork, claude-api
 
 ---
 
