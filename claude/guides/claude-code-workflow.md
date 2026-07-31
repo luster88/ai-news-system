@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-07-30'
+updated: '2026-07-31'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -247,6 +247,9 @@ sources:
 - url: https://qiita.com/shu15511551/items/b3f5140d14be9b5a84af
   title: 「会話するだけでマクロが直る」は「会話するだけですごいマクロが作れる」だった話
   date: '2026-07-30'
+- url: https://zenn.dev/craftcode/articles/claude-code-ai-company
+  title: Claude Codeに8職種の「AI社員」を持たせて16案件を並行させている話（テンプレ公開）
+  date: '2026-07-31'
 ---
 
 
@@ -310,7 +313,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-07-31
+
+### Claude Codeに8職種の「AI社員」を持たせて16案件を並行させている話（テンプレ公開）
+
+Claude Codeで16案件を並行管理するため、8職種のAIエージェントを設計した実践事例。エージェント定義と知識を分離し、STATUS.mdで進捗を3値管理することで、規模拡大時の破綻を防ぐ設計パターンを紹介。テンプレートをGitHubで公開している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/craftcode/articles/claude-code-ai-company)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

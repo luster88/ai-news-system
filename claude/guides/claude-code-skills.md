@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-07-19'
+updated: '2026-07-31'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -61,6 +61,9 @@ sources:
 - url: https://zenn.dev/shun_producer/articles/popular-claude-code-skills
   title: いま使われているClaude Codeスキルとは？ 非エンジニア向け厳選8選
   date: '2026-07-19'
+- url: https://qiita.com/akihidem/items/e9f332e03170a5402c6d
+  title: skill-creator プラグインで独自スキルを実装する — SKILL.md 仕様と検証手順
+  date: '2026-07-31'
 ---
 
 
@@ -77,7 +80,20 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-07-31
+
+### skill-creator プラグインで独自スキルを実装する — SKILL.md 仕様と検証手順
+
+Claude Code のスキル機能について、SKILL.md の構成（フロントマターとマークダウン本文）、個人・プロジェクト・エンタープライズの配置場所と優先順位、シェルコマンド埋め込み構文、context: fork によるサブエージェント実行、background フィールドやバージョン依存の仕様を、2026-07-31 時点の公式ドキュメントから逐語引用を交えて詳細に解説した技術記事。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/akihidem/items/e9f332e03170a5402c6d)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

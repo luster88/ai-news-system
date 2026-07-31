@@ -12,7 +12,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-07-29'
+updated: '2026-07-31'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -55,6 +55,9 @@ sources:
 - url: https://qiita.com/htani0817/items/e04d11bc834c993f7ff6
   title: 【2026年7月】Claude Opus 5がリリース！Fable 5級の性能を半額で・API変更点まとめ
   date: '2026-07-29'
+- url: https://qiita.com/picnic/items/e96397a8ad93bca4ce25
+  title: Claude Opus 5 リリース総まとめ:1Mコンテキストと破壊的変更2件
+  date: '2026-07-31'
 ---
 
 
@@ -66,7 +69,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-07-31
+
+### Claude Opus 5 リリース総まとめ:1Mコンテキストと破壊的変更2件
+
+2026年7月24日、Anthropic が Claude Opus 5 をリリース。1M トークンのコンテキストウィンドウと最大128kトークン出力に対応し、価格は据え置き。重要な破壊的変更として、effort が xhigh/max 時の thinking 無効化で400エラーが発生する点と、Opus 4.7 の fast mode が削除された点に注意が必要。ベータ機能として fallbacks パラメータに "default" モードが追加された。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/e96397a8ad93bca4ce25)
+- **重要度**: 10/10
+- **タグ**: opus, release, 新機能
 
 ---
 
