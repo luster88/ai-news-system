@@ -10,7 +10,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-29'
-updated: '2026-05-28'
+updated: '2026-08-01'
 sources:
 - url: https://zenn.dev/noprogllama/articles/d6a34cce09b66d
   title: AIに人格と記憶を与えたら、常につながる手段が欲しくなって自前のWeb UIを作ることになった
@@ -33,6 +33,9 @@ sources:
 - url: https://qiita.com/QUANON/items/3497296a1a353374815f
   title: Claude Code の statusline は Ruby でも書ける
   date: '2026-05-28'
+- url: https://qiita.com/devex12/items/6d5dab6ec0613afa0c43
+  title: 公式ドキュメントゼロ。Claude Codeの秘密テーマ機能を、grep -a十数回・10分のバイナリ解析だけで解明した話
+  date: '2026-08-01'
 ---
 
 
@@ -41,7 +44,20 @@ sources:
 
 
 
+
 # Claude Code Customization
+
+---
+
+## 2026-08-01
+
+### 公式ドキュメントゼロ。Claude Codeの秘密テーマ機能を、grep -a十数回・10分のバイナリ解析だけで解明した話
+
+Claude Code CLIの非公開カスタムテーマ機能を、grep -aによるバイナリ解析で10分で解明。~/.claude/themes/<slug>.jsonにbase継承とoverridesを記述する仕様を逆算。ドキュメントなしでも実行バイナリから仕様を再現できることを実証した技術記事。
+
+- **ソース**: [Qiita claude](https://qiita.com/devex12/items/6d5dab6ec0613afa0c43)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

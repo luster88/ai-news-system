@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-11'
-updated: '2026-07-22'
+updated: '2026-08-01'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-best-practice-guide-2026
   title: Claude Codeベストプラクティス完全ガイド2026年版｜使い方・Tips・効率化テクニック集
@@ -34,6 +34,9 @@ sources:
 - url: https://zenn.dev/devtori/articles/claude-md-firing-conditions
   title: 「CLAUDE.mdに書いたのに守られない」のはなぜか——ルールは内容ではなく"発火条件"で死ぬ
   date: '2026-07-22'
+- url: https://zenn.dev/gudezou/articles/a017fa7cc840f6
+  title: Plan モードを正解保証と勘違いするとなぜやり直しが増えるのか ── 公式 docs が推奨する3つの付き合い方
+  date: '2026-08-01'
 ---
 
 
@@ -42,7 +45,20 @@ sources:
 
 
 
+
 # Claude Code Best Practices
+
+---
+
+## 2026-08-01
+
+### Plan モードを正解保証と勘違いするとなぜやり直しが増えるのか ── 公式 docs が推奨する3つの付き合い方
+
+Plan モードは実装の正解を保証せず、プラン承認後も動作確認が必要。公式 docs は trust-then-verify gap（もっともらしい実装がエッジケースを扱えない失敗）への対策として、小さな修正ではプランをスキップ、2回訂正で /clear、Ctrl+G での直接編集を推奨。Plan モードの本質は「変更前の調査」であり、承認は Implement フェーズの入り口に過ぎない。
+
+- **ソース**: [Zenn claude](https://zenn.dev/gudezou/articles/a017fa7cc840f6)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt
 
 ---
 

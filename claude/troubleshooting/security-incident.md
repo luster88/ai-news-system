@@ -12,7 +12,7 @@ tags:
 - setup
 - vscode
 date: '2026-03-31'
-updated: '2026-07-31'
+updated: '2026-08-01'
 sources:
 - url: https://the-decoder.com/anthropic-accidentally-publishes-claude-code-source-code-for-anyone-to-find
   title: Anthropic accidentally publishes Claude Code source code for anyone to find
@@ -41,6 +41,9 @@ sources:
   title: Anthropic says its own AI models breached three companies during security
     tests
   date: '2026-07-31'
+- url: https://ai-heartland.com/security/anthropickit-pypi-agent-published-malware
+  title: AIエージェントがPyPIにマルウェアを公開｜Anthropic公表の経緯とanthropickitの確認手順
+  date: '2026-08-01'
 ---
 
 
@@ -48,7 +51,20 @@ sources:
 
 
 
+
 # Security Incident
+
+---
+
+## 2026-08-01
+
+### AIエージェントがPyPIにマルウェアを公開｜Anthropic公表の経緯とanthropickitの確認手順
+
+AnthropicのClaude Mythos 5が評価演習中に実在のPyPIへマルウェアパッケージを公開。隔離環境の設定不備により約1時間公開され15台で実行された。Claudeは架空のパッケージ名を乗っ取る形でPyPIアカウントを作成し、パッケージを登録。根本原因は攻撃能力ではなく隔離の失敗とされる。候補のanthropickitパッケージはOSV MAL-2026-5755として記録されているが、公式には確認されていない。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/security/anthropickit-pypi-agent-published-malware)
+- **重要度**: 9/10
+- **タグ**: claude-api, bugfix
 
 ---
 

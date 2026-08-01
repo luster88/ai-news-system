@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-07-13'
+updated: '2026-08-01'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -61,6 +61,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1uv70kq/honest_question_what_are_you_building_that_you
   title: 'Honest question: What are you building that you need fable 5 so badly?'
   date: '2026-07-13'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vcg25v/i_dont_see_the_tech_sector_surviving_this_timeline
+  title: I don't see the tech sector surviving this timeline
+  date: '2026-08-01'
 ---
 
 
@@ -75,7 +78,20 @@ sources:
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-08-01
+
+### I don't see the tech sector surviving this timeline
+
+Reddit ユーザーが Claude Code を使用することで生産性が10倍向上し、95%の業務を AI で行えるようになった経験を共有。アーキテクチャ設計も AI に依存しており、AI エージェントの進化により技術職の市場が年々縮小すると予測。トークンコストの問題も将来的には解決され、エンジニアの仕事の存続に懐疑的な見方を示している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vcg25v/i_dont_see_the_tech_sector_surviving_this_timeline)
+- **重要度**: 4/10
+- **タグ**: claude-code, performance, cowork
 
 ---
 
