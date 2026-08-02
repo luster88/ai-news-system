@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-07-31'
+updated: '2026-08-02'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -250,6 +250,9 @@ sources:
 - url: https://zenn.dev/craftcode/articles/claude-code-ai-company
   title: Claude Codeに8職種の「AI社員」を持たせて16案件を並行させている話（テンプレ公開）
   date: '2026-07-31'
+- url: https://zenn.dev/cotoha5108/articles/file-based-kabeuchi
+  title: AIとの壁打ちを、会話でやるのをやめた。ファイルでやる
+  date: '2026-08-02'
 ---
 
 
@@ -314,7 +317,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-08-02
+
+### AIとの壁打ちを、会話でやるのをやめた。ファイルでやる
+
+Claude Codeを使った企画検討の運用手法。チャット形式の壁打ちでは「続きができない」問題があったが、前提・壁打ち・バックログの3ファイルに役割を分け、決定と未決を明確に管理することで解決。コードは書かず、Markdownファイルを育てながら企画を詰めていく実践的な運用方法を実セッションで紹介。
+
+- **ソース**: [Zenn claude](https://zenn.dev/cotoha5108/articles/file-based-kabeuchi)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

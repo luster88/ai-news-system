@@ -6,16 +6,33 @@ tags:
 - bugfix
 - claude-code
 - performance
+- sonnet
 date: '2026-07-19'
-updated: '2026-07-19'
+updated: '2026-08-02'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v0vqik/claude_code_got_stuck_printing_court_burned
   title: Claude Code got stuck printing “court,” burned through tokens, then blamed
     the “long session” it created
   date: '2026-07-19'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vdbtzy/claude_code_just_randomly_spat_out_kimi_k2
+  title: Claude Code just randomly spat out Kimi K2 Thinking output mid-response
+  date: '2026-08-02'
 ---
 
+
 # Claude Code Bugs
+
+---
+
+## 2026-08-02
+
+### Claude Code just randomly spat out Kimi K2 Thinking output mid-response
+
+Claude Code（Sonnet 5使用）で作業中、突然応答の途中に競合モデルである Kimi K2 Thinking のモデルカード説明が混入する異常な現象が報告されました。ユーザーは他のプロバイダーと接続しておらず、Claude Code のみを使用していました。この予期しない動作はコミュニティで議論を呼んでいます。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vdbtzy/claude_code_just_randomly_spat_out_kimi_k2)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, sonnet
 
 ---
 

@@ -6,15 +6,32 @@ tags:
 - claude-code
 - cowork
 - cursor
+- setup
 date: '2026-07-13'
-updated: '2026-07-13'
+updated: '2026-08-02'
 sources:
 - url: https://ai-heartland.com/explain/loopkit-cross-tool-harness
   title: loopkit解説｜Claude Code・Cursor・Codexを横断する最小ハーネスと49スキル
   date: '2026-07-13'
+- url: https://ai-heartland.com/agent/omnigent-meta-harness
+  title: Omnigentとは｜Claude CodeやCodexを差し替えるメタハーネスをポリシーとサンドボックスで解説
+  date: '2026-08-02'
 ---
 
+
 # Multi Agent Harness
+
+---
+
+## 2026-08-02
+
+### Omnigentとは｜Claude CodeやCodexを差し替えるメタハーネスをポリシーとサンドボックスで解説
+
+Omnigentは複数のAIコーディングエージェント（Claude Code、Codex、Cursorなど24種）を統一的に扱うメタハーネスフレームワーク。YAML設定でハーネスを差し替え可能にし、ポリシー（ALLOW/DENY/ASK）による行動制御とOSサンドボックス（macOS=seatbelt、Linux=bwrap、Windows=Job Object）による隔離機能を提供する。2026年6月公開のアルファ版で、GitHub Star8,007だが公開issue812件と成熟度には注意が必要。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/agent/omnigent-meta-harness)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, setup
 
 ---
 

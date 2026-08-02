@@ -6,11 +6,13 @@ tags:
 - claude-api
 - claude-code
 - cowork
+- mcp
 - performance
 - prompt
+- setup
 - 新機能
 date: '2026-04-15'
-updated: '2026-07-27'
+updated: '2026-08-02'
 sources:
 - url: https://zenn.dev/chiakidayo/articles/agent-teams-subagent-comparison
   title: 【Claude Code】Agent teamsとSubagent並列実行比較メモ
@@ -21,11 +23,40 @@ sources:
 - url: https://ai-heartland.com/explain/agent-provenance-commit-dag-knowledge-graph
   title: AIエージェントの出力に来歴を残す設計｜コミットDAGと知識グラフで根拠を追える状態にする
   date: '2026-07-27'
+- url: https://qiita.com/kkaattoo/items/ed08671ba6374d8b8a75
+  title: CLAUDE.md に書くこと・書かないことの判断基準
+  date: '2026-08-02'
+- url: https://zenn.dev/collabostyle/articles/1a8dfea6cee9ae
+  title: Claude in Chrome 導入紹介
+  date: '2026-08-02'
 ---
 
 
 
+
 # Claude Code Agent Architecture
+
+---
+
+## 2026-08-02
+
+### CLAUDE.md に書くこと・書かないことの判断基準
+
+CLAUDE.mdはセッションごとに全文読み込まれるため、コンテキスト消費を抑える必要がある。判断基準は「削除するとClaudeがミスするか」であり、推測できる一般的なルールは不要。書くべきは独自の実装ルールやプロジェクト固有の方針のみ。.claude/rules/でトピック別に分割でき、pathsで条件付き読み込みも可能だが、同時に読み込まれれば行数削減にはならない。
+
+- **ソース**: [Qiita claude](https://qiita.com/kkaattoo/items/ed08671ba6374d8b8a75)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, setup
+
+---
+
+### Claude in Chrome 導入紹介
+
+Claude Code から Chrome 拡張機能を経由してブラウザ操作が可能になる Claude in Chrome の機能を紹介。MCP 経由で Chrome を操作し、実装したコードの動作確認やブラウザテストを自動化できる。Google 検索を例に、タブ操作・検索・結果確認・記録保存までの一連の流れを Claude に任せる実例を解説。
+
+- **ソース**: [Zenn claude](https://zenn.dev/collabostyle/articles/1a8dfea6cee9ae)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, 新機能
 
 ---
 

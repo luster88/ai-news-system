@@ -8,9 +8,10 @@ tags:
 - cowork
 - cursor
 - haiku
+- opus
 - prompt
 date: '2026-04-25'
-updated: '2026-07-12'
+updated: '2026-08-02'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sv7fvc/im_a_nursing_student_who_built_a_660kpage
   title: I’m a nursing student who built a 660K-page pharmaceutical database using
@@ -25,12 +26,28 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1uub12j/day_43_of_building_gta_6_using_claude
   title: Day 43 of building GTA 6 using claude
   date: '2026-07-12'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vdp2iv/i_turned_hand_gestures_into_web_shooting
+  title: I Turned Hand Gestures into Web Shooting
+  date: '2026-08-02'
 ---
 
 
 
 
+
 # Community Projects
+
+---
+
+## 2026-08-02
+
+### I Turned Hand Gestures into Web Shooting
+
+ユーザーが Claude Opus 4.8 を活用して、手のジェスチャーでウェブを射出するスパイダーヒーローゲームを開発。React と MediaPipe を使用した実装で、現在も開発中のプロジェクト。コミュニティからのフィードバックを求めている段階。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vdp2iv/i_turned_hand_gestures_into_web_shooting)
+- **重要度**: 4/10
+- **タグ**: claude-code, opus, cowork
 
 ---
 

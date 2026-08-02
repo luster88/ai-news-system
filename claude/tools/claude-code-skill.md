@@ -9,7 +9,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-28'
-updated: '2026-07-24'
+updated: '2026-08-02'
 sources:
 - url: https://qiita.com/nishiken1118/items/bac44a98ce05b09b78f6
   title: AI レビューの「仕分け疲れ」を解消する Claude Code skill を作った話
@@ -24,12 +24,28 @@ sources:
   title: I made a Claude Code skill that turns a photo of your handwriting into an
     installable font
   date: '2026-07-24'
+- url: https://ai-heartland.com/ai/claude/google-ads-builder
+  title: Google Ads Builderとは｜URL1本で検索広告の下書きを作るClaude Codeスキル
+  date: '2026-08-02'
 ---
 
 
 
 
+
 # Claude Code Skill
+
+---
+
+## 2026-08-02
+
+### Google Ads Builderとは｜URL1本で検索広告の下書きを作るClaude Codeスキル
+
+Google Ads BuilderはWebサイトのURLを1つ入力するだけで、Google検索広告のキーワード設計・広告文・除外キーワード・入稿用CSVまでを自動生成するClaude Codeスキル。広告アカウントには一切接続せず、264行の標準ライブラリのみで構成された軽量なツール。処理の大半はSKILL.mdの指示に基づきClaude側が判断し、Pythonスクリプトは最終的なCSVとHTMLの変換のみを担当する。誇張を抑える注意書きが必須化されており、実際の配信前の検証を促す設計となっている。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/ai/claude/google-ads-builder)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, prompt
 
 ---
 

@@ -5,16 +5,33 @@ subcategory: claude-code-production
 tags:
 - claude-code
 - cowork
+- prompt
 - 新機能
 date: '2026-05-22'
-updated: '2026-05-22'
+updated: '2026-08-02'
 sources:
 - url: https://ai-heartland.com/agent/omni-agentic-analytics-harness
   title: OmniのAIアナリティクス：Claude専用ハーネスでBlobbyを本番に届けた18ヶ月の設計判断
   date: '2026-05-22'
+- url: https://qiita.com/suzuderu/items/b9eff35251d76292f3f9
+  title: Claude Codeで個人アプリを量産して分かった、実務で効く小さなコツ
+  date: '2026-08-02'
 ---
 
+
 # Claude Code Production
+
+---
+
+## 2026-08-02
+
+### Claude Codeで個人アプリを量産して分かった、実務で効く小さなコツ
+
+個人開発者が Claude Code を使って90本以上のモバイルアプリを量産する中で得た実践的なノウハウ。ビルド成果物の検証不足、並列実行時のファイルシステム競合、ルールファイルの設計ミス、サブエージェントへの情報伝達不足など、実際にハマった落とし穴と対処法を具体的に解説。AI エージェントは実装速度を上げるが、運用面での設計が重要という知見をまとめている。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/suzuderu/items/b9eff35251d76292f3f9)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 
