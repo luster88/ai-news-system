@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-23'
-updated: '2026-07-30'
+updated: '2026-08-03'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -76,6 +76,9 @@ sources:
 - url: https://techcrunch.com/2026/07/29/microsoft-is-openly-competing-with-openai-anthropic-more-than-ever
   title: Microsoft is openly competing with OpenAI, Anthropic more than ever
   date: '2026-07-30'
+- url: https://the-decoder.com/alibabas-new-qwen-model-is-also-taking-your-job-but-this-time-its-great
+  title: Alibaba's new Qwen model is also taking your job, but this time it's great
+  date: '2026-08-03'
 ---
 
 
@@ -93,7 +96,20 @@ sources:
 
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-08-03
+
+### Alibaba's new Qwen model is also taking your job, but this time it's great
+
+Alibabaが新しいQwen 3.8モデルのマーケティングで、OpenAIやAnthropicとは異なるアプローチを採用。仕事を奪うという恐怖を煽るのではなく、AIに仕事を任せて人間が趣味に時間を使えるというポジティブなメッセージを打ち出している。実際にはAIの労働市場への影響はまだ限定的だが、上場企業としてポジティブな印象を重視している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/alibabas-new-qwen-model-is-also-taking-your-job-but-this-time-its-great)
+- **重要度**: 4/10
+- **タグ**: cowork, performance, pricing
 
 ---
 

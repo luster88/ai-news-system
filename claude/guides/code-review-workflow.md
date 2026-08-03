@@ -9,7 +9,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-03-31'
-updated: '2026-07-27'
+updated: '2026-08-03'
 sources:
 - url: https://zenn.dev/whipea/articles/e63135d29f8e1f
   title: Claude Codeに課金してみたので、無料プランのAIで作った日記アプリのコードを本気レビューしてもらった
@@ -23,12 +23,28 @@ sources:
 - url: https://zenn.dev/omnia_mirari/articles/12d4dffe13fef0
   title: ClaudeとCodexに同じdiffを8ラウンド見せ続けたら、指摘件数より先に『指摘の引っ越し』が起きた
   date: '2026-07-27'
+- url: https://zenn.dev/tukiyubi/articles/289ddb13e112b9
+  title: 実装したAIにレビューさせない——Claude Codeの3パス独立レビューと機械判定
+  date: '2026-08-03'
 ---
 
 
 
 
+
 # Code Review Workflow
+
+---
+
+## 2026-08-03
+
+### 実装したAIにレビューさせない——Claude Codeの3パス独立レビューと機械判定
+
+Claude Code による実装後のレビューを、実装担当 AI とは別の独立した AI に任せる手法を紹介。レビューを3パス（Pass1: 仕様なしでコード品質確認、Pass2: 仕様との整合性確認、Pass3: 退行検証）に分割し、JSON形式の出力と機械判定を組み合わせることで、実装時の先入観を排除し検出精度を向上。差分レビュー方式の導入によりトークン消費も最適化した実運用事例。
+
+- **ソース**: [Zenn claude](https://zenn.dev/tukiyubi/articles/289ddb13e112b9)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

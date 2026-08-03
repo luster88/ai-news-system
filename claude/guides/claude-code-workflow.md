@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-08-02'
+updated: '2026-08-03'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -253,6 +253,10 @@ sources:
 - url: https://zenn.dev/cotoha5108/articles/file-based-kabeuchi
   title: AIとの壁打ちを、会話でやるのをやめた。ファイルでやる
   date: '2026-08-02'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vehxv8/i_had_claude_read_all_1189_chapters_of_one_piece
+  title: I had Claude read all 1,189 chapters of One Piece and build a foreshadowing
+    encyclopedia.
+  date: '2026-08-03'
 ---
 
 
@@ -318,7 +322,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-08-03
+
+### I had Claude read all 1,189 chapters of One Piece and build a foreshadowing encyclopedia.
+
+ユーザーが Claude Code を3ヶ月間使用し、漫画『ワンピース』全1,189章を画像認識で読み込ませ、3,073件の伏線データベース、1,488のキャラクターページ、予測記録システムを構築した大規模プロジェクト。複数のエージェントが協調してObsidian形式のナレッジベースを作成し、ストーリー結末の予測まで行った事例。エージェント編成、ワークフロー設計、Vision API活用の実践例として注目される。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vehxv8/i_had_claude_read_all_1189_chapters_of_one_piece)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork
 
 ---
 

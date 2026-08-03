@@ -6,15 +6,32 @@ tags:
 - claude-code
 - cowork
 - prompt
+- setup
 date: '2026-03-26'
-updated: '2026-03-26'
+updated: '2026-08-03'
 sources:
 - url: https://zenn.dev/shintaroamaike/articles/90040ef0b2a769
   title: 全員Claude Code体制を3ヶ月やってわかった ── AIと人間の"ちょうどいい境界線"
   date: '2026-03-26'
+- url: https://qiita.com/hikariclaude01/items/bb0fbab5cd55f37da4c9
+  title: 【Claude Code】CLAUDE.mdを『チームで運用』するための設計パターン5選 — 個人用との決定的な違い
+  date: '2026-08-03'
 ---
 
+
 # Claude Code Team Workflow
+
+---
+
+## 2026-08-03
+
+### 【Claude Code】CLAUDE.mdを『チームで運用』するための設計パターン5選 — 個人用との決定的な違い
+
+チーム運用におけるCLAUDE.mdの設計パターンを5つ紹介。個人用とチーム用は根本的に異なり、レイヤー分離型（global/project/personal）、ロールベース型（技術領域別）、フェーズ連動型（開発段階別）、Git連携型（PR時のレビュー）、テンプレート継承型（組織共通ベース）の組み合わせが有効。特にレイヤー分離とGit管理の境界設定が重要で、実際のチームではパターン1+2+4の組み合わせで運用している。
+
+- **ソース**: [Qiita claude](https://qiita.com/hikariclaude01/items/bb0fbab5cd55f37da4c9)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, setup
 
 ---
 
