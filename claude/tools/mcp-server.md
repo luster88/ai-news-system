@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-07-29'
+updated: '2026-08-04'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -121,6 +121,9 @@ sources:
 - url: https://ai-heartland.com/mcp/atlassian-mcp-server
   title: Atlassian MCPとは｜公式Rovo MCP Serverの使い方・認証方式で変わる対応製品を解説
   date: '2026-07-29'
+- url: https://zenn.dev/jinqiu/articles/b5ca44d0cd0070
+  title: Slackの過去ログをClaude DesktopやCursorから検索できるようにする（MCP・ローカル完結）
+  date: '2026-08-04'
 ---
 
 
@@ -154,7 +157,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-08-04
+
+### Slackの過去ログをClaude DesktopやCursorから検索できるようにする（MCP・ローカル完結）
+
+Slackの過去ログをローカルにバックアップし、Claude DesktopやCursorからMCP経由で検索・参照できるようにする手順を解説。Empowia for Slackという開発者自作のWindowsアプリを使い、クラウドアップロード不要・管理者権限不要で実現。90日制限や退職後のアクセス喪失に対応し、読み取り専用でローカル完結のプライバシー重視設計。
+
+- **ソース**: [Zenn claude](https://zenn.dev/jinqiu/articles/b5ca44d0cd0070)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, setup
 
 ---
 

@@ -7,7 +7,7 @@ tags:
 - cowork
 - pricing
 date: '2026-06-11'
-updated: '2026-07-26'
+updated: '2026-08-04'
 sources:
 - url: https://the-decoder.com/dario-amodeis-new-essay-reads-like-a-cold-war-playbook-for-the-ai-age
   title: Dario Amodei's new essay reads like a Cold War playbook for the AI age
@@ -20,11 +20,27 @@ sources:
   title: US reportedly favors selective bans over blanket restrictions on Chinese
     open weight models citing security concerns
   date: '2026-07-26'
+- url: https://the-decoder.com/silicon-valleys-rift-over-open-source-pushes-back-contemplated-white-house-bans-on-chinese-ai
+  title: Silicon Valley’s rift over open source pushes back contemplated White House
+    bans on Chinese AI
+  date: '2026-08-04'
 ---
 
 
 
+
 # Policy Regulation
+
+---
+
+## 2026-08-04
+
+### Silicon Valley’s rift over open source pushes back contemplated White House bans on Chinese AI
+
+米国政府が中国のオープンウェイトAIモデル（Kimi K3など）に対する制裁を検討していたが、シリコンバレーからの反発を受けて方針転換。OpenAIやAnthropicは規制を支持したが、Nvidia、Meta、Microsoft、Googleなどが強く反対。政府は現在、米国モデルの競争力強化に焦点を移している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/silicon-valleys-rift-over-open-source-pushes-back-contemplated-white-house-bans-on-chinese-ai)
+- **重要度**: 7/10
 
 ---
 

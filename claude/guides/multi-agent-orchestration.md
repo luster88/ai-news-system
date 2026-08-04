@@ -10,7 +10,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-04-12'
-updated: '2026-07-24'
+updated: '2026-08-04'
 sources:
 - url: https://qiita.com/saitoko/items/648124fec66afe2cd8df
   title: Claude Codeで8体AIエージェント組織を作った6日間 — 人間とAIはどんな対話をしたか
@@ -23,11 +23,27 @@ sources:
 - url: https://zenn.dev/canly/articles/7dd489193c41e4
   title: Claude Codeのスキルでお問い合わせ調査を半自動化し、チームで育てている話
   date: '2026-07-24'
+- url: https://zenn.dev/chisatom/articles/d6881ea76ada27
+  title: 執事とメイドを雇ったら、AIエージェントが暴走しなくなった話
+  date: '2026-08-04'
 ---
 
 
 
+
 # Multi Agent Orchestration
+
+---
+
+## 2026-08-04
+
+### 執事とメイドを雇ったら、AIエージェントが暴走しなくなった話
+
+Claude Code を6体のエージェント（執事長、執事、メイド4体）に分割し、「屋敷」の世界観でロールプレイさせることで、約5ヶ月間265件のタスクを安定処理した事例。キャラクター設定により役割境界が守られ、訓練データの統計的パターンを活用することで、明文化しなくても適切な振る舞いを引き出せることを実証。tmux+YAML キュー+fswatch でエージェント間通信を実現し、安全ルールを「屋敷の掟」として世界観に組み込むことでプロンプトインジェクション防御も強化。
+
+- **ソース**: [Zenn claude](https://zenn.dev/chisatom/articles/d6881ea76ada27)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-26'
-updated: '2026-07-06'
+updated: '2026-08-04'
 sources:
 - url: https://zenn.dev/saytooy_arch/articles/14-zenn-auto-publish-pipeline
   title: Zenn自動公開パイプラインをclaude -pで構築した話
@@ -35,6 +35,9 @@ sources:
 - url: https://zenn.dev/hitori_pm_lab/articles/222b03a2a97a32
   title: AIに「自分の分身」を育てさせたら、指示がほぼ要らなくなった — 第二の脳の始め方
   date: '2026-07-06'
+- url: https://zenn.dev/handa_lab/articles/e5876facbd2135
+  title: 打ち合わせの録音を置くだけで議事録にする仕組みを作った
+  date: '2026-08-04'
 ---
 
 
@@ -42,7 +45,20 @@ sources:
 
 
 
+
 # Workflow Automation
+
+---
+
+## 2026-08-04
+
+### 打ち合わせの録音を置くだけで議事録にする仕組みを作った
+
+Claude Code を使い、会議録音から議事録を自動生成する仕組みを構築した事例。faster-whisper での文字起こし、pyannote.audio での話者分離、固有名詞補正を Python で処理し、Claude が話者の実名化と議事録生成を担当。社外秘音声を扱うためローカル実行にこだわり、不確実な情報は「要確認事項」として分離する設計を採用。
+
+- **ソース**: [Zenn claude](https://zenn.dev/handa_lab/articles/e5876facbd2135)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, cowork
 
 ---
 

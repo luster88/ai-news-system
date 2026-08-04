@@ -10,7 +10,7 @@ tags:
 - release
 - 新機能
 date: '2026-07-16'
-updated: '2026-07-24'
+updated: '2026-08-04'
 sources:
 - url: https://qiita.com/moha0918_/items/c8b144e3ba36744b964b
   title: Claude Code v2.1.211｜Bedrock/Vertexのキャッシュ課金バグが直る｜毎日Changelog解説
@@ -21,10 +21,26 @@ sources:
 - url: https://qiita.com/picnic/items/fd81f1614b95cafdc830
   title: 'Claude Code v2.1.219: Opus 5追加とサブエージェント3階層化を解説'
   date: '2026-07-24'
+- url: https://qiita.com/moha0918_/items/4a520c01ae3e04f211e4
+  title: Claude Code v2.1.221｜zsh の [[ ]] で権限チェックが素通りしていた｜毎日Changelog解説
+  date: '2026-08-04'
 ---
 
 
+
 # Claude Code Bugfix
+
+---
+
+## 2026-08-04
+
+### Claude Code v2.1.221｜zsh の [[ ]] で権限チェックが素通りしていた｜毎日Changelog解説
+
+Claude Code v2.1.221では、zshの[[]]構文を悪用したBashツールの権限チェック回避の脆弱性が修正されました。これまで承認なしで実行できていたコマンドが許可プロンプトの対象となり、特にallowルールで自動実行している環境では挙動が変わります。同時にMCPサーバーの初回ターン接続問題、サンドボックスの認証情報マスクモード追加、VSCodeのFocus view機能なども実装されました。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/4a520c01ae3e04f211e4)
+- **重要度**: 7/10
+- **タグ**: claude-code, bugfix, release
 
 ---
 

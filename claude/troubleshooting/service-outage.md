@@ -5,10 +5,11 @@ subcategory: service-outage
 tags:
 - bugfix
 - claude-api
+- claude-code
 - claude-console
 - performance
 date: '2026-03-25'
-updated: '2026-06-23'
+updated: '2026-08-04'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s3b9fi/claude_status_update_elevated_errors_on_claudeai
   title: 'Claude Status Update : Elevated Errors on claude.ai on 2026-03-25T13:45:25.000Z'
@@ -32,6 +33,10 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1udiy08/some_claude_models_are_down_and_i_hope_you_arent
   title: Some Claude models are down, and I hope you aren’t too
   date: '2026-06-23'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vfmkkx/discussion_hub_for_new_claude_incident_elevated
+  title: 'Discussion Hub for new Claude incident: Elevated errors across many models
+    on Aug 4, 2026'
+  date: '2026-08-04'
 ---
 
 
@@ -39,7 +44,20 @@ sources:
 
 
 
+
 # Service Outage
+
+---
+
+## 2026-08-04
+
+### Discussion Hub for new Claude incident: Elevated errors across many models on Aug 4, 2026
+
+2026年8月4日、Claude の複数モデルでエラー率が上昇する障害が発生。Claude.ai へのログインや Claude Code の OAuth 認証、API リクエストに影響が出たが、約1時間で解決。Anthropic が問題を特定し、成功率の回復を確認後、21:59 UTC に完全復旧を発表した。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vfmkkx/discussion_hub_for_new_claude_incident_elevated)
+- **重要度**: 6/10
+- **タグ**: claude-api, claude-code, bugfix
 
 ---
 

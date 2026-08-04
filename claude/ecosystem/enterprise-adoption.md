@@ -3,18 +3,37 @@ title: Enterprise Adoption
 category: ecosystem
 subcategory: enterprise-adoption
 tags:
+- claude-api
 - claude-code
 - cowork
+- performance
+- pricing
 - 新機能
 date: '2026-07-20'
-updated: '2026-07-20'
+updated: '2026-08-04'
 sources:
 - url: https://www.anthropic.com/news/ust-claude
   title: Jul 9, 2026 Case Study UST is bringing Claude to physical AI
   date: '2026-07-20'
+- url: https://qiita.com/TheGateBreaker/items/e4091a0e9f30e548de90
+  title: Anthropicは「安全性」を、企業導入の差別化に変えられたのか
+  date: '2026-08-04'
 ---
 
+
 # Enterprise Adoption
+
+---
+
+## 2026-08-04
+
+### Anthropicは「安全性」を、企業導入の差別化に変えられたのか
+
+Anthropicが国防総省の契約条件変更要求を倫理的理由で拒否した事例と、2026年の企業導入シェアがOpenAIを逆転した観測結果を基に、「安全性を差別化要因とする戦略」の有効性を検証。ただしシェア拡大の理由はコーディング性能など他の要因でも説明可能であり、安全性単独の効果は依然として明確には測定できていない。Ramp社のデータでは企業導入シェアが34.4%に達し、コーディング用途では54%のシェアを獲得。
+
+- **ソース**: [Qiita claude](https://qiita.com/TheGateBreaker/items/e4091a0e9f30e548de90)
+- **重要度**: 7/10
+- **タグ**: pricing, performance, claude-api
 
 ---
 

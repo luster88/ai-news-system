@@ -8,7 +8,7 @@ tags:
 - cowork
 - setup
 date: '2026-06-03'
-updated: '2026-06-25'
+updated: '2026-08-04'
 sources:
 - url: https://zenn.dev/gudezou/articles/7e8235a27f0909
   title: Claude Code の終了フックから claude を呼び出すとなぜ暴走するのか
@@ -16,10 +16,26 @@ sources:
 - url: https://qiita.com/yurukusa/items/5a4f67b7e0f732a3f7c4
   title: SubagentStop の hook が、サブエージェントを使っていないメインセッションでも発火する——マルチエージェントを hook で組む人の盲点
   date: '2026-06-25'
+- url: https://qiita.com/miyoki_labs/items/5f44b709a49747520d50
+  title: Claude CodeのStop hookが誤発火する原因と切り分け
+  date: '2026-08-04'
 ---
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-08-04
+
+### Claude CodeのStop hookが誤発火する原因と切り分け
+
+Claude CodeのStop hookが誤発火する問題の詳細な切り分け記録。複数セッション並行時に、mtimeベースの変更検知が他セッションの書き込みを拾い、無限ループ的な警告を繰り返す現象が発生。ログ分析により、体感の「ブロック」と実際の記録「suggestion注入」が食い違うことも判明。共有フォルダ監視をmtimeのみで行う場合の根本的な問題を指摘。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/miyoki_labs/items/5f44b709a49747520d50)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 
