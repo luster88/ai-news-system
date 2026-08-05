@@ -7,15 +7,31 @@ tags:
 - performance
 - release
 date: '2026-07-26'
-updated: '2026-07-26'
+updated: '2026-08-05'
 sources:
 - url: https://the-decoder.com/anthropics-claude-opus-5-costs-well-below-fable-5-while-matching-or-beating-it-across-most-benchmarks
   title: Anthropic's Claude Opus 5 costs well below Fable 5 while matching or beating
     it across most benchmarks
   date: '2026-07-26'
+- url: https://qiita.com/kinamocchi_tech/items/ecb5e56ea22829aea4c8
+  title: Claude Opus 5の30.2%、信じていい数字はどっち？ARC-AGI-3の衝撃
+  date: '2026-08-05'
 ---
 
+
 # Opus Benchmark
+
+---
+
+## 2026-08-05
+
+### Claude Opus 5の30.2%、信じていい数字はどっち？ARC-AGI-3の衝撃
+
+Claude Opus 5がARC-AGI-3ベンチマークで30.2%を達成し、従来の最高スコア7.8%を大きく上回った。このテストは人間なら100%解けるが、AIにとっては極めて困難な抽象推論能力を測定する。Anthropicは控えめな表現で約3.87倍の性能向上を「3倍」と発表し、価格は据え置きのまま大幅な性能改善を実現した。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kinamocchi_tech/items/ecb5e56ea22829aea4c8)
+- **重要度**: 8/10
+- **タグ**: opus, performance, release
 
 ---
 

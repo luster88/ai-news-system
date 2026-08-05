@@ -3,13 +3,14 @@ title: Mcp Integration
 category: tools
 subcategory: mcp-integration
 tags:
+- claude-api
 - claude-code
 - cowork
 - cursor
 - mcp
 - 新機能
 date: '2026-04-02'
-updated: '2026-05-05'
+updated: '2026-08-05'
 sources:
 - url: https://ai-heartland.com/news/cursor-firecrawl-mcp-aiagent
   title: Cursor × Firecrawl MCPで任意ウェブサイト複製が可能に。AIAgent強化
@@ -20,11 +21,28 @@ sources:
 - url: https://qiita.com/YushiYamamoto/items/7227a4be0a3a90cd3029
   title: n8n公式MCPが「実行」から「構築」へ：Claude/Codexからワークフローを直接作る時代が来た
   date: '2026-05-05'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vg206l/i_built_a_captioning_app_for_shortform_video_then
+  title: I built a captioning app for short-form video, then gave Claude an MCP so
+    it can work with captions alone
+  date: '2026-08-05'
 ---
 
 
 
+
 # Mcp Integration
+
+---
+
+## 2026-08-05
+
+### I built a captioning app for short-form video, then gave Claude an MCP so it can work with captions alone
+
+CapForgeという動画字幕生成アプリを開発し、MCP経由でClaudeと統合した事例。Claudeは文字起こしテキストを読み取り、キーワードの強調、フィラーワードの削除、フレームのレンダリング確認が可能。さらにHTML/CSS/JSで新しい字幕スタイルを生成する共同制作モードも搭載。ローカル動作でクラウドアップロード不要のオープンソースツール。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vg206l/i_built_a_captioning_app_for_shortform_video_then)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-api, cowork
 
 ---
 

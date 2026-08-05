@@ -11,7 +11,7 @@ tags:
 - prompt
 - vscode
 date: '2026-04-02'
-updated: '2026-07-23'
+updated: '2026-08-05'
 sources:
 - url: https://qiita.com/MirabelleQuest/items/f3b27e9740d4b22135fc
   title: '# Claude Code でセッション開始直後から Context 使用率が高かったので確認した'
@@ -22,11 +22,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v4f6cw/when_to_compact
   title: When to Compact?
   date: '2026-07-23'
+- url: https://zenn.dev/flipslidersand/articles/ai-python-context-degradation
+  title: ClaudeとPythonを書いていたら、途中でAIがおかしくなった話
+  date: '2026-08-05'
 ---
 
 
 
+
 # Context Management
+
+---
+
+## 2026-08-05
+
+### ClaudeとPythonを書いていたら、途中でAIがおかしくなった話
+
+Claude との長時間のコーディング対話において、会話が長引くと命名規則の不統一や謝罪の増加、コード間の矛盾など「コンテキスト縮退」が発生する現象を解説。対処法として会話の区切り、最新コードのみの提示、明文化された仕様の活用などを提案している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/flipslidersand/articles/ai-python-context-degradation)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

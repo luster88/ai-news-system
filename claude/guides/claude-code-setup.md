@@ -4,6 +4,7 @@ category: guides
 subcategory: claude-code-setup
 tags:
 - claude-code
+- cowork
 - pricing
 - prompt
 - setup
@@ -11,7 +12,7 @@ tags:
 - windows
 - 新機能
 date: '2026-04-04'
-updated: '2026-06-29'
+updated: '2026-08-05'
 sources:
 - url: https://qiita.com/taiki_i/items/2d75a882e0f3187f6bb8
   title: あなたの CLAUDE.md、ちゃんと機能してますか？作り方から公式プラグインで採点するまでの道のり
@@ -58,6 +59,9 @@ sources:
 - url: https://zenn.dev/kaihatsu_biyori/articles/claude-code-claudemd-md
   title: Claude Codeをもっと使いこなす③｜CLAUDE.mdの書き方と運用
   date: '2026-06-29'
+- url: https://ai-heartland.com/explain/agents-md-claude-code-bridge
+  title: AGENTS.mdをClaude Codeに読ませる｜symlinkと@importの違いとCodex 32KiB上限
+  date: '2026-08-05'
 ---
 
 
@@ -71,7 +75,20 @@ sources:
 
 
 
+
 # Claude Code Setup
+
+---
+
+## 2026-08-05
+
+### AGENTS.mdをClaude Codeに読ませる｜symlinkと@importの違いとCodex 32KiB上限
+
+Claude CodeはAGENTS.mdを直接読まず、CLAUDE.mdのみを参照する。この記事では、CLAUDE.mdから@importでAGENTS.mdを取り込む方法と、CLAUDE.mdをAGENTS.mdへのsymlinkにする2つの橋渡し手法を、公式ドキュメントと実例をもとに解説している。AGENTS.mdはLinux Foundation傘下で中立標準化され、17万超のファイルで採用されている。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/agents-md-claude-code-bridge)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, cowork
 
 ---
 

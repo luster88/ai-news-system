@@ -4,16 +4,35 @@ category: troubleshooting
 subcategory: token-usage-analysis
 tags:
 - claude-code
+- claude-console
 - performance
+- pricing
+- prompt
 date: '2026-06-07'
-updated: '2026-06-07'
+updated: '2026-08-05'
 sources:
 - url: https://qiita.com/yurukusa/items/5d49ed7d798c9650fe16
   title: Claude Codeの週次の利用枠が「軽い作業」で1日で枯れる本当の理由——消費の99%はコードではなく文脈の再読み込みだった
   date: '2026-06-07'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vgcf89/claude_overusing_my_tokens
+  title: Claude overusing my tokens
+  date: '2026-08-05'
 ---
 
+
 # Token Usage Analysis
+
+---
+
+## 2026-08-05
+
+### Claude overusing my tokens
+
+Claude が不必要に長い回答を生成し、トークンを過剰消費しているという報告。ユーザーは簡潔なテキスト回答のみを要求したにもかかわらず、Claude がリクエストを無視し、1通のメール作成だけでトークンを使い切ってしまうと不満を述べている。有料プランへの誘導を疑っており、対策として複数アカウントを使用している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vgcf89/claude_overusing_my_tokens)
+- **重要度**: 4/10
+- **タグ**: claude-console, pricing, prompt
 
 ---
 

@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-15'
-updated: '2026-08-02'
+updated: '2026-08-05'
 sources:
 - url: https://zenn.dev/chiakidayo/articles/agent-teams-subagent-comparison
   title: 【Claude Code】Agent teamsとSubagent並列実行比較メモ
@@ -29,12 +29,41 @@ sources:
 - url: https://zenn.dev/collabostyle/articles/1a8dfea6cee9ae
   title: Claude in Chrome 導入紹介
   date: '2026-08-02'
+- url: https://qiita.com/syun136_616/items/d0030020308534fd896c
+  title: Claude CodeとCodexを活用したタスク管理の方法
+  date: '2026-08-05'
+- url: https://zenn.dev/subagent_lab/articles/claude-code-slash-commands-current-spec
+  title: Claude Codeのカスタムスラッシュコマンドは今どう書くのか ― v2.1.221で全部試した
+  date: '2026-08-05'
 ---
 
 
 
 
+
 # Claude Code Agent Architecture
+
+---
+
+## 2026-08-05
+
+### Claude CodeとCodexを活用したタスク管理の方法
+
+Claude CodeとCodexを中～大規模開発のタスク管理に活用する方法を解説。タスクの明確化、細分化、優先順位付けの重要性を説明し、AIによる自動化で開発者の時間を節約しエラーを軽減できるとしている。実例として、テストケース自動生成により手動テスト時間を80％削減した事例を紹介。AIへの過度な依存によるスキル低下リスクなどデメリットにも言及している。
+
+- **ソース**: [Qiita claude](https://qiita.com/syun136_616/items/d0030020308534fd896c)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, 新機能
+
+---
+
+### Claude Codeのカスタムスラッシュコマンドは今どう書くのか ― v2.1.221で全部試した
+
+Claude Code v2.1.221におけるカスタムスラッシュコマンドの実装仕様を全パターン検証した記事。.claude/commands/*.mdは現行版でも動作し移行不要だが、新規作成時はSkills形式が推奨される。引数展開($0が1番目)、動的コンテキスト(!`コマンド`)、allowed-tools、modelオプションなどを実測で確認し、公式ドキュメントに記載のない挙動の違いを明らかにしている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/subagent_lab/articles/claude-code-slash-commands-current-spec)
+- **重要度**: 7/10
+- **タグ**: claude-code
 
 ---
 

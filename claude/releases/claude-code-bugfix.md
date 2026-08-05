@@ -10,7 +10,7 @@ tags:
 - release
 - 新機能
 date: '2026-07-16'
-updated: '2026-08-04'
+updated: '2026-08-05'
 sources:
 - url: https://qiita.com/moha0918_/items/c8b144e3ba36744b964b
   title: Claude Code v2.1.211｜Bedrock/Vertexのキャッシュ課金バグが直る｜毎日Changelog解説
@@ -24,11 +24,37 @@ sources:
 - url: https://qiita.com/moha0918_/items/4a520c01ae3e04f211e4
   title: Claude Code v2.1.221｜zsh の [[ ]] で権限チェックが素通りしていた｜毎日Changelog解説
   date: '2026-08-04'
+- url: https://qiita.com/moha0918_/items/e124c85649184c8a6922
+  title: Claude Code v2.1.222｜worktree 隔離の穴が塞がる｜毎日Changelog解説
+  date: '2026-08-05'
 ---
 
 
 
+
 # Claude Code Bugfix
+
+---
+
+## 2026-08-05
+
+### Claude Code v2.1.222｜worktree 隔離の穴が塞がる｜毎日Changelog解説
+
+Claude Code v2.1.222では、worktree隔離の重大な脆弱性が修正されました。これまで隔離セッションからメインのチェックアウトに破壊的なgitコマンドが実行できていましたが、隔離がファイル編集とBashの両方に適用されるようになりました。また、PreToolUseフックのツール制限迂回、SendMessageの権限分類器スルー、Remote Control自動起動の権限など、複数の権限境界の穴が同時に塞がれています。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/e124c85649184c8a6922)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, bugfix
+
+---
+
+### Claude Code v2.1.222｜worktree 隔離の穴が塞がる｜毎日Changelog解説
+
+Claude Code v2.1.222で、worktree隔離セッションがメインチェックアウトに破壊的gitコマンドを実行できていた脆弱性が修正されました。PreToolUseフックの自動許可がツール制限を回避していた問題、SendMessageが権限分類器を通らなかった問題も同時に解決され、権限境界が3箇所で強化されています。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/e124c85649184c8a6922)
+- **重要度**: 7/10
+- **タグ**: claude-code, bugfix, release
 
 ---
 

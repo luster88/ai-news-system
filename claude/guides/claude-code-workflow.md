@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-08-03'
+updated: '2026-08-05'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -257,6 +257,12 @@ sources:
   title: I had Claude read all 1,189 chapters of One Piece and build a foreshadowing
     encyclopedia.
   date: '2026-08-03'
+- url: https://zenn.dev/triponte/articles/ai-one-topic-per-turn
+  title: 1ターン1論点。AIの返事が長すぎる問題の改善
+  date: '2026-08-05'
+- url: https://qiita.com/shinji_bank/items/29c5d9b283579cf5492f
+  title: Vibe CodingでRobloxゲームを公開するところまで【Claude Code + MCP + Rojo】
+  date: '2026-08-05'
 ---
 
 
@@ -323,7 +329,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-08-05
+
+### 1ターン1論点。AIの返事が長すぎる問題の改善
+
+Claude Code で AI の返答が長くなる問題を hook を使って改善する方法を解説。指示ファイルだけでは会話が長引くと効果が薄れるため、UserPromptSubmit と PreToolUse の hook を使い、毎ターン「1論点のみ」のルールを機械的に挿入する実装を紹介。
+
+- **ソース**: [Zenn claude](https://zenn.dev/triponte/articles/ai-one-topic-per-turn)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
+
+---
+
+### Vibe CodingでRobloxゲームを公開するところまで【Claude Code + MCP + Rojo】
+
+Roblox ゲーム開発を Claude Code + MCP + Rojo で実現した実践記事。Roblox Studio の MCP 対応により、Claude が Studio 内のオブジェクト構造を直接参照しながらコード生成が可能に。セッション管理として CLAUDE.md と doc/ 構成でコンテキスト維持を工夫し、設計から公開まで AI との対話で完走。Rojo でコード反映、MCP で動作確認と役割分担が重要。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/shinji_bank/items/29c5d9b283579cf5492f)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp
 
 ---
 
