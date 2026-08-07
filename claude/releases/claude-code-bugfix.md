@@ -10,7 +10,7 @@ tags:
 - release
 - 新機能
 date: '2026-07-16'
-updated: '2026-08-05'
+updated: '2026-08-07'
 sources:
 - url: https://qiita.com/moha0918_/items/c8b144e3ba36744b964b
   title: Claude Code v2.1.211｜Bedrock/Vertexのキャッシュ課金バグが直る｜毎日Changelog解説
@@ -27,12 +27,38 @@ sources:
 - url: https://qiita.com/moha0918_/items/e124c85649184c8a6922
   title: Claude Code v2.1.222｜worktree 隔離の穴が塞がる｜毎日Changelog解説
   date: '2026-08-05'
+- url: https://qiita.com/moha0918_/items/8d9bb54bff914f7017cd
+  title: Claude Code v2.1.224｜セッション間 SendMessage が解禁｜毎日Changelog解説
+  date: '2026-08-07'
 ---
 
 
 
 
+
 # Claude Code Bugfix
+
+---
+
+## 2026-08-07
+
+### Claude Code v2.1.224｜セッション間 SendMessage が解禁｜毎日Changelog解説
+
+Claude Code v2.1.224で、別マシンで動作する複数セッション間でのSendMessageによる直接通信が可能になりました。ListAgentsで相手を探索し、crossSessionInboundで受信側の承認ルールを設定できます。また、sandboxのdeny設定の脆弱性修正、構造化環境変数の抽出機能、セルフホスト実行環境のサポートなど、多数の機能追加とバグ修正が含まれています。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/8d9bb54bff914f7017cd)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+### Claude Code v2.1.224｜セッション間 SendMessage が解禁｜毎日Changelog解説
+
+Claude Code v2.1.224で、別マシンで動作するセッション間でのメッセージング機能（SendMessage/ListAgents）が追加されました。セルフホストランナー、zipからのプラグイン導入、sandboxのdeny抜け穴の修正、フィードバック共有時のsystem prompt含有など、複数の重要な機能追加とセキュリティ修正が含まれています。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/8d9bb54bff914f7017cd)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 

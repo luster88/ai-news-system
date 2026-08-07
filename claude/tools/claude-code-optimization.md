@@ -7,8 +7,9 @@ tags:
 - mcp
 - performance
 - prompt
+- 新機能
 date: '2026-03-30'
-updated: '2026-06-23'
+updated: '2026-08-07'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s7qu07/i_built_a_universal_claudemd_that_cuts_claude
   title: I built a universal CLAUDE.md that cuts Claude output tokens by 63% - validated
@@ -17,10 +18,36 @@ sources:
 - url: https://qiita.com/Anuj7411/items/e4138b830bde92e85115
   title: 自分の「Claude Code」ツールが、無駄になったトークンの数を83倍も過小評価していたことに気づいた経緯
   date: '2026-06-23'
+- url: https://qiita.com/tomada/items/46e675f6ced44dcd10ad
+  title: トークン浪費と性能低下を防ぐ、Claude Code の自動引き継ぎ hook を作った
+  date: '2026-08-07'
 ---
 
 
+
 # Claude Code Optimization
+
+---
+
+## 2026-08-07
+
+### トークン浪費と性能低下を防ぐ、Claude Code の自動引き継ぎ hook を作った
+
+Claude Code のコンテキスト使用率が25%を超えると自動で引き継ぎノートを生成する hook スクリプトの実装例。長いセッションでの性能低下とトークン浪費を防ぐため、Stop hook と statusLine を組み合わせて使用率を監視し、Claude 自身に区切りを判断させる仕組みを構築。手動での /compact や区切り操作に頼らず、自動化により料金コストと性能劣化の両方に対処する。
+
+- **ソース**: [Qiita claude](https://qiita.com/tomada/items/46e675f6ced44dcd10ad)
+- **重要度**: 7/10
+- **タグ**: claude-code, performance, 新機能
+
+---
+
+### トークン浪費と性能低下を防ぐ、Claude Code の自動引き継ぎ hook を作った
+
+Claude Codeで長時間セッション時にコンテキスト使用率が膨らみ性能が低下する問題に対し、hookとstatusLineを使って自動的に引き継ぎを判断・実行させる仕組みを実装。使用率25%で発動し、Claude自身に継続か引き継ぎかを判断させてノートを生成させることで、トークン消費と性能低下を防ぐ。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/tomada/items/46e675f6ced44dcd10ad)
+- **重要度**: 7/10
+- **タグ**: claude-code, performance, 新機能
 
 ---
 

@@ -4,15 +4,33 @@ category: ecosystem
 subcategory: community-case-study
 tags:
 - claude-code
+- cowork
+- pricing
 date: '2026-04-21'
-updated: '2026-04-21'
+updated: '2026-08-07'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1srv55h/claude_caught_a_cryptominer_thatd_been_using_my
   title: Claude caught a cryptominer that'd been using my NAS for two years.
   date: '2026-04-21'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vi1iv9/i_spent_3000_to_build_my_dream_game_on_claude
+  title: I spent $3000 to build my dream game on Claude Code. It's finally done. Thoughts?
+  date: '2026-08-07'
 ---
 
+
 # Community Case Study
+
+---
+
+## 2026-08-07
+
+### I spent $3000 to build my dream game on Claude Code. It's finally done. Thoughts?
+
+あるユーザーが Claude Code を使用して3000ドルを費やし、夢のゲーム開発を完成させた事例報告。実際のコスト感と開発規模を示す具体的なケーススタディとして、Claude を使った大規模プロジェクトの実現可能性を示している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vi1iv9/i_spent_3000_to_build_my_dream_game_on_claude)
+- **重要度**: 6/10
+- **タグ**: claude-code, pricing, cowork
 
 ---
 

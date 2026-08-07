@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-26'
-updated: '2026-08-04'
+updated: '2026-08-07'
 sources:
 - url: https://zenn.dev/saytooy_arch/articles/14-zenn-auto-publish-pipeline
   title: Zenn自動公開パイプラインをclaude -pで構築した話
@@ -38,6 +38,9 @@ sources:
 - url: https://zenn.dev/handa_lab/articles/e5876facbd2135
   title: 打ち合わせの録音を置くだけで議事録にする仕組みを作った
   date: '2026-08-04'
+- url: https://zenn.dev/yktsnet/articles/202608-hatena-github-digest
+  title: 月0.28ドルで、はてブと Zenn の AI・開発の記事だけがスマホに届く
+  date: '2026-08-07'
 ---
 
 
@@ -46,7 +49,20 @@ sources:
 
 
 
+
 # Workflow Automation
+
+---
+
+## 2026-08-07
+
+### 月0.28ドルで、はてブと Zenn の AI・開発の記事だけがスマホに届く
+
+はてなブックマークとZennから毎日40件の記事を収集し、Claude Haiku (claude-haiku-4-5) にAI・開発関連記事だけを選別させてTelegramに配信するシステム。GitHub Actionsで動作し、月額0.28ドルで運用。前日との重複除外にactions/cacheを活用し、サーバーレスで実現。LLMには要約ではなく「選別」のみを担当させることで、低コストかつ実用的な情報フィルタリングを実現している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/yktsnet/articles/202608-hatena-github-digest)
+- **重要度**: 6/10
+- **タグ**: haiku, claude-api, cowork
 
 ---
 

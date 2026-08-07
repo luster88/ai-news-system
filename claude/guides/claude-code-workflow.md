@@ -270,6 +270,9 @@ sources:
 - url: https://zenn.dev/sidelab/articles/8c7436fb1d114d
   title: 顔出しなし・1人・財布から1円も出さずに『AI社員13人の会社』を組んだ構成
   date: '2026-08-07'
+- url: https://zenn.dev/tejunya/articles/a005_claude-md-taxonomy
+  title: CLAUDE.md は1枚で書くな — グローバル/ハブ/プロジェクトの3層分離、実運用ファイルを実物公開
+  date: '2026-08-07'
 ---
 
 
@@ -338,7 +341,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-08-07
+
+### CLAUDE.md は1枚で書くな — グローバル/ハブ/プロジェクトの3層分離、実運用ファイルを実物公開
+
+CLAUDE.mdを1枚に詰め込むと指示が競合し不安定になる問題を、グローバル（個人設定）・ハブ（プロジェクト群管理）・プロジェクト（個別手順）の3層に分離する実践的な設計手法を解説。筆者の実運用ファイルを公開し、「好みか手順か」で置き場所を判定する基準と、トークン効率を保ちながら指示を安定させる構成例を示している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/tejunya/articles/a005_claude-md-taxonomy)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 
