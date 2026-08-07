@@ -9,7 +9,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-04-22'
-updated: '2026-08-05'
+updated: '2026-08-07'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1ss8h1x/an_open_letter_to_anthropic
   title: An open letter to Anthropic
@@ -17,10 +17,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vgdvf9/with_opus_48_internal_thinking_i_was_the_boss_but
   title: With Opus 4.8 internal thinking I was "The boss" but with 5.0 I'm a "colleague"
   date: '2026-08-05'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vhjwo2/i_got_frustrated_and_asked_opus_5_to_break_down
+  title: I got frustrated and asked Opus 5 to break down its weird way of speaking.
+    This is what it said (which is also weird... but maybe helpful?)
+  date: '2026-08-07'
 ---
 
 
+
 # Model Behavior Change
+
+---
+
+## 2026-08-07
+
+### I got frustrated and asked Opus 5 to break down its weird way of speaking. This is what it said (which is also weird... but maybe helpful?)
+
+ユーザーが Opus 5 の独特な話し方に不満を感じ、その理由を尋ねたところ、Opus 5 自身が自分の言語パターンを分析して説明した。この説明自体も独特だったが、モデルの振る舞いを理解する上で参考になる可能性がある。ユーザー自身も入力ミス（fill→feel、grammary→grammar）をしており、人間とAI双方の特性が浮き彫りになった事例。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vhjwo2/i_got_frustrated_and_asked_opus_5_to_break_down)
+- **重要度**: 4/10
+- **タグ**: opus, prompt, cowork
 
 ---
 

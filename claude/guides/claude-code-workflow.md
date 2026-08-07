@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-08-05'
+updated: '2026-08-07'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -263,6 +263,13 @@ sources:
 - url: https://qiita.com/shinji_bank/items/29c5d9b283579cf5492f
   title: Vibe CodingでRobloxゲームを公開するところまで【Claude Code + MCP + Rojo】
   date: '2026-08-05'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vh4ftm/i_built_go_touch_grass_a_tower_defense_game_thats
+  title: I built "Go Touch Grass", a tower defense game that's supposed to make gamers
+    go outside
+  date: '2026-08-07'
+- url: https://zenn.dev/sidelab/articles/8c7436fb1d114d
+  title: 顔出しなし・1人・財布から1円も出さずに『AI社員13人の会社』を組んだ構成
+  date: '2026-08-07'
 ---
 
 
@@ -330,7 +337,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-08-07
+
+### I built "Go Touch Grass", a tower defense game that's supposed to make gamers go outside
+
+ユーザーがClaude Codeを使って「Go Touch Grass」というタワーディフェンスゲームを開発。実際に歩くことでゲーム内リソースを獲得する仕組みで、74セッションにわたる開発を実施。設定ファイルベースの設計、BUILD-STATUS.mdによるセッション間の継続性確保、ヘッドレステストなど、長期的なエージェント開発を成功させる手法を実践している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vh4ftm/i_built_go_touch_grass_a_tower_defense_game_thats)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, 新機能
+
+---
+
+### 顔出しなし・1人・財布から1円も出さずに『AI社員13人の会社』を組んだ構成
+
+Claude Code のサブエージェント機能を用いて、CEO・マーケ・営業・エンジニアなど13職能を1リポジトリに定義し、月次固定費0円で運用する事業構築手法を紹介。各ロールはMarkdown+frontmatterで定義し、禁止事項を明示することで役割分担を安定化。Cloudflare無料枠とStripeの前金制により、先行投資ゼロで黒字から開始できる設計思想を解説している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/sidelab/articles/8c7436fb1d114d)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, cowork
 
 ---
 

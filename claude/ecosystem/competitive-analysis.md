@@ -13,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-04'
-updated: '2026-07-19'
+updated: '2026-08-07'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -59,6 +59,10 @@ sources:
   title: Moonshot's Kimi K3 outperforms Fable 5 in frontend code but lags far behind
     in complex math
   date: '2026-07-19'
+- url: https://the-decoder.com/qwen3-8-max-catches-claude-opus-4-8-but-kimi-k3-still-scores-higher-for-25-percent-less
+  title: Qwen3.8 Max catches Claude Opus 4.8 but Kimi K3 still scores higher for 25
+    percent less
+  date: '2026-08-07'
 ---
 
 
@@ -71,7 +75,20 @@ sources:
 
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-08-07
+
+### Qwen3.8 Max catches Claude Opus 4.8 but Kimi K3 still scores higher for 25 percent less
+
+AlibabaのQwen3.8 MaxがClaude Opus 4.8と同等の56点を記録したが、Kimi K3は57点でより低コスト。GDPval-AAベンチマークでは1,739点でKimi K3を上回ったものの、タスクあたり64ステップ必要で処理が遅くコストも$1.14と高額。前バージョンと比べてハルシネーション率が23%から40%に悪化し、知識問題での正直な「わからない」回答が減少している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/qwen3-8-max-catches-claude-opus-4-8-but-kimi-k3-still-scores-higher-for-25-percent-less)
+- **重要度**: 6/10
+- **タグ**: opus, performance, pricing
 
 ---
 
