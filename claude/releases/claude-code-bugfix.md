@@ -5,12 +5,14 @@ subcategory: claude-code-bugfix
 tags:
 - bugfix
 - claude-code
+- cowork
+- mac
 - opus
 - pricing
 - release
 - 新機能
 date: '2026-07-16'
-updated: '2026-08-07'
+updated: '2026-08-08'
 sources:
 - url: https://qiita.com/moha0918_/items/c8b144e3ba36744b964b
   title: Claude Code v2.1.211｜Bedrock/Vertexのキャッシュ課金バグが直る｜毎日Changelog解説
@@ -30,13 +32,42 @@ sources:
 - url: https://qiita.com/moha0918_/items/8d9bb54bff914f7017cd
   title: Claude Code v2.1.224｜セッション間 SendMessage が解禁｜毎日Changelog解説
   date: '2026-08-07'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vj4aqt/claude_code_now_lets_sessions_talk_to_each_other
+  title: Claude Code now lets sessions talk to each other on macOS
+  date: '2026-08-08'
+- url: https://qiita.com/zhao-xy/items/463b310c8a9401a4f2e1
+  title: Claude Codeが「セッション同士で会話」できるように。並列開発を変えるCross-session messagingとは？
+  date: '2026-08-08'
 ---
 
 
 
 
 
+
 # Claude Code Bugfix
+
+---
+
+## 2026-08-08
+
+### Claude Code now lets sessions talk to each other on macOS
+
+Claude Code が macOS で複数のセッション間通信機能を追加しました。この機能により、異なるセッションが相互にやり取りできるようになりましたが、既存のサブエージェント機能との重複が指摘されています。コミュニティでは、この新機能の実用性や既存機能との関係性について議論が行われています。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vj4aqt/claude_code_now_lets_sessions_talk_to_each_other)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, mac
+
+---
+
+### Claude Codeが「セッション同士で会話」できるように。並列開発を変えるCross-session messagingとは？
+
+Claude Codeに複数セッション間で直接メッセージを送受信できる「Cross-session messaging」機能が追加された。従来は人間が各セッション間の情報伝達を担う必要があったが、SendMessageとListAgentsによりClaude同士が必要な情報のみを共有可能に。コンテキスト全体ではなく必要な情報だけを送信することでトークン消費を抑制し、並列開発の管理コストを削減できる。
+
+- **ソース**: [Qiita claude](https://qiita.com/zhao-xy/items/463b310c8a9401a4f2e1)
+- **重要度**: 8/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

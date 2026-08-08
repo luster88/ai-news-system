@@ -12,7 +12,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-07-31'
+updated: '2026-08-08'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -58,6 +58,11 @@ sources:
 - url: https://qiita.com/picnic/items/e96397a8ad93bca4ce25
   title: Claude Opus 5 リリース総まとめ:1Mコンテキストと破壊的変更2件
   date: '2026-07-31'
+- url: https://www.anthropic.com/news/claude-opus-5
+  title: Introducing Claude Opus 5 Product Jul 24, 2026 Opus 5 is a step change improvement
+    for the Opus tier powering long-running agents while delivering improvements in
+    coding and professional work.
+  date: '2026-08-08'
 ---
 
 
@@ -70,7 +75,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-08-08
+
+### Introducing Claude Opus 5 Product Jul 24, 2026 Opus 5 is a step change improvement for the Opus tier powering long-running agents while delivering improvements in coding and professional work.
+
+Anthropic が Claude Opus 5 を発表。Opus 4.8 と同価格で大幅な性能向上を実現し、Fable 5 の半額でフロンティア級の知能を提供。コーディングや知識作業の評価で最高水準を達成し、特に Frontier-Bench、CursorBench、ARC-AGI、Zapier AutomationBench で他モデルを大きく上回る。Claude Max のデフォルトモデルおよび Claude Pro の最強モデルとして利用可能。effort 設定により知能とコストの最適化が可能。
+
+- **ソース**: [Anthropic News](https://www.anthropic.com/news/claude-opus-5)
+- **重要度**: 10/10
+- **タグ**: opus, release, 新機能
 
 ---
 

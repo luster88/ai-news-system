@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-15'
-updated: '2026-08-05'
+updated: '2026-08-08'
 sources:
 - url: https://zenn.dev/chiakidayo/articles/agent-teams-subagent-comparison
   title: 【Claude Code】Agent teamsとSubagent並列実行比較メモ
@@ -35,13 +35,29 @@ sources:
 - url: https://zenn.dev/subagent_lab/articles/claude-code-slash-commands-current-spec
   title: Claude Codeのカスタムスラッシュコマンドは今どう書くのか ― v2.1.221で全部試した
   date: '2026-08-05'
+- url: https://ai-heartland.com/explain/claude-code-cross-session-messaging
+  title: Claude Code cross-session messaging解説｜別セッションに伝言を送る仕組みを実測
+  date: '2026-08-08'
 ---
 
 
 
 
 
+
 # Claude Code Agent Architecture
+
+---
+
+## 2026-08-08
+
+### Claude Code cross-session messaging解説｜別セッションに伝言を送る仕組みを実測
+
+Claude Codeの複数セッション間でメッセージをやり取りする機能「cross-session messaging」の詳細解説。別々のターミナルで動作する複数のClaude Codeセッション間で、Claudeが自動的に宛先を発見し、破壊的変更の通知や並行作業の同期を実現する。v2.1.224以降で利用可能。ツールはListAgentsとSendMessageだが、ユーザーが直接呼ぶ必要はなく、自然文で指示するだけで動作する。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/claude-code-cross-session-messaging)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

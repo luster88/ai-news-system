@@ -9,7 +9,7 @@ tags:
 - opus
 - 新機能
 date: '2026-04-24'
-updated: '2026-06-12'
+updated: '2026-08-08'
 sources:
 - url: https://www.anthropic.com/news/anthropic-nec
   title: Apr 24, 2026 Announcements Anthropic and NEC collaborate to build Japan’s
@@ -19,10 +19,27 @@ sources:
   title: Jun 12, 2026 Announcements TCS and Anthropic partner to bring Claude to regulated
     industries
   date: '2026-06-12'
+- url: https://www.anthropic.com/news/cognizant-anthropic
+  title: Jul 27, 2026 Announcements Cognizant and Anthropic expand their partnership
+    to bring Claude to enterprise clients
+  date: '2026-08-08'
 ---
 
 
+
 # Enterprise Partnership
+
+---
+
+## 2026-08-08
+
+### Jul 27, 2026 Announcements Cognizant and Anthropic expand their partnership to bring Claude to enterprise clients
+
+Anthropic が世界最大級のテクノロジーサービス企業 Cognizant とのパートナーシップを拡大。Cognizant は製造業、ライフサイエンス、保険業界など、大企業向けに Claude を統合し、30,000人以上が Claude トレーニングを完了。Flowsource™ などの自社プラットフォームに Claude Code を組み込み、顧客向けに契約分析システムや顧客体験ポータルなどを構築。Claude Partner Network の Global Premier Partner として、エンタープライズ向け AI 導入を加速。
+
+- **ソース**: [Anthropic News](https://www.anthropic.com/news/cognizant-anthropic)
+- **重要度**: 8/10
+- **タグ**: claude-api, claude-code, 新機能
 
 ---
 

@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-08-07'
+updated: '2026-08-08'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -273,6 +273,9 @@ sources:
 - url: https://zenn.dev/tejunya/articles/a005_claude-md-taxonomy
   title: CLAUDE.md は1枚で書くな — グローバル/ハブ/プロジェクトの3層分離、実運用ファイルを実物公開
   date: '2026-08-07'
+- url: https://zenn.dev/hoshiorange/articles/06-claude-code-worklog-as-asset
+  title: Claude Code に作業ログを書かせたら60本たまった — 引き継ぎもネタ出しも困らない運用
+  date: '2026-08-08'
 ---
 
 
@@ -342,7 +345,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-08-08
+
+### Claude Code に作業ログを書かせたら60本たまった — 引き継ぎもネタ出しも困らない運用
+
+Claude Codeに作業ログを自動作成させる運用方法の紹介。CLAUDE.mdに「背景・実施プラン・完了報告」の3部構成で記録させるルールを定義し、8プロジェクト60本のログを蓄積。翌日の作業再開や引き継ぎが容易になり、溜まったログをClaude自身に分析させることで作業パターンの改善提案も得られた。会話ログの全量保存ではなく、要約された「プランと結論」を残すことで実用性を重視している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/hoshiorange/articles/06-claude-code-worklog-as-asset)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

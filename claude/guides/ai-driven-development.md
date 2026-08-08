@@ -4,11 +4,13 @@ category: guides
 subcategory: ai-driven-development
 tags:
 - claude-code
+- copilot
 - cowork
+- cursor
 - prompt
 - 新機能
 date: '2026-04-23'
-updated: '2026-05-25'
+updated: '2026-08-08'
 sources:
 - url: https://qiita.com/tuvy22686/items/efd5e3ba573abb9914d6
   title: 【個人開発】AI（Claude / Gemini）に設計を任せて、AWS 上に完全自動の競馬予測システムを構築した話【AIDD】
@@ -16,10 +18,26 @@ sources:
 - url: https://qiita.com/shiba_mitue/items/c4ab303d8400f072ff8d
   title: 個人開発で字幕用のアプリ「KAMSK」をAI開発して公開したよ
   date: '2026-05-25'
+- url: https://qiita.com/shimanto/items/ea108e0f4030c7a60d08
+  title: AI駆動開発とは何か？Claude Code・GitHub Copilot・Cursorの使い分けと導入5ステップを整理してみた
+  date: '2026-08-08'
 ---
 
 
+
 # Ai Driven Development
+
+---
+
+## 2026-08-08
+
+### AI駆動開発とは何か？Claude Code・GitHub Copilot・Cursorの使い分けと導入5ステップを整理してみた
+
+AI駆動開発において、Claude Code・GitHub Copilot・Cursorの使い分け基準と、小規模チームが失敗しにくい導入手順を整理した記事。コード補完中心から「AIに作業を委任し、人間が判断する」スタイルへの転換が重要と説く。導入5ステップとして、小規模タスクでの試行、ルール策定、パイロット運用、検証体制の整備、テンプレート化を提示している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/shimanto/items/ea108e0f4030c7a60d08)
+- **重要度**: 6/10
+- **タグ**: claude-code, copilot, cursor
 
 ---
 
