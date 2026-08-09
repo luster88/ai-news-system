@@ -9,9 +9,10 @@ tags:
 - opus
 - performance
 - pricing
+- prompt
 - sonnet
 date: '2026-03-24'
-updated: '2026-07-16'
+updated: '2026-08-09'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -45,6 +46,9 @@ sources:
   title: I gave GPT-5.6 Sol, Claude Opus 4.8, and Grok 4.5 the same 100 frontend briefs—here
     are all 300 results
   date: '2026-07-16'
+- url: https://qiita.com/picnic/items/b8c4847a09ff64695e3d
+  title: Claude Opus 5とChatGPT Voiceで変わるAIエージェント活用の勘所
+  date: '2026-08-09'
 ---
 
 
@@ -56,7 +60,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-08-09
+
+### Claude Opus 5とChatGPT Voiceで変わるAIエージェント活用の勘所
+
+Lenny's Newsletter上で公開された、Claude Opus 5の7モデル横断ベンチマーク実践レビュー、Anthropic初のPMによるモデル開発思想解説、ChatGPT Voiceのマルチスレッド管理などを紹介。Claude Opus 5は能力は高いが「annoying（うっとうしい）」という実運用での評価も。Codexブラウザ操作での「under-prompting」テクニックや、Vercel Eve + CodexによるPRレビューボット構築事例も含む。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/b8c4847a09ff64695e3d)
+- **重要度**: 6/10
+- **タグ**: opus, prompt, cowork
 
 ---
 

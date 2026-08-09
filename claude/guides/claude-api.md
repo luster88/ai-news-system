@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-07-10'
+updated: '2026-08-09'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -41,6 +41,9 @@ sources:
 - url: https://zenn.dev/propagandist/articles/0017-spring-boot-claude-multi-turn
   title: Spring Boot で Claude に会話履歴を渡して多ターンで話す
   date: '2026-07-10'
+- url: https://zenn.dev/sibecat_tech/articles/photo-not-stored-calorie-app
+  title: 写真を保存しないカロリー記録アプリを個人開発した話
+  date: '2026-08-09'
 ---
 
 
@@ -51,7 +54,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-08-09
+
+### 写真を保存しないカロリー記録アプリを個人開発した話
+
+個人開発者が、食事記録の継続を妨げる「手間」を解決するため、写真1枚でカロリー推定を行うアプリを構築。Next.js 16 + Supabase + Claude APIの構成で、プライバシー保護のため写真を保存せず推定結果のみDB保存。RLSによる認可設計、タイムゾーン処理の落とし穴、日付ベース無料枠の検証不備、og:image/manifestのリダイレクト問題など、実装時の5つの判断ポイントと失敗例を詳述している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/sibecat_tech/articles/photo-not-stored-calorie-app)
+- **重要度**: 6/10
+- **タグ**: claude-api, prompt, 新機能
 
 ---
 

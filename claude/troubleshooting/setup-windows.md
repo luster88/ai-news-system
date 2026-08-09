@@ -3,12 +3,13 @@ title: Setup Windows
 category: troubleshooting
 subcategory: setup-windows
 tags:
+- bugfix
 - claude-code
 - cowork
 - setup
 - windows
 date: '2026-03-29'
-updated: '2026-07-10'
+updated: '2026-08-09'
 sources:
 - url: https://qiita.com/kan2530/items/fbac7254b3375a9fe690
   title: 【実体験】Claude Cowork（Windows）セットアップ時に仮想化が有効にできなかった話とBIOS設定での解決方法
@@ -19,11 +20,27 @@ sources:
 - url: https://qiita.com/kanameShiga/items/9af4d5144dc79fcada54
   title: Claude Code の【Windowsアプリ版】の会話履歴を新PCへ移行したら沼だった話（自作スクリプトで抜け出すまで）
   date: '2026-07-10'
+- url: https://qiita.com/daisuke-nagata/items/e9e999584ce69690f92d
+  title: Claude Codeのエラー多発、ダウングレードで直ったのに理由が分からない話
+  date: '2026-08-09'
 ---
 
 
 
+
 # Setup Windows
+
+---
+
+## 2026-08-09
+
+### Claude Codeのエラー多発、ダウングレードで直ったのに理由が分からない話
+
+Claude Code で8月にリクエストエラーが多発し、CLI のダウングレードで解決したように見えた事例。しかし原因特定は不十分で、サーバー側障害の可能性も残る。Claude Code には複数のインストール経路（CLI・VS Code 拡張・デスクトップアプリ）があり、それぞれ独立したバージョン管理が必要。自動更新の無効化と stable チャネル利用が推奨される。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/daisuke-nagata/items/e9e999584ce69690f92d)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, windows
 
 ---
 
