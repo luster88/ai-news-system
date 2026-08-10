@@ -5,10 +5,11 @@ subcategory: claude-code-security
 tags:
 - claude-code
 - opus
+- prompt
 - setup
 - 新機能
 date: '2026-05-01'
-updated: '2026-05-27'
+updated: '2026-08-10'
 sources:
 - url: https://zenn.dev/yuzzzn/articles/45626e1ab08e3c
   title: AIコーディングエージェントをセキュアに使うためのハーネス設計
@@ -19,11 +20,27 @@ sources:
 - url: https://zenn.dev/yuzzzn/articles/29b0538948b3d1
   title: 再掲]ClaudeCodeの環境構築,使い方入門
   date: '2026-05-27'
+- url: https://zenn.dev/st_27/articles/efb2436a8cd8e0
+  title: ハーネスについての備忘録
+  date: '2026-08-10'
 ---
 
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-08-10
+
+### ハーネスについての備忘録
+
+Claude Codeにおけるハーネス（ツール呼び出しの制御システム）について解説した技術記事。CLAUDE.md、permissions、hooks、sandboxの4層構造と、それぞれの強制力・役割の違いを整理している。CLAUDE.mdはモデルの意図生成に影響するがハーネスの判定ロジックには介入せず、技術的な制御にはpermissions/hooks/sandboxが必要であることを強調。
+
+- **ソース**: [Zenn claude](https://zenn.dev/st_27/articles/efb2436a8cd8e0)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

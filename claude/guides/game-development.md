@@ -5,12 +5,13 @@ subcategory: game-development
 tags:
 - claude-code
 - cowork
+- mcp
 - opus
 - prompt
 - vscode
 - 新機能
 date: '2026-05-29'
-updated: '2026-07-15'
+updated: '2026-08-10'
 sources:
 - url: https://qiita.com/hiro_qiita_/items/152cc2ef68d5fb17b790
   title: Kiro のだいぼうけん！開発記 〜ファミコンの制約を守りながらKiroとClaudeにシューティングゲームを作らせる〜
@@ -25,12 +26,28 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1uxarq9/im_building_a_fighter_jet_game_with_claude
   title: I’m building a fighter jet game with Claude
   date: '2026-07-15'
+- url: https://qiita.com/OnuuuumaX/items/5c80ad6e04513b361bbe
+  title: 【Godot 4.x】2D脱出ゲームを作ってみる⑫〜左右移動・ギミック２点・アイテム合成・パーティクルを実装する〜
+  date: '2026-08-10'
 ---
 
 
 
 
+
 # Game Development
+
+---
+
+## 2026-08-10
+
+### 【Godot 4.x】2D脱出ゲームを作ってみる⑫〜左右移動・ギミック２点・アイテム合成・パーティクルを実装する〜
+
+Claude Code + MCP + Godot 4.xで2D脱出ゲームを制作する連載の第12回。新エリア「ホール」を追加し、左右移動ボタン、時計ギミック、アイテム合成（ライター+オイル）、CPUParticles2Dを使った暖炉の炎演出を実装。Axmol Engine版の仕様書をClaudeに渡してGodotへ移植する開発スタイルを採用している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/OnuuuumaX/items/5c80ad6e04513b361bbe)
+- **重要度**: 5/10
+- **タグ**: claude-code, mcp
 
 ---
 

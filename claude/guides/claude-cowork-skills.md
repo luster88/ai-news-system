@@ -6,15 +6,33 @@ tags:
 - claude-code
 - cowork
 - mcp
+- setup
+- 新機能
 date: '2026-05-12'
-updated: '2026-05-12'
+updated: '2026-08-10'
 sources:
 - url: https://zenn.dev/bltsdc/articles/e4db8a4fdef2d3
   title: 【2026年5月】Claude Coworkでスキルを作ってマーケットプレイス公開するまで
   date: '2026-05-12'
+- url: https://qiita.com/mushroom-it-engineer/items/80b857e7f8b1d064c7f8
+  title: 【備忘録】Claude Coworkによるスキルのスケジュール実行
+  date: '2026-08-10'
 ---
 
+
 # Claude Cowork Skills
+
+---
+
+## 2026-08-10
+
+### 【備忘録】Claude Coworkによるスキルのスケジュール実行
+
+Claude Cowork を使用してローカルファイル編集タスクをスキル化し、スケジュール実行する手順の備忘録。Pro プラン加入が必要で、PC の BIOS 設定変更も必要。会話からスキルに変換し、スケジュール設定することで定期実行が可能になる。
+
+- **ソース**: [Qiita claude](https://qiita.com/mushroom-it-engineer/items/80b857e7f8b1d064c7f8)
+- **重要度**: 5/10
+- **タグ**: cowork, setup, 新機能
 
 ---
 

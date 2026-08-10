@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-08-04'
+updated: '2026-08-10'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -124,6 +124,9 @@ sources:
 - url: https://zenn.dev/jinqiu/articles/b5ca44d0cd0070
   title: Slackの過去ログをClaude DesktopやCursorから検索できるようにする（MCP・ローカル完結）
   date: '2026-08-04'
+- url: https://zenn.dev/furu04/articles/fcd889d8eb7826
+  title: Claude.aiに自作APIを繋ぐにはOAuth 2.1が必要らしいので、認可サーバーごと内蔵したMCPプロキシを作った
+  date: '2026-08-10'
 ---
 
 
@@ -158,7 +161,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-08-10
+
+### Claude.aiに自作APIを繋ぐにはOAuth 2.1が必要らしいので、認可サーバーごと内蔵したMCPプロキシを作った
+
+Claude.aiのカスタムコネクタで自作API（FocusZoo）を接続するため、OAuth 2.1認可サーバーを内蔵した汎用MCPプロキシ「BeefChicken MCP」を開発。OpenAPI仕様書を差し替えるだけでMCP化でき、Cloudflare Workers/Node.js/Dockerで動作。静的Authorization ヘッダーを直接指定できない環境でも、認可サーバーごと提供することで接続を実現。個人開発者向けに保守負担を最小化し、無料枠のあるCloudflare Workersでの運用にも対応した実用的なツール。
+
+- **ソース**: [Zenn claude](https://zenn.dev/furu04/articles/fcd889d8eb7826)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-api, 新機能
 
 ---
 

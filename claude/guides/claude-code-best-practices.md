@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-11'
-updated: '2026-08-01'
+updated: '2026-08-10'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-best-practice-guide-2026
   title: Claude Codeベストプラクティス完全ガイド2026年版｜使い方・Tips・効率化テクニック集
@@ -37,6 +37,12 @@ sources:
 - url: https://zenn.dev/gudezou/articles/a017fa7cc840f6
   title: Plan モードを正解保証と勘違いするとなぜやり直しが増えるのか ── 公式 docs が推奨する3つの付き合い方
   date: '2026-08-01'
+- url: https://zenn.dev/nikokobo/articles/7a399b93c8d471
+  title: CLAUDE.md と Skills の違い — 置き場を4つに分けた基準と、80本に増えて壊れたこと
+  date: '2026-08-10'
+- url: https://zenn.dev/nikokobo/articles/fd08408988b168
+  title: CLAUDE.md の書き方 — 指示を書いても守られないので、hook 57本に移した話
+  date: '2026-08-10'
 ---
 
 
@@ -46,7 +52,30 @@ sources:
 
 
 
+
 # Claude Code Best Practices
+
+---
+
+## 2026-08-10
+
+### CLAUDE.md と Skills の違い — 置き場を4つに分けた基準と、80本に増えて壊れたこと
+
+CLAUDE.md と Skills の配置基準を「いつ読ませるか（常駐コスト）」で分類する運用知見。Skills を80本まで増やした結果、12本が500行基準を超過し、実際の稼働状況を測定する手段がなかったという失敗例を共有。hook は「読ませない」置き場として、破られたら取り返しがつかない処理に使用する。
+
+- **ソース**: [Zenn claude](https://zenn.dev/nikokobo/articles/7a399b93c8d471)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, setup
+
+---
+
+### CLAUDE.md の書き方 — 指示を書いても守られないので、hook 57本に移した話
+
+CLAUDE.mdを120日運用した結果、500行超の指示文は古いルールから無視されることが判明。本当に守らせたいルールは「お願い」ではなく「強制」として実装すべきで、取り返しのつかない操作は57本のhookに移行。10日で98,334回チェックが走り110回阻止した実測データを公開。指示文は3階層に分け、詳細仕様は別ファイル管理、監視は実装とセットで導入する運用ノウハウを紹介。
+
+- **ソース**: [Zenn claude](https://zenn.dev/nikokobo/articles/fd08408988b168)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 
