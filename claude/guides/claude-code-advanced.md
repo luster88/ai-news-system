@@ -7,9 +7,10 @@ tags:
 - cowork
 - prompt
 - setup
+- vscode
 - 新機能
 date: '2026-04-08'
-updated: '2026-07-22'
+updated: '2026-08-11'
 sources:
 - url: https://qiita.com/moha0918_/items/9682b1ec8b71e884ec13
   title: 複数のAIが同時に働く仕組み - Agent Teamsで実現するチーム開発の全体像
@@ -23,12 +24,28 @@ sources:
 - url: https://qiita.com/QuQuLa89/items/441744e6f53d7c073df2
   title: Claude Codeの能力を極限まで引き出す：カスタムSubagents設計と拡張プラグイン活用ガイド
   date: '2026-07-22'
+- url: https://zenn.dev/imu_imu/books/claude-guide
+  title: Claude Code 完璧マスター講座【中級編】——「なんか使いこなせてない」を解決する装備庫
+  date: '2026-08-11'
 ---
 
 
 
 
+
 # Claude Code Advanced
+
+---
+
+## 2026-08-11
+
+### Claude Code 完璧マスター講座【中級編】——「なんか使いこなせてない」を解決する装備庫
+
+Claude Code の中級者向け実践ガイド。ターミナル版への移行、Chrome連携、モデルとeffort設定、スラッシュコマンドの活用法など、実務で使いこなすための具体的なテクニックを解説。「なんとなく使えるけど効率的に使えていない」ユーザーが次のステップに進むための実践的な情報をまとめた書籍。
+
+- **ソース**: [Zenn claude](https://zenn.dev/imu_imu/books/claude-guide)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, vscode
 
 ---
 

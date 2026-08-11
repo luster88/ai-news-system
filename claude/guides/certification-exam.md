@@ -7,8 +7,10 @@ tags:
 - claude-code
 - mcp
 - prompt
+- setup
+- 新機能
 date: '2026-05-07'
-updated: '2026-07-26'
+updated: '2026-08-11'
 sources:
 - url: https://qiita.com/arahata0907/items/6e0f7bf1629cc52bfa53
   title: 【日本語解説付き試験問題集】Claude Certified Architect Foundations (CCA-F)
@@ -19,10 +21,26 @@ sources:
 - url: https://zenn.dev/ray_keymaso/articles/ccaf-official-docs-guide
   title: CCA-F/CCAR-F対策：Exam Guideの次に読む公式ドキュメント
   date: '2026-07-26'
+- url: https://qiita.com/alphajinsei/items/b8e54e2c6a860df8808f
+  title: Claude certification 全冠した
+  date: '2026-08-11'
 ---
 
 
+
 # Certification Exam
+
+---
+
+## 2026-08-11
+
+### Claude certification 全冠した
+
+Anthropic のパートナー企業向け Claude 認定資格4種（CCAR-F、CCAR-P、CCDV-F、CCAO-F）に全合格した体験記。2026年7月に公開されたばかりの新資格を含む。英語試験の難しさ、各資格の難易度差（CCDV-F < CCAR-F, CCAO-F < CCAR-P）、Udemy予想問題集の活用状況などを詳述。特にCCAR-Pは出題形式が複雑で難易度が高かった。
+
+- **ソース**: [Qiita claude](https://qiita.com/alphajinsei/items/b8e54e2c6a860df8808f)
+- **重要度**: 6/10
+- **タグ**: claude-api, setup, 新機能
 
 ---
 

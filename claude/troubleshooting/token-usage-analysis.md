@@ -9,7 +9,7 @@ tags:
 - pricing
 - prompt
 date: '2026-06-07'
-updated: '2026-08-05'
+updated: '2026-08-11'
 sources:
 - url: https://qiita.com/yurukusa/items/5d49ed7d798c9650fe16
   title: Claude Codeの週次の利用枠が「軽い作業」で1日で枯れる本当の理由——消費の99%はコードではなく文脈の再読み込みだった
@@ -17,10 +17,26 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vgcf89/claude_overusing_my_tokens
   title: Claude overusing my tokens
   date: '2026-08-05'
+- url: https://zenn.dev/honeymarron/articles/claude-code-context-diet
+  title: 「おはよう」1回 = 5時間制限の7%！？ — 挨拶3トークンの裏で送られる数万トークンの話
+  date: '2026-08-11'
 ---
 
 
+
 # Token Usage Analysis
+
+---
+
+## 2026-08-11
+
+### 「おはよう」1回 = 5時間制限の7%！？ — 挨拶3トークンの裏で送られる数万トークンの話
+
+Claude Codeで「おはよう」と挨拶しただけで5時間枠の7%が消費される現象を解説。原因はCLAUDE.md、メモリ索引、skill/プラグイン説明など数万トークンのベースラインコンテキストが毎ターン送信されるため。特にキャッシュ切れ後の最初のリクエストは高コスト。対策として/contextコマンドでカテゴリ別消費を測定し、メモリ・CLAUDE.md・skill説明などの常時ロード分を削減する手順を紹介。見た目のファイルサイズと実際のトークン消費は一致せず、MCP遅延ロードなど測定が重要。
+
+- **ソース**: [Zenn claude](https://zenn.dev/honeymarron/articles/claude-code-context-diet)
+- **重要度**: 7/10
+- **タグ**: claude-code, performance, prompt
 
 ---
 

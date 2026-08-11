@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-08-08'
+updated: '2026-08-11'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -276,6 +276,9 @@ sources:
 - url: https://zenn.dev/hoshiorange/articles/06-claude-code-worklog-as-asset
   title: Claude Code に作業ログを書かせたら60本たまった — 引き継ぎもネタ出しも困らない運用
   date: '2026-08-08'
+- url: https://qiita.com/YujiNaramoto/items/1ee9648d797c5fa69e35
+  title: なぜZenn/Qiitaへのクロスポストにパイプライン設計が必要なのか
+  date: '2026-08-11'
 ---
 
 
@@ -346,7 +349,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-08-11
+
+### なぜZenn/Qiitaへのクロスポストにパイプライン設計が必要なのか
+
+Claude Code SkillsでZenn/Qiitaへのクロスポスト自動化パイプラインを設計した事例。SEO重複コンテンツ問題の回避とプラットフォームごとの読者層の違いに対応するため、切り口変換ルールをスキルのreferencesに明文化し、UTMパラメータ付き帰属表示を実装。単発投稿ではなく継続的なクロスポストでROIが出る設計思想を解説。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/YujiNaramoto/items/1ee9648d797c5fa69e35)
+- **重要度**: 5/10
+- **タグ**: claude-code, cowork, setup
 
 ---
 

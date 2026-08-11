@@ -12,7 +12,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-03-24'
-updated: '2026-08-09'
+updated: '2026-08-11'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -49,6 +49,9 @@ sources:
 - url: https://qiita.com/picnic/items/b8c4847a09ff64695e3d
   title: Claude Opus 5とChatGPT Voiceで変わるAIエージェント活用の勘所
   date: '2026-08-09'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vls7dp/fable_5_vs_opus_5_for_2d_sprites
+  title: Fable 5 vs Opus 5 for 2D Sprites
+  date: '2026-08-11'
 ---
 
 
@@ -61,7 +64,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-08-11
+
+### Fable 5 vs Opus 5 for 2D Sprites
+
+Reddit ユーザーが Fable 5 と Opus 5 で2Dアイソメトリックゲーム用のナイトスプライトを生成し比較。Fable 5 は3アニメーション・174KB・$9.68でシンプルな成果物を提供。一方 Opus 5 は3Dモデルから生成し6アニメーション・4チームカラー・9.3MB・$22.25で本格的なアセットパックを作成。Opus 5 の方が約8倍のフレーム数で完成度が高いが、コストも2倍以上となった。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vls7dp/fable_5_vs_opus_5_for_2d_sprites)
+- **重要度**: 6/10
+- **タグ**: opus, performance, pricing
 
 ---
 
