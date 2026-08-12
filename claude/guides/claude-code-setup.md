@@ -12,7 +12,7 @@ tags:
 - windows
 - 新機能
 date: '2026-04-04'
-updated: '2026-08-05'
+updated: '2026-08-12'
 sources:
 - url: https://qiita.com/taiki_i/items/2d75a882e0f3187f6bb8
   title: あなたの CLAUDE.md、ちゃんと機能してますか？作り方から公式プラグインで採点するまでの道のり
@@ -62,6 +62,9 @@ sources:
 - url: https://ai-heartland.com/explain/agents-md-claude-code-bridge
   title: AGENTS.mdをClaude Codeに読ませる｜symlinkと@importの違いとCodex 32KiB上限
   date: '2026-08-05'
+- url: https://zenn.dev/eggdolphin/articles/9ad96bf226c394
+  title: 【初心者向け】Claude Codeの利用方法｜Claude Desktopのインストールから利用開始まで
+  date: '2026-08-12'
 ---
 
 
@@ -76,7 +79,20 @@ sources:
 
 
 
+
 # Claude Code Setup
+
+---
+
+## 2026-08-12
+
+### 【初心者向け】Claude Codeの利用方法｜Claude Desktopのインストールから利用開始まで
+
+Claude Code初心者向けの導入ガイド。Claudeアカウントの作成からClaude Desktopのインストールまでを画像付きで解説。Claude CodeはProプラン以上で利用可能で、無料プランでは利用できないことを明記。ターミナル版ではなくClaude Desktopから始めることを推奨している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/eggdolphin/articles/9ad96bf226c394)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

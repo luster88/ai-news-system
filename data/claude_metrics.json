@@ -1521,5 +1521,46 @@
       "total_items": 18,
       "active_penalties": 1
     }
+  },
+  "2026-08-12": {
+    "timestamp": "2026-08-12T22:35:22.058687+00:00",
+    "elapsed_seconds": 141.9,
+    "collection": {
+      "total_raw": 38,
+      "total_new": 27,
+      "total_seen": 11,
+      "total_penalized": 0,
+      "by_source": {
+        "Anthropic News": 8,
+        "Anthropic Engineering": 0,
+        "Anthropic Research": 0,
+        "Reddit r/ClaudeAI": 10,
+        "Qiita claude": 4,
+        "Zenn claude": 6,
+        "Qiita claudecode": 3,
+        "AI Heartland": 1,
+        "The Decoder Claude": 3,
+        "TechCrunch Claude": 3
+      },
+      "sources_zero": [
+        "Anthropic Engineering",
+        "Anthropic Research"
+      ]
+    },
+    "body_fetch": {
+      "total": 27,
+      "success": 18,
+      "empty": 9,
+      "skipped": 0,
+      "success_rate": 0.67
+    },
+    "summarization": {
+      "selected": 18,
+      "parse_failure_count": 0
+    },
+    "output": {
+      "total_items": 18,
+      "active_penalties": 1
+    }
   }
 }

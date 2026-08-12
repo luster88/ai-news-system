@@ -9,7 +9,7 @@ tags:
 - pricing
 - sonnet
 date: '2026-05-02'
-updated: '2026-07-08'
+updated: '2026-08-12'
 sources:
 - url: https://the-decoder.com/xai-drops-grok-4-3-with-steep-price-cuts-and-an-imagine-agent-mode-for-creative-projects
   title: xAI drops Grok 4.3 with steep price cuts and an Imagine agent mode for creative
@@ -21,11 +21,27 @@ sources:
 - url: https://the-decoder.com/openais-gpt-5-6-launches-thursday-after-a-delay-forced-by-the-u-s-government
   title: OpenAI's GPT-5.6 launches Thursday after a delay forced by the U.S. government
   date: '2026-07-08'
+- url: https://the-decoder.com/spacexais-grok-4-6-matches-openais-best-model-and-undercuts-it-on-price
+  title: SpaceXAI's Grok 4.6 matches OpenAI's best model and undercuts it on price
+  date: '2026-08-12'
 ---
 
 
 
+
 # Competitor Comparison
+
+---
+
+## 2026-08-12
+
+### SpaceXAI's Grok 4.6 matches OpenAI's best model and undercuts it on price
+
+SpaceX の xAI が Grok 4.6 をリリース。Artificial Analysis の評価で OpenAI の GPT-5.6 Sol と同等の 61 点を獲得し、Claude Opus 5（63点）に次ぐ性能を達成。特にエージェントタスクで優れ、GDPval-AA v2 ベンチマークで Claude Opus 5 に次ぐ2位。価格は $2/$6 per million tokens で、Claude Opus 5 や GPT-5.6 Sol より 60% 以上安価。API、Cursor、Grok Build などで利用可能。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/spacexais-grok-4-6-matches-openais-best-model-and-undercuts-it-on-price)
+- **重要度**: 4/10
+- **タグ**: opus, pricing, performance
 
 ---
 

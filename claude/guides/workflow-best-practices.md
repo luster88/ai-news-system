@@ -9,7 +9,7 @@ tags:
 - prompt
 - setup
 date: '2026-05-24'
-updated: '2026-07-11'
+updated: '2026-08-12'
 sources:
 - url: https://qiita.com/y_tsubasa/items/a0213eaad3402d00ed0a
   title: AI と毎日開発していて定着した、地味だけど効く工夫の棚卸し
@@ -20,11 +20,27 @@ sources:
 - url: https://qiita.com/rikiza1989/items/9948daf97fb221da78c2
   title: AIエージェントを"暴走"させない仕組み ― ドキュメントを憲法にしたら、コードより先にルールが育った話
   date: '2026-07-11'
+- url: https://zenn.dev/u_taaaaan/articles/ai-skills-in-dev-process
+  title: AI を「コードを書かせる道具」にしないために開発プロセスにスキルを組み込んだ話
+  date: '2026-08-12'
 ---
 
 
 
+
 # Workflow Best Practices
+
+---
+
+## 2026-08-12
+
+### AI を「コードを書かせる道具」にしないために開発プロセスにスキルを組み込んだ話
+
+Claude Code を使った開発プロセスにおいて、コードを書く速度だけでなく、設計レビュー段階とセルフレビュー段階にスキルを配置することで品質を向上させた実践例。受入条件の確認、設計の鮮度チェック、レビュー観点の統一、汎用手順のプラグイン化により、AI を単なるコーディングツールではなく開発プロセス全体に組み込んだ取り組みを紹介している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/u_taaaaan/articles/ai-skills-in-dev-process)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, setup
 
 ---
 

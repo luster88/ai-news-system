@@ -8,8 +8,9 @@ tags:
 - mcp
 - opus
 - performance
+- 新機能
 date: '2026-07-09'
-updated: '2026-08-03'
+updated: '2026-08-12'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1urr49k/day_1_of_giving_feble_5_a_80_crypto_account_with
   title: Day 1 of giving Feble 5 a 80$ crypto account with instructions to turn it
@@ -19,10 +20,26 @@ sources:
   title: 'Unicorn, pelican, Middle-earth: OpenAI co-founder Karpathy is looking for
     the next AI vibe test'
   date: '2026-08-03'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vmjzh7/i_asked_opus_5_to_build_gta6_on_its_own_in_24
+  title: I asked Opus 5 to build GTA6 on its own in 24 hours
+  date: '2026-08-12'
 ---
 
 
+
 # Community Experiments
+
+---
+
+## 2026-08-12
+
+### I asked Opus 5 to build GTA6 on its own in 24 hours
+
+Reddit ユーザーが Claude Opus 5 を使って24時間で GTA6 風のゲームを自律的に構築させる実験を実施。AI が都市、地区、道路、建物、人物、車、天候などをすべて自律的に決定・生成した。結果は粗削りだが、AI の自律的なゲーム開発能力の可能性を示すプロジェクト。使用したツールやエージェント、モデルの詳細は GitHub で公開されている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vmjzh7/i_asked_opus_5_to_build_gta6_on_its_own_in_24)
+- **重要度**: 6/10
+- **タグ**: opus, cowork, 新機能
 
 ---
 

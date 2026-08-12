@@ -8,7 +8,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-31'
-updated: '2026-07-23'
+updated: '2026-08-12'
 sources:
 - url: https://qiita.com/makoto-ogata@github/items/641a26f0d5d40aa1c0c4
   title: Claude Codeのsettings.jsonの設定をしよう
@@ -19,10 +19,26 @@ sources:
 - url: https://zenn.dev/kuzzken/articles/5c73122da6b93b
   title: Claude Code の settings.json を棚卸ししたら、許可ルールの9割が消せた
   date: '2026-07-23'
+- url: https://ai-heartland.com/explain/claude-code-settings-guide
+  title: Claude Code 設定ガイド｜settings.jsonのスコープ優先順位とpermissions設計
+  date: '2026-08-12'
 ---
 
 
+
 # Claude Code Settings
+
+---
+
+## 2026-08-12
+
+### Claude Code 設定ガイド｜settings.jsonのスコープ優先順位とpermissions設計
+
+Claude Code の設定ファイル（settings.json）は5段階のスコープ（Managed > コマンドライン引数 > Local > Project > User）で構成され、権限（permissions）は上書きではなくマージされる仕組みを持つ。各スコープの優先順位と適用範囲を理解し、組織・チーム・個人それぞれのレベルで適切に設定を管理する必要がある。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/claude-code-settings-guide)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, vscode
 
 ---
 

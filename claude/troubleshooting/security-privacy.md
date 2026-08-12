@@ -4,12 +4,13 @@ category: troubleshooting
 subcategory: security-privacy
 tags:
 - bugfix
+- claude-code
 - claude-console
 - cowork
 - mac
 - setup
 date: '2026-03-26'
-updated: '2026-07-28'
+updated: '2026-08-12'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s3ss8s/giving_claude_access_to_my_macbook_macos
   title: Giving Claude access to my MacBook / macOS
@@ -17,10 +18,27 @@ sources:
 - url: https://ai-heartland.com/security/claude-share-links-google-indexed-robots-noindex
   title: Claudeの共有会話がGoogle検索に露出した理由｜robots.txtとnoindexの違い・自環境の確認手順
   date: '2026-07-28'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vmpplr/psa_your_claude_code_sessions_are_on_disk_as
+  title: 'PSA: your claude code sessions are on disk as plaintext json, including
+    everything you ever pasted'
+  date: '2026-08-12'
 ---
 
 
+
 # Security Privacy
+
+---
+
+## 2026-08-12
+
+### PSA: your claude code sessions are on disk as plaintext json, including everything you ever pasted
+
+Claude Code のセッションデータがローカルディスクに平文JSONとして保存されていることが判明。~/.claude/projects/ 配下に全ての会話履歴、ツール実行結果、ペーストしたコード・APIキーなどが暗号化されずに保存される。セッションファイルは巨大化する傾向があり、セキュリティ上の懸念が指摘されている。grep等でのログ検索や監査には有用だが、機密情報の取り扱いに注意が必要。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vmpplr/psa_your_claude_code_sessions_are_on_disk_as)
+- **重要度**: 8/10
+- **タグ**: claude-code
 
 ---
 

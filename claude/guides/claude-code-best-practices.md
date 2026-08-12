@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-11'
-updated: '2026-08-10'
+updated: '2026-08-12'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-best-practice-guide-2026
   title: Claude Codeベストプラクティス完全ガイド2026年版｜使い方・Tips・効率化テクニック集
@@ -43,6 +43,9 @@ sources:
 - url: https://zenn.dev/nikokobo/articles/fd08408988b168
   title: CLAUDE.md の書き方 — 指示を書いても守られないので、hook 57本に移した話
   date: '2026-08-10'
+- url: https://zenn.dev/odacchi/articles/claude-md-length-experiment
+  title: 「CLAUDE.md は短い方が良い」を 1,510 回試して確かめた
+  date: '2026-08-12'
 ---
 
 
@@ -53,7 +56,20 @@ sources:
 
 
 
+
 # Claude Code Best Practices
+
+---
+
+## 2026-08-12
+
+### 「CLAUDE.md は短い方が良い」を 1,510 回試して確かめた
+
+CLAUDE.mdの長さがルール遵守率に与える影響を1,510回の検証で測定した結果、228行から1,040行に増やしてもルールの守られ方は変わらず、ファイル位置（先頭vs中ほど）や配置場所（CLAUDE.md vs .claude/rules/）による精度差もないことが判明。分割の理由は精度ではなく、人間による保守性・diff管理・paths条件ロード機能にあると結論。小規模プロジェクトでは無理に分割する必要はない。
+
+- **ソース**: [Zenn claude](https://zenn.dev/odacchi/articles/claude-md-length-experiment)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

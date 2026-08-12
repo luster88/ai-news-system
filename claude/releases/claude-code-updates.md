@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: 2026-03-23
-updated: '2026-07-21'
+updated: '2026-08-12'
 sources:
 - url: https://github.com/anthropics/claude-code/releases
   title: Claude Code GitHub Releases
@@ -92,7 +92,11 @@ sources:
 - url: https://qiita.com/moha0918_/items/2ad6f36fd302017b9267
   title: Claude Code v2.1.216〜v2.1.217｜サブエージェントの無制限増殖に上限｜毎日Changelog解説
   date: '2026-07-21'
+- url: https://qiita.com/picnic/items/e20692ced34c7a82eaec
+  title: Claude Code v2.1.228対応:同期スキルのセキュリティ強化とメモリ削除バグ
+  date: '2026-08-12'
 ---
+
 
 
 
@@ -161,6 +165,18 @@ Claude Code の主要なリリース・機能追加を時系列で記録する�
 
 - [セットアップガイド](../guides/setup.md)
 - [ツール比較](../tools/comparison.md)
+
+---
+
+## 2026-08-12
+
+### Claude Code v2.1.228対応:同期スキルのセキュリティ強化とメモリ削除バグ
+
+Claude Code v2.1.228がリリースされ、セキュリティ強化とバグ修正が実施されました。claude.aiから同期されたスキルがローカルコマンドやMCPプロンプトを乗っ取れないよう制限され、メモリフォルダの誤削除バグとRemote Controlでの情報漏洩問題が修正されました。また、Writeツールの上書きルール変更により、Read前でも既存ファイルの上書きが可能になりました。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/e20692ced34c7a82eaec)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 
