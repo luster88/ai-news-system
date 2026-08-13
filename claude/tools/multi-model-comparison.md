@@ -12,7 +12,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-05-16'
-updated: '2026-07-17'
+updated: '2026-08-13'
 sources:
 - url: https://qiita.com/mellisaoez/items/5e1b10bbff78413287ed
   title: ChatGPT・Claude・Gemini・Grokを1つの画面で同時に動かしてみた（MultipleChatを作った話）
@@ -26,12 +26,28 @@ sources:
 - url: https://qiita.com/xujfcn/items/ba9d61e5c8b66a70f1c1
   title: Kimi K3 と Claude Fable 5 を実測比較：差が出たのは推論力より出力予算と検証性
   date: '2026-07-17'
+- url: https://qiita.com/locallab/items/1e3e7233162baeeabf3b
+  title: Claude Code × OpenRouter 無料モデル徹底比較 2026年版 — 7モデルを速度・品質・コスト0で試した結果
+  date: '2026-08-13'
 ---
 
 
 
 
+
 # Multi Model Comparison
+
+---
+
+## 2026-08-13
+
+### Claude Code × OpenRouter 無料モデル徹底比較 2026年版 — 7モデルを速度・品質・コスト0で試した結果
+
+OpenRouterの無料モデル(:free)7種類をコーディング支援、長文要約、多言語対応の3軸で比較した実践記事。llama-3.3-70b:freeがコーディングに、gemini-2.0-flash-exp:freeとqwen3-14b:freeが要約に、qwen3-14b:freeが日本語翻訳に優れていることを検証。無料枠でもモデルを適切に使い分ければ月額コストをほぼ0円に抑えつつGPT-4クラスの品質に近づけると結論。ただし無料枠は可用性保証がないため、本番環境では有料モデルへのフォールバックが必須。
+
+- **ソース**: [Qiita claude](https://qiita.com/locallab/items/1e3e7233162baeeabf3b)
+- **重要度**: 6/10
+- **タグ**: claude-api, performance, pricing
 
 ---
 

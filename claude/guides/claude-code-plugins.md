@@ -12,7 +12,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-04-07'
-updated: '2026-07-13'
+updated: '2026-08-13'
 sources:
 - url: https://qiita.com/moha0918_/items/b3011c218210ab2695b7
   title: プラグイン作成の3つの方法、結局どれを選ぶべき？
@@ -57,6 +57,9 @@ sources:
 - url: https://qiita.com/syun136_616/items/c552569ad46e35717d9c
   title: Claude Code 使い方まとめ【2026年版】設定から実践Tips まで
   date: '2026-07-13'
+- url: https://zenn.dev/toshi0607/articles/20260813-claude-code-tachikoma-plugin
+  title: Claude Codeとのやりとりをタチコマ口調にするプラグインを作って各環境に配布する
+  date: '2026-08-13'
 ---
 
 
@@ -71,7 +74,20 @@ sources:
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-08-13
+
+### Claude Codeとのやりとりをタチコマ口調にするプラグインを作って各環境に配布する
+
+Claude Codeの応答を攻殻機動隊のタチコマ口調にするプラグインを作成し、GitHubリポジトリ経由で複数環境に配布する方法を解説。プラグインの仕様、構造、マーケットプレイスの仕組み、設定が適用されない問題やキャッシュ問題の対処法を詳述。output styleをプラグイン化することで、ローカル・クラウド・定時実行のすべての環境で一貫した応答スタイルを実現する手法を紹介している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/toshi0607/articles/20260813-claude-code-tachikoma-plugin)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

@@ -5,16 +5,34 @@ subcategory: nvim-herdr-integration
 tags:
 - claude-code
 - mcp
+- prompt
 - vscode
+- 新機能
 date: '2026-08-01'
-updated: '2026-08-01'
+updated: '2026-08-13'
 sources:
 - url: https://qiita.com/r12tkmt/items/27da966a15b59c81589c
   title: herdrでnvimから隣のAIエージェントにファイル参照を送れるプラグインを作った
   date: '2026-08-01'
+- url: https://zenn.dev/mostlyfine/articles/c4978481603b47
+  title: Herdrのサイドバーに要約とプロンプトを出す
+  date: '2026-08-13'
 ---
 
+
 # Nvim Herdr Integration
+
+---
+
+## 2026-08-13
+
+### Herdrのサイドバーに要約とプロンプトを出す
+
+Herdr（Claude連携ツール）で大量のClaude実行時に何をしているか分からなくなる問題を解決するため、hooksを使って入力プロンプトと直近の会話から要約をサイドバーに表示するスクリプトが公開された。設定ファイルへの追加のみで動作し、エージェントに依頼してカスタマイズも可能。現在はClaude専用だが他のエージェントにも対応可能。
+
+- **ソース**: [Zenn claude](https://zenn.dev/mostlyfine/articles/c4978481603b47)
+- **重要度**: 4/10
+- **タグ**: prompt, 新機能
 
 ---
 

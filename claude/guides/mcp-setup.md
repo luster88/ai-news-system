@@ -7,7 +7,7 @@ tags:
 - mcp
 - setup
 date: '2026-04-07'
-updated: '2026-06-24'
+updated: '2026-08-13'
 sources:
 - url: https://qiita.com/76Hata/items/6ce2cde9826f5c3a1de2
   title: MCP（Model Context Protocol）入門 — AIエージェントと外部ツールをつなぐ標準規格
@@ -18,11 +18,27 @@ sources:
 - url: https://qiita.com/DevMasatoman/items/caa0def95815085466a4
   title: claude mcp add で MCP を実運用した記録 — 設定・一覧・削除の全コマンドと詰まりどころ
   date: '2026-06-24'
+- url: https://zenn.dev/kaihatsu_biyori/articles/claude-code-mcp-basics
+  title: Claude Codeをもっと使いこなす⑧｜MCPサーバー連携の基礎
+  date: '2026-08-13'
 ---
 
 
 
+
 # Mcp Setup
+
+---
+
+## 2026-08-13
+
+### Claude Codeをもっと使いこなす⑧｜MCPサーバー連携の基礎
+
+Claude Code 2.1.227でのMCP（Model Context Protocol）サーバー連携の正しい設定方法を解説。従来のsettings.jsonへの記述は動作せず、現在は`claude mcp add`コマンドでの設定が必要。トークン消費は全体の0.1%と実測で確認。localとprojectの2つのスコープがあり、安全性の観点からまずlocalでの試用を推奨。
+
+- **ソース**: [Zenn claude](https://zenn.dev/kaihatsu_biyori/articles/claude-code-mcp-basics)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, setup
 
 ---
 

@@ -12,7 +12,7 @@ tags:
 - windows
 - 新機能
 date: '2026-04-04'
-updated: '2026-08-12'
+updated: '2026-08-13'
 sources:
 - url: https://qiita.com/taiki_i/items/2d75a882e0f3187f6bb8
   title: あなたの CLAUDE.md、ちゃんと機能してますか？作り方から公式プラグインで採点するまでの道のり
@@ -65,6 +65,9 @@ sources:
 - url: https://zenn.dev/eggdolphin/articles/9ad96bf226c394
   title: 【初心者向け】Claude Codeの利用方法｜Claude Desktopのインストールから利用開始まで
   date: '2026-08-12'
+- url: https://ai-heartland.com/explain/claude-code-vscode-guide
+  title: Claude Code VSCode拡張の使い方｜インストールからCLI版との機能差まで【2026年版】
+  date: '2026-08-13'
 ---
 
 
@@ -80,7 +83,20 @@ sources:
 
 
 
+
 # Claude Code Setup
+
+---
+
+## 2026-08-13
+
+### Claude Code VSCode拡張の使い方｜インストールからCLI版との機能差まで【2026年版】
+
+Claude Code VS Code拡張の公式インストール手順と、ターミナル版CLIとの機能差を解説した2026年版ガイド。拡張はCLIを内包するが、PATHには追加されないため、両者は別インストール扱い。拡張ならではの機能として、diffビュー、プランレビュー、@メンション、checkpointsのFork/Rewindなどがあり、MCPフル対応やTab補完が必要な場合はCLI、エディタ内完結を優先するなら拡張を選ぶべきとしている。VS Code本体だけでなく、Cursor・Devin Desktop・Kiroなどのフォーク系エディタにも対応する。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/claude-code-vscode-guide)
+- **重要度**: 6/10
+- **タグ**: claude-code, vscode, setup
 
 ---
 

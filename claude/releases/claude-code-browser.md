@@ -4,10 +4,11 @@ category: releases
 subcategory: claude-code-browser
 tags:
 - claude-code
+- cowork
 - release
 - 新機能
 date: '2026-07-12'
-updated: '2026-08-12'
+updated: '2026-08-13'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -16,10 +17,26 @@ sources:
 - url: https://qiita.com/moha0918_/items/5acf087c20983cff5f7c
   title: Claude Code v2.1.227〜v2.1.229｜Write の read 必須が新モデルで外れる｜毎日Changelog解説
   date: '2026-08-12'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vndhg6/finally_claude_code_has_autocontinue_when_limits
+  title: Finally, Claude Code has “Auto-continue when limits reset”
+  date: '2026-08-13'
 ---
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-08-13
+
+### Finally, Claude Code has “Auto-continue when limits reset”
+
+Claude Code に「使用制限がリセットされた際に自動継続」する新機能が追加されました。この機能により、使用制限に達した後、制限が解除されると自動的にセッションを再開できるようになり、長時間のコーディングセッションがより快適になります。ユーザーからは便利な改善として評価されています。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vndhg6/finally_claude_code_has_autocontinue_when_limits)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

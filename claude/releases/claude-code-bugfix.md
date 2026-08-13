@@ -7,12 +7,13 @@ tags:
 - claude-code
 - cowork
 - mac
+- mcp
 - opus
 - pricing
 - release
 - 新機能
 date: '2026-07-16'
-updated: '2026-08-08'
+updated: '2026-08-13'
 sources:
 - url: https://qiita.com/moha0918_/items/c8b144e3ba36744b964b
   title: Claude Code v2.1.211｜Bedrock/Vertexのキャッシュ課金バグが直る｜毎日Changelog解説
@@ -38,6 +39,9 @@ sources:
 - url: https://qiita.com/zhao-xy/items/463b310c8a9401a4f2e1
   title: Claude Codeが「セッション同士で会話」できるように。並列開発を変えるCross-session messagingとは？
   date: '2026-08-08'
+- url: https://qiita.com/moha0918_/items/e0970dd96706c59e6b69
+  title: Claude Code v2.1.231｜Slack の MCP OAuth が redirect URI で弾かれる問題を修正｜毎日Changelog解説
+  date: '2026-08-13'
 ---
 
 
@@ -45,7 +49,20 @@ sources:
 
 
 
+
 # Claude Code Bugfix
+
+---
+
+## 2026-08-13
+
+### Claude Code v2.1.231｜Slack の MCP OAuth が redirect URI で弾かれる問題を修正｜毎日Changelog解説
+
+Claude Code v2.1.231 で、Slack など事前登録型 OAuth を使う MCP サーバーへのログインが redirect URI 不一致で失敗していた問題が修正されました。コールバックポートが毎回変わることが原因で、--callback-port オプションで固定ポートを指定可能になりました。古い認証情報が残っている場合は claude mcp logout で削除してから再ログインが必要です。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/e0970dd96706c59e6b69)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, bugfix
 
 ---
 

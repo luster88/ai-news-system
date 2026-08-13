@@ -10,8 +10,9 @@ tags:
 - haiku
 - opus
 - prompt
+- 新機能
 date: '2026-04-25'
-updated: '2026-08-02'
+updated: '2026-08-13'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sv7fvc/im_a_nursing_student_who_built_a_660kpage
   title: I’m a nursing student who built a 660K-page pharmaceutical database using
@@ -29,13 +30,29 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vdp2iv/i_turned_hand_gestures_into_web_shooting
   title: I Turned Hand Gestures into Web Shooting
   date: '2026-08-02'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vn7yk3/i_built_a_watercolor_simulator_based_on_real
+  title: I built a watercolor Simulator based on real physics (V2)
+  date: '2026-08-13'
 ---
 
 
 
 
 
+
 # Community Projects
+
+---
+
+## 2026-08-13
+
+### I built a watercolor Simulator based on real physics (V2)
+
+RedditユーザーがClaude（記事内で明示的に言及されていないが、r/ClaudeAIサブレッジットへの投稿）を使用して物理ベースの水彩画シミュレーター（sudoaquarelle.com）を構築・改良したプロジェクトを共有。52種類の顔料、Kubelka-Munk理論に基づく色混合予測、塩やアルコール技法などの実験的機能、さらにシミュレーターが描画中に実際の関数呼び出しを表示する「コードモード」を実装。SIGGRAPH論文のCurtis et al.の物理モデルをベースにブラウザで動作し、現在は子供向けバージョンを開発中。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vn7yk3/i_built_a_watercolor_simulator_based_on_real)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 
