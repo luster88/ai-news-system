@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-08-10'
+updated: '2026-08-14'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -127,6 +127,9 @@ sources:
 - url: https://zenn.dev/furu04/articles/fcd889d8eb7826
   title: Claude.aiに自作APIを繋ぐにはOAuth 2.1が必要らしいので、認可サーバーごと内蔵したMCPプロキシを作った
   date: '2026-08-10'
+- url: https://ai-heartland.com/mcp/apify-mcp-server-guide
+  title: Apify MCP Serverとは｜数千のActorをAIエージェントから呼び出すMCPサーバーの使い方
+  date: '2026-08-14'
 ---
 
 
@@ -162,7 +165,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-08-14
+
+### Apify MCP Serverとは｜数千のActorをAIエージェントから呼び出すMCPサーバーの使い方
+
+Apify社が公式提供するApify MCP Serverは、Apify Store上の数千種のActor（Webスクレイパー・自動化ツール）をAIエージェントがMCP経由で検索・実行できるマーケットプレイス型MCPサーバー。v0.14.3（2026-08-12公開）が最新版で、GitHub上で活発に開発されている。ホスト版（https://mcp.apify.com）とローカルstdio版の2つの接続方式があり、Agentic PaymentsやMCP Appsなど独自機能にも対応している。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/mcp/apify-mcp-server-guide)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code, setup
 
 ---
 

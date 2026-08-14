@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-07'
-updated: '2026-07-20'
+updated: '2026-08-14'
 sources:
 - url: https://ai-heartland.com/tool/claude-code-routines-ci-autofix
   title: Claude Code Routines完全解説｜Claudeが自分でClaude Codeを起動する非同期自動化
@@ -17,10 +17,26 @@ sources:
 - url: https://qiita.com/nabeo_ji/items/0f808c1c2fea1ab328c5
   title: Claude Code にルーティンでニュース投稿をさせた話
   date: '2026-07-20'
+- url: https://qiita.com/devex12/items/4ba5b8b076f366010bfa
+  title: 個人開発のバッチを4本、Claude Code RemoteのRoutineで無人稼働させて分かったcron設計3パターンと権限設計チェックリスト
+  date: '2026-08-14'
 ---
 
 
+
 # Claude Code Routines
+
+---
+
+## 2026-08-14
+
+### 個人開発のバッチを4本、Claude Code RemoteのRoutineで無人稼働させて分かったcron設計3パターンと権限設計チェックリスト
+
+Claude Code RemoteのRoutineで4本のバッチを無人稼働させた実践記録。cronはUTC入力必須でJST換算が必要な点、「push・PR作成はOK、mainへの直接コミットと自動マージは禁止」という権限設計をプロンプトの明示的禁止文言で担保した点、ネットワークポリシーでAPIアクセスがブロックされる可能性があるため単一経路設計は避けるべき点を解説。日次・時次・営業時間帯限定の3パターンのcron設計と、allowed_toolsだけでは分離できない権限制御の実装方法を共有。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/devex12/items/4ba5b8b076f366010bfa)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

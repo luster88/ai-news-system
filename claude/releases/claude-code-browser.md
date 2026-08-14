@@ -3,12 +3,13 @@ title: Claude Code Browser
 category: releases
 subcategory: claude-code-browser
 tags:
+- bugfix
 - claude-code
 - cowork
 - release
 - 新機能
 date: '2026-07-12'
-updated: '2026-08-13'
+updated: '2026-08-14'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -20,11 +21,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vndhg6/finally_claude_code_has_autocontinue_when_limits
   title: Finally, Claude Code has “Auto-continue when limits reset”
   date: '2026-08-13'
+- url: https://qiita.com/picnic/items/ec718a60bd314c5d8c90
+  title: Claude Code v2.1.232まとめ：PowerShell権限バイパス等の重大修正と新機能
+  date: '2026-08-14'
 ---
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-08-14
+
+### Claude Code v2.1.232まとめ：PowerShell権限バイパス等の重大修正と新機能
+
+Claude Code v2.1.232がリリースされ、PowerShellとWindows Git Bashにおける2件の重大な権限バイパス脆弱性（critical/high）が修正されました。サブエージェントのフォーク機能がデフォルト化され、セッション間メッセージング機能が追加されています。GitLabトークンの秘匿化強化やRemote Control機能の安定化も実施されており、Windows環境のユーザーは早急なアップデートが推奨されます。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/ec718a60bd314c5d8c90)
+- **重要度**: 9/10
+- **タグ**: claude-code, bugfix, 新機能
 
 ---
 

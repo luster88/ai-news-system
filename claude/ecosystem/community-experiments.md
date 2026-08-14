@@ -10,7 +10,7 @@ tags:
 - performance
 - 新機能
 date: '2026-07-09'
-updated: '2026-08-12'
+updated: '2026-08-14'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1urr49k/day_1_of_giving_feble_5_a_80_crypto_account_with
   title: Day 1 of giving Feble 5 a 80$ crypto account with instructions to turn it
@@ -23,11 +23,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vmjzh7/i_asked_opus_5_to_build_gta6_on_its_own_in_24
   title: I asked Opus 5 to build GTA6 on its own in 24 hours
   date: '2026-08-12'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1voi341/i_let_claude_code_trade_stocks_with_my_real_money
+  title: 'I let Claude Code trade stocks with my real money. Results:'
+  date: '2026-08-14'
 ---
 
 
 
+
 # Community Experiments
+
+---
+
+## 2026-08-14
+
+### I let Claude Code trade stocks with my real money. Results:
+
+Reddit ユーザーが Claude Code を使って実際のお金で株取引を行った実験結果を共有。Claude の自律的なコード実行能力を金融取引に応用した実践例として、コミュニティで議論を呼んでいる。具体的な損益結果や取引手法の詳細は画像で共有されている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1voi341/i_let_claude_code_trade_stocks_with_my_real_money)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

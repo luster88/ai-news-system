@@ -8,7 +8,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-06'
-updated: '2026-04-12'
+updated: '2026-08-14'
 sources:
 - url: https://qiita.com/ojiroid/items/736a9dd505ef1d1195da
   title: Claudeのスキル機能を試してみた！CLIじゃなくても使える？ブラウザでの実践レポート
@@ -16,10 +16,26 @@ sources:
 - url: https://ai-heartland.com/explain/claude-skills-explained
   title: Claude Skillsを徹底解説｜スキルはフォルダ——Anthropicエンジニアが明かした仕組みと使い方
   date: '2026-04-12'
+- url: https://zenn.dev/yahir/books/claude-advanced-skill
+  title: ClaudeのSkillにプログラムを仕込んで自動実行させる 初心者向けチュートリアル
+  date: '2026-08-14'
 ---
 
 
+
 # Claude Skills Browser
+
+---
+
+## 2026-08-14
+
+### ClaudeのSkillにプログラムを仕込んで自動実行させる 初心者向けチュートリアル
+
+Claude の Skill 機能にプログラムを組み込んで自動実行させる初心者向けチュートリアル。Claude Code と Claude.ai の両方に対応し、QRコード生成 Skill を実際に作成するハンズオン形式で、プログラム自動実行の仕組みとメリットを解説している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/yahir/books/claude-advanced-skill)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

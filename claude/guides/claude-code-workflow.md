@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-08-11'
+updated: '2026-08-14'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -279,6 +279,12 @@ sources:
 - url: https://qiita.com/YujiNaramoto/items/1ee9648d797c5fa69e35
   title: なぜZenn/Qiitaへのクロスポストにパイプライン設計が必要なのか
   date: '2026-08-11'
+- url: https://zenn.dev/masa_naga/articles/1ba481593d25ba
+  title: 子供向けの地図アプリを作った
+  date: '2026-08-14'
+- url: https://qiita.com/ebichan_88/items/eead0724e9b5eb0d0120
+  title: Claude Codeで個人開発を1ヶ月やって、たどり着いた開発プロセスの話
+  date: '2026-08-14'
 ---
 
 
@@ -350,7 +356,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-08-14
+
+### 子供向けの地図アプリを作った
+
+個人開発者がClaude（おそらくClaude Code）を使って子供向け地図学習アプリを5日間で開発した事例。Planモードで機能設計を行い、/remote機能でモバイルから開発を進めることで、従来数ヶ月かかっていた開発を大幅に短縮。都道府県カード収集機能なども実装し、無料で公開。
+
+- **ソース**: [Zenn claude](https://zenn.dev/masa_naga/articles/1ba481593d25ba)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, 新機能
+
+---
+
+### Claude Codeで個人開発を1ヶ月やって、たどり着いた開発プロセスの話
+
+Claude Code Proプランで1ヶ月個人開発を行い、困った問題に対処しながら徐々にAI駆動開発プロセスを構築した実践記録。ChatGPTで要求定義を作成後、24種類の設計ドキュメントを事前準備し、1週間でマッチング機能からE2Eテストまで実装完了。レビュー用エージェントや自動修正フローなどは後から段階的に追加していった経緯を時系列で紹介。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/ebichan_88/items/eead0724e9b5eb0d0120)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

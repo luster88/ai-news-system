@@ -4,12 +4,13 @@ category: guides
 subcategory: model-comparison
 tags:
 - cowork
+- haiku
 - opus
 - performance
 - prompt
 - sonnet
 date: '2026-06-12'
-updated: '2026-07-09'
+updated: '2026-08-14'
 sources:
 - url: https://zenn.dev/znet/articles/2026-stronger-model-as-reviewer
   title: 高性能モデルの使いどころは『実装者』でなく『レビュアー』 — Fable 5 実機評価
@@ -23,12 +24,28 @@ sources:
 - url: https://zenn.dev/nishiryo/articles/5b056ee1e5554097bbf2992dbd309a45
   title: Opus 4.6 / 4.7 / 4.8って何が違うの？
   date: '2026-07-09'
+- url: https://qiita.com/nakahashi-naoto/items/597e06b90a8f10e2947e
+  title: 【2026年版】Claudeモデル徹底比較 — ChatGPT・Geminiとの違いと使い分けガイド
+  date: '2026-08-14'
 ---
 
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-08-14
+
+### 【2026年版】Claudeモデル徹底比較 — ChatGPT・Geminiとの違いと使い分けガイド
+
+2026年8月時点のClaude全モデル（Fable・Mythos・Opus・Sonnet・Haiku）を解説し、ChatGPT・Geminiとの比較と使い分けを提示。最上位のMythosクラス追加により4階層化、Fable 5のセーフガード機能や輸出規制の経緯、各モデルのコスト・速度・精度のトレードオフを詳述。claude.aiのArtifacts、Projects、ファイル生成などUI機能も網羅し、初心者から開発者まで実用的な選択フローを提供。
+
+- **ソース**: [Qiita claude](https://qiita.com/nakahashi-naoto/items/597e06b90a8f10e2947e)
+- **重要度**: 7/10
+- **タグ**: opus, sonnet, haiku
 
 ---
 

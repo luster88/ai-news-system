@@ -13,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-04'
-updated: '2026-08-07'
+updated: '2026-08-14'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -63,6 +63,10 @@ sources:
   title: Qwen3.8 Max catches Claude Opus 4.8 but Kimi K3 still scores higher for 25
     percent less
   date: '2026-08-07'
+- url: https://the-decoder.com/study-contradicts-anthropic-and-openai-claims-that-autonomous-ai-research-is-within-reach
+  title: Study contradicts Anthropic and OpenAI claims that autonomous AI research
+    is within reach
+  date: '2026-08-14'
 ---
 
 
@@ -76,7 +80,20 @@ sources:
 
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-08-14
+
+### Study contradicts Anthropic and OpenAI claims that autonomous AI research is within reach
+
+プリンストン大学と英国AI安全保障研究所の新しい研究により、AnthropicとOpenAIが主張する「自律的なAI研究」の実現可能性に疑問が投げかけられました。未公開のNeurIPS論文を使った実験では、Claude Opus 3.5などの最先端モデルは研究エンジニアリングタスクは処理できるものの、研究プロセスの本質的な部分では失敗することが判明。6日間と3000ドルのAPI予算を与えられたエージェントでも、独自の研究成果を出すことはできませんでした。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/study-contradicts-anthropic-and-openai-claims-that-autonomous-ai-research-is-within-reach)
+- **重要度**: 7/10
+- **タグ**: opus, performance
 
 ---
 

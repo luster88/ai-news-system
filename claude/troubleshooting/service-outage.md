@@ -7,9 +7,10 @@ tags:
 - claude-api
 - claude-code
 - claude-console
+- cowork
 - performance
 date: '2026-03-25'
-updated: '2026-08-04'
+updated: '2026-08-14'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s3b9fi/claude_status_update_elevated_errors_on_claudeai
   title: 'Claude Status Update : Elevated Errors on claude.ai on 2026-03-25T13:45:25.000Z'
@@ -37,6 +38,10 @@ sources:
   title: 'Discussion Hub for new Claude incident: Elevated errors across many models
     on Aug 4, 2026'
   date: '2026-08-04'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1voiobg/discussion_hub_for_new_claude_incident_service
+  title: 'Discussion Hub for new Claude incident: Service disruption on Claude services
+    on Aug 14, 2026'
+  date: '2026-08-14'
 ---
 
 
@@ -45,7 +50,20 @@ sources:
 
 
 
+
 # Service Outage
+
+---
+
+## 2026-08-14
+
+### Discussion Hub for new Claude incident: Service disruption on Claude services on Aug 14, 2026
+
+2026年8月14日、Claude API、Claude Code、Claude Coworkにおいて20:14から20:38 UTC（約24分間）のサービス障害が発生しました。Anthropicは原因を特定し、修正を適用して問題を解決しました。Reddit r/ClaudeAIにて障害に関する公式ディスカッションハブが立ち上げられ、インシデントの進捗が時系列で報告されています。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1voiobg/discussion_hub_for_new_claude_incident_service)
+- **重要度**: 6/10
+- **タグ**: claude-api, claude-code, cowork
 
 ---
 

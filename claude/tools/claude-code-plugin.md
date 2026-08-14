@@ -10,7 +10,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-04-01'
-updated: '2026-06-25'
+updated: '2026-08-14'
 sources:
 - url: https://qiita.com/Andhy/items/371621273924d74e9917
   title: 自作のClaude Codeのプラグインの有効性を検証してみたところなかなか良い結果に
@@ -31,6 +31,9 @@ sources:
 - url: https://qiita.com/bhryan1013/items/a0cf32aecd42fc64ae90
   title: Claude Codeの「考え中…」の待ち時間を、開発ニュースのフィードに変えるプラグインを作った
   date: '2026-06-25'
+- url: https://ai-heartland.com/tool/diagram-design-claude-code-editorial-diagrams
+  title: diagram-designとは｜Claude Codeで27種の図を自己完結HTMLで作るスキル
+  date: '2026-08-14'
 ---
 
 
@@ -38,7 +41,20 @@ sources:
 
 
 
+
 # Claude Code Plugin
+
+---
+
+## 2026-08-14
+
+### diagram-designとは｜Claude Codeで27種の図を自己完結HTMLで作るスキル
+
+diagram-designは、Claude Codeで27種類の図を自己完結したHTMLで生成するエージェントスキル。汎用AIが生成する「角丸ボックス」問題を、型とスタイル規約の機械強制で解決する。103枚のサンプルHTMLはすべて外部画像ゼロ、検証スクリプトで色パレット・アクセシビリティまで自動チェックされ、MITライセンスで公開されている。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/diagram-design-claude-code-editorial-diagrams)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, 新機能
 
 ---
 

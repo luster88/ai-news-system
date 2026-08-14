@@ -5,9 +5,10 @@ subcategory: mcp-server-development
 tags:
 - claude-code
 - mcp
+- performance
 - setup
 date: '2026-04-07'
-updated: '2026-05-24'
+updated: '2026-08-14'
 sources:
 - url: https://ai-heartland.com/explain/mcp-server-build-guide
   title: MCPサーバーの作り方2026年完全ガイド：TypeScript・Python両対応チュートリアル
@@ -21,12 +22,28 @@ sources:
 - url: https://zenn.dev/miharu_tools/articles/f21c642db3fb3d
   title: 自作MCPサーバーを書いて公開するまで ― Claude × GPT 相互レビューを題材に
   date: '2026-05-24'
+- url: https://qiita.com/kaz_meishibako/items/da62798724a7cda01332
+  title: Cloudflare WorkersでステートレスMCPサーバーを作る：設計判断とハマりどころ【AI名刺管理「めいしばこ」開発記】
+  date: '2026-08-14'
 ---
 
 
 
 
+
 # Mcp Server Development
+
+---
+
+## 2026-08-14
+
+### Cloudflare WorkersでステートレスMCPサーバーを作る：設計判断とハマりどころ【AI名刺管理「めいしばこ」開発記】
+
+Cloudflare Workers上でリモートMCPサーバーを構築する際、Durable Object（DO）を使ったMcpAgentの実装から、ステートレスなStreamable HTTP実装への移行事例を解説。サーバー発通知やセッション状態が不要な場合、DOを使わないステートレス構成により課金対象と障害点を削減できることを、実際の名刺管理サービス「めいしばこ」の開発経験から示す。@hono/mcpを使ったWeb標準/fetchネイティブなトランスポート実装の具体的な手順と、DO migration累積式などのハマりどころについても詳述。
+
+- **ソース**: [Qiita claude](https://qiita.com/kaz_meishibako/items/da62798724a7cda01332)
+- **重要度**: 7/10
+- **タグ**: mcp, setup, performance
 
 ---
 
