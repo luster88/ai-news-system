@@ -5,11 +5,12 @@ subcategory: claude-code-hooks
 tags:
 - claude-code
 - mac
+- mcp
 - prompt
 - setup
 - 新機能
 date: '2026-03-23'
-updated: '2026-07-09'
+updated: '2026-08-15'
 sources:
 - url: https://qiita.com/pro-tein/items/49e5dbec705c3497dd51
   title: 【Claude Code】Hooks機能でデスクトップ通知を設定してみた
@@ -30,6 +31,9 @@ sources:
 - url: https://zenn.dev/ccstudio/books/claude-code-hooks-guide
   title: Claude Code Hooks実践ガイド — 品質ゲート・通知・ガードレールで「放置できる」開発環境を作る
   date: '2026-07-09'
+- url: https://qiita.com/0yasumi_m0de/items/f8a07dc09f3bcc4d7058
+  title: superpowers がうるさいので、Hooks で「それ使う？」と聞かせることにした
+  date: '2026-08-15'
 ---
 
 
@@ -37,7 +41,20 @@ sources:
 
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-08-15
+
+### superpowers がうるさいので、Hooks で「それ使う？」と聞かせることにした
+
+Claude Code の superpowers プラグインが頻繁に発動し作業が重くなる問題を、Hooks を使って解決した記事。当初は permissionDecision: "ask" で確認ダイアログを出す方法を試したが、拒否すると作業が中断される問題に直面。最終的に AskUserQuestion ツールを使い、承認トークン方式で「使う直前に聞く」仕組みを実装した。permissionDecisionReason を AI への指示書として活用するのがポイント。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/0yasumi_m0de/items/f8a07dc09f3bcc4d7058)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, prompt
 
 ---
 

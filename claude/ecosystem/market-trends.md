@@ -9,7 +9,7 @@ tags:
 - pricing
 - 新機能
 date: '2026-04-03'
-updated: '2026-06-25'
+updated: '2026-08-15'
 sources:
 - url: https://qiita.com/kotauchisunsun/items/ab78bb338500b4c71103
   title: Claude Codeの首位陥落。CodexがシェアNo.1へ。 ～データで見る2026年3月のAI Codingの動向まとめ～
@@ -17,10 +17,27 @@ sources:
 - url: https://techcrunch.com/2026/06/25/anthropics-claude-is-winning-over-paid-consumers-a-market-owned-by-chatgpt
   title: Anthropic’s Claude is winning over paid consumers, a market owned by ChatGPT
   date: '2026-06-25'
+- url: https://the-decoder.com/investor-pressure-forces-nvidia-to-shrink-its-openai-bet-just-as-anthropics-numbers-defy-bubble-warnings
+  title: Investor pressure forces Nvidia to shrink its OpenAI bet just as Anthropic's
+    numbers defy bubble warnings
+  date: '2026-08-15'
 ---
 
 
+
 # Market Trends
+
+---
+
+## 2026-08-15
+
+### Investor pressure forces Nvidia to shrink its OpenAI bet just as Anthropic's numbers defy bubble warnings
+
+Nvidiaは投資家の圧力により、OpenAIへのデータセンター支援を当初の2500億ドルから1200億ドルに半減させた。一方でAnthropicは四半期で売上が倍増し、Q2に115億ドルを達成。2028年には1900-2000億ドルの売上を見込み、時価総額1兆ドルでの9-10月IPOを計画中。Nvidiaのリスク縮小がAIバブル懸念を示唆する一方、Anthropicの急成長は需要の持続性を示している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/investor-pressure-forces-nvidia-to-shrink-its-openai-bet-just-as-anthropics-numbers-defy-bubble-warnings)
+- **重要度**: 8/10
+- **タグ**: pricing, performance, 新機能
 
 ---
 

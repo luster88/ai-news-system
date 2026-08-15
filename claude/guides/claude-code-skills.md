@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-07-31'
+updated: '2026-08-15'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -64,6 +64,9 @@ sources:
 - url: https://qiita.com/akihidem/items/e9f332e03170a5402c6d
   title: skill-creator プラグインで独自スキルを実装する — SKILL.md 仕様と検証手順
   date: '2026-07-31'
+- url: https://qiita.com/kamome_susume/items/360f3ac1657545a8bec5
+  title: Claude Codeで設計書用スキルを定義するベストプラクティスは？役立つ5つの方法
+  date: '2026-08-15'
 ---
 
 
@@ -81,7 +84,20 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-08-15
+
+### Claude Codeで設計書用スキルを定義するベストプラクティスは？役立つ5つの方法
+
+Claude Code でドキュメント生成用スキルを定義する際のベストプラクティスを解説。設計書生成で出力がブレる原因は「型」「粒度」「参照先」が固定されていないため。description にトリガー文言を具体的に書く、Markdown テンプレートを直接埋め込む、サブエージェントで役割分割する、参照ファイルのパスを固定する、Explore→Plan→Code サイクルを適用するという 5 つの方法で再現性が向上する。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kamome_susume/items/360f3ac1657545a8bec5)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

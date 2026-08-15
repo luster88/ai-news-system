@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-08-14'
+updated: '2026-08-15'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -285,6 +285,9 @@ sources:
 - url: https://qiita.com/ebichan_88/items/eead0724e9b5eb0d0120
   title: Claude Codeで個人開発を1ヶ月やって、たどり着いた開発プロセスの話
   date: '2026-08-14'
+- url: https://qiita.com/ay5399/items/642d494503f133f27325
+  title: Claude CodeがCodexレビューをサボらないようにした話
+  date: '2026-08-15'
 ---
 
 
@@ -357,7 +360,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-08-15
+
+### Claude CodeがCodexレビューをサボらないようにした話
+
+Claude Codeがコードレビューをスキップする問題に対し、複雑なHook実装で対処しようとしたが、最終的にCLAUDE.mdに1行のルールを追加するだけで解決した事例。Anthropic公式も推奨するように、新世代モデルは判断力が高いため、過剰な制約や複雑な仕組みは不要で、シンプルなルール記述で十分機能する。AIに100%の完璧さを求めるのではなく、確実性が必要な場合はGitHub ActionsやCIなどAIの外側に関所を置くべきという教訓。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/ay5399/items/642d494503f133f27325)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

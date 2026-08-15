@@ -4,6 +4,7 @@ category: tools
 subcategory: multi-model-comparison
 tags:
 - claude-api
+- copilot
 - cowork
 - cursor
 - opus
@@ -12,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-05-16'
-updated: '2026-08-13'
+updated: '2026-08-15'
 sources:
 - url: https://qiita.com/mellisaoez/items/5e1b10bbff78413287ed
   title: ChatGPT・Claude・Gemini・Grokを1つの画面で同時に動かしてみた（MultipleChatを作った話）
@@ -29,13 +30,29 @@ sources:
 - url: https://qiita.com/locallab/items/1e3e7233162baeeabf3b
   title: Claude Code × OpenRouter 無料モデル徹底比較 2026年版 — 7モデルを速度・品質・コスト0で試した結果
   date: '2026-08-13'
+- url: https://zenn.dev/nnakapa/articles/lab-36-copilot-gemini37-sonnet5-qcd
+  title: 'Gemini 3.7 Flash はコスト、Sonnet 5 は速度——210 試行で見えたトレードオフ（オトナの自由研究 #36）'
+  date: '2026-08-15'
 ---
 
 
 
 
 
+
 # Multi Model Comparison
+
+---
+
+## 2026-08-15
+
+### Gemini 3.7 Flash はコスト、Sonnet 5 は速度——210 試行で見えたトレードオフ（オトナの自由研究 #36）
+
+GitHub Copilot CLI上でGemini 3.7 FlashとSonnet 5を210試行で比較。コストはGemini 3.7 Flash × highがSonnet 5 × xhighより約28%安く、実行速度はSonnet 5 × xhighが約1.8倍速い。同一タスク・同一条件でのQCD（品質・コスト・納期）分析により、両モデルの明確なトレードオフが判明した。
+
+- **ソース**: [Zenn claude](https://zenn.dev/nnakapa/articles/lab-36-copilot-gemini37-sonnet5-qcd)
+- **重要度**: 6/10
+- **タグ**: sonnet, performance, copilot
 
 ---
 

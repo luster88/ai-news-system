@@ -7,7 +7,7 @@ tags:
 - mcp
 - setup
 date: '2026-04-07'
-updated: '2026-08-13'
+updated: '2026-08-15'
 sources:
 - url: https://qiita.com/76Hata/items/6ce2cde9826f5c3a1de2
   title: MCP（Model Context Protocol）入門 — AIエージェントと外部ツールをつなぐ標準規格
@@ -21,12 +21,28 @@ sources:
 - url: https://zenn.dev/kaihatsu_biyori/articles/claude-code-mcp-basics
   title: Claude Codeをもっと使いこなす⑧｜MCPサーバー連携の基礎
   date: '2026-08-13'
+- url: https://zenn.dev/muno_sunsun/articles/084d52521d62c9
+  title: MCP（Model Context Protocol）を使ってみる
+  date: '2026-08-15'
 ---
 
 
 
 
+
 # Mcp Setup
+
+---
+
+## 2026-08-15
+
+### MCP（Model Context Protocol）を使ってみる
+
+MCP（Model Context Protocol）の基本概念と、Playwright MCP サーバーを使った実践例を紹介。Claude に .mcp.json ファイルを設定し、Web ブラウザの操作（スクリーンショット撮影など）を実行する手順を解説。MCP は AI と外部システム（データベース、API等）の接続を標準化する共通規格で、様々な MCP サーバーが利用可能。
+
+- **ソース**: [Zenn claude](https://zenn.dev/muno_sunsun/articles/084d52521d62c9)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, setup
 
 ---
 

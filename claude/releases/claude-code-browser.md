@@ -9,7 +9,7 @@ tags:
 - release
 - 新機能
 date: '2026-07-12'
-updated: '2026-08-14'
+updated: '2026-08-15'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -24,12 +24,28 @@ sources:
 - url: https://qiita.com/picnic/items/ec718a60bd314c5d8c90
   title: Claude Code v2.1.232まとめ：PowerShell権限バイパス等の重大修正と新機能
   date: '2026-08-14'
+- url: https://qiita.com/moha0918_/items/b604352231f9a8a76a38
+  title: Claude Code v2.1.233｜TodoWrite が Fable 5 / Sonnet 5 で無効に｜毎日Changelog解説
+  date: '2026-08-15'
 ---
 
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-08-15
+
+### Claude Code v2.1.233｜TodoWrite が Fable 5 / Sonnet 5 で無効に｜毎日Changelog解説
+
+Claude Code v2.1.233 で、Opus 4.8・Sonnet 5・Fable 5・Mythos 5 以降のモデルでは TodoWrite / TaskCreate などの Todo 系ツールがデフォルトで無効化されました。これにより PostToolUse hook や statusline で TodoWrite を参照している設定が動作しなくなります。CLAUDE_CODE_ENABLE_TODO_TOOLS=1 で有効化可能ですが、今後の維持は要検討です。Windows 版では v2.1.232 の Bash コマンド承認問題と NTLM 認証情報漏洩の脆弱性が修正され、GitLab マージリクエスト対応や MCP v2 の接続安定性向上も含まれます。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/b604352231f9a8a76a38)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

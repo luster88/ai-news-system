@@ -3,19 +3,36 @@ title: Recursive Self Improvement
 category: ecosystem
 subcategory: recursive-self-improvement
 tags:
+- claude-code
 - cowork
 - performance
 - 新機能
 date: '2026-06-06'
-updated: '2026-06-06'
+updated: '2026-08-15'
 sources:
 - url: https://the-decoder.com/sakana-ai-bets-ai-that-improves-itself-can-break-the-compute-arms-race-of-frontier-labs
   title: Sakana AI bets AI that improves itself can break the compute arms race of
     frontier labs
   date: '2026-06-06'
+- url: https://qiita.com/kinamocchi_tech/items/9246f34a3577db6485ff
+  title: Claudeが自分のコードの80%を書く時代 — それは『AIの再帰的自己改善』の入り口なのか
+  date: '2026-08-15'
 ---
 
+
 # Recursive Self Improvement
+
+---
+
+## 2026-08-15
+
+### Claudeが自分のコードの80%を書く時代 — それは『AIの再帰的自己改善』の入り口なのか
+
+Anthropic が Claude が社内コードの80%以上を書いていると発表したことを受け、AI の再帰的自己改善(RSI)との違いを解説。1965年の I.J. Good の超知能理論から現代の Claude Code の実態まで、量的なコード生成と質的な自己改善の間のギャップを分析している。Amodei CEO の予測通り80%超えを達成したが、個別タスクの成功と設計全体の自律改良は別次元の課題。
+
+- **ソース**: [Qiita claude](https://qiita.com/kinamocchi_tech/items/9246f34a3577db6485ff)
+- **重要度**: 8/10
+- **タグ**: claude-code, performance, 新機能
 
 ---
 

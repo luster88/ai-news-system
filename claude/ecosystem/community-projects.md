@@ -12,7 +12,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-04-25'
-updated: '2026-08-13'
+updated: '2026-08-15'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sv7fvc/im_a_nursing_student_who_built_a_660kpage
   title: I’m a nursing student who built a 660K-page pharmaceutical database using
@@ -33,6 +33,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vn7yk3/i_built_a_watercolor_simulator_based_on_real
   title: I built a watercolor Simulator based on real physics (V2)
   date: '2026-08-13'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1voxq2f/world_of_claudecraft_after_2_months_of_vibe_coding
+  title: World of Claudecraft after 2 months of vibe coding
+  date: '2026-08-15'
 ---
 
 
@@ -40,7 +43,20 @@ sources:
 
 
 
+
 # Community Projects
+
+---
+
+## 2026-08-15
+
+### World of Claudecraft after 2 months of vibe coding
+
+コミュニティが Claude を使った「vibe coding」で2ヶ月間開発したゲーム「World of ClaudeCraft」の進捗報告。グラフィックスが大幅に改善され、多数の機能が追加された。プロジェクトは MIT ライセンスで公開されており、初心者も含めて開発者を歓迎している。Claude がゲーム開発においても強力なツールであることを実証する事例。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1voxq2f/world_of_claudecraft_after_2_months_of_vibe_coding)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

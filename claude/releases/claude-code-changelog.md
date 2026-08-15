@@ -11,7 +11,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-06-29'
-updated: '2026-07-14'
+updated: '2026-08-15'
 sources:
 - url: https://qiita.com/moha0918_/items/8bd90fc2c1391c4769a1
   title: Claude Code v0.2.21〜v2.1.195｜CLIからマルチエージェント基盤への全履歴｜毎日Changelog解説
@@ -49,6 +49,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/7701fef6ec098243ba32
   title: Claude Code v2.1.208〜v2.1.209｜長時間セッションのメモリリーク一掃｜毎日Changelog解説
   date: '2026-07-14'
+- url: https://qiita.com/moha0918_/items/b604352231f9a8a76a38
+  title: Claude Code v2.1.233｜TodoWrite が Fable 5 / Sonnet 5 で無効に｜毎日Changelog解説
+  date: '2026-08-15'
 ---
 
 
@@ -62,7 +65,20 @@ sources:
 
 
 
+
 # Claude Code Changelog
+
+---
+
+## 2026-08-15
+
+### Claude Code v2.1.233｜TodoWrite が Fable 5 / Sonnet 5 で無効に｜毎日Changelog解説
+
+Claude Code v2.1.233 のリリースで、Opus 4.8・Sonnet 5・Fable 5・Mythos 5 以降のモデルでは TodoWrite / TaskCreate などの Todo 系ツールがデフォルトで無効化されました。これにより、これらのツールに依存していた hook や statusline が動作しなくなります。環境変数 CLAUDE_CODE_ENABLE_TODO_TOOLS=1 で再有効化できますが、今後の互換性を考慮して依存を外す方向での見直しが推奨されます。Windows 版では v2.1.232 の Bash コマンド権限問題と NTLM 認証情報漏洩の脆弱性が修正され、GitLab のマージリクエスト URL サポートや MCP v2 の改善も含まれています。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/b604352231f9a8a76a38)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 
