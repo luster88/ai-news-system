@@ -7,9 +7,10 @@ tags:
 - claude-code
 - cursor
 - mcp
+- performance
 - prompt
 date: '2026-04-06'
-updated: '2026-05-23'
+updated: '2026-08-16'
 sources:
 - url: https://qiita.com/emi_ndk/items/c3b99612ec044e5d612e
   title: 【緊急警告】MCPサーバーが60日で30件のCVE！Azure脆弱性は「認証ゼロ」でCVSS 9.1
@@ -20,11 +21,27 @@ sources:
 - url: https://zenn.dev/ju571n/articles/ai-agent-config-attack-surface
   title: AIコーディングエージェントの本当の攻撃面は設定ファイルだった
   date: '2026-05-23'
+- url: https://ai-heartland.com/security/nginx-ui-mcp-rce-vulnerability-chain
+  title: nginx-ui 脆弱性 CVE-2026-33032｜MCP機能起点の認証バイパスから半年で25件超のRCE連鎖
+  date: '2026-08-16'
 ---
 
 
 
+
 # Mcp Security Vulnerabilities
+
+---
+
+## 2026-08-16
+
+### nginx-ui 脆弱性 CVE-2026-33032｜MCP機能起点の認証バイパスから半年で25件超のRCE連鎖
+
+nginx-ui の MCP 機能に起因する脆弱性 CVE-2026-33032（CVSS 9.8）が発見され、半年間で25件超のセキュリティアドバイザリが連鎖的に公開された。MCP インターフェースの認証バイパス・検証漏れが主因で、AI エージェント連携機能の実装不備がサーバー全体のセキュリティリスクとなった事例。最新版への更新だけでは対処できないケースもあり、手動でのシークレットローテーションが必要な環境が存在する。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/security/nginx-ui-mcp-rce-vulnerability-chain)
+- **重要度**: 8/10
+- **タグ**: mcp, bugfix, performance
 
 ---
 

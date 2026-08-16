@@ -11,7 +11,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-05-29'
-updated: '2026-08-10'
+updated: '2026-08-16'
 sources:
 - url: https://qiita.com/hiro_qiita_/items/152cc2ef68d5fb17b790
   title: Kiro のだいぼうけん！開発記 〜ファミコンの制約を守りながらKiroとClaudeにシューティングゲームを作らせる〜
@@ -29,13 +29,29 @@ sources:
 - url: https://qiita.com/OnuuuumaX/items/5c80ad6e04513b361bbe
   title: 【Godot 4.x】2D脱出ゲームを作ってみる⑫〜左右移動・ギミック２点・アイテム合成・パーティクルを実装する〜
   date: '2026-08-10'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vq3rtp/i_built_my_first_unity_game_with_claude
+  title: I built my first Unity game with Claude
+  date: '2026-08-16'
 ---
 
 
 
 
 
+
 # Game Development
+
+---
+
+## 2026-08-16
+
+### I built my first Unity game with Claude
+
+開発者が Claude を使って初めての Unity ゲーム「FrogPop」を制作した体験談。C# コードの生成や修正、メカニクスの実装に Claude を活用し、ゲームデザインやテスト、アート統合は自分で担当。Claude に「ゲームを作って」と丸投げするのではなく、具体的な機能実装の補助として使用し、エラー修正や調整を繰り返しながら開発を進めた実例。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vq3rtp/i_built_my_first_unity_game_with_claude)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork
 
 ---
 

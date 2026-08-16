@@ -4,10 +4,12 @@ category: tools
 subcategory: ai-coding-comparison
 tags:
 - claude-code
+- copilot
 - cowork
 - cursor
+- pricing
 date: '2026-04-13'
-updated: '2026-07-29'
+updated: '2026-08-16'
 sources:
 - url: https://qiita.com/kotaro_ai_lab/items/2302e26f835082f04575
   title: 【2026年4月版】AIコーディングエージェント最新動向まとめ — Claude Code・Codex CLI・Cursor 3・Jules 完全比較
@@ -18,11 +20,27 @@ sources:
 - url: https://zenn.dev/nadarakainc/articles/60a0376eca628d
   title: Claude・Cursor・ChatGPT、結局3つとも課金してる話〜AIコーディングツールの使い分け〜
   date: '2026-07-29'
+- url: https://zenn.dev/tofu575/articles/7f1d8171032166
+  title: AIに課金しすぎたくない自分がCodexを選んだ理由
+  date: '2026-08-16'
 ---
 
 
 
+
 # Ai Coding Comparison
+
+---
+
+## 2026-08-16
+
+### AIに課金しすぎたくない自分がCodexを選んだ理由
+
+個人開発者がAI課金を抑えるため、GitHub Copilot、Claude Proを経てChatGPT Plus + Codexに落ち着いた経緯を解説。週末中心の開発スタイルで、利用上限を気にせず使える点、ChatGPTとの統合、Codex Cloudによるモバイル対応が決め手となった。Claude Proは能力に満足していたが、セッション・週間上限がストレスだったと振り返る。
+
+- **ソース**: [Zenn claude](https://zenn.dev/tofu575/articles/7f1d8171032166)
+- **重要度**: 4/10
+- **タグ**: cursor, copilot, pricing
 
 ---
 

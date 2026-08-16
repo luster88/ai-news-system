@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-08-14'
+updated: '2026-08-16'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -130,6 +130,9 @@ sources:
 - url: https://ai-heartland.com/mcp/apify-mcp-server-guide
   title: Apify MCP Serverとは｜数千のActorをAIエージェントから呼び出すMCPサーバーの使い方
   date: '2026-08-14'
+- url: https://qiita.com/josezuma/items/4c10a1c7e0b2404a8b57
+  title: ClaudeやAIエージェントに毎回「会社のこと」を説明するのをやめたくて、Company Brainを作った
+  date: '2026-08-16'
 ---
 
 
@@ -166,7 +169,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-08-16
+
+### ClaudeやAIエージェントに毎回「会社のこと」を説明するのをやめたくて、Company Brainを作った
+
+複数のAIエージェント（Claude Code、Codex、Hermesなど）を業務で使う際、各エージェントに毎回会社情報を説明する手間を解消するため、EmperorClaw（Company Brain）を開発。会社の知識を中央管理し、ObsidianライクなWiki Linksやナレッジグラフで情報を整理。顧客やプロジェクト単位でスコープを設定でき、MCP Server経由でClaude等のエージェントが会社知識にアクセス可能。OAuth 2.1対応でセキュアな運用を実現。
+
+- **ソース**: [Qiita claude](https://qiita.com/josezuma/items/4c10a1c7e0b2404a8b57)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, cowork
 
 ---
 

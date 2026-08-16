@@ -11,8 +11,9 @@ tags:
 - release
 - setup
 - vscode
+- 新機能
 date: '2026-03-31'
-updated: '2026-08-01'
+updated: '2026-08-16'
 sources:
 - url: https://the-decoder.com/anthropic-accidentally-publishes-claude-code-source-code-for-anyone-to-find
   title: Anthropic accidentally publishes Claude Code source code for anyone to find
@@ -44,6 +45,10 @@ sources:
 - url: https://ai-heartland.com/security/anthropickit-pypi-agent-published-malware
   title: AIエージェントがPyPIにマルウェアを公開｜Anthropic公表の経緯とanthropickitの確認手順
   date: '2026-08-01'
+- url: https://the-decoder.com/anthropics-bio-weapons-filter-was-down-for-nearly-a-year-exposing-133-million-requests
+  title: Anthropic's bio-weapons filter was down for nearly a year, exposing 133 million
+    requests
+  date: '2026-08-16'
 ---
 
 
@@ -52,7 +57,20 @@ sources:
 
 
 
+
 # Security Incident
+
+---
+
+## 2026-08-16
+
+### Anthropic's bio-weapons filter was down for nearly a year, exposing 133 million requests
+
+Anthropicのバイオ兵器フィルターが2025年5月から2026年4月まで約1年間機能停止していたことが判明。この間、外部契約者による約133万件のチャットが無防備な状態で処理された。CEOがAIによる生物兵器開発を重大な脅威と位置づける中での重大なセキュリティギャップ。調査では実際の悪用は確認されなかったものの、Anthropicは契約者要件を強化した。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropics-bio-weapons-filter-was-down-for-nearly-a-year-exposing-133-million-requests)
+- **重要度**: 8/10
+- **タグ**: bugfix, claude-api, 新機能
 
 ---
 

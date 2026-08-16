@@ -7,8 +7,9 @@ tags:
 - cowork
 - opus
 - performance
+- prompt
 date: '2026-06-23'
-updated: '2026-07-28'
+updated: '2026-08-16'
 sources:
 - url: https://zenn.dev/dtanad/articles/6292c2824457a8
   title: Claude Code Actionの実行時間・コスト削減テク
@@ -17,10 +18,26 @@ sources:
   title: Used claude to replay over 4000 users that played my daily racing game yesterday
     at the same time
   date: '2026-07-28'
+- url: https://zenn.dev/xin9le/articles/a537775e87b814
+  title: Claude Fable 5 が教えてくれた FastEnum の高速化テクニック (4) - 文字列に対する switch 文での比較
+  date: '2026-08-16'
 ---
 
 
+
 # Performance Optimization
+
+---
+
+## 2026-08-16
+
+### Claude Fable 5 が教えてくれた FastEnum の高速化テクニック (4) - 文字列に対する switch 文での比較
+
+FastEnum ライブラリのパフォーマンス改善記事。文字列比較を if 文の連鎖から switch 文に書き換えることで、C# コンパイラが文字列長と先頭文字による最適化を行い、特にフィールド数が多い場合に大幅な高速化を実現。Claude が実装ミスを指摘したことで発覚した改善事例。
+
+- **ソース**: [Zenn claude](https://zenn.dev/xin9le/articles/a537775e87b814)
+- **重要度**: 5/10
+- **タグ**: claude-code, performance, prompt
 
 ---
 
