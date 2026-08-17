@@ -9,7 +9,7 @@ tags:
 - release
 - 新機能
 date: '2026-07-12'
-updated: '2026-08-15'
+updated: '2026-08-17'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -27,13 +27,29 @@ sources:
 - url: https://qiita.com/moha0918_/items/b604352231f9a8a76a38
   title: Claude Code v2.1.233｜TodoWrite が Fable 5 / Sonnet 5 で無効に｜毎日Changelog解説
   date: '2026-08-15'
+- url: https://qiita.com/moha0918_/items/75f3681463180844e8ed
+  title: Claude Code v2.1.234｜利用上限リセットで自動再開｜毎日Changelog解説
+  date: '2026-08-17'
 ---
 
 
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-08-17
+
+### Claude Code v2.1.234｜利用上限リセットで自動再開｜毎日Changelog解説
+
+Claude Code v2.1.234では、claude.aiの利用上限リセット後に自動的にセッションを再開する機能が追加されました。/goalの30分チェックイン機能、compaction後のauto modeバグ修正、サブエージェント権限回答の保存バグ修正など、ユーザーが不在時の挙動改善が行われています。Windows NTパス（\??\形式）はセキュリティ対策として拒否されるようになりました。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/75f3681463180844e8ed)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, bugfix
 
 ---
 

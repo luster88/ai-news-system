@@ -12,7 +12,7 @@ tags:
 - windows
 - 新機能
 date: '2026-04-04'
-updated: '2026-08-13'
+updated: '2026-08-17'
 sources:
 - url: https://qiita.com/taiki_i/items/2d75a882e0f3187f6bb8
   title: あなたの CLAUDE.md、ちゃんと機能してますか？作り方から公式プラグインで採点するまでの道のり
@@ -68,6 +68,9 @@ sources:
 - url: https://ai-heartland.com/explain/claude-code-vscode-guide
   title: Claude Code VSCode拡張の使い方｜インストールからCLI版との機能差まで【2026年版】
   date: '2026-08-13'
+- url: https://zenn.dev/mingw/articles/d76fdd1e899ad7
+  title: Claude Code入門：インストールから最初の自動化まで全部やる
+  date: '2026-08-17'
 ---
 
 
@@ -84,7 +87,20 @@ sources:
 
 
 
+
 # Claude Code Setup
+
+---
+
+## 2026-08-17
+
+### Claude Code入門：インストールから最初の自動化まで全部やる
+
+Claude Code の初心者向けインストールガイド。プログラミング未経験者でも Windows/Mac でセットアップし、フォルダ整理などの自動化タスクを実行できるよう、具体的な手順を日本語で解説。API 従量課金と Claude Pro/Max の選択肢、トラブルシューティングも網羅。
+
+- **ソース**: [Zenn claude](https://zenn.dev/mingw/articles/d76fdd1e899ad7)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup
 
 ---
 

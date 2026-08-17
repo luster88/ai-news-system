@@ -5,11 +5,12 @@ subcategory: ai-comparison-strategy
 tags:
 - claude-api
 - claude-code
+- copilot
 - cowork
 - performance
 - prompt
 date: '2026-03-31'
-updated: '2026-05-17'
+updated: '2026-08-17'
 sources:
 - url: https://qiita.com/mellowlaunch/items/ad5a2385307e8c414c3e
   title: AI共生戦略とSpec駆動～思考特性という新しい評価軸
@@ -23,11 +24,27 @@ sources:
     the town down, then one voted to delete itself and its partner. Grok's agents
     created anarchy, then died.
   date: '2026-05-17'
+- url: https://qiita.com/0903osa/items/e9f2dc5906c9c0ac635c
+  title: テストコードで性格が出る？ ChatGPT・Claude・Gemini三者三様（3部作の2作目）
+  date: '2026-08-17'
 ---
 
 
 
+
 # Ai Comparison Strategy
+
+---
+
+## 2026-08-17
+
+### テストコードで性格が出る？ ChatGPT・Claude・Gemini三者三様（3部作の2作目）
+
+ChatGPT、Claude、Geminiの3つのAIに同じ予約システムのテストコード生成を依頼した比較記事。ChatGPTは仕様書の文言を厳格に解釈、Claudeは未定義の部分を自ら設計し境界値テストを徹底、Geminiは実務的でクリーンなスタイルを採用。同じ仕様でもAIによってテスト観点や重複予約の解釈が異なることが判明し、AI活用時のテスト工数の重要性を指摘している。
+
+- **ソース**: [Qiita claude](https://qiita.com/0903osa/items/e9f2dc5906c9c0ac635c)
+- **重要度**: 5/10
+- **タグ**: claude-code, cowork, copilot
 
 ---
 

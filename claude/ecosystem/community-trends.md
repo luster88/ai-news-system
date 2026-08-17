@@ -4,6 +4,7 @@ category: ecosystem
 subcategory: community-trends
 tags:
 - claude-api
+- claude-code
 - copilot
 - cowork
 - cursor
@@ -11,7 +12,7 @@ tags:
 - performance
 - 新機能
 date: '2026-04-13'
-updated: '2026-05-21'
+updated: '2026-08-17'
 sources:
 - url: https://techcrunch.com/2026/04/12/at-the-humanx-conference-everyone-was-talking-about-claude
   title: At the HumanX conference, everyone was talking about Claude
@@ -24,11 +25,27 @@ sources:
   title: My LinkedIn network is about to be aggressively flooded with Claude Code
     certifications
   date: '2026-05-21'
+- url: https://qiita.com/Skillselion/items/d61adafc9d4457d10d90
+  title: 8月17日、Claude Codeスキル検索1位は計画インタビューのGrill Meだった
+  date: '2026-08-17'
 ---
 
 
 
+
 # Community Trends
+
+---
+
+## 2026-08-17
+
+### 8月17日、Claude Codeスキル検索1位は計画インタビューのGrill Meだった
+
+2026年8月17日、Claude Codeスキルの検索ランキングで「Grill Me」が1位を獲得。計画を詰めるインタビュー機能で、インストール数87万超、検索数は+3,250%の急上昇。同日のカタログには8万件超のスキルがあり、合計インストール数は1億4千万超。他の人気スキルとしてFind Skills（検索ツール）、Impeccable（UI向け）、Caveman（発言短縮）、Frontend Design（デザイン）などが紹介されている。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Skillselion/items/d61adafc9d4457d10d90)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

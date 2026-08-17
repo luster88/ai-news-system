@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-31'
-updated: '2026-07-16'
+updated: '2026-08-17'
 sources:
 - url: https://qiita.com/nishiken1118/items/6b16557fcabf784c861e
   title: 過去の session をほしい時に参照する方針で claude-mem のトークン消費を激減させた話
@@ -50,6 +50,9 @@ sources:
 - url: https://qiita.com/eiji-noguchi/items/ad30cd311f083cd269d0
   title: CLAUDE.mdによるClaude Codeの探索コスト削減を実測
   date: '2026-07-16'
+- url: https://zenn.dev/secula/articles/ccd31dd1035417
+  title: 【Claude Code】＠ファイル指定はpath指定より速いという事実
+  date: '2026-08-17'
 ---
 
 
@@ -62,7 +65,20 @@ sources:
 
 
 
+
 # Claude Code Optimization
+
+---
+
+## 2026-08-17
+
+### 【Claude Code】＠ファイル指定はpath指定より速いという事実
+
+Claude Code で@メンションによるファイル指定はpath指定より高速であることが公式ブログで明言されました。@メンション指定ではファイルが直接添付されるためRead呼び出しが1回節約でき、検索の手間も省けます。例えば「Fix the failing test in @utils.test.ts」はRead呼び出しを消費しませんが、path指定では1回のRead呼び出しが必要になります。
+
+- **ソース**: [Zenn claude](https://zenn.dev/secula/articles/ccd31dd1035417)
+- **重要度**: 7/10
+- **タグ**: claude-code, performance, 新機能
 
 ---
 

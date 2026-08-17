@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-08-15'
+updated: '2026-08-17'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -288,6 +288,9 @@ sources:
 - url: https://qiita.com/ay5399/items/642d494503f133f27325
   title: Claude CodeがCodexレビューをサボらないようにした話
   date: '2026-08-15'
+- url: https://qiita.com/inoyu-qiita/items/71cac5d790eb08090551
+  title: プロンプト1行で、赤枠＋番号つきの手順画像をAIに作らせた ~Claude編~
+  date: '2026-08-17'
 ---
 
 
@@ -361,7 +364,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-08-17
+
+### プロンプト1行で、赤枠＋番号つきの手順画像をAIに作らせた ~Claude編~
+
+Claude Code + Claude in Chrome を使い、プロンプト1行を追加するだけで赤枠・番号つき手順画像を自動生成する方法を紹介。ログイン済みChromeを操作できるため社内ツールのマニュアル作成に有効。画像編集ソフト不要で、位置修正も対話で可能。
+
+- **ソース**: [Qiita claude](https://qiita.com/inoyu-qiita/items/71cac5d790eb08090551)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

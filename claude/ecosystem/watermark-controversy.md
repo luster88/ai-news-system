@@ -5,17 +5,34 @@ subcategory: watermark-controversy
 tags:
 - claude-api
 - cowork
+- pricing
 - 新機能
 date: '2026-08-12'
-updated: '2026-08-12'
+updated: '2026-08-17'
 sources:
 - url: https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes
   title: Some Claude users are mad that Anthropic’s new watermarks will catch them
     cheating at their jobs, classes
   date: '2026-08-12'
+- url: https://the-decoder.com/anthropic-watermarks-claudes-output-but-critics-question-the-tradeoffs
+  title: Anthropic watermarks Claude's output, but critics question the tradeoffs
+  date: '2026-08-17'
 ---
 
+
 # Watermark Controversy
+
+---
+
+## 2026-08-17
+
+### Anthropic watermarks Claude's output, but critics question the tradeoffs
+
+Anthropic が Claude の出力にウォーターマークを埋め込み、EU規制に対応。統計的な単語選択パターンでAIテキストを識別可能にするが、批評家は単語選択が意味ではなくウォーターマークキーに基づくため品質が低下すると指摘。法律事務所では透明性の問題が浮上し、Declaude などのツールで除去も可能。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-watermarks-claudes-output-but-critics-question-the-tradeoffs)
+- **重要度**: 7/10
+- **タグ**: claude-api, 新機能, pricing
 
 ---
 

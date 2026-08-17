@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: 2026-03-23
-updated: '2026-08-12'
+updated: '2026-08-17'
 sources:
 - url: https://github.com/anthropics/claude-code/releases
   title: Claude Code GitHub Releases
@@ -95,7 +95,11 @@ sources:
 - url: https://qiita.com/picnic/items/e20692ced34c7a82eaec
   title: Claude Code v2.1.228対応:同期スキルのセキュリティ強化とメモリ削除バグ
   date: '2026-08-12'
+- url: https://qiita.com/moha0918_/items/75f3681463180844e8ed
+  title: Claude Code v2.1.234｜利用上限リセットで自動再開｜毎日Changelog解説
+  date: '2026-08-17'
 ---
+
 
 
 
@@ -165,6 +169,18 @@ Claude Code の主要なリリース・機能追加を時系列で記録する�
 
 - [セットアップガイド](../guides/setup.md)
 - [ツール比較](../tools/comparison.md)
+
+---
+
+## 2026-08-17
+
+### Claude Code v2.1.234｜利用上限リセットで自動再開｜毎日Changelog解説
+
+Claude Code v2.1.234では、claude.ai利用上限リセット後の自動再開機能が追加され、デフォルトで有効化されました。/goalコマンドの30分チェックイン機能、compaction後のauto modeバグ修正、サブエージェント権限回答の保存問題修正など、ユーザーが席を外している間の挙動が大幅に改善されました。Windows NTパス（\??\形式）のセキュリティ対策も実装されています。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/75f3681463180844e8ed)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 
