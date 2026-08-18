@@ -11,7 +11,7 @@ tags:
 - prompt
 - vscode
 date: '2026-04-02'
-updated: '2026-08-05'
+updated: '2026-08-18'
 sources:
 - url: https://qiita.com/MirabelleQuest/items/f3b27e9740d4b22135fc
   title: '# Claude Code でセッション開始直後から Context 使用率が高かったので確認した'
@@ -25,12 +25,28 @@ sources:
 - url: https://zenn.dev/flipslidersand/articles/ai-python-context-degradation
   title: ClaudeとPythonを書いていたら、途中でAIがおかしくなった話
   date: '2026-08-05'
+- url: https://qiita.com/YujiNaramoto/items/75e2d273cdd4a72df2cb
+  title: なぜClaude Codeのauto-compact対策をPreCompact/SessionStart hookで実装するのか
+  date: '2026-08-18'
 ---
 
 
 
 
+
 # Context Management
+
+---
+
+## 2026-08-18
+
+### なぜClaude Codeのauto-compact対策をPreCompact/SessionStart hookで実装するのか
+
+Claude Codeのauto-compact（コンテキストウィンドウ圧縮）で文脈が失われる問題に対し、PreCompact/SessionStart hookを使った対策を解説。モデル層・アプリ層・ハーネス層の3つの選択肢を比較し、hookを「書くだけ」「読むだけ」に分離する設計理由と、ファイル名ベースの時刻管理による最新dump選定の実装を詳述。長時間セッションでの文脈維持を汎用的に実現する手法。
+
+- **ソース**: [Qiita claude](https://qiita.com/YujiNaramoto/items/75e2d273cdd4a72df2cb)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

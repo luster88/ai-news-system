@@ -4,12 +4,13 @@ category: ecosystem
 subcategory: pricing-analysis
 tags:
 - claude-code
+- opus
 - performance
 - pricing
 - sonnet
 - 新機能
 date: '2026-07-01'
-updated: '2026-07-10'
+updated: '2026-08-18'
 sources:
 - url: https://the-decoder.com/claude-sonnet-5-continues-anthropics-pattern-of-hiding-price-increases-behind-unchanged-token-rates
   title: Claude Sonnet 5 continues Anthropic's pattern of hiding price increases behind
@@ -18,10 +19,27 @@ sources:
 - url: https://zenn.dev/ryuka_lucas/articles/fable-token-saving
   title: Fable5はなぜ高額請求になるのか、「節約」は実測で逆効果だった
   date: '2026-07-10'
+- url: https://the-decoder.com/anthropics-per-token-cost-runs-4-4-times-the-average-on-vercel-and-developers-keep-paying
+  title: Anthropic's per-token cost runs 4.4 times the average on Vercel, and developers
+    keep paying
+  date: '2026-08-18'
 ---
 
 
+
 # Pricing Analysis
+
+---
+
+## 2026-08-18
+
+### Anthropic's per-token cost runs 4.4 times the average on Vercel, and developers keep paying
+
+Vercel の AI Gateway における Anthropic の利用状況分析。Anthropic は支出の 65.1% を占めるが、トークン使用量は 30% に過ぎず、トークン単価が他プロバイダーの 4.4 倍と高額。Claude Opus 4.8 に次いで Fable 5 が支出の 13.2% を占め、新規顧客の獲得に成功している。全体としてトークン量は 59% 増加したが、安価なモデルへのシフトにより平均単価は 13.6% 下落。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropics-per-token-cost-runs-4-4-times-the-average-on-vercel-and-developers-keep-paying)
+- **重要度**: 7/10
+- **タグ**: pricing, opus, sonnet
 
 ---
 

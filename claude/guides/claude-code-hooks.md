@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-23'
-updated: '2026-08-15'
+updated: '2026-08-18'
 sources:
 - url: https://qiita.com/pro-tein/items/49e5dbec705c3497dd51
   title: 【Claude Code】Hooks機能でデスクトップ通知を設定してみた
@@ -34,6 +34,9 @@ sources:
 - url: https://qiita.com/0yasumi_m0de/items/f8a07dc09f3bcc4d7058
   title: superpowers がうるさいので、Hooks で「それ使う？」と聞かせることにした
   date: '2026-08-15'
+- url: https://qiita.com/YujiNaramoto/items/75e2d273cdd4a72df2cb
+  title: なぜClaude Codeのauto-compact対策をPreCompact/SessionStart hookで実装するのか
+  date: '2026-08-18'
 ---
 
 
@@ -42,7 +45,20 @@ sources:
 
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-08-18
+
+### なぜClaude Codeのauto-compact対策をPreCompact/SessionStart hookで実装するのか
+
+Claude Codeのauto-compact（コンテキスト圧縮）で文脈が失われる問題に対し、PreCompactとSessionStart hookを使った対策を解説。モデル層・アプリ層・ハーネス層の3つの選択肢を比較し、hookで「書くだけ」「読むだけ」に役割分離する設計の利点を説明。ファイル名ベースの時刻管理でmtime依存の問題を回避し、全セッションに自動適用できる汎用的な実装を提示している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/YujiNaramoto/items/75e2d273cdd4a72df2cb)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup
 
 ---
 

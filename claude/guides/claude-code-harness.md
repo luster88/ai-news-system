@@ -4,11 +4,12 @@ category: guides
 subcategory: claude-code-harness
 tags:
 - claude-code
+- cowork
 - mcp
 - setup
 - 新機能
 date: '2026-04-04'
-updated: '2026-05-22'
+updated: '2026-08-18'
 sources:
 - url: https://zenn.dev/kosk_t/articles/claude-code-harness-audit-skill
   title: Claude Codeの設定、何から手をつける？ ハーネスエンジニアリングを体系化するスキルを作った
@@ -16,10 +17,26 @@ sources:
 - url: https://qiita.com/daisuke-nagata/items/8f82bb7e2d51343657fd
   title: Claude Codeのハーネスは下から積め——MCPから入って壊した3ヶ月で学んだ積み上げ順
   date: '2026-05-22'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vrjryf/week_3_of_making_my_fishing_game_entirely_with_ai
+  title: Week 3 of making my fishing game entirely with AI
+  date: '2026-08-18'
 ---
 
 
+
 # Claude Code Harness
+
+---
+
+## 2026-08-18
+
+### Week 3 of making my fishing game entirely with AI
+
+ユーザーがClaude AIを使って釣りゲームを開発する3週目の進捗報告。Claude Artifactsでの開発からMCPを使用したBlenderとGodot連携へとワークフローを進化させ、ほぼすべての開発をClaudeで実施（画像生成のみChatGPT使用）。Godot 4.7.1エンジンとClaude Code MCPを活用し、コンセプトアート生成から3Dモデリング、実装まで一貫したAI支援開発の実例を紹介。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vrjryf/week_3_of_making_my_fishing_game_entirely_with_ai)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, cowork
 
 ---
 

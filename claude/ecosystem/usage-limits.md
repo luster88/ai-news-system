@@ -10,7 +10,7 @@ tags:
 - pricing
 - 新機能
 date: '2026-03-26'
-updated: '2026-05-15'
+updated: '2026-08-18'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s4idaq/update_on_session_limits
   title: Update on Session Limits
@@ -21,11 +21,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1te40i2/they_just_reset_our_usage_mine_was_supposed_to_be
   title: '!!!THEY JUST RESET OUR USAGE!!! Mine was supposed to be tonight'
   date: '2026-05-15'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vrvham/reminder_claude_codes_additional_50_weekly_usage
+  title: 'Reminder: Claude Code''s additional 50% weekly usage ends tomorrow'
+  date: '2026-08-18'
 ---
 
 
 
+
 # Usage Limits
+
+---
+
+## 2026-08-18
+
+### Reminder: Claude Code's additional 50% weekly usage ends tomorrow
+
+Claude Codeの週間使用量が50%追加されるプロモーションが明日で終了することを通知する記事。このプロモーションは2026年8月まで実施されていたもので、ユーザーに期限を注意喚起している。公式サポートページへのリンクが含まれている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vrvham/reminder_claude_codes_additional_50_weekly_usage)
+- **重要度**: 6/10
+- **タグ**: claude-code, pricing, 新機能
 
 ---
 
