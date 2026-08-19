@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-08-17'
+updated: '2026-08-19'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -291,6 +291,9 @@ sources:
 - url: https://qiita.com/inoyu-qiita/items/71cac5d790eb08090551
   title: プロンプト1行で、赤枠＋番号つきの手順画像をAIに作らせた ~Claude編~
   date: '2026-08-17'
+- url: https://zenn.dev/saltmu/articles/e1414887002126
+  title: Claudeでコードを書き、Codexでレビューさせた時におきたこと
+  date: '2026-08-19'
 ---
 
 
@@ -365,7 +368,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-08-19
+
+### Claudeでコードを書き、Codexでレビューさせた時におきたこと
+
+Claude Codeでコード実装とドキュメント作成を行い、CodexでPRレビューを回す実験。ドキュメント修正PRでは指摘対応が11巡発散し人間の介入が必要になったが、コード実装PRではTDDにより7巡で完璧に収束。AI同士のレビューループにおいて、ドキュメントは発散しやすく、テストコード付き実装は収束しやすいという対照的な結果が得られた。
+
+- **ソース**: [Zenn claude](https://zenn.dev/saltmu/articles/e1414887002126)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

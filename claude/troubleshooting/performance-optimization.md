@@ -5,10 +5,11 @@ subcategory: performance-optimization
 tags:
 - claude-api
 - claude-code
+- mcp
 - performance
 - setup
 date: '2026-05-15'
-updated: '2026-05-27'
+updated: '2026-08-19'
 sources:
 - url: https://qiita.com/Tadashi_Kudo/items/60adfc41690c45d59f15
   title: ハーネスを育てすぎたClaude Codeが素のClaude Codeに負ける「naked codex現象」——自己診断と対処法
@@ -16,10 +17,26 @@ sources:
 - url: https://qiita.com/architectJapan/items/ec7669cb308277a9d4bb
   title: 自宅サーバー1台にAnthropicのbotが1日4万アクセスしてきた、でも全然遅くならなかった話
   date: '2026-05-27'
+- url: https://qiita.com/nomurasan/items/c227b092ba30d18aa8a1
+  title: Claude Code hookが遅い原因はpydanticだった ― 起動コストを実測してGoに移植したら約8割削減できた話
+  date: '2026-08-19'
 ---
 
 
+
 # Performance Optimization
+
+---
+
+## 2026-08-19
+
+### Claude Code hookが遅い原因はpydanticだった ― 起動コストを実測してGoに移植したら約8割削減できた話
+
+Claude Code の hook 実行時、Python + pydantic の起動コストが 108ms と支配的だったため、頻度の高い hook を Go に移植し 23ms に削減。39日間で244万回発火した実測ログから、年間約680 CPU時間が消費されていたことが判明。Go 化自体ではなく「頻度の高い箇所を絞り込んだこと」が効果的だった。pydantic のインポートコストが約84ms を占め、Go/Rust/bash では23〜25ms に収束し、プロセス fork の物理的下限に到達した。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/nomurasan/items/c227b092ba30d18aa8a1)
+- **重要度**: 6/10
+- **タグ**: claude-code, performance, mcp
 
 ---
 

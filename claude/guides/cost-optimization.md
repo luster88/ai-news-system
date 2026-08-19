@@ -12,7 +12,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-04-03'
-updated: '2026-07-09'
+updated: '2026-08-19'
 sources:
 - url: https://zenn.dev/heki1224/articles/b849cc85a330aa
   title: Claude Codeで”トークン破産”しないためのコスト最適化とコンテキスト防衛術
@@ -52,6 +52,9 @@ sources:
 - url: https://ai-heartland.com/explain/fable-5-advisor-pattern
   title: Claude Fable 5のアドバイザーパターン入門｜Sonnet 5実行役が要所だけ相談しトークン代を抑える
   date: '2026-07-09'
+- url: https://qiita.com/dceoy/items/e94fbb4abbdbfeb84cbd
+  title: Codex CLI で Claude Code の OpusPlan / Advisor パターンを再現する
+  date: '2026-08-19'
 ---
 
 
@@ -64,7 +67,20 @@ sources:
 
 
 
+
 # Cost Optimization
+
+---
+
+## 2026-08-19
+
+### Codex CLI で Claude Code の OpusPlan / Advisor パターンを再現する
+
+Codex CLIでClaude CodeのOpusPlan/Advisorパターンを再現する手法を紹介。GPT-5.6 Lunaの高いコスト効率を活用しつつ、必要な場面でGPT-5.6 Solを呼び出すsubagents構成により、Claude CodeのOpus planner→Sonnet executor→Opus advisorに相当する仕組みを実装。計画と判断を上位モデルに委譲するコスト効率的なアプローチ。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/dceoy/items/e94fbb4abbdbfeb84cbd)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, pricing
 
 ---
 

@@ -10,7 +10,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-03-29'
-updated: '2026-07-19'
+updated: '2026-08-19'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6jouf/anthropic_shares_how_to_make_claude_code_better
   title: Anthropic shares how to make Claude code better with a harness
@@ -27,13 +27,29 @@ sources:
 - url: https://zenn.dev/drbobt1122/articles/blog26072001
   title: ソフトウェア開発のAIエージェントを作る(1)
   date: '2026-07-19'
+- url: https://zenn.dev/motimotinotch/articles/f24c65c8f38885
+  title: ループエンジニアリングじゃない。デイリーノート1枚で回すAIエージェント運用
+  date: '2026-08-19'
 ---
 
 
 
 
 
+
 # Multi Agent Workflow
+
+---
+
+## 2026-08-19
+
+### ループエンジニアリングじゃない。デイリーノート1枚で回すAIエージェント運用
+
+AIエージェント2つ（Claude CodeとAntigravity CLI）を同一環境で併用する運用設計を紹介。自律ループやcronを使わず、デイリーノート1枚と「人格層の判断が必要か否か」という基準でタスクを振り分ける実例。人格は装飾ではなく、蓄積した思想との整合性チェックや摂動機能のために必要と説明。
+
+- **ソース**: [Zenn claude](https://zenn.dev/motimotinotch/articles/f24c65c8f38885)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 
