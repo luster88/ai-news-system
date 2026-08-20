@@ -9,7 +9,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-03-31'
-updated: '2026-08-03'
+updated: '2026-08-20'
 sources:
 - url: https://zenn.dev/whipea/articles/e63135d29f8e1f
   title: Claude Codeに課金してみたので、無料プランのAIで作った日記アプリのコードを本気レビューしてもらった
@@ -26,13 +26,29 @@ sources:
 - url: https://zenn.dev/tukiyubi/articles/289ddb13e112b9
   title: 実装したAIにレビューさせない——Claude Codeの3パス独立レビューと機械判定
   date: '2026-08-03'
+- url: https://zenn.dev/k_motoki/articles/98ace2595164cf
+  title: コードレビューが全文で回らなくなったので、AIにはdiffだけ渡すことにした
+  date: '2026-08-20'
 ---
 
 
 
 
 
+
 # Code Review Workflow
+
+---
+
+## 2026-08-20
+
+### コードレビューが全文で回らなくなったので、AIにはdiffだけ渡すことにした
+
+趣味の OSS 開発で Claude を含む AI にコードレビューを依頼する際、プロダクトの肥大化でコンテキスト制限に直面。git diff のみを渡す方法を試したが、新規ファイルには効果が薄く、意味論を伴う変更では呼び出し先の実装も必要と判明。最終的に、変更の性質に応じて diff と全文を使い分けるハイブリッド戦略が有効と結論づけた。
+
+- **ソース**: [Zenn claude](https://zenn.dev/k_motoki/articles/98ace2595164cf)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

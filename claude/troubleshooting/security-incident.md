@@ -7,13 +7,14 @@ tags:
 - claude-api
 - claude-code
 - claude-console
+- mac
 - opus
 - release
 - setup
 - vscode
 - 新機能
 date: '2026-03-31'
-updated: '2026-08-16'
+updated: '2026-08-20'
 sources:
 - url: https://the-decoder.com/anthropic-accidentally-publishes-claude-code-source-code-for-anyone-to-find
   title: Anthropic accidentally publishes Claude Code source code for anyone to find
@@ -49,6 +50,10 @@ sources:
   title: Anthropic's bio-weapons filter was down for nearly a year, exposing 133 million
     requests
   date: '2026-08-16'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vtmkft/psa_a_malicious_published_claude_artifact_is
+  title: 'PSA: a malicious published Claude artifact is ranking on Google for Claude
+    Code install queries — it installed a macOS infostealer on my Mac'
+  date: '2026-08-20'
 ---
 
 
@@ -58,7 +63,20 @@ sources:
 
 
 
+
 # Security Incident
+
+---
+
+## 2026-08-20
+
+### PSA: a malicious published Claude artifact is ranking on Google for Claude Code install queries — it installed a macOS infostealer on my Mac
+
+Claude Code のインストール方法を検索した際、Google 検索結果の上位に悪意のある公開 Artifact が表示され、ユーザーが macOS 用インフォスティーラーをインストールしてしまった事例。公式ドメインでホストされていたため正規のドキュメントと見分けがつかず、curl | bash コマンドを実行後にマルウェアが persistent launch agents をインストール。ユーザーはパスワード変更とディスククリーンアップを余儀なくされた。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vtmkft/psa_a_malicious_published_claude_artifact_is)
+- **重要度**: 8/10
+- **タグ**: claude-code, setup, mac
 
 ---
 

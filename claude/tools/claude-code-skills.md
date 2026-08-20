@@ -7,9 +7,10 @@ tags:
 - cursor
 - mcp
 - prompt
+- setup
 - 新機能
 date: '2026-07-11'
-updated: '2026-08-03'
+updated: '2026-08-20'
 sources:
 - url: https://ai-heartland.com/explain/ponytail-lazy-senior-dev
   title: Ponytail解説｜AIエージェントに『怠惰なシニア』を憑依させコードを54%削るClaude Codeスキル
@@ -17,10 +18,26 @@ sources:
 - url: https://zenn.dev/neotechpark/articles/6084cfe677d223
   title: 'last30days: The Claude Code Skill That Fixes AI Search'
   date: '2026-08-03'
+- url: https://zenn.dev/nanakusataro/articles/9417aa2b568c20
+  title: grill-me / grilling をローカルLLM向けに改変してみた
+  date: '2026-08-20'
 ---
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-08-20
+
+### grill-me / grilling をローカルLLM向けに改変してみた
+
+Claude Code の壁打ちスキル「grill-me」をローカルLLM環境向けに改変した記事。オリジナルは「grilling」スキルを呼び出す仕様だが、メモリ制約のあるローカル環境（24GB Mac mini等）でサブエージェント呼び出しによるメモリ不足を避けるため、サブエージェント使用可否を選択できるトグル機能を追加。重要度順の質問順序指定も改良し、ローカルLLM向けとクラウドAI向けの2バージョンを公開。
+
+- **ソース**: [Zenn claude](https://zenn.dev/nanakusataro/articles/9417aa2b568c20)
+- **重要度**: 5/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

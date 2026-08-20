@@ -9,7 +9,7 @@ tags:
 - release
 - 新機能
 date: '2026-07-12'
-updated: '2026-08-17'
+updated: '2026-08-20'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -30,6 +30,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/75f3681463180844e8ed
   title: Claude Code v2.1.234｜利用上限リセットで自動再開｜毎日Changelog解説
   date: '2026-08-17'
+- url: https://qiita.com/moha0918_/items/ca1fa2fb4e355433cee3
+  title: Claude Code v2.1.237〜v2.1.238｜長時間セッションのメモリリークが直る｜毎日Changelog解説
+  date: '2026-08-20'
 ---
 
 
@@ -37,7 +40,30 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-08-20
+
+### Claude Code v2.1.237〜v2.1.238｜長時間セッションのメモリリークが直る｜毎日Changelog解説
+
+Claude Code v2.1.237〜v2.1.238では、長時間セッションでサブエージェントを繰り返し使用した際のメモリリーク問題が修正されました。ツール結果が表示ウィンドウから外れると適切に解放されるようになり、朝から晩まで同じセッションを開き続ける使い方での無制限なメモリ消費が解消されました。その他、Concise出力スタイルの追加、カスタム出力スタイルの維持バグ修正、プラグインマーケットプレイスへのheadersHelper追加、プロンプトキャッシュの修正などが含まれます。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/ca1fa2fb4e355433cee3)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
+
+---
+
+### Claude Code v2.1.237〜v2.1.238｜長時間セッションのメモリリークが直る｜毎日Changelog解説
+
+Claude Code v2.1.237〜v2.1.238 のリリースで、長時間セッションでサブエージェントを繰り返し使用した際のメモリリーク問題が修正されました。表示ウィンドウから外れたツール結果が適切に解放されるようになり、朝から晩まで同じセッションを開き続ける使い方で顕在化していたメモリ増加が止まります。また、Concise 出力スタイルの追加、カスタム出力スタイルの不具合修正、プラグインマーケットプレイスへの headersHelper 追加、プロンプトキャッシュの修正などが含まれています。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/ca1fa2fb4e355433cee3)
+- **重要度**: 7/10
+- **タグ**: claude-code, bugfix, release
 
 ---
 

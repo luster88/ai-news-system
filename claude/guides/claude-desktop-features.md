@@ -7,8 +7,9 @@ tags:
 - cowork
 - mcp
 - setup
+- vscode
 date: '2026-06-05'
-updated: '2026-06-11'
+updated: '2026-08-20'
 sources:
 - url: https://qiita.com/yurubito/items/a40692f9058683a61e28
   title: 今更だけどClaudeの3機能の使い分けまとめてみた。
@@ -16,10 +17,26 @@ sources:
 - url: https://ai-heartland.com/explain/claude-desktop-guide
   title: Claude Desktop 使い方入門｜MCP接続で広がるデスクトップAIの可能性とローカル連携
   date: '2026-06-11'
+- url: https://qiita.com/shokan/items/524c376889317641626e
+  title: Claude Code ではなく Claude Desktop を使うメリット
+  date: '2026-08-20'
 ---
 
 
+
 # Claude Desktop Features
+
+---
+
+## 2026-08-20
+
+### Claude Code ではなく Claude Desktop を使うメリット
+
+Claude Desktop の Code 機能と Cowork 機能の違いを解説。Code 機能はディレクトリごとのセッション管理、プレビュー画面、GitHub Actions 連携など、開発作業を統合した新しい IDE 体験を提供。Cowork 機能は Chat にローカルファイル操作を追加し、グローバル設定やプラグイン管理を GUI で行える。両者とも Agent SDK をベースにしているが、システムプロンプトやコンテキスト圧縮が異なるため動作に違いがある。
+
+- **ソース**: [Qiita claude](https://qiita.com/shokan/items/524c376889317641626e)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, vscode
 
 ---
 

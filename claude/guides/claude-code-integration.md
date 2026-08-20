@@ -5,12 +5,13 @@ subcategory: claude-code-integration
 tags:
 - claude-code
 - cowork
+- mac
 - mcp
 - prompt
 - setup
 - 新機能
 date: '2026-04-02'
-updated: '2026-06-11'
+updated: '2026-08-20'
 sources:
 - url: https://zenn.dev/caphtech/articles/feed-curator-ai-rss-with-claude-code
   title: Claude CodeでAI RSSリーダーを作ったら、その日にInoreaderを解約した
@@ -27,13 +28,29 @@ sources:
 - url: https://qiita.com/sescore/items/3bebfa78a916ca44316f
   title: OpenClaw×Claude Code連携で変わる開発体験——実践コマンドと具体ユースケース完全解説【2026年】
   date: '2026-06-11'
+- url: https://qiita.com/tri-ponte/items/6d309b2f9f029ec1d53f
+  title: iPhoneでしゃべった内容を1秒でClaude Codeに届ける
+  date: '2026-08-20'
 ---
 
 
 
 
 
+
 # Claude Code Integration
+
+---
+
+## 2026-08-20
+
+### iPhoneでしゃべった内容を1秒でClaude Codeに届ける
+
+iPhoneの音声入力をMacのClaude Codeに直接転送する仕組みの解説記事。Pythonの標準ライブラリで軽量なHTTPサーバーを構築し、Wi-Fi経由で1秒以内に音声テキストを届ける。Macの音声入力は117秒でタイムアウトする制約があるが、この方法ならiPhoneのショートカットから直接Claudeに指示を送り込める。追加購入不要で実装可能。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/tri-ponte/items/6d309b2f9f029ec1d53f)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, mac
 
 ---
 
