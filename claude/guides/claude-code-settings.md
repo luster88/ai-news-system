@@ -4,11 +4,12 @@ category: guides
 subcategory: claude-code-settings
 tags:
 - claude-code
+- prompt
 - setup
 - vscode
 - 新機能
 date: '2026-03-31'
-updated: '2026-08-12'
+updated: '2026-08-21'
 sources:
 - url: https://qiita.com/makoto-ogata@github/items/641a26f0d5d40aa1c0c4
   title: Claude Codeのsettings.jsonの設定をしよう
@@ -22,11 +23,27 @@ sources:
 - url: https://ai-heartland.com/explain/claude-code-settings-guide
   title: Claude Code 設定ガイド｜settings.jsonのスコープ優先順位とpermissions設計
   date: '2026-08-12'
+- url: https://zenn.dev/manntera/articles/9e98c6850f63c7
+  title: Claude Codeの回答がイマイチだなぁ？って思った時に読む記事(非エンジニア向け)
+  date: '2026-08-21'
 ---
 
 
 
+
 # Claude Code Settings
+
+---
+
+## 2026-08-21
+
+### Claude Codeの回答がイマイチだなぁ？って思った時に読む記事(非エンジニア向け)
+
+Claude Codeのeffort設定（低～最大の5段階）は「頭の良さ」ではなく「どこまで手間をかけるか」を制御する。最大設定にすると、指示があいまいな場合に推測で余計な作業をして長文で的外れな回答になることがある。迷ったらmedium/highを選び、maxは一時的な使用に留める。より良い回答を得るには、effortを上げるより指示を具体的にすることが重要。
+
+- **ソース**: [Zenn claude](https://zenn.dev/manntera/articles/9e98c6850f63c7)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

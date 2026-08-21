@@ -3,11 +3,12 @@ title: Claude Mythos Security
 category: releases
 subcategory: claude-mythos-security
 tags:
+- claude-api
 - performance
 - release
 - 新機能
 date: '2026-04-21'
-updated: '2026-07-28'
+updated: '2026-08-21'
 sources:
 - url: https://qiita.com/eri_tech/items/bd59d063d55544b1442e
   title: なぜClaude Mythosはサイバーセキュリティに強いのか？
@@ -23,12 +24,29 @@ sources:
   title: Anthropic says its Mythos model found vulnerabilities in cryptographic algorithms
     that secure the internet
   date: '2026-07-28'
+- url: https://the-decoder.com/anthropic-puts-its-most-powerful-model-claude-mythos-5-to-work-for-cyber-defense
+  title: Anthropic puts its most powerful model Claude Mythos 5 to work for cyber
+    defense
+  date: '2026-08-21'
 ---
 
 
 
 
+
 # Claude Mythos Security
+
+---
+
+## 2026-08-21
+
+### Anthropic puts its most powerful model Claude Mythos 5 to work for cyber defense
+
+Anthropic が最強モデル Claude Mythos 5 をサイバーセキュリティ防御に投入。脆弱性スキャンツール Claude Security が Enterprise 顧客向けパブリックベータで利用可能になり、コードベースの脆弱性検出とパッチ提案を行う。病院・公共インフラ・銀行などのパートナー製品にも統合され、攻撃者への悪用を防ぐため一般公開は制限されている。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-puts-its-most-powerful-model-claude-mythos-5-to-work-for-cyber-defense)
+- **重要度**: 9/10
+- **タグ**: 新機能, claude-api
 
 ---
 

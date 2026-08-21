@@ -12,7 +12,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-04-03'
-updated: '2026-08-19'
+updated: '2026-08-21'
 sources:
 - url: https://zenn.dev/heki1224/articles/b849cc85a330aa
   title: Claude Codeで”トークン破産”しないためのコスト最適化とコンテキスト防衛術
@@ -55,6 +55,9 @@ sources:
 - url: https://qiita.com/dceoy/items/e94fbb4abbdbfeb84cbd
   title: Codex CLI で Claude Code の OpusPlan / Advisor パターンを再現する
   date: '2026-08-19'
+- url: https://qiita.com/locallab/items/6ec161138560101296d9
+  title: Claude Code + OpenRouter Free モデルで実現する「ゼロ円 AI 開発補助」——3 つの活用パターンと注意点
+  date: '2026-08-21'
 ---
 
 
@@ -68,7 +71,20 @@ sources:
 
 
 
+
 # Cost Optimization
+
+---
+
+## 2026-08-21
+
+### Claude Code + OpenRouter Free モデルで実現する「ゼロ円 AI 開発補助」——3 つの活用パターンと注意点
+
+OpenRouterの無料モデル(:free)とClaude Codeを組み合わせて、コストゼロでAI開発補助を実現する方法を解説。コミットメッセージ生成、コードレビュー、ドキュメント翻訳など3つの活用パターンを紹介し、レートリミット・品質・ライセンスの注意点も明記。プレミアムモデルとの使い分けにより構造的なコスト削減が可能。
+
+- **ソース**: [Qiita claude](https://qiita.com/locallab/items/6ec161138560101296d9)
+- **重要度**: 6/10
+- **タグ**: claude-code, pricing, cowork
 
 ---
 

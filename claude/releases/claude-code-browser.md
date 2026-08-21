@@ -9,7 +9,7 @@ tags:
 - release
 - 新機能
 date: '2026-07-12'
-updated: '2026-08-20'
+updated: '2026-08-21'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -33,6 +33,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/ca1fa2fb4e355433cee3
   title: Claude Code v2.1.237〜v2.1.238｜長時間セッションのメモリリークが直る｜毎日Changelog解説
   date: '2026-08-20'
+- url: https://qiita.com/picnic/items/e2b9a324815c7ef21782
+  title: 'Claude Code v2.1.238: メモリ無限増大の修正とMCP認証まわりの破壊的変更'
+  date: '2026-08-21'
 ---
 
 
@@ -41,7 +44,20 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-08-21
+
+### Claude Code v2.1.238: メモリ無限増大の修正とMCP認証まわりの破壊的変更
+
+Claude Code v2.1.238のリリース情報。長時間セッションでのメモリ無限増大の重大なバグが修正され、数時間以上の対話セッションの安定性が向上。MCP headersHelperにセキュリティ強化が入り、CI/自動化環境では信頼ダイアログの承認が必須となる破壊的変更を含む。プラグインマーケットプレイスにheadersHelper機能が追加され、プライベート配布での認証が容易に。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/e2b9a324815c7ef21782)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

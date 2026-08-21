@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-08-09'
+updated: '2026-08-21'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -44,6 +44,9 @@ sources:
 - url: https://zenn.dev/sibecat_tech/articles/photo-not-stored-calorie-app
   title: 写真を保存しないカロリー記録アプリを個人開発した話
   date: '2026-08-09'
+- url: https://zenn.dev/manntera/articles/66a7f64cf0534c
+  title: Claude Opus 5 の effort は「賢さのツマミ」ではなくなった(エンジニア向け)
+  date: '2026-08-21'
 ---
 
 
@@ -55,7 +58,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-08-21
+
+### Claude Opus 5 の effort は「賢さのツマミ」ではなくなった(エンジニア向け)
+
+Claude Opus 5では、effortパラメータの役割が根本的に変更された。従来「賢さのツマミ」として機能していたが、Opus 5ではthinkingがデフォルトONとなり、effortは「作業の徹底さ」を制御するパラメータに変化。xhighに上げると探索量は増えるが、仕様が不十分な場合は推測が増幅されるだけで品質は低下する。mediumでも必要な箇所ではモデルが自動的に深く思考するため、安易にeffortを上げるべきではない。
+
+- **ソース**: [Zenn claude](https://zenn.dev/manntera/articles/66a7f64cf0534c)
+- **重要度**: 8/10
+- **タグ**: claude-api, opus, prompt
 
 ---
 

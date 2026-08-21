@@ -9,7 +9,7 @@ tags:
 - prompt
 - setup
 date: '2026-05-24'
-updated: '2026-08-12'
+updated: '2026-08-21'
 sources:
 - url: https://qiita.com/y_tsubasa/items/a0213eaad3402d00ed0a
   title: AI と毎日開発していて定着した、地味だけど効く工夫の棚卸し
@@ -23,12 +23,28 @@ sources:
 - url: https://zenn.dev/u_taaaaan/articles/ai-skills-in-dev-process
   title: AI を「コードを書かせる道具」にしないために開発プロセスにスキルを組み込んだ話
   date: '2026-08-12'
+- url: https://qiita.com/Rai_050902/items/442d1d6b03c9a0e0150f
+  title: AIと3つのシステムを作って、全部捨てた。既に社内にあった「良いファイル」に乗り換えた話
+  date: '2026-08-21'
 ---
 
 
 
 
+
 # Workflow Best Practices
+
+---
+
+## 2026-08-21
+
+### AIと3つのシステムを作って、全部捨てた。既に社内にあった「良いファイル」に乗り換えた話
+
+Claude Codeで成績処理システムを3バージョン作成したが、最終的に既存の社内Excelファイルの方が優れていたため全て破棄した事例。AIによる開発コスト低下により「作る前に既存を調べる」手順が省略されやすくなる副作用と、作らない判断の重要性を示す。業務の入口から出口まで設計された既存ファイルには、実運用で培われた汎用性があり、自作では「最後の一手間」が残っていた。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Rai_050902/items/442d1d6b03c9a0e0150f)
+- **重要度**: 6/10
+- **タグ**: claude-code
 
 ---
 

@@ -10,7 +10,7 @@ tags:
 - performance
 - prompt
 date: '2026-04-06'
-updated: '2026-08-16'
+updated: '2026-08-21'
 sources:
 - url: https://qiita.com/emi_ndk/items/c3b99612ec044e5d612e
   title: 【緊急警告】MCPサーバーが60日で30件のCVE！Azure脆弱性は「認証ゼロ」でCVSS 9.1
@@ -24,12 +24,28 @@ sources:
 - url: https://ai-heartland.com/security/nginx-ui-mcp-rce-vulnerability-chain
   title: nginx-ui 脆弱性 CVE-2026-33032｜MCP機能起点の認証バイパスから半年で25件超のRCE連鎖
   date: '2026-08-16'
+- url: https://qiita.com/shinji_bank/items/d374470edf72431d986a
+  title: 自作MCPサーバで「Tool Poisoning」を試す（Claude Codeを騙してみた）
+  date: '2026-08-21'
 ---
 
 
 
 
+
 # Mcp Security Vulnerabilities
+
+---
+
+## 2026-08-21
+
+### 自作MCPサーバで「Tool Poisoning」を試す（Claude Codeを騙してみた）
+
+MCPサーバの説明文（description）を実装と異なる内容に偽装し、Claude Codeがどう反応するか検証した記事。delete_memoの説明文だけ変更した場合は矛盾を検知したが、関数名もview_memo_detailに偽装すると実行されてしまい、Tool Poisoning攻撃が成立することを実証。MCPのセキュリティリスクを具体的に示した実験報告。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/shinji_bank/items/d374470edf72431d986a)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code, bugfix
 
 ---
 
