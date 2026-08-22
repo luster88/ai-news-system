@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-11'
-updated: '2026-08-20'
+updated: '2026-08-22'
 sources:
 - url: https://ai-heartland.com/explain/ponytail-lazy-senior-dev
   title: Ponytail解説｜AIエージェントに『怠惰なシニア』を憑依させコードを54%削るClaude Codeスキル
@@ -21,11 +21,27 @@ sources:
 - url: https://zenn.dev/nanakusataro/articles/9417aa2b568c20
   title: grill-me / grilling をローカルLLM向けに改変してみた
   date: '2026-08-20'
+- url: https://ai-heartland.com/explain/eli5-skill-claude-code
+  title: ELI5スキルとは｜Anthropic社員が公開した/eli5の中身は全文3行、導入手順と同名スキルの見分け方
+  date: '2026-08-22'
 ---
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-08-22
+
+### ELI5スキルとは｜Anthropic社員が公開した/eli5の中身は全文3行、導入手順と同名スキルの見分け方
+
+Anthropic社員が公開したClaude CodeスキルELI5の詳細解説。スキル本体はわずか3行・321バイトで、大きな絵と少ない言葉でHTMLアーティファクトを生成する。公式スキル集ではなくコミュニティマーケットプレイスに登録されたプラグインであることを明確化。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/eli5-skill-claude-code)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, 新機能
 
 ---
 

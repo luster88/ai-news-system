@@ -9,7 +9,7 @@ tags:
 - pricing
 - 新機能
 date: '2026-04-03'
-updated: '2026-08-15'
+updated: '2026-08-22'
 sources:
 - url: https://qiita.com/kotauchisunsun/items/ab78bb338500b4c71103
   title: Claude Codeの首位陥落。CodexがシェアNo.1へ。 ～データで見る2026年3月のAI Codingの動向まとめ～
@@ -21,11 +21,27 @@ sources:
   title: Investor pressure forces Nvidia to shrink its OpenAI bet just as Anthropic's
     numbers defy bubble warnings
   date: '2026-08-15'
+- url: https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates
+  title: OpenAI is gaining on Anthropic with business users, new data indicates
+  date: '2026-08-22'
 ---
 
 
 
+
 # Market Trends
+
+---
+
+## 2026-08-22
+
+### OpenAI is gaining on Anthropic with business users, new data indicates
+
+企業向けクレジットカード会社Rampのデータによると、ビジネスユーザー市場でAnthropicが5月以降リードを維持しているものの（44% vs 40%）、OpenAIが直近のQ3で急成長中。7万社以上のデータから、企業はモデルリリースごとに両社を行き来しており、エンタープライズAI支出の定着性に疑問が呈されている。GPT-5.6 Solが開発者に好評な一方、Fable 5は期待外れとの評価。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates)
+- **重要度**: 7/10
+- **タグ**: pricing, performance, cowork
 
 ---
 

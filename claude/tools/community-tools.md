@@ -7,8 +7,9 @@ tags:
 - cowork
 - opus
 - performance
+- prompt
 date: '2026-03-27'
-updated: '2026-08-17'
+updated: '2026-08-22'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s5bc5e/showcase_world_visualizer_is_claude_dumb_for_you
   title: Showcase] (World Visualizer) Is claude dumb for you today?
@@ -16,10 +17,26 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vqx297/i_coded_terminal_manager_for_adhd_brains_100
   title: I coded terminal manager for ADHD brains. 100% Opensource.
   date: '2026-08-17'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vvi3x1/i_built_an_english_claudish_translator
+  title: I built an English ↔ Claudish translator
+  date: '2026-08-22'
 ---
 
 
+
 # Community Tools
+
+---
+
+## 2026-08-22
+
+### I built an English ↔ Claudish translator
+
+コミュニティメンバーが「Claudish」（Claudeの特徴的な表現スタイル）と英語を相互翻訳するツールを開発しました。ProgramAsWeightsを使用したニューラルプログラムとして実装されており、CPUで動作可能です。デモサイトとGitHubでコードが公開されており、以前投稿されたClaudish翻訳プラグインに触発されて作成されました。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vvi3x1/i_built_an_english_claudish_translator)
+- **重要度**: 4/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

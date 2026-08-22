@@ -6,10 +6,11 @@ tags:
 - bugfix
 - claude-code
 - cowork
+- pricing
 - release
 - 新機能
 date: '2026-07-12'
-updated: '2026-08-21'
+updated: '2026-08-22'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -36,6 +37,9 @@ sources:
 - url: https://qiita.com/picnic/items/e2b9a324815c7ef21782
   title: 'Claude Code v2.1.238: メモリ無限増大の修正とMCP認証まわりの破壊的変更'
   date: '2026-08-21'
+- url: https://qiita.com/picnic/items/ff939c5e26e47d011a58
+  title: 'Claude Code v2.1.239: Bedrock二重課金バグ修正とPython SDK移行コマンド追加'
+  date: '2026-08-22'
 ---
 
 
@@ -45,7 +49,20 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-08-22
+
+### Claude Code v2.1.239: Bedrock二重課金バグ修正とPython SDK移行コマンド追加
+
+Claude Code v2.1.239では、Amazon Bedrock経由でプロキシ使用時にAPIコールが2倍課金されていた重大なバグが修正されました。また、Python SDK 0.xから1.xへの移行を支援する/claude-api upgradeコマンドが追加され、データレジデンシー対応ワークスペースのコスト見積もりロジックも修正されています。プロキシ環境のユーザーは過去の請求額を確認し、予算設定の見直しが推奨されます。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/ff939c5e26e47d011a58)
+- **重要度**: 8/10
+- **タグ**: claude-code, bugfix, pricing
 
 ---
 

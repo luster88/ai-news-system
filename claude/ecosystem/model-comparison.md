@@ -12,7 +12,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-03-24'
-updated: '2026-08-11'
+updated: '2026-08-22'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -52,6 +52,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vls7dp/fable_5_vs_opus_5_for_2d_sprites
   title: Fable 5 vs Opus 5 for 2D Sprites
   date: '2026-08-11'
+- url: https://zenn.dev/pdfractal/articles/55929755eb39c1
+  title: なぜ、GPTのTerra以下、ClaudeのSonnet以下、Geminiの全部に価値が無いのか？
+  date: '2026-08-22'
 ---
 
 
@@ -65,7 +68,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-08-22
+
+### なぜ、GPTのTerra以下、ClaudeのSonnet以下、Geminiの全部に価値が無いのか？
+
+2026年の大規模言語モデル市場において、各社が階層別商品を提供しているが、ITエンジニアの高度な知的作業においては最上位モデル以外に価値がないという主張。弱いモデルは誤った仮説を自己修正できず、人間に「認知負債」を発生させ、監督コストが節約された計算資源を上回る。思考には価値ある仮説構築と、AIの誤りを監視する維持管理的思考があり、後者は本来AIが削減すべき雑用である。
+
+- **ソース**: [Zenn claude](https://zenn.dev/pdfractal/articles/55929755eb39c1)
+- **重要度**: 4/10
+- **タグ**: opus, sonnet, performance
 
 ---
 

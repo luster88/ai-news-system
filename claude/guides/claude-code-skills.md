@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-08-15'
+updated: '2026-08-22'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -67,6 +67,9 @@ sources:
 - url: https://qiita.com/kamome_susume/items/360f3ac1657545a8bec5
   title: Claude Codeで設計書用スキルを定義するベストプラクティスは？役立つ5つの方法
   date: '2026-08-15'
+- url: https://qiita.com/yukisnow0704/items/caf4204158b6661d4108
+  title: Claude Skillを自作して、コミットメッセージ・PR説明文を自動生成してみた
+  date: '2026-08-22'
 ---
 
 
@@ -85,7 +88,20 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-08-22
+
+### Claude Skillを自作して、コミットメッセージ・PR説明文を自動生成してみた
+
+Claude CodeでSkill機能を使い、git diffからConventional Commits形式のコミットメッセージやPR説明文を自動生成する仕組みを実装。SKILL.mdにdescriptionを詳細に記述することで、間接的な依頼でも発火するよう設計。実際のdiffを用いた3パターンのテストケース（新機能追加、バグ修正+テスト、無関係な変更混在）で動作を検証している。
+
+- **ソース**: [Qiita claude](https://qiita.com/yukisnow0704/items/caf4204158b6661d4108)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, 新機能
 
 ---
 
