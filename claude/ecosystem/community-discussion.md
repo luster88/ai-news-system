@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-08-01'
+updated: '2026-08-23'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -64,6 +64,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vcg25v/i_dont_see_the_tech_sector_surviving_this_timeline
   title: I don't see the tech sector surviving this timeline
   date: '2026-08-01'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vw1gfy/why_do_most_tech_subs_seem_to_hate_claude_so_much
+  title: Why do most tech subs seem to hate Claude so much?
+  date: '2026-08-23'
 ---
 
 
@@ -79,7 +82,20 @@ sources:
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-08-23
+
+### Why do most tech subs seem to hate Claude so much?
+
+大手テック企業のシニア開発者が、Claude を業務で活用し生産性が 10 倍向上した体験を共有。他の技術系サブレディットでは Claude への否定的な意見が多いが、適切なコンテキスト提供とテスト、フィードバックループを回せば極めて有用であると主張。月300ドル程度のコストで大量のコードを出荷でき、デバッグも Claude 自身に依頼可能。技術者には AI と協働する新しい働き方への適応が求められている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vw1gfy/why_do_most_tech_subs_seem_to_hate_claude_so_much)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, performance
 
 ---
 

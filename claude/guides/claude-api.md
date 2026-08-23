@@ -8,11 +8,12 @@ tags:
 - haiku
 - opus
 - performance
+- pricing
 - prompt
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-08-21'
+updated: '2026-08-23'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -47,6 +48,9 @@ sources:
 - url: https://zenn.dev/manntera/articles/66a7f64cf0534c
   title: Claude Opus 5 の effort は「賢さのツマミ」ではなくなった(エンジニア向け)
   date: '2026-08-21'
+- url: https://zenn.dev/muno_sunsun/articles/dea8db4298b195
+  title: Claude API (Messages API) を TypeScript から使ってみた
+  date: '2026-08-23'
 ---
 
 
@@ -59,7 +63,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-08-23
+
+### Claude API (Messages API) を TypeScript から使ってみた
+
+Claude の Messages API を TypeScript から利用する実装例を紹介。Claude Console への登録が必要で、プロプランとは別料金（$5から利用可能）。SDK を使って環境変数 ANTHROPIC_API_KEY を設定し、簡単に API を呼び出せる。role: assistant を使った高度な実装パターンも可能。
+
+- **ソース**: [Zenn claude](https://zenn.dev/muno_sunsun/articles/dea8db4298b195)
+- **重要度**: 6/10
+- **タグ**: claude-api, setup, pricing
 
 ---
 

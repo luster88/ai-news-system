@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-08-19'
+updated: '2026-08-23'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -294,6 +294,9 @@ sources:
 - url: https://zenn.dev/saltmu/articles/e1414887002126
   title: Claudeでコードを書き、Codexでレビューさせた時におきたこと
   date: '2026-08-19'
+- url: https://zenn.dev/crandim_r_and_d/articles/260822_a10_handoff_questions_workflow
+  title: Claude Code のセッション引き継ぎは「現在地スナップショット」で回す — HANDOFF / QUESTIONS / 採番の型
+  date: '2026-08-23'
 ---
 
 
@@ -369,7 +372,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-08-23
+
+### Claude Code のセッション引き継ぎは「現在地スナップショット」で回す — HANDOFF / QUESTIONS / 採番の型
+
+Claude Codeでセッションを細かく切る際のコンテキスト管理手法。HANDOFF.mdを時系列ログではなく「現在地スナップショット」型で運用し、QUESTIONS別ファイル化とQ1・P2式の一意採番を組み合わせることで、セッション間の引き継ぎを効率化。CLAUDE.mdにHANDOFF/TAKEOVERトリガーを定義し、グローバルに使える運用の型として確立した実践例。
+
+- **ソース**: [Zenn claude](https://zenn.dev/crandim_r_and_d/articles/260822_a10_handoff_questions_workflow)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 
