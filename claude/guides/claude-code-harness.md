@@ -7,9 +7,10 @@ tags:
 - cowork
 - mcp
 - setup
+- windows
 - 新機能
 date: '2026-04-04'
-updated: '2026-08-18'
+updated: '2026-08-24'
 sources:
 - url: https://zenn.dev/kosk_t/articles/claude-code-harness-audit-skill
   title: Claude Codeの設定、何から手をつける？ ハーネスエンジニアリングを体系化するスキルを作った
@@ -20,11 +21,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vrjryf/week_3_of_making_my_fishing_game_entirely_with_ai
   title: Week 3 of making my fishing game entirely with AI
   date: '2026-08-18'
+- url: https://zenn.dev/itdo/articles/8c62b571b7ec6e
+  title: ChatGPT／CodexとClaude／Claude Codeを整理する――製品名ではなく4つの軸で見る
+  date: '2026-08-24'
 ---
 
 
 
+
 # Claude Code Harness
+
+---
+
+## 2026-08-24
+
+### ChatGPT／CodexとClaude／Claude Codeを整理する――製品名ではなく4つの軸で見る
+
+ChatGPT/CodexとClaude/Claude Codeの違いを製品名ではなく4つの軸（業務/開発、操作IF、実行環境、Windows/WSL2）で整理。デスクトップアプリ利用でも実行場所はLocal/Cloud/Remoteで異なり、製品選択には作業目的・必要資源・継続条件・OS環境を先に決めることが重要と解説。
+
+- **ソース**: [Zenn claude](https://zenn.dev/itdo/articles/8c62b571b7ec6e)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, windows
 
 ---
 

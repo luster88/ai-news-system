@@ -10,9 +10,10 @@ tags:
 - mcp
 - performance
 - setup
+- windows
 - 新機能
 date: '2026-03-25'
-updated: '2026-08-16'
+updated: '2026-08-24'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -133,6 +134,9 @@ sources:
 - url: https://qiita.com/josezuma/items/4c10a1c7e0b2404a8b57
   title: ClaudeやAIエージェントに毎回「会社のこと」を説明するのをやめたくて、Company Brainを作った
   date: '2026-08-16'
+- url: https://ai-heartland.com/tool/x64dbg-mcp-server-ai-reverse-engineering
+  title: x64dbg-MCP Serverとは｜AIにデバッガを操作させるZig製MCPプラグイン71ツール実測
+  date: '2026-08-24'
 ---
 
 
@@ -170,7 +174,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-08-24
+
+### x64dbg-MCP Serverとは｜AIにデバッガを操作させるZig製MCPプラグイン71ツール実測
+
+x64dbg-MCP Serverは、WindowsデバッガのX64dbgをMCP経由でAIが操作できるようにするZig製ネイティブプラグイン。71種のツールと22種のイベントコールバックを提供し、ブレークポイント設定やメモリ操作、逆アセンブルなどをAIに実行させられる。依存ゼロの単一バイナリで、GUIの手動操作を代替可能。2026年8月公開後2日で891スターを獲得。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/x64dbg-mcp-server-ai-reverse-engineering)
+- **重要度**: 6/10
+- **タグ**: mcp, windows, 新機能
 
 ---
 

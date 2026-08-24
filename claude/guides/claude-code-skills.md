@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-08-22'
+updated: '2026-08-24'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -70,6 +70,9 @@ sources:
 - url: https://qiita.com/yukisnow0704/items/caf4204158b6661d4108
   title: Claude Skillを自作して、コミットメッセージ・PR説明文を自動生成してみた
   date: '2026-08-22'
+- url: https://ai-heartland.com/explain/claude-official-skills-19-japanese-coverage
+  title: Anthropic公式スキルは17個ではなく19個｜日本語解説の空白地帯を全数調査した
+  date: '2026-08-24'
 ---
 
 
@@ -89,7 +92,20 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-08-24
+
+### Anthropic公式スキルは17個ではなく19個｜日本語解説の空白地帯を全数調査した
+
+Anthropic公式スキルは一般に「17個」と紹介されているが、実際には19個存在する。2026年8月17日にdiscernment-nudgeとacademy-guideが追加されたが、これらの日本語解説は存在しない。全19スキルの日本語カバレッジを調査し、単独記事の有無やカタログ掲載状況を3段階で分類した詳細なレポート。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/claude-official-skills-19-japanese-coverage)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能
 
 ---
 

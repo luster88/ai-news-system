@@ -7,14 +7,30 @@ tags:
 - performance
 - setup
 date: '2026-07-15'
-updated: '2026-07-15'
+updated: '2026-08-24'
 sources:
 - url: https://zenn.dev/mskbhd/articles/lab-102-claude
   title: Claudeのプロジェクト履歴を解析して、自分の作業パターンを可視化してみた
   date: '2026-07-15'
+- url: https://qiita.com/chiisanasoft/items/de047ac451a8b49c740c
+  title: Claude Code のログでブランチ運用を数えたら、git_branch の "HEAD" が2つの意味を持っていた
+  date: '2026-08-24'
 ---
 
+
 # Claude Code Analytics
+
+---
+
+## 2026-08-24
+
+### Claude Code のログでブランチ運用を数えたら、git_branch の "HEAD" が2つの意味を持っていた
+
+Claude Codeの4ヶ月分436セッションのログを分析した結果、名前付きブランチでの作業は12セッション(2.8%)のみだった。git_branchに記録される「HEAD」には、detached HEADとリポジトリ外の2つの意味があり、198件のうち66件が前者、132件が後者だった。集計では、ターンが0件のセッション除外、cwdの多数決による.git判定、母数の定義などに注意が必要。
+
+- **ソース**: [Qiita claude](https://qiita.com/chiisanasoft/items/de047ac451a8b49c740c)
+- **重要度**: 5/10
+- **タグ**: claude-code
 
 ---
 

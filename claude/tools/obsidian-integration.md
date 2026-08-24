@@ -5,9 +5,11 @@ subcategory: obsidian-integration
 tags:
 - claude-code
 - cowork
+- mcp
 - prompt
+- setup
 date: '2026-03-22'
-updated: '2026-04-09'
+updated: '2026-08-24'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s00ajb/im_a_phd_student_in_ai_and_i_built_a_10agent
   title: I'm a PhD student in AI and I built a 10-agent Obsidian crew because my brain
@@ -16,10 +18,26 @@ sources:
 - url: https://zenn.dev/wfukatsu/articles/a70a311f5a7b51
   title: Claude Code で、Obsidian 上に Wiki を作る
   date: '2026-04-09'
+- url: https://ai-heartland.com/tool/claude-obsidian-ai-knowledge-vault
+  title: claude-obsidianとは｜Obsidian金庫をAIが自己組織化する15スキルの中身と安全設計
+  date: '2026-08-24'
 ---
 
 
+
 # Obsidian Integration
+
+---
+
+## 2026-08-24
+
+### claude-obsidianとは｜Obsidian金庫をAIが自己組織化する15スキルの中身と安全設計
+
+claude-obsidianは、ObsidianのvaultをMarkdownのまま保ちながらClaude Codeで整理するローカルファーストのナレッジ基盤（★11,358）。15のスキルで素材取り込み→出典台帳化→リンク生成→vault内根拠からの回答を実現し、破壊的操作はSHA-256承認の二段階フローで安全性を確保。読み取り専用と書き込みスキルを明確に分離し、BM25ベースの検索でベクトルDB不要な実務的設計が特徴。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/claude-obsidian-ai-knowledge-vault)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, setup
 
 ---
 

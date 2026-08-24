@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-08-23'
+updated: '2026-08-24'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -297,6 +297,12 @@ sources:
 - url: https://zenn.dev/crandim_r_and_d/articles/260822_a10_handoff_questions_workflow
   title: Claude Code のセッション引き継ぎは「現在地スナップショット」で回す — HANDOFF / QUESTIONS / 採番の型
   date: '2026-08-23'
+- url: https://zenn.dev/denwaya/articles/grill-me-askuserquestion
+  title: grill-me の質問攻めを CLAUDE.md で AskUserQuestion に置き換えたら楽になった
+  date: '2026-08-24'
+- url: https://qiita.com/fuji1009_REBELL/items/8b6638fc7d100571e26e
+  title: 「出力を減らすと情報が増える」をCLAUDE.mdのタスク運用で検証してみた
+  date: '2026-08-24'
 ---
 
 
@@ -373,7 +379,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-08-24
+
+### grill-me の質問攻めを CLAUDE.md で AskUserQuestion に置き換えたら楽になった
+
+grill-meスキルの質問方式を改善した事例。従来の自由記述形式から、Claude CodeのAskUserQuestionツールを使った選択肢形式に変更することで操作性を向上。CLAUDE.mdにカスタム指示を追加する方法を紹介し、サードパーティスキルの更新時に設定が消えない工夫も解説。
+
+- **ソース**: [Zenn claude](https://zenn.dev/denwaya/articles/grill-me-askuserquestion)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
+
+---
+
+### 「出力を減らすと情報が増える」をCLAUDE.mdのタスク運用で検証してみた
+
+Claude Code使用時にタスク管理台帳（tasks.md）を全文読み込ませるのではなく、索引ファイルのみを読ませることでトークン消費を約35%削減（約35,000トークン）。詳細が必要な時だけgrepで該当部分を読む運用に切り替えた。「出力を減らすと情報が増える」という逆説を入力側（コンテキスト設計）でも検証し、台帳が肥大化しても起動時コストは92%減を実現した実例。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/fuji1009_REBELL/items/8b6638fc7d100571e26e)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

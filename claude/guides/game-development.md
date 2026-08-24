@@ -11,7 +11,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-05-29'
-updated: '2026-08-16'
+updated: '2026-08-24'
 sources:
 - url: https://qiita.com/hiro_qiita_/items/152cc2ef68d5fb17b790
   title: Kiro のだいぼうけん！開発記 〜ファミコンの制約を守りながらKiroとClaudeにシューティングゲームを作らせる〜
@@ -32,6 +32,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vq3rtp/i_built_my_first_unity_game_with_claude
   title: I built my first Unity game with Claude
   date: '2026-08-16'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vxdnw6/week_4_of_making_my_fishing_game_entirely_with_ai
+  title: Week 4 of making my fishing game entirely with AI
+  date: '2026-08-24'
 ---
 
 
@@ -39,7 +42,20 @@ sources:
 
 
 
+
 # Game Development
+
+---
+
+## 2026-08-24
+
+### Week 4 of making my fishing game entirely with AI
+
+RedditユーザーがClaudeを使って釣りゲームを開発する進捗レポート（第4週目）。Godotエンジン、Claude Code、Blender（MCP経由）、Tripo 3Dを組み合わせ、画像生成はChatGPTを使用。これまでに約300ドルを投資し、水面表現などの細部を調整中。過去の週次更新へのリンクも含まれている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vxdnw6/week_4_of_making_my_fishing_game_entirely_with_ai)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, cowork
 
 ---
 
