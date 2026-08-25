@@ -9,7 +9,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-03-30'
-updated: '2026-08-07'
+updated: '2026-08-25'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s7qu07/i_built_a_universal_claudemd_that_cuts_claude
   title: I built a universal CLAUDE.md that cuts Claude output tokens by 63% - validated
@@ -21,11 +21,27 @@ sources:
 - url: https://qiita.com/tomada/items/46e675f6ced44dcd10ad
   title: トークン浪費と性能低下を防ぐ、Claude Code の自動引き継ぎ hook を作った
   date: '2026-08-07'
+- url: https://qiita.com/inoyu-qiita/items/5b36829f86d1d85a1ab7
+  title: 丁寧すぎるClaude Codeを原始人にしたら、トークン使用量が3割減った
+  date: '2026-08-25'
 ---
 
 
 
+
 # Claude Code Optimization
+
+---
+
+## 2026-08-25
+
+### 丁寧すぎるClaude Codeを原始人にしたら、トークン使用量が3割減った
+
+Claude Codeの丁寧すぎる返答を簡潔化するプラグイン「genshijin」の紹介記事。敬語や前置きを削減することで、トークン使用量を約3割削減できた実験結果を報告。日本語特有の冗長表現（承知いたしました、〜させていただきますなど）を削りつつ、技術的内容は保持する設計。3段階のモード切り替えが可能で、公式プラグインディレクトリから簡単にインストールできる。
+
+- **ソース**: [Qiita claude](https://qiita.com/inoyu-qiita/items/5b36829f86d1d85a1ab7)
+- **重要度**: 6/10
+- **タグ**: claude-code, performance, prompt
 
 ---
 

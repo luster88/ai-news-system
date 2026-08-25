@@ -9,7 +9,7 @@ tags:
 - windows
 - 新機能
 date: '2026-04-09'
-updated: '2026-07-07'
+updated: '2026-08-25'
 sources:
 - url: https://the-decoder.com/claude-cowork-expands-to-all-paid-plans-on-macos-and-windows-with-new-org-controls
   title: Claude Cowork expands to all paid plans on macOS and Windows with new org
@@ -25,11 +25,27 @@ sources:
 - url: https://the-decoder.com/anthropics-claude-cowork-ai-agent-is-now-available-on-mobile-and-web
   title: Anthropic's Claude Cowork AI agent is now available on mobile and web
   date: '2026-07-07'
+- url: https://techcrunch.com/2026/08/25/claude-cowork-finally-remembers-what-you-told-the-app-in-chat
+  title: Claude Cowork finally remembers what you told the app in chat
+  date: '2026-08-25'
 ---
 
 
 
+
 # Claude Cowork Expansion
+
+---
+
+## 2026-08-25
+
+### Claude Cowork finally remembers what you told the app in chat
+
+Anthropic が Claude のメモリシステムを統合し、チャットと Claude Cowork 間で記憶を共有可能に。これまでチャットで話した内容を Cowork で再度説明する必要があった問題が解消される。ユーザーはメモリの内容を閲覧・編集・削除でき、会話中にリアルタイムでメモリが更新される。デフォルトで機密情報は保存されないが、オプトインで有効化も可能。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/08/25/claude-cowork-finally-remembers-what-you-told-the-app-in-chat)
+- **重要度**: 8/10
+- **タグ**: 新機能, cowork
 
 ---
 

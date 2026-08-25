@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-08-24'
+updated: '2026-08-25'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -303,6 +303,12 @@ sources:
 - url: https://qiita.com/fuji1009_REBELL/items/8b6638fc7d100571e26e
   title: 「出力を減らすと情報が増える」をCLAUDE.mdのタスク運用で検証してみた
   date: '2026-08-24'
+- url: https://zenn.dev/cutcha/articles/b6abccb42ecacf
+  title: 引き継ぎプロンプトから解放 ― セッション管理を不要にする「STATE LOOP」という運用
+  date: '2026-08-25'
+- url: https://zenn.dev/web_benriya/articles/claude-code-gemini-cli-orchestration-ec
+  title: Claude Code × Gemini CLIをオーケストレーションしてEC分析を多角的に回す方法
+  date: '2026-08-25'
 ---
 
 
@@ -380,7 +386,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-08-25
+
+### 引き継ぎプロンプトから解放 ― セッション管理を不要にする「STATE LOOP」という運用
+
+Claude Codeの長時間セッション運用で引き継ぎプロンプトを33世代繰り返した結果、2.2億トークンのコスト問題に直面。STATE LOOPという運用手法を開発し、ステートファイル(STATE.md)を唯一の正本として使い捨てセッション(claude -p)で1タスクずつ処理することで引き継ぎを不要化。コンテキストは2万トークンで頭打ちとなり、従来の30万トークンから大幅削減に成功した実録。
+
+- **ソース**: [Zenn claude](https://zenn.dev/cutcha/articles/b6abccb42ecacf)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
+
+---
+
+### Claude Code × Gemini CLIをオーケストレーションしてEC分析を多角的に回す方法
+
+Claude CodeとGemini CLIを組み合わせたオーケストレーション手法を紹介する記事。GA4のBigQueryデータを用いたEC分析において、Claude Codeでクエリ設計、Gemini CLIでビジネス解釈を行う役割分担を提案。カゴ落ち分析やリピート購買分析など、EC特有の分析を自動化する方法を解説している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/web_benriya/articles/claude-code-gemini-cli-orchestration-ec)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

@@ -12,7 +12,7 @@ tags:
 - windows
 - 新機能
 date: '2026-04-04'
-updated: '2026-08-17'
+updated: '2026-08-25'
 sources:
 - url: https://qiita.com/taiki_i/items/2d75a882e0f3187f6bb8
   title: あなたの CLAUDE.md、ちゃんと機能してますか？作り方から公式プラグインで採点するまでの道のり
@@ -71,6 +71,9 @@ sources:
 - url: https://zenn.dev/mingw/articles/d76fdd1e899ad7
   title: Claude Code入門：インストールから最初の自動化まで全部やる
   date: '2026-08-17'
+- url: https://qiita.com/locallab/items/837c90ae56e6e58cbecc
+  title: Claude Code を導入して分かった10の実践ポイント — AI ペアプロを最大活用するための設定・運用ガイド
+  date: '2026-08-25'
 ---
 
 
@@ -88,7 +91,20 @@ sources:
 
 
 
+
 # Claude Code Setup
+
+---
+
+## 2026-08-25
+
+### Claude Code を導入して分かった10の実践ポイント — AI ペアプロを最大活用するための設定・運用ガイド
+
+Claude Codeの実践的な10の運用ポイントを解説。CLAUDE.mdによるコンテキスト管理、スラッシュコマンド活用、許可ルール整備、git worktreeとの組み合わせなど、AI支援開発を最大限活用するための設定・運用ガイド。特に--dangerously-skip-permissionsを避け、適切な許可ルール設計を推奨している。
+
+- **ソース**: [Qiita claude](https://qiita.com/locallab/items/837c90ae56e6e58cbecc)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

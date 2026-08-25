@@ -4,13 +4,14 @@ category: guides
 subcategory: claude-code-hooks
 tags:
 - claude-code
+- haiku
 - mac
 - mcp
 - prompt
 - setup
 - 新機能
 date: '2026-03-23'
-updated: '2026-08-18'
+updated: '2026-08-25'
 sources:
 - url: https://qiita.com/pro-tein/items/49e5dbec705c3497dd51
   title: 【Claude Code】Hooks機能でデスクトップ通知を設定してみた
@@ -37,6 +38,9 @@ sources:
 - url: https://qiita.com/YujiNaramoto/items/75e2d273cdd4a72df2cb
   title: なぜClaude Codeのauto-compact対策をPreCompact/SessionStart hookで実装するのか
   date: '2026-08-18'
+- url: https://zenn.dev/yui/articles/97597aa13b9802
+  title: Claude Codeの規律をhookに降ろしたら、Haikuでも壊れなくなった
+  date: '2026-08-25'
 ---
 
 
@@ -46,7 +50,20 @@ sources:
 
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-08-25
+
+### Claude Codeの規律をhookに降ろしたら、Haikuでも壊れなくなった
+
+Claude Codeのhooks機能を活用し、プロンプトベースのルール遵守から機械的な自動チェックへ移行する手法を解説。機械判定可能なコーディング規約をPostToolUseフックで自動レビューすることで、コンテキスト長やモデルランクに依存せず100%の発火率を実現。Haikuでも確実にルールを守らせることが可能になり、トークンコストも削減できる。
+
+- **ソース**: [Zenn claude](https://zenn.dev/yui/articles/97597aa13b9802)
+- **重要度**: 7/10
+- **タグ**: claude-code, haiku, setup
 
 ---
 
