@@ -13,7 +13,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-25'
-updated: '2026-08-24'
+updated: '2026-08-27'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -137,6 +137,9 @@ sources:
 - url: https://ai-heartland.com/tool/x64dbg-mcp-server-ai-reverse-engineering
   title: x64dbg-MCP Serverとは｜AIにデバッガを操作させるZig製MCPプラグイン71ツール実測
   date: '2026-08-24'
+- url: https://ai-heartland.com/tool/openconnector-mcp-saas-gateway
+  title: OpenConnectorとは｜導入・使い方からMCP連携まで。1400+SaaSをAIエージェントに繋ぐOSS
+  date: '2026-08-27'
 ---
 
 
@@ -175,7 +178,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-08-27
+
+### OpenConnectorとは｜導入・使い方からMCP連携まで。1400+SaaSをAIエージェントに繋ぐOSS
+
+OpenConnectorは、AIエージェントと1,400以上のSaaSサービスを安全に接続するOSSゲートウェイ。エージェントに直接認証情報を渡さず、ゲートウェイ経由でGmail、Notion、Slackなどを操作可能にする。MCPサーバーとしても動作し、Composio/Pipedreamのオープンソース代替として位置づけられる。Apache-2.0ライセンスのTypeScript製で、セルフホストにより認証情報とログを自環境に保持できる。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/openconnector-mcp-saas-gateway)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-api, setup
 
 ---
 

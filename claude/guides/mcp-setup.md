@@ -7,7 +7,7 @@ tags:
 - mcp
 - setup
 date: '2026-04-07'
-updated: '2026-08-15'
+updated: '2026-08-27'
 sources:
 - url: https://qiita.com/76Hata/items/6ce2cde9826f5c3a1de2
   title: MCP（Model Context Protocol）入門 — AIエージェントと外部ツールをつなぐ標準規格
@@ -24,13 +24,29 @@ sources:
 - url: https://zenn.dev/muno_sunsun/articles/084d52521d62c9
   title: MCP（Model Context Protocol）を使ってみる
   date: '2026-08-15'
+- url: https://qiita.com/caymezon/items/54bace290d5ee4245220
+  title: Claude DesktopでGitHub MCPを設定する際のPersonal Access Tokenスコープの絞り方
+  date: '2026-08-27'
 ---
 
 
 
 
 
+
 # Mcp Setup
+
+---
+
+## 2026-08-27
+
+### Claude DesktopでGitHub MCPを設定する際のPersonal Access Tokenスコープの絞り方
+
+Claude DesktopでGitHub MCPを設定する際のPersonal Access Token（PAT）の適切なスコープ設定方法を解説。Web版と異なりDesktop版ではファイルの読み書きやIssue/PR作成が可能で、PATスコープは必要最小限（主にrepo）に絞ることが重要。JSON設定時の構文エラーやNode.js未インストールなどのトラブルシューティング方法も紹介。Tool Search機能によりコンテキスト使用量を最大95%削減可能。
+
+- **ソース**: [Qiita claude](https://qiita.com/caymezon/items/54bace290d5ee4245220)
+- **重要度**: 6/10
+- **タグ**: mcp, setup, claude-code
 
 ---
 

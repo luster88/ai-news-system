@@ -4,17 +4,35 @@ category: tools
 subcategory: claude-code-harness
 tags:
 - claude-code
+- mcp
 - performance
+- prompt
 - 新機能
 date: '2026-04-14'
-updated: '2026-04-14'
+updated: '2026-08-27'
 sources:
 - url: https://ai-heartland.com/ai/claude/code-harness
   title: Claude Code Harness：Claudeのコード実行を安全に制御するOSSツール
   date: '2026-04-14'
+- url: https://ai-heartland.com/explain/effective-html-claude-code-skills
+  title: effective-htmlとは｜Claude Code・Codexでワイヤーフレーム/プロトタイプを作る6スキルの使い方
+  date: '2026-08-27'
 ---
 
+
 # Claude Code Harness
+
+---
+
+## 2026-08-27
+
+### effective-htmlとは｜Claude Code・Codexでワイヤーフレーム/プロトタイプを作る6スキルの使い方
+
+effective-htmlは、Claude CodeやCodexでHTMLを生成する際に「粒度のブレ」を防ぐための6つのスキル集です。ワイヤーフレーム、プロトタイプ、図表など目的別に分業させることで、意図しない完成度の成果物が返ってくる問題を解決します。GitHubスター2,062、MIT ライセンスで公開されており、ビルド不要の単一HTMLファイルとして動作する点が特徴です。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/effective-html-claude-code-skills)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, prompt
 
 ---
 

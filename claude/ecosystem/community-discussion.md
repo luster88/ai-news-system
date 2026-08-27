@@ -10,11 +10,12 @@ tags:
 - cowork
 - opus
 - performance
+- pricing
 - prompt
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-08-23'
+updated: '2026-08-27'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -67,6 +68,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vw1gfy/why_do_most_tech_subs_seem_to_hate_claude_so_much
   title: Why do most tech subs seem to hate Claude so much?
   date: '2026-08-23'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vz8l1f/why_do_we_trust_microsoft_365_with_sensitive
+  title: Why do we trust Microsoft 365 with sensitive documents, but not AI?
+  date: '2026-08-27'
 ---
 
 
@@ -83,7 +87,20 @@ sources:
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-08-27
+
+### Why do we trust Microsoft 365 with sensitive documents, but not AI?
+
+Microsoft 365やGoogle Workspaceには機密文書を預けるのに、Claude等のAIに契約書を読ませることには抵抗を感じる現象についての考察。AIが導入する新しいリスクと、長年使用してきたソフトウェアへの信頼の違いについてコミュニティで議論されている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vz8l1f/why_do_we_trust_microsoft_365_with_sensitive)
+- **重要度**: 4/10
+- **タグ**: claude-api, pricing, cowork
 
 ---
 

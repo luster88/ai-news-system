@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-08-25'
+updated: '2026-08-27'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -309,6 +309,13 @@ sources:
 - url: https://zenn.dev/web_benriya/articles/claude-code-gemini-cli-orchestration-ec
   title: Claude Code × Gemini CLIをオーケストレーションしてEC分析を多角的に回す方法
   date: '2026-08-25'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1vz70zy/i_claude_coded_a_multiplayer_threejs_tank_game
+  title: I Claude Coded a multiplayer Three.js tank game with 100+ procedural vehicles.
+    Here's my workflow
+  date: '2026-08-27'
+- url: https://zenn.dev/xmichinokux/articles/ea5a08c69dbe22
+  title: Claude Codeを使った開発で苦労したことがないとAIに言ったら「あなたのゲーム開発経験が特殊なんです」と言われて作り方を振り返った
+  date: '2026-08-27'
 ---
 
 
@@ -387,7 +394,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-08-27
+
+### I Claude Coded a multiplayer Three.js tank game with 100+ procedural vehicles. Here's my workflow
+
+開発者がClaude Codeを使用してThree.jsベースのマルチプレイヤータンクゲームを開発した事例。100台以上の車両、16種類のマップ、物理演算による破壊表現を実装。マルチエージェント開発パイプラインでClaudeとCodexを併用し、アーキテクチャ設計やシステム実装を行った。リポジトリにはAGENTS.mdファイルが含まれ、開発ワークフローが文書化されている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1vz70zy/i_claude_coded_a_multiplayer_threejs_tank_game)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, 新機能
+
+---
+
+### Claude Codeを使った開発で苦労したことがないとAIに言ったら「あなたのゲーム開発経験が特殊なんです」と言われて作り方を振り返った
+
+ゲームプランナー経験者が Claude Code での開発プロセスを解説。MVP から始めてコア機能を徹底検証し、周縁部分は後回しにする手法を紹介。バグ報告は現象のみを伝え、直し方は指定しない。UI改善や仕様設計は人間側で徹底的に考えることで、迷走せず完成度の高いアプリを開発できると説明している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/xmichinokux/articles/ea5a08c69dbe22)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 
