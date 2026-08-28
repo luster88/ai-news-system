@@ -8,6 +8,7 @@ tags:
 - claude-code
 - claude-console
 - cowork
+- mcp
 - opus
 - performance
 - pricing
@@ -15,7 +16,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-08-27'
+updated: '2026-08-28'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -71,6 +72,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vz8l1f/why_do_we_trust_microsoft_365_with_sensitive
   title: Why do we trust Microsoft 365 with sensitive documents, but not AI?
   date: '2026-08-27'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1w047gy/i_think_were_starting_to_see_the_downside_of
+  title: I think we’re starting to see the downside of everyone being able to build
+  date: '2026-08-28'
 ---
 
 
@@ -88,7 +92,20 @@ sources:
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-08-28
+
+### I think we’re starting to see the downside of everyone being able to build
+
+Reddit の ClaudeAI コミュニティで、Claude Code により誰でも簡単にソフトウェアを構築できるようになった結果、市場が過度に飽和し、注目を集めることが困難になっているという議論が行われています。投稿者は自身の経験（xCLAUDE Gateway の開発）を例に、構築することよりもユーザーに届けることの方が難しくなっている現状を指摘しています。これは AI 開発ツールの普及がもたらす新たな課題として、コミュニティ内で共感を呼んでいます。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1w047gy/i_think_were_starting_to_see_the_downside_of)
+- **重要度**: 5/10
+- **タグ**: claude-code, cowork, mcp
 
 ---
 

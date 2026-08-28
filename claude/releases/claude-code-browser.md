@@ -10,7 +10,7 @@ tags:
 - release
 - 新機能
 date: '2026-07-12'
-updated: '2026-08-22'
+updated: '2026-08-28'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -40,6 +40,9 @@ sources:
 - url: https://qiita.com/picnic/items/ff939c5e26e47d011a58
   title: 'Claude Code v2.1.239: Bedrock二重課金バグ修正とPython SDK移行コマンド追加'
   date: '2026-08-22'
+- url: https://qiita.com/picnic/items/f6c4074a99d25f780122
+  title: Claude Code v2.1.248まとめ：--restrictedモードとcacheTtlで安全性と速度が向上
+  date: '2026-08-28'
 ---
 
 
@@ -50,7 +53,30 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-08-28
+
+### Claude Code v2.1.248まとめ：--restrictedモードとcacheTtlで安全性と速度が向上
+
+Claude Code v2.1.248がリリースされ、CI/CD環境向けの--restrictedモード、プロンプトキャッシュTTL設定、Bedrock/Vertex/Foundryでのクロスセッション通信対応などが追加されました。長時間セッションでのキャッシュミス問題やセキュリティ関連の重要なバグ修正も含まれています。CI/CDでClaude Codeを使うチームやサブエージェント活用者は特に確認が必要な大型アップデートです。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/f6c4074a99d25f780122)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+### Claude Code v2.1.248まとめ：--restrictedモードとcacheTtlで安全性と速度が向上
+
+Claude Code v2.1.248は、--restrictedモードによるセキュリティ強化、エージェント単位のプロンプトキャッシュTTL設定、Bedrock/Vertex/Foundryでのクロスセッション通信対応を含む大型アップデートです。長時間セッションで発生していたプロンプトキャッシュミスの修正や、機密ファイルの誤アップロード問題も解消されました。CI/CDでの利用やサブエージェント活用においてキャッシュヒット率向上とコスト削減が期待できます。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/picnic/items/f6c4074a99d25f780122)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 

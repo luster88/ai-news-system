@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-01'
-updated: '2026-08-10'
+updated: '2026-08-28'
 sources:
 - url: https://zenn.dev/yuzzzn/articles/45626e1ab08e3c
   title: AIコーディングエージェントをセキュアに使うためのハーネス設計
@@ -23,12 +23,28 @@ sources:
 - url: https://zenn.dev/st_27/articles/efb2436a8cd8e0
   title: ハーネスについての備忘録
   date: '2026-08-10'
+- url: https://qiita.com/eiri_ai/items/39348da4e1627b72c83d
+  title: Claude Code Auto Modeの権限設定をPythonで点検
+  date: '2026-08-28'
 ---
 
 
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-08-28
+
+### Claude Code Auto Modeの権限設定をPythonで点検
+
+Claude Code の Auto Mode 導入前に確認すべき settings.local.json の権限設定について解説。Bash(git *) や Bash(python *) などの広すぎる許可は Auto Mode の安全機能とは別に棚卸しが必要。許可ルールは上書きではなく併合されるため、Python スクリプトで監査対象の設定ファイルから危険な許可を抽出し、粒度を小さくする方法を提案。Auto Mode 切り替え時や MCP サーバー追加時の定期点検を推奨している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/eiri_ai/items/39348da4e1627b72c83d)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

@@ -7,9 +7,10 @@ tags:
 - mcp
 - performance
 - prompt
+- setup
 - 新機能
 date: '2026-04-14'
-updated: '2026-08-27'
+updated: '2026-08-28'
 sources:
 - url: https://ai-heartland.com/ai/claude/code-harness
   title: Claude Code Harness：Claudeのコード実行を安全に制御するOSSツール
@@ -17,10 +18,39 @@ sources:
 - url: https://ai-heartland.com/explain/effective-html-claude-code-skills
   title: effective-htmlとは｜Claude Code・Codexでワイヤーフレーム/プロトタイプを作る6スキルの使い方
   date: '2026-08-27'
+- url: https://ai-heartland.com/explain/avoid-ai-writing-japanese-test
+  title: AIっぽい文章を機械で消すOSSスキル avoid-ai-writing｜日本語で実測したら検出器が動かず
+  date: '2026-08-28'
+- url: https://ai-heartland.com/tool/claude-seo-claude-code-seo-audit
+  title: claude-seoとは｜Claude Code SEO監査25スキルを日本語サイトで実測した結果と限界
+  date: '2026-08-28'
 ---
 
 
+
 # Claude Code Harness
+
+---
+
+## 2026-08-28
+
+### AIっぽい文章を機械で消すOSSスキル avoid-ai-writing｜日本語で実測したら検出器が動かず
+
+AIが生成した文章の型を検出・修正するOSSスキル「avoid-ai-writing」を日本語で実測した記事。スキルは指示書(SKILL.md)と検出エンジン(patterns.js)の2部構成だが、検出エンジンは日本語を空白区切りで語数カウントするため機能せず、指示書側のみが日本語の「XではなくY」構文などを検出可能。Claude Codeなどで動作し、発火確認は--output-format stream-jsonで行う。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/avoid-ai-writing-japanese-test)
+- **重要度**: 5/10
+- **タグ**: claude-code, prompt, setup
+
+---
+
+### claude-seoとは｜Claude Code SEO監査25スキルを日本語サイトで実測した結果と限界
+
+claude-seoはClaude Codeに25スキルと18サブエージェントを追加するOSSのSEO監査ツール。日本語サイトでの実測では構造化データ検証やリンク構造分析は機能するが、コンテンツ品質スコアは英語専用トークナイザのため日本語本文を評価できない。実装は判断をLLMに任せ、決定的計算のみPythonで処理する設計。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/claude-seo-claude-code-seo-audit)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup
 
 ---
 

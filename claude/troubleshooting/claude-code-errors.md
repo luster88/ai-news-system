@@ -8,7 +8,7 @@ tags:
 - opus
 - setup
 date: '2026-06-05'
-updated: '2026-08-19'
+updated: '2026-08-28'
 sources:
 - url: https://qiita.com/natume_nat/items/76fe608d570caebb4f4c
   title: Claude Codeで「The model's tool call could not be parsed」エラーを回避する方法
@@ -19,11 +19,27 @@ sources:
 - url: https://qiita.com/homhom44/items/572977c7ad8226fa2274
   title: Claude Code でつまずいたときの切り分けメモ（2026-08-20）
   date: '2026-08-19'
+- url: https://qiita.com/homhom44/items/ea8ba5ebf89a77778180
+  title: Claude Code でつまずいたときの切り分けメモ（2026-08-28）
+  date: '2026-08-28'
 ---
 
 
 
+
 # Claude Code Errors
+
+---
+
+## 2026-08-28
+
+### Claude Code でつまずいたときの切り分けメモ（2026-08-28）
+
+Claude Code 利用時に発生する代表的なエラー（権限不足、データ不一致、Drive スコープ不足）について、GitHub Issues の報告事例と実機検証に基づいた切り分け手順を整理したトラブルシューティングガイド。具体的なコマンド実行結果を交えながら、原因特定の観点を解説している。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/ea8ba5ebf89a77778180)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 

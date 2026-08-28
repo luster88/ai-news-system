@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-08-27'
+updated: '2026-08-28'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -316,6 +316,9 @@ sources:
 - url: https://zenn.dev/xmichinokux/articles/ea5a08c69dbe22
   title: Claude Codeを使った開発で苦労したことがないとAIに言ったら「あなたのゲーム開発経験が特殊なんです」と言われて作り方を振り返った
   date: '2026-08-27'
+- url: https://qiita.com/Rai_050902/items/d1d208af64f50d9d58c8
+  title: 非エンジニアがClaude Codeのモデル使い分けを「指示書」にして固定した話
+  date: '2026-08-28'
 ---
 
 
@@ -395,7 +398,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-08-28
+
+### 非エンジニアがClaude Codeのモデル使い分けを「指示書」にして固定した話
+
+非エンジニアがClaude Codeで複数モデルを使い分ける際、「作業の量」と「難しさ」を混同していた問題を解決。推論の深さ（ステップ数の連鎖）を基準に判断ルールをファイル化し、モデル選択を自動化。実データはローカルのClaude Codeで処理し、Web版とはMarkdownファイルでやり取りする運用を確立した実践的なガイド。
+
+- **ソース**: [Qiita claude](https://qiita.com/Rai_050902/items/d1d208af64f50d9d58c8)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

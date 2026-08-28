@@ -5,9 +5,10 @@ subcategory: agent-teams-workflows
 tags:
 - claude-code
 - cowork
+- setup
 - 新機能
 date: '2026-06-16'
-updated: '2026-06-22'
+updated: '2026-08-28'
 sources:
 - url: https://zenn.dev/mdtechknowledge/articles/agent-teams-vs-dynamic-workflows
   title: Agent Teams と Dynamic Workflows は何が違うのか — 『独立セッション』と『サブエージェント』の決定的な差
@@ -15,10 +16,26 @@ sources:
 - url: https://qiita.com/todiii/items/002152f787abd921fa0e
   title: Claude Code のAgent Teamsを使ってみた感想
   date: '2026-06-22'
+- url: https://ai-heartland.com/explain/claude-code-agent-teams-guide
+  title: Agent Teamsとは｜Claude Codeを複数走らせる設定と権限・実体を実機確認
+  date: '2026-08-28'
 ---
 
 
+
 # Agent Teams Workflows
+
+---
+
+## 2026-08-28
+
+### Agent Teamsとは｜Claude Codeを複数走らせる設定と権限・実体を実機確認
+
+Agent Teamsは複数のClaude Codeセッションを同時に走らせる実験的機能。環境変数CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1で有効化し、teammate同士が共有タスクリストとメールボックスで協調動作する。並列探索が有効なタスク（調査・レビュー、新規モジュール開発など）に適するが、トークンコストは高く、逐次処理や同一ファイル編集には不向き。実体はファイルベースで~/.claude/下に保存され、teammate は権限を回避できない仕様。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/claude-code-agent-teams-guide)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

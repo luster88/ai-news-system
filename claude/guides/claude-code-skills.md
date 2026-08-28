@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-08-24'
+updated: '2026-08-28'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -73,6 +73,9 @@ sources:
 - url: https://ai-heartland.com/explain/claude-official-skills-19-japanese-coverage
   title: Anthropic公式スキルは17個ではなく19個｜日本語解説の空白地帯を全数調査した
   date: '2026-08-24'
+- url: https://ai-heartland.com/explain/refactoring-ui-skill-claude-code
+  title: Refactoring UIの原則をClaude Codeに守らせるスキル｜実測すると発火しない条件がある
+  date: '2026-08-28'
 ---
 
 
@@ -93,7 +96,20 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-08-28
+
+### Refactoring UIの原則をClaude Codeに守らせるスキル｜実測すると発火しない条件がある
+
+Refactoring UIの原則をClaude Codeに適用するスキル（s0xDk/refactoring-ui-skill）の実測レポート。余白・文字・太さ・影の4つの数値尺度を強制するスキルだが、導入しただけでは発火せず、「素人っぽい」などの明示的な言及が必要。発火しても完全な遵守は保証されず、改善効果にとどまる。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/refactoring-ui-skill-claude-code)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

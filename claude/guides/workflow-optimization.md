@@ -6,13 +6,14 @@ tags:
 - claude-code
 - cowork
 - cursor
+- mcp
 - opus
 - performance
 - prompt
 - setup
 - sonnet
 date: '2026-05-05'
-updated: '2026-07-18'
+updated: '2026-08-28'
 sources:
 - url: https://zenn.dev/bentenweb_fumi/articles/fxyojdsgcwap
   title: AIで「手を動かす時間」を減らす：技術者のための時間投資戦略
@@ -35,6 +36,9 @@ sources:
 - url: https://qiita.com/sinzy0925/items/7bfe17702cb31ccc9fed
   title: AI社員に仕事を任せたら10点中6点。スキル化で8点、アプリ化で10点 あなたは、どれにする？
   date: '2026-07-18'
+- url: https://qiita.com/kskg4/items/cff7fbb3bda053c1f9ca
+  title: Claude Codeで実装が爆速になった結果、PRレビューが追いつかなくなったので「全行読むレビュー」をやめることにした
+  date: '2026-08-28'
 ---
 
 
@@ -43,7 +47,20 @@ sources:
 
 
 
+
 # Workflow Optimization
+
+---
+
+## 2026-08-28
+
+### Claude Codeで実装が爆速になった結果、PRレビューが追いつかなくなったので「全行読むレビュー」をやめることにした
+
+Claude Code GitHub ActionsとBacklog MCPを活用し、PRレビューを3段階のリスクレベルに分類する運用を導入。AIによる一次レビューで規約・仕様チェックを自動化し、人間は設計判断とマージ責任に集中。typo修正など低リスクPRは全行レビューを廃止し、重要な実装のみ人間が深く確認する体制に移行した事例。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kskg4/items/cff7fbb3bda053c1f9ca)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, cowork
 
 ---
 
