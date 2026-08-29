@@ -49,6 +49,9 @@ sources:
 - url: https://qiita.com/NaokiIshimura/items/0acc467e15b9c2b69288
   title: Claude Code v2.1.248 - v2.1.251 リリースノートまとめ
   date: '2026-08-29'
+- url: https://qiita.com/moha0918_/items/08dfa2f03d89272498dc
+  title: Claude Code v2.1.251｜権限チェック後の symlink 差し替えを塞ぐ｜毎日Changelog解説
+  date: '2026-08-29'
 ---
 
 
@@ -61,7 +64,20 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-08-29
+
+### Claude Code v2.1.251｜権限チェック後の symlink 差し替えを塞ぐ｜毎日Changelog解説
+
+Claude Code v2.1.251 で複数のセキュリティ問題が修正されました。権限チェック後の symlink 差し替えによる承認範囲外へのアクセス、Grep/Glob の symlink 経由での deny ルール回避、プロジェクト設定からの環境変数設定の制限などが対応されました。また PreModelSwitch/PostModelSwitch フック、CLAUDE_CODE_SUBAGENT_MODEL の動作変更、プロンプトキャッシュ統計の追加など機能改善も含まれています。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/08dfa2f03d89272498dc)
+- **重要度**: 7/10
+- **タグ**: claude-code, bugfix, release
 
 ---
 

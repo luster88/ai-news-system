@@ -322,6 +322,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1w0xhp3/is_it_better_to_use_claude_code_in_visual_studio
   title: Is it better to use Claude Code in Visual Studio Code or in the terminal?
   date: '2026-08-29'
+- url: https://zenn.dev/taka4/articles/bc389c8045c4f3
+  title: 「CUDA必須」を無視してMacで鳴らす — MiniMax-Music3ローカル楽曲生成とClaude Codeパイプライン化
+  date: '2026-08-29'
 ---
 
 
@@ -403,7 +406,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-08-29
+
+### 「CUDA必須」を無視してMacで鳴らす — MiniMax-Music3ローカル楽曲生成とClaude Codeパイプライン化
+
+オープンウェイトの音楽生成モデル MiniMax-Music3 を、CUDA必須の公式仕様に反してApple Silicon MacでMPS対応に書き換えて動作させた技術記事。M4 Max(64GB)のMacBook Proで最大5分のフル尺楽曲を生成し、Claude Codeのスキル機能を使って「歌詞とお題を渡すだけで楽曲が出てくる」パイプラインを構築した事例。
+
+- **ソース**: [Zenn claude](https://zenn.dev/taka4/articles/bc389c8045c4f3)
+- **重要度**: 6/10
+- **タグ**: claude-code, mac, 新機能
 
 ---
 

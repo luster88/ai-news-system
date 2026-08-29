@@ -12,7 +12,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-04-25'
-updated: '2026-08-15'
+updated: '2026-08-29'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sv7fvc/im_a_nursing_student_who_built_a_660kpage
   title: I’m a nursing student who built a 660K-page pharmaceutical database using
@@ -36,6 +36,10 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1voxq2f/world_of_claudecraft_after_2_months_of_vibe_coding
   title: World of Claudecraft after 2 months of vibe coding
   date: '2026-08-15'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1w1s79z/i_made_a_website_with_claude_where_you_try_to
+  title: I made a website with Claude where you try to time the market and beat a
+    couch. 100K+ plays later, the couch still wins 62%
+  date: '2026-08-29'
 ---
 
 
@@ -44,7 +48,20 @@ sources:
 
 
 
+
 # Community Projects
+
+---
+
+## 2026-08-29
+
+### I made a website with Claude where you try to time the market and beat a couch. 100K+ plays later, the couch still wins 62%
+
+Claudeを使って株式市場のタイミングを計るゲーム「Beat the Couch」を開発。ユーザーは10万回以上プレイしたが、単純にバイ&ホールドするソファに対して38%しか勝てなかった。Claudeはデータパイプライン（1928年からのS&P 500データ）、ゲーム全体の単一HTMLファイル、Cloudflareバックエンド、Redditアプリ版まで構築した。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1w1s79z/i_made_a_website_with_claude_where_you_try_to)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

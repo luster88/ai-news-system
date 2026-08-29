@@ -7,8 +7,9 @@ tags:
 - cowork
 - cursor
 - performance
+- prompt
 date: '2026-04-25'
-updated: '2026-05-12'
+updated: '2026-08-29'
 sources:
 - url: https://zenn.dev/m_525/articles/3556bee089853f
   title: AI を活用した2つの開発フロー エージェント駆動開発 × ドキュメントファースト開発
@@ -16,10 +17,26 @@ sources:
 - url: https://qiita.com/mellowlaunch/items/6470d11a34a2ef027d59
   title: CodexとClaude Codeが変える開発速度
   date: '2026-05-12'
+- url: https://zenn.dev/toshiyuki_wwm/articles/58eeb45148fc6e
+  title: IT部門の品質管理（QA）担当が、筋トレログをAIに「Markdown」で渡せるiOSアプリをリリースした話
+  date: '2026-08-29'
 ---
 
 
+
 # Ai Development Workflow
+
+---
+
+## 2026-08-29
+
+### IT部門の品質管理（QA）担当が、筋トレログをAIに「Markdown」で渡せるiOSアプリをリリースした話
+
+IT部門のQA担当者が、筋トレログをMarkdown形式でエクスポートしてAIに渡せるiOSアプリを開発・リリースした事例。CursorやClaude、GPT、Geminiを「プロジェクトチーム」として役割分担させ、191件の単体テストを含むQAプロセスを適用。AIが理解しやすいMarkdownテーブル形式でのデータ出力に特化し、既存アプリのOCR誤認識問題を解決した。
+
+- **ソース**: [Zenn claude](https://zenn.dev/toshiyuki_wwm/articles/58eeb45148fc6e)
+- **重要度**: 6/10
+- **タグ**: cursor, cowork, prompt
 
 ---
 

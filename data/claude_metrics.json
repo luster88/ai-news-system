@@ -2179,13 +2179,13 @@
     }
   },
   "2026-08-29": {
-    "timestamp": "2026-08-29T03:29:42.663550+00:00",
-    "elapsed_seconds": 187.5,
+    "timestamp": "2026-08-29T23:51:07.760458+00:00",
+    "elapsed_seconds": 141.2,
     "collection": {
-      "total_raw": 42,
-      "total_new": 27,
-      "total_seen": 15,
-      "total_penalized": 4,
+      "total_raw": 45,
+      "total_new": 35,
+      "total_seen": 10,
+      "total_penalized": 11,
       "by_source": {
         "Anthropic News": 7,
         "Anthropic Engineering": 0,
@@ -2194,7 +2194,7 @@
         "Qiita claude": 4,
         "Zenn claude": 6,
         "Qiita claudecode": 4,
-        "AI Heartland": 3,
+        "AI Heartland": 6,
         "The Decoder Claude": 2,
         "TechCrunch Claude": 6
       },
@@ -2204,11 +2204,11 @@
       ]
     },
     "body_fetch": {
-      "total": 23,
+      "total": 24,
       "success": 15,
-      "empty": 8,
+      "empty": 9,
       "skipped": 0,
-      "success_rate": 0.65
+      "success_rate": 0.62
     },
     "summarization": {
       "selected": 17,

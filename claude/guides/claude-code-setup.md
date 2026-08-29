@@ -12,7 +12,7 @@ tags:
 - windows
 - 新機能
 date: '2026-04-04'
-updated: '2026-08-25'
+updated: '2026-08-29'
 sources:
 - url: https://qiita.com/taiki_i/items/2d75a882e0f3187f6bb8
   title: あなたの CLAUDE.md、ちゃんと機能してますか？作り方から公式プラグインで採点するまでの道のり
@@ -74,6 +74,9 @@ sources:
 - url: https://qiita.com/locallab/items/837c90ae56e6e58cbecc
   title: Claude Code を導入して分かった10の実践ポイント — AI ペアプロを最大活用するための設定・運用ガイド
   date: '2026-08-25'
+- url: https://qiita.com/locallab/items/aee8caafe6103f4b812d
+  title: Claude Code × OpenRouter で月額ほぼ $0 のコーディング AI 環境を5ステップで構築する
+  date: '2026-08-29'
 ---
 
 
@@ -92,7 +95,20 @@ sources:
 
 
 
+
 # Claude Code Setup
+
+---
+
+## 2026-08-29
+
+### Claude Code × OpenRouter で月額ほぼ $0 のコーディング AI 環境を5ステップで構築する
+
+Claude CodeをOpenRouterの無料モデル（:freeサフィックス）と組み合わせて、月額ほぼ$0のコーディングAI環境を構築する方法を解説。環境変数の設定でAnthropicのAPIエンドポイントをOpenRouterに切り替え、Qwen3-235B-A22BやDeepSeek-V3などの実用的な無料モデルを利用可能。RPM制限はあるものの、個人開発や学習用途には十分実用的で、必要に応じて有料モデルへのフォールバックも容易。
+
+- **ソース**: [Qiita claude](https://qiita.com/locallab/items/aee8caafe6103f4b812d)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, pricing
 
 ---
 

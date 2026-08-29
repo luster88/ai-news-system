@@ -7,10 +7,11 @@ tags:
 - claude-code
 - cowork
 - cursor
+- mcp
 - prompt
 - 新機能
 date: '2026-03-29'
-updated: '2026-08-19'
+updated: '2026-08-29'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6jouf/anthropic_shares_how_to_make_claude_code_better
   title: Anthropic shares how to make Claude code better with a harness
@@ -30,6 +31,9 @@ sources:
 - url: https://zenn.dev/motimotinotch/articles/f24c65c8f38885
   title: ループエンジニアリングじゃない。デイリーノート1枚で回すAIエージェント運用
   date: '2026-08-19'
+- url: https://zenn.dev/hachihou_system/articles/multi-agent-billing-design
+  title: freee公開完了。3体のAI（Gemini・Claude・ローカルAI）に分担させて課金システムを作った話
+  date: '2026-08-29'
 ---
 
 
@@ -37,7 +41,20 @@ sources:
 
 
 
+
 # Multi Agent Workflow
+
+---
+
+## 2026-08-29
+
+### freee公開完了。3体のAI（Gemini・Claude・ローカルAI）に分担させて課金システムを作った話
+
+freee APIを使った督促ツールの課金システム構築において、Gemini・Claude・ローカルAIの3体をMCPで連携させたマルチエージェント体制を採用。本番環境を壊さないよう独立した決済モジュールを外付けで構築し、Human-in-the-loopを挟むことで作業の脱線を防止。景品表示法の二重価格表示リスクや特定商取引法の開示請求対応、Pythonのタイムゾーン処理など、実践的な学びを得た。
+
+- **ソース**: [Zenn claude](https://zenn.dev/hachihou_system/articles/multi-agent-billing-design)
+- **重要度**: 6/10
+- **タグ**: mcp, cowork, prompt
 
 ---
 
