@@ -5,10 +5,11 @@ subcategory: claude-code-permissions
 tags:
 - bugfix
 - claude-code
+- performance
 - setup
 - windows
 date: '2026-05-09'
-updated: '2026-05-11'
+updated: '2026-08-29'
 sources:
 - url: https://qiita.com/enomoso_pm/items/623bd77ce2bb89569e3d
   title: 「設定したのになぜ？」Claude Codeのパーミッションが効かない理由と、今すぐできる対策
@@ -16,10 +17,26 @@ sources:
 - url: https://qiita.com/Tadahiro_Yamamura/items/400de8ecd549db2df7a3
   title: Claude Codeのパーミッションパターン、パスを含むと全滅しちゃう・・・
   date: '2026-05-11'
+- url: https://zenn.dev/tsutomusaito/articles/permission-rules-decay-ja
+  title: 許可ルールを152件ためこんでいた。完全一致で書かれた92件は、10万9762回の実行で一度も効かなかった
+  date: '2026-08-29'
 ---
 
 
+
 # Claude Code Permissions
+
+---
+
+## 2026-08-29
+
+### 許可ルールを152件ためこんでいた。完全一致で書かれた92件は、10万9762回の実行で一度も効かなかった
+
+Claude Code の permissions.allow に自動保存される完全一致の許可ルールは、実際には再利用されない形で蓄積されることが判明。10万9762回のコマンド実行に対して、完全一致形式の92件のルールは0回しか一致しなかった。一方、手動で追加した接頭辞ルール（:*形式）20件は47,559回一致し、実際に機能していた。完全一致ルールは定期的に削除し、必要なものは接頭辞形式で書き直すべきと結論。
+
+- **ソース**: [Zenn claude](https://zenn.dev/tsutomusaito/articles/permission-rules-decay-ja)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, performance
 
 ---
 

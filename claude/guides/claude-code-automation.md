@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-07-20'
+updated: '2026-08-29'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -96,6 +96,9 @@ sources:
 - url: https://ai-heartland.com/explain/claude-code-infrastructure-showcase
   title: Claude Codeのスキル自動起動とは｜インフラ構成ショーケースを実機検証で解説
   date: '2026-07-20'
+- url: https://qiita.com/NaokiIshimura/items/71af4e891b2f8f1e7943
+  title: Claude Codeを「自走」させる4つの道具 — /goal・/loop・Cron・Workflow の使い分け
+  date: '2026-08-29'
 ---
 
 
@@ -122,7 +125,30 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-08-29
+
+### Claude Codeを「自走」させる4つの道具 — /goal・/loop・Cron・Workflow の使い分け
+
+Claude Code v2.1.55〜v2.1.251の半年間で追加された4つの自動実行機能（/goal、/loop、Cron、Workflow）の使い分けを解説。/goalは完了条件を指定してターンを跨いだ自走、/loopは一定間隔での繰り返し、Cronは細かいスケジュール制御、Workflowは複数エージェントのオーケストレーションを実現する。それぞれトークン消費の暴走対策も説明。
+
+- **ソース**: [Qiita claude](https://qiita.com/NaokiIshimura/items/71af4e891b2f8f1e7943)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能
+
+---
+
+### Claude Codeを「自走」させる4つの道具 — /goal・/loop・Cron・Workflow の使い分け
+
+Claude Codeを人間の介入なしに自走させる4つの機能(/goal、/loop、Cron、Workflow)の使い分けを解説。/goalは完了条件を設定してターンを跨いで自走、/loopは一定間隔での繰り返し実行、Cronは細かいスケジュール指定、Workflowは複数エージェントのオーケストレーション。各機能のバージョン履歴と暴走防止策、トークン消費の注意点も詳述している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/NaokiIshimura/items/71af4e891b2f8f1e7943)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-08-28'
+updated: '2026-08-29'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -319,6 +319,9 @@ sources:
 - url: https://qiita.com/Rai_050902/items/d1d208af64f50d9d58c8
   title: 非エンジニアがClaude Codeのモデル使い分けを「指示書」にして固定した話
   date: '2026-08-28'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1w0xhp3/is_it_better_to_use_claude_code_in_visual_studio
+  title: Is it better to use Claude Code in Visual Studio Code or in the terminal?
+  date: '2026-08-29'
 ---
 
 
@@ -399,7 +402,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-08-29
+
+### Is it better to use Claude Code in Visual Studio Code or in the terminal?
+
+Reddit ユーザーが Claude Code を VS Code 内で使うべきか、ターミナルから使うべきかを質問。VS Code は統合環境で変更追跡が容易だが、ターミナルは軽量で柔軟性が高い。長期利用者の実体験に基づく意見を求めている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1w0xhp3/is_it_better_to_use_claude_code_in_visual_studio)
+- **重要度**: 4/10
+- **タグ**: claude-code, vscode, setup
 
 ---
 

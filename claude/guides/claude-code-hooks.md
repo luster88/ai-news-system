@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-23'
-updated: '2026-08-25'
+updated: '2026-08-29'
 sources:
 - url: https://qiita.com/pro-tein/items/49e5dbec705c3497dd51
   title: 【Claude Code】Hooks機能でデスクトップ通知を設定してみた
@@ -41,6 +41,9 @@ sources:
 - url: https://zenn.dev/yui/articles/97597aa13b9802
   title: Claude Codeの規律をhookに降ろしたら、Haikuでも壊れなくなった
   date: '2026-08-25'
+- url: https://qiita.com/NaokiIshimura/items/d5f4f1d4586f70512310
+  title: Claude Codeのフックがこの半年で別物になった — 追加された13イベントと新しい書き方
+  date: '2026-08-29'
 ---
 
 
@@ -51,7 +54,30 @@ sources:
 
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-08-29
+
+### Claude Codeのフックがこの半年で別物になった — 追加された13イベントと新しい書き方
+
+Claude CodeのフックAPIがv2.1.55からv2.1.251の半年間で大幅に拡張され、13個の新イベント（CwdChanged、FileChanged、StopFailureなど）が追加されました。HTTP形式のフック、MCP ツール連携、args による直接実行、if による条件実行など、実行機構が刷新されています。defer権限やcontinueOnBlockにより、単なるブロックではない柔軟な制御フローが可能になり、direnvのような環境管理やCI/CDでの承認ゲートなど実用的なユースケースに対応できるようになりました。
+
+- **ソース**: [Qiita claude](https://qiita.com/NaokiIshimura/items/d5f4f1d4586f70512310)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, mcp
+
+---
+
+### Claude Codeのフックがこの半年で別物になった — 追加された13イベントと新しい書き方
+
+Claude Codeのフック機構が2026年2月から8月の半年間で大幅に進化し、13個の新イベント（CwdChanged、FileChanged、StopFailure、MessageDisplay等）が追加され、合計31イベントになった。type: "http"によるHTTPフック、type: "mcp_tool"によるMCPツール連携、args形式での直接実行、if条件による選択的実行など、実行機構が大きく拡張された。defer権限判断やcontinueOnBlockにより、「ブロックして終わり」ではない柔軟な制御が可能になり、CI/CDやチーム運用での活用範囲が広がった。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/NaokiIshimura/items/d5f4f1d4586f70512310)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, mcp
 
 ---
 

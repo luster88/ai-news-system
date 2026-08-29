@@ -10,7 +10,7 @@ tags:
 - release
 - 新機能
 date: '2026-07-12'
-updated: '2026-08-28'
+updated: '2026-08-29'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -43,6 +43,12 @@ sources:
 - url: https://qiita.com/picnic/items/f6c4074a99d25f780122
   title: Claude Code v2.1.248まとめ：--restrictedモードとcacheTtlで安全性と速度が向上
   date: '2026-08-28'
+- url: https://qiita.com/NaokiIshimura/items/7636068d678804fbda26
+  title: Claude Codeのセッション同士が会話しはじめた — SendMessage / ListAgents 完全ガイド
+  date: '2026-08-29'
+- url: https://qiita.com/NaokiIshimura/items/0acc467e15b9c2b69288
+  title: Claude Code v2.1.248 - v2.1.251 リリースノートまとめ
+  date: '2026-08-29'
 ---
 
 
@@ -54,7 +60,30 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-08-29
+
+### Claude Codeのセッション同士が会話しはじめた — SendMessage / ListAgents 完全ガイド
+
+Claude Code v2.1.224で、セッション間でメッセージをやり取りできるクロスセッションメッセージング機能が追加されました。ListAgentsでセッション一覧を取得し、SendMessageで相互に通信できますが、セキュリティ境界が厳格に設計されており、bypassPermissions動作中のセッション宛メッセージは自動配信されず承認待ちになります。プレーンテキストのみが送信され、会話履歴やファイルは共有されない仕様です。
+
+- **ソース**: [Qiita claude](https://qiita.com/NaokiIshimura/items/7636068d678804fbda26)
+- **重要度**: 8/10
+- **タグ**: claude-code, 新機能, cowork
+
+---
+
+### Claude Code v2.1.248 - v2.1.251 リリースノートまとめ
+
+Claude Code v2.1.248～v2.1.251の3リリースをまとめた記事。--restrictedフラグによるセキュリティモード、シンボリックリンク差し替えやパストラバーサルのセキュリティ修正、PreModelSwitch/PostModelSwitchフックの追加、プロンプトキャッシュの可視化など運用面の改善が中心。ネイティブバイナリの軽量化やサブエージェントのライブストリーミングも実装された。
+
+- **ソース**: [Qiita claude](https://qiita.com/NaokiIshimura/items/0acc467e15b9c2b69288)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 

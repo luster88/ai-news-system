@@ -9,9 +9,10 @@ tags:
 - cowork
 - performance
 - prompt
+- sonnet
 - 新機能
 date: '2026-03-29'
-updated: '2026-07-22'
+updated: '2026-08-29'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6of32/i_am_fully_addicted_to_building_dumb_little_ai
   title: I am fully addicted to building dumb little AI web apps. I love it.
@@ -37,6 +38,10 @@ sources:
   title: 'Built with Claude: an open knowledge graph of everything a child learns
     (1,590 concepts, 3,221 prerequisite edges)'
   date: '2026-07-22'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1w1444j/i_used_fable_as_the_lead_and_a_fleet_of_sonnet
+  title: I used Fable as the lead and a fleet of Sonnet agents underneath it to build
+    a full game. It's now on Steam.
+  date: '2026-08-29'
 ---
 
 
@@ -44,7 +49,20 @@ sources:
 
 
 
+
 # Community Showcase
+
+---
+
+## 2026-08-29
+
+### I used Fable as the lead and a fleet of Sonnet agents underneath it to build a full game. It's now on Steam.
+
+個人開発者が Claude の Fable をリード役に、複数の Sonnet エージェントを並列実行させて Counter-Strike チーム経営シミュレーションゲーム「Headshot Manager」を開発し、Steam で公開。Fable が設計・管理を担当し、Sonnet エージェント群が実装を分担する構成で、数ヶ月の空き時間で完成させた。プレイヤーの肖像画も AI 生成を使用している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1w1444j/i_used_fable_as_the_lead_and_a_fleet_of_sonnet)
+- **重要度**: 6/10
+- **タグ**: claude-code, sonnet, cowork
 
 ---
 

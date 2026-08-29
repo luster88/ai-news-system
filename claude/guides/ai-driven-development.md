@@ -10,7 +10,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-04-23'
-updated: '2026-08-17'
+updated: '2026-08-29'
 sources:
 - url: https://qiita.com/tuvy22686/items/efd5e3ba573abb9914d6
   title: 【個人開発】AI（Claude / Gemini）に設計を任せて、AWS 上に完全自動の競馬予測システムを構築した話【AIDD】
@@ -24,12 +24,28 @@ sources:
 - url: https://zenn.dev/scalar_sol_blog/articles/d65fca56924537
   title: 【チームによるAI駆動開発の勘所：第1回】AI駆動開発の本当のボトルネックは、コードを書く速度ではない
   date: '2026-08-17'
+- url: https://qiita.com/usapino/items/cd0e9c6dafdb227d6da9
+  title: AI駆動開発は「答え」を外部に求めてはいけない
+  date: '2026-08-29'
 ---
 
 
 
 
+
 # Ai Driven Development
+
+---
+
+## 2026-08-29
+
+### AI駆動開発は「答え」を外部に求めてはいけない
+
+AI駆動開発において、外部の「正解」を求めすぎることの危険性を指摘。既存プロセスの部分置換とVibe Codingの極端な二極化を批判し、重要なのは「AIが安全に書ける構造」を設計すること。DDDやClean Architectureなどの設計思想を理解した上で、プロジェクト固有の正解を作るべきと主張。AI時代には設計判断能力がより重要になる。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/usapino/items/cd0e9c6dafdb227d6da9)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 
