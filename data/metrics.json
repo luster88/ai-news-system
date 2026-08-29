@@ -11298,13 +11298,13 @@
     }
   },
   "2026-08-29": {
-    "timestamp": "2026-08-29T00:29:57.823645+00:00",
-    "elapsed_seconds": 176.9,
+    "timestamp": "2026-08-29T19:18:03.981016+00:00",
+    "elapsed_seconds": 154.6,
     "collection": {
-      "total_raw": 195,
-      "total_new": 112,
-      "total_seen": 83,
-      "total_penalized": 29,
+      "total_raw": 183,
+      "total_new": 80,
+      "total_seen": 103,
+      "total_penalized": 40,
       "by_source": {
         "OpenAI News": 8,
         "Anthropic News": 6,
@@ -11329,48 +11329,50 @@
         "36Kr AI": 0,
         "KrASIA": 6,
         "量子位 (QbitAI)": 6,
-        "IT之家": 5,
-        "Qiita AI": 4,
+        "IT之家": 6,
+        "Qiita AI": 2,
         "Zenn AI": 8,
         "nyosegawa blog": 4,
         "Reddit r/LocalLLaMA": 6,
-        "Hacker News": 4,
+        "Hacker News": 3,
         "Ollama Releases": 3,
         "vLLM Releases": 3,
         "Transformers Releases": 3,
-        "arXiv cs.AI": 5,
-        "arXiv cs.LG": 5,
+        "arXiv cs.AI": 0,
+        "arXiv cs.LG": 0,
         "Hugging Face Blog": 6,
         "Google Research Blog": 5,
         "MIT News AI": 5,
         "Microsoft Research Blog": 1
       },
       "sources_zero": [
-        "36Kr AI"
+        "36Kr AI",
+        "arXiv cs.AI",
+        "arXiv cs.LG"
       ]
     },
     "body_fetch": {
-      "total": 73,
-      "success": 54,
-      "empty": 19,
-      "skipped": 10,
-      "success_rate": 0.74
+      "total": 40,
+      "success": 24,
+      "empty": 16,
+      "skipped": 0,
+      "success_rate": 0.6
     },
     "summarization": {
-      "selected": 25,
-      "tentative_count": 1,
+      "selected": 20,
+      "tentative_count": 0,
       "parse_failure_count": 0,
       "importance_distribution": {
-        "1-2": 3,
-        "3-4": 4,
-        "5-6": 13,
+        "1-2": 1,
+        "3-4": 5,
+        "5-6": 9,
         "7-8": 5,
         "9-10": 0
       }
     },
     "output": {
-      "total_items": 25,
-      "active_penalties": 19
+      "total_items": 20,
+      "active_penalties": 25
     }
   }
 }
