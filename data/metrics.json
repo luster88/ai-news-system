@@ -11374,5 +11374,83 @@
       "total_items": 20,
       "active_penalties": 25
     }
+  },
+  "2026-08-30": {
+    "timestamp": "2026-08-30T19:08:26.371190+00:00",
+    "elapsed_seconds": 156.5,
+    "collection": {
+      "total_raw": 180,
+      "total_new": 89,
+      "total_seen": 91,
+      "total_penalized": 24,
+      "by_source": {
+        "OpenAI News": 8,
+        "Anthropic News": 6,
+        "Google DeepMind Blog": 4,
+        "The Verge AI": 6,
+        "TechCrunch AI": 8,
+        "Google AI Blog": 4,
+        "The Decoder": 6,
+        "Product Hunt": 6,
+        "Simon Willison Blog": 6,
+        "MIT Technology Review AI": 6,
+        "Ars Technica AI": 6,
+        "ITmedia AI+": 8,
+        "Impress Watch": 6,
+        "Ledge.ai": 5,
+        "AI Heartland": 6,
+        "GIGAZINE": 6,
+        "Publickey": 5,
+        "CNET Japan": 6,
+        "ERNIE Blog": 6,
+        "MiniMax News": 2,
+        "36Kr AI": 0,
+        "KrASIA": 6,
+        "量子位 (QbitAI)": 6,
+        "IT之家": 3,
+        "Qiita AI": 2,
+        "Zenn AI": 8,
+        "nyosegawa blog": 4,
+        "Reddit r/LocalLLaMA": 6,
+        "Hacker News": 3,
+        "Ollama Releases": 3,
+        "vLLM Releases": 3,
+        "Transformers Releases": 3,
+        "arXiv cs.AI": 0,
+        "arXiv cs.LG": 0,
+        "Hugging Face Blog": 6,
+        "Google Research Blog": 5,
+        "MIT News AI": 5,
+        "Microsoft Research Blog": 1
+      },
+      "sources_zero": [
+        "36Kr AI",
+        "arXiv cs.AI",
+        "arXiv cs.LG"
+      ]
+    },
+    "body_fetch": {
+      "total": 65,
+      "success": 54,
+      "empty": 11,
+      "skipped": 0,
+      "success_rate": 0.83
+    },
+    "summarization": {
+      "selected": 25,
+      "tentative_count": 0,
+      "parse_failure_count": 0,
+      "importance_distribution": {
+        "1-2": 1,
+        "3-4": 8,
+        "5-6": 9,
+        "7-8": 7,
+        "9-10": 0
+      }
+    },
+    "output": {
+      "total_items": 25,
+      "active_penalties": 20
+    }
   }
 }
