@@ -6,10 +6,11 @@ tags:
 - bugfix
 - claude-code
 - cowork
+- mcp
 - setup
 - windows
 date: '2026-03-29'
-updated: '2026-08-09'
+updated: '2026-08-31'
 sources:
 - url: https://qiita.com/kan2530/items/fbac7254b3375a9fe690
   title: 【実体験】Claude Cowork（Windows）セットアップ時に仮想化が有効にできなかった話とBIOS設定での解決方法
@@ -23,12 +24,28 @@ sources:
 - url: https://qiita.com/daisuke-nagata/items/e9e999584ce69690f92d
   title: Claude Codeのエラー多発、ダウングレードで直ったのに理由が分からない話
   date: '2026-08-09'
+- url: https://zenn.dev/ouchidrill/articles/e4254d23cbaf9e
+  title: Claude Desktop が「このファイルはほかのプログラムで使われています」で起動しない — 再起動せずに直す
+  date: '2026-08-31'
 ---
 
 
 
 
+
 # Setup Windows
+
+---
+
+## 2026-08-31
+
+### Claude Desktop が「このファイルはほかのプログラムで使われています」で起動しない — 再起動せずに直す
+
+Windows版Claude Desktopで「このファイルはほかのプログラムで使われています」エラーが出て起動できない問題の解決法を解説。Electronアプリの子プロセス（特にMCPサーバー関連のNodeワーカー）が残留してファイルをロックしているのが原因。PowerShellで該当プロセスを強制終了することで再起動なしで解決できる。恒久対策として起動ラッパーの作成方法も提示。
+
+- **ソース**: [Zenn claude](https://zenn.dev/ouchidrill/articles/e4254d23cbaf9e)
+- **重要度**: 6/10
+- **タグ**: windows, bugfix, mcp
 
 ---
 

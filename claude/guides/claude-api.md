@@ -13,7 +13,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-08-23'
+updated: '2026-08-31'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -51,6 +51,9 @@ sources:
 - url: https://zenn.dev/muno_sunsun/articles/dea8db4298b195
   title: Claude API (Messages API) を TypeScript から使ってみた
   date: '2026-08-23'
+- url: https://qiita.com/nabata/items/abf4a1cbc84d239d34cb
+  title: PythonとClaude APIでAIエージェントの基礎的なものを作ってみた
+  date: '2026-08-31'
 ---
 
 
@@ -64,7 +67,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-08-31
+
+### PythonとClaude APIでAIエージェントの基礎的なものを作ってみた
+
+Anthropic公式の「ループ内で自律的にツールを使用するLLM」というシンプルなエージェント定義に基づき、Claude APIのtool use機能を使ってPythonでシンプルなAIエージェントを実装する方法を解説。stop_reasonをキーにしたwhileループでツール呼び出しと結果返却を繰り返す基本的な実装パターンを紹介している。
+
+- **ソース**: [Qiita claude](https://qiita.com/nabata/items/abf4a1cbc84d239d34cb)
+- **重要度**: 6/10
+- **タグ**: claude-api, prompt, cowork
 
 ---
 

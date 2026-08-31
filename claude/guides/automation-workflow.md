@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-07-30'
+updated: '2026-08-31'
 sources:
 - url: https://zenn.dev/shelty/articles/20260408-budget-book-asset-management
   title: MoneyForwardの家計簿データで資産予測を自動化してみた＠Claude
@@ -43,6 +43,9 @@ sources:
 - url: https://zenn.dev/shoooroom/articles/ai-automation-first-step
   title: AIに仕事を丸投げしてみた｜Claude Codeで副業を自動化した実験記録
   date: '2026-07-30'
+- url: https://qiita.com/jtths474/items/6094d3a9709f5187cf60
+  title: スクショ1枚からPhotoshop・Illustratorのワイヤーフレームをスクリプトで組み立てる
+  date: '2026-08-31'
 ---
 
 
@@ -53,7 +56,20 @@ sources:
 
 
 
+
 # Automation Workflow
+
+---
+
+## 2026-08-31
+
+### スクショ1枚からPhotoshop・Illustratorのワイヤーフレームをスクリプトで組み立てる
+
+スクリーンショットをClaudeに渡してExtendScriptを生成し、Illustrator/Photoshopでワイヤーフレームを自動生成する手法の解説。1回目は数値がズレるが、CONFIG部分を手動調整すれば手作業より速く完成する。単位（pt/px）の違いやY軸の向き、フォント指定などの実装上の注意点を詳述。
+
+- **ソース**: [Qiita claude](https://qiita.com/jtths474/items/6094d3a9709f5187cf60)
+- **重要度**: 6/10
+- **タグ**: claude-api, prompt, cowork
 
 ---
 

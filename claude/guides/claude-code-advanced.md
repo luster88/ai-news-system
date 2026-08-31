@@ -8,9 +8,10 @@ tags:
 - prompt
 - setup
 - vscode
+- windows
 - 新機能
 date: '2026-04-08'
-updated: '2026-08-11'
+updated: '2026-08-31'
 sources:
 - url: https://qiita.com/moha0918_/items/9682b1ec8b71e884ec13
   title: 複数のAIが同時に働く仕組み - Agent Teamsで実現するチーム開発の全体像
@@ -27,13 +28,29 @@ sources:
 - url: https://zenn.dev/imu_imu/books/claude-guide
   title: Claude Code 完璧マスター講座【中級編】——「なんか使いこなせてない」を解決する装備庫
   date: '2026-08-11'
+- url: https://zenn.dev/aeyesec/articles/fa49c49fa7e58d
+  title: Claude Codeのnotify_when_idleが発火するタイミングを検証した
+  date: '2026-08-31'
 ---
 
 
 
 
 
+
 # Claude Code Advanced
+
+---
+
+## 2026-08-31
+
+### Claude Codeのnotify_when_idleが発火するタイミングを検証した
+
+Claude Codeのクロスセッションメッセージング機能、特にnotify_when_idle機能の発火タイミングを検証した記事。SendMessageとListAgentsを使った別セッション間の通信方法、@メンション機能、Windows対応状況、受信拒否時の挙動などを詳細に解説。バックグラウンドタスク実行中にアイドル通知が届き、タスク完了報告は別途SendMessageで届くことを確認。
+
+- **ソース**: [Zenn claude](https://zenn.dev/aeyesec/articles/fa49c49fa7e58d)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, windows
 
 ---
 

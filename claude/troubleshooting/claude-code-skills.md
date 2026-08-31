@@ -7,8 +7,10 @@ tags:
 - claude-code
 - cowork
 - prompt
+- setup
+- 新機能
 date: '2026-05-25'
-updated: '2026-06-27'
+updated: '2026-08-31'
 sources:
 - url: https://qiita.com/YujiNaramoto/items/f73bdcd7098812995fea
   title: なぜ Claude Code の自動化スクリプトはスケールすると壊れるのか — 設計ミスの構造を読む
@@ -16,10 +18,26 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1uhed8x/why_are_all_the_claude_code_skill_files_i_see
   title: Why are all the Claude Code skill files I see online completely pointless?
   date: '2026-06-27'
+- url: https://ai-heartland.com/explain/grill-me-skill
+  title: grill-me は自動発火しない設計だった｜mattpocock/skills 37本の起動条件を実測
+  date: '2026-08-31'
 ---
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-08-31
+
+### grill-me は自動発火しない設計だった｜mattpocock/skills 37本の起動条件を実測
+
+Matt PocockのスキルセットにあるClaude Code用スキル「grill-me」は、disable-model-invocation: trueによりモデルからの自動呼び出しが不可能な設計であることが実測で判明。37本中22本（59.5%）が同様の宣言を持ち、ユーザーが明示的に /grill-me と入力しない限り起動しない。2026年6月12日のコミットで、実装本体をgrillingスキルに分離し、grill-meは入口としての役割のみを持つ36バイトの薄い層になった。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/grill-me-skill)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

@@ -9,7 +9,7 @@ tags:
 - setup
 - windows
 date: '2026-05-09'
-updated: '2026-08-29'
+updated: '2026-08-31'
 sources:
 - url: https://qiita.com/enomoso_pm/items/623bd77ce2bb89569e3d
   title: 「設定したのになぜ？」Claude Codeのパーミッションが効かない理由と、今すぐできる対策
@@ -20,11 +20,27 @@ sources:
 - url: https://zenn.dev/tsutomusaito/articles/permission-rules-decay-ja
   title: 許可ルールを152件ためこんでいた。完全一致で書かれた92件は、10万9762回の実行で一度も効かなかった
   date: '2026-08-29'
+- url: https://qiita.com/syun136_616/items/15af05d2d643f7050144
+  title: Claude Codeの制限モードでスキルが消えた原因と直し方
+  date: '2026-08-31'
 ---
 
 
 
+
 # Claude Code Permissions
+
+---
+
+## 2026-08-31
+
+### Claude Codeの制限モードでスキルが消えた原因と直し方
+
+Claude Codeで自作スキル47本が認識されなくなった事例を報告。原因は権限設定（permissions）やサンドボックス実行の制限強化と推測される。対処法として、settings.jsonの権限範囲確認、スキル配置場所の見直し、設定優先順位の整理が有効。制限モードは公式名称ではなく、既存の権限管理機能が強化された状態を指す。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/syun136_616/items/15af05d2d643f7050144)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 

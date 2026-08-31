@@ -8,7 +8,7 @@ tags:
 - cowork
 - setup
 date: '2026-06-03'
-updated: '2026-08-04'
+updated: '2026-08-31'
 sources:
 - url: https://zenn.dev/gudezou/articles/7e8235a27f0909
   title: Claude Code の終了フックから claude を呼び出すとなぜ暴走するのか
@@ -19,11 +19,37 @@ sources:
 - url: https://qiita.com/miyoki_labs/items/5f44b709a49747520d50
   title: Claude CodeのStop hookが誤発火する原因と切り分け
   date: '2026-08-04'
+- url: https://qiita.com/homhom44/items/594957a69690a39c7f82
+  title: Claude Code でつまずいたときの切り分けメモ（2026-08-31）
+  date: '2026-08-31'
 ---
 
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-08-31
+
+### Claude Code でつまずいたときの切り分けメモ（2026-08-31）
+
+Claude Code 使用中に発生する /goal 実行時や stop hook での処理停止問題について、GitHub Issues で複数報告されている症状を実際に検証し、切り分け方法と対処法を整理した記事。手元での実行結果と公式 Issues の報告のみを根拠とした実践的なトラブルシューティングガイド。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/594957a69690a39c7f82)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
+
+---
+
+### Claude Code でつまずいたときの切り分けメモ（2026-08-31）
+
+Claude Code 使用時に /goal コマンドや stop hook で処理が途中停止する問題について、GitHub Issues の報告を基に実際にコマンドを実行して確認した切り分けメモ。複数ユーザーが遭遇している症状の原因と対処方法を整理している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/homhom44/items/594957a69690a39c7f82)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix
 
 ---
 

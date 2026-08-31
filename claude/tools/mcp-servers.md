@@ -10,7 +10,7 @@ tags:
 - mcp
 - 新機能
 date: '2026-04-21'
-updated: '2026-07-23'
+updated: '2026-08-31'
 sources:
 - url: https://zenn.dev/megaphone_tokyo/articles/9c0cffdf9e176b
   title: Claude Code / Desktop の記憶 OSS「KIOKU」に PDF / URL 取り込みを実装した
@@ -24,12 +24,28 @@ sources:
 - url: https://ai-heartland.com/tool/go-whatsapp-web-multidevice-rest-api
   title: GOWAとは：WhatsApp APIをセルフホスト｜REST・Webhook・MCPでAI連携する非公式OSS
   date: '2026-07-23'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1w2grux/whats_a_good_useful_mcp_you_connected_to_that
+  title: What’s a good useful MCP you connected to that brings you real value?
+  date: '2026-08-31'
 ---
 
 
 
 
+
 # Mcp Servers
+
+---
+
+## 2026-08-31
+
+### What’s a good useful MCP you connected to that brings you real value?
+
+Reddit の ClaudeAI コミュニティで、実際に価値をもたらす有用な MCP（Model Context Protocol）サーバーについてのディスカッションが行われています。投稿者は日常のワークフローを改善するために、他のユーザーがどのような MCP を活用しているか情報を求めています。Claude の日常業務での実用的な活用方法に関心を持つユーザー間の情報交換の場となっています。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1w2grux/whats_a_good_useful_mcp_you_connected_to_that)
+- **重要度**: 5/10
+- **タグ**: mcp, cowork, claude-code
 
 ---
 

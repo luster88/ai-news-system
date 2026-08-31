@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-07'
-updated: '2026-08-11'
+updated: '2026-08-31'
 sources:
 - url: https://qiita.com/arahata0907/items/6e0f7bf1629cc52bfa53
   title: 【日本語解説付き試験問題集】Claude Certified Architect Foundations (CCA-F)
@@ -24,11 +24,27 @@ sources:
 - url: https://qiita.com/alphajinsei/items/b8e54e2c6a860df8808f
   title: Claude certification 全冠した
   date: '2026-08-11'
+- url: https://zenn.dev/shino_i/articles/c8641ea1e9c5d5
+  title: CCDV-F(Claude Certified Developer – Foundations)に合格しましたので所感を記事にまとめてみた
+  date: '2026-08-31'
 ---
 
 
 
+
 # Certification Exam
+
+---
+
+## 2026-08-31
+
+### CCDV-F(Claude Certified Developer – Foundations)に合格しましたので所感を記事にまとめてみた
+
+Claude認定資格CCDV-F（Claude Certified Developer – Foundations）の合格体験記。CCAO-Fと比較し、開発者向けで技術的正誤が明確なため、実務経験者にはむしろ取り組みやすい。「Applications and Integration」ドメインが全体の3分の1を占め、API連携・アプリケーション設計の理解が合格の鍵。実務でClaude APIやMCPに触れている開発者には、CCAO-Fより先に受験するのも推奨される。
+
+- **ソース**: [Zenn claude](https://zenn.dev/shino_i/articles/c8641ea1e9c5d5)
+- **重要度**: 6/10
+- **タグ**: claude-api, 新機能, mcp
 
 ---
 
