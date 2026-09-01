@@ -12,7 +12,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-29'
-updated: '2026-08-29'
+updated: '2026-09-01'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6of32/i_am_fully_addicted_to_building_dumb_little_ai
   title: I am fully addicted to building dumb little AI web apps. I love it.
@@ -42,6 +42,9 @@ sources:
   title: I used Fable as the lead and a fleet of Sonnet agents underneath it to build
     a full game. It's now on Steam.
   date: '2026-08-29'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1w3oha6/week_5_of_making_my_fishing_game_entirely_with_ai
+  title: Week 5 of making my fishing game entirely with AI
+  date: '2026-09-01'
 ---
 
 
@@ -50,7 +53,20 @@ sources:
 
 
 
+
 # Community Showcase
+
+---
+
+## 2026-09-01
+
+### Week 5 of making my fishing game entirely with AI
+
+Reddit ユーザーが Claude を使って釣りゲームを開発する進捗を週次で報告。5週目の更新では、UI の修正に多くの時間を費やし、Dredge と Civilization からインスピレーションを得たゲーム開発を継続。AI のみでゲーム開発がどこまで可能かを趣味として探求している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1w3oha6/week_5_of_making_my_fishing_game_entirely_with_ai)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

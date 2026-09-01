@@ -11,7 +11,7 @@ tags:
 - pricing
 - prompt
 date: '2026-03-22'
-updated: '2026-07-27'
+updated: '2026-09-01'
 sources:
 - url: https://qiita.com/shockpan-web/items/852e962e14bdd2b98e70
   title: バイブコーディングでトークンを溶かさないための2つの工夫
@@ -34,6 +34,9 @@ sources:
 - url: https://qiita.com/Nana_777/items/1766dd6bbd308222f71b
   title: 【ClaudeCode】コスト発生要因から考えるトークン消費最適化術【トークン】
   date: '2026-07-27'
+- url: https://qiita.com/yml024/items/b1ef287eadd7f551f371
+  title: '*【ポエム】 Claude トークン消費を制御する — 「長く使う」ためのコツ'
+  date: '2026-09-01'
 ---
 
 
@@ -42,7 +45,20 @@ sources:
 
 
 
+
 # Token Optimization
+
+---
+
+## 2026-09-01
+
+### *【ポエム】 Claude トークン消費を制御する — 「長く使う」ためのコツ
+
+Claude のトークン消費を抑えるための実践的なコツをまとめた記事。日本語は英語より1.5〜2倍トークンを消費すること、チャット履歴が毎回入力として再計上される仕組み、スレッドを分けることで消費が桁単位で減ること、出力トークンが入力の4〜5倍高いこと、プロンプトキャッシュやバッチAPIの活用法などを解説。「モデルを安くする」より「文脈を短く保つ」方が効果的と結論づけている。
+
+- **ソース**: [Qiita claude](https://qiita.com/yml024/items/b1ef287eadd7f551f371)
+- **重要度**: 6/10
+- **タグ**: claude-api, pricing, performance
 
 ---
 

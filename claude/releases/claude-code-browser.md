@@ -8,9 +8,10 @@ tags:
 - cowork
 - pricing
 - release
+- setup
 - 新機能
 date: '2026-07-12'
-updated: '2026-08-29'
+updated: '2026-09-01'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -52,6 +53,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/08dfa2f03d89272498dc
   title: Claude Code v2.1.251｜権限チェック後の symlink 差し替えを塞ぐ｜毎日Changelog解説
   date: '2026-08-29'
+- url: https://qiita.com/moha0918_/items/09b61fa44e12b8e9bd36
+  title: Claude Code v2.1.252｜always allow が保存されない条件｜毎日Changelog解説
+  date: '2026-09-01'
 ---
 
 
@@ -65,7 +69,30 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-09-01
+
+### Claude Code v2.1.252｜always allow が保存されない条件｜毎日Changelog解説
+
+Claude Code v2.1.252 のバグ修正リリース。.claude/settings.local.json が存在しないプロジェクトで always allow が保存されない問題を修正。Mac環境でのBashコマンド失敗、Remote Control セッションでの応答遅延、巨大な失敗出力によるAPIリクエストサイズ超過も解決。新機能追加はなく、4件すべてがバグ修正。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/09b61fa44e12b8e9bd36)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, release
+
+---
+
+### Claude Code v2.1.252｜always allow が保存されない条件｜毎日Changelog解説
+
+Claude Code v2.1.252 のバグ修正リリース。.claude/settings.local.json が存在しないプロジェクトで always allow が保存されない問題を修正。Mac 環境での Bash コマンドエラー、Remote Control セッションでの応答遅延、巨大な失敗出力による API リクエストサイズ超過の問題も解消。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/09b61fa44e12b8e9bd36)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 

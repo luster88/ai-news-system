@@ -10,7 +10,7 @@ tags:
 - sonnet
 - windows
 date: '2026-03-25'
-updated: '2026-07-27'
+updated: '2026-09-01'
 sources:
 - url: https://zenn.dev/tradejournal/articles/f886154a9f1ec8
   title: Next.js 16 + Anthropic Claude APIでトレード日記AI分析ツールを作った話
@@ -21,11 +21,27 @@ sources:
 - url: https://zenn.dev/h2k0430/articles/d77b8b2708751e
   title: Pixel Tablet + Google Home AssistantでClaude APIをバックエンドにした話
   date: '2026-07-27'
+- url: https://zenn.dev/t_okubo/articles/3a74889e628741
+  title: 英語コロケーションをAIと練習できる学習アプリをひとりで作った話（Next.js + Claude API）
+  date: '2026-09-01'
 ---
 
 
 
+
 # Claude Api Integration
+
+---
+
+## 2026-09-01
+
+### 英語コロケーションをAIと練習できる学習アプリをひとりで作った話（Next.js + Claude API）
+
+個人開発者がNext.js + Claude APIを使用して英語コロケーション学習アプリ「Colloquy」を開発。Claude APIのストリーミング機能とNDJSON形式を活用し、コロケーション生成結果を逐次表示することで体感速度を改善。Redisキャッシュによるコスト削減、Next.js App RouterでのSSR最適化、翻訳アシスタント機能の実装など、実践的な技術選定と課題解決の経緯が詳しく解説されている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/t_okubo/articles/3a74889e628741)
+- **重要度**: 6/10
+- **タグ**: claude-api, haiku, setup
 
 ---
 

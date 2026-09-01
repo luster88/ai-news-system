@@ -5,8 +5,9 @@ subcategory: prompt-engineering-pitfalls
 tags:
 - claude-code
 - prompt
+- sonnet
 date: '2026-08-18'
-updated: '2026-08-23'
+updated: '2026-09-01'
 sources:
 - url: https://zenn.dev/motimotinotch/articles/cd448e3f00a0af
   title: 禁止すれば安全、良い例を見せれば的確、資料を読ませれば賢くなる——本当に？
@@ -14,10 +15,26 @@ sources:
 - url: https://qiita.com/tomada/items/9810d4ef764c12fb4a21
   title: 伝わる指示・伝わらない指示：悪い例と良い例で学ぶClaude Codeへの頼み方
   date: '2026-08-23'
+- url: https://zenn.dev/nekoemon/articles/1ba734b11fb487
+  title: 『書いていない基準は毎回その場で埋められる』ーーLLM脆弱性トリアージの揺れをプロンプトの「境界設定」で止めた話
+  date: '2026-09-01'
 ---
 
 
+
 # Prompt Engineering Pitfalls
+
+---
+
+## 2026-09-01
+
+### 『書いていない基準は毎回その場で埋められる』ーーLLM脆弱性トリアージの揺れをプロンプトの「境界設定」で止めた話
+
+LLMによるCVE脆弱性トリアージで判定が揺れる問題に対し、プロンプトに「具体的なキー名を指摘できない場合は要確認を選ばない」という境界設定ルールを導入して解決した事例。Claude Sonnet 3.5を使い、同一入力で判定が分かれる原因を「書いていない基準をLLMが自動補完する」と特定し、厳格な制約を追加することで再現性を高めた。構成情報の改善ループにより、過剰アラートを削減できることを実証。
+
+- **ソース**: [Zenn claude](https://zenn.dev/nekoemon/articles/1ba734b11fb487)
+- **重要度**: 7/10
+- **タグ**: prompt, sonnet
 
 ---
 

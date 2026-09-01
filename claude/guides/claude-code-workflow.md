@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-08-29'
+updated: '2026-09-01'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -325,6 +325,9 @@ sources:
 - url: https://zenn.dev/taka4/articles/bc389c8045c4f3
   title: 「CUDA必須」を無視してMacで鳴らす — MiniMax-Music3ローカル楽曲生成とClaude Codeパイプライン化
   date: '2026-08-29'
+- url: https://zenn.dev/karamage/articles/2ef2c2aea7dfdf
+  title: Anthropic公式のClaude Code講座で学んだ「4つのD」
+  date: '2026-09-01'
 ---
 
 
@@ -407,7 +410,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-09-01
+
+### Anthropic公式のClaude Code講座で学んだ「4つのD」
+
+Anthropic公式のClaude Academy講座で紹介される「4つのD」フレームワークについての解説記事。AIとの関わり方をAutomation、Augmentation、Agencyの3モードに分類し、Claude Codeを「優秀な新人」として扱う際の判断フレームワークを紹介。設計は自分、実装はAIという実践的な使い分けを提案している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/karamage/articles/2ef2c2aea7dfdf)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 
