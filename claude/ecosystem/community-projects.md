@@ -8,11 +8,12 @@ tags:
 - cowork
 - cursor
 - haiku
+- mac
 - opus
 - prompt
 - 新機能
 date: '2026-04-25'
-updated: '2026-08-29'
+updated: '2026-09-01'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sv7fvc/im_a_nursing_student_who_built_a_660kpage
   title: I’m a nursing student who built a 660K-page pharmaceutical database using
@@ -40,6 +41,9 @@ sources:
   title: I made a website with Claude where you try to time the market and beat a
     couch. 100K+ plays later, the couch still wins 62%
   date: '2026-08-29'
+- url: https://zenn.dev/microai/articles/5566817cd979c2
+  title: 'バイブコーディングにハマって開発してたら、いつの間にかターミナルアプリを作っていた話 #1 きっかけ編'
+  date: '2026-09-01'
 ---
 
 
@@ -49,7 +53,20 @@ sources:
 
 
 
+
 # Community Projects
+
+---
+
+## 2026-09-01
+
+### バイブコーディングにハマって開発してたら、いつの間にかターミナルアプリを作っていた話 #1 きっかけ編
+
+個人開発者がClaude（Anthropic）を活用してMac用ターミナルアプリ「microTerm」を開発した体験記。ノッチにターミナルを埋め込む機能を実現し、SwiftTermをベースにGPU描画による高速化に成功。Warp、Ghostty、iTerm2などとのベンチマーク比較も実施し、近日ローンチ予定。
+
+- **ソース**: [Zenn claude](https://zenn.dev/microai/articles/5566817cd979c2)
+- **重要度**: 4/10
+- **タグ**: claude-code, mac, cowork
 
 ---
 

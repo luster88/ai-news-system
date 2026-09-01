@@ -3,17 +3,35 @@ title: Claude Code Security
 category: releases
 subcategory: claude-code-security
 tags:
+- bugfix
 - claude-code
+- release
 - 新機能
 date: '2026-07-23'
-updated: '2026-07-23'
+updated: '2026-09-01'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v48e9x/claude_code_just_added_native_codebase_security
   title: Claude Code just added native codebase security scanning
   date: '2026-07-23'
+- url: https://qiita.com/picnic/items/ba95f05d2b78799f238b
+  title: 'Claude Code v2.1.257: Fable 5.1追加と権限すり抜け修正まとめ'
+  date: '2026-09-01'
 ---
 
+
 # Claude Code Security
+
+---
+
+## 2026-09-01
+
+### Claude Code v2.1.257: Fable 5.1追加と権限すり抜け修正まとめ
+
+Claude Code v2.1.257がリリースされ、新モデルClaude Fable 5.1が追加されました。今回は権限バイパスの無効化という破壊的変更を含む、セキュリティ修正が中心です。プロジェクト設定ファイルでの権限スキップが無視されるようになり、複数の権限チェック回避の脆弱性が修正されました。autoモードにコンテナ脱出防止ルールが追加され、Bedrock/Vertex/Foundry等のサードパーティプロバイダの認証問題も修正されています。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/ba95f05d2b78799f238b)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

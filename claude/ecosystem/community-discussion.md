@@ -13,10 +13,11 @@ tags:
 - performance
 - pricing
 - prompt
+- release
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-08-28'
+updated: '2026-09-01'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -75,6 +76,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1w047gy/i_think_were_starting_to_see_the_downside_of
   title: I think we’re starting to see the downside of everyone being able to build
   date: '2026-08-28'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1w4qgue/fable_51_and_mythos_51_release_discussion_hub
+  title: Fable 5.1 and Mythos 5.1 Release Discussion Hub
+  date: '2026-09-01'
 ---
 
 
@@ -93,7 +97,20 @@ sources:
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-09-01
+
+### Fable 5.1 and Mythos 5.1 Release Discussion Hub
+
+Reddit r/ClaudeAI コミュニティで Fable 5.1 と Mythos 5.1 のリリースに関する議論が活発化しており、モデレーターが専用のディスカッションハブを作成しました。多数の肯定的な投稿がサブレディットを圧倒していたため、議論を集約する措置が取られています。新情報を含む投稿は引き続きフィードに公開される予定です。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1w4qgue/fable_51_and_mythos_51_release_discussion_hub)
+- **重要度**: 6/10
+- **タグ**: release, sonnet, 新機能
 
 ---
 

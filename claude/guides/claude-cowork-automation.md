@@ -3,13 +3,14 @@ title: Claude Cowork Automation
 category: guides
 subcategory: claude-cowork-automation
 tags:
+- claude-code
 - cowork
 - mcp
 - prompt
 - setup
 - 新機能
 date: '2026-06-04'
-updated: '2026-06-23'
+updated: '2026-09-01'
 sources:
 - url: https://zenn.dev/tom1414/articles/87cab2ae7fabff
   title: Claude Cowork × Slack でClaude最新情報を自動収集
@@ -17,10 +18,26 @@ sources:
 - url: https://qiita.com/4q_sano/items/091942f8dfd9145d98ef
   title: ループエンジニアリングを Cowork で実践する ― 毎週のクラッシュ週報を“評価役つき”で全自動 PowerPoint 化
   date: '2026-06-23'
+- url: https://zenn.dev/isobeage/articles/morning-briefing-agent-devlog01
+  title: 「朝のブリーフィングAI」を作ろうとして、結局スキルを1個捨てた話
+  date: '2026-09-01'
 ---
 
 
+
 # Claude Cowork Automation
+
+---
+
+## 2026-09-01
+
+### 「朝のブリーフィングAI」を作ろうとして、結局スキルを1個捨てた話
+
+Claude Coworkを使い、朝のブリーフィングを自動生成する試みを記録した開発ログ。当初はカレンダー・メール・ニュースを集約するHTMLページを自動生成する計画だったが、連携先カレンダーアプリにエクスポート機能がない、PCの起動時刻が不定、などの制約に直面。最終的に「自動生成ページ」から「対話型チェックインスキル」への路線変更を決断し、作りかけのスキルを破棄した経緯を紹介している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/isobeage/articles/morning-briefing-agent-devlog01)
+- **重要度**: 5/10
+- **タグ**: claude-code, cowork, setup
 
 ---
 

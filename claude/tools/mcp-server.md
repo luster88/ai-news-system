@@ -13,7 +13,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-25'
-updated: '2026-08-27'
+updated: '2026-09-01'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -140,6 +140,12 @@ sources:
 - url: https://ai-heartland.com/tool/openconnector-mcp-saas-gateway
   title: OpenConnectorとは｜導入・使い方からMCP連携まで。1400+SaaSをAIエージェントに繋ぐOSS
   date: '2026-08-27'
+- url: https://ai-heartland.com/agent/claude-osint
+  title: Claude-OSINTとは｜9本のOSINTスキルの起動条件・常駐トークン・安全弁を実測で確かめた
+  date: '2026-09-01'
+- url: https://ai-heartland.com/mcp/codebase-memory-mcp
+  title: codebase-memory-mcpとは｜複数AIエージェントが索引を共有するMCPサーバー
+  date: '2026-09-01'
 ---
 
 
@@ -179,7 +185,30 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-09-01
+
+### Claude-OSINTとは｜9本のOSINTスキルの起動条件・常駐トークン・安全弁を実測で確かめた
+
+Claude-OSINTは、外部からの見え方を調べる手順書を9本のSKILL.md形式に畳み込んだスキルパックです。実測により、triggers:は起動条件として機能せず、実際の起動はdescriptionで決まること、常駐トークンは3,332トークン、安全弁の多くが文章ベースであることが確認されました。パックの重心は攻撃手法ではなく、自社資産の露出面把握にあります。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/agent/claude-osint)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, setup
+
+---
+
+### codebase-memory-mcpとは｜複数AIエージェントが索引を共有するMCPサーバー
+
+codebase-memory-mcpは、DeusData社が開発したMCPサーバーで、tree-sitterで158言語を解析し、コードベースを永続的なグラフに索引化する。通常のMCPサーバーと異なり、Session Coordination Daemonが常駐して索引を保持し、Claude Code・Codex CLIなど43のクライアントが同じ索引を共有できる点が特徴。実測では約22秒でノード29,426・エッジ41,576のグラフが生成され、15種のMCPツールで定義検索・呼び出し追跡が可能。最新版はv0.10.8のpre-1.0、MITライセンスで公開。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/mcp/codebase-memory-mcp)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, 新機能
 
 ---
 

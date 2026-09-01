@@ -12,7 +12,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-08-08'
+updated: '2026-09-01'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -63,6 +63,13 @@ sources:
     for the Opus tier powering long-running agents while delivering improvements in
     coding and professional work.
   date: '2026-08-08'
+- url: https://the-decoder.com/anthropics-claude-fable-5-1-promises-better-coding-and-research-at-up-to-45-percent-less
+  title: Anthropic's Claude Fable 5.1 promises better coding and research at up to
+    45 percent less
+  date: '2026-09-01'
+- url: https://techcrunch.com/2026/09/01/anthropics-new-fable-release-is-cheaper-less-restrictive
+  title: Anthropic’s new Fable release is cheaper, less restrictive
+  date: '2026-09-01'
 ---
 
 
@@ -76,7 +83,30 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-09-01
+
+### Anthropic's Claude Fable 5.1 promises better coding and research at up to 45 percent less
+
+Anthropic が Claude Fable 5.1 と Mythos 5.1 をリリース。コーディングとテキスト品質が向上し、キャッシュ読み取りコストの削減により最大45%のコスト削減を実現。Fable 5.1 は前モデルや GPT-5.6 Sol を上回るエージェントベンチマークを記録。初の透かし機能を搭載し、検証 API も提供開始。ただし Artificial Analysis は最大労力時のコスト削減効果に疑問を呈している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropics-claude-fable-5-1-promises-better-coding-and-research-at-up-to-45-percent-less)
+- **重要度**: 9/10
+- **タグ**: release, 新機能, pricing
+
+---
+
+### Anthropic’s new Fable release is cheaper, less restrictive
+
+Anthropic が新モデル Fable 5.1 と Mythos 5.1 をリリース。トークンコストの削減、誤検知制限の緩和、ゼロデータ保持機能の導入が特徴。Fable 5.1 は一般利用可能、Mythos 5.1 はパートナー向け限定。Terminal-Bench 4.0 などの複数のベンチマークで記録を更新し、GPU最適化やVenusマップなど3つの科学的成果を発表。秋には Enterprise Frontier Safeguards として高プライバシーサービスを展開予定。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/09/01/anthropics-new-fable-release-is-cheaper-less-restrictive)
+- **重要度**: 9/10
+- **タグ**: release, 新機能, pricing
 
 ---
 

@@ -56,6 +56,12 @@ sources:
 - url: https://qiita.com/moha0918_/items/09b61fa44e12b8e9bd36
   title: Claude Code v2.1.252｜always allow が保存されない条件｜毎日Changelog解説
   date: '2026-09-01'
+- url: https://qiita.com/moha0918_/items/74317aca2bd592a109a6
+  title: Claude Code v2.1.257｜auto モードの自動承認が縮む｜毎日Changelog解説
+  date: '2026-09-01'
+- url: https://qiita.com/picnic/items/ba95f05d2b78799f238b
+  title: 'Claude Code v2.1.257: Fable 5.1追加と権限すり抜け修正まとめ'
+  date: '2026-09-01'
 ---
 
 
@@ -70,7 +76,30 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-09-01
+
+### Claude Code v2.1.257｜auto モードの自動承認が縮む｜毎日Changelog解説
+
+Claude Code v2.1.257 がリリースされました。auto モードでクラウドメタデータ認証情報取得や egress 回避が自動承認されなくなり、.claude/settings.json の bypassPermissions 指定も無視されるようになりました。新たに Fable 5.1 モデルが追加され、コンテキスト 1M トークン、料金は入力 $10/出力 $50 per Mtok、キャッシュ読み取り $0.25/Mtok で利用可能です。作業ディレクトリ外のファイル読み取りに確認プロセスが追加され、セキュリティが強化されています。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/74317aca2bd592a109a6)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+### Claude Code v2.1.257: Fable 5.1追加と権限すり抜け修正まとめ
+
+Claude Code v2.1.257では新モデルFable 5.1が追加されたが、より重要なのは権限すり抜けに関する複数のセキュリティ修正。プロジェクト設定でのbypassPermissions指定が無視される破壊的変更、複合コマンドやsymlinkを悪用した権限回避の修正、autoモードへのContainment Escapeルール追加など、実質的にセキュリティパッチとしての性格が強い。Bedrock/Vertex/Foundryなどサードパーティプロバイダ利用時の認証ヘッダ混入も修正された。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/picnic/items/ba95f05d2b78799f238b)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

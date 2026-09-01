@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-07'
-updated: '2026-08-14'
+updated: '2026-09-01'
 sources:
 - url: https://ai-heartland.com/tool/claude-code-routines-ci-autofix
   title: Claude Code Routines完全解説｜Claudeが自分でClaude Codeを起動する非同期自動化
@@ -20,11 +20,27 @@ sources:
 - url: https://qiita.com/devex12/items/4ba5b8b076f366010bfa
   title: 個人開発のバッチを4本、Claude Code RemoteのRoutineで無人稼働させて分かったcron設計3パターンと権限設計チェックリスト
   date: '2026-08-14'
+- url: https://zenn.dev/atamaplus/articles/6be03483c0110b
+  title: PRレビューもエラー調査も定額で自動化する、Claude Codeのroutine活用実例
+  date: '2026-09-01'
 ---
 
 
 
+
 # Claude Code Routines
+
+---
+
+## 2026-09-01
+
+### PRレビューもエラー調査も定額で自動化する、Claude Codeのroutine活用実例
+
+Claude Codeのroutine機能を使った業務自動化の実例を紹介。定額プランで費用を気にせずPRレビューやエラー調査を自動化でき、スケジュール実行・GitHubイベント・APIトリガーに対応。毎朝の利用枠開始、セッション名整理、休暇予定の集計など8個の実運用例を紹介している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/atamaplus/articles/6be03483c0110b)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

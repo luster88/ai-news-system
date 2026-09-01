@@ -6,6 +6,8 @@ tags:
 - claude-code
 - cowork
 - mcp
+- pricing
+- release
 date: '2026-09-01'
 updated: '2026-09-01'
 sources:
@@ -15,9 +17,25 @@ sources:
 - url: https://qiita.com/homhom44/items/a04c2455fd1cbedecb39
   title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-01）
   date: '2026-09-01'
+- url: https://qiita.com/homhom44/items/88723c46be854b42a7c1
+  title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-02）
+  date: '2026-09-01'
 ---
 
+
 # News Digest
+
+---
+
+## 2026-09-01
+
+### Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-02）
+
+Claude Code開発者向けに、Anthropic関連の複数ニュースをまとめた索引記事。Claude 5.1の性能向上と値下げ、EU AI Act対応のwatermark機能、プロンプトインジェクション脆弱性、Claude Academy開設、アカウント侵害事例など、幅広いトピックを日本語で解説。各記事へのリンクと要点を提供し、モデルの技術面だけでなく、実運用上の課題や規制対応、セキュリティリスクまで包括的に扱っている。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/88723c46be854b42a7c1)
+- **重要度**: 6/10
+- **タグ**: claude-code, release, pricing
 
 ---
 

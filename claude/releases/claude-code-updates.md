@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: 2026-03-23
-updated: '2026-08-17'
+updated: '2026-09-01'
 sources:
 - url: https://github.com/anthropics/claude-code/releases
   title: Claude Code GitHub Releases
@@ -98,7 +98,11 @@ sources:
 - url: https://qiita.com/moha0918_/items/75f3681463180844e8ed
   title: Claude Code v2.1.234｜利用上限リセットで自動再開｜毎日Changelog解説
   date: '2026-08-17'
+- url: https://qiita.com/moha0918_/items/74317aca2bd592a109a6
+  title: Claude Code v2.1.257｜auto モードの自動承認が縮む｜毎日Changelog解説
+  date: '2026-09-01'
 ---
+
 
 
 
@@ -169,6 +173,18 @@ Claude Code の主要なリリース・機能追加を時系列で記録する�
 
 - [セットアップガイド](../guides/setup.md)
 - [ツール比較](../tools/comparison.md)
+
+---
+
+## 2026-09-01
+
+### Claude Code v2.1.257｜auto モードの自動承認が縮む｜毎日Changelog解説
+
+Claude Code v2.1.257 では、auto モードのセキュリティが強化され、クラウドメタデータ認証情報の取得や egress 回避が自動承認されなくなりました。リポジトリの .claude/settings.json の defaultMode: "bypassPermissions" も無視されます。また Fable 5.1 が追加され、Fable の既定モデルとなり、コンテキスト 1M トークン、料金は入力 $10/出力 $50 per Mtok となりました。作業ディレクトリ外のファイル読み取り時に確認が入るようになり、長い会話でのレンダリング性能も改善されています。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/74317aca2bd592a109a6)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 
