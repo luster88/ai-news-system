@@ -10,7 +10,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-04-23'
-updated: '2026-08-29'
+updated: '2026-09-02'
 sources:
 - url: https://qiita.com/tuvy22686/items/efd5e3ba573abb9914d6
   title: 【個人開発】AI（Claude / Gemini）に設計を任せて、AWS 上に完全自動の競馬予測システムを構築した話【AIDD】
@@ -27,13 +27,29 @@ sources:
 - url: https://qiita.com/usapino/items/cd0e9c6dafdb227d6da9
   title: AI駆動開発は「答え」を外部に求めてはいけない
   date: '2026-08-29'
+- url: https://zenn.dev/racco/books/dd23e457e82f10
+  title: 医療技術者のためのAI駆動開発（AIDD）完全攻略ハンドブック
+  date: '2026-09-02'
 ---
 
 
 
 
 
+
 # Ai Driven Development
+
+---
+
+## 2026-09-02
+
+### 医療技術者のためのAI駆動開発（AIDD）完全攻略ハンドブック
+
+医療従事者向けのAI駆動開発（AIDD）実践ガイド。プログラミング未経験の医療技術者が、CursorやClaude Codeを活用して現場のWebツールや自動化スクリプトを開発する方法を解説。プログラミング知識の壁をAIで乗り越え、医療現場の課題解決を実現する手法を提供。
+
+- **ソース**: [Zenn claude](https://zenn.dev/racco/books/dd23e457e82f10)
+- **重要度**: 6/10
+- **タグ**: claude-code, cursor, cowork
 
 ---
 

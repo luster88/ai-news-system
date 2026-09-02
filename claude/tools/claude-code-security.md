@@ -4,16 +4,33 @@ category: tools
 subcategory: claude-code-security
 tags:
 - claude-code
+- setup
 - 新機能
 date: '2026-07-06'
-updated: '2026-07-06'
+updated: '2026-09-02'
 sources:
 - url: https://qiita.com/nogataka/items/4d2a551f89f6b4f94b01
   title: Claude Code の無料セキュリティ監査プラグインで脆弱性を自動検出・修正してみる
   date: '2026-07-06'
+- url: https://zenn.dev/gorizawa/articles/claude-code-guard-delete-hook
+  title: Claude Code の auto モードで rm -rf 事故を止める PreToolUse hook を書いた
+  date: '2026-09-02'
 ---
 
+
 # Claude Code Security
+
+---
+
+## 2026-09-02
+
+### Claude Code の auto モードで rm -rf 事故を止める PreToolUse hook を書いた
+
+Claude Codeのautoモードで危険なrm -rfコマンドを自動実行されるリスクに対処するため、PreToolUse hookを使った削除コマンド監視ツールを実装。allow/ask/denyの3段階判定で、危険な削除は阻止し、判断が必要なものは人間に確認を求める。shlex によるトークン化でコマンド判定の精度を高め、保護ディレクトリの設定や fail-closed 設計で安全性を確保している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/gorizawa/articles/claude-code-guard-delete-hook)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup
 
 ---
 

@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-09-01'
+updated: '2026-09-02'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -328,6 +328,9 @@ sources:
 - url: https://zenn.dev/karamage/articles/2ef2c2aea7dfdf
   title: Anthropic公式のClaude Code講座で学んだ「4つのD」
   date: '2026-09-01'
+- url: https://zenn.dev/microai/articles/d9606ee5f3de13
+  title: 'バイブコーディングにハマって開発してたら、いつの間にかターミナルアプリを作っていた話 #2 ノッチアプリを作る編'
+  date: '2026-09-02'
 ---
 
 
@@ -411,7 +414,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-09-02
+
+### バイブコーディングにハマって開発してたら、いつの間にかターミナルアプリを作っていた話 #2 ノッチアプリを作る編
+
+Claude Codeを活用してMac用ターミナルアプリ「microTerm」とノッチアプリ「microIsland」を開発した体験記。ノッチにターミナルのペインを収納し、Claude Codeのクォータ表示やエージェントステータスなどの便利なウィジェットを実装。バイブコーディングでの開発に没頭し、機能を次々と追加している様子が紹介されている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/microai/articles/d9606ee5f3de13)
+- **重要度**: 4/10
+- **タグ**: claude-code, mac, cowork
 
 ---
 

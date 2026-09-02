@@ -4,18 +4,36 @@ category: ecosystem
 subcategory: competitor-news
 tags:
 - copilot
+- cowork
 - performance
 - pricing
 date: '2026-08-13'
-updated: '2026-08-13'
+updated: '2026-09-02'
 sources:
 - url: https://the-decoder.com/gemini-3-7-flash-lands-with-coding-gains-and-undercuts-its-three-week-old-predecessors-price-by-50
   title: Gemini 3.7 Flash lands with coding gains and undercuts its three-week-old
     predecessor's price by 50%
   date: '2026-08-13'
+- url: https://the-decoder.com/gemini-3-8-flash-is-googles-third-budget-model-in-six-weeks-while-frontier-models-remain-mia
+  title: Gemini 3.8 Flash is Google's third budget model in six weeks while frontier
+    models remain MIA
+  date: '2026-09-02'
 ---
 
+
 # Competitor News
+
+---
+
+## 2026-09-02
+
+### Gemini 3.8 Flash is Google's third budget model in six weeks while frontier models remain MIA
+
+Google が6週間で3つ目の予算モデル Gemini 3.8 Flash をリリース。コーディングベンチマークで Claude Opus 5 に迫る性能を示すも、価格は大幅に安価。一方で Gemini 3.5 Pro や Gemini 4 といったフロンティアモデルは未発表のまま。Google は価格性能比の最適化だけでなく、能力面でもリードすることを目指すと表明。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/gemini-3-8-flash-is-googles-third-budget-model-in-six-weeks-while-frontier-models-remain-mia)
+- **重要度**: 4/10
+- **タグ**: performance, pricing, cowork
 
 ---
 

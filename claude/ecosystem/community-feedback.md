@@ -3,13 +3,14 @@ title: Community Feedback
 category: ecosystem
 subcategory: community-feedback
 tags:
+- claude-code
 - cowork
 - opus
 - performance
 - sonnet
 - 新機能
 date: '2026-04-18'
-updated: '2026-07-25'
+updated: '2026-09-02'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sp1mzs/look_how_they_massacred_my_boy
   title: Look how they massacred my boy
@@ -26,13 +27,30 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v6973n/opus_5_token_usage_is_amazing
   title: Opus 5 Token Usage is Amazing
   date: '2026-07-25'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1w5ai3j/fable_51_is_insane_and_it_burned_usage_which_is
+  title: Fable 5.1 is insane and it burned usage, which is fine. Anthropic just needs
+    to nail Opus 5.1
+  date: '2026-09-02'
 ---
 
 
 
 
 
+
 # Community Feedback
+
+---
+
+## 2026-09-02
+
+### Fable 5.1 is insane and it burned usage, which is fine. Anthropic just needs to nail Opus 5.1
+
+Redditユーザーが新モデル「Fable 5.1」を1日使用した感想を共有。モデルの品質は過去最高と評価する一方、使用量の30%を1日で消費したことを報告。コーディング作業には高性能だが消費が激しいため、日常的な開発作業用に「Opus 5.1」の改善（性格、コミュニケーション、不正確性、過剰な動作の修正）が重要だと指摘。Fableが思考を担当し、Opusが実装を担当する役割分担が理想的で、Opus 5.1の成否がAnthropicの今後を左右すると主張している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1w5ai3j/fable_51_is_insane_and_it_burned_usage_which_is)
+- **重要度**: 6/10
+- **タグ**: opus, performance, claude-code
 
 ---
 

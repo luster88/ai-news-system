@@ -12,7 +12,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-03-24'
-updated: '2026-08-22'
+updated: '2026-09-02'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -55,6 +55,9 @@ sources:
 - url: https://zenn.dev/pdfractal/articles/55929755eb39c1
   title: なぜ、GPTのTerra以下、ClaudeのSonnet以下、Geminiの全部に価値が無いのか？
   date: '2026-08-22'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1w5fh39/differences_between_fable_5_and_fable_51_on
+  title: Differences Between Fable 5 and Fable 5.1 on MineBench
+  date: '2026-09-02'
 ---
 
 
@@ -69,7 +72,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-09-02
+
+### Differences Between Fable 5 and Fable 5.1 on MineBench
+
+MineBench による Fable 5 と Fable 5.1 の比較ベンチマーク。Fable 5.1 は推論時間が約2倍、コストが約3倍に増加（$54.93 → $147.55）。API価格は変わっていないが、推論時間の増加によりコストが大幅上昇。一方で内装デザインの認識精度が向上し、GPT 5.6 Sol Pro より安価。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1w5fh39/differences_between_fable_5_and_fable_51_on)
+- **重要度**: 6/10
+- **タグ**: performance, pricing, sonnet
 
 ---
 

@@ -13,7 +13,7 @@ tags:
 - release
 - 新機能
 date: '2026-07-16'
-updated: '2026-08-13'
+updated: '2026-09-02'
 sources:
 - url: https://qiita.com/moha0918_/items/c8b144e3ba36744b964b
   title: Claude Code v2.1.211｜Bedrock/Vertexのキャッシュ課金バグが直る｜毎日Changelog解説
@@ -42,6 +42,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/e0970dd96706c59e6b69
   title: Claude Code v2.1.231｜Slack の MCP OAuth が redirect URI で弾かれる問題を修正｜毎日Changelog解説
   date: '2026-08-13'
+- url: https://qiita.com/moha0918_/items/9cdc566dadb9a8e30e1a
+  title: Claude Code v2.1.258｜macOS 12 で起動できない退行が直る｜毎日Changelog解説
+  date: '2026-09-02'
 ---
 
 
@@ -50,7 +53,20 @@ sources:
 
 
 
+
 # Claude Code Bugfix
+
+---
+
+## 2026-09-02
+
+### Claude Code v2.1.258｜macOS 12 で起動できない退行が直る｜毎日Changelog解説
+
+Claude Code v2.1.258 がリリースされ、macOS 12 (Monterey) で起動できなかった退行バグが修正されました。v2.1.255 から発生していた起動失敗の問題が解消され、リモート/スケジュールセッションが権限承認の再送で落ちるバグも修正されています。新機能の追加はなく、バグフィックスのみのリリースです。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/9cdc566dadb9a8e30e1a)
+- **重要度**: 4/10
+- **タグ**: claude-code, bugfix, mac
 
 ---
 

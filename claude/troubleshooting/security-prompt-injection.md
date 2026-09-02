@@ -8,7 +8,7 @@ tags:
 - claude-code
 - prompt
 date: '2026-06-05'
-updated: '2026-06-13'
+updated: '2026-09-02'
 sources:
 - url: https://ai-heartland.com/security/prompt-injection-defense
   title: プロンプトインジェクションとは？攻撃手口・実例・防御策をLLM開発者向けに徹底解説｜OWASP LLM01
@@ -16,10 +16,26 @@ sources:
 - url: https://zenn.dev/fixu/articles/fake-system-reminder-injection
   title: ツール結果に紛れた偽の停止指示を観測した話 — AIエージェントへの指示注入とその検出
   date: '2026-06-13'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1w57t43/well_i_almost_got_prompt_injected
+  title: Well I almost got prompt injected
+  date: '2026-09-02'
 ---
 
 
+
 # Security Prompt Injection
+
+---
+
+## 2026-09-02
+
+### Well I almost got prompt injected
+
+ユーザーがClaude（cc）をハーネスとして使用中、セルフホストのlitellm + llamacpに対するプロンプトインジェクション攻撃を検知した事例。Vercelトークンを狙った攻撃の可能性があったが、実際には保存されておらず、npm関連の問題と推測される。Claudeが攻撃を適切に識別した。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1w57t43/well_i_almost_got_prompt_injected)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, prompt
 
 ---
 

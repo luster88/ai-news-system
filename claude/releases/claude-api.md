@@ -12,7 +12,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-09-01'
+updated: '2026-09-02'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -70,6 +70,9 @@ sources:
 - url: https://techcrunch.com/2026/09/01/anthropics-new-fable-release-is-cheaper-less-restrictive
   title: Anthropic’s new Fable release is cheaper, less restrictive
   date: '2026-09-01'
+- url: https://qiita.com/picnic/items/01982e38dbe329f13bae
+  title: Claude Fable 5.1/Mythos 5.1リリースと破壊的変更まとめ
+  date: '2026-09-02'
 ---
 
 
@@ -84,7 +87,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-09-02
+
+### Claude Fable 5.1/Mythos 5.1リリースと破壊的変更まとめ
+
+2026年9月1日、AnthropicがClaude Fable 5.1とMythos 5.1をリリース。1Mトークンコンテキスト、128k出力、adaptive thinkingをデフォルトサポート。tool_choiceの「any」「tool」廃止、Python SDK v1.0移行、旧モデル退役など複数の破壊的変更が含まれ、既存コードが動作しなくなる可能性がある。キャッシュ読み取り料金が大幅に安価になり、エージェント用途でコスト削減が期待できる。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/01982e38dbe329f13bae)
+- **重要度**: 9/10
+- **タグ**: release, claude-api, 新機能
 
 ---
 
