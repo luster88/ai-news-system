@@ -3,13 +3,14 @@ title: Competitive Models
 category: ecosystem
 subcategory: competitive-models
 tags:
+- copilot
 - opus
 - performance
 - pricing
 - sonnet
 - 新機能
 date: '2026-04-20'
-updated: '2026-07-16'
+updated: '2026-09-03'
 sources:
 - url: https://the-decoder.com/open-weight-kimi-k2-6-takes-on-gpt-5-4-and-claude-opus-4-6-with-agent-swarms
   title: Open-weight Kimi K2.6 takes on GPT-5.4 and Claude Opus 4.6 with agent swarms
@@ -18,10 +19,26 @@ sources:
   title: Kimi's open model K3 nears GPT-5.6 Sol and Fable 5 while signaling the end
     of super cheap Chinese AI
   date: '2026-07-16'
+- url: https://the-decoder.com/meta-closes-in-on-the-top-with-muse-spark-1-3-and-undercuts-rivals-on-price
+  title: Meta closes in on the top with Muse Spark 1.3, and undercuts rivals on price
+  date: '2026-09-03'
 ---
 
 
+
 # Competitive Models
+
+---
+
+## 2026-09-03
+
+### Meta closes in on the top with Muse Spark 1.3, and undercuts rivals on price
+
+Meta が Muse Spark 1.3 をリリース。agentic タスクで大幅改善し、Intelligence Index で 61-62 点を記録。Claude Fable 5.1 などトップモデルには及ばないものの、タスク単価 $0.55 と同性能クラスで最安値を実現。オープンウェイト版も予定。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/meta-closes-in-on-the-top-with-muse-spark-1-3-and-undercuts-rivals-on-price)
+- **重要度**: 4/10
+- **タグ**: pricing, performance, copilot
 
 ---
 

@@ -3,11 +3,13 @@ title: Ai Agent Workflow
 category: guides
 subcategory: ai-agent-workflow
 tags:
+- claude-api
 - claude-code
 - cowork
 - prompt
+- 新機能
 date: '2026-06-15'
-updated: '2026-07-22'
+updated: '2026-09-03'
 sources:
 - url: https://zenn.dev/gto_cto/articles/48fbf279efc43f
   title: Claude CodeとCodexを並列稼働したら競合祭りになったので、AI専用ロックファイルを作った
@@ -15,10 +17,26 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v3o7fe/a_small_trick_to_guide_an_llm_agent_while_its
   title: A small trick to guide an LLM Agent while it’s coding
   date: '2026-07-22'
+- url: https://qiita.com/akihidem/items/f746e5613ec988469062
+  title: 複数サブエージェントの並列実行を本番で回す：ワークフロー設計と運用の勘所
+  date: '2026-09-03'
 ---
 
 
+
 # Ai Agent Workflow
+
+---
+
+## 2026-09-03
+
+### 複数サブエージェントの並列実行を本番で回す：ワークフロー設計と運用の勘所
+
+Claude Agent SDK で複数のサブエージェントを並列実行する際の設計と運用のポイントを解説。並列化が効く条件（サブタスクの独立性・コンテキストの独立性）、SDK の上限設定（ネスト深さ3層・同時実行20・予算上限）、そして実際に3つのファイルを並列レビューするワークフローの実装例を示す。TypeScript SDK v0.3.219 / Python SDK v0.2.127 以降が対象で、agents.json によるエージェント定義と run_in_background によるバックグラウンド実行がデフォルト動作となる。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/akihidem/items/f746e5613ec988469062)
+- **重要度**: 7/10
+- **タグ**: claude-code, claude-api, 新機能
 
 ---
 

@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-07'
-updated: '2026-08-31'
+updated: '2026-09-03'
 sources:
 - url: https://qiita.com/arahata0907/items/6e0f7bf1629cc52bfa53
   title: 【日本語解説付き試験問題集】Claude Certified Architect Foundations (CCA-F)
@@ -27,12 +27,28 @@ sources:
 - url: https://zenn.dev/shino_i/articles/c8641ea1e9c5d5
   title: CCDV-F(Claude Certified Developer – Foundations)に合格しましたので所感を記事にまとめてみた
   date: '2026-08-31'
+- url: https://qiita.com/Solbear/items/ad15ec59cc18cf9994c5
+  title: Claude Certified Developer – Foundations（CCDV-F）に3日・8時間で970点合格した勉強法
+  date: '2026-09-03'
 ---
 
 
 
 
+
 # Certification Exam
+
+---
+
+## 2026-09-03
+
+### Claude Certified Developer – Foundations（CCDV-F）に3日・8時間で970点合格した勉強法
+
+Claude認定資格CCDV-Fに3日8時間の学習で970点合格した体験記。公式Prep Courseを中心に学習し、特にProduction Engineering・Evals・Securityに注力。合格には公式教材の理解で十分だが、高得点にはAPIの仕組みやトレードオフの理解が必要。Claude Codeだけでなく、アプリケーション設計・実装・運用の幅広い知識が問われる。
+
+- **ソース**: [Qiita claude](https://qiita.com/Solbear/items/ad15ec59cc18cf9994c5)
+- **重要度**: 6/10
+- **タグ**: claude-api, setup, 新機能
 
 ---
 

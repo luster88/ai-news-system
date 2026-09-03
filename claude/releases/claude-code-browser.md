@@ -6,12 +6,13 @@ tags:
 - bugfix
 - claude-code
 - cowork
+- mcp
 - pricing
 - release
 - setup
 - 新機能
 date: '2026-07-12'
-updated: '2026-09-01'
+updated: '2026-09-03'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -62,6 +63,12 @@ sources:
 - url: https://qiita.com/picnic/items/ba95f05d2b78799f238b
   title: 'Claude Code v2.1.257: Fable 5.1追加と権限すり抜け修正まとめ'
   date: '2026-09-01'
+- url: https://qiita.com/moha0918_/items/72c26a11dd4f27c60348
+  title: Claude Code v2.1.259｜Read() deny をすり抜けていた経路が塞がる｜毎日Changelog解説
+  date: '2026-09-03'
+- url: https://qiita.com/picnic/items/abe3255cb2fcf8e586cd
+  title: Claude Code v2.1.259まとめ:MCP管理設定の破壊的変更と管理者向け対応ポイント
+  date: '2026-09-03'
 ---
 
 
@@ -77,7 +84,40 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-09-03
+
+### Claude Code v2.1.259｜Read() deny をすり抜けていた経路が塞がる｜毎日Changelog解説
+
+Claude Code v2.1.259では、Read()のdenyルールがオプション値や複合コマンド（cd && catなど）経由の読み取りを検知できていなかった脆弱性を修正。組織向けにmanagedMcpServersが追加され、HTTP/SSE型のMCPサーバーを全ユーザーへ配布可能に。allowedMcpServersの対象範囲が変更され、組織配布サーバーは許可リスト判定の対象外となった。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/72c26a11dd4f27c60348)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, mcp
+
+---
+
+### Claude Code v2.1.259まとめ:MCP管理設定の破壊的変更と管理者向け対応ポイント
+
+Claude Code v2.1.259では、エンタープライズ向けMCPサーバー一元管理機能が追加されたが、allowedMcpServers/deniedMcpServersの適用範囲変更という破壊的変更が含まれる。管理配布MCPサーバーの除外にはdeniedMcpServersへの移行が必須となり、管理設定ファイルの解析失敗時は起動拒否される。組織管理者は既存設定の棚卸しとファイル妥当性の事前確認が必要。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/abe3255cb2fcf8e586cd)
+- **重要度**: 8/10
+- **タグ**: claude-code, mcp, bugfix
+
+---
+
+### Claude Code v2.1.259｜Read() deny をすり抜けていた経路が塞がる｜毎日Changelog解説
+
+Claude Code v2.1.259では、Read()のdenyルールの判定抜け穴が修正されました。オプション値、gitコマンドのファイルオペランド、複合コマンド（cd && cat）が新たに判定対象となり、.envなどの機密ファイル保護が強化されています。また組織向けにmanagedMcpServersが追加され、HTTP/SSE型のMCPサーバーを全ユーザーに配布可能になりました。allowedMcpServersの対象範囲も変更され、組織配布サーバーは許可リストの判定外となります。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/72c26a11dd4f27c60348)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

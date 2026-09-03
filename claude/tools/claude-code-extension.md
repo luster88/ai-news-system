@@ -6,9 +6,10 @@ tags:
 - claude-code
 - cowork
 - prompt
+- setup
 - 新機能
 date: '2026-05-10'
-updated: '2026-06-13'
+updated: '2026-09-03'
 sources:
 - url: https://zenn.dev/jun_eng/articles/71012bb4d0cf51
   title: Claude Code を10倍使いやすくするスラッシュコマンド集を作って公開した
@@ -16,10 +17,26 @@ sources:
 - url: https://ai-heartland.com/explain/claudeclaw-guide
   title: ClaudeClawとは｜Claude Codeを常駐デーモン化しTelegram/Slackから動かすOSS
   date: '2026-06-13'
+- url: https://zenn.dev/penpeen/articles/035351eeffcaec
+  title: Claude Code の /resume が探しにくいので、会話履歴を全文検索するスキルを作った
+  date: '2026-09-03'
 ---
 
 
+
 # Claude Code Extension
+
+---
+
+## 2026-09-03
+
+### Claude Code の /resume が探しにくいので、会話履歴を全文検索するスキルを作った
+
+Claude Code の /resume 機能はタイトルのみ検索対象で会話内容が検索できないため、会話ログ全文を検索できるカスタムスキルが開発された。~/.claude/ 配下の JSONL ファイルを直接検索し、ripgrep で高速に過去セッションを発見できる。GitHub で公開されており、インストール後すぐに利用可能。
+
+- **ソース**: [Zenn claude](https://zenn.dev/penpeen/articles/035351eeffcaec)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

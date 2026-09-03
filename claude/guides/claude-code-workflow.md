@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-09-02'
+updated: '2026-09-03'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -331,6 +331,9 @@ sources:
 - url: https://zenn.dev/microai/articles/d9606ee5f3de13
   title: 'バイブコーディングにハマって開発してたら、いつの間にかターミナルアプリを作っていた話 #2 ノッチアプリを作る編'
   date: '2026-09-02'
+- url: https://zenn.dev/ikuosaito1989/articles/ec5e4711cd52fa
+  title: AIエージェントを同時に働かせても、なぜコードが壊れないのか
+  date: '2026-09-03'
 ---
 
 
@@ -415,7 +418,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-09-03
+
+### AIエージェントを同時に働かせても、なぜコードが壊れないのか
+
+複数のAIエージェント（CodexやClaude Code）を同時に動かして開発する際、git worktreeを使って作業ディレクトリを分けることでコンフリクトを回避している仕組みを解説。AIエージェントの並列開発によって、従来の技術の新しい使い方に気づいた事例として紹介されている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/ikuosaito1989/articles/ec5e4711cd52fa)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, setup
 
 ---
 
