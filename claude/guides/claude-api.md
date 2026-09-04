@@ -13,7 +13,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-08-31'
+updated: '2026-09-04'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -54,6 +54,9 @@ sources:
 - url: https://qiita.com/nabata/items/abf4a1cbc84d239d34cb
   title: PythonとClaude APIでAIエージェントの基礎的なものを作ってみた
   date: '2026-08-31'
+- url: https://qiita.com/yureki_lab/items/44d9155ebe7a4db804ab
+  title: Claude API の Structured Outputs で JSON パースエラーを撲滅する実装手順 — beta ヘッダー・スキーマ制約・初回レイテンシの3つのハマりどころ【2026】
+  date: '2026-09-04'
 ---
 
 
@@ -68,7 +71,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-09-04
+
+### Claude API の Structured Outputs で JSON パースエラーを撲滅する実装手順 — beta ヘッダー・スキーマ制約・初回レイテンシの3つのハマりどころ【2026】
+
+Claude API の Structured Outputs 機能を使った JSON パースエラーの解決方法を解説。旧来の beta ヘッダー方式は廃止され、現在は output_config.format でスキーマを指定する GA 版が標準。Pydantic モデルを使う messages.parse() が最も簡潔で、additionalProperties: false と required の全列挙が必須。prefill は Claude 4.6 以降で廃止され、Structured Outputs が公式後継となった。
+
+- **ソース**: [Qiita claude](https://qiita.com/yureki_lab/items/44d9155ebe7a4db804ab)
+- **重要度**: 7/10
+- **タグ**: claude-api, 新機能, setup
 
 ---
 

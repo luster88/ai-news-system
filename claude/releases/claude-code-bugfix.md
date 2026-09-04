@@ -13,7 +13,7 @@ tags:
 - release
 - 新機能
 date: '2026-07-16'
-updated: '2026-09-02'
+updated: '2026-09-04'
 sources:
 - url: https://qiita.com/moha0918_/items/c8b144e3ba36744b964b
   title: Claude Code v2.1.211｜Bedrock/Vertexのキャッシュ課金バグが直る｜毎日Changelog解説
@@ -45,6 +45,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/9cdc566dadb9a8e30e1a
   title: Claude Code v2.1.258｜macOS 12 で起動できない退行が直る｜毎日Changelog解説
   date: '2026-09-02'
+- url: https://qiita.com/moha0918_/items/49e737eeb75cbbe8d1c8
+  title: Claude Code v2.1.260〜v2.1.261｜1 版で撤回された Read() deny の Bash 適用｜毎日Changelog解説
+  date: '2026-09-04'
 ---
 
 
@@ -54,7 +57,20 @@ sources:
 
 
 
+
 # Claude Code Bugfix
+
+---
+
+## 2026-09-04
+
+### Claude Code v2.1.260〜v2.1.261｜1 版で撤回された Read() deny の Bash 適用｜毎日Changelog解説
+
+Claude Code v2.1.260〜v2.1.261のアップデート解説。v2.1.259で導入されたRead() denyルールのBash引数適用が、npm run buildを誤って拒否する副作用により即座に取り消された。同時にpermissionルールのパース不具合（括弧を含むパスの無視、正規表現エラーの影響範囲）も修正。v2.1.261ではプロンプト編集キーがBash準拠に変更され、/diffや/skill-doctorコマンドが追加された。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/49e737eeb75cbbe8d1c8)
+- **重要度**: 7/10
+- **タグ**: claude-code, bugfix, release
 
 ---
 

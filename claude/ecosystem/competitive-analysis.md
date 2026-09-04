@@ -13,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-04'
-updated: '2026-08-14'
+updated: '2026-09-04'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -67,6 +67,10 @@ sources:
   title: Study contradicts Anthropic and OpenAI claims that autonomous AI research
     is within reach
   date: '2026-08-14'
+- url: https://the-decoder.com/benchmarks-disagree-on-gpt-6-astra-but-its-human-beating-efficiency-on-arc-agi-3-pulls-chollets-agi-forecast-forward
+  title: Benchmarks disagree on GPT-6 Astra, but its human-beating efficiency on ARC-AGI-3
+    pulls Chollet’s AGI forecast forward
+  date: '2026-09-04'
 ---
 
 
@@ -81,7 +85,20 @@ sources:
 
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-09-04
+
+### Benchmarks disagree on GPT-6 Astra, but its human-beating efficiency on ARC-AGI-3 pulls Chollet’s AGI forecast forward
+
+OpenAI の GPT-6 Astra に対する評価がベンチマークごとに分かれている。Epoch AI は首位評価だが、Artificial Analysis は前モデルと同等と判定。最大の注目点は ARC-AGI-3 で初めて人間平均を上回る効率を達成したこと。ARC Prize の François Chollet は予想の2倍速い進歩と評価し、AGI 到達予測を前倒ししている。コスト面では前モデルより75%高額だが、Claude と比較すると半額以下で同等性能を実現。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/benchmarks-disagree-on-gpt-6-astra-but-its-human-beating-efficiency-on-arc-agi-3-pulls-chollets-agi-forecast-forward)
+- **重要度**: 6/10
+- **タグ**: performance, opus, sonnet
 
 ---
 

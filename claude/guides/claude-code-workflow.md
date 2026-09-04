@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-09-03'
+updated: '2026-09-04'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -334,6 +334,12 @@ sources:
 - url: https://zenn.dev/ikuosaito1989/articles/ec5e4711cd52fa
   title: AIエージェントを同時に働かせても、なぜコードが壊れないのか
   date: '2026-09-03'
+- url: https://zenn.dev/daichi_pep/articles/claude-code-six-parallel-sessions
+  title: 人間が AI の速度に追いつくための運用：Claude Code を 9 本並列で回しながら、認識と指示をどう工夫しているか
+  date: '2026-09-04'
+- url: https://zenn.dev/soeno9/books/claude-code-jutaku-ops
+  title: 【受託SE向け】Claude Codeを「毎朝記憶が消える天才新人」として運用したら壊れなくなった【hook39本を全公開】
+  date: '2026-09-04'
 ---
 
 
@@ -419,7 +425,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-09-04
+
+### 人間が AI の速度に追いつくための運用：Claude Code を 9 本並列で回しながら、認識と指示をどう工夫しているか
+
+Claude Code を6本から9本並列で実行する際の運用方法を解説。人間が AI の出力速度に追いつくため、コードレビューではなく動作確認と資料レビューで品質を担保し、Recent Activity パネル（Sublime Text プラグイン）で複数セッションの成果物を一元管理する工夫を紹介。CLAUDE.md、スキル、memory の整備が日常的な運用の中心。
+
+- **ソース**: [Zenn claude](https://zenn.dev/daichi_pep/articles/claude-code-six-parallel-sessions)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, vscode
+
+---
+
+### 【受託SE向け】Claude Codeを「毎朝記憶が消える天才新人」として運用したら壊れなくなった【hook39本を全公開】
+
+受託開発での Claude Code 運用ノウハウを「毎朝記憶が消える天才新人」というメタファーで解説。CLAUDE.md の管理方法、編集禁止ファイル設定、ビルド検証、自動 push など実践的な 39 本の hook と settings.json を全公開している。破壊的な操作を防ぎつつ、Claude Code を安全に運用するための具体的な手法を提示。
+
+- **ソース**: [Zenn claude](https://zenn.dev/soeno9/books/claude-code-jutaku-ops)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, cowork
 
 ---
 

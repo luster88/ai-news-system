@@ -8,7 +8,7 @@ tags:
 - release
 - 新機能
 date: '2026-07-23'
-updated: '2026-09-01'
+updated: '2026-09-04'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v48e9x/claude_code_just_added_native_codebase_security
   title: Claude Code just added native codebase security scanning
@@ -16,10 +16,26 @@ sources:
 - url: https://qiita.com/picnic/items/ba95f05d2b78799f238b
   title: 'Claude Code v2.1.257: Fable 5.1追加と権限すり抜け修正まとめ'
   date: '2026-09-01'
+- url: https://qiita.com/moha0918_/items/49e737eeb75cbbe8d1c8
+  title: Claude Code v2.1.260〜v2.1.261｜1 版で撤回された Read() deny の Bash 適用｜毎日Changelog解説
+  date: '2026-09-04'
 ---
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-09-04
+
+### Claude Code v2.1.260〜v2.1.261｜1 版で撤回された Read() deny の Bash 適用｜毎日Changelog解説
+
+Claude Code v2.1.260〜v2.1.261のChangelog解説。v2.1.259で導入されたRead() denyルールのBash引数への適用が、npm run buildを誤って拒否する副作用により即座に撤回された。同時にpermissionルールのパース不具合（括弧を含むパスの処理失敗、正規表現エラーの影響範囲）も修正。v2.1.261ではプロンプトの単語編集キーがBash準拠に変更され、/diffや/skill-doctorコマンドが追加された。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/49e737eeb75cbbe8d1c8)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, release
 
 ---
 

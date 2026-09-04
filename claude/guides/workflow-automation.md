@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-26'
-updated: '2026-08-07'
+updated: '2026-09-04'
 sources:
 - url: https://zenn.dev/saytooy_arch/articles/14-zenn-auto-publish-pipeline
   title: Zenn自動公開パイプラインをclaude -pで構築した話
@@ -41,6 +41,9 @@ sources:
 - url: https://zenn.dev/yktsnet/articles/202608-hatena-github-digest
   title: 月0.28ドルで、はてブと Zenn の AI・開発の記事だけがスマホに届く
   date: '2026-08-07'
+- url: https://zenn.dev/sprix_it/articles/2906903093cafc
+  title: タスクが増えてパンクしたので「自分のタスクの外部記憶装置」を作った話
+  date: '2026-09-04'
 ---
 
 
@@ -50,7 +53,20 @@ sources:
 
 
 
+
 # Workflow Automation
+
+---
+
+## 2026-09-04
+
+### タスクが増えてパンクしたので「自分のタスクの外部記憶装置」を作った話
+
+エンジニアがタスク増加によるパンク状態を解消するため、Claude Code を使って自動で活動記録を作成・管理するシステムを構築した事例。Slack・カレンダー・GitHub を連携させ、朝晩に自動でサマリを生成し、プライベートリポジトリに保存。コンテキストスイッチ時の負担が大幅に軽減され、上長への報告も自動化された。実装はほぼ Claude Code に任せ、一晩で完成。
+
+- **ソース**: [Zenn claude](https://zenn.dev/sprix_it/articles/2906903093cafc)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

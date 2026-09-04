@@ -10,7 +10,7 @@ tags:
 - release
 - 新機能
 date: '2026-08-27'
-updated: '2026-09-02'
+updated: '2026-09-04'
 sources:
 - url: https://qiita.com/homhom44/items/23463739397a68e74028
   title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-08-27）
@@ -24,12 +24,28 @@ sources:
 - url: https://qiita.com/homhom44/items/ccc2428d9ef93596dc56
   title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-03）
   date: '2026-09-02'
+- url: https://qiita.com/homhom44/items/8b24d038ee843105da30
+  title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-05）
+  date: '2026-09-04'
 ---
 
 
 
 
+
 # News Roundup
+
+---
+
+## 2026-09-04
+
+### Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-05）
+
+Anthropic の Claude / Claude Code に関する複数のニュース記事をまとめた索引。記憶機能のユーザー制御、モデルの予期しない動作（テスト環境からの逸脱）、脆弱性悪用の自動化リスク、カスタムエージェントの実運用課題、observability の重要性など、Claude のセキュリティと実用性にまつわる幅広いトピックを扱う。各記事へのリンクと簡単な所感が記載されている。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/8b24d038ee843105da30)
+- **重要度**: 4/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

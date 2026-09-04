@@ -1,30 +1,5 @@
 {
   "urls": {
-    "https://www.reddit.com/r/ClaudeAI/comments/1txjeqy/opus_48": "2026-06-05",
-    "https://www.reddit.com/r/ClaudeAI/comments/1txkn86/ive_built_4_ios_apps_with_claude_5_more_in": "2026-06-05",
-    "https://www.reddit.com/r/ClaudeAI/comments/1txisil/claude_now_writes_80_of_the_code_at_anthropic": "2026-06-05",
-    "https://www.reddit.com/r/ClaudeAI/comments/1txqc8g/hi_reddit_i_posted_my_build_your_own_llm_workshop": "2026-06-05",
-    "https://www.reddit.com/r/ClaudeAI/comments/1txy1m9/claude_called_me_a_sweet_girl": "2026-06-05",
-    "https://www.reddit.com/r/ClaudeAI/comments/1txyx3j/your_claude_cowork_usage_limits_just_doubled_for": "2026-06-05",
-    "https://www.reddit.com/r/ClaudeAI/comments/1txh56r/i_spend_23_hours_a_day_walking_up_and_down_in_my": "2026-06-05",
-    "https://www.reddit.com/r/ClaudeAI/comments/1txvaef/if_you_used_claude_to_build_your_website_which": "2026-06-05",
-    "https://www.reddit.com/r/ClaudeAI/comments/1txt5p9/shipped_a_production_ios_app_with_claude_as_a": "2026-06-05",
-    "https://qiita.com/moha0918_/items/c697a35ee9b8a8fa9805": "2026-06-05",
-    "https://qiita.com/picnic/items/2e22aeba610255b45641": "2026-06-05",
-    "https://qiita.com/natume_nat/items/76fe608d570caebb4f4c": "2026-06-05",
-    "https://qiita.com/picnic/items/0e8844c6590cb7dd838a": "2026-06-05",
-    "https://zenn.dev/pikuto/articles/ai-code-correlated-blindspot": "2026-06-05",
-    "https://zenn.dev/f_monsoon/articles/20260605-claude-taboo": "2026-06-05",
-    "https://zenn.dev/masayan1126/books/ai-driven-dev-claude-code-outcomes": "2026-06-05",
-    "https://zenn.dev/taichiendoh/articles/ccb221b551703a": "2026-06-05",
-    "https://zenn.dev/kai_kou/articles/227-claude-mythos-glasswing-guide": "2026-06-05",
-    "https://zenn.dev/echosphere/articles/dont-make-heavy-prompt-llm-work": "2026-06-05",
-    "https://qiita.com/yurubito/items/a40692f9058683a61e28": "2026-06-05",
-    "https://ai-heartland.com/explain/what-is-ai-agent-2026": "2026-06-05",
-    "https://ai-heartland.com/security/prompt-injection-defense": "2026-06-05",
-    "https://ai-heartland.com/tool/github-copilot-usage-guide-2026": "2026-06-05",
-    "https://the-decoder.com/anthropics-mythos-model-is-reportedly-powering-nsa-offensive-cyber-ops-against-china-and-iran": "2026-06-05",
-    "https://the-decoder.com/anthropic-says-claude-now-writes-over-90-of-its-code-and-wants-the-world-to-have-an-ai-pause-button": "2026-06-05",
     "https://www.reddit.com/r/ClaudeAI/comments/1tyhfso/help_my_claude_wont_say_uwu": "2026-06-06",
     "https://www.reddit.com/r/ClaudeAI/comments/1tybrpv/anthropic_is_not_a_normal_company": "2026-06-06",
     "https://www.reddit.com/r/ClaudeAI/comments/1tyot8t/claude_game_dev_feels_like_cheating": "2026-06-06",
@@ -2333,9 +2308,23 @@
     "https://ai-heartland.com/tool/zvec-grep": "2026-09-03",
     "https://the-decoder.com/claude-fable-5-1-decoded-a-centuries-old-royalist-message-hidden-in-plain-sight-since-1653": "2026-09-03",
     "https://the-decoder.com/meta-closes-in-on-the-top-with-muse-spark-1-3-and-undercuts-rivals-on-price": "2026-09-03",
-    "https://the-decoder.com/anthropic-ramps-up-claude-infrastructure-with-35-billion-lambda-deal": "2026-09-03"
+    "https://the-decoder.com/anthropic-ramps-up-claude-infrastructure-with-35-billion-lambda-deal": "2026-09-03",
+    "https://qiita.com/homhom44/items/8b24d038ee843105da30": "2026-09-04",
+    "https://qiita.com/yureki_lab/items/44d9155ebe7a4db804ab": "2026-09-04",
+    "https://qiita.com/moha0918_/items/49e737eeb75cbbe8d1c8": "2026-09-04",
+    "https://qiita.com/picnic/items/fa37990f0a548cf2d8ad": "2026-09-04",
+    "https://zenn.dev/trailfusionai/articles/ai-news-20260513000251-07fa5e": "2026-09-04",
+    "https://zenn.dev/daichi_pep/articles/claude-code-six-parallel-sessions": "2026-09-04",
+    "https://zenn.dev/sprix_it/articles/2906903093cafc": "2026-09-04",
+    "https://zenn.dev/soeno9/books/claude-code-jutaku-ops": "2026-09-04",
+    "https://zenn.dev/eques_blog/articles/190b5c5a7aa980": "2026-09-04",
+    "https://zenn.dev/genelab_999/articles/2281f72b68e2b0": "2026-09-04",
+    "https://the-decoder.com/openais-gpt-6-astra-hallucinates-less-but-remains-vulnerable-to-hidden-prompt-injections": "2026-09-04",
+    "https://the-decoder.com/benchmarks-disagree-on-gpt-6-astra-but-its-human-beating-efficiency-on-arc-agi-3-pulls-chollets-agi-forecast-forward": "2026-09-04",
+    "https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing": "2026-09-04"
   },
   "source_penalties": {
-    "Anthropic News": "2026-09-04"
+    "Anthropic News": "2026-09-05",
+    "Reddit r/ClaudeAI": "2026-09-05"
   }
 }
