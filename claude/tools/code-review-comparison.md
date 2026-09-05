@@ -5,15 +5,32 @@ subcategory: code-review-comparison
 tags:
 - claude-code
 - cowork
+- performance
 date: '2026-07-07'
-updated: '2026-07-07'
+updated: '2026-09-05'
 sources:
 - url: https://qiita.com/kunitomo926/items/7dfc85770cf5132f3d1c
   title: 15個の仕込みバグで比較：ClaudeとCodexのコードレビューは、モデルより「レビュー方式」で差が出た
   date: '2026-07-07'
+- url: https://zenn.dev/yukkie1114/articles/f13672584add05
+  title: 【最新モデル】Claude Code / Codex / Cursor のコードレビューをOWASP Benchmarkで検証
+  date: '2026-09-05'
 ---
 
+
 # Code Review Comparison
+
+---
+
+## 2026-09-05
+
+### 【最新モデル】Claude Code / Codex / Cursor のコードレビューをOWASP Benchmarkで検証
+
+Claude Code、Codex、Cursorの3社のコードレビュー機能をOWASP Benchmark Java 1.2の脆弱性データセット110件で検証した結果、上位方式（Claude Codeの3機能とCodex /review）はほぼ満点で精度差がほとんどない。選択基準は精度ではなく「動作場所」「所要時間」「費用」「誤検知・見逃しの傾向」となる。個人サブスク範囲では/code-review highまたは/reviewが第一選択で、/security-reviewは誤検知ゼロだが確信度の高い指摘のみ表示する特性がある。リポジトリ全体スキャンは時間がかかるため定期実行向き。
+
+- **ソース**: [Zenn claude](https://zenn.dev/yukkie1114/articles/f13672584add05)
+- **重要度**: 7/10
+- **タグ**: claude-code, performance, cowork
 
 ---
 

@@ -6,11 +6,12 @@ tags:
 - claude-code
 - cowork
 - mcp
+- performance
 - pricing
 - release
 - 新機能
 date: '2026-09-01'
-updated: '2026-09-02'
+updated: '2026-09-05'
 sources:
 - url: https://qiita.com/homhom44/items/a04c2455fd1cbedecb39
   title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-01）
@@ -24,11 +25,27 @@ sources:
 - url: https://qiita.com/homhom44/items/ccc2428d9ef93596dc56
   title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-03）
   date: '2026-09-02'
+- url: https://qiita.com/homhom44/items/229e92aba6fc5c17c4b0
+  title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-06）
+  date: '2026-09-05'
 ---
 
 
 
+
 # News Digest
+
+---
+
+## 2026-09-05
+
+### Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-06）
+
+Claude / Claude Code 関連の複数記事を索引形式でまとめたもの。AI coding agent のコスト構造（reasoning より I/O が重い）、新モデルの価格低下と安全性強化、複数インスタンス運用時のリソース管理、AI エージェントの権限制御、DOM ベースのブラウザ操作手法など、実務的な観点から幅広いトピックを扱っている。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/homhom44/items/229e92aba6fc5c17c4b0)
+- **重要度**: 4/10
+- **タグ**: claude-code, performance, pricing
 
 ---
 

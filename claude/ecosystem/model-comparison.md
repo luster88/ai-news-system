@@ -12,7 +12,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-03-24'
-updated: '2026-09-02'
+updated: '2026-09-05'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -58,6 +58,10 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1w5fh39/differences_between_fable_5_and_fable_51_on
   title: Differences Between Fable 5 and Fable 5.1 on MineBench
   date: '2026-09-02'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1w8b57m/new_1_on_code_arena_astra_and_fable_51_are_in_a
+  title: 'New #1 on Code Arena: Astra and Fable 5.1 are in a class of their own. Anyone
+    seeing real world differences'
+  date: '2026-09-05'
 ---
 
 
@@ -73,7 +77,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-09-05
+
+### New #1 on Code Arena: Astra and Fable 5.1 are in a class of their own. Anyone seeing real world differences
+
+Code Arena ベンチマークで新たに Astra と Fable 5.1 が首位に立ち、他のモデルと一線を画す性能を示しています。Reddit コミュニティでは実際の開発現場での性能差について議論が交わされており、これらの新モデルが実務でどの程度の違いをもたらすか関心が集まっています。Code Arena は AI モデルのコーディング能力を評価する重要なベンチマークの一つです。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1w8b57m/new_1_on_code_arena_astra_and_fable_51_are_in_a)
+- **重要度**: 4/10
+- **タグ**: performance, claude-code, cowork
 
 ---
 

@@ -12,7 +12,7 @@ tags:
 - pricing
 - sonnet
 date: '2026-03-25'
-updated: '2026-06-08'
+updated: '2026-09-05'
 sources:
 - url: https://qiita.com/himajisan/items/1e8f67782335b4517139
   title: AIを扱き使ったらすぐに使用制限ですと言う
@@ -49,6 +49,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1tzwrxs/claudes_new_usage_limits_are_insane
   title: Claude's new usage limits are insane.
   date: '2026-06-08'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1w81w5b/whats_going_on_with_claude_usage
+  title: What's going on with claude usage
+  date: '2026-09-05'
 ---
 
 
@@ -57,7 +60,20 @@ sources:
 
 
 
+
 # Usage Limits
+
+---
+
+## 2026-09-05
+
+### What's going on with claude usage
+
+Reddit ユーザーが Claude Max ×5 プランで使用量の異常を報告。週次リセット後、Opus 5 で54分間・約16万トークンの1セッションのみで使用量が大幅に消費された問題について質問している。同様の問題を経験しているユーザーがいるか確認を求めている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1w81w5b/whats_going_on_with_claude_usage)
+- **重要度**: 6/10
+- **タグ**: opus, pricing, claude-console
 
 ---
 

@@ -13,7 +13,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-25'
-updated: '2026-09-01'
+updated: '2026-09-05'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -146,6 +146,9 @@ sources:
 - url: https://ai-heartland.com/mcp/codebase-memory-mcp
   title: codebase-memory-mcpとは｜複数AIエージェントが索引を共有するMCPサーバー
   date: '2026-09-01'
+- url: https://zenn.dev/uedayou/articles/4f81c65b3d08df
+  title: 住所LOD MCPサーバー:検索から地図生成・面積比較まで
+  date: '2026-09-05'
 ---
 
 
@@ -186,7 +189,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-09-05
+
+### 住所LOD MCPサーバー:検索から地図生成・面積比較まで
+
+日本の住所データをLinked Data形式で提供する「住所LOD」をMCP経由で利用できるサーバーの紹介。住所検索だけでなく、行政区画のポリゴンデータや座標を取得でき、Claude DesktopやClaude Codeから地図生成・面積比較などが可能。9つのToolを提供し、GeoJSON形式での出力に対応。
+
+- **ソース**: [Zenn claude](https://zenn.dev/uedayou/articles/4f81c65b3d08df)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, cowork
 
 ---
 

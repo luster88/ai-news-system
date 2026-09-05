@@ -4,12 +4,14 @@ category: guides
 subcategory: game-development-workflow
 tags:
 - claude-code
+- claude-console
 - cowork
 - mcp
 - opus
+- prompt
 - vscode
 date: '2026-07-16'
-updated: '2026-07-23'
+updated: '2026-09-05'
 sources:
 - url: https://qiita.com/OnuuuumaX/items/6be3227534df186680f2
   title: 【Godot 4.x】3D脱出ゲームを作ってみる⑤〜ダイヤル錠ギミックの状態をローカルストレージに保存する〜
@@ -17,10 +19,26 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v4ol30/using_claudegodotblender_to_make_a_battle_racer
   title: Using Claude/Godot/Blender to make a Battle Racer game - OVERSTEER
   date: '2026-07-23'
+- url: https://qiita.com/notfolder/items/c88f1be667a36ec069b7
+  title: AIと企画を「議論」する方法：AIを使った個人開発のゲームの面白さとモチベーションをClaudeと構造解析
+  date: '2026-09-05'
 ---
 
 
+
 # Game Development Workflow
+
+---
+
+## 2026-09-05
+
+### AIと企画を「議論」する方法：AIを使った個人開発のゲームの面白さとモチベーションをClaudeと構造解析
+
+個人開発ゲーム『ことづての庭』の企画経験を基に、Claudeとゲームの「面白さ」と「モチベーション」を構造的に議論した実践記録。20往復の対話を通じて、事例調査→分解→組み合わせ→構造化という抽象的な整理を実現。AIは推奨を出すが、判断基準は人間が保持する形で、MDAフレームワークや自己決定理論に後から接続できる議論が成立した。
+
+- **ソース**: [Qiita claude](https://qiita.com/notfolder/items/c88f1be667a36ec069b7)
+- **重要度**: 6/10
+- **タグ**: claude-console, prompt, cowork
 
 ---
 
