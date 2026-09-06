@@ -11,7 +11,7 @@ tags:
 - release
 - 新機能
 date: '2026-09-01'
-updated: '2026-09-05'
+updated: '2026-09-06'
 sources:
 - url: https://qiita.com/homhom44/items/a04c2455fd1cbedecb39
   title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-01）
@@ -28,12 +28,28 @@ sources:
 - url: https://qiita.com/homhom44/items/229e92aba6fc5c17c4b0
   title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-06）
   date: '2026-09-05'
+- url: https://qiita.com/homhom44/items/96603513d035660c5805
+  title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-07）
+  date: '2026-09-06'
 ---
 
 
 
 
+
 # News Digest
+
+---
+
+## 2026-09-06
+
+### Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-07）
+
+Anthropic の Claude / Claude Code 関連の複数ニュースをまとめた索引記事。2026年9月7日時点での主なトピックとして、OAuth の権限管理改善、MCP による業務 UI の自然言語化、研究論文への Claude Code 活用、AI モデルのトレーニング一時停止と安全性配慮、性能向上と監視の難しさ、料金設計の現実化、Enterprise Frontier Safeguards による機密データ保護などが紹介されている。全体として「AI を現場に実装するための地味だが重要なインフラ整備」が進んでいる様子が伝わる内容。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/homhom44/items/96603513d035660c5805)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, 新機能
 
 ---
 

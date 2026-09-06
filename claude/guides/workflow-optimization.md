@@ -13,7 +13,7 @@ tags:
 - setup
 - sonnet
 date: '2026-05-05'
-updated: '2026-08-28'
+updated: '2026-09-06'
 sources:
 - url: https://zenn.dev/bentenweb_fumi/articles/fxyojdsgcwap
   title: AIで「手を動かす時間」を減らす：技術者のための時間投資戦略
@@ -39,6 +39,9 @@ sources:
 - url: https://qiita.com/kskg4/items/cff7fbb3bda053c1f9ca
   title: Claude Codeで実装が爆速になった結果、PRレビューが追いつかなくなったので「全行読むレビュー」をやめることにした
   date: '2026-08-28'
+- url: https://zenn.dev/kentaro_tak/articles/ai-suggestion-hit-rate-measured
+  title: AIの提案を3.7ヶ月ぶん分類したら、「推します」の的中率が場面で12倍違った
+  date: '2026-09-06'
 ---
 
 
@@ -48,7 +51,20 @@ sources:
 
 
 
+
 # Workflow Optimization
+
+---
+
+## 2026-09-06
+
+### AIの提案を3.7ヶ月ぶん分類したら、「推します」の的中率が場面で12倍違った
+
+3.7ヶ月分のClaude Codeとの対話ログ（361件の提案）を分析した結果、「推します」の的中率が場面で最大12倍異なることが判明。技術判断では73%的中するが、アイデア出しでは6%しか当たらない。却下の最多パターンは「リストを丸ごと出し直させる」が44%で、明示的な「要らない」はわずか7件。分析から、アイデア出しでの推奨は不要、1ラウンドの提案数を絞る、却下時は軸を聞くという運用改善策を導出。
+
+- **ソース**: [Zenn claude](https://zenn.dev/kentaro_tak/articles/ai-suggestion-hit-rate-measured)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

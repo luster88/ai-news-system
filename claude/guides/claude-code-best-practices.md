@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-11'
-updated: '2026-08-12'
+updated: '2026-09-06'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-best-practice-guide-2026
   title: Claude Codeベストプラクティス完全ガイド2026年版｜使い方・Tips・効率化テクニック集
@@ -46,6 +46,9 @@ sources:
 - url: https://zenn.dev/odacchi/articles/claude-md-length-experiment
   title: 「CLAUDE.md は短い方が良い」を 1,510 回試して確かめた
   date: '2026-08-12'
+- url: https://qiita.com/sescore/items/78e3dee00b5e7c414fd4
+  title: Claude Codeを1年使い倒して分かった、年収を上げる実践Tips9選
+  date: '2026-09-06'
 ---
 
 
@@ -57,7 +60,30 @@ sources:
 
 
 
+
 # Claude Code Best Practices
+
+---
+
+## 2026-09-06
+
+### Claude Codeを1年使い倒して分かった、年収を上げる実践Tips9選
+
+Claude Codeを1年間実務で使用した経験に基づく実践的なTipsを9つ紹介。CLAUDE.mdの効果的な書き方、プランモードの活用、サブエージェントの並列実行、hooks設定による危険操作の防止、カスタムコマンドの作成、データ分析での工程分割、memory機能とCLAUDE.mdの使い分けなど、SES企業とフリーランス案件の両方で培った具体的なテクニックを共有している。
+
+- **ソース**: [Qiita claude](https://qiita.com/sescore/items/78e3dee00b5e7c414fd4)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
+
+---
+
+### Claude Codeを1年使い倒して分かった、年収を上げる実践Tips9選
+
+SES・フリーランスエンジニアが Claude Code を1年使用して得た実践的な Tips を共有。CLAUDE.md の書き方、プランモード活用、サブエージェント活用、hooks 設定、カスタムコマンド、データ分析手法、memory 機能など9つの具体的なテクニックを紹介し、フリーランス案件獲得・年収向上への効果も言及している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/sescore/items/78e3dee00b5e7c414fd4)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

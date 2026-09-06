@@ -12,7 +12,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-09-02'
+updated: '2026-09-06'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -73,6 +73,9 @@ sources:
 - url: https://qiita.com/picnic/items/01982e38dbe329f13bae
   title: Claude Fable 5.1/Mythos 5.1リリースと破壊的変更まとめ
   date: '2026-09-02'
+- url: https://zenn.dev/kashiwabaray/articles/25d934bfd1a5c9
+  title: Claude Fable 5.1 + EFS で企業 AI を安全に実装 — ZDR ロードマップ
+  date: '2026-09-06'
 ---
 
 
@@ -88,7 +91,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-09-06
+
+### Claude Fable 5.1 + EFS で企業 AI を安全に実装 — ZDR ロードマップ
+
+Anthropic が新フロンティアモデル Claude Fable 5.1 と Enterprise Frontier Safeguards（EFS）を発表。EFS は顧客のクラウドインフラ内でデータを保持しながら自動安全監視を実現し、ゼロデータ保持（ZDR）要件と高度な推論能力の両立を目指す。Fable 5.1 はキャッシュ読取単価を75%削減し、複雑な推論タスクで性能向上。実測検証では数学問題の解答精度や実装制約を確認。
+
+- **ソース**: [Zenn claude](https://zenn.dev/kashiwabaray/articles/25d934bfd1a5c9)
+- **重要度**: 9/10
+- **タグ**: 新機能, claude-api, performance
 
 ---
 

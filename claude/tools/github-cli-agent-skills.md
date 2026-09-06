@@ -6,10 +6,12 @@ tags:
 - claude-code
 - copilot
 - cursor
+- mcp
+- prompt
 - setup
 - 新機能
 date: '2026-04-22'
-updated: '2026-07-20'
+updated: '2026-09-06'
 sources:
 - url: https://ai-heartland.com/tool/gh-skill-github-cli-agent-skills
   title: gh skill完全ガイド：GitHub CLIでAgent Skillsを管理する公式コマンド入門
@@ -17,10 +19,26 @@ sources:
 - url: https://zenn.dev/maronsan/articles/skills-lint-collision-linter
   title: そのSKILL.md、別のスキルと発火が被ってない？ 衝突と壊れた参照をCIで落とすリンタを作った
   date: '2026-07-20'
+- url: https://ai-heartland.com/agent/oi-owarasero
+  title: oi-owarasero解説｜書籍発の対話型Agent Skillをインストールから実測
+  date: '2026-09-06'
 ---
 
 
+
 # Github Cli Agent Skills
+
+---
+
+## 2026-09-06
+
+### oi-owarasero解説｜書籍発の対話型Agent Skillをインストールから実測
+
+書籍『おい、とりあえず終わらせろ』を基にした対話型Agent Skill「oi-owarasero」の解説記事。作業を引き取らずに問いだけを返す特徴的なSkillで、SKILL.md 1枚（231行）のみで構成され、Claude Code/Codex両対応。著者自身が書籍の5ステップ方法論をSkill化し、実行可能コードを含まずプロンプトのみで動作する珍しい実装例。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/agent/oi-owarasero)
+- **重要度**: 5/10
+- **タグ**: claude-code, mcp, prompt
 
 ---
 

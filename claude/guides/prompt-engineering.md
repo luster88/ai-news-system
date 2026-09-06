@@ -5,6 +5,7 @@ subcategory: prompt-engineering
 tags:
 - claude-api
 - claude-code
+- claude-console
 - cowork
 - haiku
 - opus
@@ -13,7 +14,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-07'
-updated: '2026-07-28'
+updated: '2026-09-06'
 sources:
 - url: https://zenn.dev/analysis/articles/thought-analyzer-agents-md
   title: コンテキストファイルは、エージェントを賢くしない ── AGENTS.mdの効果を初めて測った研究
@@ -36,6 +37,9 @@ sources:
 - url: https://qiita.com/asiball/items/6ae676bfd37a75a77956
   title: Opus5出たしUART/I2C/SPIの波形アニメGIFを描かせてみた
   date: '2026-07-28'
+- url: https://zenn.dev/hanamilo/articles/8348ff15c868e2
+  title: AIは毎回忘れる。だから引き継ぎプロンプトを38版まで育てた
+  date: '2026-09-06'
 ---
 
 
@@ -44,7 +48,20 @@ sources:
 
 
 
+
 # Prompt Engineering
+
+---
+
+## 2026-09-06
+
+### AIは毎回忘れる。だから引き継ぎプロンプトを38版まで育てた
+
+非開発者がClaude との対話で半年かけて社内Webツールを開発した実践記録。チャット履歴が切れるたびに文脈が失われる問題に対し、引き継ぎプロンプトを38版まで改善。要約では抜け漏れが発生し、詳細化すればトークン制限に達する。最終的に「決定事項」「やらないこと」「目的」などを明示する構造化文書へと進化させ、失敗から学んだ運用ノウハウを蓄積した経験談。
+
+- **ソース**: [Zenn claude](https://zenn.dev/hanamilo/articles/8348ff15c868e2)
+- **重要度**: 7/10
+- **タグ**: prompt, claude-console, cowork
 
 ---
 

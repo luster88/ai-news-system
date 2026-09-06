@@ -13,7 +13,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-25'
-updated: '2026-09-05'
+updated: '2026-09-06'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -149,6 +149,9 @@ sources:
 - url: https://zenn.dev/uedayou/articles/4f81c65b3d08df
   title: 住所LOD MCPサーバー:検索から地図生成・面積比較まで
   date: '2026-09-05'
+- url: https://ai-heartland.com/agent/okf-agent-memory
+  title: OKF Agent Memory徹底解説｜Google OKF v0.2準拠のGit記憶層をv0.1.1で実測
+  date: '2026-09-06'
 ---
 
 
@@ -190,7 +193,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-09-06
+
+### OKF Agent Memory徹底解説｜Google OKF v0.2準拠のGit記憶層をv0.1.1で実測
+
+OKF Agent Memoryは、Google OKF v0.2仕様に準拠したGit記憶層を提供するGo製CLI＋MCPサーバー。外部DB不要でknowledge/配下のMarkdownのみで動作し、v0.1.1での実測では依存ゼロ・RSS 15MB未満を達成。検索速度は8概念で315µs、50概念で2.46msと概念数に比例。日本語のみの概念は検索0件となるため英語キーワード併記が必須。MCP常駐コストは6ツール・860トークンと軽量。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/agent/okf-agent-memory)
+- **重要度**: 6/10
+- **タグ**: mcp, 新機能, performance
 
 ---
 

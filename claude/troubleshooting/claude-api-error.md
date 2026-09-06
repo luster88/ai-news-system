@@ -8,7 +8,7 @@ tags:
 - cowork
 - performance
 date: '2026-05-11'
-updated: '2026-08-03'
+updated: '2026-09-06'
 sources:
 - url: https://zenn.dev/zoetaka38/articles/2328ea1c852dee
   title: AI consultation が突然 400 BadRequest ループに陥る原因と、3層防御で直した話
@@ -16,10 +16,26 @@ sources:
 - url: https://qiita.com/picnic/items/fbe7837c24d64aa0031d
   title: Claudeで複数モデルのエラー率上昇インシデント発生、監視中
   date: '2026-08-03'
+- url: https://qiita.com/syun136_616/items/5ed3d24c0b0eadbd5688
+  title: Claude Fable 5.1のtool_choice仕様と400エラー対策
+  date: '2026-09-06'
 ---
 
 
+
 # Claude Api Error
+
+---
+
+## 2026-09-06
+
+### Claude Fable 5.1のtool_choice仕様と400エラー対策
+
+Claude Fable 5.1では、拡張思考（Extended Thinking）を有効にした状態でtool_choiceに「any」や特定ツール名を指定すると400エラーが発生します。対処法として、拡張思考使用時はtool_choiceを「auto」か「none」に限定する必要があります。また、プロンプトキャッシュの読み取りコストが従来の10分の1から4分の1程度に変化したという報告があります。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/syun136_616/items/5ed3d24c0b0eadbd5688)
+- **重要度**: 7/10
+- **タグ**: claude-api, bugfix
 
 ---
 

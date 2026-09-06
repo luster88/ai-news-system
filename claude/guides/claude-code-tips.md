@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-27'
-updated: '2026-07-10'
+updated: '2026-09-06'
 sources:
 - url: https://zenn.dev/beef_and_rice/articles/482b09980fce23
   title: Claude Code の便利機能 Ctrl+G と Ctrl+S を zsh でも使う
@@ -35,6 +35,9 @@ sources:
 - url: https://qiita.com/susumu_taka/items/02f422be8125cea7e9b7
   title: Claude Code を3か月運用して分かった「初心者がやりがちな3つのミス」──AIメイドの愚痴
   date: '2026-07-10'
+- url: https://qiita.com/kuma_3838/items/00cb0b8d61ca76769c88
+  title: 最近取り入れたClaude Codeの個人的tips 4選
+  date: '2026-09-06'
 ---
 
 
@@ -43,7 +46,20 @@ sources:
 
 
 
+
 # Claude Code Tips
+
+---
+
+## 2026-09-06
+
+### 最近取り入れたClaude Codeの個人的tips 4選
+
+Claude Codeの実用的なtipsを4つ紹介。セッション名の自動設定（UserPromptSubmitフック活用）、ステータスラインへのIssue/PRリンク追加、レートリミットのリセット時刻を揃えるルーチン設定、OSC 8エスケープシーケンスでのリンク実装方法など、個人の作業効率を上げる工夫が詳しく解説されている。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kuma_3838/items/00cb0b8d61ca76769c88)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, cowork
 
 ---
 
