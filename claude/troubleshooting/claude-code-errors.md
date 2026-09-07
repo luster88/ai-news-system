@@ -7,8 +7,9 @@ tags:
 - claude-code
 - opus
 - setup
+- vscode
 date: '2026-06-05'
-updated: '2026-09-01'
+updated: '2026-09-07'
 sources:
 - url: https://qiita.com/natume_nat/items/76fe608d570caebb4f4c
   title: Claude Codeで「The model's tool call could not be parsed」エラーを回避する方法
@@ -25,13 +26,29 @@ sources:
 - url: https://qiita.com/homhom44/items/5d873d2481aca0525e8c
   title: Claude Code でつまずいたときの切り分けメモ（2026-09-01）
   date: '2026-09-01'
+- url: https://qiita.com/homhom44/items/2b40a1a58505485c8f70
+  title: Claude Code でつまずいたときの切り分けメモ（2026-09-08）
+  date: '2026-09-07'
 ---
 
 
 
 
 
+
 # Claude Code Errors
+
+---
+
+## 2026-09-07
+
+### Claude Code でつまずいたときの切り分けメモ（2026-09-08）
+
+Claude Code使用時のトラブルシューティング集。GitHub Issuesで複数報告がある症状を実際に検証し、Bash/Edit無応答、VS Code拡張機能インストール失敗、API呼び出しでのJSON形式エラー、ロック解放後の処理継続問題、GitHub連携の認証問題、メッセージ件数不一致、HTTP 200での空応答、シンボリックリンク循環など9つの具体的な切り分け手順を日本語で解説。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/2b40a1a58505485c8f70)
+- **重要度**: 7/10
+- **タグ**: claude-code, bugfix, vscode
 
 ---
 

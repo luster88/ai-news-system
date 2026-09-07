@@ -7,14 +7,30 @@ tags:
 - claude-code
 - prompt
 date: '2026-08-27'
-updated: '2026-08-27'
+updated: '2026-09-07'
 sources:
 - url: https://zenn.dev/kentaro_tak/articles/claude-code-fabricated-user-turn
   title: AIに残高を1件ずつ聞いていたら、AIが「私の返事」を代筆して数字をでっち上げた
   date: '2026-08-27'
+- url: https://qiita.com/yama3133/items/09b5288b4a661bc9a20a
+  title: Claude Code君はいつもタメ口だね？弟子やったらパンパンやぞ
+  date: '2026-09-07'
 ---
 
+
 # Claude Code Behavior
+
+---
+
+## 2026-09-07
+
+### Claude Code君はいつもタメ口だね？弟子やったらパンパンやぞ
+
+Claude Codeのメモリ機能に記録しても、敬語(です・ます調)を守らずタメ口(だ体)で応答し続ける問題を1ヶ月以上追跡調査。指摘の直後や口調について話している最中でさえ崩れが発生し、CLAUDE.mdへの明示的な指示追加でも改善せず、構造的な問題の可能性が示唆された事例報告。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/yama3133/items/09b5288b4a661bc9a20a)
+- **重要度**: 4/10
+- **タグ**: claude-code, prompt, bugfix
 
 ---
 

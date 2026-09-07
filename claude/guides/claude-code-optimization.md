@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-31'
-updated: '2026-08-17'
+updated: '2026-09-07'
 sources:
 - url: https://qiita.com/nishiken1118/items/6b16557fcabf784c861e
   title: 過去の session をほしい時に参照する方針で claude-mem のトークン消費を激減させた話
@@ -53,6 +53,9 @@ sources:
 - url: https://zenn.dev/secula/articles/ccd31dd1035417
   title: 【Claude Code】＠ファイル指定はpath指定より速いという事実
   date: '2026-08-17'
+- url: https://qiita.com/peipeita/items/6cc695e48183bd773779
+  title: Claude Codeのトークン消費量を抑える方法
+  date: '2026-09-07'
 ---
 
 
@@ -66,7 +69,20 @@ sources:
 
 
 
+
 # Claude Code Optimization
+
+---
+
+## 2026-09-07
+
+### Claude Codeのトークン消費量を抑える方法
+
+Claude Codeのトークン消費を抑える実践的な手法をまとめた記事。会話履歴が毎回全て再送信される仕組みを解説し、セッションのリセット（/clear）や要約（/compact）、未使用MCPサーバーの無効化、CLAUDE.mdの最適化（スキルや.claude/rules/への分離）、具体的なプロンプト指示などのベストプラクティスを紹介している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/peipeita/items/6cc695e48183bd773779)
+- **重要度**: 7/10
+- **タグ**: claude-code, performance, prompt
 
 ---
 

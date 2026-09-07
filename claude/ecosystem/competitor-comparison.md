@@ -3,13 +3,14 @@ title: Competitor Comparison
 category: ecosystem
 subcategory: competitor-comparison
 tags:
+- copilot
 - cowork
 - opus
 - performance
 - pricing
 - sonnet
 date: '2026-05-02'
-updated: '2026-08-12'
+updated: '2026-09-07'
 sources:
 - url: https://the-decoder.com/xai-drops-grok-4-3-with-steep-price-cuts-and-an-imagine-agent-mode-for-creative-projects
   title: xAI drops Grok 4.3 with steep price cuts and an Imagine agent mode for creative
@@ -24,12 +25,28 @@ sources:
 - url: https://the-decoder.com/spacexais-grok-4-6-matches-openais-best-model-and-undercuts-it-on-price
   title: SpaceXAI's Grok 4.6 matches OpenAI's best model and undercuts it on price
   date: '2026-08-12'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1w9xeyl/tried_gpt_astra_today
+  title: Tried GPT Astra today
+  date: '2026-09-07'
 ---
 
 
 
 
+
 # Competitor Comparison
+
+---
+
+## 2026-09-07
+
+### Tried GPT Astra today
+
+1年以上 Claude を使用してきたユーザーが GPT Astra を試用し、Claude（Opus、Fable）と比較した体験談。Claude は冗長な回答が多く、必要な情報が10%程度で、コードレビューに5ラウンド必要だったのに対し、GPT Astra は高速で信頼性が高く、的確な回答が得られたと評価している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1w9xeyl/tried_gpt_astra_today)
+- **重要度**: 4/10
+- **タグ**: opus, performance, copilot
 
 ---
 

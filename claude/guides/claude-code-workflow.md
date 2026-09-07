@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-09-04'
+updated: '2026-09-07'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -340,6 +340,9 @@ sources:
 - url: https://zenn.dev/soeno9/books/claude-code-jutaku-ops
   title: 【受託SE向け】Claude Codeを「毎朝記憶が消える天才新人」として運用したら壊れなくなった【hook39本を全公開】
   date: '2026-09-04'
+- url: https://zenn.dev/kentaro_tak/articles/ai-wishlist-table-to-map
+  title: AIに「いつかやりたい」を貯めさせても動けなかった。表を地図に変えたら、次の行き先が決まった
+  date: '2026-09-07'
 ---
 
 
@@ -426,7 +429,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-09-07
+
+### AIに「いつかやりたい」を貯めさせても動けなかった。表を地図に変えたら、次の行き先が決まった
+
+Claude Code の memory に貯めた「いつかやりたいリスト」をスプレッドシートに出力し、さらに地図化することで、表では見えなかった地理的な関連性や効率的なルート計画が可能になった事例。認証にはサービスアカウントを使い、座標データは使い捨てスクリプトで一度だけ取得し静的ファイル化。地図は表から生成する「読み取り専用」として状態を持たせず、データの正本を一箇所に保つ設計。
+
+- **ソース**: [Zenn claude](https://zenn.dev/kentaro_tak/articles/ai-wishlist-table-to-map)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

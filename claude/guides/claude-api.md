@@ -13,7 +13,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-09-04'
+updated: '2026-09-07'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -57,6 +57,9 @@ sources:
 - url: https://qiita.com/yureki_lab/items/44d9155ebe7a4db804ab
   title: Claude API の Structured Outputs で JSON パースエラーを撲滅する実装手順 — beta ヘッダー・スキーマ制約・初回レイテンシの3つのハマりどころ【2026】
   date: '2026-09-04'
+- url: https://qiita.com/yureki_lab/items/e66de6f1cbae21cbd314
+  title: Claude API の Message Batches API で大量リクエストのコストを半額にする実装手順 — 結果の順序保証なし・24時間期限など3つのハマりどころ【2026】
+  date: '2026-09-07'
 ---
 
 
@@ -72,7 +75,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-09-07
+
+### Claude API の Message Batches API で大量リクエストのコストを半額にする実装手順 — 結果の順序保証なし・24時間期限など3つのハマりどころ【2026】
+
+Claude API の Message Batches API を使うと、大量の非同期リクエスト処理を通常の半額で実行できる。24時間以内に最大10万件を処理可能だが、結果の順序は保証されないため custom_id での突き合わせが必須。ended 状態でも個別リクエストは errored / expired になる可能性があり、result.type の分岐処理が重要。結果データは29日間で消えるため、取得後すぐにローカル保存が推奨される。
+
+- **ソース**: [Qiita claude](https://qiita.com/yureki_lab/items/e66de6f1cbae21cbd314)
+- **重要度**: 7/10
+- **タグ**: claude-api, pricing, performance
 
 ---
 

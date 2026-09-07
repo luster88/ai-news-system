@@ -3,11 +3,13 @@ title: Claude Code Analytics
 category: guides
 subcategory: claude-code-analytics
 tags:
+- claude-api
 - claude-code
+- cowork
 - performance
 - setup
 date: '2026-07-15'
-updated: '2026-08-24'
+updated: '2026-09-07'
 sources:
 - url: https://zenn.dev/mskbhd/articles/lab-102-claude
   title: Claudeのプロジェクト履歴を解析して、自分の作業パターンを可視化してみた
@@ -15,10 +17,26 @@ sources:
 - url: https://qiita.com/chiisanasoft/items/de047ac451a8b49c740c
   title: Claude Code のログでブランチ運用を数えたら、git_branch の "HEAD" が2つの意味を持っていた
   date: '2026-08-24'
+- url: https://zenn.dev/web_benriya/articles/claude-code-ga4-event-tracking-gap-detection
+  title: Claude CodeでGA4のイベント計測漏れを自動検知・修正提案する仕組み
+  date: '2026-09-07'
 ---
 
 
+
 # Claude Code Analytics
+
+---
+
+## 2026-09-07
+
+### Claude CodeでGA4のイベント計測漏れを自動検知・修正提案する仕組み
+
+Claude CodeとGA4のBigQueryエクスポートデータを組み合わせて、イベント計測の漏れを自動検知し修正提案する実装方法を解説。日次のイベント発火件数集計SQLや流入元別の計測状況比較、PythonでのBigQueryデータ取得とClaude API連携、Slack通知による自動アラート化までを含む。GTMのタグ・トリガー修正提案も可能で、非エンジニアでも計測異常を早期発見できる体制を構築できる。
+
+- **ソース**: [Zenn claude](https://zenn.dev/web_benriya/articles/claude-code-ga4-event-tracking-gap-detection)
+- **重要度**: 6/10
+- **タグ**: claude-code, claude-api, cowork
 
 ---
 

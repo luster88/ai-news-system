@@ -3,13 +3,14 @@ title: Market Share
 category: ecosystem
 subcategory: market-share
 tags:
+- claude-api
 - cowork
 - opus
 - performance
 - pricing
 - 新機能
 date: '2026-05-13'
-updated: '2026-08-12'
+updated: '2026-09-07'
 sources:
 - url: https://the-decoder.com/anthropic-overtakes-openai-in-b2b-adoption-for-the-first-time-according-to-ramp-spending-data
   title: Anthropic overtakes OpenAI in B2B adoption for the first time according to
@@ -19,10 +20,27 @@ sources:
   title: Google's Gemini is losing market share to ChatGPT and Claude according to
     new market data
   date: '2026-08-12'
+- url: https://the-decoder.com/chatgpt-claws-back-web-traffic-share-to-55-5-percent-as-geminis-brief-comeback-fades
+  title: ChatGPT claws back web traffic share to 55.5 percent as Gemini's brief comeback
+    fades
+  date: '2026-09-07'
 ---
 
 
+
 # Market Share
+
+---
+
+## 2026-09-07
+
+### ChatGPT claws back web traffic share to 55.5 percent as Gemini's brief comeback fades
+
+SimilarwebのデータによるとChatGPTがウェブトラフィックシェアを55.5%に回復し、Geminiは25.6%に低下。Claudeは過去1年で1.9%から9.3%に成長。ただしこれはウェブトラフィックのみで、モバイルアプリやデスクトップ版は含まれない。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/chatgpt-claws-back-web-traffic-share-to-55-5-percent-as-geminis-brief-comeback-fades)
+- **重要度**: 6/10
+- **タグ**: claude-api, performance, cowork
 
 ---
 

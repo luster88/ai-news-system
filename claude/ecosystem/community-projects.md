@@ -13,7 +13,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-04-25'
-updated: '2026-09-01'
+updated: '2026-09-07'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sv7fvc/im_a_nursing_student_who_built_a_660kpage
   title: I’m a nursing student who built a 660K-page pharmaceutical database using
@@ -44,6 +44,9 @@ sources:
 - url: https://zenn.dev/microai/articles/5566817cd979c2
   title: 'バイブコーディングにハマって開発してたら、いつの間にかターミナルアプリを作っていた話 #1 きっかけ編'
   date: '2026-09-01'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1w9zz9f/week_6_of_making_my_fishing_game_entirely_with_ai
+  title: Week 6 of making my fishing game entirely with AI
+  date: '2026-09-07'
 ---
 
 
@@ -54,7 +57,20 @@ sources:
 
 
 
+
 # Community Projects
+
+---
+
+## 2026-09-07
+
+### Week 6 of making my fishing game entirely with AI
+
+ユーザーがClaude AIを使って釣りゲームを開発している6週目の進捗報告。新たに2つのドッキング場所と3Dシーンを追加し、スタート地点のマップを完成させた。実行ファイルを公開してフィードバックを募集している。前週までの進捗リンクも含まれ、今後はクエスト追加や装備ページ、アイテムシステムの実装が予定されている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1w9zz9f/week_6_of_making_my_fishing_game_entirely_with_ai)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 
