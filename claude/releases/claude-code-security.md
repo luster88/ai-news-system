@@ -5,10 +5,11 @@ subcategory: claude-code-security
 tags:
 - bugfix
 - claude-code
+- performance
 - release
 - 新機能
 date: '2026-07-23'
-updated: '2026-09-04'
+updated: '2026-09-08'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v48e9x/claude_code_just_added_native_codebase_security
   title: Claude Code just added native codebase security scanning
@@ -19,11 +20,27 @@ sources:
 - url: https://qiita.com/moha0918_/items/49e737eeb75cbbe8d1c8
   title: Claude Code v2.1.260〜v2.1.261｜1 版で撤回された Read() deny の Bash 適用｜毎日Changelog解説
   date: '2026-09-04'
+- url: https://qiita.com/moha0918_/items/51a3235755ea1214e305
+  title: Claude Code v2.1.263〜v2.1.265｜サブエージェントと teammate で prompt cache が外れていた｜毎日Changelog解説
+  date: '2026-09-08'
 ---
 
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-09-08
+
+### Claude Code v2.1.263〜v2.1.265｜サブエージェントと teammate で prompt cache が外れていた｜毎日Changelog解説
+
+Claude Code v2.1.263〜v2.1.265のリリースで、resumeしたサブエージェントとagent teamsのteammateにおいてprompt cacheが外れていた重大なバグが修正されました。このバグは2ターン目以降にprefixが変わることで発生し、本来キャッシュで済むはずの入力を通常単価で処理していたため、API課金に直接影響していました。その他、--plugin-dirの親フォルダ対応、cdコマンドの持続、MCPのHTTP設定改善なども含まれています。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/51a3235755ea1214e305)
+- **重要度**: 8/10
+- **タグ**: claude-code, bugfix, performance
 
 ---
 

@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-09-07'
+updated: '2026-09-08'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -343,6 +343,9 @@ sources:
 - url: https://zenn.dev/kentaro_tak/articles/ai-wishlist-table-to-map
   title: AIに「いつかやりたい」を貯めさせても動けなかった。表を地図に変えたら、次の行き先が決まった
   date: '2026-09-07'
+- url: https://zenn.dev/giver/articles/733a8f5ee5c457
+  title: 「決めるのは自分、手を動かすのはAI」でポートフォリオを作った話
+  date: '2026-09-08'
 ---
 
 
@@ -430,7 +433,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-09-08
+
+### 「決めるのは自分、手を動かすのはAI」でポートフォリオを作った話
+
+開発初心者がClaude Codeを使って勤怠管理システムを構築した実践記録。仕様決定や設計判断は自分で行い、実装やデバッグの補助としてAIを活用する役割分担を明確化。有給管理の仕様選択、テストによるバグ検出、文字コードエラーのデバッグなど、具体的な協働事例を紹介し、「AIをどう使ったか」を説明できることの重要性を強調。
+
+- **ソース**: [Zenn claude](https://zenn.dev/giver/articles/733a8f5ee5c457)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, setup
 
 ---
 

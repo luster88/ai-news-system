@@ -12,7 +12,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-03-24'
-updated: '2026-09-05'
+updated: '2026-09-08'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -62,6 +62,9 @@ sources:
   title: 'New #1 on Code Arena: Astra and Fable 5.1 are in a class of their own. Anyone
     seeing real world differences'
   date: '2026-09-05'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wanm8p/fable_51_vs_gpt6_astra_for_2d_sprites
+  title: Fable 5.1 vs GPT-6 Astra for 2D Sprites
+  date: '2026-09-08'
 ---
 
 
@@ -78,7 +81,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-09-08
+
+### Fable 5.1 vs GPT-6 Astra for 2D Sprites
+
+Claude の新モデル Fable 5.1 と OpenAI の GPT-6 Astra を使った 2D スプライト生成の比較実験。同じプロンプトで中世の騎士スプライトを生成したところ、Astra は 16 個のキーポーズを 1 シートで出力したのに対し、Fable は 4 つのカラーパレットで 992 フレームを生成し、Python ジェネレーターとブラウザプレビューも同時に作成した。コミュニティでの両モデルの実用性能比較として注目される事例。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wanm8p/fable_51_vs_gpt6_astra_for_2d_sprites)
+- **重要度**: 4/10
+- **タグ**: sonnet, performance, cowork
 
 ---
 

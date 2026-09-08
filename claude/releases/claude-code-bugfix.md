@@ -10,10 +10,11 @@ tags:
 - mcp
 - opus
 - pricing
+- prompt
 - release
 - 新機能
 date: '2026-07-16'
-updated: '2026-09-04'
+updated: '2026-09-08'
 sources:
 - url: https://qiita.com/moha0918_/items/c8b144e3ba36744b964b
   title: Claude Code v2.1.211｜Bedrock/Vertexのキャッシュ課金バグが直る｜毎日Changelog解説
@@ -48,6 +49,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/49e737eeb75cbbe8d1c8
   title: Claude Code v2.1.260〜v2.1.261｜1 版で撤回された Read() deny の Bash 適用｜毎日Changelog解説
   date: '2026-09-04'
+- url: https://qiita.com/moha0918_/items/51a3235755ea1214e305
+  title: Claude Code v2.1.263〜v2.1.265｜サブエージェントと teammate で prompt cache が外れていた｜毎日Changelog解説
+  date: '2026-09-08'
 ---
 
 
@@ -58,7 +62,20 @@ sources:
 
 
 
+
 # Claude Code Bugfix
+
+---
+
+## 2026-09-08
+
+### Claude Code v2.1.263〜v2.1.265｜サブエージェントと teammate で prompt cache が外れていた｜毎日Changelog解説
+
+Claude Code v2.1.265でサブエージェントとagent teamsのteammateにおいてprompt cacheが効かなくなっていた重大なバグが修正されました。resume後や2ターン目以降でprefixが変わり、本来キャッシュで済む入力を通常単価で処理していたため、ターンを重ねるほどコストが増加していました。また、--plugin-dirで親フォルダを指定できるようになり、-pとAgent SDKでのcd持続性も改善されました。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/51a3235755ea1214e305)
+- **重要度**: 8/10
+- **タグ**: claude-code, bugfix, prompt
 
 ---
 

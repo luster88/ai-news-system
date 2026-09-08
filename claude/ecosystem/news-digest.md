@@ -6,12 +6,13 @@ tags:
 - claude-code
 - cowork
 - mcp
+- opus
 - performance
 - pricing
 - release
 - 新機能
 date: '2026-09-01'
-updated: '2026-09-06'
+updated: '2026-09-08'
 sources:
 - url: https://qiita.com/homhom44/items/a04c2455fd1cbedecb39
   title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-01）
@@ -31,13 +32,29 @@ sources:
 - url: https://qiita.com/homhom44/items/96603513d035660c5805
   title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-07）
   date: '2026-09-06'
+- url: https://qiita.com/homhom44/items/d3f152d516e7448e2433
+  title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-09）
+  date: '2026-09-08'
 ---
 
 
 
 
 
+
 # News Digest
+
+---
+
+## 2026-09-08
+
+### Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-09）
+
+Anthropic の Claude 関連ニュース索引記事。Opus 4 の発表、Computer Use の改善、2FA フィッシング問題、Pro プランの料金設計の不透明性、脱獄対策など、2024年9月9日時点の主要トピックを日本語でまとめている。各トピックの詳細は外部リンク（PaPoo）で提供。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/d3f152d516e7448e2433)
+- **重要度**: 4/10
+- **タグ**: opus, claude-code, pricing
 
 ---
 

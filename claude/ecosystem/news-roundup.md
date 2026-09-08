@@ -11,7 +11,7 @@ tags:
 - release
 - 新機能
 date: '2026-08-27'
-updated: '2026-09-06'
+updated: '2026-09-08'
 sources:
 - url: https://qiita.com/homhom44/items/23463739397a68e74028
   title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-08-27）
@@ -34,6 +34,9 @@ sources:
 - url: https://qiita.com/homhom44/items/96603513d035660c5805
   title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-07）
   date: '2026-09-06'
+- url: https://qiita.com/homhom44/items/d3f152d516e7448e2433
+  title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-09）
+  date: '2026-09-08'
 ---
 
 
@@ -42,7 +45,20 @@ sources:
 
 
 
+
 # News Roundup
+
+---
+
+## 2026-09-08
+
+### Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-09）
+
+Claude/Claude Code関連の最新ニュースをまとめた索引記事。安全対策レベルによるモデル名の使い分け、Computer Useの干渉問題改善、2FA認証のリスク、料金プランの不透明性、脱獄対策の高度化、新モデル発表の詳細不足など、複数のトピックを横断的に紹介している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/homhom44/items/d3f152d516e7448e2433)
+- **重要度**: 4/10
+- **タグ**: claude-code, 新機能, pricing
 
 ---
 

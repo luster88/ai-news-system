@@ -12,7 +12,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-04-03'
-updated: '2026-08-21'
+updated: '2026-09-08'
 sources:
 - url: https://zenn.dev/heki1224/articles/b849cc85a330aa
   title: Claude Codeで”トークン破産”しないためのコスト最適化とコンテキスト防衛術
@@ -58,6 +58,9 @@ sources:
 - url: https://qiita.com/locallab/items/6ec161138560101296d9
   title: Claude Code + OpenRouter Free モデルで実現する「ゼロ円 AI 開発補助」——3 つの活用パターンと注意点
   date: '2026-08-21'
+- url: https://zenn.dev/pepabo/articles/claude-ollama-hybrid-review-usage
+  title: Claudeのrate limitをOllama併用でかわし、コストは自作コマンドで見えるようにした
+  date: '2026-09-08'
 ---
 
 
@@ -72,7 +75,20 @@ sources:
 
 
 
+
 # Cost Optimization
+
+---
+
+## 2026-09-08
+
+### Claudeのrate limitをOllama併用でかわし、コストは自作コマンドで見えるようにした
+
+Claude CodeによるPRレビューでrate limit対策としてOllamaを併用するハイブリッド構成を導入。8観点のうち軽い4観点をOllama（qwen3.6:27b）にオフロードし、Claudeのトークン消費を約40%削減。ccusageとollama-usageの2つのコマンドで使用量を正確に集計し、コスト管理を可視化した実践的な事例。
+
+- **ソース**: [Zenn claude](https://zenn.dev/pepabo/articles/claude-ollama-hybrid-review-usage)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, performance
 
 ---
 

@@ -4,10 +4,11 @@ category: tools
 subcategory: claude-code-security
 tags:
 - claude-code
+- cowork
 - setup
 - 新機能
 date: '2026-07-06'
-updated: '2026-09-02'
+updated: '2026-09-08'
 sources:
 - url: https://qiita.com/nogataka/items/4d2a551f89f6b4f94b01
   title: Claude Code の無料セキュリティ監査プラグインで脆弱性を自動検出・修正してみる
@@ -15,10 +16,27 @@ sources:
 - url: https://zenn.dev/gorizawa/articles/claude-code-guard-delete-hook
   title: Claude Code の auto モードで rm -rf 事故を止める PreToolUse hook を書いた
   date: '2026-09-02'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1waoo5h/i_ported_toyotas_lean_quality_system_to_claude
+  title: I ported Toyota's Lean quality system to Claude Code so the same agent mistakes
+    stop coming back (MIT, free)
+  date: '2026-09-08'
 ---
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-09-08
+
+### I ported Toyota's Lean quality system to Claude Code so the same agent mistakes stop coming back (MIT, free)
+
+製造業のリーン生産方式（トヨタのAndonシステム）をClaude Codeに適用したツールの紹介。エージェントが同じミスを繰り返さないよう、失敗をログ化し対策を講じる仕組み。特に「done」「shipped」等の発言時に検証エビデンスをチェックするStopフックが有用。MIT ライセンスでGitHub公開。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1waoo5h/i_ported_toyotas_lean_quality_system_to_claude)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 
