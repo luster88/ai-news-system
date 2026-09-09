@@ -8,8 +8,9 @@ tags:
 - cursor
 - prompt
 - setup
+- sonnet
 date: '2026-05-24'
-updated: '2026-08-21'
+updated: '2026-09-09'
 sources:
 - url: https://qiita.com/y_tsubasa/items/a0213eaad3402d00ed0a
   title: AI と毎日開発していて定着した、地味だけど効く工夫の棚卸し
@@ -26,13 +27,29 @@ sources:
 - url: https://qiita.com/Rai_050902/items/442d1d6b03c9a0e0150f
   title: AIと3つのシステムを作って、全部捨てた。既に社内にあった「良いファイル」に乗り換えた話
   date: '2026-08-21'
+- url: https://zenn.dev/peyangu485/articles/jibun-os-playbook
+  title: 外部調査を、あとから答え合わせに使う——game-dev-playbookの運用実例
+  date: '2026-09-09'
 ---
 
 
 
 
 
+
 # Workflow Best Practices
+
+---
+
+## 2026-09-09
+
+### 外部調査を、あとから答え合わせに使う——game-dev-playbookの運用実例
+
+ゲーム開発において、Claude Sonnetのサブエージェントが外部調査した資料（game-dev-playbook）を「事前の設計指針」ではなく「事後の検算ツール」として活用する実例。プレステージシステムの調整を自身の手触りで決定した後、外部理論と照合して妥当性を確認。確度マーク付きの一次資料だからこそ信頼できる検算が可能になる。内→外の順番で判断することで、外部知見に引きずられず自分の核を守る設計が実現する。
+
+- **ソース**: [Zenn claude](https://zenn.dev/peyangu485/articles/jibun-os-playbook)
+- **重要度**: 6/10
+- **タグ**: sonnet, cowork, prompt
 
 ---
 

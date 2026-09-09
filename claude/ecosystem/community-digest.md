@@ -5,16 +5,33 @@ subcategory: community-digest
 tags:
 - claude-code
 - cowork
+- performance
 - 新機能
 date: '2026-09-04'
-updated: '2026-09-04'
+updated: '2026-09-09'
 sources:
 - url: https://qiita.com/homhom44/items/8b24d038ee843105da30
   title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-05）
   date: '2026-09-04'
+- url: https://qiita.com/homhom44/items/2b602c7ea346ce6c1f85
+  title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-10）
+  date: '2026-09-09'
 ---
 
+
 # Community Digest
+
+---
+
+## 2026-09-09
+
+### Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-10）
+
+Anthropic の Claude / Claude Code 関連ニュースをまとめた索引記事。AIエージェント開発の現状として、ベンチマークでトップでも合格率が4分の1未満であること、性能向上が体感で判別しにくいこと、AIアシスタントが意図を勝手に広げる問題、セキュリティ設計の重要性、セッション管理の課題などが取り上げられている。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/2b602c7ea346ce6c1f85)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, performance
 
 ---
 

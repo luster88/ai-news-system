@@ -10,7 +10,7 @@ tags:
 - pricing
 - sonnet
 date: '2026-04-16'
-updated: '2026-06-29'
+updated: '2026-09-09'
 sources:
 - url: https://ai-heartland.com/explain/claude-api-pricing-calculator-2026
   title: Claude API 料金を徹底比較｜Anthropic全モデル月額コスト計算シミュレーター【2026年版】
@@ -25,12 +25,28 @@ sources:
   title: Have I been lighting ~$1k/month on fire buying Claude API credits instead
     of just getting Max?
   date: '2026-06-29'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wbux15/chatgpt_20_plan_vs_claude_20_plan
+  title: Chatgpt $20 plan VS Claude $20 plan
+  date: '2026-09-09'
 ---
 
 
 
 
+
 # Pricing Comparison
+
+---
+
+## 2026-09-09
+
+### Chatgpt $20 plan VS Claude $20 plan
+
+コンピュータサイエンス専攻の学生が、ChatGPT と Claude の月額20ドルプランのどちらを選ぶべきか Reddit で質問している。主にコーディング用途で、より多くの使用量と高品質な作業を求めており、予算の制約から1つしか選べない状況。コミュニティからのアドバイスを求める典型的な比較相談スレッド。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wbux15/chatgpt_20_plan_vs_claude_20_plan)
+- **重要度**: 4/10
+- **タグ**: pricing, copilot, claude-code
 
 ---
 

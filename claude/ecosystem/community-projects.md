@@ -13,7 +13,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-04-25'
-updated: '2026-09-07'
+updated: '2026-09-09'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sv7fvc/im_a_nursing_student_who_built_a_660kpage
   title: I’m a nursing student who built a 660K-page pharmaceutical database using
@@ -47,6 +47,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1w9zz9f/week_6_of_making_my_fishing_game_entirely_with_ai
   title: Week 6 of making my fishing game entirely with AI
   date: '2026-09-07'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wb7190/i_made_a_virtual_lounge_for_vibecoders_to_hang
+  title: I made a virtual lounge for vibecoders to hang out while claude code is running.
+  date: '2026-09-09'
 ---
 
 
@@ -58,7 +61,20 @@ sources:
 
 
 
+
 # Community Projects
+
+---
+
+## 2026-09-09
+
+### I made a virtual lounge for vibecoders to hang out while claude code is running.
+
+Claude Code を使って開発されたバーチャルラウンジ「Rooftop.chat」が公開された。開発者が Claude Code での作業中に一人で待機する時間が増えたことから、vibecoders（開発者コミュニティ）が交流できる仮想空間を作成。音声・テキストチャット、プール、バーチャル散歩などの機能を備え、18歳以上のユーザーが利用可能。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wb7190/i_made_a_virtual_lounge_for_vibecoders_to_hang)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

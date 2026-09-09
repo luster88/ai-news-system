@@ -13,7 +13,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-09-07'
+updated: '2026-09-09'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -60,6 +60,9 @@ sources:
 - url: https://qiita.com/yureki_lab/items/e66de6f1cbae21cbd314
   title: Claude API の Message Batches API で大量リクエストのコストを半額にする実装手順 — 結果の順序保証なし・24時間期限など3つのハマりどころ【2026】
   date: '2026-09-07'
+- url: https://qiita.com/yureki_lab/items/86c815a3abe2666160e9
+  title: Claude API の Files API で同じ PDF・画像を毎回 Base64 送信するのをやめる実装手順 — beta ヘッダー2箇所・アップロード済みファイルは再取得不可など3つのハマりどころ【2026】
+  date: '2026-09-09'
 ---
 
 
@@ -76,7 +79,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-09-09
+
+### Claude API の Files API で同じ PDF・画像を毎回 Base64 送信するのをやめる実装手順 — beta ヘッダー2箇所・アップロード済みファイルは再取得不可など3つのハマりどころ【2026】
+
+Claude API の Files API を使うと、PDF や画像を毎回 Base64 エンコードせず file_id で再利用できる。実装では beta ヘッダー `files-api-2025-04-14` をアップロードと Messages 呼び出しの両方に指定する必要がある点、アップロード済みファイルは API 経由で再ダウンロードできない点、content block の type と MIME タイプを一致させる必要がある点に注意が必要。
+
+- **ソース**: [Qiita claude](https://qiita.com/yureki_lab/items/86c815a3abe2666160e9)
+- **重要度**: 7/10
+- **タグ**: claude-api, setup
 
 ---
 

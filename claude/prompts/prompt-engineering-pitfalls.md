@@ -6,8 +6,9 @@ tags:
 - claude-code
 - prompt
 - sonnet
+- 新機能
 date: '2026-08-18'
-updated: '2026-09-01'
+updated: '2026-09-09'
 sources:
 - url: https://zenn.dev/motimotinotch/articles/cd448e3f00a0af
   title: 禁止すれば安全、良い例を見せれば的確、資料を読ませれば賢くなる——本当に？
@@ -18,11 +19,27 @@ sources:
 - url: https://zenn.dev/nekoemon/articles/1ba734b11fb487
   title: 『書いていない基準は毎回その場で埋められる』ーーLLM脆弱性トリアージの揺れをプロンプトの「境界設定」で止めた話
   date: '2026-09-01'
+- url: https://zenn.dev/lockie2022/articles/claude-fable-51-writing-agent-rules
+  title: Anthropicに学ぶ「AIっぽさ」を減らす文章術とエージェントの9つの作業ルール
+  date: '2026-09-09'
 ---
 
 
 
+
 # Prompt Engineering Pitfalls
+
+---
+
+## 2026-09-09
+
+### Anthropicに学ぶ「AIっぽさ」を減らす文章術とエージェントの9つの作業ルール
+
+Anthropic公式ガイドで紹介されたClaude Fable 5.1の「AIっぽさ」を減らす文章術と、エージェント動作時の9つの作業ルール（進捗報告、確認待ちの削減、並列処理など）を解説。mannered prose（気取った表現）を避けるプロンプト技法や、モデルの新しい傾向への対処法を紹介している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/lockie2022/articles/claude-fable-51-writing-agent-rules)
+- **重要度**: 6/10
+- **タグ**: prompt, sonnet, 新機能
 
 ---
 

@@ -9,7 +9,7 @@ tags:
 - release
 - 新機能
 date: '2026-07-23'
-updated: '2026-09-08'
+updated: '2026-09-09'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v48e9x/claude_code_just_added_native_codebase_security
   title: Claude Code just added native codebase security scanning
@@ -23,12 +23,38 @@ sources:
 - url: https://qiita.com/moha0918_/items/51a3235755ea1214e305
   title: Claude Code v2.1.263〜v2.1.265｜サブエージェントと teammate で prompt cache が外れていた｜毎日Changelog解説
   date: '2026-09-08'
+- url: https://qiita.com/moha0918_/items/6c42ed030b4cfba89fc0
+  title: Claude Code v2.1.266〜v2.1.267｜maxEffortLevel で effort に上限がつく｜毎日Changelog解説
+  date: '2026-09-09'
 ---
 
 
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-09-09
+
+### Claude Code v2.1.266〜v2.1.267｜maxEffortLevel で effort に上限がつく｜毎日Changelog解説
+
+Claude Code v2.1.266〜v2.1.267のリリース情報。maxEffortLevelの設定により、Bedrock/Vertex/Foundry経由でもeffortの上限を管理側で固定可能に。v2.1.266はproxy構成の回帰バグ修正、v2.1.267はcustom command/skill/subagentのeffort frontmatter無視バグとprompt cacheのツール定義・resume関連の問題を修正。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/6c42ed030b4cfba89fc0)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+### Claude Code v2.1.266〜v2.1.267｜maxEffortLevel で effort に上限がつく｜毎日Changelog解説
+
+Claude Code v2.1.267で、設定項目「maxEffortLevel」が追加され、Bedrock/Vertex/Foundry含む全プロバイダでeffortの上限を管理側が制御可能になりました。v2.1.266ではproxy構成の回帰バグを修正。また、custom command/skill/subagentのeffort frontmatterが無視されるバグや、prompt cacheのズレに関する複数の問題も解消されました。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/6c42ed030b4cfba89fc0)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 

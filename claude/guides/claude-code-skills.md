@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-08-28'
+updated: '2026-09-09'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -76,6 +76,9 @@ sources:
 - url: https://ai-heartland.com/explain/refactoring-ui-skill-claude-code
   title: Refactoring UIの原則をClaude Codeに守らせるスキル｜実測すると発火しない条件がある
   date: '2026-08-28'
+- url: https://zenn.dev/socialplus/articles/f5d9e28470eb99
+  title: Agent Skillは振る舞いとナレッジを分けて設計する
+  date: '2026-09-09'
 ---
 
 
@@ -97,7 +100,20 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-09-09
+
+### Agent Skillは振る舞いとナレッジを分けて設計する
+
+Claude Code のエージェントスキル設計について、振る舞いとナレッジを分離する設計手法を解説。単一責任の原則を適用し、スキルの保守性を高める実践的なアプローチを紹介。pr-review スキルを例に、SKILL.md（振る舞い）と review-guidelines.md（ナレッジ）に分割することで、継続的な改善が容易になった事例を共有。
+
+- **ソース**: [Zenn claude](https://zenn.dev/socialplus/articles/f5d9e28470eb99)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

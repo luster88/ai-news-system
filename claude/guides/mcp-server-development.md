@@ -8,7 +8,7 @@ tags:
 - performance
 - setup
 date: '2026-04-07'
-updated: '2026-08-14'
+updated: '2026-09-09'
 sources:
 - url: https://ai-heartland.com/explain/mcp-server-build-guide
   title: MCPサーバーの作り方2026年完全ガイド：TypeScript・Python両対応チュートリアル
@@ -25,13 +25,29 @@ sources:
 - url: https://qiita.com/kaz_meishibako/items/da62798724a7cda01332
   title: Cloudflare WorkersでステートレスMCPサーバーを作る：設計判断とハマりどころ【AI名刺管理「めいしばこ」開発記】
   date: '2026-08-14'
+- url: https://qiita.com/iswk/items/51c1db23cef26b83fdd5
+  title: MCPって何？状態からClaudeCodeと一緒にMCPサーバーを実装してみた
+  date: '2026-09-09'
 ---
 
 
 
 
 
+
 # Mcp Server Development
+
+---
+
+## 2026-09-09
+
+### MCPって何？状態からClaudeCodeと一緒にMCPサーバーを実装してみた
+
+MCP初心者が ClaudeCode と対話しながら PostgreSQL のテーブルスキーマ情報を返す MCP サーバーを Rust で実装した体験記。MCP の基本概念、ツール設計の考え方、JSON Schema による引数定義、Docker 構成など、実装時の工夫とつまずきポイントを中心に解説。言語非依存の設計思想も参考になる内容。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/iswk/items/51c1db23cef26b83fdd5)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, setup
 
 ---
 
