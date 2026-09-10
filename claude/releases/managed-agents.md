@@ -12,7 +12,7 @@ tags:
 - release
 - 新機能
 date: '2026-04-08'
-updated: '2026-06-15'
+updated: '2026-09-10'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfz7a5/introducing_claude_managed_agents_now_in_public
   title: Introducing Claude Managed Agents, now in public beta.
@@ -54,6 +54,9 @@ sources:
 - url: https://qiita.com/YushiYamamoto/items/398b6c20b6b9405607cd
   title: Claude Managed Agents の自社サンドボックスとMCPトンネル：エンタープライズ境界内でエージェントを動かす設計判断
   date: '2026-06-15'
+- url: https://qiita.com/picnic/items/85222ea4e7e845e4523f
+  title: Claude Managed Agentsに権限自動判定「auto」追加、ant CLIでセッション接続も可能に
+  date: '2026-09-10'
 ---
 
 
@@ -64,7 +67,20 @@ sources:
 
 
 
+
 # Managed Agents
+
+---
+
+## 2026-09-10
+
+### Claude Managed Agentsに権限自動判定「auto」追加、ant CLIでセッション接続も可能に
+
+Claude Managed Agentsに権限ポリシー「auto」モードが追加され、ツール呼び出しごとにサーバー側が実行・拒否・承認待ちを自動判定できるようになりました。同時にant CLIに「ant beta:sessions connect」コマンドが追加され、ターミナルから稼働中のエージェントセッションに接続して承認操作をリアルタイムで行えるようになりました。この2つの機能は対になっており、エージェントの自律性と安全性を両立させる運用が可能になります。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/85222ea4e7e845e4523f)
+- **重要度**: 8/10
+- **タグ**: 新機能, mcp, claude-api
 
 ---
 

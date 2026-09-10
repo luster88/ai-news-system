@@ -8,7 +8,7 @@ tags:
 - release
 - 新機能
 date: '2026-08-10'
-updated: '2026-08-28'
+updated: '2026-09-10'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vky8at/claude_will_watermark_generated_content_thank_you
   title: Claude will watermark generated content, thank you EU
@@ -19,11 +19,27 @@ sources:
 - url: https://zenn.dev/junko_ai/articles/3f10650864b75a
   title: Claudeがテキストに透かし導入 ─ プログラミングコードはどうなる？
   date: '2026-08-28'
+- url: https://www.anthropic.com/news/claude-text-watermark
+  title: Aug 14, 2026 Announcements How Claude’s text watermark works
+  date: '2026-09-10'
 ---
 
 
 
+
 # Watermark Feature
+
+---
+
+## 2026-09-10
+
+### Aug 14, 2026 Announcements How Claude’s text watermark works
+
+Anthropic が Claude の将来モデルにテキスト透かし機能を実装すると発表。EU AI Act のコンプライアンス対応として、他の主要 AI プロバイダーと共に導入。透かしは出力品質に影響せず、読者には識別不可能で、追加トークンも不要。単語選択時の低リスクな選択肢を利用してパターンを残す仕組み。
+
+- **ソース**: [Anthropic News](https://www.anthropic.com/news/claude-text-watermark)
+- **重要度**: 8/10
+- **タグ**: 新機能, claude-api, release
 
 ---
 

@@ -13,7 +13,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-25'
-updated: '2026-09-06'
+updated: '2026-09-10'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -152,6 +152,9 @@ sources:
 - url: https://ai-heartland.com/agent/okf-agent-memory
   title: OKF Agent Memory徹底解説｜Google OKF v0.2準拠のGit記憶層をv0.1.1で実測
   date: '2026-09-06'
+- url: https://zenn.dev/heubme/articles/6e40497c272da4
+  title: ChatGPT / Claude でトヨタの決算書を分析する実践チュートリアル
+  date: '2026-09-10'
 ---
 
 
@@ -194,7 +197,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-09-10
+
+### ChatGPT / Claude でトヨタの決算書を分析する実践チュートリアル
+
+日本の上場企業の有価証券報告書をAPI経由で取得し、ChatGPT/Claudeで分析する実践チュートリアル。datasink.ingの無料APIを使い、トヨタ自動車などの決算書をMarkdown形式で取得可能。OpenAPI仕様およびMCPサーバーとしても公開されており、Claude DesktopやClaude Codeから直接接続して財務分析が可能。
+
+- **ソース**: [Zenn claude](https://zenn.dev/heubme/articles/6e40497c272da4)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, claude-api
 
 ---
 

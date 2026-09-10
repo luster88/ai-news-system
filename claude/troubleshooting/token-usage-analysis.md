@@ -5,11 +5,12 @@ subcategory: token-usage-analysis
 tags:
 - claude-code
 - claude-console
+- opus
 - performance
 - pricing
 - prompt
 date: '2026-06-07'
-updated: '2026-08-11'
+updated: '2026-09-10'
 sources:
 - url: https://qiita.com/yurukusa/items/5d49ed7d798c9650fe16
   title: Claude Codeの週次の利用枠が「軽い作業」で1日で枯れる本当の理由——消費の99%はコードではなく文脈の再読み込みだった
@@ -20,11 +21,27 @@ sources:
 - url: https://zenn.dev/honeymarron/articles/claude-code-context-diet
   title: 「おはよう」1回 = 5時間制限の7%！？ — 挨拶3トークンの裏で送られる数万トークンの話
   date: '2026-08-11'
+- url: https://qiita.com/Shinn_Matsumoto/items/f6354a4daf029f75b033
+  title: Claudeに「お前何止まってんだよ」と怒鳴り続けたら、自分の消費量を見積もり始めた
+  date: '2026-09-10'
 ---
 
 
 
+
 # Token Usage Analysis
+
+---
+
+## 2026-09-10
+
+### Claudeに「お前何止まってんだよ」と怒鳴り続けたら、自分の消費量を見積もり始めた
+
+Claude Code Opusの使用量を分析した結果、30日間で132.7億トークン（約$11,536相当）を消費し、公式の平均値の約30倍であることが判明。97.5%がセッション履歴の読み直しで消費され、長時間開いたセッションが主な原因だった。記事作成ツールの開発が使用量の53%を占め、サブエージェントのコスト計上の仕組みも明らかになった。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Shinn_Matsumoto/items/f6354a4daf029f75b033)
+- **重要度**: 6/10
+- **タグ**: claude-code, opus, performance
 
 ---
 

@@ -7,7 +7,7 @@ tags:
 - claude-code
 - performance
 date: '2026-04-01'
-updated: '2026-04-13'
+updated: '2026-09-10'
 sources:
 - url: https://qiita.com/yurukusa/items/49f1fa305522368d7e7a
   title: Claude Codeのトークン消費が突然10倍になる原因と、hookで防ぐ実践的な方法
@@ -18,10 +18,26 @@ sources:
 - url: https://qiita.com/yurukusa/items/c0acc6da4cb1c90fa431
   title: Claude Code v2.1.100でトークン消費が40%増えた——cache_creation膨張の原因と削減方法
   date: '2026-04-13'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wce8dh/claude_code_just_burned_fifty_million_tokens_in
+  title: Claude Code just burned fifty million tokens in seconds
+  date: '2026-09-10'
 ---
 
 
+
 # Token Consumption
+
+---
+
+## 2026-09-10
+
+### Claude Code just burned fifty million tokens in seconds
+
+Reddit ユーザーが Claude Code に Markdown ファイルの一貫性チェックを依頼したところ、数秒で5000万トークンを消費する異常な動作が発生した。ユーザーは困惑し、コミュニティに報告している。この問題はトークン消費の制御や課金に関する懸念を提起している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wce8dh/claude_code_just_burned_fifty_million_tokens_in)
+- **重要度**: 7/10
+- **タグ**: claude-code, bugfix, performance
 
 ---
 
