@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-09-08'
+updated: '2026-09-11'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -346,6 +346,12 @@ sources:
 - url: https://zenn.dev/giver/articles/733a8f5ee5c457
   title: 「決めるのは自分、手を動かすのはAI」でポートフォリオを作った話
   date: '2026-09-08'
+- url: https://qiita.com/sescore/items/b3ebef2a1f727e3eca28
+  title: Claude Code毎日運用で分かった時短術7選【2026年9月版】
+  date: '2026-09-11'
+- url: https://qiita.com/shu15511551/items/b20d34e01e63cbd15b3b
+  title: VBAマネージャーのAIエージェント化、どうしてこんな事をやるかようやくAIが理解してくれた話
+  date: '2026-09-11'
 ---
 
 
@@ -434,7 +440,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-09-11
+
+### Claude Code毎日運用で分かった時短術7選【2026年9月版】
+
+Claude Codeの実務運用で有効な7つの時短術を解説。CLAUDE.mdによる設定管理、スラッシュコマンド化、サブエージェント活用、hookによる危険操作防止、Plan Modeでの設計レビュー、チェックリスト運用などを具体的なコード例とともに紹介。SES/フリーランスエンジニアの単価交渉への影響にも言及。
+
+- **ソース**: [Qiita claude](https://qiita.com/sescore/items/b3ebef2a1f727e3eca28)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
+
+---
+
+### VBAマネージャーのAIエージェント化、どうしてこんな事をやるかようやくAIが理解してくれた話
+
+VBAマネージャーをAIエージェント化する過程で、Claude Codeが当初は「自分が直接やればいい」と考えていたが、マクロと組み合わせることで7分かかる作業が0.3秒で完了することを実証。AIが毎回処理するのではなく、AIがマクロを作成・検証し、以降はマクロが自動実行する設計思想を確立した。手作業やAI単独では7分かかる作業が、AIとVBAの組み合わせで秒単位に短縮される「組み方の差」を発見した実践記録。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/shu15511551/items/b20d34e01e63cbd15b3b)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, performance
 
 ---
 

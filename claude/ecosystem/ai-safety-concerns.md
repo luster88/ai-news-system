@@ -7,7 +7,7 @@ tags:
 - release
 - 新機能
 date: '2026-09-09'
-updated: '2026-09-09'
+updated: '2026-09-11'
 sources:
 - url: https://the-decoder.com/anthropic-scientist-puts-the-odds-of-ai-destroying-humanity-above-ten-percent-this-decade
   title: Anthropic scientist puts the odds of AI destroying humanity above ten percent
@@ -17,9 +17,24 @@ sources:
   title: '‘Gambling with our lives’: Anthropic researcher quits, warns against self-improving
     AI'
   date: '2026-09-09'
+- url: https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time
+  title: An Anthropic researcher’s doomsday warning comes at a very interesting time
+  date: '2026-09-11'
 ---
 
+
 # Ai Safety Concerns
+
+---
+
+## 2026-09-11
+
+### An Anthropic researcher’s doomsday warning comes at a very interesting time
+
+Anthropic の研究者が「自己改善型超知能への競争が私たちの命を危険にさらしている」と警告して退職。同社のアライメントリーダーもこの警告に賛同。IPO準備中とされる Anthropic にとって、このタイミングでの安全性警告は業界に大きな波紋を呼んでいる。TechCrunch の Equity ポッドキャストでこの問題を深掘り。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time)
+- **重要度**: 8/10
 
 ---
 

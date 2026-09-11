@@ -9,7 +9,7 @@ tags:
 - release
 - 新機能
 date: '2026-07-23'
-updated: '2026-09-09'
+updated: '2026-09-11'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v48e9x/claude_code_just_added_native_codebase_security
   title: Claude Code just added native codebase security scanning
@@ -26,13 +26,39 @@ sources:
 - url: https://qiita.com/moha0918_/items/6c42ed030b4cfba89fc0
   title: Claude Code v2.1.266〜v2.1.267｜maxEffortLevel で effort に上限がつく｜毎日Changelog解説
   date: '2026-09-09'
+- url: https://qiita.com/moha0918_/items/52f33cf70bea41809eb1
+  title: Claude Code v2.1.269｜claude plugin eval でプラグインを採点｜毎日Changelog解説
+  date: '2026-09-11'
 ---
 
 
 
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-09-11
+
+### Claude Code v2.1.269｜claude plugin eval でプラグインを採点｜毎日Changelog解説
+
+Claude Code v2.1.269で新コマンド「claude plugin eval」が追加され、プラグインの効果を有無の比較スコアで評価できるようになった。evalスイートを実行し、JSON/HTMLレポートで結果を出力。Bash(tee:*)の書き込み範囲がワークディレクトリ内に制限され、否定形のdenyルールの適用範囲も設定ソース内に限定された。プラグインアーカイブ展開のセキュリティとプロンプトキャッシュの再利用も改善。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/52f33cf70bea41809eb1)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+### Claude Code v2.1.269｜claude plugin eval でプラグインを採点｜毎日Changelog解説
+
+Claude Code v2.1.269の大型アップデートで、プラグインの効果を定量評価する「claude plugin eval」コマンドが追加されました。プラグイン有無でのスコア差を測定でき、JSON/HTMLレポートを出力します。また、Bash(tee:*)の書き込み範囲がワークディレクトリ内に制限され、deny/askルールの適用範囲が正しく修正されました。その他、98件の変更を含む大規模リリースとなっています。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/52f33cf70bea41809eb1)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, release
 
 ---
 

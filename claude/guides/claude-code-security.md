@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-01'
-updated: '2026-08-28'
+updated: '2026-09-11'
 sources:
 - url: https://zenn.dev/yuzzzn/articles/45626e1ab08e3c
   title: AIコーディングエージェントをセキュアに使うためのハーネス設計
@@ -26,13 +26,29 @@ sources:
 - url: https://qiita.com/eiri_ai/items/39348da4e1627b72c83d
   title: Claude Code Auto Modeの権限設定をPythonで点検
   date: '2026-08-28'
+- url: https://qiita.com/sescore/items/b3ebef2a1f727e3eca28
+  title: Claude Code毎日運用で分かった時短術7選【2026年9月版】
+  date: '2026-09-11'
 ---
 
 
 
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-09-11
+
+### Claude Code毎日運用で分かった時短術7選【2026年9月版】
+
+Claude Codeの実運用で効果的だった7つの時短術を解説。CLAUDE.mdでの自動コンテキスト設定、スラッシュコマンド化、サブエージェント分業、hookによる安全性確保、Plan Modeでの設計レビューなど、実際に動く設定ファイルとコマンドを公開。無人運用時の注意点やフリーランスエンジニアの単価への影響にも言及。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/sescore/items/b3ebef2a1f727e3eca28)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

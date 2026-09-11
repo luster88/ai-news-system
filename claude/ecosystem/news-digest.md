@@ -12,7 +12,7 @@ tags:
 - release
 - 新機能
 date: '2026-09-01'
-updated: '2026-09-08'
+updated: '2026-09-11'
 sources:
 - url: https://qiita.com/homhom44/items/a04c2455fd1cbedecb39
   title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-01）
@@ -35,6 +35,9 @@ sources:
 - url: https://qiita.com/homhom44/items/d3f152d516e7448e2433
   title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-09）
   date: '2026-09-08'
+- url: https://qiita.com/homhom44/items/fac57cf33dd3f041b110
+  title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-12）
+  date: '2026-09-11'
 ---
 
 
@@ -42,7 +45,20 @@ sources:
 
 
 
+
 # News Digest
+
+---
+
+## 2026-09-11
+
+### Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-12）
+
+Claude Code関連の最新ニュースをまとめた索引記事。年齢制限の運用、AIの現実的な危険性（サイバー攻撃・監視・詐欺等）、生物系研究での安全対策の難しさ、Unityゲーム開発におけるAI支援の実装パターン、エージェント処理速度の計測方法、MCPサーバーの競合回避設計、Anthropicが公開した悪用リスクレポートなど、複数トピックを日本語で紹介。各記事の詳細はPaPooで公開されている。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/homhom44/items/fac57cf33dd3f041b110)
+- **重要度**: 4/10
+- **タグ**: claude-code, mcp, cowork
 
 ---
 

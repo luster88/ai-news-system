@@ -5,10 +5,11 @@ subcategory: community-digest
 tags:
 - claude-code
 - cowork
+- mcp
 - performance
 - 新機能
 date: '2026-09-04'
-updated: '2026-09-09'
+updated: '2026-09-11'
 sources:
 - url: https://qiita.com/homhom44/items/8b24d038ee843105da30
   title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-05）
@@ -16,10 +17,26 @@ sources:
 - url: https://qiita.com/homhom44/items/2b602c7ea346ce6c1f85
   title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-10）
   date: '2026-09-09'
+- url: https://qiita.com/homhom44/items/fac57cf33dd3f041b110
+  title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-12）
+  date: '2026-09-11'
 ---
 
 
+
 # Community Digest
+
+---
+
+## 2026-09-11
+
+### Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-12）
+
+Claude / Claude Code関連の最新ニュースをまとめた索引記事。年齢制限の運用、AIの危険性の現実化、安全対策の抜け道、Unity連携時の作法の重要性、エージェント速度計測の落とし穴、MCPサーバーの競合回避設計、Anthropicの悪用報告書など、幅広いトピックを網羅。各記事へのリンクと要点が日本語で簡潔にまとめられている。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/fac57cf33dd3f041b110)
+- **重要度**: 4/10
+- **タグ**: claude-code, mcp, cowork
 
 ---
 

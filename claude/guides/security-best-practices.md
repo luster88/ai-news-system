@@ -7,14 +7,30 @@ tags:
 - prompt
 - setup
 date: '2026-07-21'
-updated: '2026-07-21'
+updated: '2026-09-11'
 sources:
 - url: https://qiita.com/suzuyoshi/items/49710258b7cf11e17ae7
   title: AIに全自動でサービスを作らせたら、セキュリティはどうなる? — Claude Codeに組んだ「多層防御スタック」
   date: '2026-07-21'
+- url: https://zenn.dev/stkaji/articles/1dff8ba2f4ef04
+  title: AI駆動開発時代のセキュリティと開発速度の天秤
+  date: '2026-09-11'
 ---
 
+
 # Security Best Practices
+
+---
+
+## 2026-09-11
+
+### AI駆動開発時代のセキュリティと開発速度の天秤
+
+Claude Codeを用いたAI駆動開発において、開発速度の向上と引き換えにセキュリティリスクが顕在化した経験を基に、IPA『安全なウェブサイトの作り方』とOWASP ASVSを参照しながらLaravelでの具体的なセキュリティ実装を整理。AIが生成したコードの信頼性、権限管理、速度と安全性のトレードオフについて、実務者の視点で考察している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/stkaji/articles/1dff8ba2f4ef04)
+- **重要度**: 6/10
+- **タグ**: claude-code
 
 ---
 

@@ -12,7 +12,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-03-24'
-updated: '2026-09-08'
+updated: '2026-09-11'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -65,6 +65,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wanm8p/fable_51_vs_gpt6_astra_for_2d_sprites
   title: Fable 5.1 vs GPT-6 Astra for 2D Sprites
   date: '2026-09-08'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wd15a1/opus_46_was_our_wet_dream_of_ai
+  title: Opus 4.6 was OUR wet dream of AI
+  date: '2026-09-11'
 ---
 
 
@@ -82,7 +85,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-09-11
+
+### Opus 4.6 was OUR wet dream of AI
+
+Reddit ユーザーによる Claude Opus 4.6 への称賛投稿。直接的でゴール指向、明確かつ深い出力が特徴で、唯一の欠点はコンテキストウィンドウの制限のみと評価。コーディングでは 4.8 に切り替える必要があるが、それは性能ではなくコンテキストサイズの問題。Fable 5.1 はプロジェクトレベルのタスクに適しているが、使用制限が厳しすぎるとの意見。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wd15a1/opus_46_was_our_wet_dream_of_ai)
+- **重要度**: 4/10
+- **タグ**: opus, sonnet, performance
 
 ---
 

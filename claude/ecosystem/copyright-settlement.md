@@ -7,7 +7,7 @@ tags:
 - cowork
 - pricing
 date: '2026-07-21'
-updated: '2026-09-06'
+updated: '2026-09-11'
 sources:
 - url: https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved
   title: Anthropic’s landmark $1.5B copyright settlement is approved
@@ -15,10 +15,27 @@ sources:
 - url: https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement
   title: Authors push back as publishers and agents make claims on Anthropic settlement
   date: '2026-09-06'
+- url: https://the-decoder.com/anthropics-1-5-billion-book-settlement-descends-into-chaos-as-authors-and-publishers-fight-over-who-gets-paid
+  title: Anthropic's $1.5 billion book settlement descends into chaos as authors and
+    publishers fight over who gets paid
+  date: '2026-09-11'
 ---
 
 
+
 # Copyright Settlement
+
+---
+
+## 2026-09-11
+
+### Anthropic's $1.5 billion book settlement descends into chaos as authors and publishers fight over who gets paid
+
+Anthropic が書籍の著作権侵害により15億ドルの和解金を支払うことになったが、著者と出版社の間で配分を巡る混乱が発生している。48万2千冊以上が対象で1冊あたり3,000ドルが支払われるが、権利が著者に戻っているにもかかわらず出版社が請求したり、教科書著者が契約上10-15%しか受け取れないなど、配分に関する紛争が多発している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropics-1-5-billion-book-settlement-descends-into-chaos-as-authors-and-publishers-fight-over-who-gets-paid)
+- **重要度**: 8/10
+- **タグ**: pricing, claude-api, cowork
 
 ---
 
