@@ -3,6 +3,7 @@ title: Model Comparison
 category: guides
 subcategory: model-comparison
 tags:
+- claude-code
 - cowork
 - haiku
 - opus
@@ -10,7 +11,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-06-12'
-updated: '2026-08-14'
+updated: '2026-09-12'
 sources:
 - url: https://zenn.dev/znet/articles/2026-stronger-model-as-reviewer
   title: 高性能モデルの使いどころは『実装者』でなく『レビュアー』 — Fable 5 実機評価
@@ -27,13 +28,29 @@ sources:
 - url: https://qiita.com/nakahashi-naoto/items/597e06b90a8f10e2947e
   title: 【2026年版】Claudeモデル徹底比較 — ChatGPT・Geminiとの違いと使い分けガイド
   date: '2026-08-14'
+- url: https://zenn.dev/pdfractal/articles/539d3da0021e3d
+  title: なぜ、GPTとClaudeは、チャットで使う場合と、コード生成で使う場合で「逆の性格」に見えるのか？
+  date: '2026-09-12'
 ---
 
 
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-09-12
+
+### なぜ、GPTとClaudeは、チャットで使う場合と、コード生成で使う場合で「逆の性格」に見えるのか？
+
+GPTとClaudeのチャット利用時とコード生成時における性格の違いを分析した記事。GPTは壁打ちに適した発散的思考が得意だが、Claudeは論理的厳密性を重視しレビュワーとして優秀。コード生成では逆の評価を受けることがあるが、これは同じモデル特性が環境により異なる行動として表面化しているため。Claudeはユーザーの指示には従うが思想には従いにくく、GPTは指示を越えることがあるが思想には引っ張られやすいという性質の違いがある。
+
+- **ソース**: [Zenn claude](https://zenn.dev/pdfractal/articles/539d3da0021e3d)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

@@ -6,16 +6,33 @@ tags:
 - claude-api
 - cowork
 - performance
+- pricing
 date: '2026-07-08'
-updated: '2026-07-08'
+updated: '2026-09-12'
 sources:
 - url: https://techcrunch.com/podcast/your-gaming-data-could-be-the-secret-to-agi-according-to-this-bezos-backed-startup
   title: Your gaming data could be the secret to AGI, according to this Bezos-backed
     startup
   date: '2026-07-08'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1weizes/i_have_to_say_something_as_a_chinese
+  title: I have to say something as a chinese
+  date: '2026-09-12'
 ---
 
+
 # Competitor Analysis
+
+---
+
+## 2026-09-12
+
+### I have to say something as a chinese
+
+中国のAIコミュニティに詳しいユーザーが、AnthropicによるDeepSeekへの疑惑に対して反論。DeepSeekがClaudeにリクエストを転送しているという主張は経済的に不合理であり、実際には逆に中国のサードパーティAPIプロバイダーがClaudeのリクエストを安価なモデルに転送している可能性を指摘。また、軍事・生物兵器関連の質問は大学試験問題であり、蒸留についても通常の競合研究の範囲内と主張している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1weizes/i_have_to_say_something_as_a_chinese)
+- **重要度**: 6/10
+- **タグ**: claude-api, cowork, pricing
 
 ---
 

@@ -8,7 +8,7 @@ tags:
 - cowork
 - performance
 date: '2026-05-11'
-updated: '2026-09-06'
+updated: '2026-09-12'
 sources:
 - url: https://zenn.dev/zoetaka38/articles/2328ea1c852dee
   title: AI consultation が突然 400 BadRequest ループに陥る原因と、3層防御で直した話
@@ -19,11 +19,27 @@ sources:
 - url: https://qiita.com/syun136_616/items/5ed3d24c0b0eadbd5688
   title: Claude Fable 5.1のtool_choice仕様と400エラー対策
   date: '2026-09-06'
+- url: https://qiita.com/yureki_lab/items/b2b0a91c77555f4ff020
+  title: Claude API の 429(rate_limit_error)を正しく捌く実装手順 — RPMではなくトークンバケツ・retry-after・SDK自動リトライの3つのハマりどころ【2026】
+  date: '2026-09-12'
 ---
 
 
 
+
 # Claude Api Error
+
+---
+
+## 2026-09-12
+
+### Claude API の 429(rate_limit_error)を正しく捌く実装手順 — RPMではなくトークンバケツ・retry-after・SDK自動リトライの3つのハマりどころ【2026】
+
+Claude APIの429エラー(rate_limit_error)の正しい対処法を解説。レート制限はRPM/ITPM/OTPMの3本立てで、トークン数で制限に達することが多い。retry-afterヘッダーに従った待機が正解で、anthropic SDKはデフォルトで2回自動リトライするため自前リトライと重複しないよう注意が必要。max_tokensは必要最小限に指定し、プロンプトキャッシュを活用することで制限を緩和できる。
+
+- **ソース**: [Qiita claude](https://qiita.com/yureki_lab/items/b2b0a91c77555f4ff020)
+- **重要度**: 7/10
+- **タグ**: claude-api, bugfix, performance
 
 ---
 

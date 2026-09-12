@@ -14,7 +14,7 @@ tags:
 - release
 - 新機能
 date: '2026-07-16'
-updated: '2026-09-08'
+updated: '2026-09-12'
 sources:
 - url: https://qiita.com/moha0918_/items/c8b144e3ba36744b964b
   title: Claude Code v2.1.211｜Bedrock/Vertexのキャッシュ課金バグが直る｜毎日Changelog解説
@@ -52,6 +52,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/51a3235755ea1214e305
   title: Claude Code v2.1.263〜v2.1.265｜サブエージェントと teammate で prompt cache が外れていた｜毎日Changelog解説
   date: '2026-09-08'
+- url: https://qiita.com/moha0918_/items/6819a679639e6b264310
+  title: Claude Code v2.1.270｜読み取り専用の git に許可確認が出るデグレが直る｜毎日Changelog解説
+  date: '2026-09-12'
 ---
 
 
@@ -63,7 +66,20 @@ sources:
 
 
 
+
 # Claude Code Bugfix
+
+---
+
+## 2026-09-12
+
+### Claude Code v2.1.270｜読み取り専用の git に許可確認が出るデグレが直る｜毎日Changelog解説
+
+Claude Code v2.1.270 がリリースされ、v2.1.269 で発生したデグレが修正されました。長時間実行したセッションで、git log や git diff などの読み取り専用 git コマンドに対して不要な許可確認が表示される問題が解消されました。リリースから約24時間半での迅速な修正対応となりました。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/6819a679639e6b264310)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, release
 
 ---
 

@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-08-31'
+updated: '2026-09-12'
 sources:
 - url: https://zenn.dev/shelty/articles/20260408-budget-book-asset-management
   title: MoneyForwardの家計簿データで資産予測を自動化してみた＠Claude
@@ -46,6 +46,9 @@ sources:
 - url: https://qiita.com/jtths474/items/6094d3a9709f5187cf60
   title: スクショ1枚からPhotoshop・Illustratorのワイヤーフレームをスクリプトで組み立てる
   date: '2026-08-31'
+- url: https://qiita.com/Ohmiya-Mizuki/items/9a778aee4d078dbfb116
+  title: Claude Codeで業務自動化を1か月回して分かった、定型業務を任せる範囲の決め方と5つの歯止め
+  date: '2026-09-12'
 ---
 
 
@@ -57,7 +60,20 @@ sources:
 
 
 
+
 # Automation Workflow
+
+---
+
+## 2026-09-12
+
+### Claude Codeで業務自動化を1か月回して分かった、定型業務を任せる範囲の決め方と5つの歯止め
+
+Claude Codeで1か月間ブログ・SNS運用を自動化した実践報告。254本のPR、110本の原稿を処理し、AIに任せる範囲の線引き（CLAUDE.mdでの禁止事項設定）と、AIの報告を信用しない5つの歯止め（git diffでの検証、記録ファイルでの状態管理など）が成功の鍵だったと解説。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Ohmiya-Mizuki/items/9a778aee4d078dbfb116)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, setup
 
 ---
 

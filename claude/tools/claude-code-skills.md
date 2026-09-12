@@ -4,13 +4,14 @@ category: tools
 subcategory: claude-code-skills
 tags:
 - claude-code
+- cowork
 - cursor
 - mcp
 - prompt
 - setup
 - 新機能
 date: '2026-07-11'
-updated: '2026-08-22'
+updated: '2026-09-12'
 sources:
 - url: https://ai-heartland.com/explain/ponytail-lazy-senior-dev
   title: Ponytail解説｜AIエージェントに『怠惰なシニア』を憑依させコードを54%削るClaude Codeスキル
@@ -24,12 +25,28 @@ sources:
 - url: https://ai-heartland.com/explain/eli5-skill-claude-code
   title: ELI5スキルとは｜Anthropic社員が公開した/eli5の中身は全文3行、導入手順と同名スキルの見分け方
   date: '2026-08-22'
+- url: https://qiita.com/r-hirayama/items/6509f98d213fb6f3dde2
+  title: Claude Codeの締めに使うスキルを作った
+  date: '2026-09-12'
 ---
 
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-09-12
+
+### Claude Codeの締めに使うスキルを作った
+
+Claude Code のセッション終了時に使うスキル「close-out-retro」の紹介。セッション中の学びを Claude の記憶またはプロジェクトドキュメントに振り分け、未解決のバグや課題を issue トラッカーと突き合わせて起票を提案する。既存の類似スキルとの違いは、issue トラッカー側からの棚卸し機能を持つ点。MIT ライセンスで公開されており、/close-out-retro コマンドで実行可能。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/r-hirayama/items/6509f98d213fb6f3dde2)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, cowork
 
 ---
 

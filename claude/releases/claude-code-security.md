@@ -9,7 +9,7 @@ tags:
 - release
 - 新機能
 date: '2026-07-23'
-updated: '2026-09-11'
+updated: '2026-09-12'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v48e9x/claude_code_just_added_native_codebase_security
   title: Claude Code just added native codebase security scanning
@@ -29,6 +29,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/52f33cf70bea41809eb1
   title: Claude Code v2.1.269｜claude plugin eval でプラグインを採点｜毎日Changelog解説
   date: '2026-09-11'
+- url: https://qiita.com/moha0918_/items/6819a679639e6b264310
+  title: Claude Code v2.1.270｜読み取り専用の git に許可確認が出るデグレが直る｜毎日Changelog解説
+  date: '2026-09-12'
 ---
 
 
@@ -36,7 +39,20 @@ sources:
 
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-09-12
+
+### Claude Code v2.1.270｜読み取り専用の git に許可確認が出るデグレが直る｜毎日Changelog解説
+
+Claude Code v2.1.270 がリリースされ、v2.1.269 で発生したデグレが修正されました。長時間実行したセッションで、git log や git show などの読み取り専用 git コマンドにまで誤って許可確認が表示される問題が解消されています。前バージョンから約24時間半での緊急リリースで、修正内容はこの1件のみです。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/moha0918_/items/6819a679639e6b264310)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, release
 
 ---
 

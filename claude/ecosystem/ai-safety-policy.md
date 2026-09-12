@@ -8,7 +8,7 @@ tags:
 - pricing
 - release
 date: '2026-04-08'
-updated: '2026-06-10'
+updated: '2026-09-12'
 sources:
 - url: https://the-decoder.com/from-gpt-2-to-claude-mythos-the-return-of-ai-models-deemed-too-dangerous-to-release
   title: 'From GPT-2 to Claude Mythos: The return of AI models deemed ''too dangerous
@@ -18,10 +18,26 @@ sources:
   title: Germany's National Security Council greenights an AI Safety Institute modeled
     after the UK's AISI
   date: '2026-06-10'
+- url: https://the-decoder.com/anthropic-ceo-amodei-wants-ai-speed-limits-before-self-improvement-outpaces-human-control
+  title: Anthropic CEO Amodei wants AI speed limits before self-improvement outpaces
+    human control
+  date: '2026-09-12'
 ---
 
 
+
 # Ai Safety Policy
+
+---
+
+## 2026-09-12
+
+### Anthropic CEO Amodei wants AI speed limits before self-improvement outpaces human control
+
+Anthropic CEO ダリオ・アモデイ氏が、AI の再帰的自己改善が人間の制御能力を超える前に開発速度を制限すべきだと提言。独立監査人の常駐、共通安全基準の策定、中国を含む国際条約の締結を求めている。OpenAI も同様の議論を行っているとされ、AI エージェントによる自律的なサイバー攻撃事例が既に発生している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-ceo-amodei-wants-ai-speed-limits-before-self-improvement-outpaces-human-control)
+- **重要度**: 8/10
 
 ---
 
