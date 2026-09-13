@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-11'
-updated: '2026-09-06'
+updated: '2026-09-13'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-best-practice-guide-2026
   title: Claude Codeベストプラクティス完全ガイド2026年版｜使い方・Tips・効率化テクニック集
@@ -49,6 +49,9 @@ sources:
 - url: https://qiita.com/sescore/items/78e3dee00b5e7c414fd4
   title: Claude Codeを1年使い倒して分かった、年収を上げる実践Tips9選
   date: '2026-09-06'
+- url: https://qiita.com/aicoding-guide/items/bcb60bf5439145d3149c
+  title: CLAUDE.md は何行までにすべきか:長さとトークン消費の目安
+  date: '2026-09-13'
 ---
 
 
@@ -61,7 +64,20 @@ sources:
 
 
 
+
 # Claude Code Best Practices
+
+---
+
+## 2026-09-13
+
+### CLAUDE.md は何行までにすべきか:長さとトークン消費の目安
+
+CLAUDE.mdの推奨長は200行未満。超えると指示の遵守率が下がり、4MiBを超えるとスキップされる。@インポートでの分割はコンテキストを減らさず、削減は「消したらミスをするか」で判断。/doctorコマンドで削減案を確認可能。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/aicoding-guide/items/bcb60bf5439145d3149c)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

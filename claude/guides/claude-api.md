@@ -13,7 +13,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-09-09'
+updated: '2026-09-13'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -63,6 +63,9 @@ sources:
 - url: https://qiita.com/yureki_lab/items/86c815a3abe2666160e9
   title: Claude API の Files API で同じ PDF・画像を毎回 Base64 送信するのをやめる実装手順 — beta ヘッダー2箇所・アップロード済みファイルは再取得不可など3つのハマりどころ【2026】
   date: '2026-09-09'
+- url: https://qiita.com/yureki_lab/items/68c7c864e924626971de
+  title: Claude API の count_tokens で送信前にトークン数を見積もる実装手順 — tools・system 込みで数える、実測とのズレ、レート制限が別枠の3つのハマりどころ【2026】
+  date: '2026-09-13'
 ---
 
 
@@ -80,7 +83,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-09-13
+
+### Claude API の count_tokens で送信前にトークン数を見積もる実装手順 — tools・system 込みで数える、実測とのズレ、レート制限が別枠の3つのハマりどころ【2026】
+
+Claude API の count_tokens エンドポイントを使った送信前トークン数見積もりの実装ガイド。system・tools を含めた完全なリクエストボディを渡さないと過少見積りになる点、返り値は推定値で実測と数トークンずれる点、レート制限が Messages API と別枠で毎回呼ぶと 429 エラーになる点の3つが主要な注意事項。tiktoken での代用は 15-20% ずれるため非推奨で、正確に数えるにはサーバーへの問い合わせが必須。
+
+- **ソース**: [Qiita claude](https://qiita.com/yureki_lab/items/68c7c864e924626971de)
+- **重要度**: 7/10
+- **タグ**: claude-api, performance
 
 ---
 

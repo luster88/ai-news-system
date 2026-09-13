@@ -7,14 +7,31 @@ tags:
 - cowork
 - 新機能
 date: '2026-07-12'
-updated: '2026-07-12'
+updated: '2026-09-13'
 sources:
 - url: https://qiita.com/EitaroSeta/items/1f3b34f92e01225333c5
   title: Claude Code でソウルライク風3Dボス戦ゲームを作ってみた（Three.js / Mixamo / サーバー不要）
   date: '2026-07-12'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wf4r63/i_vibe_coded_5_mobile_games_with_claude_codeturns
+  title: I vibe coded 5 mobile games with Claude Code.Turns out, people actually enjoy
+    playing them.
+  date: '2026-09-13'
 ---
 
+
 # Claude Code Game Dev
+
+---
+
+## 2026-09-13
+
+### I vibe coded 5 mobile games with Claude Code.Turns out, people actually enjoy playing them.
+
+開発者が Claude Code を使って5つのモバイルゲーム（iOS）を開発し、AdMob広告で収益化に成功した事例。サブスクリプションよりも広告モデルの方がカジュアルゲームには効果的だったと報告。ASO（App Store最適化）と広告の組み合わせで実際に収益を上げ、ユーザーからも好評を得ている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wf4r63/i_vibe_coded_5_mobile_games_with_claude_codeturns)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

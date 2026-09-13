@@ -13,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-04'
-updated: '2026-09-04'
+updated: '2026-09-13'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -71,6 +71,9 @@ sources:
   title: Benchmarks disagree on GPT-6 Astra, but its human-beating efficiency on ARC-AGI-3
     pulls Chollet’s AGI forecast forward
   date: '2026-09-04'
+- url: https://the-decoder.com/gpt-6-astra-pilots-a-surveillance-drone-and-runs-a-business-on-its-own
+  title: GPT-6 Astra pilots a surveillance drone and runs a business on its own
+  date: '2026-09-13'
 ---
 
 
@@ -86,7 +89,20 @@ sources:
 
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-09-13
+
+### GPT-6 Astra pilots a surveillance drone and runs a business on its own
+
+この記事はGPT-6 AstraとClaude Fable 5.1の比較記事です。Claude関連の情報ではありますが、主にOpenAIのGPT-6の性能を強調する内容で、Claude Fableモデルが対照群として使用されています。Vending-BenchとDrone-Benchという2つのベンチマークでAstraがFableを大きく上回る結果を示しています。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/gpt-6-astra-pilots-a-surveillance-drone-and-runs-a-business-on-its-own)
+- **重要度**: 4/10
+- **タグ**: performance, copilot
 
 ---
 

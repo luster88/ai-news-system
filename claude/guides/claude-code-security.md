@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-01'
-updated: '2026-09-11'
+updated: '2026-09-13'
 sources:
 - url: https://zenn.dev/yuzzzn/articles/45626e1ab08e3c
   title: AIコーディングエージェントをセキュアに使うためのハーネス設計
@@ -29,6 +29,9 @@ sources:
 - url: https://qiita.com/sescore/items/b3ebef2a1f727e3eca28
   title: Claude Code毎日運用で分かった時短術7選【2026年9月版】
   date: '2026-09-11'
+- url: https://qiita.com/tkanata-honmono/items/fd7393d490faf0200161
+  title: Claude Code の sandbox がわからなかったので図解してみた
+  date: '2026-09-13'
 ---
 
 
@@ -36,7 +39,20 @@ sources:
 
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-09-13
+
+### Claude Code の sandbox がわからなかったので図解してみた
+
+Claude Code の sandbox 機能を図解で解説。コマンド実行時にカーネルレベルでファイルアクセスと通信を制限する仕組みを説明。permission ルールとの違い、npm スクリプトなど実際のコマンド実行の流れを詳述。Anthropic 社内では承認プロンプトが84%削減された事例も紹介。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/tkanata-honmono/items/fd7393d490faf0200161)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 
