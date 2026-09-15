@@ -10,7 +10,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-29'
-updated: '2026-08-01'
+updated: '2026-09-15'
 sources:
 - url: https://zenn.dev/noprogllama/articles/d6a34cce09b66d
   title: AIに人格と記憶を与えたら、常につながる手段が欲しくなって自前のWeb UIを作ることになった
@@ -36,6 +36,9 @@ sources:
 - url: https://qiita.com/devex12/items/6d5dab6ec0613afa0c43
   title: 公式ドキュメントゼロ。Claude Codeの秘密テーマ機能を、grep -a十数回・10分のバイナリ解析だけで解明した話
   date: '2026-08-01'
+- url: https://zenn.dev/tatsu_tanu/articles/af627e835f3905
+  title: 3ヶ月使ってたskill・Claude Codeのカスタマイズ公開
+  date: '2026-09-15'
 ---
 
 
@@ -45,7 +48,20 @@ sources:
 
 
 
+
 # Claude Code Customization
+
+---
+
+## 2026-09-15
+
+### 3ヶ月使ってたskill・Claude Codeのカスタマイズ公開
+
+Claude Code を3ヶ月運用した実践的なカスタマイズ事例。レビュー用スキルとして /review-all スラッシュコマンドを作成し、checklist.md で手順・観点を管理。settings.json の statusLine カスタマイズで「現在の状態」と「次のアクション」を常時表示し、複数セッション管理を改善。Stop hook による OS 通知機能で処理完了を見逃さない工夫も紹介。Orca Editor への乗り換え体験にも言及。
+
+- **ソース**: [Zenn claude](https://zenn.dev/tatsu_tanu/articles/af627e835f3905)
+- **重要度**: 6/10
+- **タグ**: claude-code, vscode, setup
 
 ---
 

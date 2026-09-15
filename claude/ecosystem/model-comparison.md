@@ -3,6 +3,7 @@ title: Model Comparison
 category: ecosystem
 subcategory: model-comparison
 tags:
+- claude-api
 - claude-code
 - cowork
 - haiku
@@ -12,7 +13,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-03-24'
-updated: '2026-09-11'
+updated: '2026-09-15'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -68,6 +69,10 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wd15a1/opus_46_was_our_wet_dream_of_ai
   title: Opus 4.6 was OUR wet dream of AI
   date: '2026-09-11'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wgaetp/i_gave_claude_fable_51_and_gpt_6_astra_control_of
+  title: I gave Claude Fable 5.1 and GPT 6 Astra control of my Robot Arm. Which do
+    you think painted better?
+  date: '2026-09-15'
 ---
 
 
@@ -86,7 +91,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-09-15
+
+### I gave Claude Fable 5.1 and GPT 6 Astra control of my Robot Arm. Which do you think painted better?
+
+ユーザーがClaude Fable 5.1とGPT-6 Astraにロボットアームを制御させ、図形の塗りつぶしタスクで性能を比較した実験レポート。X（旧Twitter）で見たゴールデンゲートブリッジの絵画タスクを参考に、SO-101ロボットアームを使用して両モデルの実行能力を検証。結果は似通っていたが、どちらがより良い仕事をしたかについてコミュニティの意見を求めている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wgaetp/i_gave_claude_fable_51_and_gpt_6_astra_control_of)
+- **重要度**: 4/10
+- **タグ**: claude-api, performance, cowork
 
 ---
 

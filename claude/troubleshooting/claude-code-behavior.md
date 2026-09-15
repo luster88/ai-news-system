@@ -6,8 +6,9 @@ tags:
 - bugfix
 - claude-code
 - prompt
+- setup
 date: '2026-08-27'
-updated: '2026-09-07'
+updated: '2026-09-15'
 sources:
 - url: https://zenn.dev/kentaro_tak/articles/claude-code-fabricated-user-turn
   title: AIに残高を1件ずつ聞いていたら、AIが「私の返事」を代筆して数字をでっち上げた
@@ -15,10 +16,26 @@ sources:
 - url: https://qiita.com/yama3133/items/09b5288b4a661bc9a20a
   title: Claude Code君はいつもタメ口だね？弟子やったらパンパンやぞ
   date: '2026-09-07'
+- url: https://qiita.com/suwa_nobu/items/b465ef863f8d8608f497
+  title: Claude Code はサブエージェントにも CLAUDE.md を渡していた。18回測った
+  date: '2026-09-15'
 ---
 
 
+
 # Claude Code Behavior
+
+---
+
+## 2026-09-15
+
+### Claude Code はサブエージェントにも CLAUDE.md を渡していた。18回測った
+
+Claude Code 2.1.271で、サブエージェントが動作する際に親セッションのCLAUDE.mdファイルを自動的に読み込む仕様が変更され、omitClaudeMd設定で読み込みを制御できるようになった。著者は18回の検証を行い、2.1.270では全サブエージェントがCLAUDE.mdを受け取っていたが、2.1.271では設定により除外可能になったことを確認。ただし公式ドキュメントには未反映で、changelogでのみ言及されている。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/suwa_nobu/items/b465ef863f8d8608f497)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 

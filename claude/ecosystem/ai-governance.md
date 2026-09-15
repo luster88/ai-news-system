@@ -7,14 +7,30 @@ tags:
 - cowork
 - 新機能
 date: '2026-06-14'
-updated: '2026-06-14'
+updated: '2026-09-15'
 sources:
 - url: https://qiita.com/mhamadajp/items/ce89717426defdd098c8
   title: AIがコードを書く時代、IT技術者はどうガバナンスを設計するか
   date: '2026-06-14'
+- url: https://the-decoder.com/microsofts-ai-rulebook-readable-thinking-no-inner-life-and-definitely-no-rights
+  title: 'Microsoft''s AI rulebook: readable thinking, no inner life, and definitely
+    no rights'
+  date: '2026-09-15'
 ---
 
+
 # Ai Governance
+
+---
+
+## 2026-09-15
+
+### Microsoft's AI rulebook: readable thinking, no inner life, and definitely no rights
+
+Microsoftが独自AIモデル向けの行動規範を公開。人間による制御を最優先とし、安全性を欠く場合は開発しないと明言。Anthropic CEOの開発減速要請に呼応し、2027年から本格適用予定。モデルの透明性と人間の監視可能性を重視し、自律的な権限拡大や行動の隠蔽を禁止する内容。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/microsofts-ai-rulebook-readable-thinking-no-inner-life-and-definitely-no-rights)
+- **重要度**: 7/10
 
 ---
 

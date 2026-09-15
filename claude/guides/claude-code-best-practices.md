@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-11'
-updated: '2026-09-13'
+updated: '2026-09-15'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-best-practice-guide-2026
   title: Claude Codeベストプラクティス完全ガイド2026年版｜使い方・Tips・効率化テクニック集
@@ -52,6 +52,9 @@ sources:
 - url: https://qiita.com/aicoding-guide/items/bcb60bf5439145d3149c
   title: CLAUDE.md は何行までにすべきか:長さとトークン消費の目安
   date: '2026-09-13'
+- url: https://qiita.com/Rapls/items/76123896b0e6e2769964
+  title: Claude Code の頼み方を10個直しました。半分は、自分が失敗してから変えたものです
+  date: '2026-09-15'
 ---
 
 
@@ -65,7 +68,20 @@ sources:
 
 
 
+
 # Claude Code Best Practices
+
+---
+
+## 2026-09-15
+
+### Claude Code の頼み方を10個直しました。半分は、自分が失敗してから変えたものです
+
+Claude Code を使う際の10個の改善点をまとめた実践的ガイド。著者が実際に経験した5つの失敗（プラグインリジェクト、セキュリティ問題、コンテキスト溢れなど）と、他者から学んだ5つのベストプラクティスを紹介。特に「確認工程の欠如」が共通の失敗原因であったことを指摘し、期待結果の明示、タスク分割、CLAUDE.mdの適切な使い方、diff確認の重要性などを具体例とともに解説している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Rapls/items/76123896b0e6e2769964)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt
 
 ---
 

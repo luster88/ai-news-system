@@ -8,7 +8,7 @@ tags:
 - pricing
 - release
 date: '2026-04-08'
-updated: '2026-09-12'
+updated: '2026-09-15'
 sources:
 - url: https://the-decoder.com/from-gpt-2-to-claude-mythos-the-return-of-ai-models-deemed-too-dangerous-to-release
   title: 'From GPT-2 to Claude Mythos: The return of AI models deemed ''too dangerous
@@ -22,11 +22,27 @@ sources:
   title: Anthropic CEO Amodei wants AI speed limits before self-improvement outpaces
     human control
   date: '2026-09-12'
+- url: https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier
+  title: Anthropic CEO outlines plan to slow AI development
+  date: '2026-09-15'
 ---
 
 
 
+
 # Ai Safety Policy
+
+---
+
+## 2026-09-15
+
+### Anthropic CEO outlines plan to slow AI development
+
+Anthropic CEO Dario Amodeiが、AI開発のペースを減速させる計画を発表。研究者Jacob Coxonの辞任表明や、OpenAI-Hugging Faceハッキング事件を受け、AIの能力向上速度を遅らせる必要性を強調。OpenAI CEOのSam Altmanもこれに賛同し、追随する意向を示した。第三者機関による「組み込み評価者」の導入などの具体的戦略を提案している。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier)
+- **重要度**: 9/10
+- **タグ**: pricing, release, cowork
 
 ---
 

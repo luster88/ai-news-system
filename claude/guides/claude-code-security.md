@@ -4,12 +4,13 @@ category: guides
 subcategory: claude-code-security
 tags:
 - claude-code
+- cowork
 - opus
 - prompt
 - setup
 - 新機能
 date: '2026-05-01'
-updated: '2026-09-13'
+updated: '2026-09-15'
 sources:
 - url: https://zenn.dev/yuzzzn/articles/45626e1ab08e3c
   title: AIコーディングエージェントをセキュアに使うためのハーネス設計
@@ -32,6 +33,9 @@ sources:
 - url: https://qiita.com/tkanata-honmono/items/fd7393d490faf0200161
   title: Claude Code の sandbox がわからなかったので図解してみた
   date: '2026-09-13'
+- url: https://zenn.dev/tatsu_tanu/articles/d0cb3a659b4a8c
+  title: 新卒がClaude Codeを3ヶ月使ってみて感じたこと
+  date: '2026-09-15'
 ---
 
 
@@ -40,7 +44,20 @@ sources:
 
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-09-15
+
+### 新卒がClaude Codeを3ヶ月使ってみて感じたこと
+
+新卒エンジニアがClaude Codeを3ヶ月使用した実践的な知見を紹介。docs配下への情報集約でAIの精度向上、ステップを踏ませる指示出し、サブエージェントによる並列レビューなどの有効活用法と、数字の検証やissue乱立などの注意点を解説。AIレビューでの「やらないこと」の優先判断の重要性を強調。
+
+- **ソース**: [Zenn claude](https://zenn.dev/tatsu_tanu/articles/d0cb3a659b4a8c)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 
