@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-23'
-updated: '2026-08-29'
+updated: '2026-09-16'
 sources:
 - url: https://qiita.com/pro-tein/items/49e5dbec705c3497dd51
   title: 【Claude Code】Hooks機能でデスクトップ通知を設定してみた
@@ -44,6 +44,9 @@ sources:
 - url: https://qiita.com/NaokiIshimura/items/d5f4f1d4586f70512310
   title: Claude Codeのフックがこの半年で別物になった — 追加された13イベントと新しい書き方
   date: '2026-08-29'
+- url: https://zenn.dev/labee/articles/7c97be78c6afa7
+  title: Claude Codeで実行してほしくないコマンドには代替手段を伝える
+  date: '2026-09-16'
 ---
 
 
@@ -55,7 +58,20 @@ sources:
 
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-09-16
+
+### Claude Codeで実行してほしくないコマンドには代替手段を伝える
+
+Claude Codeで禁止コマンド実行時に代替手段を提示する方法を解説。PreToolUseフックを使い、sed -iなどの危険なコマンドをブロックしつつ、Editツールなど適切な代替操作を即座に返すことで、エージェントが無駄な試行を減らせる。shlex による簡易判定の限界や、本番実装例も紹介。
+
+- **ソース**: [Zenn claude](https://zenn.dev/labee/articles/7c97be78c6afa7)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

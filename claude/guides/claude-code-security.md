@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-01'
-updated: '2026-09-15'
+updated: '2026-09-16'
 sources:
 - url: https://zenn.dev/yuzzzn/articles/45626e1ab08e3c
   title: AIコーディングエージェントをセキュアに使うためのハーネス設計
@@ -36,6 +36,9 @@ sources:
 - url: https://zenn.dev/tatsu_tanu/articles/d0cb3a659b4a8c
   title: 新卒がClaude Codeを3ヶ月使ってみて感じたこと
   date: '2026-09-15'
+- url: https://qiita.com/yureki_lab/items/901489c12338db4d60ad
+  title: Claude Code の Agent Skills(SKILL.md)を自作する実装手順 — description で発火しない・allowed-tools・補助ファイル参照の3つのハマりどころ【2026】
+  date: '2026-09-16'
 ---
 
 
@@ -45,7 +48,20 @@ sources:
 
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-09-16
+
+### Claude Code の Agent Skills(SKILL.md)を自作する実装手順 — description で発火しない・allowed-tools・補助ファイル参照の3つのハマりどころ【2026】
+
+Claude Code の Agent Skills(SKILL.md)の自作実装手順を解説。発火トリガーは frontmatter の description のみで本文は参照されない点、allowed-tools でツール制限が可能な点、補助ファイルは SKILL.md に読み込みタイミングを明記しないと参照されない点の3つの落とし穴を実例と共に説明。CLAUDE.md との使い分けは「常時必要か特定タスクのみか」で判断し、Skills は発火まで数十トークンしか消費しないためコンテキスト効率が良い。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/yureki_lab/items/901489c12338db4d60ad)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

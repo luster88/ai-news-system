@@ -7,14 +7,31 @@ tags:
 - pricing
 - release
 date: '2026-08-16'
-updated: '2026-08-16'
+updated: '2026-09-16'
 sources:
 - url: https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust
   title: Anthropic CEO says AI backlash is ‘fundamentally a crisis of trust’
   date: '2026-08-16'
+- url: https://the-decoder.com/not-everyone-is-convinced-that-big-ais-proposed-development-slowdown-is-really-about-safety
+  title: Not everyone is convinced that Big AI's proposed slowdown is really about
+    safety
+  date: '2026-09-16'
 ---
 
+
 # Industry Debate
+
+---
+
+## 2026-09-16
+
+### Not everyone is convinced that Big AI's proposed slowdown is really about safety
+
+AnthropicやOpenAIなどの大手AI企業が安全性を理由にフロンティアAI開発の協調的減速と独占禁止法の適用除外を提案。Cohere CEOのAidan Gomezは、これを競合排除と参入障壁構築の試みだと批判。トランプ大統領はAI脅威論を否定する一方、民主党側は開発減速と透明性向上を支持しており、政治的にも意見が分かれている。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/not-everyone-is-convinced-that-big-ais-proposed-development-slowdown-is-really-about-safety)
+- **重要度**: 7/10
+- **タグ**: pricing, cowork, release
 
 ---
 

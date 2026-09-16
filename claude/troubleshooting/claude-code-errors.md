@@ -9,7 +9,7 @@ tags:
 - setup
 - vscode
 date: '2026-06-05'
-updated: '2026-09-07'
+updated: '2026-09-16'
 sources:
 - url: https://qiita.com/natume_nat/items/76fe608d570caebb4f4c
   title: Claude Codeで「The model's tool call could not be parsed」エラーを回避する方法
@@ -29,6 +29,9 @@ sources:
 - url: https://qiita.com/homhom44/items/2b40a1a58505485c8f70
   title: Claude Code でつまずいたときの切り分けメモ（2026-09-08）
   date: '2026-09-07'
+- url: https://qiita.com/homhom44/items/747428748c3e183eacf4
+  title: モデル指定が原因で400エラーになる時の確認ポイントとは！Claude Code でつまずいたときの切り分けメモ（2026-09-16）
+  date: '2026-09-16'
 ---
 
 
@@ -36,7 +39,30 @@ sources:
 
 
 
+
 # Claude Code Errors
+
+---
+
+## 2026-09-16
+
+### モデル指定が原因で400エラーになる時の確認ポイントとは！Claude Code でつまずいたときの切り分けメモ（2026-09-16）
+
+Claude Code 使用時に発生する400エラーやセッション生成失敗などの典型的なトラブルについて、GitHub Issues の報告を基に実際に検証した切り分け方法をまとめたトラブルシューティングガイド。モデル指定の不整合、大容量ファイル読み込み、セッション生成エラー、会話履歴参照失敗など、複数人が遭遇している問題の確認ポイントと対処法を整理している。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/747428748c3e183eacf4)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
+
+---
+
+### モデル指定が原因で400エラーになる時の確認ポイントとは！Claude Code でつまずいたときの切り分けメモ（2026-09-16）
+
+Claude Code 利用時に発生する 400 エラーやその他トラブルの切り分け方法をまとめた実践的なトラブルシューティングガイド。モデル指定の不整合、大容量ファイル読み込み時の処理停止、セッション生成失敗、会話履歴参照エラーなど、GitHub Issues で複数報告されている実例を基に、手元で再現確認した結果を整理。設定確認のポイントや再試行前のチェック項目を具体的に提示している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/homhom44/items/747428748c3e183eacf4)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 

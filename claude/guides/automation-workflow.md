@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-09-12'
+updated: '2026-09-16'
 sources:
 - url: https://zenn.dev/shelty/articles/20260408-budget-book-asset-management
   title: MoneyForwardの家計簿データで資産予測を自動化してみた＠Claude
@@ -49,6 +49,9 @@ sources:
 - url: https://qiita.com/Ohmiya-Mizuki/items/9a778aee4d078dbfb116
   title: Claude Codeで業務自動化を1か月回して分かった、定型業務を任せる範囲の決め方と5つの歯止め
   date: '2026-09-12'
+- url: https://qiita.com/Rai_050902/items/2ff1ac6df82096ecac16
+  title: 趣味の「入荷チェック」をClaude Codeに任せたら、ブログ巡回→分類→iCloudでスマホ閲覧、まで自動化できた話
+  date: '2026-09-16'
 ---
 
 
@@ -61,7 +64,20 @@ sources:
 
 
 
+
 # Automation Workflow
+
+---
+
+## 2026-09-16
+
+### 趣味の「入荷チェック」をClaude Codeに任せたら、ブログ巡回→分類→iCloudでスマホ閲覧、まで自動化できた話
+
+メダカ専門店のブログ入荷情報を毎日チェックする作業を Claude Code で自動化した事例。ブログから新着情報を取得し、品種ごとに分類して1枚の HTML ファイルにまとめ、iCloud Drive 経由でスマホから閲覧可能にした。サーバーレスで、既存の同期サービスを活用した軽量な自動化の好例。
+
+- **ソース**: [Qiita claude](https://qiita.com/Rai_050902/items/2ff1ac6df82096ecac16)
+- **重要度**: 5/10
+- **タグ**: claude-code, cowork
 
 ---
 

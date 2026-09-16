@@ -10,10 +10,11 @@ tags:
 - haiku
 - mac
 - opus
+- performance
 - prompt
 - 新機能
 date: '2026-04-25'
-updated: '2026-09-09'
+updated: '2026-09-16'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sv7fvc/im_a_nursing_student_who_built_a_660kpage
   title: I’m a nursing student who built a 660K-page pharmaceutical database using
@@ -50,6 +51,13 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wb7190/i_made_a_virtual_lounge_for_vibecoders_to_hang
   title: I made a virtual lounge for vibecoders to hang out while claude code is running.
   date: '2026-09-09'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wgu8g3/i_used_claude_to_write_a_capcut_replacement_and
+  title: I used Claude to write a CapCut replacement and now people are actually ditching
+    CapCut for it.
+  date: '2026-09-16'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wh1t5v/templeos_running_inside_the_ingame_monitors_of
+  title: TempleOS running inside the in-game monitors of Half Life 1
+  date: '2026-09-16'
 ---
 
 
@@ -62,7 +70,30 @@ sources:
 
 
 
+
 # Community Projects
+
+---
+
+## 2026-09-16
+
+### I used Claude to write a CapCut replacement and now people are actually ditching CapCut for it.
+
+開発者がClaude（ファブルモデル）を使用して、わずか3週間でCapCutの代替となる動画編集ツール「Concat」を開発。GitHubで既に10,000ダウンロードを達成し、実際にCapCutから乗り換えるユーザーが出ている。技術スタックはRust、Slint、GPUシェーダーで、完全無料のオープンソースプロジェクト。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wgu8g3/i_used_claude_to_write_a_capcut_replacement_and)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, 新機能
+
+---
+
+### TempleOS running inside the in-game monitors of Half Life 1
+
+Half-Life 1のゲーム内モニターでTempleOSを実行するプロジェクト。QEMUでTempleOSインスタンスを起動し、VNCでゲーム内画面にストリーミング表示、実際にタイプ入力も可能。Claude は VNCクライアント、QEMU起動、入力配線を適切に処理したが、1998年製のGoldSrcエンジンのOpenGLフック実装では苦戦し、開発者が手動修正した。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wh1t5v/templeos_running_inside_the_ingame_monitors_of)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, performance
 
 ---
 

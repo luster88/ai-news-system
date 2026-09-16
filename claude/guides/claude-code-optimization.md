@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-31'
-updated: '2026-09-07'
+updated: '2026-09-16'
 sources:
 - url: https://qiita.com/nishiken1118/items/6b16557fcabf784c861e
   title: 過去の session をほしい時に参照する方針で claude-mem のトークン消費を激減させた話
@@ -56,6 +56,9 @@ sources:
 - url: https://qiita.com/peipeita/items/6cc695e48183bd773779
   title: Claude Codeのトークン消費量を抑える方法
   date: '2026-09-07'
+- url: https://qiita.com/tsks_hal/items/f6fc8c8a69bb636e07b0
+  title: Claude Codeのトークンを抑えるために普段やっている3つのこと(初心者向け)
+  date: '2026-09-16'
 ---
 
 
@@ -70,7 +73,20 @@ sources:
 
 
 
+
 # Claude Code Optimization
+
+---
+
+## 2026-09-16
+
+### Claude Codeのトークンを抑えるために普段やっている3つのこと(初心者向け)
+
+Claude Codeのトークン消費を抑える3つの実践的な方法を紹介。/compactコマンドでセッションを定期的に圧縮し、Markdownで計画書を作成して進捗を管理、セッションが長くなったら/clearで新規セッションに移行する手法を解説。/insightsで利用傾向を分析し改善につなげる運用Tips。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/tsks_hal/items/f6fc8c8a69bb636e07b0)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, performance
 
 ---
 

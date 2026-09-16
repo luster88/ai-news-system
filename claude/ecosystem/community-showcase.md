@@ -10,9 +10,10 @@ tags:
 - performance
 - prompt
 - sonnet
+- vscode
 - 新機能
 date: '2026-03-29'
-updated: '2026-09-01'
+updated: '2026-09-16'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6of32/i_am_fully_addicted_to_building_dumb_little_ai
   title: I am fully addicted to building dumb little AI web apps. I love it.
@@ -45,6 +46,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1w3oha6/week_5_of_making_my_fishing_game_entirely_with_ai
   title: Week 5 of making my fishing game entirely with AI
   date: '2026-09-01'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1whdxej/claude_code_meta_quest_3_i_have_created_the
+  title: 'Claude Code + Meta Quest 3: I have created the ultimate VR office'
+  date: '2026-09-16'
 ---
 
 
@@ -54,7 +58,20 @@ sources:
 
 
 
+
 # Community Showcase
+
+---
+
+## 2026-09-16
+
+### Claude Code + Meta Quest 3: I have created the ultimate VR office
+
+Meta Quest 3とClaude Codeを組み合わせた未来的なVRオフィス環境の構築事例。2週間でClaude Max 20x×2とChatGPT Plus 20x×2を使い切り、VPS上でtmux経由のClaude Codeセッション、チャート、Kanbanボードを3D Iron Manスタイルのオフィスに統合。音声アシスタント「Harry」でターミナル管理、リサーチ、メール対応を実現し、ブラウザからの制御も可能。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1whdxej/claude_code_meta_quest_3_i_have_created_the)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, vscode
 
 ---
 
