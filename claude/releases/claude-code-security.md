@@ -9,7 +9,7 @@ tags:
 - release
 - 新機能
 date: '2026-07-23'
-updated: '2026-09-12'
+updated: '2026-09-17'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v48e9x/claude_code_just_added_native_codebase_security
   title: Claude Code just added native codebase security scanning
@@ -32,6 +32,10 @@ sources:
 - url: https://qiita.com/moha0918_/items/6819a679639e6b264310
   title: Claude Code v2.1.270｜読み取り専用の git に許可確認が出るデグレが直る｜毎日Changelog解説
   date: '2026-09-12'
+- url: https://the-decoder.com/anthropic-keeps-pushing-claude-code-toward-autonomous-coding-with-new-parallel-agent-workflows
+  title: Anthropic keeps pushing Claude Code toward autonomous coding with new parallel
+    agent workflows
+  date: '2026-09-17'
 ---
 
 
@@ -40,7 +44,20 @@ sources:
 
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-09-17
+
+### Anthropic keeps pushing Claude Code toward autonomous coding with new parallel agent workflows
+
+Anthropic が Claude Code の Projects 機能を刷新し、並列スレッド実行による自律的なコーディングワークフローを実装。ユーザーが目標を記述すると、コーディネーターが作業を複数のクラウドセッションに分散し、各スレッドがプルリクエストやテストを独立実行。Pro/Max サブスクライバー向けベータ版として提供開始。Anthropic は最近 autopilot モードをデフォルト化しており、より自律的なエージェント化を推進中。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-keeps-pushing-claude-code-toward-autonomous-coding-with-new-parallel-agent-workflows)
+- **重要度**: 8/10
+- **タグ**: claude-code, 新機能, release
 
 ---
 

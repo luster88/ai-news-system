@@ -11,7 +11,7 @@ tags:
 - prompt
 - vscode
 date: '2026-04-02'
-updated: '2026-08-18'
+updated: '2026-09-17'
 sources:
 - url: https://qiita.com/MirabelleQuest/items/f3b27e9740d4b22135fc
   title: '# Claude Code でセッション開始直後から Context 使用率が高かったので確認した'
@@ -28,13 +28,29 @@ sources:
 - url: https://qiita.com/YujiNaramoto/items/75e2d273cdd4a72df2cb
   title: なぜClaude Codeのauto-compact対策をPreCompact/SessionStart hookで実装するのか
   date: '2026-08-18'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wj2ru2/looking_for_the_right_harness_for_claude_code
+  title: Looking for the right Harness for Claude Code
+  date: '2026-09-17'
 ---
 
 
 
 
 
+
 # Context Management
+
+---
+
+## 2026-09-17
+
+### Looking for the right Harness for Claude Code
+
+10年の経験を持つソフトウェアエンジニアが、Claude Codeでのプロジェクト管理における課題を報告。MDファイルでのTODO管理の不具合、セッション自動圧縮時のコンテキスト喪失、長期的なプロジェクトコンテキストの維持の難しさなどを指摘し、より良いワークフロー管理ツールやハーネス（制御フレームワーク）を求めている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wj2ru2/looking_for_the_right_harness_for_claude_code)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, mcp
 
 ---
 

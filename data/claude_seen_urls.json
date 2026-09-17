@@ -2236,7 +2236,32 @@
     "https://the-decoder.com/nearly-one-in-five-ai-researchers-already-expected-an-extinction-scenario-from-ai-back-in-2024": "2026-09-17",
     "https://techcrunch.com/2026/09/16/anthropic-and-openai-want-to-embed-safety-evaluators-will-they-really-be-independent": "2026-09-17",
     "https://techcrunch.com/2026/09/16/your-ai-agents-can-now-control-your-google-home-devices": "2026-09-17",
-    "https://techcrunch.com/2026/09/16/anthropic-merges-claude-chat-and-cowork-in-one-interface": "2026-09-17"
+    "https://techcrunch.com/2026/09/16/anthropic-merges-claude-chat-and-cowork-in-one-interface": "2026-09-17",
+    "https://www.reddit.com/r/ClaudeAI/comments/1winf9r/sales_pitch_of_the_century": "2026-09-17",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wj3u0m/claude_saved_me_800": "2026-09-17",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wj6l0y/claudes_response_to_me_pressing_the_quick_answer": "2026-09-17",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wj2ru2/looking_for_the_right_harness_for_claude_code": "2026-09-17",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wit5yg/jpmorgan_is_putting_claude_code_inside_a_sandbox": "2026-09-17",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wj4gs0/subagents_burning_your_claude_code_5hour_window": "2026-09-17",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wiu4lm/psa_branching_isnt_available_with_the_new_chat": "2026-09-17",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wikd24/whats_one_claude_workflow_that_genuinely_changed": "2026-09-17",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wj5htg/month_8_of_getting_frontier_intelligence_on_a": "2026-09-17",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wj14bf/how_do_you_tell_if_claude_agrees_with_your_idea": "2026-09-17",
+    "https://qiita.com/suwa_nobu/items/e867493a5cbcdfaa40c9": "2026-09-17",
+    "https://qiita.com/sescore/items/85da19e77bdad85bbdc4": "2026-09-17",
+    "https://qiita.com/yureki_lab/items/8ea2dd41fb831aec5797": "2026-09-17",
+    "https://zenn.dev/hinaridake/articles/ai-development-boundary": "2026-09-17",
+    "https://zenn.dev/matsutake4949/articles/fastapi-claude-api": "2026-09-17",
+    "https://zenn.dev/sbkm/articles/32259d260b26e5": "2026-09-17",
+    "https://zenn.dev/robot/articles/434ebacac356bd": "2026-09-17",
+    "https://zenn.dev/vteacher/articles/8ff82191753d05": "2026-09-17",
+    "https://zenn.dev/acropapa330/articles/typesafe-jev-news-triage-53days": "2026-09-17",
+    "https://qiita.com/haruki_nakayama/items/65cc8517912ca5ceb670": "2026-09-17",
+    "https://the-decoder.com/anthropic-keeps-pushing-claude-code-toward-autonomous-coding-with-new-parallel-agent-workflows": "2026-09-17",
+    "https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers": "2026-09-17"
   },
-  "source_penalties": {}
+  "source_penalties": {
+    "Anthropic News": "2026-09-18",
+    "AI Heartland": "2026-09-18"
+  }
 }

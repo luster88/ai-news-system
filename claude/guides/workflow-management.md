@@ -6,15 +6,32 @@ tags:
 - claude-code
 - copilot
 - cowork
+- setup
 date: '2026-06-17'
-updated: '2026-06-17'
+updated: '2026-09-17'
 sources:
 - url: https://qiita.com/shinjpn1/items/f194dc84928c6598477e
   title: 「Claude Code 使ってます?」— テキストファイルで AI を管理していた私が、結局システムを作るまで
   date: '2026-06-17'
+- url: https://qiita.com/haruki_nakayama/items/65cc8517912ca5ceb670
+  title: AI 駆動開発に変更管理を組み込んだ話
+  date: '2026-09-17'
 ---
 
+
 # Workflow Management
+
+---
+
+## 2026-09-17
+
+### AI 駆動開発に変更管理を組み込んだ話
+
+Claude Codeを用いたAI駆動開発において、チケット単位で影響マップ（impact.md）・判断記録（decisions.md）・クロージャチェック（closure.md）の3ファイルを用いた変更管理の仕組みを導入した実践報告。Amazon Kiroの仕様駆動開発（SDD）をベースに、変更追跡と決着確認を独自に拡張し、実装理由や判断基準の可視化、レビュー効率化、チーム内の知見共有を実現した。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/haruki_nakayama/items/65cc8517912ca5ceb670)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, setup
 
 ---
 

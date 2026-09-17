@@ -6,15 +6,33 @@ tags:
 - claude-code
 - cursor
 - mcp
+- prompt
+- 新機能
 date: '2026-06-26'
-updated: '2026-06-26'
+updated: '2026-09-17'
 sources:
 - url: https://zenn.dev/k0chi/articles/76a4d1d72d2bdb
   title: AI が書いたコードの設計劣化を検知する sentrux をまとめてみる
   date: '2026-06-26'
+- url: https://zenn.dev/robot/articles/434ebacac356bd
+  title: AIのゴミコメントを改善するためのSkillを作った話
+  date: '2026-09-17'
 ---
 
+
 # Code Quality Monitoring
+
+---
+
+## 2026-09-17
+
+### AIのゴミコメントを改善するためのSkillを作った話
+
+AI が生成する過剰なコメントを改善するための OSS Skill「hush」を作成。Claude Code や Codex に対応し、5つの原則（命名改善によるコメント削除、公開 API への完全なドキュメント、誤解を招くコードへの説明、条件分岐での why の記述、それ以外はコメント不要）に基づいてコメントを整理する。skills CLI 経由で自動適用可能。
+
+- **ソース**: [Zenn claude](https://zenn.dev/robot/articles/434ebacac356bd)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, 新機能
 
 ---
 

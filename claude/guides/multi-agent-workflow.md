@@ -11,7 +11,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-03-29'
-updated: '2026-08-29'
+updated: '2026-09-17'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6jouf/anthropic_shares_how_to_make_claude_code_better
   title: Anthropic shares how to make Claude code better with a harness
@@ -34,6 +34,9 @@ sources:
 - url: https://zenn.dev/hachihou_system/articles/multi-agent-billing-design
   title: freee公開完了。3体のAI（Gemini・Claude・ローカルAI）に分担させて課金システムを作った話
   date: '2026-08-29'
+- url: https://qiita.com/sescore/items/85da19e77bdad85bbdc4
+  title: OpenClawで9体のAIエージェント経営OSを作った話｜Claude Code実践ログ
+  date: '2026-09-17'
 ---
 
 
@@ -42,7 +45,20 @@ sources:
 
 
 
+
 # Multi Agent Workflow
+
+---
+
+## 2026-09-17
+
+### OpenClawで9体のAIエージェント経営OSを作った話｜Claude Code実践ログ
+
+Claude Codeのエージェント基盤「OpenClaw」を使い、CEO・CFO・CTO・COO・CMOなど9体のAIエージェントを役割分担させて経営OSを構築した実践記録。Skillとして役割を定義し、スラッシュコマンドで呼び出せる設計や、cronによる無人実行を実現。一人法人・小規模チームが「経営会議」を開ける状態を作り出した事例で、APIコスト管理や対外発信の承認フロー、死活監視など運用上の注意点も共有。
+
+- **ソース**: [Qiita claude](https://qiita.com/sescore/items/85da19e77bdad85bbdc4)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, cowork
 
 ---
 

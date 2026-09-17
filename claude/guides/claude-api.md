@@ -13,7 +13,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-09-13'
+updated: '2026-09-17'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -66,6 +66,13 @@ sources:
 - url: https://qiita.com/yureki_lab/items/68c7c864e924626971de
   title: Claude API の count_tokens で送信前にトークン数を見積もる実装手順 — tools・system 込みで数える、実測とのズレ、レート制限が別枠の3つのハマりどころ【2026】
   date: '2026-09-13'
+- url: https://qiita.com/yureki_lab/items/8ea2dd41fb831aec5797
+  title: Claude API の count_tokens でリクエスト前にトークン数を数える実装手順 — 課金額とズレる・レート制限が別枠・tools
+    分の加算漏れ、3つのハマりどころ【2026】
+  date: '2026-09-17'
+- url: https://zenn.dev/matsutake4949/articles/fastapi-claude-api
+  title: FastAPI × Claude API で作る日本語ビジネス文書API
+  date: '2026-09-17'
 ---
 
 
@@ -84,7 +91,30 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-09-17
+
+### Claude API の count_tokens でリクエスト前にトークン数を数える実装手順 — 課金額とズレる・レート制限が別枠・tools 分の加算漏れ、3つのハマりどころ【2026】
+
+Claude API の Token Counting API を使ってリクエスト前にトークン数を測定する実装手順を解説。system プロンプトや tools 定義を渡し忘れると大幅に過小カウントになる問題、課金明細との微妙なズレ、レート制限が Messages API と別枠である点の 3 つのハマりどころを実例とともに紹介。tiktoken による代用は Claude とトークナイザが異なるため 15〜20% 以上ずれる可能性があり推奨されない。
+
+- **ソース**: [Qiita claude](https://qiita.com/yureki_lab/items/8ea2dd41fb831aec5797)
+- **重要度**: 7/10
+- **タグ**: claude-api, prompt, setup
+
+---
+
+### FastAPI × Claude API で作る日本語ビジネス文書API
+
+FastAPI と Claude API を組み合わせて、日本語ビジネス文書の敬語変換・校正・トーン変換・要約・メール生成を行う API を構築し、RapidAPI で販売するまでの実装手順を解説した技術記事。プロジェクト構成から各機能の実装方法まで、実用的な API 開発のガイドを提供している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/matsutake4949/articles/fastapi-claude-api)
+- **重要度**: 6/10
+- **タグ**: claude-api, prompt, cowork
 
 ---
 

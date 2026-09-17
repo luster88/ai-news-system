@@ -355,6 +355,9 @@ sources:
 - url: https://qiita.com/sescore/items/aff17dc2a577e81f21b8
   title: Claude Code実務Tips7選【2026年最新】年収データ分析とSES比較
   date: '2026-09-17'
+- url: https://zenn.dev/sbkm/articles/32259d260b26e5
+  title: AIと決めたルールが、翌日にはもう守られていなかった — 読まれない場所に書いた決定は、無かったのと同じ
+  date: '2026-09-17'
 ---
 
 
@@ -445,7 +448,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-09-17
+
+### AIと決めたルールが、翌日にはもう守られていなかった — 読まれない場所に書いた決定は、無かったのと同じ
+
+Claude Codeにポッドキャスト制作を任せる中で、決定事項が翌日守られない3つのパターンを発見。①決定が作業時に読むべきファイルに記載されていない、②手順書に届いても解釈が異なる、③手順書の記載と実態が乖離。AIは「読んだものだけが全て」なので、決定の置き場所設計が重要という実務知見。
+
+- **ソース**: [Zenn claude](https://zenn.dev/sbkm/articles/32259d260b26e5)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

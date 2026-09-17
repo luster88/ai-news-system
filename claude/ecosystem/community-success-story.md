@@ -5,10 +5,11 @@ subcategory: community-success-story
 tags:
 - claude-code
 - cowork
+- opus
 - performance
 - 新機能
 date: '2026-04-05'
-updated: '2026-07-04'
+updated: '2026-09-17'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sdabux/hats_off_to_claude
   title: Hats off to claude
@@ -16,10 +17,26 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1ungfuc/my_app_made_its_first_dollar
   title: My app made its first dollar 🥳
   date: '2026-07-04'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wj3u0m/claude_saved_me_800
+  title: Claude saved me $800
+  date: '2026-09-17'
 ---
 
 
+
 # Community Success Story
+
+---
+
+## 2026-09-17
+
+### Claude saved me $800
+
+ユーザーがEV充電器メーカーの倒産により管理者パスワードが使えなくなった問題を、Claude Opus 4.0を使って解決。他社AIは倫理的理由で拒否したが、Opusは長時間のセッションを通じてパスワードなしで管理コンソールへのアクセスを実現。新規購入と電気工事で800ドルかかるところを回避できた実例。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wj3u0m/claude_saved_me_800)
+- **重要度**: 4/10
+- **タグ**: opus, cowork
 
 ---
 

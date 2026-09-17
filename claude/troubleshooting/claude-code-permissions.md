@@ -9,7 +9,7 @@ tags:
 - setup
 - windows
 date: '2026-05-09'
-updated: '2026-08-31'
+updated: '2026-09-17'
 sources:
 - url: https://qiita.com/enomoso_pm/items/623bd77ce2bb89569e3d
   title: 「設定したのになぜ？」Claude Codeのパーミッションが効かない理由と、今すぐできる対策
@@ -23,12 +23,28 @@ sources:
 - url: https://qiita.com/syun136_616/items/15af05d2d643f7050144
   title: Claude Codeの制限モードでスキルが消えた原因と直し方
   date: '2026-08-31'
+- url: https://qiita.com/suwa_nobu/items/e867493a5cbcdfaa40c9
+  title: Write() で拒否しても、Claude Code は12回とも書き込んだ。効いていたのは Edit() だけだった
+  date: '2026-09-17'
 ---
 
 
 
 
+
 # Claude Code Permissions
+
+---
+
+## 2026-09-17
+
+### Write() で拒否しても、Claude Code は12回とも書き込んだ。効いていたのは Edit() だけだった
+
+Claude Code 2.1.275で修正されたWrite()権限ルールは実際には機能しておらず、12回のテストすべてで書き込みを許可した。一方、Edit()ルールは3つの経路（Editツール、Writeツールの新規作成、Bashリダイレクト）すべてで正しく機能し、ファイルアクセスを制御できた。/update-configが生成する形式は2.1.275で変更されたが、Write()自体の機能不全は修正されていない。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/suwa_nobu/items/e867493a5cbcdfaa40c9)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, windows
 
 ---
 
