@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-02'
-updated: '2026-08-20'
+updated: '2026-09-17'
 sources:
 - url: https://zenn.dev/caphtech/articles/feed-curator-ai-rss-with-claude-code
   title: Claude CodeでAI RSSリーダーを作ったら、その日にInoreaderを解約した
@@ -31,6 +31,9 @@ sources:
 - url: https://qiita.com/tri-ponte/items/6d309b2f9f029ec1d53f
   title: iPhoneでしゃべった内容を1秒でClaude Codeに届ける
   date: '2026-08-20'
+- url: https://qiita.com/NOAH_412/items/8bf948f5f149bb322483
+  title: Claude CodeにローカルStable Diffusion(ComfyUI)を繋いで、チャットだけで画像生成する
+  date: '2026-09-17'
 ---
 
 
@@ -38,7 +41,20 @@ sources:
 
 
 
+
 # Claude Code Integration
+
+---
+
+## 2026-09-17
+
+### Claude CodeにローカルStable Diffusion(ComfyUI)を繋いで、チャットだけで画像生成する
+
+Claude Code に自作の MCP サーバー経由で ComfyUI（ローカル Stable Diffusion）を接続し、チャットのみで画像生成を実現。RTX 3060 Ti で SDXL 画像を従量課金なしで生成でき、生成物の商用利用ライセンスも自分で管理可能。個人開発アプリ NovelCraft の背景イラスト素材制作に活用し、Claude Code が画像をレビューしてプロンプト調整も支援。アニメ特化モデル（Illustrious-XL）導入時にはライセンス確認を徹底し、商用利用可否を個別に判断。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/NOAH_412/items/8bf948f5f149bb322483)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, setup
 
 ---
 

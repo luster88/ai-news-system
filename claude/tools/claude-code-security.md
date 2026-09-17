@@ -8,7 +8,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-06'
-updated: '2026-09-08'
+updated: '2026-09-17'
 sources:
 - url: https://qiita.com/nogataka/items/4d2a551f89f6b4f94b01
   title: Claude Code の無料セキュリティ監査プラグインで脆弱性を自動検出・修正してみる
@@ -20,11 +20,43 @@ sources:
   title: I ported Toyota's Lean quality system to Claude Code so the same agent mistakes
     stop coming back (MIT, free)
   date: '2026-09-08'
+- url: https://ai-heartland.com/tool/claude-code-security-review-github-action
+  title: Claude Code Security Reviewとは｜PRを自動で守るGitHub Actionを実測
+  date: '2026-09-17'
+- url: https://ai-heartland.com/tool/ai-job-search
+  title: ai-job-searchとは｜Claude Code求職OSSは日本語で使えるか、CVのLaTeX日本語化まで実機検証
+  date: '2026-09-17'
 ---
 
 
 
+
+
 # Claude Code Security
+
+---
+
+## 2026-09-17
+
+### ai-job-searchとは｜Claude Code求職OSSは日本語で使えるか、CVのLaTeX日本語化まで実機検証
+
+ai-job-searchは、Claude Codeを求職アシスタントに変えるOSSフレームワーク（GitHubスター42.4k）です。求人収集から採点、CV・カバーレター生成、PDF検証、面接準備まで自動化します。日本語での利用は基本的に可能ですが、LaTeXの日本語出力が無言で壊れるため、luatexja-fontspecの追加が必要です。プロンプトとルールの集合として設計され、12個のコマンドと2個のスキルで求職ループを回します。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/ai-job-search)
+- **重要度**: 6/10
+- **タグ**: claude-code
+
+---
+
+## 2026-09-17
+
+### Claude Code Security Reviewとは｜PRを自動で守るGitHub Actionを実測
+
+Anthropic公式のGitHub Action「Claude Code Security Review」の詳細解説。PRごとに自動でセキュリティ脆弱性を検出し、インジェクション・認証不備・秘密情報のハードコードなど10カテゴリを診断。CLIの/security-reviewコマンドと同機能をCI/CDで実行できる。最終更新は2026年2月で約7ヶ月更新なし、プロンプトインジェクション対策は未実装で信頼できるPRのみが前提。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/claude-code-security-review-github-action)
+- **重要度**: 6/10
+- **タグ**: claude-code
 
 ---
 

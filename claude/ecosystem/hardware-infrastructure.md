@@ -3,18 +3,36 @@ title: Hardware Infrastructure
 category: ecosystem
 subcategory: hardware-infrastructure
 tags:
+- cowork
 - performance
 - release
 - 新機能
 date: '2026-08-05'
-updated: '2026-08-05'
+updated: '2026-09-17'
 sources:
 - url: https://techcrunch.com/2026/08/05/anthropic-is-hiring-an-ai-chip-design-team
   title: Anthropic is hiring an AI chip design team
   date: '2026-08-05'
+- url: https://the-decoder.com/apple-is-reportedly-building-an-enterprise-ai-server-with-its-own-m8-ultra-chips
+  title: Apple is reportedly building an enterprise AI server with its own M8 Ultra
+    chips
+  date: '2026-09-17'
 ---
 
+
 # Hardware Infrastructure
+
+---
+
+## 2026-09-17
+
+### Apple is reportedly building an enterprise AI server with its own M8 Ultra chips
+
+Appleが独自のM8 Ultraチップを搭載したエンタープライズ向けAIサーバーを開発中との報道。AI推論に特化し、2029年以降の発売を目指す。OpenAIやAnthropicがすでにMac製品を大量購入しており、AI市場でのAppleの存在感が高まっている。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/apple-is-reportedly-building-an-enterprise-ai-server-with-its-own-m8-ultra-chips)
+- **重要度**: 6/10
+- **タグ**: performance, 新機能, cowork
 
 ---
 

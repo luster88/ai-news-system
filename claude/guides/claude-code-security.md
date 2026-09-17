@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-01'
-updated: '2026-09-16'
+updated: '2026-09-17'
 sources:
 - url: https://zenn.dev/yuzzzn/articles/45626e1ab08e3c
   title: AIコーディングエージェントをセキュアに使うためのハーネス設計
@@ -39,6 +39,9 @@ sources:
 - url: https://qiita.com/yureki_lab/items/901489c12338db4d60ad
   title: Claude Code の Agent Skills(SKILL.md)を自作する実装手順 — description で発火しない・allowed-tools・補助ファイル参照の3つのハマりどころ【2026】
   date: '2026-09-16'
+- url: https://qiita.com/sescore/items/aff17dc2a577e81f21b8
+  title: Claude Code実務Tips7選【2026年最新】年収データ分析とSES比較
+  date: '2026-09-17'
 ---
 
 
@@ -49,7 +52,20 @@ sources:
 
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-09-17
+
+### Claude Code実務Tips7選【2026年最新】年収データ分析とSES比較
+
+Claude Codeの実務Tips7選を紹介する記事。CLAUDE.mdの使い分け、Plan Modeの活用、サブエージェントによる調査と実装の分離、Hooksによる破壊的操作の防止など、実際の設定ファイルやコマンドを交えた具体的な運用ノウハウが解説されている。また、Claude Code活用スキルがSESエンジニアの年収や働き方に与える影響についても言及。
+
+- **ソース**: [Qiita claude](https://qiita.com/sescore/items/aff17dc2a577e81f21b8)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

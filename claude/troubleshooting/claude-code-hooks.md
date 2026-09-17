@@ -8,7 +8,7 @@ tags:
 - cowork
 - setup
 date: '2026-06-03'
-updated: '2026-08-31'
+updated: '2026-09-17'
 sources:
 - url: https://zenn.dev/gudezou/articles/7e8235a27f0909
   title: Claude Code の終了フックから claude を呼び出すとなぜ暴走するのか
@@ -22,12 +22,28 @@ sources:
 - url: https://qiita.com/homhom44/items/594957a69690a39c7f82
   title: Claude Code でつまずいたときの切り分けメモ（2026-08-31）
   date: '2026-08-31'
+- url: https://zenn.dev/sactechnologies/articles/d990489b0e759d
+  title: Claude Code のフックは、静かに死ぬ — 117本を数えたら12本が呼ばれていなかった
+  date: '2026-09-17'
 ---
 
 
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-09-17
+
+### Claude Code のフックは、静かに死ぬ — 117本を数えたら12本が呼ばれていなかった
+
+Claude Code のフックが静かに失敗する6つのパターンを実例とともに報告。117本のフック中12本が実際には動いていなかった事例を基に、毎回ゼロから検証する監査スクリプト hook-doctor.py の設計思想を解説。エラーを出さずに死ぬフックの検出方法と予防策を提示。
+
+- **ソース**: [Zenn claude](https://zenn.dev/sactechnologies/articles/d990489b0e759d)
+- **重要度**: 7/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 

@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-09-11'
+updated: '2026-09-17'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -352,6 +352,9 @@ sources:
 - url: https://qiita.com/shu15511551/items/b20d34e01e63cbd15b3b
   title: VBAマネージャーのAIエージェント化、どうしてこんな事をやるかようやくAIが理解してくれた話
   date: '2026-09-11'
+- url: https://qiita.com/sescore/items/aff17dc2a577e81f21b8
+  title: Claude Code実務Tips7選【2026年最新】年収データ分析とSES比較
+  date: '2026-09-17'
 ---
 
 
@@ -441,7 +444,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-09-17
+
+### Claude Code実務Tips7選【2026年最新】年収データ分析とSES比較
+
+Claude Codeの実務Tips7選を解説。CLAUDE.mdの使い分け、Plan Mode活用、サブエージェント分離、Hooks設定など具体的な設定ファイルとコマンド例を交えて紹介。後半でSESエンジニアの年収データにも言及するが、主眼はAI開発ツールの実務ノウハウ。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/sescore/items/aff17dc2a577e81f21b8)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

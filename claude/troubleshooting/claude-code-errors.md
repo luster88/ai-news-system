@@ -5,11 +5,12 @@ subcategory: claude-code-errors
 tags:
 - bugfix
 - claude-code
+- cowork
 - opus
 - setup
 - vscode
 date: '2026-06-05'
-updated: '2026-09-16'
+updated: '2026-09-17'
 sources:
 - url: https://qiita.com/natume_nat/items/76fe608d570caebb4f4c
   title: Claude Codeで「The model's tool call could not be parsed」エラーを回避する方法
@@ -32,6 +33,9 @@ sources:
 - url: https://qiita.com/homhom44/items/747428748c3e183eacf4
   title: モデル指定が原因で400エラーになる時の確認ポイントとは！Claude Code でつまずいたときの切り分けメモ（2026-09-16）
   date: '2026-09-16'
+- url: https://qiita.com/homhom44/items/5eb42ab1d158765bd3d2
+  title: メッセージ一覧のキーと件数がズレて落ちる時の確認ポイント！Claude Code でつまずいたときの切り分けメモ（2026-09-17）
+  date: '2026-09-17'
 ---
 
 
@@ -40,7 +44,30 @@ sources:
 
 
 
+
 # Claude Code Errors
+
+---
+
+## 2026-09-17
+
+### メッセージ一覧のキーと件数がズレて落ちる時の確認ポイント！Claude Code でつまずいたときの切り分けメモ（2026-09-17）
+
+Claude Code 利用中に「メッセージ一覧のキーと件数がズレて落ちる」症状が発生した際の切り分け手順をまとめた記事。GitHub Issues で報告されている複数の事例を基に、実際にコマンドを実行して確認した範囲の対処法を整理している。発生条件の切り分けに役立つ実践的なトラブルシューティングガイド。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/5eb42ab1d158765bd3d2)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, cowork
+
+---
+
+### メッセージ一覧のキーと件数がズレて落ちる時の確認ポイント！Claude Code でつまずいたときの切り分けメモ（2026-09-17）
+
+Claude Code 使用時に発生するメッセージ数とキー数のズレによるクラッシュ問題について、GitHub Issues の報告を基に実際に検証した切り分け手順をまとめた記事。複数ユーザーが遭遇している既知の問題に対する確認ポイントと、発生条件の特定方法を具体的なコマンド実行結果とともに解説している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/homhom44/items/5eb42ab1d158765bd3d2)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix
 
 ---
 

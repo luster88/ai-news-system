@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-09-16'
+updated: '2026-09-17'
 sources:
 - url: https://zenn.dev/shelty/articles/20260408-budget-book-asset-management
   title: MoneyForwardの家計簿データで資産予測を自動化してみた＠Claude
@@ -52,6 +52,9 @@ sources:
 - url: https://qiita.com/Rai_050902/items/2ff1ac6df82096ecac16
   title: 趣味の「入荷チェック」をClaude Codeに任せたら、ブログ巡回→分類→iCloudでスマホ閲覧、まで自動化できた話
   date: '2026-09-16'
+- url: https://zenn.dev/assign/articles/7e0d3f65c20da9
+  title: 会議の録音から議事録を自動生成する仕組みを作って議事録を書く時間をなくした
+  date: '2026-09-17'
 ---
 
 
@@ -65,7 +68,20 @@ sources:
 
 
 
+
 # Automation Workflow
+
+---
+
+## 2026-09-17
+
+### 会議の録音から議事録を自動生成する仕組みを作って議事録を書く時間をなくした
+
+株式会社アサインの開発責任者が、会議録音から議事録を自動生成する独自システムを構築。MacのボイスメモとGoogle Meet/Zoomの録音を監視し、会議終了後1〜2分で議事録が完成する仕組みをlaunchdとスクリプトで実装。NottaやPLAUD AIなど既存サービスの書式や料金の問題を解決するため自作し、文字起こしから議事録作成までを完全自動化した。
+
+- **ソース**: [Zenn claude](https://zenn.dev/assign/articles/7e0d3f65c20da9)
+- **重要度**: 6/10
+- **タグ**: claude-api, prompt, cowork
 
 ---
 
