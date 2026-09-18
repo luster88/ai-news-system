@@ -5,11 +5,12 @@ subcategory: claude-code-security
 tags:
 - bugfix
 - claude-code
+- mcp
 - performance
 - release
 - 新機能
 date: '2026-07-23'
-updated: '2026-09-17'
+updated: '2026-09-18'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v48e9x/claude_code_just_added_native_codebase_security
   title: Claude Code just added native codebase security scanning
@@ -36,6 +37,9 @@ sources:
   title: Anthropic keeps pushing Claude Code toward autonomous coding with new parallel
     agent workflows
   date: '2026-09-17'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wjxvwz/claude_code_is_getting_native_agentsmd_support
+  title: Claude Code is getting native AGENTS.md support!
+  date: '2026-09-18'
 ---
 
 
@@ -45,7 +49,20 @@ sources:
 
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-09-18
+
+### Claude Code is getting native AGENTS.md support!
+
+Claude Code に AGENTS.md のネイティブサポートが追加されることが発表されました。これにより、エージェント設定ファイルを通じて Claude Code の動作をカスタマイズできるようになります。GitHub の公式リポジトリに mods/agents-md ディレクトリが追加され、開発者コミュニティで注目を集めています。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wjxvwz/claude_code_is_getting_native_agentsmd_support)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, mcp
 
 ---
 

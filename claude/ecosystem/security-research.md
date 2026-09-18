@@ -10,7 +10,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-29'
-updated: '2026-06-10'
+updated: '2026-09-18'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s739lc/nicolas_carlini_672k_citations_on_google_scholar
   title: Nicolas Carlini (67.2k citations on Google Scholar) says Claude is a better
@@ -27,12 +27,29 @@ sources:
   title: Anthropic study shows AI needs hours, not weeks, to build exploits from security
     patches
   date: '2026-06-10'
+- url: https://the-decoder.com/security-researchers-used-anthropics-claude-to-hack-openais-internal-systems-in-under-72-hours
+  title: Security researchers used Anthropic's Claude to hack OpenAI's internal systems
+    in under 72 hours
+  date: '2026-09-18'
 ---
 
 
 
 
+
 # Security Research
+
+---
+
+## 2026-09-18
+
+### Security researchers used Anthropic's Claude to hack OpenAI's internal systems in under 72 hours
+
+セキュリティ研究者が Anthropic の Claude を使用し、72時間以内に OpenAI の内部システムへの侵入に成功した事例。OpenAI のコミュニティフォーラムの脆弱性を連鎖させ、従業員の ChatGPT と Codex アカウントにアクセスし、GitHub の内部リポジトリまで到達。AI モデルが高度なサイバー攻撃の時間とスキル要件を劇的に削減していることを示す実証例となった。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/security-researchers-used-anthropics-claude-to-hack-openais-internal-systems-in-under-72-hours)
+- **重要度**: 8/10
+- **タグ**: claude-api, opus, performance
 
 ---
 

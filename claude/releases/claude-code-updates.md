@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: 2026-03-23
-updated: '2026-09-01'
+updated: '2026-09-18'
 sources:
 - url: https://github.com/anthropics/claude-code/releases
   title: Claude Code GitHub Releases
@@ -101,7 +101,11 @@ sources:
 - url: https://qiita.com/moha0918_/items/74317aca2bd592a109a6
   title: Claude Code v2.1.257｜auto モードの自動承認が縮む｜毎日Changelog解説
   date: '2026-09-01'
+- url: https://qiita.com/picnic/items/4633ce110f09d6856461
+  title: Claude Code v2.1.275/276の重要アップデートまとめ：破壊的変更に注意
+  date: '2026-09-18'
 ---
+
 
 
 
@@ -173,6 +177,18 @@ Claude Code の主要なリリース・機能追加を時系列で記録する�
 
 - [セットアップガイド](../guides/setup.md)
 - [ツール比較](../tools/comparison.md)
+
+---
+
+## 2026-09-18
+
+### Claude Code v2.1.275/276の重要アップデートまとめ：破壊的変更に注意
+
+Claude Code v2.1.275/276の重要アップデートに関する技術記事。プロキシ/ゲートウェイ経由のリクエストが400エラーになる致命的な回帰バグ（v2.1.276で修正）、npmプラグインのインストールスクリプト実行停止、claude.aiアカウントのスキル自動同期、URL埋め込み認証情報の漏洩修正など、複数の破壊的変更が含まれる。特に企業環境でプロキシ経由利用やプラグイン開発を行っているユーザーは即座の対応が必要。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/4633ce110f09d6856461)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

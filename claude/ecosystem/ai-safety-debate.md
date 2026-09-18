@@ -7,14 +7,29 @@ tags:
 - opus
 - pricing
 date: '2026-09-17'
-updated: '2026-09-17'
+updated: '2026-09-18'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1winf9r/sales_pitch_of_the_century
   title: Sales pitch of the century.
   date: '2026-09-17'
+- url: https://techcrunch.com/video/dario-amodei-and-other-ai-leaders-want-to-pace-the-frontier-buthow
+  title: Dario Amodei and other AI leaders want to ‘Pace the Frontier’ but…how?
+  date: '2026-09-18'
 ---
 
+
 # Ai Safety Debate
+
+---
+
+## 2026-09-18
+
+### Dario Amodei and other AI leaders want to ‘Pace the Frontier’ but…how?
+
+Anthropic CEO Dario Amodei が AI 開発の「フロンティアのペース調整」計画を提示。独立した安全性評価機関と民主国家の AI ラボ間の協調を提案し、業界の一部から支持を得る一方、Nvidia の Jensen Huang からは反発も。AI 開発のスローダウンの定義や監督主体について議論が活発化している。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/video/dario-amodei-and-other-ai-leaders-want-to-pace-the-frontier-buthow)
+- **重要度**: 7/10
 
 ---
 

@@ -10,7 +10,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-29'
-updated: '2026-09-15'
+updated: '2026-09-18'
 sources:
 - url: https://zenn.dev/noprogllama/articles/d6a34cce09b66d
   title: AIに人格と記憶を与えたら、常につながる手段が欲しくなって自前のWeb UIを作ることになった
@@ -39,6 +39,9 @@ sources:
 - url: https://zenn.dev/tatsu_tanu/articles/af627e835f3905
   title: 3ヶ月使ってたskill・Claude Codeのカスタマイズ公開
   date: '2026-09-15'
+- url: https://zenn.dev/nogu66/articles/claude-code-function-hooks-claude-mods
+  title: Claude Mods 入門 | Claude Codeを自由にカスタマイズする
+  date: '2026-09-18'
 ---
 
 
@@ -49,7 +52,20 @@ sources:
 
 
 
+
 # Claude Code Customization
+
+---
+
+## 2026-09-18
+
+### Claude Mods 入門 | Claude Codeを自由にカスタマイズする
+
+Claude Code に新しく追加された Claude Mods という拡張機能の仕組みについて解説。従来の Hooks とは異なり、TypeScript の関数として Claude Code 本体に直接組み込まれ、画面表示の変更やツール追加まで可能になる。Function Hooks という仕組みを使い、プロセスをまたがずに同じメモリ空間で動作するため、より深いカスタマイズが実現できる。現在は early access 機能で、環境変数の設定が必要。
+
+- **ソース**: [Zenn claude](https://zenn.dev/nogu66/articles/claude-code-function-hooks-claude-mods)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

@@ -12,7 +12,7 @@ tags:
 - release
 - 新機能
 date: '2026-09-01'
-updated: '2026-09-11'
+updated: '2026-09-18'
 sources:
 - url: https://qiita.com/homhom44/items/a04c2455fd1cbedecb39
   title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-01）
@@ -38,6 +38,9 @@ sources:
 - url: https://qiita.com/homhom44/items/fac57cf33dd3f041b110
   title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-12）
   date: '2026-09-11'
+- url: https://qiita.com/homhom44/items/0f78b1f4d0bf07227cfa
+  title: Claude Codeの並列化で便利さとリスクを同時に掴む話！Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-19）
+  date: '2026-09-18'
 ---
 
 
@@ -46,7 +49,20 @@ sources:
 
 
 
+
 # News Digest
+
+---
+
+## 2026-09-18
+
+### Claude Codeの並列化で便利さとリスクを同時に掴む話！Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-19）
+
+Claude Codeの更新履歴と並列化機能、セキュリティ研究、LLMによる脆弱性発見など、Anthropic関連の複数のトピックをまとめた記事。Claude Codeの並列化は便利だが料金消費が急増するリスクがあり、セキュリティ面では72時間でGitHub侵入経路を発見した事例などが紹介されている。Anthropic社内でClaudeが研究開発の26%を牽引している点も報告されている。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/0f78b1f4d0bf07227cfa)
+- **重要度**: 6/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 

@@ -5,16 +5,34 @@ subcategory: multi-agent-architecture
 tags:
 - claude-api
 - cowork
+- mcp
+- performance
 - prompt
 date: '2026-04-24'
-updated: '2026-04-24'
+updated: '2026-09-18'
 sources:
 - url: https://qiita.com/bit-tanghao/items/29708ac044a58e8e0844
   title: 【AIエージェントシリーズ 第7弾】マルチAgent基礎：Anthropic Harness論文に学ぶ専門家チームレビューの作り方
   date: '2026-04-24'
+- url: https://qiita.com/portalmatsuki/items/0d5fe7892b813f29a58a
+  title: brain と hands を切り離す — エージェントの「手」はどこまで抽象化できるか
+  date: '2026-09-18'
 ---
 
+
 # Multi Agent Architecture
+
+---
+
+## 2026-09-18
+
+### brain と hands を切り離す — エージェントの「手」はどこまで抽象化できるか
+
+Anthropic が公開した「Scaling Managed Agents」の解説記事。エージェントアーキテクチャを brain（判断）と hands（実行）に分離し、セッション情報を外部化することで、応答時間を p50 で約60%、p95 で90%以上短縮。ハーネスを「ペット」から「家畜」（stateless で交換可能）に変え、MCP を含む任意のツールを統一インターフェースで接続可能にした設計思想を紹介。
+
+- **ソース**: [Qiita claude](https://qiita.com/portalmatsuki/items/0d5fe7892b813f29a58a)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-api, performance
 
 ---
 

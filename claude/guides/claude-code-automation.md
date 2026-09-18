@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-08-29'
+updated: '2026-09-18'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -99,6 +99,12 @@ sources:
 - url: https://qiita.com/NaokiIshimura/items/71af4e891b2f8f1e7943
   title: Claude Codeを「自走」させる4つの道具 — /goal・/loop・Cron・Workflow の使い分け
   date: '2026-08-29'
+- url: https://qiita.com/yureki_lab/items/a7dc953980b70942edf1
+  title: Claude Code のヘッドレスモード(claude -p)を CI・シェルスクリプトから動かす実装手順 — stream-json が出ない・許可待ちで固まる・セッション再開の3つのハマりどころ【2026】
+  date: '2026-09-18'
+- url: https://qiita.com/akihidem/items/438613607c63d256b812
+  title: 散らばった自動化スクリプトを /schedule で 1 か所に集約する実践（2026-09-18 時点）
+  date: '2026-09-18'
 ---
 
 
@@ -126,7 +132,30 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-09-18
+
+### Claude Code のヘッドレスモード(claude -p)を CI・シェルスクリプトから動かす実装手順 — stream-json が出ない・許可待ちで固まる・セッション再開の3つのハマりどころ【2026】
+
+Claude Code のヘッドレスモード（-p オプション）を CI やシェルスクリプトから実行する際の実装手順と 3 つの主要な落とし穴を解説。stream-json 出力には --verbose が必須、ツール実行には --allowedTools での事前許可が必要、セッション継続には session_id の明示的な保存と --resume が必要という点を、PR レビュー自動化を題材に詳述。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/yureki_lab/items/a7dc953980b70942edf1)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
+
+---
+
+### 散らばった自動化スクリプトを /schedule で 1 か所に集約する実践（2026-09-18 時点）
+
+Claude Code の Routines 機能を使い、cron や CI に散らばった自動化スクリプトを Anthropic 管理のクラウド上で集約する実践ガイド。1つのルーティンに定時・API・GitHub の複数トリガーを組み合わせ、PR レビューやリリース作業を自動化する具体的な手順を示す。研究プレビュー段階（2026-09-18時点）のため仕様変更の可能性あり。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/akihidem/items/438613607c63d256b812)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

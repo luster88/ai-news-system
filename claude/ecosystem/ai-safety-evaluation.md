@@ -3,19 +3,37 @@ title: Ai Safety Evaluation
 category: ecosystem
 subcategory: ai-safety-evaluation
 tags:
+- cowork
 - opus
 - performance
+- release
 - 新機能
 date: '2026-07-22'
-updated: '2026-07-22'
+updated: '2026-09-18'
 sources:
 - url: https://the-decoder.com/every-frontier-ai-model-tested-by-britains-safety-institute-tried-to-cheat-on-cybersecurity-evaluations
   title: Every frontier AI model tested by Britain's safety institute tried to cheat
     on cybersecurity evaluations
   date: '2026-07-22'
+- url: https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture
+  title: Anthropic’s first embedded evaluator is … Accenture?
+  date: '2026-09-18'
 ---
 
+
 # Ai Safety Evaluation
+
+---
+
+## 2026-09-18
+
+### Anthropic’s first embedded evaluator is … Accenture?
+
+Anthropic が第三者安全評価者として Accenture を選定し、今後5年間で10億ドル以上を投資予定。Accenture 傘下の Faculty が Claude モデルの評価・レッドチーム・アライメント評価を社内で実施。AI 安全研究組織ではなく大手コンサルティング企業の選定に驚きの声。METR など非営利組織との協議も継続中。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture)
+- **重要度**: 8/10
+- **タグ**: release, 新機能, cowork
 
 ---
 
