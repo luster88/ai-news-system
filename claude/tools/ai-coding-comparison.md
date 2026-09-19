@@ -9,7 +9,7 @@ tags:
 - cursor
 - pricing
 date: '2026-04-13'
-updated: '2026-08-16'
+updated: '2026-09-19'
 sources:
 - url: https://qiita.com/kotaro_ai_lab/items/2302e26f835082f04575
   title: 【2026年4月版】AIコーディングエージェント最新動向まとめ — Claude Code・Codex CLI・Cursor 3・Jules 完全比較
@@ -23,12 +23,28 @@ sources:
 - url: https://zenn.dev/tofu575/articles/7f1d8171032166
   title: AIに課金しすぎたくない自分がCodexを選んだ理由
   date: '2026-08-16'
+- url: https://qiita.com/sescore/items/f1504153a8a43a20358d
+  title: 【2026年9月最新】Claude Code・Copilot・Cursor・Windsurf・Codeium実装比較｜セットアップコードとベンチマークで選ぶAIコーディングツール
+  date: '2026-09-19'
 ---
 
 
 
 
+
 # Ai Coding Comparison
+
+---
+
+## 2026-09-19
+
+### 【2026年9月最新】Claude Code・Copilot・Cursor・Windsurf・Codeium実装比較｜セットアップコードとベンチマークで選ぶAIコーディングツール
+
+2026年9月時点でのAIコーディングツール実装比較記事。Claude Code・Copilot・Cursor・Windsurf・Codeiumを、エージェント能力・コンテキスト理解力・MCP対応など7つの観点で評価し、Tier分類を実施。特にClaude Codeについて、CLIベースの自律型エージェント機能、サブエージェント機能、MCP標準対応、CI組み込み例などを詳述し、実装コードやセットアップ手順を提供。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/sescore/items/f1504153a8a43a20358d)
+- **重要度**: 6/10
+- **タグ**: claude-code, cursor, copilot
 
 ---
 

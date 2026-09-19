@@ -5,13 +5,14 @@ subcategory: github-cli-agent-skills
 tags:
 - claude-code
 - copilot
+- cowork
 - cursor
 - mcp
 - prompt
 - setup
 - 新機能
 date: '2026-04-22'
-updated: '2026-09-06'
+updated: '2026-09-19'
 sources:
 - url: https://ai-heartland.com/tool/gh-skill-github-cli-agent-skills
   title: gh skill完全ガイド：GitHub CLIでAgent Skillsを管理する公式コマンド入門
@@ -22,11 +23,27 @@ sources:
 - url: https://ai-heartland.com/agent/oi-owarasero
   title: oi-owarasero解説｜書籍発の対話型Agent Skillをインストールから実測
   date: '2026-09-06'
+- url: https://ai-heartland.com/tool/valcraft
+  title: valcraftとは｜計画にも独立レビューを通すAgent Skills 12本を公式CIごと実測する
+  date: '2026-09-19'
 ---
 
 
 
+
 # Github Cli Agent Skills
+
+---
+
+## 2026-09-19
+
+### valcraftとは｜計画にも独立レビューを通すAgent Skills 12本を公式CIごと実測する
+
+valcraftは、コーディングエージェント向けの12個のAgent Skillsを提供するMITライセンスのリポジトリ。要件から仕様・タスク分割・計画・実装・レビュー・マージまでを別々のエージェントが担当し、計画段階にも独立レビューを適用する。Claude Code、Codex、Cursor、OpenCodeで動作し、公式CIには12ステップの整合性チェックと55件のテストが含まれる。全スキルがCodexの8,000バイト上限に収まるよう最適化されており、権限管理は束縛された認可モデルを採用している。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/valcraft)
+- **重要度**: 6/10
+- **タグ**: claude-code, cursor, cowork
 
 ---
 

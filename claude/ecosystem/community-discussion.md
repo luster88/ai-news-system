@@ -17,7 +17,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-09-01'
+updated: '2026-09-19'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -79,6 +79,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1w4qgue/fable_51_and_mythos_51_release_discussion_hub
   title: Fable 5.1 and Mythos 5.1 Release Discussion Hub
   date: '2026-09-01'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wkp0h1/sonnet_5
+  title: Sonnet 5
+  date: '2026-09-19'
 ---
 
 
@@ -98,7 +101,20 @@ sources:
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-09-19
+
+### Sonnet 5
+
+Reddit ユーザーが Sonnet 5 モデルの 3D 作業能力（特に Blender）が突然向上し、Opus 5 よりも優れたパフォーマンスを発揮していることを報告。中世の城をモデリングするプロンプトを使用した例を共有し、コミュニティに同様の体験があるか問いかけている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wkp0h1/sonnet_5)
+- **重要度**: 4/10
+- **タグ**: sonnet, performance, cowork
 
 ---
 

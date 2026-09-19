@@ -4,17 +4,34 @@ category: guides
 subcategory: claude-code-permissions
 tags:
 - claude-code
+- prompt
 - setup
 - 新機能
 date: '2026-07-15'
-updated: '2026-07-15'
+updated: '2026-09-19'
 sources:
 - url: https://qiita.com/honda-dev-jp/items/e54036423dfa0d29b56c
   title: Claude Codeの権限設定を安全に設計する方法 ― Write/Edit・Ask/Denyを実際に検証して分かったこと
   date: '2026-07-15'
+- url: https://zenn.dev/tmasuyama1114/articles/claude_code_permissions_recommended
+  title: 【コピペOK】Claude Code の permissions おすすめ設定と、allow / ask / deny の分け方
+  date: '2026-09-19'
 ---
 
+
 # Claude Code Permissions
+
+---
+
+## 2026-09-19
+
+### 【コピペOK】Claude Code の permissions おすすめ設定と、allow / ask / deny の分け方
+
+Claude Code の settings.json における permissions 設定の推奨ガイド。取り返しがつく操作は allow、外部への送信や削除は ask、機密情報へのアクセスは deny に分類する基準を解説。deny → ask → allow の評価順序を理解し、auto mode や bypassPermissions でも deny/ask は有効であることを説明している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/tmasuyama1114/articles/claude_code_permissions_recommended)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

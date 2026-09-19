@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-09-18'
+updated: '2026-09-19'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -105,6 +105,9 @@ sources:
 - url: https://qiita.com/akihidem/items/438613607c63d256b812
   title: 散らばった自動化スクリプトを /schedule で 1 か所に集約する実践（2026-09-18 時点）
   date: '2026-09-18'
+- url: https://qiita.com/sescore/items/5836d47f648ac9c11fd0
+  title: OpenClaw×Claude Code連携実践ガイド：思考と実行を分けるAI開発フロー
+  date: '2026-09-19'
 ---
 
 
@@ -133,7 +136,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-09-19
+
+### OpenClaw×Claude Code連携実践ガイド：思考と実行を分けるAI開発フロー
+
+OpenClawとClaude Codeを組み合わせた2層構成のAI開発フローを解説。判断・記憶を担うOpenClaw層と、実行を担うClaude Code層を分離し、cronによる日次ヘルスチェックや教訓の蓄積による継続的改善を実現。CLAUDE.mdで無人実行時の安全ルールを明文化し、タイムアウト設定やログ管理などの実践的な落とし穴についても共有している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/sescore/items/5836d47f648ac9c11fd0)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, setup
 
 ---
 

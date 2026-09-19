@@ -8,7 +8,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-06'
-updated: '2026-09-17'
+updated: '2026-09-19'
 sources:
 - url: https://qiita.com/nogataka/items/4d2a551f89f6b4f94b01
   title: Claude Code の無料セキュリティ監査プラグインで脆弱性を自動検出・修正してみる
@@ -26,13 +26,29 @@ sources:
 - url: https://ai-heartland.com/tool/ai-job-search
   title: ai-job-searchとは｜Claude Code求職OSSは日本語で使えるか、CVのLaTeX日本語化まで実機検証
   date: '2026-09-17'
+- url: https://zenn.dev/zutto_nemutai/articles/fafa00f2a1b800
+  title: 概念図・ER図・画面を1つのデータから描く「モデルキャンバス」を自作した
+  date: '2026-09-19'
 ---
 
 
 
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-09-19
+
+### 概念図・ER図・画面を1つのデータから描く「モデルキャンバス」を自作した
+
+Claude Code を活用して、YAML ベースのモデル定義から概念図・ER図・画面モックを単一キャンバスで表示する「モデルキャンバス」を自作。ビュー間で選択状態が持続し、影響範囲を視覚的に把握できる。Skill 機能で生成フローを標準化し、実案件で 120 テーブルの ER 図を drawio HTML 形式から読み込み、コア 20 ノードに絞り込んで運用。
+
+- **ソース**: [Zenn claude](https://zenn.dev/zutto_nemutai/articles/fafa00f2a1b800)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

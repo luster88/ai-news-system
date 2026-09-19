@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-26'
-updated: '2026-04-23'
+updated: '2026-09-19'
 sources:
 - url: https://zenn.dev/nup/articles/20260326-9a43417f4ffb
   title: Claude Codeに長期記憶を持たせたら、開発壁打ちが激変した話
@@ -21,11 +21,27 @@ sources:
 - url: https://zenn.dev/helloworld/articles/dce7eb8033aac7
   title: Claude Codeに何回言えば覚えるの——CLAUDE.md・auto memory・compact完全ガイド
   date: '2026-04-23'
+- url: https://zenn.dev/pakupaku_x/articles/0f99e8243a7fed
+  title: Claude Codeの長期記憶を素のObsidianに置く
+  date: '2026-09-19'
 ---
 
 
 
+
 # Claude Code Memory
+
+---
+
+## 2026-09-19
+
+### Claude Codeの長期記憶を素のObsidianに置く
+
+Claude Codeに長期記憶を持たせるため、リポジトリには現在の仕様のみを置き、過去の判断理由はObsidianのVaultに分離する運用方法を紹介。MCPサーバー不要でRead・Grep・Globのみで実現。「Decisionを書き換えない」「索引ファイルを生成しない」などのルール設定により、AIが過去に却下した選択肢を再提案する問題を防止。3プロジェクト・54ノート運用の実例を公開。
+
+- **ソース**: [Zenn claude](https://zenn.dev/pakupaku_x/articles/0f99e8243a7fed)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

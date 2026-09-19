@@ -12,8 +12,9 @@ tags:
 - prompt
 - setup
 - sonnet
+- 新機能
 date: '2026-05-05'
-updated: '2026-09-06'
+updated: '2026-09-19'
 sources:
 - url: https://zenn.dev/bentenweb_fumi/articles/fxyojdsgcwap
   title: AIで「手を動かす時間」を減らす：技術者のための時間投資戦略
@@ -42,6 +43,10 @@ sources:
 - url: https://zenn.dev/kentaro_tak/articles/ai-suggestion-hit-rate-measured
   title: AIの提案を3.7ヶ月ぶん分類したら、「推します」の的中率が場面で12倍違った
   date: '2026-09-06'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wkvqxc/what_is_the_best_way_to_use_llmss_in_2026_i_feel
+  title: What is the best way to use LLMS's in 2026? I feel like a caveman with the
+    way I use them?
+  date: '2026-09-19'
 ---
 
 
@@ -52,7 +57,20 @@ sources:
 
 
 
+
 # Workflow Optimization
+
+---
+
+## 2026-09-19
+
+### What is the best way to use LLMS's in 2026? I feel like a caveman with the way I use them?
+
+RedditユーザーがLLMの使い方について質問。2022/23年スタイルの手動コピペ方式から脱却したいと考えており、エージェント型の使い方やアプリケーション連携、自動化された効率的なLLM活用方法について知りたいとしている。コーディングだけでなく、リサーチ、ライティング、デザインタスクでの活用方法も求めている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wkvqxc/what_is_the_best_way_to_use_llmss_in_2026_i_feel)
+- **重要度**: 4/10
+- **タグ**: cowork, prompt, 新機能
 
 ---
 

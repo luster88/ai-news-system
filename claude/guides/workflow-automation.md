@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-26'
-updated: '2026-09-04'
+updated: '2026-09-19'
 sources:
 - url: https://zenn.dev/saytooy_arch/articles/14-zenn-auto-publish-pipeline
   title: Zenn自動公開パイプラインをclaude -pで構築した話
@@ -44,6 +44,9 @@ sources:
 - url: https://zenn.dev/sprix_it/articles/2906903093cafc
   title: タスクが増えてパンクしたので「自分のタスクの外部記憶装置」を作った話
   date: '2026-09-04'
+- url: https://qiita.com/sescore/items/5836d47f648ac9c11fd0
+  title: OpenClaw×Claude Code連携実践ガイド：思考と実行を分けるAI開発フロー
+  date: '2026-09-19'
 ---
 
 
@@ -54,7 +57,20 @@ sources:
 
 
 
+
 # Workflow Automation
+
+---
+
+## 2026-09-19
+
+### OpenClaw×Claude Code連携実践ガイド：思考と実行を分けるAI開発フロー
+
+OpenClawとClaude Codeを組み合わせた2層構成の実践ガイド。判断・記憶を担うOpenClaw層と、コード実行を担うClaude Code層を分離し、cronによるヘルスチェック、CLAUDE.mdでの安全ルール明文化、lessons.mdでの教訓蓄積などを通じて、無人実行可能なAI開発フローを構築する方法を解説。タイムアウト挙動やエラーハンドリングなど実務で踏んだ落とし穴も共有。
+
+- **ソース**: [Qiita claude](https://qiita.com/sescore/items/5836d47f648ac9c11fd0)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, setup
 
 ---
 
