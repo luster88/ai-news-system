@@ -10,7 +10,7 @@ tags:
 - pricing
 - prompt
 date: '2026-06-07'
-updated: '2026-09-10'
+updated: '2026-09-20'
 sources:
 - url: https://qiita.com/yurukusa/items/5d49ed7d798c9650fe16
   title: Claude Codeの週次の利用枠が「軽い作業」で1日で枯れる本当の理由——消費の99%はコードではなく文脈の再読み込みだった
@@ -24,12 +24,28 @@ sources:
 - url: https://qiita.com/Shinn_Matsumoto/items/f6354a4daf029f75b033
   title: Claudeに「お前何止まってんだよ」と怒鳴り続けたら、自分の消費量を見積もり始めた
   date: '2026-09-10'
+- url: https://zenn.dev/chro96/articles/6ac66a2192a958
+  title: 「レビューして」の一言で3,600万トークンが溶けた話とClaude Codeのトークン効率化設定
+  date: '2026-09-20'
 ---
 
 
 
 
+
 # Token Usage Analysis
+
+---
+
+## 2026-09-20
+
+### 「レビューして」の一言で3,600万トークンが溶けた話とClaude Codeのトークン効率化設定
+
+Claude Codeで250行のPRレビューを依頼したところ、約3,660万トークン（約6,000円相当）が消費された事例を解説。code-reviewスキルのmax設定が暗黙的に引き継がれ、11本のサブエージェントが並列起動し、同じ差分を多重実行したことが原因。対策として、CLAUDE.mdでサブエージェント抑制ルールを記載し、settings.jsonでスキルの自動発火を停止、明示的にmedium/lowを指定する方法を提示。推論強度（Effort）変更によるキャッシュ破棄も追加コストの要因となった。
+
+- **ソース**: [Zenn claude](https://zenn.dev/chro96/articles/6ac66a2192a958)
+- **重要度**: 7/10
+- **タグ**: claude-code, performance, prompt
 
 ---
 

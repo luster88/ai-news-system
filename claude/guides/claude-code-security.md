@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-01'
-updated: '2026-09-17'
+updated: '2026-09-20'
 sources:
 - url: https://zenn.dev/yuzzzn/articles/45626e1ab08e3c
   title: AIコーディングエージェントをセキュアに使うためのハーネス設計
@@ -42,6 +42,9 @@ sources:
 - url: https://qiita.com/sescore/items/aff17dc2a577e81f21b8
   title: Claude Code実務Tips7選【2026年最新】年収データ分析とSES比較
   date: '2026-09-17'
+- url: https://zenn.dev/t_o_d/articles/fb181bb8a5a023
+  title: claude + cve-lite-cliでフロントエンドの脆弱性対応の優先順位づけをAIに任せる
+  date: '2026-09-20'
 ---
 
 
@@ -53,7 +56,20 @@ sources:
 
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-09-20
+
+### claude + cve-lite-cliでフロントエンドの脆弱性対応の優先順位づけをAIに任せる
+
+cve-lite-cliとClaude Codeの Skills 機能を組み合わせて、フロントエンドの脆弱性対応を自動化する手法の解説。CVSSとEPSSによる優先度判断をAIに任せ、セキュリティに詳しくない開発者でも効率的に脆弱性修正ができる仕組みを構築。実際の修正まで自動化し、地味で疲れる作業を軽減する。
+
+- **ソース**: [Zenn claude](https://zenn.dev/t_o_d/articles/fb181bb8a5a023)
+- **重要度**: 6/10
+- **タグ**: claude-code
 
 ---
 

@@ -10,7 +10,7 @@ tags:
 - performance
 - setup
 date: '2026-04-04'
-updated: '2026-07-28'
+updated: '2026-09-20'
 sources:
 - url: https://qiita.com/lovanaut/items/15fb6f0703f114000b78
   title: ChatGPTやClaudeからFORMLOVAを触り始める最短ガイド
@@ -27,13 +27,29 @@ sources:
 - url: https://zenn.dev/mochitec_tech/articles/c9c6c1209bd8af
   title: Claude デスクトップアプリから Snowflake のマネージド MCP で SQL を叩く
   date: '2026-07-28'
+- url: https://qiita.com/Takuya__/items/d2a6c4b812504239a539
+  title: MCPでClaudeに「外の道具」をつなぐ実践ガイド:コネクタ追加・Claude Code・Chrome操作・computer useまで(2026年9月版)
+  date: '2026-09-20'
 ---
 
 
 
 
 
+
 # Mcp Integration
+
+---
+
+## 2026-09-20
+
+### MCPでClaudeに「外の道具」をつなぐ実践ガイド:コネクタ追加・Claude Code・Chrome操作・computer useまで(2026年9月版)
+
+MCPを使ってClaudeに外部ツールを接続する実践ガイド。Notion、GitHubなどのデータを手動コピーせず、Claudeが直接アクセスできる仕組みを解説。claude.ai、Claude Desktop、Claude Codeの3つの導入方法と、ブラウザ操作やcomputer useなどの組み込みツールの使い方を、2026年9月の最新仕様に基づいて説明。MCPは2025年12月にLinux Foundationへ移管され、オープンな標準規格となった。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Takuya__/items/d2a6c4b812504239a539)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code, setup
 
 ---
 

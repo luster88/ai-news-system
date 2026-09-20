@@ -7,7 +7,7 @@ tags:
 - mcp
 - setup
 date: '2026-04-07'
-updated: '2026-08-27'
+updated: '2026-09-20'
 sources:
 - url: https://qiita.com/76Hata/items/6ce2cde9826f5c3a1de2
   title: MCP（Model Context Protocol）入門 — AIエージェントと外部ツールをつなぐ標準規格
@@ -27,6 +27,9 @@ sources:
 - url: https://qiita.com/caymezon/items/54bace290d5ee4245220
   title: Claude DesktopでGitHub MCPを設定する際のPersonal Access Tokenスコープの絞り方
   date: '2026-08-27'
+- url: https://qiita.com/Takuya__/items/d2a6c4b812504239a539
+  title: MCPでClaudeに「外の道具」をつなぐ実践ガイド:コネクタ追加・Claude Code・Chrome操作・computer useまで(2026年9月版)
+  date: '2026-09-20'
 ---
 
 
@@ -34,7 +37,20 @@ sources:
 
 
 
+
 # Mcp Setup
+
+---
+
+## 2026-09-20
+
+### MCPでClaudeに「外の道具」をつなぐ実践ガイド:コネクタ追加・Claude Code・Chrome操作・computer useまで(2026年9月版)
+
+MCPを使ってClaudeに外部ツールを接続する実践ガイド。NotionやGitHubなど外部サービスとの往復作業を自動化する方法を、claude.ai、Claude Desktop、Claude Codeの3つの入口別に解説。2026年9月時点の公式ドキュメントに基づき、実際の導入手順やブラウザ操作、computer use機能まで網羅した包括的なガイド記事。
+
+- **ソース**: [Qiita claude](https://qiita.com/Takuya__/items/d2a6c4b812504239a539)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code, setup
 
 ---
 

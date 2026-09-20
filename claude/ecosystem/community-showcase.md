@@ -7,13 +7,14 @@ tags:
 - claude-code
 - claude-console
 - cowork
+- mcp
 - performance
 - prompt
 - sonnet
 - vscode
 - 新機能
 date: '2026-03-29'
-updated: '2026-09-16'
+updated: '2026-09-20'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6of32/i_am_fully_addicted_to_building_dumb_little_ai
   title: I am fully addicted to building dumb little AI web apps. I love it.
@@ -49,6 +50,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1whdxej/claude_code_meta_quest_3_i_have_created_the
   title: 'Claude Code + Meta Quest 3: I have created the ultimate VR office'
   date: '2026-09-16'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wlltzt/whats_your_proudest_sideproject_made_with_claude
+  title: What's your proudest side-project made with Claude?
+  date: '2026-09-20'
 ---
 
 
@@ -59,7 +63,20 @@ sources:
 
 
 
+
 # Community Showcase
+
+---
+
+## 2026-09-20
+
+### What's your proudest side-project made with Claude?
+
+Redditのr/ClaudeAIコミュニティで、Claudeを使って作成した個人的なサイドプロジェクトについての議論スレッド。投稿者は、Notionの100倍高速で動作し、MCP サーバーを搭載してSiriから音声でノート作成・編集ができる独自のNotionクローンを開発したことを共有。商用製品ではなく、趣味や日常業務を助けるために作った小さなツールのアイデア交換を求めている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wlltzt/whats_your_proudest_sideproject_made_with_claude)
+- **重要度**: 4/10
+- **タグ**: mcp, cowork, claude-code
 
 ---
 

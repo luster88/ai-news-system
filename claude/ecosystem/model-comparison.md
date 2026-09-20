@@ -13,7 +13,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-03-24'
-updated: '2026-09-15'
+updated: '2026-09-20'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -73,6 +73,10 @@ sources:
   title: I gave Claude Fable 5.1 and GPT 6 Astra control of my Robot Arm. Which do
     you think painted better?
   date: '2026-09-15'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wl2w73/gave_sonnet_5_opus_5_astra_and_fable_51_the_same
+  title: gave sonnet 5, opus 5, astra and fable 5.1 the same "lighthouse at night"
+    svg prompt. then fable did it again today and… what?
+  date: '2026-09-20'
 ---
 
 
@@ -92,7 +96,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-09-20
+
+### gave sonnet 5, opus 5, astra and fable 5.1 the same "lighthouse at night" svg prompt. then fable did it again today and… what?
+
+ユーザーが Sonnet 5、Opus 5、Astra 6、Fable 5.1 に同じ「夜の灯台」SVG 生成プロンプトを与えて比較テストを実施。特に Fable 5.1 が数日前と比べて今日は劇的に高品質な出力を生成し、光の表現、月の輝き、海の波紋など細部の品質が他モデルを大きく上回った。コード生成によるSVG作成で画像生成機能は使用していない。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wl2w73/gave_sonnet_5_opus_5_astra_and_fable_51_the_same)
+- **重要度**: 4/10
+- **タグ**: sonnet, opus, performance
 
 ---
 

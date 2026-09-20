@@ -9,9 +9,10 @@ tags:
 - mcp
 - prompt
 - setup
+- windows
 - 新機能
 date: '2026-03-23'
-updated: '2026-09-16'
+updated: '2026-09-20'
 sources:
 - url: https://qiita.com/pro-tein/items/49e5dbec705c3497dd51
   title: 【Claude Code】Hooks機能でデスクトップ通知を設定してみた
@@ -47,6 +48,9 @@ sources:
 - url: https://zenn.dev/labee/articles/7c97be78c6afa7
   title: Claude Codeで実行してほしくないコマンドには代替手段を伝える
   date: '2026-09-16'
+- url: https://qiita.com/aicoding-guide/items/ad41111edf9f8b994783
+  title: Claude Code の Stop フックで作業完了をデスクトップ通知する設定
+  date: '2026-09-20'
 ---
 
 
@@ -59,7 +63,20 @@ sources:
 
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-09-20
+
+### Claude Code の Stop フックで作業完了をデスクトップ通知する設定
+
+Claude Code の Stop フックを使って作業完了をデスクトップ通知する方法を解説。Stop と Notification フックの違いを明確にし、macOS・Linux・Windows それぞれの通知設定例を提供。終了コードの扱いによって Claude が停止しなくなる落とし穴と、その回避方法（|| true で終了コード 0 にする）も説明している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/aicoding-guide/items/ad41111edf9f8b994783)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, windows
 
 ---
 

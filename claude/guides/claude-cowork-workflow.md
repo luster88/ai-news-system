@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-24'
-updated: '2026-05-19'
+updated: '2026-09-20'
 sources:
 - url: https://qiita.com/taketsuyo/items/f47b120668149e9ee396
   title: Claudeが“スマホから仕事を投げる相棒”になった日。デスクワークが消えるというより、確認作業だけが人間に残る感じがする
@@ -24,12 +24,28 @@ sources:
 - url: https://qiita.com/Ngen/items/5532b409d302bc606195
   title: Claudeで実務試験40本を半日で量産:業界×職種マトリクスを自動設計する
   date: '2026-05-19'
+- url: https://qiita.com/Rai_050902/items/a156d3a867af23375931
+  title: 生命保険の見直しをAIと進めたら、2つのClaude（チャットとCode）を「Markdown1枚」でバトンリレーさせる運用に落ち着いた話
+  date: '2026-09-20'
 ---
 
 
 
 
+
 # Claude Cowork Workflow
+
+---
+
+## 2026-09-20
+
+### 生命保険の見直しをAIと進めたら、2つのClaude（チャットとCode）を「Markdown1枚」でバトンリレーさせる運用に落ち着いた話
+
+生命保険の見直しを数ヶ月かけて進める中で、Claude チャット版（相談・壁打ち用）と Claude Code（計算・記録用）の自然な役割分担が生まれた。両者の「記憶の橋渡し」として1つのMarkdownファイルに経緯をまとめ、チャットで方針を決めてCodeで実作業という運用に落ち着いた。複数AIの使い分けと外部記憶による長期プロジェクト管理の実例。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Rai_050902/items/a156d3a867af23375931)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 
