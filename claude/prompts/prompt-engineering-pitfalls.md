@@ -4,11 +4,13 @@ category: prompts
 subcategory: prompt-engineering-pitfalls
 tags:
 - claude-code
+- cowork
+- mcp
 - prompt
 - sonnet
 - 新機能
 date: '2026-08-18'
-updated: '2026-09-09'
+updated: '2026-09-22'
 sources:
 - url: https://zenn.dev/motimotinotch/articles/cd448e3f00a0af
   title: 禁止すれば安全、良い例を見せれば的確、資料を読ませれば賢くなる——本当に？
@@ -22,12 +24,28 @@ sources:
 - url: https://zenn.dev/lockie2022/articles/claude-fable-51-writing-agent-rules
   title: Anthropicに学ぶ「AIっぽさ」を減らす文章術とエージェントの9つの作業ルール
   date: '2026-09-09'
+- url: https://zenn.dev/ruri/articles/thin-skills-thick-context-eli5
+  title: 薄いスキルと厚いコンテキスト — 4行の eli5 から見えるリポジトリとエージェントの設計方針
+  date: '2026-09-22'
 ---
 
 
 
 
+
 # Prompt Engineering Pitfalls
+
+---
+
+## 2026-09-22
+
+### 薄いスキルと厚いコンテキスト — 4行の eli5 から見えるリポジトリとエージェントの設計方針
+
+Anthropic公式コミュニティの「eli5」プラグインを分析した記事。わずか4行のSKILL.mdのみで構成される薄いスキル設計と、ユーザーが追加する厚いコンテキストの組み合わせが、柔軟性と拡張性を生む設計思想を解説。図解生成の具体例とカスタムルール追加による改善例を示し、リポジトリ・エージェント設計への6つの指針を提示している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/ruri/articles/thin-skills-thick-context-eli5)
+- **重要度**: 6/10
+- **タグ**: prompt, mcp, cowork
 
 ---
 

@@ -9,7 +9,7 @@ tags:
 - mcp
 - setup
 date: '2026-07-13'
-updated: '2026-09-17'
+updated: '2026-09-22'
 sources:
 - url: https://ai-heartland.com/explain/loopkit-cross-tool-harness
   title: loopkit解説｜Claude Code・Cursor・Codexを横断する最小ハーネスと49スキル
@@ -20,11 +20,27 @@ sources:
 - url: https://ai-heartland.com/agent/munder-difflin
   title: Munder Difflinとは｜Claude Code等12種のCLIを会社に見立てて束ねる無料ハーネスを実測
   date: '2026-09-17'
+- url: https://ai-heartland.com/agent/ecc-agent-harness
+  title: ECC（affaan-m）とは｜ECC Claude Code対応ハーネスを実機検証・同名OSSとの違い
+  date: '2026-09-22'
 ---
 
 
 
+
 # Multi Agent Harness
+
+---
+
+## 2026-09-22
+
+### ECC（affaan-m）とは｜ECC Claude Code対応ハーネスを実機検証・同名OSSとの違い
+
+affaan-m/ECCは、Claude Codeなど複数のコーディングエージェント環境で使えるオープンソースのAIエージェントハーネス。68エージェント・292スキル・94レガシーコマンドshimを1パッケージで提供し、プラン→実装→テスト→レビュー→検証→記憶→改善という開発プロセスを標準装備する。実機検証では約10秒でローカルインストールが完了し、README記載の数字と一致した。ただし同名の別OSS「Everything Claude Code」と混同しないよう注意が必要。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/agent/ecc-agent-harness)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, setup
 
 ---
 

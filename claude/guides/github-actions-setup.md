@@ -7,14 +7,30 @@ tags:
 - setup
 - 新機能
 date: '2026-07-31'
-updated: '2026-07-31'
+updated: '2026-09-22'
 sources:
 - url: https://qiita.com/itaraiguma/items/3a723688a2fe571c33ec
   title: GitHub ActionsのPR自動レビューを公式claude-code-actionで組む(APIキー課金なし)
   date: '2026-07-31'
+- url: https://qiita.com/Hashimoto-Noriaki/items/0fbeaaa78ab7a88834f7
+  title: 未経験でもできる! Claude Code ActionsでPRをレビューする方法
+  date: '2026-09-22'
 ---
 
+
 # Github Actions Setup
+
+---
+
+## 2026-09-22
+
+### 未経験でもできる! Claude Code ActionsでPRをレビューする方法
+
+Claude Code ActionsでGitHub PRの自動コードレビューを実装する手順を解説。@claudeとメンションするだけでレビューが可能。Proプラン契約者はサブスクリプション範囲内で利用でき、API従量課金が発生しない。セットアップは/install-github-appコマンドで数分で完了し、未経験者でも実装可能な内容。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Hashimoto-Noriaki/items/0fbeaaa78ab7a88834f7)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

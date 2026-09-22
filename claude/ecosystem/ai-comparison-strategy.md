@@ -9,8 +9,9 @@ tags:
 - cowork
 - performance
 - prompt
+- sonnet
 date: '2026-03-31'
-updated: '2026-08-17'
+updated: '2026-09-22'
 sources:
 - url: https://qiita.com/mellowlaunch/items/ad5a2385307e8c414c3e
   title: AI共生戦略とSpec駆動～思考特性という新しい評価軸
@@ -27,12 +28,28 @@ sources:
 - url: https://qiita.com/0903osa/items/e9f2dc5906c9c0ac635c
   title: テストコードで性格が出る？ ChatGPT・Claude・Gemini三者三様（3部作の2作目）
   date: '2026-08-17'
+- url: https://qiita.com/broken55/items/97c04d59b4e641883b74
+  title: Jev・OpenAI・Claudeでリバーシ対戦させてみた
+  date: '2026-09-22'
 ---
 
 
 
 
+
 # Ai Comparison Strategy
+
+---
+
+## 2026-09-22
+
+### Jev・OpenAI・Claudeでリバーシ対戦させてみた
+
+TypeSafe Jev、OpenAI、Claude Sonnet 5、ランダムの4種類でリバーシのリーグ戦を実施した比較記事。OpenAIが全勝で最強、Jevは速度が最速（OpenAIの約7.6倍、Claudeの約10倍）、Claudeは中位の成績。コスト面ではJevが1試合$0.0014と最安で、Claudeは$0.158と最も高額。Haikuの更新停止により、当初の予定からSonnet 5に変更して検証を行った。
+
+- **ソース**: [Qiita claude](https://qiita.com/broken55/items/97c04d59b4e641883b74)
+- **重要度**: 4/10
+- **タグ**: sonnet, performance, cowork
 
 ---
 

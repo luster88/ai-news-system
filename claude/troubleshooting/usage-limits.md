@@ -12,7 +12,7 @@ tags:
 - pricing
 - sonnet
 date: '2026-03-25'
-updated: '2026-09-05'
+updated: '2026-09-22'
 sources:
 - url: https://qiita.com/himajisan/items/1e8f67782335b4517139
   title: AIを扱き使ったらすぐに使用制限ですと言う
@@ -52,6 +52,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1w81w5b/whats_going_on_with_claude_usage
   title: What's going on with claude usage
   date: '2026-09-05'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wm8ori/seeing_this_on_monday_while_claude_is_fixing_a
+  title: Seeing this on monday while claude is fixing a critical bug
+  date: '2026-09-22'
 ---
 
 
@@ -61,7 +64,20 @@ sources:
 
 
 
+
 # Usage Limits
+
+---
+
+## 2026-09-22
+
+### Seeing this on monday while claude is fixing a critical bug
+
+Reddit ユーザーが月曜日に Claude を使用して重要なバグ修正作業中に週次利用制限に達し、ゲームリリース直前で困惑している状況を報告。cowork や referral などの回避方法を模索しているが、有料プランの購入は避けたい意向。リリース間近でバグ修正が完了できず、4日間待つことに不満を表明している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wm8ori/seeing_this_on_monday_while_claude_is_fixing_a)
+- **重要度**: 4/10
+- **タグ**: claude-console, bugfix
 
 ---
 

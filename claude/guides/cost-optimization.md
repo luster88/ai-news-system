@@ -10,9 +10,10 @@ tags:
 - performance
 - pricing
 - prompt
+- setup
 - sonnet
 date: '2026-04-03'
-updated: '2026-09-08'
+updated: '2026-09-22'
 sources:
 - url: https://zenn.dev/heki1224/articles/b849cc85a330aa
   title: Claude Codeで”トークン破産”しないためのコスト最適化とコンテキスト防衛術
@@ -61,6 +62,9 @@ sources:
 - url: https://zenn.dev/pepabo/articles/claude-ollama-hybrid-review-usage
   title: Claudeのrate limitをOllama併用でかわし、コストは自作コマンドで見えるようにした
   date: '2026-09-08'
+- url: https://qiita.com/locallab/items/7fff1666d533f9e926c6
+  title: Claude Code + OpenRouter 無料モデルで AI コーディング支援コストを月 0 円にする 5 つの設定
+  date: '2026-09-22'
 ---
 
 
@@ -76,7 +80,20 @@ sources:
 
 
 
+
 # Cost Optimization
+
+---
+
+## 2026-09-22
+
+### Claude Code + OpenRouter 無料モデルで AI コーディング支援コストを月 0 円にする 5 つの設定
+
+Claude CodeをOpenRouter経由の無料モデルで利用し、月額コストを0円にする設定方法を解説。ANTHROPIC_BASE_URLの差し替えとモデル指定の明示化、CLAUDE.mdでのコンテキスト節約、モデルの使い分け戦略、有料モデルへのフォールバック設定など5つの具体的な手法を紹介。OpenRouterの:freeサフィックス付きモデルを活用することで、個人開発レベルでは月額$0での運用が可能になるが、レート制限やコンテキスト制限があるため使い分けが重要。
+
+- **ソース**: [Qiita claude](https://qiita.com/locallab/items/7fff1666d533f9e926c6)
+- **重要度**: 7/10
+- **タグ**: claude-code, pricing, setup
 
 ---
 

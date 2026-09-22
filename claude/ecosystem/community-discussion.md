@@ -17,7 +17,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-09-19'
+updated: '2026-09-22'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -82,6 +82,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wkp0h1/sonnet_5
   title: Sonnet 5
   date: '2026-09-19'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wm5c21/i_am_done_with_this_shit
+  title: I am done with this shit.
+  date: '2026-09-22'
 ---
 
 
@@ -102,7 +105,20 @@ sources:
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-09-22
+
+### I am done with this shit.
+
+大手企業のエンジニアが、Claude Code による過度な自動化により、仕様・コード・テストすべてが AI 生成され、人間が考えることなく Enter を押すだけの状況に陥っていることへの不満を表明。コードレビューの時間もなく、ただ出荷することだけが目標となり、エンジニアリングの本質が失われている現状を嘆いている。この投稿は 2026年9月20日付けの未来の日付となっている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wm5c21/i_am_done_with_this_shit)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, performance
 
 ---
 

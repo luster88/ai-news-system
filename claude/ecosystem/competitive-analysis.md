@@ -13,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-04'
-updated: '2026-09-13'
+updated: '2026-09-22'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -74,6 +74,9 @@ sources:
 - url: https://the-decoder.com/gpt-6-astra-pilots-a-surveillance-drone-and-runs-a-business-on-its-own
   title: GPT-6 Astra pilots a surveillance drone and runs a business on its own
   date: '2026-09-13'
+- url: https://zenn.dev/eyeofjapetus/articles/ai-chat-services-5-primitives
+  title: AIチャットを5 Primitivesで読み解く——ChatGPT/Claude/Gemini/Copilot他
+  date: '2026-09-22'
 ---
 
 
@@ -90,7 +93,20 @@ sources:
 
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-09-22
+
+### AIチャットを5 Primitivesで読み解く——ChatGPT/Claude/Gemini/Copilot他
+
+本記事は、ChatGPT、Claude、Gemini、Copilot等の主要AIチャットサービスを「5 Primitives」(Model/Tools/Instructions/Callbacks/Loop)というフレームワークで構造的に比較分析する。各社の機能差は単なるモデル性能ではなく、データ接続、指示の再利用、監査・承認などLLM周辺の設計に依存することを示す。Claude CoworkやChatGPT Workなど実行管理レイヤーも含めた包括的な比較を通じて、各社の投資領域と設計思想の違いを明らかにする。
+
+- **ソース**: [Zenn claude](https://zenn.dev/eyeofjapetus/articles/ai-chat-services-5-primitives)
+- **重要度**: 6/10
+- **タグ**: cowork, claude-code, copilot
 
 ---
 
