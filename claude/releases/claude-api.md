@@ -3,6 +3,7 @@ title: Claude Api
 category: releases
 subcategory: claude-api
 tags:
+- bugfix
 - claude-api
 - mcp
 - opus
@@ -12,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-09-06'
+updated: '2026-09-23'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -76,6 +77,15 @@ sources:
 - url: https://zenn.dev/kashiwabaray/articles/25d934bfd1a5c9
   title: Claude Fable 5.1 + EFS で企業 AI を安全に実装 — ZDR ロードマップ
   date: '2026-09-06'
+- url: https://qiita.com/htani0817/items/770773094cdfd0d67b19
+  title: 【2026年9月】Claude Opus 5.5がリリース！Fable 5.1超えの性能を40%安く・API破壊的変更まとめ
+  date: '2026-09-23'
+- url: https://qiita.com/kai_kou/items/5c80fa141ff45a82f71d
+  title: Claude Opus 5.5 リリース、Opus 5 からの移行で400エラーになる4つの破壊的変更と対処コード
+  date: '2026-09-23'
+- url: https://ai-heartland.com/explain/claude-opus-5-5
+  title: Claude Opus 5.5とは｜「40%安い」の内訳とOpus 5からの破壊的変更4点を公式値で読む
+  date: '2026-09-23'
 ---
 
 
@@ -92,7 +102,40 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-09-23
+
+### 【2026年9月】Claude Opus 5.5がリリース！Fable 5.1超えの性能を40%安く・API破壊的変更まとめ
+
+2026年9月22日、Anthropicが Claude Opus 5.5 をリリース。Fable 5.1と同等以上の性能を約40%安いコストで実現し、デフォルトeffortが medium に変更、thinkingの無効化不可など4つの破壊的API変更を含む。トークン単価は入力$4/出力$20で、キャッシュ読み取りは60%値下げ。Sonnet 5.5・Haiku 5.5も数週間以内にリリース予定。
+
+- **ソース**: [Qiita claude](https://qiita.com/htani0817/items/770773094cdfd0d67b19)
+- **重要度**: 10/10
+- **タグ**: opus, release, pricing
+
+---
+
+### Claude Opus 5.5 リリース、Opus 5 からの移行で400エラーになる4つの破壊的変更と対処コード
+
+Claude Opus 5.5が2026年9月22日にリリースされ、Opus 5から約40%価格低減と30%以上の高速化を実現。しかし移行時には4つの破壊的変更があり、thinkingの無効化不可、強制ツール呼び出しの廃止、effortのデフォルト値変更、Google Cloud APIの変更により既存コードが400エラーになる。記事では各変更のBefore/Afterコードと対処法を詳説している。
+
+- **ソース**: [Qiita claude](https://qiita.com/kai_kou/items/5c80fa141ff45a82f71d)
+- **重要度**: 9/10
+- **タグ**: opus, release, bugfix
+
+---
+
+### Claude Opus 5.5とは｜「40%安い」の内訳とOpus 5からの破壊的変更4点を公式値で読む
+
+Anthropicが2026年9月22日にClaude Opus 5.5を公開。Opus 5と同等性能を維持しつつ、単価20%減・キャッシュ読み60%減で「40%安く動かせる」を実現。ただし、thinking無効化・強制ツール指定・旧computer useツールの非対応など4つの破壊的変更があり、Opus 5向けコードの移行時は注意が必要。コンテキスト1M・最大出力128K・知識カットオフ2026年6月で、Terminal-Bench 4.0では66.4%を記録。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/claude-opus-5-5)
+- **重要度**: 9/10
+- **タグ**: opus, release, pricing
 
 ---
 

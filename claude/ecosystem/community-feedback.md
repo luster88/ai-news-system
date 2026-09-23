@@ -10,7 +10,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-18'
-updated: '2026-09-02'
+updated: '2026-09-23'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sp1mzs/look_how_they_massacred_my_boy
   title: Look how they massacred my boy
@@ -31,6 +31,9 @@ sources:
   title: Fable 5.1 is insane and it burned usage, which is fine. Anthropic just needs
     to nail Opus 5.1
   date: '2026-09-02'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wnil7n/opus_55_in_claude_code_is_crazy_fast_especially
+  title: Opus 5.5 in Claude Code is crazy fast, especially at spotting UI bugs
+  date: '2026-09-23'
 ---
 
 
@@ -38,7 +41,20 @@ sources:
 
 
 
+
 # Community Feedback
+
+---
+
+## 2026-09-23
+
+### Opus 5.5 in Claude Code is crazy fast, especially at spotting UI bugs
+
+Reddit ユーザーが Claude Code で Opus 5.5 を使用した際の体験を報告。従来の Opus と比較して、コード記述速度だけでなくバグ発見速度が大幅に向上し、特に UI バグの特定において顕著な改善が見られたとのこと。ただし、リリース直後の印象である可能性も自認している。他のユーザーからの同様の体験報告を求めている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wnil7n/opus_55_in_claude_code_is_crazy_fast_especially)
+- **重要度**: 5/10
+- **タグ**: opus, claude-code, performance
 
 ---
 

@@ -5,11 +5,12 @@ subcategory: creative-coding
 tags:
 - claude-code
 - cowork
+- opus
 - prompt
 - setup
 - 新機能
 date: '2026-06-03'
-updated: '2026-08-01'
+updated: '2026-09-23'
 sources:
 - url: https://zenn.dev/iwakicyan/articles/387bb06ee54372
   title: Claudeでドット絵描ける？：AIと世界の遊び方 第10回
@@ -20,11 +21,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vcqtf9/im_surprised_claude_oneshotted_this_handtracking
   title: I'm surprised Claude one-shotted this hand-tracking music tool.
   date: '2026-08-01'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wnkvys/opus_55_creates_a_train_journey_drawn_entirely_in
+  title: Opus 5.5 creates a train journey drawn entirely in JavaScript
+  date: '2026-09-23'
 ---
 
 
 
+
 # Creative Coding
+
+---
+
+## 2026-09-23
+
+### Opus 5.5 creates a train journey drawn entirely in JavaScript
+
+Claude Opus 5.5 が JavaScript で描画された列車の旅のアニメーションを約45分で一発生成したという報告。risograph スタイルのアート作成能力が明らかに向上しており、GitHub でフルコードが公開されている。音楽スコアの生成とオープンソース楽器サウンドの組み合わせも実装されている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wnkvys/opus_55_creates_a_train_journey_drawn_entirely_in)
+- **重要度**: 6/10
+- **タグ**: opus, claude-code, 新機能
 
 ---
 

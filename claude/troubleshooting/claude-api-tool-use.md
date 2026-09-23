@@ -6,16 +6,34 @@ tags:
 - bugfix
 - claude-api
 - performance
+- setup
 date: '2026-09-03'
-updated: '2026-09-03'
+updated: '2026-09-23'
 sources:
 - url: https://qiita.com/yureki_lab/items/d97ef5333abb54319140
   title: Claude API の並列ツール実行(parallel tool use)を正しく実装する — tool_result を分けて送ると 400
     になる等3つのハマりどころ【2026】
   date: '2026-09-03'
+- url: https://qiita.com/yureki_lab/items/09f6ed07a52c78b1363b
+  title: Claude API の stop_reason を全パターン処理する実装手順 — max_tokens で切れても HTTP 200・stop_details
+    は refusal のときだけ・pause_turn の再開、3つのハマりどころ【2026】
+  date: '2026-09-23'
 ---
 
+
 # Claude Api Tool Use
+
+---
+
+## 2026-09-23
+
+### Claude API の stop_reason を全パターン処理する実装手順 — max_tokens で切れても HTTP 200・stop_details は refusal のときだけ・pause_turn の再開、3つのハマりどころ【2026】
+
+Claude APIの応答処理における重要な注意点を解説。stop_reasonが6種類あり、max_tokensで切れても例外が発生せずHTTP 200が返るため、JSONパースエラーが発生しやすい。stop_detailsはrefusal時のみ値を持ち、pause_turn時は再送が必要。実装者向けに全パターンを安全に処理するディスパッチャ関数の実装例を提供。
+
+- **ソース**: [Qiita claude](https://qiita.com/yureki_lab/items/09f6ed07a52c78b1363b)
+- **重要度**: 7/10
+- **タグ**: claude-api, bugfix, setup
 
 ---
 

@@ -4,10 +4,11 @@ category: releases
 subcategory: opus-model-update
 tags:
 - opus
+- pricing
 - release
 - 新機能
 date: '2026-03-22'
-updated: '2026-07-24'
+updated: '2026-09-23'
 sources:
 - url: https://www.anthropic.com/news/claude-opus-4-6
   title: Announcements Feb 5, 2026 Introducing Claude Opus 4.6 We’re upgrading our
@@ -32,6 +33,10 @@ sources:
 - url: https://techcrunch.com/2026/07/24/anthropic-launches-opus-5
   title: Anthropic launches Opus 5
   date: '2026-07-24'
+- url: https://the-decoder.com/claude-opus-5-5-matches-fable-5-1-at-40-percent-lower-cost-as-anthropic-promises-to-fix-claudish-writing
+  title: Claude Opus 5.5 matches Fable 5.1 performance at lower cost and promises
+    less "Claudish" writing
+  date: '2026-09-23'
 ---
 
 
@@ -39,7 +44,20 @@ sources:
 
 
 
+
 # Opus Model Update
+
+---
+
+## 2026-09-23
+
+### Claude Opus 5.5 matches Fable 5.1 performance at lower cost and promises less "Claudish" writing
+
+Anthropic が Claude Opus 5.5 をリリース。Fable 5.1 と同等の性能を約40%低いコストで実現し、トークン価格を20%削減（入力$4/百万、出力$20/百万）。コーディングベンチマークで GPT-6 Astra を上回り、出力速度が30%以上向上。「Claudish」な文体の改善も約束。Sonnet 5.5 と Haiku 5.5 も数週間以内にリリース予定。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/claude-opus-5-5-matches-fable-5-1-at-40-percent-lower-cost-as-anthropic-promises-to-fix-claudish-writing)
+- **重要度**: 9/10
+- **タグ**: opus, release, pricing
 
 ---
 

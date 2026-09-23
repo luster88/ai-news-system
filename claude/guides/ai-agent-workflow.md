@@ -9,7 +9,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-06-15'
-updated: '2026-09-03'
+updated: '2026-09-23'
 sources:
 - url: https://zenn.dev/gto_cto/articles/48fbf279efc43f
   title: Claude CodeとCodexを並列稼働したら競合祭りになったので、AI専用ロックファイルを作った
@@ -20,11 +20,27 @@ sources:
 - url: https://qiita.com/akihidem/items/f746e5613ec988469062
   title: 複数サブエージェントの並列実行を本番で回す：ワークフロー設計と運用の勘所
   date: '2026-09-03'
+- url: https://zenn.dev/ryu7865/articles/2026-09-23-ai-agent-side-business-03
+  title: 「4体のAIで月100Kドル」系の投稿を、実際にAIで副業を回している立場で検証した(第3回)
+  date: '2026-09-23'
 ---
 
 
 
+
 # Ai Agent Workflow
+
+---
+
+## 2026-09-23
+
+### 「4体のAIで月100Kドル」系の投稿を、実際にAIで副業を回している立場で検証した(第3回)
+
+「4体のAIで月100Kドル」という投稿を実際にClaude Codeで副業を運営する立場から検証。100Kドルや追加費用0ドルという主張には根拠が示されていない点、334人の集客根拠が不明な点を指摘。一方で役割分担と引き継ぎ設計の考え方は有用と評価し、GumroadやZennでの実装確認の重要性を強調。数字の誇張に惑わされず、自分の環境で検証してから採用することを推奨。
+
+- **ソース**: [Zenn claude](https://zenn.dev/ryu7865/articles/2026-09-23-ai-agent-side-business-03)
+- **重要度**: 4/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

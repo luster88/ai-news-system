@@ -13,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-04'
-updated: '2026-09-22'
+updated: '2026-09-23'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -77,6 +77,10 @@ sources:
 - url: https://zenn.dev/eyeofjapetus/articles/ai-chat-services-5-primitives
   title: AIチャットを5 Primitivesで読み解く——ChatGPT/Claude/Gemini/Copilot他
   date: '2026-09-22'
+- url: https://the-decoder.com/openais-gpt-6-sol-and-luna-cut-prices-in-half-but-barely-move-the-needle-on-performance
+  title: OpenAI's GPT-6 Sol and Luna cut prices in half but barely move the needle
+    on performance
+  date: '2026-09-23'
 ---
 
 
@@ -94,7 +98,20 @@ sources:
 
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-09-23
+
+### OpenAI's GPT-6 Sol and Luna cut prices in half but barely move the needle on performance
+
+OpenAIがGPT-6 SolとLunaをリリース。前世代と同等の性能を維持しながらトークン価格を50%削減し、Anthropic Claudeの高価格モデルに対抗。Solは複雑なタスク向け（入力$2/100万トークン、出力$10/100万トークン）、Lunaは大量の定型タスク向け（入力$0.10、出力$0.50）。プロンプトキャッシングも90%割引に改善。性能面での大きな進歩はなく、コストパフォーマンスが主な訴求点。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/openais-gpt-6-sol-and-luna-cut-prices-in-half-but-barely-move-the-needle-on-performance)
+- **重要度**: 6/10
+- **タグ**: pricing, performance, copilot
 
 ---
 

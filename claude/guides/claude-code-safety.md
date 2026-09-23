@@ -7,7 +7,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-09'
-updated: '2026-07-01'
+updated: '2026-09-23'
 sources:
 - url: https://qiita.com/Ngen/items/dd5090c6d05ec9c7994c
   title: Claude Codeのフック5個で「うっかり事故」を本気で潰した話
@@ -18,11 +18,27 @@ sources:
 - url: https://qiita.com/evesquare/items/c593e35ec53b734b148f
   title: Claude Codeに自動で任せる、でも危険なgit操作だけはルールで縛る
   date: '2026-07-01'
+- url: https://qiita.com/aicoding-guide/items/1bd51b5ff48a8ceff299
+  title: Claude Code の PreToolUse フックで rm -rf を止める設定と、その限界
+  date: '2026-09-23'
 ---
 
 
 
+
 # Claude Code Safety
+
+---
+
+## 2026-09-23
+
+### Claude Code の PreToolUse フックで rm -rf を止める設定と、その限界
+
+Claude Code の PreToolUse フックを使って rm -rf などの危険なコマンドを実行前に検知・拒否する方法を解説。フックは権限モードより先に発火し、permissionDecision: deny で bypassPermissions でもブロック可能。ただし文字列一致では rm -r -f や変数展開で回避されるため、確実な遮断にはサンドボックスが必要という限界も指摘している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/aicoding-guide/items/1bd51b5ff48a8ceff299)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

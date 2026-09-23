@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-11'
-updated: '2026-09-15'
+updated: '2026-09-23'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-best-practice-guide-2026
   title: Claude Codeベストプラクティス完全ガイド2026年版｜使い方・Tips・効率化テクニック集
@@ -55,6 +55,9 @@ sources:
 - url: https://qiita.com/Rapls/items/76123896b0e6e2769964
   title: Claude Code の頼み方を10個直しました。半分は、自分が失敗してから変えたものです
   date: '2026-09-15'
+- url: https://zenn.dev/vteacher/articles/37e58368d1c84c
+  title: Anthropic社目線でのClaude Codeの“勘所”を整理しました
+  date: '2026-09-23'
 ---
 
 
@@ -69,7 +72,20 @@ sources:
 
 
 
+
 # Claude Code Best Practices
+
+---
+
+## 2026-09-23
+
+### Anthropic社目線でのClaude Codeの“勘所”を整理しました
+
+Anthropic社が提供するClaude Partner Badge - Claude Codeを取得した筆者が、実務で押さえるべき勘所を体系的に整理。CLAUDE.md、ルール管理、権限設定、CI/CD連携など全25問のクイズ形式で、Web系開発現場での実践的な活用方法を解説。特にpath-scopedルールやモノレポ環境でのコンテキスト管理など、効率的な運用体制構築に必要な知識を網羅している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/vteacher/articles/37e58368d1c84c)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 
