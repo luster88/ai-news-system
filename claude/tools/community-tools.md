@@ -8,8 +8,9 @@ tags:
 - opus
 - performance
 - prompt
+- setup
 date: '2026-03-27'
-updated: '2026-08-22'
+updated: '2026-09-24'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s5bc5e/showcase_world_visualizer_is_claude_dumb_for_you
   title: Showcase] (World Visualizer) Is claude dumb for you today?
@@ -20,11 +21,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vvi3x1/i_built_an_english_claudish_translator
   title: I built an English ↔ Claudish translator
   date: '2026-08-22'
+- url: https://qiita.com/tasekino/items/e8d0c6f104213a557d1a
+  title: 7文字しか投稿できない社内SNSを作った ―「パッション575」
+  date: '2026-09-24'
 ---
 
 
 
+
 # Community Tools
+
+---
+
+## 2026-09-24
+
+### 7文字しか投稿できない社内SNSを作った ―「パッション575」
+
+社内ハッカソンで7文字以内の投稿に制限した社内SNS「パッション575」を開発。投稿を極端に短くし、リアクションを「をかし」「あはれ」の2つに絞ることで、部署横断のコミュニケーションを活性化。スワイプ操作のみのUIで「書く・読む」コストをゼロに近づけた。技術スタックはFastAPI+React、後半ではAIによる実装でやらかした記録も紹介。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/tasekino/items/e8d0c6f104213a557d1a)
+- **重要度**: 4/10
+- **タグ**: claude-code, setup
 
 ---
 

@@ -13,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-09-23'
+updated: '2026-09-24'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -86,6 +86,9 @@ sources:
 - url: https://ai-heartland.com/explain/claude-opus-5-5
   title: Claude Opus 5.5とは｜「40%安い」の内訳とOpus 5からの破壊的変更4点を公式値で読む
   date: '2026-09-23'
+- url: https://qiita.com/sakutto-panda/items/fb3c3a65958338fa3ee7
+  title: 【2026/9/1】Claude Fable 5.1/Mythos 5.1登場。同じモデルを2段階セーフガードで出し分ける設計
+  date: '2026-09-24'
 ---
 
 
@@ -103,7 +106,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-09-24
+
+### 【2026/9/1】Claude Fable 5.1/Mythos 5.1登場。同じモデルを2段階セーフガードで出し分ける設計
+
+Anthropicが2026年9月1日にClaude Fable 5.1とMythos 5.1を発表。同一モデルに異なるセーフガードを適用する設計で、良性の医学質問への誤検知を85%削減、サイバーセキュリティ関連の介入を60%削減。キャッシュ読み取り価格が75%引き（$0.25/百万トークン）となり、典型的なワークロードで約25%、複雑なエージェント作業で最大45%のコスト削減を実現。Enterprise Frontier Safeguards（EFS）により顧客管理クラウド上での実質ゼロデータ保持が今秋から展開予定。
+
+- **ソース**: [Qiita claude](https://qiita.com/sakutto-panda/items/fb3c3a65958338fa3ee7)
+- **重要度**: 9/10
+- **タグ**: release, 新機能, pricing
 
 ---
 

@@ -13,7 +13,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-03-24'
-updated: '2026-09-20'
+updated: '2026-09-24'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -77,6 +77,9 @@ sources:
   title: gave sonnet 5, opus 5, astra and fable 5.1 the same "lighthouse at night"
     svg prompt. then fable did it again today and… what?
   date: '2026-09-20'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1woc97l/opus_55_vs_gpt6_sol_3d_pelican_riding_bike_test
+  title: 'Opus 5.5 vs GPT-6 Sol: 3D Pelican riding bike test in Blender'
+  date: '2026-09-24'
 ---
 
 
@@ -97,7 +100,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-09-24
+
+### Opus 5.5 vs GPT-6 Sol: 3D Pelican riding bike test in Blender
+
+RedditユーザーがClaude Opus 5.5とGPT-6 Solで「自転車に乗るペリカン」の3D制作をBlenderで比較テスト。両モデルに同じ詳細な指示を与え、Pythonスクリプトで空のシーンから制作させた結果、GPT-6 Solは速かったが脚のリグが崩れるなど品質に問題があった。Opus 5.5は雰囲気や細部の表現が優れ、色合いやエフェクトも良好で、全体的に高品質な結果を出した。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1woc97l/opus_55_vs_gpt6_sol_3d_pelican_riding_bike_test)
+- **重要度**: 4/10
+- **タグ**: opus, performance, cowork
 
 ---
 

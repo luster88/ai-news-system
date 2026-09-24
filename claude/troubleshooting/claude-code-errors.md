@@ -10,7 +10,7 @@ tags:
 - setup
 - vscode
 date: '2026-06-05'
-updated: '2026-09-23'
+updated: '2026-09-24'
 sources:
 - url: https://qiita.com/natume_nat/items/76fe608d570caebb4f4c
   title: Claude Codeで「The model's tool call could not be parsed」エラーを回避する方法
@@ -39,6 +39,9 @@ sources:
 - url: https://qiita.com/homhom44/items/3f4c7dcc9ea8aa85b610
   title: 起動直後にクラッシュするのに、まず確認するべきポイントまとめ！Claude Code でつまずいたときの切り分けメモ（2026-09-23）
   date: '2026-09-23'
+- url: https://qiita.com/homhom44/items/8b165492adc33668ad2c
+  title: 接続直後にメッセージ数がズレるときの切り分けポイント！Claude Code でつまずいたときの切り分けメモ（2026-09-24）
+  date: '2026-09-24'
 ---
 
 
@@ -49,7 +52,20 @@ sources:
 
 
 
+
 # Claude Code Errors
+
+---
+
+## 2026-09-24
+
+### 接続直後にメッセージ数がズレるときの切り分けポイント！Claude Code でつまずいたときの切り分けメモ（2026-09-24）
+
+Claude Code 利用時に発生する典型的なトラブルについて、GitHub Issues で報告された実例をもとに切り分け手順を整理。認証エラー、パラメータ不足、メッセージ数不一致など、複数人が遭遇する問題の確認ポイントを実際のコマンド実行結果とともに解説している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/homhom44/items/8b165492adc33668ad2c)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 

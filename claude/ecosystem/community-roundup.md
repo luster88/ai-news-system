@@ -5,15 +5,32 @@ subcategory: community-roundup
 tags:
 - claude-code
 - opus
+- pricing
 date: '2026-09-18'
-updated: '2026-09-18'
+updated: '2026-09-24'
 sources:
 - url: https://qiita.com/homhom44/items/0f78b1f4d0bf07227cfa
   title: Claude Codeの並列化で便利さとリスクを同時に掴む話！Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-19）
   date: '2026-09-18'
+- url: https://qiita.com/homhom44/items/0b4f96493f3f94498214
+  title: テレメトリOFFで設定まで消えた原因と安全策を解説！Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-24）
+  date: '2026-09-24'
 ---
 
+
 # Community Roundup
+
+---
+
+## 2026-09-24
+
+### テレメトリOFFで設定まで消えた原因と安全策を解説！Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-24）
+
+Claude Code のテレメトリ無効化で設定が消える問題、Anthropic の料金値下げに伴う API 挙動変更、Claude 3.7 Sonnet の性能向上とコスト削減、チーム開発での運用ルール整備の重要性など、複数の Claude 関連トピックを網羅的に紹介。特にテレメトリ OFF 時の AGENTS.md 無視問題や、値下げによる既存実装への影響（400 error）が詳しく取り上げられている。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/0b4f96493f3f94498214)
+- **重要度**: 6/10
+- **タグ**: claude-code, pricing
 
 ---
 

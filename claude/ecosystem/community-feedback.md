@@ -10,7 +10,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-18'
-updated: '2026-09-23'
+updated: '2026-09-24'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sp1mzs/look_how_they_massacred_my_boy
   title: Look how they massacred my boy
@@ -34,6 +34,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wnil7n/opus_55_in_claude_code_is_crazy_fast_especially
   title: Opus 5.5 in Claude Code is crazy fast, especially at spotting UI bugs
   date: '2026-09-23'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wo9lbs/opus_55_is_the_new_46
+  title: OPUS 5.5 IS THE NEW 4.6!
+  date: '2026-09-24'
 ---
 
 
@@ -42,7 +45,20 @@ sources:
 
 
 
+
 # Community Feedback
+
+---
+
+## 2026-09-24
+
+### OPUS 5.5 IS THE NEW 4.6!
+
+Reddit ユーザーが Opus 5.5 の品質向上を報告。以前は「作業完了」と言いながら実際には動作しないコードを出力する問題があったが、Opus 5.5 では大幅に改善され、Opus 4.6 の品質を超えたと評価。コミュニティでは新モデルの実行精度とタスク完遂能力の向上が話題に。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wo9lbs/opus_55_is_the_new_46)
+- **重要度**: 6/10
+- **タグ**: opus, performance, cowork
 
 ---
 

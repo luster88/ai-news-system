@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-18'
-updated: '2026-07-12'
+updated: '2026-09-24'
 sources:
 - url: https://the-decoder.com/anthropic-ceo-amodei-declares-there-is-no-end-to-the-rainbow-for-ai-scaling
   title: Anthropic CEO Amodei declares "there is no end to the rainbow" for AI scaling
@@ -55,6 +55,10 @@ sources:
   title: OpenAI CEO Altman is now "pretty sure" AI is net job-creating, which is quite
     the pivot from predicting mass layoffs
   date: '2026-07-12'
+- url: https://the-decoder.com/inside-basecamp-research-the-ai-startup-turning-evolution-into-training-data
+  title: Inside Basecamp Research, the AI startup turning evolution into training
+    data
+  date: '2026-09-24'
 ---
 
 
@@ -66,7 +70,20 @@ sources:
 
 
 
+
 # Industry News
+
+---
+
+## 2026-09-24
+
+### Inside Basecamp Research, the AI startup turning evolution into training data
+
+Basecamp Research が Nvidia と Anthropic の Anthology Fund を含む投資家から 1 億 4000 万ドルを調達。同社は熱帯雨林や海洋から採取した遺伝物質で AI モデルを訓練し、抗生物質や細胞治療ツールを設計している。CTO の Philip Lorenz 氏は、生物学が言語よりも AI にとって遥かに大きな問題であり、論文上の良いスコアが良い分子を保証するわけではないと説明。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/inside-basecamp-research-the-ai-startup-turning-evolution-into-training-data)
+- **重要度**: 4/10
+- **タグ**: claude-api, 新機能
 
 ---
 

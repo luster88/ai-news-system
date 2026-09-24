@@ -4,17 +4,34 @@ category: guides
 subcategory: claude-code-cost-optimization
 tags:
 - claude-code
+- cowork
 - opus
 - pricing
 date: '2026-04-16'
-updated: '2026-04-16'
+updated: '2026-09-24'
 sources:
 - url: https://zenn.dev/okamyuji/articles/claude-code-max-x20-token-savings
   title: Claude Codeのトークン消費が$40/日から1週間でも余裕になった全手法
   date: '2026-04-16'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wogab3/made_entirely_with_opus_55_321_of_openrouter_api
+  title: Made entirely with Opus 5.5 + $3.21 of OpenRouter API usage
+  date: '2026-09-24'
 ---
 
+
 # Claude Code Cost Optimization
+
+---
+
+## 2026-09-24
+
+### Made entirely with Opus 5.5 + $3.21 of OpenRouter API usage
+
+Claude Opus 5.5を使用して、たった$3.21のOpenRouter API費用で30-60秒のアニメーション動画を完全自動生成した事例。Claude Codeでシングルプロンプトから約1時間20分で、スクリプト・アセット・アニメーション・音声まで全て自律的に制作。8種類のOpenRouter APIを組み合わせ、人間の介入なしでハイクオリティな動画を作成したデモンストレーション。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wogab3/made_entirely_with_opus_55_321_of_openrouter_api)
+- **重要度**: 7/10
+- **タグ**: claude-code, opus, cowork
 
 ---
 
