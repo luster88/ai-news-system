@@ -9,7 +9,7 @@ tags:
 - setup
 - windows
 date: '2026-05-09'
-updated: '2026-09-17'
+updated: '2026-09-25'
 sources:
 - url: https://qiita.com/enomoso_pm/items/623bd77ce2bb89569e3d
   title: 「設定したのになぜ？」Claude Codeのパーミッションが効かない理由と、今すぐできる対策
@@ -26,13 +26,40 @@ sources:
 - url: https://qiita.com/suwa_nobu/items/e867493a5cbcdfaa40c9
   title: Write() で拒否しても、Claude Code は12回とも書き込んだ。効いていたのは Edit() だけだった
   date: '2026-09-17'
+- url: https://qiita.com/yureki_lab/items/6f9175d70d294840311c
+  title: Claude Code の permissions を settings.json に書いたのに効かない3つの理由 — deny が allow
+    に勝つ・Write() は参照されない・先頭 / はルートではない【2026】
+  date: '2026-09-25'
 ---
 
 
 
 
 
+
 # Claude Code Permissions
+
+---
+
+## 2026-09-25
+
+### Claude Code の permissions を settings.json に書いたのに効かない3つの理由 — deny が allow に勝つ・Write() は参照されない・先頭 / はルートではない【2026】
+
+Claude Code の permissions 設定で陥りやすい3つの落とし穴を解説。deny が allow より優先されマッチ順で評価されること、Write() や Glob() のパスルールは参照されず Edit() と Read() のみ有効なこと、先頭スラッシュがファイルシステムルートではなく設定ファイルのアンカーを指すことを実例とともに説明。settings.json に書いたルールが意図通り動かない原因と回避策を具体的に示す。
+
+- **ソース**: [Qiita claude](https://qiita.com/yureki_lab/items/6f9175d70d294840311c)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, bugfix
+
+---
+
+### Claude Code の permissions を settings.json に書いたのに効かない3つの理由 — deny が allow に勝つ・Write() は参照されない・先頭 / はルートではない【2026】
+
+Claude Code の settings.json に permissions を書いても意図通りに動作しない3つの典型的な問題を解説。deny が allow より優先されるため例外が作れない、Write() や Glob() のパスルールは参照されず Edit() と Read() のみ有効、先頭スラッシュは設定ファイルのアンカーでありルートディレクトリではないため絶対パスには // を使う必要がある。各問題の再現条件と回避策を具体例とともに提示。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/yureki_lab/items/6f9175d70d294840311c)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, bugfix
 
 ---
 

@@ -5,9 +5,10 @@ subcategory: claude-code-game-dev
 tags:
 - claude-code
 - cowork
+- opus
 - 新機能
 date: '2026-07-12'
-updated: '2026-09-13'
+updated: '2026-09-25'
 sources:
 - url: https://qiita.com/EitaroSeta/items/1f3b34f92e01225333c5
   title: Claude Code でソウルライク風3Dボス戦ゲームを作ってみた（Three.js / Mixamo / サーバー不要）
@@ -16,10 +17,27 @@ sources:
   title: I vibe coded 5 mobile games with Claude Code.Turns out, people actually enjoy
     playing them.
   date: '2026-09-13'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wp8uxb/i_gave_opus_55_four_reference_images_and_build
+  title: I gave Opus 5.5 four reference images and "build this game". It built a full
+    3D chess roguelite in Godot by itself.
+  date: '2026-09-25'
 ---
 
 
+
 # Claude Code Game Dev
+
+---
+
+## 2026-09-25
+
+### I gave Opus 5.5 four reference images and "build this game". It built a full 3D chess roguelite in Godot by itself.
+
+ユーザーが Claude Opus 5.5 に4枚の参考画像と「このゲームを作って」という指示を与えたところ、Godot で完全な 3D チェスローグライトゲームを自律的に構築した。ゲームコード、3D モデル、音楽・効果音、テスト、ビルドのすべてを Claude Code で生成し、ユーザーは一行もコードを書いていない。6×6 のチェス盤上で展開される3幕構成のローグライトで、ピースの育成、レリック、ボス戦などの要素を含む。Claude の高度なゲーム開発能力とマルチモーダル理解を示す実例として注目される。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wp8uxb/i_gave_opus_55_four_reference_images_and_build)
+- **重要度**: 8/10
+- **タグ**: claude-code, opus, 新機能
 
 ---
 

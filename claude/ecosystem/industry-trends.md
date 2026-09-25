@@ -8,7 +8,7 @@ tags:
 - pricing
 - 新機能
 date: '2026-05-12'
-updated: '2026-07-13'
+updated: '2026-09-25'
 sources:
 - url: https://the-decoder.com/tokenmaxxing-spreads-at-amazon-as-employees-game-internal-ai-leaderboards
   title: '"Tokenmaxxing" spreads at Amazon as employees game internal AI leaderboards'
@@ -17,10 +17,26 @@ sources:
   title: Nobel laureates and AI leaders warn the window to prepare for AI's economic
     impact is closing fast
   date: '2026-07-13'
+- url: https://the-decoder.com/top-ai-experts-badly-underestimated-how-fast-the-field-is-moving-study-finds
+  title: Top AI experts badly underestimated how fast the field is moving, study finds
+  date: '2026-09-25'
 ---
 
 
+
 # Industry Trends
+
+---
+
+## 2026-09-25
+
+### Top AI experts badly underestimated how fast the field is moving, study finds
+
+FRI（予測研究所）の調査によると、トップAI専門家やスーパー予測者たちは、AIの進歩速度を大幅に過小評価していたことが判明。数学オリンピック金メダルレベル到達は専門家予測より5年早く、スーパー予測者予測より10年早く実現。ウイルス学やサイバーセキュリティ分野でも同様に、実際の進歩は予測を大きく上回った。経済予測も保守的すぎたとされる。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/top-ai-experts-badly-underestimated-how-fast-the-field-is-moving-study-finds)
+- **重要度**: 7/10
+- **タグ**: performance, cowork, 新機能
 
 ---
 

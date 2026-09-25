@@ -6,12 +6,13 @@ tags:
 - claude-code
 - cowork
 - mcp
+- opus
 - performance
 - prompt
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-09-19'
+updated: '2026-09-25'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -108,6 +109,11 @@ sources:
 - url: https://qiita.com/sescore/items/5836d47f648ac9c11fd0
   title: OpenClaw×Claude Code連携実践ガイド：思考と実行を分けるAI開発フロー
   date: '2026-09-19'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wovwao/jaw_literally_dropped_i_ran_the_prompt_from_the
+  title: Jaw literally dropped. I ran the prompt from the "Made entirely with Opus
+    5.5" post on my own project. Here's what Claude Code made on its own for about
+    $4.
+  date: '2026-09-25'
 ---
 
 
@@ -137,7 +143,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-09-25
+
+### Jaw literally dropped. I ran the prompt from the "Made entirely with Opus 5.5" post on my own project. Here's what Claude Code made on its own for about $4.
+
+Reddit ユーザーが Opus 5.5 を使った自動動画生成プロンプトを自分のプロジェクト（Friendr.nl）で試した結果を報告。Claude Code が約4ドル（1.5-2時間）で、スクリプト作成・コラージュアート生成・ナレーション・音楽・効果音・JavaScript Canvas アニメーション構築・MP4レンダリング・同期調整・自己レビューまで完全自動で実行し、実用的な説明動画を完成させた。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wovwao/jaw_literally_dropped_i_ran_the_prompt_from_the)
+- **重要度**: 7/10
+- **タグ**: claude-code, opus, prompt
 
 ---
 

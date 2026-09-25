@@ -5,9 +5,10 @@ subcategory: claude-code-safety
 tags:
 - claude-code
 - setup
+- windows
 - 新機能
 date: '2026-05-09'
-updated: '2026-09-23'
+updated: '2026-09-25'
 sources:
 - url: https://qiita.com/Ngen/items/dd5090c6d05ec9c7994c
   title: Claude Codeのフック5個で「うっかり事故」を本気で潰した話
@@ -21,12 +22,28 @@ sources:
 - url: https://qiita.com/aicoding-guide/items/1bd51b5ff48a8ceff299
   title: Claude Code の PreToolUse フックで rm -rf を止める設定と、その限界
   date: '2026-09-23'
+- url: https://zenn.dev/arithan/articles/claude-code-safety-boundary
+  title: Claude Codeの「ついでに」を1件ずつ確認制にした話
+  date: '2026-09-25'
 ---
 
 
 
 
+
 # Claude Code Safety
+
+---
+
+## 2026-09-25
+
+### Claude Codeの「ついでに」を1件ずつ確認制にした話
+
+Claude Codeに広範な作業を任せる際、環境変数やシステム設定など「取り返しのつかない操作」を防ぐための実践的な境界設定手法を解説。CLAUDE.mdでのルール記述だけでは不十分だったgit reset --hardによる作業消失事故を例に、ワークスペース外への操作を1件ずつ確認制にする書式や、Unityプロジェクトでユーザー設定を誤って書き換えかけた実例を紹介。Windows環境でのフック実装の落とし穴も含め、安全に自動化を進めるための具体的なガイドライン。
+
+- **ソース**: [Zenn claude](https://zenn.dev/arithan/articles/claude-code-safety-boundary)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, windows
 
 ---
 

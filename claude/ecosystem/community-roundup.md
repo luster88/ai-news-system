@@ -4,10 +4,12 @@ category: ecosystem
 subcategory: community-roundup
 tags:
 - claude-code
+- mcp
 - opus
 - pricing
+- 新機能
 date: '2026-09-18'
-updated: '2026-09-24'
+updated: '2026-09-25'
 sources:
 - url: https://qiita.com/homhom44/items/0f78b1f4d0bf07227cfa
   title: Claude Codeの並列化で便利さとリスクを同時に掴む話！Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-19）
@@ -15,10 +17,26 @@ sources:
 - url: https://qiita.com/homhom44/items/0b4f96493f3f94498214
   title: テレメトリOFFで設定まで消えた原因と安全策を解説！Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-24）
   date: '2026-09-24'
+- url: https://qiita.com/homhom44/items/132080c64305f1008e35
+  title: RAGとベクタDBとMCPをつなぐ設計で見えた、実運用の論点まとめ！Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-25）
+  date: '2026-09-25'
 ---
 
 
+
 # Community Roundup
+
+---
+
+## 2026-09-25
+
+### RAGとベクタDBとMCPをつなぐ設計で見えた、実運用の論点まとめ！Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-25）
+
+RAG、ベクタDB、MCPを組み合わせた実運用設計における論点を整理した記事。クラウドでのAI作業実行、ブラウザ操作AI、高性能モデルの低コスト化、AI coding agentの記憶力、開発ワークフローの変化、法的リスク、RAG実装の実務課題、API通信のリトライ設計、Safari 27のMCP対応など、Claude Code開発者が押さえるべき2026年9月25日時点の包括的なトピックをまとめている。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/homhom44/items/132080c64305f1008e35)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, 新機能
 
 ---
 

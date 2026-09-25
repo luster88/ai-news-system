@@ -7,8 +7,10 @@ tags:
 - cowork
 - opus
 - pricing
+- prompt
+- setup
 date: '2026-04-16'
-updated: '2026-09-24'
+updated: '2026-09-25'
 sources:
 - url: https://zenn.dev/okamyuji/articles/claude-code-max-x20-token-savings
   title: Claude Codeのトークン消費が$40/日から1週間でも余裕になった全手法
@@ -16,10 +18,26 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wogab3/made_entirely_with_opus_55_321_of_openrouter_api
   title: Made entirely with Opus 5.5 + $3.21 of OpenRouter API usage
   date: '2026-09-24'
+- url: https://qiita.com/caymezon/items/d82d0e2d30d2647293dc
+  title: CLAUDE.mdが肥大化してきたら、手順はSKILL.mdに切り出す
+  date: '2026-09-25'
 ---
 
 
+
 # Claude Code Cost Optimization
+
+---
+
+## 2026-09-25
+
+### CLAUDE.mdが肥大化してきたら、手順はSKILL.mdに切り出す
+
+Claude Code/Claude.aiの拡張機能であるClaude Skillsについて、CLAUDE.mdとSKILL.mdの役割の違いと使い分けを解説。SKILL.mdは呼び出し時のみ読み込まれるため詳細な手順書として最適で、descriptionフィールドでの適切な説明、コマンド実行結果の注入、disable-model-invocationによる誤実行防止などの実践的な書き方を紹介している。
+
+- **ソース**: [Qiita claude](https://qiita.com/caymezon/items/d82d0e2d30d2647293dc)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

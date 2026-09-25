@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-23'
-updated: '2026-08-03'
+updated: '2026-09-25'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -79,6 +79,10 @@ sources:
 - url: https://the-decoder.com/alibabas-new-qwen-model-is-also-taking-your-job-but-this-time-its-great
   title: Alibaba's new Qwen model is also taking your job, but this time it's great
   date: '2026-08-03'
+- url: https://the-decoder.com/deepmind-was-built-to-chase-agi-but-its-new-chief-just-wants-gemini-4-out-the-door
+  title: Deepmind was built to chase AGI, but its new chief just wants Gemini 4 out
+    the door
+  date: '2026-09-25'
 ---
 
 
@@ -97,7 +101,20 @@ sources:
 
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-09-25
+
+### Deepmind was built to chase AGI, but its new chief just wants Gemini 4 out the door
+
+Google DeepMindの新CEOコラユ・カヴクチュオールが、前任者のデミス・ハサビスが重視していたAGI追求ではなく、Gemini 4の早期リリースに注力する方針を表明。Gemini 4は現在ポストトレーニング初期段階で、年内にも「できるだけ早く」リリースする意向。OpenAIやAnthropicの競争圧力により、DeepMindは研究機関からGemini製造工場へと変貌している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/deepmind-was-built-to-chase-agi-but-its-new-chief-just-wants-gemini-4-out-the-door)
+- **重要度**: 7/10
+- **タグ**: release, performance, copilot
 
 ---
 

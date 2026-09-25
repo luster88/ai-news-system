@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-09-17'
+updated: '2026-09-25'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -358,6 +358,9 @@ sources:
 - url: https://zenn.dev/sbkm/articles/32259d260b26e5
   title: AIと決めたルールが、翌日にはもう守られていなかった — 読まれない場所に書いた決定は、無かったのと同じ
   date: '2026-09-17'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wp75ay/i_see_why_developers_get_irritated_by_vibe_coders
+  title: I see why developers get irritated by vibe coders
+  date: '2026-09-25'
 ---
 
 
@@ -449,7 +452,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-09-25
+
+### I see why developers get irritated by vibe coders
+
+データアナリストが Claude Code を使用して GUI 開発に取り組む中で、コードを理解せずにツールだけに頼る「vibe coder」に対する懸念を表明。プロの開発者が Claude Code をどのようにワークフローに統合しているかの情報や、ソフトウェア設計・UI 原則の初心者向けリソースを求めている。AI ツールを使いながらも基礎的なコーディングスキルを向上させたいという姿勢を示している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wp75ay/i_see_why_developers_get_irritated_by_vibe_coders)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, vscode
 
 ---
 

@@ -13,7 +13,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-03-24'
-updated: '2026-09-24'
+updated: '2026-09-25'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -80,6 +80,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1woc97l/opus_55_vs_gpt6_sol_3d_pelican_riding_bike_test
   title: 'Opus 5.5 vs GPT-6 Sol: 3D Pelican riding bike test in Blender'
   date: '2026-09-24'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wpb5hd/claude_opus_55_mad_defeats_astra
+  title: Claude Opus 5.5 Mad defeats Astra 🔥
+  date: '2026-09-25'
 ---
 
 
@@ -101,7 +104,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-09-25
+
+### Claude Opus 5.5 Mad defeats Astra 🔥
+
+Reddit の ClaudeAI コミュニティで、Claude Opus 5.5 が Google の Astra モデルを性能面で上回ったという報告が投稿されました。画像付きの投稿で、コミュニティメンバー間で議論が行われています。具体的なベンチマーク結果や比較詳細は画像に含まれていると思われますが、本文からは詳細は不明です。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wpb5hd/claude_opus_55_mad_defeats_astra)
+- **重要度**: 4/10
+- **タグ**: opus, performance, cowork
 
 ---
 
