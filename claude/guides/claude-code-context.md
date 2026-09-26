@@ -4,17 +4,34 @@ category: guides
 subcategory: claude-code-context
 tags:
 - claude-code
+- cowork
 - performance
 - prompt
 date: '2026-08-31'
-updated: '2026-08-31'
+updated: '2026-09-26'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-compact-guide
   title: Claude Code compact｜圧縮で何が残り何が消えるか、5,000トークンの閾値を実測で検証
   date: '2026-08-31'
+- url: https://zenn.dev/m16_llc/articles/claude-and-claude-code-memory-map
+  title: 【Claude Code】Claude と Claude Code の記憶はどう動くか 〜短期・中期・長期の 4 層を公式仕様で整理する〜
+  date: '2026-09-26'
 ---
 
+
 # Claude Code Context
+
+---
+
+## 2026-09-26
+
+### 【Claude Code】Claude と Claude Code の記憶はどう動くか 〜短期・中期・長期の 4 層を公式仕様で整理する〜
+
+Claude と Claude Code の記憶機構を公式仕様に基づき4層構造（短期・中期・長期）で解説。コンテキストウィンドウの仕組み、自動コンパクション（会話要約）後に残る情報、transcript・CLAUDE.md・auto memory の保存場所と読み込みタイミング、Claude アプリのメモリ機能との関係を整理。/context、/compact、/rewind などのコマンドや、コンパクション回避のための実践的な Tips も紹介している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/m16_llc/articles/claude-and-claude-code-memory-map)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

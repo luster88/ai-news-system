@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-31'
-updated: '2026-09-16'
+updated: '2026-09-26'
 sources:
 - url: https://qiita.com/nishiken1118/items/6b16557fcabf784c861e
   title: 過去の session をほしい時に参照する方針で claude-mem のトークン消費を激減させた話
@@ -59,6 +59,9 @@ sources:
 - url: https://qiita.com/tsks_hal/items/f6fc8c8a69bb636e07b0
   title: Claude Codeのトークンを抑えるために普段やっている3つのこと(初心者向け)
   date: '2026-09-16'
+- url: https://zenn.dev/kanta13jp1/articles/claude-md-webinar-transcript-ab-test
+  title: ウェビナー字幕をCLAUDE.mdに全文で入れると？ Claude Codeで18回比べたら採点は同点・入力トークン約4割増
+  date: '2026-09-26'
 ---
 
 
@@ -74,7 +77,20 @@ sources:
 
 
 
+
 # Claude Code Optimization
+
+---
+
+## 2026-09-26
+
+### ウェビナー字幕をCLAUDE.mdに全文で入れると？ Claude Codeで18回比べたら採点は同点・入力トークン約4割増
+
+Claude Codeの公式ウェビナー字幕をCLAUDE.mdに全文投入する効果を3種類×3課題×2回の計18試行で検証。品質差は観測されず全試行が満点だったが、字幕全文版は入力トークンが約4割増加。公式推奨の200行未満ガイドラインに従い、全文より実行可能な指示に整理する方が無難との結論。
+
+- **ソース**: [Zenn claude](https://zenn.dev/kanta13jp1/articles/claude-md-webinar-transcript-ab-test)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, performance
 
 ---
 

@@ -11,7 +11,7 @@ tags:
 - release
 - 新機能
 date: '2026-08-27'
-updated: '2026-09-09'
+updated: '2026-09-26'
 sources:
 - url: https://qiita.com/homhom44/items/23463739397a68e74028
   title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-08-27）
@@ -40,6 +40,9 @@ sources:
 - url: https://qiita.com/homhom44/items/2b602c7ea346ce6c1f85
   title: Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-10）
   date: '2026-09-09'
+- url: https://qiita.com/homhom44/items/e39210b00cec72264827
+  title: AIが勝手に手を出す危険と、止める設計の勘所を解説！Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-26）
+  date: '2026-09-26'
 ---
 
 
@@ -50,7 +53,20 @@ sources:
 
 
 
+
 # News Roundup
+
+---
+
+## 2026-09-26
+
+### AIが勝手に手を出す危険と、止める設計の勘所を解説！Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-26）
+
+Anthropic の Claude / Claude Code 関連の複数ニュースをまとめた索引記事。無料クレジットの提供条件、MCP のセッション管理改善、エージェント向けコスト削減、性能向上と価格引き下げ、供給網安全保障における政府との関係、Gmail 連携の境界線など、幅広いトピックを扱っている。各記事へのリンクと要点を日本語で紹介。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/e39210b00cec72264827)
+- **重要度**: 5/10
+- **タグ**: claude-code, mcp, pricing
 
 ---
 

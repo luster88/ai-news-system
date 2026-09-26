@@ -17,7 +17,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-09-22'
+updated: '2026-09-26'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -85,6 +85,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wm5c21/i_am_done_with_this_shit
   title: I am done with this shit.
   date: '2026-09-22'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wpzqxn/your_ai_games_suck_and_its_not_the_ais_fault
+  title: Your AI games suck, and it's not the AI's fault
+  date: '2026-09-26'
 ---
 
 
@@ -106,7 +109,20 @@ sources:
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-09-26
+
+### Your AI games suck, and it's not the AI's fault
+
+Claude などの AI ツールを使ったゲーム開発における問題点を指摘する投稿。AI がコード・アート・サウンドを生成できても、1回のプロンプトで出力されたものをそのまま投稿する開発者が多く、実際にプレイ可能で楽しいゲームになっていないケースが目立つ。AI は実装を支援できるが、ゲームの面白さを判断するのは人間の役割であり、テストと改善のプロセスが不可欠だと強調している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wpzqxn/your_ai_games_suck_and_its_not_the_ais_fault)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

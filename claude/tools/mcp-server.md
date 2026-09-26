@@ -13,7 +13,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-25'
-updated: '2026-09-10'
+updated: '2026-09-26'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -155,6 +155,9 @@ sources:
 - url: https://zenn.dev/heubme/articles/6e40497c272da4
   title: ChatGPT / Claude でトヨタの決算書を分析する実践チュートリアル
   date: '2026-09-10'
+- url: https://ai-heartland.com/tool/ambient-context
+  title: Ambient Contextとは｜一日の画面をMarkdownに残すmacOSアプリをMCP 20ツール実測で解説
+  date: '2026-09-26'
 ---
 
 
@@ -198,7 +201,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-09-26
+
+### Ambient Contextとは｜一日の画面をMarkdownに残すmacOSアプリをMCP 20ツール実測で解説
+
+Ambient Contextは、macOS画面のテキストを5秒ごとに自動記録しMarkdownファイルに保存するメニューバーアプリ。記録データはClaude CodeなどのエージェントCLIが読み込み、知識ベースや日次ノートに変換する。MCPサーバー機能を内蔵し20のツールを提供、メール・チャットを別ファイルに分離する設計で機密情報の管理にも配慮している。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/ambient-context)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, setup
 
 ---
 

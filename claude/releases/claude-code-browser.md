@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-12'
-updated: '2026-09-03'
+updated: '2026-09-26'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -69,6 +69,9 @@ sources:
 - url: https://qiita.com/picnic/items/abe3255cb2fcf8e586cd
   title: Claude Code v2.1.259まとめ:MCP管理設定の破壊的変更と管理者向け対応ポイント
   date: '2026-09-03'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wpxur6/claude_code_wrap_up_allowance
+  title: Claude Code Wrap Up Allowance!
+  date: '2026-09-26'
 ---
 
 
@@ -85,7 +88,20 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-09-26
+
+### Claude Code Wrap Up Allowance!
+
+Claude Code に「Wrap-Up Allowance」機能が追加されました。5時間の使用制限に達した際、作業を中途半端に終了せず、適切な区切りまで少量の追加使用を許可する機能です。制限は各プランごとに設定されており、無制限ではありません。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wpxur6/claude_code_wrap_up_allowance)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, release
 
 ---
 

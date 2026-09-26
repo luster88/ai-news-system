@@ -10,7 +10,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-29'
-updated: '2026-09-18'
+updated: '2026-09-26'
 sources:
 - url: https://zenn.dev/noprogllama/articles/d6a34cce09b66d
   title: AIに人格と記憶を与えたら、常につながる手段が欲しくなって自前のWeb UIを作ることになった
@@ -42,6 +42,10 @@ sources:
 - url: https://zenn.dev/nogu66/articles/claude-code-function-hooks-claude-mods
   title: Claude Mods 入門 | Claude Codeを自由にカスタマイズする
   date: '2026-09-18'
+- url: https://qiita.com/yureki_lab/items/8d478dea02ffe2db85f4
+  title: Claude Code のステータスライン(statusLine)を自作してコンテキスト使用率とセッションコストを常時表示する実装手順 — used_percentage
+    が null・tput cols が効かない・git status で重くなる、3つのハマりどころ【2026】
+  date: '2026-09-26'
 ---
 
 
@@ -53,7 +57,20 @@ sources:
 
 
 
+
 # Claude Code Customization
+
+---
+
+## 2026-09-26
+
+### Claude Code のステータスライン(statusLine)を自作してコンテキスト使用率とセッションコストを常時表示する実装手順 — used_percentage が null・tput cols が効かない・git status で重くなる、3つのハマりどころ【2026】
+
+Claude Codeのステータスラインをカスタマイズし、コンテキスト使用率とセッションコストを常時表示する実装手順を解説。~/.claude/settings.jsonにstatusLine.commandを設定し、stdin経由で渡されるJSONからモデル名や使用率を取得して表示する。used_percentageがnullになる問題、tput colsが使えない環境変数の取り扱い、git statusの重い処理対策という3つの実装上の落とし穴と解決策を詳述。
+
+- **ソース**: [Qiita claude](https://qiita.com/yureki_lab/items/8d478dea02ffe2db85f4)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup
 
 ---
 

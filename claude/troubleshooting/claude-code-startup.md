@@ -7,14 +7,30 @@ tags:
 - claude-code
 - setup
 date: '2026-06-16'
-updated: '2026-06-16'
+updated: '2026-09-26'
 sources:
 - url: https://qiita.com/yurukusa/items/3205bde64f3a691a6599
   title: Claude Codeが突然起動しなくなった——設定ファイルが原因の「締め出し」を切り分けて復旧する
   date: '2026-06-16'
+- url: https://qiita.com/homhom44/items/b26e253ef46e18db0d4b
+  title: Claude Codeのネイティブバイナリ参照エラー原因と対処を整理！Claude Code でつまずいたときの切り分けメモ（2026-09-26）
+  date: '2026-09-26'
 ---
 
+
 # Claude Code Startup
+
+---
+
+## 2026-09-26
+
+### Claude Codeのネイティブバイナリ参照エラー原因と対処を整理！Claude Code でつまずいたときの切り分けメモ（2026-09-26）
+
+Claude Code の起動エラーや動作不具合について、GitHub Issues で報告されている実例を基に切り分け手順を整理したトラブルシューティングガイド。CLI実行失敗、メッセージ件数不整合、ESC操作後の表示崩れ、ネイティブバイナリ参照エラーなど、複数の症状別に確認ポイントと対処方法をまとめている。実際にコマンドを実行して検証した内容のみを掲載。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/b26e253ef46e18db0d4b)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 

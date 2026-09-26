@@ -7,14 +7,30 @@ tags:
 - setup
 - 新機能
 date: '2026-05-07'
-updated: '2026-05-07'
+updated: '2026-09-26'
 sources:
 - url: https://zenn.dev/ai_heatland/articles/3b7186c20c69f0
   title: Claude Code 全コマンド完全版｜スラッシュ・CLI・設定など
   date: '2026-05-07'
+- url: https://zenn.dev/takuh/articles/3856bf08d728a9
+  title: Claude Codeの /loop と /goal 入門：「時間で繰り返す」と「終わるまで走らせる」を実機で使い分ける【2026年9月版】
+  date: '2026-09-26'
 ---
 
+
 # Claude Code Commands
+
+---
+
+## 2026-09-26
+
+### Claude Codeの /loop と /goal 入門：「時間で繰り返す」と「終わるまで走らせる」を実機で使い分ける【2026年9月版】
+
+Claude Codeの/loopと/goalコマンドの使い分けを解説した実践ガイド。/loopは時間間隔で指示を繰り返し、/goalは条件を満たすまでターンを継続する。2026年3月のv2.1.71で/loop、5月のv2.1.139で/goalが追加され、セッション限定で動作する。バグ修正やビルド監視などの自動化に活用でき、ヘッドレスモードとの組み合わせでレビュー自動化も可能。
+
+- **ソース**: [Zenn claude](https://zenn.dev/takuh/articles/3856bf08d728a9)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

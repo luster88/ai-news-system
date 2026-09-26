@@ -4,12 +4,13 @@ category: troubleshooting
 subcategory: claude-code-model-switching
 tags:
 - claude-code
+- opus
 - performance
 - pricing
 - setup
 - 新機能
 date: '2026-08-25'
-updated: '2026-09-03'
+updated: '2026-09-26'
 sources:
 - url: https://qiita.com/y104autumn/items/9fe3baf9fe7b7d313006
   title: Claude Code のモデル切替設定、実は思ってた仕様と違った
@@ -17,10 +18,26 @@ sources:
 - url: https://qiita.com/syun136_616/items/96ce74dc54cfb63a7089
   title: Claude Codeのモデル切り替えで書き直しが急増する理由
   date: '2026-09-03'
+- url: https://qiita.com/OfoxAI/items/1ad251e6902be1fbf687
+  title: Claude CodeでOpus 5.5を使う前に：モデル選択・利用上限・会話初期化を分ける
+  date: '2026-09-26'
 ---
 
 
+
 # Claude Code Model Switching
+
+---
+
+## 2026-09-26
+
+### Claude CodeでOpus 5.5を使う前に：モデル選択・利用上限・会話初期化を分ける
+
+Claude CodeでOpus 5.5を使う際の注意点を解説。モデル選択、利用上限確認、会話初期化は別々の操作であり、/resetは会話履歴のクリアであって利用枠の回復ではない点を強調。v2.1.280以降が必要で、トラブル時は段階的に原因を切り分けることを推奨している。
+
+- **ソース**: [Qiita claude](https://qiita.com/OfoxAI/items/1ad251e6902be1fbf687)
+- **重要度**: 6/10
+- **タグ**: claude-code, opus, setup
 
 ---
 

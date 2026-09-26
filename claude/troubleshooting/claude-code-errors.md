@@ -10,7 +10,7 @@ tags:
 - setup
 - vscode
 date: '2026-06-05'
-updated: '2026-09-24'
+updated: '2026-09-26'
 sources:
 - url: https://qiita.com/natume_nat/items/76fe608d570caebb4f4c
   title: Claude Codeで「The model's tool call could not be parsed」エラーを回避する方法
@@ -42,6 +42,9 @@ sources:
 - url: https://qiita.com/homhom44/items/8b165492adc33668ad2c
   title: 接続直後にメッセージ数がズレるときの切り分けポイント！Claude Code でつまずいたときの切り分けメモ（2026-09-24）
   date: '2026-09-24'
+- url: https://qiita.com/homhom44/items/b26e253ef46e18db0d4b
+  title: Claude Codeのネイティブバイナリ参照エラー原因と対処を整理！Claude Code でつまずいたときの切り分けメモ（2026-09-26）
+  date: '2026-09-26'
 ---
 
 
@@ -53,7 +56,20 @@ sources:
 
 
 
+
 # Claude Code Errors
+
+---
+
+## 2026-09-26
+
+### Claude Codeのネイティブバイナリ参照エラー原因と対処を整理！Claude Code でつまずいたときの切り分けメモ（2026-09-26）
+
+Claude Code の起動エラーやネイティブバイナリ参照エラーに関するトラブルシューティング記事。CLI実行直後の失敗、メッセージ一覧の不整合、ESC操作後の表示崩れ、起動できない症状など、GitHub Issues で報告されている実際の問題を手元で再現確認し、原因の切り分け方法と対処手順を整理している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/homhom44/items/b26e253ef46e18db0d4b)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 
