@@ -5,6 +5,7 @@ subcategory: competitive-comparison
 tags:
 - claude-api
 - claude-code
+- copilot
 - cowork
 - opus
 - performance
@@ -12,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-25'
-updated: '2026-07-21'
+updated: '2026-09-27'
 sources:
 - url: https://zenn.dev/aipedia/articles/5bdcc55c203d8f
   title: 【2026年4月版】ChatGPT・Claude・Gemini 徹底比較
@@ -35,6 +36,9 @@ sources:
 - url: https://zenn.dev/pinddy/articles/f868a0f6f4453f
   title: 研究者・天才肌・万能 — Claude / Gemini / ChatGPT 使い分け(2026年夏)
   date: '2026-07-21'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wqzu96/elon_musk_admits_grok_isnt_as_good_as_anthropics
+  title: Elon Musk admits Grok isn’t as good as Anthropic’s Claude
+  date: '2026-09-27'
 ---
 
 
@@ -42,7 +46,20 @@ sources:
 
 
 
+
 # Competitive Comparison
+
+---
+
+## 2026-09-27
+
+### Elon Musk admits Grok isn’t as good as Anthropic’s Claude
+
+Elon MuskがGrokよりもAnthropicのClaude（特にOpus 5.5）の方が優れていることを認めたという話題。AI業界における競合他社の評価と、Claudeの技術的優位性を示す発言として注目されている。コミュニティでは、競合製品開発者からの率直な評価として議論されている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wqzu96/elon_musk_admits_grok_isnt_as_good_as_anthropics)
+- **重要度**: 6/10
+- **タグ**: opus, copilot, cowork
 
 ---
 

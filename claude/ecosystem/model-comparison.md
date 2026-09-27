@@ -12,8 +12,9 @@ tags:
 - pricing
 - prompt
 - sonnet
+- 新機能
 date: '2026-03-24'
-updated: '2026-09-25'
+updated: '2026-09-27'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -83,6 +84,10 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wpb5hd/claude_opus_55_mad_defeats_astra
   title: Claude Opus 5.5 Mad defeats Astra 🔥
   date: '2026-09-25'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wqzubb/opus_55_picked_squirtle_because_of_brock_fable_51
+  title: Opus 5.5 picked Squirtle because of Brock. Fable 5.1 picked Charmander because
+    it was the closest ball. One cost $8, the other $100.
+  date: '2026-09-27'
 ---
 
 
@@ -105,7 +110,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-09-27
+
+### Opus 5.5 picked Squirtle because of Brock. Fable 5.1 picked Charmander because it was the closest ball. One cost $8, the other $100.
+
+Pokemon Red ベンチマークにおいて、Opus 5.5 は Brock を倒すのに $8.44・271 ターンかかったのに対し、Fable 5.1 は $99.76・554 ターン要した。決定的な違いは初手のポケモン選択で、Opus は Brock に有利な Squirtle を戦略的に選んだが、Fable は最も近い Charmander を選び不利な戦いを強いられた。この結果は長期的な計画能力とコスト効率において Opus の優位性を示している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wqzubb/opus_55_picked_squirtle_because_of_brock_fable_51)
+- **重要度**: 6/10
+- **タグ**: opus, performance, 新機能
 
 ---
 

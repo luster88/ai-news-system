@@ -9,7 +9,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-06-15'
-updated: '2026-09-23'
+updated: '2026-09-27'
 sources:
 - url: https://zenn.dev/gto_cto/articles/48fbf279efc43f
   title: Claude CodeとCodexを並列稼働したら競合祭りになったので、AI専用ロックファイルを作った
@@ -23,12 +23,28 @@ sources:
 - url: https://zenn.dev/ryu7865/articles/2026-09-23-ai-agent-side-business-03
   title: 「4体のAIで月100Kドル」系の投稿を、実際にAIで副業を回している立場で検証した(第3回)
   date: '2026-09-23'
+- url: https://zenn.dev/norishio22/articles/20260731-ai-coding-agent-practice
+  title: AIエージェントに作業を任せるときのについて考えてみた
+  date: '2026-09-27'
 ---
 
 
 
 
+
 # Ai Agent Workflow
+
+---
+
+## 2026-09-27
+
+### AIエージェントに作業を任せるときのについて考えてみた
+
+Claude Code や Codex などの AI コーディングエージェントを個人リポジトリで使う際の運用ルールをまとめた実践記事。未コミット差分の確認、Git/GitHub 設定の分離、複数アカウント環境での local 設定推奨、リポジトリ内に AGENTS.md などの入口ファイルを置く設計、Issue の判断権限の線引き、公開ディレクトリや GitHub Actions 設定の扱いなど、実運用で気をつけるべきポイントを具体的に解説している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/norishio22/articles/20260731-ai-coding-agent-practice)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

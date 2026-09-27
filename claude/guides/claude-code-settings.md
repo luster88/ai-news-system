@@ -9,7 +9,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-31'
-updated: '2026-08-21'
+updated: '2026-09-27'
 sources:
 - url: https://qiita.com/makoto-ogata@github/items/641a26f0d5d40aa1c0c4
   title: Claude Codeのsettings.jsonの設定をしよう
@@ -26,12 +26,28 @@ sources:
 - url: https://zenn.dev/manntera/articles/9e98c6850f63c7
   title: Claude Codeの回答がイマイチだなぁ？って思った時に読む記事(非エンジニア向け)
   date: '2026-08-21'
+- url: https://qiita.com/sescore/items/70cccbb575e6f5d02508
+  title: Claude Code実践Tips15選：フリーランスエンジニアの市場価値を上げる設定術
+  date: '2026-09-27'
 ---
 
 
 
 
+
 # Claude Code Settings
+
+---
+
+## 2026-09-27
+
+### Claude Code実践Tips15選：フリーランスエンジニアの市場価値を上げる設定術
+
+Claude Codeを毎日使用するフリーランスエンジニアが、2026年9月時点での実践的な設定術15選を共有。CLAUDE.mdの使い分け、permissionsとhooksによる安全対策、サブエージェントの役割分担、カスタムスラッシュコマンド、Plan Mode活用、モデル選択基準（Opus 5/Sonnet 5/Haiku 4.5）、Playwright MCP連携など、実際の運用で効果があった設定と失敗事例を紹介している。
+
+- **ソース**: [Qiita claude](https://qiita.com/sescore/items/70cccbb575e6f5d02508)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

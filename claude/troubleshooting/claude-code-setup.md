@@ -8,7 +8,7 @@ tags:
 - mac
 - setup
 date: '2026-03-23'
-updated: '2026-05-14'
+updated: '2026-09-27'
 sources:
 - url: https://qiita.com/juliuse/items/981cee0228c394ffc28f
   title: Claude Codeさいしょのつまずき【claudeコマンドが使えない】
@@ -19,11 +19,27 @@ sources:
 - url: https://qiita.com/toshi-arch/items/5a791548dc4ccadc9ab0
   title: agentcore deployと打ってれば大丈夫、は罠だった話【Bedrock AgentCore】
   date: '2026-05-14'
+- url: https://qiita.com/homhom44/items/df28cc82f3ecb64ee947
+  title: 起動直後に資格情報の取得に失敗する原因と対処まとめ！Claude Code でつまずいたときの切り分けメモ（2026-09-27）
+  date: '2026-09-27'
 ---
 
 
 
+
 # Claude Code Setup
+
+---
+
+## 2026-09-27
+
+### 起動直後に資格情報の取得に失敗する原因と対処まとめ！Claude Code でつまずいたときの切り分けメモ（2026-09-27）
+
+Claude Code の起動時・接続時によく発生するトラブルを GitHub Issues の実例をもとに整理したメモ。起動直後の入力不足エラー、リモート接続時の認証失敗、通信切断の3パターンについて、実際にコマンドを実行して確認した対処手順をまとめている。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/homhom44/items/df28cc82f3ecb64ee947)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 

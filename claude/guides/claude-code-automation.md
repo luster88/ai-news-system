@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-09-25'
+updated: '2026-09-27'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -114,6 +114,9 @@ sources:
     5.5" post on my own project. Here's what Claude Code made on its own for about
     $4.
   date: '2026-09-25'
+- url: https://qiita.com/joinclass/items/aa721fa92d729f756f61
+  title: セッションID変数をフックで使う — Claude Code 実行ごとのログ分離
+  date: '2026-09-27'
 ---
 
 
@@ -144,7 +147,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-09-27
+
+### セッションID変数をフックで使う — Claude Code 実行ごとのログ分離
+
+Claude Code の無人実行時に、Hook の stdin から session_id を取り出してログを実行ごとに分離する実装方法を解説。launchd による自動化ジョブで複数の Claude 実行が重なった際のログ混在問題を、session_id ベースのディレクトリ分割と --output-format json の活用で解決。--resume による会話再開も可能にする。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/joinclass/items/aa721fa92d729f756f61)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

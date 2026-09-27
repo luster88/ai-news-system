@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-09-25'
+updated: '2026-09-27'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -361,6 +361,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wp75ay/i_see_why_developers_get_irritated_by_vibe_coders
   title: I see why developers get irritated by vibe coders
   date: '2026-09-25'
+- url: https://qiita.com/charge0315/items/b86167a53117076abe6b
+  title: CLAUDE.mdを「事件のたびに条文を足す憲法」として運用する 〜プロンプトで守れないルールはテストへ格上げする〜
+  date: '2026-09-27'
 ---
 
 
@@ -453,7 +456,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-09-27
+
+### CLAUDE.mdを「事件のたびに条文を足す憲法」として運用する 〜プロンプトで守れないルールはテストへ格上げする〜
+
+個人開発者がClaude Codeを用いたプロジェクトで、CLAUDE.mdをプロジェクト固有のルール集として運用する手法を紹介。インシデント発生時に条文を追加し、プロンプトで守れないルールはテストコードへ格上げする運用方針を解説。具体例として、プロセス管理の問題やドメイン定義の不整合への対処法を示している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/charge0315/items/b86167a53117076abe6b)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

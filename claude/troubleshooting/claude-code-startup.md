@@ -7,7 +7,7 @@ tags:
 - claude-code
 - setup
 date: '2026-06-16'
-updated: '2026-09-26'
+updated: '2026-09-27'
 sources:
 - url: https://qiita.com/yurukusa/items/3205bde64f3a691a6599
   title: Claude Codeが突然起動しなくなった——設定ファイルが原因の「締め出し」を切り分けて復旧する
@@ -15,10 +15,26 @@ sources:
 - url: https://qiita.com/homhom44/items/b26e253ef46e18db0d4b
   title: Claude Codeのネイティブバイナリ参照エラー原因と対処を整理！Claude Code でつまずいたときの切り分けメモ（2026-09-26）
   date: '2026-09-26'
+- url: https://qiita.com/homhom44/items/df28cc82f3ecb64ee947
+  title: 起動直後に資格情報の取得に失敗する原因と対処まとめ！Claude Code でつまずいたときの切り分けメモ（2026-09-27）
+  date: '2026-09-27'
 ---
 
 
+
 # Claude Code Startup
+
+---
+
+## 2026-09-27
+
+### 起動直後に資格情報の取得に失敗する原因と対処まとめ！Claude Code でつまずいたときの切り分けメモ（2026-09-27）
+
+Claude Code 起動時のトラブルシューティングガイド。GitHub Issues で報告された複数の症状（起動直後の入力指定不足、リモート接続時の認証失敗、通信切断）について、実際にコマンドを検証した結果をもとに切り分け手順を整理。stdin・プロンプト指定、資格情報の状態確認、回線設定などの対処方法を優先順位付きでまとめている。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/df28cc82f3ecb64ee947)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, bugfix
 
 ---
 
