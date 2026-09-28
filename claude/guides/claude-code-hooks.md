@@ -12,7 +12,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-23'
-updated: '2026-09-20'
+updated: '2026-09-28'
 sources:
 - url: https://qiita.com/pro-tein/items/49e5dbec705c3497dd51
   title: 【Claude Code】Hooks機能でデスクトップ通知を設定してみた
@@ -51,6 +51,9 @@ sources:
 - url: https://qiita.com/aicoding-guide/items/ad41111edf9f8b994783
   title: Claude Code の Stop フックで作業完了をデスクトップ通知する設定
   date: '2026-09-20'
+- url: https://qiita.com/daisuke_dadixi/items/2cca2d9409c803befc3f
+  title: Claude Codeが参画先で配布されたので、改めてHooksについて調べてみた
+  date: '2026-09-28'
 ---
 
 
@@ -64,7 +67,20 @@ sources:
 
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-09-28
+
+### Claude Codeが参画先で配布されたので、改めてHooksについて調べてみた
+
+Claude Codeのフック機能について詳しく解説した記事。フックはライフサイクルの特定タイミングで自動実行される仕組みで、SessionStart/SessionEnd、PreToolUse/PostToolUseなど30種類近くのイベントがある。PreToolUseでrm -rf等の破壊的コマンドをブロックしたり、PostToolUseでフォーマッタを自動実行したり、SessionStartでコンテキストを注入できる。settings.jsonだけでなくスキルのフロントマターにも定義でき、once: trueで一度きりの実行も可能。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/daisuke_dadixi/items/2cca2d9409c803befc3f)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

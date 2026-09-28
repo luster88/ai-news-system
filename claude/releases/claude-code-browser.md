@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-12'
-updated: '2026-09-26'
+updated: '2026-09-28'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -72,6 +72,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wpxur6/claude_code_wrap_up_allowance
   title: Claude Code Wrap Up Allowance!
   date: '2026-09-26'
+- url: https://qiita.com/moha0918_/items/ee0dd34b9d12f0ab02a7
+  title: Claude Code v2.1.283｜deniedModels で特定モデルを締め出せる｜週刊Changelog解説
+  date: '2026-09-28'
 ---
 
 
@@ -89,7 +92,20 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-09-28
+
+### Claude Code v2.1.283｜deniedModels で特定モデルを締め出せる｜週刊Changelog解説
+
+Claude Code v2.1.283 で managed settings に deniedModels と availableModelsMatch が追加され、組織管理者が使用可能なモデルをバージョン単位で厳密に制御できるようになった。availableModelsMatch を "exact" に設定すると新モデルは明示的にリストに追加するまでブロックされ、deniedModels で特定モデルのみを除外可能。他に sandbox 設定の検証改善や Windows PowerShell のセキュリティ修正も含まれる。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/ee0dd34b9d12f0ab02a7)
+- **重要度**: 6/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 

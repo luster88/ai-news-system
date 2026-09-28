@@ -6,11 +6,12 @@ tags:
 - claude-code
 - cowork
 - opus
+- performance
 - pricing
 - prompt
 - setup
 date: '2026-04-16'
-updated: '2026-09-25'
+updated: '2026-09-28'
 sources:
 - url: https://zenn.dev/okamyuji/articles/claude-code-max-x20-token-savings
   title: Claude Codeのトークン消費が$40/日から1週間でも余裕になった全手法
@@ -21,11 +22,27 @@ sources:
 - url: https://qiita.com/caymezon/items/d82d0e2d30d2647293dc
   title: CLAUDE.mdが肥大化してきたら、手順はSKILL.mdに切り出す
   date: '2026-09-25'
+- url: https://zenn.dev/goat_eat_any/articles/claude-code-effort-explained
+  title: そもそもClaude Codeのエフォートってなに？
+  date: '2026-09-28'
 ---
 
 
 
+
 # Claude Code Cost Optimization
+
+---
+
+## 2026-09-28
+
+### そもそもClaude Codeのエフォートってなに？
+
+Claude Codeのエフォート設定について、公式ドキュメントをもとに解説。エフォートは応答にどれだけトークンを使うかを調整する仕組みで、Opus 5.5では思考の深さとコストを調整する主要な手段となる。実際にlow～maxの5段階でCSV集計課題を解かせた結果、lowでも文字コード確認など基本チェックを行い、エフォートが上がるほど検算や単価整合性確認など検証が丁寧になることが確認された。デフォルト設定のまま使うのではなく、タスクに応じて適切に調整することが推奨される。
+
+- **ソース**: [Zenn claude](https://zenn.dev/goat_eat_any/articles/claude-code-effort-explained)
+- **重要度**: 7/10
+- **タグ**: claude-code, opus, performance
 
 ---
 

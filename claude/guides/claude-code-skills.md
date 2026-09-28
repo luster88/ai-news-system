@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-09-09'
+updated: '2026-09-28'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -79,6 +79,9 @@ sources:
 - url: https://zenn.dev/socialplus/articles/f5d9e28470eb99
   title: Agent Skillは振る舞いとナレッジを分けて設計する
   date: '2026-09-09'
+- url: https://qiita.com/daisuke_dadixi/items/bdd2c50035bd57002069
+  title: Claude Codeが参画先で配布されたので、改めてスキルについて調べてみた
+  date: '2026-09-28'
 ---
 
 
@@ -101,7 +104,20 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-09-28
+
+### Claude Codeが参画先で配布されたので、改めてスキルについて調べてみた
+
+Claude Codeのスキル機能について実務での導入を踏まえた解説記事。SKILL.mdファイルを用いてClaude Codeの能力を拡張する仕組み、YAMLフロントマターとMarkdown本文の構成、参照コンテンツとタスクコンテンツの使い分け、スコープに応じた配置場所、skill-creatorプラグインでのテスト方法まで網羅的に説明している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/daisuke_dadixi/items/bdd2c50035bd57002069)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

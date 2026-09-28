@@ -13,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-04'
-updated: '2026-09-23'
+updated: '2026-09-28'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -81,6 +81,9 @@ sources:
   title: OpenAI's GPT-6 Sol and Luna cut prices in half but barely move the needle
     on performance
   date: '2026-09-23'
+- url: https://zenn.dev/every_ai_recipe/articles/ai-scheduled-task-3-services-check
+  title: ChatGPT・Gemini・Claudeの「定期実行」、無料/有料/非搭載で分かれた
+  date: '2026-09-28'
 ---
 
 
@@ -99,7 +102,20 @@ sources:
 
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-09-28
+
+### ChatGPT・Gemini・Claudeの「定期実行」、無料/有料/非搭載で分かれた
+
+ChatGPT・Gemini・Claudeの定期実行機能を公式情報で比較。ChatGPTは無料プランでも1日1回利用可能で自然言語と構造化UIの両方を提供。Geminiは有料プラン必須で自然言語のみの作成経路を持つ。Claudeは通常チャットに該当機能がなく、Claude CodeやCoworkに機能が切り出されている。3社で提供条件とUI設計が完全に異なる構造となっている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/every_ai_recipe/articles/ai-scheduled-task-3-services-check)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, pricing
 
 ---
 
