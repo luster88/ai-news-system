@@ -6,9 +6,10 @@ tags:
 - claude-api
 - pricing
 - release
+- sonnet
 - 新機能
 date: '2026-06-12'
-updated: '2026-09-10'
+updated: '2026-09-29'
 sources:
 - url: https://www.anthropic.com/news/claude-fable-5-mythos-5
   title: Claude Fable 5 and Claude Mythos 5 Announcements Jun 9, 2026 Our next generation
@@ -19,10 +20,26 @@ sources:
     Our most advanced models for coding and knowledge work. Their research capabilities
     also offer an early glimpse of how AI models will contribute to scientific progress.
   date: '2026-09-10'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wslxzs/introducing_claude_sonnet_55_the_second_model_in
+  title: Introducing Claude Sonnet 5.5, the second model in the Claude 5.5 family
+  date: '2026-09-29'
 ---
 
 
+
 # New Model Release
+
+---
+
+## 2026-09-29
+
+### Introducing Claude Sonnet 5.5, the second model in the Claude 5.5 family
+
+Anthropic が Claude Sonnet 5.5 を正式発表。Claude 5.5 ファミリーの2番目のモデルとして、Sonnet 5 から30%以上高速化し、同等作業でのコスト削減を実現。バグ修正やドキュメント作成に強く、デザイン面でも優れている。セキュリティ対策も強化され、本日より利用可能。数週間以内に Claude Haiku 5.5 もリリース予定。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wslxzs/introducing_claude_sonnet_55_the_second_model_in)
+- **重要度**: 10/10
+- **タグ**: sonnet, release, 新機能
 
 ---
 

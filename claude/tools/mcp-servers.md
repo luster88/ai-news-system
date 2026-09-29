@@ -8,9 +8,10 @@ tags:
 - claude-console
 - cowork
 - mcp
+- setup
 - 新機能
 date: '2026-04-21'
-updated: '2026-08-31'
+updated: '2026-09-29'
 sources:
 - url: https://zenn.dev/megaphone_tokyo/articles/9c0cffdf9e176b
   title: Claude Code / Desktop の記憶 OSS「KIOKU」に PDF / URL 取り込みを実装した
@@ -27,13 +28,29 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1w2grux/whats_a_good_useful_mcp_you_connected_to_that
   title: What’s a good useful MCP you connected to that brings you real value?
   date: '2026-08-31'
+- url: https://ai-heartland.com/agent/hindsight-agent-memory
+  title: Hindsightとは｜学習するAIエージェント記憶OSSをMCP 39ツールと6.8GBの実測で解説
+  date: '2026-09-29'
 ---
 
 
 
 
 
+
 # Mcp Servers
+
+---
+
+## 2026-09-29
+
+### Hindsightとは｜学習するAIエージェント記憶OSSをMCP 39ツールと6.8GBの実測で解説
+
+Hindsightは、AIエージェントに学習する記憶を持たせるためのOSSで、GitHubで39.4k starを獲得している。pip installで6.8GB（CUDA含む）、MCPサーバーとして39ツール・16,603トークンを提供し、記憶を「世界の事実」と「経験」に分けて観察と心的モデルを構築する設計。LLM APIキー必須で、デフォルトはgpt-4o-mini。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/agent/hindsight-agent-memory)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-api, setup
 
 ---
 

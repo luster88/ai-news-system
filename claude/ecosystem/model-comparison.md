@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-24'
-updated: '2026-09-27'
+updated: '2026-09-29'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -88,6 +88,9 @@ sources:
   title: Opus 5.5 picked Squirtle because of Brock. Fable 5.1 picked Charmander because
     it was the closest ball. One cost $8, the other $100.
   date: '2026-09-27'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wshs7m/putting_one_kimi_among_four_claudes_can_the
+  title: Putting One Kimi Among Four Claudes, Can the Claudes Identify Kimi?
+  date: '2026-09-29'
 ---
 
 
@@ -111,7 +114,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-09-29
+
+### Putting One Kimi Among Four Claudes, Can the Claudes Identify Kimi?
+
+Reddit ユーザーが、4体の Claude Fable 5.1 エージェントの中に 1体の Kimi-K3 エージェントを紛れ込ませ、Claude たちが Kimi を識別できるか実験した。Claude エージェントは「マルチプロンプト行動フィンガープリンティング」と SHA-256 ハッシュチェックを用いた効果的な手法を設計し、各モデルの「最も安価なデフォルト応答」（数値選択、色、説明文、俳句など）をサンプリングして識別を試みた。この実験は、Kimi が Claude を蒸留しているという最近の疑惑のタイミングとも重なり、興味深い結果となった。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wshs7m/putting_one_kimi_among_four_claudes_can_the)
+- **重要度**: 6/10
+- **タグ**: claude-api, cowork, performance
 
 ---
 

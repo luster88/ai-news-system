@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-06-03'
-updated: '2026-09-23'
+updated: '2026-09-29'
 sources:
 - url: https://zenn.dev/iwakicyan/articles/387bb06ee54372
   title: Claudeでドット絵描ける？：AIと世界の遊び方 第10回
@@ -24,12 +24,28 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wnkvys/opus_55_creates_a_train_journey_drawn_entirely_in
   title: Opus 5.5 creates a train journey drawn entirely in JavaScript
   date: '2026-09-23'
+- url: https://zenn.dev/acntechjp/articles/4a65b4d4a77370
+  title: Opus 5.5×コード描画だけで、SunoのPVを作ってみた
+  date: '2026-09-29'
 ---
 
 
 
 
+
 # Creative Coding
+
+---
+
+## 2026-09-29
+
+### Opus 5.5×コード描画だけで、SunoのPVを作ってみた
+
+Opus 5.5を使い、画像・動画生成AIを一切使わずコードのみでSunoのPV（リリックモーションビデオ）を制作した事例。HyperFramesを基盤に、Three.js、WebGL、SplitType、Anime.jsなどのライブラリを段階的に渡すことで表現力が大幅に向上。適切な外部ツールを与えることでAIの出力品質が飛躍的に上がるという知見を共有している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/acntechjp/articles/4a65b4d4a77370)
+- **重要度**: 6/10
+- **タグ**: opus, claude-code, cowork
 
 ---
 

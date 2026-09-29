@@ -11,7 +11,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-03-30'
-updated: '2026-07-12'
+updated: '2026-09-29'
 sources:
 - url: https://zenn.dev/analysis/articles/prompt-master-thought-analyzer
   title: 「プロンプトを最適化する」とは何か──prompt-masterを3層フレームワークで解剖する
@@ -28,13 +28,29 @@ sources:
 - url: https://qiita.com/mguozhen/items/8c11a7005d3983512688
   title: Claude を原始人みたいに喋らせて、トークンを65%削った話（caveman skill）
   date: '2026-07-12'
+- url: https://qiita.com/menmen_ailab/items/6b42edc3540c351ee248
+  title: Opus 5.5に計画の見直しを頼んで「それっぽい答え」が返ってきたときに使った3つの問い
+  date: '2026-09-29'
 ---
 
 
 
 
 
+
 # Prompt Engineering Framework
+
+---
+
+## 2026-09-29
+
+### Opus 5.5に計画の見直しを頼んで「それっぽい答え」が返ってきたときに使った3つの問い
+
+Claude Opus 5.5で計画見直しを依頼した際、最初は「それっぽい答え」しか返ってこなかった経験から、効果的だった3つの問い直し方を紹介。①候補を全部並べさせる、②判断軸を先に決めさせる、③前提を根拠つきで判断し直させる、という「言ったことの範囲の外を見させる」アプローチが有効だった。Opus 5.5は使用上限が約25%増加し、問い直しを前提とした使い方とも相性が良い印象。
+
+- **ソース**: [Qiita claude](https://qiita.com/menmen_ailab/items/6b42edc3540c351ee248)
+- **重要度**: 6/10
+- **タグ**: opus, prompt
 
 ---
 

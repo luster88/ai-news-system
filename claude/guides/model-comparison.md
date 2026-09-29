@@ -8,10 +8,11 @@ tags:
 - haiku
 - opus
 - performance
+- pricing
 - prompt
 - sonnet
 date: '2026-06-12'
-updated: '2026-09-12'
+updated: '2026-09-29'
 sources:
 - url: https://zenn.dev/znet/articles/2026-stronger-model-as-reviewer
   title: 高性能モデルの使いどころは『実装者』でなく『レビュアー』 — Fable 5 実機評価
@@ -31,6 +32,9 @@ sources:
 - url: https://zenn.dev/pdfractal/articles/539d3da0021e3d
   title: なぜ、GPTとClaudeは、チャットで使う場合と、コード生成で使う場合で「逆の性格」に見えるのか？
   date: '2026-09-12'
+- url: https://qiita.com/suwa_nobu/items/5749949156f8df6f728b
+  title: Claude Code で選べる12モデルに同じ仕事をさせた。1年で速度は2.7倍、値段は1%しか変わらなかった
+  date: '2026-09-29'
 ---
 
 
@@ -38,7 +42,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-09-29
+
+### Claude Code で選べる12モデルに同じ仕事をさせた。1年で速度は2.7倍、値段は1%しか変わらなかった
+
+Claude Code で利用可能な12モデル（1年分）に同じタスクを36回実行させ、速度と費用を比較検証。Opus 5.5は1年前のSonnet 4.5と比べて2.7倍高速化したが、費用は1%しか変わらず。同じ階級内では安くなっているが、世代間では「同じ予算で上位階級に手が届く」という進化が明らかに。モデル選択により費用は最大9.2倍の差が発生。
+
+- **ソース**: [Qiita claude](https://qiita.com/suwa_nobu/items/5749949156f8df6f728b)
+- **重要度**: 7/10
+- **タグ**: claude-code, performance, pricing
 
 ---
 

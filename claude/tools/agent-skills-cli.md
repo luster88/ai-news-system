@@ -4,17 +4,35 @@ category: tools
 subcategory: agent-skills-cli
 tags:
 - claude-code
+- cowork
 - mcp
+- prompt
 - setup
 date: '2026-08-31'
-updated: '2026-08-31'
+updated: '2026-09-29'
 sources:
 - url: https://ai-heartland.com/tool/skills-sh
   title: skills.shとは｜npx skills add がディスクに何を書くかを実測
   date: '2026-08-31'
+- url: https://ai-heartland.com/tool/code-review-skills
+  title: code-review-skillsとは｜根拠のない指摘を封じるAIコードレビュースキルを実測で検証
+  date: '2026-09-29'
 ---
 
+
 # Agent Skills Cli
+
+---
+
+## 2026-09-29
+
+### code-review-skillsとは｜根拠のない指摘を封じるAIコードレビュースキルを実測で検証
+
+code-review-skillsは、Claude CodeとCodexに「根拠のある指摘だけをさせる」ためのAgent Skill。指摘の強さをMUST/SHOULD/BETTER/NITSの4段階で型付けし、すべてに具体的な契機と影響を要求することで、体裁だけの指摘や裏付けのない推測を排除する。スキル本体はMarkdownから機械生成され、約2,360トークンで常駐し、偽陽性の抑制を独立した工程として明示的に組み込んでいる。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/code-review-skills)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

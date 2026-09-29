@@ -14,7 +14,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-29'
-updated: '2026-09-20'
+updated: '2026-09-29'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6of32/i_am_fully_addicted_to_building_dumb_little_ai
   title: I am fully addicted to building dumb little AI web apps. I love it.
@@ -53,6 +53,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wlltzt/whats_your_proudest_sideproject_made_with_claude
   title: What's your proudest side-project made with Claude?
   date: '2026-09-20'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wsep0x/sloppy_kart_a_totally_finished_product
+  title: Sloppy Kart — a totally finished product™
+  date: '2026-09-29'
 ---
 
 
@@ -64,7 +67,20 @@ sources:
 
 
 
+
 # Community Showcase
+
+---
+
+## 2026-09-29
+
+### Sloppy Kart — a totally finished product™
+
+RedditユーザーがClaude、DeepSeek、ChatGPTを使って5日間で3Dレーシングゲーム「Sloppy Kart」を制作した事例。コーディングスキルなしでプログラミングを指示し、3DモデルはAI生成後Blenderで修正（これもClaudeのスクリプト経由）、音楽はSunoで生成。TikTok LIVE連携を想定し、最大40台のカート、6つのトラック、パワーアップ機能を実装。実験的プロジェクトとして共有。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wsep0x/sloppy_kart_a_totally_finished_product)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

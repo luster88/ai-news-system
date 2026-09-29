@@ -10,8 +10,9 @@ tags:
 - performance
 - pricing
 - prompt
+- vscode
 date: '2026-03-22'
-updated: '2026-09-01'
+updated: '2026-09-29'
 sources:
 - url: https://qiita.com/shockpan-web/items/852e962e14bdd2b98e70
   title: バイブコーディングでトークンを溶かさないための2つの工夫
@@ -37,6 +38,9 @@ sources:
 - url: https://qiita.com/yml024/items/b1ef287eadd7f551f371
   title: '*【ポエム】 Claude トークン消費を制御する — 「長く使う」ためのコツ'
   date: '2026-09-01'
+- url: https://zenn.dev/arithan/articles/claude-code-subagent-context-split
+  title: Claude Codeのサブエージェントを作業の種類ごとに分けてトークン消費を抑えた
+  date: '2026-09-29'
 ---
 
 
@@ -46,7 +50,20 @@ sources:
 
 
 
+
 # Token Optimization
+
+---
+
+## 2026-09-29
+
+### Claude Codeのサブエージェントを作業の種類ごとに分けてトークン消費を抑えた
+
+Claude Codeでサブエージェントのトークン消費を分析した実例記事。80セッション分のデータから、サブエージェントが親の3倍のトークンを消費していることを発見。UI確認役の定義が壊れて汎用エージェントが代替していた結果、37万トークン・260回の応答が発生していた事例を紹介。YAML定義の修正やスクリーンショット圧縮により、14万トークンまで削減に成功。
+
+- **ソース**: [Zenn claude](https://zenn.dev/arithan/articles/claude-code-subagent-context-split)
+- **重要度**: 6/10
+- **タグ**: claude-code, performance, vscode
 
 ---
 

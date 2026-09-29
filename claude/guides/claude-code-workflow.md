@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-09-27'
+updated: '2026-09-29'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -364,6 +364,9 @@ sources:
 - url: https://qiita.com/charge0315/items/b86167a53117076abe6b
   title: CLAUDE.mdを「事件のたびに条文を足す憲法」として運用する 〜プロンプトで守れないルールはテストへ格上げする〜
   date: '2026-09-27'
+- url: https://zenn.dev/shoujiki_panman/articles/claude-code-session-titles-hook
+  title: Claude Codeのセッションが180件になったので、題名をAIに付け直させて、新しいセッションにも自動で効かせた
+  date: '2026-09-29'
 ---
 
 
@@ -457,7 +460,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-09-29
+
+### Claude Codeのセッションが180件になったので、題名をAIに付け直させて、新しいセッションにも自動で効かせた
+
+Claude Codeで180件のセッションが蓄積し、タイトルが不明瞭になった問題を解決した事例。Claudeに依頼して全セッションのタイトルを「プロジェクト名：内容」形式に一括変更し、140件をアーカイブ。さらにフック機能を使い、新規セッションでも自動的に適切なタイトルが付くよう設定した実践的なワークフロー改善例。
+
+- **ソース**: [Zenn claude](https://zenn.dev/shoujiki_panman/articles/claude-code-session-titles-hook)
+- **重要度**: 6/10
+- **タグ**: claude-code
 
 ---
 
