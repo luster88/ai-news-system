@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-23'
-updated: '2026-09-25'
+updated: '2026-09-30'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -83,6 +83,9 @@ sources:
   title: Deepmind was built to chase AGI, but its new chief just wants Gemini 4 out
     the door
   date: '2026-09-25'
+- url: https://the-decoder.com/chatgpt-now-reaches-1-2-billion-people-every-week-openai-says
+  title: ChatGPT now reaches 1.2 billion people every week, OpenAI says
+  date: '2026-09-30'
 ---
 
 
@@ -102,7 +105,20 @@ sources:
 
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-09-30
+
+### ChatGPT now reaches 1.2 billion people every week, OpenAI says
+
+OpenAIがChatGPTの週間利用者数が12億人に達したと発表。年間換算収益は700億ドル近くに達し、Q3開始時から約70%増加。Anthropicも650億ドルを超え、11月にIPOを準備中。OpenAIは企業向け販売とClaudeや中国モデルに対する価格競争戦略を推進している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/chatgpt-now-reaches-1-2-billion-people-every-week-openai-says)
+- **重要度**: 6/10
+- **タグ**: pricing, cowork, performance
 
 ---
 

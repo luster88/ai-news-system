@@ -9,8 +9,9 @@ tags:
 - mcp
 - performance
 - setup
+- sonnet
 date: '2026-04-04'
-updated: '2026-09-20'
+updated: '2026-09-30'
 sources:
 - url: https://qiita.com/lovanaut/items/15fb6f0703f114000b78
   title: ChatGPTやClaudeからFORMLOVAを触り始める最短ガイド
@@ -30,6 +31,9 @@ sources:
 - url: https://qiita.com/Takuya__/items/d2a6c4b812504239a539
   title: MCPでClaudeに「外の道具」をつなぐ実践ガイド:コネクタ追加・Claude Code・Chrome操作・computer useまで(2026年9月版)
   date: '2026-09-20'
+- url: https://qiita.com/homhom44/items/71e6d921e21783354a91
+  title: MCPをAPIに組み込む設計の考え方と見せ方の自由度！Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-30）
+  date: '2026-09-30'
 ---
 
 
@@ -37,7 +41,20 @@ sources:
 
 
 
+
 # Mcp Integration
+
+---
+
+## 2026-09-30
+
+### MCPをAPIに組み込む設計の考え方と見せ方の自由度！Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-30）
+
+MCPをAPIに組み込む際の設計課題とClaude Codeの多様な利用環境について解説。MCP接続は容易になったが、何を読ませ操作させるかの設計が本質的課題。Claude CodeのCLI/VS Code/Desktop/Web各環境での使い分けと、Sonnet 5.5の実用性重視のバランス設計を紹介。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/71e6d921e21783354a91)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, sonnet
 
 ---
 

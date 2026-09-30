@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-09-29'
+updated: '2026-09-30'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -367,6 +367,12 @@ sources:
 - url: https://zenn.dev/shoujiki_panman/articles/claude-code-session-titles-hook
   title: Claude Codeのセッションが180件になったので、題名をAIに付け直させて、新しいセッションにも自動で効かせた
   date: '2026-09-29'
+- url: https://qiita.com/sescore/items/1e035c8609da4bc0335c
+  title: OpenClaw×Claude Code連携実践ガイド｜SESエンジニアの独立準備と単価戦略
+  date: '2026-09-30'
+- url: https://zenn.dev/arithan/articles/claude-md-keep-lean
+  title: CLAUDE.mdの肥大化は、ルールを足す時の4段階の判断で防ぐ
+  date: '2026-09-30'
 ---
 
 
@@ -461,7 +467,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-09-30
+
+### OpenClaw×Claude Code連携実践ガイド｜SESエンジニアの独立準備と単価戦略
+
+OpenClawとClaude Codeを連携させたSESエンジニアの独立準備実践ガイド。OpenClawで「思考・記憶・指示」を管理し、Claude CodeのHeadlessモードやサブエージェント機能で実行する構成を解説。ブログ自動生成、経理・営業の役割分担、安全な無人実行のルール設計など、独立後の運用効率化に直結する具体例を紹介。Cloudflareなどの低コストインフラと組み合わせることで、フリーランスの利益率向上につながる技術選定の重要性も示している。
+
+- **ソース**: [Qiita claude](https://qiita.com/sescore/items/1e035c8609da4bc0335c)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, setup
+
+---
+
+### CLAUDE.mdの肥大化は、ルールを足す時の4段階の判断で防ぐ
+
+CLAUDE.mdファイルの肥大化を防ぐため、ルールを追加する際の4段階判断プロセスを提案。「最優先の決まり」「ルール」「作業ごとに読むファイルの表」の3節構成に絞り込むことで、約17倍に膨らんだファイルを5分の2まで削減した実践例を紹介。rules/への分割だけでは読み込みトークンは減らず、内容の整理が重要であることを解説。
+
+- **ソース**: [Zenn claude](https://zenn.dev/arithan/articles/claude-md-keep-lean)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

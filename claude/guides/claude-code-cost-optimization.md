@@ -10,8 +10,9 @@ tags:
 - pricing
 - prompt
 - setup
+- sonnet
 date: '2026-04-16'
-updated: '2026-09-28'
+updated: '2026-09-30'
 sources:
 - url: https://zenn.dev/okamyuji/articles/claude-code-max-x20-token-savings
   title: Claude Codeのトークン消費が$40/日から1週間でも余裕になった全手法
@@ -25,12 +26,28 @@ sources:
 - url: https://zenn.dev/goat_eat_any/articles/claude-code-effort-explained
   title: そもそもClaude Codeのエフォートってなに？
   date: '2026-09-28'
+- url: https://zenn.dev/goat_eat_any/articles/claude-code-sonnet-opus-advisor
+  title: Sonnet 5.5＋Opus 5.5アドバイザーで手軽にコスト削減！
+  date: '2026-09-30'
 ---
 
 
 
 
+
 # Claude Code Cost Optimization
+
+---
+
+## 2026-09-30
+
+### Sonnet 5.5＋Opus 5.5アドバイザーで手軽にコスト削減！
+
+Claude Code DesktopでSonnet 5.5をメインモデルに設定し、settings.jsonにadvisorModelを追加することで、Opus 5.5をアドバイザーとして活用する方法を紹介。必要時のみOpusが起動するため、コストを抑えつつSonnetと同等の精度を実現できる。設定ファイルに数行追加するだけで導入可能。
+
+- **ソース**: [Zenn claude](https://zenn.dev/goat_eat_any/articles/claude-code-sonnet-opus-advisor)
+- **重要度**: 6/10
+- **タグ**: claude-code, sonnet, opus
 
 ---
 
