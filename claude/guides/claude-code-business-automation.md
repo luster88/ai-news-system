@@ -5,16 +5,34 @@ subcategory: claude-code-business-automation
 tags:
 - claude-code
 - cowork
+- prompt
 - setup
+- 新機能
 date: '2026-09-29'
-updated: '2026-09-29'
+updated: '2026-10-01'
 sources:
 - url: https://qiita.com/sescore/items/10e46a658e28d332c0ca
   title: 月商250万円の3人会社、Claude CodeでAI経営OSを内製した記録
   date: '2026-09-29'
+- url: https://zenn.dev/aishigoto/books/claude-code-skills-business-guide
+  title: Claude Code Skills 実践ガイド：日本の定型業務を AI に任せる仕組みの作り方
+  date: '2026-10-01'
 ---
 
+
 # Claude Code Business Automation
+
+---
+
+## 2026-10-01
+
+### Claude Code Skills 実践ガイド：日本の定型業務を AI に任せる仕組みの作り方
+
+Claude Code を使った日本企業特有の定型業務（議事録、日報、請求書、敬語メール）の自動化ガイド。実際に動作するコード例とともに、計算スクリプトやコマンド活用、テスト手法を解説。業務スキル集を配布中。
+
+- **ソース**: [Zenn claude](https://zenn.dev/aishigoto/books/claude-code-skills-business-guide)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, prompt
 
 ---
 

@@ -14,7 +14,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-07'
-updated: '2026-09-06'
+updated: '2026-10-01'
 sources:
 - url: https://zenn.dev/analysis/articles/thought-analyzer-agents-md
   title: コンテキストファイルは、エージェントを賢くしない ── AGENTS.mdの効果を初めて測った研究
@@ -40,6 +40,9 @@ sources:
 - url: https://zenn.dev/hanamilo/articles/8348ff15c868e2
   title: AIは毎回忘れる。だから引き継ぎプロンプトを38版まで育てた
   date: '2026-09-06'
+- url: https://zenn.dev/sukoshift/articles/llm-dont-decide-design
+  title: LLMに任せると改善案を10個書く。だからコードで3個に縛った
+  date: '2026-10-01'
 ---
 
 
@@ -49,7 +52,20 @@ sources:
 
 
 
+
 # Prompt Engineering
+
+---
+
+## 2026-10-01
+
+### LLMに任せると改善案を10個書く。だからコードで3個に縛った
+
+AIに「考える」は任せるが「決める」はコードで制御する設計思想を解説。改善案の数を3個に制限、文章構成の固定、API呼び出しの事前判定など、5つの具体パターンでAIの出力を確実に管理する方法を紹介。プロンプトは「お願い」だがコードは「保証」という考え方で、サービス品質とコストを両立させる。
+
+- **ソース**: [Zenn claude](https://zenn.dev/sukoshift/articles/llm-dont-decide-design)
+- **重要度**: 7/10
+- **タグ**: prompt, cowork, claude-api
 
 ---
 

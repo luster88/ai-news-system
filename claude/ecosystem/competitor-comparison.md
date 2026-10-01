@@ -8,9 +8,10 @@ tags:
 - opus
 - performance
 - pricing
+- release
 - sonnet
 date: '2026-05-02'
-updated: '2026-09-07'
+updated: '2026-10-01'
 sources:
 - url: https://the-decoder.com/xai-drops-grok-4-3-with-steep-price-cuts-and-an-imagine-agent-mode-for-creative-projects
   title: xAI drops Grok 4.3 with steep price cuts and an Imagine agent mode for creative
@@ -28,13 +29,43 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1w9xeyl/tried_gpt_astra_today
   title: Tried GPT Astra today
   date: '2026-09-07'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wu7ujz/sonnet_55_30x_more_expensive_than_gpt_61_sol_on
+  title: Sonnet 5.5 30x more expensive than GPT 6.1 Sol on 3D tasks
+  date: '2026-10-01'
+- url: https://the-decoder.com/google-gemini-4-argon-closes-the-gap-with-openai-and-anthropic-but-doesnt-take-a-clear-lead
+  title: Google Gemini 4 Argon closes the gap with OpenAI and Anthropic but doesn't
+    take a clear lead
+  date: '2026-10-01'
 ---
 
 
 
 
 
+
 # Competitor Comparison
+
+---
+
+## 2026-10-01
+
+### Sonnet 5.5 30x more expensive than GPT 6.1 Sol on 3D tasks
+
+Sonnet 5.5とGPT 6.1 Solで3Dタスクのコストとパフォーマンスを比較したコミュニティ投稿。同じThree.jsのキーボード生成タスクで、SonnetはSolより30倍高コスト（$57.34 vs $1.78）、19エージェント・78分かかった一方、Solは4エージェント・11分で完了。品質は同等レベルだが、価格差からSolの方が実用的との結論。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wu7ujz/sonnet_55_30x_more_expensive_than_gpt_61_sol_on)
+- **重要度**: 6/10
+- **タグ**: performance, pricing, cowork
+
+---
+
+### Google Gemini 4 Argon closes the gap with OpenAI and Anthropic but doesn't take a clear lead
+
+Google が新しいフロンティアモデル Gemini 4 Argon を発表。OpenAI や Anthropic との性能差を縮め、一部ベンチマークでは上回る結果を示した。最大100万出力トークンに対応し、導入価格は入力$2/100万トークン、出力$10/100万トークン。段階的ロールアウトを予定しており、まずは信頼できるサイバー防衛者向けに提供される。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/google-gemini-4-argon-closes-the-gap-with-openai-and-anthropic-but-doesnt-take-a-clear-lead)
+- **重要度**: 6/10
+- **タグ**: release, performance, pricing
 
 ---
 

@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-09-28'
+updated: '2026-10-01'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -82,6 +82,12 @@ sources:
 - url: https://qiita.com/daisuke_dadixi/items/bdd2c50035bd57002069
   title: Claude Codeが参画先で配布されたので、改めてスキルについて調べてみた
   date: '2026-09-28'
+- url: https://qiita.com/suwa_nobu/items/cc0fb4a9e10100991bba
+  title: スキルの名前を verify にするだけで、Claude Code はコミット前にそれを実行する
+  date: '2026-10-01'
+- url: https://zenn.dev/aishigoto/articles/claude-code-skills-japanese-business
+  title: Claude Code の Skills で日本の定型業務を任せる：SKILL.md の書き方と議事録スキル全文
+  date: '2026-10-01'
 ---
 
 
@@ -105,7 +111,40 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-10-01
+
+### スキルの名前を verify にするだけで、Claude Code はコミット前にそれを実行する
+
+Claude Code 2.1.286から、プロジェクト内に「verify」という名前のスキルがあると、コミット直前に自動実行される新機能が追加された。30回の検証により、名前を「verify2」に変更すると実行されず、ドキュメントのみ・テストのみの変更では除外されることが確認された。この挙動は名前による規約であり、スキルの内容や説明文には依存しない。
+
+- **ソース**: [Qiita claude](https://qiita.com/suwa_nobu/items/cc0fb4a9e10100991bba)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能
+
+---
+
+### Claude Code の Skills で日本の定型業務を任せる：SKILL.md の書き方と議事録スキル全文
+
+Claude Code の Skills 機能（SKILL.md）を使って、日本の定型業務（議事録・日報・請求書など）を自動化する方法を解説。description に日本語の依頼フレーズを含めること、出力テンプレートを明示すること、計算処理は Python スクリプトに任せることなど、12本のスキル作成で得られた実践的なノウハウと、実際に使える議事録スキルの全文を紹介。
+
+- **ソース**: [Zenn claude](https://zenn.dev/aishigoto/articles/claude-code-skills-japanese-business)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, 新機能
+
+---
+
+### スキルの名前を verify にするだけで、Claude Code はコミット前にそれを実行する
+
+Claude Code 2.1.286から、プロジェクトまたはユーザースキルに「verify」という名前をつけるだけで、コミット直前に自動実行される仕様が追加された。ドキュメントのみ・テストのみの変更では実行されない。30回の検証により、名前を「verify2」に変更すると実行されず、スキルの内容や説明文ではなく名前が引き金となることが確認された。この機能はchangelogに記載されているが、公式スキル解説には未掲載。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/suwa_nobu/items/cc0fb4a9e10100991bba)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

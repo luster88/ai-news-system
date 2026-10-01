@@ -6,9 +6,10 @@ tags:
 - cowork
 - performance
 - pricing
+- prompt
 - 新機能
 date: '2026-05-12'
-updated: '2026-09-25'
+updated: '2026-10-01'
 sources:
 - url: https://the-decoder.com/tokenmaxxing-spreads-at-amazon-as-employees-game-internal-ai-leaderboards
   title: '"Tokenmaxxing" spreads at Amazon as employees game internal AI leaderboards'
@@ -20,11 +21,28 @@ sources:
 - url: https://the-decoder.com/top-ai-experts-badly-underestimated-how-fast-the-field-is-moving-study-finds
   title: Top AI experts badly underestimated how fast the field is moving, study finds
   date: '2026-09-25'
+- url: https://the-decoder.com/google-drops-gems-for-skills-joining-openai-and-anthropic-in-the-shift-to-agent-ready-prompt-formats
+  title: Google drops Gems for Skills, joining OpenAI and Anthropic in the shift to
+    agent-ready prompt formats
+  date: '2026-10-01'
 ---
 
 
 
+
 # Industry Trends
+
+---
+
+## 2026-10-01
+
+### Google drops Gems for Skills, joining OpenAI and Anthropic in the shift to agent-ready prompt formats
+
+GoogleがGeminiチャットで「Skills」を全世界展開。これはOpenAIやAnthropicに続く、エージェント対応プロンプト形式への移行を示す。SkillsはGems（Custom GPTsに相当）を置き換え、Anthropic発の標準形式を採用。ユーザーは「/」でSkillを呼び出し、複数のSkillを連鎖可能。Gemsは2027年までに段階的に終了し、自動的にSkillsへ変換される。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/google-drops-gems-for-skills-joining-openai-and-anthropic-in-the-shift-to-agent-ready-prompt-formats)
+- **重要度**: 7/10
+- **タグ**: prompt, 新機能, cowork
 
 ---
 

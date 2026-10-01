@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-12'
-updated: '2026-09-28'
+updated: '2026-10-01'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -75,6 +75,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/ee0dd34b9d12f0ab02a7
   title: Claude Code v2.1.283｜deniedModels で特定モデルを締め出せる｜週刊Changelog解説
   date: '2026-09-28'
+- url: https://qiita.com/sakutto-panda/items/45635af18926e60ab97b
+  title: Claude Code 2026年9月アップデートまとめ — /diff・/skill-doctor・無人運用の強化が地味に効く
+  date: '2026-10-01'
 ---
 
 
@@ -93,7 +96,30 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-10-01
+
+### Claude Code 2026年9月アップデートまとめ — /diff・/skill-doctor・無人運用の強化が地味に効く
+
+2026年9月のClaude Codeアップデート（v2.1.257〜v2.1.263）では、フルスクリーン/diffパネル、未使用Skillを検出する/skill-doctor、128K文字までのインライン出力設定など、日常運用を改善する機能が追加された。無人運用向けに--permission-prompts noneが実装され、承認待ちによる処理停止を回避できるようになった。Claude Fable 5.1がデフォルトモデルに設定され、キャッシュミス原因の可視化やGitLab MR対応も強化された。
+
+- **ソース**: [Qiita claude](https://qiita.com/sakutto-panda/items/45635af18926e60ab97b)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+### Claude Code 2026年9月アップデートまとめ — /diff・/skill-doctor・無人運用の強化が地味に効く
+
+2026年9月のClaude Code（v2.1.257〜v2.1.263）では、地味ながら実務に効く改善が多数追加された。フルスクリーン /diff パネルでコード差分を会話と並べて確認可能に、/skill-doctor で未使用Skillの棚卸しができるようになった。無人運用向けには --permission-prompts none が追加され、プロンプトが出る操作を自動拒否してcronなどの自動化パイプラインが止まらないようになった。Claude Fable 5.1がデフォルトモデルに設定され、キャッシュミス原因の可視化やマネージドMCPサーバー設定も追加されている。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/sakutto-panda/items/45635af18926e60ab97b)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, release
 
 ---
 

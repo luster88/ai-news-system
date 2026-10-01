@@ -4,17 +4,34 @@ category: tools
 subcategory: ai-agent-memory
 tags:
 - claude-api
+- claude-code
 - cowork
 - mcp
 date: '2026-06-18'
-updated: '2026-06-18'
+updated: '2026-10-01'
 sources:
 - url: https://ai-heartland.com/tool/memory-os-guide
   title: memory-os解説｜AIエージェントの記憶をローカル完結でOS的に階層管理する7層メモリ基盤OSS
   date: '2026-06-18'
+- url: https://ai-heartland.com/agent/deja-vu
+  title: deja-vuとは｜記憶を書かず既存の履歴を読むエージェント記憶を実測で確かめた
+  date: '2026-10-01'
 ---
 
+
 # Ai Agent Memory
+
+---
+
+## 2026-10-01
+
+### deja-vuとは｜記憶を書かず既存の履歴を読むエージェント記憶を実測で確かめた
+
+deja-vuは、Claude CodeやCursor等のエージェントが残したセッション記録を索引し、LLMを使わずに過去の履歴を検索できるOSSツール。36種類のエージェントに対応し、14.2MiB（Go製バイナリ）で20,000セッションを13.96秒で索引可能。MCPサーバーは443トークンと軽量で、88.1%のhit@1を達成。記憶を新規生成せず既存履歴を読むという逆方向の設計が特徴。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/agent/deja-vu)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, cowork
 
 ---
 

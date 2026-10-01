@@ -3,19 +3,38 @@ title: Regulatory Compliance
 category: ecosystem
 subcategory: regulatory-compliance
 tags:
+- claude-api
+- cowork
 - pricing
 - release
 - 新機能
 date: '2026-06-18'
-updated: '2026-06-18'
+updated: '2026-10-01'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1u9fd4z/update_anthropic_floats_proposal_to_lift_us
   title: 'Update: Anthropic floats proposal to lift US restrictions on Mythos and
     Fable AI models'
   date: '2026-06-18'
+- url: https://the-decoder.com/ftc-launches-sweeping-probe-into-openai-anthropic-and-other-ai-labs-over-consumer-protection-concerns
+  title: FTC launches sweeping probe into OpenAI, Anthropic, and other AI labs over
+    consumer protection concerns
+  date: '2026-10-01'
 ---
 
+
 # Regulatory Compliance
+
+---
+
+## 2026-10-01
+
+### FTC launches sweeping probe into OpenAI, Anthropic, and other AI labs over consumer protection concerns
+
+米連邦取引委員会（FTC）がOpenAI、Anthropic等の主要AI企業に対し、消費者保護法違反の疑いで大規模調査を開始。数週間以内に文書提出と経営陣への質問を法的拘束力のある命令で実施予定。Hugging Face へのOpenAIエージェント攻撃事件も調査対象。調査公表の前日には、各社CEOがホワイトハウスで外部監査の自主的誓約に署名していた。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/ftc-launches-sweeping-probe-into-openai-anthropic-and-other-ai-labs-over-consumer-protection-concerns)
+- **重要度**: 9/10
+- **タグ**: claude-api, cowork, pricing
 
 ---
 

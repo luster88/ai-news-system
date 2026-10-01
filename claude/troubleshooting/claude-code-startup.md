@@ -7,7 +7,7 @@ tags:
 - claude-code
 - setup
 date: '2026-06-16'
-updated: '2026-09-27'
+updated: '2026-10-01'
 sources:
 - url: https://qiita.com/yurukusa/items/3205bde64f3a691a6599
   title: Claude Codeが突然起動しなくなった——設定ファイルが原因の「締め出し」を切り分けて復旧する
@@ -18,11 +18,37 @@ sources:
 - url: https://qiita.com/homhom44/items/df28cc82f3ecb64ee947
   title: 起動直後に資格情報の取得に失敗する原因と対処まとめ！Claude Code でつまずいたときの切り分けメモ（2026-09-27）
   date: '2026-09-27'
+- url: https://qiita.com/homhom44/items/51b918442674e9302720
+  title: 起動できない時の原因究明：ワークツリー準備エラーを解決！Claude Code でつまずいたときの切り分けメモ（2026-10-01）
+  date: '2026-10-01'
 ---
 
 
 
+
 # Claude Code Startup
+
+---
+
+## 2026-10-01
+
+### 起動できない時の原因究明：ワークツリー準備エラーを解決！Claude Code でつまずいたときの切り分けメモ（2026-10-01）
+
+Claude Code 起動時のワークツリー準備エラーと VirtualMessageList の不整合エラーに関するトラブルシューティングメモ。GitHub Issues の実例をもとに、実際のコマンド実行結果を含めた切り分け手順と確認ポイントを整理。worktree セッション開始時の失敗ケースとメッセージ一覧の件数ずれによるエラーの2つの問題を取り上げている。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/51b918442674e9302720)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
+
+---
+
+### 起動できない時の原因究明：ワークツリー準備エラーを解決！Claude Code でつまずいたときの切り分けメモ（2026-10-01）
+
+Claude Code の起動時に発生する「ワークツリー準備エラー」と「VirtualMessageList の不整合エラー」について、GitHub Issues の報告と実際の検証を基に切り分け方法と確認ポイントを整理したトラブルシューティングガイド。worktree のセッション開始失敗やメッセージ一覧の件数ずれといった具体的なエラーパターンに対する調査手順を提供。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/homhom44/items/51b918442674e9302720)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 
