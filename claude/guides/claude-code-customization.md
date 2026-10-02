@@ -10,7 +10,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-29'
-updated: '2026-09-26'
+updated: '2026-10-02'
 sources:
 - url: https://zenn.dev/noprogllama/articles/d6a34cce09b66d
   title: AIに人格と記憶を与えたら、常につながる手段が欲しくなって自前のWeb UIを作ることになった
@@ -46,6 +46,9 @@ sources:
   title: Claude Code のステータスライン(statusLine)を自作してコンテキスト使用率とセッションコストを常時表示する実装手順 — used_percentage
     が null・tput cols が効かない・git status で重くなる、3つのハマりどころ【2026】
   date: '2026-09-26'
+- url: https://zenn.dev/nogu66/articles/claude-mods-complete-guide
+  title: 完全版 Claude Mods 入門 | Claude Codeを自由にカスタマイズする
+  date: '2026-10-02'
 ---
 
 
@@ -58,7 +61,20 @@ sources:
 
 
 
+
 # Claude Code Customization
+
+---
+
+## 2026-10-02
+
+### 完全版 Claude Mods 入門 | Claude Codeを自由にカスタマイズする
+
+Claude Codeの公式拡張機能「Claude Mods」の完全ガイド。TypeScript関数でClaude Codeの機能や見た目を自由にカスタマイズでき、従来のHooksと異なりエンジンプロセスに直接組み込まれる。公式の/diffコマンドやAGENTS.mdもMod実装されており、標準機能自体を拡張可能。2.1.287以降で利用可能で、--plugin-dirで試用できる。
+
+- **ソース**: [Zenn claude](https://zenn.dev/nogu66/articles/claude-mods-complete-guide)
+- **重要度**: 8/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

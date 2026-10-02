@@ -11,7 +11,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-05-29'
-updated: '2026-08-24'
+updated: '2026-10-02'
 sources:
 - url: https://qiita.com/hiro_qiita_/items/152cc2ef68d5fb17b790
   title: Kiro のだいぼうけん！開発記 〜ファミコンの制約を守りながらKiroとClaudeにシューティングゲームを作らせる〜
@@ -35,6 +35,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vxdnw6/week_4_of_making_my_fishing_game_entirely_with_ai
   title: Week 4 of making my fishing game entirely with AI
   date: '2026-08-24'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wv2r73/made_a_destroy_any_website_stickman_game
+  title: Made a "Destroy Any Website" stickman game
+  date: '2026-10-02'
 ---
 
 
@@ -43,7 +46,20 @@ sources:
 
 
 
+
 # Game Development
+
+---
+
+## 2026-10-02
+
+### Made a "Destroy Any Website" stickman game
+
+開発者が Claude Opus 3.5 を活用して「Destroy Any Website」という stickman ゲームを週末で開発。任意の Web サイトの URL を入力してレベル化し、武器で破壊するサンドボックスゲーム。TypeScript、Canvas 2D、Cloudflare Workers でマルチプレイヤー対応。Claude はアーキテクチャの検討、実装の一貫性維持、エフェクトの調整に使用された。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wv2r73/made_a_destroy_any_website_stickman_game)
+- **重要度**: 5/10
+- **タグ**: opus, cowork, vscode
 
 ---
 

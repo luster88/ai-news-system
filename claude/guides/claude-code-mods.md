@@ -8,7 +8,7 @@ tags:
 - setup
 - 新機能
 date: '2026-09-19'
-updated: '2026-09-20'
+updated: '2026-10-02'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-mods
   title: Claude Code modsとは｜AGENTS.md対応のagents-md modをソースで読み、4つのモードを実測
@@ -16,10 +16,26 @@ sources:
 - url: https://zenn.dev/oishiigohan/books/claude-code-mods-jissen
   title: Claude Code Mods 実践ガイド ― 関数フックで本体を改造する、動く Mod 7本
   date: '2026-09-20'
+- url: https://qiita.com/suwa_nobu/items/981419874758372f65eb
+  title: Claude Code の mod を1本書いて測った。公式が言う対応版は、実際には1つ前から動く
+  date: '2026-10-02'
 ---
 
 
+
 # Claude Code Mods
+
+---
+
+## 2026-10-02
+
+### Claude Code の mod を1本書いて測った。公式が言う対応版は、実際には1つ前から動く
+
+Claude Code 2.1.287で正式リリースされたmod機能について、実際には2.1.286から動作していたことを実証。modはプラグイン内で動くJavaScript関数で、ツール呼び出しやプロンプト送信に割り込める強力な機能だが、サンドボックス化されず自分の権限で動作するため、他人のmodを入れる際は注意が必要。--safe-modeで無効化可能。
+
+- **ソース**: [Qiita claude](https://qiita.com/suwa_nobu/items/981419874758372f65eb)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

@@ -5,16 +5,35 @@ subcategory: multi-agent-patterns
 tags:
 - claude-code
 - cowork
+- haiku
+- prompt
+- sonnet
 - 新機能
 date: '2026-07-18'
-updated: '2026-07-18'
+updated: '2026-10-02'
 sources:
 - url: https://qiita.com/Koukyosyumei/items/d496148c5a68ae486de1
   title: '実装して理解するマルチエージェントのデザインパターン - ①: AgentCoder - コード実装とテスト設計の分離'
   date: '2026-07-18'
+- url: https://zenn.dev/mskbhd/articles/lab-045-claude
+  title: ClaudeにClaudeをレビューさせる連鎖は単発に勝つのか計測した
+  date: '2026-10-02'
 ---
 
+
 # Multi Agent Patterns
+
+---
+
+## 2026-10-02
+
+### ClaudeにClaudeをレビューさせる連鎖は単発に勝つのか計測した
+
+Claude Code開発者の「Claudeに別のClaudeをレビューさせる」手法を検証した実験記事。LeetCode hard級の5関数実装タスクで、単一プロンプトと3段階連鎖(coder→reviewer→fixer)を比較した結果、精度は同等だがコストは3.5倍に。同一モデルの自己批評は盲点を共有するため効果が薄く、「弱いモデル×連鎖」より「強いモデル×単発」が全軸で勝利した。
+
+- **ソース**: [Zenn claude](https://zenn.dev/mskbhd/articles/lab-045-claude)
+- **重要度**: 7/10
+- **タグ**: sonnet, haiku, prompt
 
 ---
 
