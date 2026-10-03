@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-10-01'
+updated: '2026-10-03'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -88,6 +88,12 @@ sources:
 - url: https://zenn.dev/aishigoto/articles/claude-code-skills-japanese-business
   title: Claude Code の Skills で日本の定型業務を任せる：SKILL.md の書き方と議事録スキル全文
   date: '2026-10-01'
+- url: https://qiita.com/syun136_616/items/49f538e4e31cb1fb5689
+  title: Claudeの日本語推敲スキルyomiyasuを含む3種の選び方
+  date: '2026-10-03'
+- url: https://qiita.com/tasklog/items/af688051f24d5e5db21b
+  title: Claude Code Skills 39選【2026年版】── 公式19個＋世界で人気のスキルを日本語で全部まとめた
+  date: '2026-10-03'
 ---
 
 
@@ -112,7 +118,30 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-10-03
+
+### Claudeの日本語推敲スキルyomiyasuを含む3種の選び方
+
+Claudeの日本語推敲スキルyomiyasuについて、「ルール列挙型」「校正ツール連携型」「人格・文体指定型」の3つの型に分類して解説。スキル選択時は評判ではなく、同じ条件で原稿を通して差分を確認する手順を推奨。LLMによる意味の改変リスクや文体の均一化、コード混在時の注意点など、運用上の注意事項も整理している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/syun136_616/items/49f538e4e31cb1fb5689)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
+
+---
+
+### Claude Code Skills 39選【2026年版】── 公式19個＋世界で人気のスキルを日本語で全部まとめた
+
+Claude Codeの「Agent Skills」を全39個まとめた記事。公式19個（Excel・PowerPoint操作、フロントエンド実装、MCP構築支援など）と、コミュニティ製で世界的に人気の20個（find-skills、grill-me、TDDなど）を日本語で解説。Skillはプロジェクトごとに特定の作業手順を教える仕組みで、CLAUDE.mdと組み合わせて使う。迷ったら自分の普段の作業に直結するものから導入するのが推奨される。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/tasklog/items/af688051f24d5e5db21b)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, setup
 
 ---
 

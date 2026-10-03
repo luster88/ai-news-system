@@ -9,7 +9,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-04-17'
-updated: '2026-09-17'
+updated: '2026-10-03'
 sources:
 - url: https://qiita.com/saitoko/items/5ed95189edab910124ff
   title: AIスタッフ8人を雇って個人の知的生産を完全自動化するまで — Claude Codeマルチエージェント組織の全体設計
@@ -17,10 +17,26 @@ sources:
 - url: https://qiita.com/sescore/items/85da19e77bdad85bbdc4
   title: OpenClawで9体のAIエージェント経営OSを作った話｜Claude Code実践ログ
   date: '2026-09-17'
+- url: https://qiita.com/sescore/items/b21bc67c1c26ecd92167
+  title: OpenClawで9体のAIエージェント経営OSを構築した実践記録【2026年10月】
+  date: '2026-10-03'
 ---
 
 
+
 # Claude Code Multi Agent
+
+---
+
+## 2026-10-03
+
+### OpenClawで9体のAIエージェント経営OSを構築した実践記録【2026年10月】
+
+Claude Code（OpenClaw）のSkillとAgentサブエージェント機能を用いて、CEO・CFO・CTO・COO・CMOなど9体のAIエージェントが分業する経営OS構築の実践記録。役割分担とデータアクセス権限を最小化する設計思想、SKILL.mdによる呼び出し、権限スコープ分離によるセキュリティ対策、運用ルールの重要性を詳細に解説。技術者視点で再現可能な設計と実装のノウハウを共有している。
+
+- **ソース**: [Qiita claude](https://qiita.com/sescore/items/b21bc67c1c26ecd92167)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

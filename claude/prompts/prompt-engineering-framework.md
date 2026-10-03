@@ -5,13 +5,14 @@ subcategory: prompt-engineering-framework
 tags:
 - claude-api
 - claude-code
+- cowork
 - haiku
 - opus
 - performance
 - prompt
 - 新機能
 date: '2026-03-30'
-updated: '2026-09-29'
+updated: '2026-10-03'
 sources:
 - url: https://zenn.dev/analysis/articles/prompt-master-thought-analyzer
   title: 「プロンプトを最適化する」とは何か──prompt-masterを3層フレームワークで解剖する
@@ -31,6 +32,9 @@ sources:
 - url: https://qiita.com/menmen_ailab/items/6b42edc3540c351ee248
   title: Opus 5.5に計画の見直しを頼んで「それっぽい答え」が返ってきたときに使った3つの問い
   date: '2026-09-29'
+- url: https://qiita.com/colinnxt/items/3489a234f7b074b4fb5e
+  title: ClaudeとChatGPTに同じ依頼文で設計させたら割れた ― 原因は「将来の用途」と「シンプルに」の2行
+  date: '2026-10-03'
 ---
 
 
@@ -38,7 +42,20 @@ sources:
 
 
 
+
 # Prompt Engineering Framework
+
+---
+
+## 2026-10-03
+
+### ClaudeとChatGPTに同じ依頼文で設計させたら割れた ― 原因は「将来の用途」と「シンプルに」の2行
+
+ClaudeとChatGPTに同じ依頼文でPython関数を設計させた検証実験。「将来の用途」と「シンプルに」という2行の指示が原因で、ChatGPTは最小限の実装、Claudeは拡張性重視の設計を選択し、結果が大きく異なった。AI同士のレビューでは設計判断は収束せず、人間が事前に優先順位を明示する必要があることが判明。
+
+- **ソース**: [Qiita claude](https://qiita.com/colinnxt/items/3489a234f7b074b4fb5e)
+- **重要度**: 7/10
+- **タグ**: prompt, claude-api, cowork
 
 ---
 

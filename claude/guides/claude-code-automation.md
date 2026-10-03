@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-09-27'
+updated: '2026-10-03'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -117,6 +117,9 @@ sources:
 - url: https://qiita.com/joinclass/items/aa721fa92d729f756f61
   title: セッションID変数をフックで使う — Claude Code 実行ごとのログ分離
   date: '2026-09-27'
+- url: https://qiita.com/kai_kou/items/bc8831dccdc374956de3
+  title: '無人ブログの現在地を 3 か所から数える: 台帳・公開ログ・エンゲージメント実績'
+  date: '2026-10-03'
 ---
 
 
@@ -148,7 +151,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-10-03
+
+### 無人ブログの現在地を 3 か所から数える: 台帳・公開ログ・エンゲージメント実績
+
+Claude Code による技術ブログ無人運用システムの第3回記事。台帳・公開ログ・エンゲージメント実績の3つの視点から運用状況を定量的に測定し、656本の登録記事（560本公開済み・96本在庫）という実測データを公開。数値の不一致も含めて現在地を正確に把握する手法を解説している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kai_kou/items/bc8831dccdc374956de3)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

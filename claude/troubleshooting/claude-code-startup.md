@@ -5,9 +5,10 @@ subcategory: claude-code-startup
 tags:
 - bugfix
 - claude-code
+- linux
 - setup
 date: '2026-06-16'
-updated: '2026-10-01'
+updated: '2026-10-03'
 sources:
 - url: https://qiita.com/yurukusa/items/3205bde64f3a691a6599
   title: Claude Codeが突然起動しなくなった——設定ファイルが原因の「締め出し」を切り分けて復旧する
@@ -21,12 +22,38 @@ sources:
 - url: https://qiita.com/homhom44/items/51b918442674e9302720
   title: 起動できない時の原因究明：ワークツリー準備エラーを解決！Claude Code でつまずいたときの切り分けメモ（2026-10-01）
   date: '2026-10-01'
+- url: https://qiita.com/homhom44/items/5ccbc90e7bb15a64aeac
+  title: 起動直後に失敗する原因と切り分けポイントを総まとめ！Claude Code でつまずいたときの切り分けメモ（2026-10-02）
+  date: '2026-10-03'
 ---
 
 
 
 
+
 # Claude Code Startup
+
+---
+
+## 2026-10-03
+
+### 起動直後に失敗する原因と切り分けポイントを総まとめ！Claude Code でつまずいたときの切り分けメモ（2026-10-02）
+
+Claude Code の起動失敗やメッセージ件数ずれなど、実際に報告されている複数の症状について、GitHub Issues の事例と手元での検証結果をもとに切り分け手順を整理したトラブルシューティングガイド。Linux 環境の起動問題とデータ状態の確認ポイントを中心にまとめている。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/5ccbc90e7bb15a64aeac)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, linux
+
+---
+
+### 起動直後に失敗する原因と切り分けポイントを総まとめ！Claude Code でつまずいたときの切り分けメモ（2026-10-02）
+
+Claude Code の起動失敗やメッセージ一覧の件数ずれなど、実際に報告されている問題の切り分け手順を整理した記事。GitHub Issues の報告と実際の検証結果に基づき、Linux 環境の起動問題やデータ状態の確認ポイントをまとめている。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/homhom44/items/5ccbc90e7bb15a64aeac)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, linux
 
 ---
 

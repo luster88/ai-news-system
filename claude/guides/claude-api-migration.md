@@ -5,16 +5,34 @@ subcategory: claude-api-migration
 tags:
 - claude-api
 - claude-code
+- opus
 - prompt
+- sonnet
 date: '2026-09-25'
-updated: '2026-09-25'
+updated: '2026-10-03'
 sources:
 - url: https://qiita.com/sakutto-panda/items/957b92456a7ebce1f394
   title: '`claude -p`からAnthropic APIへ — 個人開発の自動化をClaude Codeサブスクから切り離した話'
   date: '2026-09-25'
+- url: https://zenn.dev/persimmoq/books/claude-5-migration-guide
+  title: Claude 5 世代 移行ガイド ― Opus 5 / Sonnet 5 / Fable 5.1 で変わった API とプロンプト
+  date: '2026-10-03'
 ---
 
+
 # Claude Api Migration
+
+---
+
+## 2026-10-03
+
+### Claude 5 世代 移行ガイド ― Opus 5 / Sonnet 5 / Fable 5.1 で変わった API とプロンプト
+
+Claude 5世代（Opus 5、Sonnet 5、Fable 5.1）への移行ガイド。2026年のAPIとプロンプトの変更点を解説。Sonnet系がOpusのAPI形式に統一され、Fable 5.1では常時思考・拒否機能・preserved thinkingが導入されたことを詳述。実務でのAPI移行とエージェント実装に焦点を当てた実践的な内容。
+
+- **ソース**: [Zenn claude](https://zenn.dev/persimmoq/books/claude-5-migration-guide)
+- **重要度**: 8/10
+- **タグ**: claude-api, opus, sonnet
 
 ---
 

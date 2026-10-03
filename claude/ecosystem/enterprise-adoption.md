@@ -10,7 +10,7 @@ tags:
 - pricing
 - 新機能
 date: '2026-07-20'
-updated: '2026-08-04'
+updated: '2026-10-03'
 sources:
 - url: https://www.anthropic.com/news/ust-claude
   title: Jul 9, 2026 Case Study UST is bringing Claude to physical AI
@@ -18,10 +18,27 @@ sources:
 - url: https://qiita.com/TheGateBreaker/items/e4091a0e9f30e548de90
   title: Anthropicは「安全性」を、企業導入の差別化に変えられたのか
   date: '2026-08-04'
+- url: https://www.anthropic.com/news/barclays-scales-claude
+  title: Oct 1, 2026 Announcements Barclays scales Claude to upgrade operations and
+    improve client experience
+  date: '2026-10-03'
 ---
 
 
+
 # Enterprise Adoption
+
+---
+
+## 2026-10-03
+
+### Oct 1, 2026 Announcements Barclays scales Claude to upgrade operations and improve client experience
+
+英国の大手銀行バークレイズが、Anthropic との戦略的提携を拡大し、Claude を全社的に展開すると発表。ソフトウェア開発の加速、レガシーシステムの近代化、業務効率化を目的とし、2026年末までに開発者の50%が Claude Code を採用、2027年には過半数のエンジニアが利用する見込み。高度に規制された金融機関における責任あるAI導入の事例として、顧客サービスの向上と業務プロセスの変革を目指す。
+
+- **ソース**: [Anthropic News](https://www.anthropic.com/news/barclays-scales-claude)
+- **重要度**: 8/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 
