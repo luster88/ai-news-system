@@ -5,12 +5,13 @@ subcategory: claude-code-customization
 tags:
 - claude-code
 - mac
+- mcp
 - prompt
 - setup
 - vscode
 - 新機能
 date: '2026-03-29'
-updated: '2026-10-02'
+updated: '2026-10-04'
 sources:
 - url: https://zenn.dev/noprogllama/articles/d6a34cce09b66d
   title: AIに人格と記憶を与えたら、常につながる手段が欲しくなって自前のWeb UIを作ることになった
@@ -49,6 +50,9 @@ sources:
 - url: https://zenn.dev/nogu66/articles/claude-mods-complete-guide
   title: 完全版 Claude Mods 入門 | Claude Codeを自由にカスタマイズする
   date: '2026-10-02'
+- url: https://zenn.dev/shimo4228/articles/harness-scope-writing-harness
+  title: Claude ModsとOutput Styleで、Claude Codeを執筆用のハーネスにする
+  date: '2026-10-04'
 ---
 
 
@@ -62,7 +66,20 @@ sources:
 
 
 
+
 # Claude Code Customization
+
+---
+
+## 2026-10-04
+
+### Claude ModsとOutput Styleで、Claude Codeを執筆用のハーネスにする
+
+Claude Codeで執筆作業を行う際、コード用のハーネスと執筆規約が衝突する問題に対し、Claude ModsとOutput Styleを組み合わせた解決策を紹介。harness-scopeというModを作成し、リポジトリごとにClaudeに見せるスキルやエージェントを柔軟に選択できるようにした。これにより98件26,252字あったスキル一覧を49件まで削減し、タスクに特化したハーネスを構築可能になった。
+
+- **ソース**: [Zenn claude](https://zenn.dev/shimo4228/articles/harness-scope-writing-harness)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, prompt
 
 ---
 

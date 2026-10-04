@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-06-03'
-updated: '2026-09-29'
+updated: '2026-10-04'
 sources:
 - url: https://zenn.dev/iwakicyan/articles/387bb06ee54372
   title: Claudeでドット絵描ける？：AIと世界の遊び方 第10回
@@ -27,13 +27,31 @@ sources:
 - url: https://zenn.dev/acntechjp/articles/4a65b4d4a77370
   title: Opus 5.5×コード描画だけで、SunoのPVを作ってみた
   date: '2026-09-29'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wwxsle/i_used_claude_to_make_106_almost_all_black_oled
+  title: I used Claude to make 106 almost all black OLED wallpapers, plotting the
+    graphics from real scientific data and code. No image generation. Hope you like
+    them!
+  date: '2026-10-04'
 ---
 
 
 
 
 
+
 # Creative Coding
+
+---
+
+## 2026-10-04
+
+### I used Claude to make 106 almost all black OLED wallpapers, plotting the graphics from real scientific data and code. No image generation. Hope you like them!
+
+ユーザーがClaudeを使用して、実際の科学データとコードから106枚のOLED向け黒背景壁紙を作成。画像生成機能ではなく、データプロットによるグラフィックス生成を行った創作事例。Claudeのコード生成能力を活用したクリエイティブな応用例として、コミュニティで共有されている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wwxsle/i_used_claude_to_make_106_almost_all_black_oled)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

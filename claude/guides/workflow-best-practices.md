@@ -10,7 +10,7 @@ tags:
 - setup
 - sonnet
 date: '2026-05-24'
-updated: '2026-09-09'
+updated: '2026-10-04'
 sources:
 - url: https://qiita.com/y_tsubasa/items/a0213eaad3402d00ed0a
   title: AI と毎日開発していて定着した、地味だけど効く工夫の棚卸し
@@ -30,6 +30,9 @@ sources:
 - url: https://zenn.dev/peyangu485/articles/jibun-os-playbook
   title: 外部調査を、あとから答え合わせに使う——game-dev-playbookの運用実例
   date: '2026-09-09'
+- url: https://zenn.dev/joo_hashi/articles/f71c83f7530d70
+  title: Claude Code の worktree は、PR の前に main へ rebase する
+  date: '2026-10-04'
 ---
 
 
@@ -37,7 +40,20 @@ sources:
 
 
 
+
 # Workflow Best Practices
+
+---
+
+## 2026-10-04
+
+### Claude Code の worktree は、PR の前に main へ rebase する
+
+Claude Code の worktree を使ったチーム開発運用について解説。worktree は同じリポジトリを別ディレクトリで開く仕組みで、並行作業を可能にするが、PR 前に必ず main への rebase が必要。特にマイグレーションファイルなど番号が重複する場合は、Git は通っても CI が落ちるため、skill に手順を明記して運用ルールを守ることが重要。
+
+- **ソース**: [Zenn claude](https://zenn.dev/joo_hashi/articles/f71c83f7530d70)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, cowork
 
 ---
 

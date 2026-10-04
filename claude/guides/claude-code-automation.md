@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-10-03'
+updated: '2026-10-04'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -120,6 +120,9 @@ sources:
 - url: https://qiita.com/kai_kou/items/bc8831dccdc374956de3
   title: '無人ブログの現在地を 3 か所から数える: 台帳・公開ログ・エンゲージメント実績'
   date: '2026-10-03'
+- url: https://qiita.com/Sidejob/items/8de261cfefa5a9f9ca09
+  title: Claude Codeに自動化スクリプトを任せる時の向き不向き【判断基準3選】
+  date: '2026-10-04'
 ---
 
 
@@ -152,7 +155,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-10-04
+
+### Claude Codeに自動化スクリプトを任せる時の向き不向き【判断基準3選】
+
+Claude Codeで自動化スクリプトを作成する際の向き不向きを実運用経験から整理。入出力が明確なCSV/JSON変換やcron監視スクリプトは得意だが、ログイン処理・CAPTCHA・外部API依存の処理は実装後の保守コストが高い。初回実装の効率だけでなく、長期的な安定稼働も設計段階で考慮すべきという結論。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Sidejob/items/8de261cfefa5a9f9ca09)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

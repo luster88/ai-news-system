@@ -4,11 +4,12 @@ category: guides
 subcategory: claude-code-mods
 tags:
 - claude-code
+- mcp
 - prompt
 - setup
 - 新機能
 date: '2026-09-19'
-updated: '2026-10-02'
+updated: '2026-10-04'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-mods
   title: Claude Code modsとは｜AGENTS.md対応のagents-md modをソースで読み、4つのモードを実測
@@ -19,11 +20,27 @@ sources:
 - url: https://qiita.com/suwa_nobu/items/981419874758372f65eb
   title: Claude Code の mod を1本書いて測った。公式が言う対応版は、実際には1つ前から動く
   date: '2026-10-02'
+- url: https://qiita.com/faruryo/items/c075c8c3d664c38f2384
+  title: Claude Code Modsは一番深く拡張できて、一番持ち運べない — 直近のアップデート13個を★で評価（2026/10/3時点）
+  date: '2026-10-04'
 ---
 
 
 
+
 # Claude Code Mods
+
+---
+
+## 2026-10-04
+
+### Claude Code Modsは一番深く拡張できて、一番持ち運べない — 直近のアップデート13個を★で評価（2026/10/3時点）
+
+Claude Code v2.1.283〜2.1.288の13個の変更を実務観点で評価。Claude Modsは最も深い拡張が可能だがClaude Code専用で、Nodeが使えず、hookが10秒を超えると権限判断が素通りになる制約が判明。verifyスキルは検証の結果、実運用では不要と判断。claude --resumeコマンドは端末や権限モードの違いで届かない制約がある。
+
+- **ソース**: [Qiita claude](https://qiita.com/faruryo/items/c075c8c3d664c38f2384)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, setup
 
 ---
 
