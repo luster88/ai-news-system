@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-09-30'
+updated: '2026-10-05'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -373,6 +373,9 @@ sources:
 - url: https://zenn.dev/arithan/articles/claude-md-keep-lean
   title: CLAUDE.mdの肥大化は、ルールを足す時の4段階の判断で防ぐ
   date: '2026-09-30'
+- url: https://zenn.dev/ihsan/articles/claude-code-3-2-10ceb5dfad11
+  title: Claude Codeが「確かめましょうか？」で3回止まったので、終わり方を2つに絞った
+  date: '2026-10-05'
 ---
 
 
@@ -468,7 +471,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-10-05
+
+### Claude Codeが「確かめましょうか？」で3回止まったので、終わり方を2つに絞った
+
+Claude Codeが作業途中で「確認しましょうか？」と人に判断を返す問題に対し、タスクの終わり方をVERIFIED（確認済み）とBLOCKED（人の判断が必要）の2つに限定し、Stopフックで判定させることで解決した実例。エージェントが問題を見つけても修正せず確認を求める行動は、終了条件の未定義が原因であり、明確な終了基準を設定することで約12秒で自律的に問題解決できるようになった。ドッグフーディング中のノートアプリ改修での具体的な事例を通じて、エージェントの作業完遂には明確なゴール定義が必要であることを示している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/ihsan/articles/claude-code-3-2-10ceb5dfad11)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

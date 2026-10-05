@@ -8,7 +8,7 @@ tags:
 - linux
 - setup
 date: '2026-06-16'
-updated: '2026-10-03'
+updated: '2026-10-05'
 sources:
 - url: https://qiita.com/yurukusa/items/3205bde64f3a691a6599
   title: Claude Codeが突然起動しなくなった——設定ファイルが原因の「締め出し」を切り分けて復旧する
@@ -25,13 +25,29 @@ sources:
 - url: https://qiita.com/homhom44/items/5ccbc90e7bb15a64aeac
   title: 起動直後に失敗する原因と切り分けポイントを総まとめ！Claude Code でつまずいたときの切り分けメモ（2026-10-02）
   date: '2026-10-03'
+- url: https://qiita.com/homhom44/items/10f31453447c9d1e4d4c
+  title: 起動直後に落ちるときの調べ方と復旧の最短ルートを解説！Claude Code でつまずいたときの切り分けメモ（2026-10-05）
+  date: '2026-10-05'
 ---
 
 
 
 
 
+
 # Claude Code Startup
+
+---
+
+## 2026-10-05
+
+### 起動直後に落ちるときの調べ方と復旧の最短ルートを解説！Claude Code でつまずいたときの切り分けメモ（2026-10-05）
+
+Claude Code が起動直後にクラッシュする問題や注入処理が失敗する際のトラブルシューティング手順を解説。GitHub Issues の報告事例を元に、実際にコマンドを実行して確認した切り分け方法と復旧手順をまとめたガイド。初動確認から環境要因の特定まで、実践的なデバッグ手順を提供。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/10f31453447c9d1e4d4c)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 

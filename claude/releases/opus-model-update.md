@@ -4,11 +4,13 @@ category: releases
 subcategory: opus-model-update
 tags:
 - opus
+- performance
 - pricing
 - release
+- sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-09-23'
+updated: '2026-10-05'
 sources:
 - url: https://www.anthropic.com/news/claude-opus-4-6
   title: Announcements Feb 5, 2026 Introducing Claude Opus 4.6 We’re upgrading our
@@ -37,6 +39,9 @@ sources:
   title: Claude Opus 5.5 matches Fable 5.1 performance at lower cost and promises
     less "Claudish" writing
   date: '2026-09-23'
+- url: https://qiita.com/sakutto-panda/items/06193ea939863dacbfb2
+  title: 【2026/9/28】Claude Sonnet 5.5リリース——単価据え置きで実コスト3割減、ProプランのデフォルトはOpusに交代
+  date: '2026-10-05'
 ---
 
 
@@ -45,7 +50,20 @@ sources:
 
 
 
+
 # Opus Model Update
+
+---
+
+## 2026-10-05
+
+### 【2026/9/28】Claude Sonnet 5.5リリース——単価据え置きで実コスト3割減、ProプランのデフォルトはOpusに交代
+
+2026年9月28日にClaude Sonnet 5.5がリリース。単価は$2/$10のまま30%以上高速化し、タスクあたり最大30%のコスト減を実現。Terminal-Benchで10.3%→70.6%と大幅スコア向上。Claude Code v2.1.280でPro・Team StandardプランのデフォルトがOpusに変更され、Sonnet 5.5は明示選択時のモデルという位置づけに。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/sakutto-panda/items/06193ea939863dacbfb2)
+- **重要度**: 9/10
+- **タグ**: sonnet, release, performance
 
 ---
 

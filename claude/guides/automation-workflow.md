@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-09-17'
+updated: '2026-10-05'
 sources:
 - url: https://zenn.dev/shelty/articles/20260408-budget-book-asset-management
   title: MoneyForwardの家計簿データで資産予測を自動化してみた＠Claude
@@ -55,6 +55,9 @@ sources:
 - url: https://zenn.dev/assign/articles/7e0d3f65c20da9
   title: 会議の録音から議事録を自動生成する仕組みを作って議事録を書く時間をなくした
   date: '2026-09-17'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wxlm01/ai_is_a_hellofresh_killer_automated_meal_prep_and
+  title: AI is a HelloFresh killer. Automated meal prep and grocery ordering workflow.
+  date: '2026-10-05'
 ---
 
 
@@ -69,7 +72,20 @@ sources:
 
 
 
+
 # Automation Workflow
+
+---
+
+## 2026-10-05
+
+### AI is a HelloFresh killer. Automated meal prep and grocery ordering workflow.
+
+プログラミング未経験のユーザーが、Claude と Muse を組み合わせて食事計画から食材注文までを自動化するワークフローを構築した事例。Claude が2週間分の献立作成と Walmart の買い物リストを生成し、Muse がブラウザ操作で実際の注文を行う。キッチンにタブレットを設置して献立表示するインターフェースも構築している。AI ツールの組み合わせで HelloFresh のようなミールキットサービスを個人で再現できることを示す実用例。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wxlm01/ai_is_a_hellofresh_killer_automated_meal_prep_and)
+- **重要度**: 6/10
+- **タグ**: claude-api, cowork, prompt
 
 ---
 

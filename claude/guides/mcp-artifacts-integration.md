@@ -1,0 +1,43 @@
+---
+title: Mcp Artifacts Integration
+category: guides
+subcategory: mcp-artifacts-integration
+tags:
+- claude-console
+- mcp
+- 新機能
+date: '2026-10-05'
+updated: '2026-10-05'
+sources:
+- url: https://qiita.com/yukegineer/items/5f8357855cbe8b0a2cea
+  title: ClaudeのアーティファクトとGitHub MCPで、GitHubを日本語で操作できる画面を作ってみた
+  date: '2026-10-05'
+---
+
+# Mcp Artifacts Integration
+
+---
+
+## 2026-10-05
+
+### ClaudeのアーティファクトとGitHub MCPで、GitHubを日本語で操作できる画面を作ってみた
+
+Claudeのアーティファクト機能とGitHub MCPを組み合わせて、GitHubを日本語で操作できるWebインターフェースを作成した実践記事。アーティファクトのMCPランタイム機能を使い、リポジトリ選択・ブランチ作成・プルリクエスト作成を日本語UIで実行できる画面を構築。GitHub公式MCPサーバーのリモート版を使用し、Personal Access Tokenで認証する手順も解説している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/yukegineer/items/5f8357855cbe8b0a2cea)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-console, 新機能
+
+---
+
+## 関連リンク
+
+- [Claude Info トップ](../README.md)
+
+---
+
+## 更新履歴
+
+| 日付 | 内容 |
+|------|------|
+| 2026-10-05 | 自動生成 |
