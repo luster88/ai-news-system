@@ -5,11 +5,12 @@ subcategory: claude-code-development
 tags:
 - claude-code
 - cowork
+- opus
 - prompt
 - vscode
 - 新機能
 date: '2026-04-09'
-updated: '2026-07-29'
+updated: '2026-10-06'
 sources:
 - url: https://qiita.com/rrr_rrrr_/items/f026e07fc37e6eb99f13
   title: Claude CodeだけでSNS運用ツール4つ作ってBOOTHで売り始めた話
@@ -23,12 +24,28 @@ sources:
 - url: https://zenn.dev/codebay88/articles/14cb8b71439ce6
   title: Claude Codeで作ったAIエージェント、Claude自身に評価させてみた
   date: '2026-07-29'
+- url: https://zenn.dev/fukorohouse/articles/e2659fcd7c530f
+  title: Claude Code（Opus 5.5）で機能追加したら既存機能は壊れるか。ハーネスと対策プロンプトを比べた
+  date: '2026-10-06'
 ---
 
 
 
 
+
 # Claude Code Development
+
+---
+
+## 2026-10-06
+
+### Claude Code（Opus 5.5）で機能追加したら既存機能は壊れるか。ハーネスと対策プロンプトを比べた
+
+Claude Code（Opus 5.5）で麻雀アプリに新機能追加する際、ハーネス（AI向けルール文書）の有無と設計パターンプロンプトの効果を3条件で比較検証。結果、どの条件でも既存機能は壊れなかったが、設計パターンプロンプトを使った場合はコード量が2.4倍に増加し、既存画面の書き直しが発生した。ハーネスは開発効率とコード品質のバランスが良好だった。
+
+- **ソース**: [Zenn claude](https://zenn.dev/fukorohouse/articles/e2659fcd7c530f)
+- **重要度**: 6/10
+- **タグ**: claude-code, opus, prompt
 
 ---
 

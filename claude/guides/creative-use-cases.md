@@ -5,16 +5,34 @@ subcategory: creative-use-cases
 tags:
 - claude-api
 - cowork
+- opus
+- prompt
 - 新機能
 date: '2026-04-03'
-updated: '2026-04-03'
+updated: '2026-10-06'
 sources:
 - url: https://zenn.dev/hiroakikody/articles/2e133d9fb817d4
   title: ピアノの先生がいない。だからAIに演奏を聴いてもらうことにした。
   date: '2026-04-03'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wyi1l8/i_made_a_large_set_of_futuristic_scifi_uis
+  title: I made a large set of futuristic sci-fi UI's
+  date: '2026-10-06'
 ---
 
+
 # Creative Use Cases
+
+---
+
+## 2026-10-06
+
+### I made a large set of futuristic sci-fi UI's
+
+ユーザーが Claude Opus 5.5 を使用して、未来的な SF 風 UI デザインの大規模なセットを作成したプロジェクトを共有。情報リッチで視覚的に魅力的な UI を目指し、以前の Opus 4.7 と比較して、5.5 はより少ない修正で直感的に動作し、トークン効率と美的センスが向上したと報告。完成した UI は uispace.org で無料公開されている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wyi1l8/i_made_a_large_set_of_futuristic_scifi_uis)
+- **重要度**: 5/10
+- **タグ**: opus, prompt, 新機能
 
 ---
 

@@ -3,18 +3,36 @@ title: Agent Skills Setup
 category: guides
 subcategory: agent-skills-setup
 tags:
+- claude-api
 - claude-code
 - opus
+- prompt
 - 新機能
 date: '2026-04-18'
-updated: '2026-04-18'
+updated: '2026-10-06'
 sources:
 - url: https://qiita.com/TaichiEndoh/items/b6d296857dcd4b1fde7c
   title: 「プロンプトを書く時代」は終わった——Claude Code Skillsで「自分の仕事のやり方」をAIに移植する方法
   date: '2026-04-18'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wyjty8/anthropics_official_agent_skills_guide_6_insights
+  title: Anthropic's official agent skills guide. 6 insights
+  date: '2026-10-06'
 ---
 
+
 # Agent Skills Setup
+
+---
+
+## 2026-10-06
+
+### Anthropic's official agent skills guide. 6 insights
+
+Anthropic が公式にエージェントスキル作成ガイドを更新。スキル名にはgerund（動名詞形）を推奨し、参照ファイルは1階層に留め、長いファイルには目次を追加し、評価駆動開発を重視するなど、Claude エージェントの設計ベストプラクティスが6つの要点にまとめられている。公式ドキュメントの実用的なガイドラインを解説したコミュニティ投稿。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wyjty8/anthropics_official_agent_skills_guide_6_insights)
+- **重要度**: 7/10
+- **タグ**: claude-api, prompt, 新機能
 
 ---
 

@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-23'
-updated: '2026-09-30'
+updated: '2026-10-06'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -86,6 +86,10 @@ sources:
 - url: https://the-decoder.com/chatgpt-now-reaches-1-2-billion-people-every-week-openai-says
   title: ChatGPT now reaches 1.2 billion people every week, OpenAI says
   date: '2026-09-30'
+- url: https://the-decoder.com/meta-and-microsoft-pull-back-from-claude-as-anthropic-transforms-from-partner-into-competitor
+  title: Meta and Microsoft pull back from Claude as Anthropic transforms from partner
+    into competitor
+  date: '2026-10-06'
 ---
 
 
@@ -106,7 +110,20 @@ sources:
 
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-10-06
+
+### Meta and Microsoft pull back from Claude as Anthropic transforms from partner into competitor
+
+MetaとMicrosoftがAnthropicの主要顧客でありながら、Claude利用を大幅削減。Microsoftは年間10億ドル規模の支出を3分の1以上カット、MetaではClaude Codeユーザーが6万人から3万人に減少。コスト削減に加え、Anthropicが競合製品を展開し、Claude CoworkがOffice代替になりつつあることが背景。両社とも自社ツール（GitHub Copilot、Muse Code等）への移行を推進中。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/meta-and-microsoft-pull-back-from-claude-as-anthropic-transforms-from-partner-into-competitor)
+- **重要度**: 8/10
+- **タグ**: claude-code, pricing, cowork
 
 ---
 

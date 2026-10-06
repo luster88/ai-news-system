@@ -5,11 +5,12 @@ subcategory: claude-code-permissions
 tags:
 - bugfix
 - claude-code
+- cowork
 - performance
 - setup
 - windows
 date: '2026-05-09'
-updated: '2026-09-25'
+updated: '2026-10-06'
 sources:
 - url: https://qiita.com/enomoso_pm/items/623bd77ce2bb89569e3d
   title: 「設定したのになぜ？」Claude Codeのパーミッションが効かない理由と、今すぐできる対策
@@ -30,6 +31,9 @@ sources:
   title: Claude Code の permissions を settings.json に書いたのに効かない3つの理由 — deny が allow
     に勝つ・Write() は参照されない・先頭 / はルートではない【2026】
   date: '2026-09-25'
+- url: https://qiita.com/Hideki_Tamae/items/a2058faab47b709c2835
+  title: 0。前回の記事が「試していない」と書いた復旧コマンドを今回実行したら、通った回数だった
+  date: '2026-10-06'
 ---
 
 
@@ -37,7 +41,20 @@ sources:
 
 
 
+
 # Claude Code Permissions
+
+---
+
+## 2026-10-06
+
+### 0。前回の記事が「試していない」と書いた復旧コマンドを今回実行したら、通った回数だった
+
+Claude Codeでdetached HEADからの復旧コマンド `git checkout -B main origin/main` を実行したところ、gitの仕様ではなくClaude Code自身の権限システムが「Irreversible Local Destruction」として操作を拒否した。作業ツリーがクリーンでデータ損失の余地がない状況でも、コマンドの形式だけで誤検知による拒否が発生。最終的には `git push` の直接参照形式を使ってdetached HEADのままpushすることで目的を達成した。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Hideki_Tamae/items/a2058faab47b709c2835)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, cowork
 
 ---
 

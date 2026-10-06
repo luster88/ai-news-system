@@ -6,10 +6,12 @@ tags:
 - claude-api
 - claude-code
 - cowork
+- mcp
 - prompt
+- setup
 - 新機能
 date: '2026-06-15'
-updated: '2026-09-27'
+updated: '2026-10-06'
 sources:
 - url: https://zenn.dev/gto_cto/articles/48fbf279efc43f
   title: Claude CodeとCodexを並列稼働したら競合祭りになったので、AI専用ロックファイルを作った
@@ -26,13 +28,29 @@ sources:
 - url: https://zenn.dev/norishio22/articles/20260731-ai-coding-agent-practice
   title: AIエージェントに作業を任せるときのについて考えてみた
   date: '2026-09-27'
+- url: https://qiita.com/ishizakahiroshi/items/a552bb339bab8b08eb8b
+  title: AIエージェントへの依頼をどう回すか 受け箱とMCPを考えている途中です
+  date: '2026-10-06'
 ---
 
 
 
 
 
+
 # Ai Agent Workflow
+
+---
+
+## 2026-10-06
+
+### AIエージェントへの依頼をどう回すか 受け箱とMCPを考えている途中です
+
+AIエージェント（dots等）への依頼管理システムの設計記録。many-ai-cliで複数AIを並列実行し、Desklyで進捗管理する構想。受け箱とMCPによる連絡経路、GitHub ProjectsとIssueを正本とする6層アーキテクチャを整理中だが、受け箱やMCP受付は未実装。案件番号の統一運用と、5分ごとのポーリングから通知型への移行を検討している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/ishizakahiroshi/items/a552bb339bab8b08eb8b)
+- **重要度**: 5/10
+- **タグ**: mcp, cowork, setup
 
 ---
 

@@ -13,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-04'
-updated: '2026-09-28'
+updated: '2026-10-06'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -84,6 +84,10 @@ sources:
 - url: https://zenn.dev/every_ai_recipe/articles/ai-scheduled-task-3-services-check
   title: ChatGPT・Gemini・Claudeの「定期実行」、無料/有料/非搭載で分かれた
   date: '2026-09-28'
+- url: https://the-decoder.com/openai-will-watermark-chatgpt-text-in-the-eu-but-makes-it-optional-for-api-users-worldwide
+  title: OpenAI will watermark ChatGPT text in the EU but makes it optional for API
+    users worldwide
+  date: '2026-10-06'
 ---
 
 
@@ -103,7 +107,20 @@ sources:
 
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-10-06
+
+### OpenAI will watermark ChatGPT text in the EU but makes it optional for API users worldwide
+
+OpenAIがEU AI法に対応し、ChatGPTテキストに不可視の透かし（textGrain）を導入。EUではChatGPTユーザーに必須だが、API利用者は世界中でオプトイン可能。AnthropicのClaudeが全世界で必須としているのとは対照的。検出率はテキスト長や編集により変動し、400トークンで95%、200トークンで80%程度。単語の10%を類義語に置き換えると検出率が92%から66%に低下する。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/openai-will-watermark-chatgpt-text-in-the-eu-but-makes-it-optional-for-api-users-worldwide)
+- **重要度**: 6/10
+- **タグ**: claude-api, cowork, pricing
 
 ---
 

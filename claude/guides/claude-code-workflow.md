@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-10-05'
+updated: '2026-10-06'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -376,6 +376,9 @@ sources:
 - url: https://zenn.dev/ihsan/articles/claude-code-3-2-10ceb5dfad11
   title: Claude Codeが「確かめましょうか？」で3回止まったので、終わり方を2つに絞った
   date: '2026-10-05'
+- url: https://zenn.dev/earlyware_labs/articles/claude-code-solo-backoffice
+  title: Claude Codeで個人事業主のバックオフィスを作ってみた
+  date: '2026-10-06'
 ---
 
 
@@ -472,7 +475,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-10-06
+
+### Claude Codeで個人事業主のバックオフィスを作ってみた
+
+個人事業主が Claude Code を使い、調査・経理・企画・営業・法務・デザインの6部署を持つサブエージェントシステムを構築。屋号決定、開業手続き、ブランディング、社内規程整備などのバックオフィス業務を自動化。運用中に発生した「レビュー機能」「セキュアな成果物管理」「状態管理の分離」などの課題を段階的に解決した実践事例。
+
+- **ソース**: [Zenn claude](https://zenn.dev/earlyware_labs/articles/claude-code-solo-backoffice)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 
