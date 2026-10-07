@@ -4,10 +4,11 @@ category: troubleshooting
 subcategory: cost-optimization
 tags:
 - claude-code
+- haiku
 - performance
 - pricing
 date: '2026-06-03'
-updated: '2026-09-22'
+updated: '2026-10-07'
 sources:
 - url: https://qiita.com/yurukusa/items/fb434ab7d0cb72bc3af2
   title: Claude Codeのスキルを95個入れていたのに、実際に動いていたのは数個だった——使われないスキルの見つけ方
@@ -15,10 +16,26 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wm8adm/psa_claude_code_turn_off_prompt_suggestions_save
   title: 'PSA - Claude Code: Turn off Prompt Suggestions, save ~10% of your limits/spend'
   date: '2026-09-22'
+- url: https://qiita.com/suwa_nobu/items/be41c19295ef0e58e7f2
+  title: Claude Code の Explore は、いつの間にか Haiku から本体と同じモデルに変わっていた。戻すと費用は21〜35%減
+  date: '2026-10-07'
 ---
 
 
+
 # Cost Optimization
+
+---
+
+## 2026-10-07
+
+### Claude Code の Explore は、いつの間にか Haiku から本体と同じモデルに変わっていた。戻すと費用は21〜35%減
+
+Claude Code の Explore サブエージェントは、リリース当初は Haiku で動作していたが、バージョン 2.1.198 から本体と同じモデル（上限 Opus）を使用するように変更された。Opus で Explore を使うと費用の約45%を占める場合があり、サブエージェント定義で Haiku に戻すことで21〜35%のコスト削減が可能。実験では express プロジェクトを題材に、軽い検索と重い検索（6,656ファイル）で検証し、Haiku 版は念入りに動作するが時間がかかる傾向が確認された。
+
+- **ソース**: [Qiita claude](https://qiita.com/suwa_nobu/items/be41c19295ef0e58e7f2)
+- **重要度**: 7/10
+- **タグ**: claude-code, haiku, pricing
 
 ---
 

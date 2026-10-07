@@ -9,7 +9,7 @@ tags:
 - windows
 - 新機能
 date: '2026-05-11'
-updated: '2026-07-19'
+updated: '2026-10-07'
 sources:
 - url: https://zenn.dev/schhrcat/articles/d2ba511ddf35a1
   title: ClaudeCodeでviライクエディタ「FoxEditor」を作ってみた#1
@@ -17,10 +17,27 @@ sources:
 - url: https://zenn.dev/dash_lab/articles/a37b0ce16f1507
   title: 家計シミュレーターを自分で作って公開した話
   date: '2026-07-19'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wz61i4/i_used_claude_code_to_turn_a_1989_dos_game_i
+  title: I used Claude Code to turn a 1989 DOS game I played as a kid into a relativity
+    sim
+  date: '2026-10-07'
 ---
 
 
+
 # Claude Code Project
+
+---
+
+## 2026-10-07
+
+### I used Claude Code to turn a 1989 DOS game I played as a kid into a relativity sim
+
+1989年のDOSゲームをClaude Codeで相対性理論シミュレーションに改造した実例。ブラックホール周辺の軌道歳差運動、重力レンズ効果、時間の遅れなどを実装。Claude Codeでほぼ全コードを生成し、プレーンJavaScript、WebGL、Canvas 2Dで構築。gravwars.comで無料公開中。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wz61i4/i_used_claude_code_to_turn_a_1989_dos_game_i)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

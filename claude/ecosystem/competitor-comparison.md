@@ -11,7 +11,7 @@ tags:
 - release
 - sonnet
 date: '2026-05-02'
-updated: '2026-10-01'
+updated: '2026-10-07'
 sources:
 - url: https://the-decoder.com/xai-drops-grok-4-3-with-steep-price-cuts-and-an-imagine-agent-mode-for-creative-projects
   title: xAI drops Grok 4.3 with steep price cuts and an Imagine agent mode for creative
@@ -36,6 +36,10 @@ sources:
   title: Google Gemini 4 Argon closes the gap with OpenAI and Anthropic but doesn't
     take a clear lead
   date: '2026-10-01'
+- url: https://the-decoder.com/mistral-large-4-is-said-to-be-the-most-powerful-open-ai-model-from-europe-and-the-u-s
+  title: Mistral Large 4 is Europe's trillion-parameter answer to US models that refuse
+    security work
+  date: '2026-10-07'
 ---
 
 
@@ -43,7 +47,20 @@ sources:
 
 
 
+
 # Competitor Comparison
+
+---
+
+## 2026-10-07
+
+### Mistral Large 4 is Europe's trillion-parameter answer to US models that refuse security work
+
+Mistral が欧州製の1兆パラメータモデル「Mistral Large 4」のプレビューをリリース。IT セキュリティ分野に特化し、Claude や GPT-6 が安全フィルタで拒否する脆弱性再現・パッチ適用作業を実行可能。Artificial Analysis の Intelligence Index では38点を獲得したが、Claude Opus 5.5 には約20点差で及ばない。モデルウェイトは10月末公開予定。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/mistral-large-4-is-said-to-be-the-most-powerful-open-ai-model-from-europe-and-the-u-s)
+- **重要度**: 6/10
+- **タグ**: opus, performance, copilot
 
 ---
 

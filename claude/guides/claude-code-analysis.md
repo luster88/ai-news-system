@@ -4,15 +4,33 @@ category: guides
 subcategory: claude-code-analysis
 tags:
 - claude-code
+- setup
+- 新機能
 date: '2026-08-24'
-updated: '2026-08-24'
+updated: '2026-10-07'
 sources:
 - url: https://zenn.dev/chiisanasoft/articles/08f0341f5565ff
   title: Claude Code のログでブランチ運用を数えたら、git_branch の "HEAD" が2つの意味を持っていた
   date: '2026-08-24'
+- url: https://zenn.dev/tanashun/articles/claude-code-transcript-jsonl
+  title: Claude Code の会話ログ（jsonl）を読んで「Claude が読んだファイル」を一覧にする
+  date: '2026-10-07'
 ---
 
+
 # Claude Code Analysis
+
+---
+
+## 2026-10-07
+
+### Claude Code の会話ログ（jsonl）を読んで「Claude が読んだファイル」を一覧にする
+
+Claude Code の会話ログ（jsonl形式）を解析し、Claudeが読み書きしたファイルを一覧化する方法を解説。jqコマンドを使った抽出方法、ログの構造（type、tool_use、結果の格納場所）、サブエージェントや圧縮による状態変化の扱い方を詳述。実際のログ追跡アプリ「tanacode」の実装例も紹介。
+
+- **ソース**: [Zenn claude](https://zenn.dev/tanashun/articles/claude-code-transcript-jsonl)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

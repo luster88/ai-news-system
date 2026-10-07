@@ -10,7 +10,7 @@ tags:
 - setup
 - windows
 date: '2026-05-09'
-updated: '2026-10-06'
+updated: '2026-10-07'
 sources:
 - url: https://qiita.com/enomoso_pm/items/623bd77ce2bb89569e3d
   title: 「設定したのになぜ？」Claude Codeのパーミッションが効かない理由と、今すぐできる対策
@@ -34,6 +34,9 @@ sources:
 - url: https://qiita.com/Hideki_Tamae/items/a2058faab47b709c2835
   title: 0。前回の記事が「試していない」と書いた復旧コマンドを今回実行したら、通った回数だった
   date: '2026-10-06'
+- url: https://qiita.com/homhom44/items/2786251224ab53c58625
+  title: 権限で拒否されたフォルダが原因で読み取りが止まらない瞬間を特定する方法！Claude Code でつまずいたときの切り分けメモ（2026-10-07）
+  date: '2026-10-07'
 ---
 
 
@@ -42,7 +45,30 @@ sources:
 
 
 
+
 # Claude Code Permissions
+
+---
+
+## 2026-10-07
+
+### 権限で拒否されたフォルダが原因で読み取りが止まらない瞬間を特定する方法！Claude Code でつまずいたときの切り分けメモ（2026-10-07）
+
+Claude Code 使用時に権限で拒否されたフォルダの読み取りが継続してしまう問題について、GitHub Issues の報告と実際の検証をもとに切り分け方法を解説。権限設定で止まるはずの処理が止まらない現象の境目を整理したトラブルシューティング記事。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/2786251224ab53c58625)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
+
+---
+
+### 権限で拒否されたフォルダが原因で読み取りが止まらない瞬間を特定する方法！Claude Code でつまずいたときの切り分けメモ（2026-10-07）
+
+Claude Code使用時に権限で拒否されたフォルダが原因で読み取りが止まらない問題についての切り分けメモ。GitHub Issuesで報告されている実際の症状を基に、手元で確認した範囲で権限設定による読み取り継続現象と境目が曖昧になるポイントを解説している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/homhom44/items/2786251224ab53c58625)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 

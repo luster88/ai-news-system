@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-10-06'
+updated: '2026-10-07'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -379,6 +379,12 @@ sources:
 - url: https://zenn.dev/earlyware_labs/articles/claude-code-solo-backoffice
   title: Claude Codeで個人事業主のバックオフィスを作ってみた
   date: '2026-10-06'
+- url: https://qiita.com/sescore/items/50b7142e5164d9f7f7bf
+  title: Claude Code実務Tips総まとめ|hooks・サブエージェント・MCP活用で変わった開発フロー
+  date: '2026-10-07'
+- url: https://qiita.com/rex0220/items/40dff8b29ea7705df414
+  title: rex0220 印刷屋プラグイン - AI(Claude Code)に帳票を作らせる（見積書 3 案から実用版へ）
+  date: '2026-10-07'
 ---
 
 
@@ -476,7 +482,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-10-07
+
+### Claude Code実務Tips総まとめ|hooks・サブエージェント・MCP活用で変わった開発フロー
+
+Claude Codeを業務で半年使用した実践的なTipsをまとめた記事。CLAUDE.mdの階層化、hooksによる危険操作の防止、サブエージェントでのコンテキスト管理、Plan Modeでの暴走防止など、「AIに書かせる」から「AIとの作業手順設計」へのシフトを具体的な設定例とともに解説している。
+
+- **ソース**: [Qiita claude](https://qiita.com/sescore/items/50b7142e5164d9f7f7bf)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, setup
+
+---
+
+### rex0220 印刷屋プラグイン - AI(Claude Code)に帳票を作らせる（見積書 3 案から実用版へ）
+
+Claude Code を使って、見積書の帳票システムを段階的に構築する実践的な手法を紹介。3つのデザイン案（シンプル・デザイン性・色彩）をAIに生成させ、AI自身に評価させることで実用版を選定。kintone と印刷屋プラグインを組み合わせ、レコードURLのみから設定ファイルを自動生成し、実務で使える帳票を完成させるワークフローを解説している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/rex0220/items/40dff8b29ea7705df414)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

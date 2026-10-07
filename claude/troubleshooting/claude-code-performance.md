@@ -6,15 +6,32 @@ tags:
 - bugfix
 - claude-code
 - performance
+- pricing
 date: '2026-04-11'
-updated: '2026-04-11'
+updated: '2026-10-07'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sifepi/amd_ai_directors_analysis_confirms_lobotomization
   title: AMD AI directors analysis confirms lobotomization of Claude
   date: '2026-04-11'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1wzhbfc/56_of_my_claude_code_usage_was_claude_rereading
+  title: 56% of my Claude Code usage was Claude re-reading the conversation
+  date: '2026-10-07'
 ---
 
+
 # Claude Code Performance
+
+---
+
+## 2026-10-07
+
+### 56% of my Claude Code usage was Claude re-reading the conversation
+
+Claude Code の6ヶ月間の利用分析により、API料金の56%が会話の再読み込みに費やされ、実際の有用な作業は20%のみだったことが判明。ユーザーは `/clear` コマンドの活用と自動コンパクト化の設定変更（`CLAUDE_CODE_AUTO_COMPACT_WINDOW: 200000`）を試行中。毎回のコンテキスト再送信により、約半数の呼び出しで20万トークン以上が消費されている点が課題。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1wzhbfc/56_of_my_claude_code_usage_was_claude_rereading)
+- **重要度**: 7/10
+- **タグ**: claude-code, performance, pricing
 
 ---
 

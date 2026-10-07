@@ -5,10 +5,11 @@ subcategory: claude-code-testing
 tags:
 - claude-code
 - cowork
+- mcp
 - setup
 - 新機能
 date: '2026-07-19'
-updated: '2026-08-27'
+updated: '2026-10-07'
 sources:
 - url: https://qiita.com/peka2/items/9ce150b3b480516fc16e
   title: Claude Code に iOSアプリの E2Eテスト までやらせるようにした（iOSシミュレータ + AXe）
@@ -16,10 +17,26 @@ sources:
 - url: https://zenn.dev/yuninaka/articles/legacy-ai-test-gen
   title: OSSライブラリで検証：仕様書ゼロからClaude Codeでテスト網羅率93%を達成した話
   date: '2026-08-27'
+- url: https://zenn.dev/shikamaru/articles/ef90e326ab8163
+  title: LLMを使用した Web システムの単体テスト自動化について
+  date: '2026-10-07'
 ---
 
 
+
 # Claude Code Testing
+
+---
+
+## 2026-10-07
+
+### LLMを使用した Web システムの単体テスト自動化について
+
+Claude Codeのブラウザ操作機能とPlaywright MCPを使い、仕様書のみを与えてAIに単体テストを実行させる手法の実践報告。コードを参照せず、人間と同様に画面操作とDB操作でテストを行い、事前に仕込んだバグの検出率で評価。AIは境界値テストデータを自ら作成し、スクリーンショット付きエビデンスを出力した。
+
+- **ソース**: [Zenn claude](https://zenn.dev/shikamaru/articles/ef90e326ab8163)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, 新機能
 
 ---
 
