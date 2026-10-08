@@ -10,7 +10,7 @@ tags:
 - setup
 - sonnet
 date: '2026-05-24'
-updated: '2026-10-04'
+updated: '2026-10-08'
 sources:
 - url: https://qiita.com/y_tsubasa/items/a0213eaad3402d00ed0a
   title: AI と毎日開発していて定着した、地味だけど効く工夫の棚卸し
@@ -33,6 +33,9 @@ sources:
 - url: https://zenn.dev/joo_hashi/articles/f71c83f7530d70
   title: Claude Code の worktree は、PR の前に main へ rebase する
   date: '2026-10-04'
+- url: https://qiita.com/sumitsuke/items/e0e33861fb0a3ed4ed05
+  title: 結論を書く前の 1 問「これを無効にする既決があるか」——全部を探させず、いまの既決だけを置く
+  date: '2026-10-08'
 ---
 
 
@@ -41,7 +44,20 @@ sources:
 
 
 
+
 # Workflow Best Practices
+
+---
+
+## 2026-10-08
+
+### 結論を書く前の 1 問「これを無効にする既決があるか」——全部を探させず、いまの既決だけを置く
+
+Claude Code で過去の決定事項（既決）に反する提案を防ぐため、字句検索・予告語彙・全量注入の3手法を検証したが実用性がなかった（正解率50位、予告語彙9%、予算52倍超過）。最終的に「探す」のではなく、有効な既決23件を1行ずつ入口文書に常時配置し、結論前に「この結論を無効にする既決があるか」と1問問う形式が有効だった。RAGや埋め込み検索は未検証。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/sumitsuke/items/e0e33861fb0a3ed4ed05)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

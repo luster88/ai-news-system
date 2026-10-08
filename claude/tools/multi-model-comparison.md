@@ -7,13 +7,14 @@ tags:
 - copilot
 - cowork
 - cursor
+- haiku
 - opus
 - performance
 - pricing
 - sonnet
 - 新機能
 date: '2026-05-16'
-updated: '2026-08-15'
+updated: '2026-10-08'
 sources:
 - url: https://qiita.com/mellisaoez/items/5e1b10bbff78413287ed
   title: ChatGPT・Claude・Gemini・Grokを1つの画面で同時に動かしてみた（MultipleChatを作った話）
@@ -33,6 +34,9 @@ sources:
 - url: https://zenn.dev/nnakapa/articles/lab-36-copilot-gemini37-sonnet5-qcd
   title: 'Gemini 3.7 Flash はコスト、Sonnet 5 は速度——210 試行で見えたトレードオフ（オトナの自由研究 #36）'
   date: '2026-08-15'
+- url: https://qiita.com/suwa_nobu/items/1cc4989b0fdd47e4ea12
+  title: Jev 互換の判断AI「Clef」と Haiku 5.5 に同じ分類を306問。Clef が自信を持った13%は95%当たった
+  date: '2026-10-08'
 ---
 
 
@@ -40,7 +44,20 @@ sources:
 
 
 
+
 # Multi Model Comparison
+
+---
+
+## 2026-10-08
+
+### Jev 互換の判断AI「Clef」と Haiku 5.5 に同じ分類を306問。Clef が自信を持った13%は95%当たった
+
+Cloudflare の判断特化AI「Clef」と Claude Haiku 5.5 を306問の日本語ニュース分類タスクで比較検証。全体の正解率は Haiku 60.8%、Clef 58.2% でほぼ同等。Clef の confidence 0.8以上（全体の13%）に絞ると95%の精度を達成し、確実な判断のみを機械に任せる運用に適していることが判明。Clef と Haiku の組み合わせで Haiku の呼び出しを49%削減しつつ同等の精度を維持できた。
+
+- **ソース**: [Qiita claude](https://qiita.com/suwa_nobu/items/1cc4989b0fdd47e4ea12)
+- **重要度**: 6/10
+- **タグ**: haiku, performance
 
 ---
 

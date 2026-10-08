@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-10-07'
+updated: '2026-10-08'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -385,6 +385,9 @@ sources:
 - url: https://qiita.com/rex0220/items/40dff8b29ea7705df414
   title: rex0220 印刷屋プラグイン - AI(Claude Code)に帳票を作らせる（見積書 3 案から実用版へ）
   date: '2026-10-07'
+- url: https://qiita.com/mugenweb/items/3fe9fa98d90afec0af75
+  title: Claude Codeは次のセッションで同じ穴に落ちる。「ハマったらREADMEに書く」を1サイクルにした話(Laravel)
+  date: '2026-10-08'
 ---
 
 
@@ -483,7 +486,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-10-08
+
+### Claude Codeは次のセッションで同じ穴に落ちる。「ハマったらREADMEに書く」を1サイクルにした話(Laravel)
+
+Claude Codeはセッションをまたぐと記憶が失われ、同じエラーを繰り返す問題への対処法を紹介。Laravel開発で「ハマったら直してREADMEに書く」を1サイクルとし、症状・原因・対処を記録することで、READMEを唯一の記憶装置として活用。Laravel 12の古い書き方への誤認識など、具体的なハマりどころと解決策を共有している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/mugenweb/items/3fe9fa98d90afec0af75)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 
