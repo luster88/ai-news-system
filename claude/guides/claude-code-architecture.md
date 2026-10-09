@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-05'
-updated: '2026-06-28'
+updated: '2026-10-09'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-v2188-ai-12
   title: AIコーディングツールは内部でどう動くのか：Claude Codeのアーキテクチャを初心者向けに解説
@@ -25,12 +25,28 @@ sources:
 - url: https://qiita.com/amanity-haray/items/5a1d9b07d25820024992
   title: CLAUDE.md と .cursorrules に書く「アーキテクチャルール」完全ガイド——AIに設計を守らせる具体的な書き方
   date: '2026-06-28'
+- url: https://qiita.com/joinclass/items/9bb292ceb6418f3f9fad
+  title: Claude Codeの指揮者エージェントを太らせない設計：CLAUDE.md・サブエージェント・launchdの実装
+  date: '2026-10-09'
 ---
 
 
 
 
+
 # Claude Code Architecture
+
+---
+
+## 2026-10-09
+
+### Claude Codeの指揮者エージェントを太らせない設計：CLAUDE.md・サブエージェント・launchdの実装
+
+Claude Codeを「AI経営チーム」として運用する実装解説。CLAUDE.mdを200行以内の指揮者（Orchestrator）に絞り、実作業知識は.claude/agents/配下のサブエージェントに分離。launchdで33個のジョブを自動実行し、コストとログを管理する設計パターンを実装例とともに紹介。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/joinclass/items/9bb292ceb6418f3f9fad)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

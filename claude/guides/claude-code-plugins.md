@@ -12,7 +12,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-04-07'
-updated: '2026-08-13'
+updated: '2026-10-09'
 sources:
 - url: https://qiita.com/moha0918_/items/b3011c218210ab2695b7
   title: プラグイン作成の3つの方法、結局どれを選ぶべき？
@@ -60,6 +60,9 @@ sources:
 - url: https://zenn.dev/toshi0607/articles/20260813-claude-code-tachikoma-plugin
   title: Claude Codeとのやりとりをタチコマ口調にするプラグインを作って各環境に配布する
   date: '2026-08-13'
+- url: https://zenn.dev/yohakucode/articles/claude-code-document-skills-pptx
+  title: 久しぶりに AI にスライドを作らせたら、綺麗なのが一発で出てきた（Claude Code の document-skills）
+  date: '2026-10-09'
 ---
 
 
@@ -75,7 +78,20 @@ sources:
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-10-09
+
+### 久しぶりに AI にスライドを作らせたら、綺麗なのが一発で出てきた（Claude Code の document-skills）
+
+Anthropic公式のdocument-skillsプラグインを使ってClaude CodeでPowerPointスライドを作成した実践記事。1行の指示で8枚の綺麗なスライドが完成した。document-skillsにはpptx/docx/xlsx/pdfの4つのスキルが含まれ、Claude Codeではプラグインとしてインストール可能。マーケットプレイスの追加が必要な点や、LibreOfficeなどの外部ツールを使用する仕組みが解説されている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/yohakucode/articles/claude-code-document-skills-pptx)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

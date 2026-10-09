@@ -6,15 +6,17 @@ tags:
 - claude-api
 - claude-code
 - cowork
+- haiku
 - mcp
 - opus
 - performance
+- pricing
 - prompt
 - setup
 - sonnet
 - 新機能
 date: '2026-03-31'
-updated: '2026-09-26'
+updated: '2026-10-09'
 sources:
 - url: https://qiita.com/nishiken1118/items/6b16557fcabf784c861e
   title: 過去の session をほしい時に参照する方針で claude-mem のトークン消費を激減させた話
@@ -62,6 +64,9 @@ sources:
 - url: https://zenn.dev/kanta13jp1/articles/claude-md-webinar-transcript-ab-test
   title: ウェビナー字幕をCLAUDE.mdに全文で入れると？ Claude Codeで18回比べたら採点は同点・入力トークン約4割増
   date: '2026-09-26'
+- url: https://qiita.com/suwa_nobu/items/837c03e66ba03ee636ea
+  title: Claude Code の Explore を Haiku にする設定は、2.1.293 に上げるだけで Haiku 5.5 になった。費用は34〜43%減
+  date: '2026-10-09'
 ---
 
 
@@ -78,7 +83,20 @@ sources:
 
 
 
+
 # Claude Code Optimization
+
+---
+
+## 2026-10-09
+
+### Claude Code の Explore を Haiku にする設定は、2.1.293 に上げるだけで Haiku 5.5 になった。費用は34〜43%減
+
+Claude Code 2.1.293へのアップデートにより、Exploreサブエージェントの`model: haiku`設定が自動的にHaiku 5.5を参照するようになった。Haiku 4.5と比較して単価は10分の1（$0.10/$0.50）となり、Explore自体の費用は14分の1〜28分の1に削減。速度も向上し、リクエスト数も減少した。ただし全体コストの99%は本体のOpusが占めており、さらなるコスト削減には本体モデルの見直しが必要。
+
+- **ソース**: [Qiita claude](https://qiita.com/suwa_nobu/items/837c03e66ba03ee636ea)
+- **重要度**: 7/10
+- **タグ**: claude-code, haiku, pricing
 
 ---
 

@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-11'
-updated: '2026-09-23'
+updated: '2026-10-09'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-best-practice-guide-2026
   title: Claude Codeベストプラクティス完全ガイド2026年版｜使い方・Tips・効率化テクニック集
@@ -58,6 +58,9 @@ sources:
 - url: https://zenn.dev/vteacher/articles/37e58368d1c84c
   title: Anthropic社目線でのClaude Codeの“勘所”を整理しました
   date: '2026-09-23'
+- url: https://qiita.com/homhom44/items/4fdc3341c7991a06e658
+  title: LLMの価値は「説明」より検証できる記録にあると整理する！Claude Code開発者が押さえておきたいAnthropicニュース（2026-10-09）
+  date: '2026-10-09'
 ---
 
 
@@ -73,7 +76,20 @@ sources:
 
 
 
+
 # Claude Code Best Practices
+
+---
+
+## 2026-10-09
+
+### LLMの価値は「説明」より検証できる記録にあると整理する！Claude Code開発者が押さえておきたいAnthropicニュース（2026-10-09）
+
+AI agent のフック実装における副作用リスクと検証の重要性、小型モデルのエージェント利用における実務的な考察、LLM による wiki 生成において「説明」よりも検証可能な記録（file:line による根拠、不明点の明示）が重要であることを論じた記事。速度やコストよりも「後から辿れる信頼性」を重視する視点が特徴的。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/homhom44/items/4fdc3341c7991a06e658)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

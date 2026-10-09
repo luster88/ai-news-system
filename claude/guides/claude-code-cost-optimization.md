@@ -5,6 +5,7 @@ subcategory: claude-code-cost-optimization
 tags:
 - claude-code
 - cowork
+- haiku
 - opus
 - performance
 - pricing
@@ -12,7 +13,7 @@ tags:
 - setup
 - sonnet
 date: '2026-04-16'
-updated: '2026-09-30'
+updated: '2026-10-09'
 sources:
 - url: https://zenn.dev/okamyuji/articles/claude-code-max-x20-token-savings
   title: Claude Codeのトークン消費が$40/日から1週間でも余裕になった全手法
@@ -29,13 +30,29 @@ sources:
 - url: https://zenn.dev/goat_eat_any/articles/claude-code-sonnet-opus-advisor
   title: Sonnet 5.5＋Opus 5.5アドバイザーで手軽にコスト削減！
   date: '2026-09-30'
+- url: https://qiita.com/suwa_nobu/items/837c03e66ba03ee636ea
+  title: Claude Code の Explore を Haiku にする設定は、2.1.293 に上げるだけで Haiku 5.5 になった。費用は34〜43%減
+  date: '2026-10-09'
 ---
 
 
 
 
 
+
 # Claude Code Cost Optimization
+
+---
+
+## 2026-10-09
+
+### Claude Code の Explore を Haiku にする設定は、2.1.293 に上げるだけで Haiku 5.5 になった。費用は34〜43%減
+
+Claude Code 2.1.293へのアップデートにより、Exploreサブエージェントの`model: haiku`設定が自動的にHaiku 5.5を指すようになった。Haiku 4.5と比較して単価は10分の1（$0.10/$0.50 per Mtok）となり、Explore自体の費用は14分の1〜28分の1に削減。ただし全体費用の99%は本体のOpusが占めるため、さらなるコスト削減には本体モデルの見直しが必要。Haiku 5.5は10万トークン超過で単価が5倍になる点に注意が必要。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/suwa_nobu/items/837c03e66ba03ee636ea)
+- **重要度**: 7/10
+- **タグ**: claude-code, haiku, pricing
 
 ---
 
