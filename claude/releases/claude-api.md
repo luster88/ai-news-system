@@ -5,6 +5,7 @@ subcategory: claude-api
 tags:
 - bugfix
 - claude-api
+- cowork
 - mcp
 - opus
 - performance
@@ -13,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-09-24'
+updated: '2026-10-10'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -89,6 +90,10 @@ sources:
 - url: https://qiita.com/sakutto-panda/items/fb3c3a65958338fa3ee7
   title: 【2026/9/1】Claude Fable 5.1/Mythos 5.1登場。同じモデルを2段階セーフガードで出し分ける設計
   date: '2026-09-24'
+- url: https://the-decoder.com/anthropics-claude-can-now-orchestrate-up-to-1000-ai-agents-in-parallel-through-dynamic-workflows
+  title: Anthropic's Claude can now orchestrate up to 1,000 AI agents in parallel
+    through dynamic workflows
+  date: '2026-10-10'
 ---
 
 
@@ -107,7 +112,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-10-10
+
+### Anthropic's Claude can now orchestrate up to 1,000 AI agents in parallel through dynamic workflows
+
+Anthropic が Claude Managed Agents に動的ワークフロー機能を追加し、最大1,000エージェントの並列実行が可能に。リードエージェントが計画を作成し、サブエージェントにタスクを分配して結果を統合する仕組み。116,000行のコードベースで70個のバグを隠したテストでは、単一エージェントが14-27個検出したのに対し、動的ワークフローは一貫して66個を検出。ただしトークン消費が多いため、小規模から始めることを推奨。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropics-claude-can-now-orchestrate-up-to-1000-ai-agents-in-parallel-through-dynamic-workflows)
+- **重要度**: 8/10
+- **タグ**: claude-api, 新機能, cowork
 
 ---
 

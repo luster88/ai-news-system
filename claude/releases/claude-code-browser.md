@@ -6,13 +6,14 @@ tags:
 - bugfix
 - claude-code
 - cowork
+- haiku
 - mcp
 - pricing
 - release
 - setup
 - 新機能
 date: '2026-07-12'
-updated: '2026-10-01'
+updated: '2026-10-10'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -78,6 +79,9 @@ sources:
 - url: https://qiita.com/sakutto-panda/items/45635af18926e60ab97b
   title: Claude Code 2026年9月アップデートまとめ — /diff・/skill-doctor・無人運用の強化が地味に効く
   date: '2026-10-01'
+- url: https://qiita.com/NaokiIshimura/items/a890af864410fdaeb6f6
+  title: Claude Code v2.1.289 - v2.1.296 リリースノートまとめ
+  date: '2026-10-10'
 ---
 
 
@@ -97,7 +101,30 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-10-10
+
+### Claude Code v2.1.289 - v2.1.296 リリースノートまとめ
+
+Claude Code v2.1.289〜v2.1.296の8バージョンのリリースノートまとめ。主要な更新は、Claude Haiku 5.5の追加（1Mコンテキスト、新料金体系）、MCPプロトコル2026-07-28のデフォルト化、フックのonFailure="block"機能、サブエージェント向けのautoCompactWindow/effortパラメータの追加。その他、プラグインインストールの--marketplaceオプション、Sonnet 5.5のキャッシュ読み取り料金の値下げ、MCPツール説明の上限拡大などが含まれる。
+
+- **ソース**: [Qiita claude](https://qiita.com/NaokiIshimura/items/a890af864410fdaeb6f6)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, haiku
+
+---
+
+### Claude Code v2.1.289 - v2.1.296 リリースノートまとめ
+
+Claude Code v2.1.289〜v2.1.296の8バージョンをまとめたリリースノート。Claude Haiku 5.5の追加（1Mコンテキスト、低価格化）、MCPプロトコル2026-07-28のデフォルト化、フックのonFailure: blockによるアクションブロック機能、サブエージェント向けのautoCompactWindow/effortパラメータの追加が主なハイライト。Sonnet 5.5のキャッシュ読み取り料金も$0.20→$0.10/百万トークンに値下げされた。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/NaokiIshimura/items/a890af864410fdaeb6f6)
+- **重要度**: 8/10
+- **タグ**: claude-code, haiku, release
 
 ---
 

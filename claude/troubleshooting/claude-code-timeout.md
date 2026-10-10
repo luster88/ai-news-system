@@ -8,7 +8,7 @@ tags:
 - performance
 - setup
 date: '2026-07-14'
-updated: '2026-08-03'
+updated: '2026-10-10'
 sources:
 - url: https://qiita.com/ou-mori/items/cd7b2cf089496215acbc
   title: 'Claude CodeでAPI Error: Response stalled mid-stream. The response above may
@@ -17,10 +17,26 @@ sources:
 - url: https://zenn.dev/ebijun1007/articles/795a0fc9d3e60a
   title: Claude Code が間欠的に10分ハングする問題を、デバッグログから原因特定して緩和する
   date: '2026-08-03'
+- url: https://qiita.com/homhom44/items/cb14a6bdf20ba0df63d9
+  title: Claude Codeのスクリプト投入がタイムアウトする原因と対策！Claude Code でつまずいたときの切り分けメモ（2026-10-09）
+  date: '2026-10-10'
 ---
 
 
+
 # Claude Code Timeout
+
+---
+
+## 2026-10-10
+
+### Claude Codeのスクリプト投入がタイムアウトする原因と対策！Claude Code でつまずいたときの切り分けメモ（2026-10-09）
+
+Claude Code の起動時にスクリプト注入がタイムアウトする問題について、GitHub Issues で報告されている実際の症状を基に切り分け手順を整理。項目数のずれによる処理失敗のケースや発生条件の見分け方、確認ポイントを実際のコマンド実行結果とともに解説したトラブルシューティングガイド。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/cb14a6bdf20ba0df63d9)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 

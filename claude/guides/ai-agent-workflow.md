@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-06-15'
-updated: '2026-10-06'
+updated: '2026-10-10'
 sources:
 - url: https://zenn.dev/gto_cto/articles/48fbf279efc43f
   title: Claude CodeとCodexを並列稼働したら競合祭りになったので、AI専用ロックファイルを作った
@@ -31,6 +31,9 @@ sources:
 - url: https://qiita.com/ishizakahiroshi/items/a552bb339bab8b08eb8b
   title: AIエージェントへの依頼をどう回すか 受け箱とMCPを考えている途中です
   date: '2026-10-06'
+- url: https://qiita.com/sescore/items/1f5faa0bc45f4cbf5069
+  title: OpenClaw×Claude Code連携実践|記憶と実行を分離するAI開発フロー
+  date: '2026-10-10'
 ---
 
 
@@ -38,7 +41,20 @@ sources:
 
 
 
+
 # Ai Agent Workflow
+
+---
+
+## 2026-10-10
+
+### OpenClaw×Claude Code連携実践|記憶と実行を分離するAI開発フロー
+
+OpenClawとClaude Codeを連携させた実践例を紹介。記憶・判断層（OpenClaw）と実行層（Claude Code）を分離し、CLAUDE.md形式でルールを蓄積することで、AIエージェントの事故リスクを構造的に防ぐ手法を解説。cron連携、セキュリティレビュー、allowedTools制約など、実務で使える具体的なコマンドと構成を共有している。
+
+- **ソース**: [Qiita claude](https://qiita.com/sescore/items/1f5faa0bc45f4cbf5069)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, setup
 
 ---
 

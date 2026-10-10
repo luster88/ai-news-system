@@ -10,9 +10,10 @@ tags:
 - mcp
 - prompt
 - setup
+- sonnet
 - 新機能
 date: '2026-04-26'
-updated: '2026-09-19'
+updated: '2026-10-10'
 sources:
 - url: https://zenn.dev/saytooy_arch/articles/14-zenn-auto-publish-pipeline
   title: Zenn自動公開パイプラインをclaude -pで構築した話
@@ -47,6 +48,9 @@ sources:
 - url: https://qiita.com/sescore/items/5836d47f648ac9c11fd0
   title: OpenClaw×Claude Code連携実践ガイド：思考と実行を分けるAI開発フロー
   date: '2026-09-19'
+- url: https://zenn.dev/daichi1002/articles/feeb4b63aac7d3
+  title: Jiraのステータスを動かすだけでPRが積み上がる自動実装フローを作った話
+  date: '2026-10-10'
 ---
 
 
@@ -58,7 +62,20 @@ sources:
 
 
 
+
 # Workflow Automation
+
+---
+
+## 2026-10-10
+
+### Jiraのステータスを動かすだけでPRが積み上がる自動実装フローを作った話
+
+Jiraのステータス変更をトリガーに、Claude Codeのルーティーン機能で「実装→レビュー→PR作成」を自動化したフロー構築事例。1時間おきに/patrolスキルが起動し、tasks.mdからサブタスクを切り出してPRを積み上げる。実装とレビューで異なるモデル（Sonnet 5.5/Opus 5.5）を使い分け、2週間で29件のサブタスクを処理。未マージPR上限や仕様の不明点での自動停止など、無人運用のための工夫が詳述されている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/daichi1002/articles/feeb4b63aac7d3)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, sonnet
 
 ---
 

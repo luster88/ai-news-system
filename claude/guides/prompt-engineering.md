@@ -14,7 +14,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-07'
-updated: '2026-10-01'
+updated: '2026-10-10'
 sources:
 - url: https://zenn.dev/analysis/articles/thought-analyzer-agents-md
   title: コンテキストファイルは、エージェントを賢くしない ── AGENTS.mdの効果を初めて測った研究
@@ -43,6 +43,9 @@ sources:
 - url: https://zenn.dev/sukoshift/articles/llm-dont-decide-design
   title: LLMに任せると改善案を10個書く。だからコードで3個に縛った
   date: '2026-10-01'
+- url: https://qiita.com/mugenweb/items/295640153db6bc84db2c
+  title: 「予約機能を作って」は失敗する。Claude Codeへの指示は「やらないこと」と判断基準を渡す(Laravel)
+  date: '2026-10-10'
 ---
 
 
@@ -53,7 +56,20 @@ sources:
 
 
 
+
 # Prompt Engineering
+
+---
+
+## 2026-10-10
+
+### 「予約機能を作って」は失敗する。Claude Codeへの指示は「やらないこと」と判断基準を渡す(Laravel)
+
+Claude Codeで予約機能を実装する際、「作らないこと」と「判断基準」を明示することで、過剰な機能実装を避けつつ、AIが適切な設計判断を行えるようになる。詳細な実装指示よりも、方針と制約を伝える方が効果的で、AIが理由付きで判断した内容をREADMEに残すことで、プロジェクトの一貫性も保てる。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/mugenweb/items/295640153db6bc84db2c)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

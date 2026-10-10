@@ -5,16 +5,33 @@ subcategory: claude-code-extensions
 tags:
 - claude-code
 - cursor
+- vscode
 - 新機能
 date: '2026-07-22'
-updated: '2026-07-22'
+updated: '2026-10-10'
 sources:
 - url: https://ai-heartland.com/explain/hallmark-anti-ai-slop-design-skill
   title: Hallmark デザインスキル解説｜AI slopを拒みClaude Code・Cursorで使う
   date: '2026-07-22'
+- url: https://zenn.dev/z_maruhira/articles/claude-code-mod-copy-blocks
+  title: Claude Codeの引用・コードブロックにコピーボタンを付けるmod
+  date: '2026-10-10'
 ---
 
+
 # Claude Code Extensions
+
+---
+
+## 2026-10-10
+
+### Claude Codeの引用・コードブロックにコピーボタンを付けるmod
+
+Claude Codeの引用ブロックやコードブロックに、ワンクリックでコピーできるボタンを追加するmod。Slackへの返信作成時に、行頭の記号や不要な改行を自動除去してコピー可能。modのAssistantMessage機能を使い、回答内に罫線とコピーボタンを配置。設定で表示位置を切り替え可能。
+
+- **ソース**: [Zenn claude](https://zenn.dev/z_maruhira/articles/claude-code-mod-copy-blocks)
+- **重要度**: 5/10
+- **タグ**: claude-code, vscode
 
 ---
 
