@@ -13,7 +13,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-12'
-updated: '2026-10-10'
+updated: '2026-10-11'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -82,6 +82,9 @@ sources:
 - url: https://qiita.com/NaokiIshimura/items/a890af864410fdaeb6f6
   title: Claude Code v2.1.289 - v2.1.296 リリースノートまとめ
   date: '2026-10-10'
+- url: https://zenn.dev/zundamon_tools/articles/claude-news-weekly-2026-10-11
+  title: Claude Code 週間ニュース（10/4〜10/10）：Projects 開放・権限の穴塞ぎ・onFailure・Haiku 5.5
+  date: '2026-10-11'
 ---
 
 
@@ -102,7 +105,20 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-10-11
+
+### Claude Code 週間ニュース（10/4〜10/10）：Projects 開放・権限の穴塞ぎ・onFailure・Haiku 5.5
+
+2026年10月4日〜10日のClaude週間アップデートまとめ。Claude Code ProjectsがPro・Maxユーザーに開放、Haiku 5.5が公開され10万トークン以下なら単価が4.5の10分の1に、セキュリティ修正として権限ルールの穴が塞がれhooksにonFailure: blockオプションが追加された。その他、Max・TeamプランにAPI クレジット追加（Claude Codeでは使用不可）、Dashboards・Motionがベータ版で登場。
+
+- **ソース**: [Zenn claude](https://zenn.dev/zundamon_tools/articles/claude-news-weekly-2026-10-11)
+- **重要度**: 8/10
+- **タグ**: claude-code, haiku, 新機能
 
 ---
 

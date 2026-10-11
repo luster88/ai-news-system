@@ -11,7 +11,7 @@ tags:
 - release
 - sonnet
 date: '2026-05-02'
-updated: '2026-10-07'
+updated: '2026-10-11'
 sources:
 - url: https://the-decoder.com/xai-drops-grok-4-3-with-steep-price-cuts-and-an-imagine-agent-mode-for-creative-projects
   title: xAI drops Grok 4.3 with steep price cuts and an Imagine agent mode for creative
@@ -40,6 +40,10 @@ sources:
   title: Mistral Large 4 is Europe's trillion-parameter answer to US models that refuse
     security work
   date: '2026-10-07'
+- url: https://the-decoder.com/googles-gemini-4-carbon-model-is-reportedly-matching-anthropics-opus-5-5-coding-performance
+  title: Google's Gemini 4 "Carbon" model reportedly feels like Anthropic's Opus 5.5
+    coding performance
+  date: '2026-10-11'
 ---
 
 
@@ -48,7 +52,20 @@ sources:
 
 
 
+
 # Competitor Comparison
+
+---
+
+## 2026-10-11
+
+### Google's Gemini 4 "Carbon" model reportedly feels like Anthropic's Opus 5.5 coding performance
+
+GoogleのGemini 4「Carbon」モデルが、AnthropicのOpus 5.5に匹敵するコーディング性能を示していると報じられています。まだ未発表のArgonモデルに続き、Carbon、Bariumなどの派生版が社内でテストされており、Carbonは特にプログラミングタスクで優れた性能を発揮しているとのこと。Argonは推論に特化したフロンティアモデルとして位置づけられ、OpusやAstraと競合する最高性能モデルです。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/googles-gemini-4-carbon-model-is-reportedly-matching-anthropics-opus-5-5-coding-performance)
+- **重要度**: 6/10
+- **タグ**: opus, performance
 
 ---
 

@@ -12,7 +12,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-23'
-updated: '2026-09-28'
+updated: '2026-10-11'
 sources:
 - url: https://qiita.com/pro-tein/items/49e5dbec705c3497dd51
   title: 【Claude Code】Hooks機能でデスクトップ通知を設定してみた
@@ -54,6 +54,9 @@ sources:
 - url: https://qiita.com/daisuke_dadixi/items/2cca2d9409c803befc3f
   title: Claude Codeが参画先で配布されたので、改めてHooksについて調べてみた
   date: '2026-09-28'
+- url: https://zenn.dev/umechanhika/articles/346489e8b5a752
+  title: Claude Code が止まった理由ごとに通知を出し分ける hooks レシピと、効かないときの確認リスト
+  date: '2026-10-11'
 ---
 
 
@@ -68,7 +71,20 @@ sources:
 
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-10-11
+
+### Claude Code が止まった理由ごとに通知を出し分ける hooks レシピと、効かないときの確認リスト
+
+Claude Code の hooks 機能を使い、停止理由（許可待ち・質問・完了・エラーなど）ごとに異なる通知と音を出し分けるレシピを紹介。macOS の osascript を使った実装方法と、通知が表示されない場合のトラブルシューティング（バージョン互換性、権限設定、ファイル配置）を詳しく解説。
+
+- **ソース**: [Zenn claude](https://zenn.dev/umechanhika/articles/346489e8b5a752)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, mac
 
 ---
 

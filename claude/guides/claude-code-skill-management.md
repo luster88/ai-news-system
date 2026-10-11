@@ -4,17 +4,35 @@ category: guides
 subcategory: claude-code-skill-management
 tags:
 - claude-code
+- performance
 - prompt
 - setup
+- 新機能
 date: '2026-05-03'
-updated: '2026-05-03'
+updated: '2026-10-11'
 sources:
 - url: https://qiita.com/Tadashi_Kudo/items/0179b1fc81cea8478214
   title: Claude Code Skillの「Eval/Gotchas」で使うほど賢くなる自己改善ループを作る
   date: '2026-05-03'
+- url: https://qiita.com/joinclass/items/16f4d6c3f2e205eccfc3
+  title: skill-doctor でスキルの健全性を診断する ― 13スキル107KBを常時ロードしていた会社の棚卸し記録
+  date: '2026-10-11'
 ---
 
+
 # Claude Code Skill Management
+
+---
+
+## 2026-10-11
+
+### skill-doctor でスキルの健全性を診断する ― 13スキル107KBを常時ロードしていた会社の棚卸し記録
+
+Claude Codeで13スキル107KBを常時ロードしていた企業が、v2.1.261で追加された /skill-doctor コマンドを使ってスキルの健全性を診断した事例。未使用スキルのコンテキスト消費を可視化し、launchdによるヘッドレス実行環境で月次自動チェックスクリプトを構築。skill-usage.tsvによる使用履歴トラッキングとSlack通知の実装方法も紹介している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/joinclass/items/16f4d6c3f2e205eccfc3)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, performance
 
 ---
 

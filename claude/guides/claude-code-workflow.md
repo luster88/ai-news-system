@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-10-08'
+updated: '2026-10-11'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -388,6 +388,15 @@ sources:
 - url: https://qiita.com/mugenweb/items/3fe9fa98d90afec0af75
   title: Claude Codeは次のセッションで同じ穴に落ちる。「ハマったらREADMEに書く」を1サイクルにした話(Laravel)
   date: '2026-10-08'
+- url: https://qiita.com/blinkgroup_jp/items/0fef98c815ab5f40f065
+  title: Claude CodeとGitHub CLIを活用してGitコミットおよびPull Request作成を自動化する開発フローの構築
+  date: '2026-10-11'
+- url: https://qiita.com/charge0315/items/fcec85cc5250e39bab97
+  title: Claude Codeに任せる範囲と止める仕組みの設計 〜計画モード・SessionStartフック・/loop・課金前確認の使い分け〜
+  date: '2026-10-11'
+- url: https://qiita.com/kai_kou/items/b0969ef956969c328d08
+  title: '本を Claude Code に読ませて自分のリポジトリに再現する: 読む順路・検証済み SHA・改訂の追随'
+  date: '2026-10-11'
 ---
 
 
@@ -487,7 +496,50 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-10-11
+
+### Claude CodeとGitHub CLIを活用してGitコミットおよびPull Request作成を自動化する開発フローの構築
+
+Claude CodeとGitHub CLIを組み合わせて、Git差分からコミットメッセージとPull Requestを自動生成する開発ワークフローの構築方法を解説。Conventional Commits形式に従ったメッセージ生成のシェルスクリプト例や、APIキー漏洩・ハルシネーション・トークン制限などの運用上の注意点を紹介している。
+
+- **ソース**: [Qiita claude](https://qiita.com/blinkgroup_jp/items/0fef98c815ab5f40f065)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
+
+---
+
+### Claude Codeに任せる範囲と止める仕組みの設計 〜計画モード・SessionStartフック・/loop・課金前確認の使い分け〜
+
+Claude Codeと個人開発を行う際の「AIに任せる範囲」と「人間が確認する範囲」の線引きと、その実装方法を解説。コード編集はAIに任せ、コミット・課金は人間確認という基準を、計画モード・SessionStartフック・/loop・ローカルCIの4つの仕組みで実現。CLAUDE.mdにグローバル指示を集約し、プロジェクトごとのブレを防ぐベストプラクティスを紹介。
+
+- **ソース**: [Qiita claude](https://qiita.com/charge0315/items/fcec85cc5250e39bab97)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
+
+---
+
+### 本を Claude Code に読ませて自分のリポジトリに再現する: 読む順路・検証済み SHA・改訂の追随
+
+Claude Code で技術ブログを無人運用する Zenn 本（全20章）を題材に、エージェントに技術書を読ませて自分のリポジトリで再現する方法を解説。人間と Claude Code では読む順路が逆（人は全体像→詳細、Claude Code は仕様パック→個別制約）である点、検証済み SHA で本の想定時点を固定する点、改訂追随の仕組みを持つ点が再現可能性を左右することを、実測ログで示す。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kai_kou/items/b0969ef956969c328d08)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
+
+---
+
+### Claude Codeに任せる範囲と止める仕組みの設計 〜計画モード・SessionStartフック・/loop・課金前確認の使い分け〜
+
+Claude Codeで個人開発する際の自動化と人間確認の境界線設計について、実プロジェクト「ALPHA FORGE」の経験に基づいて解説。コード編集・テスト・調査は確認なしで任せ、コミット・公開・削除・課金は必ず人間が確認するという原則のもと、計画モード・SessionStartフック・/loopコマンド・ローカルCIなど段階ごとの制御手段を使い分ける実践的な手法を紹介。ハーネス（制御の約束）はグローバルなCLAUDE.mdに一元管理し、別途作った仕様書は3時間で陳腐化したという教訓も示す。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/charge0315/items/fcec85cc5250e39bab97)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

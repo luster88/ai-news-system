@@ -8,9 +8,10 @@ tags:
 - cowork
 - cursor
 - mcp
+- setup
 - 新機能
 date: '2026-04-02'
-updated: '2026-08-05'
+updated: '2026-10-11'
 sources:
 - url: https://ai-heartland.com/news/cursor-firecrawl-mcp-aiagent
   title: Cursor × Firecrawl MCPで任意ウェブサイト複製が可能に。AIAgent強化
@@ -25,12 +26,28 @@ sources:
   title: I built a captioning app for short-form video, then gave Claude an MCP so
     it can work with captions alone
   date: '2026-08-05'
+- url: https://ai-heartland.com/tool/photocraft-agent-control
+  title: PhotoCraftとは｜Photoshop互換OSSの自己採点150項目と、エージェント運転用の20ツールを数えた
+  date: '2026-10-11'
 ---
 
 
 
 
+
 # Mcp Integration
+
+---
+
+## 2026-10-11
+
+### PhotoCraftとは｜Photoshop互換OSSの自己採点150項目と、エージェント運転用の20ツールを数えた
+
+PhotoCraftはPhotoshopのクリーンルーム再実装をRustで行うOSSプロジェクト。公開8日で11,500 star、24万7千行のコードを持つ。自己採点150項目のうち完了は12項目（8%）で、特徴的なのはエージェントによる自動操作を想定した設計で、MCPサーバーとJSON制御チャネルを実装している点。AI画像生成機能は含まず、AIに操作させる側の設計思想を持つ。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/photocraft-agent-control)
+- **重要度**: 4/10
+- **タグ**: mcp, setup, claude-api
 
 ---
 

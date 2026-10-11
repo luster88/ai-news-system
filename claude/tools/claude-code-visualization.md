@@ -9,7 +9,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-06-27'
-updated: '2026-07-29'
+updated: '2026-10-11'
 sources:
 - url: https://zenn.dev/breakbot/articles/53e7f1c6564f26
   title: Claude Codeのセッションを見下ろし型オフィスとして可視化するツールを作った
@@ -25,12 +25,29 @@ sources:
   title: I got tired of watching Claude Code work in a plain terminal so I built it
     3D cozy game simulation for my agents
   date: '2026-07-29'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1x2f59x/i_made_my_claude_code_subagents_a_video_call
+  title: I made my Claude Code sub-agents a video call. Weirdly, it’s the best way
+    I’ve found to follow what they’re doing.
+  date: '2026-10-11'
 ---
 
 
 
 
+
 # Claude Code Visualization
+
+---
+
+## 2026-10-11
+
+### I made my Claude Code sub-agents a video call. Weirdly, it’s the best way I’ve found to follow what they’re doing.
+
+Claude Code のサブエージェントの動作を可視化するオープンソース VS Code 拡張機能「Agent Standup」が開発されました。複数のサブエージェントが並行実行される際、ターミナルログが混乱する問題を解決するため、ビデオ通話形式で各エージェントのタスク、コマンド実行、ファイル編集を可視化します。Claude Code 自体を使って約2日間で開発され、セッションファイルを読み取ってリアルタイムで動作を追跡できます。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1x2f59x/i_made_my_claude_code_subagents_a_video_call)
+- **重要度**: 6/10
+- **タグ**: claude-code, vscode, cowork
 
 ---
 

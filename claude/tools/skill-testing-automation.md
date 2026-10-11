@@ -3,18 +3,37 @@ title: Skill Testing Automation
 category: tools
 subcategory: skill-testing-automation
 tags:
+- claude-api
 - claude-code
 - copilot
+- cowork
+- performance
 - 新機能
 date: '2026-05-04'
-updated: '2026-05-04'
+updated: '2026-10-11'
 sources:
 - url: https://zenn.dev/rick2200/articles/9db3f4e32f9286
   title: GitHub ActionsでCopilot SDKを使いClaude Skillsの効果検証をしてみる
   date: '2026-05-04'
+- url: https://ai-heartland.com/agent/quicke2e-plain-english-e2e
+  title: QuickE2Eとは｜E2Eテスト AIの「8.6倍速い」を同梱の生データから計算し直した
+  date: '2026-10-11'
 ---
 
+
 # Skill Testing Automation
+
+---
+
+## 2026-10-11
+
+### QuickE2Eとは｜E2Eテスト AIの「8.6倍速い」を同梱の生データから計算し直した
+
+QuickE2EはE2Eテスト用AIツールで、Claude Code + Playwrightに比べて8.6倍高速かつコストが234倍安いことを生データで検証可能。モデルは次の操作を決定するだけで、合否判定はコードで行う設計。依存関係はPlaywright 1本のみで、セレクタ不要の自然言語テスト記述が可能。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/agent/quicke2e-plain-english-e2e)
+- **重要度**: 6/10
+- **タグ**: claude-api, performance, cowork
 
 ---
 
