@@ -13,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-04'
-updated: '2026-10-06'
+updated: '2026-10-12'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -88,6 +88,10 @@ sources:
   title: OpenAI will watermark ChatGPT text in the EU but makes it optional for API
     users worldwide
   date: '2026-10-06'
+- url: https://the-decoder.com/ai-agent-teams-waste-massive-tokens-for-barely-measurable-quality-gains-research-finds
+  title: AI agent teams waste massive tokens for barely measurable quality gains,
+    research finds
+  date: '2026-10-12'
 ---
 
 
@@ -108,7 +112,20 @@ sources:
 
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-10-12
+
+### AI agent teams waste massive tokens for barely measurable quality gains, research finds
+
+Vals AIの研究により、AIエージェントチームは単独エージェントと比べてトークン消費が1.8〜5.1倍に増えるものの、品質向上はほとんど測定できないことが判明。GPT-6 SolとClaude Opus 5.5を用いた4つの比較のうち、統計的に有意な改善は1つのみ。OpenAIの研究者も、マルチエージェントシステムは主に速度を向上させるだけで品質は改善しないと確認している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/ai-agent-teams-waste-massive-tokens-for-barely-measurable-quality-gains-research-finds)
+- **重要度**: 7/10
+- **タグ**: opus, performance, cowork
 
 ---
 

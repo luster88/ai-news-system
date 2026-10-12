@@ -13,7 +13,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-25'
-updated: '2026-09-26'
+updated: '2026-10-12'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -158,6 +158,9 @@ sources:
 - url: https://ai-heartland.com/tool/ambient-context
   title: Ambient Contextとは｜一日の画面をMarkdownに残すmacOSアプリをMCP 20ツール実測で解説
   date: '2026-09-26'
+- url: https://zenn.dev/n_y_public/articles/84f5fa6196c2cd
+  title: MarpのMarkdownを「普通の文書」として読みたい。「タグを本文に使う違和感」と「ワンスライド・ワンメッセージ」にこだわったMCP
+  date: '2026-10-12'
 ---
 
 
@@ -202,7 +205,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-10-12
+
+### MarpのMarkdownを「普通の文書」として読みたい。「タグを本文に使う違和感」と「ワンスライド・ワンメッセージ」にこだわったMCP
+
+Marpでスライドを作成する際に感じる「見出しタグに本文を書く構造的違和感」と「ワンスライド・ワンメッセージが守られない課題」を解決するため、marp-slide-mcpという独自のMCPサーバーとテーマを開発。Markdown本来の文書構造を保ちながら美しいスライドを生成し、AIが理解しやすいデータ構造を実現する試み。
+
+- **ソース**: [Zenn claude](https://zenn.dev/n_y_public/articles/84f5fa6196c2cd)
+- **重要度**: 5/10
+- **タグ**: mcp, claude-code, cowork
 
 ---
 

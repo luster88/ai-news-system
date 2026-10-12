@@ -10,7 +10,7 @@ tags:
 - setup
 - windows
 date: '2026-05-09'
-updated: '2026-10-07'
+updated: '2026-10-12'
 sources:
 - url: https://qiita.com/enomoso_pm/items/623bd77ce2bb89569e3d
   title: 「設定したのになぜ？」Claude Codeのパーミッションが効かない理由と、今すぐできる対策
@@ -37,6 +37,9 @@ sources:
 - url: https://qiita.com/homhom44/items/2786251224ab53c58625
   title: 権限で拒否されたフォルダが原因で読み取りが止まらない瞬間を特定する方法！Claude Code でつまずいたときの切り分けメモ（2026-10-07）
   date: '2026-10-07'
+- url: https://zenn.dev/emilk1225/articles/73356c9b0e156d
+  title: Claude Code の deny に `../` を書いたら、隣のフォルダへの書き込みが止まらなかった（2.1.296で実測）
+  date: '2026-10-12'
 ---
 
 
@@ -46,7 +49,20 @@ sources:
 
 
 
+
 # Claude Code Permissions
+
+---
+
+## 2026-10-12
+
+### Claude Code の deny に `../` を書いたら、隣のフォルダへの書き込みが止まらなかった（2.1.296で実測）
+
+Claude Code 2.1.296（Windows 10）において、.claude/settings.jsonのdenyに相対パス（../）で作業フォルダ外を指定しても書き込み制限が機能しない問題を報告。絶対パス（//c/...）では一部機能するが、Bash自動許可時はnode経由の書き込みを防げない。公式ドキュメントに記載のない相対パス指定が警告なしに無効化される現象を、再現可能なテストスクリプト付きで解説。
+
+- **ソース**: [Zenn claude](https://zenn.dev/emilk1225/articles/73356c9b0e156d)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, windows
 
 ---
 

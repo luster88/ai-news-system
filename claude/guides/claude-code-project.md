@@ -9,7 +9,7 @@ tags:
 - windows
 - 新機能
 date: '2026-05-11'
-updated: '2026-10-07'
+updated: '2026-10-12'
 sources:
 - url: https://zenn.dev/schhrcat/articles/d2ba511ddf35a1
   title: ClaudeCodeでviライクエディタ「FoxEditor」を作ってみた#1
@@ -21,11 +21,28 @@ sources:
   title: I used Claude Code to turn a 1989 DOS game I played as a kid into a relativity
     sim
   date: '2026-10-07'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1x3cqlv/i_built_a_fake_live_cable_tv_network_out_of_the
+  title: I built a fake live cable TV network out of the Internet Archive's ephemeral
+    media
+  date: '2026-10-12'
 ---
 
 
 
+
 # Claude Code Project
+
+---
+
+## 2026-10-12
+
+### I built a fake live cable TV network out of the Internet Archive's ephemeral media
+
+ユーザーがインターネットアーカイブの動画を使い、24時間365日同期配信する疑似ケーブルテレビネットワーク「spelunkr」を構築。8ヶ月で670コミット、87,000行のコードベースを Claude Code でほぼ単独開発。24チャンネル、2,700時間分の動画を Internet Archive から直接ストリーミングし、全視聴者が同じタイミングで視聴する昔のテレビ体験を再現している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1x3cqlv/i_built_a_fake_live_cable_tv_network_out_of_the)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

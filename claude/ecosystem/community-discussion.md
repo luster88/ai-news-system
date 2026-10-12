@@ -17,7 +17,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-10-02'
+updated: '2026-10-12'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -91,6 +91,9 @@ sources:
 - url: https://qiita.com/homhom44/items/1f4c81c8a4639b792807
   title: Claude Sonnet 5.5の中間層厚め評価と実務目線の価格感！Claude Code開発者が押さえておきたいAnthropicニュース（2026-10-02）
   date: '2026-10-02'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1x3lzc0/does_anyone_still_use_fable_51_these_days
+  title: Does anyone still use Fable 5.1 these days?
+  date: '2026-10-12'
 ---
 
 
@@ -114,7 +117,20 @@ sources:
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-10-12
+
+### Does anyone still use Fable 5.1 these days?
+
+Opus 5.5のリリース後、Fable 5.1を使い続ける理由があるかというコミュニティでの議論。投稿者はOpus 5.5が非常に賢く、徹底的で、Fableよりもはるかに安価なため、ほぼ完全に移行したと述べている。Fable 5.5がリリースされる前にFable 5.1を使う必要性について問いかけている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1x3lzc0/does_anyone_still_use_fable_51_these_days)
+- **重要度**: 4/10
+- **タグ**: opus, sonnet, pricing
 
 ---
 

@@ -13,7 +13,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-09-17'
+updated: '2026-10-12'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -73,6 +73,10 @@ sources:
 - url: https://zenn.dev/matsutake4949/articles/fastapi-claude-api
   title: FastAPI × Claude API で作る日本語ビジネス文書API
   date: '2026-09-17'
+- url: https://qiita.com/yureki_lab/items/4fe98328f2cf173170d6
+  title: Claude API の Citations(引用機能)で回答の根拠箇所を返させる実装手順 — 回答が細切れの text ブロックで返る・PDF
+    のページ番号は end が排他・Structured Outputs と併用で 400、3つのハマりどころ【2026】
+  date: '2026-10-12'
 ---
 
 
@@ -92,7 +96,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-10-12
+
+### Claude API の Citations(引用機能)で回答の根拠箇所を返させる実装手順 — 回答が細切れの text ブロックで返る・PDF のページ番号は end が排他・Structured Outputs と併用で 400、3つのハマりどころ【2026】
+
+Claude API の Citations(引用機能) を使うと、回答に元ドキュメントの根拠箇所を構造化データとして付与できる。document ブロックに citations を有効化するだけで動作するが、回答が細切れの text ブロックで返る点、PDF のページ番号が排他的である点、Structured Outputs と併用不可な点の 3 つのハマりどころがある。実装時は全 text ブロックを結合し、位置情報の型に応じた処理を行い、必要なら 2 段階呼び出しで回避する必要がある。
+
+- **ソース**: [Qiita claude](https://qiita.com/yureki_lab/items/4fe98328f2cf173170d6)
+- **重要度**: 7/10
+- **タグ**: claude-api, 新機能, prompt
 
 ---
 

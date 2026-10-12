@@ -13,7 +13,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-12'
-updated: '2026-10-11'
+updated: '2026-10-12'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -85,6 +85,9 @@ sources:
 - url: https://zenn.dev/zundamon_tools/articles/claude-news-weekly-2026-10-11
   title: Claude Code 週間ニュース（10/4〜10/10）：Projects 開放・権限の穴塞ぎ・onFailure・Haiku 5.5
   date: '2026-10-11'
+- url: https://qiita.com/moha0918_/items/d8fcd1dc4da7a095f441
+  title: Claude Code v2.1.290〜v2.1.296｜hook の素通りが塞がる｜週刊Changelog解説
+  date: '2026-10-12'
 ---
 
 
@@ -106,7 +109,20 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-10-12
+
+### Claude Code v2.1.290〜v2.1.296｜hook の素通りが塞がる｜週刊Changelog解説
+
+Claude Code v2.1.290〜v2.1.296の週刊Changelog解説。v2.1.294でprompt/agent hookの命令形記述による判定バグが修正され、ブロックすべき操作が正しく止まるようになった。v2.1.295ではonFailure: "block"オプションが追加され、hook失敗時も操作をブロック可能に。権限判定の抜け穴も複数の版で塞がれ、v2.1.296ではShift-JISファイルの誤変換を防ぐ改善も実施された。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/d8fcd1dc4da7a095f441)
+- **重要度**: 7/10
+- **タグ**: claude-code, bugfix, 新機能
 
 ---
 

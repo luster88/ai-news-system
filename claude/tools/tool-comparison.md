@@ -10,7 +10,7 @@ tags:
 - mcp
 - performance
 date: '2026-04-07'
-updated: '2026-10-04'
+updated: '2026-10-12'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-vs-cursor-comparison-2026
   title: Claude Code vs Cursor徹底比較2026年版：CLI派とIDE派、どちらを選ぶべきか
@@ -33,6 +33,9 @@ sources:
 - url: https://qiita.com/sescore/items/80adc15d3f9e3da8ce30
   title: 【2026年10月版】Claude Code・Copilot・Cursor・Windsurf・Codeiumを実装目線で比較する ― セットアップ・運用コード付き
   date: '2026-10-04'
+- url: https://qiita.com/Next-Survive/items/e5753afa06abe370dbe8
+  title: Codex・Claude Code・Gemini、それぞれ何に強いのか ― 得意分野を分けて整理した
+  date: '2026-10-12'
 ---
 
 
@@ -41,7 +44,20 @@ sources:
 
 
 
+
 # Tool Comparison
+
+---
+
+## 2026-10-12
+
+### Codex・Claude Code・Gemini、それぞれ何に強いのか ― 得意分野を分けて整理した
+
+OpenAI Codex、Claude Code、Google Gemini の3つの AI コーディングツールについて、SWE-bench などのベンチマーク結果（Codex 88.7% / Claude Code 87.6% / Gemini 80.6%）と実測データを基に得意分野を比較。Codex はトークン効率とコスト優位性、Claude Code は長時間タスクとブラウザ操作、Gemini は無料枠の大きさとコンテキスト長が強み。Google Research の180構成評価により、マルチエージェント構成は必ずしも高速化につながらず、タスクの性質で判断すべきと結論。
+
+- **ソース**: [Qiita claude](https://qiita.com/Next-Survive/items/e5753afa06abe370dbe8)
+- **重要度**: 6/10
+- **タグ**: claude-code, performance, cowork
 
 ---
 
