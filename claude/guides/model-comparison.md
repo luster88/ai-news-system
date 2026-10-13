@@ -12,7 +12,7 @@ tags:
 - prompt
 - sonnet
 date: '2026-06-12'
-updated: '2026-09-29'
+updated: '2026-10-13'
 sources:
 - url: https://zenn.dev/znet/articles/2026-stronger-model-as-reviewer
   title: 高性能モデルの使いどころは『実装者』でなく『レビュアー』 — Fable 5 実機評価
@@ -35,6 +35,9 @@ sources:
 - url: https://qiita.com/suwa_nobu/items/5749949156f8df6f728b
   title: Claude Code で選べる12モデルに同じ仕事をさせた。1年で速度は2.7倍、値段は1%しか変わらなかった
   date: '2026-09-29'
+- url: https://qiita.com/kenji_harada/items/43f5348563728dea7e12
+  title: Claude Sonnet 5.5 の性能を実測｜5 モデル計 90 回で時間は Opus 5 の 0.35 倍、成功数は差なし
+  date: '2026-10-13'
 ---
 
 
@@ -43,7 +46,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-10-13
+
+### Claude Sonnet 5.5 の性能を実測｜5 モデル計 90 回で時間は Opus 5 の 0.35 倍、成功数は差なし
+
+Claude Sonnet 5.5を含む5モデルで小規模Node.js課題を計90回実行し性能を実測。Opus 5比で時間0.35倍、費用0.28倍と高速化を確認。全モデルが18/18で成功し難易度不足だが、時間・費用面でSonnet 5.5が最も優秀という結果に。
+
+- **ソース**: [Qiita claude](https://qiita.com/kenji_harada/items/43f5348563728dea7e12)
+- **重要度**: 7/10
+- **タグ**: sonnet, opus, performance
 
 ---
 

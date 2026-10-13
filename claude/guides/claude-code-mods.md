@@ -7,9 +7,10 @@ tags:
 - mcp
 - prompt
 - setup
+- windows
 - 新機能
 date: '2026-09-19'
-updated: '2026-10-04'
+updated: '2026-10-13'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-mods
   title: Claude Code modsとは｜AGENTS.md対応のagents-md modをソースで読み、4つのモードを実測
@@ -23,12 +24,28 @@ sources:
 - url: https://qiita.com/faruryo/items/c075c8c3d664c38f2384
   title: Claude Code Modsは一番深く拡張できて、一番持ち運べない — 直近のアップデート13個を★で評価（2026/10/3時点）
   date: '2026-10-04'
+- url: https://zenn.dev/nakadaharuki/books/claude-code-mods-desktop-guide
+  title: Claude Code デスクトップ版 Mods 入門―作り方・入れ方・Windows で動かない原因・安全な見分け方
+  date: '2026-10-13'
 ---
 
 
 
 
+
 # Claude Code Mods
+
+---
+
+## 2026-10-13
+
+### Claude Code デスクトップ版 Mods 入門―作り方・入れ方・Windows で動かない原因・安全な見分け方
+
+Claude Code デスクトップ版における Mods の実装ガイド。3ファイルでの最小構成から、UI要素（ペイン・バンド・ステータス行）の作成、Windows環境での動作問題（$.processコマンド制限）、エラーハンドリング、マーケットプレイスでの配布方法、セキュリティ判断基準まで網羅的に解説。サンドボックスなしで動作する Mod の安全性確認方法も提供。
+
+- **ソース**: [Zenn claude](https://zenn.dev/nakadaharuki/books/claude-code-mods-desktop-guide)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, windows
 
 ---
 

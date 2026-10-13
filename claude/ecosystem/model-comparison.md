@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-24'
-updated: '2026-09-29'
+updated: '2026-10-13'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -91,6 +91,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wshs7m/putting_one_kimi_among_four_claudes_can_the
   title: Putting One Kimi Among Four Claudes, Can the Claudes Identify Kimi?
   date: '2026-09-29'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1x4f7os/super_fun_to_see_how_different_models_create_a
+  title: Super fun to see how different models create a SNES game from a vague prompt
+  date: '2026-10-13'
 ---
 
 
@@ -115,7 +118,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-10-13
+
+### Super fun to see how different models create a SNES game from a vague prompt
+
+Reddit ユーザーが Claude Opus、Sonnet、Muse、ChatGPT を使って SNES ゲーム開発を比較。単一プロンプトで「障害物を避けて走る牛のゲーム」を作成させ、すべてのモデルがエミュレータで動作可能なゲームを生成。Opus は N64 ゲーム開発でも優れた自律性を発揮し、レトロゲーム開発における各モデルの実力を実演。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1x4f7os/super_fun_to_see_how_different_models_create_a)
+- **重要度**: 5/10
+- **タグ**: opus, sonnet, performance
 
 ---
 
