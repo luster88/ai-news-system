@@ -5,12 +5,14 @@ subcategory: pricing-comparison
 tags:
 - claude-api
 - claude-code
+- claude-console
 - copilot
 - cowork
+- opus
 - pricing
 - sonnet
 date: '2026-04-16'
-updated: '2026-09-09'
+updated: '2026-10-14'
 sources:
 - url: https://ai-heartland.com/explain/claude-api-pricing-calculator-2026
   title: Claude API 料金を徹底比較｜Anthropic全モデル月額コスト計算シミュレーター【2026年版】
@@ -28,13 +30,42 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wbux15/chatgpt_20_plan_vs_claude_20_plan
   title: Chatgpt $20 plan VS Claude $20 plan
   date: '2026-09-09'
+- url: https://zenn.dev/sakidori/articles/20261011-chatgpt-gemini-claude-price-and-data
+  title: ChatGPT・Gemini・Claude の料金とデータの扱い：チャットとAPIの比較表
+  date: '2026-10-14'
+- url: https://zenn.dev/cauchye_asia/articles/e99a1a03fdcad5
+  title: 月1億トークンの試算で$20〜$2,000の100倍差｜モデル7構成の月額をPythonで比較して分かった節約の順番
+  date: '2026-10-14'
 ---
 
 
 
 
 
+
 # Pricing Comparison
+
+---
+
+## 2026-10-14
+
+### ChatGPT・Gemini・Claude の料金とデータの扱い：チャットとAPIの比較表
+
+ChatGPT、Gemini、Claudeの3社について、チャット月額プランとAPI従量課金の料金体系とデータ利用ポリシーを2026年10月時点で比較。個人向けチャットは月20ドル前後で横並びだが、データの扱いはChatGPT・Geminiが既定で学習利用、Claudeは許可制。API価格は同世代モデルでほぼ一致し、gpt-6.1-solとSonnet 5.5が入力2ドル・出力10ドル、Gemini 3.1 Proのみ入力2ドル・出力12ドルでやや安価。法人向けはChatGPT BusinessとClaude Teamが月25ドル（年払い20ドル）で完全一致している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/sakidori/articles/20261011-chatgpt-gemini-claude-price-and-data)
+- **重要度**: 7/10
+- **タグ**: pricing, claude-api, claude-console
+
+---
+
+### 月1億トークンの試算で$20〜$2,000の100倍差｜モデル7構成の月額をPythonで比較して分かった節約の順番
+
+月1億トークンの利用を想定した7つのAIモデルの料金比較記事。最安のGPT-6 Lunaが$20、最高のClaude Fable 5.1が$2,000と100倍の差。Claude Sonnet 5.5は$400、Opus 5.5は$800。Gemini 3.8 Flashは導入価格$150だが2027年1月から$300に値上げ。単価だけでなく1タスクあたりのトークン消費量も考慮が必要で、節約は「モデル選び→トークン削減→キャッシュ活用」の順に検討すべきと解説。
+
+- **ソース**: [Zenn claude](https://zenn.dev/cauchye_asia/articles/e99a1a03fdcad5)
+- **重要度**: 6/10
+- **タグ**: pricing, sonnet, opus
 
 ---
 

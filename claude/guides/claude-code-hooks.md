@@ -12,7 +12,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-23'
-updated: '2026-10-11'
+updated: '2026-10-14'
 sources:
 - url: https://qiita.com/pro-tein/items/49e5dbec705c3497dd51
   title: 【Claude Code】Hooks機能でデスクトップ通知を設定してみた
@@ -57,6 +57,9 @@ sources:
 - url: https://zenn.dev/umechanhika/articles/346489e8b5a752
   title: Claude Code が止まった理由ごとに通知を出し分ける hooks レシピと、効かないときの確認リスト
   date: '2026-10-11'
+- url: https://qiita.com/dawon/items/aac4bb9f113a3d7f5f26
+  title: Claude Code の hooks で作業完了・承認待ちを Mac に通知する
+  date: '2026-10-14'
 ---
 
 
@@ -72,7 +75,20 @@ sources:
 
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-10-14
+
+### Claude Code の hooks で作業完了・承認待ちを Mac に通知する
+
+Claude Code の hooks 機能を使い、作業完了や承認待ちのタイミングで macOS 通知を表示する方法を解説。jq のみで実装でき、JSON から cwd や本文を取り出して通知に含めることも可能。さらに PermissionRequest hook を使えば、Mac のダイアログで許可・拒否を決定でき、stdout に JSON を返すことで自動応答できる。蓋を閉じた際のスリープ対策として、筆者作成の Lidnight アプリも紹介されている。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/dawon/items/aac4bb9f113a3d7f5f26)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, mac
 
 ---
 

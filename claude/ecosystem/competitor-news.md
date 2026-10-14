@@ -5,10 +5,11 @@ subcategory: competitor-news
 tags:
 - copilot
 - cowork
+- opus
 - performance
 - pricing
 date: '2026-08-13'
-updated: '2026-09-02'
+updated: '2026-10-14'
 sources:
 - url: https://the-decoder.com/gemini-3-7-flash-lands-with-coding-gains-and-undercuts-its-three-week-old-predecessors-price-by-50
   title: Gemini 3.7 Flash lands with coding gains and undercuts its three-week-old
@@ -18,10 +19,27 @@ sources:
   title: Gemini 3.8 Flash is Google's third budget model in six weeks while frontier
     models remain MIA
   date: '2026-09-02'
+- url: https://the-decoder.com/gemini-4-argon-is-now-available-worldwide-as-googles-most-capable-frontier-model
+  title: Gemini 4 Argon is now available worldwide as Google's most capable frontier
+    model
+  date: '2026-10-14'
 ---
 
 
+
 # Competitor News
+
+---
+
+## 2026-10-14
+
+### Gemini 4 Argon is now available worldwide as Google's most capable frontier model
+
+Google が最新の AI モデル Gemini 4 Argon を全世界でリリース。API、Gemini アプリ、Google Search の AI モードで利用可能だが、無料ユーザーと Plus ユーザーは弱い Flash モデルのみにアクセス制限される新しい階層構造を導入。価格は入力トークン 100 万あたり 2 ドル、出力トークン 100 万あたり 10 ドル。Vals Index でトップだが、Anthropic の Claude Opus 5.5 や Meta の Muse Wonder Full には及ばない。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/gemini-4-argon-is-now-available-worldwide-as-googles-most-capable-frontier-model)
+- **重要度**: 4/10
+- **タグ**: opus, pricing, performance
 
 ---
 

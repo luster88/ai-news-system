@@ -10,7 +10,7 @@ tags:
 - performance
 - 新機能
 date: '2026-04-05'
-updated: '2026-10-05'
+updated: '2026-10-14'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sdabux/hats_off_to_claude
   title: Hats off to claude
@@ -24,12 +24,28 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wxoqzr/claude_just_saved_my_ass_from_a_gas_leak
   title: Claude just saved my ass from a gas leak!
   date: '2026-10-05'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1x4s9hp/someone_used_claude_to_get_a_yearsold_pothole
+  title: Someone used Claude to get a years-old pothole fixed in two days
+  date: '2026-10-14'
 ---
 
 
 
 
+
 # Community Success Story
+
+---
+
+## 2026-10-14
+
+### Someone used Claude to get a years-old pothole fixed in two days
+
+オランダのオフィスで何年も放置されていた道路の穴ぼこ問題を、Claude が解決した事例。ユーザーが6枚の写真を Claude に入力すると、3D再構築と時速30kmでの衝撃シミュレーションを生成。その動画を市役所に提出したところ、わずか2日で修復された。AI を活用した実社会の問題解決の好例として、コミュニティで話題になっている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1x4s9hp/someone_used_claude_to_get_a_yearsold_pothole)
+- **重要度**: 6/10
+- **タグ**: claude-console, 新機能, cowork
 
 ---
 

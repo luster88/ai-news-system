@@ -8,7 +8,7 @@ tags:
 - performance
 - 新機能
 date: '2026-04-04'
-updated: '2026-08-08'
+updated: '2026-10-14'
 sources:
 - url: https://zenn.dev/moumu_pure/articles/2026-04-04-claude-code-engineer-fear
   title: '"システム屋さん"という職業が終わるのを、自分は目撃した――Claude Code 導入後、フリーランスエンジニアが感じた本当の恐怖'
@@ -17,10 +17,26 @@ sources:
   title: The more productive Claude makes me, the less secure my career feels. What
     are we actually supposed to get good at now?
   date: '2026-08-08'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1x4zm61/were_cooked
+  title: We're cooked
+  date: '2026-10-14'
 ---
 
 
+
 # Career Impact
+
+---
+
+## 2026-10-14
+
+### We're cooked
+
+開発者が Claude を活用することで、1年間コーディングせずに通常の2倍のストーリーポイントをこなし、30分の作業（プロンプト作成とコードレビュー）で業務を完了している状況を報告。AI の急速な進化により、従来のプログラミングスキルの価値低下と今後のキャリアへの不安を表明するコミュニティ投稿。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1x4zm61/were_cooked)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, performance
 
 ---
 

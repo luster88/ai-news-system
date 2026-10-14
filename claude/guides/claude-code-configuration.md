@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-12'
-updated: '2026-07-27'
+updated: '2026-10-14'
 sources:
 - url: https://qiita.com/Tadashi_Kudo/items/80a6a0c8fe73bd9450c3
   title: 104kスターのKarpathy CLAUDE.mdを試したら、手元に既にあった話——グローバルCLAUDE.mdで全PJ適用済みの実態
@@ -29,6 +29,9 @@ sources:
 - url: https://qiita.com/f_uto/items/438336db3684cf662321
   title: Claude Code「/config」設定の教科書 ― 全42項目を1つずつ解説＋おすすめ設定（v2.1.220対応）
   date: '2026-07-27'
+- url: https://qiita.com/kai_kou/items/314e244a33163709220d
+  title: Claude Code v2.1.296のサブエージェント設定入門、新3設定の効き方
+  date: '2026-10-14'
 ---
 
 
@@ -37,7 +40,20 @@ sources:
 
 
 
+
 # Claude Code Configuration
+
+---
+
+## 2026-10-14
+
+### Claude Code v2.1.296のサブエージェント設定入門、新3設定の効き方
+
+Claude Code v2.1.296で追加された3つのサブエージェント設定（autoCompactWindow、CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL、CLAUDE_CODE_OVERLOADED_RETRY_MAX_DELAY_MS）について、実行ファイルの解析により動作を検証。autoCompactWindowはコンテキスト圧縮の閾値設定、WORKFLOW_SUBAGENT_MODELはワークフロー専用のモデル指定、OVERLOADED_RETRY_MAX_DELAY_MSは529エラー時の再試行上限を調整する機能。公式ドキュメントに未掲載の設定のため、実際の運用前の検証を推奨。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kai_kou/items/314e244a33163709220d)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

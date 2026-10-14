@@ -12,7 +12,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-03-30'
-updated: '2026-10-03'
+updated: '2026-10-14'
 sources:
 - url: https://zenn.dev/analysis/articles/prompt-master-thought-analyzer
   title: 「プロンプトを最適化する」とは何か──prompt-masterを3層フレームワークで解剖する
@@ -35,6 +35,9 @@ sources:
 - url: https://qiita.com/colinnxt/items/3489a234f7b074b4fb5e
   title: ClaudeとChatGPTに同じ依頼文で設計させたら割れた ― 原因は「将来の用途」と「シンプルに」の2行
   date: '2026-10-03'
+- url: https://zenn.dev/every_ai_recipe/articles/ai-email-ng-word-cliche-phrase-check
+  title: 敬語リライトで紋切り型を防ぐ、禁止ワード指定とone-shot例示の比較
+  date: '2026-10-14'
 ---
 
 
@@ -43,7 +46,20 @@ sources:
 
 
 
+
 # Prompt Engineering Framework
+
+---
+
+## 2026-10-14
+
+### 敬語リライトで紋切り型を防ぐ、禁止ワード指定とone-shot例示の比較
+
+Claude を使った敬語リライトにおいて、禁止ワードの明示（negative constraint）は紋切り型の混入を確実に防いだが、one-shot 例示はスタイル転移に効果が薄く、例文がテンプレート的に挿入されるだけだった。3条件（指示なし・禁止ワード明示・one-shot例示）での実験結果を Python で機械的に検証し、明示的制約の有効性とスタイル推定の不良設定問題を技術的に考察。
+
+- **ソース**: [Zenn claude](https://zenn.dev/every_ai_recipe/articles/ai-email-ng-word-cliche-phrase-check)
+- **重要度**: 6/10
+- **タグ**: prompt, claude-api
 
 ---
 

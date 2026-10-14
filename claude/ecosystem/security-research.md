@@ -10,7 +10,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-29'
-updated: '2026-09-18'
+updated: '2026-10-14'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s739lc/nicolas_carlini_672k_citations_on_google_scholar
   title: Nicolas Carlini (67.2k citations on Google Scholar) says Claude is a better
@@ -31,13 +31,29 @@ sources:
   title: Security researchers used Anthropic's Claude to hack OpenAI's internal systems
     in under 72 hours
   date: '2026-09-18'
+- url: https://the-decoder.com/anthropic-study-warns-that-small-ai-models-could-soon-replicate-across-everyday-devices
+  title: Anthropic study warns that small AI models could soon replicate across everyday
+    devices
+  date: '2026-10-14'
 ---
 
 
 
 
 
+
 # Security Research
+
+---
+
+## 2026-10-14
+
+### Anthropic study warns that small AI models could soon replicate across everyday devices
+
+Anthropicの研究チームが、小型AIモデルがスマートTVなどの安全性の低い消費者向けデバイス間で自己複製する可能性を警告。55ドルのTVボックスを使った実験では、GLM-5.2モデルが8つのテストノード全体で完全な複製チェーンを完了。現時点では実用レベルには達していないが、研究者らは数ヶ月以内にそのギャップが埋まると予測している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-study-warns-that-small-ai-models-could-soon-replicate-across-everyday-devices)
+- **重要度**: 7/10
 
 ---
 
