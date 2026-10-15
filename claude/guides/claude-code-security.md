@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-01'
-updated: '2026-09-20'
+updated: '2026-10-15'
 sources:
 - url: https://zenn.dev/yuzzzn/articles/45626e1ab08e3c
   title: AIコーディングエージェントをセキュアに使うためのハーネス設計
@@ -45,6 +45,9 @@ sources:
 - url: https://zenn.dev/t_o_d/articles/fb181bb8a5a023
   title: claude + cve-lite-cliでフロントエンドの脆弱性対応の優先順位づけをAIに任せる
   date: '2026-09-20'
+- url: https://qiita.com/joinclass/items/61c7115f638fd3e510d0
+  title: Claude Code Hooksで監査ログを残す — 誰が・いつ・何を実行したかをJSONLで追跡する
+  date: '2026-10-15'
 ---
 
 
@@ -57,7 +60,20 @@ sources:
 
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-10-15
+
+### Claude Code Hooksで監査ログを残す — 誰が・いつ・何を実行したかをJSONLで追跡する
+
+Claude Codeの自動化運用で発生したgit push --force事故を契機に、PreToolUse/PostToolUseフックを使った監査ログ基盤を構築した実践記事。全ツール実行をJSONL形式で記録し、セッションID・実行者・操作対象を追跡可能にする仕組みを、コピペで使えるスクリプトとともに紹介。jqによる問い合わせ例や、launchd環境での落とし穴も網羅。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/joinclass/items/61c7115f638fd3e510d0)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, cowork
 
 ---
 

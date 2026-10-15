@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-05'
-updated: '2026-10-09'
+updated: '2026-10-15'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-v2188-ai-12
   title: AIコーディングツールは内部でどう動くのか：Claude Codeのアーキテクチャを初心者向けに解説
@@ -28,13 +28,29 @@ sources:
 - url: https://qiita.com/joinclass/items/9bb292ceb6418f3f9fad
   title: Claude Codeの指揮者エージェントを太らせない設計：CLAUDE.md・サブエージェント・launchdの実装
   date: '2026-10-09'
+- url: https://qiita.com/sescore/items/fbb23520b1a754f4d929
+  title: OpenClaw×Claude Code連携実践：思考と実行を分離するAI開発設計
+  date: '2026-10-15'
 ---
 
 
 
 
 
+
 # Claude Code Architecture
+
+---
+
+## 2026-10-15
+
+### OpenClaw×Claude Code連携実践：思考と実行を分離するAI開発設計
+
+OpenClawとClaude Codeを連携させ、思考・記憶レイヤーと実行レイヤーを分離する設計パターンを解説。SQLiteのベクトル検索拡張vec1を使ったローカル記憶層の実装、プロンプトインジェクション対策などセキュリティ要件を含む実践的なアーキテクチャを提案している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/sescore/items/fbb23520b1a754f4d929)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

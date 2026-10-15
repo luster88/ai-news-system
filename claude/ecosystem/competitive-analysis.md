@@ -13,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-04'
-updated: '2026-10-12'
+updated: '2026-10-15'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -92,6 +92,9 @@ sources:
   title: AI agent teams waste massive tokens for barely measurable quality gains,
     research finds
   date: '2026-10-12'
+- url: https://qiita.com/kenimo49/items/d3c9b80775008b5bfb07
+  title: Kimi K3は動画を直接読めるのに、Claudeと指摘はほぼ同じだった
+  date: '2026-10-15'
 ---
 
 
@@ -113,7 +116,20 @@ sources:
 
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-10-15
+
+### Kimi K3は動画を直接読めるのに、Claudeと指摘はほぼ同じだった
+
+Moonshot AIのKimi K3は動画ファイルを直接APIに渡せる点でClaudeと異なるが、実際のハンズオン動画レビューで「何が悪いか」の判断はほぼ一致した。K3は秒未満の精度で画面停止区間を指摘できるが音声は理解せず、Claudeはフレーム画像から推定するため時刻に±1秒のずれが出る。処理速度はClaudeが約2倍速く、K3は363秒、Claudeは185秒だった。
+
+- **ソース**: [Qiita claude](https://qiita.com/kenimo49/items/d3c9b80775008b5bfb07)
+- **重要度**: 6/10
+- **タグ**: claude-api, performance, cowork
 
 ---
 

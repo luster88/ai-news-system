@@ -13,7 +13,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-10-12'
+updated: '2026-10-15'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -77,6 +77,9 @@ sources:
   title: Claude API の Citations(引用機能)で回答の根拠箇所を返させる実装手順 — 回答が細切れの text ブロックで返る・PDF
     のページ番号は end が排他・Structured Outputs と併用で 400、3つのハマりどころ【2026】
   date: '2026-10-12'
+- url: https://zenn.dev/yunisuta/articles/claude-api-citations-anthropic-qcncc4
+  title: Claude APIのCitationsで回答に「検証できる出典」を付ける：文字位置の突き合わせまで実装する
+  date: '2026-10-15'
 ---
 
 
@@ -97,7 +100,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-10-15
+
+### Claude APIのCitationsで回答に「検証できる出典」を付ける：文字位置の突き合わせまで実装する
+
+Claude APIのCitations機能を使うと、回答に対する「検証可能な出典」を構造化データとして取得できます。documentブロックにcitations.enabledを付けると、回答の各テキストに原文のどの部分を根拠にしたかが文字位置で返されます。この記事では、返ってきた引用が実際に原文と一致するかをTypeScriptで検証する実装方法まで解説しています。
+
+- **ソース**: [Zenn claude](https://zenn.dev/yunisuta/articles/claude-api-citations-anthropic-qcncc4)
+- **重要度**: 7/10
+- **タグ**: claude-api, 新機能, prompt
 
 ---
 

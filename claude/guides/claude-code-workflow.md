@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-10-11'
+updated: '2026-10-15'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -397,6 +397,9 @@ sources:
 - url: https://qiita.com/kai_kou/items/b0969ef956969c328d08
   title: '本を Claude Code に読ませて自分のリポジトリに再現する: 読む順路・検証済み SHA・改訂の追随'
   date: '2026-10-11'
+- url: https://qiita.com/sescore/items/fbb23520b1a754f4d929
+  title: OpenClaw×Claude Code連携実践：思考と実行を分離するAI開発設計
+  date: '2026-10-15'
 ---
 
 
@@ -497,7 +500,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-10-15
+
+### OpenClaw×Claude Code連携実践：思考と実行を分離するAI開発設計
+
+OpenClawとClaude Codeを役割分離して連携させる設計パターンを解説。OpenClawが思考・記憶・指示を担当し、Claude Codeが実装・実行を担当することで、コンテキスト汚染と再現性の問題を解決する。SQLiteのベクトル検索拡張vec1を使ったローカル記憶層の実装方法や、プロンプトインジェクション対策などセキュリティ要件についても実務観点で説明している。
+
+- **ソース**: [Qiita claude](https://qiita.com/sescore/items/fbb23520b1a754f4d929)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 
