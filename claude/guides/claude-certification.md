@@ -4,17 +4,34 @@ category: guides
 subcategory: claude-certification
 tags:
 - claude-api
+- claude-code
 - setup
 - 新機能
 date: '2026-08-11'
-updated: '2026-08-11'
+updated: '2026-10-16'
 sources:
 - url: https://qiita.com/alphajinsei/items/b8e54e2c6a860df8808f
   title: Claude certification 全冠した
   date: '2026-08-11'
+- url: https://zenn.dev/ray_keymaso/articles/ccaf-vs-ccdvf
+  title: CCA-F（CCAR-F）とCCDV-Fの違い：学習範囲の重なりと、CCA-Fのために追加で確かめる範囲
+  date: '2026-10-16'
 ---
 
+
 # Claude Certification
+
+---
+
+## 2026-10-16
+
+### CCA-F（CCAR-F）とCCDV-Fの違い：学習範囲の重なりと、CCA-Fのために追加で確かめる範囲
+
+Claude認定試験のCCA-F（Architect）とCCDV-F（Developer）の違いを公式Exam Guideを読み比べて整理した記事。CCA-Fは設計判断とトレードオフ理解を問い、Claude Codeが配点の20%を占める。CCDV-Fは実装と運用に重点があり、両試験で重なる範囲（エージェント、MCP、プロンプト）でも問われ方が異なる。CCDV-F学習者向けに、CCA-Fで追加確認が必要な12項目のセルフチェックリストを提供。
+
+- **ソース**: [Zenn claude](https://zenn.dev/ray_keymaso/articles/ccaf-vs-ccdvf)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

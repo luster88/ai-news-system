@@ -6,9 +6,10 @@ tags:
 - claude-code
 - cowork
 - mcp
+- opus
 - 新機能
 date: '2026-04-11'
-updated: '2026-09-05'
+updated: '2026-10-16'
 sources:
 - url: https://qiita.com/taketsuyo/items/20a49500bcaac4c868ff
   title: Blender MCPが示したのは「AIで3Dが作れる」ではなく、「自然言語が制作ソフトのUIになる」未来
@@ -16,10 +17,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1w7bh9p/fable_51_one_shotted_this
   title: Fable 5.1 one shotted this
   date: '2026-09-05'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1x6x6x7/3d_recreation_of_neo_apartment_from_the_matrix
+  title: 3D recreation of Neo apartment from The Matrix, built 100% using Claude via
+    MCP Blender
+  date: '2026-10-16'
 ---
 
 
+
 # Mcp Blender
+
+---
+
+## 2026-10-16
+
+### 3D recreation of Neo apartment from The Matrix, built 100% using Claude via MCP Blender
+
+ユーザーがMCP経由でBlenderと連携したClaudeを使用し、映画『マトリックス』のネオのアパートを完全に3Dモデリングで再現。従来1-2ヶ月かかる作業を5日間で完成。Claude Opus 3.5とSonnet、Haikuを並列エージェントとして活用し、モデリング、UV、マテリアル、コンポジットまで実行。20ドルプランでのトークン管理が課題だったが、高度な3D制作ワークフローの実例として注目。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1x6x6x7/3d_recreation_of_neo_apartment_from_the_matrix)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code, opus
 
 ---
 

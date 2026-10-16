@@ -13,7 +13,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-12'
-updated: '2026-10-12'
+updated: '2026-10-16'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -88,6 +88,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/d8fcd1dc4da7a095f441
   title: Claude Code v2.1.290〜v2.1.296｜hook の素通りが塞がる｜週刊Changelog解説
   date: '2026-10-12'
+- url: https://qiita.com/picnic/items/08bb24ef4da996d55d54
+  title: Claude Code v2.1.301 変更点まとめ：mod の .catch と $.env.set の挙動変更
+  date: '2026-10-16'
 ---
 
 
@@ -110,7 +113,20 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-10-16
+
+### Claude Code v2.1.301 変更点まとめ：mod の .catch と $.env.set の挙動変更
+
+Claude Code v2.1.301 で mod API に破壊的変更が導入されました。mod hook の .catch が呼ばれる条件と $.env.set の戻り値が変更され、既存の mod を作成している開発者は見直しが必要です。また、WorktreeCreate hook で作成した worktree が確認なしに削除される作業喪失のおそれがあったバグや、Anthropic API のエイリアスエラー、モデル切り替え時の無確認クレジット消費の問題も修正されました。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/08bb24ef4da996d55d54)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

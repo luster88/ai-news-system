@@ -9,7 +9,7 @@ tags:
 - pricing
 - 新機能
 date: '2026-06-16'
-updated: '2026-10-09'
+updated: '2026-10-16'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1u7hoxg/policy_updates
   title: Policy Updates
@@ -20,10 +20,26 @@ sources:
 - url: https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference
   title: Anthropic changes usage policy to ban model abuse and election interference
   date: '2026-10-09'
+- url: https://zenn.dev/nocodesolutions/articles/562538ccb14dfd
+  title: 【11月改定】Claude利用ポリシーは何が変わったのか？実際に検証して徹底解説！
+  date: '2026-10-16'
 ---
 
 
+
 # Policy Updates
+
+---
+
+## 2026-10-16
+
+### 【11月改定】Claude利用ポリシーは何が変わったのか？実際に検証して徹底解説！
+
+Anthropicが2024年11月12日に適用したClaude利用ポリシー改定について、実際の検証実験を通じて解説。人の確認が必要な業務（社員評価、給与設定など）と不要な業務（社内文書の下書きや要約）の境界線を明確化し、30人の架空社員データと熱処理炉の制御実験で各ケースを検証。特に雇用関連の要件が具体化され、機械制御における安全対策の必要性が新たに追加された点を詳述。
+
+- **ソース**: [Zenn claude](https://zenn.dev/nocodesolutions/articles/562538ccb14dfd)
+- **重要度**: 7/10
+- **タグ**: pricing, 新機能, cowork
 
 ---
 

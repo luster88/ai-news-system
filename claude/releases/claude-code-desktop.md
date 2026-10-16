@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-14'
-updated: '2026-07-10'
+updated: '2026-10-16'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1slictc/claude_code_on_desktop_redesigned_for_parallel
   title: Claude Code on desktop, redesigned for parallel agentic work.
@@ -62,6 +62,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1usx952/claude_code_on_desktop_now_has_an_inapp_browser
   title: Claude Code on desktop now has an in-app browser.
   date: '2026-07-10'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1x6w0a5/claude_code_on_desktop_got_a_serious_glow_up
+  title: Claude Code on desktop got a serious glow up, here's what's new
+  date: '2026-10-16'
 ---
 
 
@@ -77,7 +80,20 @@ sources:
 
 
 
+
 # Claude Code Desktop
+
+---
+
+## 2026-10-16
+
+### Claude Code on desktop got a serious glow up, here's what's new
+
+Claude Code のデスクトップ版が大幅にアップデートされました。保存された環境設定、フォルダごとの独立したワークツリー、ネストされたセッション管理、サイド質問機能（/btw）、ワンクリックフォローアップ、サイドバーステータス表示、要約カードとライブToDoリストなど、複数の新機能が追加されています。これらの機能により並行作業の管理が容易になり、セッション間の干渉がなくなりました。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1x6w0a5/claude_code_on_desktop_got_a_serious_glow_up)
+- **重要度**: 8/10
+- **タグ**: claude-code, 新機能, release
 
 ---
 

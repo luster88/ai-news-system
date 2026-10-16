@@ -6,11 +6,12 @@ tags:
 - claude-api
 - claude-code
 - linux
+- mcp
 - prompt
 - setup
 - 新機能
 date: '2026-05-04'
-updated: '2026-07-03'
+updated: '2026-10-16'
 sources:
 - url: https://qiita.com/honey-0326-honey/items/c16d628aee898e3f9f72
   title: 【初心者向け】社内PCでClaude Codeを使う前に。絶対に知っておきたいセキュリティの罠と対策
@@ -24,11 +25,27 @@ sources:
 - url: https://qiita.com/ujunja/items/2b5cceaf5a1a39f43033
   title: Claude Codeのサンドボックスだけでは秘密情報を守れない — 権限ルール・巻き戻しまで含めた安全設定
   date: '2026-07-03'
+- url: https://zenn.dev/notahotel/articles/e85b2cdf9a5833
+  title: Claude Code の平文 API キーを 1Password CLI で安全に運用する
+  date: '2026-10-16'
 ---
 
 
 
+
 # Security Setup
+
+---
+
+## 2026-10-16
+
+### Claude Code の平文 API キーを 1Password CLI で安全に運用する
+
+Claude Code で使用する API キーを平文で保存せず、1Password CLI（op コマンド）を使って op:// 参照形式で安全に管理する方法を解説。.mcp.json や ~/.zshrc に平文キーを書くことによる漏えいリスク（バックアップ、クラウド同期、誤コミット、AI エージェントの履歴への取り込み）を指摘し、op run や op read を使った実装手順を示している。保管方法の改善だけでなく、キーの用途分離・有効期限設定・ローテーション手順の準備が重要だと強調。
+
+- **ソース**: [Zenn claude](https://zenn.dev/notahotel/articles/e85b2cdf9a5833)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, setup
 
 ---
 

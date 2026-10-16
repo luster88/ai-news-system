@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-11'
-updated: '2026-09-12'
+updated: '2026-10-16'
 sources:
 - url: https://ai-heartland.com/explain/ponytail-lazy-senior-dev
   title: Ponytail解説｜AIエージェントに『怠惰なシニア』を憑依させコードを54%削るClaude Codeスキル
@@ -28,13 +28,29 @@ sources:
 - url: https://qiita.com/r-hirayama/items/6509f98d213fb6f3dde2
   title: Claude Codeの締めに使うスキルを作った
   date: '2026-09-12'
+- url: https://ai-heartland.com/agent/claude-code-manga
+  title: Claude Codeで漫画を生成するmanga-forge｜ネーム設計からcodex作画・検品までを実測
+  date: '2026-10-16'
 ---
 
 
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-10-16
+
+### Claude Codeで漫画を生成するmanga-forge｜ネーム設計からcodex作画・検品までを実測
+
+Claude Codeで漫画を生成するスキル「manga-forge」の実装解説。YAMLでネームを設計し、codex CLIで作画する分業フローを採用。宣言だけで終わる・絵柄が変わる・コマ位置ずれなど画像生成AIの典型的失敗をbashスクリプトとスキル定義で防ぐ仕組みを持つ。clone直後の実行権限エラーからスタブ差し替えまで実測され、ライセンスはMIT。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/agent/claude-code-manga)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

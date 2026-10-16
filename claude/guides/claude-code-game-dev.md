@@ -8,7 +8,7 @@ tags:
 - opus
 - 新機能
 date: '2026-07-12'
-updated: '2026-09-25'
+updated: '2026-10-16'
 sources:
 - url: https://qiita.com/EitaroSeta/items/1f3b34f92e01225333c5
   title: Claude Code でソウルライク風3Dボス戦ゲームを作ってみた（Three.js / Mixamo / サーバー不要）
@@ -21,11 +21,27 @@ sources:
   title: I gave Opus 5.5 four reference images and "build this game". It built a full
     3D chess roguelite in Godot by itself.
   date: '2026-09-25'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1x6hef5/claude_let_me_build_something_i_wanted_for_almost
+  title: Claude let me build something I wanted for almost a decade
+  date: '2026-10-16'
 ---
 
 
 
+
 # Claude Code Game Dev
+
+---
+
+## 2026-10-16
+
+### Claude let me build something I wanted for almost a decade
+
+開発者がClaudeを使って10年越しの夢だったエネルギーシミュレーション/タイクーンゲームを実現した体験談。Claude Codeを使用してゲーム開発を行い、ニッチな分野でも個人開発者がAI支援により複雑なゲームを完成させられることを実証。コミュニティからのフィードバックを反映しながら反復的に改善を重ねた。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1x6hef5/claude_let_me_build_something_i_wanted_for_almost)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 
