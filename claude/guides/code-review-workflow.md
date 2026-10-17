@@ -8,8 +8,9 @@ tags:
 - cowork
 - prompt
 - sonnet
+- 新機能
 date: '2026-03-31'
-updated: '2026-08-20'
+updated: '2026-10-17'
 sources:
 - url: https://zenn.dev/whipea/articles/e63135d29f8e1f
   title: Claude Codeに課金してみたので、無料プランのAIで作った日記アプリのコードを本気レビューしてもらった
@@ -29,6 +30,9 @@ sources:
 - url: https://zenn.dev/k_motoki/articles/98ace2595164cf
   title: コードレビューが全文で回らなくなったので、AIにはdiffだけ渡すことにした
   date: '2026-08-20'
+- url: https://qiita.com/NaokiIshimura/items/0a79a9daf29ae7553f14
+  title: 【要約】How the Claude Code team does code review ― 「人間のレビュー時間を最小化」する7層の仕組み 🔍
+  date: '2026-10-17'
 ---
 
 
@@ -36,7 +40,20 @@ sources:
 
 
 
+
 # Code Review Workflow
+
+---
+
+## 2026-10-17
+
+### 【要約】How the Claude Code team does code review ― 「人間のレビュー時間を最小化」する7層の仕組み 🔍
+
+Claude Code チームのコードレビュープロセスを解説。AIレビュー・セキュリティチェック・CI・段階的人間承認など7層の仕組みで、人間のレビュー時間を最小化しながら品質を保つ。6〜9月でマージPRが2倍増、revert率は40%以上減少。Claude自身がコードの約90%を書き、社内PRの実質的レビューコメント率は16%から54%に向上。
+
+- **ソース**: [Qiita claude](https://qiita.com/NaokiIshimura/items/0a79a9daf29ae7553f14)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

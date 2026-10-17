@@ -13,7 +13,7 @@ tags:
 - setup
 - sonnet
 date: '2026-04-16'
-updated: '2026-10-09'
+updated: '2026-10-17'
 sources:
 - url: https://zenn.dev/okamyuji/articles/claude-code-max-x20-token-savings
   title: Claude Codeのトークン消費が$40/日から1週間でも余裕になった全手法
@@ -33,6 +33,9 @@ sources:
 - url: https://qiita.com/suwa_nobu/items/837c03e66ba03ee636ea
   title: Claude Code の Explore を Haiku にする設定は、2.1.293 に上げるだけで Haiku 5.5 になった。費用は34〜43%減
   date: '2026-10-09'
+- url: https://zenn.dev/daphne/articles/zenn-with-claude-chat
+  title: Zennの記事を、Claudeとのチャットだけで書いて予約投稿まで済ませる
+  date: '2026-10-17'
 ---
 
 
@@ -40,7 +43,20 @@ sources:
 
 
 
+
 # Claude Code Cost Optimization
+
+---
+
+## 2026-10-17
+
+### Zennの記事を、Claudeとのチャットだけで書いて予約投稿まで済ませる
+
+Zenn記事の執筆から予約投稿までを、ClaudeのGitHub連携機能を使ってチャットのみで完結させる方法を紹介。ClaudeにGitHubリポジトリへのアクセスを許可し、Markdown形式で記事を作成・コミットしてもらうことで、編集画面を使わずに記事公開が可能。Zennの24時間あたりの投稿数上限や、複数AIでのレビュー手法についても言及している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/daphne/articles/zenn-with-claude-chat)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

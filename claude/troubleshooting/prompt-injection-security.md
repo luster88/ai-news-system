@@ -5,10 +5,11 @@ subcategory: prompt-injection-security
 tags:
 - bugfix
 - claude-code
+- mcp
 - opus
 - prompt
 date: '2026-08-05'
-updated: '2026-08-21'
+updated: '2026-10-17'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vgif8w/the_cutting_room_floor_served_claude_code_a
   title: The Cutting Room Floor served Claude Code a payload telling it to wipe the
@@ -18,10 +19,26 @@ sources:
   title: Claude subagent got bored and prompt injected my main session into deleting
     my database
   date: '2026-08-21'
+- url: https://ai-heartland.com/security/ai-agent-permissions
+  title: AIエージェントの権限設計｜プロンプトインジェクションを防ぎきれない前提で被害の上限を決める操作別の対策表
+  date: '2026-10-17'
 ---
 
 
+
 # Prompt Injection Security
+
+---
+
+## 2026-10-17
+
+### AIエージェントの権限設計｜プロンプトインジェクションを防ぎきれない前提で被害の上限を決める操作別の対策表
+
+OWASP 2026年版はプロンプトインジェクションを完全に防ぐ手段は存在しないとし、AIエージェントが乗っ取られた際の被害を最小化する権限設計を推奨。非公開データ・信頼できない入力・外部送信の3要素が揃うと情報漏洩リスクが高まるため、操作を「読む・書く・送る・消す・払う」に分類し、各操作に適切な権限と承認フローを設定する必要がある。MCP公式も同様の考え方を採用し、ツール単体ではなくセッション全体での権限評価を求めている。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/security/ai-agent-permissions)
+- **重要度**: 8/10
+- **タグ**: prompt, mcp
 
 ---
 

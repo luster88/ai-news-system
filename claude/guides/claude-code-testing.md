@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-19'
-updated: '2026-10-07'
+updated: '2026-10-17'
 sources:
 - url: https://qiita.com/peka2/items/9ce150b3b480516fc16e
   title: Claude Code に iOSアプリの E2Eテスト までやらせるようにした（iOSシミュレータ + AXe）
@@ -20,11 +20,27 @@ sources:
 - url: https://zenn.dev/shikamaru/articles/ef90e326ab8163
   title: LLMを使用した Web システムの単体テスト自動化について
   date: '2026-10-07'
+- url: https://zenn.dev/tanashun/articles/claude-code-mock-api-testing
+  title: Claude Code のモデルだけをモックにして、料金なしで動かす（中身を見て、テストにする）
+  date: '2026-10-17'
 ---
 
 
 
+
 # Claude Code Testing
+
+---
+
+## 2026-10-17
+
+### Claude Code のモデルだけをモックにして、料金なしで動かす（中身を見て、テストにする）
+
+Claude Codeのモデル部分をモックサーバーに置き換えて、料金をかけずに動作確認やテストを行う方法を解説。CLI（手元のプログラム）とモデル（Anthropic API）の分離構造を利用し、ANTHROPIC_BASE_URLでモックに接続することで、リクエスト内容の確認や同一条件での再現テストが可能になる。Node.jsで実装したモックサーバーは、決められた台本通りの応答を返し、受信したリクエストを保存できる。
+
+- **ソース**: [Zenn claude](https://zenn.dev/tanashun/articles/claude-code-mock-api-testing)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, 新機能
 
 ---
 

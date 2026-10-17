@@ -4,11 +4,12 @@ category: releases
 subcategory: model-deprecation
 tags:
 - claude-api
+- haiku
 - opus
 - release
 - sonnet
 date: '2026-05-03'
-updated: '2026-06-20'
+updated: '2026-10-17'
 sources:
 - url: https://qiita.com/tai0921/items/fe20f48cf99d3bd336df
   title: Claude Sonnet 4 / Opus 4が6月15日に終わる — 今すぐ始める移行3ステップ
@@ -19,11 +20,28 @@ sources:
 - url: https://qiita.com/YushiYamamoto/items/132e5ae5e4c0b77c4741
   title: 2026年6月のLLM提供停止ラッシュ：GPT-5・o3スナップショット非推奨とClaude 4退役、本番コードで今すぐ直すこと
   date: '2026-06-20'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1x7rzpe/that_didnt_take_long_claude_haiku_45_is_leaving
+  title: That didn't take long - Claude Haiku 4.5 is leaving the model selector October
+    29th
+  date: '2026-10-17'
 ---
 
 
 
+
 # Model Deprecation
+
+---
+
+## 2026-10-17
+
+### That didn't take long - Claude Haiku 4.5 is leaving the model selector October 29th
+
+Claude Haiku 4.5が10月29日にモデルセレクターから削除されることが発表されました。リリースから比較的短期間での終了となり、コミュニティで議論を呼んでいます。この変更により、ユーザーは他のモデル（Sonnetなど）への移行を検討する必要があります。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1x7rzpe/that_didnt_take_long_claude_haiku_45_is_leaving)
+- **重要度**: 7/10
+- **タグ**: haiku, release, claude-api
 
 ---
 

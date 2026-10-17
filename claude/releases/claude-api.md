@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-10-10'
+updated: '2026-10-17'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -94,6 +94,9 @@ sources:
   title: Anthropic's Claude can now orchestrate up to 1,000 AI agents in parallel
     through dynamic workflows
   date: '2026-10-10'
+- url: https://qiita.com/picnic/items/1f140e2881afc7291e4a
+  title: Claude Opus 5.5のFast modeがMicrosoft Foundry対応、レート制限ティア訂正
+  date: '2026-10-17'
 ---
 
 
@@ -113,7 +116,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-10-17
+
+### Claude Opus 5.5のFast modeがMicrosoft Foundry対応、レート制限ティア訂正
+
+Claude Opus 5.5のFast modeがMicrosoft Foundry (Azure) で利用可能になりました。また、デフォルトレート制限の対象ティアが「全ティア」から「Start/Build/Scale」に訂正されました。Azure経由でClaudeを利用する企業にとって重要な更新であり、レート制限を前提に設計していた場合は確認が必要です。Opus 5/4.8のFast modeはbetaヘッダーが引き続き必要です。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/1f140e2881afc7291e4a)
+- **重要度**: 7/10
+- **タグ**: opus, release, claude-api
 
 ---
 

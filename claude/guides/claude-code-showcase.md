@@ -9,7 +9,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-06-11'
-updated: '2026-07-28'
+updated: '2026-10-17'
 sources:
 - url: https://zenn.dev/acntechjp/articles/aeb45327bb8b13
   title: Claude Fable 5でアプリ制作パート2（3D都市シムとアニメーションLPを作ってみた）
@@ -17,10 +17,26 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v94nal/people_liked_my_desert_so_heres_a_waterbending
   title: People liked my desert, so here's a waterbending demo!
   date: '2026-07-28'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1x7v7gj/this_is_61_kb_html_file
+  title: This is 61 KB HTML file 🤯
+  date: '2026-10-17'
 ---
 
 
+
 # Claude Code Showcase
+
+---
+
+## 2026-10-17
+
+### This is 61 KB HTML file 🤯
+
+Claude Code (Opus 5.5) を使用して、わずか61KBの単一HTMLファイルで動作するリアルタイム海洋シミュレーションが作成されました。WebGPUによる物理ベースのレンダリング、FFT波動シミュレーション、雲のある空、太陽の輝きなどを実装しています。Claude Codeは自身の出力をスクリーンショットで確認し、別のサブエージェントに批評させることで、約30分で完成させました。RTX 5070 TiでフルHD解像度において約260 FPSを達成しています。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1x7v7gj/this_is_61_kb_html_file)
+- **重要度**: 7/10
+- **タグ**: claude-code, opus
 
 ---
 

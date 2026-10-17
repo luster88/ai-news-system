@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-10-15'
+updated: '2026-10-17'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -400,6 +400,15 @@ sources:
 - url: https://qiita.com/sescore/items/fbb23520b1a754f4d929
   title: OpenClaw×Claude Code連携実践：思考と実行を分離するAI開発設計
   date: '2026-10-15'
+- url: https://zenn.dev/tasukina/books/claude-code-records-fact-check
+  title: Claude Code に記録から記事を書かせて、事実を外さない手順（テンプレート付き）
+  date: '2026-10-17'
+- url: https://zenn.dev/kirinukiauto/articles/510930af48266f
+  title: Claude Codeの「直しました」を信じないために作った仕組みと、それでも5%残る話
+  date: '2026-10-17'
+- url: https://qiita.com/NaokiIshimura/items/0a79a9daf29ae7553f14
+  title: 【要約】How the Claude Code team does code review ― 「人間のレビュー時間を最小化」する7層の仕組み 🔍
+  date: '2026-10-17'
 ---
 
 
@@ -501,7 +510,40 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-10-17
+
+### Claude Code に記録から記事を書かせて、事実を外さない手順（テンプレート付き）
+
+Claude Code を使って記録から記事を作成する際、事実を正確に保つための具体的な手順とテンプレートを紹介。SE経験者が実践的なAI活用の線引きと、失敗例も含めた再現可能な方法を解説。
+
+- **ソース**: [Zenn claude](https://zenn.dev/tasukina/books/claude-code-records-fact-check)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
+
+---
+
+### Claude Codeの「直しました」を信じないために作った仕組みと、それでも5%残る話
+
+Claude Codeに動画制作を任せる中で、AIの「直しました」という報告が実際には完了していない問題に対処した実践記録。CLAUDE.mdへのルール追加とStopフック・UserPromptSubmitフックを使った自動検証の仕組みを実装。3ヶ月4,331回の返答を分析した結果、証拠のない完了報告は5-8%で推移し、完全にはゼロにできなかった。最も効果的だったのは、AIに外部から結果を読み直させる手順を必須化することだった。
+
+- **ソース**: [Zenn claude](https://zenn.dev/kirinukiauto/articles/510930af48266f)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
+
+---
+
+### 【要約】How the Claude Code team does code review ― 「人間のレビュー時間を最小化」する7層の仕組み 🔍
+
+Claude Codeチームのコードレビュープロセスを解説した記事。「人間のレビュー時間を最小化しつつ品質を保つ」ために、事前検証からAIレビュー、セキュリティチェック、リスクベース承認まで7層の仕組みを構築。6〜9月でマージPRが2倍以上に増加し、revert率は40%以上減少。Claude自身が書くコードは約90%に達し、REVIEW.mdやCLAUDE.mdなどの指示ファイルで継続的に改善している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/NaokiIshimura/items/0a79a9daf29ae7553f14)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

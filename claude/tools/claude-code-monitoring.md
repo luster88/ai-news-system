@@ -4,17 +4,36 @@ category: tools
 subcategory: claude-code-monitoring
 tags:
 - claude-code
+- cowork
 - mac
 - setup
+- windows
 date: '2026-07-12'
-updated: '2026-07-12'
+updated: '2026-10-17'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-monitor
   title: Claude Code Monitor徹底解説｜複数セッションをTUI＋スマホで一括監視【OSS】
   date: '2026-07-12'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1x7o895/i_built_a_free_windows_widget_for_claude_usage
+  title: I built a free Windows widget for Claude usage limits with Claude Code —
+    pixel Clawd reacts to your sessions
+  date: '2026-10-17'
 ---
 
+
 # Claude Code Monitoring
+
+---
+
+## 2026-10-17
+
+### I built a free Windows widget for Claude usage limits with Claude Code — pixel Clawd reacts to your sessions
+
+コミュニティメンバーがClaude Codeを使用して、Claudeの使用制限を監視するWindows用の無料ウィジェットを開発しました。このツールは現在のセッション、週間制限、Fableの制限を1分ごとに更新表示し、実行中のClaude Codeセッションの状態、Anthropicのサービスステータス、アップデート情報を提供します。PowerShell 5.1とWPFで構築され、トークンを消費せずに`claude -p "/usage"`コマンドでサーバー側のデータを取得します。ピクセルアートのキャラクター「Clawd」がセッション状態に応じてアニメーションで反応する機能も実装されています。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1x7o895/i_built_a_free_windows_widget_for_claude_usage)
+- **重要度**: 6/10
+- **タグ**: claude-code, windows, cowork
 
 ---
 
