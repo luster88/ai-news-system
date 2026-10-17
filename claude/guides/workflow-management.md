@@ -7,9 +7,10 @@ tags:
 - claude-console
 - copilot
 - cowork
+- prompt
 - setup
 date: '2026-06-17'
-updated: '2026-09-20'
+updated: '2026-10-17'
 sources:
 - url: https://qiita.com/shinjpn1/items/f194dc84928c6598477e
   title: 「Claude Code 使ってます?」— テキストファイルで AI を管理していた私が、結局システムを作るまで
@@ -20,11 +21,27 @@ sources:
 - url: https://qiita.com/Rai_050902/items/a156d3a867af23375931
   title: 生命保険の見直しをAIと進めたら、2つのClaude（チャットとCode）を「Markdown1枚」でバトンリレーさせる運用に落ち着いた話
   date: '2026-09-20'
+- url: https://zenn.dev/atsushi_apps/articles/claude-code-sessions-busho
+  title: Claude Codeのセッションを「部署」に分けて、個人開発を回す
+  date: '2026-10-17'
 ---
 
 
 
+
 # Workflow Management
+
+---
+
+## 2026-10-17
+
+### Claude Codeのセッションを「部署」に分けて、個人開発を回す
+
+個人開発者が複数のiPhoneアプリをClaude Codeで管理する際、セッションを「部署」として分割し、アプリ担当・紹介サイト担当・コンサル担当などに役割分担する手法を紹介。セッション間でメッセージをやり取りし、共通ルールをCLAUDE.mdで管理することで、トークン節約と作業効率化を実現。PreToolUseフックで誤操作を防止する仕組みも解説。
+
+- **ソース**: [Zenn claude](https://zenn.dev/atsushi_apps/articles/claude-code-sessions-busho)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

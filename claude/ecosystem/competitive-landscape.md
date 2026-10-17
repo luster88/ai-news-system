@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-23'
-updated: '2026-10-06'
+updated: '2026-10-17'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -90,6 +90,9 @@ sources:
   title: Meta and Microsoft pull back from Claude as Anthropic transforms from partner
     into competitor
   date: '2026-10-06'
+- url: https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says
+  title: Replit makes OpenAI its default over Anthropic, CEO says
+  date: '2026-10-17'
 ---
 
 
@@ -111,7 +114,20 @@ sources:
 
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-10-17
+
+### Replit makes OpenAI its default over Anthropic, CEO says
+
+AI コーディングプラットフォーム Replit が、デフォルトの LLM パートナーを Anthropic から OpenAI に変更したことを CEO が発表。コスト、パフォーマンス、パートナーシップを理由に挙げており、Replit は以前 Anthropic の上位5大顧客だった。ユーザーは引き続き Claude モデルを選択可能だが、デフォルトが OpenAI になることで Anthropic への支出は大幅に減少する見込み。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says)
+- **重要度**: 8/10
+- **タグ**: claude-api, pricing, performance
 
 ---
 

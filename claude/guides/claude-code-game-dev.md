@@ -6,9 +6,10 @@ tags:
 - claude-code
 - cowork
 - opus
+- sonnet
 - 新機能
 date: '2026-07-12'
-updated: '2026-10-16'
+updated: '2026-10-17'
 sources:
 - url: https://qiita.com/EitaroSeta/items/1f3b34f92e01225333c5
   title: Claude Code でソウルライク風3Dボス戦ゲームを作ってみた（Three.js / Mixamo / サーバー不要）
@@ -24,12 +25,28 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1x6hef5/claude_let_me_build_something_i_wanted_for_almost
   title: Claude let me build something I wanted for almost a decade
   date: '2026-10-16'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1x8dg94/i_made_a_browser_fps_with_claude_code_every_3d
+  title: I made a browser FPS with Claude Code, every 3D model in it is code
+  date: '2026-10-17'
 ---
 
 
 
 
+
 # Claude Code Game Dev
+
+---
+
+## 2026-10-17
+
+### I made a browser FPS with Claude Code, every 3D model in it is code
+
+ゲーム開発経験のないユーザーが Claude Code（Opus 5.5）を使用して、ブラウザベースのFPSゲームを約1ヶ月で開発。全ての3Dモデルが外部ファイルではなくコードで生成されており、three.jsを使用。月20ユーロプランから開始し、後に90ユーロプランに移行したが追加クレジットは購入せず。Sonnet 5.5も併用し、並列エージェント起動の制御が必要だった点を報告。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1x8dg94/i_made_a_browser_fps_with_claude_code_every_3d)
+- **重要度**: 6/10
+- **タグ**: claude-code, opus, sonnet
 
 ---
 

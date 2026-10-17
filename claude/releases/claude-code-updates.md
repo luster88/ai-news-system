@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: 2026-03-23
-updated: '2026-09-18'
+updated: '2026-10-17'
 sources:
 - url: https://github.com/anthropics/claude-code/releases
   title: Claude Code GitHub Releases
@@ -104,7 +104,11 @@ sources:
 - url: https://qiita.com/picnic/items/4633ce110f09d6856461
   title: Claude Code v2.1.275/276の重要アップデートまとめ：破壊的変更に注意
   date: '2026-09-18'
+- url: https://qiita.com/picnic/items/9fbdf64b49b69a5f064a
+  title: Claude Code v2.1.302 変更点まとめ：claude -p の権限モードと fork 既定化
+  date: '2026-10-17'
 ---
+
 
 
 
@@ -177,6 +181,18 @@ Claude Code の主要なリリース・機能追加を時系列で記録する�
 
 - [セットアップガイド](../guides/setup.md)
 - [ツール比較](../tools/comparison.md)
+
+---
+
+## 2026-10-17
+
+### Claude Code v2.1.302 変更点まとめ：claude -p の権限モードと fork 既定化
+
+Claude Code v2.1.302では、サードパーティプロバイダ（Bedrock/Vertex等）でのデフォルト権限モードがdefaultに変更され、CI/自動化スクリプトが停止する可能性があります。forkサブエージェントが全環境でデフォルト有効化され、Claude Design単体版が2026年12月14日に終了予定です。非対話実行では --permission-mode auto の明示的な指定が必要になります。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/9fbdf64b49b69a5f064a)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

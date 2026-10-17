@@ -3,6 +3,7 @@ title: Community Success Story
 category: ecosystem
 subcategory: community-success-story
 tags:
+- claude-api
 - claude-code
 - claude-console
 - cowork
@@ -10,7 +11,7 @@ tags:
 - performance
 - 新機能
 date: '2026-04-05'
-updated: '2026-10-14'
+updated: '2026-10-17'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sdabux/hats_off_to_claude
   title: Hats off to claude
@@ -27,13 +28,30 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1x4s9hp/someone_used_claude_to_get_a_yearsold_pothole
   title: Someone used Claude to get a years-old pothole fixed in two days
   date: '2026-10-14'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1x8f5gl/i_thought_my_90s_amiga_was_lost_forever_30_years
+  title: I thought my 90s Amiga was lost forever. 30 years later, it’s back due to
+    ClaudeAI
+  date: '2026-10-17'
 ---
 
 
 
 
 
+
 # Community Success Story
+
+---
+
+## 2026-10-17
+
+### I thought my 90s Amiga was lost forever. 30 years later, it’s back due to ClaudeAI
+
+1990年代のAmiga BBSファイルが30年間破損した7zアーカイブに閉じ込められていたが、Claudeが単一バイトのシフトエラーを発見・修復し、すべてのファイルを復元した。ユーザーは当時の音楽ファイルやBBSシステムを取り戻し、Raspberry Pi上で再稼働させることに成功。子供が生まれた時と同じレベルの喜びを感じたとコミュニティで共有している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1x8f5gl/i_thought_my_90s_amiga_was_lost_forever_30_years)
+- **重要度**: 6/10
+- **タグ**: claude-api, cowork
 
 ---
 

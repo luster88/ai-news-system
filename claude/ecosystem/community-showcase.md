@@ -8,13 +8,14 @@ tags:
 - claude-console
 - cowork
 - mcp
+- opus
 - performance
 - prompt
 - sonnet
 - vscode
 - 新機能
 date: '2026-03-29'
-updated: '2026-09-29'
+updated: '2026-10-17'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6of32/i_am_fully_addicted_to_building_dumb_little_ai
   title: I am fully addicted to building dumb little AI web apps. I love it.
@@ -56,6 +57,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wsep0x/sloppy_kart_a_totally_finished_product
   title: Sloppy Kart — a totally finished product™
   date: '2026-09-29'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1x8602z/procedural_generation_with_opus_is_insane_this
+  title: Procedural generation with Opus is insane. This entire game is 20MB.
+  date: '2026-10-17'
 ---
 
 
@@ -68,7 +72,20 @@ sources:
 
 
 
+
 # Community Showcase
+
+---
+
+## 2026-10-17
+
+### Procedural generation with Opus is insane. This entire game is 20MB.
+
+開発者が Claude Opus を使用して4ヶ月でゲーム「Mecha Royale」を開発。コードとコンテンツの99%を Opus で生成し、アニメーション・モデル・マップ（半径15km）などを手続き的に生成。最終的なゲームサイズはわずか20MBで、マルチプレイヤー対応のブラウザゲームとして公開されている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1x8602z/procedural_generation_with_opus_is_insane_this)
+- **重要度**: 6/10
+- **タグ**: opus, claude-code, performance
 
 ---
 

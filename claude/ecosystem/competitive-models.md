@@ -10,7 +10,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-20'
-updated: '2026-09-03'
+updated: '2026-10-17'
 sources:
 - url: https://the-decoder.com/open-weight-kimi-k2-6-takes-on-gpt-5-4-and-claude-opus-4-6-with-agent-swarms
   title: Open-weight Kimi K2.6 takes on GPT-5.4 and Claude Opus 4.6 with agent swarms
@@ -22,11 +22,28 @@ sources:
 - url: https://the-decoder.com/meta-closes-in-on-the-top-with-muse-spark-1-3-and-undercuts-rivals-on-price
   title: Meta closes in on the top with Muse Spark 1.3, and undercuts rivals on price
   date: '2026-09-03'
+- url: https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs
+  title: Deepseek V4.1 Flash 1017 beats larger rivals in agentic tasks while once
+    again massively cutting per-task costs
+  date: '2026-10-17'
 ---
 
 
 
+
 # Competitive Models
+
+---
+
+## 2026-10-17
+
+### Deepseek V4.1 Flash 1017 beats larger rivals in agentic tasks while once again massively cutting per-task costs
+
+中国のAI企業DeepseekがDeepseek-V4.1-Flash-1017をリリース。自己フィードバック強化学習で訓練され、エージェントタスクやコーディングでClaude Opus 5やGPT 5.6-Solを上回る性能を示しながら、タスクあたりのコストを大幅に削減。オープンウェイトモデルとしてHugging FaceとModelScopeで公開され、検索APIも開発者向けに提供開始。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs)
+- **重要度**: 7/10
+- **タグ**: opus, performance, pricing
 
 ---
 

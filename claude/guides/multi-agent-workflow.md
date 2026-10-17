@@ -11,7 +11,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-03-29'
-updated: '2026-09-17'
+updated: '2026-10-17'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6jouf/anthropic_shares_how_to_make_claude_code_better
   title: Anthropic shares how to make Claude code better with a harness
@@ -37,6 +37,9 @@ sources:
 - url: https://qiita.com/sescore/items/85da19e77bdad85bbdc4
   title: OpenClawで9体のAIエージェント経営OSを作った話｜Claude Code実践ログ
   date: '2026-09-17'
+- url: https://qiita.com/sescore/items/cf57317fffda0ceb88af
+  title: OpenClawで9体のAIエージェント経営OSを構築した実践記録｜設定とSES市場分析への活用法
+  date: '2026-10-17'
 ---
 
 
@@ -46,7 +49,20 @@ sources:
 
 
 
+
 # Multi Agent Workflow
+
+---
+
+## 2026-10-17
+
+### OpenClawで9体のAIエージェント経営OSを構築した実践記録｜設定とSES市場分析への活用法
+
+Claude Codeのサブエージェント機能とcron/PM2を組み合わせた「OpenClaw」という経営OS構築の実践記録。9体のAIエージェント（市場分析、契約レビュー、セキュリティ監視など）を役割別に定義し、日次バッチで業務の監視・判断・レポーティングを自動化。SES市場分析やフリーランス案件探索への活用法、本番レーンと検証レーンの分離設計など実務的なノウハウを公開。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/sescore/items/cf57317fffda0ceb88af)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

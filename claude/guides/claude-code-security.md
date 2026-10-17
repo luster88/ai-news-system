@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-01'
-updated: '2026-10-15'
+updated: '2026-10-17'
 sources:
 - url: https://zenn.dev/yuzzzn/articles/45626e1ab08e3c
   title: AIコーディングエージェントをセキュアに使うためのハーネス設計
@@ -48,6 +48,9 @@ sources:
 - url: https://qiita.com/joinclass/items/61c7115f638fd3e510d0
   title: Claude Code Hooksで監査ログを残す — 誰が・いつ・何を実行したかをJSONLで追跡する
   date: '2026-10-15'
+- url: https://zenn.dev/atsushi_apps/articles/ai-agent-guardrails-indie-dev
+  title: AIエージェントに「やらせないこと」をどう止めているか ── 個人開発の現場のセキュリティ対策
+  date: '2026-10-17'
 ---
 
 
@@ -61,7 +64,20 @@ sources:
 
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-10-17
+
+### AIエージェントに「やらせないこと」をどう止めているか ── 個人開発の現場のセキュリティ対策
+
+個人開発者が、AIエージェント（Claude Code）に複数の作業を任せる中で、取り消し不可能な操作（審査提出・SNS投稿・価格変更など）を防ぐために実践している多層的なセキュリティ対策を紹介。CLAUDE.mdでのルール明文化、APIトークンの権限最小化、PreToolUseフックによる自動制御、複数セッション間の委譲禁止など、具体的な失敗事例と対策がまとめられている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/atsushi_apps/articles/ai-agent-guardrails-indie-dev)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

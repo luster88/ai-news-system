@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-10-04'
+updated: '2026-10-17'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -123,6 +123,9 @@ sources:
 - url: https://qiita.com/Sidejob/items/8de261cfefa5a9f9ca09
   title: Claude Codeに自動化スクリプトを任せる時の向き不向き【判断基準3選】
   date: '2026-10-04'
+- url: https://qiita.com/joinclass/items/fc9eabb2ddfbb2aeca07
+  title: Claude Code の /loop は「固定間隔」と「セルフペーシング」をどう使い分けるか — launchd 17ジョブ運用からの実装メモ
+  date: '2026-10-17'
 ---
 
 
@@ -156,7 +159,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-10-17
+
+### Claude Code の /loop は「固定間隔」と「セルフペーシング」をどう使い分けるか — launchd 17ジョブ運用からの実装メモ
+
+Claude Code の /loop 機能には「固定間隔」と「セルフペーシング」の2つのモードがあり、それぞれの使い分けが重要です。固定間隔は定期的なログチェックなど決まったタイミングでの処理に適し、セルフペーシングは完了時刻が不定なデプロイやCI待ちなどに向いています。記事では launchd で17ジョブを運用する実例をもとに、それぞれのモードの使い分け基準、落とし穴（run_in_backgroundの自動呼び戻し、副作用の回数制限など）、実装パターンを詳しく解説しています。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/joinclass/items/fc9eabb2ddfbb2aeca07)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, cowork
 
 ---
 

@@ -12,7 +12,7 @@ tags:
 - pricing
 - sonnet
 date: '2026-03-25'
-updated: '2026-09-22'
+updated: '2026-10-17'
 sources:
 - url: https://qiita.com/himajisan/items/1e8f67782335b4517139
   title: AIを扱き使ったらすぐに使用制限ですと言う
@@ -55,6 +55,10 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wm8ori/seeing_this_on_monday_while_claude_is_fixing_a
   title: Seeing this on monday while claude is fixing a critical bug
   date: '2026-09-22'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1x8bmku/this_weeks_claude_reset_anyone_else_noticing
+  title: This week's Claude Reset - Anyone else noticing unusually high usage all
+    of a sudden?
+  date: '2026-10-17'
 ---
 
 
@@ -65,7 +69,20 @@ sources:
 
 
 
+
 # Usage Limits
+
+---
+
+## 2026-10-17
+
+### This week's Claude Reset - Anyone else noticing unusually high usage all of a sudden?
+
+Claude Pro プランのユーザーが、週次リセット後に使用量が異常に高くなっていることを報告。わずか2セッションで週間制限の30%に達し、1日あたり5時間制限を2回しか使えない状態に。年間プランへのアップグレード直後に発生したため、プラン変更との関連性を疑っている。他のユーザーにも同様の経験があるか確認を求めている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1x8bmku/this_weeks_claude_reset_anyone_else_noticing)
+- **重要度**: 6/10
+- **タグ**: claude-console, pricing, bugfix
 
 ---
 
