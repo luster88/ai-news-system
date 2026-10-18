@@ -11,7 +11,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-06-29'
-updated: '2026-08-15'
+updated: '2026-10-18'
 sources:
 - url: https://qiita.com/moha0918_/items/8bd90fc2c1391c4769a1
   title: Claude Code v0.2.21〜v2.1.195｜CLIからマルチエージェント基盤への全履歴｜毎日Changelog解説
@@ -52,6 +52,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/b604352231f9a8a76a38
   title: Claude Code v2.1.233｜TodoWrite が Fable 5 / Sonnet 5 で無効に｜毎日Changelog解説
   date: '2026-08-15'
+- url: https://qiita.com/moha0918_/items/8075926f722e7cd5fca3
+  title: Claude Code v2.1.299〜v2.1.302｜54 分の放置で idle compaction が走る｜週刊Changelog解説
+  date: '2026-10-18'
 ---
 
 
@@ -66,7 +69,20 @@ sources:
 
 
 
+
 # Claude Code Changelog
+
+---
+
+## 2026-10-18
+
+### Claude Code v2.1.299〜v2.1.302｜54 分の放置で idle compaction が走る｜週刊Changelog解説
+
+Claude Code v2.1.299〜v2.1.302のリリースノート解説。20万トークン以上の会話を54分放置すると、プロンプトキャッシュ期限切れ前に自動要約する idle compaction 機能が追加された。MCPのallowルール仕様変更、文字コード変換の仕様変更、fork subagentのデフォルト有効化なども含まれる。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/8075926f722e7cd5fca3)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 

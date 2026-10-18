@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-10-17'
+updated: '2026-10-18'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -126,6 +126,9 @@ sources:
 - url: https://qiita.com/joinclass/items/fc9eabb2ddfbb2aeca07
   title: Claude Code の /loop は「固定間隔」と「セルフペーシング」をどう使い分けるか — launchd 17ジョブ運用からの実装メモ
   date: '2026-10-17'
+- url: https://qiita.com/iineineno03k/items/7dc0d02e4ff845e4b5d9
+  title: 「おまえ操作できないの？」と聞いたら、Claude CodeがiPhoneの設定を全部やってくれた
+  date: '2026-10-18'
 ---
 
 
@@ -160,7 +163,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-10-18
+
+### 「おまえ操作できないの？」と聞いたら、Claude CodeがiPhoneの設定を全部やってくれた
+
+Claude Code が iPhone ミラーリングと cua-driver を使って Mac から iPhone の集中モード設定を自動操作した実践レポート。スクリーンショットベースで画面を見ながら座標クリックで操作し、LINE通話の統合設定まで含めて完全な着信ブロック設定を実現。アクセシビリティツリーが取れない環境での視覚的UI操作の実例として貴重。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/iineineno03k/items/7dc0d02e4ff845e4b5d9)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, cowork
 
 ---
 

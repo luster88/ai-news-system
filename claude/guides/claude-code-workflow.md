@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-10-17'
+updated: '2026-10-18'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -409,6 +409,9 @@ sources:
 - url: https://qiita.com/NaokiIshimura/items/0a79a9daf29ae7553f14
   title: 【要約】How the Claude Code team does code review ― 「人間のレビュー時間を最小化」する7層の仕組み 🔍
   date: '2026-10-17'
+- url: https://qiita.com/araom/items/f59a75e188824dfdd16c
+  title: プライベートで雇った AI 秘書を、2 週間育ててみた
+  date: '2026-10-18'
 ---
 
 
@@ -511,7 +514,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-10-18
+
+### プライベートで雇った AI 秘書を、2 週間育ててみた
+
+Claude Code を個人の AI 秘書として 2 週間育成した実践記録。学校連絡の自動処理、家計簿分析、サーバー監視など日常タスクを自動化し、作業ごとにレポートと振り返りを出させるループで継続的に改善。415 件のコミットのうち 4 件に 1 件は指示書・ルール・スキルの改善に充て、定期タスクでの失敗から学習させる仕組みを構築。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/araom/items/f59a75e188824dfdd16c)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

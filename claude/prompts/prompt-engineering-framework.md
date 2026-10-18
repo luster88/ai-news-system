@@ -7,12 +7,13 @@ tags:
 - claude-code
 - cowork
 - haiku
+- mcp
 - opus
 - performance
 - prompt
 - 新機能
 date: '2026-03-30'
-updated: '2026-10-14'
+updated: '2026-10-18'
 sources:
 - url: https://zenn.dev/analysis/articles/prompt-master-thought-analyzer
   title: 「プロンプトを最適化する」とは何か──prompt-masterを3層フレームワークで解剖する
@@ -38,6 +39,12 @@ sources:
 - url: https://zenn.dev/every_ai_recipe/articles/ai-email-ng-word-cliche-phrase-check
   title: 敬語リライトで紋切り型を防ぐ、禁止ワード指定とone-shot例示の比較
   date: '2026-10-14'
+- url: https://qiita.com/songchong/items/542892c6d4c569c9c15f
+  title: 重要な指示は最初か最後か？ AI 大手 3 社の助言が異なるので、資料→命令→指示の並び方を 8 通り試してみた
+  date: '2026-10-18'
+- url: https://qiita.com/songchong/items/351a939e2e1b673c2929
+  title: 今日から使える AI との会話術 — Claude・Gemini・Codex に指示を守らせる 6 つの原則【2026年版】
+  date: '2026-10-18'
 ---
 
 
@@ -47,7 +54,30 @@ sources:
 
 
 
+
 # Prompt Engineering Framework
+
+---
+
+## 2026-10-18
+
+### 重要な指示は最初か最後か？ AI 大手 3 社の助言が異なるので、資料→命令→指示の並び方を 8 通り試してみた
+
+長文資料をAIに渡す際の最適な指示配置を検証した実験記事。Anthropic、Google、OpenAIの3社で推奨が異なるため、資料・命令・指示の8通りの配置を試した結果、Claude Opus、Gemini Pro、Gemini Flashは配置に関わらず満点だが、Claude Haikuでは資料を最後に置く方が若干良好。結論として、指示は資料の途中ではなく先頭か末尾に配置すべきとまとめている。
+
+- **ソース**: [Qiita claude](https://qiita.com/songchong/items/542892c6d4c569c9c15f)
+- **重要度**: 6/10
+- **タグ**: prompt, claude-api, performance
+
+---
+
+### 今日から使える AI との会話術 — Claude・Gemini・Codex に指示を守らせる 6 つの原則【2026年版】
+
+AI エージェント（Claude Code、Gemini Codex、Antigravity）に指示を確実に守らせるための6つの実践原則を解説。AGENTS.md ファイルの活用法、指示と資料の適切な配置、Codexの32KiB制限などを実験結果に基づいて紹介。資料の途中に指示を書くと守られにくいことや、モデル別の挙動の違いを具体的なデータで示す。
+
+- **ソース**: [Qiita claude](https://qiita.com/songchong/items/351a939e2e1b673c2929)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, mcp
 
 ---
 

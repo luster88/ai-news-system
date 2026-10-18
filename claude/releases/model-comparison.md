@@ -3,12 +3,14 @@ title: Model Comparison
 category: releases
 subcategory: model-comparison
 tags:
+- haiku
 - opus
 - performance
 - pricing
 - sonnet
+- 新機能
 date: '2026-04-16'
-updated: '2026-10-06'
+updated: '2026-10-18'
 sources:
 - url: https://qiita.com/rikiza1989/items/2889bebbdccf36e95a16
   title: 【検証】Claude Opus 4.7 は本当に "世代的進化" なのか？Opus 4.6・Sonnet 4.6・GPT-5.4・Gemini 3.1
@@ -17,10 +19,26 @@ sources:
 - url: https://zenn.dev/shoujiki_panman/articles/claude-sonnet-5-5-or-opus
   title: Opus 5.5とSonnet 5.5、どっちを使う？ 新しいSonnet 5.5を数字で比べた
   date: '2026-10-06'
+- url: https://zenn.dev/aimodelrecord/articles/claude-haiku-45-to-55
+  title: Claude Haiku 4.5 → 5.5 で答えはどう変わる？同じ100問を11日間聞き比べた
+  date: '2026-10-18'
 ---
 
 
+
 # Model Comparison
+
+---
+
+## 2026-10-18
+
+### Claude Haiku 4.5 → 5.5 で答えはどう変わる？同じ100問を11日間聞き比べた
+
+Claude Haiku 4.5から5.5への移行による挙動の変化を、同一の100問を11日間にわたり比較検証した記事。5.5ではtemperature固定により出力の再現性が4.5の96%から46%に低下、コードブロックの扱いが変化、adaptive thinkingがデフォルト有効でmax_tokens制限に影響するなど、実装上の注意点が多数報告されている。特に5.5では同じ質問でも約半分が異なる回答を返すため、キャッシュやテスト実装に影響が出る可能性がある。
+
+- **ソース**: [Zenn claude](https://zenn.dev/aimodelrecord/articles/claude-haiku-45-to-55)
+- **重要度**: 8/10
+- **タグ**: haiku, 新機能, performance
 
 ---
 

@@ -14,7 +14,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-04-25'
-updated: '2026-09-16'
+updated: '2026-10-18'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sv7fvc/im_a_nursing_student_who_built_a_660kpage
   title: I’m a nursing student who built a 660K-page pharmaceutical database using
@@ -58,6 +58,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wh1t5v/templeos_running_inside_the_ingame_monitors_of
   title: TempleOS running inside the in-game monitors of Half Life 1
   date: '2026-09-16'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1x9dl1f/adobe_office_outlook_elevenlabs_ai_is_cloning_all
+  title: 'Adobe, Office, Outlook, ElevenLabs: AI is cloning all of it in Rust'
+  date: '2026-10-18'
 ---
 
 
@@ -71,7 +74,20 @@ sources:
 
 
 
+
 # Community Projects
+
+---
+
+## 2026-10-18
+
+### Adobe, Office, Outlook, ElevenLabs: AI is cloning all of it in Rust
+
+Rustで書かれたAI支援オープンソースプロジェクトが急速に拡大。Adobe製品の代替（PhotoCraftなど16.8万GitHub stars獲得）、Microsoft Office互換（Excel 501/523数式対応）、さらにブラウザエンジンBrowseCraftまで登場。100以上のエンタープライズアプリの代替開発が進行中。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1x9dl1f/adobe_office_outlook_elevenlabs_ai_is_cloning_all)
+- **重要度**: 6/10
+- **タグ**: cowork, claude-code, 新機能
 
 ---
 

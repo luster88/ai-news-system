@@ -15,7 +15,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-29'
-updated: '2026-10-17'
+updated: '2026-10-18'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6of32/i_am_fully_addicted_to_building_dumb_little_ai
   title: I am fully addicted to building dumb little AI web apps. I love it.
@@ -60,6 +60,10 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1x8602z/procedural_generation_with_opus_is_insane_this
   title: Procedural generation with Opus is insane. This entire game is 20MB.
   date: '2026-10-17'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1x99sel/a_super_mario_64_demake_for_the_gba_built_with
+  title: A Super Mario 64 demake for the GBA built with Claude. Mario’s physics are
+    bit-identical to the original
+  date: '2026-10-18'
 ---
 
 
@@ -73,7 +77,20 @@ sources:
 
 
 
+
 # Community Showcase
+
+---
+
+## 2026-10-18
+
+### A Super Mario 64 demake for the GBA built with Claude. Mario’s physics are bit-identical to the original
+
+Claude を使って Game Boy Advance 用の Super Mario 64 demake を開発した事例。ユーザーは方向性のみを指示し、Claude がコード、テスト、ツールチェーンをすべて記述。マリオの物理演算は元のゲームとビット単位で完全一致し、16.8MHz ARM7（FPUなし）という GBA の制約下で動作する。Claude はエージェント的に動作し、プロファイリング、書き換え、検証を自律的に実行。アニメーションの実装では、Claude が楕円体スプライトという最適解を提案するなど、設計面でも高度な貢献を示した。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1x99sel/a_super_mario_64_demake_for_the_gba_built_with)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, performance
 
 ---
 
