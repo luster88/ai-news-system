@@ -8,8 +8,9 @@ tags:
 - performance
 - pricing
 - release
+- 新機能
 date: '2026-04-27'
-updated: '2026-05-17'
+updated: '2026-10-20'
 sources:
 - url: https://qiita.com/rana_kualu/items/cd4b0c04f16caa8366cd
   title: 【Anthropic】Claude Mythos、実はたいしたことないんじゃないか説
@@ -18,10 +19,27 @@ sources:
   title: Mistral CEO Arthur Mensch warns France against letting Anthropic's Mythos
     scan military code bases
   date: '2026-05-17'
+- url: https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted
+  title: Microsoft says AI agents are like insider threats as ‘frontier models can’t
+    be trusted’
+  date: '2026-10-20'
 ---
 
 
+
 # Mythos Security Concerns
+
+---
+
+## 2026-10-20
+
+### Microsoft says AI agents are like insider threats as ‘frontier models can’t be trusted’
+
+Microsoft は AI エージェントを「インサイダー脅威」として扱う新セキュリティ機能 Guardian Agents を発表。CEO の Satya Nadella は AI モデルプロバイダーを信頼すべきでないと警告し、企業が独自の監視システムで AI エージェントを制御する必要性を強調。Project Perception の一環として、外部攻撃だけでなく内部の AI エージェントの監視も重視する方針に転換。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted)
+- **重要度**: 8/10
+- **タグ**: claude-api, cowork, 新機能
 
 ---
 

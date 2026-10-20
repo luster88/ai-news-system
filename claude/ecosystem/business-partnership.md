@@ -8,8 +8,9 @@ tags:
 - performance
 - pricing
 - release
+- 新機能
 date: '2026-05-04'
-updated: '2026-08-28'
+updated: '2026-10-20'
 sources:
 - url: https://the-decoder.com/anthropic-and-openai-now-agree-on-one-thing-selling-ai-requires-a-lot-more-than-just-the-ai
   title: 'Anthropic and OpenAI now agree on one thing: selling AI requires a lot more
@@ -18,10 +19,27 @@ sources:
 - url: https://the-decoder.com/anthropic-locks-in-45-billion-dollar-compute-deal-with-nscale-ahead-of-ipo
   title: Anthropic locks in 45-billion-dollar compute deal with Nscale ahead of IPO
   date: '2026-08-28'
+- url: https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal
+  title: Nscale and Anthropic are reportedly in talks for yet another $45 billion
+    compute deal
+  date: '2026-10-20'
 ---
 
 
+
 # Business Partnership
+
+---
+
+## 2026-10-20
+
+### Nscale and Anthropic are reportedly in talks for yet another $45 billion compute deal
+
+AnthropicとAIインフラプロバイダーNscaleが、前回の450億ドルの計算リソース契約に続き、さらに450億ドル規模の契約交渉中と報じられています。この巨額投資に対して投資家の間では懸念の声もありますが、Anthropicは長期的な利益を見込んで大型契約を継続しています。両社ともIPOを予定しており、Anthropicは今年中、Nscaleは300億ドルの評価額で上場を目指しています。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal)
+- **重要度**: 8/10
+- **タグ**: pricing, performance, 新機能
 
 ---
 

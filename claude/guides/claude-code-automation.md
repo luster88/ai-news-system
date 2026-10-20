@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-10-18'
+updated: '2026-10-20'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -129,6 +129,9 @@ sources:
 - url: https://qiita.com/iineineno03k/items/7dc0d02e4ff845e4b5d9
   title: 「おまえ操作できないの？」と聞いたら、Claude CodeがiPhoneの設定を全部やってくれた
   date: '2026-10-18'
+- url: https://zenn.dev/nanora/articles/20261019-claude-code-session-watch-telegram
+  title: 止まった Claude Code セッションを Telegram のボタンで再開する（公式機能と自作の分担）
+  date: '2026-10-20'
 ---
 
 
@@ -164,7 +167,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-10-20
+
+### 止まった Claude Code セッションを Telegram のボタンで再開する（公式機能と自作の分担）
+
+Claude Codeのセッション監視システムの実装例。公式機能（`claude --bg`による自動再起動、`claude agents --json`による状態取得）と自作の監視スクリプトを組み合わせ、Telegramボタンで止まったセッションを適切に再開する。特に端末で動かして落ちたセッションや、ファイルが別作業で更新された場合の競合回避を実装している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/nanora/articles/20261019-claude-code-session-watch-telegram)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup
 
 ---
 

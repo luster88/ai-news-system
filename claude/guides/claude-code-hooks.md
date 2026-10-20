@@ -12,7 +12,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-23'
-updated: '2026-10-14'
+updated: '2026-10-20'
 sources:
 - url: https://qiita.com/pro-tein/items/49e5dbec705c3497dd51
   title: 【Claude Code】Hooks機能でデスクトップ通知を設定してみた
@@ -60,6 +60,9 @@ sources:
 - url: https://qiita.com/dawon/items/aac4bb9f113a3d7f5f26
   title: Claude Code の hooks で作業完了・承認待ちを Mac に通知する
   date: '2026-10-14'
+- url: https://qiita.com/kaiyaku_iyada/items/bc44b6d8ed0e9a9ebb34
+  title: Claude Code の SessionStart フックで、起動のたびに Day・記入漏れ・台帳の直近をAIに渡す：8行の初版を74行にした理由と、実際の出力
+  date: '2026-10-20'
 ---
 
 
@@ -76,7 +79,20 @@ sources:
 
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-10-20
+
+### Claude Code の SessionStart フックで、起動のたびに Day・記入漏れ・台帳の直近をAIに渡す：8行の初版を74行にした理由と、実際の出力
+
+Claude Codeのセッション開始時フックを活用し、起動時に日付情報・記入漏れ・台帳データをAIに自動的に渡すスクリプト（session-start.sh）の実装解説。初版6行から74行に拡張した経緯と、macOS環境での動作確認結果を詳述。CLAUDE_PROJECT_DIR環境変数の利用、設定ファイルの配置条件、README.mdからの日付抽出など実装上の注意点を含む。
+
+- **ソース**: [Qiita claude](https://qiita.com/kaiyaku_iyada/items/bc44b6d8ed0e9a9ebb34)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, mac
 
 ---
 

@@ -3,11 +3,13 @@ title: Claude Code Debugging
 category: guides
 subcategory: claude-code-debugging
 tags:
+- bugfix
 - claude-code
+- mac
 - prompt
 - setup
 date: '2026-03-22'
-updated: '2026-03-25'
+updated: '2026-10-20'
 sources:
 - url: https://qiita.com/Akkami/items/5580361e3426198ff54a
   title: Claude Codeでデバッグするなら「ベテランの感覚」をCLAUDE.mdとSkillsに埋め込め
@@ -15,10 +17,27 @@ sources:
 - url: https://zenn.dev/leegrey/articles/4f3cf300dd8aac
   title: 【完全版】Claude Code コマンド・ショートカット全集：次世代AIエージェントを使いこなす
   date: '2026-03-25'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1x9smgq/claude_caught_a_cryptominer_on_my_mac_whilst
+  title: Claude caught a cryptominer on my Mac whilst building me a temperature monitor
+    app
+  date: '2026-10-20'
 ---
 
 
+
 # Claude Code Debugging
+
+---
+
+## 2026-10-20
+
+### Claude caught a cryptominer on my Mac whilst building me a temperature monitor app
+
+ユーザーが Claude Code に Mac の温度モニターアプリを作成させたところ、センサーの値が異常に高かったため、Claude が CPU 使用率をチェック。その結果、12 コア分（約 1175% CPU）を消費するクリプトマイナー（xmrig）が動作していることを発見した。Claude の問題解決能力とデバッグスキルを示す興味深い事例。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1x9smgq/claude_caught_a_cryptominer_on_my_mac_whilst)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, mac
 
 ---
 

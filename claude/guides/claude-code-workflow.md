@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-10-18'
+updated: '2026-10-20'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -412,6 +412,12 @@ sources:
 - url: https://qiita.com/araom/items/f59a75e188824dfdd16c
   title: プライベートで雇った AI 秘書を、2 週間育ててみた
   date: '2026-10-18'
+- url: https://zenn.dev/taka_s2/articles/30a6fdac8a0bd7
+  title: Claude Code で採点係を別のサブエージェントにしたら、14回中6回不合格を出した
+  date: '2026-10-20'
+- url: https://qiita.com/vaon-luandv/items/9bed53af9beea10cf67d
+  title: Claude Codeで書いた日本語コンテンツを、grepで機械的に検品する
+  date: '2026-10-20'
 ---
 
 
@@ -515,7 +521,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-10-20
+
+### Claude Code で採点係を別のサブエージェントにしたら、14回中6回不合格を出した
+
+Claude Codeで機能開発時に、作成係と採点係を別のサブエージェントに分離した実践記録。Playwrightを使った自動テストで14スプリント中6回不合格を検出。Anthropicの公式ガイドに基づき、エージェントが自己評価で甘くなる問題を回避する構成を実装した。MCPサーバー設定やWCAG基準の自動検証など、具体的な実装例と課題の分類方法を紹介。
+
+- **ソース**: [Zenn claude](https://zenn.dev/taka_s2/articles/30a6fdac8a0bd7)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, cowork
+
+---
+
+### Claude Codeで書いた日本語コンテンツを、grepで機械的に検品する
+
+Claude Codeで生成した日本語コンテンツを公開前に機械的に検品する手順を解説。frontmatterに検査項目を記録し、em dash/en dashなどの禁止文字をgrep -eで検出、禁止語リストをgrep -F -fで照合する方法を具体例とともに紹介。検品対象範囲の明確化やロケール依存の回避など、実運用での工夫も含む。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/vaon-luandv/items/9bed53af9beea10cf67d)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

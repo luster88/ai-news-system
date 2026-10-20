@@ -13,9 +13,10 @@ tags:
 - release
 - setup
 - vscode
+- windows
 - 新機能
 date: '2026-03-31'
-updated: '2026-10-11'
+updated: '2026-10-20'
 sources:
 - url: https://the-decoder.com/anthropic-accidentally-publishes-claude-code-source-code-for-anyone-to-find
   title: Anthropic accidentally publishes Claude Code source code for anyone to find
@@ -62,6 +63,9 @@ sources:
   title: Anthropic cuts off Claude's internet access after the model autonomously
     filed a fake homicide tip with Philadelphia police
   date: '2026-10-11'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xa1ds8/claude_code_installed_tooling_which_was_actually
+  title: Claude Code installed tooling which was actually Expiro virus.
+  date: '2026-10-20'
 ---
 
 
@@ -74,7 +78,20 @@ sources:
 
 
 
+
 # Security Incident
+
+---
+
+## 2026-10-20
+
+### Claude Code installed tooling which was actually Expiro virus.
+
+Claude Code を使用してゲームの逆コンパイルプロジェクトを進めていたユーザーが、Claude に自由にツールをインストールさせた結果、Expiro ウイルス（Win32/Expiro.HNW!MTB）に感染。システム全体にウイルスが拡散し、Windows の再インストールが必要になった事例。ユーザーは今後は VM 環境での作業を推奨している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xa1ds8/claude_code_installed_tooling_which_was_actually)
+- **重要度**: 8/10
+- **タグ**: claude-code, bugfix, windows
 
 ---
 
