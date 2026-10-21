@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-10-20'
+updated: '2026-10-21'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -418,6 +418,19 @@ sources:
 - url: https://qiita.com/vaon-luandv/items/9bed53af9beea10cf67d
   title: Claude Codeで書いた日本語コンテンツを、grepで機械的に検品する
   date: '2026-10-20'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xat7xn/matt_pococks_claude_code_habits_5_takeaways_about
+  title: 'Matt Pocock''s Claude Code habits: 5 takeaways about the human, not the
+    AI agent'
+  date: '2026-10-21'
+- url: https://qiita.com/rex0220/items/691f50272359dfb02a87
+  title: Claude Code + Claude in Chrome で Qiita の記事を作る（印刷屋プラグインの組織図の記事）
+  date: '2026-10-21'
+- url: https://qiita.com/inoyu-qiita/items/2bf7c23b9586ccafb9fd
+  title: opusplanと/advisor fableを使って、Claude Codeのモデルを自動で使い分ける
+  date: '2026-10-21'
+- url: https://qiita.com/kaiyaku_iyada/items/339a7e78ba476ca1c810
+  title: Claude Code に運用を任せるとき、計画を変える条件は「日付つきの判断ルール」で先に書く：10月19日にルールが発火して、計画を組み直した記録
+  date: '2026-10-21'
 ---
 
 
@@ -522,7 +535,50 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-10-21
+
+### Matt Pocock's Claude Code habits: 5 takeaways about the human, not the AI agent
+
+TypeScript エキスパートの Matt Pocock が Claude Code の使い方について語った内容のまとめ。/grill-me で徹底的に質問に答える、空のフォルダから始めて全ファイルを監視する、仕様書だけでは数ヶ月かけてもコードが悪化した経験、AI の説明を聞いた後に必ずソースコードを読む、自分が嫌いな作業を AI に任せるといった実践的なアドバイスが共有されている。1日200以上のコミットを行う彼の経験から、AI エージェントとの協働における人間側の心構えが語られている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xat7xn/matt_pococks_claude_code_habits_5_takeaways_about)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
+
+---
+
+### Claude Code + Claude in Chrome で Qiita の記事を作る（印刷屋プラグインの組織図の記事）
+
+Claude CodeとClaude in Chromeを組み合わせてQiita記事を作成した事例。kintoneプラグインの紹介記事で、Claudeが自動的にスクリーンショットを撮影・切り取り・保存し、記事の原稿まで作成。Chrome拡張機能によりログイン状態のまま操作でき、JavaScriptで要素位置を測定して最適な範囲を撮影。未確認の操作は明示的に報告するなど、実用的なワークフローを実現した。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/rex0220/items/691f50272359dfb02a87)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, vscode
+
+---
+
+### opusplanと/advisor fableを使って、Claude Codeのモデルを自動で使い分ける
+
+Claude Codeの新機能「/advisor fable」を使い、opusplanと組み合わせることで、計画はOpus、実装はSonnet、難所の判断はFableと、作業に応じてモデルを自動的に使い分ける手法を紹介。Advisorは実験的機能で、メインモデルが必要と判断した場面のみ別モデルへ相談できる。手動切り替えの手間を省きつつ、各モデルの強みを活かせる実用的なワークフロー。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/inoyu-qiita/items/2bf7c23b9586ccafb9fd)
+- **重要度**: 7/10
+- **タグ**: claude-code, opus, sonnet
+
+---
+
+### Claude Code に運用を任せるとき、計画を変える条件は「日付つきの判断ルール」で先に書く：10月19日にルールが発火して、計画を組み直した記録
+
+Claude Code による自動運用で、計画変更の判断基準を「日付+数値条件」で事前定義し、10月19日に実際にルールが発火して計画を組み直した実践記録。README.md に判断ルールを記載し、台帳の数字と照合する手順を型化。フォロワー数などの指標が閾値を下回り、X・note 中心の戦略を見直すきっかけとなった。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kaiyaku_iyada/items/339a7e78ba476ca1c810)
+- **重要度**: 6/10
+- **タグ**: claude-code
 
 ---
 

@@ -9,7 +9,7 @@ tags:
 - performance
 - pricing
 date: '2026-08-13'
-updated: '2026-10-14'
+updated: '2026-10-21'
 sources:
 - url: https://the-decoder.com/gemini-3-7-flash-lands-with-coding-gains-and-undercuts-its-three-week-old-predecessors-price-by-50
   title: Gemini 3.7 Flash lands with coding gains and undercuts its three-week-old
@@ -23,11 +23,28 @@ sources:
   title: Gemini 4 Argon is now available worldwide as Google's most capable frontier
     model
   date: '2026-10-14'
+- url: https://the-decoder.com/deepseek-open-sources-the-inference-engine-that-powers-its-fastest-and-cheapest-ai-model
+  title: Deepseek open-sources the inference engine that powers its fastest and cheapest
+    AI model
+  date: '2026-10-21'
 ---
 
 
 
+
 # Competitor News
+
+---
+
+## 2026-10-21
+
+### Deepseek open-sources the inference engine that powers its fastest and cheapest AI model
+
+Deepseekが独自の推論エンジン「DeepInfer」をApache License 2.0でオープンソース化しました。vLLMをベースに最適化されたこのフレームワークは、V4.1-Flashモデルの高速・低コスト推論を実現します。OpenAIやAnthropicなどの欧米プロバイダーに価格圧力をかける動きとして注目されており、米中AI競争における政治的な意図も指摘されています。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/deepseek-open-sources-the-inference-engine-that-powers-its-fastest-and-cheapest-ai-model)
+- **重要度**: 6/10
+- **タグ**: performance, pricing, cowork
 
 ---
 

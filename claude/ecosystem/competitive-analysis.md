@@ -13,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-04'
-updated: '2026-10-15'
+updated: '2026-10-21'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -95,6 +95,9 @@ sources:
 - url: https://qiita.com/kenimo49/items/d3c9b80775008b5bfb07
   title: Kimi K3は動画を直接読めるのに、Claudeと指摘はほぼ同じだった
   date: '2026-10-15'
+- url: https://zenn.dev/persimmoq/articles/deepseek-v41-flash-1017-fact-check
+  title: DeepSeek-V4.1-Flash-1017 の「Opus 超え」を一次情報で読む ― 本当の料金、比較相手、Claude への影響
+  date: '2026-10-21'
 ---
 
 
@@ -117,7 +120,20 @@ sources:
 
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-10-21
+
+### DeepSeek-V4.1-Flash-1017 の「Opus 超え」を一次情報で読む ― 本当の料金、比較相手、Claude への影響
+
+DeepSeek-V4.1-Flash-1017のリリースに関する事実確認記事。「Opus超え」という主張を公式情報から検証し、実際にはClaude Opus 5との比較で11項目中4項目で上回るのみで、最新のOpus 5.5との比較はないことを指摘。料金についても、X上で言われている$0.3/Mトークンは誤りで実際は$0.60（ピーク時$1.20）であり、日本の業務時間がピーク課金に該当することを明らかにしている。DeepSWEベンチでは費用対効果で優位だが、Claude Code等での検証はまだという事実も整理。
+
+- **ソース**: [Zenn claude](https://zenn.dev/persimmoq/articles/deepseek-v41-flash-1017-fact-check)
+- **重要度**: 7/10
+- **タグ**: opus, pricing, performance
 
 ---
 

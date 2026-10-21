@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-11'
-updated: '2026-10-16'
+updated: '2026-10-21'
 sources:
 - url: https://ai-heartland.com/explain/ponytail-lazy-senior-dev
   title: Ponytail解説｜AIエージェントに『怠惰なシニア』を憑依させコードを54%削るClaude Codeスキル
@@ -31,6 +31,9 @@ sources:
 - url: https://ai-heartland.com/agent/claude-code-manga
   title: Claude Codeで漫画を生成するmanga-forge｜ネーム設計からcodex作画・検品までを実測
   date: '2026-10-16'
+- url: https://ai-heartland.com/tool/imozuru-claude-code
+  title: imozuru｜知らない分野を要約せず原典まで芋づる式に掘るClaude Code向けスキルを実測レビュー
+  date: '2026-10-21'
 ---
 
 
@@ -38,7 +41,20 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-10-21
+
+### imozuru｜知らない分野を要約せず原典まで芋づる式に掘るClaude Code向けスキルを実測レビュー
+
+imozuruは、Claude Codeで知らない分野を調査する際に、要約に頼らず原典まで芋づる式に掘り下げるスキル/プラグイン。用語・人・場を地図化し、引用や著者をたどって原文を要約せず保存、主張ごとに出典（file:行）を付ける。図書館情報学の情報探索研究を基にした設計で、MITライセンスで公開されている。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/imozuru-claude-code)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp
 
 ---
 

@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-10-20'
+updated: '2026-10-21'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -132,6 +132,9 @@ sources:
 - url: https://zenn.dev/nanora/articles/20261019-claude-code-session-watch-telegram
   title: 止まった Claude Code セッションを Telegram のボタンで再開する（公式機能と自作の分担）
   date: '2026-10-20'
+- url: https://qiita.com/kaiyaku_iyada/items/339a7e78ba476ca1c810
+  title: Claude Code に運用を任せるとき、計画を変える条件は「日付つきの判断ルール」で先に書く：10月19日にルールが発火して、計画を組み直した記録
+  date: '2026-10-21'
 ---
 
 
@@ -168,7 +171,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-10-21
+
+### Claude Code に運用を任せるとき、計画を変える条件は「日付つきの判断ルール」で先に書く：10月19日にルールが発火して、計画を組み直した記録
+
+Claude Code による自動運用において、日付と数値を含む判断ルールを事前に計画書（README.md）に記載し、台帳の数字と照合する手法を解説。10月19日に実際にルールが発火し、フォロワー数などの指標が閾値を下回ったため計画を組み直した記録。ルールの書き方の型、照合手順、判定結果の記録方法を具体的に示している。
+
+- **ソース**: [Qiita claude](https://qiita.com/kaiyaku_iyada/items/339a7e78ba476ca1c810)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

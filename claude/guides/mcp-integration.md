@@ -11,7 +11,7 @@ tags:
 - setup
 - sonnet
 date: '2026-04-04'
-updated: '2026-09-30'
+updated: '2026-10-21'
 sources:
 - url: https://qiita.com/lovanaut/items/15fb6f0703f114000b78
   title: ChatGPTやClaudeからFORMLOVAを触り始める最短ガイド
@@ -34,6 +34,9 @@ sources:
 - url: https://qiita.com/homhom44/items/71e6d921e21783354a91
   title: MCPをAPIに組み込む設計の考え方と見せ方の自由度！Claude Code開発者が押さえておきたいAnthropicニュース（2026-09-30）
   date: '2026-09-30'
+- url: https://zenn.dev/zackchew/articles/3479eb603c9cd4
+  title: ChatGPT から自分のボットに仕事を頼む ― MCP コネクタでつなぐ手順
+  date: '2026-10-21'
 ---
 
 
@@ -42,7 +45,20 @@ sources:
 
 
 
+
 # Mcp Integration
+
+---
+
+## 2026-10-21
+
+### ChatGPT から自分のボットに仕事を頼む ― MCP コネクタでつなぐ手順
+
+ChatGPTからMCPコネクタを使って自分のボット（Hermes/OpenClaw）に仕事を依頼する手順を解説。Connector URLをコピーしてChatGPTまたはClaudeに貼るだけで、ボットの記憶やスキル、接続済みアプリ（Gmail、カレンダー等）を活用できる。無料プランでは利用不可。
+
+- **ソース**: [Zenn claude](https://zenn.dev/zackchew/articles/3479eb603c9cd4)
+- **重要度**: 6/10
+- **タグ**: mcp, setup, cowork
 
 ---
 
