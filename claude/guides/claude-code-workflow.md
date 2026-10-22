@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-10-21'
+updated: '2026-10-22'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -431,6 +431,12 @@ sources:
 - url: https://qiita.com/kaiyaku_iyada/items/339a7e78ba476ca1c810
   title: Claude Code に運用を任せるとき、計画を変える条件は「日付つきの判断ルール」で先に書く：10月19日にルールが発火して、計画を組み直した記録
   date: '2026-10-21'
+- url: https://qiita.com/kaiyaku_iyada/items/dbed1eeb8b1c3fa3ee30
+  title: Claude Code の副エージェントを「反証役」にして、AIが書いた記事と販売ページの文を一次資料と照合させた手順と、実際に見つかった誤り（AI自身の誤報を含む）
+  date: '2026-10-22'
+- url: https://zenn.dev/suekichi_system/articles/claude-code-chrome-ui-testing
+  title: Claude Code×Claude in ChromeでUIテストを自動化する【指示の書き方とスキル化】
+  date: '2026-10-22'
 ---
 
 
@@ -536,7 +542,30 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-10-22
+
+### Claude Code の副エージェントを「反証役」にして、AIが書いた記事と販売ページの文を一次資料と照合させた手順と、実際に見つかった誤り（AI自身の誤報を含む）
+
+Claude Code で記事や販売ページをAIが執筆し、副エージェントを「反証役」として一次資料との照合を実施した実験。ワークフローで複数の観点から検証する仕組みを構築し、AI自身が報告した「約5時間停止」が実際には「約2分」だった誤りなど、具体的な誤検知事例を記録。反証役に記事を直させず、直し方を「貼れる文」で出力させることで、新たな誤りの混入を防ぐ工夫を実装している。
+
+- **ソース**: [Qiita claude](https://qiita.com/kaiyaku_iyada/items/dbed1eeb8b1c3fa3ee30)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
+
+---
+
+### Claude Code×Claude in ChromeでUIテストを自動化する【指示の書き方とスキル化】
+
+Claude Code と Chrome 拡張機能を連携し、UIテストを自動化する実践ガイド。開くURL・操作・期待結果・禁止事項の4点でテスト指示を構造化し、Claude Code のスキル機能で再利用可能にする方法を解説。実装後の画面確認をAIに任せることで、開発からテストまでの一連の流れを自動化できる。
+
+- **ソース**: [Zenn claude](https://zenn.dev/suekichi_system/articles/claude-code-chrome-ui-testing)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

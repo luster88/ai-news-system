@@ -12,7 +12,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-23'
-updated: '2026-10-20'
+updated: '2026-10-22'
 sources:
 - url: https://qiita.com/pro-tein/items/49e5dbec705c3497dd51
   title: 【Claude Code】Hooks機能でデスクトップ通知を設定してみた
@@ -63,6 +63,9 @@ sources:
 - url: https://qiita.com/kaiyaku_iyada/items/bc44b6d8ed0e9a9ebb34
   title: Claude Code の SessionStart フックで、起動のたびに Day・記入漏れ・台帳の直近をAIに渡す：8行の初版を74行にした理由と、実際の出力
   date: '2026-10-20'
+- url: https://zenn.dev/dawon/articles/c21789f4cb0b6f
+  title: Claude Code の AskUserQuestion にフックで答える（スマホからも）
+  date: '2026-10-22'
 ---
 
 
@@ -80,7 +83,20 @@ sources:
 
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-10-22
+
+### Claude Code の AskUserQuestion にフックで答える（スマホからも）
+
+Claude Code の AskUserQuestion ツールによる選択式質問を、PermissionRequest フックを使って自動応答する方法を解説。通常の対話セッションでもフックから updatedInput で答えを返すことで質問画面をスキップできることを検証。Mac用メニューバーアプリ Lidnight ではスマホから答えを送る機能を実装し、ターミナルの前にいなくても質問に応答可能にしている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/dawon/articles/c21789f4cb0b6f)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

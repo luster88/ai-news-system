@@ -6,6 +6,7 @@ tags:
 - claude-api
 - claude-code
 - cowork
+- haiku
 - opus
 - performance
 - pricing
@@ -13,7 +14,7 @@ tags:
 - setup
 - sonnet
 date: '2026-04-03'
-updated: '2026-09-22'
+updated: '2026-10-22'
 sources:
 - url: https://zenn.dev/heki1224/articles/b849cc85a330aa
   title: Claude Codeで”トークン破産”しないためのコスト最適化とコンテキスト防衛術
@@ -65,6 +66,9 @@ sources:
 - url: https://qiita.com/locallab/items/7fff1666d533f9e926c6
   title: Claude Code + OpenRouter 無料モデルで AI コーディング支援コストを月 0 円にする 5 つの設定
   date: '2026-09-22'
+- url: https://zenn.dev/joinclass/articles/claude-code-oct-2026-release-adoption
+  title: Claude Code 10月リリースを導入判断で読む：Haiku 5.5・effort指定・hooksのonFailureをどう入れるか
+  date: '2026-10-22'
 ---
 
 
@@ -81,7 +85,20 @@ sources:
 
 
 
+
 # Cost Optimization
+
+---
+
+## 2026-10-22
+
+### Claude Code 10月リリースを導入判断で読む：Haiku 5.5・effort指定・hooksのonFailureをどう入れるか
+
+合同会社ジョインクラスによる、Claude Code 10月リリースの導入判断基準を実運用の観点から解説。Haiku 5.5への移行、effort指定、実測コストトラッキングの重要性を、無人実行環境での実測データをもとに説明。「話題の機能」と「自社で効く機能」は別物という教訓と、モデル変更前の1週間実測の重要性を強調。
+
+- **ソース**: [Zenn claude](https://zenn.dev/joinclass/articles/claude-code-oct-2026-release-adoption)
+- **重要度**: 7/10
+- **タグ**: claude-code, haiku
 
 ---
 

@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-12'
-updated: '2026-10-14'
+updated: '2026-10-22'
 sources:
 - url: https://qiita.com/Tadashi_Kudo/items/80a6a0c8fe73bd9450c3
   title: 104kスターのKarpathy CLAUDE.mdを試したら、手元に既にあった話——グローバルCLAUDE.mdで全PJ適用済みの実態
@@ -32,6 +32,9 @@ sources:
 - url: https://qiita.com/kai_kou/items/314e244a33163709220d
   title: Claude Code v2.1.296のサブエージェント設定入門、新3設定の効き方
   date: '2026-10-14'
+- url: https://qiita.com/acshu_moriyama/items/0d35781c10fe8d436b5c
+  title: コーディングエージェントの「指示書・Skill・Hooks」役割分担
+  date: '2026-10-22'
 ---
 
 
@@ -41,7 +44,20 @@ sources:
 
 
 
+
 # Claude Code Configuration
+
+---
+
+## 2026-10-22
+
+### コーディングエージェントの「指示書・Skill・Hooks」役割分担
+
+コーディングエージェント（Claude Code、Codex等）における「指示書」「Skill」「Hooks」の役割分担を解説。指示書は方針・共通ルール、Skillは作業手順・知識、Hooksは機械的な検査・強制を担当する。PR作成を例に、各仕組みの使い分けと設定方法を整理し、目的に応じた適切な選択基準を提示。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/acshu_moriyama/items/0d35781c10fe8d436b5c)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

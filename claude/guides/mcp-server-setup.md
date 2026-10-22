@@ -9,7 +9,7 @@ tags:
 - prompt
 - setup
 date: '2026-04-30'
-updated: '2026-06-23'
+updated: '2026-10-22'
 sources:
 - url: https://zenn.dev/syyama/articles/a6d92f250f5793
   title: 【AlmaLinux】MCP Server を構築してみた
@@ -20,11 +20,27 @@ sources:
 - url: https://zenn.dev/ray000/articles/momonga-search-mcp-setup
   title: 【初心者向け】Momonga Search MCP を Claude / Codex で使えるようにしよう！
   date: '2026-06-23'
+- url: https://zenn.dev/web_benriya/articles/bigquery-mcp-server-setup
+  title: BigQuery MCPサーバーをつなぐ — エージェントからBigQueryを操作する
+  date: '2026-10-22'
 ---
 
 
 
+
 # Mcp Server Setup
+
+---
+
+## 2026-10-22
+
+### BigQuery MCPサーバーをつなぐ — エージェントからBigQueryを操作する
+
+BigQuery MCP サーバーのセットアップ手順を解説した記事。Anthropic が策定した MCP（Model Context Protocol）を使い、Claude Code などの AI エージェントから BigQuery へクエリ実行やメタデータ取得を行う方法を紹介。Google 提供の MCP Toolbox for Databases を使った構成、IAM ロール設定、接続設定、基本操作、コスト制御やセキュリティ対策まで網羅している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/web_benriya/articles/bigquery-mcp-server-setup)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code, setup
 
 ---
 

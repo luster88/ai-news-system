@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-11'
-updated: '2026-10-09'
+updated: '2026-10-22'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-best-practice-guide-2026
   title: Claude Codeベストプラクティス完全ガイド2026年版｜使い方・Tips・効率化テクニック集
@@ -61,6 +61,9 @@ sources:
 - url: https://qiita.com/homhom44/items/4fdc3341c7991a06e658
   title: LLMの価値は「説明」より検証できる記録にあると整理する！Claude Code開発者が押さえておきたいAnthropicニュース（2026-10-09）
   date: '2026-10-09'
+- url: https://qiita.com/suwa_nobu/items/75bc70f265d7096ae799
+  title: CLAUDE.md の指示は先頭に書くべきか。144回測ったら、効いていたのは位置ではなく見出しだった
+  date: '2026-10-22'
 ---
 
 
@@ -77,7 +80,30 @@ sources:
 
 
 
+
 # Claude Code Best Practices
+
+---
+
+## 2026-10-22
+
+### CLAUDE.md の指示は先頭に書くべきか。144回測ったら、効いていたのは位置ではなく見出しだった
+
+CLAUDE.md 内の指示の配置位置による遵守率を144回測定した検証記事。結果、位置（先頭/中ほど/末尾）よりも「どの見出しの下に書くか」が重要と判明。モジュール固有の節内に書いた指示は無視されやすく、「共通ルール」などの全体向け見出し下では1,000行の中ほどでも100%遵守された。公式推奨の200行未満も費用面で有効。
+
+- **ソース**: [Qiita claude](https://qiita.com/suwa_nobu/items/75bc70f265d7096ae799)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, setup
+
+---
+
+### CLAUDE.md の指示は先頭に書くべきか。144回測ったら、効いていたのは位置ではなく見出しだった
+
+CLAUDE.mdにおける指示の配置を144回測定した実験結果。20行・204行・999行のファイルで、先頭・中ほど・末尾にルールを配置して検証。結果、位置よりも「どの見出しの下にあるか」が重要で、「## 共通ルール」などの全体向け見出し下に書けば、1000行のファイルの中ほどでも72回全て守られた。モジュール固有の節に書いた場合は「そのモジュールのルール」と解釈され外れることがあった。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/suwa_nobu/items/75bc70f265d7096ae799)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-10-17'
+updated: '2026-10-22'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -97,6 +97,9 @@ sources:
 - url: https://qiita.com/picnic/items/1f140e2881afc7291e4a
   title: Claude Opus 5.5のFast modeがMicrosoft Foundry対応、レート制限ティア訂正
   date: '2026-10-17'
+- url: https://qiita.com/picnic/items/a76a0164a1e2db4f994d
+  title: Claude User Profiles と組織Webhook(Admin API)入門:エンドカスタマー単位の安全性措置
+  date: '2026-10-22'
 ---
 
 
@@ -117,7 +120,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-10-22
+
+### Claude User Profiles と組織Webhook(Admin API)入門:エンドカスタマー単位の安全性措置
+
+Anthropic が User Profiles API（/v1/user_profiles）をリリース。マルチテナント環境で、エンドカスタマー単位での安全性措置が可能になり、違反した1ユーザーの影響が組織全体に及ぶリスクを低減。Admin API に organization webhooks（ベータ）が追加され、user profile の制限・BANを自動検知可能に。Managed Agents の web_search が組織のドメイン制限に従うようになり、検索結果が絞り込まれる可能性がある重要な挙動変更も含まれる。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/a76a0164a1e2db4f994d)
+- **重要度**: 8/10
+- **タグ**: claude-api, 新機能, release
 
 ---
 

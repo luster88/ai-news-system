@@ -9,7 +9,7 @@ tags:
 - windows
 - 新機能
 date: '2026-05-11'
-updated: '2026-10-12'
+updated: '2026-10-22'
 sources:
 - url: https://zenn.dev/schhrcat/articles/d2ba511ddf35a1
   title: ClaudeCodeでviライクエディタ「FoxEditor」を作ってみた#1
@@ -25,12 +25,28 @@ sources:
   title: I built a fake live cable TV network out of the Internet Archive's ephemeral
     media
   date: '2026-10-12'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xbzlih/i_replaced_my_samsung_tvs_home_screen_with_claude
+  title: I replaced my Samsung TV’s home screen with Claude Code
+  date: '2026-10-22'
 ---
 
 
 
 
+
 # Claude Code Project
+
+---
+
+## 2026-10-22
+
+### I replaced my Samsung TV’s home screen with Claude Code
+
+ユーザーが Claude Code を使用して Samsung TV の広告だらけのホーム画面を、シンプルなカスタムランチャーに置き換えた事例。TV API をフェイクして開発環境でブラウザ上で素早く反復開発を行い、CleanFrame アプローチでホームボタンの挙動を上書きした。GitHub にコードと Medium に詳細な記事を公開している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xbzlih/i_replaced_my_samsung_tvs_home_screen_with_claude)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 
