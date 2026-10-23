@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-25'
-updated: '2026-08-31'
+updated: '2026-10-23'
 sources:
 - url: https://qiita.com/YujiNaramoto/items/f73bdcd7098812995fea
   title: なぜ Claude Code の自動化スクリプトはスケールすると壊れるのか — 設計ミスの構造を読む
@@ -21,11 +21,27 @@ sources:
 - url: https://ai-heartland.com/explain/grill-me-skill
   title: grill-me は自動発火しない設計だった｜mattpocock/skills 37本の起動条件を実測
   date: '2026-08-31'
+- url: https://qiita.com/kaiyaku_iyada/items/a197d44386369b15d248
+  title: Claude Code のスキルに人間への指示書を書かせたら、3日とも「何を報告するか」が抜けた
+  date: '2026-10-23'
 ---
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-10-23
+
+### Claude Code のスキルに人間への指示書を書かせたら、3日とも「何を報告するか」が抜けた
+
+Claude Code の daily-ops スキルで人間への指示書を自動生成する試みの記録。10月16-19日の4日間で作成された指示書を分析すると、いずれも「何を報告するか」の項目が抜けていた。スキルは「人間に選ばせない」ルールを含むが、実際の指示書では曖昧な指示が残存。作業時間の見積もりと実績の差も記録されている。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kaiyaku_iyada/items/a197d44386369b15d248)
+- **重要度**: 4/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

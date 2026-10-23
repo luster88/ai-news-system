@@ -9,7 +9,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-05-29'
-updated: '2026-06-18'
+updated: '2026-10-23'
 sources:
 - url: https://zenn.dev/tokium_dev/articles/human-discipline-for-ai-colleague
   title: Claude のテスト設計が信用できないので ── 振り返りと試運転SkillをAIに盛り込んだ
@@ -17,10 +17,26 @@ sources:
 - url: https://zenn.dev/n314/articles/6becd34ddbe6ad
   title: Claude CodeのTeamCreateが廃止され、Plan Modeが変わったのでワークフローを見直す
   date: '2026-06-18'
+- url: https://qiita.com/kaiyaku_iyada/items/a197d44386369b15d248
+  title: Claude Code のスキルに人間への指示書を書かせたら、3日とも「何を報告するか」が抜けた
+  date: '2026-10-23'
 ---
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-10-23
+
+### Claude Code のスキルに人間への指示書を書かせたら、3日とも「何を報告するか」が抜けた
+
+Claude Code のスキル daily-ops を使って人間向け指示書を作成する実験の記録。3日間連続で「何を報告するか」の指定が抜けるという問題が発生。指示書の書き方、バージョン履歴、実際の運用での課題（見積もり時間と実績の乖離、人間に判断を委ねる書き方が残る問題）を詳細に記録している。
+
+- **ソース**: [Qiita claude](https://qiita.com/kaiyaku_iyada/items/a197d44386369b15d248)
+- **重要度**: 4/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

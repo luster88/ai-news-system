@@ -8,7 +8,7 @@ tags:
 - cowork
 - setup
 date: '2026-06-03'
-updated: '2026-09-17'
+updated: '2026-10-23'
 sources:
 - url: https://zenn.dev/gudezou/articles/7e8235a27f0909
   title: Claude Code の終了フックから claude を呼び出すとなぜ暴走するのか
@@ -25,13 +25,29 @@ sources:
 - url: https://zenn.dev/sactechnologies/articles/d990489b0e759d
   title: Claude Code のフックは、静かに死ぬ — 117本を数えたら12本が呼ばれていなかった
   date: '2026-09-17'
+- url: https://zenn.dev/starken/articles/claude-code-hook-gate-bash-bypass
+  title: Claude Codeのフックで止めたはずの書き込みが、Bashのlnやtouchで通っていた
+  date: '2026-10-23'
 ---
 
 
 
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-10-23
+
+### Claude Codeのフックで止めたはずの書き込みが、Bashのlnやtouchで通っていた
+
+Claude Codeのフックで~/.claude配下への書き込みを制御しようとしたが、Bashコマンド（ln、touch、rsync等）がゲートを素通りし、逆に読み取り専用コマンド（ls、jq等）が誤検知で停止された。原因はmatcherがEdit|Writeのみで、Bashツール呼び出しではフックが起動しないこと、および正規表現の不完全さ。knowledge配下の書き込みも検査を回避する設計上の問題があった。
+
+- **ソース**: [Zenn claude](https://zenn.dev/starken/articles/claude-code-hook-gate-bash-bypass)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 

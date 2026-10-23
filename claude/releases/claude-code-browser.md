@@ -13,7 +13,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-12'
-updated: '2026-10-16'
+updated: '2026-10-23'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -91,6 +91,9 @@ sources:
 - url: https://qiita.com/picnic/items/08bb24ef4da996d55d54
   title: Claude Code v2.1.301 変更点まとめ：mod の .catch と $.env.set の挙動変更
   date: '2026-10-16'
+- url: https://qiita.com/Sidejob/items/440c8f91d5b1731ca38a
+  title: Claude Code v2.1.305 変更点まとめ——Vertex/Bedrock ToolSearch障害修正・sandbox拡張ほか
+  date: '2026-10-23'
 ---
 
 
@@ -114,7 +117,20 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-10-23
+
+### Claude Code v2.1.305 変更点まとめ——Vertex/Bedrock ToolSearch障害修正・sandbox拡張ほか
+
+Claude Code v2.1.305では、Vertex AIとAmazon Bedrockで全リクエストが失敗していた重大なリグレッション（v2.1.304で発生）が修正されました。ToolSearchが拒否された場合に自動リトライする機能が追加され、これらのプロバイダー経由での利用が復旧しました。また、sandbox.allowNestedUserNamespacesの新設により、サンドボックス内でPlaywrightやrootless Podmanなどのツールが動作可能になりました。無人実行環境向けのCLAUDE_CODE_RETRY_WATCHDOG_USAGE_LIMIT_RECHECK_MS環境変数も追加されています。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Sidejob/items/440c8f91d5b1731ca38a)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

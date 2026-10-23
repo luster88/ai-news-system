@@ -9,7 +9,7 @@ tags:
 - setup
 - vscode
 date: '2026-03-25'
-updated: '2026-06-18'
+updated: '2026-10-23'
 sources:
 - url: https://zenn.dev/fivot/articles/0392437670c826
   title: Claude Code / Claude Desktopで音声対話環境を構築する【Mac】
@@ -17,10 +17,26 @@ sources:
 - url: https://qiita.com/OnuuuumaX/items/265c2d0b2b9b131b4aa6
   title: 【Axmol Engine】macOSでVSCodeを使ってiOS/Androidアプリを開発する（プロジェクト作成〜Claude Code連携まで）
   date: '2026-06-18'
+- url: https://qiita.com/joinclass/items/5558c5fc23788c4c082a
+  title: launchdで定期実行するClaude Code — 33ジョブを回して分かったplist設計とログ設計
+  date: '2026-10-23'
 ---
 
 
+
 # Setup Mac
+
+---
+
+## 2026-10-23
+
+### launchdで定期実行するClaude Code — 33ジョブを回して分かったplist設計とログ設計
+
+Mac の launchd で Claude Code を定期実行する実践例。33個のジョブを運用する中で得られた知見として、plist にはスケジュールのみを記述しシェル側にロジックを集約する設計、Disabled の代わりにファイル名変更で停止管理、PATH や環境変数を common.sh に集約する手法、コスト追跡ラッパーによる月額制限の実装などを解説。launchd 特有の落とし穴（フルディスクアクセス、PATH 不継承、エラー通知の欠如）への対処法も示されている。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/joinclass/items/5558c5fc23788c4c082a)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, mac
 
 ---
 

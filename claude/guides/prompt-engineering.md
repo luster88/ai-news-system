@@ -14,7 +14,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-07'
-updated: '2026-10-10'
+updated: '2026-10-23'
 sources:
 - url: https://zenn.dev/analysis/articles/thought-analyzer-agents-md
   title: コンテキストファイルは、エージェントを賢くしない ── AGENTS.mdの効果を初めて測った研究
@@ -46,6 +46,9 @@ sources:
 - url: https://qiita.com/mugenweb/items/295640153db6bc84db2c
   title: 「予約機能を作って」は失敗する。Claude Codeへの指示は「やらないこと」と判断基準を渡す(Laravel)
   date: '2026-10-10'
+- url: https://qiita.com/suwa_nobu/items/8dec346a727f0199fefb
+  title: Haiku 5.5 に書かせた確信度は当てになるか。同じ306問を3回聞いたら、1問ずつはぶれても0.8以上は8割当たった
+  date: '2026-10-23'
 ---
 
 
@@ -57,7 +60,30 @@ sources:
 
 
 
+
 # Prompt Engineering
+
+---
+
+## 2026-10-23
+
+### Haiku 5.5 に書かせた確信度は当てになるか。同じ306問を3回聞いたら、1問ずつはぶれても0.8以上は8割当たった
+
+Claude Haiku 5.5に306問を3回解かせ、確信度のぶれを検証。個別問題では確率が0.1前後変動し、答えが変わる問題も19%あったが、0.8以上と判定した問題の正解率は3回とも80%超で安定。確信度を個別判断に使うと同じ問題の扱いが変わるリスクがあるが、束として見れば信頼性があることが確認された。
+
+- **ソース**: [Qiita claude](https://qiita.com/suwa_nobu/items/8dec346a727f0199fefb)
+- **重要度**: 6/10
+- **タグ**: haiku, prompt, performance
+
+---
+
+### Haiku 5.5 に書かせた確信度は当てになるか。同じ306問を3回聞いたら、1問ずつはぶれても0.8以上は8割当たった
+
+Claude Haiku 5.5に同じ306問を3回解かせ、確信度のブレを検証。1問ごとの確率は呼ぶたびに0.1前後変動し、0.8の閾値をまたぐ問題が21%存在したが、0.8以上と出力した問題の正解率は3回とも8割強で安定していた。単一の確信度スコアは呼び出しごとにぶれるが、束として見れば実用的な精度を持つことが確認された。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/suwa_nobu/items/8dec346a727f0199fefb)
+- **重要度**: 6/10
+- **タグ**: haiku, prompt, performance
 
 ---
 

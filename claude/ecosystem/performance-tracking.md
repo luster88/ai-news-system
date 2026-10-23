@@ -7,7 +7,7 @@ tags:
 - opus
 - performance
 date: '2026-10-02'
-updated: '2026-10-15'
+updated: '2026-10-23'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wvdt9p/is_opus_55_nerfed_now_livenerf_day_8_update
   title: Is Opus 5.5 Nerfed Now? LiveNerf Day 8 Update
@@ -18,11 +18,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1x606aj/are_they_nerfing_opus_55_livenerf_day_20_update
   title: Are They Nerfing Opus 5.5? Livenerf Day 20 update
   date: '2026-10-15'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xcraz9/did_they_nerf_opus_55_doesnt_look_like_it
+  title: Did they nerf Opus 5.5? Doesn’t look like it. LiveNerf day 29 update
+  date: '2026-10-23'
 ---
 
 
 
+
 # Performance Tracking
+
+---
+
+## 2026-10-23
+
+### Did they nerf Opus 5.5? Doesn’t look like it. LiveNerf day 29 update
+
+LiveNerfプロジェクトが29日間にわたりClaude Opus 3.5のパフォーマンスを継続的に追跡した結果、モデルの性能低下（nerf）は検出されなかったと報告。Anthropicがモデルを意図的に劣化させているという噂を科学的手法で検証し、少なくともOpus 3.5においては性能低下が確認されなかった。今後は他社モデルへの追跡範囲拡大と、資金調達による大規模化を計画している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xcraz9/did_they_nerf_opus_55_doesnt_look_like_it)
+- **重要度**: 6/10
+- **タグ**: opus, performance, cowork
 
 ---
 
