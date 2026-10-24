@@ -8,7 +8,7 @@ tags:
 - opus
 - 新機能
 date: '2026-10-22'
-updated: '2026-10-23'
+updated: '2026-10-24'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1xbwkgf/claude_duet_anthropic_just_casually_dropped_the
   title: 'Claude Duet: Anthropic just casually dropped the personal assistant calling
@@ -21,10 +21,26 @@ sources:
 - url: https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents
   title: Claude Duet app is Anthropic’s bet on agents
   date: '2026-10-23'
+- url: https://zenn.dev/sugawara_ai/articles/ai-news-20261023
+  title: Claude Duet登場、先回りして動くAIの相棒
+  date: '2026-10-24'
 ---
 
 
+
 # Claude Duet Agent
+
+---
+
+## 2026-10-24
+
+### Claude Duet登場、先回りして動くAIの相棒
+
+Anthropic が Claude Duet という新しい研究プレビューアプリを発表。AI が先回りして重要情報を要約・通知し、会議調整や売上予測などを自動実行する。Claude Opus 5.5 ベースで、セキュリティ配慮として機密情報の送信制限やパスワード非表示などを実装。Pro/Max プランユーザーは順番待ち登録可能。
+
+- **ソース**: [Zenn claude](https://zenn.dev/sugawara_ai/articles/ai-news-20261023)
+- **重要度**: 8/10
+- **タグ**: 新機能, opus
 
 ---
 

@@ -4,11 +4,14 @@ category: guides
 subcategory: enterprise-adoption
 tags:
 - claude-code
+- claude-console
+- cowork
 - cursor
 - mcp
 - performance
+- setup
 date: '2026-03-28'
-updated: '2026-05-20'
+updated: '2026-10-24'
 sources:
 - url: https://zenn.dev/kenji_harada/articles/ai-coding-revolution-2026
   title: AIコーディング革命の実態：スタートアップが先行する理由と大企業の課題
@@ -16,10 +19,26 @@ sources:
 - url: https://ai-heartland.com/explain/spotify-microsoft-claude-enterprise-2026
   title: SpotifyとMicrosoftが語るClaude活用最前線：1日4,500デプロイとAzure AI Foundryエージェント構築の実態
   date: '2026-05-20'
+- url: https://zenn.dev/aigakari_jp/articles/6a6bfe91b5ddbd
+  title: 説明会のあと、質問が増えた。2回目の説明でまとめて答えたこと
+  date: '2026-10-24'
 ---
 
 
+
 # Enterprise Adoption
+
+---
+
+## 2026-10-24
+
+### 説明会のあと、質問が増えた。2回目の説明でまとめて答えたこと
+
+従業員20名台の小企業でClaude導入後、数週間経過して質問が増えたため2回目の説明会を実施。回数制限、モデルの違い、チャットと任せる使い方の違いを説明し、プロジェクト機能でコンテキストの重要性を実演。一度に全て教えるより、使いながら少しずつ教える方が効果的と判明。月1回1時間程度の定期的なフォローアップが有効。
+
+- **ソース**: [Zenn claude](https://zenn.dev/aigakari_jp/articles/6a6bfe91b5ddbd)
+- **重要度**: 5/10
+- **タグ**: cowork, setup, claude-console
 
 ---
 

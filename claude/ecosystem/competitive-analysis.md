@@ -13,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-04'
-updated: '2026-10-21'
+updated: '2026-10-24'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -98,6 +98,9 @@ sources:
 - url: https://zenn.dev/persimmoq/articles/deepseek-v41-flash-1017-fact-check
   title: DeepSeek-V4.1-Flash-1017 の「Opus 超え」を一次情報で読む ― 本当の料金、比較相手、Claude への影響
   date: '2026-10-21'
+- url: https://the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5
+  title: Chinese AI model Kimi K3.1 Pro is closing in on Anthropic's Claude Opus 5.5
+  date: '2026-10-24'
 ---
 
 
@@ -121,7 +124,20 @@ sources:
 
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-10-24
+
+### Chinese AI model Kimi K3.1 Pro is closing in on Anthropic's Claude Opus 5.5
+
+中国のMoonshot AIが新型推論モデル Kimi K3.1 Pro をリリース。Artificial Analysis Intelligence Index で55点を獲得し、Claude Opus 5.5（58点）に迫る4位にランクイン。エージェント型タスクやコーディング、3Dモデリングで大幅な性能向上を達成し、API価格は33%値下げ。2026年11月までにモデルウェイトを公開予定で、実現すれば最高スコアのオープンウェイトモデルとなる。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5)
+- **重要度**: 7/10
+- **タグ**: opus, performance, pricing
 
 ---
 

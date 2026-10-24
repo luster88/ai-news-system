@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-10-22'
+updated: '2026-10-24'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -437,6 +437,16 @@ sources:
 - url: https://zenn.dev/suekichi_system/articles/claude-code-chrome-ui-testing
   title: Claude Code×Claude in ChromeでUIテストを自動化する【指示の書き方とスキル化】
   date: '2026-10-22'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xdhkzb/no_coding_or_gamedev_background_6_weeks_with_opus
+  title: No coding or gamedev background, 6 weeks with Opus 5.5 + Godot — from drawings
+    to a playable game
+  date: '2026-10-24'
+- url: https://zenn.dev/libelab/articles/claude-company-day2
+  title: Claudeを社員にした1人会社【Day 2】『承認以外はAIで完結』ルールで事業を選び直した話
+  date: '2026-10-24'
+- url: https://zenn.dev/libelab/articles/claude-one-person-company-day1
+  title: Claudeを社員にして「1人会社」を作ってみた【Day 1：設立と事業選定】
+  date: '2026-10-24'
 ---
 
 
@@ -543,7 +553,40 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-10-24
+
+### No coding or gamedev background, 6 weeks with Opus 5.5 + Godot — from drawings to a playable game
+
+プログラミング未経験者が Claude Opus 5.5 と Godot を使い、6週間でゲーム開発を実現した事例。Claude Code とカスタムスキル（route、handoff、Re-searcher）を活用し、段階的な機能実装とトークン節約を行った。Opus での作業レビュー、Sonnet/Haiku への委任、Obsidian での知識管理が開発効率化の鍵となった。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xdhkzb/no_coding_or_gamedev_background_6_weeks_with_opus)
+- **重要度**: 7/10
+- **タグ**: claude-code, opus, cowork
+
+---
+
+### Claudeを社員にした1人会社【Day 2】『承認以外はAIで完結』ルールで事業を選び直した話
+
+Claude Code を社員として「承認以外は AI 完結」ルールで運営する1人会社の事例。事業選定時に「AI 完結度」を最重要指標として再評価し、手作業が残る案を降格。Zenn 記事と Web アプリを並行展開する方針に変更。CLAUDE.md による憲章管理、部署エージェント、稟議・日報の仕組みを導入し、社長の稼働を週3時間に抑える体制を構築。
+
+- **ソース**: [Zenn claude](https://zenn.dev/libelab/articles/claude-company-day2)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, prompt
+
+---
+
+### Claudeを社員にして「1人会社」を作ってみた【Day 1：設立と事業選定】
+
+Claude Codeをサブエージェントとして活用し、GitHubリポジトリベースで「1人会社」を運営する実験的取り組みの記録。社長は方針決定と承認のみを担当し、調査・企画・実装はClaudeに委譲。新事業選定では「承認以外の作業が残らない」という基準でZenn記事執筆とWebアプリ開発を選択。初日はGitHub認証やアカウント作成など、AIに委譲できない作業が発生したが、基本フローは確立できた。
+
+- **ソース**: [Zenn claude](https://zenn.dev/libelab/articles/claude-one-person-company-day1)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

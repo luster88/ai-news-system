@@ -10,7 +10,7 @@ tags:
 - pricing
 - 新機能
 date: '2026-04-29'
-updated: '2026-07-28'
+updated: '2026-10-24'
 sources:
 - url: https://the-decoder.com/white-house-moves-to-restore-anthropic-access-after-pentagon-standoff
   title: White House moves to restore Anthropic access after Pentagon standoff
@@ -23,11 +23,28 @@ sources:
   title: The company I work for received a US Government directive requiring us to
     discontinue the use of Anthropic products, services, and models.
   date: '2026-07-28'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xdcmm4/swedens_government_is_blocking_chatgpt_and_claude
+  title: Sweden’s government is blocking ChatGPT and Claude on staff computers from
+    Monday
+  date: '2026-10-24'
 ---
 
 
 
+
 # Government Policy
+
+---
+
+## 2026-10-24
+
+### Sweden’s government is blocking ChatGPT and Claude on staff computers from Monday
+
+スウェーデン政府が月曜日から政府職員のコンピューターでChatGPTとClaudeへのアクセスをブロックすることを発表。政府機関におけるAIツールの使用制限に関する動きで、セキュリティやデータプライバシーへの懸念が背景にあると考えられる。Claudeを含む主要AIサービスが政府機関での利用を制限される事例として注目される。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xdcmm4/swedens_government_is_blocking_chatgpt_and_claude)
+- **重要度**: 6/10
+- **タグ**: cowork, pricing, claude-api
 
 ---
 

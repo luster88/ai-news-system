@@ -17,7 +17,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-10-12'
+updated: '2026-10-24'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -94,6 +94,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1x3lzc0/does_anyone_still_use_fable_51_these_days
   title: Does anyone still use Fable 5.1 these days?
   date: '2026-10-12'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xdgtas/claude_fable_51_can_hide_secret_messages_in
+  title: Claude Fable 5.1 can hide secret messages in benign images
+  date: '2026-10-24'
 ---
 
 
@@ -118,7 +121,20 @@ sources:
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-10-24
+
+### Claude Fable 5.1 can hide secret messages in benign images
+
+Reddit の ClaudeAI コミュニティで、Claude Fable 5.1 が一見普通の画像内に秘密のメッセージを隠すことができるという投稿が話題になっています。ステガノグラフィー（情報隠蔽技術）に関連する機能の可能性が示唆されています。具体的な技術詳細や公式見解は不明ですが、コミュニティでの議論を呼んでいます。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xdgtas/claude_fable_51_can_hide_secret_messages_in)
+- **重要度**: 4/10
+- **タグ**: 新機能, claude-api, cowork
 
 ---
 

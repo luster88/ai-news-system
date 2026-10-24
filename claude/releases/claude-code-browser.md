@@ -13,7 +13,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-12'
-updated: '2026-10-23'
+updated: '2026-10-24'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -94,6 +94,12 @@ sources:
 - url: https://qiita.com/Sidejob/items/440c8f91d5b1731ca38a
   title: Claude Code v2.1.305 変更点まとめ——Vertex/Bedrock ToolSearch障害修正・sandbox拡張ほか
   date: '2026-10-23'
+- url: https://qiita.com/sakutto-panda/items/53b06029b87987642591
+  title: Claude Code 2026年10月アップデート——Modsでツール呼び出しをTypeScriptで横取りできるようになった
+  date: '2026-10-24'
+- url: https://qiita.com/Sidejob/items/7fa1f1b8ecabd94ca8e4
+  title: Claude Code v2.1.304 変更点まとめ——/auto-mode-setup・managed-agents-secure新設ほか55件の追加・修正・改善を整理（2026-10-20速報）
+  date: '2026-10-24'
 ---
 
 
@@ -118,7 +124,50 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-10-24
+
+### Claude Code 2026年10月アップデート——Modsでツール呼び出しをTypeScriptで横取りできるようになった
+
+Claude Code v2.1.287で新機能Modsが追加された。ModsはTypeScript/JavaScriptでツール呼び出しやUI描画などのイベントを観察・書き換え・横取りできる拡張機能。プロセス内で動作し、サンドボックスなしで実行されるため、`claude plugin validate`で事前検証が重要。ビルド不要で開発でき、ホットリロードにも対応している。
+
+- **ソース**: [Qiita claude](https://qiita.com/sakutto-panda/items/53b06029b87987642591)
+- **重要度**: 8/10
+- **タグ**: claude-code, 新機能, release
+
+---
+
+### Claude Code v2.1.304 変更点まとめ——/auto-mode-setup・managed-agents-secure新設ほか55件の追加・修正・改善を整理（2026-10-20速報）
+
+Claude Code v2.1.304のリリース速報。自動モードの設定ガイド /auto-mode-setup、セキュリティ設定比較 /claude-api managed-agents-secure の追加が主な変更点。プラグイン機能の人間承認必須化、非アクティブ会話再開時の警告機能も追加された。無人実行に影響するバグ修正として、max-turns超過問題やLLMゲートウェイエラーなど5件が解決された。
+
+- **ソース**: [Qiita claude](https://qiita.com/Sidejob/items/7fa1f1b8ecabd94ca8e4)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+### Claude Code 2026年10月アップデート——Modsでツール呼び出しをTypeScriptで横取りできるようになった
+
+Claude Code v2.1.287で導入されたModsは、TypeScript/JavaScriptでツール呼び出しやプロンプト送信を観察・書き換え・横取りできる新しい拡張機能です。Node.jsやビルド不要で、claude plugin validateで静的解析、claude plugin testで単体テストが可能。サンドボックスなしで動作するため、validateでの事前確認とエラーハンドリングが重要です。/diffパネルも既にModとして実装され直されています。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/sakutto-panda/items/53b06029b87987642591)
+- **重要度**: 8/10
+- **タグ**: claude-code, 新機能, release
+
+---
+
+### Claude Code v2.1.304 変更点まとめ——/auto-mode-setup・managed-agents-secure新設ほか55件の追加・修正・改善を整理（2026-10-20速報）
+
+Claude Code v2.1.304がリリースされ、55件の変更が実施された。主な追加機能として、自動モード設定を支援する /auto-mode-setup コマンドと、Managed Agentsのセキュリティ設定を診断する /claude-api managed-agents-secure が新設された。無人実行時の --max-turns 超過バグや LLMゲートウェイ経由のエラーなど、自動化・組織利用に影響する重要なバグ修正も含まれている。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Sidejob/items/7fa1f1b8ecabd94ca8e4)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 
