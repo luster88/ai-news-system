@@ -9,7 +9,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-07-12'
-updated: '2026-10-17'
+updated: '2026-10-24'
 sources:
 - url: https://qiita.com/EitaroSeta/items/1f3b34f92e01225333c5
   title: Claude Code でソウルライク風3Dボス戦ゲームを作ってみた（Three.js / Mixamo / サーバー不要）
@@ -28,13 +28,29 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1x8dg94/i_made_a_browser_fps_with_claude_code_every_3d
   title: I made a browser FPS with Claude Code, every 3D model in it is code
   date: '2026-10-17'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xe7kwg/built_a_downhill_skateboarding_game_with_claude
+  title: Built a downhill skateboarding game with Claude Code
+  date: '2026-10-24'
 ---
 
 
 
 
 
+
 # Claude Code Game Dev
+
+---
+
+## 2026-10-24
+
+### Built a downhill skateboarding game with Claude Code
+
+Reddit ユーザーが Claude Code と Claude AI を活用してダウンヒル・スケートボードゲーム「Cruising Bones」を開発した事例。10月14日から10日間で Alpha 版を完成させ、現在無料公開中。BabylonJS をゲームエンジンとして使用し、Magnific や Tripo などの AI ツールと組み合わせて、アート生成から機能実装まで Claude に依頼しながら反復開発を行った。毎回プレイ後にフィードバックリストを渡し、高速に改善を重ねた結果、開発者自身が驚くクオリティに到達したとのこと。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xe7kwg/built_a_downhill_skateboarding_game_with_claude)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

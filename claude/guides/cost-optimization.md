@@ -14,7 +14,7 @@ tags:
 - setup
 - sonnet
 date: '2026-04-03'
-updated: '2026-10-22'
+updated: '2026-10-24'
 sources:
 - url: https://zenn.dev/heki1224/articles/b849cc85a330aa
   title: Claude Codeで”トークン破産”しないためのコスト最適化とコンテキスト防衛術
@@ -69,6 +69,9 @@ sources:
 - url: https://zenn.dev/joinclass/articles/claude-code-oct-2026-release-adoption
   title: Claude Code 10月リリースを導入判断で読む：Haiku 5.5・effort指定・hooksのonFailureをどう入れるか
   date: '2026-10-22'
+- url: https://qiita.com/hooosberg/items/d9c77e58ec3ae5f8ade1
+  title: 【個人開発】月150ドルのAI課金沼から脱出した僕が、月20ドルで最強の生産性を手に入れた「90/10ルール」
+  date: '2026-10-24'
 ---
 
 
@@ -86,7 +89,20 @@ sources:
 
 
 
+
 # Cost Optimization
+
+---
+
+## 2026-10-24
+
+### 【個人開発】月150ドルのAI課金沼から脱出した僕が、月20ドルで最強の生産性を手に入れた「90/10ルール」
+
+個人開発者が月150ドルのAIサブスク費用を月20ドルに削減した実践記事。「90/10ルール」として、難易度の高い10%の作業にはGoogle AI Pro（Claude 3.5 Sonnet/Opus含む）を使い、残り90%のルーチン作業は無料ツール（WorkBuddy、Ollama、Qwen2.5-Coder）で対応する方法を紹介。キャッシュフロー重視の個人開発者向けコスト最適化戦略。
+
+- **ソース**: [Qiita claude](https://qiita.com/hooosberg/items/d9c77e58ec3ae5f8ade1)
+- **重要度**: 6/10
+- **タグ**: pricing, sonnet, opus
 
 ---
 

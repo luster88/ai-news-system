@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-10-21'
+updated: '2026-10-24'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -135,6 +135,9 @@ sources:
 - url: https://qiita.com/kaiyaku_iyada/items/339a7e78ba476ca1c810
   title: Claude Code に運用を任せるとき、計画を変える条件は「日付つきの判断ルール」で先に書く：10月19日にルールが発火して、計画を組み直した記録
   date: '2026-10-21'
+- url: https://qiita.com/joinclass/items/e957bd69e0221a40b170
+  title: Claude Codeのクロスセッションメッセージングで「別セッションに仕事を頼む」を実装する
+  date: '2026-10-24'
 ---
 
 
@@ -172,7 +175,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-10-24
+
+### Claude Codeのクロスセッションメッセージングで「別セッションに仕事を頼む」を実装する
+
+合同会社ジョインクラスがClaude Codeのクロスセッションメッセージング機能（ListAgents/SendMessage）を使い、複数のセッション間で自動的にタスクを連携させる実装方法を解説。launchdの定期ジョブとメールボックス方式を組み合わせ、出版・マーケ・開発の各セッションを連携させている。コスト削減のため空メッセージ時はclaude起動をスキップし、権限管理も徹底している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/joinclass/items/e957bd69e0221a40b170)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, cowork
 
 ---
 

@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-11'
-updated: '2026-10-22'
+updated: '2026-10-24'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-best-practice-guide-2026
   title: Claude Codeベストプラクティス完全ガイド2026年版｜使い方・Tips・効率化テクニック集
@@ -64,6 +64,9 @@ sources:
 - url: https://qiita.com/suwa_nobu/items/75bc70f265d7096ae799
   title: CLAUDE.md の指示は先頭に書くべきか。144回測ったら、効いていたのは位置ではなく見出しだった
   date: '2026-10-22'
+- url: https://zenn.dev/kakushigoto/articles/claude-code-verification-loop
+  title: Claude Code にテストを渡しても差はゼロだった。作者の「最重要のコツ」を 72 回試してわかった効く条件
+  date: '2026-10-24'
 ---
 
 
@@ -81,7 +84,20 @@ sources:
 
 
 
+
 # Claude Code Best Practices
+
+---
+
+## 2026-10-24
+
+### Claude Code にテストを渡しても差はゼロだった。作者の「最重要のコツ」を 72 回試してわかった効く条件
+
+Claude Code作者のBoris Chernyが推奨する「検証手段を渡す」手法を72回の実験で検証。小規模課題で仕様が明記されていれば、テストの有無による差はゼロだった。差が出たのは「仕様がテストにのみ記載」されている場合のみで、テストは検証手段よりも仕様伝達手段として機能した。自動実行では権限設定により、Claudeが自発的な検証を半数で実行できなかった。
+
+- **ソース**: [Zenn claude](https://zenn.dev/kakushigoto/articles/claude-code-verification-loop)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, 新機能
 
 ---
 

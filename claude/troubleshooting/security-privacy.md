@@ -4,13 +4,15 @@ category: troubleshooting
 subcategory: security-privacy
 tags:
 - bugfix
+- claude-api
 - claude-code
 - claude-console
 - cowork
 - mac
+- prompt
 - setup
 date: '2026-03-26'
-updated: '2026-08-12'
+updated: '2026-10-24'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s3ss8s/giving_claude_access_to_my_macbook_macos
   title: Giving Claude access to my MacBook / macOS
@@ -22,11 +24,27 @@ sources:
   title: 'PSA: your claude code sessions are on disk as plaintext json, including
     everything you ever pasted'
   date: '2026-08-12'
+- url: https://ai-heartland.com/explain/chatgpt-url-access-log
+  title: 不審URLをAIに相談すると相手のサーバに足跡が残る｜ChatGPT-User・Claude-Userとアクセスログ
+  date: '2026-10-24'
 ---
 
 
 
+
 # Security Privacy
+
+---
+
+## 2026-10-24
+
+### 不審URLをAIに相談すると相手のサーバに足跡が残る｜ChatGPT-User・Claude-Userとアクセスログ
+
+不審なURLをChatGPTやClaudeに相談すると、ChatGPT-UserやClaude-Userというフェッチャが相手サーバにアクセスし、「誰かがそのURLに関心を持った」という痕跡がアクセスログに残る。お名前.comデスクトップクラウド事案の公開ログから、AIフェッチャの足跡が観測されたことを例に、AI時代の情報セキュリティリスクと対策を解説。AIに生URLを直接貼らない、ブラウザで直接開かない、運営側はログを公開しないという防御策が推奨される。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/chatgpt-url-access-log)
+- **重要度**: 7/10
+- **タグ**: claude-api, bugfix, prompt
 
 ---
 

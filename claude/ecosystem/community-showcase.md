@@ -15,7 +15,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-29'
-updated: '2026-10-18'
+updated: '2026-10-24'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6of32/i_am_fully_addicted_to_building_dumb_little_ai
   title: I am fully addicted to building dumb little AI web apps. I love it.
@@ -64,6 +64,13 @@ sources:
   title: A Super Mario 64 demake for the GBA built with Claude. Mario’s physics are
     bit-identical to the original
   date: '2026-10-18'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xe9sri/this_is_not_a_masterpiece_its_a_claudesterpiece
+  title: This is not a masterpiece, it's a Claudesterpiece. GANG WIZARD
+  date: '2026-10-24'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xemw8i/samsung_decided_to_cut_my_washing_machine_from
+  title: Samsung decided to cut my washing machine from the Internet, Claude decided
+    otherwise
+  date: '2026-10-24'
 ---
 
 
@@ -78,7 +85,30 @@ sources:
 
 
 
+
 # Community Showcase
+
+---
+
+## 2026-10-24
+
+### This is not a masterpiece, it's a Claudesterpiece. GANG WIZARD
+
+コミュニティメンバーが Claude Code を使用して中世ポスタル風オープンワールド RPG「GANG WIZARD」を開発したと報告。100億トークン以上を消費し、Claude Code を Godot エンジンに接続、インターネットブラウザ経由で Sketchfab や Mixamo などからアセットをダウンロードして制作。ゲームは itch.io で無料配布中。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xe9sri/this_is_not_a_masterpiece_its_a_claudesterpiece)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, performance
+
+---
+
+### Samsung decided to cut my washing machine from the Internet, Claude decided otherwise
+
+ユーザーがSamsungの10年前の洗濯機のスマート機能を、Claudeの支援により復活させた事例。Samsungがサポート終了した旧型洗濯機を、Claudeと2時間の作業でSmartThingsに再統合し、乾燥機との自動連携まで実現。AIが非技術者に新たな可能性を与える実例として共有された。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xemw8i/samsung_decided_to_cut_my_washing_machine_from)
+- **重要度**: 5/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

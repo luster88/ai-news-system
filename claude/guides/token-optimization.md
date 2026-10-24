@@ -12,7 +12,7 @@ tags:
 - prompt
 - vscode
 date: '2026-03-22'
-updated: '2026-09-29'
+updated: '2026-10-24'
 sources:
 - url: https://qiita.com/shockpan-web/items/852e962e14bdd2b98e70
   title: バイブコーディングでトークンを溶かさないための2つの工夫
@@ -41,6 +41,9 @@ sources:
 - url: https://zenn.dev/arithan/articles/claude-code-subagent-context-split
   title: Claude Codeのサブエージェントを作業の種類ごとに分けてトークン消費を抑えた
   date: '2026-09-29'
+- url: https://qiita.com/yunany90/items/c1b7aea0108d71e37d52
+  title: Claude Codeは質問する前に何トークン送っているのか：2025年7月から今週まで58バージョンを実測
+  date: '2026-10-24'
 ---
 
 
@@ -51,7 +54,20 @@ sources:
 
 
 
+
 # Token Optimization
+
+---
+
+## 2026-10-24
+
+### Claude Codeは質問する前に何トークン送っているのか：2025年7月から今週まで58バージョンを実測
+
+Claude Codeが各リクエストで送信する固定トークン数を、2025年7月から2026年10月までの58バージョンで実測した調査。10か月で19,498から36,309トークンへ86%増加したが、10月のアップデートで39%削減され18,055トークンに。システムプロンプトと組み込みツール定義がコストに影響し、短いセッションやサブエージェントで特に重要。プロンプトキャッシュ利用で通常は1/10以下のコストだが、キャッシュ切れ時は全額負担となる。
+
+- **ソース**: [Qiita claude](https://qiita.com/yunany90/items/c1b7aea0108d71e37d52)
+- **重要度**: 7/10
+- **タグ**: claude-code, performance
 
 ---
 

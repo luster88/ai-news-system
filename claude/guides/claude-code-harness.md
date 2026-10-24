@@ -6,11 +6,12 @@ tags:
 - claude-code
 - cowork
 - mcp
+- prompt
 - setup
 - windows
 - 新機能
 date: '2026-04-04'
-updated: '2026-08-24'
+updated: '2026-10-24'
 sources:
 - url: https://zenn.dev/kosk_t/articles/claude-code-harness-audit-skill
   title: Claude Codeの設定、何から手をつける？ ハーネスエンジニアリングを体系化するスキルを作った
@@ -24,12 +25,28 @@ sources:
 - url: https://zenn.dev/itdo/articles/8c62b571b7ec6e
   title: ChatGPT／CodexとClaude／Claude Codeを整理する――製品名ではなく4つの軸で見る
   date: '2026-08-24'
+- url: https://zenn.dev/pythona/articles/claude-code-harness-first-setup
+  title: Claude Codeにハーネスを導入した — 不変条件はHookで強制する
+  date: '2026-10-24'
 ---
 
 
 
 
+
 # Claude Code Harness
+
+---
+
+## 2026-10-24
+
+### Claude Codeにハーネスを導入した — 不変条件はHookで強制する
+
+Expo/Supabaseアプリ開発でClaude Codeが同じ失敗（ios/android直接編集、components/ui原本改造）を繰り返す問題に対し、OpenAIのハーネスエンジニアリング手法を適用。48行のCLAUDE.md、6本のdocs構造、4本のGit Hook（protect-env/protect-native等）、5個のSkillを導入し、不変条件を強制・実装は指示に分離。Hookはexit 2で停止し代替案をstderrで返す設計により、LLMの自律的な復帰を促進した。
+
+- **ソース**: [Zenn claude](https://zenn.dev/pythona/articles/claude-code-harness-first-setup)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 
