@@ -4,12 +4,14 @@ category: tools
 subcategory: claude-code-ui
 tags:
 - claude-code
+- cowork
 - mcp
 - prompt
 - setup
 - windows
+- 新機能
 date: '2026-04-22'
-updated: '2026-10-01'
+updated: '2026-10-25'
 sources:
 - url: https://qiita.com/76Hata/items/9954d3763f231b2cc327
   title: Claude CodeのブラウザUI「KBLite」をWindowsでOSS公開しました——軽量化の設計と開発の裏側
@@ -17,10 +19,27 @@ sources:
 - url: https://ai-heartland.com/agent/humanlayer-skills
   title: humanlayer/skillsとは｜6スキルの中身とCLAUDE.mdを条件付きに書き換える一本を自サイトで試算
   date: '2026-10-01'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xf8pf2/tired_of_explaining_the_same_steps_again_and
+  title: Tired of explaining the same steps again and again? I built this with Claude
+    Code (free to try)
+  date: '2026-10-25'
 ---
 
 
+
 # Claude Code Ui
+
+---
+
+## 2026-10-25
+
+### Tired of explaining the same steps again and again? I built this with Claude Code (free to try)
+
+開発者の Julian 氏が Claude Code を使って StepGrab というツールを構築。Mac/Windows で操作手順を自動記録し、スクリーンショットに番号付き矢印と説明文を追加して GIF/PDF/HTML/Markdown/MP4 形式でエクスポートできる。プライバシー保護機能付きでオフライン動作し、無料プランでは15ステップまで無制限に作成可能。非エンジニアの学生が Claude Code との協働で Mac版・Windows版・Web サイトを別セッションで開発し、共有機能マップで同期を維持。リリースノートの7言語自動生成にも活用している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xf8pf2/tired_of_explaining_the_same_steps_again_and)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

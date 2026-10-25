@@ -13,7 +13,7 @@ tags:
 - setup
 - sonnet
 date: '2026-04-16'
-updated: '2026-10-17'
+updated: '2026-10-25'
 sources:
 - url: https://zenn.dev/okamyuji/articles/claude-code-max-x20-token-savings
   title: Claude Codeのトークン消費が$40/日から1週間でも余裕になった全手法
@@ -36,6 +36,9 @@ sources:
 - url: https://zenn.dev/daphne/articles/zenn-with-claude-chat
   title: Zennの記事を、Claudeとのチャットだけで書いて予約投稿まで済ませる
   date: '2026-10-17'
+- url: https://qiita.com/nabata/items/09f76aa0dddbcecf0979
+  title: 動画生成AIを使わず、Claude Codeだけで、静止画にどの程度の動きをつけられるか試してみた
+  date: '2026-10-25'
 ---
 
 
@@ -44,7 +47,20 @@ sources:
 
 
 
+
 # Claude Code Cost Optimization
+
+---
+
+## 2026-10-25
+
+### 動画生成AIを使わず、Claude Codeだけで、静止画にどの程度の動きをつけられるか試してみた
+
+Claude Codeを使い、動画生成AIを使わずに静止画に動きをつける実験記事。日本語指示のみで、ズーム・パン・回転・顔認識などの動きを段階的に実装し、意図通りの動画編集が可能か検証。Numpy/OpenCVのみを使用し、学習済みモデルを使わない制約下でClaude Codeの編集能力を評価した。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/nabata/items/09f76aa0dddbcecf0979)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

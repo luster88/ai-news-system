@@ -6,11 +6,12 @@ tags:
 - claude-api
 - cowork
 - mcp
+- opus
 - performance
 - prompt
 - 新機能
 date: '2026-04-24'
-updated: '2026-10-24'
+updated: '2026-10-25'
 sources:
 - url: https://qiita.com/bit-tanghao/items/29708ac044a58e8e0844
   title: 【AIエージェントシリーズ 第7弾】マルチAgent基礎：Anthropic Harness論文に学ぶ専門家チームレビューの作り方
@@ -21,11 +22,28 @@ sources:
 - url: https://qiita.com/hathibei7/items/b3b6aa8874aab70717ff
   title: サブエージェントはメインループに「畳む」べきか？Anthropicの記事をモックECサポートで実測してみた
   date: '2026-10-24'
+- url: https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone
+  title: Anthropic says one AI agent beats many subagents now that models can handle
+    complexity alone
+  date: '2026-10-25'
 ---
 
 
 
+
 # Multi Agent Architecture
+
+---
+
+## 2026-10-25
+
+### Anthropic says one AI agent beats many subagents now that models can handle complexity alone
+
+Anthropic が、最新モデル（Opus 4.5、Opus 5.5、Fable 5.1）の能力向上により、複数のサブエージェント構成よりも単一エージェントの方が品質・コスト・レイテンシで優れているとの知見を発表。企業向けに GitHub でマイグレーションキットを公開し、サブエージェント統合を推奨。実測では単一エージェント構成が約2倍高速で、モデル自体がオーケストレーション処理を担えるようになったことが背景。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone)
+- **重要度**: 7/10
+- **タグ**: 新機能, opus, performance
 
 ---
 

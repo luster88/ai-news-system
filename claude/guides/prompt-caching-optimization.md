@@ -3,13 +3,14 @@ title: Prompt Caching Optimization
 category: guides
 subcategory: prompt-caching-optimization
 tags:
+- claude-api
 - claude-code
 - haiku
 - performance
 - pricing
 - prompt
 date: '2026-04-23'
-updated: '2026-07-16'
+updated: '2026-10-25'
 sources:
 - url: https://zenn.dev/ai_arai_ally/articles/20260422-1601-claude-code-prompt-caching-api
   title: Claude Code の Prompt Caching で API コスト 1/8 削減
@@ -20,11 +21,27 @@ sources:
 - url: https://zenn.dev/tyuya/articles/haiku45-prompt-caching
   title: プロンプトをわざと13,000トークンに太らせたら、AIの原価が下がった——prompt cachingの「4096トークンの壁」
   date: '2026-07-16'
+- url: https://qiita.com/songchong/items/7144594b0ad9529a168b
+  title: トークン代 9 割減？プロンプトキャッシュの仕組みと効果の実測 — 保持時間が過ぎるとコスト 11 倍に
+  date: '2026-10-25'
 ---
 
 
 
+
 # Prompt Caching Optimization
+
+---
+
+## 2026-10-25
+
+### トークン代 9 割減？プロンプトキャッシュの仕組みと効果の実測 — 保持時間が過ぎるとコスト 11 倍に
+
+プロンプトキャッシュの実測記事。Claude Sonnetでキャッシュ読み取りは95%割引だが、新規書き込みには1.25〜2倍の料金がかかる。2ターン目ではトークンの93%がキャッシュから読まれたが、費用の75%は書き込みだった。保持時間（約1時間）を過ぎると費用が11倍に増加。キャッシュは先頭から一字一句同じ部分のKV値を保存する仕組みで、1文字でも違うと再計算が必要。
+
+- **ソース**: [Qiita claude](https://qiita.com/songchong/items/7144594b0ad9529a168b)
+- **重要度**: 7/10
+- **タグ**: claude-api, pricing, performance
 
 ---
 

@@ -6,9 +6,10 @@ tags:
 - claude-api
 - copilot
 - cowork
+- performance
 - pricing
 date: '2026-04-09'
-updated: '2026-07-09'
+updated: '2026-10-25'
 sources:
 - url: https://the-decoder.com/openai-halves-its-pro-price-to-100-for-heavy-codex-users-undercuts-anthropic-and-google
   title: OpenAI halves its Pro price to $100 for heavy Codex users, undercuts Anthropic
@@ -21,11 +22,27 @@ sources:
   title: Meta's Muse Spark 1.1 API pricing squeezes OpenAI and Anthropic as the AI
     price war heats up
   date: '2026-07-09'
+- url: https://the-decoder.com/openai-offers-discounts-up-to-90-percent-to-poach-anthropics-biggest-customers
+  title: OpenAI offers discounts up to 90 percent to poach Anthropic's biggest customers
+  date: '2026-10-25'
 ---
 
 
 
+
 # Pricing Competition
+
+---
+
+## 2026-10-25
+
+### OpenAI offers discounts up to 90 percent to poach Anthropic's biggest customers
+
+OpenAIがAnthropicの主要顧客を引き抜くため、最大90%の大幅な割引を提供している。Rippling、Replit、DataCampなどの企業がOpenAIへ移行しており、RipplingではOpenAIのシェアが16%から52%に増加し、Anthropicは57%から18%に減少。Replitは年間1億ドル以上の契約で30%以上の割引を受けて切り替えた。OpenAIは効率的なモデルとインフラによりコスト削減を実現している一方、Anthropicの成長率は第2四半期から第3四半期にかけて鈍化している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/openai-offers-discounts-up-to-90-percent-to-poach-anthropics-biggest-customers)
+- **重要度**: 8/10
+- **タグ**: pricing, performance, cowork
 
 ---
 

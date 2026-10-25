@@ -8,7 +8,7 @@ tags:
 - performance
 - setup
 date: '2026-04-28'
-updated: '2026-09-24'
+updated: '2026-10-25'
 sources:
 - url: https://qiita.com/daisuke-nagata/items/437f92a3210fbfa99e62
   title: Claude Code 品質劣化 postmortem 解説——3バグから学んだプロンプト1行の重み
@@ -16,10 +16,26 @@ sources:
 - url: https://qiita.com/homhom44/items/8b165492adc33668ad2c
   title: 接続直後にメッセージ数がズレるときの切り分けポイント！Claude Code でつまずいたときの切り分けメモ（2026-09-24）
   date: '2026-09-24'
+- url: https://qiita.com/kaiyaku_iyada/items/1284f4e757b33df977e0
+  title: 「フォルダの中だけで」と書いても Claude Code は3日とも外に書いた：多くはアプリの指示と一致
+  date: '2026-10-25'
 ---
 
 
+
 # Claude Code Quality Issue
+
+---
+
+## 2026-10-25
+
+### 「フォルダの中だけで」と書いても Claude Code は3日とも外に書いた：多くはアプリの指示と一致
+
+Claude Codeデスクトップアプリで「フォルダ内だけで作業」と指示しても、3日間連続でフォルダ外（共有メモ、一時フォルダ等）に書き込みが発生した検証記録。原因の大半はアプリが自動追加するシステムプロンプトの指示と判明。アプリ側の指示文には共有メモへの書き込み、コミット時の枝作成、一時ファイルの配置先などが含まれており、ユーザーの明示的な指示と矛盾していた。
+
+- **ソース**: [Qiita claude](https://qiita.com/kaiyaku_iyada/items/1284f4e757b33df977e0)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 

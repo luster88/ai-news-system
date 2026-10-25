@@ -3,18 +3,35 @@ title: Prompt Optimization
 category: prompts
 subcategory: prompt-optimization
 tags:
+- claude-api
 - claude-code
 - performance
 - prompt
 date: '2026-04-07'
-updated: '2026-04-07'
+updated: '2026-10-25'
 sources:
 - url: https://zenn.dev/mikana0918/articles/7ad57493a04f88
   title: 'Claudeトークン消費を抑えて５倍使う: 「原始人」口調が80%削減'
   date: '2026-04-07'
+- url: https://qiita.com/R-You/items/690c9f2c95b7019732ca
+  title: AIに自分のプロンプトを改善させたら、長くなりすぎたので進化的最適化してみた
+  date: '2026-10-25'
 ---
 
+
 # Prompt Optimization
+
+---
+
+## 2026-10-25
+
+### AIに自分のプロンプトを改善させたら、長くなりすぎたので進化的最適化してみた
+
+AWS Bedrockの記事を参考に、AIに自身のプロンプトを自動改善させる実験を実施。最初の改善で精度100%に達したが、プロンプトが8倍に膨張。失敗情報がなくなると改善が停止する問題を発見。明示的に圧縮指示を追加することで43%の圧縮に成功。進化的最適化（交叉・突然変異）を導入し、より短く安価なプロンプトで同等精度を達成した。
+
+- **ソース**: [Qiita claude](https://qiita.com/R-You/items/690c9f2c95b7019732ca)
+- **重要度**: 6/10
+- **タグ**: prompt, claude-api, performance
 
 ---
 

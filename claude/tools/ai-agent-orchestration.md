@@ -9,7 +9,7 @@ tags:
 - mcp
 - 新機能
 date: '2026-06-17'
-updated: '2026-08-16'
+updated: '2026-10-25'
 sources:
 - url: https://ai-heartland.com/explain/polyscope-guide
   title: Polyscopeとは｜『人間がコードを書く時代は終わった』を掲げるAIエージェント運用コックピット
@@ -17,10 +17,26 @@ sources:
 - url: https://ai-heartland.com/tool/loopx-loop-engineering-state-kernel
   title: LoopXとは｜Claude Code/Codex/Cursor横断のループ状態管理カーネルを実機検証で解説
   date: '2026-08-16'
+- url: https://ai-heartland.com/agent/cindy-local-ai-agent
+  title: Cindyとは｜Claude Code・Codexをローカルで束ねるオープンソースAIエージェント
+  date: '2026-10-25'
 ---
 
 
+
 # Ai Agent Orchestration
+
+---
+
+## 2026-10-25
+
+### Cindyとは｜Claude Code・Codexをローカルで束ねるオープンソースAIエージェント
+
+Cindyは、Claude CodeやCodexなど複数のAIハーネスを1つのインターフェースで束ねるオープンソースのAIエージェント。GitHub日榜で★4.3kを獲得し、ハーネス間でメモリやスキルを共有しながらタスクを実行できる。ローカル動作を謳うが、多くの機能はクラウド依存で、Cindy自体は推論を持たず調整役として機能する。ElectronとReact Nativeで構成されたモノレポで、Node 22とpnpm 10が必要。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/agent/cindy-local-ai-agent)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

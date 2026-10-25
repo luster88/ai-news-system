@@ -10,7 +10,7 @@ tags:
 - windows
 - 新機能
 date: '2026-09-19'
-updated: '2026-10-13'
+updated: '2026-10-25'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-mods
   title: Claude Code modsとは｜AGENTS.md対応のagents-md modをソースで読み、4つのモードを実測
@@ -27,13 +27,29 @@ sources:
 - url: https://zenn.dev/nakadaharuki/books/claude-code-mods-desktop-guide
   title: Claude Code デスクトップ版 Mods 入門―作り方・入れ方・Windows で動かない原因・安全な見分け方
   date: '2026-10-13'
+- url: https://zenn.dev/metalmental/articles/20261025_claude-code-mods
+  title: Claude Code Modsで作る自分専用のTerminal UI
+  date: '2026-10-25'
 ---
 
 
 
 
 
+
 # Claude Code Mods
+
+---
+
+## 2026-10-25
+
+### Claude Code Modsで作る自分専用のTerminal UI
+
+Claude Code v2.1.287で追加された「Mods」機能により、TypeScriptでTerminal UIを自由にカスタマイズできるようになりました。強力な型定義により自然言語でClaude（Sonnet 3.5）に指示するだけで、ステータスライン、メッセージ折りたたみ、Markdownコピーボタンなど、コードを1行も書かずにUIをカスタマイズ可能です。Modsはplugin-authoringスキルとして提供され、reference.mdに詳細仕様が記載されています。
+
+- **ソース**: [Zenn claude](https://zenn.dev/metalmental/articles/20261025_claude-code-mods)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

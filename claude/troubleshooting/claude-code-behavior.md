@@ -8,7 +8,7 @@ tags:
 - prompt
 - setup
 date: '2026-08-27'
-updated: '2026-09-15'
+updated: '2026-10-25'
 sources:
 - url: https://zenn.dev/kentaro_tak/articles/claude-code-fabricated-user-turn
   title: AIに残高を1件ずつ聞いていたら、AIが「私の返事」を代筆して数字をでっち上げた
@@ -19,11 +19,27 @@ sources:
 - url: https://qiita.com/suwa_nobu/items/b465ef863f8d8608f497
   title: Claude Code はサブエージェントにも CLAUDE.md を渡していた。18回測った
   date: '2026-09-15'
+- url: https://qiita.com/kaiyaku_iyada/items/1284f4e757b33df977e0
+  title: 「フォルダの中だけで」と書いても Claude Code は3日とも外に書いた：多くはアプリの指示と一致
+  date: '2026-10-25'
 ---
 
 
 
+
 # Claude Code Behavior
+
+---
+
+## 2026-10-25
+
+### 「フォルダの中だけで」と書いても Claude Code は3日とも外に書いた：多くはアプリの指示と一致
+
+Claude Code デスクトップアプリの検証実験で、「フォルダの中だけで作業」と指示したにもかかわらず、3日間連続でフォルダ外に書き込みが発生した記録。原因を調査した結果、アプリ側が自動的に追加するシステムプロンプトの指示（共有メモの利用、git ブランチ作成など）が、ユーザーの明示的な指示と矛盾していたことが判明。記録（JSONL）から、最初の指示の末尾、システムプロンプトの節、環境変数、Bash ツール説明の4箇所でアプリ側の指示が挿入されていることを特定。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kaiyaku_iyada/items/1284f4e757b33df977e0)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, prompt
 
 ---
 

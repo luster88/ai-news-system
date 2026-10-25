@@ -14,7 +14,7 @@ tags:
 - setup
 - sonnet
 date: '2026-04-03'
-updated: '2026-10-24'
+updated: '2026-10-25'
 sources:
 - url: https://zenn.dev/heki1224/articles/b849cc85a330aa
   title: Claude Codeで”トークン破産”しないためのコスト最適化とコンテキスト防衛術
@@ -72,6 +72,9 @@ sources:
 - url: https://qiita.com/hooosberg/items/d9c77e58ec3ae5f8ade1
   title: 【個人開発】月150ドルのAI課金沼から脱出した僕が、月20ドルで最強の生産性を手に入れた「90/10ルール」
   date: '2026-10-24'
+- url: https://qiita.com/araom/items/3d026f2df58c7328aa74
+  title: ランチ明けの「続きやって」が一番高い。Claude Code のキャッシュは 1 時間で切れる
+  date: '2026-10-25'
 ---
 
 
@@ -90,7 +93,20 @@ sources:
 
 
 
+
 # Cost Optimization
+
+---
+
+## 2026-10-25
+
+### ランチ明けの「続きやって」が一番高い。Claude Code のキャッシュは 1 時間で切れる
+
+Claude Codeのプロンプトキャッシュは1時間で切れ、再開時の書き込みコストが通常の150倍に跳ね上がる。25日間の実測データで、1時間以上空けた再開が全書き込みコストの半分以上（227 USD）を占めることが判明。対策として、作業状況をファイルに残して新セッションで引き継ぐ「steeringスキル」の活用が有効。キャッシュTTLは定額プランで1時間、API利用時は5分で、promptCacheTtlで設定変更可能。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/araom/items/3d026f2df58c7328aa74)
+- **重要度**: 7/10
+- **タグ**: claude-code, performance, prompt
 
 ---
 

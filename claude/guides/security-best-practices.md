@@ -7,7 +7,7 @@ tags:
 - prompt
 - setup
 date: '2026-07-21'
-updated: '2026-09-11'
+updated: '2026-10-25'
 sources:
 - url: https://qiita.com/suzuyoshi/items/49710258b7cf11e17ae7
   title: AIに全自動でサービスを作らせたら、セキュリティはどうなる? — Claude Codeに組んだ「多層防御スタック」
@@ -15,10 +15,26 @@ sources:
 - url: https://zenn.dev/stkaji/articles/1dff8ba2f4ef04
   title: AI駆動開発時代のセキュリティと開発速度の天秤
   date: '2026-09-11'
+- url: https://zenn.dev/whshido/articles/claude-code-security-measures-2026
+  title: 個人開発者がClaudeでできるセキュリティ対策まとめてみた
+  date: '2026-10-25'
 ---
 
 
+
 # Security Best Practices
+
+---
+
+## 2026-10-25
+
+### 個人開発者がClaudeでできるセキュリティ対策まとめてみた
+
+個人開発者向けに、Claude Codeを使った実践的なセキュリティ対策を解説。2026年のサプライチェーン攻撃やAIリスクの増加を背景に、パーミッション設定、サンドボックス、秘密情報の保護などを、Anthropic公式ドキュメントやOWASP、IPAの一次情報をもとに整理。プロンプトインジェクション対策として、CLAUDE.mdの指示だけでなくClaude Code本体のパーミッション設定とOSサンドボックスが重要であることを強調している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/whshido/articles/claude-code-security-measures-2026)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup
 
 ---
 
