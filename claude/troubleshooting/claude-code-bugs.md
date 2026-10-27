@@ -7,8 +7,9 @@ tags:
 - claude-code
 - performance
 - sonnet
+- windows
 date: '2026-07-19'
-updated: '2026-08-02'
+updated: '2026-10-27'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v0vqik/claude_code_got_stuck_printing_court_burned
   title: Claude Code got stuck printing “court,” burned through tokens, then blamed
@@ -17,10 +18,36 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vdbtzy/claude_code_just_randomly_spat_out_kimi_k2
   title: Claude Code just randomly spat out Kimi K2 Thinking output mid-response
   date: '2026-08-02'
+- url: https://qiita.com/suwa_nobu/items/d3f0491c9727176dea22
+  title: 途中で直した CLAUDE.md が、自動要約のあと古い中身に戻っていた（2.1.310）。それでも新しいルールで動いた
+  date: '2026-10-27'
 ---
 
 
+
 # Claude Code Bugs
+
+---
+
+## 2026-10-27
+
+### 途中で直した CLAUDE.md が、自動要約のあと古い中身に戻っていた（2.1.310）。それでも新しいルールで動いた
+
+Claude Code 2.1.310では会話の自動要約後にCLAUDE.mdが古い内容に戻る不具合があったが、2.1.311で修正された。ただし2.1.310でも要約本文に新ルールが記録されており、実際の動作は新ルールに従っていた。24回の検証により、エディタで直した場合も edited_text_file 通知で変更が即座に反映されることが確認された。
+
+- **ソース**: [Qiita claude](https://qiita.com/suwa_nobu/items/d3f0491c9727176dea22)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix
+
+---
+
+### 途中で直した CLAUDE.md が、自動要約のあと古い中身に戻っていた（2.1.310）。それでも新しいルールで動いた
+
+Claude Code 2.1.310では会話途中でCLAUDE.mdを編集後、自動要約時に古い内容が戻る不具合があったが、要約本文に新ルールが記録されるため実際には新ルールで動作していた。2.1.311でこの不具合は修正され、要約後も正しく新しい内容が反映されるようになった。Windows環境で24回の検証を実施し、エディタ直接編集とClaude経由編集の両方で動作を確認。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/suwa_nobu/items/d3f0491c9727176dea22)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, windows
 
 ---
 

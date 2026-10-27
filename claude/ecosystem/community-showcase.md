@@ -15,7 +15,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-29'
-updated: '2026-10-24'
+updated: '2026-10-27'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6of32/i_am_fully_addicted_to_building_dumb_little_ai
   title: I am fully addicted to building dumb little AI web apps. I love it.
@@ -71,6 +71,10 @@ sources:
   title: Samsung decided to cut my washing machine from the Internet, Claude decided
     otherwise
   date: '2026-10-24'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xg1mov/i_built_a_mod_with_claude_that_turns_valheim_into
+  title: 'I built a mod with Claude that turns Valheim into a city builder. It hit
+    #1 on r/valheim'
+  date: '2026-10-27'
 ---
 
 
@@ -86,7 +90,20 @@ sources:
 
 
 
+
 # Community Showcase
+
+---
+
+## 2026-10-27
+
+### I built a mod with Claude that turns Valheim into a city builder. It hit #1 on r/valheim
+
+開発者がClaudeを活用してValheimをシティビルダーゲームに変えるModを開発し、r/valheimで1位を獲得。ClaudeはC#コード作成、ゲーム制御による自動テスト、バグ修正、パフォーマンス最適化を担当。開発者はデザインとテストを担当し、完全無料でNexus ModsとThunderstoreで公開中。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xg1mov/i_built_a_mod_with_claude_that_turns_valheim_into)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, performance
 
 ---
 

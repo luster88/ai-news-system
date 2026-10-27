@@ -12,7 +12,7 @@ tags:
 - pricing
 - sonnet
 date: '2026-03-25'
-updated: '2026-10-17'
+updated: '2026-10-27'
 sources:
 - url: https://qiita.com/himajisan/items/1e8f67782335b4517139
   title: AIを扱き使ったらすぐに使用制限ですと言う
@@ -59,6 +59,10 @@ sources:
   title: This week's Claude Reset - Anyone else noticing unusually high usage all
     of a sudden?
   date: '2026-10-17'
+- url: https://qiita.com/homhom44/items/fa213c258166268da942
+  title: Claude Code で "You've hit your session limit" "weekly limit" "Opus limit"
+    が出たときの読み分けと続け方
+  date: '2026-10-27'
 ---
 
 
@@ -70,7 +74,30 @@ sources:
 
 
 
+
 # Usage Limits
+
+---
+
+## 2026-10-27
+
+### Claude Code で "You've hit your session limit" "weekly limit" "Opus limit" が出たときの読み分けと続け方
+
+Claude Code で表示される4種類の上限メッセージ（session・weekly・Opus・Sonnet）の読み分け方と対処法を解説。session/weeklyは全モデル共通でリセット待ちが必要だが、Opus/Sonnetは/modelコマンドで他モデルに切り替えれば作業継続可能。v2.1.234以降は自動継続機能も追加された。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/fa213c258166268da942)
+- **重要度**: 7/10
+- **タグ**: claude-code, sonnet, opus
+
+---
+
+### Claude Code で "You've hit your session limit" "weekly limit" "Opus limit" が出たときの読み分けと続け方
+
+Claude Codeで表示される4種類の上限エラー（session limit、weekly limit、Opus limit、Sonnet limit）の違いと対処法を解説。sessionとweeklyは全モデル共通で、モデル変更では回避できないが、OpusとSonnetはモデルファミリー固有の制限のため、/modelコマンドで別モデルに切り替えれば作業継続可能。v2.1.234以降では自動継続機能も実装されている。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/homhom44/items/fa213c258166268da942)
+- **重要度**: 7/10
+- **タグ**: claude-code, bugfix, opus
 
 ---
 

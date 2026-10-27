@@ -13,7 +13,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-12'
-updated: '2026-10-24'
+updated: '2026-10-27'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -100,6 +100,12 @@ sources:
 - url: https://qiita.com/Sidejob/items/7fa1f1b8ecabd94ca8e4
   title: Claude Code v2.1.304 変更点まとめ——/auto-mode-setup・managed-agents-secure新設ほか55件の追加・修正・改善を整理（2026-10-20速報）
   date: '2026-10-24'
+- url: https://qiita.com/picnic/items/8c93634e98279cc674ae
+  title: 'Claude Code v2.1.311: ultrathinkがxhigh化、クラウド版は新たな通信先に注意'
+  date: '2026-10-27'
+- url: https://zenn.dev/persimmoq/articles/claude-auto-mode-default-14-vs-89
+  title: Claude のアプリが auto モード既定に ― 「14% 対 89%」は何の数字か、手元で止められた 2 件
+  date: '2026-10-27'
 ---
 
 
@@ -125,7 +131,30 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-10-27
+
+### Claude Code v2.1.311: ultrathinkがxhigh化、クラウド版は新たな通信先に注意
+
+Claude Code v2.1.311がリリースされ、ultrathinkがClaude 5系モデルでxhigh effortを発動するようになりました。Bedrock/Mantle/Vertex/Foundryでは、モデル設定をdownloads.claude.aiから読み込むため、新たな外向き通信が発生し、ネットワーク制限環境では許可リストの更新が必要です。200Kトークン超えで会話が止まる問題やDISABLE_COMPACTの動作変更なども含まれています。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/8c93634e98279cc674ae)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+### Claude のアプリが auto モード既定に ― 「14% 対 89%」は何の数字か、手元で止められた 2 件
+
+2025年10月22日にClaudeのアプリでautoモードが既定化された。Anthropicの実験では、コーディング中の危険なコマンドを人間は13.6%しか止められなかったが、AI分類器は89%止めた。ただしこれはシェルコマンドの承認画面に限定された実験であり、「AIによる検品で全て解決」とは言えない。autoモードは3回連続または累計20回止めると手動承認に戻る仕組みで、本番環境では手動確認を推奨する企業もある。
+
+- **ソース**: [Zenn claude](https://zenn.dev/persimmoq/articles/claude-auto-mode-default-14-vs-89)
+- **重要度**: 7/10
+- **タグ**: claude-code
 
 ---
 

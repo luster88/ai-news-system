@@ -8,7 +8,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-05'
-updated: '2026-04-21'
+updated: '2026-10-27'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sd2f37/i_built_an_ai_job_search_system_with_claude_code
   title: I built an AI job search system with Claude Code that scored 740+ offers
@@ -17,10 +17,26 @@ sources:
 - url: https://qiita.com/AI-Japan-Index/items/57979b6c692c886d8187
   title: 『CLAUDE.md Analyzer 2026』CLAUDE.mdの品質スコアを出すツールを作ってみた—arXiv論文3本を実装に落とした話
   date: '2026-04-21'
+- url: https://zenn.dev/utsumi/books/7930747b0fa88e
+  title: Flowgen 入門 — 一行のアイデアから本番コードまで
+  date: '2026-10-27'
 ---
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-10-27
+
+### Flowgen 入門 — 一行のアイデアから本番コードまで
+
+Claude Codeを活用した自動開発パイプライン「Flowgen」の紹介記事。一行のアイデアから設計、実装、セキュリティ、テストまでをAIの分業で自動化し、本番コードを生成する開発ツールとその知見を解説している。買い切り版として公開されている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/utsumi/books/7930747b0fa88e)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

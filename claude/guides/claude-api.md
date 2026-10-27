@@ -10,10 +10,11 @@ tags:
 - performance
 - pricing
 - prompt
+- release
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-10-15'
+updated: '2026-10-27'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -80,6 +81,9 @@ sources:
 - url: https://zenn.dev/yunisuta/articles/claude-api-citations-anthropic-qcncc4
   title: Claude APIのCitationsで回答に「検証できる出典」を付ける：文字位置の突き合わせまで実装する
   date: '2026-10-15'
+- url: https://qiita.com/aiapi_radar_news/items/2db1b9faeaa677cbb8ba
+  title: 【随時更新】Claude APIのbetaヘッダー一覧（まだ要るもの／もう要らないもの）
+  date: '2026-10-27'
 ---
 
 
@@ -101,7 +105,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-10-27
+
+### 【随時更新】Claude APIのbetaヘッダー一覧（まだ要るもの／もう要らないもの）
+
+Claude APIのbetaヘッダー（日付付きバージョン指定）について、現在も必要なものと不要になったものを整理した非公式まとめ。GA化により不要になったヘッダー（structured-outputs、skills等）、モデル別の扱い（fast-mode等）、現在も必須のヘッダー（webhooks、inline-tools等）を分類。公式には一覧ページが存在しないため、変更履歴から情報を集約している。
+
+- **ソース**: [Qiita claude](https://qiita.com/aiapi_radar_news/items/2db1b9faeaa677cbb8ba)
+- **重要度**: 7/10
+- **タグ**: claude-api, release
 
 ---
 
