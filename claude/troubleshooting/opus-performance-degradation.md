@@ -9,7 +9,7 @@ tags:
 - performance
 - pricing
 date: '2026-04-09'
-updated: '2026-04-13'
+updated: '2026-10-28'
 sources:
 - url: https://zenn.dev/dpbz/articles/58f9259ca116cc
   title: Claude Opus 4.6の劣化を一時的に緩和する方法
@@ -17,10 +17,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sjqn2e/the_golden_age_is_over
   title: The golden age is over
   date: '2026-04-13'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xguw7r/claude_is_performing_38x_poorer_compared_to_last
+  title: Claude is performing 3.8x poorer compared to last week based on my claude
+    code token analysis
+  date: '2026-10-28'
 ---
 
 
+
 # Opus Performance Degradation
+
+---
+
+## 2026-10-28
+
+### Claude is performing 3.8x poorer compared to last week based on my claude code token analysis
+
+Reddit ユーザーが Claude Code のトークン使用量を分析した結果、先週と比較して3.8倍のトークン消費増加とパフォーマンス低下を報告。Opus 5.5 でサブエージェントの動作が非効率化し、タスク完了に2倍のステップが必要になっている。回避策としてサブエージェント使用の停止と、30-40万トークン到達後の新セッション開始を推奨。原因として、エージェントオーケストレーションの変更バグか、計算リソース不足による一部ユーザーへの小型モデルへのダウングレードの可能性を指摘。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xguw7r/claude_is_performing_38x_poorer_compared_to_last)
+- **重要度**: 7/10
+- **タグ**: claude-code, opus, performance
 
 ---
 

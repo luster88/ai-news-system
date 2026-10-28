@@ -11,7 +11,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-04-12'
-updated: '2026-08-05'
+updated: '2026-10-28'
 sources:
 - url: https://ai-heartland.com/explain/last30days-skill-guide
   title: last30days-skill完全ガイド｜Reddit・X・YouTube横断AIリサーチスキルの使い方2026年版
@@ -58,6 +58,9 @@ sources:
 - url: https://qiita.com/lumichy/items/a798a14499ec219b48a5
   title: 【Claude Code】「Vibe Coding」はもう卒業！プラグイン「Superpowers」でAI開発にエンジニアリングSOPを導入する
   date: '2026-08-05'
+- url: https://ai-heartland.com/explain/autoharness-claude-code-skills
+  title: autoharnessとは｜Claude Codeのスキルを実セッションから自動学習し自己整理するプラグイン
+  date: '2026-10-28'
 ---
 
 
@@ -74,7 +77,20 @@ sources:
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-10-28
+
+### autoharnessとは｜Claude Codeのスキルを実セッションから自動学習し自己整理するプラグイン
+
+autoharnessは、Claude Codeのスキル管理を自動化する第三者製プラグイン（★10.9k、MIT）。実セッションからスキルを学習・統合・剪定し、.claude/skills/へネイティブ形式で書き込む。フック機構でセッションを記録し、ツール呼び出し50回ごとに反省・提案・検証のパイプラインを回す。Python 3.11+、依存ゼロで動作するが、効果の主張の多くはREADME基準で実環境での検証は限定的。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/autoharness-claude-code-skills)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

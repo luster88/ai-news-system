@@ -13,7 +13,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-12'
-updated: '2026-10-27'
+updated: '2026-10-28'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -106,6 +106,9 @@ sources:
 - url: https://zenn.dev/persimmoq/articles/claude-auto-mode-default-14-vs-89
   title: Claude のアプリが auto モード既定に ― 「14% 対 89%」は何の数字か、手元で止められた 2 件
   date: '2026-10-27'
+- url: https://qiita.com/picnic/items/7183ad4e831bf8243897
+  title: Claude Code v2.1.312 Bedrock/Vertex系の短いシステムプロンプト化と変更点まとめ
+  date: '2026-10-28'
 ---
 
 
@@ -132,7 +135,20 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-10-28
+
+### Claude Code v2.1.312 Bedrock/Vertex系の短いシステムプロンプト化と変更点まとめ
+
+Claude Code v2.1.312では、Bedrock/Vertex AI/Foundry/Mantle経由でカスタムデプロイ名や推論プロファイルARNを使用している場合、未認識のモデル名に対して短いシステムプロンプトが適用される重要な変更が入りました。また、未認識モデルでも自動モデル切替が有効化され、OpenTelemetryのイベント送信やフックの同時実行数制限などの変更も含まれています。既存の挙動を維持したい場合は環境変数での設定が必要です。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/7183ad4e831bf8243897)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

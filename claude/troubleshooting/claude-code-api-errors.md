@@ -6,9 +6,11 @@ tags:
 - bugfix
 - claude-api
 - claude-code
+- opus
 - setup
+- sonnet
 date: '2026-05-04'
-updated: '2026-06-27'
+updated: '2026-10-28'
 sources:
 - url: https://qiita.com/yurukusa/items/fbe51b3ce6b025dd089c
   title: Claude Code が API 400 で詰まる時——cache_control 空テキストブロックの根本原因と復旧
@@ -16,11 +18,28 @@ sources:
 - url: https://qiita.com/yurukusa/items/3ea49f000b2c3046ecba
   title: Claude Code の API Error 401/500 は自分のせいかAnthropic側か——切り分けと対処（#69706）
   date: '2026-06-27'
+- url: https://qiita.com/homhom44/items/826e013f605ce5905638
+  title: Claude Code で "Repeated 529 Overloaded errors" "Opus is experiencing high
+    load" が出たときの待ち方と /model での逃がし方
+  date: '2026-10-28'
 ---
 
 
 
+
 # Claude Code Api Errors
+
+---
+
+## 2026-10-28
+
+### Claude Code で "Repeated 529 Overloaded errors" "Opus is experiencing high load" が出たときの待ち方と /model での逃がし方
+
+Claude CodeでAPI Error 529(Overloaded)が出た際の対処法を解説。これはAnthropicサーバー側の混雑が原因で、数分待つか/modelコマンドで別モデル（OpusからSonnetなど）に切り替えることで作業継続が可能。自分の使用量上限やクォータ消費ではないため、プラン変更は不要。Claude Codeは既に指数バックオフで最大10回リトライ済みの状態でこのエラーを表示している。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/826e013f605ce5905638)
+- **重要度**: 6/10
+- **タグ**: claude-code, opus, sonnet
 
 ---
 

@@ -8,7 +8,7 @@ tags:
 - claude-code
 - pricing
 date: '2026-05-12'
-updated: '2026-07-03'
+updated: '2026-10-28'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1tbaq2d/psa_if_your_project_has_an_anthropic_api_key_in
   title: 'PSA: If your project has an ANTHROPIC_API_KEY in any .env file, Claude Code
@@ -18,10 +18,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1um9j1u/fable_5_max_hit_limit_i_topped_up_250_then_one
   title: Fable 5 Max hit limit, I topped up $250, then one “hey” cost me ~$20?
   date: '2026-07-03'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xh3yyu/claude_code_usage_exploded_8x_today_anthropic
+  title: Claude Code usage exploded 8x today. Anthropic confirmed service errors consume
+    our paid limits — and they won't compensate users
+  date: '2026-10-28'
 ---
 
 
+
 # Billing Issue
+
+---
+
+## 2026-10-28
+
+### Claude Code usage exploded 8x today. Anthropic confirmed service errors consume our paid limits — and they won't compensate users
+
+Claude Code の利用料金が通常の8倍に急増した問題が発生。ユーザーの報告によると、10月27日にサービスエラーが原因で5時間の利用枠が異常な速度で消費され、通常は平均約4100万トークン・41ドル相当だったところ、13億トークン・493ドル相当まで膨れ上がった。Anthropic 社はサービスエラーであることを認めたが、消費された有料枠の補償は行わない方針を示している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xh3yyu/claude_code_usage_exploded_8x_today_anthropic)
+- **重要度**: 8/10
+- **タグ**: claude-code, pricing, bugfix
 
 ---
 

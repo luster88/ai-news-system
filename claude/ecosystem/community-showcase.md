@@ -15,7 +15,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-29'
-updated: '2026-10-27'
+updated: '2026-10-28'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6of32/i_am_fully_addicted_to_building_dumb_little_ai
   title: I am fully addicted to building dumb little AI web apps. I love it.
@@ -75,6 +75,9 @@ sources:
   title: 'I built a mod with Claude that turns Valheim into a city builder. It hit
     #1 on r/valheim'
   date: '2026-10-27'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xh73xd/tried_claude_blender_for_the_first_time_today
+  title: Tried Claude + Blender for the first time today ❤️
+  date: '2026-10-28'
 ---
 
 
@@ -91,7 +94,20 @@ sources:
 
 
 
+
 # Community Showcase
+
+---
+
+## 2026-10-28
+
+### Tried Claude + Blender for the first time today ❤️
+
+ユーザーが Claude と Blender（3D グラフィックスソフトウェア）を組み合わせて初めて使用した体験を Reddit で共有。動画付きの投稿で、Claude を活用した 3D モデリングやスクリプト生成のワークフローを紹介している可能性がある。コミュニティでの反応や議論を促す投稿。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xh73xd/tried_claude_blender_for_the_first_time_today)
+- **重要度**: 4/10
+- **タグ**: cowork, claude-code, 新機能
 
 ---
 
