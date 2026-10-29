@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-10-24'
+updated: '2026-10-29'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -447,6 +447,9 @@ sources:
 - url: https://zenn.dev/libelab/articles/claude-one-person-company-day1
   title: Claudeを社員にして「1人会社」を作ってみた【Day 1：設立と事業選定】
   date: '2026-10-24'
+- url: https://qiita.com/kaiyaku_iyada/items/f703fba0bb9bc76e3711
+  title: medium 2件でも確認役が「可」なら止まる：Claude Code の修正ループを空回しした結果
+  date: '2026-10-29'
 ---
 
 
@@ -554,7 +557,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-10-29
+
+### medium 2件でも確認役が「可」なら止まる：Claude Code の修正ループを空回しした結果
+
+Claude Code のワークフローで修正と確認を自動ループする実験記事。確認役が「可」を返すまで修正役と確認役の副エージェントを繰り返し呼び出す台本を実装し、high 0・medium 1件以下の基準で1周目に可を取得。残った low 2件は後回しにし、前日の実験では medium 2件残しで可とした事例も紹介。
+
+- **ソース**: [Qiita claude](https://qiita.com/kaiyaku_iyada/items/f703fba0bb9bc76e3711)
+- **重要度**: 5/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

@@ -4,6 +4,7 @@ category: guides
 subcategory: claude-code-customization
 tags:
 - claude-code
+- cowork
 - mac
 - mcp
 - prompt
@@ -11,7 +12,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-29'
-updated: '2026-10-04'
+updated: '2026-10-29'
 sources:
 - url: https://zenn.dev/noprogllama/articles/d6a34cce09b66d
   title: AIに人格と記憶を与えたら、常につながる手段が欲しくなって自前のWeb UIを作ることになった
@@ -53,6 +54,9 @@ sources:
 - url: https://zenn.dev/shimo4228/articles/harness-scope-writing-harness
   title: Claude ModsとOutput Styleで、Claude Codeを執筆用のハーネスにする
   date: '2026-10-04'
+- url: https://zenn.dev/sarukani/articles/claude-code-butler-memory
+  title: Claude Code に、経緯を覚えている「専属バトラー」を作る
+  date: '2026-10-29'
 ---
 
 
@@ -67,7 +71,20 @@ sources:
 
 
 
+
 # Claude Code Customization
+
+---
+
+## 2026-10-29
+
+### Claude Code に、経緯を覚えている「専属バトラー」を作る
+
+Claude Codeに「専属バトラー」機能を実装する方法を解説。CLAUDE.mdとサブエージェント、Gitを活用し、セッションやPC間で記憶を保持する仕組みを構築。profile.md、journal、private/などのファイル構造と、サブエージェントのomitClaudeMd設定により、作業履歴の管理と専門タスクの分離を実現。追加ツール不要で、GitHubの非公開リポジトリで記憶を同期できる。
+
+- **ソース**: [Zenn claude](https://zenn.dev/sarukani/articles/claude-code-butler-memory)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

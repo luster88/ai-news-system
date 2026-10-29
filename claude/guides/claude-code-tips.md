@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-27'
-updated: '2026-09-06'
+updated: '2026-10-29'
 sources:
 - url: https://zenn.dev/beef_and_rice/articles/482b09980fce23
   title: Claude Code の便利機能 Ctrl+G と Ctrl+S を zsh でも使う
@@ -38,6 +38,9 @@ sources:
 - url: https://qiita.com/kuma_3838/items/00cb0b8d61ca76769c88
   title: 最近取り入れたClaude Codeの個人的tips 4選
   date: '2026-09-06'
+- url: https://qiita.com/25h/items/c42f097c27d91850c051
+  title: Claude Code は日付を知っていても、時刻は知らない。hook 2 本で渡す
+  date: '2026-10-29'
 ---
 
 
@@ -47,7 +50,20 @@ sources:
 
 
 
+
 # Claude Code Tips
+
+---
+
+## 2026-10-29
+
+### Claude Code は日付を知っていても、時刻は知らない。hook 2 本で渡す
+
+Claude Codeは日付を認識するが時刻は認識しないため、古い時刻を使い続ける問題が起きる。この記事では、セッション開始時やプロンプト送信時に現在時刻を渡すhook、およびファイル書き込み時に時刻の裏付けのない表現を検出してフィードバックするhookの実装方法を解説。bashとjqを使用し、UserPromptSubmit、SessionStart、PreToolUseの3つのイベントを活用する。
+
+- **ソース**: [Qiita claude](https://qiita.com/25h/items/c42f097c27d91850c051)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

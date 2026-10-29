@@ -4,11 +4,13 @@ category: guides
 subcategory: claude-code-usage-monitoring
 tags:
 - claude-code
+- opus
 - performance
 - setup
+- sonnet
 - windows
 date: '2026-08-23'
-updated: '2026-08-31'
+updated: '2026-10-29'
 sources:
 - url: https://zenn.dev/kazuhito/articles/97ef1df8ad4321
   title: メモ：Claude CodeのStatus Lineに5時間・週間制限の状況を常に表示する（Windows）
@@ -16,10 +18,26 @@ sources:
 - url: https://ai-heartland.com/explain/claude-code-usage-check
   title: Claude Code 使用量 確認の6手段｜/usage で見えるもの・見えないものを実測で切り分ける
   date: '2026-08-31'
+- url: https://zenn.dev/crossclub_lab/articles/claude-code-usage-from-transcripts
+  title: Claude Code の使用量を自分の会話記録から集計する — 最初の 1 週間で Opus が 58% を使っていた理由
+  date: '2026-10-29'
 ---
 
 
+
 # Claude Code Usage Monitoring
+
+---
+
+## 2026-10-29
+
+### Claude Code の使用量を自分の会話記録から集計する — 最初の 1 週間で Opus が 58% を使っていた理由
+
+Claude Code の使用量を会話記録（.jsonl）から集計する Node.js スクリプトの紹介。筆者は Sonnet のつもりで使っていたが、実際には Opus が 58% を占めていたことが判明。原因は既定モデルが Opus、サブエージェント呼び出し時のモデル未指定、長時間の会話継続の3つ。対策後は Opus 使用率を 18% まで削減したが、目標の 10% 以下には未達。cache_read_input_tokens が使用量の大半を占め、ヘッドレス実行は会話記録に残らないため別途記録が必要。
+
+- **ソース**: [Zenn claude](https://zenn.dev/crossclub_lab/articles/claude-code-usage-from-transcripts)
+- **重要度**: 6/10
+- **タグ**: claude-code, sonnet, opus
 
 ---
 

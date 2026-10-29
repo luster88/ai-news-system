@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-07'
-updated: '2026-09-03'
+updated: '2026-10-29'
 sources:
 - url: https://qiita.com/arahata0907/items/6e0f7bf1629cc52bfa53
   title: 【日本語解説付き試験問題集】Claude Certified Architect Foundations (CCA-F)
@@ -30,13 +30,29 @@ sources:
 - url: https://qiita.com/Solbear/items/ad15ec59cc18cf9994c5
   title: Claude Certified Developer – Foundations（CCDV-F）に3日・8時間で970点合格した勉強法
   date: '2026-09-03'
+- url: https://qiita.com/shokan/items/d463c0f59e6eae6df6c9
+  title: CCAR-F（Claude Certified Architect - Foundations）取ったので感想
+  date: '2026-10-29'
 ---
 
 
 
 
 
+
 # Certification Exam
+
+---
+
+## 2026-10-29
+
+### CCAR-F（Claude Certified Architect - Foundations）取ったので感想
+
+Anthropic の認定資格 CCAR-F（Claude Certified Architect - Foundations）取得者による体験記。AWS SAA 相当の位置づけで、Claude Code の使いこなしは前提とし、適切な判断やトラブルシューティング能力が問われる。受験は認定パートナー企業の社員のみ可能で、2026年9月から日本語試験も提供開始。公式の Exam Guide や FAQ は一般公開されている。
+
+- **ソース**: [Qiita claude](https://qiita.com/shokan/items/d463c0f59e6eae6df6c9)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能
 
 ---
 

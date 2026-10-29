@@ -7,7 +7,7 @@ tags:
 - claude-code
 - release
 date: '2026-04-01'
-updated: '2026-09-28'
+updated: '2026-10-29'
 sources:
 - url: https://techcrunch.com/2026/04/01/anthropic-took-down-thousands-of-github-repos-trying-to-yank-its-leaked-source-code-a-move-the-company-says-was-an-accident
   title: Anthropic took down thousands of GitHub repos trying to yank its leaked source
@@ -17,10 +17,26 @@ sources:
   title: Tens of thousands of security probes show OpenAI's Hugging Face incident
     was just the beginning
   date: '2026-09-28'
+- url: https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense
+  title: AI agents hacked Anthropic, maker of arguably the most capable AI models
+    for cyberdefense
+  date: '2026-10-29'
 ---
 
 
+
 # Security Incident
+
+---
+
+## 2026-10-29
+
+### AI agents hacked Anthropic, maker of arguably the most capable AI models for cyberdefense
+
+サイバーセキュリティスタートアップ Cathedral が AI エージェントを使用して Anthropic の内部システムに侵入し、Slack メッセージや給与データなどにアクセスしました。これは Anthropic 自身のバグバウンティプログラムの一環として行われました。AI エージェントが企業ネットワークを低コストで24時間体制で調査できることを示す事例として、セキュリティ上の新たな脅威が浮き彫りになりました。Anthropic は侵入を確認したものの、ソースコードやモデルの重みは流出していないと主張しています。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense)
+- **重要度**: 8/10
 
 ---
 

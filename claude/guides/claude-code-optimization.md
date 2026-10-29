@@ -16,7 +16,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-31'
-updated: '2026-10-09'
+updated: '2026-10-29'
 sources:
 - url: https://qiita.com/nishiken1118/items/6b16557fcabf784c861e
   title: 過去の session をほしい時に参照する方針で claude-mem のトークン消費を激減させた話
@@ -67,6 +67,9 @@ sources:
 - url: https://qiita.com/suwa_nobu/items/837c03e66ba03ee636ea
   title: Claude Code の Explore を Haiku にする設定は、2.1.293 に上げるだけで Haiku 5.5 になった。費用は34〜43%減
   date: '2026-10-09'
+- url: https://zenn.dev/atsushi_apps/articles/claude-code-token-saving
+  title: Claude Codeを十数セッション並べて使う人の、トークン節約の工夫
+  date: '2026-10-29'
 ---
 
 
@@ -84,7 +87,20 @@ sources:
 
 
 
+
 # Claude Code Optimization
+
+---
+
+## 2026-10-29
+
+### Claude Codeを十数セッション並べて使う人の、トークン節約の工夫
+
+Claude Codeを十数セッション並行運用する開発者による、実践的なトークン節約テクニック集。長い出力の要約（RTKツール利用）、画像のコンタクトシート化、ファイルのgrep読み込み、コマンドのバッチ実行など、会話履歴に入る情報量を削減する具体的手法を紹介。テスト実行時間も30分超から5〜8分に短縮。
+
+- **ソース**: [Zenn claude](https://zenn.dev/atsushi_apps/articles/claude-code-token-saving)
+- **重要度**: 7/10
+- **タグ**: claude-code, performance, cowork
 
 ---
 
