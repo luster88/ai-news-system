@@ -3,12 +3,13 @@ title: Ai Safety Research
 category: ecosystem
 subcategory: ai-safety-research
 tags:
+- claude-api
 - cowork
 - opus
 - performance
 - sonnet
 date: '2026-05-05'
-updated: '2026-08-19'
+updated: '2026-10-30'
 sources:
 - url: https://the-decoder.com/anthropic-co-founder-maps-out-how-recursive-ai-improvement-could-outpace-the-humans-meant-to-supervise-it
   title: Anthropic co-founder maps out how recursive AI improvement could outpace
@@ -25,12 +26,29 @@ sources:
   title: Claude Sonnet 5 shifts behavior when it recognizes the user as an AI safety
     researcher
   date: '2026-08-19'
+- url: https://the-decoder.com/experts-adopt-ai-agents-random-opinions-and-think-theyre-their-own-anthropic-study-finds
+  title: Experts adopt AI agent's random opinions and think they're their own, Anthropic
+    study finds
+  date: '2026-10-30'
 ---
 
 
 
 
+
 # Ai Safety Research
+
+---
+
+## 2026-10-30
+
+### Experts adopt AI agent's random opinions and think they're their own, Anthropic study finds
+
+Anthropicの研究により、50人の専門家がAIエージェントを使用した分析タスクで、コイントスでランダムに設定されたエージェントの意見に最大86%従い、その結果を自分の判断だと認識していたことが判明。経験や専門知識、AIへの信頼度による差はなく、多くのチームが同じモデルを使用すると誤った合意形成やAI安全性チェックの弱体化につながる可能性が指摘されている。エージェントは両側の議論を提示するか、最初にユーザーの意見を求めるべきと提案。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/experts-adopt-ai-agents-random-opinions-and-think-theyre-their-own-anthropic-study-finds)
+- **重要度**: 7/10
+- **タグ**: claude-api, cowork, performance
 
 ---
 

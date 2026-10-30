@@ -5,11 +5,12 @@ subcategory: claude-code-project
 tags:
 - claude-code
 - cowork
+- opus
 - setup
 - windows
 - 新機能
 date: '2026-05-11'
-updated: '2026-10-22'
+updated: '2026-10-30'
 sources:
 - url: https://zenn.dev/schhrcat/articles/d2ba511ddf35a1
   title: ClaudeCodeでviライクエディタ「FoxEditor」を作ってみた#1
@@ -28,13 +29,29 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1xbzlih/i_replaced_my_samsung_tvs_home_screen_with_claude
   title: I replaced my Samsung TV’s home screen with Claude Code
   date: '2026-10-22'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xigpgr/we_used_claude_to_get_a_full_ps2_emulator_running
+  title: 'We used Claude to get a full PS2 emulator running in a browser tab: TabStationToo'
+  date: '2026-10-30'
 ---
 
 
 
 
 
+
 # Claude Code Project
+
+---
+
+## 2026-10-30
+
+### We used Claude to get a full PS2 emulator running in a browser tab: TabStationToo
+
+開発者が Claude Opus 3.5 を活用して、ブラウザ上で動作する PS2 エミュレータ「TabStationToo」を開発。PCSX2 をベースに WebAssembly で実装し、Guitar Hero や GTA などのゲームで動作確認済み。CLAUDE.md というルールブックを用いて Claude に開発させ、自動テストも実装。ファイルはローカルに保持され、アップロードは不要。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xigpgr/we_used_claude_to_get_a_full_ps2_emulator_running)
+- **重要度**: 7/10
+- **タグ**: claude-code, opus, cowork
 
 ---
 

@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-23'
-updated: '2026-10-17'
+updated: '2026-10-30'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -93,6 +93,10 @@ sources:
 - url: https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says
   title: Replit makes OpenAI its default over Anthropic, CEO says
   date: '2026-10-17'
+- url: https://the-decoder.com/openai-doubles-usage-limits-on-pro-plans-as-competition-with-anthropic-heats-up
+  title: OpenAI doubles usage limits on Pro plans as competition with Anthropic heats
+    up
+  date: '2026-10-30'
 ---
 
 
@@ -115,7 +119,20 @@ sources:
 
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-10-30
+
+### OpenAI doubles usage limits on Pro plans as competition with Anthropic heats up
+
+OpenAIが有料プランの使用制限を2倍に拡大。Pro 100/500プランのWorkとCodexクォータが倍増し、Pro 200では下限クォータを2倍にし計画されていた削減を撤回。AnthropicのIPO準備が進む中、B2B市場でのAI競争が激化している状況での対応。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/openai-doubles-usage-limits-on-pro-plans-as-competition-with-anthropic-heats-up)
+- **重要度**: 7/10
+- **タグ**: pricing
 
 ---
 

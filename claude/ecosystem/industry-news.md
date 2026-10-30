@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-18'
-updated: '2026-09-24'
+updated: '2026-10-30'
 sources:
 - url: https://the-decoder.com/anthropic-ceo-amodei-declares-there-is-no-end-to-the-rainbow-for-ai-scaling
   title: Anthropic CEO Amodei declares "there is no end to the rainbow" for AI scaling
@@ -59,6 +59,9 @@ sources:
   title: Inside Basecamp Research, the AI startup turning evolution into training
     data
   date: '2026-09-24'
+- url: https://zenn.dev/sugawara_ai/articles/ai-news-20261029
+  title: Gemini 4 Carbonが1位、でもまだ使えない理由
+  date: '2026-10-30'
 ---
 
 
@@ -71,7 +74,19 @@ sources:
 
 
 
+
 # Industry News
+
+---
+
+## 2026-10-30
+
+### Gemini 4 Carbonが1位、でもまだ使えない理由
+
+2026年10月29日のAIニュースまとめ。Google DeepMindがGemini 4 Carbonを発表、ベンチマークで1位を獲得したが一般利用は未定。GoogleはAI検索広告を世界展開し、検索体験の変化に対応。NVIDIAは40言語対応の無料文字起こしAI「Nemotron 3.5 Transcribe」を公開。
+
+- **ソース**: [Zenn claude](https://zenn.dev/sugawara_ai/articles/ai-news-20261029)
+- **重要度**: 4/10
 
 ---
 

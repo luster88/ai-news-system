@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-10-29'
+updated: '2026-10-30'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -450,6 +450,9 @@ sources:
 - url: https://qiita.com/kaiyaku_iyada/items/f703fba0bb9bc76e3711
   title: medium 2件でも確認役が「可」なら止まる：Claude Code の修正ループを空回しした結果
   date: '2026-10-29'
+- url: https://zenn.dev/i_shinya/articles/harness-fewer-subagents
+  title: '自分のClaude Codeハーネスの変遷 #3（フロー更新編）'
+  date: '2026-10-30'
 ---
 
 
@@ -558,7 +561,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-10-30
+
+### 自分のClaude Codeハーネスの変遷 #3（フロー更新編）
+
+Claude Code を用いた開発ハーネスの改善事例。タスク管理の粒度を変更し、マルチエージェント構成からシングルセッションへ移行した経緯を解説。Anthropic 公式のマルチエージェント記事を参考に、コンテキスト受け渡しの削減とトークン効率化を実現。実装・テスト・レビューを分離せず、1つの feature を 1 セッションで完結させる設計に変更。
+
+- **ソース**: [Zenn claude](https://zenn.dev/i_shinya/articles/harness-fewer-subagents)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 
