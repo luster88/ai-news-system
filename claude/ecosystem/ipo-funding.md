@@ -3,12 +3,13 @@ title: Ipo Funding
 category: ecosystem
 subcategory: ipo-funding
 tags:
+- cowork
 - performance
 - pricing
 - release
 - 新機能
 date: '2026-06-01'
-updated: '2026-06-04'
+updated: '2026-10-31'
 sources:
 - url: https://techcrunch.com/2026/06/01/anthropic-files-to-go-public
   title: Anthropic files to go public
@@ -17,10 +18,27 @@ sources:
   title: Ahead of its IPO, Anthropic’s Daniela Amodei shrugs off doubts about AI’s
     returns
   date: '2026-06-04'
+- url: https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says
+  title: Anthropic expected to receive high ‘junk’ rating from credit agencies following
+    IPO, FT report says
+  date: '2026-10-31'
 ---
 
 
+
 # Ipo Funding
+
+---
+
+## 2026-10-31
+
+### Anthropic expected to receive high ‘junk’ rating from credit agencies following IPO, FT report says
+
+Financial TimesによるとAnthropicはIPO後に信用格付け機関から「高位ジャンク格付け」を受ける見込み。主要投資家のBlackstoneは以前の投資適格格付け予想から方針転換し、ダブルB格付けを予想。これにより同社の資金調達コストが上昇する可能性がある。Anthropicは今週IPOを正式申請しており、大規模な計算リソース投資を続けてきた。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says)
+- **重要度**: 8/10
+- **タグ**: pricing, cowork, 新機能
 
 ---
 

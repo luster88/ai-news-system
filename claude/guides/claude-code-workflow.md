@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-10-30'
+updated: '2026-10-31'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -453,6 +453,9 @@ sources:
 - url: https://zenn.dev/i_shinya/articles/harness-fewer-subagents
   title: '自分のClaude Codeハーネスの変遷 #3（フロー更新編）'
   date: '2026-10-30'
+- url: https://zenn.dev/takababa/articles/20261031-xs97qj
+  title: 一人でできることの範囲が、変わってしまった｜個人開発SaaS「fuSen」第十七話
+  date: '2026-10-31'
 ---
 
 
@@ -562,7 +565,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-10-31
+
+### 一人でできることの範囲が、変わってしまった｜個人開発SaaS「fuSen」第十七話
+
+個人開発SaaS「fuSen」の開発者が、Claude Codeを活用することでユーザー要望を当日中に実装できるようになった体験を綴る。20年間Web制作をしてきた著者が、コードやサーバー知識がなくても機能実装・バグ修正・インフラ設定を自力で行えるようになり、「一人でできることの範囲」が劇的に広がった。即座に作れるこの時期は特別な時間であり、ユーザーとの信頼関係構築にもつながっている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/takababa/articles/20261031-xs97qj)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能
 
 ---
 

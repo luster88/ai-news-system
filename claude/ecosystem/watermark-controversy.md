@@ -5,10 +5,12 @@ subcategory: watermark-controversy
 tags:
 - claude-api
 - cowork
+- opus
 - pricing
+- sonnet
 - 新機能
 date: '2026-08-12'
-updated: '2026-08-17'
+updated: '2026-10-31'
 sources:
 - url: https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes
   title: Some Claude users are mad that Anthropic’s new watermarks will catch them
@@ -17,10 +19,27 @@ sources:
 - url: https://the-decoder.com/anthropic-watermarks-claudes-output-but-critics-question-the-tradeoffs
   title: Anthropic watermarks Claude's output, but critics question the tradeoffs
   date: '2026-08-17'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xjqyv2/claude_now_watermarks_everything_it_writes_and
+  title: Claude now watermarks everything it writes, and you're the one who can't
+    check
+  date: '2026-10-31'
 ---
 
 
+
 # Watermark Controversy
+
+---
+
+## 2026-10-31
+
+### Claude now watermarks everything it writes, and you're the one who can't check
+
+Anthropicは11月3日から、Claude の全主要モデル（Opus、Sonnet等）に透明テキスト電子透かしを導入。校正・翻訳でも透かしが付与され、有料ユーザーも無効化不可。検出ツールは規制当局・メディア等の限定公開で、ユーザー本人は確認不可。別モデルでの改変で回避可能なため、誠実なユーザーのみが不利益を受けるとの批判が上がっている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xjqyv2/claude_now_watermarks_everything_it_writes_and)
+- **重要度**: 7/10
+- **タグ**: opus, sonnet
 
 ---
 

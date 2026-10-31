@@ -17,7 +17,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-10-24'
+updated: '2026-10-31'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -97,6 +97,10 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1xdgtas/claude_fable_51_can_hide_secret_messages_in
   title: Claude Fable 5.1 can hide secret messages in benign images
   date: '2026-10-24'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xjk9x0/the_era_of_vibe_coding_actually_made_me
+  title: The era of vibe coding actually made me appreciate old school software engineers
+    10x more
+  date: '2026-10-31'
 ---
 
 
@@ -122,7 +126,20 @@ sources:
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-10-31
+
+### The era of vibe coding actually made me appreciate old school software engineers 10x more
+
+ユーザーがClaudeを使ってレガシーソフトウェアをリバースエンジニアリングし、最適化を試みた経験を共有。結果として、ハードウェア制約下で開発された旧世代のソフトウェアは既に極限まで最適化されており、「vibe coding」では膨大な時間とトークンを消費するだけで、元のソフトウェアを購入する方が合理的だと気づいた。古いソフトウェアエンジニアの技術力とファーストプリンシプル思考に対する敬意を表明している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xjk9x0/the_era_of_vibe_coding_actually_made_me)
+- **重要度**: 4/10
+- **タグ**: claude-code, performance, cowork
 
 ---
 

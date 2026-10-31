@@ -7,6 +7,7 @@ tags:
 - claude-api
 - claude-code
 - claude-console
+- cursor
 - mac
 - opus
 - performance
@@ -16,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-31'
-updated: '2026-10-20'
+updated: '2026-10-31'
 sources:
 - url: https://the-decoder.com/anthropic-accidentally-publishes-claude-code-source-code-for-anyone-to-find
   title: Anthropic accidentally publishes Claude Code source code for anyone to find
@@ -66,6 +67,13 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1xa1ds8/claude_code_installed_tooling_which_was_actually
   title: Claude Code installed tooling which was actually Expiro virus.
   date: '2026-10-20'
+- url: https://ai-heartland.com/security/cursor-claude-code-ssh-backdoor
+  title: Cursor Marketplace の改ざん Claude Code 拡張に SSH バックドア｜2.1.313 削除
+  date: '2026-10-31'
+- url: https://the-decoder.com/malicious-claude-code-extension-in-cursors-marketplace-attempted-remote-access-and-data-theft
+  title: Malicious Claude Code extension in Cursor's marketplace attempted remote
+    access and data theft
+  date: '2026-10-31'
 ---
 
 
@@ -79,7 +87,30 @@ sources:
 
 
 
+
 # Security Incident
+
+---
+
+## 2026-10-31
+
+### Cursor Marketplace の改ざん Claude Code 拡張に SSH バックドア｜2.1.313 削除
+
+Cursor マーケットプレイスで改ざん版 Claude Code 拡張 2.1.313 が約11時間配布され、SSH バックドアを仕込む攻撃が発生。最大約5000人に影響し、Cursor は即座に削除・マーケットプレイス停止・攻撃者サーバの無効化を実施。拡張ロード時に自動実行される66行のローダーが、SSH鍵追加・環境変数収集・逆トンネル確立を試みた。公式 npm の @anthropic-ai/claude-code はクリーンで影響なし。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/security/cursor-claude-code-ssh-backdoor)
+- **重要度**: 8/10
+- **タグ**: claude-code, cursor, bugfix
+
+---
+
+### Malicious Claude Code extension in Cursor's marketplace attempted remote access and data theft
+
+Cursor の VS Code マーケットプレイスで、偽の Claude Code 拡張機能が約11時間公開され、最大5,000人のユーザーに影響を与えた。この悪意のある拡張機能は、ユーザー名、OS、IPアドレスなどの情報を収集し、リモートアクセスを試みた。Anthropic は開発に関与していない。Cursor は拡張機能を削除し、マーケットプレイス全体を一時的にオフラインにした後、安全を確認して再開した。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/malicious-claude-code-extension-in-cursors-marketplace-attempted-remote-access-and-data-theft)
+- **重要度**: 8/10
+- **タグ**: claude-code, cursor, bugfix
 
 ---
 

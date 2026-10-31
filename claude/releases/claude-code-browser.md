@@ -8,12 +8,13 @@ tags:
 - cowork
 - haiku
 - mcp
+- opus
 - pricing
 - release
 - setup
 - 新機能
 date: '2026-07-12'
-updated: '2026-10-28'
+updated: '2026-10-31'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -109,6 +110,12 @@ sources:
 - url: https://qiita.com/picnic/items/7183ad4e831bf8243897
   title: Claude Code v2.1.312 Bedrock/Vertex系の短いシステムプロンプト化と変更点まとめ
   date: '2026-10-28'
+- url: https://qiita.com/NaokiIshimura/items/d74fc44a0aa8ee403e21
+  title: Claude Code 開発者が注目している5つのアップデート（v2.1.311 - v2.1.316）
+  date: '2026-10-31'
+- url: https://qiita.com/NaokiIshimura/items/7bacddded498225b9e46
+  title: Claude Code v2.1.311 - v2.1.316 リリースノートまとめ
+  date: '2026-10-31'
 ---
 
 
@@ -136,7 +143,50 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-10-31
+
+### Claude Code 開発者が注目している5つのアップデート（v2.1.311 - v2.1.316）
+
+Claude Code v2.1.311からv2.1.316の主要アップデートを解説。Opus 4.8 fast mode廃止予告（2026年11月30日削除）、ultrathinkとeffort設定の環境変数追加、作業ディレクトリ外への書き込み一括制限機能、200Kトークン超での自動会話要約・コンパクション機能が実装され、実務での安全性とコスト管理が大幅に改善された。
+
+- **ソース**: [Qiita claude](https://qiita.com/NaokiIshimura/items/d74fc44a0aa8ee403e21)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+### Claude Code v2.1.311 - v2.1.316 リリースノートまとめ
+
+Claude Code v2.1.311〜v2.1.316のリリースノートまとめ。ultrathinkのxhigh実行と無効化用環境変数の追加、Opus 4.8のfast mode廃止予告（2026年11月30日）、idle compaction、Claude apps gatewayの機能拡張（プールされたグループ予算、ポリシーマージ機能など）が含まれる。大量の安定性修正も実施された。
+
+- **ソース**: [Qiita claude](https://qiita.com/NaokiIshimura/items/7bacddded498225b9e46)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, opus
+
+---
+
+### Claude Code 開発者が注目している5つのアップデート（v2.1.311 - v2.1.316）
+
+Claude Code v2.1.311-v2.1.316の主要アップデートを解説。Opus 4.8 fast modeが2026年11月に削除予定でエラーを返すため早期対応が必要。ultrathinとeffort設定の整理により環境変数で挙動制御が可能に。作業ディレクトリ外への書き込みを一括制限する新パーミッション追加。200Kトークン超の会話が自動要約されプロンプトキャッシュ最適化。実務に直結する変更が多く、特にモデル指定とコスト管理面での影響が大きい。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/NaokiIshimura/items/d74fc44a0aa8ee403e21)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+### Claude Code v2.1.311 - v2.1.316 リリースノートまとめ
+
+Claude Code v2.1.311〜v2.1.316のリリースノートまとめ。ultrathinkのxhigh実行と無効化用環境変数の追加、Opus 4.8 fast modeの2026年廃止予告、idle compaction機能、Claude apps gatewayの機能拡張（OIDC設定、グループ予算、ポリシーモード等）、そして多数の安定性修正が含まれる。主にエンタープライズ向けの管理機能とモデル実行の最適化に焦点を当てたアップデート。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/NaokiIshimura/items/7bacddded498225b9e46)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 

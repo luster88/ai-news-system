@@ -12,7 +12,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-23'
-updated: '2026-10-22'
+updated: '2026-10-31'
 sources:
 - url: https://qiita.com/pro-tein/items/49e5dbec705c3497dd51
   title: 【Claude Code】Hooks機能でデスクトップ通知を設定してみた
@@ -66,6 +66,9 @@ sources:
 - url: https://zenn.dev/dawon/articles/c21789f4cb0b6f
   title: Claude Code の AskUserQuestion にフックで答える（スマホからも）
   date: '2026-10-22'
+- url: https://qiita.com/takamatt_ai/items/2ed447a87f8d7900cea0
+  title: Claude Code の PreToolUse フックで git add -A や reset --hard を機械的に止める(誤検知の避け方つき)
+  date: '2026-10-31'
 ---
 
 
@@ -84,7 +87,20 @@ sources:
 
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-10-31
+
+### Claude Code の PreToolUse フックで git add -A や reset --hard を機械的に止める(誤検知の避け方つき)
+
+Claude Code で複数セッションを同じリポジトリで動かす際、git add -A や reset --hard を PreToolUse フックで機械的に防ぐ方法を解説。引用符内の文字列を除外する正規表現の工夫により、コミットメッセージでの誤検知を回避。終了コード 2 で Claude に代替手段を提示する実装例と、セミコロン区切りコマンドでの誤検知の残課題も記載。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/takamatt_ai/items/2ed447a87f8d7900cea0)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

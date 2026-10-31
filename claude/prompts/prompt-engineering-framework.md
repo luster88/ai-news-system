@@ -11,9 +11,10 @@ tags:
 - opus
 - performance
 - prompt
+- sonnet
 - 新機能
 date: '2026-03-30'
-updated: '2026-10-18'
+updated: '2026-10-31'
 sources:
 - url: https://zenn.dev/analysis/articles/prompt-master-thought-analyzer
   title: 「プロンプトを最適化する」とは何か──prompt-masterを3層フレームワークで解剖する
@@ -45,6 +46,9 @@ sources:
 - url: https://qiita.com/songchong/items/351a939e2e1b673c2929
   title: 今日から使える AI との会話術 — Claude・Gemini・Codex に指示を守らせる 6 つの原則【2026年版】
   date: '2026-10-18'
+- url: https://qiita.com/kakushigoto/items/7baa88b5e07a858c897e
+  title: CLAUDE.md の【重要】や YOU MUST に、効果はあるのか？
+  date: '2026-10-31'
 ---
 
 
@@ -55,7 +59,20 @@ sources:
 
 
 
+
 # Prompt Engineering Framework
+
+---
+
+## 2026-10-31
+
+### CLAUDE.md の【重要】や YOU MUST に、効果はあるのか？
+
+CLAUDE.mdやプロンプトでの「【重要】」「YOU MUST」などの強調表現の効果を、Claude Code の Sonnet 5.5 と Opus 5.5 で計108回検証。結果、強調による遵守率向上は見られず、むしろ決まりを当てはめすぎる傾向が確認された。Anthropic公式ドキュメントも現行モデルでは強調不要と明記しており、日本語の解説記事で推奨される手法と公式見解に乖離がある。
+
+- **ソース**: [Qiita claude](https://qiita.com/kakushigoto/items/7baa88b5e07a858c897e)
+- **重要度**: 7/10
+- **タグ**: claude-code, prompt, sonnet
 
 ---
 
