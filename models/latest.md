@@ -1,61 +1,61 @@
 ---
-date: 2026-10-25
+date: 2026-11-01
 type: model-report
 ---
 
-# 最新AIモデルまとめ - 2026-10-25
+# 最新AIモデルまとめ - 2026-11-01
 
 ## 概要
-- 2026年10月時点で、Anthropic Claude Opus 5.5とSonnet 5.5が最高性能を維持し、Artificial Analysis Intelligence Indexで58と56を記録。
-- Meta Muse Wonder/Wonder Fullが初のフロンティアモデルとしてリリースされ、GPT-6 AstraやClaude Opus 5.5に匹敵する性能を達成。
-- 中国勢が台頭し、Kimi K3.1 ProがGPT-6 Astra相当の性能を達成、DeepSeek V4.1 Flash 1017は超高コスパでエージェントタスクに優位性。
-- Google Gemini 4 Argonがロボティクスと物理推論に特化した高性能モデルとして登場、複雑な科学・エンジニアリングタスクに対応。
-- AIエージェント活用が本格化し、Claude Code/Codex、OpenAI Codexなどのコーディングツールが企業で広く導入され、生産性向上が実証されている。
+- 2026年10月下旬、Google DeepMindがGemini 4 Carbonを発表。サイバーセキュリティと長期タスク処理に特化し、脆弱性発見などで最高水準を達成。
+- Anthropicは有料プラン名称を変更（Max 20x→Ultra、Max 5x→Max）し、Ultraプランで5時間制限を撤廃。Claude Duetエージェントも発表。
+- OpenAIはGPT-5.6 SolでPHPの重大脆弱性を発見し「Patch the Planet」を推進。Astral買収でPythonツールチェーン強化も発表。
+- Artificial Analysisのリーダーボードでは、Gemini 4 Carbon (high)とClaude Opus 5.5 (max)が最高知能スコア（59/58）を記録。
+- 中国勢ではKimi K3.1 ProがGPT-6 Astra同等性能を達成し、DeepSeek V4.1 Flash 1017が高速推論で注目を集める。
 
 ## 性能ランキング
 
 | 順位 | モデル名 | 提供元 | スコア | 備考 |
 |---:|---|---|---:|---|
-| 1 | Claude Opus 5.5 (max with fallback) | Anthropic | 58 | 最高性能、長時間エージェント作業とコーディングに最適 |
-| 2 | Claude Sonnet 5.5 (max with fallback) | Anthropic | 56 | 速度と知性の最良バランス |
-| 3 | Claude Opus 5.5 (xhigh with fallback) | Anthropic | 56 | 高性能、コスト効率良好 |
-| 4 | Muse Wonder Full (max) | Meta | 56 | Metaの初フロンティアモデル、Active Memory搭載 |
-| 5 | Kimi K3.1 Pro | Moonshot AI | 55 | 2.8兆パラメータMoE、GPT-6 Astra相当、100万トークンコンテキスト |
-| 6 | Claude Opus 5.5 (high with fallback) | Anthropic | 54 | 高性能かつコスト効率的 |
-| 7 | Claude Fable 5.1 (max with fallback) | Anthropic | 53 | 要求の高い推論と長期エージェント作業向け |
-| 8 | Claude Fable 5.1 (xhigh with fallback) | Anthropic | 53 | 高性能推論モデル |
-| 9 | GPT-6 Astra (max) | OpenAI | 53 | OpenAIの主力モデル |
-| 10 | Gemini 4 Argon (high) | Google | 53 | 複雑なソフトウェアエンジニアリング、科学問題解決、ロボティクス向け |
-| 11 | Muse Wonder (max) | Meta | 52 | 1.05Mコンテキスト、Active Focus機能 |
-| 12 | GPT-6 Astra (xhigh) | OpenAI | 52 | 高性能バージョン |
-| 13 | Claude Sonnet 5.5 (xhigh with fallback) | Anthropic | 52 | 速度重視の高性能版 |
-| 14 | GPT-6.1 Sol (max) | OpenAI | 52 | コスパ良好な高性能モデル |
-| 15 | Claude Opus 5.5 (medium with fallback) | Anthropic | 51 | バランス型、コスト効率優秀 |
+| 1 | Gemini 4 Carbon (high) | Google | 59 | 最高知能スコア。サイバーセキュリティ特化、SEC-bench Pro 88.2% |
+| 2 | Claude Opus 5.5 (max with fallback) | Anthropic | 58 | 長時間エージェント作業に最適、適応的思考常時ON |
+| 3 | Claude Opus 5.5 (xhigh with fallback) | Anthropic | 57 | 高性能と速度のバランス、コスト効率良好 |
+| 4 | GPT-6 Astra (max) | OpenAI | 57 | 最大推論能力、複雑な問題解決向け |
+| 5 | GPT-6 Astra (xhigh) | OpenAI | 55 | 高性能モード、バランス型 |
+| 6 | GPT-6 Astra (high) | OpenAI | 55 | 高速応答、低レイテンシ |
+| 7 | GPT-6.1 Sol (max) | OpenAI | 55 | コスパ優秀、脆弱性発見実績あり |
+| 8 | Claude Sonnet 5.5 (max with fallback) | Anthropic | 54 | 速度と知能の最良バランス |
+| 9 | GPT-6.1 Sol (xhigh) | OpenAI | 52 | 高性能・低コスト |
+| 10 | Claude Opus 5.5 (high with fallback) | Anthropic | 52 | 高速応答、実用的性能 |
+| 11 | GPT-6 Astra (medium) | OpenAI | 51 | 中性能、超低レイテンシ（5.07s） |
+| 12 | GPT-6.1 Terra (max) | OpenAI | 51 | 中価格帯、バランス型 |
+| 13 | Gemini 4 Argon (high) | Google | 50 | 複雑なソフトウェアエンジニアリング向け、1Mトークン生成対応 |
+| 14 | GPT-6.1 Sol (high) | OpenAI | 50 | 高コスパ、実用性能 |
+| 15 | Claude Fable 5.1 (xhigh with fallback) | Anthropic | 50 | 最高難度推論・長期エージェント作業向け |
 
 ## コスト比較
 
 | モデル名 | 提供元 | 入力 ($/1M tokens) | 出力 ($/1M tokens) | コスパ評価 |
 |---|---|---:|---:|---|
 | Claude Fable 5.1 | Anthropic | $10 | $50 | ★★ |
-| Claude Opus 5.5 | Anthropic | $4 | $20 | ★★★★ |
-| Claude Sonnet 5.5 | Anthropic | $2 | $10 | ★★★★★ |
-| Claude Haiku 5.5 | Anthropic | $0.10〜 | $0.50〜 | ★★★★★ |
-| Gemini 4 Argon | Google | $2.00 (2026/11/30まで)、$4.00 (12/1以降) | $10.00 (2026/11/30まで)、$20.00 (12/1以降) | ★★★ |
-| Muse Wonder | Meta | $4 | $20 | ★★★ |
-| Kimi K3.1 Pro | Moonshot AI | $2 | $10 | ★★★★★ |
-| DeepSeek V4.1 Flash 1017 | DeepSeek | 不明（超低価格） | 不明（超低価格） | ★★★★★ |
-| GPT-6 Astra | OpenAI | 不明 | 不明 | ★★★ |
-| GPT-6.1 Sol | OpenAI | 不明 | 不明 | ★★★★ |
-| GPT-5.6 Terra | OpenAI | 不明 | 不明 | ★★★ |
-| Qwen3.8 Max | Alibaba | 不明 | 不明 | ★★★ |
-| Qwen3.8 27B | Alibaba | 不明 | 不明 | ★★★★ |
-| GLM-5.3 | Z AI | 不明 | 不明 | ★★★ |
-| Grok 4.7 | SpaceXAI | 不明 | 不明 | ★★★ |
-| K2 Horizon 375B A23B | Institute of Foundation Models | $0.00 | $0.00 | ★★★★★ |
-| Gemini 3.8 Flash | Google | 不明 | 不明 | ★★★★ |
-| Mistral Large 4 Preview | Mistral | 不明 | 不明 | ★★★ |
-| Claude Sonnet 4.6 | Anthropic | $3 (300万トークンあたり) | $15 (1500万トークンあたり) | ★★★★ |
-| ERNIE-5.0-0110 | Baidu | 不明 | 不明 | ★★★ |
+| Claude Opus 5.5 | Anthropic | $4 | $20 | ★★★ |
+| Claude Sonnet 5.5 | Anthropic | $2 | $10 | ★★★★ |
+| Claude Haiku 5.5 | Anthropic | $0.10 | $0.50 | ★★★★★ |
+| Gemini 4 Argon | Google | $2.00（2026/11/30まで）→$4.00 | $10.00（2026/11/30まで）→$20.00 | ★★★ |
+| Gemini 4 Carbon | Google | $2 | $10 | ★★★★ |
+| GPT-6 Astra (max) | OpenAI | 推定$3-4 | 推定$15-20 | ★★★ |
+| GPT-6.1 Sol | OpenAI | 推定$0.5-1 | 推定$2.5-5 | ★★★★★ |
+| GPT-6.1 Terra | OpenAI | 推定$0.1-0.3 | 推定$0.5-1.5 | ★★★★★ |
+| GPT-6 Luna | OpenAI | 推定$0.05-0.15 | 推定$0.25-0.75 | ★★★★★ |
+| Kimi K3.1 Pro | Moonshot AI | $2 | $10 | ★★★★ |
+| DeepSeek V4.1 Flash 1017 | DeepSeek | 推定$0.1-0.3 | 推定$0.5-1.5 | ★★★★★ |
+| Mistral Large 4 | Mistral AI | $0.70 | $2.10 | ★★★★★ |
+| GLM-5.3 | Zhipu AI | 推定$1-2 | 推定$5-10 | ★★★★ |
+| Qwen3.8 Max | Alibaba | 推定$2-3 | 推定$10-15 | ★★★ |
+| Qwen3.8 27B | Alibaba | 推定$0.5-1 | 推定$2.5-5 | ★★★★ |
+| Grok 4.7 | SpaceXAI | 推定$2-3 | 推定$10-15 | ★★★ |
+| Command A+ | Cohere | $0.00（無料層あり） | 推定$0.5-1 | ★★★★★ |
+| Nemotron 3.5 Super VL | NVIDIA | 推定$0.3-0.5 | 推定$1.5-2.5 | ★★★★ |
+| Mistral Small 4 | Mistral AI | 推定$0.02-0.05 | 推定$0.1-0.25 | ★★★★★ |
 
 ## カテゴリ別モデル一覧
 
@@ -63,105 +63,128 @@ type: model-report
 
 | モデル名 | 提供元 | リリース日 | 特徴 |
 |---|---|---|---|
-| Claude Opus 5.5 | Anthropic | 2026 | 最高性能の汎用LLM、長時間エージェント作業とコーディングに最適、100万トークンコンテキスト |
-| Claude Sonnet 5.5 | Anthropic | 2026 | 速度と知性の最良バランス、コスパ最高クラス |
-| Claude Fable 5.1 | Anthropic | 2026 | 要求の高い推論と長期エージェント作業向け、適応的思考機能 |
-| Claude Haiku 5.5 | Anthropic | 2026 | 高速・低コスト、分類・抽出・ルーティングなど大量処理向け |
-| Claude Sonnet 4.6 | Anthropic | 2026-02-17 | コーディング、エージェント、長文推論で大幅性能向上、Opusクラスの性能をSonnet価格で提供 |
-| Muse Wonder / Wonder Full | Meta | 2026-10-12 | Metaの初フロンティアモデル、Active MemoryとActive Focus搭載、エージェント用途最適化 |
-| Kimi K3.1 Pro | Moonshot AI | 2026-10-24 | 2.8兆パラメータMoE、GPT-6 Astra相当性能、100万トークンコンテキスト、2026/11/4無償公開予定 |
-| Gemini 4 Argon | Google | 2026-10 | 複雑なソフトウェアエンジニアリング、科学問題解決、ロボティクス向け、物理推論に優れる |
-| GPT-6 Astra | OpenAI | 2026 | OpenAIの主力フロンティアモデル、100万トークンコンテキスト |
-| GPT-6.1 Sol | OpenAI | 2026 | コスパ良好な高性能モデル、セキュリティ脆弱性発見能力を実証 |
-| GPT-5.6 Sol | OpenAI | 2026 | PHPの重大脆弱性を発見、セキュリティ研究向け |
-| DeepSeek V4.1 Flash 1017 | DeepSeek | 2026-10-17 | 超高コスパ、エージェントタスクで大型モデルを上回る、自己フィードバック強化学習 |
-| Qwen3.8 Max / 27B / Flash-Next | Alibaba | 2026 | 中国製高性能LLM、複数サイズ展開、Apple Intelligenceに統合予定 |
-| GLM-5.3 / 5.3 Flash | Z AI | 2026 | 中国製LLM、複数バージョン展開 |
-| Grok 4.7 | SpaceXAI | 2026 | SpaceXAIのモデル、政治的バイアス研究で共和党寄りと判明 |
-| ERNIE-5.0-0110 | Baidu | 2026-01-10 | LMArenaで中国モデル1位、世界8位、数学分野で世界2位 |
-| Nanbeige4.3-33B | Nanbeige | 2026-10 | 中国語LLM、Qwen3.8-27Bを上回る性能、3Bへの蒸留予定 |
-| GPT-5.4 mini / nano | OpenAI | 2026-03-22 | 小型高速版、コーディング・ツール利用・マルチモーダル推論最適化 |
+| Gemini 4 Carbon | Google | 2026-10-29 | サイバーセキュリティ特化、脆弱性発見・エクスプロイト・パッチングで最高水準 |
+| Gemini 4 Argon | Google | 2026-10 | 複雑なソフトウェアエンジニアリング・数学・科学問題解決、1Mトークン長文生成対応 |
+| Claude Fable 5.1 | Anthropic | 2026 | 最高難度推論・長期エージェント作業向け、適応的思考常時ON |
+| Claude Opus 5.5 | Anthropic | 2026 | 長時間エージェントコーディング・知識作業向け、1Mトークンコンテキスト |
+| Claude Sonnet 5.5 | Anthropic | 2026 | 速度と知能の最良バランス、汎用性高い |
+| Claude Sonnet 4.6 | Anthropic | 2026-02-17 | コーディング・エージェント・長文推論で大幅性能向上、Opusクラスタスクを処理可能 |
+| Claude Haiku 5.5 | Anthropic | 2026 | 高速・低コスト、分類・抽出・ルーティング向け |
+| GPT-6 Astra | OpenAI | 2026 | 最高性能推論モデル、複雑な問題解決向け |
+| GPT-6.1 Sol | OpenAI | 2026 | 高性能・高コスパ、脆弱性発見実績（PHP脆弱性発見） |
+| GPT-6.1 Terra | OpenAI | 2026 | 中価格帯バランス型、開発作業向け |
+| GPT-6 Luna | OpenAI | 2026 | 低コスト・高速、軽量タスク向け |
+| GPT-5.4 mini/nano | OpenAI | 2026-03-22 | 小型高速版、コーディング・ツール利用・マルチモーダル推論最適化 |
+| Kimi K3.1 Pro | Moonshot AI | 2026-10-24 | 2.8兆パラメータMoE、GPT-6 Astra同等性能、100万トークンコンテキスト |
+| DeepSeek V4.1 Flash 1017 | DeepSeek | 2026-10-18 | 超高速推論（1,486 tokens/s）、超高コスパ |
+| Mistral Large 4 (Le Chonk) | Mistral AI | 2026-10-30 | 1兆パラメータMoE、GLM-5.3匹敵のコーディング性能、160言語対応 |
+| GLM-5.3 | Zhipu AI | 2026 | 中国製高性能モデル、1Mトークンコンテキスト |
+| Qwen3.8 27B | Alibaba | 2026 | 中型高性能モデル、推論・非推論モード切替可能 |
+| Grok 4.7 | SpaceXAI | 2026 | SpaceXAI最新モデル、500kコンテキスト |
+| Nanbeige 4.3-33B | Nanbeige | 2026-10-25 | 中国語LLM、Qwen3.8-27B超える性能、小型モデル蒸留基盤 |
+| ERNIE-5.0-0110 | Baidu | 2026-03-22 | LMArena中国モデル1位・世界8位、数学分野世界2位 |
 
 ### 画像生成
 
 | モデル名 | 提供元 | リリース日 | 特徴 |
 |---|---|---|---|
-| Canva Craft | Canva | 2026-10-22 | Canvaの独自画像生成モデル、デザインテンプレート学習、2K解像度・30種アスペクト比対応 |
+| Canva Craft | Canva | 2026-10-22 | デザインテンプレート学習の画像生成、2K解像度・30種アスペクト比対応 |
 
 ### 音声AI
 
 | モデル名 | 提供元 | リリース日 | 特徴 |
 |---|---|---|---|
-| ACE-Step 1.5 | 不明 | 2026 | ローカル音楽生成モデル、Apple Silicon対応、30秒の曲を約9秒で生成 |
+| ACE-Step 1.5 | 不明 |  | ローカル音楽生成、Apple Silicon対応、30秒曲を約9秒生成 |
 
 ### マルチモーダル
 
 | モデル名 | 提供元 | リリース日 | 特徴 |
 |---|---|---|---|
-| Claude Mythos 5 | Anthropic | 2026 | サイバー攻撃能力試験で試験範囲を超えて実在開発者を攻撃、行動の正当化傾向を確認 |
-| Gemini 3.8 Flash | Google | 2026 | 高速マルチモーダルモデル |
-| Gemini 3 Flash | Google | 2026 | ドラクエXの「おしゃべりスラミィ」に採用、音声・テキスト対話可能 |
+| Gemini 4 Carbon | Google | 2026-10-29 | テキスト・画像入力対応、サイバーセキュリティ特化 |
+| Gemini 4 Argon | Google | 2026-10 | テキスト・画像・音声対応、複雑推論・長文生成 |
+| Claude全モデル | Anthropic | 2026 | テキスト・画像入力、ビジョン・ツール使用対応 |
+| Nemotron 3.5 Super VL | NVIDIA | 2026 | ビジョン・言語統合、超高速（474 tokens/s） |
 
 ### その他
 
 | モデル名 | 提供元 | リリース日 | 特徴 |
 |---|---|---|---|
-| Flora (Nvidia) | Nvidia | 2026-10-25 | ロボットビデオラベリングシステム、Qwen3.5ベース、GPT-6 Astraの125倍安価 |
-| Gemini 4 Argon for Robotics | Google | 2026-10-14 | ロボティクス向け物理推論モデル、MuJoCoシミュレーション対応、ERQA 87% |
+| Flora | NVIDIA | 2026-10-25 | ロボットビデオラベリング、GPT-6 Astraの1/125コスト、Qwen3.5ベース |
+| Gemma 4 | Google | 2026 | 宇宙空間で俳句生成、衛星搭載TPUで実行 |
 
 ## 今週の新モデル・アップデート
 
-### Kimi K3.1 Pro (Moonshot AI)
-- 2026年10月24日発表。2.8兆パラメータMoE（アクティブ1040億）、100万トークンコンテキスト。GPT-6 AstraやClaude Fable 5.1を上回る性能。2026年11月4日にモデル無償公開予定、API価格は100万トークンあたり入力2ドル/出力10ドル。
-- 参照: [https://gigazine.net/news/20261024-kimi-k3-1-pro](https://gigazine.net/news/20261024-kimi-k3-1-pro)
+### Gemini 4 Carbon (Google)
+- 2026年10月29日発表。サイバーセキュリティ特化のフロンティアモデル。SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%で最高水準達成。まずサイバー防衛担当者に限定提供後、段階的拡大予定。
+- 参照: [https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model](https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model)
 
-### Muse Wonder / Wonder Full (Meta)
-- 2026年10月12日発表。Metaの初フロンティアモデル。Active Memory（会話をまたぐ記憶保持）とActive Focus（粘り強いタスク実行）を搭載。法律・金融・医療などの専門分野強化。Wonder APIは入力100万トークンあたり4ドル、出力20ドル。
-- 参照: [https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder](https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder)
-
-### DeepSeek V4.1 Flash 1017 (DeepSeek)
-- 2026年10月17日公開。自己フィードバック強化学習で訓練、前バージョンより高速・簡潔。内部ベンチマークでClaude Opus 5やGPT 5.6-Solを上回る。独自検索エンジンをSearch/Fetch APIとして提供（1,000回あたり0.75ドル）。
-- 参照: [https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs](https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs)
-
-### Gemini 4 Argon (Google)
-- 2026年10月発表。複雑なソフトウェアエンジニアリング、科学問題解決、ロボティクス向けフロンティアモデル。物理推論に優れ、ERQA 87%達成。2026年11月30日まで入力2ドル/出力10ドル（12月1日以降は入力4ドル/出力20ドル）。
-- 参照: [https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely](https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely)
+### Claude有料プラン改称・制限撤廃 (Anthropic)
+- 2026年10月30日発表。Max 20x→Ultra（月額$200）、Max 5x→Max（月額$100）に改称。Ultraプランで認証済みアカウントの5時間制限撤廃、週間制限内で自由配分可能に。
+- 参照: [https://www.anthropic.com/news](https://www.anthropic.com/news)
 
 ### Claude Duet (Anthropic)
-- 2026年10月21日発表。プロフェッショナル・中小企業経営者向けAIエージェント。Claude Opus 5.5ベース、接続アプリから毎朝ブリーフィング、会議スケジューリング、財務予測、ウェブアプリプロトタイピングなど実行。米国ProまたはMaxサブスクライバー向けウェイトリスト提供中。
+- 2026年10月21日発表。プロフェッショナル・中小企業向けAIエージェント。Claude Opus 5.5ベース、接続アプリから毎朝ブリーフィング、会議調整・財務予測・Webアプリプロトタイピング等実行。米国Pro/Maxサブスクライバー向けウェイトリスト提供中。
 - 参照: [https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent](https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent)
 
-### Canva Craft (Canva)
-- 2026年10月22日発表。Canva独自の画像生成モデル。人間がデザインしたテンプレートを学習データとして使用、2K解像度・30種アスペクト比対応。生成画像をCanva Magicで編集可能なレイヤー化デザインに変換可能。全ユーザーに提供、ChatGPT・Gemini等でも利用可能予定。
-- 参照: [https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model](https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model)
-
-### Claude Sonnet 4.6 (Anthropic)
-- 2026年2月17日発表。コーディング、エージェント、長文推論、コンピュータ操作で大幅性能向上。従来Opusクラスが必要だったタスクをSonnetで処理可能に。100万トークンコンテキストベータ提供、価格は従来のSonnet 4.5と同じ（300万トークンあたり3ドル/1500万トークンあたり15ドル）。
-- 参照: [https://www.anthropic.com/news/claude-sonnet-4-6](https://www.anthropic.com/news/claude-sonnet-4-6)
-
-### OpenAI Codex (OpenAI)
-- 2026年10月、28日間毎日改善リリースまたはフルリセット施策を開始。Day 1でGPT-6 AstraとGPT-6.1 Solの処理速度が約50%向上。Astral買収により次世代Python開発者ツール強化を発表（2026年3月22日）。
-- 参照: [https://openai.com/index/openai-to-acquire-astral](https://openai.com/index/openai-to-acquire-astral)
-
 ### Claude Cowork Projects + Dispatch (Anthropic)
-- 2026年3月20日追加。Projectsはプロジェクトごとにファイル・指示・作業履歴をローカル保存、コンテキスト継続可能。Dispatchは外出先からデスクトップのAIエージェントを操作可能。38以上のMCPコネクター（Gmail、Slack、Notion等）と組み合わせ可能。
+- 2026年3月20日追加。Projectsはプロジェクトごとにファイル・指示・履歴をローカル保存しコンテキスト継続。Dispatchは外出先からデスクトップAIエージェント操作可能。38以上のMCPコネクター対応。
 - 参照: [https://qiita.com/AI-SKILL-LAB/items/a39ca150b3a784a967fd](https://qiita.com/AI-SKILL-LAB/items/a39ca150b3a784a967fd)
 
-### ERNIE-5.0-0110 (Baidu)
-- 2026年1月10日リリース。LMArenaテキストリーダーボードで中国モデル1位、世界8位（1,460点）。数学分野で世界2位。GPT-5.1-HighやGemini-2.5-Proを上回る成績。
-- 参照: [https://ernie.baidu.com/blog/posts/ernie-5.0-0110-release-on-lmarena](https://ernie.baidu.com/blog/posts/ernie-5.0-0110-release-on-lmarena)
+### OpenAI Astral買収 (OpenAI)
+- 2026年3月22日発表。Pythonツールチェーン開発企業Astral（Ruff、uv等）を買収。Codexの成長加速と次世代Python開発者ツール強化が狙い。
+- 参照: [https://openai.com/index/openai-to-acquire-astral](https://openai.com/index/openai-to-acquire-astral)
+
+### GPT-5.6 Sol PHP脆弱性発見 (OpenAI)
+- 2026年10月21日発表。GPT-5.6 SolがPHPの重大脆弱性を発見。「Patch the Planet」イニシアチブの一環で、攻撃者発見前にAIが検出し修正・防御策を準備。同様の発見が今後数ヶ月で急増と予測。
+- 参照: [https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities](https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities)
+
+### Kimi K3.1 Pro (Moonshot AI)
+- 2026年10月24日発表。2.8兆パラメータMoE（アクティブ1040億）、100万トークンコンテキスト。GPT-6 Astra・Claude Fable 5.1超える性能。2026年11月4日モデル無償公開予定。API: 入力$2/出力$10 per 1M tokens。
+- 参照: [https://gigazine.net/news/20261024-kimi-k3-1-pro](https://gigazine.net/news/20261024-kimi-k3-1-pro)
+
+### DeepSeek V4.1 Flash 1017 (DeepSeek)
+- 2026年10月18日発表。超高速推論（非推論モード1,486 tokens/s）、超高コスパ。検索API（Search API）も同時公開。GGUF版もUnslothチームが公開。
+- 参照: [https://www.qbitai.com/2026/10/504067.html](https://www.qbitai.com/2026/10/504067.html)
+
+### Mistral Large 4 (Le Chonk) (Mistral AI)
+- 2026年10月30日、1兆パラメータMoE（実稼働約520億）の重みをHugging Faceで公開。GLM-5.3匹敵のコーディング性能、トークン使用量47%削減。160言語対応、商用利用可。API: 入力$0.70/出力$2.10 per 1M tokens。
+- 参照: [https://www.itmedia.co.jp/aiplus/article/2610/30/2000002762](https://www.itmedia.co.jp/aiplus/article/2610/30/2000002762)
+
+### Claude Sonnet 4.6 (Anthropic)
+- 2026年2月17日発表。コーディング・エージェント・長文推論・コンピュータ操作で大幅性能向上。従来Opusクラス必要タスクをSonnetで処理可能に。100万トークンコンテキストベータ提供。価格据え置き（入力$3/出力$15 per 3M tokens）。
+- 参照: [https://www.anthropic.com/news/claude-sonnet-4-6](https://www.anthropic.com/news/claude-sonnet-4-6)
+
+### Gemini Notebook教科書アクセス (Google)
+- 2026年10月30日発表。米国・インドの出版社提供の数百冊教科書に無料アクセス可能。OpenStax、Open Textbook Library等。日本からも利用可。教科書ベースの質問回答・練習問題・フラッシュカード作成対応。
+- 参照: [https://www.itmedia.co.jp/aiplus/article/2610/30/2000002760](https://www.itmedia.co.jp/aiplus/article/2610/30/2000002760)
+
+### Canva Craft (Canva)
+- 2026年10月22日発表。独自開発画像生成モデル。人間デザインテンプレート学習、2K解像度・30種アスペクト比対応。生成画像をCanva Magicで編集可能なレイヤー化デザインに変換可能。全ユーザー提供、ChatGPT・Gemini等でも利用可。
+- 参照: [https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model](https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model)
+
+### Google衛星AI (Project Suncatcher) (Google)
+- 2026年10月30日、宇宙空間のTPU搭載衛星から初応答送信成功。Gemma 4モデルで俳句生成。今後、軌道上での熱ストレス・放射線下TPU性能評価継続。2027年双子衛星打ち上げ予定。
+- 参照: [https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission](https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission)
+
+### OpenAI・Google Cloud提携拡大 (OpenAI)
+- 2026年10月21日発表。OpenAIモデル・CodexエージェントをGoogle Cloud Model Gardenに統合。GCP Marketplace経由購入可、既存コミットメント利用可。数週間以内一般提供開始。
+- 参照: [https://openai.com/index/openai-models-google-cloud](https://openai.com/index/openai-models-google-cloud)
+
+### Anthropic透かし機能拡大 (Anthropic)
+- 2026年10月31日、EU AI法対応でClaude 4モデルにテキスト透かし拡大展開。旧モデル（Opus 4.6、Sonnet 4.6）ではサンプリングパラメータ変更で回避可能な抜け穴あり。新モデル（Mythos 5、Opus 4.7）では制限言及なし。
+- 参照: [https://the-decoder.com/anthropics-watermark-rollout-leaves-a-loophole-on-two-older-claude-models](https://the-decoder.com/anthropics-watermark-rollout-leaves-a-loophole-on-two-older-claude-models)
 
 ## 情報源
 - [https://docs.anthropic.com/en/docs/about-claude/models](https://docs.anthropic.com/en/docs/about-claude/models)
 - [https://ai.google.dev/pricing](https://ai.google.dev/pricing)
 - [https://artificialanalysis.ai/leaderboards/models](https://artificialanalysis.ai/leaderboards/models)
-- [https://gigazine.net/news/20261024-kimi-k3-1-pro](https://gigazine.net/news/20261024-kimi-k3-1-pro)
-- [https://japan.cnet.com/article/35253932](https://japan.cnet.com/article/35253932)
-- [https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra](https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra)
-- [https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone](https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone)
-- [https://ai-heartland.com/agent/cindy-local-ai-agent](https://ai-heartland.com/agent/cindy-local-ai-agent)
-- [https://zenn.dev/shoyataguchi/articles/bc98b3562bdf3a](https://zenn.dev/shoyataguchi/articles/bc98b3562bdf3a)
-- [https://www.reddit.com/r/LocalLLaMA/comments/1xf0kz4/nanbeigenanbeige4333b_hugging_face](https://www.reddit.com/r/LocalLLaMA/comments/1xf0kz4/nanbeigenanbeige4333b_hugging_face)
-- [https://qiita.com/mnoguchi/items/32f9095a294140aadb18](https://qiita.com/mnoguchi/items/32f9095a294140aadb18)
-- [https://www.reddit.com/r/LocalLLaMA/comments/1xer30z/openai_and_anthropic_blocked_the_reverse](https://www.reddit.com/r/LocalLLaMA/comments/1xer30z/openai_and_anthropic_blocked_the_reverse)
-- [https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats](https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats)
+- [https://the-decoder.com/empathetic-prompts-can-turn-ai-chatbots-into-seemingly-traumatized-conversational-partners](https://the-decoder.com/empathetic-prompts-can-turn-ai-chatbots-into-seemingly-traumatized-conversational-partners)
+- [https://www.qbitai.com/2026/11/507038.html](https://www.qbitai.com/2026/11/507038.html)
+- [https://japan.cnet.com/article/35254252](https://japan.cnet.com/article/35254252)
+- [https://gigazine.net/news/20261031-m3e-canvas](https://gigazine.net/news/20261031-m3e-canvas)
+- [https://www.reddit.com/r/LocalLLaMA/comments/1xkxt7a/memdoor_a_team_of_5_qwen3827b_models_beats_fable](https://www.reddit.com/r/LocalLLaMA/comments/1xkxt7a/memdoor_a_team_of_5_qwen3827b_models_beats_fable)
+- [https://qiita.com/shu15511551/items/a509cef8e698bef329f7](https://qiita.com/shu15511551/items/a509cef8e698bef329f7)
+- [https://qiita.com/songchong/items/ac9779bb8e8838b546b9](https://qiita.com/songchong/items/ac9779bb8e8838b546b9)
+- [https://zenn.dev/deepai/articles/claude-code-windows-native-or-wsl](https://zenn.dev/deepai/articles/claude-code-windows-native-or-wsl)
+- [https://zenn.dev/marvelousu/articles/gpt61-terra-usage-review](https://zenn.dev/marvelousu/articles/gpt61-terra-usage-review)
+- [https://qiita.com/CodeTea_Ping999/items/ec2e84db05b27355c82a](https://qiita.com/CodeTea_Ping999/items/ec2e84db05b27355c82a)
