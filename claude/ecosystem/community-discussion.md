@@ -17,7 +17,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-10-31'
+updated: '2026-11-01'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -101,6 +101,9 @@ sources:
   title: The era of vibe coding actually made me appreciate old school software engineers
     10x more
   date: '2026-10-31'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xkg97u/security_engineer_here_the_antiai_hate_is_getting
+  title: Security engineer here. The anti-AI hate is getting ridiculous
+  date: '2026-11-01'
 ---
 
 
@@ -127,7 +130,20 @@ sources:
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-11-01
+
+### Security engineer here. The anti-AI hate is getting ridiculous
+
+10年以上のキャリアを持つセキュリティエンジニアが、AI支援コードに対する過度な批判について問題提起。Claude Codeで構築したプロジェクトでも、適切なレビューとテストを実施しているにも関わらず「vibe coded」と批判される現状を指摘。Rails創始者DHHや Linux カーネルプロジェクトが既にAI支援コードを受け入れている業界動向を示し、ツールではなくコードの質とレビュープロセスこそが重要だと主張している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xkg97u/security_engineer_here_the_antiai_hate_is_getting)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

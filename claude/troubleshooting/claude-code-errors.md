@@ -10,7 +10,7 @@ tags:
 - setup
 - vscode
 date: '2026-06-05'
-updated: '2026-09-26'
+updated: '2026-11-01'
 sources:
 - url: https://qiita.com/natume_nat/items/76fe608d570caebb4f4c
   title: Claude Codeで「The model's tool call could not be parsed」エラーを回避する方法
@@ -45,6 +45,10 @@ sources:
 - url: https://qiita.com/homhom44/items/b26e253ef46e18db0d4b
   title: Claude Codeのネイティブバイナリ参照エラー原因と対処を整理！Claude Code でつまずいたときの切り分けメモ（2026-09-26）
   date: '2026-09-26'
+- url: https://qiita.com/homhom44/items/e9916dd9ff6753f2eecd
+  title: 'Claude Code で "API Error: Rate limit reached" と "Usage credits required
+    for 1M context" が出たときの直し方（使用率が低いのに止まる場合）'
+  date: '2026-11-01'
 ---
 
 
@@ -57,7 +61,20 @@ sources:
 
 
 
+
 # Claude Code Errors
+
+---
+
+## 2026-11-01
+
+### Claude Code で "API Error: Rate limit reached" と "Usage credits required for 1M context" が出たときの直し方（使用率が低いのに止まる場合）
+
+Claude Codeで使用率が低いのに「API Error: Rate limit reached」や「Usage credits required for 1M context」エラーが出る問題の対処法を解説。原因は1Mコンテキストモデル（opus[1m]など）の選択にあり、/modelコマンドで[1m]なしのモデルに切り替えることで解決できる。v2.1.311以降では200K超過時の自動圧縮機能が追加され、古いバージョンでの/compactエラーも修正された。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/e9916dd9ff6753f2eecd)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 

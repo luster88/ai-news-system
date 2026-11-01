@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: 2026-03-23
-updated: '2026-10-17'
+updated: '2026-11-01'
 sources:
 - url: https://github.com/anthropics/claude-code/releases
   title: Claude Code GitHub Releases
@@ -107,7 +107,11 @@ sources:
 - url: https://qiita.com/picnic/items/9fbdf64b49b69a5f064a
   title: Claude Code v2.1.302 変更点まとめ：claude -p の権限モードと fork 既定化
   date: '2026-10-17'
+- url: https://qiita.com/picnic/items/ecdeca5775da6348c87b
+  title: Claude Code v2.1.316 解説：Opus 4.8 fast mode 11/30削除とセキュリティ修正
+  date: '2026-11-01'
 ---
+
 
 
 
@@ -181,6 +185,18 @@ Claude Code の主要なリリース・機能追加を時系列で記録する�
 
 - [セットアップガイド](../guides/setup.md)
 - [ツール比較](../tools/comparison.md)
+
+---
+
+## 2026-11-01
+
+### Claude Code v2.1.316 解説：Opus 4.8 fast mode 11/30削除とセキュリティ修正
+
+Claude Code v2.1.316がリリースされ、Opus 4.8のfast modeが2026年11月30日に削除予定となった。--restrictedセッションでのファイル流出問題とClaude apps gatewayのモデル照合漏れという2件のセキュリティ修正が含まれる。Team/Enterpriseではサーバー管理設定が承認プロンプトなしで適用されるようになり、CLAUDE_CODE_SUBAGENT_EFFORT環境変数によるサブエージェントの effort 調整機能が追加された。その他、PowerShell hookの問題修正やBashツールの改善など複数のバグ修正が含まれる。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/ecdeca5775da6348c87b)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

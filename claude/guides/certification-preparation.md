@@ -7,14 +7,30 @@ tags:
 - prompt
 - setup
 date: '2026-08-16'
-updated: '2026-08-16'
+updated: '2026-11-01'
 sources:
 - url: https://zenn.dev/ray_keymaso/articles/ccaf-practice-materials-guide
   title: CCA-F/CCAR-F対策：公式サンプル12問の次に解く問題（無料5問・追加50問）
   date: '2026-08-16'
+- url: https://zenn.dev/ray_keymaso/books/passcraft-ccdvf-practice
+  title: 日本語で解くCCDV-F問題集50問｜Claude Certified Developer – Foundations[非公式]
+  date: '2026-11-01'
 ---
 
+
 # Certification Preparation
+
+---
+
+## 2026-11-01
+
+### 日本語で解くCCDV-F問題集50問｜Claude Certified Developer – Foundations[非公式]
+
+Claude Certified Developer – Foundations（CCDV-F）の非公式演習問題集。公開資料のみを根拠に50問を作成し、英文問題・日本語解説・出典リンクをセットで提供。実試験問題は含まず、学習支援を目的とした非公式教材。
+
+- **ソース**: [Zenn claude](https://zenn.dev/ray_keymaso/books/passcraft-ccdvf-practice)
+- **重要度**: 6/10
+- **タグ**: claude-api, prompt
 
 ---
 

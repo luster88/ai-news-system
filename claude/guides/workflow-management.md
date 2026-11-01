@@ -10,7 +10,7 @@ tags:
 - prompt
 - setup
 date: '2026-06-17'
-updated: '2026-10-17'
+updated: '2026-11-01'
 sources:
 - url: https://qiita.com/shinjpn1/items/f194dc84928c6598477e
   title: 「Claude Code 使ってます?」— テキストファイルで AI を管理していた私が、結局システムを作るまで
@@ -24,12 +24,28 @@ sources:
 - url: https://zenn.dev/atsushi_apps/articles/claude-code-sessions-busho
   title: Claude Codeのセッションを「部署」に分けて、個人開発を回す
   date: '2026-10-17'
+- url: https://zenn.dev/sato_ken/articles/46f7f1f7a1e856
+  title: AIを10窓並行で回してたら頭がパンクしたので「進行板」を作った
+  date: '2026-11-01'
 ---
 
 
 
 
+
 # Workflow Management
+
+---
+
+## 2026-11-01
+
+### AIを10窓並行で回してたら頭がパンクしたので「進行板」を作った
+
+複数のAIチャットを並行稼働させる際の進捗管理の課題を解決するため、案件単位でカードを管理する「進行板」を開発。チャット単位ではなく案件単位で管理し、AIが自動で進捗を更新。さらに板自体にAIを配置して更新漏れを監視する仕組みを実装。人間は判断のみに集中できる体制を構築した事例。
+
+- **ソース**: [Zenn claude](https://zenn.dev/sato_ken/articles/46f7f1f7a1e856)
+- **重要度**: 6/10
+- **タグ**: prompt, cowork
 
 ---
 
