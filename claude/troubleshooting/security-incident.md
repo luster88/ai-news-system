@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-31'
-updated: '2026-10-31'
+updated: '2026-11-02'
 sources:
 - url: https://the-decoder.com/anthropic-accidentally-publishes-claude-code-source-code-for-anyone-to-find
   title: Anthropic accidentally publishes Claude Code source code for anyone to find
@@ -74,6 +74,9 @@ sources:
   title: Malicious Claude Code extension in Cursor's marketplace attempted remote
     access and data theft
   date: '2026-10-31'
+- url: https://qiita.com/suwa_nobu/items/3cd02fa0f1cec7ea979c
+  title: Cursor で Claude Code 拡張 2.1.312・2.1.313 が改ざんされていた件、Windows で自分の PC を確かめた
+  date: '2026-11-02'
 ---
 
 
@@ -88,7 +91,20 @@ sources:
 
 
 
+
 # Security Incident
+
+---
+
+## 2026-11-02
+
+### Cursor で Claude Code 拡張 2.1.312・2.1.313 が改ざんされていた件、Windows で自分の PC を確かめた
+
+Cursor の拡張マーケットプレイスで Claude Code 拡張 2.1.312・2.1.313 が改ざんされた事件について、Windows 環境での検証方法を解説。改ざん版は SSH バックドアを仕込もうとするもので、VS Code から導入した拡張のハッシュ値が正規版と一致することを確認。Cursor は 2.0.1 のまま更新されておらず影響なしと判明。告知に従った痕跡確認手順と、拡張削除だけでは不十分な可能性も指摘。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/suwa_nobu/items/3cd02fa0f1cec7ea979c)
+- **重要度**: 8/10
+- **タグ**: claude-code, cursor, bugfix
 
 ---
 

@@ -13,7 +13,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-25'
-updated: '2026-10-12'
+updated: '2026-11-02'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -161,6 +161,9 @@ sources:
 - url: https://zenn.dev/n_y_public/articles/84f5fa6196c2cd
   title: MarpのMarkdownを「普通の文書」として読みたい。「タグを本文に使う違和感」と「ワンスライド・ワンメッセージ」にこだわったMCP
   date: '2026-10-12'
+- url: https://ai-heartland.com/tool/tutor-mcp
+  title: tutor-mcpとは｜どのLLMも知的学習支援システムにするMCPサーバをデモで確認
+  date: '2026-11-02'
 ---
 
 
@@ -206,7 +209,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-11-02
+
+### tutor-mcpとは｜どのLLMも知的学習支援システムにするMCPサーバをデモで確認
+
+tutor-mcpは、MCP対応のLLMを知的学習支援システム（ITS）に変えるGo製OSS。AIが教材を生成し、習得度推定（BKT）と間隔反復（FSRS）の決定論エンジンが学習進度を管理する。生成AIの自由さと、学習科学に基づく厳密な進度管理を分離した設計が特徴。alpha版（v0.7.3）でMITライセンス。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/tutor-mcp)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, 新機能
 
 ---
 

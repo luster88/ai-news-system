@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-10-31'
+updated: '2026-11-02'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -456,6 +456,9 @@ sources:
 - url: https://zenn.dev/takababa/articles/20261031-xs97qj
   title: 一人でできることの範囲が、変わってしまった｜個人開発SaaS「fuSen」第十七話
   date: '2026-10-31'
+- url: https://zenn.dev/tasukina/books/claude-code-merge-line
+  title: Claude Code に本番のリポジトリを直させ、マージまで任せる範囲の決め方（型とスクリプト付き）
+  date: '2026-11-02'
 ---
 
 
@@ -566,7 +569,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-11-02
+
+### Claude Code に本番のリポジトリを直させ、マージまで任せる範囲の決め方（型とスクリプト付き）
+
+フルタイムSEが実践するClaude Codeへの本番リポジトリ作業委譲の実例。AIに任せる範囲の線引きと実装手順、失敗例を含めた再現可能な方法論を解説。型定義とスクリプト付きで具体的な導入手順を提供。
+
+- **ソース**: [Zenn claude](https://zenn.dev/tasukina/books/claude-code-merge-line)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, setup
 
 ---
 

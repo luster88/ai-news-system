@@ -14,7 +14,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-12'
-updated: '2026-10-31'
+updated: '2026-11-02'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -116,6 +116,9 @@ sources:
 - url: https://qiita.com/NaokiIshimura/items/7bacddded498225b9e46
   title: Claude Code v2.1.311 - v2.1.316 リリースノートまとめ
   date: '2026-10-31'
+- url: https://qiita.com/moha0918_/items/83875a7189724b35bd91
+  title: Claude Code v2.1.311〜v2.1.316｜ultrathink でそのターンだけ xhigh effort に｜週刊Changelog解説
+  date: '2026-11-02'
 ---
 
 
@@ -144,7 +147,20 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-11-02
+
+### Claude Code v2.1.311〜v2.1.316｜ultrathink でそのターンだけ xhigh effort に｜週刊Changelog解説
+
+Claude Code v2.1.311〜v2.1.316では、プロンプトに「ultrathink」を含めることでそのターンのみxhigh effortで実行できる機能が追加されました。v2.1.311でターミナル対話モード、v2.1.316でVS Code拡張に実装され、無効化用環境変数やサブエージェント用のeffort設定も導入されました。Opus 4.8のfast modeは2026年11月30日に削除予定で、Opus 5.5への移行が推奨されています。
+
+- **ソース**: [Qiita claude](https://qiita.com/moha0918_/items/83875a7189724b35bd91)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 
