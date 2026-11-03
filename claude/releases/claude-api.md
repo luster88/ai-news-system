@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-10-22'
+updated: '2026-11-03'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -100,6 +100,10 @@ sources:
 - url: https://qiita.com/picnic/items/a76a0164a1e2db4f994d
   title: Claude User Profiles と組織Webhook(Admin API)入門:エンドカスタマー単位の安全性措置
   date: '2026-10-22'
+- url: https://qiita.com/aiapi_radar_news/items/0f683285de0977cd23ea
+  title: Claude Opus 4.8のfast modeが11/30に削除、speed:"fast"はエラーに。Gemini検索グラウンディングに1日1,500件の上限｜今週のAI
+    API変更（10/26-11/1）
+  date: '2026-11-03'
 ---
 
 
@@ -121,7 +125,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-11-03
+
+### Claude Opus 4.8のfast modeが11/30に削除、speed:"fast"はエラーに。Gemini検索グラウンディングに1日1,500件の上限｜今週のAI API変更（10/26-11/1）
+
+Claude Opus 4.8のfast modeが2026年11月30日に削除され、以降はエラーを返すことが発表されました。移行先はClaude Opus 5.5となり、モデル変更が必要です。また、Gemini Developer APIの検索グラウンディング機能に1日1,500リクエストの上限が新たに設定されました。さらに、Gemini APIの有料ティアで新規プロジェクトがデフォルトでリクエストを保存する仕様に変更されています。
+
+- **ソース**: [Qiita claude](https://qiita.com/aiapi_radar_news/items/0f683285de0977cd23ea)
+- **重要度**: 8/10
+- **タグ**: claude-api, opus
 
 ---
 

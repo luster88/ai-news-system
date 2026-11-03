@@ -5,16 +5,34 @@ subcategory: claude-code-limits
 tags:
 - bugfix
 - claude-code
+- opus
 - setup
+- 新機能
 date: '2026-10-04'
-updated: '2026-10-04'
+updated: '2026-11-03'
 sources:
 - url: https://qiita.com/homhom44/items/df704d0b27b8181dcf44
   title: Claude Codeの送信制限で止まるときの対処ポイントまとめ！Claude Code でつまずいたときの切り分けメモ（2026-10-04）
   date: '2026-10-04'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xm5vdp/anthropic_confirms_new_claude_code_limits_to
+  title: Anthropic confirms new Claude Code limits to prevent game cloning
+  date: '2026-11-03'
 ---
 
+
 # Claude Code Limits
+
+---
+
+## 2026-11-03
+
+### Anthropic confirms new Claude Code limits to prevent game cloning
+
+Anthropic が Claude Code と Opus 5.5 の組み合わせにおいて、ゲームクローン作成を防ぐための新しい制限を導入したことを確認。この制限は Claude Code + Opus 5.5 の組み合わせに限定されており、Ollama などの別のハーネスやラッパーを使用することで回避できる可能性がある。コミュニティでは直接的なクローンでなくてもゲーム開発がブロックされるケースや、リバースエンジニアリングタスクも制限されているという報告が出ている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xm5vdp/anthropic_confirms_new_claude_code_limits_to)
+- **重要度**: 7/10
+- **タグ**: claude-code, opus, 新機能
 
 ---
 

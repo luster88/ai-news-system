@@ -7,9 +7,10 @@ tags:
 - claude-code
 - cowork
 - performance
+- pricing
 - 新機能
 date: '2026-04-08'
-updated: '2026-09-07'
+updated: '2026-11-03'
 sources:
 - url: https://the-decoder.com/anthropic-hires-microsofts-azure-ai-chief-to-fix-its-infrastructure-problems
   title: Anthropic hires Microsoft's Azure AI chief to fix its infrastructure problems
@@ -22,11 +23,28 @@ sources:
   title: Inside Anthropic Labs, the small team behind Claude Code and other fast-moving
     product bets
   date: '2026-09-07'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xm2sej/anthropics_internal_ai_use_valued_at_retail
+  title: Anthropic's internal AI use, valued at retail prices, now exceeds its employee
+    pay
+  date: '2026-11-03'
 ---
 
 
 
+
 # Company News
+
+---
+
+## 2026-11-03
+
+### Anthropic's internal AI use, valued at retail prices, now exceeds its employee pay
+
+Anthropic社の内部AI利用量が、小売価格で換算すると従業員給与総額を超えたという報道。同社が自社のClaudeを業務で大量に活用している実態が明らかになり、AI企業における生産性向上とコスト構造の変化を示す興味深い事例として注目されている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xm2sej/anthropics_internal_ai_use_valued_at_retail)
+- **重要度**: 6/10
+- **タグ**: pricing, cowork, performance
 
 ---
 

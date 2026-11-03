@@ -9,7 +9,7 @@ tags:
 - prompt
 - setup
 date: '2026-08-31'
-updated: '2026-09-29'
+updated: '2026-11-03'
 sources:
 - url: https://ai-heartland.com/tool/skills-sh
   title: skills.shとは｜npx skills add がディスクに何を書くかを実測
@@ -17,10 +17,26 @@ sources:
 - url: https://ai-heartland.com/tool/code-review-skills
   title: code-review-skillsとは｜根拠のない指摘を封じるAIコードレビュースキルを実測で検証
   date: '2026-09-29'
+- url: https://qiita.com/hitori-hojin-tax/items/837fa31b7aa984360a80
+  title: e-Taxのエラー番号から確認先を引くAgent Skillを作った（Claude Code / Codex、無料）
+  date: '2026-11-03'
 ---
 
 
+
 # Agent Skills Cli
+
+---
+
+## 2026-11-03
+
+### e-Taxのエラー番号から確認先を引くAgent Skillを作った（Claude Code / Codex、無料）
+
+e-Tax申告時に遭遇したエラー15項目をAgent Skillとしてまとめ、Claude CodeとCodexで利用可能にした実装例。エラー番号から確認先を引く索引機能を提供し、AIに操作させる際の安全設計（署名・送信の禁止、個人情報の保護）を実装。MITライセンスでGitHub公開。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/hitori-hojin-tax/items/837fa31b7aa984360a80)
+- **重要度**: 4/10
+- **タグ**: claude-code, mcp
 
 ---
 

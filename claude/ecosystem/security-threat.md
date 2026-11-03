@@ -3,18 +3,35 @@ title: Security Threat
 category: ecosystem
 subcategory: security-threat
 tags:
+- claude-api
 - claude-code
 - 新機能
 date: '2026-08-25'
-updated: '2026-08-25'
+updated: '2026-11-03'
 sources:
 - url: https://the-decoder.com/taiwanese-cybersecurity-firm-warns-that-ai-tools-have-more-than-doubled-chinese-state-backed-cyberattacks
   title: Taiwanese cybersecurity firm warns that AI tools have more than doubled Chinese
     state-backed cyberattacks
   date: '2026-08-25'
+- url: https://ai-heartland.com/security/volta-ai-infostealer
+  title: VOLTA｜盗んだ情報をAIに値付けさせるWindows infostealerをTalosが公表
+  date: '2026-11-03'
 ---
 
+
 # Security Threat
+
+---
+
+## 2026-11-03
+
+### VOLTA｜盗んだ情報をAIに値付けさせるWindows infostealerをTalosが公表
+
+Cisco Talosが、盗んだ情報をAIに送信して被害者の価値を評価させるWindows情報窃取マルウェア「VOLTA」を公表。ClaudeをはじめとするAIモデルを利用し、盗んだセッションやトークン、SSH鍵などから被害者を低/中/高で格付け。商用AIを攻撃の仕分け役として組み込んだ点が特徴で、ビルダー型のため技能の低い攻撃者でも利用可能。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/security/volta-ai-infostealer)
+- **重要度**: 7/10
+- **タグ**: claude-api
 
 ---
 

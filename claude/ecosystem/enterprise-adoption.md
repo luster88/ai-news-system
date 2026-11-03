@@ -10,7 +10,7 @@ tags:
 - pricing
 - 新機能
 date: '2026-07-20'
-updated: '2026-10-03'
+updated: '2026-11-03'
 sources:
 - url: https://www.anthropic.com/news/ust-claude
   title: Jul 9, 2026 Case Study UST is bringing Claude to physical AI
@@ -22,11 +22,40 @@ sources:
   title: Oct 1, 2026 Announcements Barclays scales Claude to upgrade operations and
     improve client experience
   date: '2026-10-03'
+- url: https://qiita.com/Sidejob/items/efb40704f8fa337ff636
+  title: GPT-6・Gemini 3.8・Claude 5.1が出揃った2026年秋——企業AI基盤の選定で変えた4つの評価軸
+  date: '2026-11-03'
+- url: https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers
+  title: Goldman Sachs pulls AI coding tools from traders and bankers
+  date: '2026-11-03'
 ---
 
 
 
+
 # Enterprise Adoption
+
+---
+
+## 2026-11-03
+
+### GPT-6・Gemini 3.8・Claude 5.1が出揃った2026年秋——企業AI基盤の選定で変えた4つの評価軸
+
+2026年9月に Claude 5.1、Gemini 3.8、GPT-6 が連続リリースされた状況を受け、大企業での AI 基盤選定の評価軸が変化。従来の「最高性能」から「業務適合性」へシフトし、ガバナンス（バージョン管理・影響範囲把握）とマルチモデル前提の設計が重要になった。Claude 5.1 は Dify や Claude Code と統合され、コード生成では Anthropic 系の安定性が評価されている。
+
+- **ソース**: [Qiita claude](https://qiita.com/Sidejob/items/efb40704f8fa337ff636)
+- **重要度**: 7/10
+- **タグ**: claude-code, pricing, cowork
+
+---
+
+### Goldman Sachs pulls AI coding tools from traders and bankers
+
+Goldman Sachsが、Anthropic の Claude Code や GitHub Copilot などの AI コーディングツールを、トレーダーや銀行員から取り上げ、エンジニアのみに利用を制限しました。7月には CIO がノンテクニカルスタッフによる「vibe coding」を称賛していましたが、生産性とリスク管理を理由に方針を転換。実験段階は終了し、長期的に活用できる専門職に限定する方針です。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

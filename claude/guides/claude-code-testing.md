@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-19'
-updated: '2026-10-17'
+updated: '2026-11-03'
 sources:
 - url: https://qiita.com/peka2/items/9ce150b3b480516fc16e
   title: Claude Code に iOSアプリの E2Eテスト までやらせるようにした（iOSシミュレータ + AXe）
@@ -23,12 +23,28 @@ sources:
 - url: https://zenn.dev/tanashun/articles/claude-code-mock-api-testing
   title: Claude Code のモデルだけをモックにして、料金なしで動かす（中身を見て、テストにする）
   date: '2026-10-17'
+- url: https://zenn.dev/libelab/articles/claude-company-day6
+  title: Claudeを社員にした1人会社【Day 6】66万通りを全部回した：AI社員が書いた診断ロジックをテストで確かめる
+  date: '2026-11-03'
 ---
 
 
 
 
+
 # Claude Code Testing
+
+---
+
+## 2026-11-03
+
+### Claudeを社員にした1人会社【Day 6】66万通りを全部回した：AI社員が書いた診断ロジックをテストで確かめる
+
+1人社長がClaude社員だけで運営する会社の6日目の記録。AIが作成した診断ロジックを全66万通りのパターンでテストした話。判定関数を純粋関数として実装し、全選択肢の配点合計を0にすることで平均値を事前計算可能にした。断定表現を避ける文面テストも実装している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/libelab/articles/claude-company-day6)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

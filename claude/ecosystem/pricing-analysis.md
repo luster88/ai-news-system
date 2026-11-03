@@ -10,7 +10,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-07-01'
-updated: '2026-08-18'
+updated: '2026-11-03'
 sources:
 - url: https://the-decoder.com/claude-sonnet-5-continues-anthropics-pattern-of-hiding-price-increases-behind-unchanged-token-rates
   title: Claude Sonnet 5 continues Anthropic's pattern of hiding price increases behind
@@ -23,11 +23,27 @@ sources:
   title: Anthropic's per-token cost runs 4.4 times the average on Vercel, and developers
     keep paying
   date: '2026-08-18'
+- url: https://zenn.dev/syushy4328/articles/claude-cost-per-call-by-model
+  title: Claudeを39日で5,522回呼んで、モデル別の実費を測ったら最大2倍だった
+  date: '2026-11-03'
 ---
 
 
 
+
 # Pricing Analysis
+
+---
+
+## 2026-11-03
+
+### Claudeを39日で5,522回呼んで、モデル別の実費を測ったら最大2倍だった
+
+自宅Botで39日間に5,522回Claudeを呼び出し、モデル別の実費を測定。最も安いモデルを1とすると最大1.6倍の差があり、「新しい=速い」「高い=遅い」という関係は成立しないことが実測で判明。同じ調子なら月$711相当になる計算だが、実際はサブスク枠で運用。モデル選択時は自分の使い方での実測が重要と結論。
+
+- **ソース**: [Zenn claude](https://zenn.dev/syushy4328/articles/claude-cost-per-call-by-model)
+- **重要度**: 6/10
+- **タグ**: pricing, performance, sonnet
 
 ---
 
