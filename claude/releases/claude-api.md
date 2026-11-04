@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-11-03'
+updated: '2026-11-04'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -104,6 +104,10 @@ sources:
   title: Claude Opus 4.8のfast modeが11/30に削除、speed:"fast"はエラーに。Gemini検索グラウンディングに1日1,500件の上限｜今週のAI
     API変更（10/26-11/1）
   date: '2026-11-03'
+- url: https://the-decoder.com/anthropics-message-threads-cut-time-to-first-token-by-35-percent-for-long-conversations
+  title: Anthropic's Message Threads cut time to first token by 35 percent for long
+    conversations
+  date: '2026-11-04'
 ---
 
 
@@ -126,7 +130,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-11-04
+
+### Anthropic's Message Threads cut time to first token by 35 percent for long conversations
+
+Anthropic が Claude プラットフォームで Message Threads 機能をパブリックベータとして公開。長い会話履歴を毎回再送する必要がなくなり、50万〜100万トークンのリクエストで初回トークン生成時間が約35%短縮。変更部分のみを送信する仕組みで、コーディングエージェントや大量ドキュメント処理に有効。スレッドは暗号化され、5分間の非アクティブで失効する。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropics-message-threads-cut-time-to-first-token-by-35-percent-for-long-conversations)
+- **重要度**: 8/10
+- **タグ**: claude-api, 新機能, performance
 
 ---
 

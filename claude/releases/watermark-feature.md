@@ -5,10 +5,12 @@ subcategory: watermark-feature
 tags:
 - claude-api
 - claude-code
+- opus
 - release
+- sonnet
 - 新機能
 date: '2026-08-10'
-updated: '2026-09-10'
+updated: '2026-11-04'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vky8at/claude_will_watermark_generated_content_thank_you
   title: Claude will watermark generated content, thank you EU
@@ -22,12 +24,28 @@ sources:
 - url: https://www.anthropic.com/news/claude-text-watermark
   title: Aug 14, 2026 Announcements How Claude’s text watermark works
   date: '2026-09-10'
+- url: https://qiita.com/picnic/items/90e908e9079a2733594c
+  title: Claude Mythos 5・Opus 4.7・Sonnet 4.6 の生成テキストにウォーターマークが付与される
+  date: '2026-11-04'
 ---
 
 
 
 
+
 # Watermark Feature
+
+---
+
+## 2026-11-04
+
+### Claude Mythos 5・Opus 4.7・Sonnet 4.6 の生成テキストにウォーターマークが付与される
+
+2026年11月3日、Claude Mythos 5・Opus 4.7・Sonnet 4.6の生成テキストに対象プラットフォーム上でAnthropicのウォーターマークが付与されることが発表された。Sonnet 4.6では、temperature/top_p/top_kを既定値以外に設定するとウォーターマークが入らないことがある。破壊的変更ではなく対応必須でもないが、Claude出力を公開・配信している開発者やAI生成テキストの判定を運用している担当者は確認が必要。
+
+- **ソース**: [Qiita claude](https://qiita.com/picnic/items/90e908e9079a2733594c)
+- **重要度**: 8/10
+- **タグ**: opus, sonnet
 
 ---
 

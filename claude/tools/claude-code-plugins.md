@@ -11,7 +11,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-04-12'
-updated: '2026-10-28'
+updated: '2026-11-04'
 sources:
 - url: https://ai-heartland.com/explain/last30days-skill-guide
   title: last30days-skill完全ガイド｜Reddit・X・YouTube横断AIリサーチスキルの使い方2026年版
@@ -61,6 +61,9 @@ sources:
 - url: https://ai-heartland.com/explain/autoharness-claude-code-skills
   title: autoharnessとは｜Claude Codeのスキルを実セッションから自動学習し自己整理するプラグイン
   date: '2026-10-28'
+- url: https://qiita.com/290oss/items/d175ab396601e144d5d5
+  title: Claude Codeが/clearで全部忘れる問題。claude-memで記憶を持たせる前に知っておきたい4つのこと
+  date: '2026-11-04'
 ---
 
 
@@ -78,7 +81,20 @@ sources:
 
 
 
+
 # Claude Code Plugins
+
+---
+
+## 2026-11-04
+
+### Claude Codeが/clearで全部忘れる問題。claude-memで記憶を持たせる前に知っておきたい4つのこと
+
+Claude Codeで/clearを実行すると会話履歴が消える問題に対し、claude-memプラグインが記憶を保持する仕組みを解説。ただし、APIキーが記録される可能性、npm install -gでは動作しない点、記憶作成にトークンを消費する点など、導入前に知るべき4つの注意点を詳説している。フックを使って作業記録を収集し、AIで要約してSQLiteに保存、次回会話時に自動挿入する流れを図解付きで説明。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/290oss/items/d175ab396601e144d5d5)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup
 
 ---
 

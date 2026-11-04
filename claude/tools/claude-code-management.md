@@ -8,7 +8,7 @@ tags:
 - setup
 - 新機能
 date: '2026-10-08'
-updated: '2026-11-01'
+updated: '2026-11-04'
 sources:
 - url: https://zenn.dev/massan3477/articles/woodlot-intro
   title: ターミナルで Claude Code を何本も走らせるのやめませんか？
@@ -16,10 +16,26 @@ sources:
 - url: https://zenn.dev/nhinata/articles/tallyline-claude-code-statusline
   title: usage を何度も開くのが面倒で、Claude Code のステータスラインを自作してみた
   date: '2026-11-01'
+- url: https://qiita.com/290oss/items/d175ab396601e144d5d5
+  title: Claude Codeが/clearで全部忘れる問題。claude-memで記憶を持たせる前に知っておきたい4つのこと
+  date: '2026-11-04'
 ---
 
 
+
 # Claude Code Management
+
+---
+
+## 2026-11-04
+
+### Claude Codeが/clearで全部忘れる問題。claude-memで記憶を持たせる前に知っておきたい4つのこと
+
+Claude Codeで/clearを実行すると会話履歴が消える問題に対し、記憶プラグインclaude-memが解決策となる。このプラグインは作業記録を自動で保存し次回の会話に要点を差し込むが、導入前に注意すべき点がある。APIキーが記録される可能性、正しいインストール方法（npx claude-mem install）の使用、記憶作成にもAI使用量がかかること、そしてフックシステムによる自動記録の仕組みを理解する必要がある。
+
+- **ソース**: [Qiita claude](https://qiita.com/290oss/items/d175ab396601e144d5d5)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

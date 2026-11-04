@@ -3,18 +3,36 @@ title: Advanced Use Cases
 category: guides
 subcategory: advanced-use-cases
 tags:
+- claude-code
 - opus
 - sonnet
 - 新機能
 date: '2026-07-02'
-updated: '2026-07-02'
+updated: '2026-11-04'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1uliqgw/fable_5_was_able_to_fix_a_corrupted_elden_ring
   title: Fable 5 was able to fix a corrupted Elden Ring save file.
   date: '2026-07-02'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xn6tu3/i_gave_claude_700_ransomware_encrypted_files_it
+  title: I gave Claude ~700 ransomware encrypted files. It told me upfront it couldn't
+    decrypt them, then got two thirds of them usable again
+  date: '2026-11-04'
 ---
 
+
 # Advanced Use Cases
+
+---
+
+## 2026-11-04
+
+### I gave Claude ~700 ransomware encrypted files. It told me upfront it couldn't decrypt them, then got two thirds of them usable again
+
+ユーザーがランサムウェアで暗号化された約700個のファイルをClaudeに与えたところ、Claudeは当初復号化できないと回答したものの、ファイルの最初の16KBのみが暗号化されていることを独自に発見し、3分の2のファイルを復元することに成功した。さらに、U-Netモデルを訓練して画像の色補正を行い、独自のSketchUpパーサーを開発するなど、高度な問題解決能力を示した実例。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xn6tu3/i_gave_claude_700_ransomware_encrypted_files_it)
+- **重要度**: 7/10
+- **タグ**: claude-code
 
 ---
 

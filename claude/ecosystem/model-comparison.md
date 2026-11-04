@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-24'
-updated: '2026-10-13'
+updated: '2026-11-04'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -94,6 +94,10 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1x4f7os/super_fun_to_see_how_different_models_create_a
   title: Super fun to see how different models create a SNES game from a vague prompt
   date: '2026-10-13'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xn6eli/i_gave_every_claude_model_the_exact_same_prompt
+  title: I gave every Claude model the exact same prompt since July 2025. 13 models,
+    14 months, here's the evolution
+  date: '2026-11-04'
 ---
 
 
@@ -119,7 +123,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-11-04
+
+### I gave every Claude model the exact same prompt since July 2025. 13 models, 14 months, here's the evolution
+
+2024年7月から2025年8月までの14ヶ月間、13種類のClaudeモデルに同一のプロンプト（3D無限地形Webゲーム生成）を与えて出力を比較した実験レポート。各モデルの進化と出力品質の変化を実際の動作画面で記録。Sonnet 5.5ではシェーダーバグ（木が描画されない）が発生したことも報告されている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xn6eli/i_gave_every_claude_model_the_exact_same_prompt)
+- **重要度**: 6/10
+- **タグ**: performance, sonnet, opus
 
 ---
 
