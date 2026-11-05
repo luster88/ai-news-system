@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-07'
-updated: '2026-10-29'
+updated: '2026-11-05'
 sources:
 - url: https://qiita.com/arahata0907/items/6e0f7bf1629cc52bfa53
   title: 【日本語解説付き試験問題集】Claude Certified Architect Foundations (CCA-F)
@@ -33,6 +33,9 @@ sources:
 - url: https://qiita.com/shokan/items/d463c0f59e6eae6df6c9
   title: CCAR-F（Claude Certified Architect - Foundations）取ったので感想
   date: '2026-10-29'
+- url: https://zenn.dev/aishigoto/articles/cert-claude-exam-checklist-ja
+  title: Claude認定資格を日本語で受ける前に確かめる8つのこと（受験資格・申し込み・改訂）
+  date: '2026-11-05'
 ---
 
 
@@ -40,7 +43,20 @@ sources:
 
 
 
+
 # Certification Exam
+
+---
+
+## 2026-11-05
+
+### Claude認定資格を日本語で受ける前に確かめる8つのこと（受験資格・申し込み・改訂）
+
+Claude認定資格を日本語で受験する際の注意点をまとめた記事。Claude Partner Network参加組織の社員のみが受験可能で、個人メールアドレスでは申し込めない。試験は120分の選択式で合格点は720点、結果は試験終了後すぐに表示される。申し込みはAnthropic Partner Academyから行い、Pearson VUEで日時を予約する。身分証明書の名前とプロフィールの完全一致が必須で、不一致の場合は24時間前までに訂正が必要。
+
+- **ソース**: [Zenn claude](https://zenn.dev/aishigoto/articles/cert-claude-exam-checklist-ja)
+- **重要度**: 6/10
+- **タグ**: claude-api, setup
 
 ---
 

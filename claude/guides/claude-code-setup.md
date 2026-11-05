@@ -12,7 +12,7 @@ tags:
 - windows
 - 新機能
 date: '2026-04-04'
-updated: '2026-08-29'
+updated: '2026-11-05'
 sources:
 - url: https://qiita.com/taiki_i/items/2d75a882e0f3187f6bb8
   title: あなたの CLAUDE.md、ちゃんと機能してますか？作り方から公式プラグインで採点するまでの道のり
@@ -77,6 +77,9 @@ sources:
 - url: https://qiita.com/locallab/items/aee8caafe6103f4b812d
   title: Claude Code × OpenRouter で月額ほぼ $0 のコーディング AI 環境を5ステップで構築する
   date: '2026-08-29'
+- url: https://qiita.com/okadada/items/0d64d24b12214e85ecdc
+  title: Windows miniPC に Claude Code を 3 セッション常駐させ、ノートPCから Remote Control で任せる
+  date: '2026-11-05'
 ---
 
 
@@ -96,7 +99,20 @@ sources:
 
 
 
+
 # Claude Code Setup
+
+---
+
+## 2026-11-05
+
+### Windows miniPC に Claude Code を 3 セッション常駐させ、ノートPCから Remote Control で任せる
+
+Windows miniPCにClaude Codeを3セッション常駐させ、ノートPCからRemote Control経由で作業を依頼する運用方法を紹介。タスクスケジューラによる自動起動、レビュー用サブエージェント、devcontainerを使った開発環境分離などの工夫を解説。脆弱性影響調査やMR作成といった実用例も示す。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/okadada/items/0d64d24b12214e85ecdc)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, windows
 
 ---
 

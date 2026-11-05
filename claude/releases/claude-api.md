@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-11-04'
+updated: '2026-11-05'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -108,6 +108,9 @@ sources:
   title: Anthropic's Message Threads cut time to first token by 35 percent for long
     conversations
   date: '2026-11-04'
+- url: https://the-decoder.com/anthropics-text-watermark-is-easy-to-bypass-on-several-older-claude-models
+  title: Anthropic's text watermark is easy to bypass on several older Claude models
+  date: '2026-11-05'
 ---
 
 
@@ -131,7 +134,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-11-05
+
+### Anthropic's text watermark is easy to bypass on several older Claude models
+
+Anthropicは古いClaudeモデル（Opus 4.6、Opus 4.5、Sonnet 4.5、Haiku 4.5）に対して2026年11月16日からテキストウォーターマークを追加することを発表。ただし、temperature、top_p、top_kをデフォルト設定から変更することで、複数のモデルでウォーターマークを簡単に回避できる仕様となっている。当初11月3日予定だったOpus 4.6の導入は遅延し、理由は明かされていない。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropics-text-watermark-is-easy-to-bypass-on-several-older-claude-models)
+- **重要度**: 7/10
+- **タグ**: claude-api, opus, sonnet
 
 ---
 

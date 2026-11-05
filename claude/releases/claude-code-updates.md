@@ -7,6 +7,7 @@ tags:
 - changelog
 - claude-code
 - cowork
+- haiku
 - mac
 - mcp
 - release
@@ -14,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: 2026-03-23
-updated: '2026-11-01'
+updated: '2026-11-05'
 sources:
 - url: https://github.com/anthropics/claude-code/releases
   title: Claude Code GitHub Releases
@@ -110,7 +111,11 @@ sources:
 - url: https://qiita.com/picnic/items/ecdeca5775da6348c87b
   title: Claude Code v2.1.316 解説：Opus 4.8 fast mode 11/30削除とセキュリティ修正
   date: '2026-11-01'
+- url: https://zenn.dev/orivanai/articles/claude-code-2026-10-updates
+  title: Claude Code 2026年10月のアップデートまとめ:Mods、Code Review、Haiku 5.5
+  date: '2026-11-05'
 ---
+
 
 
 
@@ -185,6 +190,18 @@ Claude Code の主要なリリース・機能追加を時系列で記録する�
 
 - [セットアップガイド](../guides/setup.md)
 - [ツール比較](../tools/comparison.md)
+
+---
+
+## 2026-11-05
+
+### Claude Code 2026年10月のアップデートまとめ:Mods、Code Review、Haiku 5.5
+
+Claude Code の2026年10月の主要アップデートまとめ。Mods機能により動作のカスタマイズが可能に、Code Reviewが Team/Enterprise で正式提供開始、Haiku 5.5 リリース（入力$0.10/100万トークン）。その他、idle compaction、Opus 4.8 fast mode の廃止予定（11月30日）、100万トークンコンテキスト対応、セキュリティ脆弱性4件の修正などが含まれる。
+
+- **ソース**: [Zenn claude](https://zenn.dev/orivanai/articles/claude-code-2026-10-updates)
+- **重要度**: 8/10
+- **タグ**: claude-code, 新機能, haiku
 
 ---
 

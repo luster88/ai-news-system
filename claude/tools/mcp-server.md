@@ -13,7 +13,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-25'
-updated: '2026-11-02'
+updated: '2026-11-05'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -164,6 +164,9 @@ sources:
 - url: https://ai-heartland.com/tool/tutor-mcp
   title: tutor-mcpとは｜どのLLMも知的学習支援システムにするMCPサーバをデモで確認
   date: '2026-11-02'
+- url: https://ai-heartland.com/agent/terminal-mac
+  title: terminal-mac徹底解説｜ターミナルに“実macOSのVM”を建ててAIエージェントが操作するOSS
+  date: '2026-11-05'
 ---
 
 
@@ -210,7 +213,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-11-05
+
+### terminal-mac徹底解説｜ターミナルに“実macOSのVM”を建ててAIエージェントが操作するOSS
+
+terminal-macは、Apple Virtualizationで実macOSのVMを構築し、ターミナルから操作できるOSSツール。computer-use AIエージェントがMCP経由でClaude Code/Cursor/Codexと連携し、仮想Mac上でscreenshot/click/type操作を実行できる。物理Macから隔離された作業環境を提供するが、NATでネット接続可能なため完全な隔離ではない点に注意が必要。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/agent/terminal-mac)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-code, cursor
 
 ---
 

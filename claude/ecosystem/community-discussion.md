@@ -17,7 +17,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-22'
-updated: '2026-11-01'
+updated: '2026-11-05'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s08r1c/karpathy_says_he_hasnt_written_a_line_of_code
   title: Karpathy says he hasn't written a line of code since December and is in "perpetual
@@ -104,6 +104,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1xkg97u/security_engineer_here_the_antiai_hate_is_getting
   title: Security engineer here. The anti-AI hate is getting ridiculous
   date: '2026-11-01'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xnnqkg/show_me_claude_code_projects_that_dont_look
+  title: Show me Claude Code projects that DON’T look vibecoded
+  date: '2026-11-05'
 ---
 
 
@@ -131,7 +134,20 @@ sources:
 
 
 
+
 # Community Discussion
+
+---
+
+## 2026-11-05
+
+### Show me Claude Code projects that DON’T look vibecoded
+
+Reddit の ClaudeAI コミュニティで、Claude Code で作成されたプロジェクトのうち「AI生成っぽく見えない」デザインの実例を求める投稿。多くのユーザーが UI を洗練させるツールやスキル、MCP について質問している中、実際にどのような成果物を目指すべきか、既存の良い例を参考にして Claude に指示すればよいのではないかという問題提起がされている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xnnqkg/show_me_claude_code_projects_that_dont_look)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

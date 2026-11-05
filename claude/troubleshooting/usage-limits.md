@@ -12,7 +12,7 @@ tags:
 - pricing
 - sonnet
 date: '2026-03-25'
-updated: '2026-10-27'
+updated: '2026-11-05'
 sources:
 - url: https://qiita.com/himajisan/items/1e8f67782335b4517139
   title: AIを扱き使ったらすぐに使用制限ですと言う
@@ -63,6 +63,9 @@ sources:
   title: Claude Code で "You've hit your session limit" "weekly limit" "Opus limit"
     が出たときの読み分けと続け方
   date: '2026-10-27'
+- url: https://zenn.dev/msadofschi/articles/d98b0298095465
+  title: Claude の利用上限はどこから読めるか：使用量 API、SSE の message_limit、StreamTimeline のフレーム
+  date: '2026-11-05'
 ---
 
 
@@ -75,7 +78,20 @@ sources:
 
 
 
+
 # Usage Limits
+
+---
+
+## 2026-11-05
+
+### Claude の利用上限はどこから読めるか：使用量 API、SSE の message_limit、StreamTimeline のフレーム
+
+Claude.aiの利用上限（5時間セッション・週間上限）を確認する方法を解説。Freeプランでは/api/usage が空になったが、DevToolsでSSEのmessage_limitイベントや新しいStreamTimeline（Connect + protobuf）から上限情報を取得できる。utilizationの単位やresets_atの揺れ、圧縮フレームの構造など実装詳細も説明。
+
+- **ソース**: [Zenn claude](https://zenn.dev/msadofschi/articles/d98b0298095465)
+- **重要度**: 6/10
+- **タグ**: claude-console, claude-api, bugfix
 
 ---
 

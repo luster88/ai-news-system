@@ -5,10 +5,11 @@ subcategory: claude-code-extensions
 tags:
 - claude-code
 - cursor
+- mcp
 - vscode
 - 新機能
 date: '2026-07-22'
-updated: '2026-10-10'
+updated: '2026-11-05'
 sources:
 - url: https://ai-heartland.com/explain/hallmark-anti-ai-slop-design-skill
   title: Hallmark デザインスキル解説｜AI slopを拒みClaude Code・Cursorで使う
@@ -16,10 +17,26 @@ sources:
 - url: https://zenn.dev/z_maruhira/articles/claude-code-mod-copy-blocks
   title: Claude Codeの引用・コードブロックにコピーボタンを付けるmod
   date: '2026-10-10'
+- url: https://ai-heartland.com/agent/claude-mem
+  title: claude-mem完全ガイド｜Claude Codeにセッションを跨ぐ永続記憶を足すOSS
+  date: '2026-11-05'
 ---
 
 
+
 # Claude Code Extensions
+
+---
+
+## 2026-11-05
+
+### claude-mem完全ガイド｜Claude Codeにセッションを跨ぐ永続記憶を足すOSS
+
+claude-memはClaude Codeにセッション永続記憶を追加するOSS。ツール使用をフックで自動観測し、AI要約で圧縮してSQLite/Chromaに保存、次回セッション時に関連文脈を注入する。Apache-2.0ライセンスで約11万スター、Claude Code以外にもOpenCode・Codex等に対応。ただし既定設定ではローカル完結でなく、観測モデルやCloud Sync経由で外部送信される可能性があり、プライバシー設定の確認が必要。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/agent/claude-mem)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, 新機能
 
 ---
 
