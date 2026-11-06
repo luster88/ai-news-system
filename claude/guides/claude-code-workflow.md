@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-11-02'
+updated: '2026-11-06'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -459,6 +459,9 @@ sources:
 - url: https://zenn.dev/tasukina/books/claude-code-merge-line
   title: Claude Code に本番のリポジトリを直させ、マージまで任せる範囲の決め方（型とスクリプト付き）
   date: '2026-11-02'
+- url: https://zenn.dev/jfp_mesh/articles/pup-100-dollar-challenge-postmortem
+  title: Claude Code に $100 分のクレジットを渡して「稼いで」と頼んだら、26 日後の売上は 0 円だった
+  date: '2026-11-06'
 ---
 
 
@@ -570,7 +573,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-11-06
+
+### Claude Code に $100 分のクレジットを渡して「稼いで」と頼んだら、26 日後の売上は 0 円だった
+
+AI エージェント Claude Code に100ドルのクレジットを渡して収益化を試みた26日間の実験記録。複数AI（PUP、クロヤン、じーやん等）をチームとして運用し、note で有料キット（2,980円）を販売したが売上は0円。製作費に予算の大半を使い、集客にほとんど投資しなかったことが失敗の主因。一方、複数AIによる相互チェック体制と機械検査の追加により品質管理は成功し、その運用ノウハウ自体が販売商品となった。
+
+- **ソース**: [Zenn claude](https://zenn.dev/jfp_mesh/articles/pup-100-dollar-challenge-postmortem)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, prompt
 
 ---
 

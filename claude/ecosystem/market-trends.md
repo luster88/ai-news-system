@@ -5,11 +5,12 @@ subcategory: market-trends
 tags:
 - claude-code
 - cowork
+- cursor
 - performance
 - pricing
 - 新機能
 date: '2026-04-03'
-updated: '2026-08-22'
+updated: '2026-11-06'
 sources:
 - url: https://qiita.com/kotauchisunsun/items/ab78bb338500b4c71103
   title: Claude Codeの首位陥落。CodexがシェアNo.1へ。 ～データで見る2026年3月のAI Codingの動向まとめ～
@@ -24,12 +25,28 @@ sources:
 - url: https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates
   title: OpenAI is gaining on Anthropic with business users, new data indicates
   date: '2026-08-22'
+- url: https://the-decoder.com/meta-buys-ai-coding-startup-conductor-as-big-tech-races-to-lock-in-developers
+  title: Meta buys AI coding startup Conductor as big tech races to lock in developers
+  date: '2026-11-06'
 ---
 
 
 
 
+
 # Market Trends
+
+---
+
+## 2026-11-06
+
+### Meta buys AI coding startup Conductor as big tech races to lock in developers
+
+MetaがAIコーディングスタートアップのConductorを買収。複数のAIコーディングエージェントを同時制御できるツールで、開発者を自社プラットフォームに囲い込む戦略の一環。AnthropicのClaude Codeが年換算25億ドル超の売上を記録したことで、AIコーディングツール市場の価値が証明された。同日OpenAIもPierre Computerの買収を発表し、SpaceXは8月にCursorを600億ドルで買収済み。大手テック企業による開発者ツール獲得競争が激化している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/meta-buys-ai-coding-startup-conductor-as-big-tech-races-to-lock-in-developers)
+- **重要度**: 7/10
+- **タグ**: claude-code, cursor, cowork
 
 ---
 

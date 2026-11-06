@@ -7,13 +7,14 @@ tags:
 - claude-code
 - cowork
 - cursor
+- mac
 - mcp
 - performance
 - setup
 - windows
 - 新機能
 date: '2026-03-25'
-updated: '2026-11-05'
+updated: '2026-11-06'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -167,6 +168,9 @@ sources:
 - url: https://ai-heartland.com/agent/terminal-mac
   title: terminal-mac徹底解説｜ターミナルに“実macOSのVM”を建ててAIエージェントが操作するOSS
   date: '2026-11-05'
+- url: https://qiita.com/twelvetonelab/items/318fe2c26c93a6f35368
+  title: Claude Code への修正指示を「画面に描いた印」で出す手順（MCP でつなぐ Mac アプリ）
+  date: '2026-11-06'
 ---
 
 
@@ -214,7 +218,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-11-06
+
+### Claude Code への修正指示を「画面に描いた印」で出す手順（MCP でつなぐ Mac アプリ）
+
+Mac向けMCPサーバー「SKETCHTALK」を使い、Claude Codeに修正指示を画面上に描いた印（丸・四角・矢印・線・文字）で伝える方法を紹介。デザイナー視点で「直す場所を言葉で説明する手間」を削減する目的で開発された。プレビューは操作可能な状態を保ち、印ごとにClaudeが応答し進捗を追跡できる。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/twelvetonelab/items/318fe2c26c93a6f35368)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, mac
 
 ---
 

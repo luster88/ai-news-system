@@ -3,18 +3,36 @@ title: Benchmark Comparison
 category: ecosystem
 subcategory: benchmark-comparison
 tags:
+- cowork
 - opus
 - performance
 - pricing
 date: '2026-07-08'
-updated: '2026-07-08'
+updated: '2026-11-06'
 sources:
 - url: https://the-decoder.com/anthropics-claude-fable-5-dominates-new-industry-benchmarks-at-a-steep-premium
   title: Anthropic's Claude Fable 5 dominates new industry benchmarks at a steep premium
   date: '2026-07-08'
+- url: https://the-decoder.com/no-ai-agent-scores-above-12-percent-on-semianalysis-new-real-world-work-benchmark
+  title: No AI agent scores above 12 percent on SemiAnalysis' new real-world work
+    benchmark
+  date: '2026-11-06'
 ---
 
+
 # Benchmark Comparison
+
+---
+
+## 2026-11-06
+
+### No AI agent scores above 12 percent on SemiAnalysis' new real-world work benchmark
+
+SemiAnalysisが実際の業務環境でAIエージェントを評価する新ベンチマーク「GDPx」を発表。206タスクで最大8時間かけてSiemens NXなどの専門ソフトを操作させた結果、Claude Opus 5.5が12%でトップも全モデルが低スコア。Gemini 4 Carbonは10.9%ながら価格は3分の1。安全フィルター、タスクの非公開性、各社独自エージェントソフトによる不平等な条件などが批判されている。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/no-ai-agent-scores-above-12-percent-on-semianalysis-new-real-world-work-benchmark)
+- **重要度**: 7/10
+- **タグ**: opus, performance, cowork
 
 ---
 

@@ -3,13 +3,14 @@ title: Competitor News
 category: ecosystem
 subcategory: competitor-news
 tags:
+- claude-code
 - copilot
 - cowork
 - opus
 - performance
 - pricing
 date: '2026-08-13'
-updated: '2026-10-21'
+updated: '2026-11-06'
 sources:
 - url: https://the-decoder.com/gemini-3-7-flash-lands-with-coding-gains-and-undercuts-its-three-week-old-predecessors-price-by-50
   title: Gemini 3.7 Flash lands with coding gains and undercuts its three-week-old
@@ -27,12 +28,28 @@ sources:
   title: Deepseek open-sources the inference engine that powers its fastest and cheapest
     AI model
   date: '2026-10-21'
+- url: https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027
+  title: OpenAI president Greg Brockman says company could be IPO ready in 2027
+  date: '2026-11-06'
 ---
 
 
 
 
+
 # Competitor News
+
+---
+
+## 2026-11-06
+
+### OpenAI president Greg Brockman says company could be IPO ready in 2027
+
+OpenAI の共同創業者 Greg Brockman が、2027年のIPO準備完了を示唆。企業向け収益が急成長し、現在は総収益の過半数を占める。2026年前半は苦戦したものの、第3四半期に年換算収益が70%成長。Anthropic の Claude Code が優位だったエージェント型コーディング分野でも巻き返しを図っている。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027)
+- **重要度**: 4/10
+- **タグ**: claude-code, cowork, pricing
 
 ---
 

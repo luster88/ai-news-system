@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-01'
-updated: '2026-10-17'
+updated: '2026-11-06'
 sources:
 - url: https://zenn.dev/yuzzzn/articles/45626e1ab08e3c
   title: AIコーディングエージェントをセキュアに使うためのハーネス設計
@@ -51,6 +51,9 @@ sources:
 - url: https://zenn.dev/atsushi_apps/articles/ai-agent-guardrails-indie-dev
   title: AIエージェントに「やらせないこと」をどう止めているか ── 個人開発の現場のセキュリティ対策
   date: '2026-10-17'
+- url: https://qiita.com/CircleCIJapan/items/00c07ba3c040a8d2e84d
+  title: Claude Code のコミット前フックで TruffleHog を実行し、シークレット入りのコミットを止める
+  date: '2026-11-06'
 ---
 
 
@@ -65,7 +68,20 @@ sources:
 
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-11-06
+
+### Claude Code のコミット前フックで TruffleHog を実行し、シークレット入りのコミットを止める
+
+Claude Code のコミット前フックを使い、TruffleHog でシークレット検出を自動化する手順を解説。AIエージェントが API キーを直書きしたコードをコミットする前に検査し、終了コード2を返すことでコミットを中止させる。Git の pre-commit フックとの併用方法も紹介し、人手でのコミットも保護できる。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/CircleCIJapan/items/00c07ba3c040a8d2e84d)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

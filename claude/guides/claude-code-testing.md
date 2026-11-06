@@ -6,10 +6,11 @@ tags:
 - claude-code
 - cowork
 - mcp
+- prompt
 - setup
 - 新機能
 date: '2026-07-19'
-updated: '2026-11-03'
+updated: '2026-11-06'
 sources:
 - url: https://qiita.com/peka2/items/9ce150b3b480516fc16e
   title: Claude Code に iOSアプリの E2Eテスト までやらせるようにした（iOSシミュレータ + AXe）
@@ -26,13 +27,29 @@ sources:
 - url: https://zenn.dev/libelab/articles/claude-company-day6
   title: Claudeを社員にした1人会社【Day 6】66万通りを全部回した：AI社員が書いた診断ロジックをテストで確かめる
   date: '2026-11-03'
+- url: https://qiita.com/ogasawar-offgrid/items/66a98c54fd9520f8ddb2
+  title: テストデータ作成でわかったAIの弱点
+  date: '2026-11-06'
 ---
 
 
 
 
 
+
 # Claude Code Testing
+
+---
+
+## 2026-11-06
+
+### テストデータ作成でわかったAIの弱点
+
+Claude Code でテストデータを作成する際の4つの弱点と対策を実例で解説。AIは「壊れないデータ」を作りがちで、重複データや項目の組み合わせパターンの抜け、接続先DBの違いに気づきにくい。「何を壊したいか」を明示し、実データとの差分確認が重要。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/ogasawar-offgrid/items/66a98c54fd9520f8ddb2)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt
 
 ---
 

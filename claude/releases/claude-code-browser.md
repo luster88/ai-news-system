@@ -14,7 +14,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-12'
-updated: '2026-11-02'
+updated: '2026-11-06'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -119,6 +119,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/83875a7189724b35bd91
   title: Claude Code v2.1.311〜v2.1.316｜ultrathink でそのターンだけ xhigh effort に｜週刊Changelog解説
   date: '2026-11-02'
+- url: https://qiita.com/Sidejob/items/045135c140fe920b0705
+  title: Claude Code v2.1.318——無人実行とネットワークホームの安定性が上がった5つの修正
+  date: '2026-11-06'
 ---
 
 
@@ -148,7 +151,20 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-11-06
+
+### Claude Code v2.1.318——無人実行とネットワークホームの安定性が上がった5つの修正
+
+Claude Code v2.1.318のリリースノート解説。無人実行時にidle compactionが会話を破壊する問題、--continueでセッションが消失する問題、ネットワークホーム環境での設定ファイル競合問題など、エンタープライズ環境での安定性に関わる5つの重要な修正が含まれる。特に長時間セッションや無人バッチ処理での信頼性が向上した。
+
+- **ソース**: [Qiita claude](https://qiita.com/Sidejob/items/045135c140fe920b0705)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

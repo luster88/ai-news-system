@@ -14,7 +14,7 @@ tags:
 - setup
 - sonnet
 date: '2026-04-03'
-updated: '2026-10-25'
+updated: '2026-11-06'
 sources:
 - url: https://zenn.dev/heki1224/articles/b849cc85a330aa
   title: Claude Codeで”トークン破産”しないためのコスト最適化とコンテキスト防衛術
@@ -75,6 +75,9 @@ sources:
 - url: https://qiita.com/araom/items/3d026f2df58c7328aa74
   title: ランチ明けの「続きやって」が一番高い。Claude Code のキャッシュは 1 時間で切れる
   date: '2026-10-25'
+- url: https://zenn.dev/wataru823/articles/747e24518d22d9
+  title: OpenCode Go × dshで月$10 — Opus 5.5で計画し、DeepSeek V4.1 Flashに大量実行させる
+  date: '2026-11-06'
 ---
 
 
@@ -94,7 +97,20 @@ sources:
 
 
 
+
 # Cost Optimization
+
+---
+
+## 2026-11-06
+
+### OpenCode Go × dshで月$10 — Opus 5.5で計画し、DeepSeek V4.1 Flashに大量実行させる
+
+Opus 5.5で計画を立て、OpenCode Go（月$10）のDeepSeek V4.1 FlashをDeepSeek Harness（dsh）経由で実行部隊として活用するコスト最適化戦略を解説。高価なモデルは判断が必要な部分のみに使い、大量の実装・調査・テストは安価なモデルに任せる。FrontierCS 2ベンチマークではOpus 5.5が優位だが、API費用は約187倍の差があるため、タスクの性質に応じてモデルを使い分けることで月$10のサブスクで効率的な開発が可能になる。
+
+- **ソース**: [Zenn claude](https://zenn.dev/wataru823/articles/747e24518d22d9)
+- **重要度**: 6/10
+- **タグ**: opus, pricing, cowork
 
 ---
 
