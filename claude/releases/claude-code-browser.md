@@ -14,7 +14,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-12'
-updated: '2026-11-06'
+updated: '2026-11-07'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -122,6 +122,12 @@ sources:
 - url: https://qiita.com/Sidejob/items/045135c140fe920b0705
   title: Claude Code v2.1.318——無人実行とネットワークホームの安定性が上がった5つの修正
   date: '2026-11-06'
+- url: https://qiita.com/NaokiIshimura/items/4884c18ed0efc432edc9
+  title: Claude Code 開発者が注目している5つのアップデート（v2.1.317 - v2.1.319）
+  date: '2026-11-07'
+- url: https://qiita.com/NaokiIshimura/items/f19ae481117018a64e67
+  title: Claude Code v2.1.317 - v2.1.319 リリースノートまとめ
+  date: '2026-11-07'
 ---
 
 
@@ -152,7 +158,50 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-11-07
+
+### Claude Code 開発者が注目している5つのアップデート（v2.1.317 - v2.1.319）
+
+Claude Code v2.1.317-v2.1.319の重要アップデートを5つ解説。無人運用時の権限プロンプト回避設定、Bashパーミッションのセキュリティ修正、MCPタスクのバックグラウンド実行対応、auto modeのサーバー側チェック強化など、実務への影響が大きい変更点を詳説。特にセキュリティ面では複数の権限チェックバイパス問題が修正され、安全性が向上。
+
+- **ソース**: [Qiita claude](https://qiita.com/NaokiIshimura/items/4884c18ed0efc432edc9)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+### Claude Code v2.1.317 - v2.1.319 リリースノートまとめ
+
+Claude Code v2.1.317-v2.1.319のリリースノート。MCPタスクのターミナル対応、permissions.denyInsteadOfPromptingによる無人実行向け権限制御、CLAUDE_CODE_DISABLE_FEATURE_FLAGSの追加が含まれる。auto modeの挙動変更やBashパーミッション回避のセキュリティ修正も多数実施。サブエージェント機能の改善、/claude-api latency-optimizeコマンド、/usageでの支出表示など、開発者向けの利便性向上も図られている。
+
+- **ソース**: [Qiita claude](https://qiita.com/NaokiIshimura/items/f19ae481117018a64e67)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, mcp
+
+---
+
+### Claude Code 開発者が注目している5つのアップデート（v2.1.317 - v2.1.319）
+
+Claude Code v2.1.317～v2.1.319の重要なアップデートを解説。無人運用向けの権限プロンプト自動拒否機能、Bashパーミッションのセキュリティ修正、MCP tasksのバックグラウンド実行対応、auto modeのサーバー側チェック変更が含まれる。特にセキュリティ修正とゲートウェイ経由環境での挙動変更は実務への影響が大きい。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/NaokiIshimura/items/4884c18ed0efc432edc9)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, mcp
+
+---
+
+### Claude Code v2.1.317 - v2.1.319 リリースノートまとめ
+
+Claude Code v2.1.317〜v2.1.319のリリースノート。MCP tasksのターミナル対応、permissions.denyInsteadOfPromptingによる無人実行向け権限制御、CLAUDE_CODE_DISABLE_FEATURE_FLAGSの追加が主な変更点。auto modeの挙動変更やBashパーミッション回避のセキュリティ修正も含まれる。サブエージェント機能の改善、/claude-api latency-optimizeコマンド、/usageでの支出表示など、開発者向けの機能強化が多数実施された。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/NaokiIshimura/items/f19ae481117018a64e67)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 

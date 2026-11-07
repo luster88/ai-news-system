@@ -4,11 +4,12 @@ category: ecosystem
 subcategory: ipo-valuation
 tags:
 - cowork
+- performance
 - pricing
 - release
 - 新機能
 date: '2026-08-11'
-updated: '2026-08-27'
+updated: '2026-11-07'
 sources:
 - url: https://the-decoder.com/anthropics-planned-mega-ipo-faces-investor-skepticism-over-chinese-rivals-and-political-headwinds
   title: Anthropic's planned mega-IPO faces investor skepticism over Chinese rivals
@@ -18,10 +19,26 @@ sources:
   title: Anthropic sees a market opportunity of more than $30 trillion ahead of its
     IPO
   date: '2026-08-27'
+- url: https://the-decoder.com/anthropics-1-5-trillion-ipo-hits-resistance-as-investors-balk-at-valuation
+  title: Anthropic's $1.5 trillion IPO hits resistance as investors balk at valuation
+  date: '2026-11-07'
 ---
 
 
+
 # Ipo Valuation
+
+---
+
+## 2026-11-07
+
+### Anthropic's $1.5 trillion IPO hits resistance as investors balk at valuation
+
+AnthropicのIPO計画が投資家の抵抗に直面している。当初2兆ドルを目指していた企業価値評価は1.5兆ドルに下方修正されたが、投資家はさらに1兆ドルへの引き下げを要求。赤字経営とキャッシュバーン、10月の収益データ不足、中間選挙後のテック株売り圧力が背景にある。IPO延期の可能性が浮上し、AI業界全体への影響が懸念されている。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropics-1-5-trillion-ipo-hits-resistance-as-investors-balk-at-valuation)
+- **重要度**: 9/10
+- **タグ**: pricing, performance, 新機能
 
 ---
 

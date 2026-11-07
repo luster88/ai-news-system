@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-11-05'
+updated: '2026-11-07'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -111,6 +111,9 @@ sources:
 - url: https://the-decoder.com/anthropics-text-watermark-is-easy-to-bypass-on-several-older-claude-models
   title: Anthropic's text watermark is easy to bypass on several older Claude models
   date: '2026-11-05'
+- url: https://the-decoder.com/anthropic-adds-bank-account-access-to-claude-so-users-can-track-their-spending
+  title: Anthropic adds bank account access to Claude so users can track their spending
+  date: '2026-11-07'
 ---
 
 
@@ -135,7 +138,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-11-07
+
+### Anthropic adds bank account access to Claude so users can track their spending
+
+Anthropic が Claude に銀行口座接続機能「Personal Finance」を追加。Plaid 経由で読み取り専用アクセスを提供し、ユーザーは支出分析や収支確認が可能に。米国の Pro/Max/Ultra サブスクライバー向けベータ版として提供開始。会話データはモデル訓練に使用されず、将来的には金融アドバイザーとの連携も計画。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-adds-bank-account-access-to-claude-so-users-can-track-their-spending)
+- **重要度**: 8/10
+- **タグ**: 新機能, claude-api, release
 
 ---
 

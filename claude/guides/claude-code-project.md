@@ -6,11 +6,12 @@ tags:
 - claude-code
 - cowork
 - opus
+- performance
 - setup
 - windows
 - 新機能
 date: '2026-05-11'
-updated: '2026-10-30'
+updated: '2026-11-07'
 sources:
 - url: https://zenn.dev/schhrcat/articles/d2ba511ddf35a1
   title: ClaudeCodeでviライクエディタ「FoxEditor」を作ってみた#1
@@ -32,6 +33,10 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1xigpgr/we_used_claude_to_get_a_full_ps2_emulator_running
   title: 'We used Claude to get a full PS2 emulator running in a browser tab: TabStationToo'
   date: '2026-10-30'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xpij9t/i_built_a_sailing_sim_with_claude_code_and_made
+  title: I built a sailing sim with Claude Code and made the frontier models race
+    each other in it
+  date: '2026-11-07'
 ---
 
 
@@ -39,7 +44,20 @@ sources:
 
 
 
+
 # Claude Code Project
+
+---
+
+## 2026-11-07
+
+### I built a sailing sim with Claude Code and made the frontier models race each other in it
+
+ユーザーが Claude Code を使用してセーリングシミュレーターを構築し、主要な AI モデル（Opus、GPT-6 Astra、Gemini 4 Argon）を競争させた事例。Claude Code がボート物理演算、風、3D 水面などほぼすべてを実装。レースでは各モデルが5秒ごとに状態データを受け取り操舵を決定する仕組み。Gemini 4 Argon が勝利し、コストも Astra の5分の1（$0.78 vs $3.58）と効率的だった。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xpij9t/i_built_a_sailing_sim_with_claude_code_and_made)
+- **重要度**: 6/10
+- **タグ**: claude-code, opus, performance
 
 ---
 

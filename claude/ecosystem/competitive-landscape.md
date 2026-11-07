@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-23'
-updated: '2026-10-30'
+updated: '2026-11-07'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -97,6 +97,9 @@ sources:
   title: OpenAI doubles usage limits on Pro plans as competition with Anthropic heats
     up
   date: '2026-10-30'
+- url: https://the-decoder.com/perplexity-now-has-its-own-always-on-ai-agent
+  title: Perplexity now has its own always-on AI agent
+  date: '2026-11-07'
 ---
 
 
@@ -120,7 +123,20 @@ sources:
 
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-11-07
+
+### Perplexity now has its own always-on AI agent
+
+Perplexityが常時稼働型AIエージェント「Teammates」を発表。各エージェントは独自の仮想マシンで動作し、継続的なプロジェクトを自律的に処理する。Max プラン（月額200ドル）で利用可能で、SpaceX、Meta、OpenAI、Anthropicに続く形となる。Perplexityの年間収益は8月時点で7億5000万ドルを超えている。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/perplexity-now-has-its-own-always-on-ai-agent)
+- **重要度**: 6/10
+- **タグ**: 新機能, pricing, cowork
 
 ---
 

@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-11-06'
+updated: '2026-11-07'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -462,6 +462,9 @@ sources:
 - url: https://zenn.dev/jfp_mesh/articles/pup-100-dollar-challenge-postmortem
   title: Claude Code に $100 分のクレジットを渡して「稼いで」と頼んだら、26 日後の売上は 0 円だった
   date: '2026-11-06'
+- url: https://zenn.dev/fightingpapa00/articles/claude-code-skill-board-hooks
+  title: 作った Claude Code スキルを忘れないための「スキルボード」とフック
+  date: '2026-11-07'
 ---
 
 
@@ -574,7 +577,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-11-07
+
+### 作った Claude Code スキルを忘れないための「スキルボード」とフック
+
+Claude Code で自作スキルが増えると管理が難しくなる問題を、Markdown ベースの「スキルボード」とフックスクリプトで解決する方法を紹介。PostToolUse や SessionStart のフックを活用し、スキルの使用履歴・回数を自動記録し、未登録や削除済みスキルを検知する仕組みを構築した実践例。
+
+- **ソース**: [Zenn claude](https://zenn.dev/fightingpapa00/articles/claude-code-skill-board-hooks)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

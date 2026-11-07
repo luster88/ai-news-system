@@ -14,7 +14,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-25'
-updated: '2026-11-06'
+updated: '2026-11-07'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -171,6 +171,9 @@ sources:
 - url: https://qiita.com/twelvetonelab/items/318fe2c26c93a6f35368
   title: Claude Code への修正指示を「画面に描いた印」で出す手順（MCP でつなぐ Mac アプリ）
   date: '2026-11-06'
+- url: https://ai-heartland.com/mcp/scrapling
+  title: Scraplingとは｜取得・回避・パース・クロールを1つにしたPythonスクレイピング基盤を実測、MCPでAIからも使う
+  date: '2026-11-07'
 ---
 
 
@@ -219,7 +222,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-11-07
+
+### Scraplingとは｜取得・回避・パース・クロールを1つにしたPythonスクレイピング基盤を実測、MCPでAIからも使う
+
+Scraplingは、requests+BeautifulSoup+Playwrightの寄せ集めを1つにまとめたPythonスクレイピングフレームワーク。取得・ステルスブラウザ・パース・並行クロールを統合し、page.markdown()でLLM向けに整形可能。MCPサーバとAgent SkillでClaude等のAIエージェントから呼び出せる点が特徴で、2026年のAIエージェント活用に適した設計となっている。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/mcp/scrapling)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-api, setup
 
 ---
 
