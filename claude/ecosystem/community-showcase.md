@@ -15,7 +15,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-29'
-updated: '2026-10-28'
+updated: '2026-11-08'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6of32/i_am_fully_addicted_to_building_dumb_little_ai
   title: I am fully addicted to building dumb little AI web apps. I love it.
@@ -78,6 +78,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1xh73xd/tried_claude_blender_for_the_first_time_today
   title: Tried Claude + Blender for the first time today ❤️
   date: '2026-10-28'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xqd5f3/discover_the_internals_of_your_body_with_ai
+  title: Discover the internals of /your/ body with AI
+  date: '2026-11-08'
 ---
 
 
@@ -95,7 +98,20 @@ sources:
 
 
 
+
 # Community Showcase
+
+---
+
+## 2026-11-08
+
+### Discover the internals of /your/ body with AI
+
+Claude Opus 3.5を活用して人体の3D解剖学習アプリ「Bodylang」を開発したコミュニティプロジェクト。Opusが3DモデリングとBlenderパイプラインのコーディングをほぼ全て担当し、臓器・筋肉・血管を対話的に可視化。Claude Codeサブスクリプションで動作し、主にHaiku/Sonnetを使用して低コストで実行可能。オープンソースとして公開されている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xqd5f3/discover_the_internals_of_your_body_with_ai)
+- **重要度**: 6/10
+- **タグ**: opus, claude-code, cowork
 
 ---
 

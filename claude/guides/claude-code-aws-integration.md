@@ -5,9 +5,10 @@ subcategory: claude-code-aws-integration
 tags:
 - claude-code
 - setup
+- vscode
 - 新機能
 date: '2026-05-18'
-updated: '2026-10-31'
+updated: '2026-11-08'
 sources:
 - url: https://qiita.com/daitak/items/daf289a8e75e0bd4044d
   title: Agent Toolkit for AWS を使ってClaude CodeからEKSクラスタを作成してみる!
@@ -15,10 +16,26 @@ sources:
 - url: https://qiita.com/emptybaba/items/ef9370aa4f9038aeecd9
   title: 一人でできることの範囲が、変わってしまった｜個人開発SaaS「fuSen」第十七話
   date: '2026-10-31'
+- url: https://ai-heartland.com/explain/claude-code-output-style
+  title: Claude Code出力スタイルの使い方｜Conciseで応答が短くなる仕組みと設定の落とし穴
+  date: '2026-11-08'
 ---
 
 
+
 # Claude Code Aws Integration
+
+---
+
+## 2026-11-08
+
+### Claude Code出力スタイルの使い方｜Conciseで応答が短くなる仕組みと設定の落とし穴
+
+Claude Codeの出力スタイル機能（Concise）を使うと応答が約36%短くなる。コマンドで設定可能だが、settings.jsonに手動で書く場合は大文字小文字を厳密に区別する必要がある（"concise"は無効で"Concise"が正しい）。設定は.claude/settings.local.jsonに保存され、この端末のみで有効。重要な警告やエラーは省略されない設計。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/claude-code-output-style)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, vscode
 
 ---
 

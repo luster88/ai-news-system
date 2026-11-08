@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-01'
-updated: '2026-11-06'
+updated: '2026-11-08'
 sources:
 - url: https://zenn.dev/yuzzzn/articles/45626e1ab08e3c
   title: AIコーディングエージェントをセキュアに使うためのハーネス設計
@@ -54,6 +54,9 @@ sources:
 - url: https://qiita.com/CircleCIJapan/items/00c07ba3c040a8d2e84d
   title: Claude Code のコミット前フックで TruffleHog を実行し、シークレット入りのコミットを止める
   date: '2026-11-06'
+- url: https://zenn.dev/ojisan_ai_lab/articles/claude-code-block-writes-outside-20261108
+  title: Claude Codeは作業フォルダの外を書き換える？ 新設定1行で、4つのモードとも Write は止まりました
+  date: '2026-11-08'
 ---
 
 
@@ -69,7 +72,20 @@ sources:
 
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-11-08
+
+### Claude Codeは作業フォルダの外を書き換える？ 新設定1行で、4つのモードとも Write は止まりました
+
+Claude Code v2.1.314で追加された新設定 permissions.blockWritesOutsideWorkingDirectories により、作業フォルダ外へのファイル書き込みを防止できるようになった。.claude/settings.json に1行追加するだけで、Write・Edit・NotebookEditの3つのツールが全権限モードで作業フォルダ外への書き込みを拒否する。ただしシェルコマンド（Bash等）経由の書き込みは制限されないため、完全な保護にはサンドボックスの併用が必要。
+
+- **ソース**: [Zenn claude](https://zenn.dev/ojisan_ai_lab/articles/claude-code-block-writes-outside-20261108)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

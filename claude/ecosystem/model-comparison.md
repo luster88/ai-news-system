@@ -5,6 +5,7 @@ subcategory: model-comparison
 tags:
 - claude-api
 - claude-code
+- copilot
 - cowork
 - haiku
 - opus
@@ -14,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-24'
-updated: '2026-11-04'
+updated: '2026-11-08'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -98,6 +99,9 @@ sources:
   title: I gave every Claude model the exact same prompt since July 2025. 13 models,
     14 months, here's the evolution
   date: '2026-11-04'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xqfqjl/as_a_gpt_user_i_used_opus_55_once_and_i_feel
+  title: As a GPT user, I used Opus 5.5 once and i feel incredibly lied to by benchmarks
+  date: '2026-11-08'
 ---
 
 
@@ -124,7 +128,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-11-08
+
+### As a GPT user, I used Opus 5.5 once and i feel incredibly lied to by benchmarks
+
+GPTユーザーがOpus 3.5を初めて使用し、ベンチマークスコアでは僅差なのに実用面で圧倒的な差を感じたという体験談。複雑なワークフロー、マルチモーダル推論、データ分析において、Opusは論理の穴を指摘し、1週間かかる作業を高品質なアーティファクトとして即座に提供。Astraと比較して簡潔で的確な回答が得られ、ベンチマークと実際の性能差に驚いている。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xqfqjl/as_a_gpt_user_i_used_opus_55_once_and_i_feel)
+- **重要度**: 6/10
+- **タグ**: opus, performance, copilot
 
 ---
 

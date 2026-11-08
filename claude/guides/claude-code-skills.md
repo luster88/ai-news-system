@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-10-03'
+updated: '2026-11-08'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -94,6 +94,9 @@ sources:
 - url: https://qiita.com/tasklog/items/af688051f24d5e5db21b
   title: Claude Code Skills 39選【2026年版】── 公式19個＋世界で人気のスキルを日本語で全部まとめた
   date: '2026-10-03'
+- url: https://qiita.com/joinclass/items/3d05264c7d44f84b52f5
+  title: Claude Code の Skills が増えすぎて AI が選べなくなる問題 — 命名規則と description の設計
+  date: '2026-11-08'
 ---
 
 
@@ -119,7 +122,20 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-11-08
+
+### Claude Code の Skills が増えすぎて AI が選べなくなる問題 — 命名規則と description の設計
+
+Claude Code で Skills が増えると AI が適切なスキルを選択できなくなる問題について、実運用での解決策を紹介。動詞-対象の命名規則、description への担当範囲の明記、入力→出力フローの記載が重要。実際の lint スクリプトと命名規則チェックの自動化手法も提供されており、13個のスキルを運用する企業の実践的なノウハウとなっている。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/joinclass/items/3d05264c7d44f84b52f5)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

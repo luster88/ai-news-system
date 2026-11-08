@@ -9,7 +9,7 @@ tags:
 - performance
 - 新機能
 date: '2026-07-14'
-updated: '2026-08-07'
+updated: '2026-11-08'
 sources:
 - url: https://qiita.com/sorabcjanne1/items/8f3a354ff073ed69aac2
   title: Claude Codeにプロダクションコードを全チェックさせたら、金銭バグ4件を含む15件の不具合を自動修正してくれた話
@@ -20,11 +20,27 @@ sources:
 - url: https://qiita.com/tomada/items/399c6964ea48b6c9e93e
   title: Claude Code /code-review の effort は low で足りる？low/high を3回ずつ実測した検出率の差
   date: '2026-08-07'
+- url: https://qiita.com/kai_kou/items/460bc72fdf72345767bf
+  title: code-reviewの背景実行はv2.1.300でどう変わったか、変遷と実測
+  date: '2026-11-08'
 ---
 
 
 
+
 # Claude Code Review
+
+---
+
+## 2026-11-08
+
+### code-reviewの背景実行はv2.1.300でどう変わったか、変遷と実測
+
+Claude Code の /code-review コマンドがv2.1.218でバックグラウンド実行方式に変更されて以降、v2.1.300までの約80バージョンで実行方式・自動起動・出力形式・管理コマンドが段階的に改善されてきた変遷を詳述。v2.1.218で問題だった「修正確認質問で応答待ちになる」落とし穴がv2.1.300では解消され、19-25秒で完了するようになったことを実測データで確認。背景セッション管理コマンド（claude agents / claude logs）の使い方と、PR運用への組み込み時の注意点を解説している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kai_kou/items/460bc72fdf72345767bf)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能
 
 ---
 

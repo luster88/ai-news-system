@@ -9,7 +9,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-31'
-updated: '2026-09-27'
+updated: '2026-11-08'
 sources:
 - url: https://qiita.com/makoto-ogata@github/items/641a26f0d5d40aa1c0c4
   title: Claude Codeのsettings.jsonの設定をしよう
@@ -29,13 +29,29 @@ sources:
 - url: https://qiita.com/sescore/items/70cccbb575e6f5d02508
   title: Claude Code実践Tips15選：フリーランスエンジニアの市場価値を上げる設定術
   date: '2026-09-27'
+- url: https://zenn.dev/zundamon_tools/articles/claude-news-weekly-2026-11-08
+  title: Claude Code 週間ニュース（11/1〜11/7）：deny の Grep(パス) は無効・hook が Monitor にも走る
+  date: '2026-11-08'
 ---
 
 
 
 
 
+
 # Claude Code Settings
+
+---
+
+## 2026-11-08
+
+### Claude Code 週間ニュース（11/1〜11/7）：deny の Grep(パス) は無効・hook が Monitor にも走る
+
+Claude Code の設定に関する重要な仕様変更と注意点をまとめた週間ニュース。deny設定でGrep(パス)が無効であること、Bashのhookが Monitor ツールでも実行されること、auto mode の hook、新機能（ログイン期限、/btw、VS Code拡張）、API の message threads（beta）と電子透かし対象追加、組織向けセキュリティ機能などが報告されている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/zundamon_tools/articles/claude-news-weekly-2026-11-08)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 
