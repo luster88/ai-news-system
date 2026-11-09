@@ -15,7 +15,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-03-29'
-updated: '2026-11-08'
+updated: '2026-11-09'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6of32/i_am_fully_addicted_to_building_dumb_little_ai
   title: I am fully addicted to building dumb little AI web apps. I love it.
@@ -81,6 +81,14 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1xqd5f3/discover_the_internals_of_your_body_with_ai
   title: Discover the internals of /your/ body with AI
   date: '2026-11-08'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xr4cd7/i_built_a_free_browser_tycoon_game_with_claude
+  title: 'I built a free browser tycoon game with Claude: secretly live in the ceiling
+    of a dying 2004 mall'
+  date: '2026-11-09'
+- url: https://the-decoder.com/andrej-karpathy-built-a-curated-video-platform-in-a-weekend-using-claude-and-20-years-of-hacker-news
+  title: Andrej Karpathy built a curated video platform in a weekend using Claude
+    and 20 years of Hacker News
+  date: '2026-11-09'
 ---
 
 
@@ -99,7 +107,30 @@ sources:
 
 
 
+
 # Community Showcase
+
+---
+
+## 2026-11-09
+
+### I built a free browser tycoon game with Claude: secretly live in the ceiling of a dying 2004 mall
+
+開発者が Claude Opus 3.5 を使用してブラウザベースのタイクーンゲーム「Mall Bats」を構築。2004年の廃れたモールの天井に隠れ住むというユニークなコンセプトで、Claude がゲームコード、アイソメトリックレンダラー、クルーAI、アートパイプラインのほぼ全てを記述。トレーラーの制作や音楽合成も Claude が担当し、完全無料でブラウザでプレイ可能。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xr4cd7/i_built_a_free_browser_tycoon_game_with_claude)
+- **重要度**: 6/10
+- **タグ**: opus, cowork, claude-code
+
+---
+
+### Andrej Karpathy built a curated video platform in a weekend using Claude and 20 years of Hacker News
+
+Andrej Karpathy（Anthropic研究者）が週末にClaude Opus 5.5とClaude Codeを使用し、Hacker Newsの20年分・4300万件のコメントから厳選した6,454本の動画プラットフォーム「HackerTube」を構築。その後、わずか3分で47,000本の動画を扱う「TristanTube」も作成。データ分析からサーバーセットアップまでほぼすべてをClaude Codeに任せ、従来数週間かかっていたプロジェクトを数時間で完成させた。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/andrej-karpathy-built-a-curated-video-platform-in-a-weekend-using-claude-and-20-years-of-hacker-news)
+- **重要度**: 8/10
+- **タグ**: claude-code, opus, performance
 
 ---
 

@@ -10,7 +10,7 @@ tags:
 - setup
 - windows
 date: '2026-03-29'
-updated: '2026-08-31'
+updated: '2026-11-09'
 sources:
 - url: https://qiita.com/kan2530/items/fbac7254b3375a9fe690
   title: 【実体験】Claude Cowork（Windows）セットアップ時に仮想化が有効にできなかった話とBIOS設定での解決方法
@@ -27,13 +27,29 @@ sources:
 - url: https://zenn.dev/ouchidrill/articles/e4254d23cbaf9e
   title: Claude Desktop が「このファイルはほかのプログラムで使われています」で起動しない — 再起動せずに直す
   date: '2026-08-31'
+- url: https://qiita.com/takamatt_ai/items/d745c1c432add1d63590
+  title: Mac で使っている Claude Code のフックを Windows に持っていくと動かない所(python3・matcher の PowerShell・試しの入力はファイル経由・BOM)
+  date: '2026-11-09'
 ---
 
 
 
 
 
+
 # Setup Windows
+
+---
+
+## 2026-11-09
+
+### Mac で使っている Claude Code のフックを Windows に持っていくと動かない所(python3・matcher の PowerShell・試しの入力はファイル経由・BOM)
+
+MacのClaude Codeで使用していたPreToolUseフックをWindows環境に移行する際の4つの注意点を解説。python3コマンドの違い、PowerShell対応のためのmatcher設定、標準入力の渡し方、BOMの扱いについて、実際の動作確認結果をもとに具体的な対処法を説明している。フックの失敗は静かに発生するため、設定ミスに気づかず危険なコマンドが実行される可能性がある。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/takamatt_ai/items/d745c1c432add1d63590)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, windows
 
 ---
 

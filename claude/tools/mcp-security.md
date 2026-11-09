@@ -8,7 +8,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-28'
-updated: '2026-06-10'
+updated: '2026-11-09'
 sources:
 - url: https://zenn.dev/masuda_masuo/articles/2026-05-28-mcp-launcher
   title: MCPのクレデンシャルをconfigから追い出す：OSキーストアで一元管理するmcp-launcher
@@ -22,11 +22,27 @@ sources:
 - url: https://qiita.com/jimiaki7/items/606da73f4ea0045ee696
   title: Claude CodeにMCPサーバーを繋ぐ前に、1コマンドで安全診断する「Aster Guard MCP」を作った
   date: '2026-06-10'
+- url: https://ai-heartland.com/security/hexstrike-ai
+  title: HexStrike AIとは｜AIに150のセキュリティツールを渡すMCPサーバの中身と危うさ
+  date: '2026-11-09'
 ---
 
 
 
+
 # Mcp Security
+
+---
+
+## 2026-11-09
+
+### HexStrike AIとは｜AIに150のセキュリティツールを渡すMCPサーバの中身と危うさ
+
+HexStrike AIは150以上のセキュリティツールをAIに使わせるMCPサーバだが、APIサーバに認証がなく0.0.0.0で待ち受け、任意コマンド実行のエンドポイントも持つため、設置場所を誤ると重大なセキュリティリスクとなる。専用VM・コンテナでの隔離実行と、ファイアウォールでのポート8888の遮断が必須。MCP経由でセキュリティツールを呼べる便利さの裏に、深刻な脆弱性が潜んでいる。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/security/hexstrike-ai)
+- **重要度**: 8/10
+- **タグ**: mcp
 
 ---
 

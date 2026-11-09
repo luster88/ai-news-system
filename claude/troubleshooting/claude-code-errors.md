@@ -10,7 +10,7 @@ tags:
 - setup
 - vscode
 date: '2026-06-05'
-updated: '2026-11-01'
+updated: '2026-11-09'
 sources:
 - url: https://qiita.com/natume_nat/items/76fe608d570caebb4f4c
   title: Claude Codeで「The model's tool call could not be parsed」エラーを回避する方法
@@ -49,6 +49,10 @@ sources:
   title: 'Claude Code で "API Error: Rate limit reached" と "Usage credits required
     for 1M context" が出たときの直し方（使用率が低いのに止まる場合）'
   date: '2026-11-01'
+- url: https://qiita.com/homhom44/items/9d35b8c4aa0461043200
+  title: Claude Code で "Claude's response exceeded the 32000 output token maximum"
+    が出たときの直し方(CLAUDE_CODE_MAX_OUTPUT_TOKENS と分割指示)
+  date: '2026-11-09'
 ---
 
 
@@ -62,7 +66,20 @@ sources:
 
 
 
+
 # Claude Code Errors
+
+---
+
+## 2026-11-09
+
+### Claude Code で "Claude's response exceeded the 32000 output token maximum" が出たときの直し方(CLAUDE_CODE_MAX_OUTPUT_TOKENS と分割指示)
+
+Claude Code で「32000 出力トークン上限超過」エラーが発生した際の対処法を解説。まず `continue` で続きを出力させ、繰り返す場合は環境変数 `CLAUDE_CODE_MAX_OUTPUT_TOKENS` を上げるか、出力を小さな単位に分割して指示する方法を紹介。思考トークンも上限にカウントされる点や、モデルごとの上限値、非ストリーミング時の制限についても説明している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/homhom44/items/9d35b8c4aa0461043200)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 

@@ -14,7 +14,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-12'
-updated: '2026-11-07'
+updated: '2026-11-09'
 sources:
 - url: https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites
   title: Claude Code now has a built-in browser that lets the AI read, click, and
@@ -128,6 +128,9 @@ sources:
 - url: https://qiita.com/NaokiIshimura/items/f19ae481117018a64e67
   title: Claude Code v2.1.317 - v2.1.319 リリースノートまとめ
   date: '2026-11-07'
+- url: https://qiita.com/sakutto-panda/items/b46486a625bdc78ea4bb
+  title: Claude Code 2.1.309〜318まとめ：claude -pが黙って成功しなくなり、ultrathinkはxhighに
+  date: '2026-11-09'
 ---
 
 
@@ -159,7 +162,30 @@ sources:
 
 
 
+
 # Claude Code Browser
+
+---
+
+## 2026-11-09
+
+### Claude Code 2.1.309〜318まとめ：claude -pが黙って成功しなくなり、ultrathinkはxhighに
+
+Claude Code v2.1.309〜v2.1.318の更新では、`claude -p`コマンドの終了コード処理が改善され、失敗時に正しくエラーを返すようになった。cron/CI環境での無人実行の信頼性が向上。また、ultrathinktコマンドがOpus/Sonnet/Haiku 5.5でxhigh effortモードで動作するようになり、認証期限の事前検知機能も追加された。作業ディレクトリ外への書き込み制限など、セキュリティ面の強化も実施。
+
+- **ソース**: [Qiita claude](https://qiita.com/sakutto-panda/items/b46486a625bdc78ea4bb)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
+
+---
+
+### Claude Code 2.1.309〜318まとめ：claude -pが黙って成功しなくなり、ultrathinkはxhighに
+
+Claude Code v2.1.309〜v2.1.318では、claude -pコマンドの終了コード処理が大幅改善され、失敗時に正しくエラーを返すようになった。ultrathinkコマンドがxhigh effortで実行されるように変更され、Opus/Sonnet/Haiku 5.5およびFable 5.1で利用可能。認証周りではログイン期限の事前検知機能が追加され、claude auth statusやclaude -pの出力で期限切れ10日前から警告が表示される。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/sakutto-panda/items/b46486a625bdc78ea4bb)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 
