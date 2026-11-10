@@ -8,7 +8,7 @@ tags:
 - pricing
 - 新機能
 date: '2026-08-11'
-updated: '2026-09-07'
+updated: '2026-11-10'
 sources:
 - url: https://the-decoder.com/anthropic-signs-9-1-billion-data-center-deal-with-bitcoin-miner-riot-platforms
   title: Anthropic signs $9.1 billion data center deal with Bitcoin miner Riot Platforms
@@ -20,11 +20,26 @@ sources:
   title: Anthropic reportedly signs $517 billion in compute deals after Dario Amodei
     warned rivals about reckless risk
   date: '2026-09-07'
+- url: https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines
+  title: Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines
+  date: '2026-11-10'
 ---
 
 
 
+
 # Infrastructure Investment
+
+---
+
+## 2026-11-10
+
+### Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines
+
+Anthropicが34億ドルでCaterpillar製天然ガスタービンを購入し、最大1.7ギガワットの発電能力を確保。従来はSpaceXのxAIから計算能力をレンタルする方針だったが、AI業界の電力不足が深刻化し、タービンの納期が2030年代初頭まで延びている状況を受け、物理インフラへの直接投資に踏み切った。Google、Amazon、Microsoft、Metaなども同様に自社データセンター用の天然ガス発電所建設を発表しており、AI業界全体で電力確保競争が激化している。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines)
+- **重要度**: 8/10
 
 ---
 

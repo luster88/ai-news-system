@@ -3,12 +3,13 @@ title: Ai Safety Debate
 category: ecosystem
 subcategory: ai-safety-debate
 tags:
+- claude-api
 - cowork
 - opus
 - pricing
 - release
 date: '2026-09-17'
-updated: '2026-09-29'
+updated: '2026-11-10'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1winf9r/sales_pitch_of_the_century
   title: Sales pitch of the century.
@@ -20,11 +21,28 @@ sources:
   title: Every AI lab thinks it's the responsible one, and safety researcher Ryan
     Greenblatt says that's what keeps the arms race going
   date: '2026-09-29'
+- url: https://the-decoder.com/tencents-ai-chief-says-ai-bioweapons-are-coming-but-closing-off-models-isnt-the-answer
+  title: Tencent's AI chief says AI bioweapons are coming, but closing off models
+    isn't the answer
+  date: '2026-11-10'
 ---
 
 
 
+
 # Ai Safety Debate
+
+---
+
+## 2026-11-10
+
+### Tencent's AI chief says AI bioweapons are coming, but closing off models isn't the answer
+
+Tencent の AI 責任者が、AI による生物兵器開発が近い将来可能になると警告し、完全なオープンモデルも完全なクローズドモデルも単独では解決策にならないと主張。Anthropic の Claude などクローズドモデルの安全フィルターが防御分析を妨げた事例を挙げ、オープンとクローズドの中間的アプローチの必要性を訴えている。Anthropic CEO はオープンモデルのリスクを指摘し、安全メカニズムの強制が困難であることを懸念している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/tencents-ai-chief-says-ai-bioweapons-are-coming-but-closing-off-models-isnt-the-answer)
+- **重要度**: 6/10
+- **タグ**: claude-api
 
 ---
 

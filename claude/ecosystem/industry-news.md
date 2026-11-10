@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-18'
-updated: '2026-10-30'
+updated: '2026-11-10'
 sources:
 - url: https://the-decoder.com/anthropic-ceo-amodei-declares-there-is-no-end-to-the-rainbow-for-ai-scaling
   title: Anthropic CEO Amodei declares "there is no end to the rainbow" for AI scaling
@@ -62,6 +62,9 @@ sources:
 - url: https://zenn.dev/sugawara_ai/articles/ai-news-20261029
   title: Gemini 4 Carbonが1位、でもまだ使えない理由
   date: '2026-10-30'
+- url: https://techcrunch.com/2026/11/09/jensen-huang-pulls-out-of-elevenlabs-summit-amid-nvidia-controversy
+  title: Jensen Huang pulls out of ElevenLabs Summit amid Nvidia controversy
+  date: '2026-11-10'
 ---
 
 
@@ -75,7 +78,20 @@ sources:
 
 
 
+
 # Industry News
+
+---
+
+## 2026-11-10
+
+### Jensen Huang pulls out of ElevenLabs Summit amid Nvidia controversy
+
+Nvidia CEO Jensen Huangが個人的スキャンダルにより、ElevenLabs SummitやAnthropic CEO Forumなどの登壇予定をキャンセル。不倫の事実を認め、中国スパイとの関係疑惑についてNvidiaが調査を開始。AI業界全体に影響を与える可能性がある出来事として注目されている。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/11/09/jensen-huang-pulls-out-of-elevenlabs-summit-amid-nvidia-controversy)
+- **重要度**: 4/10
+- **タグ**: cowork, pricing
 
 ---
 

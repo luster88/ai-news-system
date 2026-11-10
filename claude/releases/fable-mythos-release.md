@@ -5,16 +5,33 @@ subcategory: fable-mythos-release
 tags:
 - claude-code
 - release
+- sonnet
 - 新機能
 date: '2026-06-11'
-updated: '2026-06-11'
+updated: '2026-11-10'
 sources:
 - url: https://qiita.com/kter/items/b6293c70e5e6a5453a36
   title: イベントまとめ] Code with Claude 2026 Tokyo — Fable 5 / Mythos 5 発表とエージェント開発の最前線
   date: '2026-06-11'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xs0dct/fable_52_just_landed
+  title: Fable 5.2 just landed.
+  date: '2026-11-10'
 ---
 
+
 # Fable Mythos Release
+
+---
+
+## 2026-11-10
+
+### Fable 5.2 just landed.
+
+Anthropic が Claude の新モデル Fable 5.2 および Mythos 5.2 をリリースしました。公式ニュースルームでの発表も行われ、ユーザーは Fable メーターのリセットが3回行われたことを報告しています。新バージョンのリリースに関するコミュニティの初期反応を示す投稿です。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xs0dct/fable_52_just_landed)
+- **重要度**: 8/10
+- **タグ**: release, 新機能, sonnet
 
 ---
 

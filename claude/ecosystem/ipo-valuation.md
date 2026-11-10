@@ -9,7 +9,7 @@ tags:
 - release
 - 新機能
 date: '2026-08-11'
-updated: '2026-11-07'
+updated: '2026-11-10'
 sources:
 - url: https://the-decoder.com/anthropics-planned-mega-ipo-faces-investor-skepticism-over-chinese-rivals-and-political-headwinds
   title: Anthropic's planned mega-IPO faces investor skepticism over Chinese rivals
@@ -22,11 +22,27 @@ sources:
 - url: https://the-decoder.com/anthropics-1-5-trillion-ipo-hits-resistance-as-investors-balk-at-valuation
   title: Anthropic's $1.5 trillion IPO hits resistance as investors balk at valuation
   date: '2026-11-07'
+- url: https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans
+  title: Anthropic reportedly plans to move forward with IPO plans
+  date: '2026-11-10'
 ---
 
 
 
+
 # Ipo Valuation
+
+---
+
+## 2026-11-10
+
+### Anthropic reportedly plans to move forward with IPO plans
+
+AnthropicがIPO計画を進めており、今週中に評価額レンジを設定し来週木曜または金曜に上場開始予定と報じられた。一部の機関投資家は先週議論された1.5兆ドルを下回る評価額を求めており、これは数ヶ月前の2兆ドルから大幅に低下している。ライバルのOpenAIは先週110億ドルの資金調達後に1.25兆ドルと評価された。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans)
+- **重要度**: 9/10
+- **タグ**: pricing, cowork, release
 
 ---
 

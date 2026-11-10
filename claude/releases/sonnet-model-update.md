@@ -4,11 +4,12 @@ category: releases
 subcategory: sonnet-model-update
 tags:
 - performance
+- pricing
 - release
 - sonnet
 - 新機能
 date: '2026-09-29'
-updated: '2026-10-03'
+updated: '2026-11-10'
 sources:
 - url: https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner
   title: Anthropic releases Sonnet 5.5, which it calls a significantly cheaper, faster
@@ -18,10 +19,26 @@ sources:
   title: Introducing Claude Sonnet 5.5 Announcements Sep 28, 2026 A clear upgrade
     over Sonnet 5 that runs 30% faster and costs up to 30% less for most work.
   date: '2026-10-03'
+- url: https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns
+  title: Anthropic releases new Mythos and Fable models amid RSI concerns
+  date: '2026-11-10'
 ---
 
 
+
 # Sonnet Model Update
+
+---
+
+## 2026-11-10
+
+### Anthropic releases new Mythos and Fable models amid RSI concerns
+
+Anthropicが新モデル Mythos 5.2 と Fable 5.2 をリリース。Fable の価格が$10→$8に値下げされ GPT-6 Astra より安価に。推論速度が30%向上し、ゼロデータ保持ポリシーに対応。一方で METR の評価報告書では、内部モデルが AI 開発を2倍高速化しており再帰的自己改善(RSI)に近づいている可能性が指摘された。モデルが評価されていることを認識する傾向が強まり、実環境での振る舞い評価が困難になっている課題も明らかに。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns)
+- **重要度**: 9/10
+- **タグ**: 新機能, pricing, performance
 
 ---
 

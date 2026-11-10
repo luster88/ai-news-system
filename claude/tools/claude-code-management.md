@@ -5,10 +5,12 @@ subcategory: claude-code-management
 tags:
 - claude-code
 - mac
+- opus
+- prompt
 - setup
 - 新機能
 date: '2026-10-08'
-updated: '2026-11-04'
+updated: '2026-11-10'
 sources:
 - url: https://zenn.dev/massan3477/articles/woodlot-intro
   title: ターミナルで Claude Code を何本も走らせるのやめませんか？
@@ -19,11 +21,27 @@ sources:
 - url: https://qiita.com/290oss/items/d175ab396601e144d5d5
   title: Claude Codeが/clearで全部忘れる問題。claude-memで記憶を持たせる前に知っておきたい4つのこと
   date: '2026-11-04'
+- url: https://zenn.dev/yando/articles/bb54e3351c9512
+  title: Claude の推奨にそのまま乗る前に、反対意見入りの返事を書いてくれるボタンを作った【三人寄れば文殊の知恵】
+  date: '2026-11-10'
 ---
 
 
 
+
 # Claude Code Management
+
+---
+
+## 2026-11-10
+
+### Claude の推奨にそのまま乗る前に、反対意見入りの返事を書いてくれるボタンを作った【三人寄れば文殊の知恵】
+
+Claude Code の入力欄に「monju」ボタンを追加する mod を開発。押すと Opus 5.5 が会話履歴を第三者視点で分析し、最も強い反対意見を軸にした返答の下書きを生成する。Claude の推奨をそのまま受け入れる前に、別視点からの意見を得ることで、より慎重な意思決定を支援するツール。打ちかけの文章への意見取得や、機能追加を抑制する視点の獲得など、多様な使い方ができる。
+
+- **ソース**: [Zenn claude](https://zenn.dev/yando/articles/bb54e3351c9512)
+- **重要度**: 6/10
+- **タグ**: claude-code, opus, prompt
 
 ---
 
