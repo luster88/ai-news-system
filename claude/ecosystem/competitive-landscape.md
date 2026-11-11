@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-23'
-updated: '2026-11-07'
+updated: '2026-11-11'
 sources:
 - url: https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic
   title: OpenAI lures private equity firms with guaranteed returns in race against
@@ -100,6 +100,10 @@ sources:
 - url: https://the-decoder.com/perplexity-now-has-its-own-always-on-ai-agent
   title: Perplexity now has its own always-on AI agent
   date: '2026-11-07'
+- url: https://the-decoder.com/gemini-4-carbon-arrives-just-in-time-to-feel-like-yesterdays-news-in-the-fastest-model-cycle-yet
+  title: Gemini 4 Carbon arrives just in time to feel like yesterday's news in the
+    fastest model cycle yet
+  date: '2026-11-11'
 ---
 
 
@@ -124,7 +128,20 @@ sources:
 
 
 
+
 # Competitive Landscape
+
+---
+
+## 2026-11-11
+
+### Gemini 4 Carbon arrives just in time to feel like yesterday's news in the fastest model cycle yet
+
+GoogleがGemini 4 Carbonを正式リリースしたが、AnthropicのFable 5.2の登場により既に新鮮味を失っている。Carbonは複雑なコーディングやデバッグに特化しているが、Argonより多くのトークンを消費する。現在のAIモデルサイクルは非常に速く回転している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/gemini-4-carbon-arrives-just-in-time-to-feel-like-yesterdays-news-in-the-fastest-model-cycle-yet)
+- **重要度**: 4/10
+- **タグ**: performance, pricing
 
 ---
 

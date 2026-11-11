@@ -7,7 +7,7 @@ tags:
 - cowork
 - 新機能
 date: '2026-07-30'
-updated: '2026-11-02'
+updated: '2026-11-11'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vawcw3/i_had_an_idea_for_an_airgapped_file_transfer
   title: I had an idea for an airgapped file transfer mechanism
@@ -20,11 +20,27 @@ sources:
     command grabs a local AI, Wikipedia, maps, and survival manuals for when there's
     no internet
   date: '2026-11-02'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xstews/i_built_a_webcam_xray_mirror_with_claude_fable_52
+  title: I built a webcam X-ray mirror with Claude Fable 5.2
+  date: '2026-11-11'
 ---
 
 
 
+
 # Claude Code Projects
+
+---
+
+## 2026-11-11
+
+### I built a webcam X-ray mirror with Claude Fable 5.2
+
+ユーザーが Claude Fable 5.2 を使って、Webカメラで顔を映すと頭蓋骨や脳、筋肉が表示される「X線ミラー」を構築。指を動かすと骨が追従し、口を開けると顎が連動する。Claude が全コードを記述し、オープンな解剖学データセット（BodyParts3D）を見つけ、3Dモデルの簡略化や顔トラッカーへの位置合わせも実施。1時間以内に動作版が完成し、教育目的での解剖学の自己探索が可能になった。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xstews/i_built_a_webcam_xray_mirror_with_claude_fable_52)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

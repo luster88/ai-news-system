@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-02'
-updated: '2026-10-11'
+updated: '2026-11-11'
 sources:
 - url: https://ai-heartland.com/news/cursor-firecrawl-mcp-aiagent
   title: Cursor × Firecrawl MCPで任意ウェブサイト複製が可能に。AIAgent強化
@@ -29,13 +29,29 @@ sources:
 - url: https://ai-heartland.com/tool/photocraft-agent-control
   title: PhotoCraftとは｜Photoshop互換OSSの自己採点150項目と、エージェント運転用の20ツールを数えた
   date: '2026-10-11'
+- url: https://qiita.com/ontoloop/items/8597217d05074713a4aa
+  title: Claude Code と Codex を MCP で Ontoloop につなぎ、人が確認したチームの事実を共有する
+  date: '2026-11-11'
 ---
 
 
 
 
 
+
 # Mcp Integration
+
+---
+
+## 2026-11-11
+
+### Claude Code と Codex を MCP で Ontoloop につなぎ、人が確認したチームの事実を共有する
+
+Claude Code と Codex を MCP 経由で Ontoloop に接続し、チーム全体でコーディング Agent の意思決定や事実を共有する手順を解説。Ontoloop は招待制のアーリーアクセスで、リモート MCP により OAuth 認証を使用。プロジェクトをまたいだ user スコープでの接続方法や、チーム内での Agent 管理について具体的なセットアップコマンドと手順を提供。
+
+- **ソース**: [Qiita claude](https://qiita.com/ontoloop/items/8597217d05074713a4aa)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, setup
 
 ---
 

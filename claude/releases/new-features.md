@@ -8,7 +8,7 @@ tags:
 - release
 - 新機能
 date: '2026-07-21'
-updated: '2026-10-09'
+updated: '2026-11-11'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v2qdct/new_teach_claude_a_skill
   title: 'New: Teach Claude a skill'
@@ -17,10 +17,26 @@ sources:
   title: Claude can now generate animated explainer videos and live data dashboards
     from text prompts
   date: '2026-10-09'
+- url: https://ai-heartland.com/explain/claude-sheets-whiteboards-data
+  title: Claude Sheets・Whiteboards・Dataとは｜できること・使えるプラン・ベータの制限を整理
+  date: '2026-11-11'
 ---
 
 
+
 # New Features
+
+---
+
+## 2026-11-11
+
+### Claude Sheets・Whiteboards・Dataとは｜できること・使えるプラン・ベータの制限を整理
+
+Claude の新機能として、チーム編集可能なスプレッドシート（Sheets）、ホワイトボード（Whiteboards）、ダッシュボード（Data）が追加された。Sheets と Whiteboards はベータ版で機能制限があり、Data は旧 Dashboards の正式版。Pro 以上のプランで利用可能だが、Free プランは対象外。会話から直接作成でき、チーム間で共同編集できるアーティファクトとして提供される。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/claude-sheets-whiteboards-data)
+- **重要度**: 8/10
+- **タグ**: 新機能, claude-console, release
 
 ---
 

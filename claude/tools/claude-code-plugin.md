@@ -10,7 +10,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-04-01'
-updated: '2026-08-14'
+updated: '2026-11-11'
 sources:
 - url: https://qiita.com/Andhy/items/371621273924d74e9917
   title: 自作のClaude Codeのプラグインの有効性を検証してみたところなかなか良い結果に
@@ -34,6 +34,9 @@ sources:
 - url: https://ai-heartland.com/tool/diagram-design-claude-code-editorial-diagrams
   title: diagram-designとは｜Claude Codeで27種の図を自己完結HTMLで作るスキル
   date: '2026-08-14'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xst2qe/i_made_a_claude_code_mod_that_draws_a_live_map_of
+  title: I made a Claude Code mod that draws a live map of what the agent is doing
+  date: '2026-11-11'
 ---
 
 
@@ -42,7 +45,20 @@ sources:
 
 
 
+
 # Claude Code Plugin
+
+---
+
+## 2026-11-11
+
+### I made a Claude Code mod that draws a live map of what the agent is doing
+
+Claude Code のエージェント動作を可視化するプラグイン「lot-map」が公開されました。チャット横のペインにエージェントを中心とした10のステーション（モデル、メモリ、ファイル、シェル、ネットワークなど）を配置し、ツール呼び出しやリクエストをリアルタイムでパルス表示します。コンテキストウィンドウの使用状況やサブエージェントの実行状態も視覚的に確認でき、プライバシー配慮でコンテンツは表示せず名前のみを表示します。MIT ライセンスで GitHub から無料公開され、プラグインマーケットプレイスからインストール可能です。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xst2qe/i_made_a_claude_code_mod_that_draws_a_live_map_of)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, vscode
 
 ---
 

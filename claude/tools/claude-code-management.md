@@ -8,9 +8,10 @@ tags:
 - opus
 - prompt
 - setup
+- vscode
 - 新機能
 date: '2026-10-08'
-updated: '2026-11-10'
+updated: '2026-11-11'
 sources:
 - url: https://zenn.dev/massan3477/articles/woodlot-intro
   title: ターミナルで Claude Code を何本も走らせるのやめませんか？
@@ -24,12 +25,28 @@ sources:
 - url: https://zenn.dev/yando/articles/bb54e3351c9512
   title: Claude の推奨にそのまま乗る前に、反対意見入りの返事を書いてくれるボタンを作った【三人寄れば文殊の知恵】
   date: '2026-11-10'
+- url: https://ai-heartland.com/tool/unslop
+  title: unslopとは｜AIっぽいUIをデザイナーの目で直すClaude Codeスキルを実際に動かした
+  date: '2026-11-11'
 ---
 
 
 
 
+
 # Claude Code Management
+
+---
+
+## 2026-11-11
+
+### unslopとは｜AIっぽいUIをデザイナーの目で直すClaude Codeスキルを実際に動かした
+
+unslopは、AI生成UIの「AIっぽさ」（紫のグラデーション、光るボタン、絵文字など）を64項目の兆候リストで洗い出し、デザイン原則に沿って修正するClaude Code向けスキル。デザイナーDamir Sokolovsky氏が開発し、GitHubで1.34万スターを獲得。実測では付属の見本画面に対し8分類74行の具体的な指摘を行番号付きで出力した。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/unslop)
+- **重要度**: 6/10
+- **タグ**: claude-code, vscode, 新機能
 
 ---
 

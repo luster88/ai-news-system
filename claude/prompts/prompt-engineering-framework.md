@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-30'
-updated: '2026-10-31'
+updated: '2026-11-11'
 sources:
 - url: https://zenn.dev/analysis/articles/prompt-master-thought-analyzer
   title: 「プロンプトを最適化する」とは何か──prompt-masterを3層フレームワークで解剖する
@@ -49,6 +49,9 @@ sources:
 - url: https://qiita.com/kakushigoto/items/7baa88b5e07a858c897e
   title: CLAUDE.md の【重要】や YOU MUST に、効果はあるのか？
   date: '2026-10-31'
+- url: https://zenn.dev/tree_and_tree/articles/thoughts-on-claude-fable-5-2
+  title: Claude Fable 5.2のプロンプトガイドを読んで正直に思ったことを書く
+  date: '2026-11-11'
 ---
 
 
@@ -60,7 +63,20 @@ sources:
 
 
 
+
 # Prompt Engineering Framework
+
+---
+
+## 2026-11-11
+
+### Claude Fable 5.2のプロンプトガイドを読んで正直に思ったことを書く
+
+Claude Fable 5.2のプロンプトエンジニアリングガイドについての所感記事。エフォートレベルはデフォルトのhighで十分で、xhigh/maxとの差は小さい。コードの所有権に関する記述でモデルの振る舞いが変わる（自身のコードと伝えると積極的に修正する）という人間的な配慮が興味深い。長時間エージェント作業後の最終レポート作成では、ローコンテキストな読者向けに自己完結した明確な文章を書くよう指示するプロンプトが有用。
+
+- **ソース**: [Zenn claude](https://zenn.dev/tree_and_tree/articles/thoughts-on-claude-fable-5-2)
+- **重要度**: 6/10
+- **タグ**: prompt, 新機能
 
 ---
 

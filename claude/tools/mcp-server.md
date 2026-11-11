@@ -14,7 +14,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-25'
-updated: '2026-11-07'
+updated: '2026-11-11'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -174,6 +174,9 @@ sources:
 - url: https://ai-heartland.com/mcp/scrapling
   title: Scraplingとは｜取得・回避・パース・クロールを1つにしたPythonスクレイピング基盤を実測、MCPでAIからも使う
   date: '2026-11-07'
+- url: https://ai-heartland.com/tool/appllama-skills
+  title: appllama-skillsとは｜売れているアプリの画面を調べてから作らせるモバイルUIスキルの中身を読む
+  date: '2026-11-11'
 ---
 
 
@@ -223,7 +226,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-11-11
+
+### appllama-skillsとは｜売れているアプリの画面を調べてから作らせるモバイルUIスキルの中身を読む
+
+appllama-skillsは、AI エージェントに売れているモバイルアプリの画面を調査させてから React Native/Expo で開発させる MIT ライセンスのスキル集。調査機能には有料の Appllama MCP（Pro プラン、月1,500クレジット）が必要だが、設計スキル単体は無料で利用可能。AI が生成する画面の画一化を防ぐため、競合アプリの UI パターンを事前調査し、シミュレーターでの動作確認まで手順化している。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/appllama-skills)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, cowork
 
 ---
 

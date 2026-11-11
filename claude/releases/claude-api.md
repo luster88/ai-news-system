@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-11-07'
+updated: '2026-11-11'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -114,6 +114,9 @@ sources:
 - url: https://the-decoder.com/anthropic-adds-bank-account-access-to-claude-so-users-can-track-their-spending
   title: Anthropic adds bank account access to Claude so users can track their spending
   date: '2026-11-07'
+- url: https://zenn.dev/systemdesignsim/articles/claude-fable-5-2-honest-review
+  title: Claude Fable 5.2とMythos 5.2を正直にレビューする
+  date: '2026-11-11'
 ---
 
 
@@ -139,7 +142,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-11-11
+
+### Claude Fable 5.2とMythos 5.2を正直にレビューする
+
+Anthropicが2026年11月9日に発表したClaude Fable 5.2とMythos 5.2の詳細レビュー。同じ基盤モデルでセーフガードの強度が異なり、Fableは一般ユーザー向け、Mythosは審査済み組織向け。コーディングとエージェント性能では業界トップクラスだが、タスクあたりのコストは高い。1000超のサブエージェントで8日間でOSプロトタイプを作成したとされるデモは外部検証が未確認。API価格は100万トークンあたり入力$8、出力$40で、前バージョンから20%値下げ。
+
+- **ソース**: [Zenn claude](https://zenn.dev/systemdesignsim/articles/claude-fable-5-2-honest-review)
+- **重要度**: 8/10
+- **タグ**: release, claude-api, performance
 
 ---
 
