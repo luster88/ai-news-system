@@ -8,7 +8,7 @@ tags:
 - release
 - 新機能
 date: '2026-08-05'
-updated: '2026-09-17'
+updated: '2026-11-12'
 sources:
 - url: https://techcrunch.com/2026/08/05/anthropic-is-hiring-an-ai-chip-design-team
   title: Anthropic is hiring an AI chip design team
@@ -17,10 +17,27 @@ sources:
   title: Apple is reportedly building an enterprise AI server with its own M8 Ultra
     chips
   date: '2026-09-17'
+- url: https://the-decoder.com/anthropic-says-ai-is-eroding-nvidias-cuda-lead-cutting-an-amd-chip-switch-from-months-to-three-days
+  title: Anthropic says AI is eroding Nvidia's CUDA lead, cutting an AMD chip switch
+    from months to three days
+  date: '2026-11-12'
 ---
 
 
+
 # Hardware Infrastructure
+
+---
+
+## 2026-11-12
+
+### Anthropic says AI is eroding Nvidia's CUDA lead, cutting an AMD chip switch from months to three days
+
+Anthropic が複数チップ戦略により Nvidia 依存を脱却。自社 AI モデル Mythos を使用して、AMD GPU への移植作業を従来の 6〜12 ヶ月から 3 日間に短縮した。Claude は現在、4 つの主要チップファミリすべてで訓練・実行可能で、カーネルのほぼ 100% を AI が自動生成。Nvidia の CUDA エコシステムによるロックイン問題を AI 自身で解決した事例として注目される。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-says-ai-is-eroding-nvidias-cuda-lead-cutting-an-amd-chip-switch-from-months-to-three-days)
+- **重要度**: 8/10
+- **タグ**: performance, 新機能, release
 
 ---
 

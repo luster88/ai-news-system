@@ -3,6 +3,7 @@ title: Market Trends
 category: ecosystem
 subcategory: market-trends
 tags:
+- claude-api
 - claude-code
 - cowork
 - cursor
@@ -10,7 +11,7 @@ tags:
 - pricing
 - 新機能
 date: '2026-04-03'
-updated: '2026-11-06'
+updated: '2026-11-12'
 sources:
 - url: https://qiita.com/kotauchisunsun/items/ab78bb338500b4c71103
   title: Claude Codeの首位陥落。CodexがシェアNo.1へ。 ～データで見る2026年3月のAI Codingの動向まとめ～
@@ -28,13 +29,30 @@ sources:
 - url: https://the-decoder.com/meta-buys-ai-coding-startup-conductor-as-big-tech-races-to-lock-in-developers
   title: Meta buys AI coding startup Conductor as big tech races to lock in developers
   date: '2026-11-06'
+- url: https://the-decoder.com/us-corporate-ai-spending-hits-a-new-high-in-october-but-growth-slows-to-1-65-percent
+  title: US corporate AI spending hits a new high in October, but growth slows to
+    1.65 percent
+  date: '2026-11-12'
 ---
 
 
 
 
 
+
 # Market Trends
+
+---
+
+## 2026-11-12
+
+### US corporate AI spending hits a new high in October, but growth slows to 1.65 percent
+
+米国企業のAI支出は2026年10月に過去最高を更新したが、成長率は1.65%に減速。Rampの調査によると、上位1%の企業は従業員1人あたり月額10,200ドルを支出する一方、一般企業は16.32ドルに留まる。OpenAIとAnthropicの収益の80%は上位1%の企業が占めており、支出の偏りが顕著。ソフトウェア開発チームが全AI支出の72%を占める。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/us-corporate-ai-spending-hits-a-new-high-in-october-but-growth-slows-to-1-65-percent)
+- **重要度**: 6/10
+- **タグ**: pricing, cowork, claude-api
 
 ---
 

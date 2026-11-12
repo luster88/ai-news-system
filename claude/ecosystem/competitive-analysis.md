@@ -13,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-04'
-updated: '2026-10-24'
+updated: '2026-11-12'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -101,6 +101,10 @@ sources:
 - url: https://the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5
   title: Chinese AI model Kimi K3.1 Pro is closing in on Anthropic's Claude Opus 5.5
   date: '2026-10-24'
+- url: https://the-decoder.com/enterprise-sales-push-openais-quarterly-revenue-to-10-billion-though-it-still-trails-anthropic
+  title: Enterprise sales push OpenAI's quarterly revenue to $10 billion, though it
+    still trails Anthropic
+  date: '2026-11-12'
 ---
 
 
@@ -125,7 +129,20 @@ sources:
 
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-11-12
+
+### Enterprise sales push OpenAI's quarterly revenue to $10 billion, though it still trails Anthropic
+
+OpenAIの第3四半期売上高は前四半期比50%増の100億ドルに達したが、調整後営業損失は109億ドルに拡大。一方、競合のAnthropicは同期間に170億ドルの売上で営業損失はわずか5.67億ドルと、はるかに効率的な経営を実現している。Anthropicは企業顧客とClaude Code等のツールに注力し、来週IPOを予定している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/enterprise-sales-push-openais-quarterly-revenue-to-10-billion-though-it-still-trails-anthropic)
+- **重要度**: 8/10
+- **タグ**: pricing, performance, cowork
 
 ---
 

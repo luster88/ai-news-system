@@ -7,7 +7,7 @@ tags:
 - opus
 - performance
 date: '2026-10-02'
-updated: '2026-10-23'
+updated: '2026-11-12'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wvdt9p/is_opus_55_nerfed_now_livenerf_day_8_update
   title: Is Opus 5.5 Nerfed Now? LiveNerf Day 8 Update
@@ -21,12 +21,28 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1xcraz9/did_they_nerf_opus_55_doesnt_look_like_it
   title: Did they nerf Opus 5.5? Doesn’t look like it. LiveNerf day 29 update
   date: '2026-10-23'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xu01lm/will_they_nerf_fable_52_livenerf_day_3_update_for
+  title: Will They Nerf Fable 5.2? LiveNerf Day 3 Update for Fable 5.2
+  date: '2026-11-12'
 ---
 
 
 
 
+
 # Performance Tracking
+
+---
+
+## 2026-11-12
+
+### Will They Nerf Fable 5.2? LiveNerf Day 3 Update for Fable 5.2
+
+RedditユーザーがClaudeモデル（Opus 5.5とFable 5.2）の性能が時間経過で劣化するか（nerf）を検証する「LiveNerf」プロジェクトの3日目レポート。78問の学術的問題を毎日同じ条件で実行し、Opus 5.5は58.4%から60.3%へ微増、Fable 5.2は80.8%から84.6%で推移し、統計的に有意な性能低下は検出されていない。FableはOpusより約25ポイント高スコアを維持。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xu01lm/will_they_nerf_fable_52_livenerf_day_3_update_for)
+- **重要度**: 6/10
+- **タグ**: opus, performance, cowork
 
 ---
 

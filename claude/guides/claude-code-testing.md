@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-19'
-updated: '2026-11-06'
+updated: '2026-11-12'
 sources:
 - url: https://qiita.com/peka2/items/9ce150b3b480516fc16e
   title: Claude Code に iOSアプリの E2Eテスト までやらせるようにした（iOSシミュレータ + AXe）
@@ -30,6 +30,9 @@ sources:
 - url: https://qiita.com/ogasawar-offgrid/items/66a98c54fd9520f8ddb2
   title: テストデータ作成でわかったAIの弱点
   date: '2026-11-06'
+- url: https://zenn.dev/columbus0370/articles/1794398388490-claude-code-javaai
+  title: Claude Code × Javaプロジェクト：AIペアプログラミングで単体テスト自動生成を試してみた
+  date: '2026-11-12'
 ---
 
 
@@ -37,7 +40,20 @@ sources:
 
 
 
+
 # Claude Code Testing
+
+---
+
+## 2026-11-12
+
+### Claude Code × Javaプロジェクト：AIペアプログラミングで単体テスト自動生成を試してみた
+
+Claude Code を使って Java プロジェクトの単体テスト（JUnit5 + Mockito）を自動生成する実験レポート。正常系テストは概ね良好な品質だが、異常系や境界値テストには追加プロンプトが必要。既存テストとの整合性やカバレッジの偏りが課題として指摘され、「下書き生成ツール」としての位置づけが提案されている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/columbus0370/articles/1794398388490-claude-code-javaai)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, 新機能
 
 ---
 

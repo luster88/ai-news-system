@@ -12,9 +12,10 @@ tags:
 - performance
 - prompt
 - setup
+- sonnet
 - 新機能
 date: '2026-04-07'
-updated: '2026-10-23'
+updated: '2026-11-12'
 sources:
 - url: https://zenn.dev/analysis/articles/thought-analyzer-agents-md
   title: コンテキストファイルは、エージェントを賢くしない ── AGENTS.mdの効果を初めて測った研究
@@ -49,6 +50,9 @@ sources:
 - url: https://qiita.com/suwa_nobu/items/8dec346a727f0199fefb
   title: Haiku 5.5 に書かせた確信度は当てになるか。同じ306問を3回聞いたら、1問ずつはぶれても0.8以上は8割当たった
   date: '2026-10-23'
+- url: https://zenn.dev/tracer0tong/articles/db15089e96c10a
+  title: LLMペルソナ実験で『事前に決めた判定基準』を守るために必要だったこと
+  date: '2026-11-12'
 ---
 
 
@@ -61,7 +65,20 @@ sources:
 
 
 
+
 # Prompt Engineering
+
+---
+
+## 2026-11-12
+
+### LLMペルソナ実験で『事前に決めた判定基準』を守るために必要だったこと
+
+LLMに投資家ペルソナを与えて有価証券報告書を分析させる実験。Claude Haiku 4.5では事前に定めた判定基準を満たせず、Sonnetでは満たした。重要なのは「結果を見てから基準を変えない」ため、実行前にIssueで判定基準をコミットしたこと。差の多くはベースラインの読み方にあり、「Sonnetが賢い」という単純な結論を避けるため、方法論の透明性を重視している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/tracer0tong/articles/db15089e96c10a)
+- **重要度**: 6/10
+- **タグ**: haiku, sonnet, prompt
 
 ---
 

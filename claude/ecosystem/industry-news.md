@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-18'
-updated: '2026-11-10'
+updated: '2026-11-12'
 sources:
 - url: https://the-decoder.com/anthropic-ceo-amodei-declares-there-is-no-end-to-the-rainbow-for-ai-scaling
   title: Anthropic CEO Amodei declares "there is no end to the rainbow" for AI scaling
@@ -65,6 +65,10 @@ sources:
 - url: https://techcrunch.com/2026/11/09/jensen-huang-pulls-out-of-elevenlabs-summit-amid-nvidia-controversy
   title: Jensen Huang pulls out of ElevenLabs Summit amid Nvidia controversy
   date: '2026-11-10'
+- url: https://the-decoder.com/us-data-brokers-are-selling-half-a-billion-dollars-in-rl-training-environments-to-chinese-ai-labs
+  title: US data brokers are selling half a billion dollars in RL training environments
+    to Chinese AI labs
+  date: '2026-11-12'
 ---
 
 
@@ -79,7 +83,20 @@ sources:
 
 
 
+
 # Industry News
+
+---
+
+## 2026-11-12
+
+### US data brokers are selling half a billion dollars in RL training environments to Chinese AI labs
+
+米国のデータブローカーが中国のAIラボに約5億ドル相当のRL訓練環境を販売していることが判明。中国企業はOpenAIやAnthropicと同じ訓練データを購入し、自社の計算コストと開発時間を削減。規制がないため、サイバーセキュリティや生物学分野でのセキュリティリスクが懸念されている。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/us-data-brokers-are-selling-half-a-billion-dollars-in-rl-training-environments-to-chinese-ai-labs)
+- **重要度**: 4/10
+- **タグ**: cowork, claude-api, pricing
 
 ---
 

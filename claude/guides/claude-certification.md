@@ -5,10 +5,11 @@ subcategory: claude-certification
 tags:
 - claude-api
 - claude-code
+- mcp
 - setup
 - 新機能
 date: '2026-08-11'
-updated: '2026-10-16'
+updated: '2026-11-12'
 sources:
 - url: https://qiita.com/alphajinsei/items/b8e54e2c6a860df8808f
   title: Claude certification 全冠した
@@ -16,10 +17,26 @@ sources:
 - url: https://zenn.dev/ray_keymaso/articles/ccaf-vs-ccdvf
   title: CCA-F（CCAR-F）とCCDV-Fの違い：学習範囲の重なりと、CCA-Fのために追加で確かめる範囲
   date: '2026-10-16'
+- url: https://zenn.dev/ray_keymaso/articles/ccdvf-after-ccaf
+  title: CCA-F（CCAR-F）を学んだ人がCCDV-Fで新しく学ぶ範囲：配点の約半分はAPI・ソフトウェア工学・モデル選択
+  date: '2026-11-12'
 ---
 
 
+
 # Claude Certification
+
+---
+
+## 2026-11-12
+
+### CCA-F（CCAR-F）を学んだ人がCCDV-Fで新しく学ぶ範囲：配点の約半分はAPI・ソフトウェア工学・モデル選択
+
+Claude認定資格のCCA-F合格者向けに、CCDV-F試験で新たに学ぶべき範囲を解説。配点の約半分を占める新規学習領域として、APIメカニクス（ストリーミング、thinking、キャッシュ）、ソフトウェア工学基礎（REST、非同期処理、冪等性）、MCPサーバー開発、モデルバージョン固定などを詳述。CCA-Fが設計判断重視なのに対し、CCDV-Fは実装・運用に重点を置く。
+
+- **ソース**: [Zenn claude](https://zenn.dev/ray_keymaso/articles/ccdvf-after-ccaf)
+- **重要度**: 6/10
+- **タグ**: claude-api, mcp, setup
 
 ---
 

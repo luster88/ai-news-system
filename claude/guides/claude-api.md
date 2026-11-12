@@ -12,9 +12,10 @@ tags:
 - prompt
 - release
 - setup
+- sonnet
 - 新機能
 date: '2026-03-25'
-updated: '2026-10-27'
+updated: '2026-11-12'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -84,6 +85,9 @@ sources:
 - url: https://qiita.com/aiapi_radar_news/items/2db1b9faeaa677cbb8ba
   title: 【随時更新】Claude APIのbetaヘッダー一覧（まだ要るもの／もう要らないもの）
   date: '2026-10-27'
+- url: https://qiita.com/ai_hack_lab/items/ea9b39a761e02546cedd
+  title: 【Python×Anthropic】Claude 3.5 Sonnetで「構造化JSON」を100%確実に抽出する堅牢パイプラインの実装手法
+  date: '2026-11-12'
 ---
 
 
@@ -106,7 +110,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-11-12
+
+### 【Python×Anthropic】Claude 3.5 Sonnetで「構造化JSON」を100%確実に抽出する堅牢パイプラインの実装手法
+
+Claude 3.5 SonnetなどのLLMからのJSON出力が壊れる問題を、PydanticとInstructorライブラリの組み合わせで解決する実装手法を解説。Field descriptionの記述、Literalによる選択肢の固定、max_retriesによる自動リトライなど、100%確実に構造化データを抽出するための堅牢なパイプラインの実装方法を完全コード付きで紹介。
+
+- **ソース**: [Qiita claude](https://qiita.com/ai_hack_lab/items/ea9b39a761e02546cedd)
+- **重要度**: 7/10
+- **タグ**: claude-api, sonnet, prompt
 
 ---
 
