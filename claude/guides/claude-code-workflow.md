@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-11-07'
+updated: '2026-11-13'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -465,6 +465,9 @@ sources:
 - url: https://zenn.dev/fightingpapa00/articles/claude-code-skill-board-hooks
   title: 作った Claude Code スキルを忘れないための「スキルボード」とフック
   date: '2026-11-07'
+- url: https://qiita.com/umezu_y/items/a5a86c005f8c66cecbad
+  title: Claude Code を「時間割」で回す ― 1日10件以上を並行しても、目の前の1件に集中できる
+  date: '2026-11-13'
 ---
 
 
@@ -578,7 +581,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-11-13
+
+### Claude Code を「時間割」で回す ― 1日10件以上を並行しても、目の前の1件に集中できる
+
+Claude Code のデスクトップアプリで、ネストセッション機能を活用した「時間割」管理法を紹介。複数案件を並行処理しながらも、サイドバーとセッション管理で目の前の1件に集中できる実践的なワークフロー。絵文字やステータス表示を使い、進行中・待機中・完了の件を可視化する。
+
+- **ソース**: [Qiita claude](https://qiita.com/umezu_y/items/a5a86c005f8c66cecbad)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, windows
 
 ---
 

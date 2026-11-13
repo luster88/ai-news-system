@@ -10,7 +10,7 @@ tags:
 - cowork
 - performance
 date: '2026-03-25'
-updated: '2026-08-16'
+updated: '2026-11-13'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s3b9fi/claude_status_update_elevated_errors_on_claudeai
   title: 'Claude Status Update : Elevated Errors on claude.ai on 2026-03-25T13:45:25.000Z'
@@ -46,6 +46,10 @@ sources:
   title: 'Discussion Hub for new Claude incident: Service disruption on Claude services
     on Aug 16, 2026'
   date: '2026-08-16'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xujm6h/discussion_hub_for_new_claude_incident_elevated
+  title: 'Discussion Hub for new Claude incident: Elevated errors affecting the Microsoft
+    365 connector on Nov 12, 2026'
+  date: '2026-11-13'
 ---
 
 
@@ -56,7 +60,20 @@ sources:
 
 
 
+
 # Service Outage
+
+---
+
+## 2026-11-13
+
+### Discussion Hub for new Claude incident: Elevated errors affecting the Microsoft 365 connector on Nov 12, 2026
+
+2026年11月12日、Claude の Microsoft 365 コネクタで大規模な障害が発生。メール、カレンダー、検索ツールがほとんどのリクエストで失敗し、Claude for Outlook も影響を受けた。原因は Microsoft 365 側のサービスインシデントで、Anthropic は上流プロバイダーと協力して対応中。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xujm6h/discussion_hub_for_new_claude_incident_elevated)
+- **重要度**: 6/10
+- **タグ**: bugfix
 
 ---
 

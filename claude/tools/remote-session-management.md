@@ -6,15 +6,32 @@ tags:
 - claude-code
 - cowork
 - mcp
+- 新機能
 date: '2026-07-02'
-updated: '2026-07-02'
+updated: '2026-11-13'
 sources:
 - url: https://ai-heartland.com/tool/happier-coding-agent-client
   title: happier徹底解説：Claude CodeやCodexのセッションをリモートで引き継ぐE2E暗号化クライアント
   date: '2026-07-02'
+- url: https://ai-heartland.com/tool/atuin-threads
+  title: Atuin Threadsとは｜Claude CodeやCodexのセッションを全マシンで検索・再開できる暗号化同期
+  date: '2026-11-13'
 ---
 
+
 # Remote Session Management
+
+---
+
+## 2026-11-13
+
+### Atuin Threadsとは｜Claude CodeやCodexのセッションを全マシンで検索・再開できる暗号化同期
+
+Atuin Threadsは、Claude CodeやCodexなどのAIコーディングエージェントのセッションを暗号化して全マシンで同期し、検索・再開できるツール。Atuin 18.24で追加された機能で、会話とツール呼び出しの入出力を記録する。ツール呼び出しにはコードベースの内容が含まれるため、秘密情報の扱いには注意が必要。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/atuin-threads)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

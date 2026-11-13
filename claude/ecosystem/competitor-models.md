@@ -10,7 +10,7 @@ tags:
 - pricing
 - release
 date: '2026-05-03'
-updated: '2026-05-23'
+updated: '2026-11-13'
 sources:
 - url: https://the-decoder.com/xiaomis-open-weight-mimo-v2-5-pro-takes-aim-at-claude-opus-with-hours-long-autonomous-coding
   title: Xiaomi's open-weight MiMo-V2.5-Pro takes aim at Claude Opus with hours-long
@@ -24,11 +24,28 @@ sources:
   title: Alibaba's latest AI model ran autonomously for 35 hours to optimize code
     for its own custom chip
   date: '2026-05-23'
+- url: https://the-decoder.com/googles-gemini-4-hydrogen-outscores-the-bigger-argon-just-four-weeks-after-its-launch
+  title: Google's Gemini 4 Hydrogen outscores the bigger Argon just four weeks after
+    its launch
+  date: '2026-11-13'
 ---
 
 
 
+
 # Competitor Models
+
+---
+
+## 2026-11-13
+
+### Google's Gemini 4 Hydrogen outscores the bigger Argon just four weeks after its launch
+
+Google が Gemini 4 Hydrogen をリリース。日常的なコーディングやエージェントワークフロー向けの高速モデルで、Gemini 3.8 Flash の後継。より大型の Argon をベンチマークで上回り、100万トークンのコンテキストウィンドウを持つ。入力$1.50/百万トークン、出力$7.50/百万トークンで利用可能。リリース4週間でArgonを時代遅れにする性能を実現。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/googles-gemini-4-hydrogen-outscores-the-bigger-argon-just-four-weeks-after-its-launch)
+- **重要度**: 4/10
+- **タグ**: performance, pricing, release
 
 ---
 

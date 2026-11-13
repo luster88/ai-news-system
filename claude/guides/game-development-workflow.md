@@ -11,7 +11,7 @@ tags:
 - prompt
 - vscode
 date: '2026-07-16'
-updated: '2026-09-05'
+updated: '2026-11-13'
 sources:
 - url: https://qiita.com/OnuuuumaX/items/6be3227534df186680f2
   title: 【Godot 4.x】3D脱出ゲームを作ってみる⑤〜ダイヤル錠ギミックの状態をローカルストレージに保存する〜
@@ -22,11 +22,28 @@ sources:
 - url: https://qiita.com/notfolder/items/c88f1be667a36ec069b7
   title: AIと企画を「議論」する方法：AIを使った個人開発のゲームの面白さとモチベーションをClaudeと構造解析
   date: '2026-09-05'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xul18m/my_game_got_removed_from_gamedev_subs_for_using
+  title: My game got removed from gamedev subs for using AI, so here’s exactly how
+    I made it with Claude
+  date: '2026-11-13'
 ---
 
 
 
+
 # Game Development Workflow
+
+---
+
+## 2026-11-13
+
+### My game got removed from gamedev subs for using AI, so here’s exactly how I made it with Claude
+
+19年のゲーム開発経験を持つ開発者が、Claude Opus 5.5とClaude Codeを使って5週間で完全な商業ゲームを開発した事例。Funplay MCPを使ってClaudeがUnityエディタを直接操作し、C#コード、アート、Steam公開まで一貫して実現。ゲーム開発サブレディットではAI使用を理由に投稿が削除されたため、ClaudeAIコミュニティで詳細なワークフローを共有している。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xul18m/my_game_got_removed_from_gamedev_subs_for_using)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, opus
 
 ---
 

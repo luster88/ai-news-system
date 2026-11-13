@@ -11,7 +11,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-23'
-updated: '2026-10-07'
+updated: '2026-11-13'
 sources:
 - url: https://qiita.com/tuvy22686/items/efd5e3ba573abb9914d6
   title: 【個人開発】AI（Claude / Gemini）に設計を任せて、AWS 上に完全自動の競馬予測システムを構築した話【AIDD】
@@ -34,6 +34,9 @@ sources:
 - url: https://zenn.dev/rrr068/articles/ad0edb00dc6d35
   title: 仕様駆動開発でE2Eテストを高速自動生成してみる
   date: '2026-10-07'
+- url: https://zenn.dev/utengo/articles/ai-yosegaki-feature-overnight
+  title: 「1月中旬に公開」の予定だった機能を、オーナーの一言からAIが一晩で作った話
+  date: '2026-11-13'
 ---
 
 
@@ -42,7 +45,20 @@ sources:
 
 
 
+
 # Ai Driven Development
+
+---
+
+## 2026-11-13
+
+### 「1月中旬に公開」の予定だった機能を、オーナーの一言からAIが一晩で作った話
+
+個人開発の寄せ書きアプリで、AI（Claude）に開発を任せる運用体制において、1月中旬予定の新機能を一晩で実装・提出した事例。オーナーの「今すぐ始めたい」という一言から、サーバー構築・UI実装・ストア申請まで自動化された定期タスクが進行。人間の役割は「気づき」と「判断」に集約され、コード記述時間はゼロ。AI主導の開発では作るコストよりも「何を作るか」の判断が速さを決める鍵になることを示唆。
+
+- **ソース**: [Zenn claude](https://zenn.dev/utengo/articles/ai-yosegaki-feature-overnight)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 

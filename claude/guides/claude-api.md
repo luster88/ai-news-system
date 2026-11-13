@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-25'
-updated: '2026-11-12'
+updated: '2026-11-13'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -88,6 +88,9 @@ sources:
 - url: https://qiita.com/ai_hack_lab/items/ea9b39a761e02546cedd
   title: 【Python×Anthropic】Claude 3.5 Sonnetで「構造化JSON」を100%確実に抽出する堅牢パイプラインの実装手法
   date: '2026-11-12'
+- url: https://qiita.com/kai_kou/items/83d306e07f59beddc48d
+  title: Claude Fable 5.2入門、API呼び出しと価格・高速モードの使い分け
+  date: '2026-11-13'
 ---
 
 
@@ -111,7 +114,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-11-13
+
+### Claude Fable 5.2入門、API呼び出しと価格・高速モードの使い分け
+
+Claude Fable 5.2の価格体系（標準$8/$40、高速$16/$80、Batch$4/$20）とAPI呼び出し方法を解説。Opus 5.5との価格比較、effort設定、高速モードの使い分け、Fable 5.1からの移行時の400エラー回避方法、拒否（refusal）の検知方法を整理。公式推奨フローは「まずOpusのeffortを上げて試し、evalを満たせない場合にFable 5.2へ移行」。データ保持条件（30日間必須、ZDR制限）にも注意が必要。
+
+- **ソース**: [Qiita claude](https://qiita.com/kai_kou/items/83d306e07f59beddc48d)
+- **重要度**: 7/10
+- **タグ**: claude-api, pricing, 新機能
 
 ---
 

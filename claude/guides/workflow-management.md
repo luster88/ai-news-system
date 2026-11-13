@@ -9,8 +9,9 @@ tags:
 - cowork
 - prompt
 - setup
+- windows
 date: '2026-06-17'
-updated: '2026-11-01'
+updated: '2026-11-13'
 sources:
 - url: https://qiita.com/shinjpn1/items/f194dc84928c6598477e
   title: 「Claude Code 使ってます?」— テキストファイルで AI を管理していた私が、結局システムを作るまで
@@ -27,13 +28,29 @@ sources:
 - url: https://zenn.dev/sato_ken/articles/46f7f1f7a1e856
   title: AIを10窓並行で回してたら頭がパンクしたので「進行板」を作った
   date: '2026-11-01'
+- url: https://qiita.com/umezu_y/items/a5a86c005f8c66cecbad
+  title: Claude Code を「時間割」で回す ― 1日10件以上を並行しても、目の前の1件に集中できる
+  date: '2026-11-13'
 ---
 
 
 
 
 
+
 # Workflow Management
+
+---
+
+## 2026-11-13
+
+### Claude Code を「時間割」で回す ― 1日10件以上を並行しても、目の前の1件に集中できる
+
+Claude Code のデスクトップアプリで、複数の作業を並行管理する「時間割」手法を紹介。ネストセッションを活用し、1日10件以上の案件を並行しても、目の前の1件に集中できる運用方法を解説。サイドバーでの視覚的な進捗管理と、時間割セッションでの優先順位付けがポイント。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/umezu_y/items/a5a86c005f8c66cecbad)
+- **重要度**: 6/10
+- **タグ**: claude-code, windows
 
 ---
 

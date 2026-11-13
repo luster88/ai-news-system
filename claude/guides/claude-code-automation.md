@@ -5,6 +5,7 @@ subcategory: claude-code-automation
 tags:
 - claude-code
 - cowork
+- mac
 - mcp
 - opus
 - performance
@@ -12,7 +13,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-10-24'
+updated: '2026-11-13'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -138,6 +139,9 @@ sources:
 - url: https://qiita.com/joinclass/items/e957bd69e0221a40b170
   title: Claude Codeのクロスセッションメッセージングで「別セッションに仕事を頼む」を実装する
   date: '2026-10-24'
+- url: https://qiita.com/yorimichi_labo/items/8a1f99f7b429829b4417
+  title: 常駐 Claude Code を kill する前に、tmuxで遺言を書かせる
+  date: '2026-11-13'
 ---
 
 
@@ -176,7 +180,20 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-11-13
+
+### 常駐 Claude Code を kill する前に、tmuxで遺言を書かせる
+
+Claude Code を tmux で常駐させる環境で、毎朝4時に kill する前に未保存の会話内容を保存させる仕組みを実装した記事。tmux send-keys でプロンプトを送信し、capture-pane で画面を監視して作業完了を判定する方法を解説。macOS + tmux + launchd での運用で、会話履歴が消える前に遺言（未保存メモ）を書き出させる工夫を紹介している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/yorimichi_labo/items/8a1f99f7b429829b4417)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, mac
 
 ---
 

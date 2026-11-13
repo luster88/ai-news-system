@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-02'
-updated: '2026-11-11'
+updated: '2026-11-13'
 sources:
 - url: https://ai-heartland.com/news/cursor-firecrawl-mcp-aiagent
   title: Cursor × Firecrawl MCPで任意ウェブサイト複製が可能に。AIAgent強化
@@ -32,6 +32,9 @@ sources:
 - url: https://qiita.com/ontoloop/items/8597217d05074713a4aa
   title: Claude Code と Codex を MCP で Ontoloop につなぎ、人が確認したチームの事実を共有する
   date: '2026-11-11'
+- url: https://ai-heartland.com/tool/yogurt
+  title: Yogurtとは｜Granolaの代わりになる無料OSS、会議の文字起こしと要約をローカルだけで完結させる
+  date: '2026-11-13'
 ---
 
 
@@ -39,7 +42,20 @@ sources:
 
 
 
+
 # Mcp Integration
+
+---
+
+## 2026-11-13
+
+### Yogurtとは｜Granolaの代わりになる無料OSS、会議の文字起こしと要約をローカルだけで完結させる
+
+Yogurtは会議の録音・文字起こし・要約をローカル環境で完結できる無料OSSツール。Whisper.cppとllama.cppを使い、Mac/Windows/Linuxに対応。初回5GB以上のモデルダウンロードが必要で、MCP機能を有効にするとClaudeなどのアシスタントが会議内容を読めるようになる。Granolaの代替として、音声データを外部サービスに送らずプライバシーを保護できる。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/yogurt)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-api, cowork
 
 ---
 
