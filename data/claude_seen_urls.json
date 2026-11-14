@@ -1,27 +1,5 @@
 {
   "urls": {
-    "https://www.reddit.com/r/ClaudeAI/comments/1voz6sm/downgraded_from_opus_5_to_opus_46_and_it_feels": "2026-08-15",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vp09ja/i_built_popwatch_your_personal_popcorn_popping_pal": "2026-08-15",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vp9q4f/have_a_cronjob_every_morning_3_hours_before_you": "2026-08-15",
-    "https://www.reddit.com/r/ClaudeAI/comments/1voxq2f/world_of_claudecraft_after_2_months_of_vibe_coding": "2026-08-15",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vp9nh8/claude_conversation_too_long_to_continue_best_way": "2026-08-15",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vpbsem/claude_just_made_me_this_launch_video": "2026-08-15",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vp2ty0/fable_shmable_the_real_flagship_feature_is_not": "2026-08-15",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vp5cqt/claude_code_hitting_the_5hour_usage_limit_much": "2026-08-15",
-    "https://qiita.com/moha0918_/items/b604352231f9a8a76a38": "2026-08-15",
-    "https://qiita.com/kinamocchi_tech/items/9246f34a3577db6485ff": "2026-08-15",
-    "https://qiita.com/kamome_susume/items/360f3ac1657545a8bec5": "2026-08-15",
-    "https://qiita.com/locallab/items/bc415aeb5bf07ac3b408": "2026-08-15",
-    "https://zenn.dev/hoakari/articles/2026-08-16-godot-collision-layer-override": "2026-08-15",
-    "https://zenn.dev/muno_sunsun/articles/084d52521d62c9": "2026-08-15",
-    "https://zenn.dev/aws_japan/articles/claude-desktop-bedrock-box-mcp": "2026-08-15",
-    "https://zenn.dev/nnakapa/articles/lab-36-copilot-gemini37-sonnet5-qcd": "2026-08-15",
-    "https://zenn.dev/yousaku/articles/c892dd7a564478": "2026-08-15",
-    "https://zenn.dev/taikikei/articles/1d607353baf517": "2026-08-15",
-    "https://qiita.com/ay5399/items/642d494503f133f27325": "2026-08-15",
-    "https://qiita.com/0yasumi_m0de/items/f8a07dc09f3bcc4d7058": "2026-08-15",
-    "https://the-decoder.com/investor-pressure-forces-nvidia-to-shrink-its-openai-bet-just-as-anthropics-numbers-defy-bubble-warnings": "2026-08-15",
-    "https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work": "2026-08-15",
     "https://www.reddit.com/r/ClaudeAI/comments/1vqa53l/discussion_hub_for_new_claude_incident_service": "2026-08-16",
     "https://www.reddit.com/r/ClaudeAI/comments/1vq9o87/im_getting_this_error_constantly_while_trying_to": "2026-08-16",
     "https://www.reddit.com/r/ClaudeAI/comments/1vpziv3/thanks_claude": "2026-08-16",
@@ -2185,9 +2163,23 @@
     "https://ai-heartland.com/tool/atuin-threads": "2026-11-13",
     "https://ai-heartland.com/tool/yogurt": "2026-11-13",
     "https://the-decoder.com/claude-meetings-lets-anthropics-ai-join-your-video-calls": "2026-11-13",
-    "https://the-decoder.com/googles-gemini-4-hydrogen-outscores-the-bigger-argon-just-four-weeks-after-its-launch": "2026-11-13"
+    "https://the-decoder.com/googles-gemini-4-hydrogen-outscores-the-bigger-argon-just-four-weeks-after-its-launch": "2026-11-13",
+    "https://qiita.com/NaokiIshimura/items/497afd9a11879d369d19": "2026-11-14",
+    "https://qiita.com/NaokiIshimura/items/59520039c1504a84cf89": "2026-11-14",
+    "https://zenn.dev/recalm/articles/31c3b16f29aeb4": "2026-11-14",
+    "https://zenn.dev/handa_lab/articles/10-rules-to-hooks": "2026-11-14",
+    "https://zenn.dev/handa_lab/articles/09-ai-report-verification": "2026-11-14",
+    "https://zenn.dev/arx8/articles/97259b103f22d0": "2026-11-14",
+    "https://zenn.dev/branbran/articles/e4919ece528dc1": "2026-11-14",
+    "https://zenn.dev/sae_eng/articles/8335d4794617b2": "2026-11-14",
+    "https://qiita.com/kai_kou/items/fa321358a7809b561c00": "2026-11-14",
+    "https://the-decoder.com/openai-rebuilt-ai-shopping-from-scratch-with-chatgpt-wallet": "2026-11-14",
+    "https://the-decoder.com/banks-bar-chinese-and-hong-kong-investors-from-anthropic-ipo-over-us-export-controls": "2026-11-14",
+    "https://the-decoder.com/anthropics-claude-for-manufacturing-plugs-ai-directly-into-factory-software-to-automate-industrial-workflows": "2026-11-14"
   },
   "source_penalties": {
-    "Anthropic News": "2026-11-14"
+    "Anthropic News": "2026-11-15",
+    "Reddit r/ClaudeAI": "2026-11-15",
+    "AI Heartland": "2026-11-15"
   }
 }

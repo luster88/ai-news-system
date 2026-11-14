@@ -12,7 +12,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-23'
-updated: '2026-10-31'
+updated: '2026-11-14'
 sources:
 - url: https://qiita.com/pro-tein/items/49e5dbec705c3497dd51
   title: 【Claude Code】Hooks機能でデスクトップ通知を設定してみた
@@ -69,6 +69,9 @@ sources:
 - url: https://qiita.com/takamatt_ai/items/2ed447a87f8d7900cea0
   title: Claude Code の PreToolUse フックで git add -A や reset --hard を機械的に止める(誤検知の避け方つき)
   date: '2026-10-31'
+- url: https://zenn.dev/handa_lab/articles/10-rules-to-hooks
+  title: 禁止事項を書き足すのをやめて、Claude Code の hook で止めるようにした
+  date: '2026-11-14'
 ---
 
 
@@ -88,7 +91,20 @@ sources:
 
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-11-14
+
+### 禁止事項を書き足すのをやめて、Claude Code の hook で止めるようにした
+
+Claude Code の PreToolUse hook を活用して、ルール文章での禁止事項を実行前のチェック機構に置き換えた実践記事。Python のヒアドキュメント実行禁止など4つのルールを hook 化し、3つは成功したが削除確認は自己承認の問題で撤回。機械的判定可能なものは hook で強制し、判断が必要なものは文章ルールと auto mode 設定に委ねる運用方針を確立した。
+
+- **ソース**: [Zenn claude](https://zenn.dev/handa_lab/articles/10-rules-to-hooks)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, setup
 
 ---
 

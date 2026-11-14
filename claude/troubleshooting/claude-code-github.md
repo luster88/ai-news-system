@@ -5,16 +5,33 @@ subcategory: claude-code-github
 tags:
 - bugfix
 - claude-code
+- cowork
 - setup
 date: '2026-10-11'
-updated: '2026-10-11'
+updated: '2026-11-14'
 sources:
 - url: https://qiita.com/homhom44/items/d866772fde1183485dd9
   title: GitHub連携が認証切れする時の最短チェック手順！Claude Code でつまずいたときの切り分けメモ（2026-10-11）
   date: '2026-10-11'
+- url: https://zenn.dev/arx8/articles/97259b103f22d0
+  title: Claude Code の cloud session の commit を「誰の依頼か」わかるようにする
+  date: '2026-11-14'
 ---
 
+
 # Claude Code Github
+
+---
+
+## 2026-11-14
+
+### Claude Code の cloud session の commit を「誰の依頼か」わかるようにする
+
+Claude Code の cloud session で作成されるコミットは、デフォルトで author と committer が両方 Claude になり、チームでの利用時に誰の依頼か追跡できない問題がある。公式の機能リクエストは not planned で却下されたが、SessionStart hook を使って author のみをセッション所有者に設定し、committer は Claude のままにすることで解決できる。これにより GitHub 上で「依頼者 authored and claude committed」と表示され、両者の関与が明確になる。
+
+- **ソース**: [Zenn claude](https://zenn.dev/arx8/articles/97259b103f22d0)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, cowork
 
 ---
 
