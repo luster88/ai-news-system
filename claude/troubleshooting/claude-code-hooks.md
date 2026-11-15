@@ -8,7 +8,7 @@ tags:
 - cowork
 - setup
 date: '2026-06-03'
-updated: '2026-10-23'
+updated: '2026-11-15'
 sources:
 - url: https://zenn.dev/gudezou/articles/7e8235a27f0909
   title: Claude Code の終了フックから claude を呼び出すとなぜ暴走するのか
@@ -28,6 +28,10 @@ sources:
 - url: https://zenn.dev/starken/articles/claude-code-hook-gate-bash-bypass
   title: Claude Codeのフックで止めたはずの書き込みが、Bashのlnやtouchで通っていた
   date: '2026-10-23'
+- url: https://qiita.com/homhom44/items/d1987dc6a459b10701ae
+  title: Claude Code で "PreToolUse:Bash hook error" / "Stop hook error" が出たときの見分け方（終了コードの意味と、成功しても
+    error と表示される件）
+  date: '2026-11-15'
 ---
 
 
@@ -35,7 +39,20 @@ sources:
 
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-11-15
+
+### Claude Code で "PreToolUse:Bash hook error" / "Stop hook error" が出たときの見分け方（終了コードの意味と、成功しても error と表示される件）
+
+Claude Code でフック実行時に表示される「hook error」は、終了コード2の意図的なブロックでも、それ以外の失敗でも同じように表示されるため、表示だけでは真の失敗か判断できない。フックスクリプトを単体で実行して終了コードを確認することで切り分けが可能。終了コード0が成功、2が意図的ブロック、それ以外が非ブロック失敗となる。表示上のバグとして GitHub issue #17088 で報告されている。
+
+- **ソース**: [Qiita claude](https://qiita.com/homhom44/items/d1987dc6a459b10701ae)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 

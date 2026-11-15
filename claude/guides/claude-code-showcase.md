@@ -9,7 +9,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-06-11'
-updated: '2026-10-17'
+updated: '2026-11-15'
 sources:
 - url: https://zenn.dev/acntechjp/articles/aeb45327bb8b13
   title: Claude Fable 5でアプリ制作パート2（3D都市シムとアニメーションLPを作ってみた）
@@ -20,11 +20,27 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1x7v7gj/this_is_61_kb_html_file
   title: This is 61 KB HTML file 🤯
   date: '2026-10-17'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xw376f/i_built_a_swimmable_underwater_world_in_one_97_kb
+  title: I built a swimmable underwater world in one 97 KB HTML file with Fable 5.2
+  date: '2026-11-15'
 ---
 
 
 
+
 # Claude Code Showcase
+
+---
+
+## 2026-11-15
+
+### I built a swimmable underwater world in one 97 KB HTML file with Fable 5.2
+
+ユーザーが Claude Code を使って、画像や3Dモデルを使わず97KBの単一HTMLファイルで動作する水中世界シミュレーションを構築。WebGPU とプロシージャル生成を活用し、初期ビルドは1つのプロンプトから生成。Claude が WGSL シェーダー、GPU上での海底造形、200万枚のケルプの葉、Web Audio サウンドなど全コードを記述した実例。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xw376f/i_built_a_swimmable_underwater_world_in_one_97_kb)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

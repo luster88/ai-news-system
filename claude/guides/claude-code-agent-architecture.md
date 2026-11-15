@@ -12,7 +12,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-15'
-updated: '2026-08-08'
+updated: '2026-11-15'
 sources:
 - url: https://zenn.dev/chiakidayo/articles/agent-teams-subagent-comparison
   title: 【Claude Code】Agent teamsとSubagent並列実行比較メモ
@@ -38,6 +38,9 @@ sources:
 - url: https://ai-heartland.com/explain/claude-code-cross-session-messaging
   title: Claude Code cross-session messaging解説｜別セッションに伝言を送る仕組みを実測
   date: '2026-08-08'
+- url: https://qiita.com/hisashi-ito/items/847dade8327dbb20fc2c
+  title: 常時稼働エージェントの 5 つの部品 — Anthropic の解説記事の整理
+  date: '2026-11-15'
 ---
 
 
@@ -45,7 +48,20 @@ sources:
 
 
 
+
 # Claude Code Agent Architecture
+
+---
+
+## 2026-11-15
+
+### 常時稼働エージェントの 5 つの部品 — Anthropic の解説記事の整理
+
+Anthropicが公開した常時稼働エージェントの構築ガイドを日本語で整理。エージェントは事象発生時に起動し、処理後にメモリを保存して休止する。5つの主要部品（受信箱、タイマー、メモリ、権限、送信箱）で構成され、最新モデルの判断力向上と費用低下により実用的になった。Claude Codeを使用して記事を分析・文書化した解説記事。
+
+- **ソース**: [Qiita claude](https://qiita.com/hisashi-ito/items/847dade8327dbb20fc2c)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, prompt
 
 ---
 

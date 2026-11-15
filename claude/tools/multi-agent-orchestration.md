@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-02'
-updated: '2026-07-14'
+updated: '2026-11-15'
 sources:
 - url: https://ai-heartland.com/ai/gemini/oh-my-gemini
   title: oh-my-gemini：Gemini CLIのマルチエージェント並列実行ツール
@@ -28,13 +28,29 @@ sources:
 - url: https://qiita.com/Koukyosyumei/items/9ff3ddef9c11a44bcb30
   title: Claude Code・Codexのマルチエージェント構成をコードで定義する技術 ― プログラマブル・オーケストレーション入門
   date: '2026-07-14'
+- url: https://zenn.dev/coastlinedb/articles/c976a27eb7c127
+  title: 窓口はひとつ、裏側は5経路 — Muse の環境で複数 AI エージェントを fail-closed に回す設計と運用
+  date: '2026-11-15'
 ---
 
 
 
 
 
+
 # Multi Agent Orchestration
+
+---
+
+## 2026-11-15
+
+### 窓口はひとつ、裏側は5経路 — Muse の環境で複数 AI エージェントを fail-closed に回す設計と運用
+
+Claude Code、Codex CLI、Gemini CLI、Grok、OpenAI API の5つのAIエージェントを単一窓口（Muse）で統合管理する実装例。外部アクション実行者を1つに限定し、プロンプトインジェクション対策と二重実行防止を実現。状態管理はJSON/JSONLファイルで行い、サブスクリプション枠内で運用。不変条件と運用ルールを明確に分離し、定期的にルールを見直して削減する運用方針を採用。
+
+- **ソース**: [Zenn claude](https://zenn.dev/coastlinedb/articles/c976a27eb7c127)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, cowork
 
 ---
 

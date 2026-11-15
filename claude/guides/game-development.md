@@ -11,7 +11,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-05-29'
-updated: '2026-10-02'
+updated: '2026-11-15'
 sources:
 - url: https://qiita.com/hiro_qiita_/items/152cc2ef68d5fb17b790
   title: Kiro のだいぼうけん！開発記 〜ファミコンの制約を守りながらKiroとClaudeにシューティングゲームを作らせる〜
@@ -38,6 +38,10 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wv2r73/made_a_destroy_any_website_stickman_game
   title: Made a "Destroy Any Website" stickman game
   date: '2026-10-02'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xwgbxr/i_made_a_minecraft_mod_with_claude_press_b_and
+  title: 'I made a Minecraft mod with Claude: press B and the whole world turns into
+    toy bricks'
+  date: '2026-11-15'
 ---
 
 
@@ -47,7 +51,20 @@ sources:
 
 
 
+
 # Game Development
+
+---
+
+## 2026-11-15
+
+### I made a Minecraft mod with Claude: press B and the whole world turns into toy bricks
+
+ユーザーが Claude を使って Minecraft の MOD を作成。B キーを押すと世界全体がレゴ風のブロックに変化し、R キーで元に戻る機能を実装。Claude が Java による Fabric MOD のコード全体を記述し、リソースパック変換、自動テスト機能（スクリーンショット確認）、MCP 経由の実行環境構築まで担当した。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xwgbxr/i_made_a_minecraft_mod_with_claude_press_b_and)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, cowork
 
 ---
 

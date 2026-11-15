@@ -10,7 +10,7 @@ tags:
 - release
 - 新機能
 date: '2026-07-23'
-updated: '2026-09-18'
+updated: '2026-11-15'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v48e9x/claude_code_just_added_native_codebase_security
   title: Claude Code just added native codebase security scanning
@@ -40,6 +40,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1wjxvwz/claude_code_is_getting_native_agentsmd_support
   title: Claude Code is getting native AGENTS.md support!
   date: '2026-09-18'
+- url: https://qiita.com/Sidejob/items/27fe982bf44cb9807aa5
+  title: Claude Code v2.1.325 セキュリティ修正の内容（2026年）
+  date: '2026-11-15'
 ---
 
 
@@ -50,7 +53,20 @@ sources:
 
 
 
+
 # Claude Code Security
+
+---
+
+## 2026-11-15
+
+### Claude Code v2.1.325 セキュリティ修正の内容（2026年）
+
+Claude Code v2.1.325のセキュリティアップデートに関する詳細レポート。zstd圧縮レスポンスのデコード処理に脆弱性が発見され、即座の更新が推奨されている。その他、Jupyterノートブック統合の改善、マネージド設定でのエラーメッセージ改善、サブエージェントのモデル設定問題の修正、認証関連のバグ修正が含まれる。企業利用者向けに今日中の更新を強く推奨する内容。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Sidejob/items/27fe982bf44cb9807aa5)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, bugfix
 
 ---
 

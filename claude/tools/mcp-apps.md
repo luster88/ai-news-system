@@ -4,17 +4,34 @@ category: tools
 subcategory: mcp-apps
 tags:
 - claude-api
+- claude-console
 - mcp
 - 新機能
 date: '2026-04-12'
-updated: '2026-04-12'
+updated: '2026-11-15'
 sources:
 - url: https://zenn.dev/peintangos/articles/85d704b3c3ecd9
   title: 【MCP Apps】ChatGPT の中に Claude の回答を生やす
   date: '2026-04-12'
+- url: https://zenn.dev/ncdc/articles/8cfbf2d20eec93
+  title: MCP Appsの進化がすごい！Claude.aiが「app tools」に対応したので試してみた
+  date: '2026-11-15'
 ---
 
+
 # Mcp Apps
+
+---
+
+## 2026-11-15
+
+### MCP Appsの進化がすごい！Claude.aiが「app tools」に対応したので試してみた
+
+Claude.aiがMCP Appsの新機能「app tools」に対応し、開いている画面を直接操作できるようになった。従来はツールで新しい画面を開くだけだったが、app toolsにより既存画面のツールを呼び出して操作可能に。付箋ボードアプリを作成して機能を検証し、ユーザーメッセージ送信、コンテキスト送信、全画面表示などの既存機能も改善されていることを確認した。
+
+- **ソース**: [Zenn claude](https://zenn.dev/ncdc/articles/8cfbf2d20eec93)
+- **重要度**: 7/10
+- **タグ**: mcp, 新機能, claude-console
 
 ---
 

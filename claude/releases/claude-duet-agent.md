@@ -6,9 +6,10 @@ tags:
 - claude-api
 - cowork
 - opus
+- release
 - 新機能
 date: '2026-10-22'
-updated: '2026-10-24'
+updated: '2026-11-15'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1xbwkgf/claude_duet_anthropic_just_casually_dropped_the
   title: 'Claude Duet: Anthropic just casually dropped the personal assistant calling
@@ -24,11 +25,27 @@ sources:
 - url: https://zenn.dev/sugawara_ai/articles/ai-news-20261023
   title: Claude Duet登場、先回りして動くAIの相棒
   date: '2026-10-24'
+- url: https://ai-heartland.com/explain/claude-duet
+  title: Claude Duetとは｜日本で使える？始め方・料金・できること・安全性・Claude Codeとの違い
+  date: '2026-11-15'
 ---
 
 
 
+
 # Claude Duet Agent
+
+---
+
+## 2026-11-15
+
+### Claude Duetとは｜日本で使える？始め方・料金・できること・安全性・Claude Codeとの違い
+
+Claude Duetは、Anthropicが2026年10月に米国で研究プレビュー公開した、先回りして通知・作業を進めるエージェント型アプリ。メールや予定を確認し、毎朝のブリーフや受信箱整理、資料作成などを自律実行するが、送信・支払いには承認が必要。現在は米国のPro/Max/Ultraプラン限定で、日本では未提供。コミュニティ製ツール「claude-duet」とは別物。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/explain/claude-duet)
+- **重要度**: 8/10
+- **タグ**: 新機能, claude-api, release
 
 ---
 
