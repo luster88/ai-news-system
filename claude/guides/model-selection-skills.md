@@ -3,13 +3,15 @@ title: Model Selection Skills
 category: guides
 subcategory: model-selection-skills
 tags:
+- claude-code
 - haiku
 - opus
 - performance
+- pricing
 - prompt
 - sonnet
 date: '2026-04-22'
-updated: '2026-06-21'
+updated: '2026-11-16'
 sources:
 - url: https://zenn.dev/ai_arai_ally/articles/20260422-0401-claude-haiku-4-5-skill-opus-4-7
   title: Claude Haiku 4.5 + skill で Opus 4.7 を超えた ― SkillsBench 追試とモデル選定の設計図
@@ -23,12 +25,28 @@ sources:
 - url: https://zenn.dev/shun_producer/articles/claude-model-selection-guide
   title: Claudeモデル×エフォート選択ガイド——Opus 4.8 / Sonnet 4.6 / Haiku 4.5の2軸最適化
   date: '2026-06-21'
+- url: https://qiita.com/hatyibei/items/478274a241b5e3d1dc72
+  title: Claude のモデル選択ガイドを手元で試した：39回すべて合格、差は費用だけ。Opus low が高く見えたのはキャッシュ書き込みだった
+  date: '2026-11-16'
 ---
 
 
 
 
+
 # Model Selection Skills
+
+---
+
+## 2026-11-16
+
+### Claude のモデル選択ガイドを手元で試した：39回すべて合格、差は費用だけ。Opus low が高く見えたのはキャッシュ書き込みだった
+
+Claude Code CLI 2.1.325を使用し、Haiku・Sonnet・Opusの5設定×6タスクで計39回の実験を実施。全設定で100%合格し、成功率では差が出ず、費用・速度・出力量のみで差異が確認された。最も安価なHaikuで全タスク合格。Opusのlowがmediumより高額に見えた原因はキャッシュ書き込み料金であることを追加実験で特定。公式ガイドの「自分のタスクで試せ」を実践し、小規模タスクでは最安設定で十分という結論を得た。
+
+- **ソース**: [Qiita claude](https://qiita.com/hatyibei/items/478274a241b5e3d1dc72)
+- **重要度**: 6/10
+- **タグ**: claude-code, performance, pricing
 
 ---
 

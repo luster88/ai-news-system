@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-08'
-updated: '2026-11-11'
+updated: '2026-11-16'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sfzcyk/official_anthropic_introduces_claude_managed
   title: 'Official: Anthropic introduces Claude Managed Agents, everything you need
@@ -117,6 +117,9 @@ sources:
 - url: https://zenn.dev/systemdesignsim/articles/claude-fable-5-2-honest-review
   title: Claude Fable 5.2とMythos 5.2を正直にレビューする
   date: '2026-11-11'
+- url: https://qiita.com/aiapi_radar_news/items/4d3fb7da5c8c81d7b20d
+  title: claude-fable-5-2が登場、Googleが音声5モデルの停止を直前に撤回｜今週のAI API変更（11/9-11/15）
+  date: '2026-11-16'
 ---
 
 
@@ -143,7 +146,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-11-16
+
+### claude-fable-5-2が登場、Googleが音声5モデルの停止を直前に撤回｜今週のAI API変更（11/9-11/15）
+
+Claude Fable 5.2とMythos 5.2が新リリース。100万トークンのコンテキスト、128k出力、適応的思考を搭載し、5.1系より20%安価（入力$8/出力$40）。プレフィックスチェック強制、computer_20251124ツール廃止、advisorツール制限の3つの破壊的変更あり。移行時にはシステムプロンプトやツール定義を送り返すコードで400エラーが発生する可能性。fast modeも提供開始。
+
+- **ソース**: [Qiita claude](https://qiita.com/aiapi_radar_news/items/4d3fb7da5c8c81d7b20d)
+- **重要度**: 8/10
+- **タグ**: 新機能, release, claude-api
 
 ---
 

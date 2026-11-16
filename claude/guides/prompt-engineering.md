@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-07'
-updated: '2026-11-12'
+updated: '2026-11-16'
 sources:
 - url: https://zenn.dev/analysis/articles/thought-analyzer-agents-md
   title: コンテキストファイルは、エージェントを賢くしない ── AGENTS.mdの効果を初めて測った研究
@@ -53,6 +53,9 @@ sources:
 - url: https://zenn.dev/tracer0tong/articles/db15089e96c10a
   title: LLMペルソナ実験で『事前に決めた判定基準』を守るために必要だったこと
   date: '2026-11-12'
+- url: https://qiita.com/sha44444/items/48cf2d6b82b16a99dd79
+  title: AIエージェントを部下として並列に回す：指示書チェック項目
+  date: '2026-11-16'
 ---
 
 
@@ -66,7 +69,20 @@ sources:
 
 
 
+
 # Prompt Engineering
+
+---
+
+## 2026-11-16
+
+### AIエージェントを部下として並列に回す：指示書チェック項目
+
+AIエージェントを複数並行稼働させ、部下のように扱う際の指示書作成ガイド。目的・完了条件・制約・報告形式など6項目のチェックリストを提示し、仕様駆動開発（SDD）の考え方を応用してAIに明確な指示を与える方法を解説。丸投げではなく、作業範囲を明確化して任せることで効率化を図る。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/sha44444/items/48cf2d6b82b16a99dd79)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-25'
-updated: '2026-11-13'
+updated: '2026-11-16'
 sources:
 - url: https://zenn.dev/qinritukou/articles/git-ai-commit
   title: 「fix」とか「update」しか書かないそこのあなたへ。Claudeにコミットメッセージを丸投げする最強エイリアス
@@ -91,6 +91,9 @@ sources:
 - url: https://qiita.com/kai_kou/items/83d306e07f59beddc48d
   title: Claude Fable 5.2入門、API呼び出しと価格・高速モードの使い分け
   date: '2026-11-13'
+- url: https://qiita.com/sakutto-panda/items/7c4680e391edf227b375
+  title: Claude APIのmessage threads解説——差分だけ送って長い会話を速くする、単発呼び出しには効かない
+  date: '2026-11-16'
 ---
 
 
@@ -115,7 +118,20 @@ sources:
 
 
 
+
 # Claude Api
+
+---
+
+## 2026-11-16
+
+### Claude APIのmessage threads解説——差分だけ送って長い会話を速くする、単発呼び出しには効かない
+
+Claude Messages APIに追加されたmessage threads機能の解説記事。会話履歴をサーバー側に5分間保持し、2ターン目以降は差分のみ送信することでTTFTを短縮する。料金・レート制限は変わらず、プロンプトキャッシュは自動適用されない。スレッドはベストエフォートで失効するため、アプリ側で会話の正本を保持し404時は全文送信する設計が必要。単発呼び出しには効果がないため、著者は導入を見送った。
+
+- **ソース**: [Qiita claude](https://qiita.com/sakutto-panda/items/7c4680e391edf227b375)
+- **重要度**: 7/10
+- **タグ**: claude-api, 新機能, performance
 
 ---
 

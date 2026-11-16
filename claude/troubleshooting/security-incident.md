@@ -9,6 +9,7 @@ tags:
 - claude-console
 - cursor
 - mac
+- mcp
 - opus
 - performance
 - release
@@ -17,7 +18,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-31'
-updated: '2026-11-02'
+updated: '2026-11-16'
 sources:
 - url: https://the-decoder.com/anthropic-accidentally-publishes-claude-code-source-code-for-anyone-to-find
   title: Anthropic accidentally publishes Claude Code source code for anyone to find
@@ -77,6 +78,9 @@ sources:
 - url: https://qiita.com/suwa_nobu/items/3cd02fa0f1cec7ea979c
   title: Cursor で Claude Code 拡張 2.1.312・2.1.313 が改ざんされていた件、Windows で自分の PC を確かめた
   date: '2026-11-02'
+- url: https://ai-heartland.com/security/cursor-security-incident
+  title: Cursor セキュリティインシデントの教訓｜会話の記録に残った鍵から拡張改ざんへ、点検コマンドとスキル
+  date: '2026-11-16'
 ---
 
 
@@ -92,7 +96,20 @@ sources:
 
 
 
+
 # Security Incident
+
+---
+
+## 2026-11-16
+
+### Cursor セキュリティインシデントの教訓｜会話の記録に残った鍵から拡張改ざんへ、点検コマンドとスキル
+
+Cursor のセキュリティインシデントについて、委託先 Fireworks から漏洩したアクセスキーが起点となり、会話記録に残っていた資格情報を通じて社内 SaaS や拡張マーケットプレイスが侵害された事例を解説。最大5,000人に改ざん版の Claude Code 拡張が配布された可能性があり、利用者向けに拡張の版や会話記録に残った鍵を点検するコマンドを提供。会話やサポートに鍵を貼らないこと、設定ファイルでの鍵の管理方法などの予防策を示している。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/security/cursor-security-incident)
+- **重要度**: 8/10
+- **タグ**: cursor, claude-code, mcp
 
 ---
 

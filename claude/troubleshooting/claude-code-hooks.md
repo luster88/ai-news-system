@@ -6,9 +6,10 @@ tags:
 - bugfix
 - claude-code
 - cowork
+- performance
 - setup
 date: '2026-06-03'
-updated: '2026-11-15'
+updated: '2026-11-16'
 sources:
 - url: https://zenn.dev/gudezou/articles/7e8235a27f0909
   title: Claude Code の終了フックから claude を呼び出すとなぜ暴走するのか
@@ -32,6 +33,9 @@ sources:
   title: Claude Code で "PreToolUse:Bash hook error" / "Stop hook error" が出たときの見分け方（終了コードの意味と、成功しても
     error と表示される件）
   date: '2026-11-15'
+- url: https://zenn.dev/kagaribilab/articles/claude-code-stop-hook-loop
+  title: goalを使わずStopフックを自作したら、Claude Codeが止まらず使用量が増え続けた
+  date: '2026-11-16'
 ---
 
 
@@ -40,7 +44,20 @@ sources:
 
 
 
+
 # Claude Code Hooks
+
+---
+
+## 2026-11-16
+
+### goalを使わずStopフックを自作したら、Claude Codeが止まらず使用量が増え続けた
+
+Claude Code で goal を使わず Stop フックを自作したところ、裏の仕事（テスト実行など）を待つ仕組みが不足していたため、7.5秒ごとに差し戻しループが発生。1回のセッションで16.5億トークンを消費し、Max 5x の週間枠が2割減少する事態に。公式の /goal は裏の仕事中は判定をスキップする仕組みがあるが、自作フックにはそれがなかった。最終的に差し戻しを1回に制限し、push フックで品質を担保する形に変更した。
+
+- **ソース**: [Zenn claude](https://zenn.dev/kagaribilab/articles/claude-code-stop-hook-loop)
+- **重要度**: 7/10
+- **タグ**: claude-code, bugfix, performance
 
 ---
 

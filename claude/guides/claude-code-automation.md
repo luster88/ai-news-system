@@ -13,7 +13,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-11-13'
+updated: '2026-11-16'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -142,6 +142,12 @@ sources:
 - url: https://qiita.com/yorimichi_labo/items/8a1f99f7b429829b4417
   title: 常駐 Claude Code を kill する前に、tmuxで遺言を書かせる
   date: '2026-11-13'
+- url: https://qiita.com/pythonista0328/items/d6d710b5bf788aa6552b
+  title: Claude Code -pを無人実行｜権限プロンプト対策4つの使い分け
+  date: '2026-11-16'
+- url: https://qiita.com/dsol_y_matsuda/items/a7db4c91a7f2568c4493
+  title: AI エージェントに「目と手」を与えるスキルの設計と実装【連載：Claude Code で環境構築 3】
+  date: '2026-11-16'
 ---
 
 
@@ -181,7 +187,30 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-11-16
+
+### Claude Code -pを無人実行｜権限プロンプト対策4つの使い分け
+
+Claude Codeを-pオプションで無人実行する際の権限プロンプト対策を解説。dontAsk、--permission-prompts none、permissions.denyInsteadOfPromptingの3つの設定方法の違いと使い分けを詳説し、結果JSONの判定スクリプトも提供。v2.1.302以降では-p実行時にManualモードで開始され、承認が必要な操作は自動で拒否される仕様変更にも対応。
+
+- **ソース**: [Qiita claude](https://qiita.com/pythonista0328/items/d6d710b5bf788aa6552b)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
+
+---
+
+### AI エージェントに「目と手」を与えるスキルの設計と実装【連載：Claude Code で環境構築 3】
+
+Claude Code に画面認識と GUI 操作能力を付与する「vm-console スキル」の設計・実装記事。virsh screenshot で画面キャプチャ、Claude の画像認識で状態判断、QMP でマウス操作を実現し、CLI ツールでありながら Ubuntu Desktop の GUI インストールを自動化。KubeVirt 環境での OS 自動構築を目的とした実践例で、AI エージェントの能力拡張パターンとして汎用的な「認識・判断・操作」ループを示している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/dsol_y_matsuda/items/a7db4c91a7f2568c4493)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

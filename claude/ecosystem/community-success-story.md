@@ -9,9 +9,10 @@ tags:
 - cowork
 - opus
 - performance
+- prompt
 - 新機能
 date: '2026-04-05'
-updated: '2026-10-17'
+updated: '2026-11-16'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sdabux/hats_off_to_claude
   title: Hats off to claude
@@ -32,6 +33,10 @@ sources:
   title: I thought my 90s Amiga was lost forever. 30 years later, it’s back due to
     ClaudeAI
   date: '2026-10-17'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xwvzv1/i_couldnt_even_grow_parsley_so_i_asked_claude_for
+  title: I couldn’t even grow parsley. So I asked Claude for help… and things got
+    a little out of hand !
+  date: '2026-11-16'
 ---
 
 
@@ -39,7 +44,20 @@ sources:
 
 
 
+
 # Community Success Story
+
+---
+
+## 2026-11-16
+
+### I couldn’t even grow parsley. So I asked Claude for help… and things got a little out of hand !
+
+ユーザーが植物を育てられずに困っていたところ、Claudeに水耕栽培タワーの構築を相談。Claudeの指示に従って実際に構築したところ、土壌栽培と比較して水耕栽培で劇的な成長差が見られた。特にパセリで顕著な違いが出て、期待以上の結果となった体験談。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xwvzv1/i_couldnt_even_grow_parsley_so_i_asked_claude_for)
+- **重要度**: 4/10
+- **タグ**: cowork, claude-console, prompt
 
 ---
 
