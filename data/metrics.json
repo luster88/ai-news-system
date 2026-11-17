@@ -13174,13 +13174,13 @@
     }
   },
   "2026-11-17": {
-    "timestamp": "2026-11-17T00:04:13.747149+00:00",
-    "elapsed_seconds": 191.3,
+    "timestamp": "2026-11-17T23:25:14.239066+00:00",
+    "elapsed_seconds": 164.9,
     "collection": {
-      "total_raw": 195,
-      "total_new": 135,
-      "total_seen": 60,
-      "total_penalized": 14,
+      "total_raw": 191,
+      "total_new": 124,
+      "total_seen": 67,
+      "total_penalized": 35,
       "by_source": {
         "OpenAI News": 8,
         "Anthropic News": 6,
@@ -13199,7 +13199,7 @@
         "AI Heartland": 6,
         "GIGAZINE": 6,
         "Publickey": 5,
-        "CNET Japan": 5,
+        "CNET Japan": 4,
         "ERNIE Blog": 6,
         "MiniMax News": 4,
         "36Kr AI": 0,
@@ -13209,8 +13209,8 @@
         "Qiita AI": 2,
         "Zenn AI": 8,
         "nyosegawa blog": 1,
-        "Reddit r/LocalLLaMA": 6,
-        "Hacker News": 1,
+        "Reddit r/LocalLLaMA": 0,
+        "Hacker News": 4,
         "Ollama Releases": 3,
         "vLLM Releases": 3,
         "Transformers Releases": 2,
@@ -13222,31 +13222,32 @@
         "Microsoft Research Blog": 5
       },
       "sources_zero": [
-        "36Kr AI"
+        "36Kr AI",
+        "Reddit r/LocalLLaMA"
       ]
     },
     "body_fetch": {
-      "total": 107,
-      "success": 82,
-      "empty": 25,
-      "skipped": 14,
-      "success_rate": 0.77
+      "total": 79,
+      "success": 66,
+      "empty": 13,
+      "skipped": 10,
+      "success_rate": 0.84
     },
     "summarization": {
       "selected": 25,
       "tentative_count": 0,
       "parse_failure_count": 0,
       "importance_distribution": {
-        "1-2": 4,
+        "1-2": 0,
         "3-4": 5,
-        "5-6": 10,
-        "7-8": 4,
-        "9-10": 2
+        "5-6": 12,
+        "7-8": 7,
+        "9-10": 1
       }
     },
     "output": {
       "total_items": 25,
-      "active_penalties": 11
+      "active_penalties": 18
     }
   }
 }
