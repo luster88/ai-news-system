@@ -12,7 +12,7 @@ tags:
 - prompt
 - vscode
 date: '2026-03-22'
-updated: '2026-10-24'
+updated: '2026-11-17'
 sources:
 - url: https://qiita.com/shockpan-web/items/852e962e14bdd2b98e70
   title: バイブコーディングでトークンを溶かさないための2つの工夫
@@ -44,6 +44,9 @@ sources:
 - url: https://qiita.com/yunany90/items/c1b7aea0108d71e37d52
   title: Claude Codeは質問する前に何トークン送っているのか：2025年7月から今週まで58バージョンを実測
   date: '2026-10-24'
+- url: https://zenn.dev/shinai/books/claude-code-saving-automation
+  title: Claude Codeの枠がすぐ尽きる人の節約術：実物の設定と、無人実行を98回試してやめた記録
+  date: '2026-11-17'
 ---
 
 
@@ -55,7 +58,20 @@ sources:
 
 
 
+
 # Token Optimization
+
+---
+
+## 2026-11-17
+
+### Claude Codeの枠がすぐ尽きる人の節約術：実物の設定と、無人実行を98回試してやめた記録
+
+Claude Codeのトークン消費を抑えるための実践的な節約術を解説。CLAUDE.mdや索引の分割、サブエージェントによるモデルの3段分けなど、実際の設定と98回の無人実行試行の経験を共有。AIでアプリ開発を行う開発者向けの具体的なワークフロー改善Tips。
+
+- **ソース**: [Zenn claude](https://zenn.dev/shinai/books/claude-code-saving-automation)
+- **重要度**: 7/10
+- **タグ**: claude-code, performance, prompt
 
 ---
 

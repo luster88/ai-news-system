@@ -8,15 +8,31 @@ tags:
 - setup
 - 新機能
 date: '2026-03-25'
-updated: '2026-03-25'
+updated: '2026-11-17'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/ac3ad051711b411f91ab
   title: Claude Agent Skillsにテスト駆動開発がやってきた — Evals・Benchmark・A/Bテストで本番運用に耐えるスキルを作る【2026年3月最新】
   date: '2026-03-25'
+- url: https://qiita.com/sakutto-panda/items/308bcb354f3527d03b09
+  title: Agent SkillsがLinux Foundation傘下に——手持ちの27スキルを仕様で検査したら6本が不合格
+  date: '2026-11-17'
 ---
 
 
+
 # Agent Skills Testing
+
+---
+
+## 2026-11-17
+
+### Agent SkillsがLinux Foundation傘下に——手持ちの27スキルを仕様で検査したら6本が不合格
+
+2025年10月22日、AnthropicがAgent SkillsをLinux Foundation傘下のAAIFに寄贈し、MCPに続く2つ目の標準化が実現。筆者が27個の自作スキルを公式仕様で検査したところ、6個がYAMLフロントマター不備で不合格。Claude Codeではフロントマターなしでも動作するが、claude.aiやSkills APIでは厳格な扱いが必要で、仕様準拠の重要性が明らかになった。
+
+- **ソース**: [Qiita claude](https://qiita.com/sakutto-panda/items/308bcb354f3527d03b09)
+- **重要度**: 8/10
+- **タグ**: 新機能, claude-code
 
 ---
 

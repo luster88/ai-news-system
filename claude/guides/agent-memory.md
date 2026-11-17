@@ -8,8 +8,10 @@ tags:
 - mcp
 - performance
 - prompt
+- sonnet
+- 新機能
 date: '2026-04-19'
-updated: '2026-11-12'
+updated: '2026-11-17'
 sources:
 - url: https://qiita.com/bit-tanghao/items/20e0366ce3f08f291ce5
   title: '# 【AIエージェントシリーズ 第4弾】メモリを持つAgent：プロジェクト文脈を覚えているレビュアーを作る'
@@ -17,10 +19,27 @@ sources:
 - url: https://ai-heartland.com/explain/continual-arc-agent-memory
   title: Continual-ARCとは｜エージェントの「メモリ」は学習になっていたか、新ベンチと3つの教訓
   date: '2026-11-12'
+- url: https://the-decoder.com/anthropic-says-the-key-to-agent-memory-is-knowing-what-to-forget-not-how-much-to-store
+  title: Anthropic says the key to agent memory is knowing what to forget, not how
+    much to store
+  date: '2026-11-17'
 ---
 
 
+
 # Agent Memory
+
+---
+
+## 2026-11-17
+
+### Anthropic says the key to agent memory is knowing what to forget, not how much to store
+
+Anthropic は、AI エージェントの記憶管理において「何を記憶するか」よりも「何を忘れるか」が重要であることを発表しました。ポケモン Red を用いた実験では、全ての情報を記録する手法よりも、戦略やルールを選択的に記録する方が効果的であることが判明しました。また、セッション後に「Dreaming」と呼ばれるプロセスで Claude が自身のメモリを見直し、誤りを修正する機能も紹介されています。この研究は、長期的なタスクにおける AI エージェントの記憶保持の課題に対する新しいアプローチを示しています。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-says-the-key-to-agent-memory-is-knowing-what-to-forget-not-how-much-to-store)
+- **重要度**: 7/10
+- **タグ**: 新機能, sonnet, performance
 
 ---
 

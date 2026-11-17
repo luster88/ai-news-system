@@ -5,11 +5,13 @@ subcategory: prompt-injection-security
 tags:
 - bugfix
 - claude-code
+- claude-console
 - mcp
 - opus
 - prompt
+- 新機能
 date: '2026-08-05'
-updated: '2026-10-17'
+updated: '2026-11-17'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1vgif8w/the_cutting_room_floor_served_claude_code_a
   title: The Cutting Room Floor served Claude Code a payload telling it to wipe the
@@ -22,11 +24,27 @@ sources:
 - url: https://ai-heartland.com/security/ai-agent-permissions
   title: AIエージェントの権限設計｜プロンプトインジェクションを防ぎきれない前提で被害の上限を決める操作別の対策表
   date: '2026-10-17'
+- url: https://www.reddit.com/r/ClaudeAI/comments/1xy2wpr/nice_try_prompt_injector
+  title: Nice try prompt injector!
+  date: '2026-11-17'
 ---
 
 
 
+
 # Prompt Injection Security
+
+---
+
+## 2026-11-17
+
+### Nice try prompt injector!
+
+Claude がプロンプトインジェクション攻撃を検知し、ユーザーに報告した事例。比較的無害な試みであったが、Claude のセキュリティ機能が適切に動作していることを示している。Reddit コミュニティで共有された実例。
+
+- **ソース**: [Reddit r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1xy2wpr/nice_try_prompt_injector)
+- **重要度**: 4/10
+- **タグ**: prompt, claude-console, 新機能
 
 ---
 

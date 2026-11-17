@@ -10,7 +10,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-20'
-updated: '2026-10-17'
+updated: '2026-11-17'
 sources:
 - url: https://the-decoder.com/open-weight-kimi-k2-6-takes-on-gpt-5-4-and-claude-opus-4-6-with-agent-swarms
   title: Open-weight Kimi K2.6 takes on GPT-5.4 and Claude Opus 4.6 with agent swarms
@@ -26,12 +26,29 @@ sources:
   title: Deepseek V4.1 Flash 1017 beats larger rivals in agentic tasks while once
     again massively cutting per-task costs
   date: '2026-10-17'
+- url: https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu
+  title: Meituan releases a 1.6-trillion-parameter agent model that never touched
+    an Nvidia GPU
+  date: '2026-11-17'
 ---
 
 
 
 
+
 # Competitive Models
+
+---
+
+## 2026-11-17
+
+### Meituan releases a 1.6-trillion-parameter agent model that never touched an Nvidia GPU
+
+中国の美団（Meituan）が1.6兆パラメータのエージェント向けモデル LongCat-2.5 をリリース。Nvidia GPU を一切使わず中国製ハードウェアのみで訓練され、コーディングベンチマークで Claude Opus 5 に近い性能を発揮。MoE アーキテクチャで、100万トークンのコンテキスト対応、画像・動画理解機能を備える。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu)
+- **重要度**: 6/10
+- **タグ**: opus, performance, 新機能
 
 ---
 

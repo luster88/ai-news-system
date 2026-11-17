@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-19'
-updated: '2026-11-12'
+updated: '2026-11-17'
 sources:
 - url: https://qiita.com/peka2/items/9ce150b3b480516fc16e
   title: Claude Code に iOSアプリの E2Eテスト までやらせるようにした（iOSシミュレータ + AXe）
@@ -33,6 +33,9 @@ sources:
 - url: https://zenn.dev/columbus0370/articles/1794398388490-claude-code-javaai
   title: Claude Code × Javaプロジェクト：AIペアプログラミングで単体テスト自動生成を試してみた
   date: '2026-11-12'
+- url: https://qiita.com/kentasatomi/items/41c2ad18ef05aa10ec4f
+  title: CLAUDE.mdの指示が効いたか、同じ課題で確かめる
+  date: '2026-11-17'
 ---
 
 
@@ -41,7 +44,20 @@ sources:
 
 
 
+
 # Claude Code Testing
+
+---
+
+## 2026-11-17
+
+### CLAUDE.mdの指示が効いたか、同じ課題で確かめる
+
+Claude Codeの指示（CLAUDE.md）の効果を検証するため、Anthropicの安全性評価手法を応用した比較実験の方法を解説。同じ課題を条件を揃えて複数回試し、指示の追記前後でE2E実行率などを比較することで、特定の指示文の効果を測定する具体的な手順を紹介している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kentasatomi/items/41c2ad18ef05aa10ec4f)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

@@ -7,9 +7,10 @@ tags:
 - claude-code
 - pricing
 - release
+- setup
 - 新機能
 date: '2026-06-05'
-updated: '2026-07-22'
+updated: '2026-11-17'
 sources:
 - url: https://qiita.com/picnic/items/0e8844c6590cb7dd838a
   title: Claude Code v2.1.163 新機能とバグ修正：バージョン強制機能が追加
@@ -41,6 +42,9 @@ sources:
 - url: https://qiita.com/moha0918_/items/6375e58106fbc7c4c42d
   title: Claude Code v2.1.218｜/code-review がバックグラウンド化｜毎日Changelog解説
   date: '2026-07-22'
+- url: https://qiita.com/kai_kou/items/9ee1479f1186088595b2
+  title: Claude Code 2.1.325入門、スケジュール実行のSkill確認を先に許可する
+  date: '2026-11-17'
 ---
 
 
@@ -50,7 +54,20 @@ sources:
 
 
 
+
 # Claude Code Release
+
+---
+
+## 2026-11-17
+
+### Claude Code 2.1.325入門、スケジュール実行のSkill確認を先に許可する
+
+Claude Code 2.1.325では、スケジュールタスクや/loopでallowed-toolsやhooksを持つSkillを実行する前に確認を求めるようになった。無人実行するにはpermissions.allowにSkill(name)を追加する必要があるが、ワークスペースが未信頼の場合、プロジェクトの.claude/settings.jsonの設定は無視される。サンドボックスBashも通常の権限フローに変更されたため、sandbox.autoAllowBashIfSandboxed: trueの設定が必要になる場合がある。
+
+- **ソース**: [Qiita claude](https://qiita.com/kai_kou/items/9ee1479f1186088595b2)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, setup
 
 ---
 
