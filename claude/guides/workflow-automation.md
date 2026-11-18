@@ -13,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-26'
-updated: '2026-10-10'
+updated: '2026-11-18'
 sources:
 - url: https://zenn.dev/saytooy_arch/articles/14-zenn-auto-publish-pipeline
   title: Zenn自動公開パイプラインをclaude -pで構築した話
@@ -51,6 +51,9 @@ sources:
 - url: https://zenn.dev/daichi1002/articles/feeb4b63aac7d3
   title: Jiraのステータスを動かすだけでPRが積み上がる自動実装フローを作った話
   date: '2026-10-10'
+- url: https://qiita.com/emptybaba/items/ad6ed1ed3ac2f6662bb2
+  title: 面倒な作業は、我慢するものだと思っていた｜個人開発したWebサイト校正ツール「fuSen」第二十話
+  date: '2026-11-18'
 ---
 
 
@@ -63,7 +66,20 @@ sources:
 
 
 
+
 # Workflow Automation
+
+---
+
+## 2026-11-18
+
+### 面倒な作業は、我慢するものだと思っていた｜個人開発したWebサイト校正ツール「fuSen」第二十話
+
+個人開発者が、ブログ記事を複数プラットフォーム（note/Zenn/Qiita）に投稿する手作業を自動化するため「BlogSync」という自分専用ツールを開発した体験談。受託制作での面倒な反復作業を「我慢するもの」と考えがちだが、自分用ツールなら最小限の実装で素早く作れることを実践。同じ発想で開発したWebサイト校正ツール「fuSen」の開発背景も紹介している。
+
+- **ソース**: [Qiita claude](https://qiita.com/emptybaba/items/ad6ed1ed3ac2f6662bb2)
+- **重要度**: 4/10
+- **タグ**: claude-code
 
 ---
 

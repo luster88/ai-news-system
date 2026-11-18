@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-11-13'
+updated: '2026-11-18'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -468,6 +468,9 @@ sources:
 - url: https://qiita.com/umezu_y/items/a5a86c005f8c66cecbad
   title: Claude Code を「時間割」で回す ― 1日10件以上を並行しても、目の前の1件に集中できる
   date: '2026-11-13'
+- url: https://ai-heartland.com/agent/claude-code-verification
+  title: Claude Code 検証ループ｜開発チームの verify skill と「3回で人へ」をフックで試す
+  date: '2026-11-18'
 ---
 
 
@@ -582,7 +585,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-11-18
+
+### Claude Code 検証ループ｜開発チームの verify skill と「3回で人へ」をフックで試す
+
+Claude Code チームの検証手法を解説。コードの約90%を Claude が生成する環境で、エージェント自身が成果を検証する仕組みを導入することで、人の確認負荷を減らし並行実行数を増やせる。E2E・プロパティ・差分の3種類のテストに投資し、verify skill と Stop フックで「3回失敗したら人を呼ぶ」ルールを実装。REVIEW.md をベースブランチに配置し、変更対象から判定ルールを分離する設計が重要。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/agent/claude-code-verification)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, prompt
 
 ---
 

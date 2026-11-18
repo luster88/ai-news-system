@@ -8,7 +8,7 @@ tags:
 - setup
 - 新機能
 date: '2026-04-27'
-updated: '2026-05-24'
+updated: '2026-11-18'
 sources:
 - url: https://qiita.com/Tadashi_Kudo/items/e717659f10192f32e7b1
   title: 67kスター「claude-mem」は本当に必要か？Claude Code自前メモリ管理の3層構造で代替する
@@ -16,10 +16,26 @@ sources:
 - url: https://qiita.com/Tadashi_Kudo/items/50e8770b61fdc6c66383
   title: Anthropic "Dreaming"をscheduled-taskで再現する——週次cross-agent記憶整理の実装
   date: '2026-05-24'
+- url: https://qiita.com/KYoshiyama/items/623e13ced9c119b614aa
+  title: AI も「一晩寝かせる」と考えがまとまる🥱 寝ている間に記憶を整理する Dreaming の仕組み
+  date: '2026-11-18'
 ---
 
 
+
 # Memory Management
+
+---
+
+## 2026-11-18
+
+### AI も「一晩寝かせる」と考えがまとまる🥱 寝ている間に記憶を整理する Dreaming の仕組み
+
+AnthropicがAIエージェントの記憶整理機能「Dreaming」を発表。人間の睡眠中の記憶整理と同様に、AIが夜間に作業ログを見返してメモを修正しWikiを更新する仕組み。Claude Codeでの追実装例を含む詳細な解説記事で、ポケモンを使った実験ではメモを絞った方が効率的に進められることが示された。
+
+- **ソース**: [Qiita claude](https://qiita.com/KYoshiyama/items/623e13ced9c119b614aa)
+- **重要度**: 7/10
+- **タグ**: 新機能, claude-code, prompt
 
 ---
 

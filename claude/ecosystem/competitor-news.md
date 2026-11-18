@@ -10,7 +10,7 @@ tags:
 - performance
 - pricing
 date: '2026-08-13'
-updated: '2026-11-06'
+updated: '2026-11-18'
 sources:
 - url: https://the-decoder.com/gemini-3-7-flash-lands-with-coding-gains-and-undercuts-its-three-week-old-predecessors-price-by-50
   title: Gemini 3.7 Flash lands with coding gains and undercuts its three-week-old
@@ -31,13 +31,30 @@ sources:
 - url: https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027
   title: OpenAI president Greg Brockman says company could be IPO ready in 2027
   date: '2026-11-06'
+- url: https://the-decoder.com/openai-launches-gpt-6-2-astra-and-sol-with-lower-api-prices-and-some-benchmark-gains
+  title: OpenAI launches GPT-6.2 Astra and Sol with lower API prices and some benchmark
+    gains
+  date: '2026-11-18'
 ---
 
 
 
 
 
+
 # Competitor News
+
+---
+
+## 2026-11-18
+
+### OpenAI launches GPT-6.2 Astra and Sol with lower API prices and some benchmark gains
+
+OpenAIがGPT-6.2 AstraとGPT-6.2 Solをリリース。Astraは専門業務向け、Solは日常タスク向けで、Anthropicの最高モデルと同等の性能ながらより低価格。Astra APIは前モデルより20%安く、コストパフォーマンスで優位。Plus/Pro/Enterprise/Eduユーザーが利用可能。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/openai-launches-gpt-6-2-astra-and-sol-with-lower-api-prices-and-some-benchmark-gains)
+- **重要度**: 4/10
+- **タグ**: pricing, performance, copilot
 
 ---
 

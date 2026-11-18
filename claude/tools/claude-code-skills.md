@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-11'
-updated: '2026-10-21'
+updated: '2026-11-18'
 sources:
 - url: https://ai-heartland.com/explain/ponytail-lazy-senior-dev
   title: Ponytail解説｜AIエージェントに『怠惰なシニア』を憑依させコードを54%削るClaude Codeスキル
@@ -34,6 +34,9 @@ sources:
 - url: https://ai-heartland.com/tool/imozuru-claude-code
   title: imozuru｜知らない分野を要約せず原典まで芋づる式に掘るClaude Code向けスキルを実測レビュー
   date: '2026-10-21'
+- url: https://ai-heartland.com/tool/stick-scene
+  title: stick-scene｜棒人間アニメでプロダクトを見せるClaude Codeスキルを実機で描いて検証
+  date: '2026-11-18'
 ---
 
 
@@ -42,7 +45,20 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-11-18
+
+### stick-scene｜棒人間アニメでプロダクトを見せるClaude Codeスキルを実機で描いて検証
+
+stick-sceneは、プロダクトの機能を棒人間アニメーションで視覚的に説明するClaude Codeスキル。Kamran Ahmed氏が開発し、エージェントが比喩を提案してcanvasベースのアニメを生成・検証する。npx skills addで導入し、/stick-sceneコマンドで使用。ライブラリ依存なしで動作し、ランディングページの動的な機能紹介に活用できる。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/stick-scene)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, mcp
 
 ---
 

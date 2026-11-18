@@ -4,17 +4,34 @@ category: guides
 subcategory: certification-study
 tags:
 - claude-api
+- prompt
 - setup
 - 新機能
 date: '2026-06-29'
-updated: '2026-06-29'
+updated: '2026-11-18'
 sources:
 - url: https://zenn.dev/yujmatsu/articles/20260629_cca_foundations_02_basics
   title: '【CCA-F学習ログ #2】基礎編：Anthropic Academy のレベル100で土台を固める'
   date: '2026-06-29'
+- url: https://qiita.com/Ray_T/items/78598353ec1df33f899f
+  title: 【第4回】ゼロから目指す! CCDV-F合格への道：LLMのしくみ
+  date: '2026-11-18'
 ---
 
+
 # Certification Study
+
+---
+
+## 2026-11-18
+
+### 【第4回】ゼロから目指す! CCDV-F合格への道：LLMのしくみ
+
+Claude認定資格CCDV-F向けの学習シリーズ第4回。LLMの基本動作（トークン、コンテキストウィンドウ、サンプリング）を解説。モデルによるトークン数の違い（Claude 4.7以降は約30%増加）や、コンテキストウィンドウの管理の重要性を説明している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/Ray_T/items/78598353ec1df33f899f)
+- **重要度**: 4/10
+- **タグ**: claude-api, prompt
 
 ---
 

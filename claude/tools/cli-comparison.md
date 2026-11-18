@@ -3,18 +3,37 @@ title: Cli Comparison
 category: tools
 subcategory: cli-comparison
 tags:
+- claude-code
+- copilot
 - cowork
+- cursor
 - opus
 - performance
 date: '2026-06-07'
-updated: '2026-06-07'
+updated: '2026-11-18'
 sources:
 - url: https://zenn.dev/omohikane/articles/endeavour-antigravity-cli
   title: Antigravity-cliを試してみる
   date: '2026-06-07'
+- url: https://zenn.dev/kuwashima/articles/ax-28-coding-agents-comparison
+  title: 28種のAIコーディングCLIを徹底比較！ハーネスの性格と裏の顔
+  date: '2026-11-18'
 ---
 
+
 # Cli Comparison
+
+---
+
+## 2026-11-18
+
+### 28種のAIコーディングCLIを徹底比較！ハーネスの性格と裏の顔
+
+AIコーディングエージェント28種類を横断検索できるツール「ax」の紹介記事。Claude Code、Codex、Gemini、GitHub Copilotなど主要なCLIツールについて、ハーネスとしての性能、ストレージ仕様、セッション管理の特徴を詳細に比較分析。各ツールの強みと運用上の課題（履歴管理の複雑さ、ログの散在など）を解説している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/kuwashima/articles/ax-28-coding-agents-comparison)
+- **重要度**: 6/10
+- **タグ**: claude-code, copilot, cursor
 
 ---
 
