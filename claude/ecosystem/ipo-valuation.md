@@ -9,7 +9,7 @@ tags:
 - release
 - 新機能
 date: '2026-08-11'
-updated: '2026-11-10'
+updated: '2026-11-19'
 sources:
 - url: https://the-decoder.com/anthropics-planned-mega-ipo-faces-investor-skepticism-over-chinese-rivals-and-political-headwinds
   title: Anthropic's planned mega-IPO faces investor skepticism over Chinese rivals
@@ -25,12 +25,28 @@ sources:
 - url: https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans
   title: Anthropic reportedly plans to move forward with IPO plans
   date: '2026-11-10'
+- url: https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range
+  title: Anthropic reportedly prices IPO at $83 a share, above projected range
+  date: '2026-11-19'
 ---
 
 
 
 
+
 # Ipo Valuation
+
+---
+
+## 2026-11-19
+
+### Anthropic reportedly prices IPO at $83 a share, above projected range
+
+AnthropicがIPO価格を当初予想の70-78ドルを上回る83ドルに設定し、完全希薄化ベースで1.5兆ドルの評価額を達成したと報じられています。木曜日にNasdaqで「ANT」のティッカーシンボルで取引を開始予定で、AIブームの中心企業への強い投資家需要を示しています。SequoiaやEric Schmidt氏など多数の投資家が約1%の株式を保有しており、OpenAIなど他のプライベートAI企業の期待値を設定する重要な指標となる見込みです。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range)
+- **重要度**: 10/10
+- **タグ**: pricing, 新機能
 
 ---
 

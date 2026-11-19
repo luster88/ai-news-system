@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-11-18'
+updated: '2026-11-19'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -471,6 +471,9 @@ sources:
 - url: https://ai-heartland.com/agent/claude-code-verification
   title: Claude Code 検証ループ｜開発チームの verify skill と「3回で人へ」をフックで試す
   date: '2026-11-18'
+- url: https://qiita.com/fantatchi/items/abe2abe269ca29f3a36f
+  title: 私の私による私のための Claude Code
+  date: '2026-11-19'
 ---
 
 
@@ -586,7 +589,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-11-19
+
+### 私の私による私のための Claude Code
+
+個人が構築した Claude Code の実運用環境について、CLAUDE.md による動作制御、自動記録の仕組み、複数 PC での設定同期（chezmoi）など、具体的な工夫を紹介。「確認なしで進めてよいこと」と「必ず確認すること」の線引き、報告の確かさの段階分け、コミット後の自動保存など、記憶力を補うための実践的な Tips が詰まっている。
+
+- **ソース**: [Qiita claude](https://qiita.com/fantatchi/items/abe2abe269ca29f3a36f)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

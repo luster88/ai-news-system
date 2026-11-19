@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-18'
-updated: '2026-11-12'
+updated: '2026-11-19'
 sources:
 - url: https://the-decoder.com/anthropic-ceo-amodei-declares-there-is-no-end-to-the-rainbow-for-ai-scaling
   title: Anthropic CEO Amodei declares "there is no end to the rainbow" for AI scaling
@@ -69,6 +69,10 @@ sources:
   title: US data brokers are selling half a billion dollars in RL training environments
     to Chinese AI labs
   date: '2026-11-12'
+- url: https://the-decoder.com/openai-says-its-models-delivered-a-years-worth-of-chip-optimization-on-top-of-amds-own-engineering
+  title: OpenAI says its models delivered a year's worth of chip optimization on top
+    of AMD's own engineering
+  date: '2026-11-19'
 ---
 
 
@@ -84,7 +88,20 @@ sources:
 
 
 
+
 # Industry News
+
+---
+
+## 2026-11-19
+
+### OpenAI says its models delivered a year's worth of chip optimization on top of AMD's own engineering
+
+OpenAIがAMDと協力し、AIモデルを使用してGPU設計を最適化。5ヶ月で14%のPPA改善を達成し、これは従来のエンジニアリングで1年分に相当する進歩。AnthropicもMythosモデルでAMD MI355X GPU向けの最適化を3日で完了（通常6-12ヶ月）。AIによるチップ設計の効率化が加速している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/openai-says-its-models-delivered-a-years-worth-of-chip-optimization-on-top-of-amds-own-engineering)
+- **重要度**: 4/10
+- **タグ**: performance, cowork, 新機能
 
 ---
 

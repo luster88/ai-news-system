@@ -1,29 +1,5 @@
 {
   "urls": {
-    "https://www.reddit.com/r/ClaudeAI/comments/1vt5drr/list_of_latest_discussion_hubs_on_rclaudeai": "2026-08-20",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vtl9of/this_is_letting_claude_handle_a_good_amount_of": "2026-08-20",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vtqyg9/claude_is_a_thinking_partner_opus_5_is_not_claude": "2026-08-20",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vtmkft/psa_a_malicious_published_claude_artifact_is": "2026-08-20",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vtfq1k/the_claude_language_calibration_issue_on_github": "2026-08-20",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vtctj3/claude_says_i_used_549_billion_tokens": "2026-08-20",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vto86a/i_am_morally_opposed_to_updating_my_claudemd": "2026-08-20",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vtv8k9/claude_wont_let_you_be_right_about_anything_opus_5": "2026-08-20",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vtmkna/i_adapted_the_elements_of_style_to_make_claude": "2026-08-20",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vtdbxa/hot_take_claude_code_should_ask_more_questions": "2026-08-20",
-    "https://qiita.com/moha0918_/items/ca1fa2fb4e355433cee3": "2026-08-20",
-    "https://qiita.com/shokan/items/524c376889317641626e": "2026-08-20",
-    "https://qiita.com/chiisanasoft/items/9c9512b08507515f3c59": "2026-08-20",
-    "https://zenn.dev/playpark/articles/claude-code-subagent-parallel-git-isolation": "2026-08-20",
-    "https://zenn.dev/chiisanasoft/articles/88757cec318916": "2026-08-20",
-    "https://zenn.dev/k_motoki/articles/98ace2595164cf": "2026-08-20",
-    "https://zenn.dev/nanakusataro/articles/9417aa2b568c20": "2026-08-20",
-    "https://zenn.dev/pakku8914/books/claude_code_master_course": "2026-08-20",
-    "https://zenn.dev/crandim_r_and_d/articles/260817_claude_code_weekly_rate_reverse_engineering": "2026-08-20",
-    "https://qiita.com/tri-ponte/items/6d309b2f9f029ec1d53f": "2026-08-20",
-    "https://ai-heartland.com/agent/trueforge-agent-harness": "2026-08-20",
-    "https://ai-heartland.com/security/windsurf-cve-2026-30615-mcp-zero-click-rce": "2026-08-20",
-    "https://the-decoder.com/anthropic-uses-an-unpublished-ai-model-called-model-2-internally": "2026-08-20",
-    "https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users": "2026-08-20",
     "https://www.reddit.com/r/ClaudeAI/comments/1vun6gf/graphify_crossed_100k_stars_and_5m_downloads_then": "2026-08-21",
     "https://www.reddit.com/r/ClaudeAI/comments/1vuhvta/two_weeks_ago_i_gave_claude_a_domain_and_told_it": "2026-08-21",
     "https://www.reddit.com/r/ClaudeAI/comments/1vu8ru9/well_played_claude": "2026-08-21",
@@ -2164,9 +2140,24 @@
     "https://ai-heartland.com/agent/claude-code-verification": "2026-11-18",
     "https://the-decoder.com/openai-launches-gpt-6-2-astra-and-sol-with-lower-api-prices-and-some-benchmark-gains": "2026-11-18",
     "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo": "2026-11-18",
-    "https://techcrunch.com/2026/11/17/protons-lumo-a-privacy-focused-alternative-to-chatgpt-and-claude-arrives-on-desktop": "2026-11-18"
+    "https://techcrunch.com/2026/11/17/protons-lumo-a-privacy-focused-alternative-to-chatgpt-and-claude-arrives-on-desktop": "2026-11-18",
+    "https://qiita.com/fantatchi/items/abe2abe269ca29f3a36f": "2026-11-19",
+    "https://qiita.com/homhom44/items/895947c15424844de4e0": "2026-11-19",
+    "https://qiita.com/fantatchi/items/dd69dc0d479422ca0c04": "2026-11-19",
+    "https://qiita.com/NaokiIshimura/items/3de2b962f62d952ed68d": "2026-11-19",
+    "https://zenn.dev/liatris/articles/20261119-line-bot-reply-token-budget": "2026-11-19",
+    "https://zenn.dev/rrr068/articles/0aba7ced950121": "2026-11-19",
+    "https://zenn.dev/konbu_love/articles/64a97ac8d1153d": "2026-11-19",
+    "https://zenn.dev/tkishioka/articles/claude-fable-5-2-leaderboard": "2026-11-19",
+    "https://zenn.dev/handa_lab/articles/11-rules-placement-table": "2026-11-19",
+    "https://zenn.dev/boluoji/articles/5a222f7a5271a9": "2026-11-19",
+    "https://ai-heartland.com/agent/claude-code-auto-mode": "2026-11-19",
+    "https://the-decoder.com/openai-says-its-models-delivered-a-years-worth-of-chip-optimization-on-top-of-amds-own-engineering": "2026-11-19",
+    "https://the-decoder.com/anthropic-openai-and-google-models-readily-marked-medics-journalists-and-surrendering-soldiers-as-kamikaze-drone-targets": "2026-11-19",
+    "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range": "2026-11-19",
+    "https://techcrunch.com/2026/11/18/snapchat-now-lets-developers-build-ar-lenses-with-ai-coding-assistants-like-claude-code-and-cursor": "2026-11-19"
   },
   "source_penalties": {
-    "Anthropic News": "2026-11-19"
+    "Anthropic News": "2026-11-20"
   }
 }

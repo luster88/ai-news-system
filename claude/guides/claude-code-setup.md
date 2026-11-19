@@ -12,7 +12,7 @@ tags:
 - windows
 - 新機能
 date: '2026-04-04'
-updated: '2026-11-05'
+updated: '2026-11-19'
 sources:
 - url: https://qiita.com/taiki_i/items/2d75a882e0f3187f6bb8
   title: あなたの CLAUDE.md、ちゃんと機能してますか？作り方から公式プラグインで採点するまでの道のり
@@ -80,6 +80,9 @@ sources:
 - url: https://qiita.com/okadada/items/0d64d24b12214e85ecdc
   title: Windows miniPC に Claude Code を 3 セッション常駐させ、ノートPCから Remote Control で任せる
   date: '2026-11-05'
+- url: https://qiita.com/fantatchi/items/abe2abe269ca29f3a36f
+  title: 私の私による私のための Claude Code
+  date: '2026-11-19'
 ---
 
 
@@ -100,7 +103,20 @@ sources:
 
 
 
+
 # Claude Code Setup
+
+---
+
+## 2026-11-19
+
+### 私の私による私のための Claude Code
+
+個人が構築したClaude Codeの運用環境についての詳細な事例紹介。指示書（CLAUDE.md）での振る舞い制御、確認が必要な操作の明確化、作業記録の自動化など、記憶力を補うための工夫が中心。WSL環境での利用、chezmoi・Obsidianとの連携、コミット時の自動保存など、実践的なセットアップ手法を共有。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/fantatchi/items/abe2abe269ca29f3a36f)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 

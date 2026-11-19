@@ -14,7 +14,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-04-25'
-updated: '2026-10-18'
+updated: '2026-11-19'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sv7fvc/im_a_nursing_student_who_built_a_660kpage
   title: I’m a nursing student who built a 660K-page pharmaceutical database using
@@ -61,6 +61,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1x9dl1f/adobe_office_outlook_elevenlabs_ai_is_cloning_all
   title: 'Adobe, Office, Outlook, ElevenLabs: AI is cloning all of it in Rust'
   date: '2026-10-18'
+- url: https://zenn.dev/konbu_love/articles/64a97ac8d1153d
+  title: 色を仕込んで一本燃やす、ブラウザの線香花火を作ってもらいました
+  date: '2026-11-19'
 ---
 
 
@@ -75,7 +78,20 @@ sources:
 
 
 
+
 # Community Projects
+
+---
+
+## 2026-11-19
+
+### 色を仕込んで一本燃やす、ブラウザの線香花火を作ってもらいました
+
+Claude（Fable 5.2）を使用してAndroidスマホのみで開発したブラウザベースの線香花火シミュレーター。ユーザーが色を配置し、火が下から上へ昇りながら色を混ぜていく仕組み。index.html 1ファイルのみ、外部ライブラリ不使用で Canvas と Web Audio API を活用。初期版のバグ修正も Claude が対応し、最終的に五段階の燃え方・水面反射・音響効果を実装。
+
+- **ソース**: [Zenn claude](https://zenn.dev/konbu_love/articles/64a97ac8d1153d)
+- **重要度**: 4/10
+- **タグ**: claude-code, cursor, 新機能
 
 ---
 
