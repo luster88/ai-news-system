@@ -11,7 +11,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-03-29'
-updated: '2026-10-17'
+updated: '2026-11-20'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1s6jouf/anthropic_shares_how_to_make_claude_code_better
   title: Anthropic shares how to make Claude code better with a harness
@@ -40,6 +40,9 @@ sources:
 - url: https://qiita.com/sescore/items/cf57317fffda0ceb88af
   title: OpenClawで9体のAIエージェント経営OSを構築した実践記録｜設定とSES市場分析への活用法
   date: '2026-10-17'
+- url: https://qiita.com/BoxBox_JP/items/9e42fb2aeb52f82316d6
+  title: AIが書いたコード、レビューで一番困るのは「誰が自分を待っているか分からない」こと
+  date: '2026-11-20'
 ---
 
 
@@ -50,7 +53,20 @@ sources:
 
 
 
+
 # Multi Agent Workflow
+
+---
+
+## 2026-11-20
+
+### AIが書いたコード、レビューで一番困るのは「誰が自分を待っているか分からない」こと
+
+Claude Code、Codex、Cursor、Geminiの4つのAIコーディングツールを並走させる実践者が、コードレビューで最も困る課題を共有。AI生成コードの品質ではなく「どのツールが承認待ちか分からない」という運用課題に焦点を当て、小さい変更から処理する、実行中は見ない、定型確認は即通すという3つの工夫を紹介。複数AIツール並走時の注意管理の重要性を説く。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/BoxBox_JP/items/9e42fb2aeb52f82316d6)
+- **重要度**: 6/10
+- **タグ**: claude-code, cursor, cowork
 
 ---
 

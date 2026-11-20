@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-18'
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://the-decoder.com/anthropic-ceo-amodei-declares-there-is-no-end-to-the-rainbow-for-ai-scaling
   title: Anthropic CEO Amodei declares "there is no end to the rainbow" for AI scaling
@@ -73,6 +73,9 @@ sources:
   title: OpenAI says its models delivered a year's worth of chip optimization on top
     of AMD's own engineering
   date: '2026-11-19'
+- url: https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac
+  title: Apple may be developing its own AI agent that runs your Mac
+  date: '2026-11-20'
 ---
 
 
@@ -89,7 +92,19 @@ sources:
 
 
 
+
 # Industry News
+
+---
+
+## 2026-11-20
+
+### Apple may be developing its own AI agent that runs your Mac
+
+Apple が独自の AI エージェント開発に着手している模様。Bloomberg の報道によると、求人情報から Mac 上でアプリ操作・Web ブラウジング・コーディングなどを代行する AI エージェントの開発が判明。Anthropic や OpenAI などの競合に追随する動きと見られる。一方で macOS 27.3 ではサードパーティエージェントへのアクセス制限を強化する方針も示されている。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac)
+- **重要度**: 6/10
 
 ---
 

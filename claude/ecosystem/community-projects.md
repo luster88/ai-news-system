@@ -14,7 +14,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-04-25'
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1sv7fvc/im_a_nursing_student_who_built_a_660kpage
   title: I’m a nursing student who built a 660K-page pharmaceutical database using
@@ -64,6 +64,9 @@ sources:
 - url: https://zenn.dev/konbu_love/articles/64a97ac8d1153d
   title: 色を仕込んで一本燃やす、ブラウザの線香花火を作ってもらいました
   date: '2026-11-19'
+- url: https://qiita.com/yusuke0511/items/932cad17220301167e62
+  title: AIと「神」になって、仮想世界の住人を1万年見守るゲームを作った【Claude】
+  date: '2026-11-20'
 ---
 
 
@@ -79,7 +82,20 @@ sources:
 
 
 
+
 # Community Projects
+
+---
+
+## 2026-11-20
+
+### AIと「神」になって、仮想世界の住人を1万年見守るゲームを作った【Claude】
+
+Claude を使って仮想世界シミュレーションゲームを開発した事例。プレイヤーが神様となり AI と共に世界を創造し、住人の進化を観察する。「謎解きモード」では暗号を仕込んで住人が解読するか検証し、「歴史シミュレーションモード」では人類の進化を 1 万年にわたって観察できる。世界設定は AI が候補を提示してくれるため、初心者でも楽しめる設計。
+
+- **ソース**: [Qiita claude](https://qiita.com/yusuke0511/items/932cad17220301167e62)
+- **重要度**: 4/10
+- **タグ**: claude-api, cowork, 新機能
 
 ---
 

@@ -7,11 +7,13 @@ tags:
 - cowork
 - linux
 - mcp
+- opus
 - prompt
 - setup
+- sonnet
 - 新機能
 date: '2026-03-27'
-updated: '2026-10-29'
+updated: '2026-11-20'
 sources:
 - url: https://zenn.dev/beef_and_rice/articles/482b09980fce23
   title: Claude Code の便利機能 Ctrl+G と Ctrl+S を zsh でも使う
@@ -41,6 +43,9 @@ sources:
 - url: https://qiita.com/25h/items/c42f097c27d91850c051
   title: Claude Code は日付を知っていても、時刻は知らない。hook 2 本で渡す
   date: '2026-10-29'
+- url: https://zenn.dev/no215/articles/claude-code-one-turn-model-skill
+  title: 1ターンだけ Sonnet に任せるスキルを作ったら、Opus のままより高くついていた話
+  date: '2026-11-20'
 ---
 
 
@@ -51,7 +56,20 @@ sources:
 
 
 
+
 # Claude Code Tips
+
+---
+
+## 2026-11-20
+
+### 1ターンだけ Sonnet に任せるスキルを作ったら、Opus のままより高くついていた話
+
+Claude Codeで1ターンだけ下位モデル（HaikuやSonnet）に切り替えるスキル/ask-haikuと/ask-sonnetを作成した実験記事。/ask-haikuは狙い通り費用削減できたが、/ask-sonnetは会話途中で使うとプロンプトキャッシュがモデルごとに別々のため、会話履歴全体を書き直すコストが発生し、Opusのまま使うより高くついた。disable-model-invocation:trueで手動呼び出しのみに制限し、frontmatterでモデル切り替えを実装している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/no215/articles/claude-code-one-turn-model-skill)
+- **重要度**: 6/10
+- **タグ**: claude-code, opus, sonnet
 
 ---
 
