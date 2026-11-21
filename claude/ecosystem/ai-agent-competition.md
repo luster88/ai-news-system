@@ -5,15 +5,31 @@ subcategory: ai-agent-competition
 tags:
 - 新機能
 date: '2026-05-06'
-updated: '2026-05-06'
+updated: '2026-11-21'
 sources:
 - url: https://the-decoder.com/google-and-meta-race-to-build-personal-ai-agents-as-anthropic-and-openai-pull-further-ahead
   title: Google and Meta race to build personal AI agents as Anthropic and OpenAI
     pull further ahead
   date: '2026-05-06'
+- url: https://the-decoder.com/apple-joins-the-race-for-ai-agents-that-control-your-device-while-raising-new-barriers-for-competitors
+  title: Apple joins the race for AI agents that control your device while raising
+    new barriers for competitors
+  date: '2026-11-21'
 ---
 
+
 # Ai Agent Competition
+
+---
+
+## 2026-11-21
+
+### Apple joins the race for AI agents that control your device while raising new barriers for competitors
+
+AppleがMeta、OpenAI、Anthropic、Googleに続いてAIエージェント開発に参入することが求められた求人情報から明らかになった。プライバシー重視の設計で、早ければ来年後半にリリース予定。一方、macOS 27.3では第三者エージェント（ChatGPTなど）がMacを制御するために必要な手順が4ステップから14ステップに増加し、競合他社への障壁を高めていると指摘されている。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/apple-joins-the-race-for-ai-agents-that-control-your-device-while-raising-new-barriers-for-competitors)
+- **重要度**: 6/10
 
 ---
 

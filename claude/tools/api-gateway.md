@@ -6,15 +6,32 @@ tags:
 - claude-code
 - cowork
 - mcp
+- setup
 date: '2026-07-11'
-updated: '2026-07-11'
+updated: '2026-11-21'
 sources:
 - url: https://ai-heartland.com/explain/omniroute-ai-gateway
   title: OmniRoute解説｜237プロバイダを1エンドポイントに束ねる無料AIゲートウェイとLiteLLM比較
   date: '2026-07-11'
+- url: https://zenn.dev/niceaidev/articles/b15ab4922b2af2
+  title: MagpieでClaude CodeとCodexにカスタムAPIを繋ぐ
+  date: '2026-11-21'
 ---
 
+
 # Api Gateway
+
+---
+
+## 2026-11-21
+
+### MagpieでClaude CodeとCodexにカスタムAPIを繋ぐ
+
+Magpieは、Claude CodeやCodexなどのエージェントに対してカスタムAPIプロバイダ（NiceAIなど）を接続するローカルゲートウェイツールです。127.0.0.1:3425でOpenAI/Anthropic/Gemini互換の接口を提供し、各エージェントの設定を自動で書き換えることで、プロバイダの切り替えを一元管理できます。Mac/Windows/Linux対応で、常駐化も可能、設定はプロバイダ追加後にエージェント側でモデルを選択するだけで完了します。
+
+- **ソース**: [Zenn claude](https://zenn.dev/niceaidev/articles/b15ab4922b2af2)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, setup
 
 ---
 

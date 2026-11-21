@@ -5,17 +5,57 @@ subcategory: claude-code-system-prompt
 tags:
 - claude-code
 - prompt
+- release
 - 新機能
 date: '2026-07-24'
-updated: '2026-07-24'
+updated: '2026-11-21'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v5mhhl/anthropic_cut_80_of_claude_codes_system_prompt
   title: Anthropic cut 80% of Claude Code's system prompt for the Claude 5 models
     and published what should still go in your CLAUDE.md and skills
   date: '2026-07-24'
+- url: https://qiita.com/NaokiIshimura/items/a75af610ec8c0d2ff699
+  title: Claude Code 開発者が注目している5つのアップデート（v2.1.326 - v2.1.330）
+  date: '2026-11-21'
+- url: https://qiita.com/NaokiIshimura/items/0b054c35b3c8b8aa5796
+  title: Claude Code v2.1.326 - v2.1.330 リリースノートまとめ
+  date: '2026-11-21'
 ---
 
+
 # Claude Code System Prompt
+
+---
+
+## 2026-11-21
+
+### Claude Code 開発者が注目している5つのアップデート（v2.1.326 - v2.1.330）
+
+Claude Code v2.1.326～v2.1.330の重要なアップデートを解説。Bashサンドボックスのセキュリティ強化により一部コマンドに確認が必要になり、CI環境では注意が必要。サードパーティプロバイダー経由のOpus/Sonnet 4.6でauto modeが利用可能になり、既定動作が変更。/code-reviewコマンドが刷新され、バグとCLAUDE.md違反に特化し、ラベル付けで優先度が明確化。
+
+- **ソース**: [Qiita claude](https://qiita.com/NaokiIshimura/items/a75af610ec8c0d2ff699)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+### Claude Code v2.1.326 - v2.1.330 リリースノートまとめ
+
+Claude Code v2.1.326〜v2.1.330の更新内容。Bashサンドボックス・パーミッションチェック強化、Opus 4.6/Sonnet 4.6のauto modeをサードパーティプロバイダーで解禁、/code-reviewの出力形式刷新、Enterprise Admin Console管理組織へのサインイン対応、チャート描画mod「easel」追加。/loopとスケジュールタスクの実行期限が7日から30日に延長され、Code Mode周辺の大量の修正も含まれる。
+
+- **ソース**: [Qiita claude](https://qiita.com/NaokiIshimura/items/0b054c35b3c8b8aa5796)
+- **重要度**: 8/10
+- **タグ**: claude-code, release, 新機能
+
+---
+
+### Claude Code 開発者が注目している5つのアップデート（v2.1.326 - v2.1.330）
+
+Claude Code v2.1.326～v2.1.330の5つの重要アップデートを解説。Bashサンドボックスのパーミッション強化により、CI環境での自動実行時に確認プロンプトが拒否になる可能性がある。サードパーティプロバイダー経由のOpus/Sonnet 4.6でauto modeが利用可能になり、既定動作が変更。/code-reviewコマンドが刷新され、バグとCLAUDE.md違反に特化し、PR番号指定時の挙動も改善された。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/NaokiIshimura/items/a75af610ec8c0d2ff699)
+- **重要度**: 7/10
+- **タグ**: claude-code, release, 新機能
 
 ---
 

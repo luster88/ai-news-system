@@ -9,8 +9,9 @@ tags:
 - mcp
 - performance
 - prompt
+- setup
 date: '2026-04-06'
-updated: '2026-08-21'
+updated: '2026-11-21'
 sources:
 - url: https://qiita.com/emi_ndk/items/c3b99612ec044e5d612e
   title: 【緊急警告】MCPサーバーが60日で30件のCVE！Azure脆弱性は「認証ゼロ」でCVSS 9.1
@@ -27,13 +28,29 @@ sources:
 - url: https://qiita.com/shinji_bank/items/d374470edf72431d986a
   title: 自作MCPサーバで「Tool Poisoning」を試す（Claude Codeを騙してみた）
   date: '2026-08-21'
+- url: https://qiita.com/shiroi1229/items/8c3cdf72ffcb69746d2f
+  title: MCP設定（claude_desktop_config.json / .mcp.json）に潜む4大セキュリティ罠──未固定npx・ルート権限・env秘密鍵を0.05秒で静的監査するPython実装
+  date: '2026-11-21'
 ---
 
 
 
 
 
+
 # Mcp Security Vulnerabilities
+
+---
+
+## 2026-11-21
+
+### MCP設定（claude_desktop_config.json / .mcp.json）に潜む4大セキュリティ罠──未固定npx・ルート権限・env秘密鍵を0.05秒で静的監査するPython実装
+
+Claude DesktopやMCP設定ファイル（claude_desktop_config.json / .mcp.json）に潜む4大セキュリティリスク（未固定npx、ルート権限、env秘密鍵、絶対パス）を、Python標準ライブラリのみで0.05秒で静的監査するスクリプト実装を紹介。Git Pre-CommitやGitHub Actionsに組み込むことで、コミット前に自動的にセキュリティ問題を検出し、CIを停止させる。CLAUDE.md/AGENTS.mdとの責務分離により、プロンプトでは防げないリスクを機械的にゲートする手法を提案。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/shiroi1229/items/8c3cdf72ffcb69746d2f)
+- **重要度**: 7/10
+- **タグ**: mcp, setup, claude-code
 
 ---
 

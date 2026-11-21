@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-24'
-updated: '2026-09-20'
+updated: '2026-11-21'
 sources:
 - url: https://qiita.com/taketsuyo/items/f47b120668149e9ee396
   title: Claudeが“スマホから仕事を投げる相棒”になった日。デスクワークが消えるというより、確認作業だけが人間に残る感じがする
@@ -27,13 +27,29 @@ sources:
 - url: https://qiita.com/Rai_050902/items/a156d3a867af23375931
   title: 生命保険の見直しをAIと進めたら、2つのClaude（チャットとCode）を「Markdown1枚」でバトンリレーさせる運用に落ち着いた話
   date: '2026-09-20'
+- url: https://zenn.dev/medirom_tech/articles/44dee3bbc4e0d9
+  title: マンダラチャートの「埋めるのがしんどい」「目標作っておしまい」をClaudeで解消して、個人目標のコーチを作った話
+  date: '2026-11-21'
 ---
 
 
 
 
 
+
 # Claude Cowork Workflow
+
+---
+
+## 2026-11-21
+
+### マンダラチャートの「埋めるのがしんどい」「目標作っておしまい」をClaudeで解消して、個人目標のコーチを作った話
+
+マンダラチャート（9×9マス）をClaude（Cowork）と対話しながら作成し、個人目標の管理・行動提案・週次レビューを行う「マンダラコーチ」スキルを構築した事例。64マス全てを自分で考える負担を、Claudeが提案し自分が選ぶ形に変え、ローカルPC内でデータ管理する設計により、プライバシーを保ちながら実用的な目標管理システムを実現。二拠点生活などの個人の前提条件を反映した具体的な行動提案が可能になり、目標設定の負担軽減と継続的な振り返りの仕組みを両立した。
+
+- **ソース**: [Zenn claude](https://zenn.dev/medirom_tech/articles/44dee3bbc4e0d9)
+- **重要度**: 6/10
+- **タグ**: cowork, prompt
 
 ---
 

@@ -1,29 +1,5 @@
 {
   "urls": {
-    "https://www.reddit.com/r/ClaudeAI/comments/1vvi3x1/i_built_an_english_claudish_translator": "2026-08-22",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vvjr5n/anthropic_stealth_nerfing_effort_levels": "2026-08-22",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vvlv0p/just_in_case_you_needed_to_know_dominos_india_is": "2026-08-22",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vvjl5y/what_do_people_mean_by_my_harness_re_agentic": "2026-08-22",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vvn0dy/anthropic_please_have_daisy_the_cc_engineer_do_a": "2026-08-22",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vv14nh/is_anyone_else_finding_claude_really_hard_to": "2026-08-22",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vvhs2w/when_do_you_find_claude_better_than_chatgpt_and": "2026-08-22",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vveyvm/what_a_plain_language_standard_does_to_a_coding": "2026-08-22",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vvo1a5/devs_who_actually_use_claude_code_properly_not": "2026-08-22",
-    "https://qiita.com/yukisnow0704/items/caf4204158b6661d4108": "2026-08-22",
-    "https://qiita.com/picnic/items/ff939c5e26e47d011a58": "2026-08-22",
-    "https://qiita.com/anthony_katto/items/924d340831afbcbbfd2a": "2026-08-22",
-    "https://zenn.dev/kentaro_tak/articles/comfyui-sdxl-8gb-on-demand": "2026-08-22",
-    "https://zenn.dev/kentaro_tak/articles/claude-code-headless-slack-relay": "2026-08-22",
-    "https://zenn.dev/pdfractal/articles/55929755eb39c1": "2026-08-22",
-    "https://zenn.dev/rinrin_ds_17/articles/bc093cfa3bdbd1": "2026-08-22",
-    "https://zenn.dev/kairosai/articles/9d0e994d2dd352": "2026-08-22",
-    "https://zenn.dev/mamimami/articles/4fbcf34f2d8bac": "2026-08-22",
-    "https://qiita.com/Tsutomu_eng/items/adb531a257c371358d0e": "2026-08-22",
-    "https://qiita.com/Tsutomu_eng/items/7ea12bf306f45c4fb5b4": "2026-08-22",
-    "https://ai-heartland.com/explain/eli5-skill-claude-code": "2026-08-22",
-    "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research": "2026-08-22",
-    "https://techcrunch.com/2026/08/21/anthropics-opus-4-6-is-a-smut-machine": "2026-08-22",
-    "https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates": "2026-08-22",
     "https://www.reddit.com/r/ClaudeAI/comments/1vw868t/lattice_an_isometric_game_kit_for_agents": "2026-08-23",
     "https://www.reddit.com/r/ClaudeAI/comments/1vw0osz/anthropic_uploaded_8_hours_of_talks_from_code_w": "2026-08-23",
     "https://www.reddit.com/r/ClaudeAI/comments/1vw1gfy/why_do_most_tech_subs_seem_to_hate_claude_so_much": "2026-08-23",
@@ -2154,9 +2130,23 @@
     "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity": "2026-11-20",
     "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price": "2026-11-20",
     "https://techcrunch.com/2026/11/19/at-nasdaq-opening-bell-anthropic-ceo-recommits-to-pacing-ai-development": "2026-11-20",
-    "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test": "2026-11-20"
+    "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test": "2026-11-20",
+    "https://qiita.com/NaokiIshimura/items/a75af610ec8c0d2ff699": "2026-11-21",
+    "https://qiita.com/NaokiIshimura/items/0b054c35b3c8b8aa5796": "2026-11-21",
+    "https://qiita.com/sorabcjanne1/items/5e91ea2a1588c2845e21": "2026-11-21",
+    "https://qiita.com/onceby/items/7b932a74bdca188abaf1": "2026-11-21",
+    "https://zenn.dev/tainari/articles/ttt-teacher-net-teaches-net": "2026-11-21",
+    "https://zenn.dev/solitarywalker/articles/f9102d95cab03a": "2026-11-21",
+    "https://zenn.dev/medirom_tech/articles/44dee3bbc4e0d9": "2026-11-21",
+    "https://zenn.dev/niceaidev/articles/b15ab4922b2af2": "2026-11-21",
+    "https://zenn.dev/chiisana_bin/articles/ai-earn-experiment-3weeks-zero": "2026-11-21",
+    "https://zenn.dev/everyinfra/articles/claude-cowork-scheduled-tasks-competitor-price-rev": "2026-11-21",
+    "https://qiita.com/shiroi1229/items/8c3cdf72ffcb69746d2f": "2026-11-21",
+    "https://qiita.com/niti-dev/items/8fee0adc3a7729c0dd01": "2026-11-21",
+    "https://the-decoder.com/apple-joins-the-race-for-ai-agents-that-control-your-device-while-raising-new-barriers-for-competitors": "2026-11-21"
   },
   "source_penalties": {
-    "Anthropic News": "2026-11-21"
+    "Anthropic News": "2026-11-22",
+    "TechCrunch Claude": "2026-11-22"
   }
 }
