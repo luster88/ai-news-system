@@ -10,7 +10,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-19'
-updated: '2026-11-17'
+updated: '2026-11-22'
 sources:
 - url: https://qiita.com/peka2/items/9ce150b3b480516fc16e
   title: Claude Code に iOSアプリの E2Eテスト までやらせるようにした（iOSシミュレータ + AXe）
@@ -36,6 +36,9 @@ sources:
 - url: https://qiita.com/kentasatomi/items/41c2ad18ef05aa10ec4f
   title: CLAUDE.mdの指示が効いたか、同じ課題で確かめる
   date: '2026-11-17'
+- url: https://zenn.dev/yasuakiomokawa/articles/3ac970c3a3a1c7
+  title: AIエージェントに堅牢なテストを書かせるには？
+  date: '2026-11-22'
 ---
 
 
@@ -45,7 +48,20 @@ sources:
 
 
 
+
 # Claude Code Testing
+
+---
+
+## 2026-11-22
+
+### AIエージェントに堅牢なテストを書かせるには？
+
+AIコーディングエージェント（Claude Codeなど）に堅牢なテストを書かせる4つの手順を解説。実装方法を受け入れ基準から除外し、型検査とlintに委ねることで、実装変更に強いテストを実現。15日間の実践で、テスト凍結機能が不要になった知見を共有。
+
+- **ソース**: [Zenn claude](https://zenn.dev/yasuakiomokawa/articles/3ac970c3a3a1c7)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, cowork
 
 ---
 

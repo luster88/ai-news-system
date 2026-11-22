@@ -1,24 +1,5 @@
 {
   "urls": {
-    "https://www.reddit.com/r/ClaudeAI/comments/1vw868t/lattice_an_isometric_game_kit_for_agents": "2026-08-23",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vw0osz/anthropic_uploaded_8_hours_of_talks_from_code_w": "2026-08-23",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vw1gfy/why_do_most_tech_subs_seem_to_hate_claude_so_much": "2026-08-23",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vwgeg9/running_multiple_agents_in_parallel_is_bringing": "2026-08-23",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vw6ebk/is_anyone_using_claude_for_actual_email_triage_on": "2026-08-23",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vwdbhy/sonnet_5_low_vs_medium_vs_high_for_daily_usage": "2026-08-23",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vw4cc2/you_guys_wanted_the_repo_so_here_it_is": "2026-08-23",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vw5avq/i_shipped_a_free_ios_app_top_left_corner_to_the": "2026-08-23",
-    "https://qiita.com/yama3133/items/a60835f2c4bc3416a3a1": "2026-08-23",
-    "https://qiita.com/tomada/items/bcd4e136ae5c05c26547": "2026-08-23",
-    "https://zenn.dev/kazuhito/articles/97ef1df8ad4321": "2026-08-23",
-    "https://zenn.dev/crandim_r_and_d/articles/260822_a10_handoff_questions_workflow": "2026-08-23",
-    "https://zenn.dev/muno_sunsun/articles/dea8db4298b195": "2026-08-23",
-    "https://zenn.dev/kimushun1101/articles/family-ai-agents-on-discord": "2026-08-23",
-    "https://qiita.com/tomada/items/9810d4ef764c12fb4a21": "2026-08-23",
-    "https://qiita.com/mix_dvd/items/d4535a32882e7d1dd76a": "2026-08-23",
-    "https://qiita.com/YujiNaramoto/items/b3cbc1e2c581aa50aced": "2026-08-23",
-    "https://ai-heartland.com/explain/claude-plugins-community": "2026-08-23",
-    "https://the-decoder.com/how-chinas-gray-market-sells-claude-tokens-at-a-fraction-of-the-price": "2026-08-23",
     "https://www.reddit.com/r/ClaudeAI/comments/1vx6fyn/what_i_built_with_claude_sweet_potatoes": "2026-08-24",
     "https://www.reddit.com/r/ClaudeAI/comments/1vx4kn7/indeed_laid_off_my_pregnant_wife_so_i_built_a_job": "2026-08-24",
     "https://www.reddit.com/r/ClaudeAI/comments/1vxdnw6/week_4_of_making_my_fishing_game_entirely_with_ai": "2026-08-24",
@@ -2143,10 +2124,27 @@
     "https://zenn.dev/everyinfra/articles/claude-cowork-scheduled-tasks-competitor-price-rev": "2026-11-21",
     "https://qiita.com/shiroi1229/items/8c3cdf72ffcb69746d2f": "2026-11-21",
     "https://qiita.com/niti-dev/items/8fee0adc3a7729c0dd01": "2026-11-21",
-    "https://the-decoder.com/apple-joins-the-race-for-ai-agents-that-control-your-device-while-raising-new-barriers-for-competitors": "2026-11-21"
+    "https://the-decoder.com/apple-joins-the-race-for-ai-agents-that-control-your-device-while-raising-new-barriers-for-competitors": "2026-11-21",
+    "https://qiita.com/homhom44/items/e41dca096fb741f1b3b0": "2026-11-22",
+    "https://qiita.com/Ray_T/items/1eaa0892c3ed5d89300b": "2026-11-22",
+    "https://qiita.com/Ray_T/items/ae0583ea0256ecfe3716": "2026-11-22",
+    "https://qiita.com/Ray_T/items/8a04fc572d33d614d21a": "2026-11-22",
+    "https://zenn.dev/ojisan_ai_lab/articles/claude-code-hook-onfailure-block-20261121": "2026-11-22",
+    "https://zenn.dev/maura/articles/db8579579b1b81": "2026-11-22",
+    "https://zenn.dev/yasuakiomokawa/articles/3ac970c3a3a1c7": "2026-11-22",
+    "https://zenn.dev/ell/articles/2bb5efad83924d": "2026-11-22",
+    "https://zenn.dev/kd_yuta/articles/self-play-claims-recheck": "2026-11-22",
+    "https://zenn.dev/sugawara_ai/articles/ai-news-20261120": "2026-11-22",
+    "https://qiita.com/phibi-soon/items/eb49af18ba1918d24aef": "2026-11-22",
+    "https://ai-heartland.com/tool/claude-code-code-mode": "2026-11-22",
+    "https://ai-heartland.com/agent/orca-bots": "2026-11-22",
+    "https://ai-heartland.com/mcp/mcp-events": "2026-11-22",
+    "https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft": "2026-11-22",
+    "https://the-decoder.com/us-technology-stocks-suffer-their-worst-weekly-loss-since-the-pandemic-as-ai-doubts-pile-up": "2026-11-22",
+    "https://the-decoder.com/bytedance-argues-most-ai-training-phases-are-unnecessary-and-backs-it-up-with-a-competitive-open-model": "2026-11-22"
   },
   "source_penalties": {
-    "Anthropic News": "2026-11-22",
-    "TechCrunch Claude": "2026-11-22"
+    "Anthropic News": "2026-11-23",
+    "TechCrunch Claude": "2026-11-23"
   }
 }

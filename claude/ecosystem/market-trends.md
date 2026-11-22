@@ -11,7 +11,7 @@ tags:
 - pricing
 - 新機能
 date: '2026-04-03'
-updated: '2026-11-12'
+updated: '2026-11-22'
 sources:
 - url: https://qiita.com/kotauchisunsun/items/ab78bb338500b4c71103
   title: Claude Codeの首位陥落。CodexがシェアNo.1へ。 ～データで見る2026年3月のAI Codingの動向まとめ～
@@ -33,6 +33,10 @@ sources:
   title: US corporate AI spending hits a new high in October, but growth slows to
     1.65 percent
   date: '2026-11-12'
+- url: https://the-decoder.com/us-technology-stocks-suffer-their-worst-weekly-loss-since-the-pandemic-as-ai-doubts-pile-up
+  title: US technology stocks suffer their worst weekly loss since the pandemic as
+    AI doubts pile up
+  date: '2026-11-22'
 ---
 
 
@@ -40,7 +44,20 @@ sources:
 
 
 
+
 # Market Trends
+
+---
+
+## 2026-11-22
+
+### US technology stocks suffer their worst weekly loss since the pandemic as AI doubts pile up
+
+米国のテクノロジー株が、パンデミック以来最悪の週間下落を記録。Nasdaq 100は週間で10.4%下落し、ベア市場に突入。AIへの巨額投資への疑念、Nvidiaのスキャンダル、政治的逆風が主な要因。Nvidiaは会計審査報告で14%急落し、Anthropicも上場翌日に9.1%下落した。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/us-technology-stocks-suffer-their-worst-weekly-loss-since-the-pandemic-as-ai-doubts-pile-up)
+- **重要度**: 7/10
+- **タグ**: pricing, 新機能
 
 ---
 

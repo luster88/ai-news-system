@@ -8,7 +8,7 @@ tags:
 - setup
 - 新機能
 date: '2026-06-29'
-updated: '2026-11-18'
+updated: '2026-11-22'
 sources:
 - url: https://zenn.dev/yujmatsu/articles/20260629_cca_foundations_02_basics
   title: '【CCA-F学習ログ #2】基礎編：Anthropic Academy のレベル100で土台を固める'
@@ -16,10 +16,26 @@ sources:
 - url: https://qiita.com/Ray_T/items/78598353ec1df33f899f
   title: 【第4回】ゼロから目指す! CCDV-F合格への道：LLMのしくみ
   date: '2026-11-18'
+- url: https://qiita.com/Ray_T/items/1eaa0892c3ed5d89300b
+  title: 【第19回】ゼロから目指す! CCDV-F合格への道：Claudeでエージェントを作る
+  date: '2026-11-22'
 ---
 
 
+
 # Certification Study
+
+---
+
+## 2026-11-22
+
+### 【第19回】ゼロから目指す! CCDV-F合格への道：Claudeでエージェントを作る
+
+Claude Certified Developer – Foundations(CCDV-F)認定資格の非公式学習シリーズ第19回。Claudeでエージェントを構築する手法を解説。Claude Agent SDK、カスタムエージェントループとハーネス、マネージドエージェントのデプロイモデル（セルフホスト型とAnthropicホスト型）、決定論的なアクションのためのフックという4つの主要要素について、公式ガイドをもとに筆者が解釈・整理した内容を提供。試験の出題範囲（5.3%）に対応する学習教材。
+
+- **ソース**: [Qiita claude](https://qiita.com/Ray_T/items/1eaa0892c3ed5d89300b)
+- **重要度**: 4/10
+- **タグ**: claude-api, setup
 
 ---
 

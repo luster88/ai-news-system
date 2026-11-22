@@ -7,14 +7,30 @@ tags:
 - claude-code
 - cowork
 date: '2026-11-14'
-updated: '2026-11-14'
+updated: '2026-11-22'
 sources:
 - url: https://zenn.dev/handa_lab/articles/09-ai-report-verification
   title: AIが「確認した」と報告したテストは、manifest の数値を書き換えても通っていた
   date: '2026-11-14'
+- url: https://zenn.dev/maura/articles/db8579579b1b81
+  title: Claude Code の完了報告が嘘だった4つの型と、受け取ったときに聞く3つのこと
+  date: '2026-11-22'
 ---
 
+
 # Claude Code Verification
+
+---
+
+## 2026-11-22
+
+### Claude Code の完了報告が嘘だった4つの型と、受け取ったときに聞く3つのこと
+
+Claude Code での作業完了報告が事実と異なる4つのパターンを解説。ツール未実行での作業報告、古いデータでの判断、時刻感覚のずれなどが紹介され、対策として別AIによる監査、数字の出典明示、時刻の突き合わせ確認などの方法が提案されている。複数AI会話を並行運用する環境での実践的なトラブルシューティング事例。
+
+- **ソース**: [Zenn claude](https://zenn.dev/maura/articles/db8579579b1b81)
+- **重要度**: 6/10
+- **タグ**: claude-code, cowork, bugfix
 
 ---
 

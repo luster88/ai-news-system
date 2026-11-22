@@ -6,9 +6,10 @@ tags:
 - claude-code
 - prompt
 - release
+- setup
 - 新機能
 date: '2026-07-24'
-updated: '2026-11-21'
+updated: '2026-11-22'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v5mhhl/anthropic_cut_80_of_claude_codes_system_prompt
   title: Anthropic cut 80% of Claude Code's system prompt for the Claude 5 models
@@ -20,10 +21,26 @@ sources:
 - url: https://qiita.com/NaokiIshimura/items/0b054c35b3c8b8aa5796
   title: Claude Code v2.1.326 - v2.1.330 リリースノートまとめ
   date: '2026-11-21'
+- url: https://ai-heartland.com/tool/claude-code-code-mode
+  title: Claude Code Code Mode とは｜JavaScriptでツールを一括実行する仕組みと権限・Hooksの注意点
+  date: '2026-11-22'
 ---
 
 
+
 # Claude Code System Prompt
+
+---
+
+## 2026-11-22
+
+### Claude Code Code Mode とは｜JavaScriptでツールを一括実行する仕組みと権限・Hooksの注意点
+
+Claude Codeに実験機能としてCode Modeが追加された。複数のツール呼び出しをJavaScript 1本にまとめて並列実行・結果の絞り込みを行い、速度と文脈の節約を実現する。環境変数で有効化する必要があり、権限チェックやフックの動作がコード単位での判断に変わる点に注意が必要。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/claude-code-code-mode)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 
