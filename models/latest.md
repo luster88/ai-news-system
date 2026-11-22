@@ -1,61 +1,61 @@
 ---
-date: 2026-11-15
+date: 2026-11-22
 type: model-report
 ---
 
-# 最新AIモデルまとめ - 2026-11-15
+# 最新AIモデルまとめ - 2026-11-22
 
 ## 概要
-- 2026年11月時点で、Claude Fable 5.2がArtificial Analysis Intelligence Indexで65点を獲得し最高性能を記録。Gemini 4 Carbon（60点）、Claude Opus 5.5（59点）が続く。
-- OpenAIはGPT-6シリーズ（Astra/Sol/Terra/Luna）を展開し、用途別の最適化を推進。GPT-6.1 Solは性能とコストのバランスで評価が高い。
-- Google Gemini 4世代（Carbon/Hydrogen/Argon）が登場し、Carbonは数学特化、Hydrogenは高速処理、Argonはセキュリティ・コーディングに特化。
-- DeepSeek V4.1 Flashが低コスト（入力$0.048/1M tokens）で高性能を維持し、中国製オープンモデルの競争力が顕著に。
-- AIコーディングツール（Claude Code、Codex）の実用化が進み、非プログラマーによるアプリ開発事例や企業導入（Goldman Sachs制限、Holiday Extras活用）が報告されている。
+- 2026年11月時点で、Claude Fable 5.2が最高性能モデルとして登場し、Intelligence Index 65を記録。GPT-6.2 Astra（62）、Gemini 4 Neon（61）が続く。
+- AIコーディングエージェントは単体ベンチマークで高得点だが、実際の職場環境では10タスク中1つ未満しか完了できないという課題が明らかに。
+- Anthropicの数学者がClaudeを用いてリーマン予想の証明を主張するなど、AI支援による数学的証明が話題に（検証は未完了）。
+- Google Gemini 4シリーズ（Carbon、Neon、Hydrogen）が相次いで登場し、用途別の最適化が進む。Carbonはサイバーセキュリティとエージェントワークフローに特化。
+- MCP（Model Context Protocol）の拡張やClaude Code、Codexなどのコーディングエージェントの実用化が加速。vibe-codingによるガジェットカスタマイズも広がる。
 
 ## 性能ランキング
 
 | 順位 | モデル名 | 提供元 | スコア | 備考 |
 |---:|---|---|---:|---|
-| 1 | Claude Fable 5.2 | Anthropic | 65 | 最高性能。長期エージェントワーク・高度推論に特化。出力速度30%向上 |
-| 2 | Gemini 4 Carbon | Google | 60 | 数学特化。MathArenaで首位。サイバーセキュリティ機能強化 |
-| 3 | Claude Opus 5.5 | Anthropic | 59 | 長時間エージェントコーディング・知識作業向け。バランス型最上位 |
-| 4 | GPT-6 Astra | OpenAI | 57 | 高度タスク向け。BioBasicsBenchで66.7%達成 |
-| 5 | GPT-6.1 Sol | OpenAI | 55 | バランス型。Astraの約1/5のコストで同等精度 |
-| 6 | Claude Sonnet 5.5 | Anthropic | 55 | 速度と知性の最適バランス。バグ修正などに推奨 |
-| 7 | Gemini 4 Hydrogen | Google | 54 | 高速処理重視。無料ユーザーにも展開予定 |
-| 8 | GPT-6.1 Terra | OpenAI | 51 | GUI操作・コード修正高速。出力トークン少なめ（約159/応答） |
-| 9 | Gemini 4 Argon | Google | 50 | セキュリティ・コーディング特化。CodeMender強化に使用 |
-| 10 | Muse Wonder Full | Meta | 50 | マルチモーダル対応。代理電話機能を提供 |
-| 11 | Kimi K3.1 Pro | Moonshot AI | 46 | 中国製。Blackwellチップ使用の痕跡が報告される |
-| 12 | Muse Wonder | Meta | 44 | 最大262Kコンテキスト対応 |
-| 13 | Claude Haiku 5.5 | Anthropic | 36 | 高速・低コスト。分類・抽出・ルーティング向け |
-| 14 | Muse Ember | Meta | 36 | 低コスト（$0.14/タスク）。高速応答（3.3分/タスク） |
-| 15 | DeepSeek V4.1 Flash 1017 | DeepSeek | 33 | 超低コスト（$0.60/タスク）。約600万ドルで開発 |
+| 1 | Claude Fable 5.2 | Anthropic | 65 | 最高性能。demanding reasoningと長期エージェント作業に最適。Max effort時 |
+| 2 | GPT-6.2 Astra | OpenAI | 62 | Max effort時。複雑なソフトウェアエンジニアリングに強み |
+| 3 | Gemini 4 Neon | Google | 61 | Xhigh推論レベル。マルチモーダル統合処理に優れる |
+| 4 | Gemini 4 Carbon | Google | 60 | High effort。サイバーセキュリティとエージェントワークフローに特化 |
+| 5 | Claude Opus 5.5 | Anthropic | 59 | Max effort。長期エージェントコーディングと知識作業向け |
+| 6 | GPT-6.2 Sol | OpenAI | 57 | Max effort。コスパに優れる |
+| 7 | Claude Sonnet 5.5 | Anthropic | 55 | Max effort。速度と知能のバランスが最良 |
+| 8 | Gemini 4 Hydrogen | Google | 54 | Xhigh推論。高速処理重視。無料ユーザーにも提供 |
+| 9 | GPT-6.1 Terra | OpenAI | 51 | Max effort。低コストで高性能 |
+| 10 | Gemini 4 Argon | Google | 50 | High effort |
+| 11 | Muse Wonder Full | Meta | 50 | Max effort。パーソナルAIエージェント |
+| 12 | Kimi K3.1 Pro | Moonshot AI | 46 | 中国製。長文処理に強み |
+| 13 | Muse Wonder | Meta | 44 | Max effort。エージェント機能充実 |
+| 14 | Qwen4 Max | Alibaba | 43 | 984kコンテキスト |
+| 15 | Claude Haiku 5.5 | Anthropic | 36 | Max effort。高速・低レイテンシタスク向け |
 
 ## コスト比較
 
 | モデル名 | 提供元 | 入力 ($/1M tokens) | 出力 ($/1M tokens) | コスパ評価 |
 |---|---|---:|---:|---|
-| Claude Fable 5.2 | Anthropic | $8 | $40 | ★★ |
-| Claude Opus 5.5 | Anthropic | $4 | $20 | ★★★ |
-| Claude Sonnet 5.5 | Anthropic | $2 | $10 | ★★★★ |
-| Claude Haiku 5.5 | Anthropic | $0.10 | $0.50 | ★★★★★ |
-| Gemini 4 Carbon | Google | 不明 | 不明 | ★★（GPT-6.1 Solの約15倍と報道） |
-| Gemini 4 Hydrogen | Google | 不明 | 不明 | ★★★★（無料ユーザー向け展開予定） |
-| Gemini 4 Argon | Google | 不明 | 不明 | ★★★ |
-| Gemini Omni 1.2 Flash | Google | $12/1M tokens（動画出力） | 30%値下げ実施 | ★★★★ |
-| GPT-6 Astra | OpenAI | 不明 | 不明 | ★★★ |
-| GPT-6.1 Sol | OpenAI | 不明 | 不明 | ★★★★★（Astraの約1/5のコスト） |
-| GPT-6.1 Terra | OpenAI | 不明 | 不明（約159トークン/応答） | ★★★★（Solの半額） |
-| GPT-6 Luna | OpenAI | 不明 | 不明 | ★★★★★（定型業務向け低コスト） |
-| DeepSeek V4.1 Flash 1017 | DeepSeek | $0.048 | $0.192 | ★★★★★ |
-| Qwen 3.8 27B | Alibaba | 不明 | 不明（Basalt 0.4.0で最大776 tok/s） | ★★★★ |
+| Claude Fable 5.2 | Anthropic | 8 | 40 | ★★ |
+| Claude Opus 5.5 | Anthropic | 4 | 20 | ★★★ |
+| Claude Sonnet 5.5 | Anthropic | 2 | 10 | ★★★★ |
+| Claude Haiku 5.5 | Anthropic | 0.10 | 0.50 | ★★★★★ |
+| Gemini 4 Carbon | Google | 不明 | 不明 | ★★ |
+| Gemini 4 Neon | Google | 3 | 15 | ★★★ |
+| Gemini 4 Hydrogen | Google | 不明 | 不明 | ★★★★ |
+| GPT-6.2 Astra | OpenAI | 不明 | 不明 | ★★ |
+| GPT-6.2 Sol | OpenAI | 不明 | 不明 | ★★★★★ |
+| GPT-6.1 Terra | OpenAI | 不明 | 不明 | ★★★★★ |
+| GPT-6 Luna | OpenAI | 不明 | 不明 | ★★★★★ |
+| GPT-5.4 mini | OpenAI | 不明 | 不明 | ★★★★★ |
+| GPT-5.4 nano | OpenAI | 不明 | 不明 | ★★★★★ |
+| DeepSeek V4.1 Flash | DeepSeek | 不明 | 不明 | ★★★★★ |
+| Qwen3.8-Flash-Next | Alibaba | 不明 | 不明 | ★★★★ |
 | GLM-5.3 | Zhipu AI | 不明 | 不明 | ★★★ |
-| Kimi K3.1 Pro | Moonshot AI | 不明 | 不明 | ★★★ |
-| MiniMax-M3.1-Flash | MiniMax | 不明 | 不明 | ★★★★ |
 | Muse Wonder | Meta | 不明 | 不明 | ★★★ |
-| Muse Ember | Meta | 不明 | 不明 | ★★★★★（$0.14/タスク） |
-| ERNIE-5.0 | Baidu | 不明 | 不明 | ★★★（LMArena中国モデル1位） |
+| Muse Ember | Meta | 不明 | 不明 | ★★★★★ |
+| Command A+ | Cohere | 0 | 0 | ★★★★★ |
+| K2 Horizon 375B A23B | 不明 | 0 | 0 | ★★★★★ |
 
 ## カテゴリ別モデル一覧
 
@@ -63,130 +63,130 @@ type: model-report
 
 | モデル名 | 提供元 | リリース日 | 特徴 |
 |---|---|---|---|
-| Claude Fable 5.2 | Anthropic | 2026-11-09 | 最高性能。長期エージェントワーク・高度推論特化。出力30%高速化 |
-| Claude Opus 5.5 | Anthropic | 2026-09 | 長時間エージェントコーディング・知識作業向けバランス型最上位 |
-| Claude Sonnet 5.5 | Anthropic | 2026-09 | 速度と知性の最適バランス。バグ修正などに推奨 |
-| Claude Haiku 5.5 | Anthropic | 2026-10 | 高速・低コスト。分類・抽出・ルーティング向け |
-| Gemini 4 Carbon | Google | 2026-11-11 | 数学・サイバーセキュリティ特化。MathArena首位 |
-| Gemini 4 Hydrogen | Google | 2026-11-14 | 高速処理重視。無料ユーザー向け展開予定 |
-| Gemini 4 Argon | Google | 2026-11 | セキュリティ・コーディング特化。CodeMender強化 |
-| Gemini Decision 1 | Google | 2026-11-14 | AIエージェント判断処理特化。最大1,000問一括判定 |
-| GPT-6 Astra | OpenAI | 2026 | 高度タスク向け。BioBasicsBenchで66.7% |
-| GPT-6.1 Sol | OpenAI | 2026 | バランス型。Astraの約1/5のコストで同等精度 |
-| GPT-6.1 Terra | OpenAI | 2026 | GUI操作・コード修正高速。出力トークン少なめ |
-| GPT-6 Luna | OpenAI | 2026 | 定型業務向け低コスト。最速タスク処理 |
-| GPT-6 Cyber | OpenAI | 2026-11-05 | サイバーセキュリティ特化。脆弱性発見・検証能力51%向上 |
-| DeepSeek V4.1 Flash 1017 | DeepSeek | 2026-10 | 超低コスト（入力$0.048/1M）。約600万ドルで開発 |
-| Qwen 3.8 27B | Alibaba | 2026 | Basalt 0.4.0で最大776 tok/s。BF16比較でtop-1精度92.8% |
-| Kimi K3.1 Pro | Moonshot AI | 2026 | 中国製。Blackwellチップ使用痕跡報告 |
-| GLM-5.3 | Zhipu AI | 2026 | 中国製。Blackwellチップ使用痕跡報告 |
-| ERNIE-5.0 | Baidu | 2026-01 | LMArenaテキストリーダーボード中国モデル1位、世界8位 |
-| Muse Wonder | Meta | 2026 | 最大262Kコンテキスト。代理電話機能提供 |
+| Claude Fable 5.2 | Anthropic | 2026-11-09 | 最高性能モデル。demanding reasoningと長期エージェント作業に最適。出力速度30%向上 |
+| Claude Opus 5.5 | Anthropic | 2026-09 | 長期エージェントコーディングと知識作業向け。デフォルトモデルに設定 |
+| Claude Sonnet 5.5 | Anthropic | 2026-09 | 速度と知能のバランスが最良。多くのタスクに推奨 |
+| Claude Haiku 5.5 | Anthropic | 2026-10 | 高速・低レイテンシ。分類、抽出、ルーティングなど大量処理向け |
+| Claude Sonnet 4.6 | Anthropic | 2026-02-17 | コーディング、エージェント、長文推論で大幅性能向上。Opusクラスの性能をSonnetで実現 |
+| GPT-6.2 Astra | OpenAI | 2026 | 複雑なソフトウェアエンジニアリングに強み。Intelligence Index 62 |
+| GPT-6.2 Sol | OpenAI | 2026 | コスパに優れる高性能モデル。Intelligence Index 57 |
+| GPT-6.1 Terra | OpenAI | 2026 | 低コストで高性能。Intelligence Index 51 |
+| GPT-6 Luna | OpenAI | 2026 | 最速クラスのタスク完了時間。低コスト |
+| GPT-5.4 mini | OpenAI | 2026-03-22 | 小型高速版。コーディング、ツール利用、マルチモーダル推論に最適化 |
+| GPT-5.4 nano | OpenAI | 2026-03-22 | 超小型版。大量API呼び出しやサブエージェントワークロードに最適 |
+| Gemini 4 Carbon | Google | 2026-11-11 | サイバーセキュリティと長期エージェントワークフローに特化。CursorBench等で1位 |
+| Gemini 4 Neon | Google | 2026-11-18 | フロンティアレベルの知能と高速タスク完了。100万トークンコンテキスト |
+| Gemini 4 Hydrogen | Google | 2026-11-14 | 高速処理重視。Google検索とGeminiアプリの無料ユーザーにも展開 |
+| Gemini 4 Argon | Google | 2026 | Intelligence Index 50の高性能モデル |
+| Gemini 3.5 Flash-Lite | Google | 2026 | 超高速・低コスト。Time to First Token最速クラス |
+| DeepSeek V4.1 Flash | DeepSeek | 2026-10 | 約600万ドルで開発。全研究公開。低コスト高性能 |
+| Qwen4 Max | Alibaba | 2026 | 984kコンテキスト。Intelligence Index 43 |
+| Qwen3.8-Flash-Next | Alibaba | 2026 | 高速処理。256kコンテキスト |
+| GLM-5.3 | Zhipu AI | 2026 | Intelligence Index 32。中国製高性能モデル |
+| Kimi K3.1 Pro | Moonshot AI | 2026 | Intelligence Index 46。長文処理に強み |
+| ERNIE-5.0-0110 | Baidu | 2026-01-10 | LMArenaで中国モデル1位、世界8位。数学分野で世界2位 |
 
 ### 画像生成
 
 | モデル名 | 提供元 | リリース日 | 特徴 |
 |---|---|---|---|
-| Claude Fable 5.2（画像生成） | Anthropic | 2026-11-15 | Pythonコードで仮想キャンバス上に筆致再現。約70万回の筆致使用 |
-| Gemini Omni 1.2 Flash | Google | 2026-11-05 | 最大15秒動画生成。30%値下げ（720p 0.07ドル/秒） |
-| Seedance 2.0 | ByteDance | 2026 | 写真1枚から7秒動画生成。Bicep Hearts開発に使用 |
+| Claude Fable 5.2 | Anthropic | 2026-11-09 | Pythonコードで仮想キャンバス上に筆致を再現する独自の画像生成手法 |
+| Gemini Omni | Google | 2026 | Adobe FireflyやPhotoshopで利用可能な画像生成AIモデル |
+| Veo | Google | 2026 | 動画生成AIモデル。Adobe製品に統合 |
 
 ### 音声AI
-
-| モデル名 | 提供元 | リリース日 | 特徴 |
-|---|---|---|---|
-| Gemini Live API | Google | 2026 | 音声・テキスト対話。ドラクエXの「おしゃべりスラミィ」に採用 |
+- 該当なし
 
 ### マルチモーダル
 
 | モデル名 | 提供元 | リリース日 | 特徴 |
 |---|---|---|---|
-| Gemini 3 Flash | Google | 2026 | マルチモーダル対応。ドラクエXでGemini 3 Flash活用 |
-| Gemma 4 | Google | 2026 | 軌道上で動作。宇宙TPUで俳句生成成功 |
-| Phi-4 Multimodal | Microsoft | 2026 | 最速First Answer Token（0.39秒） |
+| Gemini 4 Neon | Google | 2026-11-18 | スプレッドシート、PDF、チャート、音声、動画など多様な入力を統合処理 |
+| Gemini 3 Flash | Google | 2026 | Gemini Notebookで利用。マルチモーダル対応 |
+| Phi-4 Multimodal | Microsoft | 2026 | 最速クラスのTime to First Token（0.55秒） |
 
 ### その他
 
 | モデル名 | 提供元 | リリース日 | 特徴 |
 |---|---|---|---|
-| ggml 1.0 | コミュニティ | 2025-11-13 | llama.cpp基盤ライブラリ。非推奨関数13個削除の整理版 |
-| Basalt 0.4.0 | コミュニティ | 2026-11-15 | Qwen 27B最大776 tok/s。構造化出力高速化 |
-| Together Compiler (TKCC) | Together AI | 2026-11-13 | AI推論継続最適化。Llama 1Bで1.7倍、フロンティアモデルで2.6倍TPS向上 |
-| llama-modchip | コミュニティ | 2026-11-08 | 284B DeepSeekをGPUなし64GB RAMで動作。44.36 tok/s達成 |
+| Gemini Decision 1 | Google | 2026-11-14 | AIエージェントの判断処理に特化。最大1,000問を一括判定 |
+| Codex | OpenAI | 2026 | コーディングエージェント。サンドボックス機構を実装 |
+| Claude Code | Anthropic | 2026 | コーディングエージェント。Code Mode、Projects、Dispatch機能を追加 |
+| Muse | Meta | 2026 | パーソナルAIエージェント。代理電話機能、各種アプリ連携 |
 
 ## 今週の新モデル・アップデート
 
 ### Claude Fable 5.2 (Anthropic)
-- 2026年11月9日発表。出力速度30%向上、API料金入力$8/出力$40（100万トークンあたり）。社内実験で1,000体超AIエージェントを指揮し8日間でOS試作品開発。画像生成はPythonコードで仮想キャンバス上に筆致再現する独自手法を採用。
-- 参照: [https://the-decoder.com/anthropics-claude-fable-5-2-doesnt-generate-images-it-paints-them](https://the-decoder.com/anthropics-claude-fable-5-2-doesnt-generate-images-it-paints-them)
+- 2026年11月9日発表。最高性能モデルとしてIntelligence Index 65を記録。出力速度が前版より最大30%向上。demanding reasoningと長期エージェント作業に最適化。社内実験では1,000体超のAIエージェントを指揮し8日間でOS試作品を開発。
+- 参照: [https://www.anthropic.com/news/claude-fable-5-2](https://www.anthropic.com/news/claude-fable-5-2)
 
 ### Gemini 4 Carbon (Google)
-- 2026年11月11日一般提供開始。MathArenaベンチマークで首位獲得。サイバーセキュリティ機能と長期エージェントワークフローに特化。CursorBench 4.0、WANDR、AutomationBenchで1位。コストは次点モデルの半分以下。
+- 2026年11月11日公開。サイバーセキュリティと長期エージェントワークフローに特化した最強モデル。CursorBench 4.0、WANDR、AutomationBenchで1位獲得。/swarm機能で単一プロンプトから複数エージェント協調チーム生成が可能。
 - 参照: [https://deepmind.google/blog/gemini-4-carbon-is-now-available](https://deepmind.google/blog/gemini-4-carbon-is-now-available)
 
+### Gemini 4 Neon (Google)
+- 2026年11月18日発表。フロンティアレベルの知能と高速タスク完了を実現。Artificial Analysis Intelligence Indexで総合3位（61）、Vals Indexで2位（70.9%）。100万トークンコンテキスト、入力3ドル/出力15ドル（100万トークンあたり）。
+- 参照: [https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon)
+
 ### Gemini 4 Hydrogen (Google)
-- 2026年11月14日発表。高速処理を重視した新モデル。Google検索とGeminiアプリの無料ユーザーにも展開予定。詳細な性能指標は未公開だが、高速性能を特徴とする。
+- 2026年11月14日発表。高速処理を重視した新モデルで、Google検索とGeminiアプリの無料ユーザーにも展開。xhigh推論レベルでは出力トークンが約6倍、コストも約6倍に増加するが品質が大幅向上。
 - 参照: [https://ledge.ai/articles/google_gemini_4_hydrogen](https://ledge.ai/articles/google_gemini_4_hydrogen)
 
-### Gemini Decision 1 (Google)
-- 2026年11月14日発表。AIエージェントの判断処理に特化。画像や音声などマルチモーダル入力をもとに、最大1,000問の判定を一括処理可能。AIエージェントの複雑な意思決定支援に特化した設計。
-- 参照: [https://ledge.ai/articles/gemini_decision_1](https://ledge.ai/articles/gemini_decision_1)
-
-### Gemini Omni 1.2 Flash (Google)
-- 2026年11月5日一般提供。最大15秒動画生成対応、動画出力料金30%値下げ（720p 0.07ドル/秒）。マルチターン会話による編集機能搭載。360p/720pドラフト作成後1080p/4Kアップスケール可能。
-- 参照: [https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips](https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips)
-
 ### Claude Opus 5.5 (Anthropic)
-- 2026年11月14日、有料プラン全体でデフォルトモデルに設定。古いプロンプト習慣（「よく考えて」など）は不要で自動推論を行うため削除推奨。努力レベルはMediumから開始推奨（前世代Opus 5のHighと同等性能）。
+- 2026年11月にデフォルトモデルに設定。古いプロンプト習慣（「よく考えて」などの指示）は不要で、削除することで応答が速くなり品質は低下しない。Mediumエフォートで前世代Opus 5のHighと同等性能。
 - 参照: [https://the-decoder.com/anthropic-says-outdated-prompting-habits-are-slowing-down-claude-opus-5-5](https://the-decoder.com/anthropic-says-outdated-prompting-habits-are-slowing-down-claude-opus-5-5)
 
-### GPT-6 Cyber (OpenAI)
-- 2026年11月5日発表。サイバーセキュリティ特化モデル。ExploitGymベンチマークで前世代GPT-5.6 Cyberの32.1%から48.5%へ51%相対改善。Linuxで948件の権限昇格エクスプロイト開発、Firefoxで81件の未知高深刻度脆弱性発見。
-- 参照: [https://openai.com/index/introducing-gpt-6-cyber](https://openai.com/index/introducing-gpt-6-cyber)
-
 ### Claude Code (Anthropic)
-- 非プログラマーが13日間でiPhoneアプリ開発・App Store公開に成功した事例が報告（2026年11月15日）。一方、Goldman Sachsは10月に非エンジニアの利用を制限。「Don't ask again」機能で秘密情報が平文保存される問題も指摘される。
-- 参照: [https://japan.cnet.com/article/35254571](https://japan.cnet.com/article/35254571)
+- 2026年11月にProjects機能とDispatch機能を追加。Projectsはプロジェクトごとにファイル・指示・作業履歴をローカル保存し、AIとのコンテキストを継続可能に。Dispatchは外出先からデスクトップのAIエージェントを操作できる機能。Code Modeでは複数ツール呼び出しを1回にまとめて実行。
+- 参照: [https://ai-heartland.com/tool/claude-code-code-mode](https://ai-heartland.com/tool/claude-code-code-mode)
 
-### Codex (OpenAI)
-- Holiday Extrasがモバイルアプリ再構築に活用し、従来6ヶ月以上の開発を2週間で完了。予約転換率向上、アプリエラー率19%→9%に半減（2026年11月12日報告）。OpenAIはPierre Computer Company買収を発表（11月5日）。
-- 参照: [https://openai.com/business/customer-stories/holidays-extras-codex](https://openai.com/business/customer-stories/holidays-extras-codex)
-
-### Muse (Meta)
-- 2026年11月14日、代理電話機能開始。月額19.99ドル最上位プラン加入者は保険会社や飲食店への予約などをAI合成音声で代行可能。一部商家はAIと判明すると電話切断するケースも。
-- 参照: [https://www.ithome.com/1/027/238.htm](https://www.ithome.com/1/027/238.htm)
-
-### NotebookLM（Gemini Notebook） (Google)
-- 2026年11月10日、公式REST APIとMCPサーバを公開プレビュー提供開始。個人アカウントでも利用可能。ノートブック作成・削除、Webページ・YouTube動画・テキスト追加を自動化可能。質問応答やポッドキャスト生成は今後対応予定。
+### Gemini Notebook API (Google)
+- 2026年11月10日に公式REST APIとMCPサーバを公開プレビュー提供開始。ノートブックの作成・削除、WebページやYouTube動画の自動取り込みが可能に。個人アカウントでも利用可能だが、質問応答やポッドキャスト生成は今後対応予定。
 - 参照: [https://atmarkit.itmedia.co.jp/ait/articles/2611/11/news011.html](https://atmarkit.itmedia.co.jp/ait/articles/2611/11/news011.html)
 
-### Claude Duet (Anthropic)
-- 2026年11月13日発表。コンシューマーAIエージェント。仕事・小規模ビジネス向けに設計され、生産性ツールやチャットサービスと連携。優先タスクをカード形式で提案。Pro/Max/Ultra会員向け研究プレビュー版として米国で提供開始。
-- 参照: [https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on](https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on)
+### MCP Events (Anthropic)
+- 2025年11月20日に仕様SEP-3415がFinalとなりベータ公開。外部イベントでエージェントを起動する機能を追加。Poll（取得）・Push（配信）・Webhook（POST受信）の3方式で購読・配信可能。MCPJamとChatGPTが対応済み。
+- 参照: [https://ai-heartland.com/mcp/mcp-events](https://ai-heartland.com/mcp/mcp-events)
+
+### Google Tasks（旧Spark） (Google)
+- 2026年11月17日にリブランド。Gemini 4 Hydrogenモデル搭載で無料提供開始。食事計画、カレンダー管理、メール内の不要な定期支出検出などが可能。米国では企業への電話での価格比較や在庫確認、Google Payでの購入も可能。
+- 参照: [https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free](https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free)
+
+### OpenAI Astral買収 (OpenAI)
+- 2026年3月22日発表。Pythonツールチェーン開発企業Astralを買収。RuffやuvなどのPython開発ツールでCodexの成長を加速させ、次世代Python開発者ツールを強化する狙い。
+- 参照: [https://openai.com/index/openai-to-acquire-astral](https://openai.com/index/openai-to-acquire-astral)
 
 ### ChatGPT Wallet (OpenAI)
-- 2026年11月13日発表。ChatGPT Work、Codex、dots上で動作するエージェントが購入を完了できる決済機能。購入はユーザー承認時のみ実行。エージェントによる自律的商取引の決済基盤を整備。
+- 2026年11月13日発表。ChatGPT Work、Codex、dots上で動作するエージェントが承認制で購入を完了できる決済機能。エージェントによる自律的な商取引の決済基盤が整う。
 - 参照: [https://qiita.com/picnic/items/1d2524574e7e141d52d5](https://qiita.com/picnic/items/1d2524574e7e141d52d5)
 
-### Gemini for Google (GfG) (Google)
-- Google社内専用コーディングAI。Geminiに社内データ1兆トークン学習。社内開発者2万9000人対象A/BテストでGemini 2.5 Pro比較でAIとのやり取り回数23.1%減、応答時間8.9%短縮、コード生存率16.8%向上（2026年11月13日論文発表）。
-- 参照: [https://www.itmedia.co.jp/news/article/2611/13/2000003110](https://www.itmedia.co.jp/news/article/2611/13/2000003110)
+### GAS×Gemini (Google)
+- 2026年11月17日に一般提供開始。Google Apps ScriptでGeminiサイドパネルが利用可能に。自然言語の指示でスクリプトの作成・編集・エラー修正が可能。Business Standard以上のエディションやAI関連アドオンが対象。
+- 参照: [https://kn.itmedia.co.jp/kn/article/2611/18/2000003256](https://kn.itmedia.co.jp/kn/article/2611/18/2000003256)
 
-### ERNIE-5.0 (Baidu)
-- 2026年1月版がLMArenaテキストリーダーボードで中国モデル1位、世界8位獲得（1,460点）。GPT-5.1-High、Gemini-2.5-Proを上回る。数学分野で世界2位（GPT-5.2-Highに次ぐ）。
-- 参照: [https://ernie.baidu.com/blog/posts/ernie-5.0-0110-release-on-lmarena](https://ernie.baidu.com/blog/posts/ernie-5.0-0110-release-on-lmarena)
+### Samsung Gemini搭載スマートグラス (Samsung/Google)
+- 2026年12月10日に米韓で発売予定。重量約41g、価格395ドルから。1,200万画素カメラで周囲を認識し、物体説明、会議要約、翻訳、道案内などをハンズフリーで利用可能。Snapdragon AR1 Gen 1搭載。
+- 参照: [https://www.watch.impress.co.jp/docs/news/2157226.html](https://www.watch.impress.co.jp/docs/news/2157226.html)
+
+### ドラクエX おしゃべりスラミィ (Square Enix/Google)
+- 2026年3月発表。Gemini 3 FlashとGemini Live APIを活用した対話型AIキャラクター。プレイヤーと音声・テキストで会話し、ゲーム内の「仲間」として冒険に同行。マルチエージェント構成で質問内容に応じて適切なエージェントを自動切り替え。
+- 参照: [https://www.itmedia.co.jp/aiplus/articles/2603/21/news012.html](https://www.itmedia.co.jp/aiplus/articles/2603/21/news012.html)
+
+### Claude Duet (Anthropic)
+- 2026年11月13日発表。コンシューマーAIエージェントで、仕事や小規模ビジネス向けに設計。生産性ツールやチャットサービスと連携し、優先すべきタスクを判断してカード形式で提案。Pro/Max/Ultra会員向けに米国で研究プレビュー版として提供開始。
+- 参照: [https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on](https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on)
 
 ## 情報源
 - [https://docs.anthropic.com/en/docs/about-claude/models](https://docs.anthropic.com/en/docs/about-claude/models)
 - [https://ai.google.dev/pricing](https://ai.google.dev/pricing)
 - [https://artificialanalysis.ai/leaderboards/models](https://artificialanalysis.ai/leaderboards/models)
-- [https://the-decoder.com/anthropics-claude-fable-5-2-doesnt-generate-images-it-paints-them](https://the-decoder.com/anthropics-claude-fable-5-2-doesnt-generate-images-it-paints-them)
-- [https://japan.cnet.com/article/35254571](https://japan.cnet.com/article/35254571)
-- [https://ai-heartland.com/llm/ggml](https://ai-heartland.com/llm/ggml)
-- [https://www.reddit.com/r/LocalLLaMA/comments/1xx1cu9/basalt_040_more_models_still_as_fast_qwen_27b_up](https://www.reddit.com/r/LocalLLaMA/comments/1xx1cu9/basalt_040_more_models_still_as_fast_qwen_27b_up)
-- [https://qiita.com/Matsda_K/items/6a29faa0431c388d83bd](https://qiita.com/Matsda_K/items/6a29faa0431c388d83bd)
-- [https://www.reddit.com/r/LocalLLaMA/comments/1xwttcw/latest_version_of_strata_made_my_qwen38flashnext](https://www.reddit.com/r/LocalLLaMA/comments/1xwttcw/latest_version_of_strata_made_my_qwen38flashnext)
-- [https://the-decoder.com/gemini-4-carbon-takes-the-matharena-crown-but-costs-15-times-more-than-gpt-6-1-sol](https://the-decoder.com/gemini-4-carbon-takes-the-matharena-crown-but-costs-15-times-more-than-gpt-6-1-sol)
-- [https://the-decoder.com/anthropic-says-outdated-prompting-habits-are-slowing-down-claude-opus-5-5](https://the-decoder.com/anthropic-says-outdated-prompting-habits-are-slowing-down-claude-opus-5-5)
-- [https://www.ithome.com/1/027/238.htm](https://www.ithome.com/1/027/238.htm)
-- [https://www.ithome.com/1/027/243.htm](https://www.ithome.com/1/027/243.htm)
+- [https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace](https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace)
+- [https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera](https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera)
+- [https://www.qbitai.com/2026/11/511870.html](https://www.qbitai.com/2026/11/511870.html)
+- [https://ledge.ai/articles/anthropic_claude_riemann_hypothesis_proof_claim](https://ledge.ai/articles/anthropic_claude_riemann_hypothesis_proof_claim)
+- [https://ai-heartland.com/mcp/codekb](https://ai-heartland.com/mcp/codekb)
+- [https://zenn.dev/mocchi_agent/articles/ceab2005012245](https://zenn.dev/mocchi_agent/articles/ceab2005012245)
+- [https://simonwillison.net/2026/Nov/20/levent-alpoge](https://simonwillison.net/2026/Nov/20/levent-alpoge)
+- [https://simonwillison.net/2026/Nov/20/llm-gemini](https://simonwillison.net/2026/Nov/20/llm-gemini)
+- [https://www.qbitai.com/2026/11/511570.html](https://www.qbitai.com/2026/11/511570.html)
+- [https://ai-heartland.com/mcp/mcp-events](https://ai-heartland.com/mcp/mcp-events)
