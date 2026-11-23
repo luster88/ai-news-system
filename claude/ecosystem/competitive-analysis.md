@@ -13,7 +13,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-04'
-updated: '2026-11-12'
+updated: '2026-11-23'
 sources:
 - url: https://ai-heartland.com/news/news-qwen-36-plus-openrouter-trillion-tokens
   title: Qwen 3.6 Plusが1日1.4兆トークン処理でOpenRouter新記録――LLMベンチマーク比較と料金
@@ -105,6 +105,10 @@ sources:
   title: Enterprise sales push OpenAI's quarterly revenue to $10 billion, though it
     still trails Anthropic
   date: '2026-11-12'
+- url: https://the-decoder.com/gpt-6-2-astra-and-sol-get-to-the-point-faster-but-score-lower-on-transparency-than-claude
+  title: GPT-6.2 Astra and Sol get to the point faster but score lower on transparency
+    than Claude
+  date: '2026-11-23'
 ---
 
 
@@ -130,7 +134,20 @@ sources:
 
 
 
+
 # Competitive Analysis
+
+---
+
+## 2026-11-23
+
+### GPT-6.2 Astra and Sol get to the point faster but score lower on transparency than Claude
+
+Artificial Analysis の評価によると、OpenAI の GPT-6.2 Astra と Sol は前モデルより 34～40% 短い回答で要点を早く伝えるが、不確実性の認識スコアが大幅に低下（Astra: 96→24、Sol: 98→51）。Claude Opus 5.5 は情報密度と透明性で最高スコアを記録し、構造化と誠実さで OpenAI モデルを上回る結果となった。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/gpt-6-2-astra-and-sol-get-to-the-point-faster-but-score-lower-on-transparency-than-claude)
+- **重要度**: 6/10
+- **タグ**: opus, performance, copilot
 
 ---
 

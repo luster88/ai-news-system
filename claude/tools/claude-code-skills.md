@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-07-11'
-updated: '2026-11-18'
+updated: '2026-11-23'
 sources:
 - url: https://ai-heartland.com/explain/ponytail-lazy-senior-dev
   title: Ponytail解説｜AIエージェントに『怠惰なシニア』を憑依させコードを54%削るClaude Codeスキル
@@ -37,6 +37,9 @@ sources:
 - url: https://ai-heartland.com/tool/stick-scene
   title: stick-scene｜棒人間アニメでプロダクトを見せるClaude Codeスキルを実機で描いて検証
   date: '2026-11-18'
+- url: https://qiita.com/KingHAL0/items/92314e95e5f0385cc0bc
+  title: AIが書いた日本語を yomiyasu で推敲する：Claude Code への導入と使い方
+  date: '2026-11-23'
 ---
 
 
@@ -46,7 +49,20 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-11-23
+
+### AIが書いた日本語を yomiyasu で推敲する：Claude Code への導入と使い方
+
+AIが生成した日本語文章を推敲するツール「yomiyasu」をClaude Codeに導入する手順と使い方を解説。標準ライブラリのみを使用する安全性を確認し、個人用スキルフォルダに配置。lint機能で文章の癖を検出し、diff機能で意味の変化リスクを警告。実際の記事に適用した結果、読点の使い方や箇条書きの過多などの改善点を機械的に抽出できることを確認した。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/KingHAL0/items/92314e95e5f0385cc0bc)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, prompt
 
 ---
 

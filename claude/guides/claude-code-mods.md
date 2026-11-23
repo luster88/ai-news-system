@@ -10,7 +10,7 @@ tags:
 - windows
 - 新機能
 date: '2026-09-19'
-updated: '2026-10-25'
+updated: '2026-11-23'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-mods
   title: Claude Code modsとは｜AGENTS.md対応のagents-md modをソースで読み、4つのモードを実測
@@ -30,6 +30,9 @@ sources:
 - url: https://zenn.dev/metalmental/articles/20261025_claude-code-mods
   title: Claude Code Modsで作る自分専用のTerminal UI
   date: '2026-10-25'
+- url: https://qiita.com/ussu_ussu_ussu/items/d2416096c85ab0d4a13a
+  title: Claude Code の mods を入れる前に調べたこと（備忘録）
+  date: '2026-11-23'
 ---
 
 
@@ -37,7 +40,30 @@ sources:
 
 
 
+
 # Claude Code Mods
+
+---
+
+## 2026-11-23
+
+### Claude Code の mods を入れる前に調べたこと（備忘録）
+
+Claude Code v2.1.286以降で正式導入されたmods機能の調査記録。modsはTypeScript関数でClaude Codeの動作をカスタマイズできるが、サンドボックス化されておらず、ファイル読み書き・プロセス起動・ネットワーク接続など強力な権限を持つため、信頼できる提供元からのみインストールすべきとの注意喚起を含む。
+
+- **ソース**: [Qiita claude](https://qiita.com/ussu_ussu_ussu/items/d2416096c85ab0d4a13a)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, setup
+
+---
+
+### Claude Code の mods を入れる前に調べたこと（備忘録）
+
+Claude Codeの新機能modsについての調査記録。modsはTypeScript関数でClaude Codeの動作をカスタマイズできる仕組みで、2026年10月1日に正式版がリリース。ツール呼び出しやプロンプト送信時に介入でき、画面のカスタマイズも可能だが、サンドボックスで隔離されていないためセキュリティリスクがある。信頼できる提供元のmodsのみをインストールすべきと公式が警告している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/ussu_ussu_ussu/items/d2416096c85ab0d4a13a)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, setup
 
 ---
 

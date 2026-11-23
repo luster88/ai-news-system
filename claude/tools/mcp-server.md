@@ -14,7 +14,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-25'
-updated: '2026-11-11'
+updated: '2026-11-23'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -177,6 +177,9 @@ sources:
 - url: https://ai-heartland.com/tool/appllama-skills
   title: appllama-skillsとは｜売れているアプリの画面を調べてから作らせるモバイルUIスキルの中身を読む
   date: '2026-11-11'
+- url: https://ai-heartland.com/mcp/codekb
+  title: CodeKBとは｜AWS製OSSで複数リポジトリのコードを理解しMCPでAIエージェントに渡す仕組み
+  date: '2026-11-23'
 ---
 
 
@@ -227,7 +230,20 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-11-23
+
+### CodeKBとは｜AWS製OSSで複数リポジトリのコードを理解しMCPでAIエージェントに渡す仕組み
+
+CodeKBは、AWS Labsが公開したOSSで、複数リポジトリのコードを解析し関数ごとに業務レベルの説明を生成してMCPでAIエージェントに渡すツール。tree-sitterで呼び出しグラフを作成しBedrockのLLMで意味的な索引を構築。既存システム改修時に関係するコードを自動的に特定し、見落としを防ぐ。AWS アカウントとBedrock（Claude・Titan）が必要。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/mcp/codekb)
+- **重要度**: 7/10
+- **タグ**: mcp, claude-api, cowork
 
 ---
 

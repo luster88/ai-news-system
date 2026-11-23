@@ -6,15 +6,32 @@ tags:
 - claude-code
 - cowork
 - prompt
+- 新機能
 date: '2026-06-20'
-updated: '2026-06-20'
+updated: '2026-11-23'
 sources:
 - url: https://qiita.com/claude_iruka/items/f5c721f2acf2241e6d11
   title: Claude Codeのカスタムコマンドで転職活動の応募書類を自動生成するツールを作ってみた
   date: '2026-06-20'
+- url: https://qiita.com/KingHAL0/items/92314e95e5f0385cc0bc
+  title: AIが書いた日本語を yomiyasu で推敲する：Claude Code への導入と使い方
+  date: '2026-11-23'
 ---
 
+
 # Claude Code Custom Commands
+
+---
+
+## 2026-11-23
+
+### AIが書いた日本語を yomiyasu で推敲する：Claude Code への導入と使い方
+
+AIが生成した日本語文章を推敲するツール「yomiyasu」をClaude Codeに導入する方法を解説。標準ライブラリのみ使用でセキュリティを確認後、個人用スキルフォルダに配置。lint機能で文章の癖を検出し、diff機能で意味変化のリスクを警告。実際の記事で読点の過剰使用や短い記事の締め方などの改善点を発見できた。
+
+- **ソース**: [Qiita claude](https://qiita.com/KingHAL0/items/92314e95e5f0385cc0bc)
+- **重要度**: 6/10
+- **タグ**: claude-code, 新機能, prompt
 
 ---
 

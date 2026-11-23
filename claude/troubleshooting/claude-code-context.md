@@ -6,9 +6,11 @@ tags:
 - bugfix
 - claude-code
 - haiku
+- performance
+- prompt
 - 新機能
 date: '2026-04-17'
-updated: '2026-09-15'
+updated: '2026-11-23'
 sources:
 - url: https://zenn.dev/genda_jp/articles/9228f64c472e98
   title: 'Claude Code: スラッシュコマンドの `model` 指定が /compact を誤発火させる落とし穴'
@@ -16,10 +18,26 @@ sources:
 - url: https://qiita.com/suwa_nobu/items/b465ef863f8d8608f497
   title: Claude Code はサブエージェントにも CLAUDE.md を渡していた。18回測った
   date: '2026-09-15'
+- url: https://zenn.dev/ojisan_ai_lab/articles/claude-code-compact-stack-20261122
+  title: Claude Codeの /compact を重ねると何が消える？ 決まり10個は残り、最初の表30行は作業を挟むと2回目で0行でした
+  date: '2026-11-23'
 ---
 
 
+
 # Claude Code Context
+
+---
+
+## 2026-11-23
+
+### Claude Codeの /compact を重ねると何が消える？ 決まり10個は残り、最初の表30行は作業を挟むと2回目で0行でした
+
+Claude Codeの/compactコマンドを連続実行した実験記事。会話で伝えた決まり10個は10回の圧縮後も全て保持されたが、最初に渡した経費表30行は作業を挟んだ2回目の圧縮で完全に消失した。作業を挟まずに/compactを3回続けると圧縮が拒否される。公式ドキュメントでは重要な決まりはCLAUDE.mdに記載することが推奨されている。
+
+- **ソース**: [Zenn claude](https://zenn.dev/ojisan_ai_lab/articles/claude-code-compact-stack-20261122)
+- **重要度**: 6/10
+- **タグ**: claude-code, performance, prompt
 
 ---
 

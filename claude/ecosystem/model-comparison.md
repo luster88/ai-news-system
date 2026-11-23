@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-03-24'
-updated: '2026-11-08'
+updated: '2026-11-23'
 sources:
 - url: https://qiita.com/AI-SKILL-LAB/items/78136cc0ca7a98b624d1
   title: AIコーディングモデルの「正解なき時代」到来 — 2026年3月ベンチマークが教える賢い選び方とマルチモデルルーティング戦略
@@ -102,6 +102,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1xqfqjl/as_a_gpt_user_i_used_opus_55_once_and_i_feel
   title: As a GPT user, I used Opus 5.5 once and i feel incredibly lied to by benchmarks
   date: '2026-11-08'
+- url: https://zenn.dev/egu777/articles/opus55-vs-gemini4-neon-mifos
+  title: Opus 5.5とGemini 4 Neonに同じレガシーコードを発掘させて、根拠を全部開いて採点した
+  date: '2026-11-23'
 ---
 
 
@@ -129,7 +132,20 @@ sources:
 
 
 
+
 # Model Comparison
+
+---
+
+## 2026-11-23
+
+### Opus 5.5とGemini 4 Neonに同じレガシーコードを発掘させて、根拠を全部開いて採点した
+
+Claude Opus 5.5とGemini 4 Neonに47万行のJavaレガシーコード（Mifos）を同じプロンプトで分析させ、根拠を全て検証した比較記事。正解表の点数は11点と10点でほぼ並んだが、検出したバグはほとんど重ならず、コストは約2.8倍の差があった。両モデルとも行番号の精度は高いが、推論の書き方に差があり、複数モデルを併用する価値が示された。
+
+- **ソース**: [Zenn claude](https://zenn.dev/egu777/articles/opus55-vs-gemini4-neon-mifos)
+- **重要度**: 7/10
+- **タグ**: opus, performance, cowork
 
 ---
 
