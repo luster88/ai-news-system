@@ -10,7 +10,7 @@ tags:
 - vscode
 - 新機能
 date: '2026-04-01'
-updated: '2026-11-11'
+updated: '2026-11-24'
 sources:
 - url: https://qiita.com/Andhy/items/371621273924d74e9917
   title: 自作のClaude Codeのプラグインの有効性を検証してみたところなかなか良い結果に
@@ -37,6 +37,9 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1xst2qe/i_made_a_claude_code_mod_that_draws_a_live_map_of
   title: I made a Claude Code mod that draws a live map of what the agent is doing
   date: '2026-11-11'
+- url: https://zenn.dev/jam0824/articles/6c236656e7bbdf
+  title: 半自律的にテスト活動を遂行するAIエージェントプラグイン公開【アプリもwebもテスト可】
+  date: '2026-11-24'
 ---
 
 
@@ -46,7 +49,20 @@ sources:
 
 
 
+
 # Claude Code Plugin
+
+---
+
+## 2026-11-24
+
+### 半自律的にテスト活動を遂行するAIエージェントプラグイン公開【アプリもwebもテスト可】
+
+Claude Code 向けに、テスト計画からテストケース作成、E2E自動テスト実行、不具合報告、レポート作成までを半自律的に行う AI エージェントプラグインが公開されました。Web・Android アプリに対応し、探索的テストで 29 件中 27 件の不具合を検出。テストマネージャーエージェントが各プロセスを統括し、成果物のレビューや変更への対応を柔軟に実施します。
+
+- **ソース**: [Zenn claude](https://zenn.dev/jam0824/articles/6c236656e7bbdf)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, mcp
 
 ---
 

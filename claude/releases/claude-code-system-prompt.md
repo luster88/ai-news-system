@@ -4,12 +4,13 @@ category: releases
 subcategory: claude-code-system-prompt
 tags:
 - claude-code
+- cowork
 - prompt
 - release
 - setup
 - 新機能
 date: '2026-07-24'
-updated: '2026-11-22'
+updated: '2026-11-24'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1v5mhhl/anthropic_cut_80_of_claude_codes_system_prompt
   title: Anthropic cut 80% of Claude Code's system prompt for the Claude 5 models
@@ -24,11 +25,27 @@ sources:
 - url: https://ai-heartland.com/tool/claude-code-code-mode
   title: Claude Code Code Mode とは｜JavaScriptでツールを一括実行する仕組みと権限・Hooksの注意点
   date: '2026-11-22'
+- url: https://ai-heartland.com/agent/claude-ship
+  title: Claude Ship とは｜PR のレビュー・修正・承認の判定を任せる3つのエージェントと /ship の使い方
+  date: '2026-11-24'
 ---
 
 
 
+
 # Claude Code System Prompt
+
+---
+
+## 2026-11-24
+
+### Claude Ship とは｜PR のレビュー・修正・承認の判定を任せる3つのエージェントと /ship の使い方
+
+Claude Shipは、GitHubのPRレビューを自動化する3つのエージェント（Code Review、PR Steward、Claude Approvals）からなる仕組みで、2025-11-23にAnthropicが発表しました。Claude Code v2.1.330以上で/shipコマンドを使用すると、PRの作成からレビュー、修正対応までを自動化できます。組織向けにはTeam/Enterpriseプランで利用可能で、usage creditsから課金されます。自動承認とブランチ保護の設定には注意が必要です。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/agent/claude-ship)
+- **重要度**: 8/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

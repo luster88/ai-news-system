@@ -7,14 +7,30 @@ tags:
 - opus
 - sonnet
 date: '2026-07-06'
-updated: '2026-07-06'
+updated: '2026-11-24'
 sources:
 - url: https://zenn.dev/stockdev_sho/articles/8a9df3a1cb6001
   title: Claude Code のモデル選択──Opus / Sonnet / Haiku をタスクとコストで使い分ける
   date: '2026-07-06'
+- url: https://qiita.com/kentasatomi/items/dad7c8232cb912573946
+  title: Claude CodeでのFable 5.2とOpus 5.5の使い分け
+  date: '2026-11-24'
 ---
 
+
 # Claude Code Model Selection
+
+---
+
+## 2026-11-24
+
+### Claude CodeでのFable 5.2とOpus 5.5の使い分け
+
+Claude CodeでFable 5.2とOpus 5.5を使い分ける実践的な指針を解説。日付ライブラリ移行を例に、定型作業はOpusで進め、設計判断が必要な複雑な問題が発生した際にFableを使う切り替え基準を示す。AnthropicのFrontierCode 2.0評価では両モデルの性能は近いが、Fableのコストは約半分。「見本どおりに直せるか」を判断基準にすることで、PRレベルでモデルを使い分けられる。
+
+- **ソース**: [Qiita claude](https://qiita.com/kentasatomi/items/dad7c8232cb912573946)
+- **重要度**: 7/10
+- **タグ**: claude-code, opus, sonnet
 
 ---
 

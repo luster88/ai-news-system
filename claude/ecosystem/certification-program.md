@@ -9,7 +9,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-05-14'
-updated: '2026-07-08'
+updated: '2026-11-24'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1tcwna3/claude_certified_architect
   title: Claude Certified Architect
@@ -17,10 +17,26 @@ sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1uqvxxm/new_claude_certifications_introduced_today
   title: New Claude Certifications Introduced Today
   date: '2026-07-08'
+- url: https://qiita.com/tomokoro/items/bc9173741761a42fd1c3
+  title: 【合格体験記】Claude Certified Developer – Professional（CCDV-P）
+  date: '2026-11-24'
 ---
 
 
+
 # Certification Program
+
+---
+
+## 2026-11-24
+
+### 【合格体験記】Claude Certified Developer – Professional（CCDV-P）
+
+Anthropic の新しい開発者認定資格「Claude Certified Developer – Professional（CCDV-P）」の合格体験記。2026年11月17日に提供開始された資格で、本番環境での大規模運用能力を証明するプロフェッショナル認定。オブザーバビリティ、障害診断、評価設計、コスト最適化、エージェントフリート運用など高度な判断力が求められる。現在はClaude Partner Networkメンバー限定で受験可能。
+
+- **ソース**: [Qiita claude](https://qiita.com/tomokoro/items/bc9173741761a42fd1c3)
+- **重要度**: 7/10
+- **タグ**: claude-api, 新機能, cowork
 
 ---
 

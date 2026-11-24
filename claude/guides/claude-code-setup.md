@@ -12,7 +12,7 @@ tags:
 - windows
 - 新機能
 date: '2026-04-04'
-updated: '2026-11-19'
+updated: '2026-11-24'
 sources:
 - url: https://qiita.com/taiki_i/items/2d75a882e0f3187f6bb8
   title: あなたの CLAUDE.md、ちゃんと機能してますか？作り方から公式プラグインで採点するまでの道のり
@@ -83,6 +83,12 @@ sources:
 - url: https://qiita.com/fantatchi/items/abe2abe269ca29f3a36f
   title: 私の私による私のための Claude Code
   date: '2026-11-19'
+- url: https://qiita.com/EIJI_at_FujiwaaaLand/items/511ded63ede15c0fedb0
+  title: ClaudeCodeデスクトップアプリからCodex連携する手順まとめ
+  date: '2026-11-24'
+- url: https://qiita.com/FPT_Oshima/items/f911d0e7fc0f67e7b575
+  title: 【Day 4】使い始める前に「フォルダ構成」を決めよう。IPアドレス設計と同じ話です
+  date: '2026-11-24'
 ---
 
 
@@ -104,7 +110,30 @@ sources:
 
 
 
+
 # Claude Code Setup
+
+---
+
+## 2026-11-24
+
+### ClaudeCodeデスクトップアプリからCodex連携する手順まとめ
+
+Claude Code デスクトップアプリ（Windows）から OpenAI Codex プラグインを連携させる手順を詳細に解説。CLI版でプラグインをインストールすればデスクトップアプリにも自動反映される仕組みを、画面キャプチャ付きで説明。PATH設定、認証、プラグインインストールの各ステップを丁寧にガイドしている。
+
+- **ソース**: [Qiita claude](https://qiita.com/EIJI_at_FujiwaaaLand/items/511ded63ede15c0fedb0)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, windows
+
+---
+
+### 【Day 4】使い始める前に「フォルダ構成」を決めよう。IPアドレス設計と同じ話です
+
+Claude Code の実運用に向けたフォルダ構成設計のベストプラクティスを解説。CLAUDE.md の階層的なルール継承、機密度に応じたフォルダ分離、ネットワーク設計におけるIPアドレス設計・VLAN分離との類似性を説明し、エージェントごとの作業範囲と権限管理の重要性を強調。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/FPT_Oshima/items/f911d0e7fc0f67e7b575)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, cowork
 
 ---
 

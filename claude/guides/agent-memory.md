@@ -11,7 +11,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-04-19'
-updated: '2026-11-17'
+updated: '2026-11-24'
 sources:
 - url: https://qiita.com/bit-tanghao/items/20e0366ce3f08f291ce5
   title: '# 【AIエージェントシリーズ 第4弾】メモリを持つAgent：プロジェクト文脈を覚えているレビュアーを作る'
@@ -23,11 +23,27 @@ sources:
   title: Anthropic says the key to agent memory is knowing what to forget, not how
     much to store
   date: '2026-11-17'
+- url: https://zenn.dev/kotakotahiro/articles/19fd5a3e0e67f0
+  title: コンテキスト圧縮で「決めたこと」を忘れるAIエージェントに「眠って夢見る時間」を――Anthropicの記憶設計
+  date: '2026-11-24'
 ---
 
 
 
+
 # Agent Memory
+
+---
+
+## 2026-11-24
+
+### コンテキスト圧縮で「決めたこと」を忘れるAIエージェントに「眠って夢見る時間」を――Anthropicの記憶設計
+
+Anthropicが提案する「dreaming（夢見）」によるAIエージェントの記憶設計を解説。リアルタイム圧縮（compaction）が「今」の都合で削るのに対し、夜間の整理（dreaming）は「明日の判断に要るか」で剪定する。セッション記録を読み返してメモを整理することで、連続性の高いエージェント動作を実現する。ポケモンプレイの実験でClaude Sonnet 3.7の記憶管理能力が示された。
+
+- **ソース**: [Zenn claude](https://zenn.dev/kotakotahiro/articles/19fd5a3e0e67f0)
+- **重要度**: 7/10
+- **タグ**: claude-api, sonnet, 新機能
 
 ---
 

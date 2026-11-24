@@ -1,29 +1,5 @@
 {
   "urls": {
-    "https://www.reddit.com/r/ClaudeAI/comments/1vy40r2/claude_in_a_box": "2026-08-25",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vy7ue3/i_built_omegle_for_political_debates_you_get": "2026-08-25",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vxqbzs/i_built_a_handwriting_notebook_app_where_claude": "2026-08-25",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vxsgpx/claude_thinking_in_russian": "2026-08-25",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vxy12f/i_got_so_fed_up_i_tried_to_take_the_ps_it": "2026-08-25",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vy5moj/claude_made_me_realize_i_could_actually_build_an": "2026-08-25",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vy1541/rebuilt_our_house_and_i_couldnt_make_sense_of_the": "2026-08-25",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vxscwm/claude_opus_5_makes_a_cup_of_coffee": "2026-08-25",
-    "https://www.reddit.com/r/ClaudeAI/comments/1vxzgqp/is_claude_becoming_average": "2026-08-25",
-    "https://qiita.com/inoyu-qiita/items/5b36829f86d1d85a1ab7": "2026-08-25",
-    "https://qiita.com/locallab/items/837c90ae56e6e58cbecc": "2026-08-25",
-    "https://qiita.com/softbase/items/0f740c39a0a2f7332744": "2026-08-25",
-    "https://qiita.com/picnic/items/18a1cc9c54a77605c0ea": "2026-08-25",
-    "https://zenn.dev/yui/articles/97597aa13b9802": "2026-08-25",
-    "https://zenn.dev/cutcha/articles/b6abccb42ecacf": "2026-08-25",
-    "https://zenn.dev/web_benriya/articles/claude-code-gemini-cli-orchestration-ec": "2026-08-25",
-    "https://zenn.dev/izumi_ren/articles/1c44a9ee04c585": "2026-08-25",
-    "https://zenn.dev/kajungbang/articles/403f6f1e5fba46": "2026-08-25",
-    "https://zenn.dev/aiselltoai/articles/188f5b53cdf2c0": "2026-08-25",
-    "https://qiita.com/java_wocky/items/18f1f324a02ad73e9055": "2026-08-25",
-    "https://qiita.com/y104autumn/items/9fe3baf9fe7b7d313006": "2026-08-25",
-    "https://the-decoder.com/google-launches-gemini-for-legal-work-to-automate-contracts-and-research": "2026-08-25",
-    "https://the-decoder.com/taiwanese-cybersecurity-firm-warns-that-ai-tools-have-more-than-doubled-chinese-state-backed-cyberattacks": "2026-08-25",
-    "https://techcrunch.com/2026/08/25/claude-cowork-finally-remembers-what-you-told-the-app-in-chat": "2026-08-25",
     "https://www.reddit.com/r/ClaudeAI/comments/1vz70zy/i_claude_coded_a_multiplayer_threejs_tank_game": "2026-08-27",
     "https://www.reddit.com/r/ClaudeAI/comments/1vyo76q/what_my_wifes_claude_knows_about_me": "2026-08-27",
     "https://www.reddit.com/r/ClaudeAI/comments/1vz8l1f/why_do_we_trust_microsoft_365_with_sensitive": "2026-08-27",
@@ -2125,10 +2101,25 @@
     "https://qiita.com/hatyibei/items/3b7fdc74936f98913451": "2026-11-23",
     "https://ai-heartland.com/rag/contextual-retrieval": "2026-11-23",
     "https://ai-heartland.com/mcp/codekb": "2026-11-23",
-    "https://the-decoder.com/gpt-6-2-astra-and-sol-get-to-the-point-faster-but-score-lower-on-transparency-than-claude": "2026-11-23"
+    "https://the-decoder.com/gpt-6-2-astra-and-sol-get-to-the-point-faster-but-score-lower-on-transparency-than-claude": "2026-11-23",
+    "https://qiita.com/kentasatomi/items/dad7c8232cb912573946": "2026-11-24",
+    "https://qiita.com/EIJI_at_FujiwaaaLand/items/511ded63ede15c0fedb0": "2026-11-24",
+    "https://qiita.com/tomokoro/items/bc9173741761a42fd1c3": "2026-11-24",
+    "https://zenn.dev/okzaq/articles/claude-code-browser-ops-delegation": "2026-11-24",
+    "https://zenn.dev/kotakotahiro/articles/19fd5a3e0e67f0": "2026-11-24",
+    "https://zenn.dev/jam0824/articles/6c236656e7bbdf": "2026-11-24",
+    "https://zenn.dev/h1us3h/articles/85b292cb275c4f": "2026-11-24",
+    "https://zenn.dev/pdfractal/articles/678c7d28bef070": "2026-11-24",
+    "https://zenn.dev/ell/articles/82e7fc4da21502": "2026-11-24",
+    "https://qiita.com/goyle/items/dbe97dd50e6544b40757": "2026-11-24",
+    "https://qiita.com/FPT_Oshima/items/f911d0e7fc0f67e7b575": "2026-11-24",
+    "https://qiita.com/kanazawa_teppei/items/dc79f1974244a2f08232": "2026-11-24",
+    "https://ai-heartland.com/agent/claude-ship": "2026-11-24",
+    "https://the-decoder.com/anthropics-appetite-for-compute-is-pushing-xai-toward-a-rent-over-build-strategy": "2026-11-24",
+    "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes": "2026-11-24",
+    "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo": "2026-11-24"
   },
   "source_penalties": {
-    "Anthropic News": "2026-11-24",
-    "TechCrunch Claude": "2026-11-24"
+    "Anthropic News": "2026-11-25"
   }
 }
