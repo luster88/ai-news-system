@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-22'
-updated: '2026-11-08'
+updated: '2026-11-25'
 sources:
 - url: https://qiita.com/souichirou/items/26f3c6fe731e710f62e3
   title: Claude Codeのexample-skillsを全部使いこなすガイド【17種類まとめ】
@@ -97,6 +97,9 @@ sources:
 - url: https://qiita.com/joinclass/items/3d05264c7d44f84b52f5
   title: Claude Code の Skills が増えすぎて AI が選べなくなる問題 — 命名規則と description の設計
   date: '2026-11-08'
+- url: https://zenn.dev/mediaforce/articles/27df1f22a00546
+  title: なんとなくgrill-meしている人に伝えたい、作者本人から学んだSkillsの使い方
+  date: '2026-11-25'
 ---
 
 
@@ -123,7 +126,20 @@ sources:
 
 
 
+
 # Claude Code Skills
+
+---
+
+## 2026-11-25
+
+### なんとなくgrill-meしている人に伝えたい、作者本人から学んだSkillsの使い方
+
+Matt Pocock の公開している Claude Skills（grill-me を含む）について、作者本人の開発動画から学んだ効果的な使い方を紹介。質問への対応の終わり方、会話の主導権の握り方、用語集（GLOSSARY.md）の作り方など、実践的な Tips をまとめた記事。AI 時代の設計手法として、従来のソフトウェア設計原則を Agent Skills に落とし込んだ Matt の手法を解説している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/mediaforce/articles/27df1f22a00546)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

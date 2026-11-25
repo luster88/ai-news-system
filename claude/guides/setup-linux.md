@@ -7,7 +7,7 @@ tags:
 - linux
 - setup
 date: '2026-03-30'
-updated: '2026-08-08'
+updated: '2026-11-25'
 sources:
 - url: https://qiita.com/supertask/items/ab017f78d75fb9a1f61b
   title: Raspberry PiでClaude Codeを起動時に自動実行してDiscordボットとして常駐させる
@@ -15,10 +15,26 @@ sources:
 - url: https://zenn.dev/gsy0911/articles/a4dc76f0639576
   title: Raspberry Pi 5でClaude Codeを動かす
   date: '2026-08-08'
+- url: https://qiita.com/FPT_Oshima/items/bd530009462b18a249de
+  title: 【Day 5】Linux が苦手なネットワーク屋さんのための「IOSコマンド対応表」
+  date: '2026-11-25'
 ---
 
 
+
 # Setup Linux
+
+---
+
+## 2026-11-25
+
+### 【Day 5】Linux が苦手なネットワーク屋さんのための「IOSコマンド対応表」
+
+ネットワークエンジニア向けに、Cisco IOSコマンドとLinuxコマンドの対応表を紹介。show ip interface briefとifconfig/ip aの違いなど、実務経験者がつまずきやすいポイントを解説。ls -laの権限表記をACLに例えるなど、既知の概念で新しい知識を学ぶアプローチを提示。Claude Codeでコマンド実行と解説を同時に得られる方法も紹介。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/FPT_Oshima/items/bd530009462b18a249de)
+- **重要度**: 5/10
+- **タグ**: claude-code, setup, linux
 
 ---
 

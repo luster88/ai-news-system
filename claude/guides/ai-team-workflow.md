@@ -4,17 +4,35 @@ category: guides
 subcategory: ai-team-workflow
 tags:
 - claude-api
+- claude-code
 - cowork
+- mcp
 - prompt
 date: '2026-06-27'
-updated: '2026-06-27'
+updated: '2026-11-25'
 sources:
 - url: https://zenn.dev/manahazime/articles/maohajime-ai-team-tonight
   title: 真魚始AIチームが今夜やったこと
   date: '2026-06-27'
+- url: https://zenn.dev/gear_aiteam/books/ai-dengon-relay-kit
+  title: AI同士の伝言配達キット：Claude Codeから会話のAIへ届ける見張り役と手順書
+  date: '2026-11-25'
 ---
 
+
 # Ai Team Workflow
+
+---
+
+## 2026-11-25
+
+### AI同士の伝言配達キット：Claude Codeから会話のAIへ届ける見張り役と手順書
+
+Claude Codeを含むAI4人チームによる個人開発の実装事例。MCP、音声発注、自動同期などの仕組みを実際のコードで解説する実践的なガイド。AIチーム間の連携ワークフローとツール統合の具体例を提供。
+
+- **ソース**: [Zenn claude](https://zenn.dev/gear_aiteam/books/ai-dengon-relay-kit)
+- **重要度**: 6/10
+- **タグ**: claude-code, mcp, cowork
 
 ---
 

@@ -2117,9 +2117,30 @@
     "https://ai-heartland.com/agent/claude-ship": "2026-11-24",
     "https://the-decoder.com/anthropics-appetite-for-compute-is-pushing-xai-toward-a-rent-over-build-strategy": "2026-11-24",
     "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes": "2026-11-24",
-    "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo": "2026-11-24"
+    "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo": "2026-11-24",
+    "https://qiita.com/goyle/items/1503a12a7d073720361f": "2026-11-25",
+    "https://qiita.com/hisashi-ito/items/5d5f5b39ff066fdc1f6e": "2026-11-25",
+    "https://qiita.com/ryu-ki/items/0424119cfc75d1d9bb40": "2026-11-25",
+    "https://qiita.com/NaokiIshimura/items/6411b5861f40fe54694e": "2026-11-25",
+    "https://zenn.dev/mediaforce/articles/27df1f22a00546": "2026-11-25",
+    "https://zenn.dev/gear_aiteam/books/ai-dengon-relay-kit": "2026-11-25",
+    "https://zenn.dev/gear_aiteam/articles/ai-to-ai-dengon-relay": "2026-11-25",
+    "https://zenn.dev/sponge841841/articles/2026-11-20-claude-black-hole-ai-research": "2026-11-25",
+    "https://zenn.dev/cvl/articles/a31e811cad6fd7": "2026-11-25",
+    "https://zenn.dev/cvl/articles/b191a75072493c": "2026-11-25",
+    "https://qiita.com/bonny_james01/items/fcfdd537cfe519bdc846": "2026-11-25",
+    "https://qiita.com/FPT_Oshima/items/bd530009462b18a249de": "2026-11-25",
+    "https://ai-heartland.com/tool/gemini-cli-telemetry": "2026-11-25",
+    "https://ai-heartland.com/explain/lean4": "2026-11-25",
+    "https://the-decoder.com/anthropic-turns-claude-artifacts-into-standalone-desktop-apps-for-macos-and-windows": "2026-11-25",
+    "https://the-decoder.com/anthropic-tops-700-million-monthly-mcp-sdk-downloads-and-expands-the-protocol-for-more-autonomous-ai-agents": "2026-11-25",
+    "https://the-decoder.com/novartis-ceo-says-ai-will-shave-four-years-off-drug-development-not-cure-all-disease": "2026-11-25",
+    "https://the-decoder.com/anthropic-researcher-stands-by-his-ai-assisted-riemann-proof-but-owns-up-to-stupid-things-in-the-rollout": "2026-11-25",
+    "https://the-decoder.com/dozens-of-insiders-say-openai-and-anthropics-unreleased-models-have-outgrown-their-safety-measures": "2026-11-25",
+    "https://the-decoder.com/anthropics-claude-ship-lets-ai-agents-review-fix-and-approve-pull-requests-on-their-own": "2026-11-25",
+    "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups": "2026-11-25"
   },
   "source_penalties": {
-    "Anthropic News": "2026-11-25"
+    "Anthropic News": "2026-11-26"
   }
 }

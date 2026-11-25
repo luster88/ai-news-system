@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-11-19'
+updated: '2026-11-25'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -474,6 +474,10 @@ sources:
 - url: https://qiita.com/fantatchi/items/abe2abe269ca29f3a36f
   title: 私の私による私のための Claude Code
   date: '2026-11-19'
+- url: https://qiita.com/NaokiIshimura/items/6411b5861f40fe54694e
+  title: 【要約】A practical guide to shipping with Claude Code ― PRを開いた後の「後始末」を /ship
+    でClaudeに任せる実践ガイド
+  date: '2026-11-25'
 ---
 
 
@@ -590,7 +594,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-11-25
+
+### 【要約】A practical guide to shipping with Claude Code ― PRを開いた後の「後始末」を /ship でClaudeに任せる実践ガイド
+
+Claude Codeの/shipコマンドを使ったPR後の自動化実践ガイド。PR作成後のレビュー対応・CI失敗・コンフリクト解決を最大7日間Claudeに任せることができる。/code-reviewでpush前チェック、CLAUDE.md/REVIEW.mdで指摘やルールを蓄積、チーム展開時はobserveモードで検証してからenforceに移行する運用が推奨されている。管理者権限不要で個人から始められ、学習内容をリポジトリに残してチーム共有できる点が特徴。
+
+- **ソース**: [Qiita claude](https://qiita.com/NaokiIshimura/items/6411b5861f40fe54694e)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, cowork
 
 ---
 

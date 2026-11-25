@@ -3,13 +3,14 @@ title: Creative Industry Impact
 category: ecosystem
 subcategory: creative-industry-impact
 tags:
+- claude-api
 - cowork
 - mcp
 - performance
 - pricing
 - 新機能
 date: '2026-04-29'
-updated: '2026-06-30'
+updated: '2026-11-25'
 sources:
 - url: https://www.reddit.com/r/ClaudeAI/comments/1syu949/the_final_nail_in_the_coffin_for_entry_level
   title: The final nail in the coffin for entry level creative freelancers just dropped
@@ -18,10 +19,27 @@ sources:
   title: San Francisco's AI boom is pricing out six-figure tech workers who can't
     find rent under $5,000
   date: '2026-06-30'
+- url: https://the-decoder.com/novartis-ceo-says-ai-will-shave-four-years-off-drug-development-not-cure-all-disease
+  title: Novartis CEO says AI will shave four years off drug development, not cure
+    all disease
+  date: '2026-11-25'
 ---
 
 
+
 # Creative Industry Impact
+
+---
+
+## 2026-11-25
+
+### Novartis CEO says AI will shave four years off drug development, not cure all disease
+
+Novartis CEO Vas Narasimhan（Anthropic取締役でもある）は、AIが創薬期間を12年から8年に短縮し、臨床開発の成功率を8%から12%に向上させると予測。一方で、Anthropic CEO Dario AmodeiやDeepMind創業者Demis Hassabisが主張する「10年以内に全疾病を治癒」という見解には懐疑的で、人間の生物学的理解の限界と動物・臨床試験の必要性を指摘。AnthropicはCoefficient Bioを買収し独自の創薬研究を進めており、IsomorphicもNovartisと提携している。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/novartis-ceo-says-ai-will-shave-four-years-off-drug-development-not-cure-all-disease)
+- **重要度**: 6/10
+- **タグ**: claude-api, performance, 新機能
 
 ---
 

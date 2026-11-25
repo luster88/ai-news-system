@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-06'
-updated: '2026-05-13'
+updated: '2026-11-25'
 sources:
 - url: https://zenn.dev/tbnet/articles/claude-code-headless-text-output
   title: Claude Code の claude -p で純粋テキストだけ返してもらう
@@ -23,12 +23,28 @@ sources:
 - url: https://qiita.com/Tadashi_Kudo/items/33d0a9b73b6ce0dee1ad
   title: Claude Code でコンテキストを枯渇させない3つの戦略——working-memory / PreCompact フック / 出力間引き
   date: '2026-05-13'
+- url: https://qiita.com/bonny_james01/items/fcfdd537cfe519bdc846
+  title: Claude Code CLI版の導入手順
+  date: '2026-11-25'
 ---
 
 
 
 
+
 # Claude Code Cli
+
+---
+
+## 2026-11-25
+
+### Claude Code CLI版の導入手順
+
+Claude Code CLI版のインストールから実践的な使い方までを解説した開発者向けガイド。CLAUDE.mdでのプロジェクト情報管理、段階的開示によるコンテキスト節約、Skills機能でのタスクパッケージ化、サブエージェント活用など、200kトークンの制約下で効率的に開発を進めるベストプラクティスを整理。モデル選択ではOpusを推奨し、CLI版を軸とする理由も明記。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/bonny_james01/items/fcfdd537cfe519bdc846)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, prompt
 
 ---
 
