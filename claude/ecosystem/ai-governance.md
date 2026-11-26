@@ -7,7 +7,7 @@ tags:
 - cowork
 - 新機能
 date: '2026-06-14'
-updated: '2026-09-15'
+updated: '2026-11-26'
 sources:
 - url: https://qiita.com/mhamadajp/items/ce89717426defdd098c8
   title: AIがコードを書く時代、IT技術者はどうガバナンスを設計するか
@@ -16,10 +16,26 @@ sources:
   title: 'Microsoft''s AI rulebook: readable thinking, no inner life, and definitely
     no rights'
   date: '2026-09-15'
+- url: https://the-decoder.com/anthropic-ceo-dario-amodei-says-letting-ai-govern-society-would-be-a-bad-idea
+  title: Anthropic CEO Dario Amodei says letting AI govern society would be "a bad
+    idea"
+  date: '2026-11-26'
 ---
 
 
+
 # Ai Governance
+
+---
+
+## 2026-11-26
+
+### Anthropic CEO Dario Amodei says letting AI govern society would be "a bad idea"
+
+Anthropic CEO の Dario Amodei が、AI に社会統治を委ねることは「悪い考え」だと明言。政治的決定は人間の手に残すべきで、特定タスクの自動化は有益だが、完全な自動化にはリスクもあると指摘。民主的プロセスによる統治の重要性を強調し、AI への権力移譲を独裁と同様に拒否する姿勢を示した。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-ceo-dario-amodei-says-letting-ai-govern-society-would-be-a-bad-idea)
+- **重要度**: 6/10
 
 ---
 

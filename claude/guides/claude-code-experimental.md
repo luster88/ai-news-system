@@ -4,17 +4,34 @@ category: guides
 subcategory: claude-code-experimental
 tags:
 - claude-code
+- linux
 - setup
 - 新機能
 date: '2026-11-14'
-updated: '2026-11-14'
+updated: '2026-11-26'
 sources:
 - url: https://qiita.com/kai_kou/items/fa321358a7809b561c00
   title: Claude Code 2.1.323のCode Mode入門、有効化と使えない条件
   date: '2026-11-14'
+- url: https://qiita.com/FPT_Oshima/items/e326f29caa7a54eae673
+  title: 【Day 6】Claude Code に最初に話しかける言葉。「このPCを説明して」から始めよう
+  date: '2026-11-26'
 ---
 
+
 # Claude Code Experimental
+
+---
+
+## 2026-11-26
+
+### 【Day 6】Claude Code に最初に話しかける言葉。「このPCを説明して」から始めよう
+
+Claude Code を初めて使う際の最初の会話として、ネットワーク機器の設定確認のように「このPCを説明して」と依頼する方法を紹介。コマンド実行前の確認プロセスの重要性、自分の役割（ネットワークエンジニア）を伝えることで説明の質が向上すること、そして権限設定の基本を解説している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/FPT_Oshima/items/e326f29caa7a54eae673)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, linux
 
 ---
 

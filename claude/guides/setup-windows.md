@@ -8,7 +8,7 @@ tags:
 - setup
 - windows
 date: '2026-06-20'
-updated: '2026-07-11'
+updated: '2026-11-26'
 sources:
 - url: https://qiita.com/soldierboy/items/beb47801a1c81c5b4e35
   title: Claudeにyosysとopenroad環境構築をお願いした
@@ -19,11 +19,27 @@ sources:
 - url: https://qiita.com/lumichy/items/4bfde6829df08ee60930
   title: Claude Code完了時に音声通知！Stop Hookを使ったWindows環境での自動化設定ガイド
   date: '2026-07-11'
+- url: https://qiita.com/goyle/items/82e0267ddf8128128f1d
+  title: 【Windows版】claude-memプラグインのインストールから起動テストまで完全ガイド
+  date: '2026-11-26'
 ---
 
 
 
+
 # Setup Windows
+
+---
+
+## 2026-11-26
+
+### 【Windows版】claude-memプラグインのインストールから起動テストまで完全ガイド
+
+Claude Codeのセッション履歴を永続化・検索できるプラグイン「claude-mem」のWindows環境向けインストールガイド。元記事ではWindows環境で動作しない問題があったため、パス展開の修正（~を%USERPROFILE%に変更）やhooks.jsonによる自動管理など、Windows特有の対処法を含む完全な手順を解説。Web UIでの確認方法やトラブルシューティングも網羅。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/goyle/items/82e0267ddf8128128f1d)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, windows
 
 ---
 

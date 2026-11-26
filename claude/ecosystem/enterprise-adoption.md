@@ -10,7 +10,7 @@ tags:
 - pricing
 - 新機能
 date: '2026-07-20'
-updated: '2026-11-03'
+updated: '2026-11-26'
 sources:
 - url: https://www.anthropic.com/news/ust-claude
   title: Jul 9, 2026 Case Study UST is bringing Claude to physical AI
@@ -28,12 +28,29 @@ sources:
 - url: https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers
   title: Goldman Sachs pulls AI coding tools from traders and bankers
   date: '2026-11-03'
+- url: https://the-decoder.com/anthropic-study-shows-the-hardest-part-of-adopting-ai-at-work-has-little-to-do-with-learning-the-tools
+  title: Anthropic study shows the hardest part of adopting AI at work has little
+    to do with learning the tools
+  date: '2026-11-26'
 ---
 
 
 
 
+
 # Enterprise Adoption
+
+---
+
+## 2026-11-26
+
+### Anthropic study shows the hardest part of adopting AI at work has little to do with learning the tools
+
+Anthropic の経済チームが58社66件のインタビューを通じて約300のAI活用事例を調査した「Working with AI」レポートを公開。55%のケースで生産性や品質向上が見られた一方、19%は明確なビジネス価値を生んでいない。最大の障壁は技術習得ではなく、AIの出力をレビューする人的リソース不足（49件）、従業員の抵抗（43件）、専門家レビューの必要性（42件）など組織内部の課題であることが判明。外部の規制や顧客の懐疑よりも、社内のボトルネックが実導入の最大の壁となっている。
+
+- **ソース**: [The Decoder Claude](https://the-decoder.com/anthropic-study-shows-the-hardest-part-of-adopting-ai-at-work-has-little-to-do-with-learning-the-tools)
+- **重要度**: 7/10
+- **タグ**: cowork, performance
 
 ---
 

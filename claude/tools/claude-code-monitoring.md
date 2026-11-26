@@ -6,10 +6,12 @@ tags:
 - claude-code
 - cowork
 - mac
+- prompt
 - setup
+- vscode
 - windows
 date: '2026-07-12'
-updated: '2026-10-17'
+updated: '2026-11-26'
 sources:
 - url: https://ai-heartland.com/explain/claude-code-monitor
   title: Claude Code Monitor徹底解説｜複数セッションをTUI＋スマホで一括監視【OSS】
@@ -18,10 +20,26 @@ sources:
   title: I built a free Windows widget for Claude usage limits with Claude Code —
     pixel Clawd reacts to your sessions
   date: '2026-10-17'
+- url: https://qiita.com/kataru_kotonoha/items/32c07a5b9b5e8dadef12
+  title: Claude Codeを何個並べても迷わない ― フックで全セッションを見張り、離席中はLINEで知らせる自作ツール「cc-monitor」の仕組み
+  date: '2026-11-26'
 ---
 
 
+
 # Claude Code Monitoring
+
+---
+
+## 2026-11-26
+
+### Claude Codeを何個並べても迷わない ― フックで全セッションを見張り、離席中はLINEで知らせる自作ツール「cc-monitor」の仕組み
+
+Claude Codeの複数セッションを監視し、ユーザー待ちや完了状態をLINEで通知する自作ツール「cc-monitor」の実装解説。フックを使って全イベントを収集し、background_tasksの扱いや質問判定の工夫、非同期処理の設計などの技術的課題と解決策を詳述。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/kataru_kotonoha/items/32c07a5b9b5e8dadef12)
+- **重要度**: 6/10
+- **タグ**: claude-code, vscode, prompt
 
 ---
 

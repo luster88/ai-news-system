@@ -8,9 +8,10 @@ tags:
 - claude-code
 - cowork
 - haiku
+- prompt
 - setup
 date: '2026-05-27'
-updated: '2026-10-16'
+updated: '2026-11-26'
 sources:
 - url: https://zenn.dev/tsuzudev05/articles/github-actions-pr-review-api-journey
   title: GitHub Actions で AI 自動レビューを作るまでに全 API でハマった記録
@@ -18,10 +19,26 @@ sources:
 - url: https://qiita.com/charge0315/items/4a6107cf8ac70156e405
   title: 「契約済み」は思い込みだった 〜データの軸を足す前に実際のAPIを叩く（Claude Code開発記）〜
   date: '2026-10-16'
+- url: https://qiita.com/sakutto-panda/items/83aee3c6dbbe67da3690
+  title: Pythonの戻り値[]が「休止」と「該当なし」を兼ねていた——空配列をLLMが1.1万字で分析した日
+  date: '2026-11-26'
 ---
 
 
+
 # Api Integration
+
+---
+
+## 2026-11-26
+
+### Pythonの戻り値[]が「休止」と「該当なし」を兼ねていた——空配列をLLMが1.1万字で分析した日
+
+自作の投資分析ツールで、Pythonの空配列[]が「休止」「失敗」「対象なし」の3つの意味を兼ねていたため、Claude が2文字の入力から11,298文字のレポートを生成する問題が発生。レジーム判定のダマシ対策も、表示用の値を制御に流用したことで機能していなかった。空配列の意味の曖昧さと、表示用・制御用の値を分離しなかったことが根本原因。
+
+- **ソース**: [Qiita claude](https://qiita.com/sakutto-panda/items/83aee3c6dbbe67da3690)
+- **重要度**: 4/10
+- **タグ**: claude-api, prompt, bugfix
 
 ---
 

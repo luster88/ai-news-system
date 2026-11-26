@@ -3,17 +3,35 @@ title: Privacy Telemetry
 category: troubleshooting
 subcategory: privacy-telemetry
 tags:
+- bugfix
+- claude-code
 - setup
 - 新機能
 date: '2026-11-25'
-updated: '2026-11-25'
+updated: '2026-11-26'
 sources:
 - url: https://ai-heartland.com/tool/gemini-cli-telemetry
   title: Gemini CLI のテレメトリーとは｜送られる中身とメールアドレスの扱い、止め方を実測で確かめる
   date: '2026-11-25'
+- url: https://ai-heartland.com/tool/t3-code-telemetry
+  title: T3 Code のテレメトリで情報は漏れるか｜0.1.12 でアカウント ID の送信を廃止、中身の確かめ方と止め方
+  date: '2026-11-26'
 ---
 
+
 # Privacy Telemetry
+
+---
+
+## 2026-11-26
+
+### T3 Code のテレメトリで情報は漏れるか｜0.1.12 でアカウント ID の送信を廃止、中身の確かめ方と止め方
+
+T3 Codeのバージョン0.1.12で、ClaudeとOpenAIのアカウントID送信が廃止された。0.1.11まではホームディレクトリの設定ファイルからアカウントIDを読み取り、ソルトなしのSHA-256ハッシュで送信していた。0.1.12でも利用データ送信はデフォルトでオンだが、環境変数T3CODE_TELEMETRY_ENABLED=falseまたはDO_NOT_TRACK=1で無効化できる。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/tool/t3-code-telemetry)
+- **重要度**: 6/10
+- **タグ**: claude-code, bugfix, setup
 
 ---
 

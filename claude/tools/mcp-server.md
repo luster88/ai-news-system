@@ -14,7 +14,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-25'
-updated: '2026-11-23'
+updated: '2026-11-26'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -180,6 +180,12 @@ sources:
 - url: https://ai-heartland.com/mcp/codekb
   title: CodeKBとは｜AWS製OSSで複数リポジトリのコードを理解しMCPでAIエージェントに渡す仕組み
   date: '2026-11-23'
+- url: https://zenn.dev/stratamcp/articles/9a7bbf56687403
+  title: Claude / Cursor から日本の e-Gov 法令検索と WCAG 2.2 一括診断を叩ける軽量 MCP を公開
+  date: '2026-11-26'
+- url: https://ai-heartland.com/mcp/conqueror-seo-mcp
+  title: Conqueror の SEO MCP とは｜エージェントスキル8本の段取りと導入手順、人が確認する所を実測
+  date: '2026-11-26'
 ---
 
 
@@ -231,7 +237,30 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-11-26
+
+### Claude / Cursor から日本の e-Gov 法令検索と WCAG 2.2 一括診断を叩ける軽量 MCP を公開
+
+Claude DesktopやCursorから利用できる、日本のe-Gov法令検索とWCAG 2.2アクセシビリティ診断の2つの軽量MCPツールがApify Storeで公開されました。法令検索では38種類以上の英語エイリアスに対応し、アクセシビリティ診断ではsitemap.xmlから最大500URLを一括スキャン可能です。どちらもヘッドレスブラウザを使わず、純粋なHTTP通信と構造化パースで高速動作し、APIキー設定不要で利用できます。
+
+- **ソース**: [Zenn claude](https://zenn.dev/stratamcp/articles/9a7bbf56687403)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-code, cursor
+
+---
+
+### Conqueror の SEO MCP とは｜エージェントスキル8本の段取りと導入手順、人が確認する所を実測
+
+Conqueror が SEO 作業手順をエージェントに渡す「スキル集」conqueror-skills を MIT ライセンスで公開。8本の SKILL.md でキーワード調査・競合分析・被リンク候補などの段取りを記述し、データは別の Conqueror MCP サーバーから取得する前提。npx skills add と手動コピーでの導入方法を実測し、18種類のツール（get_serp_results、get_search_console_performance など）の呼び出しと成果物を表にまとめている。
+
+- **ソース**: [AI Heartland](https://ai-heartland.com/mcp/conqueror-seo-mcp)
+- **重要度**: 6/10
+- **タグ**: mcp, setup, claude-code
 
 ---
 
