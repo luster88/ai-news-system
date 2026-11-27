@@ -13,7 +13,7 @@ tags:
 - setup
 - 新機能
 date: '2026-03-28'
-updated: '2026-11-16'
+updated: '2026-11-27'
 sources:
 - url: https://qiita.com/kenji_harada/items/58b8dbb395199bbe9f1e
   title: Claude Codeで「AI同士の会話」によるブログ自動生成システムを作ってみた
@@ -148,6 +148,12 @@ sources:
 - url: https://qiita.com/dsol_y_matsuda/items/a7db4c91a7f2568c4493
   title: AI エージェントに「目と手」を与えるスキルの設計と実装【連載：Claude Code で環境構築 3】
   date: '2026-11-16'
+- url: https://zenn.dev/mediaforce/articles/1f5d95ac793e31
+  title: アラームが鳴ったらAIが調査して自動でPR作成までする仕組みをClaude Code Routineで入れた話
+  date: '2026-11-27'
+- url: https://qiita.com/abcaaa/items/826200afc1624438f8d4
+  title: AI エージェントを定期実行で毎日回す：プロンプトは1行、状態は GitHub、毎回新しい会話で
+  date: '2026-11-27'
 ---
 
 
@@ -188,7 +194,30 @@ sources:
 
 
 
+
 # Claude Code Automation
+
+---
+
+## 2026-11-27
+
+### アラームが鳴ったらAIが調査して自動でPR作成までする仕組みをClaude Code Routineで入れた話
+
+CloudWatch Alarmが発火したら、Claude Code Routine（scheduled tasks）が自動でログを調査し、GitHub Issueで状況報告、修正可能なものはPRまで作成する運用を紹介。サブエージェントに調査を委譲し、AWSの読み取り専用権限で原因を特定。人間の判断が必要な場合はIssueで選択肢を提示し、PRレビューにも自動対応する仕組み。
+
+- **ソース**: [Zenn claude](https://zenn.dev/mediaforce/articles/1f5d95ac793e31)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, cowork
+
+---
+
+### AI エージェントを定期実行で毎日回す：プロンプトは1行、状態は GitHub、毎回新しい会話で
+
+Claude Code を定期実行で毎日無人運用する実践手法を解説。プロンプトは「手順書を読んで実行」の1行のみ、作業状態はGitHub（Issue・台帳）で管理し、毎回新しい会話で始める設計。長い会話は古い前提に引きずられるため、会話外に状態を置き、判断ロジックはスクリプト化して AI のブレを防ぐ。トークン消費を抑える工夫や「既知のエラー表」で同じ失敗を繰り返さない仕組みも導入。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/abcaaa/items/826200afc1624438f8d4)
+- **重要度**: 7/10
+- **タグ**: claude-code, 新機能, prompt
 
 ---
 

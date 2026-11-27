@@ -9,7 +9,7 @@ tags:
 - prompt
 - 新機能
 date: '2026-05-12'
-updated: '2026-10-01'
+updated: '2026-11-27'
 sources:
 - url: https://the-decoder.com/tokenmaxxing-spreads-at-amazon-as-employees-game-internal-ai-leaderboards
   title: '"Tokenmaxxing" spreads at Amazon as employees game internal AI leaderboards'
@@ -25,12 +25,28 @@ sources:
   title: Google drops Gems for Skills, joining OpenAI and Anthropic in the shift to
     agent-ready prompt formats
   date: '2026-10-01'
+- url: https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue
+  title: Grand Theft Auto VI proves why efficiency isn’t a virtue
+  date: '2026-11-27'
 ---
 
 
 
 
+
 # Industry Trends
+
+---
+
+## 2026-11-27
+
+### Grand Theft Auto VI proves why efficiency isn’t a virtue
+
+Grand Theft Auto VIが生成AI不使用で開発された最後の大作ゲームになる可能性があるという記事。同時期にAnthropicがIPOを達成し、AI時代の転換点を象徴する出来事として対比されている。GTA VIは発売初日に37.9億ドルを売り上げ、史上最大のエンターテインメントイベントとなった。
+
+- **ソース**: [TechCrunch Claude](https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue)
+- **重要度**: 4/10
+- **タグ**: pricing
 
 ---
 

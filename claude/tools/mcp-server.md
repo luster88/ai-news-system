@@ -14,7 +14,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-25'
-updated: '2026-11-26'
+updated: '2026-11-27'
 sources:
 - url: https://zenn.dev/rimon/articles/11a680c4b530ab
   title: 【Claude Codeから画像生成】画像生成MCPを作ってnpmに公開した — Gemini / OpenAI / FLUX対応
@@ -186,6 +186,12 @@ sources:
 - url: https://ai-heartland.com/mcp/conqueror-seo-mcp
   title: Conqueror の SEO MCP とは｜エージェントスキル8本の段取りと導入手順、人が確認する所を実測
   date: '2026-11-26'
+- url: https://qiita.com/kazuki-aruga@github/items/19e696cdb81371536bab
+  title: 導入手順：エックスサーバーのメールをスマホのClaudeから読めるようにする（php-imap-mcp）
+  date: '2026-11-27'
+- url: https://qiita.com/kazuki-aruga@github/items/93a12bf11ea6a051f271
+  title: メールをAIにコピペするのに疲れたので、レンタルサーバーのメールをClaudeから直接読めるようにした
+  date: '2026-11-27'
 ---
 
 
@@ -238,7 +244,30 @@ sources:
 
 
 
+
 # Mcp Server
+
+---
+
+## 2026-11-27
+
+### 導入手順：エックスサーバーのメールをスマホのClaudeから読めるようにする（php-imap-mcp）
+
+レンタルサーバー（エックスサーバー）のメールをClaudeから直接読めるようにするOSSのMCPサーバー「php-imap-mcp」の導入手順を解説。サーバーに設置するだけで動作し、パソコンやスマホに何もインストールせずClaudeの無料プランからも利用可能。メールの読み取りと下書き作成のみに機能を限定し、送信・削除機能は安全性のため実装していない。
+
+- **ソース**: [Qiita claude](https://qiita.com/kazuki-aruga@github/items/19e696cdb81371536bab)
+- **重要度**: 6/10
+- **タグ**: mcp, setup, 新機能
+
+---
+
+### メールをAIにコピペするのに疲れたので、レンタルサーバーのメールをClaudeから直接読めるようにした
+
+レンタルサーバーのメールをClaude（スマホアプリ含む）から直接読めるようにするMCPサーバー「php-imap-mcp」が公開された。PHPで実装され、エックスサーバー等の共用レンタルサーバーに設置するだけで動作し、メールの検索・閲覧・下書き作成が可能。送信・削除機能は意図的に除外されており、プロンプトインジェクション攻撃への対策としている。GmailやMicrosoft 365以外の独自ドメインメールでMCP連携を実現する実用的なツール。
+
+- **ソース**: [Qiita claude](https://qiita.com/kazuki-aruga@github/items/93a12bf11ea6a051f271)
+- **重要度**: 6/10
+- **タグ**: mcp, claude-api, setup
 
 ---
 

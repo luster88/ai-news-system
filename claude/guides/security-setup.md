@@ -11,7 +11,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-04'
-updated: '2026-10-16'
+updated: '2026-11-27'
 sources:
 - url: https://qiita.com/honey-0326-honey/items/c16d628aee898e3f9f72
   title: 【初心者向け】社内PCでClaude Codeを使う前に。絶対に知っておきたいセキュリティの罠と対策
@@ -28,12 +28,28 @@ sources:
 - url: https://zenn.dev/notahotel/articles/e85b2cdf9a5833
   title: Claude Code の平文 API キーを 1Password CLI で安全に運用する
   date: '2026-10-16'
+- url: https://zenn.dev/aikyoju_lab/articles/aikyoju-2026-11-006
+  title: Claude Code の秘密情報対策を3層で組む：deny 設定・許可リストの棚卸し・開発用 API キー
+  date: '2026-11-27'
 ---
 
 
 
 
+
 # Security Setup
+
+---
+
+## 2026-11-27
+
+### Claude Code の秘密情報対策を3層で組む：deny 設定・許可リストの棚卸し・開発用 API キー
+
+Claude Code で .env や API キーなどの秘密情報が誤って読み取られるのを防ぐため、permissions.deny 設定をユーザー設定に書く方法、許可リスト（allow）の定期的な棚卸し、開発用 API キーの分離という3層の対策を解説。公式ドキュメントに基づき、設定ファイルの優先順位やパターンマッチの挙動、CLAUDE.md との違いを詳しく説明している。
+
+- **ソース**: [Zenn claude](https://zenn.dev/aikyoju_lab/articles/aikyoju-2026-11-006)
+- **重要度**: 7/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

@@ -17,7 +17,7 @@ tags:
 - windows
 - 新機能
 date: '2026-03-26'
-updated: '2026-11-25'
+updated: '2026-11-27'
 sources:
 - url: https://qiita.com/tatematsu-k/items/ac8a83b09b2aa17416c6
   title: claudecodeを使ってAIドリブン開発をする前に読みたかった
@@ -478,6 +478,9 @@ sources:
   title: 【要約】A practical guide to shipping with Claude Code ― PRを開いた後の「後始末」を /ship
     でClaudeに任せる実践ガイド
   date: '2026-11-25'
+- url: https://qiita.com/abcaaa/items/1dfadd3fa2d11a3f806c
+  title: AI に6週間で学習ゲームを200本作らせた：止まらず・壊さず回すための CI と手順書の仕組み
+  date: '2026-11-27'
 ---
 
 
@@ -595,7 +598,20 @@ sources:
 
 
 
+
 # Claude Code Workflow
+
+---
+
+## 2026-11-27
+
+### AI に6週間で学習ゲームを200本作らせた：止まらず・壊さず回すための CI と手順書の仕組み
+
+Claude Codeを使って6週間で200本の学習ゲームを作成した事例。AIに大量のコード生成をさせる際の実践的な工夫として、①GitHub Actionsの再利用ワークフローを@mainで全リポジトリから呼ぶ設計、②テンプレート同期によるコードの一元管理、③WIP制限と日次進行による作業管理、④手順書と事故記録の標準化、⑤一次資料ベースの品質管理などを紹介。AIの賢さよりも「間違えても止まる・戻る仕組み」が重要という知見を共有している。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/abcaaa/items/1dfadd3fa2d11a3f806c)
+- **重要度**: 7/10
+- **タグ**: claude-code, cowork, 新機能
 
 ---
 
