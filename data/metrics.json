@@ -13239,13 +13239,13 @@
     }
   },
   "2026-11-27": {
-    "timestamp": "2026-11-27T00:22:50.282820+00:00",
-    "elapsed_seconds": 124.4,
+    "timestamp": "2026-11-27T23:57:52.562476+00:00",
+    "elapsed_seconds": 126.4,
     "collection": {
-      "total_raw": 186,
-      "total_new": 98,
-      "total_seen": 88,
-      "total_penalized": 22,
+      "total_raw": 185,
+      "total_new": 89,
+      "total_seen": 96,
+      "total_penalized": 31,
       "by_source": {
         "OpenAI News": 8,
         "Anthropic News": 6,
@@ -13264,55 +13264,56 @@
         "AI Heartland": 6,
         "GIGAZINE": 6,
         "Publickey": 5,
-        "CNET Japan": 1,
+        "CNET Japan": 6,
         "ERNIE Blog": 6,
         "MiniMax News": 4,
         "36Kr AI": 0,
         "KrASIA": 6,
         "量子位 (QbitAI)": 6,
         "IT之家": 6,
-        "Qiita AI": 2,
+        "Qiita AI": 4,
         "Zenn AI": 8,
         "nyosegawa blog": 1,
         "Reddit r/LocalLLaMA": 0,
-        "Hacker News": 5,
+        "Hacker News": 4,
         "Ollama Releases": 3,
         "vLLM Releases": 3,
-        "Transformers Releases": 3,
+        "Transformers Releases": 2,
         "arXiv cs.AI": 5,
-        "arXiv cs.LG": 5,
+        "arXiv cs.LG": 0,
         "Hugging Face Blog": 6,
-        "Google Research Blog": 5,
+        "Google Research Blog": 4,
         "MIT News AI": 5,
         "Microsoft Research Blog": 2
       },
       "sources_zero": [
         "36Kr AI",
-        "Reddit r/LocalLLaMA"
+        "Reddit r/LocalLLaMA",
+        "arXiv cs.LG"
       ]
     },
     "body_fetch": {
-      "total": 66,
-      "success": 52,
-      "empty": 14,
-      "skipped": 10,
-      "success_rate": 0.79
+      "total": 58,
+      "success": 45,
+      "empty": 13,
+      "skipped": 0,
+      "success_rate": 0.78
     },
     "summarization": {
       "selected": 25,
       "tentative_count": 0,
       "parse_failure_count": 0,
       "importance_distribution": {
-        "1-2": 1,
-        "3-4": 6,
-        "5-6": 15,
-        "7-8": 3,
+        "1-2": 2,
+        "3-4": 8,
+        "5-6": 10,
+        "7-8": 5,
         "9-10": 0
       }
     },
     "output": {
       "total_items": 25,
-      "active_penalties": 19
+      "active_penalties": 22
     }
   }
 }
