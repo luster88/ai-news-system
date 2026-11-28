@@ -9,7 +9,7 @@ tags:
 - setup
 - 新機能
 date: '2026-05-12'
-updated: '2026-10-22'
+updated: '2026-11-28'
 sources:
 - url: https://qiita.com/Tadashi_Kudo/items/80a6a0c8fe73bd9450c3
   title: 104kスターのKarpathy CLAUDE.mdを試したら、手元に既にあった話——グローバルCLAUDE.mdで全PJ適用済みの実態
@@ -35,6 +35,9 @@ sources:
 - url: https://qiita.com/acshu_moriyama/items/0d35781c10fe8d436b5c
   title: コーディングエージェントの「指示書・Skill・Hooks」役割分担
   date: '2026-10-22'
+- url: https://qiita.com/FPT_Oshima/items/ccb50c7767d43bd23870
+  title: 【Day 8】CLAUDE.md の階層構造は、Active Directory の GPO 継承に似ている
+  date: '2026-11-28'
 ---
 
 
@@ -45,7 +48,20 @@ sources:
 
 
 
+
 # Claude Code Configuration
+
+---
+
+## 2026-11-28
+
+### 【Day 8】CLAUDE.md の階層構造は、Active Directory の GPO 継承に似ている
+
+CLAUDE.mdの階層構造とActive DirectoryのGPO継承の類似点・相違点を解説。CLAUDE.mdは親フォルダから順に読み込まれるが、GPOと異なり上書きではなく全てが結合される。矛盾するルールがあると動作が不定になるため、例外は明示的に記述する必要がある。企業利用では管理ポリシーとして/etc/claude-code/CLAUDE.mdに配置する方法を推奨。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/FPT_Oshima/items/ccb50c7767d43bd23870)
+- **重要度**: 6/10
+- **タグ**: claude-code, setup, 新機能
 
 ---
 

@@ -14,7 +14,7 @@ tags:
 - sonnet
 - 新機能
 date: '2026-05-05'
-updated: '2026-09-19'
+updated: '2026-11-28'
 sources:
 - url: https://zenn.dev/bentenweb_fumi/articles/fxyojdsgcwap
   title: AIで「手を動かす時間」を減らす：技術者のための時間投資戦略
@@ -47,6 +47,9 @@ sources:
   title: What is the best way to use LLMS's in 2026? I feel like a caveman with the
     way I use them?
   date: '2026-09-19'
+- url: https://qiita.com/NekoByte/items/173e96d65eeca4c743dc
+  title: CLAUDE.mdに書いておくと開発が劇的に楽になる10の習慣
+  date: '2026-11-28'
 ---
 
 
@@ -58,7 +61,20 @@ sources:
 
 
 
+
 # Workflow Optimization
+
+---
+
+## 2026-11-28
+
+### CLAUDE.mdに書いておくと開発が劇的に楽になる10の習慣
+
+プロジェクトルートにCLAUDE.mdファイルを置き、プロジェクト構造やよく使うコマンドなどの定型情報を記載することで、Claudeへの質問回数を減らし開発効率を上げる手法を紹介。ディレクトリ構造の記載例など、実践的な10の習慣をまとめている。
+
+- **ソース**: [Qiita claude](https://qiita.com/NekoByte/items/173e96d65eeca4c743dc)
+- **重要度**: 6/10
+- **タグ**: claude-code, prompt, setup
 
 ---
 

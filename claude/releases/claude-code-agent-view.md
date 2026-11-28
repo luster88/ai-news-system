@@ -5,10 +5,11 @@ subcategory: claude-code-agent-view
 tags:
 - bugfix
 - claude-code
+- mcp
 - release
 - 新機能
 date: '2026-05-12'
-updated: '2026-10-20'
+updated: '2026-11-28'
 sources:
 - url: https://ai-heartland.com/news/claude-code-agent-view-research-preview
   title: Claude Code agent view発表｜全セッション一覧で並列エージェントを統治する新UI
@@ -16,10 +17,26 @@ sources:
 - url: https://qiita.com/picnic/items/97faa0dd4bf19819958a
   title: Claude Code v2.1.304 変更点まとめ：/auto-mode-setup・Code Review・mod仕様変更
   date: '2026-10-20'
+- url: https://qiita.com/NaokiIshimura/items/9d75f973a26bdb4f1965
+  title: Claude Code 開発者が注目している5つのアップデート（v2.1.331 - v2.1.332）
+  date: '2026-11-28'
 ---
 
 
+
 # Claude Code Agent View
+
+---
+
+## 2026-11-28
+
+### Claude Code 開発者が注目している5つのアップデート（v2.1.331 - v2.1.332）
+
+Claude Code v2.1.331-v2.1.332の主要アップデートを解説。MCPサーバー経由でのスキル配布とセキュリティフック、Bedrock/Agent Platform/FoundryでのSonnet 5.5への移行と環境変数変更、サードパーティプロバイダーでのCode Mode対応拡大と安定性改善が含まれる。特にMCPスキルのシェルコマンド実行リスクへの対処、リージョン設定の変更による意図しないデータ送信の防止、長時間スクリプトやリスト処理の不具合修正が実務上重要。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/NaokiIshimura/items/9d75f973a26bdb4f1965)
+- **重要度**: 7/10
+- **タグ**: claude-code, mcp, release
 
 ---
 

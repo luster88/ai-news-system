@@ -15,7 +15,7 @@ tags:
 - sonnet
 - 新機能
 date: 2026-03-23
-updated: '2026-11-05'
+updated: '2026-11-28'
 sources:
 - url: https://github.com/anthropics/claude-code/releases
   title: Claude Code GitHub Releases
@@ -114,7 +114,11 @@ sources:
 - url: https://zenn.dev/orivanai/articles/claude-code-2026-10-updates
   title: Claude Code 2026年10月のアップデートまとめ:Mods、Code Review、Haiku 5.5
   date: '2026-11-05'
+- url: https://qiita.com/NaokiIshimura/items/a913479f6fbb2d8447b7
+  title: Claude Code v2.1.331 - v2.1.332 リリースノートまとめ
+  date: '2026-11-28'
 ---
+
 
 
 
@@ -190,6 +194,18 @@ Claude Code の主要なリリース・機能追加を時系列で記録する�
 
 - [セットアップガイド](../guides/setup.md)
 - [ツール比較](../tools/comparison.md)
+
+---
+
+## 2026-11-28
+
+### Claude Code v2.1.331 - v2.1.332 リリースノートまとめ
+
+Claude Code v2.1.331-v2.1.332では、MCPサーバーからスキルを読み込む機能（beta）が追加され、スキルのインラインシェルコマンドを検査するPreSkillShellCommandフックが実装されました。Bedrock/Google Cloud/Microsoft Foundryでのモデルエイリアスと既定モデルの変更、Code Modeのサードパーティプロバイダー対応が行われました。claude doctorにAPI接続チェック機能が追加され、--model defaultの利用不可時に旧モデルへフォールバックする改善も含まれています。
+
+- **ソース**: [Qiita claudecode](https://qiita.com/NaokiIshimura/items/a913479f6fbb2d8447b7)
+- **重要度**: 8/10
+- **タグ**: claude-code, mcp, release
 
 ---
 
